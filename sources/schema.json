@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Mythic Library Source Schema",
+  "type": "object",
+  "properties": {
+    "texts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "tradition", "original_language"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier (slug format)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Canonical English title"
+          },
+          "alternate_titles": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "tradition": {
+            "type": "string",
+            "enum": ["mesopotamian", "egyptian", "greek", "roman", "norse", "celtic", "indian", "persian", "chinese", "hebrew", "other"]
+          },
+          "original_language": {
+            "type": "string",
+            "description": "Original language (e.g., Sumerian, Akkadian, Ancient Greek)"
+          },
+          "date_composed": {
+            "type": "string",
+            "description": "Approximate date or range (e.g., '2100 BCE', '8th century BCE')"
+          },
+          "description": {
+            "type": "string"
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "source_url"],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["original", "transliteration", "translation"]
+                },
+                "language": {
+                  "type": "string"
+                },
+                "translator": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "integer"
+                },
+                "publisher": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "source_name": {
+                  "type": "string",
+                  "description": "e.g., 'Internet Archive', 'Project Gutenberg'"
+                },
+                "file_path": {
+                  "type": "string",
+                  "description": "Local path relative to texts/"
+                },
+                "quality_tier": {
+                  "type": "string",
+                  "enum": ["scholarly", "standard", "popular", "unverified"],
+                  "description": "scholarly=academic consensus, standard=reliable, popular=accessible but less rigorous"
+                },
+                "checksum": {
+                  "type": "string",
+                  "description": "SHA-256 of downloaded file"
+                },
+                "verified": {
+                  "type": "boolean"
+                },
+                "verification_notes": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
