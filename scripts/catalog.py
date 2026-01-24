@@ -36,13 +36,121 @@ def save_master_catalog(records: list[dict]):
     if not records:
         return
 
-    fieldnames = ["text_id", "title", "tradition", "original_language",
-                  "date_composed", "canonical_source", "status", "notes"]
+    fieldnames = ["text_id", "title", "author", "tradition", "origin_raw",
+                  "date_composed", "material_type", "status", "notes"]
 
     with open(MASTER_CATALOG, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(records)
+
+
+# Map origin strings to our tradition categories
+TRADITION_MAPPINGS = {
+    # Mesopotamian
+    "mesopotamia": "mesopotamian",
+    "babylonia": "mesopotamian",
+    "sumeria": "mesopotamian",
+    "akkadia": "mesopotamian",
+    "assyria": "mesopotamian",
+    # Canaanite/Levantine
+    "canaanite": "levantine",
+    "ugarit": "levantine",
+    "ancient israel": "hebrew",
+    # Egyptian
+    "ancient egypt": "egyptian",
+    "egypt": "egyptian",
+    # Greek
+    "ancient greece": "greek",
+    "greece": "greek",
+    # Roman/Latin
+    "rome": "roman",
+    "roman": "roman",
+    "italy": "roman",
+    # Norse/Germanic
+    "iceland": "norse",
+    "scandinavia": "norse",
+    "anglo-saxon": "norse",
+    "germany": "germanic",
+    # Celtic
+    "wales": "celtic",
+    "ireland": "celtic",
+    "scotland": "celtic",
+    # Indian
+    "india": "indian",
+    "south asia": "indian",
+    # Persian
+    "persia": "persian",
+    "iran": "persian",
+    # Chinese
+    "china": "chinese",
+    # Japanese
+    "japan": "japanese",
+    # Turkic/Central Asian
+    "oghuz turkic": "turkic",
+    "kyrgyz": "turkic",
+    "tibet": "tibetan",
+    "central asia": "central-asian",
+    # Mesoamerican
+    "maya": "mesoamerican",
+    "guatemala": "mesoamerican",
+    "mesoamerica": "mesoamerican",
+    "andes": "andean",
+    # African
+    "mali": "african",
+    "west africa": "african",
+    "ghana": "african",
+    "nigeria": "african",
+    "south africa": "african",
+    "xhosa": "african",
+    "zanzibar": "african",
+    "swahili": "african",
+    "sub-saharan africa": "african",
+    "caribbean": "african",
+    # North American
+    "north america": "north-american",
+    "cherokee nation": "north-american",
+    # Pacific/Oceanian
+    "philippines": "southeast-asian",
+    "malaysia": "southeast-asian",
+    "laos": "southeast-asian",
+    "thailand": "southeast-asian",
+    "hawaii": "polynesian",
+    "new zealand": "polynesian",
+    "māori": "polynesian",
+    "polynesian": "polynesian",
+    "greenland": "arctic",
+    "inuit": "arctic",
+    # European
+    "england": "european",
+    "france": "european",
+    "uk": "european",
+    "russian empire": "european",
+    "finland": "european",
+    "karelia": "european",
+    # Middle Eastern
+    "middle east": "middle-eastern",
+    # Christian/Gnostic
+    "early christian": "gnostic",
+    # Global/Compilations
+    "global sources": "anthology",
+    "united states": "anthology",
+}
+
+
+def normalize_tradition(origin: str) -> str:
+    """Map an origin string to a normalized tradition category."""
+    if not origin:
+        return "other"
+
+    origin_lower = origin.lower()
+
+    # Check for exact matches first
+    for key, value in TRADITION_MAPPINGS.items():
+        if key in origin_lower:
+            return value
+
+    return "other"
 
 
 def import_from_csv(csv_path: Path) -> list[dict]:
@@ -59,10 +167,10 @@ def import_from_csv(csv_path: Path) -> list[dict]:
     column_mappings = {
         "text_id": ["id", "text_id", "identifier", "slug"],
         "title": ["title", "name", "text_name", "work"],
-        "tradition": ["tradition", "culture", "origin", "category", "type"],
-        "original_language": ["language", "original_language", "source_language", "orig_lang"],
-        "date_composed": ["date", "date_composed", "period", "era", "year"],
-        "canonical_source": ["source", "canonical_source", "main_source", "reference"],
+        "author": ["author", "compiler/author", "compiler", "writer", "attributed"],
+        "origin": ["origin", "tradition", "culture", "region"],
+        "date_composed": ["date", "date_composed", "period", "era", "year", "date/period"],
+        "material_type": ["material/type", "type", "material", "genre", "form"],
         "notes": ["notes", "description", "comments"],
     }
 
@@ -78,13 +186,15 @@ def import_from_csv(csv_path: Path) -> list[dict]:
 
     imported = []
     for row in rows:
+        origin_raw = find_column(row, "origin") or ""
         record = {
             "text_id": find_column(row, "text_id") or "",
             "title": find_column(row, "title") or "",
-            "tradition": find_column(row, "tradition") or "",
-            "original_language": find_column(row, "original_language") or "",
+            "author": find_column(row, "author") or "",
+            "tradition": normalize_tradition(origin_raw),
+            "origin_raw": origin_raw,
             "date_composed": find_column(row, "date_composed") or "",
-            "canonical_source": find_column(row, "canonical_source") or "",
+            "material_type": find_column(row, "material_type") or "",
             "status": "pending",
             "notes": find_column(row, "notes") or "",
         }
@@ -102,8 +212,8 @@ def import_from_csv(csv_path: Path) -> list[dict]:
     return imported
 
 
-def add_text(text_id: str, title: str, tradition: str, language: str,
-             date: str = "", source: str = "", notes: str = ""):
+def add_text(text_id: str, title: str, tradition: str, author: str = "",
+             origin: str = "", date: str = "", material_type: str = "", notes: str = ""):
     """Add a single text to the catalog."""
     records = load_master_catalog()
 
@@ -115,10 +225,11 @@ def add_text(text_id: str, title: str, tradition: str, language: str,
     records.append({
         "text_id": text_id,
         "title": title,
+        "author": author,
         "tradition": tradition,
-        "original_language": language,
+        "origin_raw": origin,
         "date_composed": date,
-        "canonical_source": source,
+        "material_type": material_type,
         "status": "pending",
         "notes": notes,
     })
@@ -187,10 +298,11 @@ def main():
     add_parser = subparsers.add_parser("add", help="Add a text")
     add_parser.add_argument("--id", required=True, help="Text ID")
     add_parser.add_argument("--title", required=True, help="Title")
-    add_parser.add_argument("--tradition", required=True, help="Tradition/culture")
-    add_parser.add_argument("--language", required=True, help="Original language")
+    add_parser.add_argument("--tradition", required=True, help="Tradition category")
+    add_parser.add_argument("--author", default="", help="Author/compiler")
+    add_parser.add_argument("--origin", default="", help="Original origin description")
     add_parser.add_argument("--date", default="", help="Date composed")
-    add_parser.add_argument("--source", default="", help="Canonical source")
+    add_parser.add_argument("--type", default="", help="Material type")
     add_parser.add_argument("--notes", default="", help="Notes")
 
     # List command
@@ -223,8 +335,8 @@ def main():
             print(f"Imported {len(imported)} records")
 
     elif args.command == "add":
-        if add_text(args.id, args.title, args.tradition, args.language,
-                   args.date, args.source, args.notes):
+        if add_text(args.id, args.title, args.tradition, args.author,
+                   args.origin, args.date, args.type, args.notes):
             print(f"Added: {args.title}")
         else:
             print("Failed to add text")
