@@ -1,0 +1,622 @@
+Source: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0054
+Downloaded: 2026-01-25T05:37:27.355800
+============================================================
+
+P. Vergilius Maro, 
+Aeneid,
+Book 1, line 1
+P. Vergilius Maro,
+Aeneid
+Theodore C. Williams, Ed.
+("Agamemnon", "Hom. Od. 9.1", "denarius")
+All Search Options
+[
+view abbreviations
+]
+Home
+Collections/Texts
+Perseus Catalog
+Research
+Grants
+Open Source
+About
+Help
+Hide browse bar
+Your current position in the text is marked in blue. Click anywhere in the 
+		line to jump to another position:
+book:
+book 1
+book 2
+book 3
+book 4
+book 5
+book 6
+book 7
+book 8
+book 9
+book 10
+book 11
+book 12
+card:
+lines 1-7
+lines 8-11
+lines 12-33
+lines 34-49
+lines 50-64
+lines 65-75
+lines 76-80
+lines 81-101
+lines 102-123
+lines 124-131
+lines 132-141
+lines 142-156
+lines 157-179
+lines 180-197
+lines 198-207
+lines 208-222
+lines 223-253
+lines 254-271
+lines 272-296
+lines 297-304
+lines 305-324
+lines 325-334
+lines 335-371
+lines 372-386
+lines 387-401
+lines 402-417
+lines 418-440
+lines 441-463
+lines 464-493
+lines 494-519
+lines 520-543
+lines 544-560
+lines 561-578
+lines 579-612
+lines 613-642
+lines 643-656
+lines 657-694
+lines 695-722
+lines 723ff.
+This text is part of:
+Greek and Roman Materials
+Search the Perseus Catalog for:
+Editions/Translations
+Author Group
+View text chunked by:
+book
+:
+line
+Table of Contents:
+book 1
+lines 1-7
+lines 8-11
+lines 12-33
+lines 34-49
+lines 50-64
+lines 65-75
+lines 76-80
+lines 81-101
+lines 102-123
+lines 124-131
+lines 132-141
+lines 142-156
+lines 157-179
+lines 180-197
+lines 198-207
+lines 208-222
+lines 223-253
+lines 254-271
+lines 272-296
+lines 297-304
+lines 305-324
+lines 325-334
+lines 335-371
+lines 372-386
+lines 387-401
+lines 402-417
+lines 418-440
+lines 441-463
+lines 464-493
+lines 494-519
+lines 520-543
+lines 544-560
+lines 561-578
+lines 579-612
+lines 613-642
+lines 643-656
+lines 657-694
+lines 695-722
+lines 723ff.
+book 2
+lines 1-12
+lines 13-20
+lines 21-39
+lines 40-56
+lines 57-76
+lines 77-104
+lines 105-144
+lines 145-194
+lines 195-233
+lines 234-249
+lines 250-267
+lines 268-297
+lines 298-317
+lines 318-346
+lines 347-369
+lines 370-401
+lines 402-437
+lines 438-452
+lines 453-468
+lines 469-505
+lines 506-525
+lines 526-558
+lines 559-566
+lines 567-587
+lines 588-623
+lines 624-633
+lines 634-649
+lines 650-670
+lines 671-678
+lines 679-691
+lines 692-751
+lines 752-794
+lines 795ff.
+book 3
+lines 1-12
+lines 13-18
+lines 19-48
+lines 49-68
+lines 69-83
+lines 84-89
+lines 90-120
+lines 121-134
+lines 135-146
+lines 147-191
+lines 192-257
+lines 258-277
+lines 278-293
+lines 294-319
+lines 320-355
+lines 356-373
+lines 374-440
+lines 441-462
+lines 463-471
+lines 472-505
+lines 506-520
+lines 521-547
+lines 548-569
+lines 570-587
+lines 588-612
+lines 613-654
+lines 655-674
+lines 675-691
+lines 692-715
+lines 716ff.
+book 4
+lines 1-30
+lines 31-53
+lines 54-89
+lines 90-104
+lines 105-128
+lines 129-159
+lines 160-172
+lines 173-197
+lines 198-218
+lines 219-237
+lines 238-278
+lines 279-295
+lines 296-330
+lines 331-361
+lines 362-392
+lines 393-415
+lines 416-436
+lines 437-449
+lines 450-473
+lines 474-503
+lines 504-521
+lines 522-552
+lines 553-570
+lines 571-583
+lines 584-629
+lines 630-658
+lines 659-692
+lines 693ff.
+book 5
+lines 1-34
+lines 35-41
+lines 42-71
+lines 72-103
+lines 104-113
+lines 114-123
+lines 124-150
+lines 151-182
+lines 183-224
+lines 225-243
+lines 244-285
+lines 286-314
+lines 315-347
+lines 348-361
+lines 362-386
+lines 387-420
+lines 421-460
+lines 461-484
+lines 485-518
+lines 519-544
+lines 545-574
+lines 575-603
+lines 604-622
+lines 623-663
+lines 664-679
+lines 680-699
+lines 700-718
+lines 719-745
+lines 746-761
+lines 762-778
+lines 779-798
+lines 799-826
+lines 827-851
+lines 852ff.
+book 6
+lines 1-13
+lines 14-41
+lines 42-76
+lines 77-97
+lines 98-123
+lines 124-155
+lines 156-182
+lines 183-211
+lines 212-235
+lines 236-263
+lines 264-267
+lines 268-281
+lines 282-294
+lines 295-336
+lines 337-383
+lines 384-416
+lines 417-425
+lines 426-476
+lines 477-493
+lines 494-534
+lines 535-547
+lines 548-575
+lines 576-627
+lines 628-636
+lines 637-678
+lines 679-702
+lines 703-723
+lines 724-751
+lines 752-755
+lines 756-800
+lines 801-853
+lines 854-892
+lines 893ff.
+book 7
+lines 1-4
+lines 5-24
+lines 25-36
+lines 37-44
+lines 45-80
+lines 81-106
+lines 107-134
+lines 135-147
+lines 148-169
+lines 170-191
+lines 192-211
+lines 212-248
+lines 249-285
+lines 286-322
+lines 323-340
+lines 341-372
+lines 373-405
+lines 406-434
+lines 435-444
+lines 445-474
+lines 475-510
+lines 511-539
+lines 540-571
+lines 572-600
+lines 601-640
+lines 641-646
+lines 647-654
+lines 655-669
+lines 670-677
+lines 678-690
+lines 691-705
+lines 706-722
+lines 723-732
+lines 733-743
+lines 744-749
+lines 750-760
+lines 761-782
+lines 783-802
+lines 803ff.
+book 8
+lines 1-17
+lines 18-35
+lines 36-65
+lines 66-80
+lines 81-101
+lines 102-125
+lines 126-151
+lines 152-174
+lines 175-183
+lines 184-218
+lines 219-261
+lines 262-279
+lines 280-305
+lines 306-336
+lines 337-369
+lines 370-406
+lines 407-423
+lines 424-453
+lines 454-469
+lines 470-519
+lines 520-540
+lines 541-553
+lines 554-584
+lines 585-607
+lines 608-629
+lines 630-670
+lines 671-728
+lines 729ff.
+book 9
+lines 1-24
+lines 25-46
+lines 47-76
+lines 77-106
+lines 107-122
+lines 123-167
+lines 168-175
+lines 176-223
+lines 224-245
+lines 246-313
+lines 314-366
+lines 367-419
+lines 420-445
+lines 446-449
+lines 450-458
+lines 459-472
+lines 473-502
+lines 503-524
+lines 525-529
+lines 530-589
+lines 590-620
+lines 621-637
+lines 638-671
+lines 672-690
+lines 691-716
+lines 717-755
+lines 756-777
+lines 778ff.
+book 10
+lines 1-15
+lines 16-61
+lines 62-95
+lines 96-117
+lines 118-145
+lines 146-162
+lines 163-165
+lines 166-184
+lines 185-197
+lines 198-214
+lines 215-259
+lines 260-275
+lines 276-286
+lines 287-307
+lines 308-344
+lines 345-361
+lines 362-379
+lines 380-398
+lines 399-425
+lines 426-438
+lines 439-478
+lines 479-509
+lines 510-542
+lines 543-574
+lines 575-605
+lines 606-632
+lines 633-652
+lines 653-688
+lines 689-718
+lines 719-746
+lines 747-754
+lines 755-768
+lines 769-790
+lines 791-832
+lines 833-872
+lines 873ff.
+book 11
+lines 1-28
+lines 29-58
+lines 59-99
+lines 100-121
+lines 122-138
+lines 139-181
+lines 182-202
+lines 203-224
+lines 225-242
+lines 243-295
+lines 296-301
+lines 302-335
+lines 336-375
+lines 376-398
+lines 399-444
+lines 445-467
+lines 468-497
+lines 498-521
+lines 522-531
+lines 532-556
+lines 557-596
+lines 597-617
+lines 618-647
+lines 648-663
+lines 664-689
+lines 690-724
+lines 725-767
+lines 768-793
+lines 794-835
+lines 836-867
+lines 868-895
+lines 896ff.
+book 12
+lines 1-17
+lines 18-53
+lines 54-80
+lines 81-106
+lines 107-112
+lines 113-133
+lines 134-160
+lines 161-174
+lines 175-194
+lines 195-215
+lines 216-237
+lines 238-256
+lines 257-286
+lines 287-310
+lines 311-345
+lines 346-382
+lines 383-410
+lines 411-440
+lines 441-467
+lines 468-499
+lines 500-528
+lines 529-553
+lines 554-592
+lines 593-613
+lines 614-649
+lines 650-671
+lines 672-696
+lines 697-727
+lines 728-745
+lines 746-765
+lines 766-790
+lines 791-842
+lines 843-868
+lines 869-886
+lines 887-918
+lines 919ff.
+Current location in this text.  Enter a Perseus citation to go to another section or work. Full search 
+		    	options are on the right side and top of the page.
+Arms and the man I sing, who first made way,
+predestined exile, from the Trojan shore
+to
+Italy
+, the blest Lavinian strand.
+Smitten of storms he was on land and sea
+by violence of Heaven, to satisfy
+stern Juno's sleepless wrath; and much in war
+he suffered, seeking at the last to found
+the city, and bring o'er his fathers' gods
+to safe abode in
+Latium
+; whence arose
+the Latin race, old Alba's reverend lords,
+and from her hills wide-walled, imperial
+Rome
+.
+Vergil. Aeneid. Theodore C. Williams. trans. Boston. Houghton Mifflin Co. 1910.
+The National Endowment for the Humanities provided support for entering this text.
+This work is licensed under a
+Creative Commons Attribution-ShareAlike 3.0 United States License
+.
+An
+XML version
+of this text is available for download, 
+		with the additional restriction that you offer Perseus any modifications you make. Perseus provides credit for all accepted 
+		changes, storing new additions in a versioning system.
+show
+Browse Bar
+load
+focus
+Notes (John Conington, 1876)
+load
+focus
+Notes (Georgius Thilo, 1881)
+load
+focus
+English (John Dryden)
+load
+focus
+Latin (J. B. Greenough, 1900)
+hide
+Places (automatically extracted)
+View a map
+of the most frequently mentioned places in this document.
+Sort places
+alphabetically
+,
+as they appear on the page
+,
+by frequency
+Click on a place to search for it in this document.
+Rome (Italy)
+(1)
+Latium (Italy)
+(1)
+Italy (Italy)
+(1)
+Download
+Pleiades ancient places geospacial dataset for this text
+.
+hide
+References (6 total)
+Cross-references to this page
+		(2):
+Anne Mahoney,
+Overview of Latin Syntax
+,
+Nouns, Adjectives, and Pronouns
+Anne Mahoney,
+Overview of Latin Syntax
+,
+Sentence Construction
+Cross-references in general dictionaries to this page
+		(4):
+Lewis & Short
+,
+Trōs
+Lewis & Short
+,
+arma
+Lewis & Short
+,
+căno
+Lewis & Short
+,
+ōra
+hide
+Search
+Searching in English.
+More search options
+Limit Search to:
+Aeneid
+(this document)
+hide
+Stable Identifiers
+Citation URI:
+http://data.perseus.org/citations/urn:cts:latinLit:phi0690.phi003.perseus-eng2:1.1-1.7
+Text URI:
+http://data.perseus.org/texts/urn:cts:latinLit:phi0690.phi003.perseus-eng2
+Work URI:
+http://data.perseus.org/texts/urn:cts:latinLit:phi0690.phi003
+Catalog Record URI:
+http://data.perseus.org/catalog/urn:cts:latinLit:phi0690.phi003.perseus-eng2
+hide
+Display Preferences
+Greek Display:
+Unicode (precombined)
+Unicode (combining diacriticals)
+Beta Code
+SPIonic
+SGreek
+GreekKeys
+Latin transliteration
+Arabic Display:
+Unicode
+Buckwalter transliteration
+View by Default:
+Original Language
+Translation
+Browse Bar:
+Show by default
+Hide by default

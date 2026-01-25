@@ -549,6 +549,15 @@
       "title": "Popol Vuh",
       "sources": [
         {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/56550",
+          "translator": "Lewis Spence",
+          "year": 1908,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "The Mythic and Heroic Sagas of the Kiches of Central America"
+        },
+        {
           "source_name": "Sacred Texts",
           "source_url": "https://sacred-texts.com/nam/pvuheng.htm",
           "translator": "Lewis Spence",
@@ -1424,6 +1433,1433 @@
           "format": "pdf",
           "quality_tier": "standard",
           "notes": "Creation of the Gods - partial translation"
+        }
+      ]
+    },
+    "inannas-descent": {
+      "title": "Inanna's Descent to the Underworld",
+      "sources": [
+        {
+          "source_name": "ETCSL (Oxford)",
+          "source_url": "https://etcsl.orinst.ox.ac.uk/section1/tr141.htm",
+          "translator": "ETCSL composite",
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Composite translation from 50+ cuneiform tablets"
+        },
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/InannasDescentToTheNetherworldCentennialSurvey",
+          "translator": "Various (survey)",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Centennial survey of scholarship and translations"
+        }
+      ]
+    },
+    "metamorphoses": {
+      "title": "Metamorphoses",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/21765",
+          "translator": "Henry T. Riley",
+          "year": 1851,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Books I-VII"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/26073",
+          "translator": "Henry T. Riley",
+          "year": 1851,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Books VIII-XV"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/28621",
+          "translator": "J.J. Howard",
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "English blank verse translation"
+        }
+      ]
+    },
+    "homeric-hymns": {
+      "title": "Homeric Hymns",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/348",
+          "translator": "Hugh G. Evelyn-White",
+          "year": 1914,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Loeb Classical Library translation (also includes Hesiod)"
+        },
+        {
+          "source_name": "Perseus Digital Library",
+          "source_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0138",
+          "translator": "Hugh G. Evelyn-White",
+          "year": 1914,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "With Greek text available"
+        },
+        {
+          "source_name": "Theoi.com",
+          "source_url": "https://www.theoi.com/Text/HomericHymns1.html",
+          "translator": "Hugh G. Evelyn-White",
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Well-formatted with annotations"
+        }
+      ]
+    },
+    "aeneid": {
+      "title": "Aeneid",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/228",
+          "translator": "John Dryden",
+          "year": 1697,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Classic verse translation"
+        },
+        {
+          "source_name": "Perseus Digital Library",
+          "source_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0054",
+          "translator": "Theodore C. Williams",
+          "year": 1910,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "With Latin text available"
+        }
+      ]
+    },
+    "argonautica": {
+      "title": "Argonautica",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/830",
+          "translator": "R.C. Seaton",
+          "year": 1912,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Loeb Classical Library"
+        },
+        {
+          "source_name": "Theoi.com",
+          "source_url": "https://www.theoi.com/Text/ApolloniusRhodius1.html",
+          "translator": "R.C. Seaton",
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Well-formatted"
+        }
+      ]
+    },
+    "volsunga-saga": {
+      "title": "Völsunga saga",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/vlsng/",
+          "translator": "Eirikr Magnusson & William Morris",
+          "year": 1888,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Classic translation"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/1152",
+          "translator": "Eirikr Magnusson & William Morris",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "descent-of-ishtar": {
+      "title": "Descent of Ishtar",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/ane/ishtar.htm",
+          "translator": "M. Jastrow",
+          "year": 1915,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "From Religion of Babylonia and Assyria"
+        }
+      ]
+    },
+    "orphic-hymns": {
+      "title": "Orphic Hymns",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/cla/hoo/",
+          "translator": "Thomas Taylor",
+          "year": 1792,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "First complete English translation"
+        },
+        {
+          "source_name": "Theoi.com",
+          "source_url": "https://www.theoi.com/Text/OrphicHymns1.html",
+          "translator": "Thomas Taylor",
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Well-formatted"
+        }
+      ]
+    },
+    "apu-ollantay": {
+      "title": "Apu Ollantay",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/9068",
+          "translator": "Clements R. Markham",
+          "year": 1871,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Full English translation of Inca drama - only known Native American drama"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/nam/inca/oll/index.htm",
+          "translator": "Clements R. Markham",
+          "year": 1871,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "HTML version with annotations"
+        }
+      ]
+    },
+    "guarani-creation-myths": {
+      "title": "Guarani Creation Myths",
+      "sources": [
+        {
+          "source_name": "Universidad Nacional de Misiones",
+          "source_url": "https://www.native-languages.org/guarani-legends.htm",
+          "translator": "Various",
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Collection of Guarani legends and creation stories"
+        }
+      ]
+    },
+    "pre-columbian-myths": {
+      "title": "Pre-Columbian America: Myths and Legends",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/precolumbianamer0000mack",
+          "translator": "N/A (original English)",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "329 pages covering all major pre-Columbian traditions"
+        }
+      ]
+    },
+    "samguk-yusa": {
+      "title": "Samguk Yusa (Memorabilia of the Three Kingdoms)",
+      "sources": [
+        {
+          "source_name": "Terebess Asia Online",
+          "source_url": "https://terebess.hu/zen/mesterek/samguk-yusa.pdf",
+          "translator": "Tae-Hung Ha & Grafton K. Mintz",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Yonsei University Press translation"
+        },
+        {
+          "source_name": "HSE Russia",
+          "source_url": "https://www.hse.ru/data/2012/04/01/1265173068/SAMGUK%20YUSA_selected.pdf",
+          "translator": "Various",
+          "format": "pdf",
+          "quality_tier": "standard",
+          "notes": "Selected portions"
+        }
+      ]
+    },
+    "byliny-russian-epics": {
+      "title": "Byliny (Russian Epic Songs)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts - Slavonic Folk Tales",
+          "source_url": "https://sacred-texts.com/neu/sfs/index.htm",
+          "translator": "A.H. Wratislaw",
+          "year": 1890,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sixty Folk-Tales from Exclusively Slavonic Sources"
+        },
+        {
+          "source_name": "Sacred Texts - Russian Folk Tales",
+          "source_url": "https://sacred-texts.com/neu/ftr/index.htm",
+          "translator": "Verra Xenophontovna Kalamatiano de Blumenthal",
+          "year": 1903,
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Folk Tales From the Russian - includes Baba Yaga"
+        }
+      ]
+    },
+    "myths-north-american-indians": {
+      "title": "The Myths of the North American Indians",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/42390",
+          "translator": "N/A (original English)",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Full text with illustrations"
+        }
+      ]
+    },
+    "introduction-to-mythology": {
+      "title": "An Introduction to Mythology",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/45048",
+          "translator": "N/A (original English)",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Methodology and classification of myths"
+        }
+      ]
+    },
+    "australian-legendary-tales": {
+      "title": "Australian Legendary Tales",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/cu31924029909060",
+          "translator": "K. Langloh Parker (collector)",
+          "year": 1896,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Cornell University copy - no copyright restrictions in US"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/3833",
+          "translator": "K. Langloh Parker (collector)",
+          "year": 1896,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Full text version"
+        }
+      ]
+    },
+    "more-australian-legendary-tales": {
+      "title": "More Australian Legendary Tales",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/moreaustralianl00parkgoog",
+          "translator": "K. Langloh Parker (collector)",
+          "year": 1898,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Harvard University digitized copy"
+        }
+      ]
+    },
+    "oceanic-mythology": {
+      "title": "Oceanic Mythology (Mythology of All Races Vol. IX)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/pac/om/index.htm",
+          "translator": "Roland B. Dixon",
+          "year": 1916,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Full text with Melanesia section (Part II)"
+        }
+      ]
+    },
+    "secret-history-mongols": {
+      "title": "The Secret History of the Mongols",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Cleaves)",
+          "source_url": "https://archive.org/details/Cleaves1982SecretHistoryMongols",
+          "translator": "Francis Woodman Cleaves",
+          "year": 1982,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Standard scholarly translation - 342 pages"
+        },
+        {
+          "source_name": "Internet Archive (Rachewiltz)",
+          "source_url": "https://archive.org/details/the-secret-history-of-the-mongols-a-mongolian-epic-chronicle-of",
+          "translator": "Igor de Rachewiltz",
+          "year": 2015,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Most recent authoritative translation"
+        }
+      ]
+    },
+    "siberian-mythology": {
+      "title": "Finno-Ugric and Siberian Mythology (Mythology of All Races Vol. IV)",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/MythologyOfAllRacesVolume4",
+          "translator": "Uno Holmberg",
+          "year": 1927,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "722 pages - Finno-Ugric and Siberian mythology"
+        }
+      ]
+    },
+    "lithuanian-mythology": {
+      "title": "Baltic Wizards: Wonder Tales from Baltic Lands",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/bw/index.htm",
+          "translator": "Frances Jenkins Olcott",
+          "year": 1928,
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Folk tales from Lapland, Finland, Estonia, Latvia, Lithuania"
+        }
+      ]
+    },
+    "shan-hai-jing": {
+      "title": "Shan Hai Jing (Classic of Mountains and Seas)",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Bestiary)",
+          "source_url": "https://archive.org/details/chinesebestiarys0000unse",
+          "translator": "Richard E. Strassberg",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "A Chinese Bestiary - scholarly translation with commentary"
+        },
+        {
+          "source_name": "Project Gutenberg (Chinese)",
+          "source_url": "https://www.gutenberg.org/ebooks/25288",
+          "translator": "Original Chinese",
+          "format": "txt",
+          "quality_tier": "primary",
+          "notes": "Original Chinese text for reference"
+        }
+      ]
+    },
+    "pyramid-texts": {
+      "title": "The Pyramid Texts",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/egy/pyt/index.htm",
+          "translator": "Samuel A.B. Mercer",
+          "year": 1952,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Complete translation of Pyramid Texts"
+        }
+      ]
+    },
+    "lebor-gabala": {
+      "title": "Lebor Gabála Érenn (Book of Invasions)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/celt/gafm/index.htm",
+          "translator": "Lady Augusta Gregory",
+          "year": 1904,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Gods and Fighting Men - covers Lebor Gabála material"
+        }
+      ]
+    },
+    "zend-avesta": {
+      "title": "Zend Avesta (Sacred Books of the East)",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Complete 3 vols)",
+          "source_url": "https://archive.org/details/complete-SBE-avesta-three-volumes-in-one",
+          "translator": "James Darmesteter & L.H. Mills",
+          "year": 1880,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Complete 3-volume Avesta in single file"
+        },
+        {
+          "source_name": "Internet Archive (Vol 4 - Part I)",
+          "source_url": "https://archive.org/details/wg904",
+          "translator": "James Darmesteter",
+          "year": 1880,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "SBE Vol. 4 - Vendidad"
+        },
+        {
+          "source_name": "Internet Archive (Vol 23 - Part II)",
+          "source_url": "https://archive.org/details/wg923",
+          "translator": "James Darmesteter",
+          "year": 1883,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "SBE Vol. 23 - Sirozahs, Yasts, Nyayis"
+        },
+        {
+          "source_name": "Sacred Texts (Part I - Vendidad)",
+          "source_url": "https://sacred-texts.com/zor/sbe04/index.htm",
+          "translator": "James Darmesteter",
+          "year": 1880,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 4 - Vendidad (purity laws)"
+        },
+        {
+          "source_name": "Sacred Texts (Part II - Sirozahs/Yasts)",
+          "source_url": "https://sacred-texts.com/zor/sbe23/index.htm",
+          "translator": "James Darmesteter",
+          "year": 1883,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 23 - Hymns to deities"
+        },
+        {
+          "source_name": "Sacred Texts (Part III - Yasna)",
+          "source_url": "https://sacred-texts.com/zor/sbe31/index.htm",
+          "translator": "L.H. Mills",
+          "year": 1887,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 31 - Liturgical texts"
+        }
+      ]
+    },
+    "legends-of-egyptian-gods": {
+      "title": "Legends of the Gods: The Egyptian Texts",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/legendsofegyptia0000budg",
+          "translator": "E.A. Wallis Budge",
+          "year": 1912,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Hieroglyphic texts and translations - complete PDF"
+        },
+        {
+          "source_name": "Internet Archive (Gutenberg)",
+          "source_url": "https://archive.org/details/legendsofthegods09411gut",
+          "translator": "E.A. Wallis Budge",
+          "year": 1912,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Project Gutenberg text version"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/egy/leg/index.htm",
+          "translator": "E.A. Wallis Budge",
+          "year": 1912,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Includes History of Isis and Osiris (40+ sections)"
+        }
+      ]
+    },
+    "nihongi": {
+      "title": "Nihongi (Chronicles of Japan)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts (Part 1)",
+          "source_url": "https://sacred-texts.com/shi/nihon0.htm",
+          "translator": "W.G. Aston",
+          "year": 1896,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Nihongi Part 1 - Age of Gods"
+        },
+        {
+          "source_name": "Sacred Texts (Part 2)",
+          "source_url": "https://sacred-texts.com/shi/nihon1.htm",
+          "translator": "W.G. Aston",
+          "year": 1896,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Nihongi Part 2"
+        },
+        {
+          "source_name": "Sacred Texts (Part 3)",
+          "source_url": "https://sacred-texts.com/shi/nihon2.htm",
+          "translator": "W.G. Aston",
+          "year": 1896,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Nihongi Part 3"
+        },
+        {
+          "source_name": "Sacred Texts (Part 4)",
+          "source_url": "https://sacred-texts.com/shi/nihon3.htm",
+          "translator": "W.G. Aston",
+          "year": 1896,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Nihongi Part 4"
+        }
+      ]
+    },
+    "myths-of-ife": {
+      "title": "Myths of Ife",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/afr/ife/index.htm",
+          "translator": "John Wyndham",
+          "year": 1921,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Recited by high priests of Ife - creation, gods, sacred city"
+        }
+      ]
+    },
+    "yoruba-speaking-peoples": {
+      "title": "The Yoruba-Speaking Peoples of the Slave Coast of West Africa",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/yorubaspeakingp01elligoog",
+          "translator": "A.B. Ellis",
+          "year": 1894,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Harvard University digitized - 402 pages complete"
+        },
+        {
+          "source_name": "Internet Archive (Wellcome)",
+          "source_url": "https://archive.org/details/b21781370",
+          "translator": "A.B. Ellis",
+          "year": 1894,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Wellcome Library copy"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/afr/yor/index.htm",
+          "translator": "A.B. Ellis",
+          "year": 1894,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Detailed account of Yoruba deities and religious practices"
+        }
+      ]
+    },
+    "bacchae": {
+      "title": "The Bacchae",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/35173",
+          "translator": "Gilbert Murray",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Gilbert Murray verse translation"
+        },
+        {
+          "source_name": "Project Gutenberg (with Hippolytus)",
+          "source_url": "https://www.gutenberg.org/ebooks/8418",
+          "translator": "Gilbert Murray",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Combined Hippolytus and Bacchae"
+        }
+      ]
+    },
+    "kogoshui": {
+      "title": "Kogoshui: Gleanings from Ancient Stories",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/dli.ernet.16216",
+          "translator": "Genchi Kato & Hikoshiro Hoshino",
+          "year": 1926,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Digital Library of India scan - complete text"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/shi/kgsh/index.htm",
+          "translator": "Genchi Kato & Hikoshiro Hoshino",
+          "year": 1926,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Legendary Shinto tales from primary source"
+        }
+      ]
+    },
+    "burden-of-isis": {
+      "title": "The Burden of Isis",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/burdenofisisbein00denn",
+          "translator": "James Teackle Dennis",
+          "year": 1910,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Laments of Isis and Nephthys - complete PDF"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/egy/boi/index.htm",
+          "translator": "James Teackle Dennis",
+          "year": 1910,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Hymns to the goddess Isis - multi-page HTML"
+        }
+      ]
+    },
+    "works-and-days": {
+      "title": "Works and Days",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/cla/hesiod/works.htm",
+          "translator": "Hugh G. Evelyn-White",
+          "year": 1914,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Loeb Classical Library translation"
+        }
+      ]
+    },
+    "codex-chimalpopoca": {
+      "title": "Codex Chimalpopoca (History and Mythology of the Aztecs)",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/historymythology0000unse",
+          "translator": "John Bierhorst",
+          "year": 1992,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "First complete English translation including Legend of the Suns"
+        }
+      ]
+    },
+    "huarochiri-manuscript": {
+      "title": "The Huarochiri Manuscript",
+      "sources": [
+        {
+          "source_name": "Internet Archive (English)",
+          "source_url": "https://archive.org/details/huarochirimanusc0000unse",
+          "translator": "Frank Salomon & George Urioste",
+          "year": 1991,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "English and Quechua bilingual edition"
+        },
+        {
+          "source_name": "Internet Archive (Spanish/Arguedas)",
+          "source_url": "https://archive.org/details/ManuscritoDeHuarochiriJMArguedasCompleto",
+          "translator": "José María Arguedas",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Spanish translation by noted Peruvian author"
+        }
+      ]
+    },
+    "legends-of-maui": {
+      "title": "Legends of Maui - A Demi-God of Polynesia",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/legendsofmauid00west",
+          "translator": "W.D. Westervelt",
+          "year": 1910,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Hawaiian Gazette publication - 181 pages"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/22384",
+          "translator": "W.D. Westervelt",
+          "year": 1910,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "maui-thousand-tricks": {
+      "title": "Maui of a Thousand Tricks",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.78688",
+          "translator": "Katharine Luomala",
+          "year": 1949,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Bishop Museum - 306 pages comparative study"
+        }
+      ]
+    },
+    "tlingit-myths-texts": {
+      "title": "Tlingit Myths and Texts",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/nam/nw/tmt/index.htm",
+          "translator": "John R. Swanton",
+          "year": 1909,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Bureau of American Ethnology Bulletin 39"
+        },
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/tlingitmythstexts00swanrich",
+          "translator": "John R. Swanton",
+          "year": 1909,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "BAE Bulletin 39 - original publication"
+        }
+      ]
+    },
+    "navaho-origin-myths": {
+      "title": "Origin Myths of the Navaho Indians",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/nam/nav/omni/index.htm",
+          "translator": "Aileen O'Bryan",
+          "year": 1956,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Bureau of American Ethnology Bulletin 163"
+        }
+      ]
+    },
+    "traditions-of-hopi": {
+      "title": "The Traditions of the Hopi",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/nam/hopi/toth/index.htm",
+          "translator": "H.R. Voth",
+          "year": 1905,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Field Columbian Museum Publication 96"
+        },
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/traditionsofhopi00voth",
+          "translator": "H.R. Voth",
+          "year": 1905,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Original Field Museum publication"
+        }
+      ]
+    },
+    "seneca-myths": {
+      "title": "Seneca Indian Myths",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/nam/iro/sim/index.htm",
+          "translator": "Jeremiah Curtin",
+          "year": 1923,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "E.P. Dutton publication"
+        }
+      ]
+    },
+    "southeastern-myths-tales": {
+      "title": "Myths and Tales of the Southeastern Indians",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/nam/se/mtsi/index.htm",
+          "translator": "John R. Swanton",
+          "year": 1929,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Bureau of American Ethnology Bulletin 88"
+        }
+      ]
+    },
+    "polynesian-mythology-grey": {
+      "title": "Polynesian Mythology (Grey)",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/polynesianmythol00greyuoft",
+          "translator": "Sir George Grey",
+          "year": 1855,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Original John Murray publication"
+        },
+        {
+          "source_name": "Internet Archive (DLI)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.219427",
+          "translator": "Sir George Grey",
+          "year": 1855,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Digital Library of India scan"
+        }
+      ]
+    },
+    "hawaiian-legends-gods-ghosts": {
+      "title": "Legends of Gods and Ghosts (Hawaiian Mythology)",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/cu31924029908781",
+          "translator": "W.D. Westervelt",
+          "year": 1915,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Cornell University Library digitization"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/39195",
+          "translator": "W.D. Westervelt",
+          "year": 1915,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "jataka-cowell": {
+      "title": "The Jataka (Cowell Edition - Complete)",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Vol 1)",
+          "source_url": "https://archive.org/details/jatakaorstoriesofb01cowe",
+          "translator": "Robert Chalmers",
+          "year": 1895,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Cambridge University Press Vol. 1"
+        },
+        {
+          "source_name": "Internet Archive (Vols 1-2)",
+          "source_url": "https://archive.org/details/in.gov.ignca.5753",
+          "translator": "E.B. Cowell et al.",
+          "year": 1895,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Volumes 1-2 combined"
+        },
+        {
+          "source_name": "Internet Archive (Vols 3-4)",
+          "source_url": "https://archive.org/details/in.gov.ignca.5756",
+          "translator": "E.B. Cowell et al.",
+          "year": 1897,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Volumes 3-4 combined"
+        }
+      ]
+    },
+    "dhammapada": {
+      "title": "The Dhammapada",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Bomhard bilingual)",
+          "source_url": "https://archive.org/details/dhammapada-english-and-pali",
+          "translator": "Allan R. Bomhard",
+          "year": 2022,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "English and Pali parallel text"
+        },
+        {
+          "source_name": "Internet Archive (Narada)",
+          "source_url": "https://archive.org/details/DhammapadaWithNotes",
+          "translator": "Narada Mahathera",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "With explanatory notes"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/bud/sbe10/index.htm",
+          "translator": "Max Müller",
+          "year": 1881,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 10"
+        }
+      ]
+    },
+    "songs-russian-people": {
+      "title": "Songs of the Russian People",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/srp/index.htm",
+          "translator": "W.R.S. Ralston",
+          "year": 1872,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Complete text with mythology chapters"
+        },
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/songsrussianpeo01ralsgoog",
+          "translator": "W.R.S. Ralston",
+          "year": 1872,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Original publication"
+        }
+      ]
+    },
+    "sixty-slavonic-folktales": {
+      "title": "Sixty Folk-Tales from Exclusively Slavonic Sources",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/sfs/index.htm",
+          "translator": "A.H. Wratislaw",
+          "year": 1890,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Complete 60 tales"
+        }
+      ]
+    },
+    "byliny-hero-tales": {
+      "title": "Byliny Book: Hero Tales of Russia",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/bylinybookherota00harr",
+          "translator": "Marion Chilton Harrison",
+          "year": 1915,
+          "format": "pdf",
+          "quality_tier": "standard",
+          "notes": "Seven hero tales retold"
+        }
+      ]
+    },
+    "folk-tales-russian": {
+      "title": "Folk Tales from the Russian",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/ftr/index.htm",
+          "translator": "Various",
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Baba Yaga and other tales"
+        }
+      ]
+    },
+    "myths-legends-bantu": {
+      "title": "Myths and Legends of the Bantu",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.57033",
+          "translator": "Alice Werner",
+          "year": 1933,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "409 pages - comprehensive collection"
+        },
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/afr/mlb/index.htm",
+          "translator": "Alice Werner",
+          "year": 1933,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Complete text online"
+        }
+      ]
+    },
+    "treasury-african-folklore": {
+      "title": "A Treasury of African Folklore",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/treasuryofafrica00cour",
+          "translator": "Harold Courlander",
+          "year": 1975,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Definitive African folklore anthology"
+        }
+      ]
+    },
+    "cuchulain-of-muirthemne": {
+      "title": "Cuchulain of Muirthemne",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/celt/cuch/index.htm",
+          "translator": "Lady Gregory",
+          "year": 1902,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Complete Ulster Cycle retelling"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/14749",
+          "translator": "Lady Gregory",
+          "year": 1902,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "gods-fighting-men": {
+      "title": "Gods and Fighting Men",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/neu/celt/gafm/index.htm",
+          "translator": "Lady Gregory",
+          "year": 1904,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Tuatha Dé Danann mythology"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/14465",
+          "translator": "Lady Gregory",
+          "year": 1904,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "bibliotheca-apollodorus": {
+      "title": "The Library (Bibliotheca)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/cla/apollod/index.htm",
+          "translator": "J.G. Frazer",
+          "year": 1921,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Loeb Classical Library translation"
+        }
+      ]
+    },
+    "fasti-ovid": {
+      "title": "Fasti",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/cla/ovid/lboo/index.htm",
+          "translator": "H.T. Riley",
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Complete Fasti"
+        }
+      ]
+    },
+    "tibetan-book-of-dead-evans": {
+      "title": "The Tibetan Book of the Dead (Evans-Wentz)",
+      "sources": [
+        {
+          "source_name": "Internet Archive (1957 OUP)",
+          "source_url": "https://archive.org/details/in.gov.ignca.16167",
+          "translator": "W.Y. Evans-Wentz & Lama Kazi Dawa-Samdup",
+          "year": 1957,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Oxford University Press - 346 pages"
+        },
+        {
+          "source_name": "Internet Archive (Collection)",
+          "source_url": "https://archive.org/details/tibetan-book-of-the-dead-bardo-thodol",
+          "translator": "Various including Evans-Wentz",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Multiple translations collection"
+        }
+      ]
+    },
+    "tao-te-ching": {
+      "title": "Tao Te Ching",
+      "sources": [
+        {
+          "source_name": "Sacred Texts (Legge)",
+          "source_url": "https://sacred-texts.com/tao/taote.htm",
+          "translator": "James Legge",
+          "year": 1891,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East translation"
+        },
+        {
+          "source_name": "Sacred Texts (Goddard)",
+          "source_url": "https://sacred-texts.com/tao/ltw2/index.htm",
+          "translator": "Dwight Goddard & Bhikshu Wai-Tao",
+          "year": 1935,
+          "format": "html",
+          "quality_tier": "standard",
+          "notes": "Buddhist Bible version"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/216",
+          "translator": "James Legge",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "i-ching": {
+      "title": "I Ching (Book of Changes)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/ich/index.htm",
+          "translator": "James Legge",
+          "year": 1882,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 16"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/339",
+          "translator": "James Legge",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "chuang-tzu": {
+      "title": "Chuang Tzu (Zhuangzi)",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/tao/sbe39/index.htm",
+          "translator": "James Legge",
+          "year": 1891,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 39"
+        }
+      ]
+    },
+    "tale-of-genji": {
+      "title": "The Tale of Genji",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Waley)",
+          "source_url": "https://archive.org/details/taleofgenji00mura",
+          "translator": "Arthur Waley",
+          "year": 1935,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Classic Waley translation"
+        },
+        {
+          "source_name": "Internet Archive (Suematsu)",
+          "source_url": "https://archive.org/details/genji_monogatari_2008_librivox",
+          "translator": "Suematsu Kencho",
+          "format": "audio",
+          "quality_tier": "standard",
+          "notes": "LibriVox audiobook - first 17 chapters"
+        }
+      ]
+    },
+    "tale-of-heike": {
+      "title": "The Tale of the Heike (Heike Monogatari)",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Sadler)",
+          "source_url": "https://archive.org/details/TheHeikeMonogatari",
+          "translator": "A.L. Sadler",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Complete translation"
+        },
+        {
+          "source_name": "Internet Archive (Kitagawa/Tsuchida)",
+          "source_url": "https://archive.org/details/taleofheikeh01toky",
+          "translator": "Hiroshi Kitagawa & Bruce T. Tsuchida",
+          "year": 1975,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "University of Tokyo Press - 2 volumes"
+        }
+      ]
+    },
+    "melanesians-codrington": {
+      "title": "The Melanesians: Studies in Their Anthropology and Folk-lore",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/melanesiansstudi00codruoft",
+          "translator": "R.H. Codrington",
+          "year": 1891,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Original 1891 publication"
+        }
+      ]
+    },
+    "oceanic-mythology-dixon": {
+      "title": "Oceanic Mythology",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/oceanicmytholog02dixogoog",
+          "translator": "Roland B. Dixon",
+          "year": 1916,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Mythology of All Races series"
+        }
+      ]
+    },
+    "dede-korkut": {
+      "title": "The Book of Dede Korkut",
+      "sources": [
+        {
+          "source_name": "Internet Archive (Lewis)",
+          "source_url": "https://archive.org/details/bookofdedekorkut00lewi",
+          "translator": "Geoffrey Lewis",
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Penguin Classics translation"
+        }
+      ]
+    },
+    "pacific-island-legends": {
+      "title": "Pacific Island Legends",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/pacificislandleg00bofl",
+          "translator": "Bo Flood et al.",
+          "format": "pdf",
+          "quality_tier": "standard",
+          "notes": "Comprehensive Pacific collection"
+        }
+      ]
+    },
+    "analects-confucius": {
+      "title": "The Analects of Confucius",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/cfu/conf1.htm",
+          "translator": "James Legge",
+          "year": 1893,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Chinese Classics translation"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/4094",
+          "translator": "James Legge",
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Plain text version"
+        }
+      ]
+    },
+    "upanishads": {
+      "title": "The Upanishads",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/hin/sbe01/index.htm",
+          "translator": "Max Müller",
+          "year": 1879,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 1 (Chandogya, Talavakara, etc.)"
+        },
+        {
+          "source_name": "Sacred Texts (Vol 15)",
+          "source_url": "https://sacred-texts.com/hin/sbe15/index.htm",
+          "translator": "Max Müller",
+          "year": 1884,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 15 (more Upanishads)"
+        }
+      ]
+    },
+    "bhagavad-gita": {
+      "title": "Bhagavad Gita",
+      "sources": [
+        {
+          "source_name": "Sacred Texts",
+          "source_url": "https://sacred-texts.com/hin/sbe08/index.htm",
+          "translator": "Kâshinâth Trimbak Telang",
+          "year": 1882,
+          "format": "html",
+          "quality_tier": "scholarly",
+          "notes": "Sacred Books of the East Vol. 8"
+        },
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/2388",
+          "translator": "Edwin Arnold",
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Song Celestial poetic version"
+        }
+      ]
+    },
+    "coffin-texts": {
+      "title": "The Egyptian Coffin Texts",
+      "sources": [
+        {
+          "source_name": "Internet Archive",
+          "source_url": "https://archive.org/details/egyptiancoffinte0001faulrich",
+          "translator": "R.O. Faulkner",
+          "year": 1973,
+          "format": "pdf",
+          "quality_tier": "scholarly",
+          "notes": "Definitive Faulkner translation"
         }
       ]
     }

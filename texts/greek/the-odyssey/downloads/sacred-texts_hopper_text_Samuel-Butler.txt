@@ -1,0 +1,594 @@
+Source: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136
+Downloaded: 2026-01-25T05:18:41.436216
+============================================================
+
+Homer, 
+Odyssey,
+Book 1, line 1
+Homer,
+Odyssey
+("Agamemnon", "Hom. Od. 9.1", "denarius")
+All Search Options
+[
+view abbreviations
+]
+Home
+Collections/Texts
+Perseus Catalog
+Research
+Grants
+Open Source
+About
+Help
+Hide browse bar
+Your current position in the text is marked in blue. Click anywhere in the 
+		line to jump to another position:
+book:
+book 1
+book 2
+book 3
+book 4
+book 5
+book 6
+book 7
+book 8
+book 9
+book 10
+book 11
+book 12
+book 13
+book 14
+book 15
+book 16
+book 17
+book 18
+book 19
+book 20
+book 21
+book 22
+book 23
+book 24
+card:
+lines 1-43
+lines 44-79
+lines 80-124
+lines 125-177
+lines 178-229
+lines 230-279
+lines 280-324
+lines 325-364
+lines 365-420
+lines 421ff.
+This text is part of:
+Greek and Roman Materials
+Search the Perseus Catalog for:
+Editions/Translations
+Author Group
+View text chunked by:
+book
+:
+line
+Table of Contents:
+book 1
+lines 1-43
+lines 44-79
+lines 80-124
+lines 125-177
+lines 178-229
+lines 230-279
+lines 280-324
+lines 325-364
+lines 365-420
+lines 421ff.
+book 2
+lines 1-38
+lines 39-83
+lines 84-128
+lines 129-176
+lines 177-223
+lines 224-266
+lines 267-308
+lines 309-360
+lines 361-387
+lines 388ff.
+book 3
+lines 1-50
+lines 51-101
+lines 102-140
+lines 141-183
+lines 184-228
+lines 229-275
+lines 276-328
+lines 329-370
+lines 371-403
+lines 404-446
+lines 447ff.
+book 4
+lines 1-48
+lines 49-99
+lines 100-146
+lines 147-182
+lines 183-218
+lines 219-264
+lines 265-314
+lines 315-350
+lines 351-397
+lines 398-434
+lines 435-480
+lines 481-511
+lines 512-553
+lines 554-592
+lines 593-624
+lines 625-674
+lines 675-714
+lines 715-757
+lines 758-794
+lines 795ff.
+book 5
+lines 1-49
+lines 50-91
+lines 92-144
+lines 145-191
+lines 192-227
+lines 228-261
+lines 262-312
+lines 313-364
+lines 365-407
+lines 408-450
+lines 451ff.
+book 6
+lines 1-47
+lines 48-84
+lines 85-126
+lines 127-161
+lines 162-210
+lines 211-250
+lines 251-287
+lines 288ff.
+book 7
+lines 1-36
+lines 37-76
+lines 77-106
+lines 107-151
+lines 152-197
+lines 198-239
+lines 240-286
+lines 287-316
+lines 317ff.
+book 8
+lines 1-45
+lines 46-82
+lines 83-120
+lines 121-164
+lines 165-198
+lines 199-249
+lines 250-294
+lines 295-342
+lines 343-384
+lines 385-432
+lines 433-468
+lines 469-520
+lines 521-549
+lines 550ff.
+book 9
+lines 1-46
+lines 47-81
+lines 82-115
+lines 116-160
+lines 161-192
+lines 193-230
+lines 231-280
+lines 281-317
+lines 318-359
+lines 360-408
+lines 409-460
+lines 461-499
+lines 500-535
+lines 536ff.
+book 10
+lines 1-45
+lines 46-86
+lines 87-132
+lines 133-177
+lines 178-207
+lines 208-260
+lines 261-301
+lines 302-344
+lines 345-387
+lines 388-427
+lines 428-474
+lines 475-502
+lines 503-545
+lines 546ff.
+book 11
+lines 1-50
+lines 51-96
+lines 97-137
+lines 138-179
+lines 180-224
+lines 225-270
+lines 271-320
+lines 321-360
+lines 361-403
+lines 404-439
+lines 440-485
+lines 486-537
+lines 538-566
+lines 567-600
+lines 601ff.
+book 12
+lines 1-35
+lines 36-72
+lines 73-110
+lines 111-152
+lines 153-191
+lines 192-233
+lines 234-276
+lines 277-326
+lines 327-363
+lines 364-396
+lines 397-425
+lines 426ff.
+book 13
+lines 1-46
+lines 47-92
+lines 93-138
+lines 139-183
+lines 184-216
+lines 217-249
+lines 250-286
+lines 287-328
+lines 329-365
+lines 366-415
+lines 416ff.
+book 14
+lines 1-47
+lines 48-71
+lines 72-108
+lines 109-146
+lines 147-190
+lines 191-233
+lines 234-284
+lines 285-320
+lines 321-359
+lines 360-400
+lines 401-445
+lines 446-493
+lines 494ff.
+book 15
+lines 1-47
+lines 48-91
+lines 92-129
+lines 130-178
+lines 179-221
+lines 222-264
+lines 265-300
+lines 301-339
+lines 340-379
+lines 380-414
+lines 415-453
+lines 454-492
+lines 493-524
+lines 525ff.
+book 16
+lines 1-45
+lines 46-89
+lines 90-134
+lines 135-185
+lines 186-224
+lines 225-265
+lines 266-307
+lines 308-350
+lines 351-392
+lines 393-433
+lines 434ff.
+book 17
+lines 1-44
+lines 45-83
+lines 84-119
+lines 120-165
+lines 166-203
+lines 204-246
+lines 247-289
+lines 290-335
+lines 336-379
+lines 380-423
+lines 424-461
+lines 462-504
+lines 505-559
+lines 560ff.
+book 18
+lines 1-49
+lines 50-87
+lines 88-123
+lines 124-168
+lines 169-205
+lines 206-249
+lines 250-289
+lines 290-336
+lines 337-364
+lines 365-393
+lines 394ff.
+book 19
+lines 1-46
+lines 47-88
+lines 89-147
+lines 148-189
+lines 190-240
+lines 241-276
+lines 277-316
+lines 317-360
+lines 361-404
+lines 405-454
+lines 455-498
+lines 499-543
+lines 544-575
+lines 576ff.
+book 20
+lines 1-43
+lines 44-90
+lines 91-132
+lines 133-182
+lines 183-225
+lines 226-267
+lines 268-298
+lines 299-344
+lines 345ff.
+book 21
+lines 1-41
+lines 42-79
+lines 80-117
+lines 118-162
+lines 163-204
+lines 205-255
+lines 256-310
+lines 311-353
+lines 354-400
+lines 401ff.
+book 22
+lines 1-41
+lines 42-78
+lines 79-125
+lines 126-169
+lines 170-209
+lines 210-254
+lines 255-291
+lines 292-329
+lines 330-377
+lines 378-429
+lines 430-464
+lines 465ff.
+book 23
+lines 1-48
+lines 49-84
+lines 85-128
+lines 129-180
+lines 181-230
+lines 231-262
+lines 263-309
+lines 310-343
+lines 344ff.
+book 24
+lines 1-34
+lines 35-84
+lines 85-137
+lines 138-190
+lines 191-231
+lines 232-279
+lines 280-326
+lines 327-364
+lines 365-411
+lines 412-449
+lines 450-495
+lines 496ff.
+Current location in this text.  Enter a Perseus citation to go to another section or work. Full search 
+		    	options are on the right side and top of the page.
+[1]
+  Tell me, O Muse, of the man of many devices, who wandered full many ways after he had sacked the sacred citadel of
+Troy
+. Many were the men whose cities he saw and whose mind he learned, aye, and many the woes he suffered in his heart upon the sea,
+    [5]
+  seeking to win his own life and the return of his comrades. Yet even so he saved not his comrades, though he desired it sore, for through their own blind folly they perished—fools, who devoured the kine of Helios Hyperion; but he took from them the day of their returning.
+    [10]
+  Of these things, goddess, daughter of Zeus, beginning where thou wilt, tell thou even unto us.
+Now all the rest, as many as had escaped sheer destruction, were at home, safe from both war and sea, but Odysseus alone, filled with longing for his return and for his wife, did the queenly nymph Calypso, that bright goddess,
+    [15]
+  keep back in her hollow caves, yearning that he should be her husband. But when, as the seasons revolved, the year came in which the gods had ordained that he should return home to
+Ithaca
+, not even there was he free from toils, even among his own folk. And all the gods pitied him
+    [20]
+  save Poseidon; but he continued to rage unceasingly against godlike Odysseus until at length he reached his own land.
+Howbeit Poseidon had gone among the far-off Ethiopians—the Ethiopians who dwell sundered in twain, the farthermost of men, some where Hyperion sets and some where he rises,
+    [25]
+  there to receive a hecatomb of bulls and rams, and there he was taking his joy, sitting at the feast; but the other gods were gathered together in the halls of Olympian Zeus. Among them the father of gods and men was first to speak, for in his heart he thought of noble Aegisthus,
+    [30]
+  whom far-famed Orestes, Agamemnon's son, had slain. Thinking on him he spoke among the immortals, and said:
+“Look you now, how ready mortals are to blame the gods. It is from us, they say, that evils come, but they even of themselves, through their own blind folly, have sorrows beyond that which is ordained.
+    [35]
+  Even as now Aegisthus, beyond that which was ordained, took to himself the wedded wife of the son of Atreus, and slew him on his return, though well he knew of sheer destruction, seeing that we spake to him before, sending Hermes, the keen-sighted Argeiphontes,
+1
+that he should neither slay the man nor woo his wife;
+    [40]
+  for from Orestes shall come vengeance for the son of Atreus when once he has come to manhood and longs for his own land. So Hermes spoke, but for all his good intent he prevailed not upon the heart of Aegisthus; and now he has paid the full price of all.”
+1
+1
+Homer. The Odyssey with an English Translation by A.T. Murray, PH.D. in two volumes. Cambridge, MA., Harvard University Press; London, William Heinemann, Ltd. 1919.
+The Annenberg CPB/Project provided support for entering this text.
+Purchase a copy of this text (not necessarily the same edition) from
+Amazon.com
+This work is licensed under a
+Creative Commons Attribution-ShareAlike 3.0 United States License
+.
+An
+XML version
+of this text is available for download, 
+		with the additional restriction that you offer Perseus any modifications you make. Perseus provides credit for all accepted 
+		changes, storing new additions in a versioning system.
+show
+Browse Bar
+load
+focus
+Notes (W. Walter Merry, James Riddell, D. B. Monro, 1886)
+load
+focus
+Greek (1919)
+load
+focus
+English (Samuel Butler, Based on public domain edition, revised by Timothy Power and Gregory Nagy., 1900)
+hide
+Places (automatically extracted)
+View a map
+of the most frequently mentioned places in this document.
+Sort places
+alphabetically
+,
+as they appear on the page
+,
+by frequency
+Click on a place to search for it in this document.
+Ithaca (Greece)
+(1)
+Ilium (Turkey)
+(1)
+Download
+Pleiades ancient places geospacial dataset for this text
+.
+hide
+References (27 total)
+Commentary references to this page
+		(7):
+Sulpicia,
+Carmina Omnia
+,
+1
+Thomas W. Allen, E. E. Sikes,
+Commentary on the Homeric Hymns
+,
+HYMN TO APHRODITE
+W. Walter Merry, James Riddell, D. B. Monro,
+Commentary on the Odyssey (1886)
+,
+1.300
+W. Walter Merry, James Riddell, D. B. Monro,
+Commentary on the Odyssey (1886)
+,
+1.328
+Walter Leaf,
+Commentary on the Iliad (1900)
+,
+1.1
+Walter Leaf,
+Commentary on the Iliad (1900)
+,
+2.484
+Thomas D. Seymour,
+Commentary on Homer's Iliad, Books I-III
+,
+1.3
+Cross-references to this page
+		(6):
+Aristotle,
+Rhetoric
+,
+Aristot. Rh. 3.14
+A Dictionary of Greek and Roman Antiquities (1890)
+,
+AULAEUM
+A Dictionary of Greek and Roman Antiquities (1890)
+,
+ORA´CULUM
+A Dictionary of Greek and Roman Antiquities (1890)
+,
+SA´RCULUM
+Basil L. Gildersleeve,
+Syntax of Classical Greek
+,
+Syntax of the simple sentence
+Smith's Bio
+,
+Musae
+Cross-references in notes to this page
+		(1):
+Polybius,
+Histories
+,
+An Historian Needs Practical Experience
+Cross-references in general dictionaries to this page
+		(10):
+LSJ
+,
+ἐνέπω
+LSJ
+,
+εὔτροπος
+LSJ
+,
+ἦ τε
+LSJ
+,
+ἱκάνω
+LSJ
+,
+μάλα
+LSJ
+,
+πλάζω
+LSJ
+,
+πολύ-κροτος
+LSJ
+,
+πολύ-τροπος
+LSJ
+,
+ὑβρ-ιστής
+LSJ
+,
+χρέος
+Cross-references in text-specific dictionaries to this page
+		(3):
+Autenrieth
+,
+Μοῦσα
+Autenrieth
+,
+ἐνέπω
+Autenrieth
+,
+πολύ - τροπος
+hide
+Search
+Searching in English.
+More search options
+Limit Search to:
+Odyssey
+(this document)
+hide
+Stable Identifiers
+Citation URI:
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg002.perseus-eng1:1.1-1.43
+Text URI:
+http://data.perseus.org/texts/urn:cts:greekLit:tlg0012.tlg002.perseus-eng1
+Work URI:
+http://data.perseus.org/texts/urn:cts:greekLit:tlg0012.tlg002
+Catalog Record URI:
+http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg002.perseus-eng1
+hide
+Display Preferences
+Greek Display:
+Unicode (precombined)
+Unicode (combining diacriticals)
+Beta Code
+SPIonic
+SGreek
+GreekKeys
+Latin transliteration
+Arabic Display:
+Unicode
+Buckwalter transliteration
+View by Default:
+Original Language
+Translation
+Browse Bar:
+Show by default
+Hide by default

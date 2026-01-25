@@ -1,0 +1,221 @@
+Source: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130
+Downloaded: 2026-01-25T05:18:50.948477
+============================================================
+
+Hesiod, 
+Theogony,
+line 1
+Hesiod,
+Theogony
+("Agamemnon", "Hom. Od. 9.1", "denarius")
+All Search Options
+[
+view abbreviations
+]
+Home
+Collections/Texts
+Perseus Catalog
+Research
+Grants
+Open Source
+About
+Help
+Hide browse bar
+Your current position in the text is marked in blue. Click anywhere in the 
+		line to jump to another position:
+card:
+lines 1-28
+lines 29-52
+lines 53-62
+lines 63-103
+lines 104-138
+lines 139-172
+lines 173-206
+lines 207-239
+lines 240-269
+lines 270-303
+lines 304-336
+lines 337-370
+lines 371-403
+lines 404-452
+lines 453-491
+lines 492-506
+lines 507-544
+lines 545-584
+lines 585-616
+lines 617-653
+lines 654-686
+lines 687-728
+lines 729-766
+lines 767-806
+lines 807-819
+lines 820-852
+lines 853-885
+lines 886-900
+lines 901-937
+lines 938-962
+lines 963-1002
+lines 1003ff.
+This text is part of:
+Greek and Roman Materials
+Search the Perseus Catalog for:
+Editions/Translations
+Author Group
+Table of Contents:
+lines 1-28
+lines 29-52
+lines 53-62
+lines 63-103
+lines 104-138
+lines 139-172
+lines 173-206
+lines 207-239
+lines 240-269
+lines 270-303
+lines 304-336
+lines 337-370
+lines 371-403
+lines 404-452
+lines 453-491
+lines 492-506
+lines 507-544
+lines 545-584
+lines 585-616
+lines 617-653
+lines 654-686
+lines 687-728
+lines 729-766
+lines 767-806
+lines 807-819
+lines 820-852
+lines 853-885
+lines 886-900
+lines 901-937
+lines 938-962
+lines 963-1002
+lines 1003ff.
+Current location in this text.  Enter a Perseus citation to go to another section or work. Full search 
+		    	options are on the right side and top of the page.
+From the Heliconian Muses let us begin to sing, who hold the great and holy mount of Helicon, and dance on soft feet about the deep-blue spring and the altar of the almighty son of Cronos,
+    [5]
+  and, when they have washed their tender bodies in Permessus or in the Horse's Spring or Olmeius, make their fair, lovely dances upon highest Helicon and move with vigorous feet. Thence they arise and go abroad by night,
+    [10]
+  veiled in thick mist, and utter their song with lovely voice, praising Zeus the aegis-holder, and queenly Hera of Argos who walks on golden sandals, and the daughter of Zeus the aegis-holder bright-eyed Athena, and Phoebus Apollo, and Artemis who delights in arrows,
+    [15]
+  and Poseidon the earth holder who shakes the earth, and revered Themis, and quick-glancing
+1
+Aphrodite, and Hebe with the crown of gold, and fair Dione, Leto, Iapetus, and Cronos the crafty counsellor, Eos, and great Helius, and bright Selene,
+    [20]
+  Earth, too, and great Oceanus, and dark Night, and the holy race of all the other deathless ones that are for ever. And one day they taught Hesiod glorious song while he was shepherding his lambs under holy Helicon, and this word first the goddesses said to me—
+    [25]
+  the Muses of
+Olympus
+, daughters of Zeus who holds the aegis:
+“Shepherds of the wilderness, wretched things of shame, mere bellies, we know how to speak many false things as though they were true; but we know, when we will, to utter true things.”
+1
+The epithet probably indicates coquettishness.
+Hesiod. The Homeric Hymns and Homerica with an English Translation by Hugh G. Evelyn-White. Theogony. Cambridge, MA.,Harvard University Press; London, William Heinemann Ltd. 1914.
+The Annenberg CPB/Project provided support for entering this text.
+Purchase a copy of this text (not necessarily the same edition) from
+Amazon.com
+This work is licensed under a
+Creative Commons Attribution-ShareAlike 3.0 United States License
+.
+An
+XML version
+of this text is available for download, 
+		with the additional restriction that you offer Perseus any modifications you make. Perseus provides credit for all accepted 
+		changes, storing new additions in a versioning system.
+show
+Browse Bar
+load
+focus
+Greek (1914)
+hide
+Places (automatically extracted)
+View a map
+of the most frequently mentioned places in this document.
+Sort places
+alphabetically
+,
+as they appear on the page
+,
+by frequency
+Click on a place to search for it in this document.
+Olympus (Greece)
+(1)
+Download
+Pleiades ancient places geospacial dataset for this text
+.
+hide
+References (8 total)
+Commentary references to this page
+		(1):
+E. T. Merrill,
+Commentary on Catullus
+,
+61
+Cross-references to this page
+		(1):
+Dictionary of Greek and Roman Geography (1854)
+,
+HE´LICON
+Cross-references in notes to this page
+		(1):
+Thomas R. Martin,
+An Overview of Classical Greek History from Mycenae to Alexander
+,
+Remaking Greek Civilization
+Cross-references in general dictionaries to this page
+		(5):
+LSJ
+,
+ἔρα^μαι
+LSJ
+,
+ελ-
+LSJ
+,
+παραι-φα^σίη
+LSJ
+,
+περί
+LSJ
+,
+ὠμησ-τής
+hide
+Search
+Searching in English.
+More search options
+Limit Search to:
+Theogony
+(this document)
+hide
+Stable Identifiers
+Citation URI:
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0020.tlg001.perseus-eng1:1-28
+Text URI:
+http://data.perseus.org/texts/urn:cts:greekLit:tlg0020.tlg001.perseus-eng1
+Work URI:
+http://data.perseus.org/texts/urn:cts:greekLit:tlg0020.tlg001
+Catalog Record URI:
+http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020.tlg001.perseus-eng1
+hide
+Display Preferences
+Greek Display:
+Unicode (precombined)
+Unicode (combining diacriticals)
+Beta Code
+SPIonic
+SGreek
+GreekKeys
+Latin transliteration
+Arabic Display:
+Unicode
+Buckwalter transliteration
+View by Default:
+Original Language
+Translation
+Browse Bar:
+Show by default
+Hide by default

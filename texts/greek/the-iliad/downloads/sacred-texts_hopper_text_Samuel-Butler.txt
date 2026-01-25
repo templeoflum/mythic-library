@@ -1,0 +1,720 @@
+Source: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134
+Downloaded: 2026-01-25T05:18:27.153259
+============================================================
+
+Homer, 
+Iliad,
+Book 1, line 1
+Homer,
+Iliad
+("Agamemnon", "Hom. Od. 9.1", "denarius")
+All Search Options
+[
+view abbreviations
+]
+Home
+Collections/Texts
+Perseus Catalog
+Research
+Grants
+Open Source
+About
+Help
+Hide browse bar
+Your current position in the text is marked in blue. Click anywhere in the 
+		line to jump to another position:
+book:
+book 1
+book 2
+book 3
+book 4
+book 5
+book 6
+book 7
+book 8
+book 9
+book 10
+book 11
+book 12
+book 13
+book 14
+book 15
+book 16
+book 17
+book 18
+book 19
+book 20
+book 21
+book 22
+book 23
+book 24
+card:
+lines 1-32
+lines 33-67
+lines 68-91
+lines 92-129
+lines 130-171
+lines 172-205
+lines 206-244
+lines 245-284
+lines 285-311
+lines 312-344
+lines 345-385
+lines 386-427
+lines 428-457
+lines 458-492
+lines 493-530
+lines 531-567
+lines 568ff.
+This text is part of:
+Greek and Roman Materials
+Search the Perseus Catalog for:
+Editions/Translations
+Author Group
+View text chunked by:
+book
+:
+line
+Table of Contents:
+book 1
+lines 1-32
+lines 33-67
+lines 68-91
+lines 92-129
+lines 130-171
+lines 172-205
+lines 206-244
+lines 245-284
+lines 285-311
+lines 312-344
+lines 345-385
+lines 386-427
+lines 428-457
+lines 458-492
+lines 493-530
+lines 531-567
+lines 568ff.
+book 2
+lines 1-34
+lines 35-75
+lines 76-118
+lines 119-154
+lines 155-187
+lines 188-223
+lines 224-264
+lines 265-300
+lines 301-335
+lines 336-368
+lines 369-418
+lines 419-458
+lines 459-510
+lines 511-545
+lines 546-580
+lines 581-614
+lines 615-652
+lines 653-694
+lines 695-733
+lines 734-779
+lines 780-818
+lines 819-857
+lines 858ff.
+book 3
+lines 1-37
+lines 38-75
+lines 76-110
+lines 111-145
+lines 146-190
+lines 191-224
+lines 225-263
+lines 264-301
+lines 302-339
+lines 340-380
+lines 381-420
+lines 421ff.
+book 4
+lines 1-49
+lines 50-84
+lines 85-126
+lines 127-182
+lines 183-222
+lines 223-264
+lines 265-309
+lines 310-349
+lines 350-400
+lines 401-445
+lines 446-487
+lines 488-516
+lines 517ff.
+book 5
+lines 1-42
+lines 43-83
+lines 84-120
+lines 121-158
+lines 159-200
+lines 201-238
+lines 239-279
+lines 280-317
+lines 318-362
+lines 363-415
+lines 416-459
+lines 460-492
+lines 493-532
+lines 533-575
+lines 576-626
+lines 627-667
+lines 668-710
+lines 711-763
+lines 764-791
+lines 792-834
+lines 835-863
+lines 864-898
+lines 899ff.
+book 6
+lines 1-36
+lines 37-71
+lines 72-115
+lines 116-155
+lines 156-190
+lines 191-231
+lines 232-262
+lines 263-296
+lines 297-331
+lines 332-368
+lines 369-413
+lines 414-465
+lines 466-502
+lines 503ff.
+book 7
+lines 1-42
+lines 43-91
+lines 92-131
+lines 132-174
+lines 175-205
+lines 206-243
+lines 244-282
+lines 283-312
+lines 313-353
+lines 354-397
+lines 398-441
+lines 442ff.
+book 8
+lines 1-40
+lines 41-77
+lines 78-111
+lines 112-150
+lines 151-197
+lines 198-244
+lines 245-291
+lines 292-334
+lines 335-380
+lines 381-424
+lines 425-468
+lines 469-511
+lines 512-552
+lines 553ff.
+book 9
+lines 1-49
+lines 50-88
+lines 89-113
+lines 114-161
+lines 162-204
+lines 205-243
+lines 244-285
+lines 286-327
+lines 328-373
+lines 374-416
+lines 417-452
+lines 453-491
+lines 492-537
+lines 538-580
+lines 581-619
+lines 620-668
+lines 669ff.
+book 10
+lines 1-41
+lines 42-85
+lines 86-127
+lines 128-167
+lines 168-217
+lines 218-253
+lines 254-294
+lines 295-331
+lines 332-371
+lines 372-411
+lines 412-453
+lines 454-502
+lines 503-539
+lines 540ff.
+book 11
+lines 1-46
+lines 47-83
+lines 84-121
+lines 122-162
+lines 163-209
+lines 210-247
+lines 248-290
+lines 291-335
+lines 336-367
+lines 368-410
+lines 411-455
+lines 456-488
+lines 489-530
+lines 531-574
+lines 575-615
+lines 616-654
+lines 655-695
+lines 696-736
+lines 737-779
+lines 780-821
+lines 822ff.
+book 12
+lines 1-33
+lines 34-79
+lines 80-107
+lines 108-152
+lines 153-194
+lines 195-229
+lines 230-276
+lines 277-328
+lines 329-363
+lines 364-399
+lines 400-441
+lines 442ff.
+book 13
+lines 1-31
+lines 32-58
+lines 59-81
+lines 82-124
+lines 125-154
+lines 155-194
+lines 195-230
+lines 231-265
+lines 266-294
+lines 295-327
+lines 328-360
+lines 361-401
+lines 402-423
+lines 424-454
+lines 455-486
+lines 487-525
+lines 526-559
+lines 560-600
+lines 601-639
+lines 640-672
+lines 673-722
+lines 723-753
+lines 754-787
+lines 788-820
+lines 821ff.
+book 14
+lines 1-26
+lines 27-63
+lines 64-102
+lines 103-153
+lines 154-192
+lines 193-241
+lines 242-269
+lines 270-311
+lines 312-351
+lines 352-377
+lines 378-401
+lines 402-439
+lines 440-474
+lines 475-505
+lines 506ff.
+book 15
+lines 1-33
+lines 34-77
+lines 78-112
+lines 113-148
+lines 149-183
+lines 184-219
+lines 220-252
+lines 253-280
+lines 281-311
+lines 312-342
+lines 343-378
+lines 379-404
+lines 405-441
+lines 442-477
+lines 478-513
+lines 514-558
+lines 559-591
+lines 592-652
+lines 653-695
+lines 696ff.
+book 16
+lines 1-45
+lines 46-73
+lines 74-111
+lines 112-154
+lines 155-199
+lines 200-248
+lines 249-283
+lines 284-305
+lines 306-350
+lines 351-393
+lines 394-438
+lines 439-476
+lines 477-507
+lines 508-547
+lines 548-568
+lines 569-618
+lines 619-658
+lines 659-697
+lines 698-725
+lines 726-749
+lines 750-776
+lines 777-817
+lines 818ff.
+book 17
+lines 1-43
+lines 44-81
+lines 82-105
+lines 106-139
+lines 140-184
+lines 185-208
+lines 209-245
+lines 246-273
+lines 274-318
+lines 319-365
+lines 366-399
+lines 400-422
+lines 423-455
+lines 456-490
+lines 491-515
+lines 516-542
+lines 543-566
+lines 567-596
+lines 597-625
+lines 626-655
+lines 656-693
+lines 694-734
+lines 735ff.
+book 18
+lines 1-21
+lines 22-64
+lines 65-96
+lines 97-126
+lines 127-147
+lines 148-180
+lines 181-218
+lines 219-242
+lines 243-283
+lines 284-323
+lines 324-359
+lines 360-387
+lines 388-427
+lines 428-461
+lines 462-489
+lines 490-526
+lines 527-560
+lines 561-589
+lines 590ff.
+book 19
+lines 1-36
+lines 37-73
+lines 74-113
+lines 114-153
+lines 154-183
+lines 184-214
+lines 215-237
+lines 238-275
+lines 276-308
+lines 309-348
+lines 349-386
+lines 387ff.
+book 20
+lines 1-29
+lines 30-53
+lines 54-85
+lines 86-109
+lines 110-143
+lines 144-175
+lines 176-198
+lines 199-241
+lines 242-272
+lines 273-308
+lines 309-339
+lines 340-372
+lines 373-418
+lines 419-454
+lines 455-489
+lines 490ff.
+book 21
+lines 1-33
+lines 34-63
+lines 64-96
+lines 97-135
+lines 136-160
+lines 161-199
+lines 200-232
+lines 233-271
+lines 272-297
+lines 298-323
+lines 324-360
+lines 361-399
+lines 400-433
+lines 434-467
+lines 468-501
+lines 502-536
+lines 537-570
+lines 571ff.
+book 22
+lines 1-37
+lines 38-76
+lines 77-110
+lines 111-130
+lines 131-176
+lines 177-223
+lines 224-259
+lines 260-288
+lines 289-336
+lines 337-366
+lines 367-404
+lines 405-436
+lines 437-472
+lines 473ff.
+book 23
+lines 1-34
+lines 35-53
+lines 54-92
+lines 93-137
+lines 138-160
+lines 161-191
+lines 192-225
+lines 226-261
+lines 262-286
+lines 287-318
+lines 319-350
+lines 351-387
+lines 388-428
+lines 429-472
+lines 473-513
+lines 514-554
+lines 555-585
+lines 586-623
+lines 624-663
+lines 664-699
+lines 700-739
+lines 740-783
+lines 784-825
+lines 826-858
+lines 859ff.
+book 24
+lines 1-21
+lines 22-63
+lines 64-92
+lines 93-119
+lines 120-158
+lines 159-199
+lines 200-227
+lines 228-264
+lines 265-298
+lines 299-338
+lines 339-371
+lines 372-404
+lines 405-439
+lines 440-467
+lines 468-506
+lines 507-551
+lines 552-595
+lines 596-642
+lines 643-676
+lines 677-706
+lines 707-745
+lines 746-775
+lines 776ff.
+Current location in this text.  Enter a Perseus citation to go to another section or work. Full search 
+		    	options are on the right side and top of the page.
+[1]
+  The wrath sing,  goddess, of Peleus' son, Achilles, that destructive wrath which brought countless woes upon the Achaeans, and sent forth to Hades many valiant souls of heroes, and made them themselves spoil for dogs and every bird; thus the plan of Zeus came to fulfillment,
+    [5]
+  from the time when
+1
+first they parted in strife Atreus' son, king of men, and brilliant Achilles.
+Who then of the gods was it that brought these two together to contend?  The son of Leto and Zeus; for he in anger against the king roused throughout the host an evil pestilence, and the people began to perish,
+    [10]
+  because upon the priest Chryses the son of Atreus had wrought dishonour. For he had come to the swift ships of the Achaeans to free his daughter, bearing ransom past counting; and in his hands he held the wreaths of Apollo who strikes from afar,
+2
+on a staff of gold; and he implored all the Achaeans,
+    [15]
+  but most of all the two sons of Atreus, the marshallers of the people: “Sons of Atreus, and other well-greaved Achaeans, to you may the gods who have homes upon
+Olympus
+grant that you sack the city of Priam, and return safe to your homes; but my dear child release to me, and accept the ransom
+    [20]
+  out of reverence for the son of Zeus, Apollo who strikes from afar.”
+Then all the rest of the Achaeans shouted assent, to reverence the priest and accept the glorious ransom, yet the thing did not please the heart of Agamemnon, son of Atreus, but he sent him away harshly, and laid upon him a stern command:
+    [25]
+  “Let me not find you, old man, by the hollow ships, either tarrying now or coming back later, lest your staff and the wreath of the god not protect you. Her I will not set free. Sooner shall old age come upon her in our house, in
+Argos
+, far from her native land,
+    [30]
+  as she walks to and fro before the loom and serves my bed.  But go, do not anger me, that you may return the safer.”
+1
+1
+2
+2
+Homer. The Iliad with an English Translation by A.T. Murray, Ph.D. in two volumes. Cambridge, MA., Harvard University Press; London, William Heinemann, Ltd. 1924.
+The Annenberg CPB/Project provided support for entering this text.
+Purchase a copy of this text (not necessarily the same edition) from
+Amazon.com
+This work is licensed under a
+Creative Commons Attribution-ShareAlike 3.0 United States License
+.
+An
+XML version
+of this text is available for download, 
+		with the additional restriction that you offer Perseus any modifications you make. Perseus provides credit for all accepted 
+		changes, storing new additions in a versioning system.
+show
+Browse Bar
+load
+focus
+Notes (Allen Rogers Benner, 1903)
+load
+focus
+Notes (Thomas D. Seymour, 1891)
+load
+focus
+English (Samuel Butler, 1898)
+hide
+Places (automatically extracted)
+View a map
+of the most frequently mentioned places in this document.
+Sort places
+alphabetically
+,
+as they appear on the page
+,
+by frequency
+Click on a place to search for it in this document.
+Olympus (Greece)
+(1)
+Argos (Greece)
+(1)
+Download
+Pleiades ancient places geospacial dataset for this text
+.
+hide
+References (23 total)
+Commentary references to this page
+		(2):
+Thomas W. Allen, E. E. Sikes,
+Commentary on the Homeric Hymns
+,
+HYMN TO APHRODITE
+W. Walter Merry, James Riddell, D. B. Monro,
+Commentary on the Odyssey (1886)
+,
+1.50
+Cross-references to this page
+		(4):
+Aristotle,
+Rhetoric
+,
+Aristot. Rh. 3.14
+Harper's
+,
+Pigres
+Basil L. Gildersleeve,
+Syntax of Classical Greek
+,
+Syntax of the simple sentence
+Smith's Bio
+,
+Achilles
+Cross-references in notes to this page
+		(1):
+Apollodorus,
+Epitome
+,
+Apollod. Epit. E.4
+Cross-references in general dictionaries to this page
+		(14):
+LSJ
+,
+Πηλεύς
+LSJ
+,
+ἀξι_νό-πληκτος
+LSJ
+,
+ἀείδω
+LSJ
+,
+ἀφίημι
+LSJ
+,
+ἀκρό-πολις
+LSJ
+,
+ἀποκαθαριεύω
+LSJ
+,
+ἐννα^-ετία
+LSJ
+,
+κόλπος
+LSJ
+,
+μῆνις
+LSJ
+,
+ὀπώρ-α
+LSJ
+,
+πολύ-πλαγκτος
+LSJ
+,
+θερμαστρίς
+LSJ
+,
+τοῖος
+LSJ
+,
+χείρ
+Cross-references in text-specific dictionaries to this page
+		(2):
+Autenrieth
+,
+Μοῦσα
+Autenrieth
+,
+ἀείδω
+hide
+Search
+Searching in English.
+More search options
+Limit Search to:
+Iliad
+(this document)
+hide
+Stable Identifiers
+Citation URI:
+http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-eng1:1.1-1.32
+Text URI:
+http://data.perseus.org/texts/urn:cts:greekLit:tlg0012.tlg001.perseus-eng1
+Work URI:
+http://data.perseus.org/texts/urn:cts:greekLit:tlg0012.tlg001
+Catalog Record URI:
+http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001.perseus-eng1
+hide
+Display Preferences
+Greek Display:
+Unicode (precombined)
+Unicode (combining diacriticals)
+Beta Code
+SPIonic
+SGreek
+GreekKeys
+Latin transliteration
+Arabic Display:
+Unicode
+Buckwalter transliteration
+View by Default:
+Original Language
+Translation
+Browse Bar:
+Show by default
+Hide by default
