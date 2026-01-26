@@ -10,5 +10,8 @@ __pycache__/
 Thumbs.db
 nul
 
+# Generated outputs (rebuild with: python scripts/integration/run_validation.py)
+outputs/
+
 # Claude
 .claude/
