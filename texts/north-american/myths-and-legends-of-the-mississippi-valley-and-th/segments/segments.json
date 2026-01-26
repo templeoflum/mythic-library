@@ -1,0 +1,36 @@
+{
+  "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
+  "tradition": "north-american",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\myths-and-legends-of-the-mississippi-valley-and-th\\normalized\\myths-and-legends-of-the-mississippi-valley-and-th_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 7241,
+      "start_line": 0,
+      "end_line": 763
+    },
+    {
+      "id": "seg_002",
+      "label": "Chapter IV., which follows, is taken from the second volume",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-iv-which-follows-is-taken-from-t.txt",
+      "word_count": 17352,
+      "start_line": 764,
+      "end_line": 2381
+    },
+    {
+      "id": "seg_003",
+      "label": "story of the day",
+      "segment_type": "tale",
+      "file": "seg_003_story-of-the-day.txt",
+      "word_count": 19515,
+      "start_line": 2382,
+      "end_line": 4158
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_format": "sacred-texts",
+  "text_id": "aeneid",
+  "source_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0054",
+  "download_date": "2026-01-25T05:37:27.355800",
+  "title": "Aeneid",
+  "author": "Virgil",
+  "tradition": "roman",
+  "date_composed": "29-19 BCE",
+  "material_type": "Epic poetry",
+  "original_file": "sacred-texts_hopper_text_Theodore-C.-Williams.txt",
+  "normalization_date": "2026-01-26T10:04:04.860448",
+  "char_count": 9422,
+  "line_count": 618,
+  "word_count": 1404
+}

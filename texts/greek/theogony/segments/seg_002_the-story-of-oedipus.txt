@@ -1,0 +1,301 @@
+THE STORY OF OEDIPUS
+ THE THEBAID
+ THE EPIGONI
+ THE CYPRIA
+ THE AETHIOPIS
+ THE LITTLE ILIAD
+ THE SACK OF ILIUM
+ THE RETURNS
+ THE TELEGONY
+
+ HOMERICA
+ THE EXPEDITION OF AMPHIARAUS
+ THE TAKING OF OECHALIA
+ THE PHOCAIS
+ THE MARGITES
+ THE CERCOPES
+ THE BATTLE OF FROGS AND MICE
+
+ THE CONTEST OF HOMER AND HESIOD
+
+ ENDNOTES
+
+
+This file contains translations of the following works: Hesiod: _Works
+and Days_, _The Theogony_, fragments of _The Catalogues of Women and
+the Eoiae_, _The Shield of Heracles_ (attributed to Hesiod), and
+fragments of various works attributed to Hesiod.
+ Homer: _The Homeric Hymns_, _The Epigrams of Homer_ (both attributed
+ to Homer).
+
+ Various: Fragments of the Epic Cycle (parts of which are sometimes
+ attributed to Homer), fragments of other epic poems attributed to
+ Homer, _The Battle of Frogs and Mice_, and _The Contest of Homer and
+ Hesiod_.
+
+ This file contains only that portion of the book in English; Greek
+ texts are excluded. Where Greek characters appear in the original
+ English text, transcription in CAPITALS is substituted.
+
+
+Project Gutenberg Editor’s Note: 262 footnotes notes previously
+scattered through the text have been moved to the end of the file and
+each given an unique number. There are links to and from each footnote.
+
+
+PREPARER’S NOTE
+
+
+In order to make this file more accessible to the average computer
+user, the preparer has found it necessary to re-arrange some of the
+material. The preparer takes full responsibility for his choice of
+arrangement.
+
+A few endnotes have been added by the preparer, and some additions have
+been supplied to the original endnotes of Mr. Evelyn-White’s. Where
+this occurs I have noted the addition with my initials “DBK”. Some
+endnotes, particularly those concerning textual variations in the
+ancient Greek text, are here omitted.
+
+
+PREFACE
+
+
+This volume contains practically all that remains of the post-Homeric
+and pre-academic epic poetry.
+
+I have for the most part formed my own text. In the case of Hesiod I
+have been able to use independent collations of several MSS. by Dr.
+W.H.D. Rouse; otherwise I have depended on the _apparatus criticus_ of
+the several editions, especially that of Rzach (1902). The arrangement
+adopted in this edition, by which the complete and fragmentary poems
+are restored to the order in which they would probably have appeared
+had the Hesiodic corpus survived intact, is unusual, but should not
+need apology; the true place for the _Catalogues_ (for example),
+fragmentary as they are, is certainly after the _Theogony_.
+
+In preparing the text of the _Homeric Hymns_ my chief debt—and it is a
+heavy one—is to the edition of Allen and Sikes (1904) and to the series
+of articles in the _Journal of Hellenic Studies_ (vols. xv. _sqq_.) by
+T.W. Allen. To the same scholar and to the Delegates of the Clarendon
+Press I am greatly indebted for permission to use the restorations of
+the _Hymn to Demeter_, lines 387-401 and 462-470, printed in the Oxford
+Text of 1912.
+
+Of the fragments of the Epic Cycle I have given only such as seemed to
+possess distinct importance or interest, and in doing so have relied
+mostly upon Kinkel’s collection and on the fifth volume of the Oxford
+Homer (1912).
+
+The texts of the _Batrachomyomachia_ and of the _Contest of Homer and
+Hesiod_ are those of Baumeister and Flach respectively: where I have
+diverged from these, the fact has been noted.
+
+Owing to the circumstances of the present time I have been prevented
+from giving to the _Introduction_ that full revision which I should
+have desired.
+
+Hugh G. Evelyn-White,
+Rampton, NR. Cambridge.
+_Sept_. 9_th_, 1914.
+
+
+INTRODUCTION
+
+General
+
+The early Greek epic—that is, poetry as a natural and popular, and not
+(as it became later) an artificial and academic literary form—passed
+through the usual three phases, of development, of maturity, and of
+decline.
+
+No fragments which can be identified as belonging to the first period
+survive to give us even a general idea of the history of the earliest
+epic, and we are therefore thrown back upon the evidence of analogy
+from other forms of literature and of inference from the two great
+epics which have come down to us. So reconstructed, the earliest period
+appears to us as a time of slow development in which the characteristic
+epic metre, diction, and structure grew up slowly from crude elements
+and were improved until the verge of maturity was reached.
+
+The second period, which produced the _Iliad_ and the _Odyssey_, needs
+no description here: but it is very important to observe the effect of
+these poems on the course of post-Homeric epic. As the supreme
+perfection and universality of the _Iliad_ and the _Odyssey_ cast into
+oblivion whatever pre-Homeric poets had essayed, so these same
+qualities exercised a paralysing influence over the successors of
+Homer. If they continued to sing like their great predecessor of
+romantic themes, they were drawn as by a kind of magnetic attraction
+into the Homeric style and manner of treatment, and became mere echoes
+of the Homeric voice: in a word, Homer had so completely exhausted the
+epic _genre_, that after him further efforts were doomed to be merely
+conventional. Only the rare and exceptional genius of Vergil and Milton
+could use the Homeric medium without loss of individuality: and this
+quality none of the later epic poets seem to have possessed. Freedom
+from the domination of the great tradition could only be found by
+seeking new subjects, and such freedom was really only illusionary,
+since romantic subjects alone are suitable for epic treatment.
+
+In its third period, therefore, epic poetry shows two divergent
+tendencies. In Ionia and the islands the epic poets followed the
+Homeric tradition, singing of romantic subjects in the now stereotyped
+heroic style, and showing originality only in their choice of legends
+hitherto neglected or summarily and imperfectly treated. In continental
+Greece 1101, on the other hand, but especially in Boeotia, a new form
+of epic sprang up, which for the romance and PATHOS of the Ionian
+School substituted the practical and matter-of-fact. It dealt in moral
+and practical maxims, in information on technical subjects which are of
+service in daily life—agriculture, astronomy, augury, and the
+calendar—in matters of religion and in tracing the genealogies of men.
+Its attitude is summed up in the words of the Muses to the writer of
+the _Theogony_: ‘We can tell many a feigned tale to look like truth,
+but we can, when we will, utter the truth’ (_Theogony_ 26-27). Such a
+poetry could not be permanently successful, because the subjects of
+which it treats—if susceptible of poetic treatment at all—were
+certainly not suited for epic treatment, where unity of action which
+will sustain interest, and to which each part should contribute, is
+absolutely necessary. While, therefore, an epic like the _Odyssey_ is
+an organism and dramatic in structure, a work such as the _Theogony_ is
+a merely artificial collocation of facts, and, at best, a pageant. It
+is not surprising, therefore, to find that from the first the Boeotian
+school is forced to season its matter with romantic episodes, and that
+later it tends more and more to revert (as in the _Shield of Heracles_)
+to the Homeric tradition.
+
+The Boeotian School
+
+How did the continental school of epic poetry arise? There is little
+definite material for an answer to this question, but the probability
+is that there were at least three contributory causes. First, it is
+likely that before the rise of the Ionian epos there existed in Boeotia
+a purely popular and indigenous poetry of a crude form: it comprised,
+we may suppose, versified proverbs and precepts relating to life in
+general, agricultural maxims, weather-lore, and the like. In this sense
+the Boeotian poetry may be taken to have its germ in maxims similar to
+our English
+
+“Till May be out, ne’er cast a clout,”
+
+
+or
+
+“A rainbow in the morning
+Is the Shepherd’s warning.”
+
+
+Secondly and thirdly we may ascribe the rise of the new epic to the
+nature of the Boeotian people and, as already remarked, to a spirit of
+revolt against the old epic. The Boeotians, people of the class of
+which Hesiod represents himself to be the type, were essentially
+unromantic; their daily needs marked the general limit of their ideals,
+and, as a class, they cared little for works of fancy, for pathos, or
+for fine thought as such. To a people of this nature the Homeric epos
+would be inacceptable, and the post-Homeric epic, with its conventional
+atmosphere, its trite and hackneyed diction, and its insincere
+sentiment, would be anathema. We can imagine, therefore, that among
+such folk a settler, of Aeolic origin like Hesiod, who clearly was well
+acquainted with the Ionian epos, would naturally see that the only
+outlet for his gifts lay in applying epic poetry to new themes
+acceptable to his hearers.
+
+Though the poems of the Boeotian school 1102 were unanimously assigned
+to Hesiod down to the age of Alexandrian criticism, they were clearly
+neither the work of one man nor even of one period: some, doubtless,
+were fraudulently fathered on him in order to gain currency; but it is
+probable that most came to be regarded as his partly because of their
+general character, and partly because the names of their real authors
+were lost. One fact in this attribution is remarkable—the veneration
+paid to Hesiod.
+
+Life of Hesiod
+
+Our information respecting Hesiod is derived in the main from notices
+and allusions in the works attributed to him, and to these must be
+added traditions concerning his death and burial gathered from later
+writers.
+
+Hesiod’s father (whose name, by a perversion of _Works and Days_, 299
+PERSE DION GENOS to PERSE, DION GENOS, was thought to have been Dius)
+was a native of Cyme in Aeolis, where he was a seafaring trader and,
+perhaps, also a farmer. He was forced by poverty to leave his native
+place, and returned to continental Greece, where he settled at Ascra
+near Thespiae in Boeotia (_Works and Days_, 636 ff.). Either in Cyme or
+Ascra, two sons, Hesiod and Perses, were born to the settler, and
+these, after his death, divided the farm between them. Perses, however,
+who is represented as an idler and spendthrift, obtained and kept the
+larger share by bribing the corrupt “lords” who ruled from Thespiae
+(_Works and Days_, 37-39). While his brother wasted his patrimony and
+ultimately came to want (_Works and Days_, 34 ff.), Hesiod lived a
+farmer’s life until, according to the very early tradition preserved by
+the author of the _Theogony_ (22-23), the Muses met him as he was
+tending sheep on Mt. Helicon and “taught him a glorious song”—doubtless
+the _Works and Days_. The only other personal reference is to his
+victory in a poetical contest at the funeral games of Amphidamas at
+Chalcis in Euboea, where he won the prize, a tripod, which he dedicated
+to the Muses of Helicon (_Works and Days_, 651-9).
+
+Before we go on to the story of Hesiod’s death, it will be well to
+inquire how far the “autobiographical” notices can be treated as
+historical, especially as many critics treat some, or all of them, as
+spurious. In the first place attempts have been made to show that
+“Hesiod” is a significant name and therefore fictitious: it is only
+necessary to mention Goettling’s derivation from IEMI to ODOS (which
+would make ‘Hesiod’ mean the ‘guide’ in virtues and technical arts),
+and to refer to the pitiful attempts in the _Etymologicum Magnu_
+(_s.v._ {H}ESIODUS), to show how prejudiced and lacking even in
+plausibility such efforts are. It seems certain that “Hesiod” stands as
+a proper name in the fullest sense. Secondly, Hesiod claims that his
+father—if not he himself—came from Aeolis and settled in Boeotia. There
+is fairly definite evidence to warrant our acceptance of this: the
+dialect of the _Works and Days_ is shown by Rzach 1103 to contain
+distinct Aeolisms apart from those which formed part of the general
+stock of epic poetry. And that this Aeolic speaking poet was a Boeotian
+of Ascra seems even more certain, since the tradition is never once
+disputed, insignificant though the place was, even before its
+destruction by the Thespians.
+
+Again, Hesiod’s story of his relations with his brother Perses have
+been treated with scepticism (_see_ Murray, _Anc. Gk. Literature_, pp.
+53-54): Perses, it is urged, is clearly a mere dummy, set up to be the
+target for the poet’s exhortations. On such a matter precise evidence
+is naturally not forthcoming; but all probability is against the
+sceptical view. For 1) if the quarrel between the brothers were a
+fiction, we should expect it to be detailed at length and not noticed
+allusively and rather obscurely—as we find it; 2) as MM. Croiset
+remark, if the poet needed a lay-figure the ordinary practice was to
+introduce some mythological person—as, in fact, is done in the
+_Precepts of Chiron_. In a word, there is no more solid ground for
+treating Perses and his quarrel with Hesiod as fictitious than there
+would be for treating Cyrnus, the friend of Theognis, as mythical.
+
+Thirdly, there is the passage in the _Theogony_ relating to Hesiod and
+the Muses. It is surely an error to suppose that lines 22-35 all refer
+to Hesiod: rather, the author of the _Theogony_ tells the story of his
+own inspiration by the same Muses who _once_ taught Hesiod glorious
+song. The lines 22-3 are therefore a very early piece of tradition
+about Hesiod, and though the appearance of Muses must be treated as a
+graceful fiction, we find that a writer, later than the _Works and
+Days_ by perhaps no more than three-quarters of a century, believed in
+the actuality of Hesiod and in his life as a farmer or shepherd.
+
+Lastly, there is the famous story of the contest in song at Chalcis. In
+later times the modest version in the _Works and Days_ was elaborated,
+first by making Homer the opponent whom Hesiod conquered, while a later
+period exercised its ingenuity in working up the story of the contest
+into the elaborate form in which it still survives. Finally the
+contest, in which the two poets contended with hymns to Apollo 1104,
+was transferred to Delos. These developments certainly need no
+consideration: are we to say the same of the passage in the _Works and
+Days?_ Critics from Plutarch downwards have almost unanimously rejected
+the lines 654-662, on the ground that Hesiod’s Amphidamas is the hero
+of the Lelantine Wars between Chalcis and Eretria, whose death may be
+placed _circa_ 705 B.C.—a date which is obviously too low for the
+genuine Hesiod. Nevertheless, there is much to be said in defence of
+the passage. Hesiod’s claim in the _Works and Days_ is modest, since he
+neither pretends to have met Homer, nor to have sung in any but an
+impromptu, local festival, so that the supposed interpolation lacks a
+sufficient motive. And there is nothing in the context to show that
+Hesiod’s Amphidamas is to be identified with that Amphidamas whom
+Plutarch alone connects with the Lelantine War: the name may have been
+borne by an earlier Chalcidian, an ancestor, perhaps, of the person to
+whom Plutarch refers.

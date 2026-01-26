@@ -1,0 +1,54 @@
+{
+  "text_id": "popol-vuh",
+  "tradition": "mesoamerican",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesoamerican\\popol-vuh\\normalized\\popol-vuh_best.txt",
+  "strategy": "structural",
+  "segment_count": 5,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 1657,
+      "start_line": 0,
+      "end_line": 185
+    },
+    {
+      "id": "seg_002",
+      "label": "THE MYTH OF VUKUB-CAKIX",
+      "segment_type": "tale",
+      "file": "seg_002_the-myth-of-vukub-cakix.txt",
+      "word_count": 5416,
+      "start_line": 186,
+      "end_line": 718
+    },
+    {
+      "id": "seg_003",
+      "label": "the myth of Vukub-Cakix and elsewhere. The first appears to apply",
+      "segment_type": "tale",
+      "file": "seg_003_the-myth-of-vukub-cakix-and-elsewhere-th.txt",
+      "word_count": 1106,
+      "start_line": 719,
+      "end_line": 835
+    },
+    {
+      "id": "seg_004",
+      "label": "II. COMMENTED UPON",
+      "segment_type": "book",
+      "file": "seg_004_ii-commented-upon.txt",
+      "word_count": 1757,
+      "start_line": 836,
+      "end_line": 1004
+    },
+    {
+      "id": "seg_005",
+      "label": "III. COMMENTED UPON",
+      "segment_type": "book",
+      "file": "seg_005_iii-commented-upon.txt",
+      "word_count": 2680,
+      "start_line": 1005,
+      "end_line": 1375
+    }
+  ]
+}

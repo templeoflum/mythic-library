@@ -1,0 +1,81 @@
+{
+  "text_id": "eskimo-folk-tales",
+  "tradition": "arctic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\arctic\\eskimo-folk-tales\\normalized\\eskimo-folk-tales_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 8,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 24091,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_002",
+      "label": "section_2",
+      "segment_type": "section",
+      "file": "seg_002_section-2.txt",
+      "word_count": 5382,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_003",
+      "label": "section_3",
+      "segment_type": "section",
+      "file": "seg_003_section-3.txt",
+      "word_count": 11569,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_004",
+      "label": "section_4",
+      "segment_type": "section",
+      "file": "seg_004_section-4.txt",
+      "word_count": 2639,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_005",
+      "label": "section_5",
+      "segment_type": "section",
+      "file": "seg_005_section-5.txt",
+      "word_count": 18118,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_006",
+      "label": "section_6",
+      "segment_type": "section",
+      "file": "seg_006_section-6.txt",
+      "word_count": 575,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_007",
+      "label": "section_7",
+      "segment_type": "section",
+      "file": "seg_007_section-7.txt",
+      "word_count": 567,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_008",
+      "label": "section_8",
+      "segment_type": "section",
+      "file": "seg_008_section-8.txt",
+      "word_count": 777,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

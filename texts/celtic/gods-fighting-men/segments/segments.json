@@ -1,0 +1,999 @@
+{
+  "text_id": "gods-fighting-men",
+  "tradition": "celtic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\gods-fighting-men\\normalized\\gods-fighting-men_best.txt",
+  "strategy": "structural",
+  "segment_count": 110,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "THE STORY OF THE TUATHA DE DANAAN",
+      "segment_type": "tale",
+      "file": "seg_001_the-story-of-the-tuatha-de-danaan.txt",
+      "word_count": 4762,
+      "start_line": 2,
+      "end_line": 437
+    },
+    {
+      "id": "seg_002",
+      "label": "PART I. THE GODS",
+      "segment_type": "part",
+      "file": "seg_002_part-i-the-gods.txt",
+      "word_count": 4,
+      "start_line": 438,
+      "end_line": 439
+    },
+    {
+      "id": "seg_003",
+      "label": "I. The Coming of the Tuatha de Danaan",
+      "segment_type": "book",
+      "file": "seg_003_i-the-coming-of-the-tuatha-de-danaan.txt",
+      "word_count": 21,
+      "start_line": 440,
+      "end_line": 444
+    },
+    {
+      "id": "seg_004",
+      "label": "II. Lugh of the Long Hand",
+      "segment_type": "book",
+      "file": "seg_004_ii-lugh-of-the-long-hand.txt",
+      "word_count": 31,
+      "start_line": 445,
+      "end_line": 451
+    },
+    {
+      "id": "seg_005",
+      "label": "III. The Coming of the Gael",
+      "segment_type": "book",
+      "file": "seg_005_iii-the-coming-of-the-gael.txt",
+      "word_count": 16,
+      "start_line": 452,
+      "end_line": 456
+    },
+    {
+      "id": "seg_006",
+      "label": "IV. The Ever-Living Living Ones",
+      "segment_type": "book",
+      "file": "seg_006_iv-the-ever-living-living-ones.txt",
+      "word_count": 63,
+      "start_line": 457,
+      "end_line": 474
+    },
+    {
+      "id": "seg_007",
+      "label": "V. The Fate of The Children of Lir",
+      "segment_type": "book",
+      "file": "seg_007_v-the-fate-of-the-children-of-lir.txt",
+      "word_count": 9,
+      "start_line": 475,
+      "end_line": 477
+    },
+    {
+      "id": "seg_008",
+      "label": "PART II. THE FIANNA",
+      "segment_type": "part",
+      "file": "seg_008_part-ii-the-fianna.txt",
+      "word_count": 4,
+      "start_line": 478,
+      "end_line": 479
+    },
+    {
+      "id": "seg_009",
+      "label": "I. Finn, Son of Cumhal",
+      "segment_type": "book",
+      "file": "seg_009_i-finn-son-of-cumhal.txt",
+      "word_count": 29,
+      "start_line": 480,
+      "end_line": 487
+    },
+    {
+      "id": "seg_010",
+      "label": "II. Finn's Helpers",
+      "segment_type": "book",
+      "file": "seg_010_ii-finns-helpers.txt",
+      "word_count": 22,
+      "start_line": 488,
+      "end_line": 494
+    },
+    {
+      "id": "seg_011",
+      "label": "III. The Battle of the White Strand",
+      "segment_type": "book",
+      "file": "seg_011_iii-the-battle-of-the-white-strand.txt",
+      "word_count": 73,
+      "start_line": 495,
+      "end_line": 510
+    },
+    {
+      "id": "seg_012",
+      "label": "IV. Huntings and Enchantments",
+      "segment_type": "book",
+      "file": "seg_012_iv-huntings-and-enchantments.txt",
+      "word_count": 78,
+      "start_line": 511,
+      "end_line": 528
+    },
+    {
+      "id": "seg_013",
+      "label": "V. Oisin's Children",
+      "segment_type": "book",
+      "file": "seg_013_v-oisins-children.txt",
+      "word_count": 4,
+      "start_line": 529,
+      "end_line": 531
+    },
+    {
+      "id": "seg_014",
+      "label": "VI. Diarmuid",
+      "segment_type": "book",
+      "file": "seg_014_vi-diarmuid.txt",
+      "word_count": 31,
+      "start_line": 532,
+      "end_line": 539
+    },
+    {
+      "id": "seg_015",
+      "label": "VII. Diarmuid and Grania",
+      "segment_type": "book",
+      "file": "seg_015_vii-diarmuid-and-grania.txt",
+      "word_count": 39,
+      "start_line": 540,
+      "end_line": 550
+    },
+    {
+      "id": "seg_016",
+      "label": "VIII. Cnoc-an-Air",
+      "segment_type": "book",
+      "file": "seg_016_viii-cnoc-an-air.txt",
+      "word_count": 15,
+      "start_line": 551,
+      "end_line": 556
+    },
+    {
+      "id": "seg_017",
+      "label": "IX. The Wearing Away of the Fianna",
+      "segment_type": "book",
+      "file": "seg_017_ix-the-wearing-away-of-the-fianna.txt",
+      "word_count": 26,
+      "start_line": 557,
+      "end_line": 562
+    },
+    {
+      "id": "seg_018",
+      "label": "X. The End of the Fianna",
+      "segment_type": "book",
+      "file": "seg_018_x-the-end-of-the-fianna.txt",
+      "word_count": 24,
+      "start_line": 563,
+      "end_line": 568
+    },
+    {
+      "id": "seg_019",
+      "label": "XI. Oisin and Patrick",
+      "segment_type": "book",
+      "file": "seg_019_xi-oisin-and-patrick.txt",
+      "word_count": 24,
+      "start_line": 569,
+      "end_line": 578
+    },
+    {
+      "id": "seg_020",
+      "label": "PART ONE: THE GODS",
+      "segment_type": "part",
+      "file": "seg_020_part-one-the-gods.txt",
+      "word_count": 13,
+      "start_line": 579,
+      "end_line": 582
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER I. THE FIGHT WITH THE FIRBOLGS",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-i-the-fight-with-the-firbolgs.txt",
+      "word_count": 2278,
+      "start_line": 583,
+      "end_line": 789
+    },
+    {
+      "id": "seg_022",
+      "label": "CHAPTER II. THE REIGN OF BRES",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-ii-the-reign-of-bres.txt",
+      "word_count": 2601,
+      "start_line": 790,
+      "end_line": 1019
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER I. THE COMING OF LUGH",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-i-the-coming-of-lugh.txt",
+      "word_count": 3162,
+      "start_line": 1020,
+      "end_line": 1289
+    },
+    {
+      "id": "seg_024",
+      "label": "CHAPTER II. THE SONS OF TUIREANN",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-ii-the-sons-of-tuireann.txt",
+      "word_count": 9450,
+      "start_line": 1290,
+      "end_line": 2134
+    },
+    {
+      "id": "seg_025",
+      "label": "CHAPTER III. THE GREAT BATTLE OF MAGH TUIREADH",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-iii-the-great-battle-of-magh-tui.txt",
+      "word_count": 4075,
+      "start_line": 2135,
+      "end_line": 2499
+    },
+    {
+      "id": "seg_026",
+      "label": "CHAPTER IV. THE HIDDEN HOUSE OF LUGH",
+      "segment_type": "chapter",
+      "file": "seg_026_chapter-iv-the-hidden-house-of-lugh.txt",
+      "word_count": 879,
+      "start_line": 2500,
+      "end_line": 2580
+    },
+    {
+      "id": "seg_027",
+      "label": "CHAPTER I. THE LANDING",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-i-the-landing.txt",
+      "word_count": 1691,
+      "start_line": 2581,
+      "end_line": 2751
+    },
+    {
+      "id": "seg_028",
+      "label": "CHAPTER II. THE BATTLE OF TAILLTIN",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-ii-the-battle-of-tailltin.txt",
+      "word_count": 828,
+      "start_line": 2752,
+      "end_line": 2826
+    },
+    {
+      "id": "seg_029",
+      "label": "CHAPTER I. BODB DEARG",
+      "segment_type": "chapter",
+      "file": "seg_029_chapter-i-bodb-dearg.txt",
+      "word_count": 1693,
+      "start_line": 2827,
+      "end_line": 2979
+    },
+    {
+      "id": "seg_030",
+      "label": "CHAPTER II. THE DAGDA",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-ii-the-dagda.txt",
+      "word_count": 1283,
+      "start_line": 2980,
+      "end_line": 3095
+    },
+    {
+      "id": "seg_031",
+      "label": "CHAPTER III. ANGUS OG",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-iii-angus-og.txt",
+      "word_count": 930,
+      "start_line": 3096,
+      "end_line": 3179
+    },
+    {
+      "id": "seg_032",
+      "label": "CHAPTER IV. THE MORRIGU",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-iv-the-morrigu.txt",
+      "word_count": 711,
+      "start_line": 3180,
+      "end_line": 3242
+    },
+    {
+      "id": "seg_033",
+      "label": "CHAPTER V. AINE",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-v-aine.txt",
+      "word_count": 301,
+      "start_line": 3243,
+      "end_line": 3271
+    },
+    {
+      "id": "seg_034",
+      "label": "CHAPTER VI. AOIBHELL",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-vi-aoibhell.txt",
+      "word_count": 474,
+      "start_line": 3272,
+      "end_line": 3316
+    },
+    {
+      "id": "seg_035",
+      "label": "CHAPTER VII. MIDHIR AND ETAIN",
+      "segment_type": "chapter",
+      "file": "seg_035_chapter-vii-midhir-and-etain.txt",
+      "word_count": 4477,
+      "start_line": 3317,
+      "end_line": 3716
+    },
+    {
+      "id": "seg_036",
+      "label": "CHAPTER VIII. MANANNAN",
+      "segment_type": "chapter",
+      "file": "seg_036_chapter-viii-manannan.txt",
+      "word_count": 1240,
+      "start_line": 3717,
+      "end_line": 3826
+    },
+    {
+      "id": "seg_037",
+      "label": "CHAPTER IX. MANANNAN AT PLAY",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-ix-manannan-at-play.txt",
+      "word_count": 2292,
+      "start_line": 3827,
+      "end_line": 4022
+    },
+    {
+      "id": "seg_038",
+      "label": "CHAPTER X. HIS CALL TO BRAN",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-x-his-call-to-bran.txt",
+      "word_count": 1487,
+      "start_line": 4023,
+      "end_line": 4186
+    },
+    {
+      "id": "seg_039",
+      "label": "CHAPTER XI. HIS THREE CALLS TO CORMAC",
+      "segment_type": "chapter",
+      "file": "seg_039_chapter-xi-his-three-calls-to-cormac.txt",
+      "word_count": 2136,
+      "start_line": 4187,
+      "end_line": 4378
+    },
+    {
+      "id": "seg_040",
+      "label": "CHAPTER XII. CLIODNA'S WAVE",
+      "segment_type": "chapter",
+      "file": "seg_040_chapter-xii-cliodnas-wave.txt",
+      "word_count": 892,
+      "start_line": 4379,
+      "end_line": 4463
+    },
+    {
+      "id": "seg_041",
+      "label": "CHAPTER XIII. HIS CALL TO CONNLA",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-xiii-his-call-to-connla.txt",
+      "word_count": 790,
+      "start_line": 4464,
+      "end_line": 4537
+    },
+    {
+      "id": "seg_042",
+      "label": "CHAPTER XIV. TADG IN MANANNAN'S ISLANDS",
+      "segment_type": "chapter",
+      "file": "seg_042_chapter-xiv-tadg-in-manannans-islands.txt",
+      "word_count": 3358,
+      "start_line": 4538,
+      "end_line": 4829
+    },
+    {
+      "id": "seg_043",
+      "label": "CHAPTER XV. LAEGAIRE IN THE HAPPY PLAIN",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-xv-laegaire-in-the-happy-plain.txt",
+      "word_count": 7661,
+      "start_line": 4830,
+      "end_line": 5597
+    },
+    {
+      "id": "seg_044",
+      "label": "PART TWO: THE FIANNA",
+      "segment_type": "part",
+      "file": "seg_044_part-two-the-fianna.txt",
+      "word_count": 10,
+      "start_line": 5598,
+      "end_line": 5601
+    },
+    {
+      "id": "seg_045",
+      "label": "CHAPTER I. THE COMING OF FINN",
+      "segment_type": "chapter",
+      "file": "seg_045_chapter-i-the-coming-of-finn.txt",
+      "word_count": 3541,
+      "start_line": 5602,
+      "end_line": 5926
+    },
+    {
+      "id": "seg_046",
+      "label": "CHAPTER II. FINN'S HOUSEHOLD",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-ii-finns-household.txt",
+      "word_count": 1107,
+      "start_line": 5927,
+      "end_line": 6020
+    },
+    {
+      "id": "seg_047",
+      "label": "CHAPTER III. BIRTH OF BRAN",
+      "segment_type": "chapter",
+      "file": "seg_047_chapter-iii-birth-of-bran.txt",
+      "word_count": 703,
+      "start_line": 6021,
+      "end_line": 6084
+    },
+    {
+      "id": "seg_048",
+      "label": "CHAPTER IV. OISIN'S MOTHER",
+      "segment_type": "chapter",
+      "file": "seg_048_chapter-iv-oisins-mother.txt",
+      "word_count": 1489,
+      "start_line": 6085,
+      "end_line": 6206
+    },
+    {
+      "id": "seg_049",
+      "label": "CHAPTER V. THE BEST MEN OF THE FIANNA",
+      "segment_type": "chapter",
+      "file": "seg_049_chapter-v-the-best-men-of-the-fianna.txt",
+      "word_count": 3108,
+      "start_line": 6207,
+      "end_line": 6487
+    },
+    {
+      "id": "seg_050",
+      "label": "CHAPTER I. THE LAD OF THE SKINS",
+      "segment_type": "chapter",
+      "file": "seg_050_chapter-i-the-lad-of-the-skins.txt",
+      "word_count": 1765,
+      "start_line": 6488,
+      "end_line": 6642
+    },
+    {
+      "id": "seg_051",
+      "label": "CHAPTER II. BLACK, BROWN, AND GREY",
+      "segment_type": "chapter",
+      "file": "seg_051_chapter-ii-black-brown-and-grey.txt",
+      "word_count": 1451,
+      "start_line": 6643,
+      "end_line": 6773
+    },
+    {
+      "id": "seg_052",
+      "label": "CHAPTER III. THE HOUND",
+      "segment_type": "chapter",
+      "file": "seg_052_chapter-iii-the-hound.txt",
+      "word_count": 1386,
+      "start_line": 6774,
+      "end_line": 6887
+    },
+    {
+      "id": "seg_053",
+      "label": "the High King the whole story, and how the sons of Uar were destroying",
+      "segment_type": "tale",
+      "file": "seg_053_the-high-king-the-whole-story-and-how-th.txt",
+      "word_count": 1089,
+      "start_line": 6888,
+      "end_line": 6982
+    },
+    {
+      "id": "seg_054",
+      "label": "CHAPTER IV. RED RIDGE",
+      "segment_type": "chapter",
+      "file": "seg_054_chapter-iv-red-ridge.txt",
+      "word_count": 341,
+      "start_line": 6983,
+      "end_line": 7016
+    },
+    {
+      "id": "seg_055",
+      "label": "CHAPTER I. THE ENEMIES OF IRELAND",
+      "segment_type": "chapter",
+      "file": "seg_055_chapter-i-the-enemies-of-ireland.txt",
+      "word_count": 463,
+      "start_line": 7017,
+      "end_line": 7061
+    },
+    {
+      "id": "seg_056",
+      "label": "CHAPTER II. CAEL AND CREDHE",
+      "segment_type": "chapter",
+      "file": "seg_056_chapter-ii-cael-and-credhe.txt",
+      "word_count": 1090,
+      "start_line": 7062,
+      "end_line": 7166
+    },
+    {
+      "id": "seg_057",
+      "label": "CHAPTER III. CONN CRITHER",
+      "segment_type": "chapter",
+      "file": "seg_057_chapter-iii-conn-crither.txt",
+      "word_count": 718,
+      "start_line": 7167,
+      "end_line": 7229
+    },
+    {
+      "id": "seg_058",
+      "label": "CHAPTER IV. GLAS, SON OF BREMEN",
+      "segment_type": "chapter",
+      "file": "seg_058_chapter-iv-glas-son-of-bremen.txt",
+      "word_count": 692,
+      "start_line": 7230,
+      "end_line": 7290
+    },
+    {
+      "id": "seg_059",
+      "label": "CHAPTER V. THE HELP OF THE MEN OF DEA",
+      "segment_type": "chapter",
+      "file": "seg_059_chapter-v-the-help-of-the-men-of-dea.txt",
+      "word_count": 1165,
+      "start_line": 7291,
+      "end_line": 7386
+    },
+    {
+      "id": "seg_060",
+      "label": "CHAPTER VI. THE MARCH OF THE FIANNA",
+      "segment_type": "chapter",
+      "file": "seg_060_chapter-vi-the-march-of-the-fianna.txt",
+      "word_count": 514,
+      "start_line": 7387,
+      "end_line": 7435
+    },
+    {
+      "id": "seg_061",
+      "label": "CHAPTER VII. THE FIRST FIGHTERS",
+      "segment_type": "chapter",
+      "file": "seg_061_chapter-vii-the-first-fighters.txt",
+      "word_count": 1799,
+      "start_line": 7436,
+      "end_line": 7581
+    },
+    {
+      "id": "seg_062",
+      "label": "CHAPTER VIII. THE KING OF ULSTER'S SON",
+      "segment_type": "chapter",
+      "file": "seg_062_chapter-viii-the-king-of-ulsters-son.txt",
+      "word_count": 935,
+      "start_line": 7582,
+      "end_line": 7668
+    },
+    {
+      "id": "seg_063",
+      "label": "CHAPTER IX. THE HIGH KING'S SON",
+      "segment_type": "chapter",
+      "file": "seg_063_chapter-ix-the-high-kings-son.txt",
+      "word_count": 1000,
+      "start_line": 7669,
+      "end_line": 7752
+    },
+    {
+      "id": "seg_064",
+      "label": "CHAPTER X. THE KING OF LOCHLANN AND HIS SONS",
+      "segment_type": "chapter",
+      "file": "seg_064_chapter-x-the-king-of-lochlann-and-his-s.txt",
+      "word_count": 1649,
+      "start_line": 7753,
+      "end_line": 7888
+    },
+    {
+      "id": "seg_065",
+      "label": "CHAPTER XI. LABRAN'S JOURNEY",
+      "segment_type": "chapter",
+      "file": "seg_065_chapter-xi-labrans-journey.txt",
+      "word_count": 973,
+      "start_line": 7889,
+      "end_line": 7969
+    },
+    {
+      "id": "seg_066",
+      "label": "CHAPTER XII. THE GREAT FIGHT",
+      "segment_type": "chapter",
+      "file": "seg_066_chapter-xii-the-great-fight.txt",
+      "word_count": 2707,
+      "start_line": 7970,
+      "end_line": 8192
+    },
+    {
+      "id": "seg_067",
+      "label": "CHAPTER XIII. CREDHE'S LAMENT",
+      "segment_type": "chapter",
+      "file": "seg_067_chapter-xiii-credhes-lament.txt",
+      "word_count": 906,
+      "start_line": 8193,
+      "end_line": 8291
+    },
+    {
+      "id": "seg_068",
+      "label": "CHAPTER I. THE KING OF BRITAIN'S SON",
+      "segment_type": "chapter",
+      "file": "seg_068_chapter-i-the-king-of-britains-son.txt",
+      "word_count": 973,
+      "start_line": 8292,
+      "end_line": 8380
+    },
+    {
+      "id": "seg_069",
+      "label": "CHAPTER II. THE CAVE OF CEISCORAN",
+      "segment_type": "chapter",
+      "file": "seg_069_chapter-ii-the-cave-of-ceiscoran.txt",
+      "word_count": 861,
+      "start_line": 8381,
+      "end_line": 8467
+    },
+    {
+      "id": "seg_070",
+      "label": "CHAPTER III. DONN SON OF MIDHIR",
+      "segment_type": "chapter",
+      "file": "seg_070_chapter-iii-donn-son-of-midhir.txt",
+      "word_count": 3447,
+      "start_line": 8468,
+      "end_line": 8768
+    },
+    {
+      "id": "seg_071",
+      "label": "CHAPTER IV. THE HOSPITALITY OF CUANNA'S HOUSE",
+      "segment_type": "chapter",
+      "file": "seg_071_chapter-iv-the-hospitality-of-cuannas-ho.txt",
+      "word_count": 1347,
+      "start_line": 8769,
+      "end_line": 8877
+    },
+    {
+      "id": "seg_072",
+      "label": "CHAPTER V. CAT-HEADS AND DOG-HEADS",
+      "segment_type": "chapter",
+      "file": "seg_072_chapter-v-cat-heads-and-dog-heads.txt",
+      "word_count": 1065,
+      "start_line": 8878,
+      "end_line": 8978
+    },
+    {
+      "id": "seg_073",
+      "label": "CHAPTER VI. LOMNA'S HEAD",
+      "segment_type": "chapter",
+      "file": "seg_073_chapter-vi-lomnas-head.txt",
+      "word_count": 508,
+      "start_line": 8979,
+      "end_line": 9028
+    },
+    {
+      "id": "seg_074",
+      "label": "CHAPTER VII. ILBREC OF ESS RUADH",
+      "segment_type": "chapter",
+      "file": "seg_074_chapter-vii-ilbrec-of-ess-ruadh.txt",
+      "word_count": 3423,
+      "start_line": 9029,
+      "end_line": 9316
+    },
+    {
+      "id": "seg_075",
+      "label": "CHAPTER VIII. THE CAVE OF CRUACHAN",
+      "segment_type": "chapter",
+      "file": "seg_075_chapter-viii-the-cave-of-cruachan.txt",
+      "word_count": 867,
+      "start_line": 9317,
+      "end_line": 9398
+    },
+    {
+      "id": "seg_076",
+      "label": "CHAPTER IX. THE WEDDING AT CEANN SLIEVE",
+      "segment_type": "chapter",
+      "file": "seg_076_chapter-ix-the-wedding-at-ceann-slieve.txt",
+      "word_count": 2895,
+      "start_line": 9399,
+      "end_line": 9639
+    },
+    {
+      "id": "seg_077",
+      "label": "CHAPTER X. THE SHADOWY ONE",
+      "segment_type": "chapter",
+      "file": "seg_077_chapter-x-the-shadowy-one.txt",
+      "word_count": 363,
+      "start_line": 9640,
+      "end_line": 9676
+    },
+    {
+      "id": "seg_078",
+      "label": "CHAPTER XI. FINN'S MADNESS",
+      "segment_type": "chapter",
+      "file": "seg_078_chapter-xi-finns-madness.txt",
+      "word_count": 596,
+      "start_line": 9677,
+      "end_line": 9731
+    },
+    {
+      "id": "seg_079",
+      "label": "CHAPTER XII. THE RED WOMAN",
+      "segment_type": "chapter",
+      "file": "seg_079_chapter-xii-the-red-woman.txt",
+      "word_count": 1888,
+      "start_line": 9732,
+      "end_line": 9888
+    },
+    {
+      "id": "seg_080",
+      "label": "CHAPTER XIII. FINN AND THE PHANTOMS",
+      "segment_type": "chapter",
+      "file": "seg_080_chapter-xiii-finn-and-the-phantoms.txt",
+      "word_count": 1211,
+      "start_line": 9889,
+      "end_line": 10002
+    },
+    {
+      "id": "seg_081",
+      "label": "CHAPTER XIV. THE PIGS OF ANGUS",
+      "segment_type": "chapter",
+      "file": "seg_081_chapter-xiv-the-pigs-of-angus.txt",
+      "word_count": 1321,
+      "start_line": 10003,
+      "end_line": 10124
+    },
+    {
+      "id": "seg_082",
+      "label": "CHAPTER XV. THE HUNT OF SLIEVE CUILINN",
+      "segment_type": "chapter",
+      "file": "seg_082_chapter-xv-the-hunt-of-slieve-cuilinn.txt",
+      "word_count": 3069,
+      "start_line": 10125,
+      "end_line": 10395
+    },
+    {
+      "id": "seg_083",
+      "label": "CHAPTER I. BIRTH OF DIARMUID",
+      "segment_type": "chapter",
+      "file": "seg_083_chapter-i-birth-of-diarmuid.txt",
+      "word_count": 879,
+      "start_line": 10396,
+      "end_line": 10470
+    },
+    {
+      "id": "seg_084",
+      "label": "CHAPTER II. HOW DIARMUID GOT HIS LOVE-SPOT",
+      "segment_type": "chapter",
+      "file": "seg_084_chapter-ii-how-diarmuid-got-his-love-spo.txt",
+      "word_count": 854,
+      "start_line": 10471,
+      "end_line": 10546
+    },
+    {
+      "id": "seg_085",
+      "label": "CHAPTER III. THE DAUGHTER OF KING UNDER-WAVE",
+      "segment_type": "chapter",
+      "file": "seg_085_chapter-iii-the-daughter-of-king-under-w.txt",
+      "word_count": 3024,
+      "start_line": 10547,
+      "end_line": 10794
+    },
+    {
+      "id": "seg_086",
+      "label": "CHAPTER IV. THE HARD SERVANT",
+      "segment_type": "chapter",
+      "file": "seg_086_chapter-iv-the-hard-servant.txt",
+      "word_count": 4657,
+      "start_line": 10795,
+      "end_line": 11200
+    },
+    {
+      "id": "seg_087",
+      "label": "CHAPTER V. THE HOUSE OF THE QUICKEN TREES",
+      "segment_type": "chapter",
+      "file": "seg_087_chapter-v-the-house-of-the-quicken-trees.txt",
+      "word_count": 705,
+      "start_line": 11201,
+      "end_line": 11266
+    },
+    {
+      "id": "seg_088",
+      "label": "CHAPTER I. THE FLIGHT FROM TEAMHAIR",
+      "segment_type": "chapter",
+      "file": "seg_088_chapter-i-the-flight-from-teamhair.txt",
+      "word_count": 2539,
+      "start_line": 11267,
+      "end_line": 11485
+    },
+    {
+      "id": "seg_089",
+      "label": "CHAPTER II. THE PURSUIT",
+      "segment_type": "chapter",
+      "file": "seg_089_chapter-ii-the-pursuit.txt",
+      "word_count": 2156,
+      "start_line": 11486,
+      "end_line": 11661
+    },
+    {
+      "id": "seg_090",
+      "label": "CHAPTER III. THE GREEN CHAMPIONS",
+      "segment_type": "chapter",
+      "file": "seg_090_chapter-iii-the-green-champions.txt",
+      "word_count": 3784,
+      "start_line": 11662,
+      "end_line": 11983
+    },
+    {
+      "id": "seg_091",
+      "label": "CHAPTER IV. THE WOOD OF DUBHROS",
+      "segment_type": "chapter",
+      "file": "seg_091_chapter-iv-the-wood-of-dubhros.txt",
+      "word_count": 4567,
+      "start_line": 11984,
+      "end_line": 12363
+    },
+    {
+      "id": "seg_092",
+      "label": "CHAPTER V. THE QUARREL",
+      "segment_type": "chapter",
+      "file": "seg_092_chapter-v-the-quarrel.txt",
+      "word_count": 1136,
+      "start_line": 12364,
+      "end_line": 12480
+    },
+    {
+      "id": "seg_093",
+      "label": "CHAPTER VI. THE WANDERERS",
+      "segment_type": "chapter",
+      "file": "seg_093_chapter-vi-the-wanderers.txt",
+      "word_count": 1315,
+      "start_line": 12481,
+      "end_line": 12616
+    },
+    {
+      "id": "seg_094",
+      "label": "CHAPTER VII. FIGHTING AND PEACE",
+      "segment_type": "chapter",
+      "file": "seg_094_chapter-vii-fighting-and-peace.txt",
+      "word_count": 1190,
+      "start_line": 12617,
+      "end_line": 12729
+    },
+    {
+      "id": "seg_095",
+      "label": "CHAPTER VIII. THE BOAR OF BEINN GULBAIN",
+      "segment_type": "chapter",
+      "file": "seg_095_chapter-viii-the-boar-of-beinn-gulbain.txt",
+      "word_count": 3998,
+      "start_line": 12730,
+      "end_line": 13079
+    },
+    {
+      "id": "seg_096",
+      "label": "CHAPTER I. TAILC, SON OF TREON",
+      "segment_type": "chapter",
+      "file": "seg_096_chapter-i-tailc-son-of-treon.txt",
+      "word_count": 1108,
+      "start_line": 13080,
+      "end_line": 13177
+    },
+    {
+      "id": "seg_097",
+      "label": "CHAPTER II. MEARGACH'S WIFE",
+      "segment_type": "chapter",
+      "file": "seg_097_chapter-ii-meargachs-wife.txt",
+      "word_count": 2232,
+      "start_line": 13178,
+      "end_line": 13412
+    },
+    {
+      "id": "seg_098",
+      "label": "CHAPTER III. AILNE'S REVENGE",
+      "segment_type": "chapter",
+      "file": "seg_098_chapter-iii-ailnes-revenge.txt",
+      "word_count": 2442,
+      "start_line": 13413,
+      "end_line": 13627
+    },
+    {
+      "id": "seg_099",
+      "label": "CHAPTER I. THE QUARREL WITH THE SONS OF MORNA",
+      "segment_type": "chapter",
+      "file": "seg_099_chapter-i-the-quarrel-with-the-sons-of-m.txt",
+      "word_count": 2260,
+      "start_line": 13628,
+      "end_line": 13813
+    },
+    {
+      "id": "seg_100",
+      "label": "CHAPTER II. DEATH OF GOLL",
+      "segment_type": "chapter",
+      "file": "seg_100_chapter-ii-death-of-goll.txt",
+      "word_count": 848,
+      "start_line": 13814,
+      "end_line": 13891
+    },
+    {
+      "id": "seg_101",
+      "label": "CHAPTER III. THE BATTLE OF GABHRA",
+      "segment_type": "chapter",
+      "file": "seg_101_chapter-iii-the-battle-of-gabhra.txt",
+      "word_count": 1946,
+      "start_line": 13892,
+      "end_line": 14066
+    },
+    {
+      "id": "seg_102",
+      "label": "CHAPTER I. DEATH OF BRAN",
+      "segment_type": "chapter",
+      "file": "seg_102_chapter-i-death-of-bran.txt",
+      "word_count": 218,
+      "start_line": 14067,
+      "end_line": 14092
+    },
+    {
+      "id": "seg_103",
+      "label": "CHAPTER II. THE CALL OF OISIN",
+      "segment_type": "chapter",
+      "file": "seg_103_chapter-ii-the-call-of-oisin.txt",
+      "word_count": 1018,
+      "start_line": 14093,
+      "end_line": 14194
+    },
+    {
+      "id": "seg_104",
+      "label": "CHAPTER III. THE LAST OF THE GREAT MEN",
+      "segment_type": "chapter",
+      "file": "seg_104_chapter-iii-the-last-of-the-great-men.txt",
+      "word_count": 993,
+      "start_line": 14195,
+      "end_line": 14291
+    },
+    {
+      "id": "seg_105",
+      "label": "CHAPTER I. OISIN'S STORY",
+      "segment_type": "chapter",
+      "file": "seg_105_chapter-i-oisins-story.txt",
+      "word_count": 2044,
+      "start_line": 14292,
+      "end_line": 14475
+    },
+    {
+      "id": "seg_106",
+      "label": "CHAPTER II. OISIN IN PATRICK'S HOUSE",
+      "segment_type": "chapter",
+      "file": "seg_106_chapter-ii-oisin-in-patricks-house.txt",
+      "word_count": 1200,
+      "start_line": 14476,
+      "end_line": 14581
+    },
+    {
+      "id": "seg_107",
+      "label": "CHAPTER III. THE ARGUMENTS",
+      "segment_type": "chapter",
+      "file": "seg_107_chapter-iii-the-arguments.txt",
+      "word_count": 3628,
+      "start_line": 14582,
+      "end_line": 15019
+    },
+    {
+      "id": "seg_108",
+      "label": "CHAPTER IV. OISIN'S LAMENTS",
+      "segment_type": "chapter",
+      "file": "seg_108_chapter-iv-oisins-laments.txt",
+      "word_count": 4518,
+      "start_line": 15020,
+      "end_line": 15484
+    },
+    {
+      "id": "seg_109",
+      "label": "PART ONE. BOOKS ONE, TWO, AND THREE",
+      "segment_type": "part",
+      "file": "seg_109_part-one-books-one-two-and-three.txt",
+      "word_count": 265,
+      "start_line": 15485,
+      "end_line": 15561
+    },
+    {
+      "id": "seg_110",
+      "label": "PART TWO. THE FIANNA",
+      "segment_type": "part",
+      "file": "seg_110_part-two-the-fianna.txt",
+      "word_count": 1582,
+      "start_line": 15562,
+      "end_line": 16000
+    }
+  ]
+}

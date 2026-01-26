@@ -1,0 +1,18 @@
+{
+  "text_id": "sixty-slavonic-folktales",
+  "tradition": "slavic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\slavic\\sixty-slavonic-folktales\\normalized\\sixty-slavonic-folktales_best.txt",
+  "strategy": "single",
+  "segment_count": 1,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "full_text",
+      "segment_type": "full",
+      "file": "seg_001_full-text.txt",
+      "word_count": 544,
+      "start_line": 0,
+      "end_line": 137
+    }
+  ]
+}

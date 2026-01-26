@@ -43,15 +43,32 @@ mythic-library/
 │   ├── {tradition}/                # e.g., greek, norse, african
 │   │   └── {text-id}/              # e.g., the-iliad, poetic-edda
 │   │       ├── downloads/          # Acquired files (PDF, TXT, HTML)
+│   │       ├── normalized/         # Clean UTF-8 text + metadata
+│   │       ├── segments/           # Structural segments
 │   │       └── SOURCES.md          # Provenance documentation
+├── data/
+│   ├── mythic_patterns.db          # SQLite pattern database (137 MB)
+│   ├── thompson_motif_index.json   # 149 Thompson motif entries
+│   ├── entities.json               # Per-text entity extractions
+│   ├── entity_catalog.json         # Aggregated entity catalog
+│   ├── entity_aliases.json         # Cross-cultural name mappings
+│   ├── motif_tags.json             # Per-text motif tags
+│   └── motif_distribution.json     # Cross-text motif frequencies
 ├── sources/
 │   ├── master_catalog.csv          # All texts with metadata
 │   ├── curated_sources.json        # Verified source URLs by text
-│   └── download_log.json           # Download history with checksums
+│   ├── download_log.json           # Download history with checksums
+│   ├── corpus_audit.json           # Full corpus audit results
+│   └── best_versions.json          # Best version per text
 ├── scripts/
 │   ├── bulk_download.py            # Multi-source downloader
 │   ├── add_*.py                    # Catalog expansion scripts
-│   └── analyze_gaps.py             # Coverage analysis
+│   ├── analyze_gaps.py             # Coverage analysis
+│   ├── normalize/                  # Phase 3.1: Audit & normalization
+│   ├── segment/                    # Phase 3.2: Text segmentation
+│   ├── extract/                    # Phase 3.3: Entity extraction
+│   ├── motif/                      # Phase 3.4: Motif tagging
+│   └── database/                   # Phase 3.5: Pattern database
 └── docs/
     ├── gap_analysis_v3.md          # Current gap analysis
     └── DEVELOPMENT.md              # Development log
@@ -71,6 +88,8 @@ Automated acquisition from:
 
 ## Usage
 
+### Text Acquisition (Phase 1-2)
+
 ```bash
 # Download all texts for a specific work
 python scripts/bulk_download.py --text epic-of-gilgamesh
@@ -80,9 +99,42 @@ python scripts/bulk_download.py --source gutenberg
 
 # Dry run to see what would download
 python scripts/bulk_download.py --dry-run
+```
 
-# Skip already downloaded files
-python scripts/bulk_download.py --skip-existing
+### Structured Extraction (Phase 3)
+
+```bash
+# Run the full extraction pipeline
+python scripts/normalize/audit_corpus.py          # Audit corpus health
+python scripts/normalize/normalize_text.py         # Normalize all texts
+python scripts/normalize/select_best.py            # Select best versions
+python scripts/segment/segment_text.py             # Segment into structural units
+python scripts/extract/extract_entities.py         # Extract named entities
+python scripts/motif/tag_motifs.py                 # Tag with Thompson motifs
+python scripts/database/create_db.py --reset       # Build pattern database
+```
+
+### Querying the Pattern Database
+
+```bash
+# Run all demonstration queries
+python scripts/database/query_patterns.py
+
+# Specific queries
+python scripts/database/query_patterns.py --query stats      # Database statistics
+python scripts/database/query_patterns.py --query patterns    # Cross-cultural patterns
+python scripts/database/query_patterns.py --query flood       # Flood narratives
+python scripts/database/query_patterns.py --query descent     # Descent to underworld
+python scripts/database/query_patterns.py --query entities    # Cross-tradition entities
+python scripts/database/query_patterns.py --query hero        # Hero cycle texts
+python scripts/database/query_patterns.py --query creation    # Creation myths
+python scripts/database/query_patterns.py --query trickster   # Trickster narratives
+
+# Full-text search
+python scripts/database/query_patterns.py --search "serpent AND world"
+
+# Custom SQL
+python scripts/database/query_patterns.py --sql "SELECT * FROM patterns ORDER BY tradition_count DESC"
 ```
 
 ## Key Texts by Mythic Function
@@ -125,6 +177,37 @@ Each text includes:
 3. **Content validation**: Key phrase detection, minimum size checks
 4. **Multiple translations**: Where available, for cross-reference
 
+## Pattern Database
+
+The SQLite database at `data/mythic_patterns.db` contains:
+
+| Table | Rows | Description |
+|-------|------|-------------|
+| `texts` | 132 | Core metadata (96 usable with content) |
+| `segments` | 4,000 | Structural units with full text |
+| `entities` | 173 | Canonical entity records |
+| `entity_mentions` | 32,897 | Entity occurrences in segments |
+| `motifs` | 149 | Thompson Motif Index reference |
+| `motif_tags` | 55,539 | Motif assignments with confidence |
+| `patterns` | 18 | Cross-cultural pattern definitions |
+| `pattern_attestations` | 786 | Pattern evidence across texts |
+| `segments_fts` | — | FTS5 full-text search index |
+
+### Cross-Cultural Patterns Identified
+
+| Pattern | Traditions | Texts |
+|---------|-----------|-------|
+| Cosmogony/Creation | 26 | 73 |
+| Hero Cycle | 26 | 72 |
+| Creation of Humanity | 24 | 66 |
+| Quest for Immortality | 24 | 66 |
+| Theft of Fire | 24 | 64 |
+| Descent to Underworld | 24 | 61 |
+| World Flood | 20 | 51 |
+| Dragon Slaying | 22 | 49 |
+| Trickster | 20 | 47 |
+| Dying & Rising God | 20 | 40 |
+
 ## Roadmap
 
 ### Phase 1: Foundation (Complete)
@@ -133,18 +216,24 @@ Each text includes:
 - [x] Content validation system
 - [x] Gap analysis framework
 
-### Phase 2: Expansion (Current)
+### Phase 2: Expansion (Complete)
 - [x] Regional gap filling (Australian, Korean, Mongol, Baltic, etc.)
 - [x] Archetype-focused additions (Dying God, Trickster cycles)
 - [x] Chinese/Confucian classics
 - [x] Japanese literary expansion
-- [ ] Remaining Coffin Texts source fix
 
-### Phase 3: Structured Extraction (Planned)
-- [ ] NLP pipeline for motif extraction
-- [ ] Cross-cultural pattern database
-- [ ] Archetype confidence scoring
-- [ ] Integration with Mythopoetic OS layers
+### Phase 3: Structured Extraction (Complete)
+- [x] Corpus audit & text normalization (126 texts normalized)
+- [x] Structural segmentation (4,000 segments)
+- [x] Entity extraction (173 entities, 32,897 mentions)
+- [x] Thompson Motif Index tagging (149 motifs, 55,539 tags)
+- [x] SQLite pattern database with FTS5 search (137 MB)
+- [x] 18 cross-cultural patterns identified across 20-26 traditions
+
+### Phase 4: Mythopoetic OS Integration (Planned)
+- [ ] ACP (Archetypal Compression Protocol) encoding
+- [ ] Narrative engine pattern feeds
+- [ ] Cross-cultural validation layer
 
 ## Contributing
 

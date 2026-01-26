@@ -1,0 +1,207 @@
+{
+  "text_id": "aesops-fables",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\aesops-fables\\normalized\\aesops-fables_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 22,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 959,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_002",
+      "label": "section_2",
+      "segment_type": "section",
+      "file": "seg_002_section-2.txt",
+      "word_count": 1338,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_003",
+      "label": "section_3",
+      "segment_type": "section",
+      "file": "seg_003_section-3.txt",
+      "word_count": 680,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_004",
+      "label": "section_4",
+      "segment_type": "section",
+      "file": "seg_004_section-4.txt",
+      "word_count": 567,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_005",
+      "label": "section_5",
+      "segment_type": "section",
+      "file": "seg_005_section-5.txt",
+      "word_count": 642,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_006",
+      "label": "section_6",
+      "segment_type": "section",
+      "file": "seg_006_section-6.txt",
+      "word_count": 665,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_007",
+      "label": "section_7",
+      "segment_type": "section",
+      "file": "seg_007_section-7.txt",
+      "word_count": 564,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_008",
+      "label": "section_8",
+      "segment_type": "section",
+      "file": "seg_008_section-8.txt",
+      "word_count": 612,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_009",
+      "label": "section_9",
+      "segment_type": "section",
+      "file": "seg_009_section-9.txt",
+      "word_count": 651,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_010",
+      "label": "section_10",
+      "segment_type": "section",
+      "file": "seg_010_section-10.txt",
+      "word_count": 652,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_011",
+      "label": "section_11",
+      "segment_type": "section",
+      "file": "seg_011_section-11.txt",
+      "word_count": 651,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_012",
+      "label": "section_12",
+      "segment_type": "section",
+      "file": "seg_012_section-12.txt",
+      "word_count": 502,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_013",
+      "label": "section_13",
+      "segment_type": "section",
+      "file": "seg_013_section-13.txt",
+      "word_count": 575,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_014",
+      "label": "section_14",
+      "segment_type": "section",
+      "file": "seg_014_section-14.txt",
+      "word_count": 519,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_015",
+      "label": "section_15",
+      "segment_type": "section",
+      "file": "seg_015_section-15.txt",
+      "word_count": 597,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_016",
+      "label": "section_16",
+      "segment_type": "section",
+      "file": "seg_016_section-16.txt",
+      "word_count": 614,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_017",
+      "label": "section_17",
+      "segment_type": "section",
+      "file": "seg_017_section-17.txt",
+      "word_count": 639,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_018",
+      "label": "section_18",
+      "segment_type": "section",
+      "file": "seg_018_section-18.txt",
+      "word_count": 706,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_019",
+      "label": "section_19",
+      "segment_type": "section",
+      "file": "seg_019_section-19.txt",
+      "word_count": 604,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_020",
+      "label": "section_20",
+      "segment_type": "section",
+      "file": "seg_020_section-20.txt",
+      "word_count": 536,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_021",
+      "label": "section_21",
+      "segment_type": "section",
+      "file": "seg_021_section-21.txt",
+      "word_count": 625,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_022",
+      "label": "section_22",
+      "segment_type": "section",
+      "file": "seg_022_section-22.txt",
+      "word_count": 955,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

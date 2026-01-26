@@ -147,31 +147,96 @@ When multiple sources exist for a text:
 
 ---
 
+## Session Log: January 2025 (Phase 3)
+
+### Phase 3: Structured Extraction — Complete
+
+Transformed the 822MB raw text corpus into a queryable pattern database in 5 sub-phases.
+
+#### Sub-Phase 3.1: Corpus Audit & Text Normalization
+
+Built `scripts/normalize/` with 4 scripts:
+
+- **`audit_corpus.py`**: Walked entire `texts/` tree. Found 211 files, identified 139 usable text files, flagged 59 Sacred Texts index-only stubs (<200 lines). Cross-referenced against `master_catalog.csv`.
+
+- **`normalize_text.py`**: Three format-specific normalizers:
+  - **Gutenberg**: Strip BOM, remove `*** START/END ***` headers/footers, parse metadata, collapse blank lines
+  - **Sacred Texts**: Remove custom headers, strip navigation, flag index-only stubs
+  - **ETCSL**: Remove navigation blocks, fix word-joining artifacts from HTML tag stripping
+  - Result: 126 texts normalized, 42 skipped (stubs), 0 errors
+
+- **`extract_pdf.py`**: PyPDF2 extraction for accessible PDFs. 20 extracted successfully, 11 failed, 12 DRM-protected skipped.
+
+- **`select_best.py`**: For texts with multiple versions, selected best by format priority (Gutenberg > PDF > Sacred Texts) and word count. Result: 96 texts with usable content, 36 without.
+
+#### Sub-Phase 3.2: Text Segmentation
+
+Built `scripts/segment/segment_text.py` with regex-based structural detection:
+- Patterns: `BOOK I`, `Chapter 1`, `THE FIRST TABLET`, `HYMN TO...`, `Canto I`, `Rune I`, ETCSL line ranges, etc.
+- Fallback: blank-line splitting with minimum word count grouping
+- Result: 4,000 segments across 96 texts (63 structural, 17 single, 16 blank-line)
+
+#### Sub-Phase 3.3: Entity Extraction
+
+**Key decision**: spaCy NER is incompatible with Python 3.14 (pydantic v1 fails). Built a pure regex/gazetteer system instead — better for mythological names that standard NER models don't recognize.
+
+Built `scripts/extract/extract_entities.py` with:
+- ~200 curated entity entries across 16 traditions (Mesopotamian, Egyptian, Greek, Norse, Celtic, Indian, Japanese, Chinese, Roman, Polynesian, Mesoamerican, Zoroastrian, Finnish, African, Persian, Hebrew/Christian)
+- Compiled regex patterns with word boundary matching
+- Records: entity name, type, tradition, char offset, sentence context
+- Result: 173 unique entities, 32,897 mentions, 85 texts with entities
+
+Created `data/entity_aliases.json` with ~50 cross-cultural mappings (Ishtar→Inanna→Astarte, Zeus→Jupiter→Jove, etc.)
+
+**Known issue**: Short deity names (Set, Nut, Eve, Mars) produce false positives as common English words. Handled with exclusion lists in queries.
+
+#### Sub-Phase 3.4: Motif Tagging
+
+Built `scripts/motif/build_motif_index.py`:
+- 149 Thompson Motif Index entries across 16 categories (A-Z)
+- Each motif has code, label, parent, category, keywords
+
+Built `scripts/motif/tag_motifs.py` with confidence scoring:
+- 3+ keywords co-occur: confidence 0.5–0.95
+- 2 keywords: confidence 0.3–0.8
+- 1 keyword with context: confidence 0.1–0.5
+- Penalties for short texts, boosts for long texts with multiple hits
+- Result: 55,539 tags, 140 unique motifs, 93 texts tagged
+
+Top motif: "A1: Creation of universe" — 84 texts across 26 traditions.
+
+#### Sub-Phase 3.5: Pattern Database
+
+Built `scripts/database/create_db.py` — SQLite database at `data/mythic_patterns.db`:
+
+| Table | Rows | Purpose |
+|-------|------|---------|
+| `texts` | 132 | Core metadata |
+| `segments` | 4,000 | Structural units with full text |
+| `entities` | 173 | Canonical entity records |
+| `entity_aliases` | 77 | Cross-cultural name mappings |
+| `entity_mentions` | 32,897 | Entity occurrences per segment |
+| `motifs` | 149 | Thompson Motif Index reference |
+| `motif_tags` | 55,539 | Motif assignments with confidence |
+| `patterns` | 18 | Cross-cultural pattern definitions |
+| `pattern_attestations` | 786 | Which texts/traditions attest each pattern |
+| `segments_fts` | — | FTS5 full-text search index |
+
+18 cross-cultural patterns defined and scored:
+- **Cosmogony/Creation**: 73 texts, 26 traditions
+- **Hero Cycle**: 72 texts, 26 traditions
+- **Creation of Humanity**: 66 texts, 24 traditions
+- **Quest for Immortality**: 66 texts, 24 traditions
+- **Descent to Underworld**: 61 texts, 24 traditions
+- **World Flood**: 51 texts, 20 traditions
+- **Trickster**: 47 texts, 20 traditions
+- **Dying & Rising God**: 40 texts, 20 traditions
+
+Database size: 137 MB. Query tool: `scripts/database/query_patterns.py`.
+
+---
+
 ## Integration Roadmap
-
-### Phase 3: Structured Extraction
-
-Once the text corpus is stable, the next phase involves:
-
-1. **Text Normalization**
-   - Convert all formats to clean UTF-8 text
-   - Remove headers, footers, page numbers
-   - Standardize chapter/section markers
-
-2. **Entity Extraction**
-   - Named entity recognition for deities, heroes, places
-   - Relationship mapping (parent-child, enemy, ally)
-   - Cross-text entity resolution (Ishtar = Inanna = Astarte)
-
-3. **Motif Tagging**
-   - Thompson Motif Index alignment
-   - Aarne-Thompson-Uther tale type classification
-   - Custom archetypal tagging system
-
-4. **Pattern Database**
-   - Structured storage of extracted patterns
-   - Confidence scoring based on attestation count
-   - Geographic/temporal distribution tracking
 
 ### Phase 4: Mythopoetic OS Integration
 
@@ -196,16 +261,24 @@ The extracted patterns feed into higher OS layers:
 
 ## Metrics
 
-### Final Session State
+### Phase 3 State
 
 | Metric | Value |
 |--------|-------|
 | Texts Cataloged | 132 |
+| Texts with Content | 96 |
 | Traditions | 32 |
 | Files Downloaded | 211 |
-| Total Size | 822 MB |
-| Source URLs Curated | 250+ |
-| Download Success Rate | ~95% |
+| Raw Corpus Size | 822 MB |
+| Segments | 4,000 |
+| Total Word Count | 8,137,973 |
+| Unique Entities | 173 |
+| Entity Mentions | 32,897 |
+| Thompson Motifs | 149 |
+| Motif Tags | 55,539 |
+| Cross-Cultural Patterns | 18 |
+| Pattern Attestations | 786 |
+| Pattern Database Size | 137 MB |
 
 ### By Tradition (Top 10)
 
@@ -238,4 +311,4 @@ The extracted patterns feed into higher OS layers:
 
 ---
 
-*Last updated: January 2025*
+*Last updated: January 2026*

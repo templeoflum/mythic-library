@@ -1,0 +1,27 @@
+{
+  "text_id": "bacchae",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\bacchae\\normalized\\bacchae_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 2,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 14251,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_002",
+      "label": "section_2",
+      "segment_type": "section",
+      "file": "seg_002_section-2.txt",
+      "word_count": 13486,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

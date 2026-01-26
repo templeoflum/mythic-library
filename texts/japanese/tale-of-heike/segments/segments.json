@@ -1,0 +1,1737 @@
+{
+  "text_id": "tale-of-heike",
+  "tradition": "japanese",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\japanese\\tale-of-heike\\normalized\\tale-of-heike_best.txt",
+  "strategy": "structural",
+  "segment_count": 192,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 4101,
+      "start_line": 0,
+      "end_line": 436
+    },
+    {
+      "id": "seg_002",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i.txt",
+      "word_count": 363,
+      "start_line": 437,
+      "end_line": 470
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-ii.txt",
+      "word_count": 1282,
+      "start_line": 471,
+      "end_line": 573
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iii.txt",
+      "word_count": 803,
+      "start_line": 574,
+      "end_line": 651
+    },
+    {
+      "id": "seg_005",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-iv.txt",
+      "word_count": 439,
+      "start_line": 652,
+      "end_line": 689
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-v.txt",
+      "word_count": 901,
+      "start_line": 690,
+      "end_line": 760
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-vi.txt",
+      "word_count": 4049,
+      "start_line": 761,
+      "end_line": 1057
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-vii.txt",
+      "word_count": 1197,
+      "start_line": 1058,
+      "end_line": 1157
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-viii.txt",
+      "word_count": 649,
+      "start_line": 1158,
+      "end_line": 1217
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-ix.txt",
+      "word_count": 1050,
+      "start_line": 1218,
+      "end_line": 1299
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-x.txt",
+      "word_count": 1254,
+      "start_line": 1300,
+      "end_line": 1400
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-xi.txt",
+      "word_count": 1389,
+      "start_line": 1401,
+      "end_line": 1507
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-xii.txt",
+      "word_count": 1593,
+      "start_line": 1508,
+      "end_line": 1628
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-xiii.txt",
+      "word_count": 1287,
+      "start_line": 1629,
+      "end_line": 1723
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-xiv.txt",
+      "word_count": 955,
+      "start_line": 1724,
+      "end_line": 1796
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-xv.txt",
+      "word_count": 2739,
+      "start_line": 1797,
+      "end_line": 2034
+    },
+    {
+      "id": "seg_017",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-i.txt",
+      "word_count": 2585,
+      "start_line": 2035,
+      "end_line": 2221
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-ii.txt",
+      "word_count": 291,
+      "start_line": 2222,
+      "end_line": 2252
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-iii.txt",
+      "word_count": 2090,
+      "start_line": 2253,
+      "end_line": 2402
+    },
+    {
+      "id": "seg_020",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_020_chapter-iv.txt",
+      "word_count": 2226,
+      "start_line": 2403,
+      "end_line": 2563
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-v.txt",
+      "word_count": 1617,
+      "start_line": 2564,
+      "end_line": 2676
+    },
+    {
+      "id": "seg_022",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-vi.txt",
+      "word_count": 3093,
+      "start_line": 2677,
+      "end_line": 2897
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-vii.txt",
+      "word_count": 888,
+      "start_line": 2898,
+      "end_line": 2959
+    },
+    {
+      "id": "seg_024",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-viii.txt",
+      "word_count": 1056,
+      "start_line": 2960,
+      "end_line": 3044
+    },
+    {
+      "id": "seg_025",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-xi.txt",
+      "word_count": 1232,
+      "start_line": 3045,
+      "end_line": 3136
+    },
+    {
+      "id": "seg_026",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_026_chapter-xi.txt",
+      "word_count": 959,
+      "start_line": 3137,
+      "end_line": 3208
+    },
+    {
+      "id": "seg_027",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-xii.txt",
+      "word_count": 1216,
+      "start_line": 3209,
+      "end_line": 3302
+    },
+    {
+      "id": "seg_028",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-xiii.txt",
+      "word_count": 289,
+      "start_line": 3303,
+      "end_line": 3330
+    },
+    {
+      "id": "seg_029",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_029_chapter-xiv.txt",
+      "word_count": 1032,
+      "start_line": 3331,
+      "end_line": 3411
+    },
+    {
+      "id": "seg_030",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-xv.txt",
+      "word_count": 1054,
+      "start_line": 3412,
+      "end_line": 3495
+    },
+    {
+      "id": "seg_031",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-xvi.txt",
+      "word_count": 1939,
+      "start_line": 3496,
+      "end_line": 3650
+    },
+    {
+      "id": "seg_032",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-i.txt",
+      "word_count": 1369,
+      "start_line": 3651,
+      "end_line": 3755
+    },
+    {
+      "id": "seg_033",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-ii.txt",
+      "word_count": 1087,
+      "start_line": 3756,
+      "end_line": 3833
+    },
+    {
+      "id": "seg_034",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-iii.txt",
+      "word_count": 1284,
+      "start_line": 3834,
+      "end_line": 3936
+    },
+    {
+      "id": "seg_035",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_035_chapter-iii.txt",
+      "word_count": 705,
+      "start_line": 3937,
+      "end_line": 3999
+    },
+    {
+      "id": "seg_036",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_036_chapter-v.txt",
+      "word_count": 768,
+      "start_line": 4000,
+      "end_line": 4066
+    },
+    {
+      "id": "seg_037",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-vi.txt",
+      "word_count": 789,
+      "start_line": 4067,
+      "end_line": 4129
+    },
+    {
+      "id": "seg_038",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-vii.txt",
+      "word_count": 1532,
+      "start_line": 4130,
+      "end_line": 4248
+    },
+    {
+      "id": "seg_039",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_039_chapter-viii.txt",
+      "word_count": 2426,
+      "start_line": 4249,
+      "end_line": 4416
+    },
+    {
+      "id": "seg_040",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_040_chapter-ix.txt",
+      "word_count": 208,
+      "start_line": 4417,
+      "end_line": 4438
+    },
+    {
+      "id": "seg_041",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-x.txt",
+      "word_count": 1517,
+      "start_line": 4439,
+      "end_line": 4545
+    },
+    {
+      "id": "seg_042",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_042_chapter-xi.txt",
+      "word_count": 599,
+      "start_line": 4546,
+      "end_line": 4595
+    },
+    {
+      "id": "seg_043",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-xii.txt",
+      "word_count": 278,
+      "start_line": 4596,
+      "end_line": 4623
+    },
+    {
+      "id": "seg_044",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_044_chapter-xiii.txt",
+      "word_count": 335,
+      "start_line": 4624,
+      "end_line": 4656
+    },
+    {
+      "id": "seg_045",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_045_chapter-xiv.txt",
+      "word_count": 1416,
+      "start_line": 4657,
+      "end_line": 4763
+    },
+    {
+      "id": "seg_046",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-xv.txt",
+      "word_count": 1164,
+      "start_line": 4764,
+      "end_line": 4851
+    },
+    {
+      "id": "seg_047",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_047_chapter-xvi.txt",
+      "word_count": 743,
+      "start_line": 4852,
+      "end_line": 4912
+    },
+    {
+      "id": "seg_048",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_048_chapter-xvii.txt",
+      "word_count": 1088,
+      "start_line": 4913,
+      "end_line": 4986
+    },
+    {
+      "id": "seg_049",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_049_chapter-xviii.txt",
+      "word_count": 1587,
+      "start_line": 4987,
+      "end_line": 5110
+    },
+    {
+      "id": "seg_050",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_050_chapter-i.txt",
+      "word_count": 1515,
+      "start_line": 5111,
+      "end_line": 5233
+    },
+    {
+      "id": "seg_051",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_051_chapter-ii.txt",
+      "word_count": 1045,
+      "start_line": 5234,
+      "end_line": 5322
+    },
+    {
+      "id": "seg_052",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_052_chapter-iii.txt",
+      "word_count": 457,
+      "start_line": 5323,
+      "end_line": 5358
+    },
+    {
+      "id": "seg_053",
+      "label": "part in the plot of the Shin Dainagon Narichika -no-Kyo, he is not to be relied on, but his younger",
+      "segment_type": "part",
+      "file": "seg_053_part-in-the-plot-of-the-shin-dainagon-na.txt",
+      "word_count": 851,
+      "start_line": 5359,
+      "end_line": 5424
+    },
+    {
+      "id": "seg_054",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_054_chapter-iv.txt",
+      "word_count": 501,
+      "start_line": 5425,
+      "end_line": 5464
+    },
+    {
+      "id": "seg_055",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_055_chapter-v.txt",
+      "word_count": 1545,
+      "start_line": 5465,
+      "end_line": 5575
+    },
+    {
+      "id": "seg_056",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_056_chapter-vi.txt",
+      "word_count": 163,
+      "start_line": 5576,
+      "end_line": 5593
+    },
+    {
+      "id": "seg_057",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_057_chapter-vii.txt",
+      "word_count": 1763,
+      "start_line": 5594,
+      "end_line": 5731
+    },
+    {
+      "id": "seg_058",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_058_chapter-viii.txt",
+      "word_count": 398,
+      "start_line": 5732,
+      "end_line": 5764
+    },
+    {
+      "id": "seg_059",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_059_chapter-ix.txt",
+      "word_count": 546,
+      "start_line": 5765,
+      "end_line": 5811
+    },
+    {
+      "id": "seg_060",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_060_chapter-x.txt",
+      "word_count": 827,
+      "start_line": 5812,
+      "end_line": 5876
+    },
+    {
+      "id": "seg_061",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_061_chapter-xi.txt",
+      "word_count": 1694,
+      "start_line": 5877,
+      "end_line": 5999
+    },
+    {
+      "id": "seg_062",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_062_chapter-xii.txt",
+      "word_count": 1535,
+      "start_line": 6000,
+      "end_line": 6110
+    },
+    {
+      "id": "seg_063",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_063_chapter-xiii.txt",
+      "word_count": 1460,
+      "start_line": 6111,
+      "end_line": 6226
+    },
+    {
+      "id": "seg_064",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_064_chapter-xiv.txt",
+      "word_count": 1233,
+      "start_line": 6227,
+      "end_line": 6319
+    },
+    {
+      "id": "seg_065",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_065_chapter-xv.txt",
+      "word_count": 1264,
+      "start_line": 6320,
+      "end_line": 6426
+    },
+    {
+      "id": "seg_066",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_066_chapter-xvi.txt",
+      "word_count": 1029,
+      "start_line": 6427,
+      "end_line": 6515
+    },
+    {
+      "id": "seg_067",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_067_chapter-i.txt",
+      "word_count": 1932,
+      "start_line": 6516,
+      "end_line": 6652
+    },
+    {
+      "id": "seg_068",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_068_chapter-ii.txt",
+      "word_count": 528,
+      "start_line": 6653,
+      "end_line": 6697
+    },
+    {
+      "id": "seg_069",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_069_chapter-iii.txt",
+      "word_count": 953,
+      "start_line": 6698,
+      "end_line": 6792
+    },
+    {
+      "id": "seg_070",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_070_chapter-iv.txt",
+      "word_count": 936,
+      "start_line": 6793,
+      "end_line": 6860
+    },
+    {
+      "id": "seg_071",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_071_chapter-v.txt",
+      "word_count": 520,
+      "start_line": 6861,
+      "end_line": 6904
+    },
+    {
+      "id": "seg_072",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_072_chapter-vi.txt",
+      "word_count": 646,
+      "start_line": 6905,
+      "end_line": 6959
+    },
+    {
+      "id": "seg_073",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_073_chapter-vii.txt",
+      "word_count": 1772,
+      "start_line": 6960,
+      "end_line": 7084
+    },
+    {
+      "id": "seg_074",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_074_chapter-viii.txt",
+      "word_count": 997,
+      "start_line": 7085,
+      "end_line": 7157
+    },
+    {
+      "id": "seg_075",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_075_chapter-xvi.txt",
+      "word_count": 861,
+      "start_line": 7158,
+      "end_line": 7225
+    },
+    {
+      "id": "seg_076",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_076_chapter-x.txt",
+      "word_count": 1474,
+      "start_line": 7226,
+      "end_line": 7333
+    },
+    {
+      "id": "seg_077",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_077_chapter-xi.txt",
+      "word_count": 968,
+      "start_line": 7334,
+      "end_line": 7403
+    },
+    {
+      "id": "seg_078",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_078_chapter-xii.txt",
+      "word_count": 2665,
+      "start_line": 7404,
+      "end_line": 7632
+    },
+    {
+      "id": "seg_079",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_079_chapter-xiii.txt",
+      "word_count": 945,
+      "start_line": 7633,
+      "end_line": 7710
+    },
+    {
+      "id": "seg_080",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_080_chapter-xiv.txt",
+      "word_count": 489,
+      "start_line": 7711,
+      "end_line": 7752
+    },
+    {
+      "id": "seg_081",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_081_chapter-xv.txt",
+      "word_count": 2371,
+      "start_line": 7753,
+      "end_line": 7939
+    },
+    {
+      "id": "seg_082",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_082_chapter-i.txt",
+      "word_count": 608,
+      "start_line": 7940,
+      "end_line": 7988
+    },
+    {
+      "id": "seg_083",
+      "label": "the Six Supernatural Talents, or by an Incarnate Deity who can assume all forms, yet in his case it",
+      "segment_type": "tale",
+      "file": "seg_083_the-six-supernatural-talents-or-by-an-in.txt",
+      "word_count": 234,
+      "start_line": 7989,
+      "end_line": 8016
+    },
+    {
+      "id": "seg_084",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_084_chapter-ii.txt",
+      "word_count": 822,
+      "start_line": 8017,
+      "end_line": 8079
+    },
+    {
+      "id": "seg_085",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_085_chapter-iii.txt",
+      "word_count": 546,
+      "start_line": 8080,
+      "end_line": 8130
+    },
+    {
+      "id": "seg_086",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_086_chapter-iv.txt",
+      "word_count": 2538,
+      "start_line": 8131,
+      "end_line": 8317
+    },
+    {
+      "id": "seg_087",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_087_chapter-v.txt",
+      "word_count": 583,
+      "start_line": 8318,
+      "end_line": 8367
+    },
+    {
+      "id": "seg_088",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_088_chapter-vi.txt",
+      "word_count": 808,
+      "start_line": 8368,
+      "end_line": 8436
+    },
+    {
+      "id": "seg_089",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_089_chapter-vii.txt",
+      "word_count": 1724,
+      "start_line": 8437,
+      "end_line": 8609
+    },
+    {
+      "id": "seg_090",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_090_chapter-viii.txt",
+      "word_count": 665,
+      "start_line": 8610,
+      "end_line": 8664
+    },
+    {
+      "id": "seg_091",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_091_chapter-ix.txt",
+      "word_count": 1478,
+      "start_line": 8665,
+      "end_line": 8779
+    },
+    {
+      "id": "seg_092",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_092_chapter-x.txt",
+      "word_count": 991,
+      "start_line": 8780,
+      "end_line": 8863
+    },
+    {
+      "id": "seg_093",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_093_chapter-xi.txt",
+      "word_count": 1106,
+      "start_line": 8864,
+      "end_line": 8945
+    },
+    {
+      "id": "seg_094",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_094_chapter-xii.txt",
+      "word_count": 588,
+      "start_line": 8946,
+      "end_line": 8991
+    },
+    {
+      "id": "seg_095",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_095_chapter-xiii.txt",
+      "word_count": 1519,
+      "start_line": 8992,
+      "end_line": 9111
+    },
+    {
+      "id": "seg_096",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_096_chapter-i.txt",
+      "word_count": 730,
+      "start_line": 9112,
+      "end_line": 9174
+    },
+    {
+      "id": "seg_097",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_097_chapter-ii.txt",
+      "word_count": 617,
+      "start_line": 9175,
+      "end_line": 9223
+    },
+    {
+      "id": "seg_098",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_098_chapter-iii.txt",
+      "word_count": 825,
+      "start_line": 9224,
+      "end_line": 9288
+    },
+    {
+      "id": "seg_099",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_099_chapter-iv.txt",
+      "word_count": 1424,
+      "start_line": 9289,
+      "end_line": 9394
+    },
+    {
+      "id": "seg_100",
+      "label": "CHAPTER  V",
+      "segment_type": "chapter",
+      "file": "seg_100_chapter-v.txt",
+      "word_count": 1022,
+      "start_line": 9395,
+      "end_line": 9466
+    },
+    {
+      "id": "seg_101",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_101_chapter-vi.txt",
+      "word_count": 1152,
+      "start_line": 9467,
+      "end_line": 9554
+    },
+    {
+      "id": "seg_102",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_102_chapter-vii.txt",
+      "word_count": 1047,
+      "start_line": 9555,
+      "end_line": 9628
+    },
+    {
+      "id": "seg_103",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_103_chapter-viii.txt",
+      "word_count": 811,
+      "start_line": 9629,
+      "end_line": 9690
+    },
+    {
+      "id": "seg_104",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_104_chapter-ix.txt",
+      "word_count": 1074,
+      "start_line": 9691,
+      "end_line": 9770
+    },
+    {
+      "id": "seg_105",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_105_chapter-x.txt",
+      "word_count": 615,
+      "start_line": 9771,
+      "end_line": 9814
+    },
+    {
+      "id": "seg_106",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_106_chapter-xi.txt",
+      "word_count": 931,
+      "start_line": 9815,
+      "end_line": 9893
+    },
+    {
+      "id": "seg_107",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_107_chapter-xii.txt",
+      "word_count": 1644,
+      "start_line": 9894,
+      "end_line": 10033
+    },
+    {
+      "id": "seg_108",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_108_chapter-xiii.txt",
+      "word_count": 1079,
+      "start_line": 10034,
+      "end_line": 10107
+    },
+    {
+      "id": "seg_109",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_109_chapter-xiv.txt",
+      "word_count": 559,
+      "start_line": 10108,
+      "end_line": 10149
+    },
+    {
+      "id": "seg_110",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_110_chapter-xv.txt",
+      "word_count": 735,
+      "start_line": 10150,
+      "end_line": 10209
+    },
+    {
+      "id": "seg_111",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_111_chapter-xvi.txt",
+      "word_count": 741,
+      "start_line": 10210,
+      "end_line": 10275
+    },
+    {
+      "id": "seg_112",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_112_chapter-xvii.txt",
+      "word_count": 512,
+      "start_line": 10276,
+      "end_line": 10318
+    },
+    {
+      "id": "seg_113",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_113_chapter-xviii.txt",
+      "word_count": 1662,
+      "start_line": 10319,
+      "end_line": 10447
+    },
+    {
+      "id": "seg_114",
+      "label": "CHAPTER XIX",
+      "segment_type": "chapter",
+      "file": "seg_114_chapter-xix.txt",
+      "word_count": 844,
+      "start_line": 10448,
+      "end_line": 10511
+    },
+    {
+      "id": "seg_115",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_115_chapter-i.txt",
+      "word_count": 1509,
+      "start_line": 10512,
+      "end_line": 10630
+    },
+    {
+      "id": "seg_116",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_116_chapter-ii.txt",
+      "word_count": 1385,
+      "start_line": 10631,
+      "end_line": 10740
+    },
+    {
+      "id": "seg_117",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_117_chapter-iii.txt",
+      "word_count": 774,
+      "start_line": 10741,
+      "end_line": 10808
+    },
+    {
+      "id": "seg_118",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_118_chapter-iv.txt",
+      "word_count": 768,
+      "start_line": 10809,
+      "end_line": 10866
+    },
+    {
+      "id": "seg_119",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_119_chapter-v.txt",
+      "word_count": 1561,
+      "start_line": 10867,
+      "end_line": 10988
+    },
+    {
+      "id": "seg_120",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_120_chapter-vi.txt",
+      "word_count": 977,
+      "start_line": 10989,
+      "end_line": 11063
+    },
+    {
+      "id": "seg_121",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_121_chapter-vi.txt",
+      "word_count": 954,
+      "start_line": 11064,
+      "end_line": 11129
+    },
+    {
+      "id": "seg_122",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_122_chapter-viii.txt",
+      "word_count": 555,
+      "start_line": 11130,
+      "end_line": 11171
+    },
+    {
+      "id": "seg_123",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_123_chapter-ix.txt",
+      "word_count": 1851,
+      "start_line": 11172,
+      "end_line": 11305
+    },
+    {
+      "id": "seg_124",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_124_chapter-x.txt",
+      "word_count": 489,
+      "start_line": 11306,
+      "end_line": 11347
+    },
+    {
+      "id": "seg_125",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_125_chapter-xi.txt",
+      "word_count": 478,
+      "start_line": 11348,
+      "end_line": 11387
+    },
+    {
+      "id": "seg_126",
+      "label": "CHAPTER  XII",
+      "segment_type": "chapter",
+      "file": "seg_126_chapter-xii.txt",
+      "word_count": 3443,
+      "start_line": 11388,
+      "end_line": 11646
+    },
+    {
+      "id": "seg_127",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_127_chapter-i.txt",
+      "word_count": 248,
+      "start_line": 11647,
+      "end_line": 11667
+    },
+    {
+      "id": "seg_128",
+      "label": "CHAPTER  II",
+      "segment_type": "chapter",
+      "file": "seg_128_chapter-ii.txt",
+      "word_count": 2187,
+      "start_line": 11668,
+      "end_line": 11826
+    },
+    {
+      "id": "seg_129",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_129_chapter-iii.txt",
+      "word_count": 1319,
+      "start_line": 11827,
+      "end_line": 11925
+    },
+    {
+      "id": "seg_130",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_130_chapter-iv.txt",
+      "word_count": 1690,
+      "start_line": 11926,
+      "end_line": 12041
+    },
+    {
+      "id": "seg_131",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_131_chapter-v.txt",
+      "word_count": 1387,
+      "start_line": 12042,
+      "end_line": 12139
+    },
+    {
+      "id": "seg_132",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_132_chapter-vi.txt",
+      "word_count": 1057,
+      "start_line": 12140,
+      "end_line": 12225
+    },
+    {
+      "id": "seg_133",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_133_chapter-vii.txt",
+      "word_count": 1077,
+      "start_line": 12226,
+      "end_line": 12329
+    },
+    {
+      "id": "seg_134",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_134_chapter-viii.txt",
+      "word_count": 605,
+      "start_line": 12330,
+      "end_line": 12380
+    },
+    {
+      "id": "seg_135",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_135_chapter-ix.txt",
+      "word_count": 1366,
+      "start_line": 12381,
+      "end_line": 12484
+    },
+    {
+      "id": "seg_136",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_136_chapter-x.txt",
+      "word_count": 1759,
+      "start_line": 12485,
+      "end_line": 12612
+    },
+    {
+      "id": "seg_137",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_137_chapter-xi.txt",
+      "word_count": 1224,
+      "start_line": 12613,
+      "end_line": 12700
+    },
+    {
+      "id": "seg_138",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_138_chapter-xii.txt",
+      "word_count": 991,
+      "start_line": 12701,
+      "end_line": 12775
+    },
+    {
+      "id": "seg_139",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_139_chapter-xiii.txt",
+      "word_count": 841,
+      "start_line": 12776,
+      "end_line": 12837
+    },
+    {
+      "id": "seg_140",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_140_chapter-xiv.txt",
+      "word_count": 585,
+      "start_line": 12838,
+      "end_line": 12887
+    },
+    {
+      "id": "seg_141",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_141_chapter-xv.txt",
+      "word_count": 604,
+      "start_line": 12888,
+      "end_line": 12930
+    },
+    {
+      "id": "seg_142",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_142_chapter-xvi.txt",
+      "word_count": 846,
+      "start_line": 12931,
+      "end_line": 12992
+    },
+    {
+      "id": "seg_143",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_143_chapter-xvii.txt",
+      "word_count": 840,
+      "start_line": 12993,
+      "end_line": 13061
+    },
+    {
+      "id": "seg_144",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_144_chapter-xviii.txt",
+      "word_count": 606,
+      "start_line": 13062,
+      "end_line": 13115
+    },
+    {
+      "id": "seg_145",
+      "label": "CHAPTER XIX",
+      "segment_type": "chapter",
+      "file": "seg_145_chapter-xix.txt",
+      "word_count": 2431,
+      "start_line": 13116,
+      "end_line": 13290
+    },
+    {
+      "id": "seg_146",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_146_chapter-i.txt",
+      "word_count": 1456,
+      "start_line": 13291,
+      "end_line": 13404
+    },
+    {
+      "id": "seg_147",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_147_chapter-ii.txt",
+      "word_count": 1898,
+      "start_line": 13405,
+      "end_line": 13552
+    },
+    {
+      "id": "seg_148",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_148_chapter-iii.txt",
+      "word_count": 264,
+      "start_line": 13553,
+      "end_line": 13574
+    },
+    {
+      "id": "seg_149",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_149_chapter-iv.txt",
+      "word_count": 1335,
+      "start_line": 13575,
+      "end_line": 13675
+    },
+    {
+      "id": "seg_150",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_150_chapter-v.txt",
+      "word_count": 1303,
+      "start_line": 13676,
+      "end_line": 13771
+    },
+    {
+      "id": "seg_151",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_151_chapter-vi.txt",
+      "word_count": 1102,
+      "start_line": 13772,
+      "end_line": 13863
+    },
+    {
+      "id": "seg_152",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_152_chapter-vii.txt",
+      "word_count": 1885,
+      "start_line": 13864,
+      "end_line": 13993
+    },
+    {
+      "id": "seg_153",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_153_chapter-ix.txt",
+      "word_count": 1201,
+      "start_line": 13994,
+      "end_line": 14080
+    },
+    {
+      "id": "seg_154",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_154_chapter-xi.txt",
+      "word_count": 691,
+      "start_line": 14081,
+      "end_line": 14157
+    },
+    {
+      "id": "seg_155",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_155_chapter-xv.txt",
+      "word_count": 1418,
+      "start_line": 14158,
+      "end_line": 14254
+    },
+    {
+      "id": "seg_156",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_156_chapter-xiii.txt",
+      "word_count": 844,
+      "start_line": 14255,
+      "end_line": 14335
+    },
+    {
+      "id": "seg_157",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_157_chapter-xiv.txt",
+      "word_count": 1259,
+      "start_line": 14336,
+      "end_line": 14424
+    },
+    {
+      "id": "seg_158",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_158_chapter-xv.txt",
+      "word_count": 1499,
+      "start_line": 14425,
+      "end_line": 14552
+    },
+    {
+      "id": "seg_159",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_159_chapter-xvi.txt",
+      "word_count": 2027,
+      "start_line": 14553,
+      "end_line": 14725
+    },
+    {
+      "id": "seg_160",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_160_chapter-xvii.txt",
+      "word_count": 455,
+      "start_line": 14726,
+      "end_line": 14764
+    },
+    {
+      "id": "seg_161",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_161_chapter-i.txt",
+      "word_count": 1500,
+      "start_line": 14765,
+      "end_line": 14869
+    },
+    {
+      "id": "seg_162",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_162_chapter-ii.txt",
+      "word_count": 711,
+      "start_line": 14870,
+      "end_line": 14921
+    },
+    {
+      "id": "seg_163",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_163_chapter-iii.txt",
+      "word_count": 1224,
+      "start_line": 14922,
+      "end_line": 15008
+    },
+    {
+      "id": "seg_164",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_164_chapter-iv.txt",
+      "word_count": 1277,
+      "start_line": 15009,
+      "end_line": 15099
+    },
+    {
+      "id": "seg_165",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_165_chapter-v.txt",
+      "word_count": 1132,
+      "start_line": 15100,
+      "end_line": 15183
+    },
+    {
+      "id": "seg_166",
+      "label": "CHAPTER V I",
+      "segment_type": "chapter",
+      "file": "seg_166_chapter-v-i.txt",
+      "word_count": 1208,
+      "start_line": 15184,
+      "end_line": 15276
+    },
+    {
+      "id": "seg_167",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_167_chapter-vii.txt",
+      "word_count": 1246,
+      "start_line": 15277,
+      "end_line": 15371
+    },
+    {
+      "id": "seg_168",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_168_chapter-viii.txt",
+      "word_count": 850,
+      "start_line": 15372,
+      "end_line": 15442
+    },
+    {
+      "id": "seg_169",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_169_chapter-ix.txt",
+      "word_count": 1400,
+      "start_line": 15443,
+      "end_line": 15543
+    },
+    {
+      "id": "seg_170",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_170_chapter-ix.txt",
+      "word_count": 1164,
+      "start_line": 15544,
+      "end_line": 15631
+    },
+    {
+      "id": "seg_171",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_171_chapter-x.txt",
+      "word_count": 1229,
+      "start_line": 15632,
+      "end_line": 15725
+    },
+    {
+      "id": "seg_172",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_172_chapter-xi.txt",
+      "word_count": 1015,
+      "start_line": 15726,
+      "end_line": 15809
+    },
+    {
+      "id": "seg_173",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_173_chapter-xii.txt",
+      "word_count": 1094,
+      "start_line": 15810,
+      "end_line": 15889
+    },
+    {
+      "id": "seg_174",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_174_chapter-xiii.txt",
+      "word_count": 547,
+      "start_line": 15890,
+      "end_line": 15928
+    },
+    {
+      "id": "seg_175",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_175_chapter-xiv.txt",
+      "word_count": 1128,
+      "start_line": 15929,
+      "end_line": 16014
+    },
+    {
+      "id": "seg_176",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_176_chapter-xv.txt",
+      "word_count": 1384,
+      "start_line": 16015,
+      "end_line": 16119
+    },
+    {
+      "id": "seg_177",
+      "label": "CHAPTER X VI",
+      "segment_type": "chapter",
+      "file": "seg_177_chapter-x-vi.txt",
+      "word_count": 1654,
+      "start_line": 16120,
+      "end_line": 16244
+    },
+    {
+      "id": "seg_178",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_178_chapter-i.txt",
+      "word_count": 2145,
+      "start_line": 16245,
+      "end_line": 16400
+    },
+    {
+      "id": "seg_179",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_179_chapter-ii.txt",
+      "word_count": 773,
+      "start_line": 16401,
+      "end_line": 16462
+    },
+    {
+      "id": "seg_180",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_180_chapter-iii.txt",
+      "word_count": 394,
+      "start_line": 16463,
+      "end_line": 16493
+    },
+    {
+      "id": "seg_181",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_181_chapter-iv.txt",
+      "word_count": 717,
+      "start_line": 16494,
+      "end_line": 16553
+    },
+    {
+      "id": "seg_182",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_182_chapter-v.txt",
+      "word_count": 1424,
+      "start_line": 16554,
+      "end_line": 16656
+    },
+    {
+      "id": "seg_183",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_183_chapter-vi.txt",
+      "word_count": 1180,
+      "start_line": 16657,
+      "end_line": 16746
+    },
+    {
+      "id": "seg_184",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_184_chapter-vii.txt",
+      "word_count": 414,
+      "start_line": 16747,
+      "end_line": 16780
+    },
+    {
+      "id": "seg_185",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_185_chapter-viii.txt",
+      "word_count": 3947,
+      "start_line": 16781,
+      "end_line": 17056
+    },
+    {
+      "id": "seg_186",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_186_chapter-ix.txt",
+      "word_count": 600,
+      "start_line": 17057,
+      "end_line": 17102
+    },
+    {
+      "id": "seg_187",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_187_chapter-x.txt",
+      "word_count": 1043,
+      "start_line": 17103,
+      "end_line": 17182
+    },
+    {
+      "id": "seg_188",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_188_chapter-i.txt",
+      "word_count": 956,
+      "start_line": 17183,
+      "end_line": 17251
+    },
+    {
+      "id": "seg_189",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_189_chapter-ii.txt",
+      "word_count": 1066,
+      "start_line": 17252,
+      "end_line": 17333
+    },
+    {
+      "id": "seg_190",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_190_chapter-iii.txt",
+      "word_count": 1787,
+      "start_line": 17334,
+      "end_line": 17471
+    },
+    {
+      "id": "seg_191",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_191_chapter-iv.txt",
+      "word_count": 2111,
+      "start_line": 17472,
+      "end_line": 17616
+    },
+    {
+      "id": "seg_192",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_192_chapter-v.txt",
+      "word_count": 13082,
+      "start_line": 17617,
+      "end_line": 18602
+    }
+  ]
+}

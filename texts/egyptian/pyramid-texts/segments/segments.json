@@ -1,0 +1,54 @@
+{
+  "text_id": "pyramid-texts",
+  "tradition": "egyptian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\pyramid-texts\\normalized\\pyramid-texts_best.txt",
+  "strategy": "structural",
+  "segment_count": 5,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 493,
+      "start_line": 0,
+      "end_line": 61
+    },
+    {
+      "id": "seg_002",
+      "label": "263-271",
+      "segment_type": "line_range",
+      "file": "seg_002_263-271.txt",
+      "word_count": 22,
+      "start_line": 62,
+      "end_line": 65
+    },
+    {
+      "id": "seg_003",
+      "label": "300-311",
+      "segment_type": "line_range",
+      "file": "seg_003_300-311.txt",
+      "word_count": 66,
+      "start_line": 66,
+      "end_line": 76
+    },
+    {
+      "id": "seg_004",
+      "label": "436-442",
+      "segment_type": "line_range",
+      "file": "seg_004_436-442.txt",
+      "word_count": 33,
+      "start_line": 77,
+      "end_line": 81
+    },
+    {
+      "id": "seg_005",
+      "label": "503-522",
+      "segment_type": "line_range",
+      "file": "seg_005_503-522.txt",
+      "word_count": 329,
+      "start_line": 82,
+      "end_line": 132
+    }
+  ]
+}

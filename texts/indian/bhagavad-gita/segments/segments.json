@@ -1,0 +1,180 @@
+{
+  "text_id": "bhagavad-gita",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\bhagavad-gita\\normalized\\bhagavad-gita_best.txt",
+  "strategy": "structural",
+  "segment_count": 19,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 823,
+      "start_line": 0,
+      "end_line": 125
+    },
+    {
+      "id": "seg_002",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i.txt",
+      "word_count": 985,
+      "start_line": 126,
+      "end_line": 280
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-ii.txt",
+      "word_count": 1950,
+      "start_line": 281,
+      "end_line": 581
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iii.txt",
+      "word_count": 1084,
+      "start_line": 582,
+      "end_line": 742
+    },
+    {
+      "id": "seg_005",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-iv.txt",
+      "word_count": 1165,
+      "start_line": 743,
+      "end_line": 909
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-v.txt",
+      "word_count": 802,
+      "start_line": 910,
+      "end_line": 1026
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-vi.txt",
+      "word_count": 1166,
+      "start_line": 1027,
+      "end_line": 1211
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-vii.txt",
+      "word_count": 814,
+      "start_line": 1212,
+      "end_line": 1335
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-viii.txt",
+      "word_count": 712,
+      "start_line": 1336,
+      "end_line": 1450
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-ix.txt",
+      "word_count": 1008,
+      "start_line": 1451,
+      "end_line": 1612
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-x.txt",
+      "word_count": 1064,
+      "start_line": 1613,
+      "end_line": 1742
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-xi.txt",
+      "word_count": 2141,
+      "start_line": 1743,
+      "end_line": 2156
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-xii.txt",
+      "word_count": 527,
+      "start_line": 2157,
+      "end_line": 2239
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-xiii.txt",
+      "word_count": 912,
+      "start_line": 2240,
+      "end_line": 2388
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-xiv.txt",
+      "word_count": 659,
+      "start_line": 2389,
+      "end_line": 2506
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-xv.txt",
+      "word_count": 626,
+      "start_line": 2507,
+      "end_line": 2617
+    },
+    {
+      "id": "seg_017",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-xvi.txt",
+      "word_count": 673,
+      "start_line": 2618,
+      "end_line": 2722
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-xvii.txt",
+      "word_count": 620,
+      "start_line": 2723,
+      "end_line": 2832
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-xviii.txt",
+      "word_count": 2418,
+      "start_line": 2833,
+      "end_line": 3245
+    }
+  ]
+}

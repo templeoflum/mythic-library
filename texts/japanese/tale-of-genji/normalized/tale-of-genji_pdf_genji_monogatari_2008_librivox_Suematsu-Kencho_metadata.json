@@ -1,0 +1,15 @@
+{
+  "text_id": "tale-of-genji",
+  "tradition": "japanese",
+  "source_format": "pdf",
+  "original_file": "genji_monogatari_2008_librivox_Suematsu-Kencho.pdf",
+  "extraction_date": "2026-01-26T10:05:00.998704",
+  "total_pages": 1,
+  "pages_with_text": 1,
+  "total_chars": 1313,
+  "garbled_ratio": 0.0,
+  "extraction_quality": "good",
+  "word_count": 204,
+  "line_count": 15,
+  "char_count": 1311
+}

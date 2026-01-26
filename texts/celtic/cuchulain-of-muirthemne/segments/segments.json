@@ -1,0 +1,252 @@
+{
+  "text_id": "cuchulain-of-muirthemne",
+  "tradition": "celtic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\cuchulain-of-muirthemne\\normalized\\cuchulain-of-muirthemne_best.txt",
+  "strategy": "structural",
+  "segment_count": 27,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 83,
+      "start_line": 0,
+      "end_line": 34
+    },
+    {
+      "id": "seg_002",
+      "label": "The romantic tales here retold for the English reader belong neither",
+      "segment_type": "tale",
+      "file": "seg_002_the-romantic-tales-here-retold-for-the-e.txt",
+      "word_count": 4341,
+      "start_line": 35,
+      "end_line": 521
+    },
+    {
+      "id": "seg_003",
+      "label": "story of the _Chase of the Gilla Dacar_ tells, at its beginning, of a",
+      "segment_type": "tale",
+      "file": "seg_003_story-of-the-chase-of-the-gilla-dacar-te.txt",
+      "word_count": 458,
+      "start_line": 522,
+      "end_line": 560
+    },
+    {
+      "id": "seg_004",
+      "label": "the story of the _Vengeance of Mesgedra_. Very late in the redaction",
+      "segment_type": "tale",
+      "file": "seg_004_the-story-of-the-vengeance-of-mesgedra-v.txt",
+      "word_count": 1385,
+      "start_line": 561,
+      "end_line": 692
+    },
+    {
+      "id": "seg_005",
+      "label": "The earliest tales of Ireland are crowded with the sea that wrapt the",
+      "segment_type": "tale",
+      "file": "seg_005_the-earliest-tales-of-ireland-are-crowde.txt",
+      "word_count": 7199,
+      "start_line": 693,
+      "end_line": 1360
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-i.txt",
+      "word_count": 2,
+      "start_line": 1361,
+      "end_line": 1362
+    },
+    {
+      "id": "seg_007",
+      "label": "The Story of the Children of Lir",
+      "segment_type": "tale",
+      "file": "seg_007_the-story-of-the-children-of-lir.txt",
+      "word_count": 5286,
+      "start_line": 1363,
+      "end_line": 1899
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-ii.txt",
+      "word_count": 8186,
+      "start_line": 1900,
+      "end_line": 2790
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-iii.txt",
+      "word_count": 675,
+      "start_line": 2791,
+      "end_line": 2850
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-iv.txt",
+      "word_count": 4340,
+      "start_line": 2851,
+      "end_line": 3311
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-v.txt",
+      "word_count": 2538,
+      "start_line": 3312,
+      "end_line": 3587
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-vi.txt",
+      "word_count": 2173,
+      "start_line": 3588,
+      "end_line": 3826
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-vii.txt",
+      "word_count": 2,
+      "start_line": 3827,
+      "end_line": 3828
+    },
+    {
+      "id": "seg_014",
+      "label": "The Story of Etain and Midir",
+      "segment_type": "tale",
+      "file": "seg_014_the-story-of-etain-and-midir.txt",
+      "word_count": 3853,
+      "start_line": 3829,
+      "end_line": 4212
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-viii.txt",
+      "word_count": 1091,
+      "start_line": 4213,
+      "end_line": 4324
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-ix.txt",
+      "word_count": 3059,
+      "start_line": 4325,
+      "end_line": 4623
+    },
+    {
+      "id": "seg_017",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-x.txt",
+      "word_count": 1075,
+      "start_line": 4624,
+      "end_line": 4717
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-xi.txt",
+      "word_count": 2452,
+      "start_line": 4718,
+      "end_line": 4956
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-xii.txt",
+      "word_count": 2,
+      "start_line": 4957,
+      "end_line": 4958
+    },
+    {
+      "id": "seg_020",
+      "label": "The Tale of Vivionn the Giantess",
+      "segment_type": "tale",
+      "file": "seg_020_the-tale-of-vivionn-the-giantess.txt",
+      "word_count": 1250,
+      "start_line": 4959,
+      "end_line": 5067
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-xiii.txt",
+      "word_count": 4343,
+      "start_line": 5068,
+      "end_line": 5492
+    },
+    {
+      "id": "seg_022",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-xiv.txt",
+      "word_count": 1412,
+      "start_line": 5493,
+      "end_line": 5615
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-xv.txt",
+      "word_count": 5253,
+      "start_line": 5616,
+      "end_line": 6077
+    },
+    {
+      "id": "seg_024",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-xvi.txt",
+      "word_count": 10405,
+      "start_line": 6078,
+      "end_line": 7209
+    },
+    {
+      "id": "seg_025",
+      "label": "The charming tale, of his marriage with Ethne ni Dunlaing is taken",
+      "segment_type": "tale",
+      "file": "seg_025_the-charming-tale-of-his-marriage-with-e.txt",
+      "word_count": 114,
+      "start_line": 7210,
+      "end_line": 7220
+    },
+    {
+      "id": "seg_026",
+      "label": "The story of Cormac's adventures in Fairyland has been published with",
+      "segment_type": "tale",
+      "file": "seg_026_the-story-of-cormacs-adventures-in-fairy.txt",
+      "word_count": 86,
+      "start_line": 7221,
+      "end_line": 7228
+    },
+    {
+      "id": "seg_027",
+      "label": "The ingenious story of the _Judgment concerning Cormac's Sword_ is",
+      "segment_type": "tale",
+      "file": "seg_027_the-ingenious-story-of-the-judgment-conc.txt",
+      "word_count": 432,
+      "start_line": 7229,
+      "end_line": 7314
+    }
+  ]
+}

@@ -1,0 +1,585 @@
+{
+  "text_id": "inannas-descent",
+  "tradition": "mesopotamian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesopotamian\\inannas-descent\\normalized\\inannas-descent_best.txt",
+  "strategy": "structural",
+  "segment_count": 64,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "1-5",
+      "segment_type": "line_range",
+      "file": "seg_001_1-5.txt",
+      "word_count": 59,
+      "start_line": 0,
+      "end_line": 9
+    },
+    {
+      "id": "seg_002",
+      "label": "6-13",
+      "segment_type": "line_range",
+      "file": "seg_002_6-13.txt",
+      "word_count": 207,
+      "start_line": 10,
+      "end_line": 92
+    },
+    {
+      "id": "seg_003",
+      "label": "14-19",
+      "segment_type": "line_range",
+      "file": "seg_003_14-19.txt",
+      "word_count": 55,
+      "start_line": 93,
+      "end_line": 98
+    },
+    {
+      "id": "seg_004",
+      "label": "20-25",
+      "segment_type": "line_range",
+      "file": "seg_004_20-25.txt",
+      "word_count": 70,
+      "start_line": 99,
+      "end_line": 107
+    },
+    {
+      "id": "seg_005",
+      "label": "26-27",
+      "segment_type": "line_range",
+      "file": "seg_005_26-27.txt",
+      "word_count": 12,
+      "start_line": 108,
+      "end_line": 112
+    },
+    {
+      "id": "seg_006",
+      "label": "28-31",
+      "segment_type": "line_range",
+      "file": "seg_006_28-31.txt",
+      "word_count": 56,
+      "start_line": 113,
+      "end_line": 129
+    },
+    {
+      "id": "seg_007",
+      "label": "32-36",
+      "segment_type": "line_range",
+      "file": "seg_007_32-36.txt",
+      "word_count": 45,
+      "start_line": 130,
+      "end_line": 134
+    },
+    {
+      "id": "seg_008",
+      "label": "37-40",
+      "segment_type": "line_range",
+      "file": "seg_008_37-40.txt",
+      "word_count": 55,
+      "start_line": 135,
+      "end_line": 148
+    },
+    {
+      "id": "seg_009",
+      "label": "41-47",
+      "segment_type": "line_range",
+      "file": "seg_009_41-47.txt",
+      "word_count": 78,
+      "start_line": 149,
+      "end_line": 165
+    },
+    {
+      "id": "seg_010",
+      "label": "48-56",
+      "segment_type": "line_range",
+      "file": "seg_010_48-56.txt",
+      "word_count": 97,
+      "start_line": 166,
+      "end_line": 190
+    },
+    {
+      "id": "seg_011",
+      "label": "57-64",
+      "segment_type": "line_range",
+      "file": "seg_011_57-64.txt",
+      "word_count": 92,
+      "start_line": 191,
+      "end_line": 212
+    },
+    {
+      "id": "seg_012",
+      "label": "65-67",
+      "segment_type": "line_range",
+      "file": "seg_012_65-67.txt",
+      "word_count": 28,
+      "start_line": 213,
+      "end_line": 218
+    },
+    {
+      "id": "seg_013",
+      "label": "68-72",
+      "segment_type": "line_range",
+      "file": "seg_013_68-72.txt",
+      "word_count": 37,
+      "start_line": 219,
+      "end_line": 229
+    },
+    {
+      "id": "seg_014",
+      "label": "73-77",
+      "segment_type": "line_range",
+      "file": "seg_014_73-77.txt",
+      "word_count": 47,
+      "start_line": 230,
+      "end_line": 238
+    },
+    {
+      "id": "seg_015",
+      "label": "78-84",
+      "segment_type": "line_range",
+      "file": "seg_015_78-84.txt",
+      "word_count": 54,
+      "start_line": 239,
+      "end_line": 249
+    },
+    {
+      "id": "seg_016",
+      "label": "85-89",
+      "segment_type": "line_range",
+      "file": "seg_016_85-89.txt",
+      "word_count": 40,
+      "start_line": 250,
+      "end_line": 258
+    },
+    {
+      "id": "seg_017",
+      "label": "90-93",
+      "segment_type": "line_range",
+      "file": "seg_017_90-93.txt",
+      "word_count": 37,
+      "start_line": 259,
+      "end_line": 268
+    },
+    {
+      "id": "seg_018",
+      "label": "94-101",
+      "segment_type": "line_range",
+      "file": "seg_018_94-101.txt",
+      "word_count": 68,
+      "start_line": 269,
+      "end_line": 283
+    },
+    {
+      "id": "seg_019",
+      "label": "102-107",
+      "segment_type": "line_range",
+      "file": "seg_019_102-107.txt",
+      "word_count": 62,
+      "start_line": 284,
+      "end_line": 290
+    },
+    {
+      "id": "seg_020",
+      "label": "108-113",
+      "segment_type": "line_range",
+      "file": "seg_020_108-113.txt",
+      "word_count": 71,
+      "start_line": 291,
+      "end_line": 298
+    },
+    {
+      "id": "seg_021",
+      "label": "114-122",
+      "segment_type": "line_range",
+      "file": "seg_021_114-122.txt",
+      "word_count": 87,
+      "start_line": 299,
+      "end_line": 312
+    },
+    {
+      "id": "seg_022",
+      "label": "123-128",
+      "segment_type": "line_range",
+      "file": "seg_022_123-128.txt",
+      "word_count": 49,
+      "start_line": 313,
+      "end_line": 322
+    },
+    {
+      "id": "seg_023",
+      "label": "129-133",
+      "segment_type": "line_range",
+      "file": "seg_023_129-133.txt",
+      "word_count": 71,
+      "start_line": 323,
+      "end_line": 338
+    },
+    {
+      "id": "seg_024",
+      "label": "134-138",
+      "segment_type": "line_range",
+      "file": "seg_024_134-138.txt",
+      "word_count": 46,
+      "start_line": 339,
+      "end_line": 348
+    },
+    {
+      "id": "seg_025",
+      "label": "139-143",
+      "segment_type": "line_range",
+      "file": "seg_025_139-143.txt",
+      "word_count": 46,
+      "start_line": 349,
+      "end_line": 358
+    },
+    {
+      "id": "seg_026",
+      "label": "144-148",
+      "segment_type": "line_range",
+      "file": "seg_026_144-148.txt",
+      "word_count": 47,
+      "start_line": 359,
+      "end_line": 368
+    },
+    {
+      "id": "seg_027",
+      "label": "149-153",
+      "segment_type": "line_range",
+      "file": "seg_027_149-153.txt",
+      "word_count": 45,
+      "start_line": 369,
+      "end_line": 378
+    },
+    {
+      "id": "seg_028",
+      "label": "154-158",
+      "segment_type": "line_range",
+      "file": "seg_028_154-158.txt",
+      "word_count": 49,
+      "start_line": 379,
+      "end_line": 387
+    },
+    {
+      "id": "seg_029",
+      "label": "159-163",
+      "segment_type": "line_range",
+      "file": "seg_029_159-163.txt",
+      "word_count": 49,
+      "start_line": 388,
+      "end_line": 398
+    },
+    {
+      "id": "seg_030",
+      "label": "164-172",
+      "segment_type": "line_range",
+      "file": "seg_030_164-172.txt",
+      "word_count": 93,
+      "start_line": 399,
+      "end_line": 411
+    },
+    {
+      "id": "seg_031",
+      "label": "173-175",
+      "segment_type": "line_range",
+      "file": "seg_031_173-175.txt",
+      "word_count": 57,
+      "start_line": 412,
+      "end_line": 427
+    },
+    {
+      "id": "seg_032",
+      "label": "176-182",
+      "segment_type": "line_range",
+      "file": "seg_032_176-182.txt",
+      "word_count": 76,
+      "start_line": 428,
+      "end_line": 439
+    },
+    {
+      "id": "seg_033",
+      "label": "183-189",
+      "segment_type": "line_range",
+      "file": "seg_033_183-189.txt",
+      "word_count": 79,
+      "start_line": 440,
+      "end_line": 457
+    },
+    {
+      "id": "seg_034",
+      "label": "190-194",
+      "segment_type": "line_range",
+      "file": "seg_034_190-194.txt",
+      "word_count": 72,
+      "start_line": 458,
+      "end_line": 471
+    },
+    {
+      "id": "seg_035",
+      "label": "195-203",
+      "segment_type": "line_range",
+      "file": "seg_035_195-203.txt",
+      "word_count": 100,
+      "start_line": 472,
+      "end_line": 496
+    },
+    {
+      "id": "seg_036",
+      "label": "204-208",
+      "segment_type": "line_range",
+      "file": "seg_036_204-208.txt",
+      "word_count": 72,
+      "start_line": 497,
+      "end_line": 510
+    },
+    {
+      "id": "seg_037",
+      "label": "209-216",
+      "segment_type": "line_range",
+      "file": "seg_037_209-216.txt",
+      "word_count": 95,
+      "start_line": 511,
+      "end_line": 531
+    },
+    {
+      "id": "seg_038",
+      "label": "217-225",
+      "segment_type": "line_range",
+      "file": "seg_038_217-225.txt",
+      "word_count": 108,
+      "start_line": 532,
+      "end_line": 563
+    },
+    {
+      "id": "seg_039",
+      "label": "226-235",
+      "segment_type": "line_range",
+      "file": "seg_039_226-235.txt",
+      "word_count": 113,
+      "start_line": 564,
+      "end_line": 588
+    },
+    {
+      "id": "seg_040",
+      "label": "236-245",
+      "segment_type": "line_range",
+      "file": "seg_040_236-245.txt",
+      "word_count": 91,
+      "start_line": 589,
+      "end_line": 597
+    },
+    {
+      "id": "seg_041",
+      "label": "246-253",
+      "segment_type": "line_range",
+      "file": "seg_041_246-253.txt",
+      "word_count": 98,
+      "start_line": 598,
+      "end_line": 607
+    },
+    {
+      "id": "seg_042",
+      "label": "254-262",
+      "segment_type": "line_range",
+      "file": "seg_042_254-262.txt",
+      "word_count": 84,
+      "start_line": 608,
+      "end_line": 623
+    },
+    {
+      "id": "seg_043",
+      "label": "263-272",
+      "segment_type": "line_range",
+      "file": "seg_043_263-272.txt",
+      "word_count": 90,
+      "start_line": 624,
+      "end_line": 631
+    },
+    {
+      "id": "seg_044",
+      "label": "273-281",
+      "segment_type": "line_range",
+      "file": "seg_044_273-281.txt",
+      "word_count": 105,
+      "start_line": 632,
+      "end_line": 649
+    },
+    {
+      "id": "seg_045",
+      "label": "282-289",
+      "segment_type": "line_range",
+      "file": "seg_045_282-289.txt",
+      "word_count": 74,
+      "start_line": 650,
+      "end_line": 672
+    },
+    {
+      "id": "seg_046",
+      "label": "290-294",
+      "segment_type": "line_range",
+      "file": "seg_046_290-294.txt",
+      "word_count": 60,
+      "start_line": 673,
+      "end_line": 680
+    },
+    {
+      "id": "seg_047",
+      "label": "295-305",
+      "segment_type": "line_range",
+      "file": "seg_047_295-305.txt",
+      "word_count": 128,
+      "start_line": 681,
+      "end_line": 703
+    },
+    {
+      "id": "seg_048",
+      "label": "306-310",
+      "segment_type": "line_range",
+      "file": "seg_048_306-310.txt",
+      "word_count": 52,
+      "start_line": 704,
+      "end_line": 716
+    },
+    {
+      "id": "seg_049",
+      "label": "311-321",
+      "segment_type": "line_range",
+      "file": "seg_049_311-321.txt",
+      "word_count": 105,
+      "start_line": 717,
+      "end_line": 730
+    },
+    {
+      "id": "seg_050",
+      "label": "322-328",
+      "segment_type": "line_range",
+      "file": "seg_050_322-328.txt",
+      "word_count": 76,
+      "start_line": 731,
+      "end_line": 760
+    },
+    {
+      "id": "seg_051",
+      "label": "329-333",
+      "segment_type": "line_range",
+      "file": "seg_051_329-333.txt",
+      "word_count": 50,
+      "start_line": 761,
+      "end_line": 774
+    },
+    {
+      "id": "seg_052",
+      "label": "334-338",
+      "segment_type": "line_range",
+      "file": "seg_052_334-338.txt",
+      "word_count": 38,
+      "start_line": 775,
+      "end_line": 786
+    },
+    {
+      "id": "seg_053",
+      "label": "339-343",
+      "segment_type": "line_range",
+      "file": "seg_053_339-343.txt",
+      "word_count": 50,
+      "start_line": 787,
+      "end_line": 800
+    },
+    {
+      "id": "seg_054",
+      "label": "344-347",
+      "segment_type": "line_range",
+      "file": "seg_054_344-347.txt",
+      "word_count": 43,
+      "start_line": 801,
+      "end_line": 809
+    },
+    {
+      "id": "seg_055",
+      "label": "348-353",
+      "segment_type": "line_range",
+      "file": "seg_055_348-353.txt",
+      "word_count": 70,
+      "start_line": 810,
+      "end_line": 821
+    },
+    {
+      "id": "seg_056",
+      "label": "354-358",
+      "segment_type": "line_range",
+      "file": "seg_056_354-358.txt",
+      "word_count": 49,
+      "start_line": 822,
+      "end_line": 830
+    },
+    {
+      "id": "seg_057",
+      "label": "359-367",
+      "segment_type": "line_range",
+      "file": "seg_057_359-367.txt",
+      "word_count": 59,
+      "start_line": 831,
+      "end_line": 839
+    },
+    {
+      "id": "seg_058",
+      "label": "368-375",
+      "segment_type": "line_range",
+      "file": "seg_058_368-375.txt",
+      "word_count": 72,
+      "start_line": 840,
+      "end_line": 853
+    },
+    {
+      "id": "seg_059",
+      "label": "376-383",
+      "segment_type": "line_range",
+      "file": "seg_059_376-383.txt",
+      "word_count": 60,
+      "start_line": 854,
+      "end_line": 880
+    },
+    {
+      "id": "seg_060",
+      "label": "384-393",
+      "segment_type": "line_range",
+      "file": "seg_060_384-393.txt",
+      "word_count": 64,
+      "start_line": 881,
+      "end_line": 889
+    },
+    {
+      "id": "seg_061",
+      "label": "394-398",
+      "segment_type": "line_range",
+      "file": "seg_061_394-398.txt",
+      "word_count": 44,
+      "start_line": 890,
+      "end_line": 899
+    },
+    {
+      "id": "seg_062",
+      "label": "399-403",
+      "segment_type": "line_range",
+      "file": "seg_062_399-403.txt",
+      "word_count": 51,
+      "start_line": 900,
+      "end_line": 911
+    },
+    {
+      "id": "seg_063",
+      "label": "404-410",
+      "segment_type": "line_range",
+      "file": "seg_063_404-410.txt",
+      "word_count": 63,
+      "start_line": 912,
+      "end_line": 921
+    },
+    {
+      "id": "seg_064",
+      "label": "411-412",
+      "segment_type": "line_range",
+      "file": "seg_064_411-412.txt",
+      "word_count": 69,
+      "start_line": 922,
+      "end_line": 940
+    }
+  ]
+}

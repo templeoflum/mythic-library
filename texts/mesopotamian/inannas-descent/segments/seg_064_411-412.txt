@@ -1,0 +1,19 @@
+411-412
+Holy Erec-ki-gala
+-- sweet is your praise.
+Top
+|
+Home
+This composition:
+composite text
+|
+bibliography
+Revision history
+19.iii.1998-10.iv.1998 : GC : adapting translation
+26.iv.1998 : JAB : proofreading
+27.x.1998 : JAB : minor corrections
+29.xi.1999 : GC : tagging
+21.i.2000 : ER : proofreading SGML
+21.i.2000 : ER : converting to HTML 4.0
+7.ix.2001 : ER : header and footer reformatted; substantive content of file not
+changed

@@ -1,0 +1,184 @@
+Produced by Jeroen Hellingman and the Online Distributed
+Proofreading Team at http://www.pgdp.net/ for Project
+Gutenberg (This book was produced from scanned images of
+public domain material from the Google Books project.)
+
+
+                             THE POPOL VUH
+
+                     The Mythic and Heroic Sagas of
+                     the Kichés of Central America
+
+
+                                   By
+
+                              LEWIS SPENCE
+
+
+                    Published by David Nutt, at the
+                 Sign of the Phoenix, Long Acre, London
+                                  1908
+
+
+PREFACE
+
+
+The "Popol Vuh" is the New World's richest mythological mine. No
+translation of it has as yet appeared in English, and no adequate
+translation in any European language. It has been neglected to a
+certain extent because of the unthinking strictures passed upon
+its authenticity. That other manuscripts exist in Guatemala than
+the one discovered by Ximenes and transcribed by Scherzer and
+Brasseur de Bourbourg is probable. So thought Brinton, and the
+present writer shares his belief. And ere it is too late it would
+be well that these--the only records of the faith of the builders of
+the mystic ruined and deserted cities of Central America--should be
+recovered. This is not a matter that should be left to the enterprise
+of individuals, but one which should engage the consideration of
+interested governments; for what is myth to-day is often history
+to-morrow.
+
+
+LEWIS SPENCE.
+
+July 1908.
+
+
+THE POPOL VUH
+
+[The numbers in the text refer to notes at the end of the study]
+
+
+There is no document of greater importance to the study of the
+pre-Columbian mythology of America than the "Popol Vuh." It is the
+chief source of our knowledge of the mythology of the Kiché people of
+Central America, and it is further of considerable comparative value
+when studied in conjunction with the mythology of the Nahuatlacâ, or
+Mexican peoples. This interesting text, the recovery of which forms one
+of the most romantic episodes in the history of American bibliography,
+was written by a Christianised native of Guatemala some time in the
+seventeenth century, and was copied in the Kiché language, in which
+it was originally written, by a monk of the Order of Predicadores, one
+Francisco Ximenes, who also added a Spanish translation and scholia.
+
+The Abbé Brasseur de Bourbourg, a profound student of American
+archæology and languages (whose euhemeristic interpretations of
+the Mexican myths are as worthless as the priceless materials he
+unearthed are valuable) deplored, in a letter to the Duc de Valmy,
+[1] the supposed loss of the "Popol Vuh," which he was aware had been
+made use of early in the nineteenth century by a certain Don Felix
+Cabrera. Dr. C. Scherzer, an Austrian scholar, thus made aware of
+its value, paid a visit to the Republic of Guatemala in 1854 or 1855,
+and was successful in tracing the missing manuscript in the library
+of the University of San Carlos in the city of Guatemala. It was
+afterwards ascertained that its scholiast, Ximenes, had deposited it
+in the library of his convent at Chichicastenango, whence it passed
+to the San Carlos library in 1830.
+
+Scherzer at once made a copy of the Spanish translation of the
+manuscript, which he published at Vienna in 1856 under the title
+of "Las Historias del origen de los Indios de Guatemala, par el
+R. P. F. Francisco Ximenes." The Abbé Brasseur also took a copy of
+the original, which he published at Paris in 1861, with the title
+"Vuh Popol: Le Livre Sacré de Quichés, et les Mythes de l'Antiquité
+Américaine." In this work the Kiché original and the Abbe's French
+translation are set forth side by side. Unfortunately both the Spanish
+and the French translations leave much to be desired so far as their
+accuracy is concerned, and they are rendered of little use by reason
+of the misleading notes which accompany them.
+
+The name "Popol Vuh" signifies "Record of the Community," and
+its literal translation is "Book of the Mat," from the Kiché word
+"pop" or "popol," a mat or rug of woven rushes or bark on which the
+entire family sat, and "vuh" or "uuh," paper or book, from "uoch"
+to write. The "Popol Vuh" is an example of a world-wide genre--a
+type of annals of which the first portion is pure mythology, which
+gradually shades off into pure history, evolving from the hero-myths
+of saga to the recital of the deeds of authentic personages. It may,
+in fact, be classed with the Heimskringla of Snorre, the Danish
+History of Saxo-Grammaticus, the Chinese History in the Five Books,
+the Japanese "Nihongi," and, so far as its fourth book is concerned,
+it somewhat resembles the Pictish Chronicle.
+
+The language in which the "Popol Vuh" was written, was, as has been
+said, the Kiché, a dialect of the great Maya-Kiché tongue spoken at the
+time of the Conquest from the borders of Mexico on the north to those
+of the present State of Nicaragua on the south; but whereas the Mayan
+was spoken in Yucatan proper, and the State of Chiapas, the Kiché was
+the tongue of the peoples of that part of Central America now occupied
+by the States of Guatemala, Honduras and San Salvador, where it is
+still used by the natives. It is totally different to the Nahuatl,
+the language of the people of Anahuac or Mexico, both as regards
+its origin and structure, and its affinities with other American
+tongues are even less distinct than the those between the Slavonic
+and Teutonic groups. Of this tongue the "Popol Vuh" is practically
+the only monument; at all events the only work by a native of the
+district in which it was used. A cognate dialect, the Cakchiquel,
+produced the "Annals" of that people, otherwise known as "The Book of
+Chilan Balam," a work purely of genealogical interest, which may be
+consulted in the admirable translation of the late Daniel G. Brinton.
+
+The Kiché people at the time of their discovery, which was immediately
+subsequent to the fall of Mexico, had in part lost that culture which
+was characteristic of the Mayan race, the remnants of which have
+excited universal wonder in the ruins of the vast desert cities of
+Central America1. At a period not far distant from the Conquest the
+once centralised Government of the Mayan peoples had been broken up
+into petty States and Confederacies, which in their character recall
+the city-states of mediæval Italy. In all probability the civilisation
+possessed by these peoples had been brought them by a race from
+Mexico called the Toltecs2, who taught them the arts of building
+in stone and writing in hieroglyphics, and who probably influenced
+their mythology most profoundly. The Toltecs were not, however, in
+any way cognate with the Mayans, and were in all likelihood rapidly
+absorbed by them. The Mayans were notably an agricultural people,
+and it is not impossible that in their country the maize-plant was
+first cultivated with the object of obtaining a regular cereal supply3.
+
+Such, then, were the people whose mythology produced the body of
+tradition and mythi-history known as the "Popol Vuh"; and ere we pass
+to a consideration of their beliefs, their gods, and their religious
+affinities, it will be well to summarise the three books of it which
+treat of these things, as fully as space will permit, using for that
+purpose both the French translation of Brasseur and the Spanish one
+of Ximenes.
+
+
+THE FIRST BOOK
+
+Over a universe wrapped in the gloom of a dense and primeval night
+passed the god Hurakan, the mighty wind. He called out "earth,"
+and the solid land appeared. The chief gods took counsel; they were
+Hurakan, Gucumatz, the serpent covered with green feathers, and
+Xpiyacoc and Xmucane, the mother and father gods. As the result of
+their deliberations animals were created. But as yet man was not. To
+supply the deficiency the divine beings resolved to create mannikins
+carved out of wood. But these soon incurred the displeasure of the
+gods, who, irritated by their lack of reverence, resolved to destroy
+them. Then by the will of Hurakan, the Heart of Heaven, the waters
+were swollen, and a great flood came upon the mannikins of wood. They
+were drowned and a thick resin fell from heaven. The bird Xecotcovach
+tore out their eyes; the bird Camulatz cut off their heads; the bird
+Cotzbalam devoured their flesh; the bird Tecumbalam broke their bones
+and sinews and ground them into powder. Because they had not thought
+on Hurakan, therefore the face of the earth grew dark, and a pouring
+rain commenced, raining by day and by night. Then all sorts of beings,
+great and small, gathered together to abuse the men to their faces. The
+very household utensils and animals jeered at them, their mill-stones,
+their plates, their cups, their dogs, their hens. Said the dogs and
+hens, "Very badly have you treated us, and you have bitten us. Now we
+bite you in turn." Said the mill-stones (metates [2]), "Very much were
+we tormented by you, and daily, daily, night and day, it was squeak,
+screech, screech, [3] for your sake. Now you shall feel our strength,
+and we will grind your flesh and make meal of your bodies." And the
+dogs upbraided the mannikins because they had not been fed, and tore
+the unhappy images with their teeth. And the cups and dishes said,
+"Pain and misery you gave us, smoking our tops and sides, cooking us
+over the fire, burning and hurting us as if we had no feeling. Now it
+is your turn, and you shall burn." Then ran the mannikins hither and
+thither in despair. They climbed to the roofs of the houses, but the
+houses crumbled under their feet; they tried to mount to the tops of
+the trees, but the trees hurled them from them; they sought refuge in
+the caverns, but the caverns closed before them. Thus was accomplished
+the ruin of this race, destined to be overthrown. And it is said that
+their posterity are the little monkeys who live in the woods.

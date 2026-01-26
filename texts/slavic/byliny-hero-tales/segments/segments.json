@@ -1,0 +1,72 @@
+{
+  "text_id": "byliny-hero-tales",
+  "tradition": "slavic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\slavic\\byliny-hero-tales\\normalized\\byliny-hero-tales_best.txt",
+  "strategy": "structural",
+  "segment_count": 7,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 1793,
+      "start_line": 0,
+      "end_line": 393
+    },
+    {
+      "id": "seg_002",
+      "label": "The first story is about Volgd, and in the first",
+      "segment_type": "tale",
+      "file": "seg_002_the-first-story-is-about-volgd-and-in-th.txt",
+      "word_count": 326,
+      "start_line": 394,
+      "end_line": 448
+    },
+    {
+      "id": "seg_003",
+      "label": "THE STORY OF VOLGA",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-volga.txt",
+      "word_count": 2735,
+      "start_line": 449,
+      "end_line": 801
+    },
+    {
+      "id": "seg_004",
+      "label": "III",
+      "segment_type": "section",
+      "file": "seg_004_iii.txt",
+      "word_count": 395,
+      "start_line": 802,
+      "end_line": 855
+    },
+    {
+      "id": "seg_005",
+      "label": "IV",
+      "segment_type": "section",
+      "file": "seg_005_iv.txt",
+      "word_count": 2341,
+      "start_line": 856,
+      "end_line": 1182
+    },
+    {
+      "id": "seg_006",
+      "label": "x",
+      "segment_type": "section",
+      "file": "seg_006_x.txt",
+      "word_count": 4013,
+      "start_line": 1183,
+      "end_line": 1717
+    },
+    {
+      "id": "seg_007",
+      "label": "VII",
+      "segment_type": "section",
+      "file": "seg_007_vii.txt",
+      "word_count": 4902,
+      "start_line": 1718,
+      "end_line": 2404
+    }
+  ]
+}

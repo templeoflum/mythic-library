@@ -1,0 +1,126 @@
+{
+  "text_id": "polynesian-mythology",
+  "tradition": "polynesian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\polynesian-mythology\\normalized\\polynesian-mythology_best.txt",
+  "strategy": "structural",
+  "segment_count": 13,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 36104,
+      "start_line": 0,
+      "end_line": 7860
+    },
+    {
+      "id": "seg_002",
+      "label": "STORY OFMARU-TUAHU. 247\"",
+      "segment_type": "tale",
+      "file": "seg_002_story-ofmaru-tuahu-247.txt",
+      "word_count": 306,
+      "start_line": 7861,
+      "end_line": 7922
+    },
+    {
+      "id": "seg_003",
+      "label": "STORY OFMARU-TUAHU. 249",
+      "segment_type": "tale",
+      "file": "seg_003_story-ofmaru-tuahu-249.txt",
+      "word_count": 303,
+      "start_line": 7923,
+      "end_line": 7985
+    },
+    {
+      "id": "seg_004",
+      "label": "STORY OFMARU-TUAHU. 251",
+      "segment_type": "tale",
+      "file": "seg_004_story-ofmaru-tuahu-251.txt",
+      "word_count": 315,
+      "start_line": 7986,
+      "end_line": 8048
+    },
+    {
+      "id": "seg_005",
+      "label": "STORY OFMARIT-TUAHU. 253",
+      "segment_type": "tale",
+      "file": "seg_005_story-ofmarit-tuahu-253.txt",
+      "word_count": 269,
+      "start_line": 8049,
+      "end_line": 8110
+    },
+    {
+      "id": "seg_006",
+      "label": "STORY OFMARU-TUAHU. 255",
+      "segment_type": "tale",
+      "file": "seg_006_story-ofmaru-tuahu-255.txt",
+      "word_count": 300,
+      "start_line": 8111,
+      "end_line": 8172
+    },
+    {
+      "id": "seg_007",
+      "label": "STORY OFMARU-TUAHU. 257",
+      "segment_type": "tale",
+      "file": "seg_007_story-ofmaru-tuahu-257.txt",
+      "word_count": 605,
+      "start_line": 8173,
+      "end_line": 8296
+    },
+    {
+      "id": "seg_008",
+      "label": "STORY OFKAHUREREMOA. 261",
+      "segment_type": "tale",
+      "file": "seg_008_story-ofkahureremoa-261.txt",
+      "word_count": 271,
+      "start_line": 8297,
+      "end_line": 8356
+    },
+    {
+      "id": "seg_009",
+      "label": "STORY OFKAHUEEREMOA. 263",
+      "segment_type": "tale",
+      "file": "seg_009_story-ofkahueeremoa-263.txt",
+      "word_count": 309,
+      "start_line": 8357,
+      "end_line": 8418
+    },
+    {
+      "id": "seg_010",
+      "label": "STORY OFKAHUEEREMOA. 265",
+      "segment_type": "tale",
+      "file": "seg_010_story-ofkahueeremoa-265.txt",
+      "word_count": 293,
+      "start_line": 8419,
+      "end_line": 8483
+    },
+    {
+      "id": "seg_011",
+      "label": "STORY OFKAHUREREMOA, 267",
+      "segment_type": "tale",
+      "file": "seg_011_story-ofkahureremoa-267.txt",
+      "word_count": 285,
+      "start_line": 8484,
+      "end_line": 8546
+    },
+    {
+      "id": "seg_012",
+      "label": "STORY OFKAHUREREMOA. 269",
+      "segment_type": "tale",
+      "file": "seg_012_story-ofkahureremoa-269.txt",
+      "word_count": 311,
+      "start_line": 8547,
+      "end_line": 8608
+    },
+    {
+      "id": "seg_013",
+      "label": "STORY OFKAHUREREMOA. 271",
+      "segment_type": "tale",
+      "file": "seg_013_story-ofkahureremoa-271.txt",
+      "word_count": 8023,
+      "start_line": 8609,
+      "end_line": 10391
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "text_id": "samguk-yusa",
+  "tradition": "korean",
+  "source_format": "pdf",
+  "original_file": "HSE-Russia_Various.pdf",
+  "extraction_date": "2026-01-26T10:05:16.204710",
+  "total_pages": 47,
+  "pages_with_text": 47,
+  "total_chars": 184260,
+  "garbled_ratio": 0.0,
+  "extraction_quality": "good",
+  "word_count": 31270,
+  "line_count": 3112,
+  "char_count": 181361
+}

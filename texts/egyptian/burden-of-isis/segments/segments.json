@@ -1,0 +1,36 @@
+{
+  "text_id": "burden-of-isis",
+  "tradition": "egyptian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\burden-of-isis\\normalized\\burden-of-isis_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 72,
+      "start_line": 0,
+      "end_line": 59
+    },
+    {
+      "id": "seg_002",
+      "label": "Hymn toOsiris-Sokar , . ..52",
+      "segment_type": "hymn",
+      "file": "seg_002_hymn-toosiris-sokar-52.txt",
+      "word_count": 4500,
+      "start_line": 60,
+      "end_line": 1424
+    },
+    {
+      "id": "seg_003",
+      "label": "HYMN TOOSIRIS-SOKAR",
+      "segment_type": "hymn",
+      "file": "seg_003_hymn-toosiris-sokar.txt",
+      "word_count": 783,
+      "start_line": 1425,
+      "end_line": 1689
+    }
+  ]
+}

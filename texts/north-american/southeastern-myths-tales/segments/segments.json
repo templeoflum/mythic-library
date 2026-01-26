@@ -1,0 +1,18 @@
+{
+  "text_id": "southeastern-myths-tales",
+  "tradition": "north-american",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\southeastern-myths-tales\\normalized\\southeastern-myths-tales_best.txt",
+  "strategy": "single",
+  "segment_count": 1,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "full_text",
+      "segment_type": "full",
+      "file": "seg_001_full-text.txt",
+      "word_count": 1989,
+      "start_line": 0,
+      "end_line": 355
+    }
+  ]
+}

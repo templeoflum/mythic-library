@@ -1,0 +1,90 @@
+{
+  "text_id": "hawaiian-legends-gods-ghosts",
+  "tradition": "polynesian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\hawaiian-legends-gods-ghosts\\normalized\\hawaiian-legends-gods-ghosts_best.txt",
+  "strategy": "structural",
+  "segment_count": 9,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 497,
+      "start_line": 0,
+      "end_line": 122
+    },
+    {
+      "id": "seg_002",
+      "label": "story of a princess whose continual death and resurrection were invented",
+      "segment_type": "tale",
+      "file": "seg_002_story-of-a-princess-whose-continual-deat.txt",
+      "word_count": 8443,
+      "start_line": 123,
+      "end_line": 1025
+    },
+    {
+      "id": "seg_003",
+      "label": "The story of Laka and the fairies is told to illustrate the difficulties",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-laka-and-the-fairies-is-tol.txt",
+      "word_count": 3084,
+      "start_line": 1026,
+      "end_line": 1339
+    },
+    {
+      "id": "seg_004",
+      "label": "The story of the shark-god Kauhuhu has been told under the legend of",
+      "segment_type": "tale",
+      "file": "seg_004_the-story-of-the-shark-god-kauhuhu-has-b.txt",
+      "word_count": 865,
+      "start_line": 1340,
+      "end_line": 1413
+    },
+    {
+      "id": "seg_005",
+      "label": "the story of his wanderings all over Molokai, seeking for some power",
+      "segment_type": "tale",
+      "file": "seg_005_the-story-of-his-wanderings-all-over-mol.txt",
+      "word_count": 6844,
+      "start_line": 1414,
+      "end_line": 2084
+    },
+    {
+      "id": "seg_006",
+      "label": "The legend of Kahala is worthy of record in itself, but connected with",
+      "segment_type": "tale",
+      "file": "seg_006_the-legend-of-kahala-is-worthy-of-record.txt",
+      "word_count": 1988,
+      "start_line": 2085,
+      "end_line": 2282
+    },
+    {
+      "id": "seg_007",
+      "label": "The story of Kahala and her connection with the rainbows and waterfalls",
+      "segment_type": "tale",
+      "file": "seg_007_the-story-of-kahala-and-her-connection-w.txt",
+      "word_count": 33299,
+      "start_line": 2283,
+      "end_line": 5832
+    },
+    {
+      "id": "seg_008",
+      "label": "story of the deceiving of Kewa is quite fully translated, and is",
+      "segment_type": "tale",
+      "file": "seg_008_story-of-the-deceiving-of-kewa-is-quite-.txt",
+      "word_count": 6938,
+      "start_line": 5833,
+      "end_line": 6578
+    },
+    {
+      "id": "seg_009",
+      "label": "story of the love between Lohiau and Pele, the goddess of fire. In this",
+      "segment_type": "tale",
+      "file": "seg_009_story-of-the-love-between-lohiau-and-pel.txt",
+      "word_count": 3012,
+      "start_line": 6579,
+      "end_line": 7182
+    }
+  ]
+}

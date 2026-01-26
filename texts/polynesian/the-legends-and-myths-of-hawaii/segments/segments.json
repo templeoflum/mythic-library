@@ -1,0 +1,72 @@
+{
+  "text_id": "the-legends-and-myths-of-hawaii",
+  "tradition": "polynesian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\the-legends-and-myths-of-hawaii\\normalized\\the-legends-and-myths-of-hawaii_best.txt",
+  "strategy": "structural",
+  "segment_count": 7,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 4756,
+      "start_line": 0,
+      "end_line": 935
+    },
+    {
+      "id": "seg_002",
+      "label": "I",
+      "segment_type": "section",
+      "file": "seg_002_i.txt",
+      "word_count": 55,
+      "start_line": 936,
+      "end_line": 947
+    },
+    {
+      "id": "seg_003",
+      "label": "II",
+      "segment_type": "section",
+      "file": "seg_003_ii.txt",
+      "word_count": 56,
+      "start_line": 948,
+      "end_line": 959
+    },
+    {
+      "id": "seg_004",
+      "label": "III",
+      "segment_type": "section",
+      "file": "seg_004_iii.txt",
+      "word_count": 67,
+      "start_line": 960,
+      "end_line": 971
+    },
+    {
+      "id": "seg_005",
+      "label": "IV",
+      "segment_type": "section",
+      "file": "seg_005_iv.txt",
+      "word_count": 7714,
+      "start_line": 972,
+      "end_line": 2423
+    },
+    {
+      "id": "seg_006",
+      "label": "I",
+      "segment_type": "section",
+      "file": "seg_006_i.txt",
+      "word_count": 39,
+      "start_line": 2424,
+      "end_line": 2436
+    },
+    {
+      "id": "seg_007",
+      "label": "II",
+      "segment_type": "section",
+      "file": "seg_007_ii.txt",
+      "word_count": 663,
+      "start_line": 2437,
+      "end_line": 2587
+    }
+  ]
+}

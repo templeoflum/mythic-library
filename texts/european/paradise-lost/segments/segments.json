@@ -1,0 +1,207 @@
+{
+  "text_id": "paradise-lost",
+  "tradition": "european",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\paradise-lost\\normalized\\paradise-lost_best.txt",
+  "strategy": "structural",
+  "segment_count": 22,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_001_i.txt",
+      "word_count": 2,
+      "start_line": 14,
+      "end_line": 15
+    },
+    {
+      "id": "seg_002",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_002_ii.txt",
+      "word_count": 2,
+      "start_line": 16,
+      "end_line": 17
+    },
+    {
+      "id": "seg_003",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_003_iii.txt",
+      "word_count": 2,
+      "start_line": 18,
+      "end_line": 19
+    },
+    {
+      "id": "seg_004",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_004_iv.txt",
+      "word_count": 2,
+      "start_line": 20,
+      "end_line": 21
+    },
+    {
+      "id": "seg_005",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_005_v.txt",
+      "word_count": 2,
+      "start_line": 22,
+      "end_line": 23
+    },
+    {
+      "id": "seg_006",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_006_vi.txt",
+      "word_count": 2,
+      "start_line": 24,
+      "end_line": 25
+    },
+    {
+      "id": "seg_007",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_007_vii.txt",
+      "word_count": 2,
+      "start_line": 26,
+      "end_line": 27
+    },
+    {
+      "id": "seg_008",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_008_viii.txt",
+      "word_count": 2,
+      "start_line": 28,
+      "end_line": 29
+    },
+    {
+      "id": "seg_009",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_009_ix.txt",
+      "word_count": 2,
+      "start_line": 30,
+      "end_line": 31
+    },
+    {
+      "id": "seg_010",
+      "label": "X",
+      "segment_type": "book",
+      "file": "seg_010_x.txt",
+      "word_count": 2,
+      "start_line": 32,
+      "end_line": 34
+    },
+    {
+      "id": "seg_011",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_011_i.txt",
+      "word_count": 6009,
+      "start_line": 35,
+      "end_line": 853
+    },
+    {
+      "id": "seg_012",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_012_ii.txt",
+      "word_count": 3965,
+      "start_line": 854,
+      "end_line": 1398
+    },
+    {
+      "id": "seg_013",
+      "label": "Part curb thir fierie Steeds, or shun the Goal",
+      "segment_type": "part",
+      "file": "seg_013_part-curb-thir-fierie-steeds-or-shun-the.txt",
+      "word_count": 4004,
+      "start_line": 1399,
+      "end_line": 1943
+    },
+    {
+      "id": "seg_014",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_014_iii.txt",
+      "word_count": 5611,
+      "start_line": 1944,
+      "end_line": 2708
+    },
+    {
+      "id": "seg_015",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_015_iv.txt",
+      "word_count": 7813,
+      "start_line": 2709,
+      "end_line": 3769
+    },
+    {
+      "id": "seg_016",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_016_v.txt",
+      "word_count": 6833,
+      "start_line": 3770,
+      "end_line": 4720
+    },
+    {
+      "id": "seg_017",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_017_vi.txt",
+      "word_count": 6805,
+      "start_line": 4721,
+      "end_line": 5670
+    },
+    {
+      "id": "seg_018",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_018_vii.txt",
+      "word_count": 3191,
+      "start_line": 5671,
+      "end_line": 6110
+    },
+    {
+      "id": "seg_019",
+      "label": "Part loosly wing the Region, part more wise",
+      "segment_type": "part",
+      "file": "seg_019_part-loosly-wing-the-region-part-more-wi.txt",
+      "word_count": 6528,
+      "start_line": 6111,
+      "end_line": 7005
+    },
+    {
+      "id": "seg_020",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_020_viii.txt",
+      "word_count": 9071,
+      "start_line": 7006,
+      "end_line": 8249
+    },
+    {
+      "id": "seg_021",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_021_ix.txt",
+      "word_count": 8384,
+      "start_line": 8250,
+      "end_line": 9404
+    },
+    {
+      "id": "seg_022",
+      "label": "X",
+      "segment_type": "book",
+      "file": "seg_022_x.txt",
+      "word_count": 11783,
+      "start_line": 9405,
+      "end_line": 11007
+    }
+  ]
+}

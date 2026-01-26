@@ -1,0 +1,126 @@
+{
+  "text_id": "book-of-the-dead",
+  "tradition": "egyptian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\book-of-the-dead\\normalized\\book-of-the-dead_best.txt",
+  "strategy": "structural",
+  "segment_count": 13,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_001_chapter-i.txt",
+      "word_count": 368,
+      "start_line": 8,
+      "end_line": 45
+    },
+    {
+      "id": "seg_002",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-ii.txt",
+      "word_count": 610,
+      "start_line": 46,
+      "end_line": 101
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-iii.txt",
+      "word_count": 2020,
+      "start_line": 102,
+      "end_line": 277
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iv.txt",
+      "word_count": 339,
+      "start_line": 278,
+      "end_line": 309
+    },
+    {
+      "id": "seg_005",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-v.txt",
+      "word_count": 1094,
+      "start_line": 310,
+      "end_line": 404
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-vi.txt",
+      "word_count": 974,
+      "start_line": 405,
+      "end_line": 490
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-vii.txt",
+      "word_count": 2620,
+      "start_line": 491,
+      "end_line": 726
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-viii.txt",
+      "word_count": 817,
+      "start_line": 727,
+      "end_line": 798
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-ix.txt",
+      "word_count": 1180,
+      "start_line": 799,
+      "end_line": 905
+    },
+    {
+      "id": "seg_010",
+      "label": "Chapter I was recited by the priest who accompanied the mummy to",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-i-was-recited-by-the-priest-who-.txt",
+      "word_count": 125,
+      "start_line": 906,
+      "end_line": 915
+    },
+    {
+      "id": "seg_011",
+      "label": "Chapter VI was cut on figures made of stone, wood, etc. (ushabtiu),",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-vi-was-cut-on-figures-made-of-st.txt",
+      "word_count": 228,
+      "start_line": 916,
+      "end_line": 935
+    },
+    {
+      "id": "seg_012",
+      "label": "Chapter XV has several forms, and each of them contains Hymns to Ra,",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-xv-has-several-forms-and-each-of.txt",
+      "word_count": 907,
+      "start_line": 936,
+      "end_line": 1012
+    },
+    {
+      "id": "seg_013",
+      "label": "Chapter IX. Chapters LXXIV and LXXV secured a passage for the deceased",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-ix-chapters-lxxiv-and-lxxv-secur.txt",
+      "word_count": 1402,
+      "start_line": 1013,
+      "end_line": 1170
+    }
+  ]
+}

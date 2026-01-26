@@ -1,0 +1,144 @@
+{
+  "text_id": "one-thousand-and-one-nights",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\one-thousand-and-one-nights\\normalized\\one-thousand-and-one-nights_best.txt",
+  "strategy": "structural",
+  "segment_count": 15,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 139,
+      "start_line": 0,
+      "end_line": 51
+    },
+    {
+      "id": "seg_002",
+      "label": "Story Of King Shahryar and His Brother",
+      "segment_type": "tale",
+      "file": "seg_002_story-of-king-shahryar-and-his-brother.txt",
+      "word_count": 16637,
+      "start_line": 52,
+      "end_line": 1503
+    },
+    {
+      "id": "seg_003",
+      "label": "story of me and this gazelle and thou shouldst consider it wondrous",
+      "segment_type": "tale",
+      "file": "seg_003_story-of-me-and-this-gazelle-and-thou-sh.txt",
+      "word_count": 854,
+      "start_line": 1504,
+      "end_line": 1576
+    },
+    {
+      "id": "seg_004",
+      "label": "story of the Merchant and the Jinni;\" and she answered \"With joy and",
+      "segment_type": "tale",
+      "file": "seg_004_story-of-the-merchant-and-the-jinni-and-.txt",
+      "word_count": 6053,
+      "start_line": 1577,
+      "end_line": 2084
+    },
+    {
+      "id": "seg_005",
+      "label": "The Tale of the Wazir and the Sage Duban",
+      "segment_type": "tale",
+      "file": "seg_005_the-tale-of-the-wazir-and-the-sage-duban.txt",
+      "word_count": 2953,
+      "start_line": 2085,
+      "end_line": 2331
+    },
+    {
+      "id": "seg_006",
+      "label": "The Tale of the Husband and the Parrot.[FN#90]",
+      "segment_type": "tale",
+      "file": "seg_006_the-tale-of-the-husband-and-the-parrotfn.txt",
+      "word_count": 676,
+      "start_line": 2332,
+      "end_line": 2387
+    },
+    {
+      "id": "seg_007",
+      "label": "The Tale of the Prince and the Ogress",
+      "segment_type": "tale",
+      "file": "seg_007_the-tale-of-the-prince-and-the-ogress.txt",
+      "word_count": 6075,
+      "start_line": 2388,
+      "end_line": 2930
+    },
+    {
+      "id": "seg_008",
+      "label": "The Tale of the Ensorcelled Prince",
+      "segment_type": "tale",
+      "file": "seg_008_the-tale-of-the-ensorcelled-prince.txt",
+      "word_count": 20066,
+      "start_line": 2931,
+      "end_line": 4717
+    },
+    {
+      "id": "seg_009",
+      "label": "The Tale of the Envier and the Envied",
+      "segment_type": "tale",
+      "file": "seg_009_the-tale-of-the-envier-and-the-envied.txt",
+      "word_count": 18547,
+      "start_line": 4718,
+      "end_line": 6306
+    },
+    {
+      "id": "seg_010",
+      "label": "the story of the young Prince and the transformation wherewith the",
+      "segment_type": "tale",
+      "file": "seg_010_the-story-of-the-young-prince-and-the-tr.txt",
+      "word_count": 6240,
+      "start_line": 6307,
+      "end_line": 6858
+    },
+    {
+      "id": "seg_011",
+      "label": "THE TALE OF THE THREE APPLES",
+      "segment_type": "tale",
+      "file": "seg_011_the-tale-of-the-three-apples.txt",
+      "word_count": 44087,
+      "start_line": 6859,
+      "end_line": 10617
+    },
+    {
+      "id": "seg_012",
+      "label": "story of the Hunchback, I will pardon you all your offences.\" Thereupon",
+      "segment_type": "tale",
+      "file": "seg_012_story-of-the-hunchback-i-will-pardon-you.txt",
+      "word_count": 21088,
+      "start_line": 10618,
+      "end_line": 12310
+    },
+    {
+      "id": "seg_013",
+      "label": "the following tale of",
+      "segment_type": "tale",
+      "file": "seg_013_the-following-tale-of.txt",
+      "word_count": 9151,
+      "start_line": 12311,
+      "end_line": 13389
+    },
+    {
+      "id": "seg_014",
+      "label": "ccix",
+      "segment_type": "section",
+      "file": "seg_014_ccix.txt",
+      "word_count": 2102,
+      "start_line": 13390,
+      "end_line": 13635
+    },
+    {
+      "id": "seg_015",
+      "label": "ix",
+      "segment_type": "section",
+      "file": "seg_015_ix.txt",
+      "word_count": 19810,
+      "start_line": 13636,
+      "end_line": 16070
+    }
+  ]
+}

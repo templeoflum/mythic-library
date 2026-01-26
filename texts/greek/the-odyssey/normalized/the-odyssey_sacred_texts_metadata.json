@@ -1,0 +1,16 @@
+{
+  "source_format": "sacred-texts",
+  "text_id": "the-odyssey",
+  "source_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136",
+  "download_date": "2026-01-25T05:18:41.436216",
+  "title": "The Odyssey",
+  "author": "Homer",
+  "tradition": "greek",
+  "date_composed": "c. 8th century BCE",
+  "material_type": "Epic poetry",
+  "original_file": "sacred-texts_hopper_text_Samuel-Butler.txt",
+  "normalization_date": "2026-01-26T10:04:03.485006",
+  "char_count": 11023,
+  "line_count": 590,
+  "word_count": 1764
+}

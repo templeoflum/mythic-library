@@ -1,0 +1,207 @@
+{
+  "text_id": "analects-confucius",
+  "tradition": "chinese",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\analects-confucius\\normalized\\analects-confucius_best.txt",
+  "strategy": "structural",
+  "segment_count": 22,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 178,
+      "start_line": 0,
+      "end_line": 46
+    },
+    {
+      "id": "seg_002",
+      "label": "I.  HSIO R",
+      "segment_type": "book",
+      "file": "seg_002_i-hsio-r.txt",
+      "word_count": 8,
+      "start_line": 47,
+      "end_line": 51
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER I. 1. The Master said, 'Is it not pleasant to learn",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-i-1-the-master-said-is-it-not-pl.txt",
+      "word_count": 962,
+      "start_line": 52,
+      "end_line": 193
+    },
+    {
+      "id": "seg_004",
+      "label": "II. WEI CHANG",
+      "segment_type": "book",
+      "file": "seg_004_ii-wei-chang.txt",
+      "word_count": 1160,
+      "start_line": 194,
+      "end_line": 368
+    },
+    {
+      "id": "seg_005",
+      "label": "III. PA YIH",
+      "segment_type": "book",
+      "file": "seg_005_iii-pa-yih.txt",
+      "word_count": 1313,
+      "start_line": 369,
+      "end_line": 568
+    },
+    {
+      "id": "seg_006",
+      "label": "IV. LE JIN",
+      "segment_type": "book",
+      "file": "seg_006_iv-le-jin.txt",
+      "word_count": 974,
+      "start_line": 569,
+      "end_line": 713
+    },
+    {
+      "id": "seg_007",
+      "label": "V. KUNG-YE CH'ANG",
+      "segment_type": "book",
+      "file": "seg_007_v-kung-ye-chang.txt",
+      "word_count": 1488,
+      "start_line": 714,
+      "end_line": 932
+    },
+    {
+      "id": "seg_008",
+      "label": "VI. YUNG YEY",
+      "segment_type": "book",
+      "file": "seg_008_vi-yung-yey.txt",
+      "word_count": 1464,
+      "start_line": 933,
+      "end_line": 1145
+    },
+    {
+      "id": "seg_009",
+      "label": "VII. SHU R",
+      "segment_type": "book",
+      "file": "seg_009_vii-shu-r.txt",
+      "word_count": 1624,
+      "start_line": 1146,
+      "end_line": 1385
+    },
+    {
+      "id": "seg_010",
+      "label": "VIII. T'AI-PO",
+      "segment_type": "book",
+      "file": "seg_010_viii-tai-po.txt",
+      "word_count": 1160,
+      "start_line": 1386,
+      "end_line": 1555
+    },
+    {
+      "id": "seg_011",
+      "label": "IX. TSZE HAN",
+      "segment_type": "book",
+      "file": "seg_011_ix-tsze-han.txt",
+      "word_count": 1561,
+      "start_line": 1556,
+      "end_line": 1776
+    },
+    {
+      "id": "seg_012",
+      "label": "X. HEANG TANG",
+      "segment_type": "book",
+      "file": "seg_012_x-heang-tang.txt",
+      "word_count": 1616,
+      "start_line": 1777,
+      "end_line": 2006
+    },
+    {
+      "id": "seg_013",
+      "label": "XI. HSIEN TSIN",
+      "segment_type": "book",
+      "file": "seg_013_xi-hsien-tsin.txt",
+      "word_count": 1931,
+      "start_line": 2007,
+      "end_line": 2292
+    },
+    {
+      "id": "seg_014",
+      "label": "XII. YEN YUAN",
+      "segment_type": "book",
+      "file": "seg_014_xii-yen-yuan.txt",
+      "word_count": 1807,
+      "start_line": 2293,
+      "end_line": 2555
+    },
+    {
+      "id": "seg_015",
+      "label": "XIII. TSZE-LU",
+      "segment_type": "book",
+      "file": "seg_015_xiii-tsze-lu.txt",
+      "word_count": 1944,
+      "start_line": 2556,
+      "end_line": 2843
+    },
+    {
+      "id": "seg_016",
+      "label": "XIV. HSIEN WAN",
+      "segment_type": "book",
+      "file": "seg_016_xiv-hsien-wan.txt",
+      "word_count": 2516,
+      "start_line": 2844,
+      "end_line": 3217
+    },
+    {
+      "id": "seg_017",
+      "label": "XV. WEI LING KUNG",
+      "segment_type": "book",
+      "file": "seg_017_xv-wei-ling-kung.txt",
+      "word_count": 1727,
+      "start_line": 3218,
+      "end_line": 3484
+    },
+    {
+      "id": "seg_018",
+      "label": "XVI. KE SHE",
+      "segment_type": "book",
+      "file": "seg_018_xvi-ke-she.txt",
+      "word_count": 1699,
+      "start_line": 3485,
+      "end_line": 3720
+    },
+    {
+      "id": "seg_019",
+      "label": "XVII. YANG HO",
+      "segment_type": "book",
+      "file": "seg_019_xvii-yang-ho.txt",
+      "word_count": 1900,
+      "start_line": 3721,
+      "end_line": 3994
+    },
+    {
+      "id": "seg_020",
+      "label": "XVIII. WEI TSZE",
+      "segment_type": "book",
+      "file": "seg_020_xviii-wei-tsze.txt",
+      "word_count": 1157,
+      "start_line": 3995,
+      "end_line": 4159
+    },
+    {
+      "id": "seg_021",
+      "label": "XIX. TSZE-CHANG",
+      "segment_type": "book",
+      "file": "seg_021_xix-tsze-chang.txt",
+      "word_count": 1530,
+      "start_line": 4160,
+      "end_line": 4377
+    },
+    {
+      "id": "seg_022",
+      "label": "XX. YAO YUEH",
+      "segment_type": "book",
+      "file": "seg_022_xx-yao-yueh.txt",
+      "word_count": 724,
+      "start_line": 4378,
+      "end_line": 4476
+    }
+  ]
+}

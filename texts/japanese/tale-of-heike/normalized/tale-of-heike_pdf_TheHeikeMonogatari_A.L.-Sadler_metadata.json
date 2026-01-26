@@ -1,0 +1,15 @@
+{
+  "text_id": "tale-of-heike",
+  "tradition": "japanese",
+  "source_format": "pdf",
+  "original_file": "TheHeikeMonogatari_A.L.-Sadler.pdf",
+  "extraction_date": "2026-01-26T10:05:09.433822",
+  "total_pages": 502,
+  "pages_with_text": 486,
+  "total_chars": 1312855,
+  "garbled_ratio": 0.0,
+  "extraction_quality": "good",
+  "word_count": 239076,
+  "line_count": 18603,
+  "char_count": 1291579
+}

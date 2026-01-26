@@ -1,0 +1,72 @@
+{
+  "text_id": "enūma-eliš",
+  "tradition": "mesopotamian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesopotamian\\enūma-eliš\\normalized\\enūma-eliš_best.txt",
+  "strategy": "structural",
+  "segment_count": 7,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "THE FIRST TABLET",
+      "segment_type": "tablet",
+      "file": "seg_001_the-first-tablet.txt",
+      "word_count": 874,
+      "start_line": 9,
+      "end_line": 121
+    },
+    {
+      "id": "seg_002",
+      "label": "THE SECOND TABLET",
+      "segment_type": "tablet",
+      "file": "seg_002_the-second-tablet.txt",
+      "word_count": 951,
+      "start_line": 122,
+      "end_line": 230
+    },
+    {
+      "id": "seg_003",
+      "label": "THE THIRD TABLET",
+      "segment_type": "tablet",
+      "file": "seg_003_the-third-tablet.txt",
+      "word_count": 1304,
+      "start_line": 231,
+      "end_line": 369
+    },
+    {
+      "id": "seg_004",
+      "label": "THE FOURTH TABLET",
+      "segment_type": "tablet",
+      "file": "seg_004_the-fourth-tablet.txt",
+      "word_count": 1386,
+      "start_line": 370,
+      "end_line": 516
+    },
+    {
+      "id": "seg_005",
+      "label": "THE FIFTH TABLET",
+      "segment_type": "tablet",
+      "file": "seg_005_the-fifth-tablet.txt",
+      "word_count": 366,
+      "start_line": 517,
+      "end_line": 555
+    },
+    {
+      "id": "seg_006",
+      "label": "THE SIXTH TABLET",
+      "segment_type": "tablet",
+      "file": "seg_006_the-sixth-tablet.txt",
+      "word_count": 206,
+      "start_line": 556,
+      "end_line": 580
+    },
+    {
+      "id": "seg_007",
+      "label": "THE SEVENTH TABLET",
+      "segment_type": "tablet",
+      "file": "seg_007_the-seventh-tablet.txt",
+      "word_count": 1310,
+      "start_line": 581,
+      "end_line": 735
+    }
+  ]
+}

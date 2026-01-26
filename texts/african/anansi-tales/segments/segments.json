@@ -1,0 +1,162 @@
+{
+  "text_id": "anansi-tales",
+  "tradition": "african",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\anansi-tales\\normalized\\anansi-tales_best.txt",
+  "strategy": "structural",
+  "segment_count": 17,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "PART II",
+      "segment_type": "part",
+      "file": "seg_001_part-ii.txt",
+      "word_count": 5,
+      "start_line": 21,
+      "end_line": 26
+    },
+    {
+      "id": "seg_002",
+      "label": "Chapter I",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i.txt",
+      "word_count": 42,
+      "start_line": 27,
+      "end_line": 41
+    },
+    {
+      "id": "seg_003",
+      "label": "Chapter II",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-ii.txt",
+      "word_count": 38,
+      "start_line": 42,
+      "end_line": 55
+    },
+    {
+      "id": "seg_004",
+      "label": "Chapter III",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iii.txt",
+      "word_count": 148,
+      "start_line": 56,
+      "end_line": 86
+    },
+    {
+      "id": "seg_005",
+      "label": "Chapter IV",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-iv.txt",
+      "word_count": 35,
+      "start_line": 87,
+      "end_line": 97
+    },
+    {
+      "id": "seg_006",
+      "label": "Chapter V",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-v.txt",
+      "word_count": 75,
+      "start_line": 98,
+      "end_line": 114
+    },
+    {
+      "id": "seg_007",
+      "label": "Chapter VI",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-vi.txt",
+      "word_count": 1700,
+      "start_line": 115,
+      "end_line": 324
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-i.txt",
+      "word_count": 7393,
+      "start_line": 325,
+      "end_line": 1058
+    },
+    {
+      "id": "seg_009",
+      "label": "part lying west of Suba' Ligayan, while the intermediate section was",
+      "segment_type": "part",
+      "file": "seg_009_part-lying-west-of-suba-ligayan-while-th.txt",
+      "word_count": 4266,
+      "start_line": 1059,
+      "end_line": 1621
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-ii.txt",
+      "word_count": 2250,
+      "start_line": 1622,
+      "end_line": 1888
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-iii.txt",
+      "word_count": 339,
+      "start_line": 1889,
+      "end_line": 1928
+    },
+    {
+      "id": "seg_012",
+      "label": "the above story of Jamiyun Kulisa was one of those myths. Taken in",
+      "segment_type": "tale",
+      "file": "seg_012_the-above-story-of-jamiyun-kulisa-was-on.txt",
+      "word_count": 1210,
+      "start_line": 1929,
+      "end_line": 2048
+    },
+    {
+      "id": "seg_013",
+      "label": "1380-1450",
+      "segment_type": "line_range",
+      "file": "seg_013_1380-1450.txt",
+      "word_count": 23460,
+      "start_line": 2049,
+      "end_line": 4580
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-iv.txt",
+      "word_count": 7755,
+      "start_line": 4581,
+      "end_line": 5453
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-v.txt",
+      "word_count": 12384,
+      "start_line": 5454,
+      "end_line": 6758
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-vi.txt",
+      "word_count": 9058,
+      "start_line": 6759,
+      "end_line": 7665
+    },
+    {
+      "id": "seg_017",
+      "label": "part in the policy exercised by Spain in Sulu and very little can be",
+      "segment_type": "part",
+      "file": "seg_017_part-in-the-policy-exercised-by-spain-in.txt",
+      "word_count": 49822,
+      "start_line": 7666,
+      "end_line": 13143
+    }
+  ]
+}

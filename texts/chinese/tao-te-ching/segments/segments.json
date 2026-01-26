@@ -1,0 +1,36 @@
+{
+  "text_id": "tao-te-ching",
+  "tradition": "chinese",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\tao-te-ching\\normalized\\tao-te-ching_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "PART 1",
+      "segment_type": "part",
+      "file": "seg_001_part-1.txt",
+      "word_count": 3693,
+      "start_line": 14,
+      "end_line": 487
+    },
+    {
+      "id": "seg_002",
+      "label": "The unchanging excellence completes its tale;",
+      "segment_type": "tale",
+      "file": "seg_002_the-unchanging-excellence-completes-its-.txt",
+      "word_count": 1151,
+      "start_line": 488,
+      "end_line": 638
+    },
+    {
+      "id": "seg_003",
+      "label": "PART II",
+      "segment_type": "part",
+      "file": "seg_003_part-ii.txt",
+      "word_count": 5797,
+      "start_line": 639,
+      "end_line": 1446
+    }
+  ]
+}

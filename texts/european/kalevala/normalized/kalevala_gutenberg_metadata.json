@@ -1,0 +1,17 @@
+{
+  "title": "Kalevala",
+  "language": "Finnish",
+  "release_date": "November 1, 2004",
+  "ebook_id": "7000",
+  "source_format": "gutenberg",
+  "original_file": "pg7000_W.F.-Kirby.txt",
+  "text_id": "kalevala",
+  "author": "Elias Lönnrot",
+  "tradition": "european",
+  "date_composed": "1835–1849",
+  "material_type": "Epic poetry",
+  "normalization_date": "2026-01-26T10:04:02.883323",
+  "char_count": 593071,
+  "line_count": 23102,
+  "word_count": 67659
+}

@@ -1,0 +1,36 @@
+{
+  "text_id": "grimms-fairy-tales",
+  "tradition": "germanic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\germanic\\grimms-fairy-tales\\normalized\\grimms-fairy-tales_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 232712,
+      "start_line": 0,
+      "end_line": 20436
+    },
+    {
+      "id": "seg_002",
+      "label": "the story of my life:",
+      "segment_type": "tale",
+      "file": "seg_002_the-story-of-my-life.txt",
+      "word_count": 30256,
+      "start_line": 20437,
+      "end_line": 22984
+    },
+    {
+      "id": "seg_003",
+      "label": "The moral of this story, however, is, firstly, that no one, however",
+      "segment_type": "tale",
+      "file": "seg_003_the-moral-of-this-story-however-is-first.txt",
+      "word_count": 21880,
+      "start_line": 22985,
+      "end_line": 24894
+    }
+  ]
+}

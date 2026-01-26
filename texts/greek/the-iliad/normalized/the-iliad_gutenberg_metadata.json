@@ -1,0 +1,18 @@
+{
+  "title": "The Iliad",
+  "author": "Homer",
+  "translator": "Alexander Pope",
+  "language": "English",
+  "release_date": "July 1, 2004",
+  "ebook_id": "6130",
+  "source_format": "gutenberg",
+  "original_file": "pg6130_Samuel-Butler.txt",
+  "text_id": "the-iliad",
+  "tradition": "greek",
+  "date_composed": "c. 8th century BCE",
+  "material_type": "Epic poetry",
+  "normalization_date": "2026-01-26T10:04:03.366506",
+  "char_count": 1096247,
+  "line_count": 25610,
+  "word_count": 189076
+}

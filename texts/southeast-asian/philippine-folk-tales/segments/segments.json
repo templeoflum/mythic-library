@@ -1,0 +1,270 @@
+{
+  "text_id": "philippine-folk-tales",
+  "tradition": "southeast-asian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\southeast-asian\\philippine-folk-tales\\normalized\\philippine-folk-tales_best.txt",
+  "strategy": "structural",
+  "segment_count": 29,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 1071,
+      "start_line": 0,
+      "end_line": 119
+    },
+    {
+      "id": "seg_002",
+      "label": "The fourth division gives two tales from the Moro (hardy Malayan",
+      "segment_type": "tale",
+      "file": "seg_002_the-fourth-division-gives-two-tales-from.txt",
+      "word_count": 224,
+      "start_line": 120,
+      "end_line": 152
+    },
+    {
+      "id": "seg_003",
+      "label": "The Story of Gaygayoma Who Lives up Above",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-gaygayoma-who-lives-up-abov.txt",
+      "word_count": 8,
+      "start_line": 153,
+      "end_line": 153
+    },
+    {
+      "id": "seg_004",
+      "label": "The Story of Dumalawi",
+      "segment_type": "tale",
+      "file": "seg_004_the-story-of-dumalawi.txt",
+      "word_count": 4,
+      "start_line": 154,
+      "end_line": 154
+    },
+    {
+      "id": "seg_005",
+      "label": "The Story of Kanag",
+      "segment_type": "tale",
+      "file": "seg_005_the-story-of-kanag.txt",
+      "word_count": 4,
+      "start_line": 155,
+      "end_line": 155
+    },
+    {
+      "id": "seg_006",
+      "label": "The Story of Tikgi",
+      "segment_type": "tale",
+      "file": "seg_006_the-story-of-tikgi.txt",
+      "word_count": 4,
+      "start_line": 156,
+      "end_line": 156
+    },
+    {
+      "id": "seg_007",
+      "label": "The Story of Sayen",
+      "segment_type": "tale",
+      "file": "seg_007_the-story-of-sayen.txt",
+      "word_count": 69,
+      "start_line": 157,
+      "end_line": 176
+    },
+    {
+      "id": "seg_008",
+      "label": "The Flood Story",
+      "segment_type": "tale",
+      "file": "seg_008_the-flood-story.txt",
+      "word_count": 38,
+      "start_line": 177,
+      "end_line": 188
+    },
+    {
+      "id": "seg_009",
+      "label": "The Flood Story",
+      "segment_type": "tale",
+      "file": "seg_009_the-flood-story.txt",
+      "word_count": 15,
+      "start_line": 189,
+      "end_line": 200
+    },
+    {
+      "id": "seg_010",
+      "label": "The Story of the Creation",
+      "segment_type": "tale",
+      "file": "seg_010_the-story-of-the-creation.txt",
+      "word_count": 29,
+      "start_line": 201,
+      "end_line": 215
+    },
+    {
+      "id": "seg_011",
+      "label": "The Story of Bantugan",
+      "segment_type": "tale",
+      "file": "seg_011_the-story-of-bantugan.txt",
+      "word_count": 26,
+      "start_line": 216,
+      "end_line": 224
+    },
+    {
+      "id": "seg_012",
+      "label": "The Story of a Monkey",
+      "segment_type": "tale",
+      "file": "seg_012_the-story-of-a-monkey.txt",
+      "word_count": 9,
+      "start_line": 225,
+      "end_line": 229
+    },
+    {
+      "id": "seg_013",
+      "label": "The Creation Story",
+      "segment_type": "tale",
+      "file": "seg_013_the-creation-story.txt",
+      "word_count": 3,
+      "start_line": 230,
+      "end_line": 230
+    },
+    {
+      "id": "seg_014",
+      "label": "The Story of Benito",
+      "segment_type": "tale",
+      "file": "seg_014_the-story-of-benito.txt",
+      "word_count": 7147,
+      "start_line": 231,
+      "end_line": 1063
+    },
+    {
+      "id": "seg_015",
+      "label": "The Story of Gaygayoma who Lives up Above",
+      "segment_type": "tale",
+      "file": "seg_015_the-story-of-gaygayoma-who-lives-up-abov.txt",
+      "word_count": 1663,
+      "start_line": 1064,
+      "end_line": 1249
+    },
+    {
+      "id": "seg_016",
+      "label": "The Story of Dumalawi",
+      "segment_type": "tale",
+      "file": "seg_016_the-story-of-dumalawi.txt",
+      "word_count": 1275,
+      "start_line": 1250,
+      "end_line": 1411
+    },
+    {
+      "id": "seg_017",
+      "label": "The Story of Kanag",
+      "segment_type": "tale",
+      "file": "seg_017_the-story-of-kanag.txt",
+      "word_count": 1344,
+      "start_line": 1412,
+      "end_line": 1564
+    },
+    {
+      "id": "seg_018",
+      "label": "The Story of the Tikgi",
+      "segment_type": "tale",
+      "file": "seg_018_the-story-of-the-tikgi.txt",
+      "word_count": 773,
+      "start_line": 1565,
+      "end_line": 1663
+    },
+    {
+      "id": "seg_019",
+      "label": "The Story of Sayen [69]",
+      "segment_type": "tale",
+      "file": "seg_019_the-story-of-sayen-69.txt",
+      "word_count": 6845,
+      "start_line": 1664,
+      "end_line": 2537
+    },
+    {
+      "id": "seg_020",
+      "label": "The following tales are told by the fathers and mothers to the children",
+      "segment_type": "tale",
+      "file": "seg_020_the-following-tales-are-told-by-the-fath.txt",
+      "word_count": 397,
+      "start_line": 2538,
+      "end_line": 2584
+    },
+    {
+      "id": "seg_021",
+      "label": "The Flood Story",
+      "segment_type": "tale",
+      "file": "seg_021_the-flood-story.txt",
+      "word_count": 3411,
+      "start_line": 2585,
+      "end_line": 3020
+    },
+    {
+      "id": "seg_022",
+      "label": "The following tales show something of the beliefs of these and the",
+      "segment_type": "tale",
+      "file": "seg_022_the-following-tales-show-something-of-th.txt",
+      "word_count": 162,
+      "start_line": 3021,
+      "end_line": 3043
+    },
+    {
+      "id": "seg_023",
+      "label": "The Flood Story",
+      "segment_type": "tale",
+      "file": "seg_023_the-flood-story.txt",
+      "word_count": 2653,
+      "start_line": 3044,
+      "end_line": 3349
+    },
+    {
+      "id": "seg_024",
+      "label": "The Story of the Creation [128]",
+      "segment_type": "tale",
+      "file": "seg_024_the-story-of-the-creation-128.txt",
+      "word_count": 4407,
+      "start_line": 3350,
+      "end_line": 3830
+    },
+    {
+      "id": "seg_025",
+      "label": "The Story of Bantugan",
+      "segment_type": "tale",
+      "file": "seg_025_the-story-of-bantugan.txt",
+      "word_count": 2974,
+      "start_line": 3831,
+      "end_line": 4192
+    },
+    {
+      "id": "seg_026",
+      "label": "the ancient story. [149]",
+      "segment_type": "tale",
+      "file": "seg_026_the-ancient-story-149.txt",
+      "word_count": 969,
+      "start_line": 4193,
+      "end_line": 4308
+    },
+    {
+      "id": "seg_027",
+      "label": "The Story of a Monkey",
+      "segment_type": "tale",
+      "file": "seg_027_the-story-of-a-monkey.txt",
+      "word_count": 859,
+      "start_line": 4309,
+      "end_line": 4412
+    },
+    {
+      "id": "seg_028",
+      "label": "The Creation Story",
+      "segment_type": "tale",
+      "file": "seg_028_the-creation-story.txt",
+      "word_count": 394,
+      "start_line": 4413,
+      "end_line": 4457
+    },
+    {
+      "id": "seg_029",
+      "label": "The Story of Benito",
+      "segment_type": "tale",
+      "file": "seg_029_the-story-of-benito.txt",
+      "word_count": 12220,
+      "start_line": 4458,
+      "end_line": 6009
+    }
+  ]
+}

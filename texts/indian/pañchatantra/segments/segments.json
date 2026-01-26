@@ -1,0 +1,171 @@
+{
+  "text_id": "pañchatantra",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\pañchatantra\\normalized\\pañchatantra_best.txt",
+  "strategy": "structural",
+  "segment_count": 18,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 421,
+      "start_line": 0,
+      "end_line": 89
+    },
+    {
+      "id": "seg_002",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_002_i.txt",
+      "word_count": 283,
+      "start_line": 90,
+      "end_line": 129
+    },
+    {
+      "id": "seg_003",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_003_ii.txt",
+      "word_count": 82,
+      "start_line": 130,
+      "end_line": 144
+    },
+    {
+      "id": "seg_004",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_004_iii.txt",
+      "word_count": 185,
+      "start_line": 145,
+      "end_line": 170
+    },
+    {
+      "id": "seg_005",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_005_iv.txt",
+      "word_count": 223,
+      "start_line": 171,
+      "end_line": 202
+    },
+    {
+      "id": "seg_006",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_006_v.txt",
+      "word_count": 577,
+      "start_line": 203,
+      "end_line": 296
+    },
+    {
+      "id": "seg_007",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_007_i.txt",
+      "word_count": 5367,
+      "start_line": 297,
+      "end_line": 1020
+    },
+    {
+      "id": "seg_008",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_008_ii.txt",
+      "word_count": 2543,
+      "start_line": 1021,
+      "end_line": 1332
+    },
+    {
+      "id": "seg_009",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_009_iii.txt",
+      "word_count": 6932,
+      "start_line": 1333,
+      "end_line": 2152
+    },
+    {
+      "id": "seg_010",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_010_iv.txt",
+      "word_count": 5960,
+      "start_line": 2153,
+      "end_line": 2917
+    },
+    {
+      "id": "seg_011",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_011_v.txt",
+      "word_count": 3358,
+      "start_line": 2918,
+      "end_line": 3363
+    },
+    {
+      "id": "seg_012",
+      "label": "The story of Ixion, whirling round upon the wheel, teaches {us} what a",
+      "segment_type": "tale",
+      "file": "seg_012_the-story-of-ixion-whirling-round-upon-t.txt",
+      "word_count": 10188,
+      "start_line": 3364,
+      "end_line": 4681
+    },
+    {
+      "id": "seg_013",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_013_i.txt",
+      "word_count": 3483,
+      "start_line": 4682,
+      "end_line": 5320
+    },
+    {
+      "id": "seg_014",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_014_ii.txt",
+      "word_count": 1726,
+      "start_line": 5321,
+      "end_line": 5630
+    },
+    {
+      "id": "seg_015",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_015_iii.txt",
+      "word_count": 3589,
+      "start_line": 5631,
+      "end_line": 6259
+    },
+    {
+      "id": "seg_016",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_016_iv.txt",
+      "word_count": 3071,
+      "start_line": 6260,
+      "end_line": 6808
+    },
+    {
+      "id": "seg_017",
+      "label": "The tenor of this tale infers",
+      "segment_type": "tale",
+      "file": "seg_017_the-tenor-of-this-tale-infers.txt",
+      "word_count": 715,
+      "start_line": 6809,
+      "end_line": 6930
+    },
+    {
+      "id": "seg_018",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_018_v.txt",
+      "word_count": 3319,
+      "start_line": 6931,
+      "end_line": 7517
+    }
+  ]
+}

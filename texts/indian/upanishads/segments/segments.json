@@ -1,0 +1,27 @@
+{
+  "text_id": "upanishads",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\upanishads\\normalized\\upanishads_best.txt",
+  "strategy": "structural",
+  "segment_count": 2,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "Part I",
+      "segment_type": "part",
+      "file": "seg_001_part-i.txt",
+      "word_count": 3,
+      "start_line": 8,
+      "end_line": 9
+    },
+    {
+      "id": "seg_002",
+      "label": "Part II",
+      "segment_type": "part",
+      "file": "seg_002_part-ii.txt",
+      "word_count": 686,
+      "start_line": 10,
+      "end_line": 278
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "text_id": "jataka-cowell",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\jataka-cowell\\normalized\\jataka-cowell_best.txt",
+  "strategy": "structural",
+  "segment_count": 12,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 3752,
+      "start_line": 0,
+      "end_line": 859
+    },
+    {
+      "id": "seg_002",
+      "label": "I.—EKANIPATA'",
+      "segment_type": "book",
+      "file": "seg_002_iekanipata.txt",
+      "word_count": 14744,
+      "start_line": 860,
+      "end_line": 3207
+    },
+    {
+      "id": "seg_003",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_003_story-ofthepast.txt",
+      "word_count": 28238,
+      "start_line": 3208,
+      "end_line": 7785
+    },
+    {
+      "id": "seg_004",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_004_story-ofthepast.txt",
+      "word_count": 6815,
+      "start_line": 7786,
+      "end_line": 8885
+    },
+    {
+      "id": "seg_005",
+      "label": "story ofwhich hemounted, hecaused thetreasure tobelodged and",
+      "segment_type": "tale",
+      "file": "seg_005_story-ofwhich-hemounted-hecaused-thetrea.txt",
+      "word_count": 9504,
+      "start_line": 8886,
+      "end_line": 10316
+    },
+    {
+      "id": "seg_006",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_006_story-ofthepast.txt",
+      "word_count": 2567,
+      "start_line": 10317,
+      "end_line": 10730
+    },
+    {
+      "id": "seg_007",
+      "label": "story ofthereception theyhadhad",
+      "segment_type": "tale",
+      "file": "seg_007_story-ofthereception-theyhadhad.txt",
+      "word_count": 5684,
+      "start_line": 10731,
+      "end_line": 11625
+    },
+    {
+      "id": "seg_008",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_008_story-ofthepast.txt",
+      "word_count": 1187,
+      "start_line": 11626,
+      "end_line": 11826
+    },
+    {
+      "id": "seg_009",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_009_story-ofthepast.txt",
+      "word_count": 2884,
+      "start_line": 11827,
+      "end_line": 12315
+    },
+    {
+      "id": "seg_010",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_010_story-ofthepast.txt",
+      "word_count": 8080,
+      "start_line": 12316,
+      "end_line": 13683
+    },
+    {
+      "id": "seg_011",
+      "label": "19-2",
+      "segment_type": "line_range",
+      "file": "seg_011_19-2.txt",
+      "word_count": 1693,
+      "start_line": 13684,
+      "end_line": 13961
+    },
+    {
+      "id": "seg_012",
+      "label": "story ofthepast",
+      "segment_type": "tale",
+      "file": "seg_012_story-ofthepast.txt",
+      "word_count": 6661,
+      "start_line": 13962,
+      "end_line": 15175
+    }
+  ]
+}

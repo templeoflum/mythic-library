@@ -1,0 +1,180 @@
+{
+  "text_id": "south-african-folk-tales",
+  "tradition": "african",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\south-african-folk-tales\\normalized\\south-african-folk-tales_best.txt",
+  "strategy": "structural",
+  "segment_count": 19,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 388,
+      "start_line": 0,
+      "end_line": 117
+    },
+    {
+      "id": "seg_002",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i.txt",
+      "word_count": 3716,
+      "start_line": 118,
+      "end_line": 605
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-ii.txt",
+      "word_count": 3474,
+      "start_line": 606,
+      "end_line": 1037
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iii.txt",
+      "word_count": 3779,
+      "start_line": 1038,
+      "end_line": 1516
+    },
+    {
+      "id": "seg_005",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-iv.txt",
+      "word_count": 3576,
+      "start_line": 1517,
+      "end_line": 1943
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-v.txt",
+      "word_count": 3543,
+      "start_line": 1944,
+      "end_line": 2383
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-vi.txt",
+      "word_count": 3354,
+      "start_line": 2384,
+      "end_line": 2816
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-vii.txt",
+      "word_count": 3323,
+      "start_line": 2817,
+      "end_line": 3249
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-viii.txt",
+      "word_count": 3441,
+      "start_line": 3250,
+      "end_line": 3691
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-ix.txt",
+      "word_count": 3315,
+      "start_line": 3692,
+      "end_line": 4108
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-x.txt",
+      "word_count": 3169,
+      "start_line": 4109,
+      "end_line": 4516
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-xi.txt",
+      "word_count": 3301,
+      "start_line": 4517,
+      "end_line": 4940
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-xii.txt",
+      "word_count": 2948,
+      "start_line": 4941,
+      "end_line": 5357
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-xiii.txt",
+      "word_count": 3523,
+      "start_line": 5358,
+      "end_line": 5800
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-xiv.txt",
+      "word_count": 3574,
+      "start_line": 5801,
+      "end_line": 6202
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-xv.txt",
+      "word_count": 2241,
+      "start_line": 6203,
+      "end_line": 6548
+    },
+    {
+      "id": "seg_017",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-xvi.txt",
+      "word_count": 3444,
+      "start_line": 6549,
+      "end_line": 6992
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-xvii.txt",
+      "word_count": 3322,
+      "start_line": 6993,
+      "end_line": 7355
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-xviii.txt",
+      "word_count": 1533,
+      "start_line": 7356,
+      "end_line": 7552
+    }
+  ]
+}

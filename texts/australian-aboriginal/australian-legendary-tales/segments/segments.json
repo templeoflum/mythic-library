@@ -1,0 +1,261 @@
+{
+  "text_id": "australian-legendary-tales",
+  "tradition": "australian-aboriginal",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\australian-aboriginal\\australian-legendary-tales\\normalized\\australian-legendary-tales_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 28,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 1213,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_002",
+      "label": "section_2",
+      "segment_type": "section",
+      "file": "seg_002_section-2.txt",
+      "word_count": 1251,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_003",
+      "label": "section_3",
+      "segment_type": "section",
+      "file": "seg_003_section-3.txt",
+      "word_count": 1317,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_004",
+      "label": "section_4",
+      "segment_type": "section",
+      "file": "seg_004_section-4.txt",
+      "word_count": 961,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_005",
+      "label": "section_5",
+      "segment_type": "section",
+      "file": "seg_005_section-5.txt",
+      "word_count": 1081,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_006",
+      "label": "section_6",
+      "segment_type": "section",
+      "file": "seg_006_section-6.txt",
+      "word_count": 1115,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_007",
+      "label": "section_7",
+      "segment_type": "section",
+      "file": "seg_007_section-7.txt",
+      "word_count": 1191,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_008",
+      "label": "section_8",
+      "segment_type": "section",
+      "file": "seg_008_section-8.txt",
+      "word_count": 1539,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_009",
+      "label": "section_9",
+      "segment_type": "section",
+      "file": "seg_009_section-9.txt",
+      "word_count": 1226,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_010",
+      "label": "section_10",
+      "segment_type": "section",
+      "file": "seg_010_section-10.txt",
+      "word_count": 990,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_011",
+      "label": "section_11",
+      "segment_type": "section",
+      "file": "seg_011_section-11.txt",
+      "word_count": 1993,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_012",
+      "label": "section_12",
+      "segment_type": "section",
+      "file": "seg_012_section-12.txt",
+      "word_count": 565,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_013",
+      "label": "section_13",
+      "segment_type": "section",
+      "file": "seg_013_section-13.txt",
+      "word_count": 970,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_014",
+      "label": "section_14",
+      "segment_type": "section",
+      "file": "seg_014_section-14.txt",
+      "word_count": 1369,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_015",
+      "label": "section_15",
+      "segment_type": "section",
+      "file": "seg_015_section-15.txt",
+      "word_count": 804,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_016",
+      "label": "section_16",
+      "segment_type": "section",
+      "file": "seg_016_section-16.txt",
+      "word_count": 644,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_017",
+      "label": "section_17",
+      "segment_type": "section",
+      "file": "seg_017_section-17.txt",
+      "word_count": 999,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_018",
+      "label": "section_18",
+      "segment_type": "section",
+      "file": "seg_018_section-18.txt",
+      "word_count": 696,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_019",
+      "label": "section_19",
+      "segment_type": "section",
+      "file": "seg_019_section-19.txt",
+      "word_count": 1768,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_020",
+      "label": "section_20",
+      "segment_type": "section",
+      "file": "seg_020_section-20.txt",
+      "word_count": 547,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_021",
+      "label": "section_21",
+      "segment_type": "section",
+      "file": "seg_021_section-21.txt",
+      "word_count": 1133,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_022",
+      "label": "section_22",
+      "segment_type": "section",
+      "file": "seg_022_section-22.txt",
+      "word_count": 875,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_023",
+      "label": "section_23",
+      "segment_type": "section",
+      "file": "seg_023_section-23.txt",
+      "word_count": 3430,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_024",
+      "label": "section_24",
+      "segment_type": "section",
+      "file": "seg_024_section-24.txt",
+      "word_count": 2112,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_025",
+      "label": "section_25",
+      "segment_type": "section",
+      "file": "seg_025_section-25.txt",
+      "word_count": 978,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_026",
+      "label": "section_26",
+      "segment_type": "section",
+      "file": "seg_026_section-26.txt",
+      "word_count": 1364,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_027",
+      "label": "section_27",
+      "segment_type": "section",
+      "file": "seg_027_section-27.txt",
+      "word_count": 561,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_028",
+      "label": "section_28",
+      "segment_type": "section",
+      "file": "seg_028_section-28.txt",
+      "word_count": 715,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

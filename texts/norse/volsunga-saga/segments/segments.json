@@ -1,0 +1,432 @@
+{
+  "text_id": "volsunga-saga",
+  "tradition": "norse",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\norse\\volsunga-saga\\normalized\\volsunga-saga_best.txt",
+  "strategy": "structural",
+  "segment_count": 47,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "THE STORY OF THE VOLSUNGS, (VOLSUNGA SAGA)",
+      "segment_type": "tale",
+      "file": "seg_001_the-story-of-the-volsungs-volsunga-saga.txt",
+      "word_count": 9375,
+      "start_line": 3,
+      "end_line": 835
+    },
+    {
+      "id": "seg_002",
+      "label": "the Tale of Troy has been to us",
+      "segment_type": "tale",
+      "file": "seg_002_the-tale-of-troy-has-been-to-us.txt",
+      "word_count": 17,
+      "start_line": 836,
+      "end_line": 844
+    },
+    {
+      "id": "seg_003",
+      "label": "THE STORY OF THE VOLSUNGS AND NIBLUNGS",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-the-volsungs-and-niblungs.txt",
+      "word_count": 7,
+      "start_line": 845,
+      "end_line": 847
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER I. Of Sigi, the Son of Odin",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-i-of-sigi-the-son-of-odin.txt",
+      "word_count": 514,
+      "start_line": 848,
+      "end_line": 897
+    },
+    {
+      "id": "seg_005",
+      "label": "CHAPTER II. Of the Birth of Volsung, the Son of Rerir, who was the Son",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-ii-of-the-birth-of-volsung-the-s.txt",
+      "word_count": 878,
+      "start_line": 898,
+      "end_line": 974
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER III. Of the Sword that Sigmund, Volsung's son, drew from the",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-iii-of-the-sword-that-sigmund-vo.txt",
+      "word_count": 620,
+      "start_line": 975,
+      "end_line": 1036
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER IV. How King Siggeir wedded Signy, and bade King Volsung and his",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-iv-how-king-siggeir-wedded-signy.txt",
+      "word_count": 342,
+      "start_line": 1037,
+      "end_line": 1073
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER V. Of the Slaying of King Volsung",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-v-of-the-slaying-of-king-volsung.txt",
+      "word_count": 1023,
+      "start_line": 1074,
+      "end_line": 1169
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER VI. Of how Signy sent the Children of her and Siggeir to",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-vi-of-how-signy-sent-the-childre.txt",
+      "word_count": 390,
+      "start_line": 1170,
+      "end_line": 1210
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER VII. Of the Birth of Sinfjotli the Son of Sigmund",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-vii-of-the-birth-of-sinfjotli-th.txt",
+      "word_count": 567,
+      "start_line": 1211,
+      "end_line": 1275
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER VIII. The Death of King Siggeir and of Signy",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-viii-the-death-of-king-siggeir-a.txt",
+      "word_count": 2058,
+      "start_line": 1276,
+      "end_line": 1483
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER IX. How Helgi, the son of Sigmund, won King Hodbrod and his",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-ix-how-helgi-the-son-of-sigmund-.txt",
+      "word_count": 1424,
+      "start_line": 1484,
+      "end_line": 1634
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER X. The ending of Sinfjotli, Sigmund's Son",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-x-the-ending-of-sinfjotli-sigmun.txt",
+      "word_count": 634,
+      "start_line": 1635,
+      "end_line": 1716
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER XI. Of King Sigmund's last Battle, and of how he must yield up his",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-xi-of-king-sigmunds-last-battle-.txt",
+      "word_count": 810,
+      "start_line": 1717,
+      "end_line": 1795
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER XII. Of the Shards of the Sword Gram, and how Hjordis went to",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-xii-of-the-shards-of-the-sword-g.txt",
+      "word_count": 1009,
+      "start_line": 1796,
+      "end_line": 1901
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER XIII. Of the Birth and Waxing of Sigurd Fafnir's-bane",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-xiii-of-the-birth-and-waxing-of-.txt",
+      "word_count": 893,
+      "start_line": 1902,
+      "end_line": 2013
+    },
+    {
+      "id": "seg_017",
+      "label": "CHAPTER XIV. Regin's tale of his Brothers, and of the Gold called",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-xiv-regins-tale-of-his-brothers-.txt",
+      "word_count": 898,
+      "start_line": 2014,
+      "end_line": 2116
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER XV. Of the Welding together of the Shards of the Sword Gram",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-xv-of-the-welding-together-of-th.txt",
+      "word_count": 408,
+      "start_line": 2117,
+      "end_line": 2171
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER XVI. The prophecy of Grifir",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-xvi-the-prophecy-of-grifir.txt",
+      "word_count": 168,
+      "start_line": 2172,
+      "end_line": 2194
+    },
+    {
+      "id": "seg_020",
+      "label": "CHAPTER XVII. Of Sigurd's Avenging of Sigmund his Father",
+      "segment_type": "chapter",
+      "file": "seg_020_chapter-xvii-of-sigurds-avenging-of-sigm.txt",
+      "word_count": 1125,
+      "start_line": 2195,
+      "end_line": 2352
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER XVIII. Of the Slaying of the Worm Fafnir",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-xviii-of-the-slaying-of-the-worm.txt",
+      "word_count": 1208,
+      "start_line": 2353,
+      "end_line": 2497
+    },
+    {
+      "id": "seg_022",
+      "label": "CHAPTER XIX. Of the Slaying of Regin, Son of Hreidmar",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-xix-of-the-slaying-of-regin-son-.txt",
+      "word_count": 963,
+      "start_line": 2498,
+      "end_line": 2643
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER XX. Of Sigurd's Meeting with Brynhild on the Mountain",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-xx-of-sigurds-meeting-with-brynh.txt",
+      "word_count": 1191,
+      "start_line": 2644,
+      "end_line": 2867
+    },
+    {
+      "id": "seg_024",
+      "label": "CHAPTER XXI. More Wise Words of Brynhild",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-xxi-more-wise-words-of-brynhild.txt",
+      "word_count": 444,
+      "start_line": 2868,
+      "end_line": 2926
+    },
+    {
+      "id": "seg_025",
+      "label": "CHAPTER XXII. Of the Semblance and Array of Sigurd Fafnir's-bane. (1)",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-xxii-of-the-semblance-and-array-.txt",
+      "word_count": 492,
+      "start_line": 2927,
+      "end_line": 2978
+    },
+    {
+      "id": "seg_026",
+      "label": "CHAPTER XXIII. Sigurd comes to Hlymdale",
+      "segment_type": "chapter",
+      "file": "seg_026_chapter-xxiii-sigurd-comes-to-hlymdale.txt",
+      "word_count": 275,
+      "start_line": 2979,
+      "end_line": 3007
+    },
+    {
+      "id": "seg_027",
+      "label": "CHAPTER XXIV. Sigurd sees Brynhild at Hlymdale",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-xxiv-sigurd-sees-brynhild-at-hly.txt",
+      "word_count": 868,
+      "start_line": 3008,
+      "end_line": 3115
+    },
+    {
+      "id": "seg_028",
+      "label": "CHAPTER XXV. Of the Dream of Gudrun, Giuki's daughter",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-xxv-of-the-dream-of-gudrun-giuki.txt",
+      "word_count": 1018,
+      "start_line": 3116,
+      "end_line": 3232
+    },
+    {
+      "id": "seg_029",
+      "label": "CHAPTER XXVI. Sigurd comes to the Giukings and is wedded to Gudrun",
+      "segment_type": "chapter",
+      "file": "seg_029_chapter-xxvi-sigurd-comes-to-the-giuking.txt",
+      "word_count": 908,
+      "start_line": 3233,
+      "end_line": 3340
+    },
+    {
+      "id": "seg_030",
+      "label": "CHAPTER XXVII. The Wooing of Brynhild",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-xxvii-the-wooing-of-brynhild.txt",
+      "word_count": 1024,
+      "start_line": 3341,
+      "end_line": 3468
+    },
+    {
+      "id": "seg_031",
+      "label": "CHAPTER XXVIII. How the Queens held angry converse together at the",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-xxviii-how-the-queens-held-angry.txt",
+      "word_count": 1014,
+      "start_line": 3469,
+      "end_line": 3609
+    },
+    {
+      "id": "seg_032",
+      "label": "CHAPTER XXIX. Of Brynhild's great Grief and Mourning",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-xxix-of-brynhilds-great-grief-an.txt",
+      "word_count": 1910,
+      "start_line": 3610,
+      "end_line": 3838
+    },
+    {
+      "id": "seg_033",
+      "label": "CHAPTER XXX. Of the Slaying of Sigurd Fafnir's-bane",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-xxx-of-the-slaying-of-sigurd-faf.txt",
+      "word_count": 1269,
+      "start_line": 3839,
+      "end_line": 3971
+    },
+    {
+      "id": "seg_034",
+      "label": "CHAPTER XXXI. Of the Lamentation of Gudrun over Sigurd dead, as it is",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-xxxi-of-the-lamentation-of-gudru.txt",
+      "word_count": 891,
+      "start_line": 3972,
+      "end_line": 4225
+    },
+    {
+      "id": "seg_035",
+      "label": "CHAPTER XXXII. Of the Ending of Brynhild",
+      "segment_type": "chapter",
+      "file": "seg_035_chapter-xxxii-of-the-ending-of-brynhild.txt",
+      "word_count": 945,
+      "start_line": 4226,
+      "end_line": 4316
+    },
+    {
+      "id": "seg_036",
+      "label": "CHAPTER XXXIII. Gudrun wedded to Atli",
+      "segment_type": "chapter",
+      "file": "seg_036_chapter-xxxiii-gudrun-wedded-to-atli.txt",
+      "word_count": 1101,
+      "start_line": 4317,
+      "end_line": 4450
+    },
+    {
+      "id": "seg_037",
+      "label": "CHAPTER XXXIV. Atli bids the Giukings to him",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-xxxiv-atli-bids-the-giukings-to-.txt",
+      "word_count": 905,
+      "start_line": 4451,
+      "end_line": 4559
+    },
+    {
+      "id": "seg_038",
+      "label": "CHAPTER XXXV. The Dreams of the Wives of the Giukings",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-xxxv-the-dreams-of-the-wives-of-.txt",
+      "word_count": 495,
+      "start_line": 4560,
+      "end_line": 4618
+    },
+    {
+      "id": "seg_039",
+      "label": "CHAPTER XXXVI. Of the Journey of the Giukings to King Atli",
+      "segment_type": "chapter",
+      "file": "seg_039_chapter-xxxvi-of-the-journey-of-the-giuk.txt",
+      "word_count": 693,
+      "start_line": 4619,
+      "end_line": 4714
+    },
+    {
+      "id": "seg_040",
+      "label": "CHAPTER XXXVII. The Battle in the Burg of King Atli",
+      "segment_type": "chapter",
+      "file": "seg_040_chapter-xxxvii-the-battle-in-the-burg-of.txt",
+      "word_count": 611,
+      "start_line": 4715,
+      "end_line": 4782
+    },
+    {
+      "id": "seg_041",
+      "label": "CHAPTER XXXVIII. Of the slaying of the Giukings",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-xxxviii-of-the-slaying-of-the-gi.txt",
+      "word_count": 908,
+      "start_line": 4783,
+      "end_line": 4879
+    },
+    {
+      "id": "seg_042",
+      "label": "CHAPTER XXXIX. The End of Atli and his Kin and Folk",
+      "segment_type": "chapter",
+      "file": "seg_042_chapter-xxxix-the-end-of-atli-and-his-ki.txt",
+      "word_count": 1231,
+      "start_line": 4880,
+      "end_line": 5014
+    },
+    {
+      "id": "seg_043",
+      "label": "CHAPTER XL. How Gudrun cast herself into the Sea, but was brought ashore",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-xl-how-gudrun-cast-herself-into-.txt",
+      "word_count": 151,
+      "start_line": 5015,
+      "end_line": 5031
+    },
+    {
+      "id": "seg_044",
+      "label": "CHAPTER XLI. Of the Wedding and Slaying of Swanhild",
+      "segment_type": "chapter",
+      "file": "seg_044_chapter-xli-of-the-wedding-and-slaying-o.txt",
+      "word_count": 687,
+      "start_line": 5032,
+      "end_line": 5110
+    },
+    {
+      "id": "seg_045",
+      "label": "CHAPTER XLII. Gudrun sends her Sons to avenge Swanhild",
+      "segment_type": "chapter",
+      "file": "seg_045_chapter-xlii-gudrun-sends-her-sons-to-av.txt",
+      "word_count": 423,
+      "start_line": 5111,
+      "end_line": 5162
+    },
+    {
+      "id": "seg_046",
+      "label": "CHAPTER XLIII. The Latter End of all the Kin of the Giukings",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-xliii-the-latter-end-of-all-the-.txt",
+      "word_count": 2264,
+      "start_line": 5163,
+      "end_line": 5645
+    },
+    {
+      "id": "seg_047",
+      "label": "XXI",
+      "segment_type": "section",
+      "file": "seg_047_xxi.txt",
+      "word_count": 10134,
+      "start_line": 5646,
+      "end_line": 8280
+    }
+  ]
+}

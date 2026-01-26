@@ -1,0 +1,18 @@
+{
+  "text_id": "shan-hai-jing",
+  "tradition": "chinese",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\shan-hai-jing\\normalized\\shan-hai-jing_best.txt",
+  "strategy": "single",
+  "segment_count": 1,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "full_text",
+      "segment_type": "full",
+      "file": "seg_001_full-text.txt",
+      "word_count": 1464,
+      "start_line": 0,
+      "end_line": 2187
+    }
+  ]
+}

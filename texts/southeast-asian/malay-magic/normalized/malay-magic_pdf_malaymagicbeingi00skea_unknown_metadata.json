@@ -1,0 +1,15 @@
+{
+  "text_id": "malay-magic",
+  "tradition": "southeast-asian",
+  "source_format": "pdf",
+  "original_file": "malaymagicbeingi00skea_unknown.pdf",
+  "extraction_date": "2026-01-26T10:08:34.631311",
+  "total_pages": 778,
+  "pages_with_text": 737,
+  "total_chars": 1279679,
+  "garbled_ratio": 0.0,
+  "extraction_quality": "good",
+  "word_count": 144683,
+  "line_count": 33358,
+  "char_count": 1279679
+}

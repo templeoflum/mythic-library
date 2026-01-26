@@ -1,0 +1,63 @@
+{
+  "text_id": "samguk-yusa",
+  "tradition": "korean",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\korean\\samguk-yusa\\normalized\\samguk-yusa_best.txt",
+  "strategy": "structural",
+  "segment_count": 6,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 5294,
+      "start_line": 0,
+      "end_line": 449
+    },
+    {
+      "id": "seg_002",
+      "label": "the fairy tales of Europe. The reader finds himself in a world of dragons,",
+      "segment_type": "tale",
+      "file": "seg_002_the-fairy-tales-of-europe-the-reader-fin.txt",
+      "word_count": 79233,
+      "start_line": 450,
+      "end_line": 7013
+    },
+    {
+      "id": "seg_003",
+      "label": "The heroine of this story was an incarnation of Buddha in a woman's",
+      "segment_type": "tale",
+      "file": "seg_003_the-heroine-of-this-story-was-an-incarna.txt",
+      "word_count": 3251,
+      "start_line": 7014,
+      "end_line": 7274
+    },
+    {
+      "id": "seg_004",
+      "label": "part in poverty , but such is the end of our ill-fated love. Since  there is no",
+      "segment_type": "part",
+      "file": "seg_004_part-in-poverty-but-such-is-the-end-of-o.txt",
+      "word_count": 875,
+      "start_line": 7275,
+      "end_line": 7348
+    },
+    {
+      "id": "seg_005",
+      "label": "The following interesting story is written in detail in the language of",
+      "segment_type": "tale",
+      "file": "seg_005_the-following-interesting-story-is-writt.txt",
+      "word_count": 7806,
+      "start_line": 7349,
+      "end_line": 7989
+    },
+    {
+      "id": "seg_006",
+      "label": "the story of the falcon and the p heasant to a fortune-teller and asked for his",
+      "segment_type": "tale",
+      "file": "seg_006_the-story-of-the-falcon-and-the-p-heasan.txt",
+      "word_count": 43597,
+      "start_line": 7990,
+      "end_line": 11818
+    }
+  ]
+}

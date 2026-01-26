@@ -1,0 +1,47 @@
+This etext was produced by Rick Davis
+
+
+A note from the digitizer for the Big 5 version
+
+Your computer must have the Big 5 character set (Traditional
+Chinese) installed to display the Chinese text in this file
+correctly.
+
+This text preserves the original page breaks. In a few places I
+have substituted the character forms available in the Big 5
+character set for rare or (what are now considered)
+nonstandard forms used by Legge. Characters not included in
+the Big 5 character set in any form are described by their
+constituent elements.
+
+
+A note for the Unicode version
+
+This Unicode version was made directly from the Big 5 original,
+and so the same note about substitute characters applies; no
+attempt has been made to undo the substitutions. However, of
+course, you will need support for Unicode rather than Big 5
+to view this file.
+
+
+
+THE CHINESE CLASSICS
+
+with a translation, critical and exegetical
+notes, prolegomena, and copious indexes
+
+by
+
+James Legge
+
+IN FIVE VOLUMES
+
+CONFUCIAN ANALECTS
+THE GREAT LEARNING
+THE DOCTRINE OF THE MEAN
+
+
+論語
+CONFUCIAN ANALECTS.
+
+學而第一

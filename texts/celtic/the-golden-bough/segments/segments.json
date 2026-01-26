@@ -1,0 +1,711 @@
+{
+  "text_id": "the-golden-bough",
+  "tradition": "celtic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\the-golden-bough\\normalized\\the-golden-bough_best.txt",
+  "strategy": "structural",
+  "segment_count": 78,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "Chapter  1. The King of the Wood",
+      "segment_type": "chapter",
+      "file": "seg_001_chapter-1-the-king-of-the-wood.txt",
+      "word_count": 17,
+      "start_line": 12,
+      "end_line": 16
+    },
+    {
+      "id": "seg_002",
+      "label": "Chapter  2. Priestly Kings",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-2-priestly-kings.txt",
+      "word_count": 4,
+      "start_line": 17,
+      "end_line": 18
+    },
+    {
+      "id": "seg_003",
+      "label": "Chapter  3. Sympathetic Magic",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-3-sympathetic-magic.txt",
+      "word_count": 21,
+      "start_line": 19,
+      "end_line": 24
+    },
+    {
+      "id": "seg_004",
+      "label": "Chapter  4. Magic and Religion",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-4-magic-and-religion.txt",
+      "word_count": 5,
+      "start_line": 25,
+      "end_line": 26
+    },
+    {
+      "id": "seg_005",
+      "label": "Chapter  5. The Magical Control of the Weather",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-5-the-magical-control-of-the-wea.txt",
+      "word_count": 32,
+      "start_line": 27,
+      "end_line": 32
+    },
+    {
+      "id": "seg_006",
+      "label": "Chapter  6. Magicians as Kings",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-6-magicians-as-kings.txt",
+      "word_count": 5,
+      "start_line": 33,
+      "end_line": 34
+    },
+    {
+      "id": "seg_007",
+      "label": "Chapter  7. Incarnate Human Gods",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-7-incarnate-human-gods.txt",
+      "word_count": 5,
+      "start_line": 35,
+      "end_line": 36
+    },
+    {
+      "id": "seg_008",
+      "label": "Chapter  8. Departmental Kings of Nature",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-8-departmental-kings-of-nature.txt",
+      "word_count": 6,
+      "start_line": 37,
+      "end_line": 38
+    },
+    {
+      "id": "seg_009",
+      "label": "Chapter  9. The Worship of Trees",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-9-the-worship-of-trees.txt",
+      "word_count": 13,
+      "start_line": 39,
+      "end_line": 42
+    },
+    {
+      "id": "seg_010",
+      "label": "Chapter  10. Relics of Tree Worship in Modern Europe",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-10-relics-of-tree-worship-in-mod.txt",
+      "word_count": 9,
+      "start_line": 43,
+      "end_line": 44
+    },
+    {
+      "id": "seg_011",
+      "label": "Chapter  11. The Influence of the Sexes on Vegetation",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-11-the-influence-of-the-sexes-on.txt",
+      "word_count": 9,
+      "start_line": 45,
+      "end_line": 46
+    },
+    {
+      "id": "seg_012",
+      "label": "Chapter  12. The Sacred Marriage",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-12-the-sacred-marriage.txt",
+      "word_count": 18,
+      "start_line": 47,
+      "end_line": 50
+    },
+    {
+      "id": "seg_013",
+      "label": "Chapter  13. The Kings of Rome and Alba",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-13-the-kings-of-rome-and-alba.txt",
+      "word_count": 17,
+      "start_line": 51,
+      "end_line": 54
+    },
+    {
+      "id": "seg_014",
+      "label": "Chapter  14. Succession to the Kingdom in Ancient Latium",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-14-succession-to-the-kingdom-in-.txt",
+      "word_count": 9,
+      "start_line": 55,
+      "end_line": 56
+    },
+    {
+      "id": "seg_015",
+      "label": "Chapter  15. The Worship of the Oak",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-15-the-worship-of-the-oak.txt",
+      "word_count": 7,
+      "start_line": 57,
+      "end_line": 58
+    },
+    {
+      "id": "seg_016",
+      "label": "Chapter  16. Dianus and Diana",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-16-dianus-and-diana.txt",
+      "word_count": 5,
+      "start_line": 59,
+      "end_line": 60
+    },
+    {
+      "id": "seg_017",
+      "label": "Chapter  17. The Burden of Royalty",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-17-the-burden-of-royalty.txt",
+      "word_count": 20,
+      "start_line": 61,
+      "end_line": 64
+    },
+    {
+      "id": "seg_018",
+      "label": "Chapter  18. The Perils of the Soul",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-18-the-perils-of-the-soul.txt",
+      "word_count": 29,
+      "start_line": 65,
+      "end_line": 69
+    },
+    {
+      "id": "seg_019",
+      "label": "Chapter  19. Tabooed Acts",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-19-tabooed-acts.txt",
+      "word_count": 34,
+      "start_line": 70,
+      "end_line": 76
+    },
+    {
+      "id": "seg_020",
+      "label": "Chapter  20. Tabooed Persons",
+      "segment_type": "chapter",
+      "file": "seg_020_chapter-20-tabooed-persons.txt",
+      "word_count": 30,
+      "start_line": 77,
+      "end_line": 84
+    },
+    {
+      "id": "seg_021",
+      "label": "Chapter  21. Tabooed Things",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-21-tabooed-things.txt",
+      "word_count": 48,
+      "start_line": 85,
+      "end_line": 97
+    },
+    {
+      "id": "seg_022",
+      "label": "Chapter  22. Tabooed Words",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-22-tabooed-words.txt",
+      "word_count": 33,
+      "start_line": 98,
+      "end_line": 104
+    },
+    {
+      "id": "seg_023",
+      "label": "Chapter  23. Our Debt to the Savage",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-23-our-debt-to-the-savage.txt",
+      "word_count": 7,
+      "start_line": 105,
+      "end_line": 106
+    },
+    {
+      "id": "seg_024",
+      "label": "Chapter  24. The Killing of the Divine King",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-24-the-killing-of-the-divine-kin.txt",
+      "word_count": 31,
+      "start_line": 107,
+      "end_line": 111
+    },
+    {
+      "id": "seg_025",
+      "label": "Chapter  25. Temporary Kings",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-25-temporary-kings.txt",
+      "word_count": 4,
+      "start_line": 112,
+      "end_line": 113
+    },
+    {
+      "id": "seg_026",
+      "label": "Chapter  26. Sacrifice of the King\u0019s Son",
+      "segment_type": "chapter",
+      "file": "seg_026_chapter-26-sacrifice-of-the-kings-son.txt",
+      "word_count": 7,
+      "start_line": 114,
+      "end_line": 115
+    },
+    {
+      "id": "seg_027",
+      "label": "Chapter  27. Succession to the Soul",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-27-succession-to-the-soul.txt",
+      "word_count": 6,
+      "start_line": 116,
+      "end_line": 117
+    },
+    {
+      "id": "seg_028",
+      "label": "Chapter  28. The Killing of the Tree-Spirit",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-28-the-killing-of-the-tree-spiri.txt",
+      "word_count": 50,
+      "start_line": 118,
+      "end_line": 128
+    },
+    {
+      "id": "seg_029",
+      "label": "Chapter  29. The Myth of Adonis",
+      "segment_type": "chapter",
+      "file": "seg_029_chapter-29-the-myth-of-adonis.txt",
+      "word_count": 6,
+      "start_line": 129,
+      "end_line": 130
+    },
+    {
+      "id": "seg_030",
+      "label": "Chapter  30. Adonis in Syria",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-30-adonis-in-syria.txt",
+      "word_count": 5,
+      "start_line": 131,
+      "end_line": 132
+    },
+    {
+      "id": "seg_031",
+      "label": "Chapter  31. Adonis in Cyprus",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-31-adonis-in-cyprus.txt",
+      "word_count": 5,
+      "start_line": 133,
+      "end_line": 134
+    },
+    {
+      "id": "seg_032",
+      "label": "Chapter  32. The Ritual of Adonis",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-32-the-ritual-of-adonis.txt",
+      "word_count": 6,
+      "start_line": 135,
+      "end_line": 136
+    },
+    {
+      "id": "seg_033",
+      "label": "Chapter  33. The Gardens of Adonis",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-33-the-gardens-of-adonis.txt",
+      "word_count": 6,
+      "start_line": 137,
+      "end_line": 138
+    },
+    {
+      "id": "seg_034",
+      "label": "Chapter  34. The Myth and Ritual of Attis",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-34-the-myth-and-ritual-of-attis.txt",
+      "word_count": 8,
+      "start_line": 139,
+      "end_line": 140
+    },
+    {
+      "id": "seg_035",
+      "label": "Chapter  35. Attis as a God of Vegetation",
+      "segment_type": "chapter",
+      "file": "seg_035_chapter-35-attis-as-a-god-of-vegetation.txt",
+      "word_count": 8,
+      "start_line": 141,
+      "end_line": 142
+    },
+    {
+      "id": "seg_036",
+      "label": "Chapter  36. Human Representatives of Attis",
+      "segment_type": "chapter",
+      "file": "seg_036_chapter-36-human-representatives-of-atti.txt",
+      "word_count": 6,
+      "start_line": 143,
+      "end_line": 144
+    },
+    {
+      "id": "seg_037",
+      "label": "Chapter  37. Oriental Religions in the West",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-37-oriental-religions-in-the-wes.txt",
+      "word_count": 7,
+      "start_line": 145,
+      "end_line": 146
+    },
+    {
+      "id": "seg_038",
+      "label": "Chapter  38. The Myth of Osiris",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-38-the-myth-of-osiris.txt",
+      "word_count": 6,
+      "start_line": 147,
+      "end_line": 148
+    },
+    {
+      "id": "seg_039",
+      "label": "Chapter  39. The Ritual of Osiris",
+      "segment_type": "chapter",
+      "file": "seg_039_chapter-39-the-ritual-of-osiris.txt",
+      "word_count": 14,
+      "start_line": 149,
+      "end_line": 152
+    },
+    {
+      "id": "seg_040",
+      "label": "Chapter  40. The Nature of Osiris",
+      "segment_type": "chapter",
+      "file": "seg_040_chapter-40-the-nature-of-osiris.txt",
+      "word_count": 27,
+      "start_line": 153,
+      "end_line": 158
+    },
+    {
+      "id": "seg_041",
+      "label": "Chapter  41. Isis",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-41-isis.txt",
+      "word_count": 3,
+      "start_line": 159,
+      "end_line": 160
+    },
+    {
+      "id": "seg_042",
+      "label": "Chapter  42. Osiris and the Sun",
+      "segment_type": "chapter",
+      "file": "seg_042_chapter-42-osiris-and-the-sun.txt",
+      "word_count": 6,
+      "start_line": 161,
+      "end_line": 162
+    },
+    {
+      "id": "seg_043",
+      "label": "Chapter  43. Dionysus",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-43-dionysus.txt",
+      "word_count": 3,
+      "start_line": 163,
+      "end_line": 164
+    },
+    {
+      "id": "seg_044",
+      "label": "Chapter  44. Demeter and Persephone",
+      "segment_type": "chapter",
+      "file": "seg_044_chapter-44-demeter-and-persephone.txt",
+      "word_count": 5,
+      "start_line": 165,
+      "end_line": 166
+    },
+    {
+      "id": "seg_045",
+      "label": "Chapter  45. Corn-Mother and Corn-Maiden in N. Europe",
+      "segment_type": "chapter",
+      "file": "seg_045_chapter-45-corn-mother-and-corn-maiden-i.txt",
+      "word_count": 8,
+      "start_line": 167,
+      "end_line": 168
+    },
+    {
+      "id": "seg_046",
+      "label": "Chapter  46. Corn-Mother in Many Lands",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-46-corn-mother-in-many-lands.txt",
+      "word_count": 39,
+      "start_line": 169,
+      "end_line": 174
+    },
+    {
+      "id": "seg_047",
+      "label": "Chapter  47. Lityerses",
+      "segment_type": "chapter",
+      "file": "seg_047_chapter-47-lityerses.txt",
+      "word_count": 27,
+      "start_line": 175,
+      "end_line": 180
+    },
+    {
+      "id": "seg_048",
+      "label": "Chapter  48. The Corn-Spirit as an Animal",
+      "segment_type": "chapter",
+      "file": "seg_048_chapter-48-the-corn-spirit-as-an-animal.txt",
+      "word_count": 80,
+      "start_line": 181,
+      "end_line": 192
+    },
+    {
+      "id": "seg_049",
+      "label": "Chapter  49. Ancient Deities of Vegetation as Animals",
+      "segment_type": "chapter",
+      "file": "seg_049_chapter-49-ancient-deities-of-vegetation.txt",
+      "word_count": 40,
+      "start_line": 193,
+      "end_line": 199
+    },
+    {
+      "id": "seg_050",
+      "label": "Chapter  50. Eating the God",
+      "segment_type": "chapter",
+      "file": "seg_050_chapter-50-eating-the-god.txt",
+      "word_count": 22,
+      "start_line": 200,
+      "end_line": 204
+    },
+    {
+      "id": "seg_051",
+      "label": "Chapter  51. Homeopathic Magic of a Flesh Diet",
+      "segment_type": "chapter",
+      "file": "seg_051_chapter-51-homeopathic-magic-of-a-flesh-.txt",
+      "word_count": 8,
+      "start_line": 205,
+      "end_line": 206
+    },
+    {
+      "id": "seg_052",
+      "label": "Chapter  52. Killing the Divine Animal",
+      "segment_type": "chapter",
+      "file": "seg_052_chapter-52-killing-the-divine-animal.txt",
+      "word_count": 31,
+      "start_line": 207,
+      "end_line": 213
+    },
+    {
+      "id": "seg_053",
+      "label": "Chapter  53. The Propitiation of Wild Animals By Hunters",
+      "segment_type": "chapter",
+      "file": "seg_053_chapter-53-the-propitiation-of-wild-anim.txt",
+      "word_count": 9,
+      "start_line": 214,
+      "end_line": 215
+    },
+    {
+      "id": "seg_054",
+      "label": "Chapter  54. Types of Animal Sacrament",
+      "segment_type": "chapter",
+      "file": "seg_054_chapter-54-types-of-animal-sacrament.txt",
+      "word_count": 20,
+      "start_line": 216,
+      "end_line": 219
+    },
+    {
+      "id": "seg_055",
+      "label": "Chapter  55. The Transference of Evil",
+      "segment_type": "chapter",
+      "file": "seg_055_chapter-55-the-transference-of-evil.txt",
+      "word_count": 29,
+      "start_line": 220,
+      "end_line": 225
+    },
+    {
+      "id": "seg_056",
+      "label": "Chapter  56. The Public Expulsion of Evils",
+      "segment_type": "chapter",
+      "file": "seg_056_chapter-56-the-public-expulsion-of-evils.txt",
+      "word_count": 24,
+      "start_line": 226,
+      "end_line": 230
+    },
+    {
+      "id": "seg_057",
+      "label": "Chapter  57. Public Scapegoats",
+      "segment_type": "chapter",
+      "file": "seg_057_chapter-57-public-scapegoats.txt",
+      "word_count": 35,
+      "start_line": 231,
+      "end_line": 236
+    },
+    {
+      "id": "seg_058",
+      "label": "Chapter  58. Human Scapegoats in Classical Antiquity",
+      "segment_type": "chapter",
+      "file": "seg_058_chapter-58-human-scapegoats-in-classical.txt",
+      "word_count": 25,
+      "start_line": 237,
+      "end_line": 241
+    },
+    {
+      "id": "seg_059",
+      "label": "Chapter  59. Killing the God in Mexico",
+      "segment_type": "chapter",
+      "file": "seg_059_chapter-59-killing-the-god-in-mexico.txt",
+      "word_count": 7,
+      "start_line": 242,
+      "end_line": 243
+    },
+    {
+      "id": "seg_060",
+      "label": "Chapter  60. Between Heaven and Earth",
+      "segment_type": "chapter",
+      "file": "seg_060_chapter-60-between-heaven-and-earth.txt",
+      "word_count": 34,
+      "start_line": 244,
+      "end_line": 249
+    },
+    {
+      "id": "seg_061",
+      "label": "Chapter  61. The Myth of Balder",
+      "segment_type": "chapter",
+      "file": "seg_061_chapter-61-the-myth-of-balder.txt",
+      "word_count": 6,
+      "start_line": 250,
+      "end_line": 251
+    },
+    {
+      "id": "seg_062",
+      "label": "Chapter  62. The Fire-Festivals of Europe",
+      "segment_type": "chapter",
+      "file": "seg_062_chapter-62-the-fire-festivals-of-europe.txt",
+      "word_count": 38,
+      "start_line": 252,
+      "end_line": 261
+    },
+    {
+      "id": "seg_063",
+      "label": "Chapter  63. The Interpretation of the Fire-Festivals",
+      "segment_type": "chapter",
+      "file": "seg_063_chapter-63-the-interpretation-of-the-fir.txt",
+      "word_count": 27,
+      "start_line": 262,
+      "end_line": 266
+    },
+    {
+      "id": "seg_064",
+      "label": "Chapter  64. The Burning of Human Beings in the Fires",
+      "segment_type": "chapter",
+      "file": "seg_064_chapter-64-the-burning-of-human-beings-i.txt",
+      "word_count": 28,
+      "start_line": 267,
+      "end_line": 270
+    },
+    {
+      "id": "seg_065",
+      "label": "Chapter  65. Balder and the Mistletoe",
+      "segment_type": "chapter",
+      "file": "seg_065_chapter-65-balder-and-the-mistletoe.txt",
+      "word_count": 6,
+      "start_line": 271,
+      "end_line": 272
+    },
+    {
+      "id": "seg_066",
+      "label": "Chapter  66. The External Soul in Folk-Tales",
+      "segment_type": "chapter",
+      "file": "seg_066_chapter-66-the-external-soul-in-folk-tal.txt",
+      "word_count": 7,
+      "start_line": 273,
+      "end_line": 274
+    },
+    {
+      "id": "seg_067",
+      "label": "Chapter  67. The External Soul in Folk-Custom",
+      "segment_type": "chapter",
+      "file": "seg_067_chapter-67-the-external-soul-in-folk-cus.txt",
+      "word_count": 33,
+      "start_line": 275,
+      "end_line": 280
+    },
+    {
+      "id": "seg_068",
+      "label": "Chapter  68. The Golden Bough",
+      "segment_type": "chapter",
+      "file": "seg_068_chapter-68-the-golden-bough.txt",
+      "word_count": 5,
+      "start_line": 281,
+      "end_line": 282
+    },
+    {
+      "id": "seg_069",
+      "label": "Chapter  69. Farewell to Nemi",
+      "segment_type": "chapter",
+      "file": "seg_069_chapter-69-farewell-to-nemi.txt",
+      "word_count": 10202,
+      "start_line": 283,
+      "end_line": 1256
+    },
+    {
+      "id": "seg_070",
+      "label": "part in the measures taken by the rude hunter or fisherman to secure",
+      "segment_type": "part",
+      "file": "seg_070_part-in-the-measures-taken-by-the-rude-h.txt",
+      "word_count": 178035,
+      "start_line": 1257,
+      "end_line": 17310
+    },
+    {
+      "id": "seg_071",
+      "label": "The tragical story and the melancholy rites of Adonis are better",
+      "segment_type": "tale",
+      "file": "seg_071_the-tragical-story-and-the-melancholy-ri.txt",
+      "word_count": 290,
+      "start_line": 17311,
+      "end_line": 17338
+    },
+    {
+      "id": "seg_072",
+      "label": "THE MYTH of Adonis was localised and his rites celebrated with much",
+      "segment_type": "tale",
+      "file": "seg_072_the-myth-of-adonis-was-localised-and-his.txt",
+      "word_count": 19132,
+      "start_line": 17339,
+      "end_line": 19100
+    },
+    {
+      "id": "seg_073",
+      "label": "The story of Osiris is told in a connected form only by Plutarch,",
+      "segment_type": "tale",
+      "file": "seg_073_the-story-of-osiris-is-told-in-a-connect.txt",
+      "word_count": 44732,
+      "start_line": 19101,
+      "end_line": 23183
+    },
+    {
+      "id": "seg_074",
+      "label": "the legend of Syleus, suggests that in ancient times passing",
+      "segment_type": "tale",
+      "file": "seg_074_the-legend-of-syleus-suggests-that-in-an.txt",
+      "word_count": 92722,
+      "start_line": 23184,
+      "end_line": 31454
+    },
+    {
+      "id": "seg_075",
+      "label": "story of Danae, who was confined by her father in a subterranean",
+      "segment_type": "tale",
+      "file": "seg_075_story-of-danae-who-was-confined-by-her-f.txt",
+      "word_count": 22461,
+      "start_line": 31455,
+      "end_line": 33520
+    },
+    {
+      "id": "seg_076",
+      "label": "part in the rites. On the one view, the fire, like sunshine in our",
+      "segment_type": "part",
+      "file": "seg_076_part-in-the-rites-on-the-one-view-the-fi.txt",
+      "word_count": 3643,
+      "start_line": 33521,
+      "end_line": 33853
+    },
+    {
+      "id": "seg_077",
+      "label": "part in their lives. Witches and wolves are the two great foes still",
+      "segment_type": "part",
+      "file": "seg_077_part-in-their-lives-witches-and-wolves-a.txt",
+      "word_count": 29956,
+      "start_line": 33854,
+      "end_line": 36506
+    },
+    {
+      "id": "seg_078",
+      "label": "the giant in the fairy tale, they think it safer to do so than to",
+      "segment_type": "tale",
+      "file": "seg_078_the-giant-in-the-fairy-tale-they-think-i.txt",
+      "word_count": 7692,
+      "start_line": 36507,
+      "end_line": 37207
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_format": "sacred-texts",
+  "text_id": "homeric-hymns",
+  "source_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0138",
+  "download_date": "2026-01-25T05:37:13.033120",
+  "title": "Homeric Hymns",
+  "author": "Anonymous (attributed to Homer)",
+  "tradition": "greek",
+  "date_composed": "7th-6th century BCE",
+  "material_type": "Religious hymns",
+  "original_file": "sacred-texts_hopper_text_Hugh-G.-Evelyn-White.txt",
+  "normalization_date": "2026-01-26T10:04:03.257412",
+  "char_count": 5611,
+  "line_count": 261,
+  "word_count": 967
+}

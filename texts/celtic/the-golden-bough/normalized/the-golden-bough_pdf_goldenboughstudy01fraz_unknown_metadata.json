@@ -1,0 +1,15 @@
+{
+  "text_id": "the-golden-bough",
+  "tradition": "celtic",
+  "source_format": "pdf",
+  "original_file": "goldenboughstudy01fraz_unknown.pdf",
+  "extraction_date": "2026-01-26T10:04:42.714783",
+  "total_pages": 434,
+  "pages_with_text": 422,
+  "total_chars": 720963,
+  "garbled_ratio": 0.0,
+  "extraction_quality": "good",
+  "word_count": 82035,
+  "line_count": 15973,
+  "char_count": 720963
+}

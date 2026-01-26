@@ -1,0 +1,117 @@
+{
+  "text_id": "argonautica",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\argonautica\\normalized\\argonautica_best.txt",
+  "strategy": "structural",
+  "segment_count": 12,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 114,
+      "start_line": 0,
+      "end_line": 35
+    },
+    {
+      "id": "seg_002",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_002_i.txt",
+      "word_count": 2,
+      "start_line": 36,
+      "end_line": 36
+    },
+    {
+      "id": "seg_003",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_003_ii.txt",
+      "word_count": 2,
+      "start_line": 37,
+      "end_line": 37
+    },
+    {
+      "id": "seg_004",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_004_iii.txt",
+      "word_count": 2,
+      "start_line": 38,
+      "end_line": 38
+    },
+    {
+      "id": "seg_005",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_005_iv.txt",
+      "word_count": 1040,
+      "start_line": 39,
+      "end_line": 138
+    },
+    {
+      "id": "seg_006",
+      "label": "The Tale of the Argonauts had been told often before in verse and",
+      "segment_type": "tale",
+      "file": "seg_006_the-tale-of-the-argonauts-had-been-told-.txt",
+      "word_count": 532,
+      "start_line": 139,
+      "end_line": 189
+    },
+    {
+      "id": "seg_007",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_007_i.txt",
+      "word_count": 13721,
+      "start_line": 190,
+      "end_line": 1453
+    },
+    {
+      "id": "seg_008",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_008_ii.txt",
+      "word_count": 13073,
+      "start_line": 1454,
+      "end_line": 2600
+    },
+    {
+      "id": "seg_009",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_009_iii.txt",
+      "word_count": 6869,
+      "start_line": 2601,
+      "end_line": 3213
+    },
+    {
+      "id": "seg_010",
+      "label": "the strange tale from the handmaid, not even so did she disregard it",
+      "segment_type": "tale",
+      "file": "seg_010_the-strange-tale-from-the-handmaid-not-e.txt",
+      "word_count": 7413,
+      "start_line": 3214,
+      "end_line": 3849
+    },
+    {
+      "id": "seg_011",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_011_iv.txt",
+      "word_count": 16229,
+      "start_line": 3850,
+      "end_line": 5257
+    },
+    {
+      "id": "seg_012",
+      "label": "hymn of praise. And straightway he chose in haste and raising the",
+      "segment_type": "hymn",
+      "file": "seg_012_hymn-of-praise-and-straightway-he-chose-.txt",
+      "word_count": 2295,
+      "start_line": 5258,
+      "end_line": 5524
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Paradise Lost",
+  "author": "John Milton",
+  "language": "English",
+  "release_date": "October 1, 1991",
+  "ebook_id": "20",
+  "source_format": "gutenberg",
+  "original_file": "pg20_gutenberg.txt",
+  "text_id": "paradise-lost",
+  "tradition": "european",
+  "date_composed": "1667",
+  "material_type": "Biblical epic",
+  "normalization_date": "2026-01-26T10:04:02.981857",
+  "char_count": 456611,
+  "line_count": 11008,
+  "word_count": 80029
+}

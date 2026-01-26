@@ -1,0 +1,18 @@
+{
+  "text_id": "orphic-hymns",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\orphic-hymns\\normalized\\orphic-hymns_best.txt",
+  "strategy": "single",
+  "segment_count": 1,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "full_text",
+      "segment_type": "full",
+      "file": "seg_001_full-text.txt",
+      "word_count": 598,
+      "start_line": 0,
+      "end_line": 129
+    }
+  ]
+}

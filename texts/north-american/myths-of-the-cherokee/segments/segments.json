@@ -1,0 +1,135 @@
+{
+  "text_id": "myths-of-the-cherokee",
+  "tradition": "north-american",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\myths-of-the-cherokee\\normalized\\myths-of-the-cherokee_best.txt",
+  "strategy": "structural",
+  "segment_count": 14,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 45392,
+      "start_line": 0,
+      "end_line": 4252
+    },
+    {
+      "id": "seg_002",
+      "label": "part  in  the  battle.     In  a  Washingtoi   wspaper  notice  of  the  treaty",
+      "segment_type": "part",
+      "file": "seg_002_part-in-the-battle-in-a-washingtoi-wspap.txt",
+      "word_count": 20566,
+      "start_line": 4253,
+      "end_line": 6117
+    },
+    {
+      "id": "seg_003",
+      "label": "part  in  a  treaty",
+      "segment_type": "part",
+      "file": "seg_003_part-in-a-treaty.txt",
+      "word_count": 88462,
+      "start_line": 6118,
+      "end_line": 13560
+    },
+    {
+      "id": "seg_004",
+      "label": "story  of  Nunyunu'wi  (q.  v.).  When  the  tsikilili'  perches  on  a  branch",
+      "segment_type": "tale",
+      "file": "seg_004_story-of-nunyunuwi-q-v-when-the-tsikilil.txt",
+      "word_count": 5064,
+      "start_line": 13561,
+      "end_line": 13978
+    },
+    {
+      "id": "seg_005",
+      "label": "story  of  Ontsaiyi'),  and  to  kill  one  is  to  destroy  one  of  the  most  prized",
+      "segment_type": "tale",
+      "file": "seg_005_story-of-ontsaiyi-and-to-kill-one-is-to-.txt",
+      "word_count": 29031,
+      "start_line": 13979,
+      "end_line": 16373
+    },
+    {
+      "id": "seg_006",
+      "label": "story  of  the  name:",
+      "segment_type": "tale",
+      "file": "seg_006_story-of-the-name.txt",
+      "word_count": 15374,
+      "start_line": 16374,
+      "end_line": 17689
+    },
+    {
+      "id": "seg_007",
+      "label": "story  of  some  deed  against  the  enemy,  putting  his  words  into  a  song",
+      "segment_type": "tale",
+      "file": "seg_007_story-of-some-deed-against-the-enemy-put.txt",
+      "word_count": 46815,
+      "start_line": 17690,
+      "end_line": 21589
+    },
+    {
+      "id": "seg_008",
+      "label": "story  of  \"Ictinike  and  the  Buzzard\"  (Dorsey,  in  Contributions  to  North  American",
+      "segment_type": "tale",
+      "file": "seg_008_story-of-ictinike-and-the-buzzard-dorsey.txt",
+      "word_count": 9969,
+      "start_line": 21590,
+      "end_line": 22335
+    },
+    {
+      "id": "seg_009",
+      "label": "story  of  Jonah,  and  the  Greek  story  of  Hercules,  swallowed  by  a  fish  and  coming  out",
+      "segment_type": "tale",
+      "file": "seg_009_story-of-jonah-and-the-greek-story-of-he.txt",
+      "word_count": 9715,
+      "start_line": 22336,
+      "end_line": 23069
+    },
+    {
+      "id": "seg_010",
+      "label": "The  story  of  the  book  and  the  how,  quoted  from  the  Cherokee  Advocate  of",
+      "segment_type": "tale",
+      "file": "seg_010_the-story-of-the-book-and-the-how-quoted.txt",
+      "word_count": 47245,
+      "start_line": 23070,
+      "end_line": 28201
+    },
+    {
+      "id": "seg_011",
+      "label": "70-71",
+      "segment_type": "line_range",
+      "file": "seg_011_70-71.txt",
+      "word_count": 6419,
+      "start_line": 28202,
+      "end_line": 29332
+    },
+    {
+      "id": "seg_012",
+      "label": "100-101",
+      "segment_type": "line_range",
+      "file": "seg_012_100-101.txt",
+      "word_count": 2163,
+      "start_line": 29333,
+      "end_line": 29712
+    },
+    {
+      "id": "seg_013",
+      "label": "177-479",
+      "segment_type": "line_range",
+      "file": "seg_013_177-479.txt",
+      "word_count": 749,
+      "start_line": 29713,
+      "end_line": 29849
+    },
+    {
+      "id": "seg_014",
+      "label": "182-183",
+      "segment_type": "line_range",
+      "file": "seg_014_182-183.txt",
+      "word_count": 2103,
+      "start_line": 29850,
+      "end_line": 30233
+    }
+  ]
+}

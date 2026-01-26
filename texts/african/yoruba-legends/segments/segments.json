@@ -1,0 +1,72 @@
+{
+  "text_id": "yoruba-legends",
+  "tradition": "african",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\yoruba-legends\\normalized\\yoruba-legends_best.txt",
+  "strategy": "structural",
+  "segment_count": 7,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "I",
+      "segment_type": "section",
+      "file": "seg_001_i.txt",
+      "word_count": 9108,
+      "start_line": 27,
+      "end_line": 1229
+    },
+    {
+      "id": "seg_002",
+      "label": "II",
+      "segment_type": "section",
+      "file": "seg_002_ii.txt",
+      "word_count": 7842,
+      "start_line": 1230,
+      "end_line": 2321
+    },
+    {
+      "id": "seg_003",
+      "label": "III",
+      "segment_type": "section",
+      "file": "seg_003_iii.txt",
+      "word_count": 7805,
+      "start_line": 2322,
+      "end_line": 3343
+    },
+    {
+      "id": "seg_004",
+      "label": "IV",
+      "segment_type": "section",
+      "file": "seg_004_iv.txt",
+      "word_count": 5103,
+      "start_line": 3344,
+      "end_line": 4046
+    },
+    {
+      "id": "seg_005",
+      "label": "V",
+      "segment_type": "section",
+      "file": "seg_005_v.txt",
+      "word_count": 7406,
+      "start_line": 4047,
+      "end_line": 5006
+    },
+    {
+      "id": "seg_006",
+      "label": "III",
+      "segment_type": "section",
+      "file": "seg_006_iii.txt",
+      "word_count": 8825,
+      "start_line": 5007,
+      "end_line": 6119
+    },
+    {
+      "id": "seg_007",
+      "label": "VI",
+      "segment_type": "section",
+      "file": "seg_007_vi.txt",
+      "word_count": 6100,
+      "start_line": 6120,
+      "end_line": 6897
+    }
+  ]
+}

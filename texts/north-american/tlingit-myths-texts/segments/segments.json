@@ -1,0 +1,36 @@
+{
+  "text_id": "tlingit-myths-texts",
+  "tradition": "north-american",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\tlingit-myths-texts\\normalized\\tlingit-myths-texts_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 21866,
+      "start_line": 0,
+      "end_line": 4359
+    },
+    {
+      "id": "seg_002",
+      "label": "X",
+      "segment_type": "section",
+      "file": "seg_002_x.txt",
+      "word_count": 27559,
+      "start_line": 4360,
+      "end_line": 9541
+    },
+    {
+      "id": "seg_003",
+      "label": "story ofPerseus andAndromeda, orthat ofHercules andtheHydra",
+      "segment_type": "tale",
+      "file": "seg_003_story-ofperseus-andandromeda-orthat-ofhe.txt",
+      "word_count": 61570,
+      "start_line": 9542,
+      "end_line": 22251
+    }
+  ]
+}

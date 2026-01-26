@@ -1,0 +1,54 @@
+{
+  "text_id": "metamorphoses",
+  "tradition": "roman",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\roman\\metamorphoses\\normalized\\metamorphoses_best.txt",
+  "strategy": "structural",
+  "segment_count": 5,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 2259,
+      "start_line": 0,
+      "end_line": 356
+    },
+    {
+      "id": "seg_002",
+      "label": "Part loud applaud his words, and feed his rage;",
+      "segment_type": "part",
+      "file": "seg_002_part-loud-applaud-his-words-and-feed-his.txt",
+      "word_count": 23183,
+      "start_line": 357,
+      "end_line": 3520
+    },
+    {
+      "id": "seg_003",
+      "label": "The wonderous story heard. Some hard of faith",
+      "segment_type": "tale",
+      "file": "seg_003_the-wonderous-story-heard-some-hard-of-f.txt",
+      "word_count": 22590,
+      "start_line": 3521,
+      "end_line": 6639
+    },
+    {
+      "id": "seg_004",
+      "label": "The ancient tales, in primal ages, men",
+      "segment_type": "tale",
+      "file": "seg_004_the-ancient-tales-in-primal-ages-men.txt",
+      "word_count": 10557,
+      "start_line": 6640,
+      "end_line": 8093
+    },
+    {
+      "id": "seg_005",
+      "label": "The wondrous tale all mov'd, save one, the son",
+      "segment_type": "tale",
+      "file": "seg_005_the-wondrous-tale-all-movd-save-one-the-.txt",
+      "word_count": 58476,
+      "start_line": 8094,
+      "end_line": 15940
+    }
+  ]
+}

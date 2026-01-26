@@ -1,0 +1,828 @@
+{
+  "text_id": "lebor-gabala",
+  "tradition": "celtic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\lebor-gabala\\normalized\\lebor-gabala_best.txt",
+  "strategy": "structural",
+  "segment_count": 91,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "The Story of the Tuatha De Danaan and of the Fianna of Ireland,",
+      "segment_type": "tale",
+      "file": "seg_001_the-story-of-the-tuatha-de-danaan-and-of.txt",
+      "word_count": 73,
+      "start_line": 5,
+      "end_line": 15
+    },
+    {
+      "id": "seg_002",
+      "label": "Part I",
+      "segment_type": "part",
+      "file": "seg_002_part-i.txt",
+      "word_count": 2,
+      "start_line": 16,
+      "end_line": 16
+    },
+    {
+      "id": "seg_003",
+      "label": "Part I Book I: Fight with the Firbolgs",
+      "segment_type": "part",
+      "file": "seg_003_part-i-book-i-fight-with-the-firbolgs.txt",
+      "word_count": 8,
+      "start_line": 17,
+      "end_line": 17
+    },
+    {
+      "id": "seg_004",
+      "label": "Part I Book I: Reign of Bres",
+      "segment_type": "part",
+      "file": "seg_004_part-i-book-i-reign-of-bres.txt",
+      "word_count": 7,
+      "start_line": 18,
+      "end_line": 18
+    },
+    {
+      "id": "seg_005",
+      "label": "Part I Book II: The Coming of Lugh",
+      "segment_type": "part",
+      "file": "seg_005_part-i-book-ii-the-coming-of-lugh.txt",
+      "word_count": 8,
+      "start_line": 19,
+      "end_line": 19
+    },
+    {
+      "id": "seg_006",
+      "label": "Part I Book II: The Sons of Tuireann",
+      "segment_type": "part",
+      "file": "seg_006_part-i-book-ii-the-sons-of-tuireann.txt",
+      "word_count": 8,
+      "start_line": 20,
+      "end_line": 20
+    },
+    {
+      "id": "seg_007",
+      "label": "Part I Book III: The Great Battle of Magh Tuireadh",
+      "segment_type": "part",
+      "file": "seg_007_part-i-book-iii-the-great-battle-of-magh.txt",
+      "word_count": 10,
+      "start_line": 21,
+      "end_line": 21
+    },
+    {
+      "id": "seg_008",
+      "label": "Part I Book II: Hidden House of Lugh",
+      "segment_type": "part",
+      "file": "seg_008_part-i-book-ii-hidden-house-of-lugh.txt",
+      "word_count": 8,
+      "start_line": 22,
+      "end_line": 22
+    },
+    {
+      "id": "seg_009",
+      "label": "Part I Book III: The Landing",
+      "segment_type": "part",
+      "file": "seg_009_part-i-book-iii-the-landing.txt",
+      "word_count": 6,
+      "start_line": 23,
+      "end_line": 23
+    },
+    {
+      "id": "seg_010",
+      "label": "Part I Book III: The Battle of Tailltin",
+      "segment_type": "part",
+      "file": "seg_010_part-i-book-iii-the-battle-of-tailltin.txt",
+      "word_count": 8,
+      "start_line": 24,
+      "end_line": 24
+    },
+    {
+      "id": "seg_011",
+      "label": "Part I Book IV: Bodb Deag",
+      "segment_type": "part",
+      "file": "seg_011_part-i-book-iv-bodb-deag.txt",
+      "word_count": 6,
+      "start_line": 25,
+      "end_line": 25
+    },
+    {
+      "id": "seg_012",
+      "label": "Part I Book IV: The Dagda",
+      "segment_type": "part",
+      "file": "seg_012_part-i-book-iv-the-dagda.txt",
+      "word_count": 6,
+      "start_line": 26,
+      "end_line": 26
+    },
+    {
+      "id": "seg_013",
+      "label": "Part I Book IV: Angus Og",
+      "segment_type": "part",
+      "file": "seg_013_part-i-book-iv-angus-og.txt",
+      "word_count": 6,
+      "start_line": 27,
+      "end_line": 27
+    },
+    {
+      "id": "seg_014",
+      "label": "Part I Book IV: The Morrigu",
+      "segment_type": "part",
+      "file": "seg_014_part-i-book-iv-the-morrigu.txt",
+      "word_count": 6,
+      "start_line": 28,
+      "end_line": 28
+    },
+    {
+      "id": "seg_015",
+      "label": "Part I Book IV: Aine",
+      "segment_type": "part",
+      "file": "seg_015_part-i-book-iv-aine.txt",
+      "word_count": 5,
+      "start_line": 29,
+      "end_line": 29
+    },
+    {
+      "id": "seg_016",
+      "label": "Part I Book IV: Aoibhell",
+      "segment_type": "part",
+      "file": "seg_016_part-i-book-iv-aoibhell.txt",
+      "word_count": 5,
+      "start_line": 30,
+      "end_line": 30
+    },
+    {
+      "id": "seg_017",
+      "label": "Part I Book IV: Midhir and Etain",
+      "segment_type": "part",
+      "file": "seg_017_part-i-book-iv-midhir-and-etain.txt",
+      "word_count": 7,
+      "start_line": 31,
+      "end_line": 31
+    },
+    {
+      "id": "seg_018",
+      "label": "Part I Book IV: Manannan",
+      "segment_type": "part",
+      "file": "seg_018_part-i-book-iv-manannan.txt",
+      "word_count": 5,
+      "start_line": 32,
+      "end_line": 32
+    },
+    {
+      "id": "seg_019",
+      "label": "Part I Book IV: Manannan at Play",
+      "segment_type": "part",
+      "file": "seg_019_part-i-book-iv-manannan-at-play.txt",
+      "word_count": 7,
+      "start_line": 33,
+      "end_line": 33
+    },
+    {
+      "id": "seg_020",
+      "label": "Part I Book IV: His Call to Bran",
+      "segment_type": "part",
+      "file": "seg_020_part-i-book-iv-his-call-to-bran.txt",
+      "word_count": 8,
+      "start_line": 34,
+      "end_line": 34
+    },
+    {
+      "id": "seg_021",
+      "label": "Part I Book IV: His Three Calls to Cormac",
+      "segment_type": "part",
+      "file": "seg_021_part-i-book-iv-his-three-calls-to-cormac.txt",
+      "word_count": 9,
+      "start_line": 35,
+      "end_line": 35
+    },
+    {
+      "id": "seg_022",
+      "label": "Part I Book IV: Cliodna's Wave",
+      "segment_type": "part",
+      "file": "seg_022_part-i-book-iv-cliodnas-wave.txt",
+      "word_count": 6,
+      "start_line": 36,
+      "end_line": 36
+    },
+    {
+      "id": "seg_023",
+      "label": "Part I Book IV: Call to Connla",
+      "segment_type": "part",
+      "file": "seg_023_part-i-book-iv-call-to-connla.txt",
+      "word_count": 7,
+      "start_line": 37,
+      "end_line": 37
+    },
+    {
+      "id": "seg_024",
+      "label": "Part I Book IV: Tadg in Manannan's Islands",
+      "segment_type": "part",
+      "file": "seg_024_part-i-book-iv-tadg-in-manannans-islands.txt",
+      "word_count": 8,
+      "start_line": 38,
+      "end_line": 38
+    },
+    {
+      "id": "seg_025",
+      "label": "Part I Book IV: Laegaire in the Happy Plain",
+      "segment_type": "part",
+      "file": "seg_025_part-i-book-iv-laegaire-in-the-happy-pla.txt",
+      "word_count": 9,
+      "start_line": 39,
+      "end_line": 39
+    },
+    {
+      "id": "seg_026",
+      "label": "Part I Book V: Fate of the Children of Lir",
+      "segment_type": "part",
+      "file": "seg_026_part-i-book-v-fate-of-the-children-of-li.txt",
+      "word_count": 10,
+      "start_line": 40,
+      "end_line": 40
+    },
+    {
+      "id": "seg_027",
+      "label": "Part II",
+      "segment_type": "part",
+      "file": "seg_027_part-ii.txt",
+      "word_count": 2,
+      "start_line": 41,
+      "end_line": 41
+    },
+    {
+      "id": "seg_028",
+      "label": "Part II Book I: The Coming of Finn",
+      "segment_type": "part",
+      "file": "seg_028_part-ii-book-i-the-coming-of-finn.txt",
+      "word_count": 8,
+      "start_line": 42,
+      "end_line": 42
+    },
+    {
+      "id": "seg_029",
+      "label": "Part II Book I: Finns Household",
+      "segment_type": "part",
+      "file": "seg_029_part-ii-book-i-finns-household.txt",
+      "word_count": 6,
+      "start_line": 43,
+      "end_line": 43
+    },
+    {
+      "id": "seg_030",
+      "label": "Part II Book I: Birth of Bran",
+      "segment_type": "part",
+      "file": "seg_030_part-ii-book-i-birth-of-bran.txt",
+      "word_count": 7,
+      "start_line": 44,
+      "end_line": 44
+    },
+    {
+      "id": "seg_031",
+      "label": "Part II Book I: Oisin's Mother",
+      "segment_type": "part",
+      "file": "seg_031_part-ii-book-i-oisins-mother.txt",
+      "word_count": 6,
+      "start_line": 45,
+      "end_line": 45
+    },
+    {
+      "id": "seg_032",
+      "label": "Part II Book I: The Best Men of the Fianna",
+      "segment_type": "part",
+      "file": "seg_032_part-ii-book-i-the-best-men-of-the-fiann.txt",
+      "word_count": 10,
+      "start_line": 46,
+      "end_line": 46
+    },
+    {
+      "id": "seg_033",
+      "label": "Part II Book II: The Lad of the Skins",
+      "segment_type": "part",
+      "file": "seg_033_part-ii-book-ii-the-lad-of-the-skins.txt",
+      "word_count": 9,
+      "start_line": 47,
+      "end_line": 47
+    },
+    {
+      "id": "seg_034",
+      "label": "Part II Book II: Black, Brown, and Grey",
+      "segment_type": "part",
+      "file": "seg_034_part-ii-book-ii-black-brown-and-grey.txt",
+      "word_count": 8,
+      "start_line": 48,
+      "end_line": 48
+    },
+    {
+      "id": "seg_035",
+      "label": "Part II Book II: The Hound",
+      "segment_type": "part",
+      "file": "seg_035_part-ii-book-ii-the-hound.txt",
+      "word_count": 6,
+      "start_line": 49,
+      "end_line": 49
+    },
+    {
+      "id": "seg_036",
+      "label": "Part II Book II: Red Ridge",
+      "segment_type": "part",
+      "file": "seg_036_part-ii-book-ii-red-ridge.txt",
+      "word_count": 6,
+      "start_line": 50,
+      "end_line": 50
+    },
+    {
+      "id": "seg_037",
+      "label": "Part II Book III: The Enemies of Ireland",
+      "segment_type": "part",
+      "file": "seg_037_part-ii-book-iii-the-enemies-of-ireland.txt",
+      "word_count": 8,
+      "start_line": 51,
+      "end_line": 51
+    },
+    {
+      "id": "seg_038",
+      "label": "Part II Book III: Cael and Credhe",
+      "segment_type": "part",
+      "file": "seg_038_part-ii-book-iii-cael-and-credhe.txt",
+      "word_count": 7,
+      "start_line": 52,
+      "end_line": 52
+    },
+    {
+      "id": "seg_039",
+      "label": "Part II Book III: Conn Crither",
+      "segment_type": "part",
+      "file": "seg_039_part-ii-book-iii-conn-crither.txt",
+      "word_count": 6,
+      "start_line": 53,
+      "end_line": 53
+    },
+    {
+      "id": "seg_040",
+      "label": "Part II Book III: Glas Son of Dremen",
+      "segment_type": "part",
+      "file": "seg_040_part-ii-book-iii-glas-son-of-dremen.txt",
+      "word_count": 8,
+      "start_line": 54,
+      "end_line": 54
+    },
+    {
+      "id": "seg_041",
+      "label": "Part II Book III: Help of the Men of Dea",
+      "segment_type": "part",
+      "file": "seg_041_part-ii-book-iii-help-of-the-men-of-dea.txt",
+      "word_count": 10,
+      "start_line": 55,
+      "end_line": 55
+    },
+    {
+      "id": "seg_042",
+      "label": "Part II Book III: The March of the Fianna",
+      "segment_type": "part",
+      "file": "seg_042_part-ii-book-iii-the-march-of-the-fianna.txt",
+      "word_count": 9,
+      "start_line": 56,
+      "end_line": 56
+    },
+    {
+      "id": "seg_043",
+      "label": "Part II Book III: The First Fighters",
+      "segment_type": "part",
+      "file": "seg_043_part-ii-book-iii-the-first-fighters.txt",
+      "word_count": 7,
+      "start_line": 57,
+      "end_line": 57
+    },
+    {
+      "id": "seg_044",
+      "label": "Part II Book III: The King of Ulsters Son",
+      "segment_type": "part",
+      "file": "seg_044_part-ii-book-iii-the-king-of-ulsters-son.txt",
+      "word_count": 9,
+      "start_line": 58,
+      "end_line": 58
+    },
+    {
+      "id": "seg_045",
+      "label": "Part II Book III: The High King's Son",
+      "segment_type": "part",
+      "file": "seg_045_part-ii-book-iii-the-high-kings-son.txt",
+      "word_count": 8,
+      "start_line": 59,
+      "end_line": 59
+    },
+    {
+      "id": "seg_046",
+      "label": "Part II Book III: The King of Lochlann and his Sons",
+      "segment_type": "part",
+      "file": "seg_046_part-ii-book-iii-the-king-of-lochlann-an.txt",
+      "word_count": 11,
+      "start_line": 60,
+      "end_line": 60
+    },
+    {
+      "id": "seg_047",
+      "label": "Part II Book III: Labran's Journey",
+      "segment_type": "part",
+      "file": "seg_047_part-ii-book-iii-labrans-journey.txt",
+      "word_count": 6,
+      "start_line": 61,
+      "end_line": 61
+    },
+    {
+      "id": "seg_048",
+      "label": "Part II Book III: The Great Fight",
+      "segment_type": "part",
+      "file": "seg_048_part-ii-book-iii-the-great-fight.txt",
+      "word_count": 7,
+      "start_line": 62,
+      "end_line": 62
+    },
+    {
+      "id": "seg_049",
+      "label": "Part II Book III: Credhe's Lament",
+      "segment_type": "part",
+      "file": "seg_049_part-ii-book-iii-credhes-lament.txt",
+      "word_count": 6,
+      "start_line": 63,
+      "end_line": 63
+    },
+    {
+      "id": "seg_050",
+      "label": "Part II Book IV: King of Britains Son",
+      "segment_type": "part",
+      "file": "seg_050_part-ii-book-iv-king-of-britains-son.txt",
+      "word_count": 8,
+      "start_line": 64,
+      "end_line": 64
+    },
+    {
+      "id": "seg_051",
+      "label": "Part II Book IV: Cave of Ceiscoran",
+      "segment_type": "part",
+      "file": "seg_051_part-ii-book-iv-cave-of-ceiscoran.txt",
+      "word_count": 7,
+      "start_line": 65,
+      "end_line": 65
+    },
+    {
+      "id": "seg_052",
+      "label": "Part II Book IV: Donn, Son of Midhir",
+      "segment_type": "part",
+      "file": "seg_052_part-ii-book-iv-donn-son-of-midhir.txt",
+      "word_count": 8,
+      "start_line": 66,
+      "end_line": 66
+    },
+    {
+      "id": "seg_053",
+      "label": "Part II Book IV: Hospitality of Cuanna's House",
+      "segment_type": "part",
+      "file": "seg_053_part-ii-book-iv-hospitality-of-cuannas-h.txt",
+      "word_count": 8,
+      "start_line": 67,
+      "end_line": 67
+    },
+    {
+      "id": "seg_054",
+      "label": "Part II Book IV: Cats Heads and Dog Heads",
+      "segment_type": "part",
+      "file": "seg_054_part-ii-book-iv-cats-heads-and-dog-heads.txt",
+      "word_count": 9,
+      "start_line": 68,
+      "end_line": 68
+    },
+    {
+      "id": "seg_055",
+      "label": "Part II Book IV: Lomna's Head",
+      "segment_type": "part",
+      "file": "seg_055_part-ii-book-iv-lomnas-head.txt",
+      "word_count": 6,
+      "start_line": 69,
+      "end_line": 69
+    },
+    {
+      "id": "seg_056",
+      "label": "Part II Book IV: Illbrec of Ess Ruadh",
+      "segment_type": "part",
+      "file": "seg_056_part-ii-book-iv-illbrec-of-ess-ruadh.txt",
+      "word_count": 8,
+      "start_line": 70,
+      "end_line": 70
+    },
+    {
+      "id": "seg_057",
+      "label": "Part II Book IV: The Cave of Cruachan",
+      "segment_type": "part",
+      "file": "seg_057_part-ii-book-iv-the-cave-of-cruachan.txt",
+      "word_count": 8,
+      "start_line": 71,
+      "end_line": 71
+    },
+    {
+      "id": "seg_058",
+      "label": "Part II Book IV: The Wedding at Ceann Slieve",
+      "segment_type": "part",
+      "file": "seg_058_part-ii-book-iv-the-wedding-at-ceann-sli.txt",
+      "word_count": 9,
+      "start_line": 72,
+      "end_line": 72
+    },
+    {
+      "id": "seg_059",
+      "label": "Part II Book IV: The Shadowy One",
+      "segment_type": "part",
+      "file": "seg_059_part-ii-book-iv-the-shadowy-one.txt",
+      "word_count": 7,
+      "start_line": 73,
+      "end_line": 73
+    },
+    {
+      "id": "seg_060",
+      "label": "Part II Book IV: Finn's Madness",
+      "segment_type": "part",
+      "file": "seg_060_part-ii-book-iv-finns-madness.txt",
+      "word_count": 6,
+      "start_line": 74,
+      "end_line": 74
+    },
+    {
+      "id": "seg_061",
+      "label": "Part II Book IV: The Red Woman",
+      "segment_type": "part",
+      "file": "seg_061_part-ii-book-iv-the-red-woman.txt",
+      "word_count": 7,
+      "start_line": 75,
+      "end_line": 75
+    },
+    {
+      "id": "seg_062",
+      "label": "Part II Book IV: Finn and the Phantoms",
+      "segment_type": "part",
+      "file": "seg_062_part-ii-book-iv-finn-and-the-phantoms.txt",
+      "word_count": 8,
+      "start_line": 76,
+      "end_line": 76
+    },
+    {
+      "id": "seg_063",
+      "label": "Part II Book IV: The Pigs of Angus",
+      "segment_type": "part",
+      "file": "seg_063_part-ii-book-iv-the-pigs-of-angus.txt",
+      "word_count": 8,
+      "start_line": 77,
+      "end_line": 77
+    },
+    {
+      "id": "seg_064",
+      "label": "Part II Book IV: The Hunt of Slieve Cuilinn",
+      "segment_type": "part",
+      "file": "seg_064_part-ii-book-iv-the-hunt-of-slieve-cuili.txt",
+      "word_count": 9,
+      "start_line": 78,
+      "end_line": 78
+    },
+    {
+      "id": "seg_065",
+      "label": "Part II Book V: Oisin's Children",
+      "segment_type": "part",
+      "file": "seg_065_part-ii-book-v-oisins-children.txt",
+      "word_count": 6,
+      "start_line": 79,
+      "end_line": 79
+    },
+    {
+      "id": "seg_066",
+      "label": "Part II Book VI: Birth of Diarmuid",
+      "segment_type": "part",
+      "file": "seg_066_part-ii-book-vi-birth-of-diarmuid.txt",
+      "word_count": 7,
+      "start_line": 80,
+      "end_line": 80
+    },
+    {
+      "id": "seg_067",
+      "label": "Part II Book VI: How Diarmuid Got His Love-Spot",
+      "segment_type": "part",
+      "file": "seg_067_part-ii-book-vi-how-diarmuid-got-his-lov.txt",
+      "word_count": 9,
+      "start_line": 81,
+      "end_line": 81
+    },
+    {
+      "id": "seg_068",
+      "label": "Part II Book VI: The Daughter of King Under-Wave",
+      "segment_type": "part",
+      "file": "seg_068_part-ii-book-vi-the-daughter-of-king-und.txt",
+      "word_count": 9,
+      "start_line": 82,
+      "end_line": 82
+    },
+    {
+      "id": "seg_069",
+      "label": "Part II Book VI: The Hard Servant",
+      "segment_type": "part",
+      "file": "seg_069_part-ii-book-vi-the-hard-servant.txt",
+      "word_count": 7,
+      "start_line": 83,
+      "end_line": 83
+    },
+    {
+      "id": "seg_070",
+      "label": "Part II Book VI: The House of the Quicken Trees",
+      "segment_type": "part",
+      "file": "seg_070_part-ii-book-vi-the-house-of-the-quicken.txt",
+      "word_count": 10,
+      "start_line": 84,
+      "end_line": 84
+    },
+    {
+      "id": "seg_071",
+      "label": "Part II Book VII: The Flight from Teamhair",
+      "segment_type": "part",
+      "file": "seg_071_part-ii-book-vii-the-flight-from-teamhai.txt",
+      "word_count": 8,
+      "start_line": 85,
+      "end_line": 85
+    },
+    {
+      "id": "seg_072",
+      "label": "Part II Book VII: The Pursuit",
+      "segment_type": "part",
+      "file": "seg_072_part-ii-book-vii-the-pursuit.txt",
+      "word_count": 6,
+      "start_line": 86,
+      "end_line": 86
+    },
+    {
+      "id": "seg_073",
+      "label": "Part II Book VII: The Green Champions",
+      "segment_type": "part",
+      "file": "seg_073_part-ii-book-vii-the-green-champions.txt",
+      "word_count": 7,
+      "start_line": 87,
+      "end_line": 87
+    },
+    {
+      "id": "seg_074",
+      "label": "Part II Book VII: The Wood of Dubhros",
+      "segment_type": "part",
+      "file": "seg_074_part-ii-book-vii-the-wood-of-dubhros.txt",
+      "word_count": 8,
+      "start_line": 88,
+      "end_line": 88
+    },
+    {
+      "id": "seg_075",
+      "label": "Part II Book VII: The Quarrel",
+      "segment_type": "part",
+      "file": "seg_075_part-ii-book-vii-the-quarrel.txt",
+      "word_count": 6,
+      "start_line": 89,
+      "end_line": 89
+    },
+    {
+      "id": "seg_076",
+      "label": "Part II Book VII: The Wanderers",
+      "segment_type": "part",
+      "file": "seg_076_part-ii-book-vii-the-wanderers.txt",
+      "word_count": 6,
+      "start_line": 90,
+      "end_line": 90
+    },
+    {
+      "id": "seg_077",
+      "label": "Part II Book VII: Fighting and Peace",
+      "segment_type": "part",
+      "file": "seg_077_part-ii-book-vii-fighting-and-peace.txt",
+      "word_count": 7,
+      "start_line": 91,
+      "end_line": 91
+    },
+    {
+      "id": "seg_078",
+      "label": "Part II Book VII: The Boar of Beinn Gulbain",
+      "segment_type": "part",
+      "file": "seg_078_part-ii-book-vii-the-boar-of-beinn-gulba.txt",
+      "word_count": 9,
+      "start_line": 92,
+      "end_line": 92
+    },
+    {
+      "id": "seg_079",
+      "label": "Part II Book VIII: Tailc, Son of Treon",
+      "segment_type": "part",
+      "file": "seg_079_part-ii-book-viii-tailc-son-of-treon.txt",
+      "word_count": 8,
+      "start_line": 93,
+      "end_line": 93
+    },
+    {
+      "id": "seg_080",
+      "label": "Part II Book VIII: Meargach's Wife",
+      "segment_type": "part",
+      "file": "seg_080_part-ii-book-viii-meargachs-wife.txt",
+      "word_count": 6,
+      "start_line": 94,
+      "end_line": 94
+    },
+    {
+      "id": "seg_081",
+      "label": "Part II Book VIII: Ailne's Revenge",
+      "segment_type": "part",
+      "file": "seg_081_part-ii-book-viii-ailnes-revenge.txt",
+      "word_count": 6,
+      "start_line": 95,
+      "end_line": 95
+    },
+    {
+      "id": "seg_082",
+      "label": "Part II Book IX: The Quarrel with the Sons of Morna",
+      "segment_type": "part",
+      "file": "seg_082_part-ii-book-ix-the-quarrel-with-the-son.txt",
+      "word_count": 11,
+      "start_line": 96,
+      "end_line": 96
+    },
+    {
+      "id": "seg_083",
+      "label": "Part II Book IX: Death of Goll",
+      "segment_type": "part",
+      "file": "seg_083_part-ii-book-ix-death-of-goll.txt",
+      "word_count": 7,
+      "start_line": 97,
+      "end_line": 97
+    },
+    {
+      "id": "seg_084",
+      "label": "Part II Book IX: The Battle of Gabhra",
+      "segment_type": "part",
+      "file": "seg_084_part-ii-book-ix-the-battle-of-gabhra.txt",
+      "word_count": 8,
+      "start_line": 98,
+      "end_line": 98
+    },
+    {
+      "id": "seg_085",
+      "label": "Part II Book X: The Death of Bran",
+      "segment_type": "part",
+      "file": "seg_085_part-ii-book-x-the-death-of-bran.txt",
+      "word_count": 8,
+      "start_line": 99,
+      "end_line": 99
+    },
+    {
+      "id": "seg_086",
+      "label": "Part II Book X: The Call of Oisin",
+      "segment_type": "part",
+      "file": "seg_086_part-ii-book-x-the-call-of-oisin.txt",
+      "word_count": 8,
+      "start_line": 100,
+      "end_line": 100
+    },
+    {
+      "id": "seg_087",
+      "label": "Part II Book X: The Last of the Great Men",
+      "segment_type": "part",
+      "file": "seg_087_part-ii-book-x-the-last-of-the-great-men.txt",
+      "word_count": 10,
+      "start_line": 101,
+      "end_line": 101
+    },
+    {
+      "id": "seg_088",
+      "label": "Part II Book XI: Oisin's Story",
+      "segment_type": "part",
+      "file": "seg_088_part-ii-book-xi-oisins-story.txt",
+      "word_count": 6,
+      "start_line": 102,
+      "end_line": 102
+    },
+    {
+      "id": "seg_089",
+      "label": "Part II Book XI: Oisin in Patrick's House",
+      "segment_type": "part",
+      "file": "seg_089_part-ii-book-xi-oisin-in-patricks-house.txt",
+      "word_count": 8,
+      "start_line": 103,
+      "end_line": 103
+    },
+    {
+      "id": "seg_090",
+      "label": "Part II Book XI: The Arguments",
+      "segment_type": "part",
+      "file": "seg_090_part-ii-book-xi-the-arguments.txt",
+      "word_count": 6,
+      "start_line": 104,
+      "end_line": 104
+    },
+    {
+      "id": "seg_091",
+      "label": "Part II Book XI: Oisin's Lament",
+      "segment_type": "part",
+      "file": "seg_091_part-ii-book-xi-oisins-lament.txt",
+      "word_count": 11,
+      "start_line": 105,
+      "end_line": 107
+    }
+  ]
+}

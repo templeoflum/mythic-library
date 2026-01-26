@@ -1,0 +1,4464 @@
+{
+  "text_id": "le-morte-darthur",
+  "tradition": "european",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\le-morte-darthur\\normalized\\le-morte-darthur_best.txt",
+  "strategy": "structural",
+  "segment_count": 495,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_001_i.txt",
+      "word_count": 2,
+      "start_line": 14,
+      "end_line": 15
+    },
+    {
+      "id": "seg_002",
+      "label": "CHAPTER I. First, How Uther Pendragon sent for the duke of Cornwall",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i-first-how-uther-pendragon-sent.txt",
+      "word_count": 22,
+      "start_line": 16,
+      "end_line": 18
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER II. How Uther Pendragon made war on the duke of Cornwall, and",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-ii-how-uther-pendragon-made-war-.txt",
+      "word_count": 27,
+      "start_line": 19,
+      "end_line": 21
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER III. Of the birth of King Arthur and of his nurture",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iii-of-the-birth-of-king-arthur-.txt",
+      "word_count": 12,
+      "start_line": 22,
+      "end_line": 23
+    },
+    {
+      "id": "seg_005",
+      "label": "CHAPTER IV. Of the death of King Uther Pendragon",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-iv-of-the-death-of-king-uther-pe.txt",
+      "word_count": 9,
+      "start_line": 24,
+      "end_line": 25
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER V. How Arthur was chosen king, and of wonders and marvels of a",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-v-how-arthur-was-chosen-king-and.txt",
+      "word_count": 24,
+      "start_line": 26,
+      "end_line": 28
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER VI. How King Arthur pulled out the sword divers times",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-vi-how-king-arthur-pulled-out-th.txt",
+      "word_count": 11,
+      "start_line": 29,
+      "end_line": 30
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER VII. How King Arthur was crowned, and how he made officers",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-vii-how-king-arthur-was-crowned-.txt",
+      "word_count": 12,
+      "start_line": 31,
+      "end_line": 32
+    },
+    {
+      "id": "seg_009",
+      "label": "CHAPTER VIII. How King Arthur held in Wales, at a Pentecost, a great",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-viii-how-king-arthur-held-in-wal.txt",
+      "word_count": 23,
+      "start_line": 33,
+      "end_line": 35
+    },
+    {
+      "id": "seg_010",
+      "label": "CHAPTER IX. Of the first war that King Arthur had, and how he won the",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-ix-of-the-first-war-that-king-ar.txt",
+      "word_count": 16,
+      "start_line": 36,
+      "end_line": 38
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER X. How Merlin counselled King Arthur to send for King Ban and",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-x-how-merlin-counselled-king-art.txt",
+      "word_count": 23,
+      "start_line": 39,
+      "end_line": 41
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER XI. Of a great tourney made by King Arthur and the two kings",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-xi-of-a-great-tourney-made-by-ki.txt",
+      "word_count": 24,
+      "start_line": 42,
+      "end_line": 44
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER XII. How eleven kings gathered a great host against King",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-xii-how-eleven-kings-gathered-a-.txt",
+      "word_count": 12,
+      "start_line": 45,
+      "end_line": 47
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER XIII. Of a dream of the King with the Hundred Knights",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-xiii-of-a-dream-of-the-king-with.txt",
+      "word_count": 12,
+      "start_line": 48,
+      "end_line": 49
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER XIV. How the eleven kings with their host fought against",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-xiv-how-the-eleven-kings-with-th.txt",
+      "word_count": 22,
+      "start_line": 50,
+      "end_line": 52
+    },
+    {
+      "id": "seg_016",
+      "label": "CHAPTER XV. Yet of the same battle",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-xv-yet-of-the-same-battle.txt",
+      "word_count": 7,
+      "start_line": 53,
+      "end_line": 54
+    },
+    {
+      "id": "seg_017",
+      "label": "CHAPTER XVI. Yet more of the same battle",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-xvi-yet-more-of-the-same-battle.txt",
+      "word_count": 8,
+      "start_line": 55,
+      "end_line": 56
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER XVII. Yet more of the same battle, and how it was ended by",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-xvii-yet-more-of-the-same-battle.txt",
+      "word_count": 15,
+      "start_line": 57,
+      "end_line": 59
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER XVIII. How King Arthur, King Ban, and King Bors rescued King",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-xviii-how-king-arthur-king-ban-a.txt",
+      "word_count": 16,
+      "start_line": 60,
+      "end_line": 62
+    },
+    {
+      "id": "seg_020",
+      "label": "CHAPTER XIX. How King Arthur rode to Carlion, and of his dream, and",
+      "segment_type": "chapter",
+      "file": "seg_020_chapter-xix-how-king-arthur-rode-to-carl.txt",
+      "word_count": 19,
+      "start_line": 63,
+      "end_line": 65
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER XX. How King Pellinore took Arthur's horse and followed the",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-xx-how-king-pellinore-took-arthu.txt",
+      "word_count": 19,
+      "start_line": 66,
+      "end_line": 68
+    },
+    {
+      "id": "seg_022",
+      "label": "CHAPTER XXI. How Ulfius impeached Queen Igraine, Arthur's mother, of",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-xxi-how-ulfius-impeached-queen-i.txt",
+      "word_count": 26,
+      "start_line": 69,
+      "end_line": 72
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER XXII. How Griflet was made knight, and jousted with a knight",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-xxii-how-griflet-was-made-knight.txt",
+      "word_count": 12,
+      "start_line": 73,
+      "end_line": 74
+    },
+    {
+      "id": "seg_024",
+      "label": "CHAPTER XXIII. How twelve knights came from Rome and asked truage for",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-xxiii-how-twelve-knights-came-fr.txt",
+      "word_count": 23,
+      "start_line": 75,
+      "end_line": 77
+    },
+    {
+      "id": "seg_025",
+      "label": "CHAPTER XXIV. How Merlin saved Arthur's life, and threw an enchantment",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-xxiv-how-merlin-saved-arthurs-li.txt",
+      "word_count": 19,
+      "start_line": 78,
+      "end_line": 80
+    },
+    {
+      "id": "seg_026",
+      "label": "CHAPTER XXV. How Arthur by the mean of Merlin gat Excalibur his sword",
+      "segment_type": "chapter",
+      "file": "seg_026_chapter-xxv-how-arthur-by-the-mean-of-me.txt",
+      "word_count": 19,
+      "start_line": 81,
+      "end_line": 83
+    },
+    {
+      "id": "seg_027",
+      "label": "CHAPTER XXVI. How tidings came to Arthur that King Rience had overcome",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-xxvi-how-tidings-came-to-arthur-.txt",
+      "word_count": 24,
+      "start_line": 84,
+      "end_line": 86
+    },
+    {
+      "id": "seg_028",
+      "label": "CHAPTER XXVII. How all the children were sent for that were born on",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-xxvii-how-all-the-children-were-.txt",
+      "word_count": 19,
+      "start_line": 87,
+      "end_line": 89
+    },
+    {
+      "id": "seg_029",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_029_ii.txt",
+      "word_count": 2,
+      "start_line": 90,
+      "end_line": 91
+    },
+    {
+      "id": "seg_030",
+      "label": "CHAPTER I. Of a damosel which came girt with a sword for to find a man",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-i-of-a-damosel-which-came-girt-w.txt",
+      "word_count": 26,
+      "start_line": 92,
+      "end_line": 94
+    },
+    {
+      "id": "seg_031",
+      "label": "CHAPTER II. How Balin, arrayed like a poor knight, pulled out the",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-ii-how-balin-arrayed-like-a-poor.txt",
+      "word_count": 21,
+      "start_line": 95,
+      "end_line": 97
+    },
+    {
+      "id": "seg_032",
+      "label": "CHAPTER III. How the Lady of the Lake demanded the knight's head that",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-iii-how-the-lady-of-the-lake-dem.txt",
+      "word_count": 21,
+      "start_line": 98,
+      "end_line": 100
+    },
+    {
+      "id": "seg_033",
+      "label": "CHAPTER IV. How Merlin told the adventure of this damosel",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-iv-how-merlin-told-the-adventure.txt",
+      "word_count": 10,
+      "start_line": 101,
+      "end_line": 102
+    },
+    {
+      "id": "seg_034",
+      "label": "CHAPTER V. How Balin was pursued by Sir Lanceor, knight of Ireland,",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-v-how-balin-was-pursued-by-sir-l.txt",
+      "word_count": 19,
+      "start_line": 103,
+      "end_line": 105
+    },
+    {
+      "id": "seg_035",
+      "label": "CHAPTER VI. How a damosel, which was love to Lanceor, slew herself for",
+      "segment_type": "chapter",
+      "file": "seg_035_chapter-vi-how-a-damosel-which-was-love-.txt",
+      "word_count": 22,
+      "start_line": 106,
+      "end_line": 108
+    },
+    {
+      "id": "seg_036",
+      "label": "CHAPTER VII. How a dwarf reproved Balin for the death of Lanceor, and",
+      "segment_type": "chapter",
+      "file": "seg_036_chapter-vii-how-a-dwarf-reproved-balin-f.txt",
+      "word_count": 26,
+      "start_line": 109,
+      "end_line": 111
+    },
+    {
+      "id": "seg_037",
+      "label": "CHAPTER VIII. How Merlin prophesied that two the best knights of the",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-viii-how-merlin-prophesied-that-.txt",
+      "word_count": 23,
+      "start_line": 112,
+      "end_line": 114
+    },
+    {
+      "id": "seg_038",
+      "label": "CHAPTER IX. How Balin and his brother, by the counsel of Merlin, took",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-ix-how-balin-and-his-brother-by-.txt",
+      "word_count": 21,
+      "start_line": 115,
+      "end_line": 117
+    },
+    {
+      "id": "seg_039",
+      "label": "CHAPTER X. How King Arthur had a battle against Nero and King Lot of",
+      "segment_type": "chapter",
+      "file": "seg_039_chapter-x-how-king-arthur-had-a-battle-a.txt",
+      "word_count": 29,
+      "start_line": 118,
+      "end_line": 121
+    },
+    {
+      "id": "seg_040",
+      "label": "CHAPTER XI. Of the interment of twelve kings, and of the prophecy of",
+      "segment_type": "chapter",
+      "file": "seg_040_chapter-xi-of-the-interment-of-twelve-ki.txt",
+      "word_count": 22,
+      "start_line": 122,
+      "end_line": 124
+    },
+    {
+      "id": "seg_041",
+      "label": "CHAPTER XII. How a sorrowful knight came before Arthur, and how Balin",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-xii-how-a-sorrowful-knight-came-.txt",
+      "word_count": 24,
+      "start_line": 125,
+      "end_line": 127
+    },
+    {
+      "id": "seg_042",
+      "label": "CHAPTER XIII. How Balin and the damosel met with a knight which was in",
+      "segment_type": "chapter",
+      "file": "seg_042_chapter-xiii-how-balin-and-the-damosel-m.txt",
+      "word_count": 27,
+      "start_line": 128,
+      "end_line": 130
+    },
+    {
+      "id": "seg_043",
+      "label": "CHAPTER XIV. How Balin met with that knight named Garlon at a feast,",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-xiv-how-balin-met-with-that-knig.txt",
+      "word_count": 30,
+      "start_line": 131,
+      "end_line": 134
+    },
+    {
+      "id": "seg_044",
+      "label": "CHAPTER XV. How Balin fought with King Pellam, and how his sword",
+      "segment_type": "chapter",
+      "file": "seg_044_chapter-xv-how-balin-fought-with-king-pe.txt",
+      "word_count": 25,
+      "start_line": 135,
+      "end_line": 137
+    },
+    {
+      "id": "seg_045",
+      "label": "CHAPTER XVI. How Balin was delivered by Merlin, and saved a knight",
+      "segment_type": "chapter",
+      "file": "seg_045_chapter-xvi-how-balin-was-delivered-by-m.txt",
+      "word_count": 19,
+      "start_line": 138,
+      "end_line": 140
+    },
+    {
+      "id": "seg_046",
+      "label": "CHAPTER XVII. How that knight slew his love and a knight lying by her,",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-xvii-how-that-knight-slew-his-lo.txt",
+      "word_count": 36,
+      "start_line": 141,
+      "end_line": 144
+    },
+    {
+      "id": "seg_047",
+      "label": "CHAPTER XVIII. How Balin met with his brother Balan, and how each of",
+      "segment_type": "chapter",
+      "file": "seg_047_chapter-xviii-how-balin-met-with-his-bro.txt",
+      "word_count": 23,
+      "start_line": 145,
+      "end_line": 147
+    },
+    {
+      "id": "seg_048",
+      "label": "CHAPTER XIX. How Merlin buried them both in one tomb, and of Balin's",
+      "segment_type": "chapter",
+      "file": "seg_048_chapter-xix-how-merlin-buried-them-both-.txt",
+      "word_count": 14,
+      "start_line": 148,
+      "end_line": 150
+    },
+    {
+      "id": "seg_049",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_049_iii.txt",
+      "word_count": 2,
+      "start_line": 151,
+      "end_line": 152
+    },
+    {
+      "id": "seg_050",
+      "label": "CHAPTER I. How King Arthur took a wife, and wedded Guenever, daughter",
+      "segment_type": "chapter",
+      "file": "seg_050_chapter-i-how-king-arthur-took-a-wife-an.txt",
+      "word_count": 27,
+      "start_line": 153,
+      "end_line": 156
+    },
+    {
+      "id": "seg_051",
+      "label": "CHAPTER II. How the Knights of the Round Table were ordained and their",
+      "segment_type": "chapter",
+      "file": "seg_051_chapter-ii-how-the-knights-of-the-round-.txt",
+      "word_count": 20,
+      "start_line": 157,
+      "end_line": 159
+    },
+    {
+      "id": "seg_052",
+      "label": "CHAPTER III. How a poor man riding upon a lean mare desired King",
+      "segment_type": "chapter",
+      "file": "seg_052_chapter-iii-how-a-poor-man-riding-upon-a.txt",
+      "word_count": 19,
+      "start_line": 160,
+      "end_line": 162
+    },
+    {
+      "id": "seg_053",
+      "label": "CHAPTER IV. How Sir Tor was known for son of King Pellinore, and how",
+      "segment_type": "chapter",
+      "file": "seg_053_chapter-iv-how-sir-tor-was-known-for-son.txt",
+      "word_count": 18,
+      "start_line": 163,
+      "end_line": 165
+    },
+    {
+      "id": "seg_054",
+      "label": "CHAPTER V. How at feast of the wedding of King Arthur to Guenever, a",
+      "segment_type": "chapter",
+      "file": "seg_054_chapter-v-how-at-feast-of-the-wedding-of.txt",
+      "word_count": 35,
+      "start_line": 166,
+      "end_line": 169
+    },
+    {
+      "id": "seg_055",
+      "label": "CHAPTER VI. How Sir Gawaine rode for to fetch again the hart, and how",
+      "segment_type": "chapter",
+      "file": "seg_055_chapter-vi-how-sir-gawaine-rode-for-to-f.txt",
+      "word_count": 23,
+      "start_line": 170,
+      "end_line": 172
+    },
+    {
+      "id": "seg_056",
+      "label": "CHAPTER VII How the hart was chased into a castle and there slain, and",
+      "segment_type": "chapter",
+      "file": "seg_056_chapter-vii-how-the-hart-was-chased-into.txt",
+      "word_count": 20,
+      "start_line": 173,
+      "end_line": 175
+    },
+    {
+      "id": "seg_057",
+      "label": "CHAPTER VIII. How four knights fought against Gawaine and Gaheris, and",
+      "segment_type": "chapter",
+      "file": "seg_057_chapter-viii-how-four-knights-fought-aga.txt",
+      "word_count": 24,
+      "start_line": 176,
+      "end_line": 179
+    },
+    {
+      "id": "seg_058",
+      "label": "CHAPTER IX. How Sir Tor rode after the knight with the brachet, and of",
+      "segment_type": "chapter",
+      "file": "seg_058_chapter-ix-how-sir-tor-rode-after-the-kn.txt",
+      "word_count": 19,
+      "start_line": 180,
+      "end_line": 182
+    },
+    {
+      "id": "seg_059",
+      "label": "CHAPTER X. How Sir Tor found the brachet with a lady, and how a knight",
+      "segment_type": "chapter",
+      "file": "seg_059_chapter-x-how-sir-tor-found-the-brachet-.txt",
+      "word_count": 21,
+      "start_line": 183,
+      "end_line": 185
+    },
+    {
+      "id": "seg_060",
+      "label": "CHAPTER XI. How Sir Tor overcame the knight, and how he lost his head",
+      "segment_type": "chapter",
+      "file": "seg_060_chapter-xi-how-sir-tor-overcame-the-knig.txt",
+      "word_count": 20,
+      "start_line": 186,
+      "end_line": 188
+    },
+    {
+      "id": "seg_061",
+      "label": "CHAPTER XII. How King Pellinore rode after the lady and the knight",
+      "segment_type": "chapter",
+      "file": "seg_061_chapter-xii-how-king-pellinore-rode-afte.txt",
+      "word_count": 44,
+      "start_line": 189,
+      "end_line": 193
+    },
+    {
+      "id": "seg_062",
+      "label": "CHAPTER XIII. How King Pellinore gat the lady and brought her to",
+      "segment_type": "chapter",
+      "file": "seg_062_chapter-xiii-how-king-pellinore-gat-the-.txt",
+      "word_count": 19,
+      "start_line": 194,
+      "end_line": 196
+    },
+    {
+      "id": "seg_063",
+      "label": "CHAPTER XIV. How on the way he heard two knights, as he lay by night",
+      "segment_type": "chapter",
+      "file": "seg_063_chapter-xiv-how-on-the-way-he-heard-two-.txt",
+      "word_count": 22,
+      "start_line": 197,
+      "end_line": 199
+    },
+    {
+      "id": "seg_064",
+      "label": "CHAPTER XV. How when he was come to Camelot he was sworn upon a book",
+      "segment_type": "chapter",
+      "file": "seg_064_chapter-xv-how-when-he-was-come-to-camel.txt",
+      "word_count": 22,
+      "start_line": 200,
+      "end_line": 202
+    },
+    {
+      "id": "seg_065",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_065_iv.txt",
+      "word_count": 2,
+      "start_line": 203,
+      "end_line": 204
+    },
+    {
+      "id": "seg_066",
+      "label": "CHAPTER I. How Merlin was assotted and doted on one of the ladies of",
+      "segment_type": "chapter",
+      "file": "seg_066_chapter-i-how-merlin-was-assotted-and-do.txt",
+      "word_count": 30,
+      "start_line": 205,
+      "end_line": 207
+    },
+    {
+      "id": "seg_067",
+      "label": "CHAPTER II. How five kings came into this land to war against King",
+      "segment_type": "chapter",
+      "file": "seg_067_chapter-ii-how-five-kings-came-into-this.txt",
+      "word_count": 21,
+      "start_line": 208,
+      "end_line": 210
+    },
+    {
+      "id": "seg_068",
+      "label": "CHAPTER III. How King Arthur had ado with them and overthrew them, and",
+      "segment_type": "chapter",
+      "file": "seg_068_chapter-iii-how-king-arthur-had-ado-with.txt",
+      "word_count": 23,
+      "start_line": 211,
+      "end_line": 213
+    },
+    {
+      "id": "seg_069",
+      "label": "CHAPTER IV. How the battle was finished or he came, and how King",
+      "segment_type": "chapter",
+      "file": "seg_069_chapter-iv-how-the-battle-was-finished-o.txt",
+      "word_count": 21,
+      "start_line": 214,
+      "end_line": 216
+    },
+    {
+      "id": "seg_070",
+      "label": "CHAPTER V. How Sir Tor was made knight of the Round Table, and how",
+      "segment_type": "chapter",
+      "file": "seg_070_chapter-v-how-sir-tor-was-made-knight-of.txt",
+      "word_count": 17,
+      "start_line": 217,
+      "end_line": 219
+    },
+    {
+      "id": "seg_071",
+      "label": "CHAPTER VI. How King Arthur, King Uriens, and Sir Accolon of Gaul,",
+      "segment_type": "chapter",
+      "file": "seg_071_chapter-vi-how-king-arthur-king-uriens-a.txt",
+      "word_count": 20,
+      "start_line": 220,
+      "end_line": 222
+    },
+    {
+      "id": "seg_072",
+      "label": "CHAPTER VII. How Arthur took upon him to fight to be delivered out of",
+      "segment_type": "chapter",
+      "file": "seg_072_chapter-vii-how-arthur-took-upon-him-to-.txt",
+      "word_count": 26,
+      "start_line": 223,
+      "end_line": 225
+    },
+    {
+      "id": "seg_073",
+      "label": "CHAPTER VIII. How Accolon found himself by a well, and he took upon",
+      "segment_type": "chapter",
+      "file": "seg_073_chapter-viii-how-accolon-found-himself-b.txt",
+      "word_count": 19,
+      "start_line": 226,
+      "end_line": 228
+    },
+    {
+      "id": "seg_074",
+      "label": "CHAPTER IX. Of the battle between King Arthur and Accolon",
+      "segment_type": "chapter",
+      "file": "seg_074_chapter-ix-of-the-battle-between-king-ar.txt",
+      "word_count": 10,
+      "start_line": 229,
+      "end_line": 230
+    },
+    {
+      "id": "seg_075",
+      "label": "CHAPTER X. How King Arthur's sword that he fought with brake, and how",
+      "segment_type": "chapter",
+      "file": "seg_075_chapter-x-how-king-arthurs-sword-that-he.txt",
+      "word_count": 25,
+      "start_line": 231,
+      "end_line": 234
+    },
+    {
+      "id": "seg_076",
+      "label": "CHAPTER XI. How Accolon confessed the treason of Morgan le Fay, King",
+      "segment_type": "chapter",
+      "file": "seg_076_chapter-xi-how-accolon-confessed-the-tre.txt",
+      "word_count": 22,
+      "start_line": 235,
+      "end_line": 237
+    },
+    {
+      "id": "seg_077",
+      "label": "CHAPTER XII. How Arthur accorded the two brethren, and delivered the",
+      "segment_type": "chapter",
+      "file": "seg_077_chapter-xii-how-arthur-accorded-the-two-.txt",
+      "word_count": 18,
+      "start_line": 238,
+      "end_line": 240
+    },
+    {
+      "id": "seg_078",
+      "label": "CHAPTER XIII. How Morgan would have slain Sir Uriens her husband, and",
+      "segment_type": "chapter",
+      "file": "seg_078_chapter-xiii-how-morgan-would-have-slain.txt",
+      "word_count": 19,
+      "start_line": 241,
+      "end_line": 243
+    },
+    {
+      "id": "seg_079",
+      "label": "CHAPTER XIV. How Queen Morgan le Fay made great sorrow for the death",
+      "segment_type": "chapter",
+      "file": "seg_079_chapter-xiv-how-queen-morgan-le-fay-made.txt",
+      "word_count": 24,
+      "start_line": 244,
+      "end_line": 246
+    },
+    {
+      "id": "seg_080",
+      "label": "CHAPTER XV. How Morgan le Fay saved a knight that should have been",
+      "segment_type": "chapter",
+      "file": "seg_080_chapter-xv-how-morgan-le-fay-saved-a-kni.txt",
+      "word_count": 21,
+      "start_line": 247,
+      "end_line": 249
+    },
+    {
+      "id": "seg_081",
+      "label": "CHAPTER XVI. How the Damosel of the Lake saved King Arthur from mantle",
+      "segment_type": "chapter",
+      "file": "seg_081_chapter-xvi-how-the-damosel-of-the-lake-.txt",
+      "word_count": 18,
+      "start_line": 250,
+      "end_line": 252
+    },
+    {
+      "id": "seg_082",
+      "label": "CHAPTER XVII. How Sir Gawaine and Sir Uwaine met with twelve fair",
+      "segment_type": "chapter",
+      "file": "seg_082_chapter-xvii-how-sir-gawaine-and-sir-uwa.txt",
+      "word_count": 20,
+      "start_line": 253,
+      "end_line": 255
+    },
+    {
+      "id": "seg_083",
+      "label": "CHAPTER XVIII. How Sir Marhaus jousted with Sir Gawaine and Sir",
+      "segment_type": "chapter",
+      "file": "seg_083_chapter-xviii-how-sir-marhaus-jousted-wi.txt",
+      "word_count": 16,
+      "start_line": 256,
+      "end_line": 258
+    },
+    {
+      "id": "seg_084",
+      "label": "CHAPTER XIX. How Sir Marhaus, Sir Gawaine, and Sir Uwaine met three",
+      "segment_type": "chapter",
+      "file": "seg_084_chapter-xix-how-sir-marhaus-sir-gawaine-.txt",
+      "word_count": 19,
+      "start_line": 259,
+      "end_line": 261
+    },
+    {
+      "id": "seg_085",
+      "label": "CHAPTER XX. How a knight and a dwarf strove for a lady",
+      "segment_type": "chapter",
+      "file": "seg_085_chapter-xx-how-a-knight-and-a-dwarf-stro.txt",
+      "word_count": 12,
+      "start_line": 262,
+      "end_line": 263
+    },
+    {
+      "id": "seg_086",
+      "label": "CHAPTER XXI. How King Pelleas suffered himself to be taken prisoner",
+      "segment_type": "chapter",
+      "file": "seg_086_chapter-xxi-how-king-pelleas-suffered-hi.txt",
+      "word_count": 35,
+      "start_line": 264,
+      "end_line": 267
+    },
+    {
+      "id": "seg_087",
+      "label": "CHAPTER XXII. How Sir Gawaine came to the Lady Ettard, and how Sir",
+      "segment_type": "chapter",
+      "file": "seg_087_chapter-xxii-how-sir-gawaine-came-to-the.txt",
+      "word_count": 17,
+      "start_line": 268,
+      "end_line": 270
+    },
+    {
+      "id": "seg_088",
+      "label": "CHAPTER XXIII. How Sir Pelleas loved no more Ettard by means of the",
+      "segment_type": "chapter",
+      "file": "seg_088_chapter-xxiii-how-sir-pelleas-loved-no-m.txt",
+      "word_count": 22,
+      "start_line": 271,
+      "end_line": 273
+    },
+    {
+      "id": "seg_089",
+      "label": "CHAPTER XXIV. How Sir Marhaus rode with the damosel, and how he came",
+      "segment_type": "chapter",
+      "file": "seg_089_chapter-xxiv-how-sir-marhaus-rode-with-t.txt",
+      "word_count": 20,
+      "start_line": 274,
+      "end_line": 276
+    },
+    {
+      "id": "seg_090",
+      "label": "CHAPTER XXV. How Sir Marhaus fought with the duke and his four sons",
+      "segment_type": "chapter",
+      "file": "seg_090_chapter-xxv-how-sir-marhaus-fought-with-.txt",
+      "word_count": 19,
+      "start_line": 277,
+      "end_line": 279
+    },
+    {
+      "id": "seg_091",
+      "label": "CHAPTER XXVI. How Sir Uwaine rode with the damosel of sixty year of",
+      "segment_type": "chapter",
+      "file": "seg_091_chapter-xxvi-how-sir-uwaine-rode-with-th.txt",
+      "word_count": 22,
+      "start_line": 280,
+      "end_line": 282
+    },
+    {
+      "id": "seg_092",
+      "label": "CHAPTER XXVII. How Sir Uwaine fought with two knights and overcame",
+      "segment_type": "chapter",
+      "file": "seg_092_chapter-xxvii-how-sir-uwaine-fought-with.txt",
+      "word_count": 12,
+      "start_line": 283,
+      "end_line": 285
+    },
+    {
+      "id": "seg_093",
+      "label": "CHAPTER XXVIII. How at the year's end all three knights with their",
+      "segment_type": "chapter",
+      "file": "seg_093_chapter-xxviii-how-at-the-years-end-all-.txt",
+      "word_count": 18,
+      "start_line": 286,
+      "end_line": 288
+    },
+    {
+      "id": "seg_094",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_094_v.txt",
+      "word_count": 2,
+      "start_line": 289,
+      "end_line": 290
+    },
+    {
+      "id": "seg_095",
+      "label": "CHAPTER I. How twelve aged ambassadors of Rome came to King Arthur to",
+      "segment_type": "chapter",
+      "file": "seg_095_chapter-i-how-twelve-aged-ambassadors-of.txt",
+      "word_count": 17,
+      "start_line": 291,
+      "end_line": 293
+    },
+    {
+      "id": "seg_096",
+      "label": "CHAPTER II. How the kings and lords promised to King Arthur aid and",
+      "segment_type": "chapter",
+      "file": "seg_096_chapter-ii-how-the-kings-and-lords-promi.txt",
+      "word_count": 17,
+      "start_line": 294,
+      "end_line": 296
+    },
+    {
+      "id": "seg_097",
+      "label": "CHAPTER III. How King Arthur held a parliament at York, and how he",
+      "segment_type": "chapter",
+      "file": "seg_097_chapter-iii-how-king-arthur-held-a-parli.txt",
+      "word_count": 22,
+      "start_line": 297,
+      "end_line": 299
+    },
+    {
+      "id": "seg_098",
+      "label": "CHAPTER IV. How King Arthur being shipped and lying in his cabin had a",
+      "segment_type": "chapter",
+      "file": "seg_098_chapter-iv-how-king-arthur-being-shipped.txt",
+      "word_count": 21,
+      "start_line": 300,
+      "end_line": 302
+    },
+    {
+      "id": "seg_099",
+      "label": "CHAPTER V. How a man of the country told to him of a marvellous giant,",
+      "segment_type": "chapter",
+      "file": "seg_099_chapter-v-how-a-man-of-the-country-told-.txt",
+      "word_count": 22,
+      "start_line": 303,
+      "end_line": 305
+    },
+    {
+      "id": "seg_100",
+      "label": "CHAPTER VI. How King Arthur sent Sir Gawaine and other to Lucius, and",
+      "segment_type": "chapter",
+      "file": "seg_100_chapter-vi-how-king-arthur-sent-sir-gawa.txt",
+      "word_count": 21,
+      "start_line": 306,
+      "end_line": 308
+    },
+    {
+      "id": "seg_101",
+      "label": "CHAPTER VII. How Lucius sent certain spies in a bushment for to have",
+      "segment_type": "chapter",
+      "file": "seg_101_chapter-vii-how-lucius-sent-certain-spie.txt",
+      "word_count": 23,
+      "start_line": 309,
+      "end_line": 311
+    },
+    {
+      "id": "seg_102",
+      "label": "CHAPTER VIII. How a senator told to Lucius of their discomfiture, and",
+      "segment_type": "chapter",
+      "file": "seg_102_chapter-viii-how-a-senator-told-to-luciu.txt",
+      "word_count": 21,
+      "start_line": 312,
+      "end_line": 314
+    },
+    {
+      "id": "seg_103",
+      "label": "CHAPTER IX How Arthur, after he had achieved the battle against the",
+      "segment_type": "chapter",
+      "file": "seg_103_chapter-ix-how-arthur-after-he-had-achie.txt",
+      "word_count": 20,
+      "start_line": 315,
+      "end_line": 317
+    },
+    {
+      "id": "seg_104",
+      "label": "CHAPTER X. Of a battle done by Sir Gawaine against a Saracen, which",
+      "segment_type": "chapter",
+      "file": "seg_104_chapter-x-of-a-battle-done-by-sir-gawain.txt",
+      "word_count": 19,
+      "start_line": 318,
+      "end_line": 320
+    },
+    {
+      "id": "seg_105",
+      "label": "CHAPTER XI. How the Saracens came out of a wood for to rescue their",
+      "segment_type": "chapter",
+      "file": "seg_105_chapter-xi-how-the-saracens-came-out-of-.txt",
+      "word_count": 20,
+      "start_line": 321,
+      "end_line": 323
+    },
+    {
+      "id": "seg_106",
+      "label": "CHAPTER XII. How Sir Gawaine returned to King Arthur with his",
+      "segment_type": "chapter",
+      "file": "seg_106_chapter-xii-how-sir-gawaine-returned-to-.txt",
+      "word_count": 25,
+      "start_line": 324,
+      "end_line": 327
+    },
+    {
+      "id": "seg_107",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_107_vi.txt",
+      "word_count": 2,
+      "start_line": 328,
+      "end_line": 329
+    },
+    {
+      "id": "seg_108",
+      "label": "CHAPTER I. How Sir Launcelot and Sir Lionel departed from the court,",
+      "segment_type": "chapter",
+      "file": "seg_108_chapter-i-how-sir-launcelot-and-sir-lion.txt",
+      "word_count": 22,
+      "start_line": 330,
+      "end_line": 332
+    },
+    {
+      "id": "seg_109",
+      "label": "CHAPTER II. How Sir Ector followed for to seek Sir Launcelot, and how",
+      "segment_type": "chapter",
+      "file": "seg_109_chapter-ii-how-sir-ector-followed-for-to.txt",
+      "word_count": 19,
+      "start_line": 333,
+      "end_line": 335
+    },
+    {
+      "id": "seg_110",
+      "label": "CHAPTER III How four queens found Launcelot sleeping, and how by",
+      "segment_type": "chapter",
+      "file": "seg_110_chapter-iii-how-four-queens-found-launce.txt",
+      "word_count": 20,
+      "start_line": 336,
+      "end_line": 338
+    },
+    {
+      "id": "seg_111",
+      "label": "CHAPTER IV. How Sir Launcelot was delivered by the mean of a damosel",
+      "segment_type": "chapter",
+      "file": "seg_111_chapter-iv-how-sir-launcelot-was-deliver.txt",
+      "word_count": 13,
+      "start_line": 339,
+      "end_line": 340
+    },
+    {
+      "id": "seg_112",
+      "label": "CHAPTER V. How a knight found Sir Launcelot lying in his leman's bed,",
+      "segment_type": "chapter",
+      "file": "seg_112_chapter-v-how-a-knight-found-sir-launcel.txt",
+      "word_count": 21,
+      "start_line": 341,
+      "end_line": 343
+    },
+    {
+      "id": "seg_113",
+      "label": "CHAPTER VI. How Sir Launcelot was received of King Bagdemagus'",
+      "segment_type": "chapter",
+      "file": "seg_113_chapter-vi-how-sir-launcelot-was-receive.txt",
+      "word_count": 20,
+      "start_line": 344,
+      "end_line": 346
+    },
+    {
+      "id": "seg_114",
+      "label": "CHAPTER VII. How Sir Launcelot behaved him in a tournament, and how he",
+      "segment_type": "chapter",
+      "file": "seg_114_chapter-vii-how-sir-launcelot-behaved-hi.txt",
+      "word_count": 20,
+      "start_line": 347,
+      "end_line": 349
+    },
+    {
+      "id": "seg_115",
+      "label": "CHAPTER VIII. How Sir Launcelot and Sir Turquine fought together",
+      "segment_type": "chapter",
+      "file": "seg_115_chapter-viii-how-sir-launcelot-and-sir-t.txt",
+      "word_count": 10,
+      "start_line": 350,
+      "end_line": 351
+    },
+    {
+      "id": "seg_116",
+      "label": "CHAPTER IX. How Sir Turquine was slain, and how Sir Launcelot bade Sir",
+      "segment_type": "chapter",
+      "file": "seg_116_chapter-ix-how-sir-turquine-was-slain-an.txt",
+      "word_count": 18,
+      "start_line": 352,
+      "end_line": 354
+    },
+    {
+      "id": "seg_117",
+      "label": "CHAPTER X. How Sir Launcelot rode with a damosel and slew a knight",
+      "segment_type": "chapter",
+      "file": "seg_117_chapter-x-how-sir-launcelot-rode-with-a-.txt",
+      "word_count": 25,
+      "start_line": 355,
+      "end_line": 357
+    },
+    {
+      "id": "seg_118",
+      "label": "CHAPTER XI. How Sir Launcelot slew two giants, and made a castle free",
+      "segment_type": "chapter",
+      "file": "seg_118_chapter-xi-how-sir-launcelot-slew-two-gi.txt",
+      "word_count": 13,
+      "start_line": 358,
+      "end_line": 359
+    },
+    {
+      "id": "seg_119",
+      "label": "CHAPTER XII. How Sir Launcelot rode disguised in Sir Kay's harness,",
+      "segment_type": "chapter",
+      "file": "seg_119_chapter-xii-how-sir-launcelot-rode-disgu.txt",
+      "word_count": 18,
+      "start_line": 360,
+      "end_line": 362
+    },
+    {
+      "id": "seg_120",
+      "label": "CHAPTER XIII. How Sir Launcelot jousted against four knights of the",
+      "segment_type": "chapter",
+      "file": "seg_120_chapter-xiii-how-sir-launcelot-jousted-a.txt",
+      "word_count": 16,
+      "start_line": 363,
+      "end_line": 365
+    },
+    {
+      "id": "seg_121",
+      "label": "CHAPTER XIV. How Sir Launcelot followed a brachet into a castle, where",
+      "segment_type": "chapter",
+      "file": "seg_121_chapter-xiv-how-sir-launcelot-followed-a.txt",
+      "word_count": 30,
+      "start_line": 366,
+      "end_line": 369
+    },
+    {
+      "id": "seg_122",
+      "label": "CHAPTER XV. How Sir Launcelot came into the Chapel Perilous and gat",
+      "segment_type": "chapter",
+      "file": "seg_122_chapter-xv-how-sir-launcelot-came-into-t.txt",
+      "word_count": 25,
+      "start_line": 370,
+      "end_line": 372
+    },
+    {
+      "id": "seg_123",
+      "label": "CHAPTER XVI. How Sir Launcelot at the request of a lady recovered a",
+      "segment_type": "chapter",
+      "file": "seg_123_chapter-xvi-how-sir-launcelot-at-the-req.txt",
+      "word_count": 19,
+      "start_line": 373,
+      "end_line": 375
+    },
+    {
+      "id": "seg_124",
+      "label": "CHAPTER XVII. How Sir Launcelot overtook a knight which chased his",
+      "segment_type": "chapter",
+      "file": "seg_124_chapter-xvii-how-sir-launcelot-overtook-.txt",
+      "word_count": 22,
+      "start_line": 376,
+      "end_line": 378
+    },
+    {
+      "id": "seg_125",
+      "label": "CHAPTER XVIII. How Sir Launcelot came to King Arthur's Court, and how",
+      "segment_type": "chapter",
+      "file": "seg_125_chapter-xviii-how-sir-launcelot-came-to-.txt",
+      "word_count": 21,
+      "start_line": 379,
+      "end_line": 381
+    },
+    {
+      "id": "seg_126",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_126_vii.txt",
+      "word_count": 2,
+      "start_line": 382,
+      "end_line": 383
+    },
+    {
+      "id": "seg_127",
+      "label": "CHAPTER I. How Beaumains came to King Arthur's Court and demanded",
+      "segment_type": "chapter",
+      "file": "seg_127_chapter-i-how-beaumains-came-to-king-art.txt",
+      "word_count": 16,
+      "start_line": 384,
+      "end_line": 386
+    },
+    {
+      "id": "seg_128",
+      "label": "CHAPTER II. How Sir Launcelot and Sir Gawaine were wroth because Sir",
+      "segment_type": "chapter",
+      "file": "seg_128_chapter-ii-how-sir-launcelot-and-sir-gaw.txt",
+      "word_count": 28,
+      "start_line": 387,
+      "end_line": 390
+    },
+    {
+      "id": "seg_129",
+      "label": "CHAPTER III. How Beaumains desired the battle, and how it was granted",
+      "segment_type": "chapter",
+      "file": "seg_129_chapter-iii-how-beaumains-desired-the-ba.txt",
+      "word_count": 25,
+      "start_line": 391,
+      "end_line": 393
+    },
+    {
+      "id": "seg_130",
+      "label": "CHAPTER IV. How Beaumains departed, and how he gat of Sir Kay a spear",
+      "segment_type": "chapter",
+      "file": "seg_130_chapter-iv-how-beaumains-departed-and-ho.txt",
+      "word_count": 24,
+      "start_line": 394,
+      "end_line": 396
+    },
+    {
+      "id": "seg_131",
+      "label": "CHAPTER V. How Beaumains told to Sir Launcelot his name, and how he",
+      "segment_type": "chapter",
+      "file": "seg_131_chapter-v-how-beaumains-told-to-sir-laun.txt",
+      "word_count": 24,
+      "start_line": 397,
+      "end_line": 399
+    },
+    {
+      "id": "seg_132",
+      "label": "CHAPTER VI. How Beaumains fought and slew two knights at a passage",
+      "segment_type": "chapter",
+      "file": "seg_132_chapter-vi-how-beaumains-fought-and-slew.txt",
+      "word_count": 12,
+      "start_line": 400,
+      "end_line": 401
+    },
+    {
+      "id": "seg_133",
+      "label": "CHAPTER VII. How Beaumains fought with the Knight of the Black Launds,",
+      "segment_type": "chapter",
+      "file": "seg_133_chapter-vii-how-beaumains-fought-with-th.txt",
+      "word_count": 22,
+      "start_line": 402,
+      "end_line": 404
+    },
+    {
+      "id": "seg_134",
+      "label": "CHAPTER VIII. How the brother of the knight that was slain met with",
+      "segment_type": "chapter",
+      "file": "seg_134_chapter-viii-how-the-brother-of-the-knig.txt",
+      "word_count": 22,
+      "start_line": 405,
+      "end_line": 407
+    },
+    {
+      "id": "seg_135",
+      "label": "CHAPTER IX. How the damosel again rebuked Beaumains, and would not",
+      "segment_type": "chapter",
+      "file": "seg_135_chapter-ix-how-the-damosel-again-rebuked.txt",
+      "word_count": 23,
+      "start_line": 408,
+      "end_line": 410
+    },
+    {
+      "id": "seg_136",
+      "label": "CHAPTER X. How the third brother, called the Red Knight, jousted and",
+      "segment_type": "chapter",
+      "file": "seg_136_chapter-x-how-the-third-brother-called-t.txt",
+      "word_count": 20,
+      "start_line": 411,
+      "end_line": 413
+    },
+    {
+      "id": "seg_137",
+      "label": "CHAPTER XI. How Sir Beaumains suffered great rebukes of the damosel,",
+      "segment_type": "chapter",
+      "file": "seg_137_chapter-xi-how-sir-beaumains-suffered-gr.txt",
+      "word_count": 16,
+      "start_line": 414,
+      "end_line": 416
+    },
+    {
+      "id": "seg_138",
+      "label": "CHAPTER XII. How Beaumains fought with Sir Persant of Inde, and made",
+      "segment_type": "chapter",
+      "file": "seg_138_chapter-xii-how-beaumains-fought-with-si.txt",
+      "word_count": 16,
+      "start_line": 417,
+      "end_line": 419
+    },
+    {
+      "id": "seg_139",
+      "label": "CHAPTER XIII. Of the goodly communication between Sir Persant and",
+      "segment_type": "chapter",
+      "file": "seg_139_chapter-xiii-of-the-goodly-communication.txt",
+      "word_count": 22,
+      "start_line": 420,
+      "end_line": 422
+    },
+    {
+      "id": "seg_140",
+      "label": "CHAPTER XIV. How the lady that was besieged had word from her sister",
+      "segment_type": "chapter",
+      "file": "seg_140_chapter-xiv-how-the-lady-that-was-besieg.txt",
+      "word_count": 29,
+      "start_line": 423,
+      "end_line": 426
+    },
+    {
+      "id": "seg_141",
+      "label": "CHAPTER XV. How the damosel and Beaumains came to the siege; and came",
+      "segment_type": "chapter",
+      "file": "seg_141_chapter-xv-how-the-damosel-and-beaumains.txt",
+      "word_count": 36,
+      "start_line": 427,
+      "end_line": 430
+    },
+    {
+      "id": "seg_142",
+      "label": "CHAPTER XVI. How the two knights met together, and of their talking,",
+      "segment_type": "chapter",
+      "file": "seg_142_chapter-xvi-how-the-two-knights-met-toge.txt",
+      "word_count": 18,
+      "start_line": 431,
+      "end_line": 433
+    },
+    {
+      "id": "seg_143",
+      "label": "CHAPTER XVII. How after long fighting Beaumains overcame the knight",
+      "segment_type": "chapter",
+      "file": "seg_143_chapter-xvii-how-after-long-fighting-bea.txt",
+      "word_count": 35,
+      "start_line": 434,
+      "end_line": 437
+    },
+    {
+      "id": "seg_144",
+      "label": "CHAPTER XVIII. How the knight yielded him, and how Beaumains made him",
+      "segment_type": "chapter",
+      "file": "seg_144_chapter-xviii-how-the-knight-yielded-him.txt",
+      "word_count": 24,
+      "start_line": 438,
+      "end_line": 440
+    },
+    {
+      "id": "seg_145",
+      "label": "CHAPTER XIX How Beaumains came to the lady, and when he came to the",
+      "segment_type": "chapter",
+      "file": "seg_145_chapter-xix-how-beaumains-came-to-the-la.txt",
+      "word_count": 31,
+      "start_line": 441,
+      "end_line": 444
+    },
+    {
+      "id": "seg_146",
+      "label": "CHAPTER XX. How Sir Beaumains rode after to rescue his dwarf, and came",
+      "segment_type": "chapter",
+      "file": "seg_146_chapter-xx-how-sir-beaumains-rode-after-.txt",
+      "word_count": 19,
+      "start_line": 445,
+      "end_line": 447
+    },
+    {
+      "id": "seg_147",
+      "label": "CHAPTER XXI. How Sir Gareth, otherwise called Beaumains, came to the",
+      "segment_type": "chapter",
+      "file": "seg_147_chapter-xxi-how-sir-gareth-otherwise-cal.txt",
+      "word_count": 24,
+      "start_line": 448,
+      "end_line": 451
+    },
+    {
+      "id": "seg_148",
+      "label": "CHAPTER XXII. How at night came an armed knight, and fought with Sir",
+      "segment_type": "chapter",
+      "file": "seg_148_chapter-xxii-how-at-night-came-an-armed-.txt",
+      "word_count": 26,
+      "start_line": 452,
+      "end_line": 454
+    },
+    {
+      "id": "seg_149",
+      "label": "CHAPTER XXIII. How the said knight came again the next night and was",
+      "segment_type": "chapter",
+      "file": "seg_149_chapter-xxiii-how-the-said-knight-came-a.txt",
+      "word_count": 37,
+      "start_line": 455,
+      "end_line": 458
+    },
+    {
+      "id": "seg_150",
+      "label": "CHAPTER XXIV. How King Arthur pardoned them, and demanded of them",
+      "segment_type": "chapter",
+      "file": "seg_150_chapter-xxiv-how-king-arthur-pardoned-th.txt",
+      "word_count": 15,
+      "start_line": 459,
+      "end_line": 461
+    },
+    {
+      "id": "seg_151",
+      "label": "CHAPTER XXV. How the Queen of Orkney came to this feast of Pentecost,",
+      "segment_type": "chapter",
+      "file": "seg_151_chapter-xxv-how-the-queen-of-orkney-came.txt",
+      "word_count": 24,
+      "start_line": 462,
+      "end_line": 464
+    },
+    {
+      "id": "seg_152",
+      "label": "CHAPTER XXVI. How King Arthur sent for the Lady Lionesse, and how she",
+      "segment_type": "chapter",
+      "file": "seg_152_chapter-xxvi-how-king-arthur-sent-for-th.txt",
+      "word_count": 24,
+      "start_line": 465,
+      "end_line": 467
+    },
+    {
+      "id": "seg_153",
+      "label": "CHAPTER XXVII. How King Arthur went to the tournament with his",
+      "segment_type": "chapter",
+      "file": "seg_153_chapter-xxvii-how-king-arthur-went-to-th.txt",
+      "word_count": 24,
+      "start_line": 468,
+      "end_line": 471
+    },
+    {
+      "id": "seg_154",
+      "label": "CHAPTER XXVIII. How the knights bare them in the battle",
+      "segment_type": "chapter",
+      "file": "seg_154_chapter-xxviii-how-the-knights-bare-them.txt",
+      "word_count": 10,
+      "start_line": 472,
+      "end_line": 473
+    },
+    {
+      "id": "seg_155",
+      "label": "CHAPTER XXIX. Yet of the said tournament",
+      "segment_type": "chapter",
+      "file": "seg_155_chapter-xxix-yet-of-the-said-tournament.txt",
+      "word_count": 7,
+      "start_line": 474,
+      "end_line": 475
+    },
+    {
+      "id": "seg_156",
+      "label": "CHAPTER XXX. How Sir Gareth was espied by the heralds, and how he",
+      "segment_type": "chapter",
+      "file": "seg_156_chapter-xxx-how-sir-gareth-was-espied-by.txt",
+      "word_count": 18,
+      "start_line": 476,
+      "end_line": 478
+    },
+    {
+      "id": "seg_157",
+      "label": "CHAPTER XXXI. How Sir Gareth came to a castle where he was well",
+      "segment_type": "chapter",
+      "file": "seg_157_chapter-xxxi-how-sir-gareth-came-to-a-ca.txt",
+      "word_count": 23,
+      "start_line": 479,
+      "end_line": 481
+    },
+    {
+      "id": "seg_158",
+      "label": "CHAPTER XXXII. How Sir Gareth fought with a knight that held within",
+      "segment_type": "chapter",
+      "file": "seg_158_chapter-xxxii-how-sir-gareth-fought-with.txt",
+      "word_count": 21,
+      "start_line": 482,
+      "end_line": 484
+    },
+    {
+      "id": "seg_159",
+      "label": "CHAPTER XXXIII. How Sir Gareth and Sir Gawaine fought each against",
+      "segment_type": "chapter",
+      "file": "seg_159_chapter-xxxiii-how-sir-gareth-and-sir-ga.txt",
+      "word_count": 22,
+      "start_line": 485,
+      "end_line": 487
+    },
+    {
+      "id": "seg_160",
+      "label": "CHAPTER XXXIV. How Sir Gareth acknowledged that they loved each other",
+      "segment_type": "chapter",
+      "file": "seg_160_chapter-xxxiv-how-sir-gareth-acknowledge.txt",
+      "word_count": 21,
+      "start_line": 488,
+      "end_line": 490
+    },
+    {
+      "id": "seg_161",
+      "label": "CHAPTER XXXV. Of the Great Royalty, and what officers were made at the",
+      "segment_type": "chapter",
+      "file": "seg_161_chapter-xxxv-of-the-great-royalty-and-wh.txt",
+      "word_count": 24,
+      "start_line": 491,
+      "end_line": 493
+    },
+    {
+      "id": "seg_162",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_162_viii.txt",
+      "word_count": 2,
+      "start_line": 494,
+      "end_line": 495
+    },
+    {
+      "id": "seg_163",
+      "label": "CHAPTER I. How Sir Tristram de Liones was born, and how his mother",
+      "segment_type": "chapter",
+      "file": "seg_163_chapter-i-how-sir-tristram-de-liones-was.txt",
+      "word_count": 22,
+      "start_line": 496,
+      "end_line": 498
+    },
+    {
+      "id": "seg_164",
+      "label": "CHAPTER II. How the stepmother of Sir Tristram had ordained poison for",
+      "segment_type": "chapter",
+      "file": "seg_164_chapter-ii-how-the-stepmother-of-sir-tri.txt",
+      "word_count": 17,
+      "start_line": 499,
+      "end_line": 501
+    },
+    {
+      "id": "seg_165",
+      "label": "CHAPTER III. How Sir Tristram was sent into France, and had one to",
+      "segment_type": "chapter",
+      "file": "seg_165_chapter-iii-how-sir-tristram-was-sent-in.txt",
+      "word_count": 26,
+      "start_line": 502,
+      "end_line": 505
+    },
+    {
+      "id": "seg_166",
+      "label": "CHAPTER IV. How Sir Marhaus came out of Ireland for to ask truage of",
+      "segment_type": "chapter",
+      "file": "seg_166_chapter-iv-how-sir-marhaus-came-out-of-i.txt",
+      "word_count": 21,
+      "start_line": 506,
+      "end_line": 508
+    },
+    {
+      "id": "seg_167",
+      "label": "CHAPTER V. How Tristram enterprized the battle to fight for the truage",
+      "segment_type": "chapter",
+      "file": "seg_167_chapter-v-how-tristram-enterprized-the-b.txt",
+      "word_count": 20,
+      "start_line": 509,
+      "end_line": 511
+    },
+    {
+      "id": "seg_168",
+      "label": "CHAPTER VI. How Sir Tristram arrived into the Island for to furnish",
+      "segment_type": "chapter",
+      "file": "seg_168_chapter-vi-how-sir-tristram-arrived-into.txt",
+      "word_count": 17,
+      "start_line": 512,
+      "end_line": 514
+    },
+    {
+      "id": "seg_169",
+      "label": "CHAPTER VII. How Sir Tristram fought against Sir Marhaus and achieved",
+      "segment_type": "chapter",
+      "file": "seg_169_chapter-vii-how-sir-tristram-fought-agai.txt",
+      "word_count": 21,
+      "start_line": 515,
+      "end_line": 517
+    },
+    {
+      "id": "seg_170",
+      "label": "CHAPTER VIII. How Sir Marhaus after that he was arrived in Ireland",
+      "segment_type": "chapter",
+      "file": "seg_170_chapter-viii-how-sir-marhaus-after-that-.txt",
+      "word_count": 27,
+      "start_line": 518,
+      "end_line": 521
+    },
+    {
+      "id": "seg_171",
+      "label": "CHAPTER IX. How Sir Tristram was put to the keeping of La Beale Isoud",
+      "segment_type": "chapter",
+      "file": "seg_171_chapter-ix-how-sir-tristram-was-put-to-t.txt",
+      "word_count": 22,
+      "start_line": 522,
+      "end_line": 524
+    },
+    {
+      "id": "seg_172",
+      "label": "CHAPTER X. How Sir Tristram won the degree at a tournament in Ireland,",
+      "segment_type": "chapter",
+      "file": "seg_172_chapter-x-how-sir-tristram-won-the-degre.txt",
+      "word_count": 25,
+      "start_line": 525,
+      "end_line": 527
+    },
+    {
+      "id": "seg_173",
+      "label": "CHAPTER XI. How the queen espied that Sir Tristram had slain her",
+      "segment_type": "chapter",
+      "file": "seg_173_chapter-xi-how-the-queen-espied-that-sir.txt",
+      "word_count": 24,
+      "start_line": 528,
+      "end_line": 530
+    },
+    {
+      "id": "seg_174",
+      "label": "CHAPTER XII. How Sir Tristram departed from the king and La Beale",
+      "segment_type": "chapter",
+      "file": "seg_174_chapter-xii-how-sir-tristram-departed-fr.txt",
+      "word_count": 21,
+      "start_line": 531,
+      "end_line": 533
+    },
+    {
+      "id": "seg_175",
+      "label": "CHAPTER XIII. How Sir Tristram and King Mark hurted each other for the",
+      "segment_type": "chapter",
+      "file": "seg_175_chapter-xiii-how-sir-tristram-and-king-m.txt",
+      "word_count": 18,
+      "start_line": 534,
+      "end_line": 536
+    },
+    {
+      "id": "seg_176",
+      "label": "CHAPTER XIV. How Sir Tristram lay with the lady, and how her husband",
+      "segment_type": "chapter",
+      "file": "seg_176_chapter-xiv-how-sir-tristram-lay-with-th.txt",
+      "word_count": 17,
+      "start_line": 537,
+      "end_line": 539
+    },
+    {
+      "id": "seg_177",
+      "label": "CHAPTER XV. How Sir Bleoberis demanded the fairest lady in King Mark's",
+      "segment_type": "chapter",
+      "file": "seg_177_chapter-xv-how-sir-bleoberis-demanded-th.txt",
+      "word_count": 23,
+      "start_line": 540,
+      "end_line": 542
+    },
+    {
+      "id": "seg_178",
+      "label": "CHAPTER XVI. How Sir Tristram fought with two knights of the Round",
+      "segment_type": "chapter",
+      "file": "seg_178_chapter-xvi-how-sir-tristram-fought-with.txt",
+      "word_count": 13,
+      "start_line": 543,
+      "end_line": 545
+    },
+    {
+      "id": "seg_179",
+      "label": "CHAPTER XVII. How Sir Tristram fought with Sir Bleoberis for a lady,",
+      "segment_type": "chapter",
+      "file": "seg_179_chapter-xvii-how-sir-tristram-fought-wit.txt",
+      "word_count": 25,
+      "start_line": 546,
+      "end_line": 548
+    },
+    {
+      "id": "seg_180",
+      "label": "CHAPTER XVIII. How the lady forsook Sir Tristram and abode with Sir",
+      "segment_type": "chapter",
+      "file": "seg_180_chapter-xviii-how-the-lady-forsook-sir-t.txt",
+      "word_count": 22,
+      "start_line": 549,
+      "end_line": 551
+    },
+    {
+      "id": "seg_181",
+      "label": "CHAPTER XIX. How King Mark sent Sir Tristram for La Beale Isoud toward",
+      "segment_type": "chapter",
+      "file": "seg_181_chapter-xix-how-king-mark-sent-sir-trist.txt",
+      "word_count": 22,
+      "start_line": 552,
+      "end_line": 554
+    },
+    {
+      "id": "seg_182",
+      "label": "CHAPTER XX. How King Anguish of Ireland was summoned to come to King",
+      "segment_type": "chapter",
+      "file": "seg_182_chapter-xx-how-king-anguish-of-ireland-w.txt",
+      "word_count": 17,
+      "start_line": 555,
+      "end_line": 557
+    },
+    {
+      "id": "seg_183",
+      "label": "CHAPTER XXI. How Sir Tristram rescued a child from a knight, and how",
+      "segment_type": "chapter",
+      "file": "seg_183_chapter-xxi-how-sir-tristram-rescued-a-c.txt",
+      "word_count": 19,
+      "start_line": 558,
+      "end_line": 560
+    },
+    {
+      "id": "seg_184",
+      "label": "CHAPTER XXII. How Sir Tristram fought for Sir Anguish and overcame his",
+      "segment_type": "chapter",
+      "file": "seg_184_chapter-xxii-how-sir-tristram-fought-for.txt",
+      "word_count": 21,
+      "start_line": 561,
+      "end_line": 563
+    },
+    {
+      "id": "seg_185",
+      "label": "CHAPTER XXIII. How Sir Blamore desired Tristram to slay him, and how",
+      "segment_type": "chapter",
+      "file": "seg_185_chapter-xxiii-how-sir-blamore-desired-tr.txt",
+      "word_count": 21,
+      "start_line": 564,
+      "end_line": 566
+    },
+    {
+      "id": "seg_186",
+      "label": "CHAPTER XXIV. How Sir Tristram demanded La Beale Isoud for King Mark,",
+      "segment_type": "chapter",
+      "file": "seg_186_chapter-xxiv-how-sir-tristram-demanded-l.txt",
+      "word_count": 22,
+      "start_line": 567,
+      "end_line": 569
+    },
+    {
+      "id": "seg_187",
+      "label": "CHAPTER XXV. How Sir Tristram and Isoud were in prison, and how he",
+      "segment_type": "chapter",
+      "file": "seg_187_chapter-xxv-how-sir-tristram-and-isoud-w.txt",
+      "word_count": 23,
+      "start_line": 570,
+      "end_line": 572
+    },
+    {
+      "id": "seg_188",
+      "label": "CHAPTER XXVI. How Sir Tristram fought with Sir Breunor, and at the",
+      "segment_type": "chapter",
+      "file": "seg_188_chapter-xxvi-how-sir-tristram-fought-wit.txt",
+      "word_count": 17,
+      "start_line": 573,
+      "end_line": 575
+    },
+    {
+      "id": "seg_189",
+      "label": "CHAPTER XXVII. How Sir Galahad fought with Sir Tristram, and how Sir",
+      "segment_type": "chapter",
+      "file": "seg_189_chapter-xxvii-how-sir-galahad-fought-wit.txt",
+      "word_count": 21,
+      "start_line": 576,
+      "end_line": 578
+    },
+    {
+      "id": "seg_190",
+      "label": "CHAPTER XXVIII. How Sir Launcelot met with Sir Carados bearing away",
+      "segment_type": "chapter",
+      "file": "seg_190_chapter-xxviii-how-sir-launcelot-met-wit.txt",
+      "word_count": 20,
+      "start_line": 579,
+      "end_line": 581
+    },
+    {
+      "id": "seg_191",
+      "label": "CHAPTER XXIX. Of the wedding of King Mark to La Beale Isoud, and of",
+      "segment_type": "chapter",
+      "file": "seg_191_chapter-xxix-of-the-wedding-of-king-mark.txt",
+      "word_count": 20,
+      "start_line": 582,
+      "end_line": 584
+    },
+    {
+      "id": "seg_192",
+      "label": "CHAPTER XXX. How Palamides demanded Queen Isoud, and how Lambegus rode",
+      "segment_type": "chapter",
+      "file": "seg_192_chapter-xxx-how-palamides-demanded-queen.txt",
+      "word_count": 21,
+      "start_line": 585,
+      "end_line": 587
+    },
+    {
+      "id": "seg_193",
+      "label": "CHAPTER XXXI. How Sir Tristram rode after Palamides, and how he found",
+      "segment_type": "chapter",
+      "file": "seg_193_chapter-xxxi-how-sir-tristram-rode-after.txt",
+      "word_count": 26,
+      "start_line": 588,
+      "end_line": 590
+    },
+    {
+      "id": "seg_194",
+      "label": "CHAPTER XXXII. How Sir Tristram brought Queen Isoud home, and of the",
+      "segment_type": "chapter",
+      "file": "seg_194_chapter-xxxii-how-sir-tristram-brought-q.txt",
+      "word_count": 19,
+      "start_line": 591,
+      "end_line": 593
+    },
+    {
+      "id": "seg_195",
+      "label": "CHAPTER XXXIII. How Sir Lamorak jousted with thirty knights, and Sir",
+      "segment_type": "chapter",
+      "file": "seg_195_chapter-xxxiii-how-sir-lamorak-jousted-w.txt",
+      "word_count": 22,
+      "start_line": 594,
+      "end_line": 596
+    },
+    {
+      "id": "seg_196",
+      "label": "CHAPTER XXXIV. How Sir Lamorak sent an horn to King Mark in despite of",
+      "segment_type": "chapter",
+      "file": "seg_196_chapter-xxxiv-how-sir-lamorak-sent-an-ho.txt",
+      "word_count": 25,
+      "start_line": 597,
+      "end_line": 599
+    },
+    {
+      "id": "seg_197",
+      "label": "CHAPTER XXXV. How Sir Tristram was holpen by his men, and of Queen",
+      "segment_type": "chapter",
+      "file": "seg_197_chapter-xxxv-how-sir-tristram-was-holpen.txt",
+      "word_count": 25,
+      "start_line": 600,
+      "end_line": 602
+    },
+    {
+      "id": "seg_198",
+      "label": "CHAPTER XXXVI. How Sir Tristram served in war King Howel of Brittany,",
+      "segment_type": "chapter",
+      "file": "seg_198_chapter-xxxvi-how-sir-tristram-served-in.txt",
+      "word_count": 19,
+      "start_line": 603,
+      "end_line": 605
+    },
+    {
+      "id": "seg_199",
+      "label": "CHAPTER XXXVII. How Sir Suppinabiles told Sir Tristram how he was",
+      "segment_type": "chapter",
+      "file": "seg_199_chapter-xxxvii-how-sir-suppinabiles-told.txt",
+      "word_count": 22,
+      "start_line": 606,
+      "end_line": 608
+    },
+    {
+      "id": "seg_200",
+      "label": "CHAPTER XXXVIII. How Sir Tristram and his wife arrived in Wales, and",
+      "segment_type": "chapter",
+      "file": "seg_200_chapter-xxxviii-how-sir-tristram-and-his.txt",
+      "word_count": 19,
+      "start_line": 609,
+      "end_line": 611
+    },
+    {
+      "id": "seg_201",
+      "label": "CHAPTER XXXIX. How Sir Tristram fought with Sir Nabon, and overcame",
+      "segment_type": "chapter",
+      "file": "seg_201_chapter-xxxix-how-sir-tristram-fought-wi.txt",
+      "word_count": 20,
+      "start_line": 612,
+      "end_line": 614
+    },
+    {
+      "id": "seg_202",
+      "label": "CHAPTER XL",
+      "segment_type": "chapter",
+      "file": "seg_202_chapter-xl.txt",
+      "word_count": 2,
+      "start_line": 615,
+      "end_line": 616
+    },
+    {
+      "id": "seg_203",
+      "label": "CHAPTER XLI. How Sir Lamorak slew Sir Frol, and of the courteous",
+      "segment_type": "chapter",
+      "file": "seg_203_chapter-xli-how-sir-lamorak-slew-sir-fro.txt",
+      "word_count": 18,
+      "start_line": 617,
+      "end_line": 619
+    },
+    {
+      "id": "seg_204",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_204_ix.txt",
+      "word_count": 2,
+      "start_line": 620,
+      "end_line": 621
+    },
+    {
+      "id": "seg_205",
+      "label": "CHAPTER I. How a young man came into the court of King Arthur, and how",
+      "segment_type": "chapter",
+      "file": "seg_205_chapter-i-how-a-young-man-came-into-the-.txt",
+      "word_count": 25,
+      "start_line": 622,
+      "end_line": 624
+    },
+    {
+      "id": "seg_206",
+      "label": "CHAPTER II. How a damosel came into the court and desired a knight to",
+      "segment_type": "chapter",
+      "file": "seg_206_chapter-ii-how-a-damosel-came-into-the-c.txt",
+      "word_count": 25,
+      "start_line": 625,
+      "end_line": 627
+    },
+    {
+      "id": "seg_207",
+      "label": "CHAPTER III. How La Cote Male Taile overthrew Sir Dagonet the king's",
+      "segment_type": "chapter",
+      "file": "seg_207_chapter-iii-how-la-cote-male-taile-overt.txt",
+      "word_count": 23,
+      "start_line": 628,
+      "end_line": 630
+    },
+    {
+      "id": "seg_208",
+      "label": "CHAPTER IV. How La Cote Male Taile fought against an hundred knights,",
+      "segment_type": "chapter",
+      "file": "seg_208_chapter-iv-how-la-cote-male-taile-fought.txt",
+      "word_count": 22,
+      "start_line": 631,
+      "end_line": 633
+    },
+    {
+      "id": "seg_209",
+      "label": "CHAPTER V. How Sir Launcelot came to the court and heard of La Cote",
+      "segment_type": "chapter",
+      "file": "seg_209_chapter-v-how-sir-launcelot-came-to-the-.txt",
+      "word_count": 30,
+      "start_line": 634,
+      "end_line": 637
+    },
+    {
+      "id": "seg_210",
+      "label": "CHAPTER VI. How Sir Launcelot fought with six knights, and after with",
+      "segment_type": "chapter",
+      "file": "seg_210_chapter-vi-how-sir-launcelot-fought-with.txt",
+      "word_count": 20,
+      "start_line": 638,
+      "end_line": 640
+    },
+    {
+      "id": "seg_211",
+      "label": "CHAPTER VII. How Sir Launcelot met with the damosel named Male disant,",
+      "segment_type": "chapter",
+      "file": "seg_211_chapter-vii-how-sir-launcelot-met-with-t.txt",
+      "word_count": 18,
+      "start_line": 641,
+      "end_line": 643
+    },
+    {
+      "id": "seg_212",
+      "label": "CHAPTER VIII. How La Cote Male Taile was taken prisoner, and after",
+      "segment_type": "chapter",
+      "file": "seg_212_chapter-viii-how-la-cote-male-taile-was-.txt",
+      "word_count": 23,
+      "start_line": 644,
+      "end_line": 647
+    },
+    {
+      "id": "seg_213",
+      "label": "CHAPTER IX. How Sir Launcelot made La Cote Male Taile lord of the",
+      "segment_type": "chapter",
+      "file": "seg_213_chapter-ix-how-sir-launcelot-made-la-cot.txt",
+      "word_count": 25,
+      "start_line": 648,
+      "end_line": 650
+    },
+    {
+      "id": "seg_214",
+      "label": "CHAPTER X. How La Beale Isoud sent letters to Sir Tristram by her maid",
+      "segment_type": "chapter",
+      "file": "seg_214_chapter-x-how-la-beale-isoud-sent-letter.txt",
+      "word_count": 22,
+      "start_line": 651,
+      "end_line": 653
+    },
+    {
+      "id": "seg_215",
+      "label": "CHAPTER XI. How Sir Tristram met with Sir Lamorak de Galis, and how",
+      "segment_type": "chapter",
+      "file": "seg_215_chapter-xi-how-sir-tristram-met-with-sir.txt",
+      "word_count": 22,
+      "start_line": 654,
+      "end_line": 656
+    },
+    {
+      "id": "seg_216",
+      "label": "CHAPTER XII. How Sir Palomides followed the Questing Beast, and smote",
+      "segment_type": "chapter",
+      "file": "seg_216_chapter-xii-how-sir-palomides-followed-t.txt",
+      "word_count": 20,
+      "start_line": 657,
+      "end_line": 659
+    },
+    {
+      "id": "seg_217",
+      "label": "CHAPTER XIII. How Sir Lamorak met with Sir Meliagaunce, and fought",
+      "segment_type": "chapter",
+      "file": "seg_217_chapter-xiii-how-sir-lamorak-met-with-si.txt",
+      "word_count": 18,
+      "start_line": 660,
+      "end_line": 662
+    },
+    {
+      "id": "seg_218",
+      "label": "CHAPTER XIV. How Sir Kay met with Sir Tristram, and after of the shame",
+      "segment_type": "chapter",
+      "file": "seg_218_chapter-xiv-how-sir-kay-met-with-sir-tri.txt",
+      "word_count": 24,
+      "start_line": 663,
+      "end_line": 665
+    },
+    {
+      "id": "seg_219",
+      "label": "CHAPTER XV. How King Arthur was brought into the Forest Perilous, and",
+      "segment_type": "chapter",
+      "file": "seg_219_chapter-xv-how-king-arthur-was-brought-i.txt",
+      "word_count": 18,
+      "start_line": 666,
+      "end_line": 668
+    },
+    {
+      "id": "seg_220",
+      "label": "CHAPTER XVI. How Sir Tristram came to La Beale Isoud, and how Kehydius",
+      "segment_type": "chapter",
+      "file": "seg_220_chapter-xvi-how-sir-tristram-came-to-la-.txt",
+      "word_count": 25,
+      "start_line": 669,
+      "end_line": 671
+    },
+    {
+      "id": "seg_221",
+      "label": "CHAPTER XVII. How Sir Tristram departed from Tintagil, and how he",
+      "segment_type": "chapter",
+      "file": "seg_221_chapter-xvii-how-sir-tristram-departed-f.txt",
+      "word_count": 26,
+      "start_line": 672,
+      "end_line": 674
+    },
+    {
+      "id": "seg_222",
+      "label": "CHAPTER XVIII. How Sir Tristram soused Dagonet in a well, and how",
+      "segment_type": "chapter",
+      "file": "seg_222_chapter-xviii-how-sir-tristram-soused-da.txt",
+      "word_count": 26,
+      "start_line": 675,
+      "end_line": 678
+    },
+    {
+      "id": "seg_223",
+      "label": "CHAPTER XIX. How it was noised how Sir Tristram was dead, and how La",
+      "segment_type": "chapter",
+      "file": "seg_223_chapter-xix-how-it-was-noised-how-sir-tr.txt",
+      "word_count": 20,
+      "start_line": 679,
+      "end_line": 681
+    },
+    {
+      "id": "seg_224",
+      "label": "CHAPTER XX. How King Mark found Sir Tristram naked, and made him to be",
+      "segment_type": "chapter",
+      "file": "seg_224_chapter-xx-how-king-mark-found-sir-trist.txt",
+      "word_count": 27,
+      "start_line": 682,
+      "end_line": 684
+    },
+    {
+      "id": "seg_225",
+      "label": "CHAPTER XXI. How King Mark, by the advice of his council, banished Sir",
+      "segment_type": "chapter",
+      "file": "seg_225_chapter-xxi-how-king-mark-by-the-advice-.txt",
+      "word_count": 22,
+      "start_line": 685,
+      "end_line": 687
+    },
+    {
+      "id": "seg_226",
+      "label": "CHAPTER XXII. How a damosel sought help to help Sir Launcelot against",
+      "segment_type": "chapter",
+      "file": "seg_226_chapter-xxii-how-a-damosel-sought-help-t.txt",
+      "word_count": 21,
+      "start_line": 688,
+      "end_line": 690
+    },
+    {
+      "id": "seg_227",
+      "label": "CHAPTER XXIII. How Sir Tristram and Sir Dinadan came to a lodging",
+      "segment_type": "chapter",
+      "file": "seg_227_chapter-xxiii-how-sir-tristram-and-sir-d.txt",
+      "word_count": 19,
+      "start_line": 691,
+      "end_line": 693
+    },
+    {
+      "id": "seg_228",
+      "label": "CHAPTER XXIV. How Sir Tristram jousted with Sir Kay and Sir Sagramore",
+      "segment_type": "chapter",
+      "file": "seg_228_chapter-xxiv-how-sir-tristram-jousted-wi.txt",
+      "word_count": 25,
+      "start_line": 694,
+      "end_line": 697
+    },
+    {
+      "id": "seg_229",
+      "label": "CHAPTER XXV. How Sir Tristram and Sir Gawaine rode to have foughten",
+      "segment_type": "chapter",
+      "file": "seg_229_chapter-xxv-how-sir-tristram-and-sir-gaw.txt",
+      "word_count": 22,
+      "start_line": 698,
+      "end_line": 700
+    },
+    {
+      "id": "seg_230",
+      "label": "CHAPTER XXVI. How damosel Bragwaine found Tristram sleeping by a well,",
+      "segment_type": "chapter",
+      "file": "seg_230_chapter-xxvi-how-damosel-bragwaine-found.txt",
+      "word_count": 22,
+      "start_line": 701,
+      "end_line": 703
+    },
+    {
+      "id": "seg_231",
+      "label": "CHAPTER XXVII. How Sir Tristram had a fall with Sir Palomides, and how",
+      "segment_type": "chapter",
+      "file": "seg_231_chapter-xxvii-how-sir-tristram-had-a-fal.txt",
+      "word_count": 17,
+      "start_line": 704,
+      "end_line": 706
+    },
+    {
+      "id": "seg_232",
+      "label": "CHAPTER XXVIII. How Sir Launcelot jousted with Palomides and overthrew",
+      "segment_type": "chapter",
+      "file": "seg_232_chapter-xxviii-how-sir-launcelot-jousted.txt",
+      "word_count": 19,
+      "start_line": 707,
+      "end_line": 709
+    },
+    {
+      "id": "seg_233",
+      "label": "CHAPTER XXIX. How Sir Tristram behaved him the first day of the",
+      "segment_type": "chapter",
+      "file": "seg_233_chapter-xxix-how-sir-tristram-behaved-hi.txt",
+      "word_count": 19,
+      "start_line": 710,
+      "end_line": 712
+    },
+    {
+      "id": "seg_234",
+      "label": "CHAPTER XXX. How Sir Tristram returned against King Arthur's party",
+      "segment_type": "chapter",
+      "file": "seg_234_chapter-xxx-how-sir-tristram-returned-ag.txt",
+      "word_count": 18,
+      "start_line": 713,
+      "end_line": 715
+    },
+    {
+      "id": "seg_235",
+      "label": "CHAPTER XXXI. How Sir Tristram found Palomides by a well, and brought",
+      "segment_type": "chapter",
+      "file": "seg_235_chapter-xxxi-how-sir-tristram-found-palo.txt",
+      "word_count": 18,
+      "start_line": 716,
+      "end_line": 718
+    },
+    {
+      "id": "seg_236",
+      "label": "CHAPTER XXXII. How Sir Tristram smote down Sir Palomides, and how he",
+      "segment_type": "chapter",
+      "file": "seg_236_chapter-xxxii-how-sir-tristram-smote-dow.txt",
+      "word_count": 19,
+      "start_line": 719,
+      "end_line": 721
+    },
+    {
+      "id": "seg_237",
+      "label": "CHAPTER XXXIII. How Sir Launcelot hurt Sir Tristram, and how after Sir",
+      "segment_type": "chapter",
+      "file": "seg_237_chapter-xxxiii-how-sir-launcelot-hurt-si.txt",
+      "word_count": 17,
+      "start_line": 722,
+      "end_line": 724
+    },
+    {
+      "id": "seg_238",
+      "label": "CHAPTER XXXIV. How the prize of the third day was given to Sir",
+      "segment_type": "chapter",
+      "file": "seg_238_chapter-xxxiv-how-the-prize-of-the-third.txt",
+      "word_count": 22,
+      "start_line": 725,
+      "end_line": 727
+    },
+    {
+      "id": "seg_239",
+      "label": "CHAPTER XXXV. How Palomides came to the castle where Sir Tristram was,",
+      "segment_type": "chapter",
+      "file": "seg_239_chapter-xxxv-how-palomides-came-to-the-c.txt",
+      "word_count": 26,
+      "start_line": 728,
+      "end_line": 731
+    },
+    {
+      "id": "seg_240",
+      "label": "CHAPTER XXXVI. How Sir Tristram, Sir Palomides, and Sir Dinadan were",
+      "segment_type": "chapter",
+      "file": "seg_240_chapter-xxxvi-how-sir-tristram-sir-palom.txt",
+      "word_count": 16,
+      "start_line": 732,
+      "end_line": 734
+    },
+    {
+      "id": "seg_241",
+      "label": "CHAPTER XXXVII. How King Mark was sorry for the good renown of Sir",
+      "segment_type": "chapter",
+      "file": "seg_241_chapter-xxxvii-how-king-mark-was-sorry-f.txt",
+      "word_count": 24,
+      "start_line": 735,
+      "end_line": 738
+    },
+    {
+      "id": "seg_242",
+      "label": "CHAPTER XXXVIII. Of the treason of King Mark, and how Sir Gaheris",
+      "segment_type": "chapter",
+      "file": "seg_242_chapter-xxxviii-of-the-treason-of-king-m.txt",
+      "word_count": 19,
+      "start_line": 739,
+      "end_line": 741
+    },
+    {
+      "id": "seg_243",
+      "label": "CHAPTER XXXIX. How after that Sir Tristram, Sir Palomides, and Sir",
+      "segment_type": "chapter",
+      "file": "seg_243_chapter-xxxix-how-after-that-sir-tristra.txt",
+      "word_count": 20,
+      "start_line": 742,
+      "end_line": 744
+    },
+    {
+      "id": "seg_244",
+      "label": "CHAPTER XL. How Sir Dinadan rescued a lady from Sir Breuse Saunce",
+      "segment_type": "chapter",
+      "file": "seg_244_chapter-xl-how-sir-dinadan-rescued-a-lad.txt",
+      "word_count": 24,
+      "start_line": 745,
+      "end_line": 747
+    },
+    {
+      "id": "seg_245",
+      "label": "CHAPTER XLI. How Sir Tristram took with him the shield, and also how",
+      "segment_type": "chapter",
+      "file": "seg_245_chapter-xli-how-sir-tristram-took-with-h.txt",
+      "word_count": 21,
+      "start_line": 748,
+      "end_line": 750
+    },
+    {
+      "id": "seg_246",
+      "label": "CHAPTER XLII. How Morgan le Fay buried her paramour, and how Sir",
+      "segment_type": "chapter",
+      "file": "seg_246_chapter-xlii-how-morgan-le-fay-buried-he.txt",
+      "word_count": 19,
+      "start_line": 751,
+      "end_line": 753
+    },
+    {
+      "id": "seg_247",
+      "label": "CHAPTER XLIII. How Sir Tristram at a tournament bare the shield that",
+      "segment_type": "chapter",
+      "file": "seg_247_chapter-xliii-how-sir-tristram-at-a-tour.txt",
+      "word_count": 1893,
+      "start_line": 754,
+      "end_line": 927
+    },
+    {
+      "id": "seg_248",
+      "label": "sixth chapter, and in the seventh book the twenty-third",
+      "segment_type": "book",
+      "file": "seg_248_sixth-chapter-and-in-the-seventh-book-th.txt",
+      "word_count": 1213,
+      "start_line": 928,
+      "end_line": 1034
+    },
+    {
+      "id": "seg_249",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_249_i.txt",
+      "word_count": 2,
+      "start_line": 1035,
+      "end_line": 1037
+    },
+    {
+      "id": "seg_250",
+      "label": "CHAPTER I. First, How Uther Pendragon sent for the duke of Cornwall and",
+      "segment_type": "chapter",
+      "file": "seg_250_chapter-i-first-how-uther-pendragon-sent.txt",
+      "word_count": 684,
+      "start_line": 1038,
+      "end_line": 1097
+    },
+    {
+      "id": "seg_251",
+      "label": "CHAPTER II. How Uther Pendragon made war on the duke of Cornwall, and",
+      "segment_type": "chapter",
+      "file": "seg_251_chapter-ii-how-uther-pendragon-made-war-.txt",
+      "word_count": 701,
+      "start_line": 1098,
+      "end_line": 1154
+    },
+    {
+      "id": "seg_252",
+      "label": "CHAPTER III. Of the birth of King Arthur and of his nurture",
+      "segment_type": "chapter",
+      "file": "seg_252_chapter-iii-of-the-birth-of-king-arthur-.txt",
+      "word_count": 488,
+      "start_line": 1155,
+      "end_line": 1194
+    },
+    {
+      "id": "seg_253",
+      "label": "CHAPTER IV. Of the death of King Uther Pendragon",
+      "segment_type": "chapter",
+      "file": "seg_253_chapter-iv-of-the-death-of-king-uther-pe.txt",
+      "word_count": 343,
+      "start_line": 1195,
+      "end_line": 1224
+    },
+    {
+      "id": "seg_254",
+      "label": "CHAPTER V. How Arthur was chosen king, and of wonders and marvels of a",
+      "segment_type": "chapter",
+      "file": "seg_254_chapter-v-how-arthur-was-chosen-king-and.txt",
+      "word_count": 1005,
+      "start_line": 1225,
+      "end_line": 1305
+    },
+    {
+      "id": "seg_255",
+      "label": "CHAPTER VI. How King Arthur pulled out the sword divers times",
+      "segment_type": "chapter",
+      "file": "seg_255_chapter-vi-how-king-arthur-pulled-out-th.txt",
+      "word_count": 592,
+      "start_line": 1306,
+      "end_line": 1354
+    },
+    {
+      "id": "seg_256",
+      "label": "CHAPTER VII. How King Arthur was crowned, and how he made officers",
+      "segment_type": "chapter",
+      "file": "seg_256_chapter-vii-how-king-arthur-was-crowned-.txt",
+      "word_count": 370,
+      "start_line": 1355,
+      "end_line": 1388
+    },
+    {
+      "id": "seg_257",
+      "label": "CHAPTER VIII. How King Arthur held in Wales, at a Pentecost, a great",
+      "segment_type": "chapter",
+      "file": "seg_257_chapter-viii-how-king-arthur-held-in-wal.txt",
+      "word_count": 622,
+      "start_line": 1389,
+      "end_line": 1438
+    },
+    {
+      "id": "seg_258",
+      "label": "CHAPTER IX. Of the first war that King Arthur had, and how he won the",
+      "segment_type": "chapter",
+      "file": "seg_258_chapter-ix-of-the-first-war-that-king-ar.txt",
+      "word_count": 468,
+      "start_line": 1439,
+      "end_line": 1480
+    },
+    {
+      "id": "seg_259",
+      "label": "CHAPTER X. How Merlin counselled King Arthur to send for King Ban and",
+      "segment_type": "chapter",
+      "file": "seg_259_chapter-x-how-merlin-counselled-king-art.txt",
+      "word_count": 1207,
+      "start_line": 1481,
+      "end_line": 1578
+    },
+    {
+      "id": "seg_260",
+      "label": "CHAPTER XI. Of a great tourney made by King Arthur and the two kings",
+      "segment_type": "chapter",
+      "file": "seg_260_chapter-xi-of-a-great-tourney-made-by-ki.txt",
+      "word_count": 795,
+      "start_line": 1579,
+      "end_line": 1644
+    },
+    {
+      "id": "seg_261",
+      "label": "CHAPTER XII. How eleven kings gathered a great host against King",
+      "segment_type": "chapter",
+      "file": "seg_261_chapter-xii-how-eleven-kings-gathered-a-.txt",
+      "word_count": 412,
+      "start_line": 1645,
+      "end_line": 1683
+    },
+    {
+      "id": "seg_262",
+      "label": "CHAPTER XIII. Of a dream of the King with the Hundred Knights",
+      "segment_type": "chapter",
+      "file": "seg_262_chapter-xiii-of-a-dream-of-the-king-with.txt",
+      "word_count": 174,
+      "start_line": 1684,
+      "end_line": 1701
+    },
+    {
+      "id": "seg_263",
+      "label": "CHAPTER XIV. How the eleven kings with their host fought against Arthur",
+      "segment_type": "chapter",
+      "file": "seg_263_chapter-xiv-how-the-eleven-kings-with-th.txt",
+      "word_count": 1113,
+      "start_line": 1702,
+      "end_line": 1791
+    },
+    {
+      "id": "seg_264",
+      "label": "CHAPTER XV. Yet of the same battle",
+      "segment_type": "chapter",
+      "file": "seg_264_chapter-xv-yet-of-the-same-battle.txt",
+      "word_count": 877,
+      "start_line": 1792,
+      "end_line": 1865
+    },
+    {
+      "id": "seg_265",
+      "label": "CHAPTER XVI. Yet more of the same battle",
+      "segment_type": "chapter",
+      "file": "seg_265_chapter-xvi-yet-more-of-the-same-battle.txt",
+      "word_count": 1136,
+      "start_line": 1866,
+      "end_line": 1957
+    },
+    {
+      "id": "seg_266",
+      "label": "CHAPTER XVII. Yet more of the same battle, and how it was ended by",
+      "segment_type": "chapter",
+      "file": "seg_266_chapter-xvii-yet-more-of-the-same-battle.txt",
+      "word_count": 1145,
+      "start_line": 1958,
+      "end_line": 2049
+    },
+    {
+      "id": "seg_267",
+      "label": "CHAPTER XVIII. How King Arthur, King Ban, and King Bors rescued King",
+      "segment_type": "chapter",
+      "file": "seg_267_chapter-xviii-how-king-arthur-king-ban-a.txt",
+      "word_count": 694,
+      "start_line": 2050,
+      "end_line": 2107
+    },
+    {
+      "id": "seg_268",
+      "label": "CHAPTER XIX. How King Arthur rode to Carlion, and of his dream, and how",
+      "segment_type": "chapter",
+      "file": "seg_268_chapter-xix-how-king-arthur-rode-to-carl.txt",
+      "word_count": 587,
+      "start_line": 2108,
+      "end_line": 2156
+    },
+    {
+      "id": "seg_269",
+      "label": "CHAPTER XX. How King Pellinore took Arthur’s horse and followed the",
+      "segment_type": "chapter",
+      "file": "seg_269_chapter-xx-how-king-pellinore-took-arthu.txt",
+      "word_count": 659,
+      "start_line": 2157,
+      "end_line": 2208
+    },
+    {
+      "id": "seg_270",
+      "label": "CHAPTER XXI. How Ulfius impeached Queen Igraine, Arthur’s mother, of",
+      "segment_type": "chapter",
+      "file": "seg_270_chapter-xxi-how-ulfius-impeached-queen-i.txt",
+      "word_count": 570,
+      "start_line": 2209,
+      "end_line": 2257
+    },
+    {
+      "id": "seg_271",
+      "label": "CHAPTER XXII. How Griflet was made knight, and jousted with a knight",
+      "segment_type": "chapter",
+      "file": "seg_271_chapter-xxii-how-griflet-was-made-knight.txt",
+      "word_count": 418,
+      "start_line": 2258,
+      "end_line": 2291
+    },
+    {
+      "id": "seg_272",
+      "label": "CHAPTER XXIII. How twelve knights came from Rome and asked truage for",
+      "segment_type": "chapter",
+      "file": "seg_272_chapter-xxiii-how-twelve-knights-came-fr.txt",
+      "word_count": 1043,
+      "start_line": 2292,
+      "end_line": 2374
+    },
+    {
+      "id": "seg_273",
+      "label": "CHAPTER XXIV. How Merlin saved Arthur’s life, and threw an enchantment",
+      "segment_type": "chapter",
+      "file": "seg_273_chapter-xxiv-how-merlin-saved-arthurs-li.txt",
+      "word_count": 287,
+      "start_line": 2375,
+      "end_line": 2399
+    },
+    {
+      "id": "seg_274",
+      "label": "CHAPTER XXV. How Arthur by the mean of Merlin gat Excalibur his sword",
+      "segment_type": "chapter",
+      "file": "seg_274_chapter-xxv-how-arthur-by-the-mean-of-me.txt",
+      "word_count": 788,
+      "start_line": 2400,
+      "end_line": 2461
+    },
+    {
+      "id": "seg_275",
+      "label": "CHAPTER XXVI. How tidings came to Arthur that King Rience had overcome",
+      "segment_type": "chapter",
+      "file": "seg_275_chapter-xxvi-how-tidings-came-to-arthur-.txt",
+      "word_count": 342,
+      "start_line": 2462,
+      "end_line": 2491
+    },
+    {
+      "id": "seg_276",
+      "label": "CHAPTER XXVII. How all the children were sent for that were born on",
+      "segment_type": "chapter",
+      "file": "seg_276_chapter-xxvii-how-all-the-children-were-.txt",
+      "word_count": 252,
+      "start_line": 2492,
+      "end_line": 2516
+    },
+    {
+      "id": "seg_277",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_277_ii.txt",
+      "word_count": 2,
+      "start_line": 2517,
+      "end_line": 2519
+    },
+    {
+      "id": "seg_278",
+      "label": "CHAPTER I. Of a damosel which came girt with a sword for to find a man",
+      "segment_type": "chapter",
+      "file": "seg_278_chapter-i-of-a-damosel-which-came-girt-w.txt",
+      "word_count": 637,
+      "start_line": 2520,
+      "end_line": 2573
+    },
+    {
+      "id": "seg_279",
+      "label": "CHAPTER II. How Balin, arrayed like a poor knight, pulled out the",
+      "segment_type": "chapter",
+      "file": "seg_279_chapter-ii-how-balin-arrayed-like-a-poor.txt",
+      "word_count": 802,
+      "start_line": 2574,
+      "end_line": 2638
+    },
+    {
+      "id": "seg_280",
+      "label": "CHAPTER III. How the Lady of the Lake demanded the knight’s head that",
+      "segment_type": "chapter",
+      "file": "seg_280_chapter-iii-how-the-lady-of-the-lake-dem.txt",
+      "word_count": 647,
+      "start_line": 2639,
+      "end_line": 2691
+    },
+    {
+      "id": "seg_281",
+      "label": "CHAPTER IV. How Merlin told the adventure of this damosel",
+      "segment_type": "chapter",
+      "file": "seg_281_chapter-iv-how-merlin-told-the-adventure.txt",
+      "word_count": 280,
+      "start_line": 2692,
+      "end_line": 2715
+    },
+    {
+      "id": "seg_282",
+      "label": "CHAPTER V. How Balin was pursued by Sir Lanceor, knight of Ireland, and",
+      "segment_type": "chapter",
+      "file": "seg_282_chapter-v-how-balin-was-pursued-by-sir-l.txt",
+      "word_count": 542,
+      "start_line": 2716,
+      "end_line": 2760
+    },
+    {
+      "id": "seg_283",
+      "label": "CHAPTER VI. How a damosel, which was love to Lanceor, slew herself for",
+      "segment_type": "chapter",
+      "file": "seg_283_chapter-vi-how-a-damosel-which-was-love-.txt",
+      "word_count": 503,
+      "start_line": 2761,
+      "end_line": 2800
+    },
+    {
+      "id": "seg_284",
+      "label": "CHAPTER VII. How a dwarf reproved Balin for the death of Lanceor, and",
+      "segment_type": "chapter",
+      "file": "seg_284_chapter-vii-how-a-dwarf-reproved-balin-f.txt",
+      "word_count": 383,
+      "start_line": 2801,
+      "end_line": 2831
+    },
+    {
+      "id": "seg_285",
+      "label": "CHAPTER VIII. How Merlin prophesied that two the best knights of the",
+      "segment_type": "chapter",
+      "file": "seg_285_chapter-viii-how-merlin-prophesied-that-.txt",
+      "word_count": 552,
+      "start_line": 2832,
+      "end_line": 2876
+    },
+    {
+      "id": "seg_286",
+      "label": "CHAPTER IX. How Balin and his brother, by the counsel of Merlin, took",
+      "segment_type": "chapter",
+      "file": "seg_286_chapter-ix-how-balin-and-his-brother-by-.txt",
+      "word_count": 550,
+      "start_line": 2877,
+      "end_line": 2923
+    },
+    {
+      "id": "seg_287",
+      "label": "CHAPTER X. How King Arthur had a battle against Nero and King Lot of",
+      "segment_type": "chapter",
+      "file": "seg_287_chapter-x-how-king-arthur-had-a-battle-a.txt",
+      "word_count": 761,
+      "start_line": 2924,
+      "end_line": 2985
+    },
+    {
+      "id": "seg_288",
+      "label": "CHAPTER XI. Of the interment of twelve kings, and of the prophecy of",
+      "segment_type": "chapter",
+      "file": "seg_288_chapter-xi-of-the-interment-of-twelve-ki.txt",
+      "word_count": 449,
+      "start_line": 2986,
+      "end_line": 3024
+    },
+    {
+      "id": "seg_289",
+      "label": "CHAPTER XII. How a sorrowful knight came before Arthur, and how Balin",
+      "segment_type": "chapter",
+      "file": "seg_289_chapter-xii-how-a-sorrowful-knight-came-.txt",
+      "word_count": 488,
+      "start_line": 3025,
+      "end_line": 3063
+    },
+    {
+      "id": "seg_290",
+      "label": "CHAPTER XIII. How Balin and the damosel met with a knight which was in",
+      "segment_type": "chapter",
+      "file": "seg_290_chapter-xiii-how-balin-and-the-damosel-m.txt",
+      "word_count": 525,
+      "start_line": 3064,
+      "end_line": 3105
+    },
+    {
+      "id": "seg_291",
+      "label": "CHAPTER XIV. How Balin met with that knight named Garlon at a feast,",
+      "segment_type": "chapter",
+      "file": "seg_291_chapter-xiv-how-balin-met-with-that-knig.txt",
+      "word_count": 684,
+      "start_line": 3106,
+      "end_line": 3161
+    },
+    {
+      "id": "seg_292",
+      "label": "CHAPTER XV. How Balin fought with King Pellam, and how his sword brake,",
+      "segment_type": "chapter",
+      "file": "seg_292_chapter-xv-how-balin-fought-with-king-pe.txt",
+      "word_count": 297,
+      "start_line": 3162,
+      "end_line": 3187
+    },
+    {
+      "id": "seg_293",
+      "label": "CHAPTER XVI. How Balin was delivered by Merlin, and saved a knight that",
+      "segment_type": "chapter",
+      "file": "seg_293_chapter-xvi-how-balin-was-delivered-by-m.txt",
+      "word_count": 733,
+      "start_line": 3188,
+      "end_line": 3244
+    },
+    {
+      "id": "seg_294",
+      "label": "CHAPTER XVII. How that knight slew his love and a knight lying by her,",
+      "segment_type": "chapter",
+      "file": "seg_294_chapter-xvii-how-that-knight-slew-his-lo.txt",
+      "word_count": 640,
+      "start_line": 3245,
+      "end_line": 3295
+    },
+    {
+      "id": "seg_295",
+      "label": "CHAPTER XVIII. How Balin met with his brother Balan, and how each of",
+      "segment_type": "chapter",
+      "file": "seg_295_chapter-xviii-how-balin-met-with-his-bro.txt",
+      "word_count": 822,
+      "start_line": 3296,
+      "end_line": 3362
+    },
+    {
+      "id": "seg_296",
+      "label": "CHAPTER XIX. How Merlin buried them both in one tomb, and of Balin’s",
+      "segment_type": "chapter",
+      "file": "seg_296_chapter-xix-how-merlin-buried-them-both-.txt",
+      "word_count": 466,
+      "start_line": 3363,
+      "end_line": 3404
+    },
+    {
+      "id": "seg_297",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_297_iii.txt",
+      "word_count": 2,
+      "start_line": 3405,
+      "end_line": 3407
+    },
+    {
+      "id": "seg_298",
+      "label": "CHAPTER I. How King Arthur took a wife, and wedded Guenever, daughter",
+      "segment_type": "chapter",
+      "file": "seg_298_chapter-i-how-king-arthur-took-a-wife-an.txt",
+      "word_count": 545,
+      "start_line": 3408,
+      "end_line": 3453
+    },
+    {
+      "id": "seg_299",
+      "label": "CHAPTER II. How the Knights of the Round Table were ordained and their",
+      "segment_type": "chapter",
+      "file": "seg_299_chapter-ii-how-the-knights-of-the-round-.txt",
+      "word_count": 324,
+      "start_line": 3454,
+      "end_line": 3481
+    },
+    {
+      "id": "seg_300",
+      "label": "CHAPTER III. How a poor man riding upon a lean mare desired King Arthur",
+      "segment_type": "chapter",
+      "file": "seg_300_chapter-iii-how-a-poor-man-riding-upon-a.txt",
+      "word_count": 803,
+      "start_line": 3482,
+      "end_line": 3542
+    },
+    {
+      "id": "seg_301",
+      "label": "CHAPTER IV. How Sir Tor was known for son of King Pellinore, and how",
+      "segment_type": "chapter",
+      "file": "seg_301_chapter-iv-how-sir-tor-was-known-for-son.txt",
+      "word_count": 318,
+      "start_line": 3543,
+      "end_line": 3569
+    },
+    {
+      "id": "seg_302",
+      "label": "CHAPTER V. How at feast of the wedding of King Arthur to Guenever, a",
+      "segment_type": "chapter",
+      "file": "seg_302_chapter-v-how-at-feast-of-the-wedding-of.txt",
+      "word_count": 439,
+      "start_line": 3570,
+      "end_line": 3607
+    },
+    {
+      "id": "seg_303",
+      "label": "CHAPTER VI. How Sir Gawaine rode for to fetch again the hart, and how",
+      "segment_type": "chapter",
+      "file": "seg_303_chapter-vi-how-sir-gawaine-rode-for-to-f.txt",
+      "word_count": 573,
+      "start_line": 3608,
+      "end_line": 3654
+    },
+    {
+      "id": "seg_304",
+      "label": "CHAPTER VII How the hart was chased into a castle and there slain, and",
+      "segment_type": "chapter",
+      "file": "seg_304_chapter-vii-how-the-hart-was-chased-into.txt",
+      "word_count": 563,
+      "start_line": 3655,
+      "end_line": 3700
+    },
+    {
+      "id": "seg_305",
+      "label": "CHAPTER VIII. How four knights fought against Gawaine and Gaheris, and",
+      "segment_type": "chapter",
+      "file": "seg_305_chapter-viii-how-four-knights-fought-aga.txt",
+      "word_count": 666,
+      "start_line": 3701,
+      "end_line": 3756
+    },
+    {
+      "id": "seg_306",
+      "label": "CHAPTER IX. How Sir Tor rode after the knight with the brachet, and of",
+      "segment_type": "chapter",
+      "file": "seg_306_chapter-ix-how-sir-tor-rode-after-the-kn.txt",
+      "word_count": 513,
+      "start_line": 3757,
+      "end_line": 3797
+    },
+    {
+      "id": "seg_307",
+      "label": "CHAPTER X. How Sir Tor found the brachet with a lady, and how a knight",
+      "segment_type": "chapter",
+      "file": "seg_307_chapter-x-how-sir-tor-found-the-brachet-.txt",
+      "word_count": 540,
+      "start_line": 3798,
+      "end_line": 3842
+    },
+    {
+      "id": "seg_308",
+      "label": "CHAPTER XI. How Sir Tor overcame the knight, and how he lost his head",
+      "segment_type": "chapter",
+      "file": "seg_308_chapter-xi-how-sir-tor-overcame-the-knig.txt",
+      "word_count": 711,
+      "start_line": 3843,
+      "end_line": 3898
+    },
+    {
+      "id": "seg_309",
+      "label": "CHAPTER XII. How King Pellinore rode after the lady and the knight that",
+      "segment_type": "chapter",
+      "file": "seg_309_chapter-xii-how-king-pellinore-rode-afte.txt",
+      "word_count": 758,
+      "start_line": 3899,
+      "end_line": 3959
+    },
+    {
+      "id": "seg_310",
+      "label": "CHAPTER XIII. How King Pellinore gat the lady and brought her to",
+      "segment_type": "chapter",
+      "file": "seg_310_chapter-xiii-how-king-pellinore-gat-the-.txt",
+      "word_count": 604,
+      "start_line": 3960,
+      "end_line": 4008
+    },
+    {
+      "id": "seg_311",
+      "label": "CHAPTER XIV. How on the way he heard two knights, as he lay by night in",
+      "segment_type": "chapter",
+      "file": "seg_311_chapter-xiv-how-on-the-way-he-heard-two-.txt",
+      "word_count": 414,
+      "start_line": 4009,
+      "end_line": 4043
+    },
+    {
+      "id": "seg_312",
+      "label": "CHAPTER XV. How when he was come to Camelot he was sworn upon a book to",
+      "segment_type": "chapter",
+      "file": "seg_312_chapter-xv-how-when-he-was-come-to-camel.txt",
+      "word_count": 540,
+      "start_line": 4044,
+      "end_line": 4089
+    },
+    {
+      "id": "seg_313",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_313_iv.txt",
+      "word_count": 2,
+      "start_line": 4090,
+      "end_line": 4092
+    },
+    {
+      "id": "seg_314",
+      "label": "CHAPTER I. How Merlin was assotted and doted on one of the ladies of",
+      "segment_type": "chapter",
+      "file": "seg_314_chapter-i-how-merlin-was-assotted-and-do.txt",
+      "word_count": 625,
+      "start_line": 4093,
+      "end_line": 4142
+    },
+    {
+      "id": "seg_315",
+      "label": "CHAPTER II. How five kings came into this land to war against King",
+      "segment_type": "chapter",
+      "file": "seg_315_chapter-ii-how-five-kings-came-into-this.txt",
+      "word_count": 488,
+      "start_line": 4143,
+      "end_line": 4181
+    },
+    {
+      "id": "seg_316",
+      "label": "CHAPTER III. How King Arthur had ado with them and overthrew them, and",
+      "segment_type": "chapter",
+      "file": "seg_316_chapter-iii-how-king-arthur-had-ado-with.txt",
+      "word_count": 730,
+      "start_line": 4182,
+      "end_line": 4243
+    },
+    {
+      "id": "seg_317",
+      "label": "CHAPTER IV. How the battle was finished or he came, and how King Arthur",
+      "segment_type": "chapter",
+      "file": "seg_317_chapter-iv-how-the-battle-was-finished-o.txt",
+      "word_count": 510,
+      "start_line": 4244,
+      "end_line": 4286
+    },
+    {
+      "id": "seg_318",
+      "label": "CHAPTER V. How Sir Tor was made knight of the Round Table, and how",
+      "segment_type": "chapter",
+      "file": "seg_318_chapter-v-how-sir-tor-was-made-knight-of.txt",
+      "word_count": 519,
+      "start_line": 4287,
+      "end_line": 4329
+    },
+    {
+      "id": "seg_319",
+      "label": "CHAPTER VI. How King Arthur, King Uriens, and Sir Accolon of Gaul,",
+      "segment_type": "chapter",
+      "file": "seg_319_chapter-vi-how-king-arthur-king-uriens-a.txt",
+      "word_count": 523,
+      "start_line": 4330,
+      "end_line": 4373
+    },
+    {
+      "id": "seg_320",
+      "label": "CHAPTER VII. How Arthur took upon him to fight to be delivered out of",
+      "segment_type": "chapter",
+      "file": "seg_320_chapter-vii-how-arthur-took-upon-him-to-.txt",
+      "word_count": 673,
+      "start_line": 4374,
+      "end_line": 4429
+    },
+    {
+      "id": "seg_321",
+      "label": "CHAPTER VIII. How Accolon found himself by a well, and he took upon him",
+      "segment_type": "chapter",
+      "file": "seg_321_chapter-viii-how-accolon-found-himself-b.txt",
+      "word_count": 778,
+      "start_line": 4430,
+      "end_line": 4493
+    },
+    {
+      "id": "seg_322",
+      "label": "CHAPTER IX. Of the battle between King Arthur and Accolon",
+      "segment_type": "chapter",
+      "file": "seg_322_chapter-ix-of-the-battle-between-king-ar.txt",
+      "word_count": 573,
+      "start_line": 4494,
+      "end_line": 4541
+    },
+    {
+      "id": "seg_323",
+      "label": "CHAPTER X. How King Arthur’s sword that he fought with brake, and how",
+      "segment_type": "chapter",
+      "file": "seg_323_chapter-x-how-king-arthurs-sword-that-he.txt",
+      "word_count": 669,
+      "start_line": 4542,
+      "end_line": 4595
+    },
+    {
+      "id": "seg_324",
+      "label": "CHAPTER XI. How Accolon confessed the treason of Morgan le Fay, King",
+      "segment_type": "chapter",
+      "file": "seg_324_chapter-xi-how-accolon-confessed-the-tre.txt",
+      "word_count": 552,
+      "start_line": 4596,
+      "end_line": 4640
+    },
+    {
+      "id": "seg_325",
+      "label": "CHAPTER XII. How Arthur accorded the two brethren, and delivered the",
+      "segment_type": "chapter",
+      "file": "seg_325_chapter-xii-how-arthur-accorded-the-two-.txt",
+      "word_count": 694,
+      "start_line": 4641,
+      "end_line": 4695
+    },
+    {
+      "id": "seg_326",
+      "label": "CHAPTER XIII. How Morgan would have slain Sir Uriens her husband, and",
+      "segment_type": "chapter",
+      "file": "seg_326_chapter-xiii-how-morgan-would-have-slain.txt",
+      "word_count": 352,
+      "start_line": 4696,
+      "end_line": 4724
+    },
+    {
+      "id": "seg_327",
+      "label": "CHAPTER XIV. How Queen Morgan le Fay made great sorrow for the death of",
+      "segment_type": "chapter",
+      "file": "seg_327_chapter-xiv-how-queen-morgan-le-fay-made.txt",
+      "word_count": 717,
+      "start_line": 4725,
+      "end_line": 4783
+    },
+    {
+      "id": "seg_328",
+      "label": "CHAPTER XV. How Morgan le Fay saved a knight that should have been",
+      "segment_type": "chapter",
+      "file": "seg_328_chapter-xv-how-morgan-le-fay-saved-a-kni.txt",
+      "word_count": 573,
+      "start_line": 4784,
+      "end_line": 4830
+    },
+    {
+      "id": "seg_329",
+      "label": "CHAPTER XVI. How the Damosel of the Lake saved King Arthur from mantle",
+      "segment_type": "chapter",
+      "file": "seg_329_chapter-xvi-how-the-damosel-of-the-lake-.txt",
+      "word_count": 480,
+      "start_line": 4831,
+      "end_line": 4869
+    },
+    {
+      "id": "seg_330",
+      "label": "CHAPTER XVII. How Sir Gawaine and Sir Uwaine met with twelve fair",
+      "segment_type": "chapter",
+      "file": "seg_330_chapter-xvii-how-sir-gawaine-and-sir-uwa.txt",
+      "word_count": 394,
+      "start_line": 4870,
+      "end_line": 4903
+    },
+    {
+      "id": "seg_331",
+      "label": "CHAPTER XVIII. How Sir Marhaus jousted with Sir Gawaine and Sir Uwaine,",
+      "segment_type": "chapter",
+      "file": "seg_331_chapter-xviii-how-sir-marhaus-jousted-wi.txt",
+      "word_count": 1254,
+      "start_line": 4904,
+      "end_line": 5005
+    },
+    {
+      "id": "seg_332",
+      "label": "CHAPTER XIX. How Sir Marhaus, Sir Gawaine, and Sir Uwaine met three",
+      "segment_type": "chapter",
+      "file": "seg_332_chapter-xix-how-sir-marhaus-sir-gawaine-.txt",
+      "word_count": 357,
+      "start_line": 5006,
+      "end_line": 5035
+    },
+    {
+      "id": "seg_333",
+      "label": "CHAPTER XX. How a knight and a dwarf strove for a lady",
+      "segment_type": "chapter",
+      "file": "seg_333_chapter-xx-how-a-knight-and-a-dwarf-stro.txt",
+      "word_count": 909,
+      "start_line": 5036,
+      "end_line": 5109
+    },
+    {
+      "id": "seg_334",
+      "label": "CHAPTER XXI. How King Pelleas suffered himself to be taken prisoner",
+      "segment_type": "chapter",
+      "file": "seg_334_chapter-xxi-how-king-pelleas-suffered-hi.txt",
+      "word_count": 883,
+      "start_line": 5110,
+      "end_line": 5176
+    },
+    {
+      "id": "seg_335",
+      "label": "CHAPTER XXII. How Sir Gawaine came to the Lady Ettard, and how Sir",
+      "segment_type": "chapter",
+      "file": "seg_335_chapter-xxii-how-sir-gawaine-came-to-the.txt",
+      "word_count": 1340,
+      "start_line": 5177,
+      "end_line": 5281
+    },
+    {
+      "id": "seg_336",
+      "label": "CHAPTER XXIII. How Sir Pelleas loved no more Ettard by means of the",
+      "segment_type": "chapter",
+      "file": "seg_336_chapter-xxiii-how-sir-pelleas-loved-no-m.txt",
+      "word_count": 178,
+      "start_line": 5282,
+      "end_line": 5298
+    },
+    {
+      "id": "seg_337",
+      "label": "CHAPTER XXIV. How Sir Marhaus rode with the damosel, and how he came to",
+      "segment_type": "chapter",
+      "file": "seg_337_chapter-xxiv-how-sir-marhaus-rode-with-t.txt",
+      "word_count": 684,
+      "start_line": 5299,
+      "end_line": 5352
+    },
+    {
+      "id": "seg_338",
+      "label": "CHAPTER XXV. How Sir Marhaus fought with the duke and his four sons and",
+      "segment_type": "chapter",
+      "file": "seg_338_chapter-xxv-how-sir-marhaus-fought-with-.txt",
+      "word_count": 769,
+      "start_line": 5353,
+      "end_line": 5415
+    },
+    {
+      "id": "seg_339",
+      "label": "CHAPTER XXVI. How Sir Uwaine rode with the damosel of sixty year of",
+      "segment_type": "chapter",
+      "file": "seg_339_chapter-xxvi-how-sir-uwaine-rode-with-th.txt",
+      "word_count": 462,
+      "start_line": 5416,
+      "end_line": 5454
+    },
+    {
+      "id": "seg_340",
+      "label": "CHAPTER XXVII. How Sir Uwaine fought with two knights and overcame",
+      "segment_type": "chapter",
+      "file": "seg_340_chapter-xxvii-how-sir-uwaine-fought-with.txt",
+      "word_count": 415,
+      "start_line": 5455,
+      "end_line": 5490
+    },
+    {
+      "id": "seg_341",
+      "label": "CHAPTER XXVIII. How at the year’s end all three knights with their",
+      "segment_type": "chapter",
+      "file": "seg_341_chapter-xxviii-how-at-the-years-end-all-.txt",
+      "word_count": 468,
+      "start_line": 5491,
+      "end_line": 5534
+    },
+    {
+      "id": "seg_342",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_342_v.txt",
+      "word_count": 2,
+      "start_line": 5535,
+      "end_line": 5537
+    },
+    {
+      "id": "seg_343",
+      "label": "CHAPTER I. How twelve aged ambassadors of Rome came to King Arthur to",
+      "segment_type": "chapter",
+      "file": "seg_343_chapter-i-how-twelve-aged-ambassadors-of.txt",
+      "word_count": 586,
+      "start_line": 5538,
+      "end_line": 5588
+    },
+    {
+      "id": "seg_344",
+      "label": "CHAPTER II. How the kings and lords promised to King Arthur aid and",
+      "segment_type": "chapter",
+      "file": "seg_344_chapter-ii-how-the-kings-and-lords-promi.txt",
+      "word_count": 1000,
+      "start_line": 5589,
+      "end_line": 5675
+    },
+    {
+      "id": "seg_345",
+      "label": "CHAPTER III. How King Arthur held a parliament at York, and how he",
+      "segment_type": "chapter",
+      "file": "seg_345_chapter-iii-how-king-arthur-held-a-parli.txt",
+      "word_count": 299,
+      "start_line": 5676,
+      "end_line": 5701
+    },
+    {
+      "id": "seg_346",
+      "label": "CHAPTER IV. How King Arthur being shipped and lying in his cabin had a",
+      "segment_type": "chapter",
+      "file": "seg_346_chapter-iv-how-king-arthur-being-shipped.txt",
+      "word_count": 445,
+      "start_line": 5702,
+      "end_line": 5741
+    },
+    {
+      "id": "seg_347",
+      "label": "CHAPTER V. How a man of the country told to him of a marvellous giant,",
+      "segment_type": "chapter",
+      "file": "seg_347_chapter-v-how-a-man-of-the-country-told-.txt",
+      "word_count": 1271,
+      "start_line": 5742,
+      "end_line": 5847
+    },
+    {
+      "id": "seg_348",
+      "label": "CHAPTER VI. How King Arthur sent Sir Gawaine and other to Lucius, and",
+      "segment_type": "chapter",
+      "file": "seg_348_chapter-vi-how-king-arthur-sent-sir-gawa.txt",
+      "word_count": 774,
+      "start_line": 5848,
+      "end_line": 5912
+    },
+    {
+      "id": "seg_349",
+      "label": "CHAPTER VII. How Lucius sent certain spies in a bushment for to have",
+      "segment_type": "chapter",
+      "file": "seg_349_chapter-vii-how-lucius-sent-certain-spie.txt",
+      "word_count": 457,
+      "start_line": 5913,
+      "end_line": 5952
+    },
+    {
+      "id": "seg_350",
+      "label": "CHAPTER VIII. How a senator told to Lucius of their discomfiture, and",
+      "segment_type": "chapter",
+      "file": "seg_350_chapter-viii-how-a-senator-told-to-luciu.txt",
+      "word_count": 1241,
+      "start_line": 5953,
+      "end_line": 6056
+    },
+    {
+      "id": "seg_351",
+      "label": "CHAPTER IX. How Arthur, after he had achieved the battle against the",
+      "segment_type": "chapter",
+      "file": "seg_351_chapter-ix-how-arthur-after-he-had-achie.txt",
+      "word_count": 405,
+      "start_line": 6057,
+      "end_line": 6094
+    },
+    {
+      "id": "seg_352",
+      "label": "CHAPTER X. Of a battle done by Sir Gawaine against a Saracen, which",
+      "segment_type": "chapter",
+      "file": "seg_352_chapter-x-of-a-battle-done-by-sir-gawain.txt",
+      "word_count": 1162,
+      "start_line": 6095,
+      "end_line": 6188
+    },
+    {
+      "id": "seg_353",
+      "label": "CHAPTER XI. How the Saracens came out of a wood for to rescue their",
+      "segment_type": "chapter",
+      "file": "seg_353_chapter-xi-how-the-saracens-came-out-of-.txt",
+      "word_count": 531,
+      "start_line": 6189,
+      "end_line": 6239
+    },
+    {
+      "id": "seg_354",
+      "label": "CHAPTER XII. How Sir Gawaine returned to King Arthur with his",
+      "segment_type": "chapter",
+      "file": "seg_354_chapter-xii-how-sir-gawaine-returned-to-.txt",
+      "word_count": 1070,
+      "start_line": 6240,
+      "end_line": 6329
+    },
+    {
+      "id": "seg_355",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_355_vi.txt",
+      "word_count": 2,
+      "start_line": 6330,
+      "end_line": 6332
+    },
+    {
+      "id": "seg_356",
+      "label": "CHAPTER I. How Sir Launcelot and Sir Lionel departed from the court,",
+      "segment_type": "chapter",
+      "file": "seg_356_chapter-i-how-sir-launcelot-and-sir-lion.txt",
+      "word_count": 653,
+      "start_line": 6333,
+      "end_line": 6388
+    },
+    {
+      "id": "seg_357",
+      "label": "CHAPTER II. How Sir Ector followed for to seek Sir Launcelot, and how",
+      "segment_type": "chapter",
+      "file": "seg_357_chapter-ii-how-sir-ector-followed-for-to.txt",
+      "word_count": 552,
+      "start_line": 6389,
+      "end_line": 6434
+    },
+    {
+      "id": "seg_358",
+      "label": "CHAPTER III. How four queens found Launcelot sleeping, and how by",
+      "segment_type": "chapter",
+      "file": "seg_358_chapter-iii-how-four-queens-found-launce.txt",
+      "word_count": 664,
+      "start_line": 6435,
+      "end_line": 6490
+    },
+    {
+      "id": "seg_359",
+      "label": "CHAPTER IV. How Sir Launcelot was delivered by the mean of a damosel",
+      "segment_type": "chapter",
+      "file": "seg_359_chapter-iv-how-sir-launcelot-was-deliver.txt",
+      "word_count": 525,
+      "start_line": 6491,
+      "end_line": 6534
+    },
+    {
+      "id": "seg_360",
+      "label": "CHAPTER V. How a knight found Sir Launcelot lying in his leman’s bed,",
+      "segment_type": "chapter",
+      "file": "seg_360_chapter-v-how-a-knight-found-sir-launcel.txt",
+      "word_count": 528,
+      "start_line": 6535,
+      "end_line": 6580
+    },
+    {
+      "id": "seg_361",
+      "label": "CHAPTER VI. How Sir Launcelot was received of King Bagdemagus’",
+      "segment_type": "chapter",
+      "file": "seg_361_chapter-vi-how-sir-launcelot-was-receive.txt",
+      "word_count": 566,
+      "start_line": 6581,
+      "end_line": 6629
+    },
+    {
+      "id": "seg_362",
+      "label": "CHAPTER VII. How Sir Launcelot behaved him in a tournament, and how he",
+      "segment_type": "chapter",
+      "file": "seg_362_chapter-vii-how-sir-launcelot-behaved-hi.txt",
+      "word_count": 1088,
+      "start_line": 6630,
+      "end_line": 6718
+    },
+    {
+      "id": "seg_363",
+      "label": "CHAPTER VIII. How Sir Launcelot and Sir Turquine fought together",
+      "segment_type": "chapter",
+      "file": "seg_363_chapter-viii-how-sir-launcelot-and-sir-t.txt",
+      "word_count": 555,
+      "start_line": 6719,
+      "end_line": 6766
+    },
+    {
+      "id": "seg_364",
+      "label": "CHAPTER IX. How Sir Turquine was slain, and how Sir Launcelot bade Sir",
+      "segment_type": "chapter",
+      "file": "seg_364_chapter-ix-how-sir-turquine-was-slain-an.txt",
+      "word_count": 683,
+      "start_line": 6767,
+      "end_line": 6821
+    },
+    {
+      "id": "seg_365",
+      "label": "CHAPTER X. How Sir Launcelot rode with a damosel and slew a knight that",
+      "segment_type": "chapter",
+      "file": "seg_365_chapter-x-how-sir-launcelot-rode-with-a-.txt",
+      "word_count": 821,
+      "start_line": 6822,
+      "end_line": 6891
+    },
+    {
+      "id": "seg_366",
+      "label": "CHAPTER XI. How Sir Launcelot slew two giants, and made a castle free",
+      "segment_type": "chapter",
+      "file": "seg_366_chapter-xi-how-sir-launcelot-slew-two-gi.txt",
+      "word_count": 1280,
+      "start_line": 6892,
+      "end_line": 6992
+    },
+    {
+      "id": "seg_367",
+      "label": "CHAPTER XII. How Sir Launcelot rode disguised in Sir Kay’s harness, and",
+      "segment_type": "chapter",
+      "file": "seg_367_chapter-xii-how-sir-launcelot-rode-disgu.txt",
+      "word_count": 729,
+      "start_line": 6993,
+      "end_line": 7053
+    },
+    {
+      "id": "seg_368",
+      "label": "CHAPTER XIII. How Sir Launcelot jousted against four knights of the",
+      "segment_type": "chapter",
+      "file": "seg_368_chapter-xiii-how-sir-launcelot-jousted-a.txt",
+      "word_count": 501,
+      "start_line": 7054,
+      "end_line": 7096
+    },
+    {
+      "id": "seg_369",
+      "label": "CHAPTER XIV. How Sir Launcelot followed a brachet into a castle, where",
+      "segment_type": "chapter",
+      "file": "seg_369_chapter-xiv-how-sir-launcelot-followed-a.txt",
+      "word_count": 568,
+      "start_line": 7097,
+      "end_line": 7142
+    },
+    {
+      "id": "seg_370",
+      "label": "CHAPTER XV. How Sir Launcelot came into the Chapel Perilous and gat",
+      "segment_type": "chapter",
+      "file": "seg_370_chapter-xv-how-sir-launcelot-came-into-t.txt",
+      "word_count": 832,
+      "start_line": 7143,
+      "end_line": 7211
+    },
+    {
+      "id": "seg_371",
+      "label": "CHAPTER XVI. How Sir Launcelot at the request of a lady recovered a",
+      "segment_type": "chapter",
+      "file": "seg_371_chapter-xvi-how-sir-launcelot-at-the-req.txt",
+      "word_count": 762,
+      "start_line": 7212,
+      "end_line": 7273
+    },
+    {
+      "id": "seg_372",
+      "label": "CHAPTER XVII. How Sir Launcelot overtook a knight which chased his wife",
+      "segment_type": "chapter",
+      "file": "seg_372_chapter-xvii-how-sir-launcelot-overtook-.txt",
+      "word_count": 743,
+      "start_line": 7274,
+      "end_line": 7334
+    },
+    {
+      "id": "seg_373",
+      "label": "CHAPTER XVIII. How Sir Launcelot came to King Arthur’s Court, and how",
+      "segment_type": "chapter",
+      "file": "seg_373_chapter-xviii-how-sir-launcelot-came-to-.txt",
+      "word_count": 491,
+      "start_line": 7335,
+      "end_line": 7380
+    },
+    {
+      "id": "seg_374",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_374_vii.txt",
+      "word_count": 2,
+      "start_line": 7381,
+      "end_line": 7383
+    },
+    {
+      "id": "seg_375",
+      "label": "CHAPTER I. How Beaumains came to King Arthur’s Court and demanded three",
+      "segment_type": "chapter",
+      "file": "seg_375_chapter-i-how-beaumains-came-to-king-art.txt",
+      "word_count": 788,
+      "start_line": 7384,
+      "end_line": 7450
+    },
+    {
+      "id": "seg_376",
+      "label": "CHAPTER II. How Sir Launcelot and Sir Gawaine were wroth because Sir",
+      "segment_type": "chapter",
+      "file": "seg_376_chapter-ii-how-sir-launcelot-and-sir-gaw.txt",
+      "word_count": 733,
+      "start_line": 7451,
+      "end_line": 7513
+    },
+    {
+      "id": "seg_377",
+      "label": "CHAPTER III. How Beaumains desired the battle, and how it was granted",
+      "segment_type": "chapter",
+      "file": "seg_377_chapter-iii-how-beaumains-desired-the-ba.txt",
+      "word_count": 304,
+      "start_line": 7514,
+      "end_line": 7538
+    },
+    {
+      "id": "seg_378",
+      "label": "CHAPTER IV. How Beaumains departed, and how he gat of Sir Kay a spear",
+      "segment_type": "chapter",
+      "file": "seg_378_chapter-iv-how-beaumains-departed-and-ho.txt",
+      "word_count": 442,
+      "start_line": 7539,
+      "end_line": 7576
+    },
+    {
+      "id": "seg_379",
+      "label": "CHAPTER V. How Beaumains told to Sir Launcelot his name, and how he was",
+      "segment_type": "chapter",
+      "file": "seg_379_chapter-v-how-beaumains-told-to-sir-laun.txt",
+      "word_count": 865,
+      "start_line": 7577,
+      "end_line": 7648
+    },
+    {
+      "id": "seg_380",
+      "label": "CHAPTER VI. How Beaumains fought and slew two knights at a passage",
+      "segment_type": "chapter",
+      "file": "seg_380_chapter-vi-how-beaumains-fought-and-slew.txt",
+      "word_count": 500,
+      "start_line": 7649,
+      "end_line": 7692
+    },
+    {
+      "id": "seg_381",
+      "label": "CHAPTER VII. How Beaumains fought with the Knight of the Black Launds,",
+      "segment_type": "chapter",
+      "file": "seg_381_chapter-vii-how-beaumains-fought-with-th.txt",
+      "word_count": 741,
+      "start_line": 7693,
+      "end_line": 7755
+    },
+    {
+      "id": "seg_382",
+      "label": "CHAPTER VIII. How the brother of the knight that was slain met with",
+      "segment_type": "chapter",
+      "file": "seg_382_chapter-viii-how-the-brother-of-the-knig.txt",
+      "word_count": 787,
+      "start_line": 7756,
+      "end_line": 7822
+    },
+    {
+      "id": "seg_383",
+      "label": "CHAPTER IX. How the damosel again rebuked Beaumains, and would not",
+      "segment_type": "chapter",
+      "file": "seg_383_chapter-ix-how-the-damosel-again-rebuked.txt",
+      "word_count": 468,
+      "start_line": 7823,
+      "end_line": 7862
+    },
+    {
+      "id": "seg_384",
+      "label": "CHAPTER X. How the third brother, called the Red Knight, jousted and",
+      "segment_type": "chapter",
+      "file": "seg_384_chapter-x-how-the-third-brother-called-t.txt",
+      "word_count": 726,
+      "start_line": 7863,
+      "end_line": 7924
+    },
+    {
+      "id": "seg_385",
+      "label": "CHAPTER XI. How Sir Beaumains suffered great rebukes of the damosel,",
+      "segment_type": "chapter",
+      "file": "seg_385_chapter-xi-how-sir-beaumains-suffered-gr.txt",
+      "word_count": 1003,
+      "start_line": 7925,
+      "end_line": 8006
+    },
+    {
+      "id": "seg_386",
+      "label": "CHAPTER XII. How Beaumains fought with Sir Persant of Inde, and made",
+      "segment_type": "chapter",
+      "file": "seg_386_chapter-xii-how-beaumains-fought-with-si.txt",
+      "word_count": 708,
+      "start_line": 8007,
+      "end_line": 8064
+    },
+    {
+      "id": "seg_387",
+      "label": "CHAPTER XIII. Of the goodly communication between Sir Persant and",
+      "segment_type": "chapter",
+      "file": "seg_387_chapter-xiii-of-the-goodly-communication.txt",
+      "word_count": 606,
+      "start_line": 8065,
+      "end_line": 8115
+    },
+    {
+      "id": "seg_388",
+      "label": "CHAPTER XIV. How the lady that was besieged had word from her sister",
+      "segment_type": "chapter",
+      "file": "seg_388_chapter-xiv-how-the-lady-that-was-besieg.txt",
+      "word_count": 876,
+      "start_line": 8116,
+      "end_line": 8187
+    },
+    {
+      "id": "seg_389",
+      "label": "CHAPTER XV. How the damosel and Beaumains came to the siege; and came",
+      "segment_type": "chapter",
+      "file": "seg_389_chapter-xv-how-the-damosel-and-beaumains.txt",
+      "word_count": 710,
+      "start_line": 8188,
+      "end_line": 8249
+    },
+    {
+      "id": "seg_390",
+      "label": "CHAPTER XVI. How the two knights met together, and of their talking,",
+      "segment_type": "chapter",
+      "file": "seg_390_chapter-xvi-how-the-two-knights-met-toge.txt",
+      "word_count": 583,
+      "start_line": 8250,
+      "end_line": 8300
+    },
+    {
+      "id": "seg_391",
+      "label": "CHAPTER XVII. How after long fighting Beaumains overcame the knight and",
+      "segment_type": "chapter",
+      "file": "seg_391_chapter-xvii-how-after-long-fighting-bea.txt",
+      "word_count": 795,
+      "start_line": 8301,
+      "end_line": 8370
+    },
+    {
+      "id": "seg_392",
+      "label": "CHAPTER XVIII. How the knight yielded him, and how Beaumains made him",
+      "segment_type": "chapter",
+      "file": "seg_392_chapter-xviii-how-the-knight-yielded-him.txt",
+      "word_count": 618,
+      "start_line": 8371,
+      "end_line": 8420
+    },
+    {
+      "id": "seg_393",
+      "label": "CHAPTER XIX. How Beaumains came to the lady, and when he came to the",
+      "segment_type": "chapter",
+      "file": "seg_393_chapter-xix-how-beaumains-came-to-the-la.txt",
+      "word_count": 807,
+      "start_line": 8421,
+      "end_line": 8488
+    },
+    {
+      "id": "seg_394",
+      "label": "CHAPTER XX. How Sir Beaumains rode after to rescue his dwarf, and came",
+      "segment_type": "chapter",
+      "file": "seg_394_chapter-xx-how-sir-beaumains-rode-after-.txt",
+      "word_count": 915,
+      "start_line": 8489,
+      "end_line": 8561
+    },
+    {
+      "id": "seg_395",
+      "label": "CHAPTER XXI. How Sir Gareth, otherwise called Beaumains, came to the",
+      "segment_type": "chapter",
+      "file": "seg_395_chapter-xxi-how-sir-gareth-otherwise-cal.txt",
+      "word_count": 542,
+      "start_line": 8562,
+      "end_line": 8608
+    },
+    {
+      "id": "seg_396",
+      "label": "CHAPTER XXII. How at night came an armed knight, and fought with Sir",
+      "segment_type": "chapter",
+      "file": "seg_396_chapter-xxii-how-at-night-came-an-armed-.txt",
+      "word_count": 880,
+      "start_line": 8609,
+      "end_line": 8684
+    },
+    {
+      "id": "seg_397",
+      "label": "CHAPTER XXIII. How the said knight came again the next night and was",
+      "segment_type": "chapter",
+      "file": "seg_397_chapter-xxiii-how-the-said-knight-came-a.txt",
+      "word_count": 986,
+      "start_line": 8685,
+      "end_line": 8764
+    },
+    {
+      "id": "seg_398",
+      "label": "CHAPTER XXIV. How King Arthur pardoned them, and demanded of them where",
+      "segment_type": "chapter",
+      "file": "seg_398_chapter-xxiv-how-king-arthur-pardoned-th.txt",
+      "word_count": 356,
+      "start_line": 8765,
+      "end_line": 8795
+    },
+    {
+      "id": "seg_399",
+      "label": "CHAPTER XXV. How the Queen of Orkney came to this feast of Pentecost,",
+      "segment_type": "chapter",
+      "file": "seg_399_chapter-xxv-how-the-queen-of-orkney-came.txt",
+      "word_count": 670,
+      "start_line": 8796,
+      "end_line": 8850
+    },
+    {
+      "id": "seg_400",
+      "label": "CHAPTER XXVI. How King Arthur sent for the Lady Lionesse, and how she",
+      "segment_type": "chapter",
+      "file": "seg_400_chapter-xxvi-how-king-arthur-sent-for-th.txt",
+      "word_count": 1184,
+      "start_line": 8851,
+      "end_line": 8946
+    },
+    {
+      "id": "seg_401",
+      "label": "CHAPTER XXVII. How King Arthur went to the tournament with his knights,",
+      "segment_type": "chapter",
+      "file": "seg_401_chapter-xxvii-how-king-arthur-went-to-th.txt",
+      "word_count": 814,
+      "start_line": 8947,
+      "end_line": 9017
+    },
+    {
+      "id": "seg_402",
+      "label": "CHAPTER XXVIII. How the knights bare them in the battle",
+      "segment_type": "chapter",
+      "file": "seg_402_chapter-xxviii-how-the-knights-bare-them.txt",
+      "word_count": 852,
+      "start_line": 9018,
+      "end_line": 9094
+    },
+    {
+      "id": "seg_403",
+      "label": "CHAPTER XXIX. Yet of the said tournament",
+      "segment_type": "chapter",
+      "file": "seg_403_chapter-xxix-yet-of-the-said-tournament.txt",
+      "word_count": 662,
+      "start_line": 9095,
+      "end_line": 9148
+    },
+    {
+      "id": "seg_404",
+      "label": "CHAPTER XXX. How Sir Gareth was espied by the heralds, and how he",
+      "segment_type": "chapter",
+      "file": "seg_404_chapter-xxx-how-sir-gareth-was-espied-by.txt",
+      "word_count": 561,
+      "start_line": 9149,
+      "end_line": 9197
+    },
+    {
+      "id": "seg_405",
+      "label": "CHAPTER XXXI. How Sir Gareth came to a castle where he was well lodged,",
+      "segment_type": "chapter",
+      "file": "seg_405_chapter-xxxi-how-sir-gareth-came-to-a-ca.txt",
+      "word_count": 735,
+      "start_line": 9198,
+      "end_line": 9258
+    },
+    {
+      "id": "seg_406",
+      "label": "CHAPTER XXXII. How Sir Gareth fought with a knight that held within his",
+      "segment_type": "chapter",
+      "file": "seg_406_chapter-xxxii-how-sir-gareth-fought-with.txt",
+      "word_count": 694,
+      "start_line": 9259,
+      "end_line": 9315
+    },
+    {
+      "id": "seg_407",
+      "label": "CHAPTER XXXIII. How Sir Gareth and Sir Gawaine fought each against",
+      "segment_type": "chapter",
+      "file": "seg_407_chapter-xxxiii-how-sir-gareth-and-sir-ga.txt",
+      "word_count": 896,
+      "start_line": 9316,
+      "end_line": 9400
+    },
+    {
+      "id": "seg_408",
+      "label": "CHAPTER XXXIV. How Sir Gareth acknowledged that they loved each other",
+      "segment_type": "chapter",
+      "file": "seg_408_chapter-xxxiv-how-sir-gareth-acknowledge.txt",
+      "word_count": 559,
+      "start_line": 9401,
+      "end_line": 9451
+    },
+    {
+      "id": "seg_409",
+      "label": "CHAPTER XXXV. Of the Great Royalty, and what officers were made at the",
+      "segment_type": "chapter",
+      "file": "seg_409_chapter-xxxv-of-the-great-royalty-and-wh.txt",
+      "word_count": 918,
+      "start_line": 9452,
+      "end_line": 9534
+    },
+    {
+      "id": "seg_410",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_410_viii.txt",
+      "word_count": 2,
+      "start_line": 9535,
+      "end_line": 9537
+    },
+    {
+      "id": "seg_411",
+      "label": "CHAPTER I. How Sir Tristram de Liones was born, and how his mother died",
+      "segment_type": "chapter",
+      "file": "seg_411_chapter-i-how-sir-tristram-de-liones-was.txt",
+      "word_count": 658,
+      "start_line": 9538,
+      "end_line": 9592
+    },
+    {
+      "id": "seg_412",
+      "label": "CHAPTER II. How the stepmother of Sir Tristram had ordained poison for",
+      "segment_type": "chapter",
+      "file": "seg_412_chapter-ii-how-the-stepmother-of-sir-tri.txt",
+      "word_count": 792,
+      "start_line": 9593,
+      "end_line": 9659
+    },
+    {
+      "id": "seg_413",
+      "label": "CHAPTER III. How Sir Tristram was sent into France, and had one to",
+      "segment_type": "chapter",
+      "file": "seg_413_chapter-iii-how-sir-tristram-was-sent-in.txt",
+      "word_count": 369,
+      "start_line": 9660,
+      "end_line": 9694
+    },
+    {
+      "id": "seg_414",
+      "label": "CHAPTER IV. How Sir Marhaus came out of Ireland for to ask truage of",
+      "segment_type": "chapter",
+      "file": "seg_414_chapter-iv-how-sir-marhaus-came-out-of-i.txt",
+      "word_count": 668,
+      "start_line": 9695,
+      "end_line": 9751
+    },
+    {
+      "id": "seg_415",
+      "label": "CHAPTER V. How Tristram enterprized the battle to fight for the truage",
+      "segment_type": "chapter",
+      "file": "seg_415_chapter-v-how-tristram-enterprized-the-b.txt",
+      "word_count": 860,
+      "start_line": 9752,
+      "end_line": 9823
+    },
+    {
+      "id": "seg_416",
+      "label": "CHAPTER VI. How Sir Tristram arrived into the Island for to furnish the",
+      "segment_type": "chapter",
+      "file": "seg_416_chapter-vi-how-sir-tristram-arrived-into.txt",
+      "word_count": 312,
+      "start_line": 9824,
+      "end_line": 9851
+    },
+    {
+      "id": "seg_417",
+      "label": "CHAPTER VII. How Sir Tristram fought against Sir Marhaus and achieved",
+      "segment_type": "chapter",
+      "file": "seg_417_chapter-vii-how-sir-tristram-fought-agai.txt",
+      "word_count": 756,
+      "start_line": 9852,
+      "end_line": 9916
+    },
+    {
+      "id": "seg_418",
+      "label": "CHAPTER VIII. How Sir Marhaus after that he was arrived in Ireland died",
+      "segment_type": "chapter",
+      "file": "seg_418_chapter-viii-how-sir-marhaus-after-that-.txt",
+      "word_count": 668,
+      "start_line": 9917,
+      "end_line": 9973
+    },
+    {
+      "id": "seg_419",
+      "label": "CHAPTER IX. How Sir Tristram was put to the keeping of La Beale Isoud",
+      "segment_type": "chapter",
+      "file": "seg_419_chapter-ix-how-sir-tristram-was-put-to-t.txt",
+      "word_count": 751,
+      "start_line": 9974,
+      "end_line": 10037
+    },
+    {
+      "id": "seg_420",
+      "label": "CHAPTER X. How Sir Tristram won the degree at a tournament in Ireland,",
+      "segment_type": "chapter",
+      "file": "seg_420_chapter-x-how-sir-tristram-won-the-degre.txt",
+      "word_count": 811,
+      "start_line": 10038,
+      "end_line": 10105
+    },
+    {
+      "id": "seg_421",
+      "label": "CHAPTER XI. How the queen espied that Sir Tristram had slain her",
+      "segment_type": "chapter",
+      "file": "seg_421_chapter-xi-how-the-queen-espied-that-sir.txt",
+      "word_count": 609,
+      "start_line": 10106,
+      "end_line": 10157
+    },
+    {
+      "id": "seg_422",
+      "label": "CHAPTER XII. How Sir Tristram departed from the king and La Beale Isoud",
+      "segment_type": "chapter",
+      "file": "seg_422_chapter-xii-how-sir-tristram-departed-fr.txt",
+      "word_count": 778,
+      "start_line": 10158,
+      "end_line": 10221
+    },
+    {
+      "id": "seg_423",
+      "label": "CHAPTER XIII. How Sir Tristram and King Mark hurted each other for the",
+      "segment_type": "chapter",
+      "file": "seg_423_chapter-xiii-how-sir-tristram-and-king-m.txt",
+      "word_count": 569,
+      "start_line": 10222,
+      "end_line": 10271
+    },
+    {
+      "id": "seg_424",
+      "label": "CHAPTER XIV. How Sir Tristram lay with the lady, and how her husband",
+      "segment_type": "chapter",
+      "file": "seg_424_chapter-xiv-how-sir-tristram-lay-with-th.txt",
+      "word_count": 642,
+      "start_line": 10272,
+      "end_line": 10326
+    },
+    {
+      "id": "seg_425",
+      "label": "CHAPTER XV. How Sir Bleoberis demanded the fairest lady in King Mark’s",
+      "segment_type": "chapter",
+      "file": "seg_425_chapter-xv-how-sir-bleoberis-demanded-th.txt",
+      "word_count": 638,
+      "start_line": 10327,
+      "end_line": 10380
+    },
+    {
+      "id": "seg_426",
+      "label": "CHAPTER XVI. How Sir Tristram fought with two knights of the Round",
+      "segment_type": "chapter",
+      "file": "seg_426_chapter-xvi-how-sir-tristram-fought-with.txt",
+      "word_count": 613,
+      "start_line": 10381,
+      "end_line": 10433
+    },
+    {
+      "id": "seg_427",
+      "label": "CHAPTER XVII. How Sir Tristram fought with Sir Bleoberis for a lady,",
+      "segment_type": "chapter",
+      "file": "seg_427_chapter-xvii-how-sir-tristram-fought-wit.txt",
+      "word_count": 647,
+      "start_line": 10434,
+      "end_line": 10486
+    },
+    {
+      "id": "seg_428",
+      "label": "CHAPTER XVIII. How the lady forsook Sir Tristram and abode with Sir",
+      "segment_type": "chapter",
+      "file": "seg_428_chapter-xviii-how-the-lady-forsook-sir-t.txt",
+      "word_count": 551,
+      "start_line": 10487,
+      "end_line": 10534
+    },
+    {
+      "id": "seg_429",
+      "label": "CHAPTER XIX. How King Mark sent Sir Tristram for La Beale Isoud toward",
+      "segment_type": "chapter",
+      "file": "seg_429_chapter-xix-how-king-mark-sent-sir-trist.txt",
+      "word_count": 405,
+      "start_line": 10535,
+      "end_line": 10570
+    },
+    {
+      "id": "seg_430",
+      "label": "CHAPTER XX. How King Anguish of Ireland was summoned to come to King",
+      "segment_type": "chapter",
+      "file": "seg_430_chapter-xx-how-king-anguish-of-ireland-w.txt",
+      "word_count": 492,
+      "start_line": 10571,
+      "end_line": 10613
+    },
+    {
+      "id": "seg_431",
+      "label": "CHAPTER XXI. How Sir Tristram rescued a child from a knight, and how",
+      "segment_type": "chapter",
+      "file": "seg_431_chapter-xxi-how-sir-tristram-rescued-a-c.txt",
+      "word_count": 713,
+      "start_line": 10614,
+      "end_line": 10672
+    },
+    {
+      "id": "seg_432",
+      "label": "CHAPTER XXII. How Sir Tristram fought for Sir Anguish and overcame his",
+      "segment_type": "chapter",
+      "file": "seg_432_chapter-xxii-how-sir-tristram-fought-for.txt",
+      "word_count": 659,
+      "start_line": 10673,
+      "end_line": 10729
+    },
+    {
+      "id": "seg_433",
+      "label": "CHAPTER XXIII. How Sir Blamore desired Tristram to slay him, and how",
+      "segment_type": "chapter",
+      "file": "seg_433_chapter-xxiii-how-sir-blamore-desired-tr.txt",
+      "word_count": 650,
+      "start_line": 10730,
+      "end_line": 10786
+    },
+    {
+      "id": "seg_434",
+      "label": "CHAPTER XXIV. How Sir Tristram demanded La Beale Isoud for King Mark,",
+      "segment_type": "chapter",
+      "file": "seg_434_chapter-xxiv-how-sir-tristram-demanded-l.txt",
+      "word_count": 638,
+      "start_line": 10787,
+      "end_line": 10840
+    },
+    {
+      "id": "seg_435",
+      "label": "CHAPTER XXV. How Sir Tristram and Isoud were in prison, and how he",
+      "segment_type": "chapter",
+      "file": "seg_435_chapter-xxv-how-sir-tristram-and-isoud-w.txt",
+      "word_count": 851,
+      "start_line": 10841,
+      "end_line": 10907
+    },
+    {
+      "id": "seg_436",
+      "label": "CHAPTER XXVI. How Sir Tristram fought with Sir Breunor, and at the last",
+      "segment_type": "chapter",
+      "file": "seg_436_chapter-xxvi-how-sir-tristram-fought-wit.txt",
+      "word_count": 343,
+      "start_line": 10908,
+      "end_line": 10941
+    },
+    {
+      "id": "seg_437",
+      "label": "CHAPTER XXVII. How Sir Galahad fought with Sir Tristram, and how Sir",
+      "segment_type": "chapter",
+      "file": "seg_437_chapter-xxvii-how-sir-galahad-fought-wit.txt",
+      "word_count": 751,
+      "start_line": 10942,
+      "end_line": 11003
+    },
+    {
+      "id": "seg_438",
+      "label": "CHAPTER XXVIII. How Sir Launcelot met with Sir Carados bearing away Sir",
+      "segment_type": "chapter",
+      "file": "seg_438_chapter-xxviii-how-sir-launcelot-met-wit.txt",
+      "word_count": 426,
+      "start_line": 11004,
+      "end_line": 11039
+    },
+    {
+      "id": "seg_439",
+      "label": "CHAPTER XXIX. Of the wedding of King Mark to La Beale Isoud, and of",
+      "segment_type": "chapter",
+      "file": "seg_439_chapter-xxix-of-the-wedding-of-king-mark.txt",
+      "word_count": 535,
+      "start_line": 11040,
+      "end_line": 11083
+    },
+    {
+      "id": "seg_440",
+      "label": "CHAPTER XXX. How Palamides demanded Queen Isoud, and how Lambegus rode",
+      "segment_type": "chapter",
+      "file": "seg_440_chapter-xxx-how-palamides-demanded-queen.txt",
+      "word_count": 820,
+      "start_line": 11084,
+      "end_line": 11151
+    },
+    {
+      "id": "seg_441",
+      "label": "CHAPTER XXXI. How Sir Tristram rode after Palamides, and how he found",
+      "segment_type": "chapter",
+      "file": "seg_441_chapter-xxxi-how-sir-tristram-rode-after.txt",
+      "word_count": 731,
+      "start_line": 11152,
+      "end_line": 11210
+    },
+    {
+      "id": "seg_442",
+      "label": "CHAPTER XXXII. How Sir Tristram brought Queen Isoud home, and of the",
+      "segment_type": "chapter",
+      "file": "seg_442_chapter-xxxii-how-sir-tristram-brought-q.txt",
+      "word_count": 593,
+      "start_line": 11211,
+      "end_line": 11259
+    },
+    {
+      "id": "seg_443",
+      "label": "CHAPTER XXXIII. How Sir Lamorak jousted with thirty knights, and Sir",
+      "segment_type": "chapter",
+      "file": "seg_443_chapter-xxxiii-how-sir-lamorak-jousted-w.txt",
+      "word_count": 762,
+      "start_line": 11260,
+      "end_line": 11318
+    },
+    {
+      "id": "seg_444",
+      "label": "CHAPTER XXXIV. How Sir Lamorak sent an horn to King Mark in despite of",
+      "segment_type": "chapter",
+      "file": "seg_444_chapter-xxxiv-how-sir-lamorak-sent-an-ho.txt",
+      "word_count": 922,
+      "start_line": 11319,
+      "end_line": 11393
+    },
+    {
+      "id": "seg_445",
+      "label": "CHAPTER XXXV. How Sir Tristram was holpen by his men, and of Queen",
+      "segment_type": "chapter",
+      "file": "seg_445_chapter-xxxv-how-sir-tristram-was-holpen.txt",
+      "word_count": 514,
+      "start_line": 11394,
+      "end_line": 11435
+    },
+    {
+      "id": "seg_446",
+      "label": "CHAPTER XXXVI. How Sir Tristram served in war King Howel of Brittany,",
+      "segment_type": "chapter",
+      "file": "seg_446_chapter-xxxvi-how-sir-tristram-served-in.txt",
+      "word_count": 561,
+      "start_line": 11436,
+      "end_line": 11482
+    },
+    {
+      "id": "seg_447",
+      "label": "CHAPTER XXXVII. How Sir Suppinabiles told Sir Tristram how he was",
+      "segment_type": "chapter",
+      "file": "seg_447_chapter-xxxvii-how-sir-suppinabiles-told.txt",
+      "word_count": 511,
+      "start_line": 11483,
+      "end_line": 11526
+    },
+    {
+      "id": "seg_448",
+      "label": "CHAPTER XXXVIII. How Sir Tristram and his wife arrived in Wales, and",
+      "segment_type": "chapter",
+      "file": "seg_448_chapter-xxxviii-how-sir-tristram-and-his.txt",
+      "word_count": 866,
+      "start_line": 11527,
+      "end_line": 11594
+    },
+    {
+      "id": "seg_449",
+      "label": "CHAPTER XXXIX. How Sir Tristram fought with Sir Nabon, and overcame",
+      "segment_type": "chapter",
+      "file": "seg_449_chapter-xxxix-how-sir-tristram-fought-wi.txt",
+      "word_count": 799,
+      "start_line": 11595,
+      "end_line": 11661
+    },
+    {
+      "id": "seg_450",
+      "label": "CHAPTER XL. How Sir Lamorak departed from Sir Tristram, and how he met",
+      "segment_type": "chapter",
+      "file": "seg_450_chapter-xl-how-sir-lamorak-departed-from.txt",
+      "word_count": 898,
+      "start_line": 11662,
+      "end_line": 11734
+    },
+    {
+      "id": "seg_451",
+      "label": "CHAPTER XLI. How Sir Lamorak slew Sir Frol, and of the courteous",
+      "segment_type": "chapter",
+      "file": "seg_451_chapter-xli-how-sir-lamorak-slew-sir-fro.txt",
+      "word_count": 753,
+      "start_line": 11735,
+      "end_line": 11800
+    },
+    {
+      "id": "seg_452",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_452_ix.txt",
+      "word_count": 2,
+      "start_line": 11801,
+      "end_line": 11803
+    },
+    {
+      "id": "seg_453",
+      "label": "CHAPTER I. How a young man came into the court of King Arthur, and how",
+      "segment_type": "chapter",
+      "file": "seg_453_chapter-i-how-a-young-man-came-into-the-.txt",
+      "word_count": 710,
+      "start_line": 11804,
+      "end_line": 11858
+    },
+    {
+      "id": "seg_454",
+      "label": "CHAPTER II. How a damosel came into the court and desired a knight to",
+      "segment_type": "chapter",
+      "file": "seg_454_chapter-ii-how-a-damosel-came-into-the-c.txt",
+      "word_count": 601,
+      "start_line": 11859,
+      "end_line": 11907
+    },
+    {
+      "id": "seg_455",
+      "label": "CHAPTER III. How La Cote Male Taile overthrew Sir Dagonet the king’s",
+      "segment_type": "chapter",
+      "file": "seg_455_chapter-iii-how-la-cote-male-taile-overt.txt",
+      "word_count": 623,
+      "start_line": 11908,
+      "end_line": 11959
+    },
+    {
+      "id": "seg_456",
+      "label": "CHAPTER IV. How La Cote Male Taile fought against an hundred knights,",
+      "segment_type": "chapter",
+      "file": "seg_456_chapter-iv-how-la-cote-male-taile-fought.txt",
+      "word_count": 849,
+      "start_line": 11960,
+      "end_line": 12029
+    },
+    {
+      "id": "seg_457",
+      "label": "CHAPTER V. How Sir Launcelot came to the court and heard of La Cote",
+      "segment_type": "chapter",
+      "file": "seg_457_chapter-v-how-sir-launcelot-came-to-the-.txt",
+      "word_count": 822,
+      "start_line": 12030,
+      "end_line": 12100
+    },
+    {
+      "id": "seg_458",
+      "label": "CHAPTER VI. How Sir Launcelot fought with six knights, and after with",
+      "segment_type": "chapter",
+      "file": "seg_458_chapter-vi-how-sir-launcelot-fought-with.txt",
+      "word_count": 528,
+      "start_line": 12101,
+      "end_line": 12148
+    },
+    {
+      "id": "seg_459",
+      "label": "CHAPTER VII. How Sir Launcelot met with the damosel named Male disant,",
+      "segment_type": "chapter",
+      "file": "seg_459_chapter-vii-how-sir-launcelot-met-with-t.txt",
+      "word_count": 946,
+      "start_line": 12149,
+      "end_line": 12226
+    },
+    {
+      "id": "seg_460",
+      "label": "CHAPTER VIII. How La Cote Male Taile was taken prisoner, and after",
+      "segment_type": "chapter",
+      "file": "seg_460_chapter-viii-how-la-cote-male-taile-was-.txt",
+      "word_count": 778,
+      "start_line": 12227,
+      "end_line": 12293
+    },
+    {
+      "id": "seg_461",
+      "label": "CHAPTER IX. How Sir Launcelot made La Cote Male Taile lord of the",
+      "segment_type": "chapter",
+      "file": "seg_461_chapter-ix-how-sir-launcelot-made-la-cot.txt",
+      "word_count": 290,
+      "start_line": 12294,
+      "end_line": 12319
+    },
+    {
+      "id": "seg_462",
+      "label": "CHAPTER X. How La Beale Isoud sent letters to Sir Tristram by her maid",
+      "segment_type": "chapter",
+      "file": "seg_462_chapter-x-how-la-beale-isoud-sent-letter.txt",
+      "word_count": 630,
+      "start_line": 12320,
+      "end_line": 12371
+    },
+    {
+      "id": "seg_463",
+      "label": "CHAPTER XI. How Sir Tristram met with Sir Lamorak de Galis, and how",
+      "segment_type": "chapter",
+      "file": "seg_463_chapter-xi-how-sir-tristram-met-with-sir.txt",
+      "word_count": 357,
+      "start_line": 12372,
+      "end_line": 12401
+    },
+    {
+      "id": "seg_464",
+      "label": "CHAPTER XII. How Sir Palomides followed the Questing Beast, and smote",
+      "segment_type": "chapter",
+      "file": "seg_464_chapter-xii-how-sir-palomides-followed-t.txt",
+      "word_count": 588,
+      "start_line": 12402,
+      "end_line": 12450
+    },
+    {
+      "id": "seg_465",
+      "label": "CHAPTER XIII. How Sir Lamorak met with Sir Meliagaunce, and fought",
+      "segment_type": "chapter",
+      "file": "seg_465_chapter-xiii-how-sir-lamorak-met-with-si.txt",
+      "word_count": 843,
+      "start_line": 12451,
+      "end_line": 12522
+    },
+    {
+      "id": "seg_466",
+      "label": "CHAPTER XIV. How Sir Kay met with Sir Tristram, and after of the shame",
+      "segment_type": "chapter",
+      "file": "seg_466_chapter-xiv-how-sir-kay-met-with-sir-tri.txt",
+      "word_count": 696,
+      "start_line": 12523,
+      "end_line": 12578
+    },
+    {
+      "id": "seg_467",
+      "label": "CHAPTER XV. How King Arthur was brought into the Forest Perilous, and",
+      "segment_type": "chapter",
+      "file": "seg_467_chapter-xv-how-king-arthur-was-brought-i.txt",
+      "word_count": 825,
+      "start_line": 12579,
+      "end_line": 12645
+    },
+    {
+      "id": "seg_468",
+      "label": "CHAPTER XVI. How Sir Tristram came to La Beale Isoud, and how Kehydius",
+      "segment_type": "chapter",
+      "file": "seg_468_chapter-xvi-how-sir-tristram-came-to-la-.txt",
+      "word_count": 677,
+      "start_line": 12646,
+      "end_line": 12701
+    },
+    {
+      "id": "seg_469",
+      "label": "CHAPTER XVII. How Sir Tristram departed from Tintagil, and how he",
+      "segment_type": "chapter",
+      "file": "seg_469_chapter-xvii-how-sir-tristram-departed-f.txt",
+      "word_count": 811,
+      "start_line": 12702,
+      "end_line": 12765
+    },
+    {
+      "id": "seg_470",
+      "label": "CHAPTER XVIII. How Sir Tristram soused Dagonet in a well, and how",
+      "segment_type": "chapter",
+      "file": "seg_470_chapter-xviii-how-sir-tristram-soused-da.txt",
+      "word_count": 791,
+      "start_line": 12766,
+      "end_line": 12832
+    },
+    {
+      "id": "seg_471",
+      "label": "CHAPTER XIX. How it was noised how Sir Tristram was dead, and how La",
+      "segment_type": "chapter",
+      "file": "seg_471_chapter-xix-how-it-was-noised-how-sir-tr.txt",
+      "word_count": 647,
+      "start_line": 12833,
+      "end_line": 12883
+    },
+    {
+      "id": "seg_472",
+      "label": "CHAPTER XX. How King Mark found Sir Tristram naked, and made him to be",
+      "segment_type": "chapter",
+      "file": "seg_472_chapter-xx-how-king-mark-found-sir-trist.txt",
+      "word_count": 711,
+      "start_line": 12884,
+      "end_line": 12940
+    },
+    {
+      "id": "seg_473",
+      "label": "CHAPTER XXI. How King Mark, by the advice of his council, banished Sir",
+      "segment_type": "chapter",
+      "file": "seg_473_chapter-xxi-how-king-mark-by-the-advice-.txt",
+      "word_count": 629,
+      "start_line": 12941,
+      "end_line": 12992
+    },
+    {
+      "id": "seg_474",
+      "label": "CHAPTER XXII. How a damosel sought help to help Sir Launcelot against",
+      "segment_type": "chapter",
+      "file": "seg_474_chapter-xxii-how-a-damosel-sought-help-t.txt",
+      "word_count": 833,
+      "start_line": 12993,
+      "end_line": 13061
+    },
+    {
+      "id": "seg_475",
+      "label": "CHAPTER XXIII. How Sir Tristram and Sir Dinadan came to a lodging where",
+      "segment_type": "chapter",
+      "file": "seg_475_chapter-xxiii-how-sir-tristram-and-sir-d.txt",
+      "word_count": 824,
+      "start_line": 13062,
+      "end_line": 13129
+    },
+    {
+      "id": "seg_476",
+      "label": "CHAPTER XXIV. How Sir Tristram jousted with Sir Kay and Sir Sagramore",
+      "segment_type": "chapter",
+      "file": "seg_476_chapter-xxiv-how-sir-tristram-jousted-wi.txt",
+      "word_count": 796,
+      "start_line": 13130,
+      "end_line": 13195
+    },
+    {
+      "id": "seg_477",
+      "label": "CHAPTER XXV. How Sir Tristram and Sir Gawaine rode to have foughten",
+      "segment_type": "chapter",
+      "file": "seg_477_chapter-xxv-how-sir-tristram-and-sir-gaw.txt",
+      "word_count": 619,
+      "start_line": 13196,
+      "end_line": 13246
+    },
+    {
+      "id": "seg_478",
+      "label": "CHAPTER XXVI. How damosel Bragwaine found Tristram sleeping by a well,",
+      "segment_type": "chapter",
+      "file": "seg_478_chapter-xxvi-how-damosel-bragwaine-found.txt",
+      "word_count": 625,
+      "start_line": 13247,
+      "end_line": 13298
+    },
+    {
+      "id": "seg_479",
+      "label": "CHAPTER XXVII. How Sir Tristram had a fall with Sir Palomides, and how",
+      "segment_type": "chapter",
+      "file": "seg_479_chapter-xxvii-how-sir-tristram-had-a-fal.txt",
+      "word_count": 785,
+      "start_line": 13299,
+      "end_line": 13364
+    },
+    {
+      "id": "seg_480",
+      "label": "CHAPTER XXVIII. How Sir Launcelot jousted with Palomides and overthrew",
+      "segment_type": "chapter",
+      "file": "seg_480_chapter-xxviii-how-sir-launcelot-jousted.txt",
+      "word_count": 460,
+      "start_line": 13365,
+      "end_line": 13404
+    },
+    {
+      "id": "seg_481",
+      "label": "CHAPTER XXIX. How Sir Tristram behaved him the first day of the",
+      "segment_type": "chapter",
+      "file": "seg_481_chapter-xxix-how-sir-tristram-behaved-hi.txt",
+      "word_count": 500,
+      "start_line": 13405,
+      "end_line": 13449
+    },
+    {
+      "id": "seg_482",
+      "label": "CHAPTER XXX. How Sir Tristram returned against King Arthur’s party",
+      "segment_type": "chapter",
+      "file": "seg_482_chapter-xxx-how-sir-tristram-returned-ag.txt",
+      "word_count": 894,
+      "start_line": 13450,
+      "end_line": 13526
+    },
+    {
+      "id": "seg_483",
+      "label": "CHAPTER XXXI. How Sir Tristram found Palomides by a well, and brought",
+      "segment_type": "chapter",
+      "file": "seg_483_chapter-xxxi-how-sir-tristram-found-palo.txt",
+      "word_count": 1002,
+      "start_line": 13527,
+      "end_line": 13609
+    },
+    {
+      "id": "seg_484",
+      "label": "CHAPTER XXXII. How Sir Tristram smote down Sir Palomides, and how he",
+      "segment_type": "chapter",
+      "file": "seg_484_chapter-xxxii-how-sir-tristram-smote-dow.txt",
+      "word_count": 569,
+      "start_line": 13610,
+      "end_line": 13659
+    },
+    {
+      "id": "seg_485",
+      "label": "CHAPTER XXXIII. How Sir Launcelot hurt Sir Tristram, and how after Sir",
+      "segment_type": "chapter",
+      "file": "seg_485_chapter-xxxiii-how-sir-launcelot-hurt-si.txt",
+      "word_count": 824,
+      "start_line": 13660,
+      "end_line": 13728
+    },
+    {
+      "id": "seg_486",
+      "label": "CHAPTER XXXIV. How the prize of the third day was given to Sir",
+      "segment_type": "chapter",
+      "file": "seg_486_chapter-xxxiv-how-the-prize-of-the-third.txt",
+      "word_count": 723,
+      "start_line": 13729,
+      "end_line": 13787
+    },
+    {
+      "id": "seg_487",
+      "label": "CHAPTER XXXV. How Palomides came to the castle where Sir Tristram was,",
+      "segment_type": "chapter",
+      "file": "seg_487_chapter-xxxv-how-palomides-came-to-the-c.txt",
+      "word_count": 870,
+      "start_line": 13788,
+      "end_line": 13859
+    },
+    {
+      "id": "seg_488",
+      "label": "CHAPTER XXXVI. How Sir Tristram, Sir Palomides, and Sir Dinadan were",
+      "segment_type": "chapter",
+      "file": "seg_488_chapter-xxxvi-how-sir-tristram-sir-palom.txt",
+      "word_count": 826,
+      "start_line": 13860,
+      "end_line": 13928
+    },
+    {
+      "id": "seg_489",
+      "label": "CHAPTER XXXVII. How King Mark was sorry for the good renown of Sir",
+      "segment_type": "chapter",
+      "file": "seg_489_chapter-xxxvii-how-king-mark-was-sorry-f.txt",
+      "word_count": 928,
+      "start_line": 13929,
+      "end_line": 14004
+    },
+    {
+      "id": "seg_490",
+      "label": "CHAPTER XXVIII. Of the treason of King Mark, and how Sir Gaheris smote",
+      "segment_type": "chapter",
+      "file": "seg_490_chapter-xxviii-of-the-treason-of-king-ma.txt",
+      "word_count": 935,
+      "start_line": 14005,
+      "end_line": 14080
+    },
+    {
+      "id": "seg_491",
+      "label": "CHAPTER XIX. How after that Sir Tristram, Sir Palomides, and Sir",
+      "segment_type": "chapter",
+      "file": "seg_491_chapter-xix-how-after-that-sir-tristram-.txt",
+      "word_count": 946,
+      "start_line": 14081,
+      "end_line": 14157
+    },
+    {
+      "id": "seg_492",
+      "label": "CHAPTER XL. How Sir Dinadan rescued a lady from Sir Breuse Saunce Pité,",
+      "segment_type": "chapter",
+      "file": "seg_492_chapter-xl-how-sir-dinadan-rescued-a-lad.txt",
+      "word_count": 794,
+      "start_line": 14158,
+      "end_line": 14221
+    },
+    {
+      "id": "seg_493",
+      "label": "CHAPTER XLI. How Sir Tristram took with him the shield, and also how he",
+      "segment_type": "chapter",
+      "file": "seg_493_chapter-xli-how-sir-tristram-took-with-h.txt",
+      "word_count": 346,
+      "start_line": 14222,
+      "end_line": 14250
+    },
+    {
+      "id": "seg_494",
+      "label": "CHAPTER XLII. How Morgan le Fay buried her paramour, and how Sir",
+      "segment_type": "chapter",
+      "file": "seg_494_chapter-xlii-how-morgan-le-fay-buried-he.txt",
+      "word_count": 441,
+      "start_line": 14251,
+      "end_line": 14287
+    },
+    {
+      "id": "seg_495",
+      "label": "CHAPTER XLIII. How Sir Tristram at a tournament bare the shield that",
+      "segment_type": "chapter",
+      "file": "seg_495_chapter-xliii-how-sir-tristram-at-a-tour.txt",
+      "word_count": 2395,
+      "start_line": 14288,
+      "end_line": 15037
+    }
+  ]
+}

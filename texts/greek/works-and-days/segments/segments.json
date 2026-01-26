@@ -1,0 +1,18 @@
+{
+  "text_id": "works-and-days",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\works-and-days\\normalized\\works-and-days_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 1,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 9530,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

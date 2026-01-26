@@ -1,0 +1,54 @@
+{
+  "text_id": "joseph-jacobs-fairy-tales",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\joseph-jacobs-fairy-tales\\normalized\\joseph-jacobs-fairy-tales_best.txt",
+  "strategy": "structural",
+  "segment_count": 5,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 550,
+      "start_line": 0,
+      "end_line": 65
+    },
+    {
+      "id": "seg_002",
+      "label": "The story of Tom Tit Tot, which opens our collection, is unequalled",
+      "segment_type": "tale",
+      "file": "seg_002_the-story-of-tom-tit-tot-which-opens-our.txt",
+      "word_count": 15317,
+      "start_line": 66,
+      "end_line": 1835
+    },
+    {
+      "id": "seg_003",
+      "label": "THE STORY OF THE THREE LITTLE PIGS",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-the-three-little-pigs.txt",
+      "word_count": 6069,
+      "start_line": 1836,
+      "end_line": 2429
+    },
+    {
+      "id": "seg_004",
+      "label": "THE STORY OF THE THREE BEARS",
+      "segment_type": "tale",
+      "file": "seg_004_the-story-of-the-three-bears.txt",
+      "word_count": 30851,
+      "start_line": 2430,
+      "end_line": 5667
+    },
+    {
+      "id": "seg_005",
+      "label": "THE ENGLISH FAIRY TALES",
+      "segment_type": "tale",
+      "file": "seg_005_the-english-fairy-tales.txt",
+      "word_count": 8119,
+      "start_line": 5668,
+      "end_line": 6685
+    }
+  ]
+}

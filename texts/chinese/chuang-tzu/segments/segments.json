@@ -1,0 +1,1233 @@
+{
+  "text_id": "chuang-tzu",
+  "tradition": "chinese",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\chuang-tzu\\normalized\\chuang-tzu_best.txt",
+  "strategy": "structural",
+  "segment_count": 136,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "Part I of II",
+      "segment_type": "part",
+      "file": "seg_001_part-i-of-ii.txt",
+      "word_count": 57,
+      "start_line": 4,
+      "end_line": 16
+    },
+    {
+      "id": "seg_002",
+      "label": "Chapter I: Was Taoism Older Than Lao-Dze?",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i-was-taoism-older-than-lao-dze.txt",
+      "word_count": 31,
+      "start_line": 17,
+      "end_line": 18
+    },
+    {
+      "id": "seg_003",
+      "label": "Chapter III: What is the Meaning of the Name Tâo? And the Chief Points of Belief in Tâoism",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-iii-what-is-the-meaning-of-the-n.txt",
+      "word_count": 18,
+      "start_line": 19,
+      "end_line": 19
+    },
+    {
+      "id": "seg_004",
+      "label": "Chapter IV: Accounts of Lâo-Dze and Kwang-dze Given by Sze-mâ Khien",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iv-accounts-of-lâo-dze-and-kwang.txt",
+      "word_count": 11,
+      "start_line": 20,
+      "end_line": 20
+    },
+    {
+      "id": "seg_005",
+      "label": "Chapter V: On the Tractate of Actions and their Retributions",
+      "segment_type": "chapter",
+      "file": "seg_005_chapter-v-on-the-tractate-of-actions-and.txt",
+      "word_count": 16,
+      "start_line": 21,
+      "end_line": 22
+    },
+    {
+      "id": "seg_006",
+      "label": "Chapter 1",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-1.txt",
+      "word_count": 2,
+      "start_line": 23,
+      "end_line": 23
+    },
+    {
+      "id": "seg_007",
+      "label": "Chapter 2",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-2.txt",
+      "word_count": 2,
+      "start_line": 24,
+      "end_line": 24
+    },
+    {
+      "id": "seg_008",
+      "label": "Chapter 3",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-3.txt",
+      "word_count": 2,
+      "start_line": 25,
+      "end_line": 25
+    },
+    {
+      "id": "seg_009",
+      "label": "Chapter 4",
+      "segment_type": "chapter",
+      "file": "seg_009_chapter-4.txt",
+      "word_count": 2,
+      "start_line": 26,
+      "end_line": 26
+    },
+    {
+      "id": "seg_010",
+      "label": "Chapter 5",
+      "segment_type": "chapter",
+      "file": "seg_010_chapter-5.txt",
+      "word_count": 2,
+      "start_line": 27,
+      "end_line": 27
+    },
+    {
+      "id": "seg_011",
+      "label": "Chapter 6",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-6.txt",
+      "word_count": 2,
+      "start_line": 28,
+      "end_line": 28
+    },
+    {
+      "id": "seg_012",
+      "label": "Chapter 7",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-7.txt",
+      "word_count": 2,
+      "start_line": 29,
+      "end_line": 29
+    },
+    {
+      "id": "seg_013",
+      "label": "Chapter 8",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-8.txt",
+      "word_count": 2,
+      "start_line": 30,
+      "end_line": 30
+    },
+    {
+      "id": "seg_014",
+      "label": "Chapter 9",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-9.txt",
+      "word_count": 2,
+      "start_line": 31,
+      "end_line": 31
+    },
+    {
+      "id": "seg_015",
+      "label": "Chapter 10",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-10.txt",
+      "word_count": 2,
+      "start_line": 32,
+      "end_line": 32
+    },
+    {
+      "id": "seg_016",
+      "label": "Chapter 11",
+      "segment_type": "chapter",
+      "file": "seg_016_chapter-11.txt",
+      "word_count": 2,
+      "start_line": 33,
+      "end_line": 33
+    },
+    {
+      "id": "seg_017",
+      "label": "Chapter 12",
+      "segment_type": "chapter",
+      "file": "seg_017_chapter-12.txt",
+      "word_count": 2,
+      "start_line": 34,
+      "end_line": 34
+    },
+    {
+      "id": "seg_018",
+      "label": "Chapter 13",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-13.txt",
+      "word_count": 2,
+      "start_line": 35,
+      "end_line": 35
+    },
+    {
+      "id": "seg_019",
+      "label": "Chapter 14",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-14.txt",
+      "word_count": 2,
+      "start_line": 36,
+      "end_line": 36
+    },
+    {
+      "id": "seg_020",
+      "label": "Chapter 15",
+      "segment_type": "chapter",
+      "file": "seg_020_chapter-15.txt",
+      "word_count": 2,
+      "start_line": 37,
+      "end_line": 37
+    },
+    {
+      "id": "seg_021",
+      "label": "Chapter 16",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-16.txt",
+      "word_count": 2,
+      "start_line": 38,
+      "end_line": 38
+    },
+    {
+      "id": "seg_022",
+      "label": "Chapter 17",
+      "segment_type": "chapter",
+      "file": "seg_022_chapter-17.txt",
+      "word_count": 2,
+      "start_line": 39,
+      "end_line": 39
+    },
+    {
+      "id": "seg_023",
+      "label": "Chapter 18",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-18.txt",
+      "word_count": 2,
+      "start_line": 40,
+      "end_line": 40
+    },
+    {
+      "id": "seg_024",
+      "label": "Chapter 19",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-19.txt",
+      "word_count": 2,
+      "start_line": 41,
+      "end_line": 41
+    },
+    {
+      "id": "seg_025",
+      "label": "Chapter 20",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-20.txt",
+      "word_count": 2,
+      "start_line": 42,
+      "end_line": 42
+    },
+    {
+      "id": "seg_026",
+      "label": "Chapter 21",
+      "segment_type": "chapter",
+      "file": "seg_026_chapter-21.txt",
+      "word_count": 2,
+      "start_line": 43,
+      "end_line": 43
+    },
+    {
+      "id": "seg_027",
+      "label": "Chapter 22",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-22.txt",
+      "word_count": 2,
+      "start_line": 44,
+      "end_line": 44
+    },
+    {
+      "id": "seg_028",
+      "label": "Chapter 23",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-23.txt",
+      "word_count": 2,
+      "start_line": 45,
+      "end_line": 45
+    },
+    {
+      "id": "seg_029",
+      "label": "Chapter 24",
+      "segment_type": "chapter",
+      "file": "seg_029_chapter-24.txt",
+      "word_count": 2,
+      "start_line": 46,
+      "end_line": 46
+    },
+    {
+      "id": "seg_030",
+      "label": "Chapter 25",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-25.txt",
+      "word_count": 2,
+      "start_line": 47,
+      "end_line": 47
+    },
+    {
+      "id": "seg_031",
+      "label": "Chapter 26",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-26.txt",
+      "word_count": 2,
+      "start_line": 48,
+      "end_line": 48
+    },
+    {
+      "id": "seg_032",
+      "label": "Chapter 27",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-27.txt",
+      "word_count": 2,
+      "start_line": 49,
+      "end_line": 49
+    },
+    {
+      "id": "seg_033",
+      "label": "Chapter 28",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-28.txt",
+      "word_count": 2,
+      "start_line": 50,
+      "end_line": 50
+    },
+    {
+      "id": "seg_034",
+      "label": "Chapter 29",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-29.txt",
+      "word_count": 2,
+      "start_line": 51,
+      "end_line": 51
+    },
+    {
+      "id": "seg_035",
+      "label": "Chapter 30",
+      "segment_type": "chapter",
+      "file": "seg_035_chapter-30.txt",
+      "word_count": 2,
+      "start_line": 52,
+      "end_line": 52
+    },
+    {
+      "id": "seg_036",
+      "label": "Chapter 31",
+      "segment_type": "chapter",
+      "file": "seg_036_chapter-31.txt",
+      "word_count": 2,
+      "start_line": 53,
+      "end_line": 53
+    },
+    {
+      "id": "seg_037",
+      "label": "Chapter 32",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-32.txt",
+      "word_count": 2,
+      "start_line": 54,
+      "end_line": 54
+    },
+    {
+      "id": "seg_038",
+      "label": "Chapter 33",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-33.txt",
+      "word_count": 2,
+      "start_line": 55,
+      "end_line": 55
+    },
+    {
+      "id": "seg_039",
+      "label": "Chapter 34",
+      "segment_type": "chapter",
+      "file": "seg_039_chapter-34.txt",
+      "word_count": 2,
+      "start_line": 56,
+      "end_line": 56
+    },
+    {
+      "id": "seg_040",
+      "label": "Chapter 35",
+      "segment_type": "chapter",
+      "file": "seg_040_chapter-35.txt",
+      "word_count": 2,
+      "start_line": 57,
+      "end_line": 57
+    },
+    {
+      "id": "seg_041",
+      "label": "Chapter 36",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-36.txt",
+      "word_count": 2,
+      "start_line": 58,
+      "end_line": 58
+    },
+    {
+      "id": "seg_042",
+      "label": "Chapter 37",
+      "segment_type": "chapter",
+      "file": "seg_042_chapter-37.txt",
+      "word_count": 7,
+      "start_line": 59,
+      "end_line": 60
+    },
+    {
+      "id": "seg_043",
+      "label": "Chapter 38",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-38.txt",
+      "word_count": 2,
+      "start_line": 61,
+      "end_line": 61
+    },
+    {
+      "id": "seg_044",
+      "label": "Chapter 39",
+      "segment_type": "chapter",
+      "file": "seg_044_chapter-39.txt",
+      "word_count": 2,
+      "start_line": 62,
+      "end_line": 62
+    },
+    {
+      "id": "seg_045",
+      "label": "Chapter 40",
+      "segment_type": "chapter",
+      "file": "seg_045_chapter-40.txt",
+      "word_count": 2,
+      "start_line": 63,
+      "end_line": 63
+    },
+    {
+      "id": "seg_046",
+      "label": "Chapter 41",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-41.txt",
+      "word_count": 2,
+      "start_line": 64,
+      "end_line": 64
+    },
+    {
+      "id": "seg_047",
+      "label": "Chapter 42",
+      "segment_type": "chapter",
+      "file": "seg_047_chapter-42.txt",
+      "word_count": 2,
+      "start_line": 65,
+      "end_line": 65
+    },
+    {
+      "id": "seg_048",
+      "label": "Chapter 43",
+      "segment_type": "chapter",
+      "file": "seg_048_chapter-43.txt",
+      "word_count": 2,
+      "start_line": 66,
+      "end_line": 66
+    },
+    {
+      "id": "seg_049",
+      "label": "Chapter 44",
+      "segment_type": "chapter",
+      "file": "seg_049_chapter-44.txt",
+      "word_count": 2,
+      "start_line": 67,
+      "end_line": 67
+    },
+    {
+      "id": "seg_050",
+      "label": "Chapter 45",
+      "segment_type": "chapter",
+      "file": "seg_050_chapter-45.txt",
+      "word_count": 2,
+      "start_line": 68,
+      "end_line": 68
+    },
+    {
+      "id": "seg_051",
+      "label": "Chapter 46",
+      "segment_type": "chapter",
+      "file": "seg_051_chapter-46.txt",
+      "word_count": 2,
+      "start_line": 69,
+      "end_line": 69
+    },
+    {
+      "id": "seg_052",
+      "label": "Chapter 47",
+      "segment_type": "chapter",
+      "file": "seg_052_chapter-47.txt",
+      "word_count": 2,
+      "start_line": 70,
+      "end_line": 70
+    },
+    {
+      "id": "seg_053",
+      "label": "Chapter 48",
+      "segment_type": "chapter",
+      "file": "seg_053_chapter-48.txt",
+      "word_count": 2,
+      "start_line": 71,
+      "end_line": 71
+    },
+    {
+      "id": "seg_054",
+      "label": "Chapter 49",
+      "segment_type": "chapter",
+      "file": "seg_054_chapter-49.txt",
+      "word_count": 2,
+      "start_line": 72,
+      "end_line": 72
+    },
+    {
+      "id": "seg_055",
+      "label": "Chapter 50",
+      "segment_type": "chapter",
+      "file": "seg_055_chapter-50.txt",
+      "word_count": 2,
+      "start_line": 73,
+      "end_line": 73
+    },
+    {
+      "id": "seg_056",
+      "label": "Chapter 51",
+      "segment_type": "chapter",
+      "file": "seg_056_chapter-51.txt",
+      "word_count": 2,
+      "start_line": 74,
+      "end_line": 74
+    },
+    {
+      "id": "seg_057",
+      "label": "Chapter 52",
+      "segment_type": "chapter",
+      "file": "seg_057_chapter-52.txt",
+      "word_count": 2,
+      "start_line": 75,
+      "end_line": 75
+    },
+    {
+      "id": "seg_058",
+      "label": "Chapter 53",
+      "segment_type": "chapter",
+      "file": "seg_058_chapter-53.txt",
+      "word_count": 2,
+      "start_line": 76,
+      "end_line": 76
+    },
+    {
+      "id": "seg_059",
+      "label": "Chapter 54",
+      "segment_type": "chapter",
+      "file": "seg_059_chapter-54.txt",
+      "word_count": 2,
+      "start_line": 77,
+      "end_line": 77
+    },
+    {
+      "id": "seg_060",
+      "label": "Chapter 55",
+      "segment_type": "chapter",
+      "file": "seg_060_chapter-55.txt",
+      "word_count": 2,
+      "start_line": 78,
+      "end_line": 78
+    },
+    {
+      "id": "seg_061",
+      "label": "Chapter 56",
+      "segment_type": "chapter",
+      "file": "seg_061_chapter-56.txt",
+      "word_count": 2,
+      "start_line": 79,
+      "end_line": 79
+    },
+    {
+      "id": "seg_062",
+      "label": "Chapter 57",
+      "segment_type": "chapter",
+      "file": "seg_062_chapter-57.txt",
+      "word_count": 2,
+      "start_line": 80,
+      "end_line": 80
+    },
+    {
+      "id": "seg_063",
+      "label": "Chapter 58",
+      "segment_type": "chapter",
+      "file": "seg_063_chapter-58.txt",
+      "word_count": 2,
+      "start_line": 81,
+      "end_line": 81
+    },
+    {
+      "id": "seg_064",
+      "label": "Chapter 59",
+      "segment_type": "chapter",
+      "file": "seg_064_chapter-59.txt",
+      "word_count": 2,
+      "start_line": 82,
+      "end_line": 82
+    },
+    {
+      "id": "seg_065",
+      "label": "Chapter 60",
+      "segment_type": "chapter",
+      "file": "seg_065_chapter-60.txt",
+      "word_count": 2,
+      "start_line": 83,
+      "end_line": 83
+    },
+    {
+      "id": "seg_066",
+      "label": "Chapter 61",
+      "segment_type": "chapter",
+      "file": "seg_066_chapter-61.txt",
+      "word_count": 2,
+      "start_line": 84,
+      "end_line": 84
+    },
+    {
+      "id": "seg_067",
+      "label": "Chapter 62",
+      "segment_type": "chapter",
+      "file": "seg_067_chapter-62.txt",
+      "word_count": 2,
+      "start_line": 85,
+      "end_line": 85
+    },
+    {
+      "id": "seg_068",
+      "label": "Chapter 63",
+      "segment_type": "chapter",
+      "file": "seg_068_chapter-63.txt",
+      "word_count": 2,
+      "start_line": 86,
+      "end_line": 86
+    },
+    {
+      "id": "seg_069",
+      "label": "Chapter 64",
+      "segment_type": "chapter",
+      "file": "seg_069_chapter-64.txt",
+      "word_count": 2,
+      "start_line": 87,
+      "end_line": 87
+    },
+    {
+      "id": "seg_070",
+      "label": "Chapter 65",
+      "segment_type": "chapter",
+      "file": "seg_070_chapter-65.txt",
+      "word_count": 2,
+      "start_line": 88,
+      "end_line": 88
+    },
+    {
+      "id": "seg_071",
+      "label": "Chapter 66",
+      "segment_type": "chapter",
+      "file": "seg_071_chapter-66.txt",
+      "word_count": 2,
+      "start_line": 89,
+      "end_line": 89
+    },
+    {
+      "id": "seg_072",
+      "label": "Chapter 67",
+      "segment_type": "chapter",
+      "file": "seg_072_chapter-67.txt",
+      "word_count": 2,
+      "start_line": 90,
+      "end_line": 90
+    },
+    {
+      "id": "seg_073",
+      "label": "Chapter 68",
+      "segment_type": "chapter",
+      "file": "seg_073_chapter-68.txt",
+      "word_count": 2,
+      "start_line": 91,
+      "end_line": 91
+    },
+    {
+      "id": "seg_074",
+      "label": "Chapter 69",
+      "segment_type": "chapter",
+      "file": "seg_074_chapter-69.txt",
+      "word_count": 2,
+      "start_line": 92,
+      "end_line": 92
+    },
+    {
+      "id": "seg_075",
+      "label": "Chapter 70",
+      "segment_type": "chapter",
+      "file": "seg_075_chapter-70.txt",
+      "word_count": 2,
+      "start_line": 93,
+      "end_line": 93
+    },
+    {
+      "id": "seg_076",
+      "label": "Chapter 71",
+      "segment_type": "chapter",
+      "file": "seg_076_chapter-71.txt",
+      "word_count": 2,
+      "start_line": 94,
+      "end_line": 94
+    },
+    {
+      "id": "seg_077",
+      "label": "Chapter 72",
+      "segment_type": "chapter",
+      "file": "seg_077_chapter-72.txt",
+      "word_count": 2,
+      "start_line": 95,
+      "end_line": 95
+    },
+    {
+      "id": "seg_078",
+      "label": "Chapter 73",
+      "segment_type": "chapter",
+      "file": "seg_078_chapter-73.txt",
+      "word_count": 2,
+      "start_line": 96,
+      "end_line": 96
+    },
+    {
+      "id": "seg_079",
+      "label": "Chapter 74",
+      "segment_type": "chapter",
+      "file": "seg_079_chapter-74.txt",
+      "word_count": 2,
+      "start_line": 97,
+      "end_line": 97
+    },
+    {
+      "id": "seg_080",
+      "label": "Chapter 75",
+      "segment_type": "chapter",
+      "file": "seg_080_chapter-75.txt",
+      "word_count": 2,
+      "start_line": 98,
+      "end_line": 98
+    },
+    {
+      "id": "seg_081",
+      "label": "Chapter 76",
+      "segment_type": "chapter",
+      "file": "seg_081_chapter-76.txt",
+      "word_count": 2,
+      "start_line": 99,
+      "end_line": 99
+    },
+    {
+      "id": "seg_082",
+      "label": "Chapter 77",
+      "segment_type": "chapter",
+      "file": "seg_082_chapter-77.txt",
+      "word_count": 2,
+      "start_line": 100,
+      "end_line": 100
+    },
+    {
+      "id": "seg_083",
+      "label": "Chapter 78",
+      "segment_type": "chapter",
+      "file": "seg_083_chapter-78.txt",
+      "word_count": 2,
+      "start_line": 101,
+      "end_line": 101
+    },
+    {
+      "id": "seg_084",
+      "label": "Chapter 79",
+      "segment_type": "chapter",
+      "file": "seg_084_chapter-79.txt",
+      "word_count": 2,
+      "start_line": 102,
+      "end_line": 102
+    },
+    {
+      "id": "seg_085",
+      "label": "Chapter 80",
+      "segment_type": "chapter",
+      "file": "seg_085_chapter-80.txt",
+      "word_count": 2,
+      "start_line": 103,
+      "end_line": 103
+    },
+    {
+      "id": "seg_086",
+      "label": "Chapter 81",
+      "segment_type": "chapter",
+      "file": "seg_086_chapter-81.txt",
+      "word_count": 7,
+      "start_line": 104,
+      "end_line": 105
+    },
+    {
+      "id": "seg_087",
+      "label": "I: Hsiâo-yâo Yû",
+      "segment_type": "book",
+      "file": "seg_087_i-hsiâo-yâo-yû.txt",
+      "word_count": 4,
+      "start_line": 106,
+      "end_line": 106
+    },
+    {
+      "id": "seg_088",
+      "label": "II. Khî Wû Lun",
+      "segment_type": "book",
+      "file": "seg_088_ii-khî-wû-lun.txt",
+      "word_count": 5,
+      "start_line": 107,
+      "end_line": 107
+    },
+    {
+      "id": "seg_089",
+      "label": "III. Yang Shang Kû",
+      "segment_type": "book",
+      "file": "seg_089_iii-yang-shang-kû.txt",
+      "word_count": 5,
+      "start_line": 108,
+      "end_line": 108
+    },
+    {
+      "id": "seg_090",
+      "label": "IV. Zän Kien Shih",
+      "segment_type": "book",
+      "file": "seg_090_iv-zän-kien-shih.txt",
+      "word_count": 5,
+      "start_line": 109,
+      "end_line": 109
+    },
+    {
+      "id": "seg_091",
+      "label": "V. Teh Khung Fû",
+      "segment_type": "book",
+      "file": "seg_091_v-teh-khung-fû.txt",
+      "word_count": 5,
+      "start_line": 110,
+      "end_line": 110
+    },
+    {
+      "id": "seg_092",
+      "label": "VI. Tâ Zung Shih",
+      "segment_type": "book",
+      "file": "seg_092_vi-tâ-zung-shih.txt",
+      "word_count": 5,
+      "start_line": 111,
+      "end_line": 111
+    },
+    {
+      "id": "seg_093",
+      "label": "VII. Ying Tî Wang",
+      "segment_type": "book",
+      "file": "seg_093_vii-ying-tî-wang.txt",
+      "word_count": 5,
+      "start_line": 112,
+      "end_line": 112
+    },
+    {
+      "id": "seg_094",
+      "label": "VIII. Phien Mâu",
+      "segment_type": "book",
+      "file": "seg_094_viii-phien-mâu.txt",
+      "word_count": 4,
+      "start_line": 113,
+      "end_line": 113
+    },
+    {
+      "id": "seg_095",
+      "label": "IX: Mâ Thî",
+      "segment_type": "book",
+      "file": "seg_095_ix-mâ-thî.txt",
+      "word_count": 4,
+      "start_line": 114,
+      "end_line": 114
+    },
+    {
+      "id": "seg_096",
+      "label": "X. Khü Khieh",
+      "segment_type": "book",
+      "file": "seg_096_x-khü-khieh.txt",
+      "word_count": 4,
+      "start_line": 115,
+      "end_line": 115
+    },
+    {
+      "id": "seg_097",
+      "label": "XI. Zâi Yû",
+      "segment_type": "book",
+      "file": "seg_097_xi-zâi-yû.txt",
+      "word_count": 4,
+      "start_line": 116,
+      "end_line": 116
+    },
+    {
+      "id": "seg_098",
+      "label": "XII. Thien Tî",
+      "segment_type": "book",
+      "file": "seg_098_xii-thien-tî.txt",
+      "word_count": 4,
+      "start_line": 117,
+      "end_line": 117
+    },
+    {
+      "id": "seg_099",
+      "label": "XIII. Thien Tâo",
+      "segment_type": "book",
+      "file": "seg_099_xiii-thien-tâo.txt",
+      "word_count": 4,
+      "start_line": 118,
+      "end_line": 118
+    },
+    {
+      "id": "seg_100",
+      "label": "XIV. Thien Yün",
+      "segment_type": "book",
+      "file": "seg_100_xiv-thien-yün.txt",
+      "word_count": 4,
+      "start_line": 119,
+      "end_line": 119
+    },
+    {
+      "id": "seg_101",
+      "label": "XV. Kho Î",
+      "segment_type": "book",
+      "file": "seg_101_xv-kho-î.txt",
+      "word_count": 4,
+      "start_line": 120,
+      "end_line": 120
+    },
+    {
+      "id": "seg_102",
+      "label": "XVI. Shan Hsing",
+      "segment_type": "book",
+      "file": "seg_102_xvi-shan-hsing.txt",
+      "word_count": 4,
+      "start_line": 121,
+      "end_line": 121
+    },
+    {
+      "id": "seg_103",
+      "label": "XVII. Khiû Shui",
+      "segment_type": "book",
+      "file": "seg_103_xvii-khiû-shui.txt",
+      "word_count": 4,
+      "start_line": 122,
+      "end_line": 122
+    },
+    {
+      "id": "seg_104",
+      "label": "XVIII. Kih Lo",
+      "segment_type": "book",
+      "file": "seg_104_xviii-kih-lo.txt",
+      "word_count": 4,
+      "start_line": 123,
+      "end_line": 123
+    },
+    {
+      "id": "seg_105",
+      "label": "XIX. Tâ Shäng",
+      "segment_type": "book",
+      "file": "seg_105_xix-tâ-shäng.txt",
+      "word_count": 4,
+      "start_line": 124,
+      "end_line": 124
+    },
+    {
+      "id": "seg_106",
+      "label": "XX. Shan Mû",
+      "segment_type": "book",
+      "file": "seg_106_xx-shan-mû.txt",
+      "word_count": 4,
+      "start_line": 125,
+      "end_line": 125
+    },
+    {
+      "id": "seg_107",
+      "label": "XXI, Thien Dze-Fang",
+      "segment_type": "book",
+      "file": "seg_107_xxi-thien-dze-fang.txt",
+      "word_count": 4,
+      "start_line": 126,
+      "end_line": 126
+    },
+    {
+      "id": "seg_108",
+      "label": "XXII. Kih Pei Yû",
+      "segment_type": "book",
+      "file": "seg_108_xxii-kih-pei-yû.txt",
+      "word_count": 5,
+      "start_line": 127,
+      "end_line": 127
+    },
+    {
+      "id": "seg_109",
+      "label": "XXIII. Käng-Sang Khû",
+      "segment_type": "book",
+      "file": "seg_109_xxiii-käng-sang-khû.txt",
+      "word_count": 4,
+      "start_line": 128,
+      "end_line": 128
+    },
+    {
+      "id": "seg_110",
+      "label": "XXIV. Hsü Wû-Kwei",
+      "segment_type": "book",
+      "file": "seg_110_xxiv-hsü-wû-kwei.txt",
+      "word_count": 4,
+      "start_line": 129,
+      "end_line": 129
+    },
+    {
+      "id": "seg_111",
+      "label": "XXV. Zeh-yang",
+      "segment_type": "book",
+      "file": "seg_111_xxv-zeh-yang.txt",
+      "word_count": 3,
+      "start_line": 130,
+      "end_line": 130
+    },
+    {
+      "id": "seg_112",
+      "label": "XXVI. Wâi Wû",
+      "segment_type": "book",
+      "file": "seg_112_xxvi-wâi-wû.txt",
+      "word_count": 4,
+      "start_line": 131,
+      "end_line": 131
+    },
+    {
+      "id": "seg_113",
+      "label": "XXVII. Yü Yen",
+      "segment_type": "book",
+      "file": "seg_113_xxvii-yü-yen.txt",
+      "word_count": 4,
+      "start_line": 132,
+      "end_line": 132
+    },
+    {
+      "id": "seg_114",
+      "label": "XXVIII. Zang Wang",
+      "segment_type": "book",
+      "file": "seg_114_xxviii-zang-wang.txt",
+      "word_count": 4,
+      "start_line": 133,
+      "end_line": 133
+    },
+    {
+      "id": "seg_115",
+      "label": "XXIX. Tâo Kih",
+      "segment_type": "book",
+      "file": "seg_115_xxix-tâo-kih.txt",
+      "word_count": 4,
+      "start_line": 134,
+      "end_line": 134
+    },
+    {
+      "id": "seg_116",
+      "label": "XXX. Yüeh Kien",
+      "segment_type": "book",
+      "file": "seg_116_xxx-yüeh-kien.txt",
+      "word_count": 4,
+      "start_line": 135,
+      "end_line": 135
+    },
+    {
+      "id": "seg_117",
+      "label": "XXXI. Yü-Fû",
+      "segment_type": "book",
+      "file": "seg_117_xxxi-yü-fû.txt",
+      "word_count": 3,
+      "start_line": 136,
+      "end_line": 136
+    },
+    {
+      "id": "seg_118",
+      "label": "XXXII. Lieh Yü-Khâu",
+      "segment_type": "book",
+      "file": "seg_118_xxxii-lieh-yü-khâu.txt",
+      "word_count": 4,
+      "start_line": 137,
+      "end_line": 137
+    },
+    {
+      "id": "seg_119",
+      "label": "XXXIII. Thien Hsiâ",
+      "segment_type": "book",
+      "file": "seg_119_xxxiii-thien-hsiâ.txt",
+      "word_count": 8,
+      "start_line": 138,
+      "end_line": 139
+    },
+    {
+      "id": "seg_120",
+      "label": "I: Hsiâo-yâo Yû, or 'Enjoyment in Untroubled Ease'",
+      "segment_type": "book",
+      "file": "seg_120_i-hsiâo-yâo-yû-or-enjoyment-in-untrouble.txt",
+      "word_count": 9,
+      "start_line": 140,
+      "end_line": 140
+    },
+    {
+      "id": "seg_121",
+      "label": "II: Khî Wû Lun, or 'The Adjustment of Controversies'",
+      "segment_type": "book",
+      "file": "seg_121_ii-khî-wû-lun-or-the-adjustment-of-contr.txt",
+      "word_count": 10,
+      "start_line": 141,
+      "end_line": 141
+    },
+    {
+      "id": "seg_122",
+      "label": "III: Yang Shang Kû, or 'Nourishing the Lord of Life'",
+      "segment_type": "book",
+      "file": "seg_122_iii-yang-shang-kû-or-nourishing-the-lord.txt",
+      "word_count": 11,
+      "start_line": 142,
+      "end_line": 142
+    },
+    {
+      "id": "seg_123",
+      "label": "IV: Zän Kien Shih, or 'Man in the World, Associated with other Men'",
+      "segment_type": "book",
+      "file": "seg_123_iv-zän-kien-shih-or-man-in-the-world-ass.txt",
+      "word_count": 14,
+      "start_line": 143,
+      "end_line": 143
+    },
+    {
+      "id": "seg_124",
+      "label": "V: Teh Khung Fû, or 'The Seal of Virtue Complete'",
+      "segment_type": "book",
+      "file": "seg_124_v-teh-khung-fû-or-the-seal-of-virtue-com.txt",
+      "word_count": 11,
+      "start_line": 144,
+      "end_line": 144
+    },
+    {
+      "id": "seg_125",
+      "label": "VI: Tâ Zung Shih, or 'The Great and Most Honoured Master'",
+      "segment_type": "book",
+      "file": "seg_125_vi-tâ-zung-shih-or-the-great-and-most-ho.txt",
+      "word_count": 12,
+      "start_line": 145,
+      "end_line": 145
+    },
+    {
+      "id": "seg_126",
+      "label": "VII: Ying Tî Wang, or 'The Normal Course for Rulers and Kings'",
+      "segment_type": "book",
+      "file": "seg_126_vii-ying-tî-wang-or-the-normal-course-fo.txt",
+      "word_count": 13,
+      "start_line": 146,
+      "end_line": 146
+    },
+    {
+      "id": "seg_127",
+      "label": "VIII: Phien Mâu, or 'Webbed Toes.'",
+      "segment_type": "book",
+      "file": "seg_127_viii-phien-mâu-or-webbed-toes.txt",
+      "word_count": 7,
+      "start_line": 147,
+      "end_line": 147
+    },
+    {
+      "id": "seg_128",
+      "label": "IX: Mâ Thî, or 'Horses's Hoofs'",
+      "segment_type": "book",
+      "file": "seg_128_ix-mâ-thî-or-horsess-hoofs.txt",
+      "word_count": 7,
+      "start_line": 148,
+      "end_line": 148
+    },
+    {
+      "id": "seg_129",
+      "label": "X: Khü Khieh, or 'Cutting open Satchels.'",
+      "segment_type": "book",
+      "file": "seg_129_x-khü-khieh-or-cutting-open-satchels.txt",
+      "word_count": 8,
+      "start_line": 149,
+      "end_line": 149
+    },
+    {
+      "id": "seg_130",
+      "label": "XI: Zâi Yû, or 'Letting Be, and Exercising Forbearance.'",
+      "segment_type": "book",
+      "file": "seg_130_xi-zâi-yû-or-letting-be-and-exercising-f.txt",
+      "word_count": 10,
+      "start_line": 150,
+      "end_line": 150
+    },
+    {
+      "id": "seg_131",
+      "label": "XII: Thien Tî, or 'Heaven and Earth'",
+      "segment_type": "book",
+      "file": "seg_131_xii-thien-tî-or-heaven-and-earth.txt",
+      "word_count": 8,
+      "start_line": 151,
+      "end_line": 151
+    },
+    {
+      "id": "seg_132",
+      "label": "XIII: Thien Tâo, or 'The Way of Heaven.'",
+      "segment_type": "book",
+      "file": "seg_132_xiii-thien-tâo-or-the-way-of-heaven.txt",
+      "word_count": 9,
+      "start_line": 152,
+      "end_line": 152
+    },
+    {
+      "id": "seg_133",
+      "label": "XIV: Thien Yün, or 'The Revolution of Heaven.'",
+      "segment_type": "book",
+      "file": "seg_133_xiv-thien-yün-or-the-revolution-of-heave.txt",
+      "word_count": 9,
+      "start_line": 153,
+      "end_line": 153
+    },
+    {
+      "id": "seg_134",
+      "label": "XV: Kho Î, or 'Ingrained Ideas.'",
+      "segment_type": "book",
+      "file": "seg_134_xv-kho-î-or-ingrained-ideas.txt",
+      "word_count": 7,
+      "start_line": 154,
+      "end_line": 154
+    },
+    {
+      "id": "seg_135",
+      "label": "XVI: Shan Hsing, or 'Correcting the Nature.'",
+      "segment_type": "book",
+      "file": "seg_135_xvi-shan-hsing-or-correcting-the-nature.txt",
+      "word_count": 8,
+      "start_line": 155,
+      "end_line": 155
+    },
+    {
+      "id": "seg_136",
+      "label": "XVII: Khiû Shui, or 'The Floods of Autumn.'",
+      "segment_type": "book",
+      "file": "seg_136_xvii-khiû-shui-or-the-floods-of-autumn.txt",
+      "word_count": 9,
+      "start_line": 156,
+      "end_line": 156
+    }
+  ]
+}

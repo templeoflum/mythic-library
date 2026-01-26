@@ -1,0 +1,18 @@
+{
+  "title": "The Aeneid",
+  "author": "Virgil",
+  "translator": "John Dryden",
+  "language": "English",
+  "release_date": "March 1, 1995",
+  "ebook_id": "228",
+  "source_format": "gutenberg",
+  "original_file": "pg228_John-Dryden.txt",
+  "text_id": "aeneid",
+  "tradition": "roman",
+  "date_composed": "29-19 BCE",
+  "material_type": "Epic poetry",
+  "normalization_date": "2026-01-26T10:04:04.844109",
+  "char_count": 696946,
+  "line_count": 14471,
+  "word_count": 107551
+}

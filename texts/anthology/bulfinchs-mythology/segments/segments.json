@@ -1,0 +1,936 @@
+{
+  "text_id": "bulfinchs-mythology",
+  "tradition": "anthology",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\anthology\\bulfinchs-mythology\\normalized\\bulfinchs-mythology_best.txt",
+  "strategy": "structural",
+  "segment_count": 103,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 3098,
+      "start_line": 0,
+      "end_line": 449
+    },
+    {
+      "id": "seg_002",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_002_chapter-i.txt",
+      "word_count": 3494,
+      "start_line": 450,
+      "end_line": 893
+    },
+    {
+      "id": "seg_003",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_003_chapter-ii.txt",
+      "word_count": 2646,
+      "start_line": 894,
+      "end_line": 1178
+    },
+    {
+      "id": "seg_004",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_004_chapter-iii.txt",
+      "word_count": 1181,
+      "start_line": 1179,
+      "end_line": 1299
+    },
+    {
+      "id": "seg_005",
+      "label": "The story of Apollo and Daphne is often alluded to by the poets",
+      "segment_type": "tale",
+      "file": "seg_005_the-story-of-apollo-and-daphne-is-often-.txt",
+      "word_count": 2169,
+      "start_line": 1300,
+      "end_line": 1526
+    },
+    {
+      "id": "seg_006",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_006_chapter-iv.txt",
+      "word_count": 3645,
+      "start_line": 1527,
+      "end_line": 1912
+    },
+    {
+      "id": "seg_007",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_007_chapter-v.txt",
+      "word_count": 2884,
+      "start_line": 1913,
+      "end_line": 2200
+    },
+    {
+      "id": "seg_008",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_008_chapter-vi.txt",
+      "word_count": 752,
+      "start_line": 2201,
+      "end_line": 2275
+    },
+    {
+      "id": "seg_009",
+      "label": "The story of King Midas has been told by others with some",
+      "segment_type": "tale",
+      "file": "seg_009_the-story-of-king-midas-has-been-told-by.txt",
+      "word_count": 1188,
+      "start_line": 2276,
+      "end_line": 2388
+    },
+    {
+      "id": "seg_010",
+      "label": "The story of Baucis and Philemon has been imitated by Swift, in a",
+      "segment_type": "tale",
+      "file": "seg_010_the-story-of-baucis-and-philemon-has-bee.txt",
+      "word_count": 319,
+      "start_line": 2389,
+      "end_line": 2440
+    },
+    {
+      "id": "seg_011",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_011_chapter-vii.txt",
+      "word_count": 3652,
+      "start_line": 2441,
+      "end_line": 2816
+    },
+    {
+      "id": "seg_012",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_012_chapter-viii.txt",
+      "word_count": 2331,
+      "start_line": 2817,
+      "end_line": 3065
+    },
+    {
+      "id": "seg_013",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_013_chapter-ix.txt",
+      "word_count": 2657,
+      "start_line": 3066,
+      "end_line": 3330
+    },
+    {
+      "id": "seg_014",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_014_chapter-x.txt",
+      "word_count": 1574,
+      "start_line": 3331,
+      "end_line": 3484
+    },
+    {
+      "id": "seg_015",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_015_chapter-xi.txt",
+      "word_count": 3710,
+      "start_line": 3485,
+      "end_line": 3867
+    },
+    {
+      "id": "seg_016",
+      "label": "The allegory of the story of Cupid and Psyche is well presented in",
+      "segment_type": "tale",
+      "file": "seg_016_the-allegory-of-the-story-of-cupid-and-p.txt",
+      "word_count": 215,
+      "start_line": 3868,
+      "end_line": 3897
+    },
+    {
+      "id": "seg_017",
+      "label": "The story of Cupid and Psyche first appears in the works of",
+      "segment_type": "tale",
+      "file": "seg_017_the-story-of-cupid-and-psyche-first-appe.txt",
+      "word_count": 215,
+      "start_line": 3898,
+      "end_line": 3933
+    },
+    {
+      "id": "seg_018",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_018_chapter-xii.txt",
+      "word_count": 2611,
+      "start_line": 3934,
+      "end_line": 4187
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-xiii.txt",
+      "word_count": 2684,
+      "start_line": 4188,
+      "end_line": 4489
+    },
+    {
+      "id": "seg_020",
+      "label": "The story of Leander's swimming the Hellespont was looked upon as",
+      "segment_type": "tale",
+      "file": "seg_020_the-story-of-leanders-swimming-the-helle.txt",
+      "word_count": 260,
+      "start_line": 4490,
+      "end_line": 4529
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-xiv.txt",
+      "word_count": 2637,
+      "start_line": 4530,
+      "end_line": 4806
+    },
+    {
+      "id": "seg_022",
+      "label": "The story of Niobe has furnished Byron with a fine illustration of",
+      "segment_type": "tale",
+      "file": "seg_022_the-story-of-niobe-has-furnished-byron-w.txt",
+      "word_count": 306,
+      "start_line": 4807,
+      "end_line": 4851
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-xv.txt",
+      "word_count": 2237,
+      "start_line": 4852,
+      "end_line": 5105
+    },
+    {
+      "id": "seg_024",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_024_chapter-xvi.txt",
+      "word_count": 2375,
+      "start_line": 5106,
+      "end_line": 5386
+    },
+    {
+      "id": "seg_025",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-xvii.txt",
+      "word_count": 1730,
+      "start_line": 5387,
+      "end_line": 5575
+    },
+    {
+      "id": "seg_026",
+      "label": "part in them. Jason said to Medea, \"My spouse, would that your",
+      "segment_type": "part",
+      "file": "seg_026_part-in-them-jason-said-to-medea-my-spou.txt",
+      "word_count": 1323,
+      "start_line": 5576,
+      "end_line": 5718
+    },
+    {
+      "id": "seg_027",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-xviii.txt",
+      "word_count": 2088,
+      "start_line": 5719,
+      "end_line": 5928
+    },
+    {
+      "id": "seg_028",
+      "label": "CHAPTER XIX",
+      "segment_type": "chapter",
+      "file": "seg_028_chapter-xix.txt",
+      "word_count": 2426,
+      "start_line": 5929,
+      "end_line": 6205
+    },
+    {
+      "id": "seg_029",
+      "label": "CHAPTER XX",
+      "segment_type": "chapter",
+      "file": "seg_029_chapter-xx.txt",
+      "word_count": 3184,
+      "start_line": 6206,
+      "end_line": 6553
+    },
+    {
+      "id": "seg_030",
+      "label": "CHAPTER XXI",
+      "segment_type": "chapter",
+      "file": "seg_030_chapter-xxi.txt",
+      "word_count": 1871,
+      "start_line": 6554,
+      "end_line": 6743
+    },
+    {
+      "id": "seg_031",
+      "label": "CHAPTER XXIX",
+      "segment_type": "chapter",
+      "file": "seg_031_chapter-xxix.txt",
+      "word_count": 356,
+      "start_line": 6744,
+      "end_line": 6792
+    },
+    {
+      "id": "seg_032",
+      "label": "CHAPTER XXII",
+      "segment_type": "chapter",
+      "file": "seg_032_chapter-xxii.txt",
+      "word_count": 3265,
+      "start_line": 6793,
+      "end_line": 7201
+    },
+    {
+      "id": "seg_033",
+      "label": "CHAPTER XXIII",
+      "segment_type": "chapter",
+      "file": "seg_033_chapter-xxiii.txt",
+      "word_count": 2809,
+      "start_line": 7202,
+      "end_line": 7507
+    },
+    {
+      "id": "seg_034",
+      "label": "CHAPTER XXIV",
+      "segment_type": "chapter",
+      "file": "seg_034_chapter-xxiv.txt",
+      "word_count": 990,
+      "start_line": 7508,
+      "end_line": 7607
+    },
+    {
+      "id": "seg_035",
+      "label": "The story of Orpheus has furnished Pope with an illustration of",
+      "segment_type": "tale",
+      "file": "seg_035_the-story-of-orpheus-has-furnished-pope-.txt",
+      "word_count": 1800,
+      "start_line": 7608,
+      "end_line": 7819
+    },
+    {
+      "id": "seg_036",
+      "label": "III., 35",
+      "segment_type": "book",
+      "file": "seg_036_iii-35.txt",
+      "word_count": 340,
+      "start_line": 7820,
+      "end_line": 7864
+    },
+    {
+      "id": "seg_037",
+      "label": "CHAPTER XXV",
+      "segment_type": "chapter",
+      "file": "seg_037_chapter-xxv.txt",
+      "word_count": 3262,
+      "start_line": 7865,
+      "end_line": 8212
+    },
+    {
+      "id": "seg_038",
+      "label": "CHAPTER XXVI",
+      "segment_type": "chapter",
+      "file": "seg_038_chapter-xxvi.txt",
+      "word_count": 124,
+      "start_line": 8213,
+      "end_line": 8232
+    },
+    {
+      "id": "seg_039",
+      "label": "The story of Endymion has a peculiar charm from the human meaning",
+      "segment_type": "tale",
+      "file": "seg_039_the-story-of-endymion-has-a-peculiar-cha.txt",
+      "word_count": 1569,
+      "start_line": 8233,
+      "end_line": 8420
+    },
+    {
+      "id": "seg_040",
+      "label": "I., 1., 182",
+      "segment_type": "book",
+      "file": "seg_040_i-1-182.txt",
+      "word_count": 779,
+      "start_line": 8421,
+      "end_line": 8501
+    },
+    {
+      "id": "seg_041",
+      "label": "CHAPTER XXVII",
+      "segment_type": "chapter",
+      "file": "seg_041_chapter-xxvii.txt",
+      "word_count": 1736,
+      "start_line": 8502,
+      "end_line": 8692
+    },
+    {
+      "id": "seg_042",
+      "label": "part in the war. He withdrew his forces from the general camp and",
+      "segment_type": "part",
+      "file": "seg_042_part-in-the-war-he-withdrew-his-forces-f.txt",
+      "word_count": 4148,
+      "start_line": 8693,
+      "end_line": 9105
+    },
+    {
+      "id": "seg_043",
+      "label": "CHAPTER XXVIII",
+      "segment_type": "chapter",
+      "file": "seg_043_chapter-xxviii.txt",
+      "word_count": 15,
+      "start_line": 9106,
+      "end_line": 9112
+    },
+    {
+      "id": "seg_044",
+      "label": "The story of the Iliad ends with the death of Hector, and it is",
+      "segment_type": "tale",
+      "file": "seg_044_the-story-of-the-iliad-ends-with-the-dea.txt",
+      "word_count": 259,
+      "start_line": 9113,
+      "end_line": 9137
+    },
+    {
+      "id": "seg_045",
+      "label": "The story of the invulnerability of Achilles is not found in",
+      "segment_type": "tale",
+      "file": "seg_045_the-story-of-the-invulnerability-of-achi.txt",
+      "word_count": 2724,
+      "start_line": 9138,
+      "end_line": 9446
+    },
+    {
+      "id": "seg_046",
+      "label": "CHAPTER XXIX",
+      "segment_type": "chapter",
+      "file": "seg_046_chapter-xxix.txt",
+      "word_count": 3817,
+      "start_line": 9447,
+      "end_line": 9850
+    },
+    {
+      "id": "seg_047",
+      "label": "CHAPTER XXX",
+      "segment_type": "chapter",
+      "file": "seg_047_chapter-xxx.txt",
+      "word_count": 3816,
+      "start_line": 9851,
+      "end_line": 10257
+    },
+    {
+      "id": "seg_048",
+      "label": "CHAPTER XXXI",
+      "segment_type": "chapter",
+      "file": "seg_048_chapter-xxxi.txt",
+      "word_count": 2768,
+      "start_line": 10258,
+      "end_line": 10550
+    },
+    {
+      "id": "seg_049",
+      "label": "CHAPTER XXXII",
+      "segment_type": "chapter",
+      "file": "seg_049_chapter-xxxii.txt",
+      "word_count": 3636,
+      "start_line": 10551,
+      "end_line": 10925
+    },
+    {
+      "id": "seg_050",
+      "label": "CHAPTER XXXIII",
+      "segment_type": "chapter",
+      "file": "seg_050_chapter-xxxiii.txt",
+      "word_count": 4360,
+      "start_line": 10926,
+      "end_line": 11367
+    },
+    {
+      "id": "seg_051",
+      "label": "CHAPTER XXXIV",
+      "segment_type": "chapter",
+      "file": "seg_051_chapter-xxxiv.txt",
+      "word_count": 4166,
+      "start_line": 11368,
+      "end_line": 11867
+    },
+    {
+      "id": "seg_052",
+      "label": "CHAPTER XXXV",
+      "segment_type": "chapter",
+      "file": "seg_052_chapter-xxxv.txt",
+      "word_count": 428,
+      "start_line": 11868,
+      "end_line": 11917
+    },
+    {
+      "id": "seg_053",
+      "label": "The story of Io is interpreted in a similar manner. Io is the",
+      "segment_type": "tale",
+      "file": "seg_053_the-story-of-io-is-interpreted-in-a-simi.txt",
+      "word_count": 2800,
+      "start_line": 11918,
+      "end_line": 12270
+    },
+    {
+      "id": "seg_054",
+      "label": "CHAPTER XXXVI",
+      "segment_type": "chapter",
+      "file": "seg_054_chapter-xxxvi.txt",
+      "word_count": 2731,
+      "start_line": 12271,
+      "end_line": 12573
+    },
+    {
+      "id": "seg_055",
+      "label": "CHAPTER XXXVII",
+      "segment_type": "chapter",
+      "file": "seg_055_chapter-xxxvii.txt",
+      "word_count": 3348,
+      "start_line": 12574,
+      "end_line": 12967
+    },
+    {
+      "id": "seg_056",
+      "label": "CHAPTER XXXVIII",
+      "segment_type": "chapter",
+      "file": "seg_056_chapter-xxxviii.txt",
+      "word_count": 2978,
+      "start_line": 12968,
+      "end_line": 13272
+    },
+    {
+      "id": "seg_057",
+      "label": "CHAPTER XXXIX",
+      "segment_type": "chapter",
+      "file": "seg_057_chapter-xxxix.txt",
+      "word_count": 2599,
+      "start_line": 13273,
+      "end_line": 13526
+    },
+    {
+      "id": "seg_058",
+      "label": "CHAPTER XL",
+      "segment_type": "chapter",
+      "file": "seg_058_chapter-xl.txt",
+      "word_count": 4203,
+      "start_line": 13527,
+      "end_line": 13994
+    },
+    {
+      "id": "seg_059",
+      "label": "The drama continues with the story of Siegfried, which opens with",
+      "segment_type": "tale",
+      "file": "seg_059_the-drama-continues-with-the-story-of-si.txt",
+      "word_count": 675,
+      "start_line": 13995,
+      "end_line": 14057
+    },
+    {
+      "id": "seg_060",
+      "label": "CHAPTER XLI",
+      "segment_type": "chapter",
+      "file": "seg_060_chapter-xli.txt",
+      "word_count": 2770,
+      "start_line": 14058,
+      "end_line": 14381
+    },
+    {
+      "id": "seg_061",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_061_chapter-i.txt",
+      "word_count": 2347,
+      "start_line": 14382,
+      "end_line": 14641
+    },
+    {
+      "id": "seg_062",
+      "label": "the wondrous tales of their predecessors, which they retailed to",
+      "segment_type": "tale",
+      "file": "seg_062_the-wondrous-tales-of-their-predecessors.txt",
+      "word_count": 1538,
+      "start_line": 14642,
+      "end_line": 14814
+    },
+    {
+      "id": "seg_063",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_063_chapter-ii.txt",
+      "word_count": 1017,
+      "start_line": 14815,
+      "end_line": 14933
+    },
+    {
+      "id": "seg_064",
+      "label": "III, Canto IX., 38.]",
+      "segment_type": "book",
+      "file": "seg_064_iii-canto-ix-38.txt",
+      "word_count": 2485,
+      "start_line": 14934,
+      "end_line": 15224
+    },
+    {
+      "id": "seg_065",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_065_chapter-iii.txt",
+      "word_count": 1473,
+      "start_line": 15225,
+      "end_line": 15378
+    },
+    {
+      "id": "seg_066",
+      "label": "Canto iii.:",
+      "segment_type": "canto",
+      "file": "seg_066_canto-iii.txt",
+      "word_count": 380,
+      "start_line": 15379,
+      "end_line": 15437
+    },
+    {
+      "id": "seg_067",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_067_chapter-iv.txt",
+      "word_count": 3627,
+      "start_line": 15438,
+      "end_line": 15855
+    },
+    {
+      "id": "seg_068",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_068_chapter-v.txt",
+      "word_count": 3453,
+      "start_line": 15856,
+      "end_line": 16196
+    },
+    {
+      "id": "seg_069",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_069_chapter-vi.txt",
+      "word_count": 1307,
+      "start_line": 16197,
+      "end_line": 16347
+    },
+    {
+      "id": "seg_070",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_070_chapter-vii.txt",
+      "word_count": 1658,
+      "start_line": 16348,
+      "end_line": 16620
+    },
+    {
+      "id": "seg_071",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_071_chapter-viii.txt",
+      "word_count": 4470,
+      "start_line": 16621,
+      "end_line": 17028
+    },
+    {
+      "id": "seg_072",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_072_chapter-ix.txt",
+      "word_count": 2196,
+      "start_line": 17029,
+      "end_line": 17245
+    },
+    {
+      "id": "seg_073",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_073_chapter-x.txt",
+      "word_count": 1335,
+      "start_line": 17246,
+      "end_line": 17397
+    },
+    {
+      "id": "seg_074",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_074_chapter-xi.txt",
+      "word_count": 1363,
+      "start_line": 17398,
+      "end_line": 17540
+    },
+    {
+      "id": "seg_075",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_075_chapter-xii.txt",
+      "word_count": 2976,
+      "start_line": 17541,
+      "end_line": 17843
+    },
+    {
+      "id": "seg_076",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_076_chapter-xiii.txt",
+      "word_count": 2491,
+      "start_line": 17844,
+      "end_line": 18119
+    },
+    {
+      "id": "seg_077",
+      "label": "CHAPTER XIV",
+      "segment_type": "chapter",
+      "file": "seg_077_chapter-xiv.txt",
+      "word_count": 1201,
+      "start_line": 18120,
+      "end_line": 18241
+    },
+    {
+      "id": "seg_078",
+      "label": "CHAPTER XV",
+      "segment_type": "chapter",
+      "file": "seg_078_chapter-xv.txt",
+      "word_count": 1658,
+      "start_line": 18242,
+      "end_line": 18434
+    },
+    {
+      "id": "seg_079",
+      "label": "CHAPTER XVI",
+      "segment_type": "chapter",
+      "file": "seg_079_chapter-xvi.txt",
+      "word_count": 1235,
+      "start_line": 18435,
+      "end_line": 18544
+    },
+    {
+      "id": "seg_080",
+      "label": "CHAPTER XVII",
+      "segment_type": "chapter",
+      "file": "seg_080_chapter-xvii.txt",
+      "word_count": 1288,
+      "start_line": 18545,
+      "end_line": 18691
+    },
+    {
+      "id": "seg_081",
+      "label": "CHAPTER XVIII",
+      "segment_type": "chapter",
+      "file": "seg_081_chapter-xviii.txt",
+      "word_count": 2757,
+      "start_line": 18692,
+      "end_line": 18940
+    },
+    {
+      "id": "seg_082",
+      "label": "CHAPTER XIX",
+      "segment_type": "chapter",
+      "file": "seg_082_chapter-xix.txt",
+      "word_count": 2138,
+      "start_line": 18941,
+      "end_line": 19151
+    },
+    {
+      "id": "seg_083",
+      "label": "CHAPTER XX",
+      "segment_type": "chapter",
+      "file": "seg_083_chapter-xx.txt",
+      "word_count": 2178,
+      "start_line": 19152,
+      "end_line": 19356
+    },
+    {
+      "id": "seg_084",
+      "label": "CHAPTER XXI",
+      "segment_type": "chapter",
+      "file": "seg_084_chapter-xxi.txt",
+      "word_count": 3952,
+      "start_line": 19357,
+      "end_line": 19711
+    },
+    {
+      "id": "seg_085",
+      "label": "CHAPTER XXII",
+      "segment_type": "chapter",
+      "file": "seg_085_chapter-xxii.txt",
+      "word_count": 3054,
+      "start_line": 19712,
+      "end_line": 20002
+    },
+    {
+      "id": "seg_086",
+      "label": "CHAPTER XXIII",
+      "segment_type": "chapter",
+      "file": "seg_086_chapter-xxiii.txt",
+      "word_count": 5032,
+      "start_line": 20003,
+      "end_line": 20489
+    },
+    {
+      "id": "seg_087",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_087_chapter-i.txt",
+      "word_count": 1351,
+      "start_line": 20490,
+      "end_line": 20677
+    },
+    {
+      "id": "seg_088",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_088_chapter-ii.txt",
+      "word_count": 2140,
+      "start_line": 20678,
+      "end_line": 20867
+    },
+    {
+      "id": "seg_089",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_089_chapter-iii.txt",
+      "word_count": 3073,
+      "start_line": 20868,
+      "end_line": 21181
+    },
+    {
+      "id": "seg_090",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_090_chapter-iv.txt",
+      "word_count": 2747,
+      "start_line": 21182,
+      "end_line": 21448
+    },
+    {
+      "id": "seg_091",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_091_chapter-v.txt",
+      "word_count": 4114,
+      "start_line": 21449,
+      "end_line": 21836
+    },
+    {
+      "id": "seg_092",
+      "label": "CHAPTER VI",
+      "segment_type": "chapter",
+      "file": "seg_092_chapter-vi.txt",
+      "word_count": 2943,
+      "start_line": 21837,
+      "end_line": 22115
+    },
+    {
+      "id": "seg_093",
+      "label": "CHAPTER VII",
+      "segment_type": "chapter",
+      "file": "seg_093_chapter-vii.txt",
+      "word_count": 4418,
+      "start_line": 22116,
+      "end_line": 22514
+    },
+    {
+      "id": "seg_094",
+      "label": "the improbability of her story.]",
+      "segment_type": "tale",
+      "file": "seg_094_the-improbability-of-her-story.txt",
+      "word_count": 5,
+      "start_line": 22515,
+      "end_line": 22517
+    },
+    {
+      "id": "seg_095",
+      "label": "CHAPTER VIII",
+      "segment_type": "chapter",
+      "file": "seg_095_chapter-viii.txt",
+      "word_count": 2435,
+      "start_line": 22518,
+      "end_line": 22733
+    },
+    {
+      "id": "seg_096",
+      "label": "CHAPTER IX",
+      "segment_type": "chapter",
+      "file": "seg_096_chapter-ix.txt",
+      "word_count": 3365,
+      "start_line": 22734,
+      "end_line": 23044
+    },
+    {
+      "id": "seg_097",
+      "label": "CHAPTER X",
+      "segment_type": "chapter",
+      "file": "seg_097_chapter-x.txt",
+      "word_count": 4233,
+      "start_line": 23045,
+      "end_line": 23445
+    },
+    {
+      "id": "seg_098",
+      "label": "CHAPTER XI",
+      "segment_type": "chapter",
+      "file": "seg_098_chapter-xi.txt",
+      "word_count": 4683,
+      "start_line": 23446,
+      "end_line": 23896
+    },
+    {
+      "id": "seg_099",
+      "label": "CHAPTER XII",
+      "segment_type": "chapter",
+      "file": "seg_099_chapter-xii.txt",
+      "word_count": 2547,
+      "start_line": 23897,
+      "end_line": 24134
+    },
+    {
+      "id": "seg_100",
+      "label": "CHAPTER XIII",
+      "segment_type": "chapter",
+      "file": "seg_100_chapter-xiii.txt",
+      "word_count": 3396,
+      "start_line": 24135,
+      "end_line": 24493
+    },
+    {
+      "id": "seg_101",
+      "label": "the legend of the Irish champion Cuchulain, which well illustrates",
+      "segment_type": "tale",
+      "file": "seg_101_the-legend-of-the-irish-champion-cuchula.txt",
+      "word_count": 21,
+      "start_line": 24494,
+      "end_line": 24495
+    },
+    {
+      "id": "seg_102",
+      "label": "the story of Achilles as to win for this hero the title of \"the",
+      "segment_type": "tale",
+      "file": "seg_102_the-story-of-achilles-as-to-win-for-this.txt",
+      "word_count": 43588,
+      "start_line": 24496,
+      "end_line": 28997
+    },
+    {
+      "id": "seg_103",
+      "label": "story of this marriage, and soon related it, with all its details,",
+      "segment_type": "tale",
+      "file": "seg_103_story-of-this-marriage-and-soon-related-.txt",
+      "word_count": 55374,
+      "start_line": 28998,
+      "end_line": 36562
+    }
+  ]
+}

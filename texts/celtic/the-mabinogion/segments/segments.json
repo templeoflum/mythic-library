@@ -1,0 +1,45 @@
+{
+  "text_id": "the-mabinogion",
+  "tradition": "celtic",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\the-mabinogion\\normalized\\the-mabinogion_best.txt",
+  "strategy": "structural",
+  "segment_count": 4,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 55,
+      "start_line": 0,
+      "end_line": 18
+    },
+    {
+      "id": "seg_002",
+      "label": "The story of Lludd and Llevelys",
+      "segment_type": "tale",
+      "file": "seg_002_the-story-of-lludd-and-llevelys.txt",
+      "word_count": 1617,
+      "start_line": 19,
+      "end_line": 182
+    },
+    {
+      "id": "seg_003",
+      "label": "story of the country or district.  Such are “Llyn y Morwynion,” the Lake",
+      "segment_type": "tale",
+      "file": "seg_003_story-of-the-country-or-district-such-ar.txt",
+      "word_count": 98728,
+      "start_line": 183,
+      "end_line": 8538
+    },
+    {
+      "id": "seg_004",
+      "label": "Story of Lludd and Llevelys.  And thus it ends",
+      "segment_type": "tale",
+      "file": "seg_004_story-of-lludd-and-llevelys-and-thus-it-.txt",
+      "word_count": 7199,
+      "start_line": 8539,
+      "end_line": 9502
+    }
+  ]
+}

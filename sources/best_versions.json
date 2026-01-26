@@ -1,0 +1,1281 @@
+{
+  "summary": {
+    "texts_processed": 132,
+    "texts_with_content": 96,
+    "texts_without_content": 36
+  },
+  "best_versions": {
+    "anansi-tales": {
+      "text_id": "anansi-tales",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\anansi-tales\\normalized\\anansi-tales_best.txt",
+      "source_file": "pg41771_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 120006,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=120006"
+    },
+    "epic-of-sundiata": {
+      "text_id": "epic-of-sundiata",
+      "tradition": "african",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "ikom-folk-stories-from-southern-nigeria": {
+      "text_id": "ikom-folk-stories-from-southern-nigeria",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\ikom-folk-stories-from-southern-nigeria\\normalized\\ikom-folk-stories-from-southern-nigeria_best.txt",
+      "source_file": "pg17891_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 17691,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=17691"
+    },
+    "kaffir-xhosa-folk-lore": {
+      "text_id": "kaffir-xhosa-folk-lore",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\kaffir-xhosa-folk-lore\\normalized\\kaffir-xhosa-folk-lore_best.txt",
+      "source_file": "pg22971_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 59465,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=59465"
+    },
+    "myths-and-legends-of-the-bantu": {
+      "text_id": "myths-and-legends-of-the-bantu",
+      "tradition": "african",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "myths-legends-bantu": {
+      "text_id": "myths-legends-bantu",
+      "tradition": "african",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "myths-of-ife": {
+      "text_id": "myths-of-ife",
+      "tradition": "african",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "south-african-folk-tales": {
+      "text_id": "south-african-folk-tales",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\south-african-folk-tales\\normalized\\south-african-folk-tales_best.txt",
+      "source_file": "pg18817_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 58964,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=58964"
+    },
+    "treasury-african-folklore": {
+      "text_id": "treasury-african-folklore",
+      "tradition": "african",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "west-african-folk-tales": {
+      "text_id": "west-african-folk-tales",
+      "tradition": "african",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "yoruba-legends": {
+      "text_id": "yoruba-legends",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\yoruba-legends\\normalized\\yoruba-legends_best.txt",
+      "source_file": "pg47294_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 52227,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=52227"
+    },
+    "yoruba-speaking-peoples": {
+      "text_id": "yoruba-speaking-peoples",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\yoruba-speaking-peoples\\normalized\\yoruba-speaking-peoples_best.txt",
+      "source_file": "b21781370_A.B.-Ellis.pdf",
+      "source_format": "pdf",
+      "word_count": 59641,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=59641"
+    },
+    "zanzibar-tales": {
+      "text_id": "zanzibar-tales",
+      "tradition": "african",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\zanzibar-tales\\normalized\\zanzibar-tales_best.txt",
+      "source_file": "pg26990_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 84158,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=84158"
+    },
+    "andrew-langs-fairy-books": {
+      "text_id": "andrew-langs-fairy-books",
+      "tradition": "anthology",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\anthology\\andrew-langs-fairy-books\\normalized\\andrew-langs-fairy-books_best.txt",
+      "source_file": "pg7017_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 24437,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=24437"
+    },
+    "bulfinchs-mythology": {
+      "text_id": "bulfinchs-mythology",
+      "tradition": "anthology",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\anthology\\bulfinchs-mythology\\normalized\\bulfinchs-mythology_best.txt",
+      "source_file": "pg4928_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 329775,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=329775"
+    },
+    "introduction-to-mythology": {
+      "text_id": "introduction-to-mythology",
+      "tradition": "anthology",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\anthology\\introduction-to-mythology\\normalized\\introduction-to-mythology_best.txt",
+      "source_file": "pg45048_NA-(original-English).txt",
+      "source_format": "gutenberg",
+      "word_count": 117080,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=117080"
+    },
+    "pre-columbian-myths": {
+      "text_id": "pre-columbian-myths",
+      "tradition": "anthology",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "eskimo-folk-tales": {
+      "text_id": "eskimo-folk-tales",
+      "tradition": "arctic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\arctic\\eskimo-folk-tales\\normalized\\eskimo-folk-tales_best.txt",
+      "source_file": "pg17947_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 63718,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=63718"
+    },
+    "australian-legendary-tales": {
+      "text_id": "australian-legendary-tales",
+      "tradition": "australian-aboriginal",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\australian-aboriginal\\australian-legendary-tales\\normalized\\australian-legendary-tales_best.txt",
+      "source_file": "pg3833_K.-Langloh-Parker-(collector).txt",
+      "source_format": "gutenberg",
+      "word_count": 33407,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=33407"
+    },
+    "more-australian-legendary-tales": {
+      "text_id": "more-australian-legendary-tales",
+      "tradition": "australian-aboriginal",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "lithuanian-mythology": {
+      "text_id": "lithuanian-mythology",
+      "tradition": "baltic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "cuchulain-of-muirthemne": {
+      "text_id": "cuchulain-of-muirthemne",
+      "tradition": "celtic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\cuchulain-of-muirthemne\\normalized\\cuchulain-of-muirthemne_best.txt",
+      "source_file": "pg14749_Lady-Gregory.txt",
+      "source_format": "gutenberg",
+      "word_count": 71495,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=71495"
+    },
+    "gods-fighting-men": {
+      "text_id": "gods-fighting-men",
+      "tradition": "celtic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\gods-fighting-men\\normalized\\gods-fighting-men_best.txt",
+      "source_file": "pg14465_Lady-Gregory.txt",
+      "source_format": "gutenberg",
+      "word_count": 171522,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=171522"
+    },
+    "lebor-gabala": {
+      "text_id": "lebor-gabala",
+      "tradition": "celtic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\lebor-gabala\\normalized\\lebor-gabala_best.txt",
+      "source_file": "sacred-texts_neu_celt_gafm_index.htm_Lady-Augusta-Gregory.txt",
+      "source_format": "sacred-texts",
+      "word_count": 767,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=767"
+    },
+    "the-golden-bough": {
+      "text_id": "the-golden-bough",
+      "tradition": "celtic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\the-golden-bough\\normalized\\the-golden-bough_best.txt",
+      "source_file": "pg3623_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 410073,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=410073"
+    },
+    "the-mabinogion": {
+      "text_id": "the-mabinogion",
+      "tradition": "celtic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\celtic\\the-mabinogion\\normalized\\the-mabinogion_best.txt",
+      "source_file": "pg5160_Lady-Charlotte-Guest.txt",
+      "source_format": "gutenberg",
+      "word_count": 107599,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=107599"
+    },
+    "táin-bó-cúailnge": {
+      "text_id": "táin-bó-cúailnge",
+      "tradition": "celtic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "analects-confucius": {
+      "text_id": "analects-confucius",
+      "tradition": "chinese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\analects-confucius\\normalized\\analects-confucius_best.txt",
+      "source_file": "pg4094_James-Legge.txt",
+      "source_format": "gutenberg",
+      "word_count": 30443,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=30443"
+    },
+    "chuang-tzu": {
+      "text_id": "chuang-tzu",
+      "tradition": "chinese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\chuang-tzu\\normalized\\chuang-tzu_best.txt",
+      "source_file": "sacred-texts_tao_sbe39_index.htm_James-Legge.txt",
+      "source_format": "sacred-texts",
+      "word_count": 628,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=628"
+    },
+    "fēngshén-yǎnyì": {
+      "text_id": "fēngshén-yǎnyì",
+      "tradition": "chinese",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "i-ching": {
+      "text_id": "i-ching",
+      "tradition": "chinese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\i-ching\\normalized\\i-ching_best.txt",
+      "source_file": "pg339_James-Legge.txt",
+      "source_format": "gutenberg",
+      "word_count": 48483,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=48483"
+    },
+    "journey-to-the-west": {
+      "text_id": "journey-to-the-west",
+      "tradition": "chinese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\journey-to-the-west\\normalized\\journey-to-the-west_best.txt",
+      "source_file": "pg60694_Timothy-Richard-(abridged).txt",
+      "source_format": "gutenberg",
+      "word_count": 3308,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=3308"
+    },
+    "shan-hai-jing": {
+      "text_id": "shan-hai-jing",
+      "tradition": "chinese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\shan-hai-jing\\normalized\\shan-hai-jing_best.txt",
+      "source_file": "pg25288_Original-Chinese.txt",
+      "source_format": "gutenberg",
+      "word_count": 1464,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=1464"
+    },
+    "tao-te-ching": {
+      "text_id": "tao-te-ching",
+      "tradition": "chinese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\tao-te-ching\\normalized\\tao-te-ching_best.txt",
+      "source_file": "pg216_James-Legge.txt",
+      "source_format": "gutenberg",
+      "word_count": 10661,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=10661"
+    },
+    "book-of-the-dead": {
+      "text_id": "book-of-the-dead",
+      "tradition": "egyptian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\book-of-the-dead\\normalized\\book-of-the-dead_best.txt",
+      "source_file": "pg7145_E.A.-Wallis-Budge.txt",
+      "source_format": "gutenberg",
+      "word_count": 12698,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=12698"
+    },
+    "burden-of-isis": {
+      "text_id": "burden-of-isis",
+      "tradition": "egyptian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\burden-of-isis\\normalized\\burden-of-isis_best.txt",
+      "source_file": "burdenofisisbein00denn_James-Teackle-Dennis.pdf",
+      "source_format": "pdf",
+      "word_count": 5355,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=5355"
+    },
+    "coffin-texts": {
+      "text_id": "coffin-texts",
+      "tradition": "egyptian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "gnostic-gospels": {
+      "text_id": "gnostic-gospels",
+      "tradition": "egyptian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\gnostic-gospels\\normalized\\gnostic-gospels_best.txt",
+      "source_file": "sacred-texts_gno_Various.txt",
+      "source_format": "sacred-texts",
+      "word_count": 552,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=552"
+    },
+    "legends-of-egyptian-gods": {
+      "text_id": "legends-of-egyptian-gods",
+      "tradition": "egyptian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\legends-of-egyptian-gods\\normalized\\legends-of-egyptian-gods_best.txt",
+      "source_file": "legendsofthegods09411gut_E.A.-Wallis-Budge.txt",
+      "source_format": "gutenberg",
+      "word_count": 60466,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=60466"
+    },
+    "pyramid-texts": {
+      "text_id": "pyramid-texts",
+      "tradition": "egyptian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\pyramid-texts\\normalized\\pyramid-texts_best.txt",
+      "source_file": "sacred-texts_egy_pyt_index.htm_Samuel-A.B.-Mercer.txt",
+      "source_format": "sacred-texts",
+      "word_count": 943,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=943"
+    },
+    "kalevala": {
+      "text_id": "kalevala",
+      "tradition": "european",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\kalevala\\normalized\\kalevala_best.txt",
+      "source_file": "pg7000_W.F.-Kirby.txt",
+      "source_format": "gutenberg",
+      "word_count": 67659,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=67659"
+    },
+    "le-morte-darthur": {
+      "text_id": "le-morte-darthur",
+      "tradition": "european",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\le-morte-darthur\\normalized\\le-morte-darthur_best.txt",
+      "source_file": "pg1251_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 168785,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=168785"
+    },
+    "mother-goose-tales": {
+      "text_id": "mother-goose-tales",
+      "tradition": "european",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\mother-goose-tales\\normalized\\mother-goose-tales_best.txt",
+      "source_file": "pg29021_Charles-PerraultA.E.-Johnson.txt",
+      "source_format": "gutenberg",
+      "word_count": 27978,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=27978"
+    },
+    "paradise-lost": {
+      "text_id": "paradise-lost",
+      "tradition": "european",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\paradise-lost\\normalized\\paradise-lost_best.txt",
+      "source_file": "pg20_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 80029,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=80029"
+    },
+    "russian-fairy-tales": {
+      "text_id": "russian-fairy-tales",
+      "tradition": "european",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\russian-fairy-tales\\normalized\\russian-fairy-tales_best.txt",
+      "source_file": "pg22373_W.R.S.-Ralston.txt",
+      "source_format": "gutenberg",
+      "word_count": 130961,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=130961"
+    },
+    "the-pilgrims-progress": {
+      "text_id": "the-pilgrims-progress",
+      "tradition": "european",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\european\\the-pilgrims-progress\\normalized\\the-pilgrims-progress_best.txt",
+      "source_file": "pg131_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 58050,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=58050"
+    },
+    "grimms-fairy-tales": {
+      "text_id": "grimms-fairy-tales",
+      "tradition": "germanic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\germanic\\grimms-fairy-tales\\normalized\\grimms-fairy-tales_best.txt",
+      "source_file": "pg5314_Margaret-Hunt.txt",
+      "source_format": "gutenberg",
+      "word_count": 284848,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=284848"
+    },
+    "aesops-fables": {
+      "text_id": "aesops-fables",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\aesops-fables\\normalized\\aesops-fables_best.txt",
+      "source_file": "pg28_V.S.-Vernon-Jones.txt",
+      "source_format": "gutenberg",
+      "word_count": 14853,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=14853"
+    },
+    "argonautica": {
+      "text_id": "argonautica",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\argonautica\\normalized\\argonautica_best.txt",
+      "source_file": "pg830_R.C.-Seaton.txt",
+      "source_format": "gutenberg",
+      "word_count": 61292,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=61292"
+    },
+    "bacchae": {
+      "text_id": "bacchae",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\bacchae\\normalized\\bacchae_best.txt",
+      "source_file": "pg8418_Gilbert-Murray.txt",
+      "source_format": "gutenberg",
+      "word_count": 27737,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=27737"
+    },
+    "bibliotheca-apollodorus": {
+      "text_id": "bibliotheca-apollodorus",
+      "tradition": "greek",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "homeric-hymns": {
+      "text_id": "homeric-hymns",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\homeric-hymns\\normalized\\homeric-hymns_best.txt",
+      "source_file": "pg348_Hugh-G.-Evelyn-White.txt",
+      "source_format": "gutenberg",
+      "word_count": 90831,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=90831"
+    },
+    "orphic-hymns": {
+      "text_id": "orphic-hymns",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\orphic-hymns\\normalized\\orphic-hymns_best.txt",
+      "source_file": "sacred-texts_cla_hoo_Thomas-Taylor.txt",
+      "source_format": "sacred-texts",
+      "word_count": 598,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=598"
+    },
+    "the-iliad": {
+      "text_id": "the-iliad",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\the-iliad\\normalized\\the-iliad_best.txt",
+      "source_file": "pg6130_Samuel-Butler.txt",
+      "source_format": "gutenberg",
+      "word_count": 189076,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=189076"
+    },
+    "the-odyssey": {
+      "text_id": "the-odyssey",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\the-odyssey\\normalized\\the-odyssey_best.txt",
+      "source_file": "pg3160_Alexander-Pope.txt",
+      "source_format": "gutenberg",
+      "word_count": 121279,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=121279"
+    },
+    "theogony": {
+      "text_id": "theogony",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\theogony\\normalized\\theogony_best.txt",
+      "source_file": "pg348_Hugh-G.-Evelyn-White.txt",
+      "source_format": "gutenberg",
+      "word_count": 90831,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=90831"
+    },
+    "works-and-days": {
+      "text_id": "works-and-days",
+      "tradition": "greek",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\works-and-days\\normalized\\works-and-days_best.txt",
+      "source_file": "sacred-texts_cla_hesiod_works.htm_Hugh-G.-Evelyn-White.txt",
+      "source_format": "sacred-texts",
+      "word_count": 9530,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=9530"
+    },
+    "genesis-kjv": {
+      "text_id": "genesis-kjv",
+      "tradition": "hebrew",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\hebrew\\genesis-kjv\\normalized\\genesis-kjv_best.txt",
+      "source_file": "pg10_King-James-Version.txt",
+      "source_format": "gutenberg",
+      "word_count": 821496,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=821496"
+    },
+    "bhagavad-gita": {
+      "text_id": "bhagavad-gita",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\bhagavad-gita\\normalized\\bhagavad-gita_best.txt",
+      "source_file": "pg2388_Edwin-Arnold.txt",
+      "source_format": "gutenberg",
+      "word_count": 20149,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=20149"
+    },
+    "dhammapada": {
+      "text_id": "dhammapada",
+      "tradition": "indian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "jataka-cowell": {
+      "text_id": "jataka-cowell",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\jataka-cowell\\normalized\\jataka-cowell_best.txt",
+      "source_file": "jatakaorstoriesofb01cowe_Robert-Chalmers.pdf",
+      "source_format": "pdf",
+      "word_count": 91809,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=91809"
+    },
+    "joseph-jacobs-fairy-tales": {
+      "text_id": "joseph-jacobs-fairy-tales",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\joseph-jacobs-fairy-tales\\normalized\\joseph-jacobs-fairy-tales_best.txt",
+      "source_file": "pg7439_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 60906,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=60906"
+    },
+    "jātaka-tales": {
+      "text_id": "jātaka-tales",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\jātaka-tales\\normalized\\jātaka-tales_best.txt",
+      "source_file": "pg35665_Ellen-C.-Babbitt.txt",
+      "source_format": "gutenberg",
+      "word_count": 9246,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=9246"
+    },
+    "mahābhārata": {
+      "text_id": "mahābhārata",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\mahābhārata\\normalized\\mahābhārata_best.txt",
+      "source_file": "pg15474_Kisari-Mohan-Ganguli-(abridged.txt",
+      "source_format": "gutenberg",
+      "word_count": 631898,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=631898"
+    },
+    "one-thousand-and-one-nights": {
+      "text_id": "one-thousand-and-one-nights",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\one-thousand-and-one-nights\\normalized\\one-thousand-and-one-nights_best.txt",
+      "source_file": "pg3435_Richard-F.-Burton.txt",
+      "source_format": "gutenberg",
+      "word_count": 174478,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=174478"
+    },
+    "pañchatantra": {
+      "text_id": "pañchatantra",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\pañchatantra\\normalized\\pañchatantra_best.txt",
+      "source_file": "pg25512_Arthur-W.-Ryder.txt",
+      "source_format": "gutenberg",
+      "word_count": 52022,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=52022"
+    },
+    "rigveda": {
+      "text_id": "rigveda",
+      "tradition": "indian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "rāmāyaṇa": {
+      "text_id": "rāmāyaṇa",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\rāmāyaṇa\\normalized\\rāmāyaṇa_best.txt",
+      "source_file": "pg24869_Ralph-T.H.-Griffith.txt",
+      "source_format": "gutenberg",
+      "word_count": 399123,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=399123"
+    },
+    "upanishads": {
+      "text_id": "upanishads",
+      "tradition": "indian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\upanishads\\normalized\\upanishads_best.txt",
+      "source_file": "sacred-texts_hin_sbe01_index.htm_Max-Müller.txt",
+      "source_format": "sacred-texts",
+      "word_count": 716,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=716"
+    },
+    "kogoshui": {
+      "text_id": "kogoshui",
+      "tradition": "japanese",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "kojiki": {
+      "text_id": "kojiki",
+      "tradition": "japanese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\japanese\\kojiki\\normalized\\kojiki_best.txt",
+      "source_file": "sacred-texts_shi_kj_Basil-Hall-Chamberla.txt",
+      "source_format": "sacred-texts",
+      "word_count": 1790,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=1790"
+    },
+    "nihongi": {
+      "text_id": "nihongi",
+      "tradition": "japanese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\japanese\\nihongi\\normalized\\nihongi_best.txt",
+      "source_file": "sacred-texts_shi_nihon3.htm_W.G.-Aston.txt",
+      "source_format": "sacred-texts",
+      "word_count": 3518,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=3518"
+    },
+    "tale-of-genji": {
+      "text_id": "tale-of-genji",
+      "tradition": "japanese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\japanese\\tale-of-genji\\normalized\\tale-of-genji_best.txt",
+      "source_file": "genji_monogatari_2008_librivox_Suematsu-Kencho.pdf",
+      "source_format": "pdf",
+      "word_count": 204,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=204"
+    },
+    "tale-of-heike": {
+      "text_id": "tale-of-heike",
+      "tradition": "japanese",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\japanese\\tale-of-heike\\normalized\\tale-of-heike_best.txt",
+      "source_file": "TheHeikeMonogatari_A.L.-Sadler.pdf",
+      "source_format": "pdf",
+      "word_count": 239076,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=239076"
+    },
+    "samguk-yusa": {
+      "text_id": "samguk-yusa",
+      "tradition": "korean",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\korean\\samguk-yusa\\normalized\\samguk-yusa_best.txt",
+      "source_file": "Terebess-Asia-Online_Tae-Hung-Ha-&-Grafto.pdf",
+      "source_format": "pdf",
+      "word_count": 140056,
+      "versions_found": 2,
+      "selection_reason": "format=pdf, words=140056"
+    },
+    "baal-cycle": {
+      "text_id": "baal-cycle",
+      "tradition": "levantine",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "codex-chimalpopoca": {
+      "text_id": "codex-chimalpopoca",
+      "tradition": "mesoamerican",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "popol-vuh": {
+      "text_id": "popol-vuh",
+      "tradition": "mesoamerican",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesoamerican\\popol-vuh\\normalized\\popol-vuh_best.txt",
+      "source_file": "pg56550_Lewis-Spence.txt",
+      "source_format": "gutenberg",
+      "word_count": 12616,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=12616"
+    },
+    "the-myths-of-mexico-and-peru": {
+      "text_id": "the-myths-of-mexico-and-peru",
+      "tradition": "mesoamerican",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesoamerican\\the-myths-of-mexico-and-peru\\normalized\\the-myths-of-mexico-and-peru_best.txt",
+      "source_file": "pg53080_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 108277,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=108277"
+    },
+    "atra-hasis": {
+      "text_id": "atra-hasis",
+      "tradition": "mesopotamian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "descent-of-ishtar": {
+      "text_id": "descent-of-ishtar",
+      "tradition": "mesopotamian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesopotamian\\descent-of-ishtar\\normalized\\descent-of-ishtar_best.txt",
+      "source_file": "sacred-texts_ane_ishtar.htm_M.-Jastrow.txt",
+      "source_format": "sacred-texts",
+      "word_count": 1430,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=1430"
+    },
+    "enūma-eliš": {
+      "text_id": "enūma-eliš",
+      "tradition": "mesopotamian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesopotamian\\enūma-eliš\\normalized\\enūma-eliš_best.txt",
+      "source_file": "sacred-texts_ane_enuma.htm_L.W.-King.txt",
+      "source_format": "sacred-texts",
+      "word_count": 6438,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=6438"
+    },
+    "epic-of-gilgamesh": {
+      "text_id": "epic-of-gilgamesh",
+      "tradition": "mesopotamian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "inannas-descent": {
+      "text_id": "inannas-descent",
+      "tradition": "mesopotamian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\mesopotamian\\inannas-descent\\normalized\\inannas-descent_best.txt",
+      "source_file": "etcsl_section1_tr141.htm_ETCSL-composite.txt",
+      "source_format": "etcsl",
+      "word_count": 4369,
+      "versions_found": 1,
+      "selection_reason": "format=etcsl, words=4369"
+    },
+    "secret-history-mongols": {
+      "text_id": "secret-history-mongols",
+      "tradition": "mongol",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "beowulf": {
+      "text_id": "beowulf",
+      "tradition": "norse",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\norse\\beowulf\\normalized\\beowulf_best.txt",
+      "source_file": "pg981_Lesslie-Hall.txt",
+      "source_format": "gutenberg",
+      "word_count": 26120,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=26120"
+    },
+    "poetic-edda": {
+      "text_id": "poetic-edda",
+      "tradition": "norse",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\norse\\poetic-edda\\normalized\\poetic-edda_best.txt",
+      "source_file": "pg14726_Henry-Adams-Bellows.txt",
+      "source_format": "gutenberg",
+      "word_count": 87296,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=87296"
+    },
+    "prose-edda": {
+      "text_id": "prose-edda",
+      "tradition": "norse",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\norse\\prose-edda\\normalized\\prose-edda_best.txt",
+      "source_file": "pg18947_Arthur-Gilchrist-Brodeur.txt",
+      "source_format": "gutenberg",
+      "word_count": 67043,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=67043"
+    },
+    "volsunga-saga": {
+      "text_id": "volsunga-saga",
+      "tradition": "norse",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\norse\\volsunga-saga\\normalized\\volsunga-saga_best.txt",
+      "source_file": "pg1152_Eirikr-Magnusson-&-William-Mor.txt",
+      "source_format": "gutenberg",
+      "word_count": 57188,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=57188"
+    },
+    "myths-and-legends-of-the-mississippi-valley-and-th": {
+      "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\myths-and-legends-of-the-mississippi-valley-and-th\\normalized\\myths-and-legends-of-the-mississippi-valley-and-th_best.txt",
+      "source_file": "pg29502_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 44108,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=44108"
+    },
+    "myths-north-american-indians": {
+      "text_id": "myths-north-american-indians",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\myths-north-american-indians\\normalized\\myths-north-american-indians_best.txt",
+      "source_file": "pg42390_NA-(original-English).txt",
+      "source_format": "gutenberg",
+      "word_count": 119229,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=119229"
+    },
+    "myths-of-the-cherokee": {
+      "text_id": "myths-of-the-cherokee",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\myths-of-the-cherokee\\normalized\\myths-of-the-cherokee_best.txt",
+      "source_file": "mythsofcherokee00moon_unknown.pdf",
+      "source_format": "pdf",
+      "word_count": 329067,
+      "versions_found": 2,
+      "selection_reason": "format=pdf, words=329067"
+    },
+    "navaho-origin-myths": {
+      "text_id": "navaho-origin-myths",
+      "tradition": "north-american",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "seneca-myths": {
+      "text_id": "seneca-myths",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\seneca-myths\\normalized\\seneca-myths_best.txt",
+      "source_file": "sacred-texts_nam_iro_sim_index.htm_Jeremiah-Curtin.txt",
+      "source_format": "sacred-texts",
+      "word_count": 828,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=828"
+    },
+    "southeastern-myths-tales": {
+      "text_id": "southeastern-myths-tales",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\southeastern-myths-tales\\normalized\\southeastern-myths-tales_best.txt",
+      "source_file": "sacred-texts_nam_se_mtsi_index.htm_John-R.-Swanton.txt",
+      "source_format": "sacred-texts",
+      "word_count": 1989,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=1989"
+    },
+    "tales-of-the-north-american-indians": {
+      "text_id": "tales-of-the-north-american-indians",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\tales-of-the-north-american-indians\\normalized\\tales-of-the-north-american-indians_best.txt",
+      "source_file": "sacred-texts_nam_sacred-texts.txt",
+      "source_format": "sacred-texts",
+      "word_count": 567,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=567"
+    },
+    "tlingit-myths-texts": {
+      "text_id": "tlingit-myths-texts",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\tlingit-myths-texts\\normalized\\tlingit-myths-texts_best.txt",
+      "source_file": "tlingitmythstexts00swanrich_John-R.-Swanton.pdf",
+      "source_format": "pdf",
+      "word_count": 110995,
+      "versions_found": 2,
+      "selection_reason": "format=pdf, words=110995"
+    },
+    "traditions-of-hopi": {
+      "text_id": "traditions-of-hopi",
+      "tradition": "north-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\north-american\\traditions-of-hopi\\normalized\\traditions-of-hopi_best.txt",
+      "source_file": "sacred-texts_nam_hopi_toth_index.htm_H.R.-Voth.txt",
+      "source_format": "sacred-texts",
+      "word_count": 1534,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=1534"
+    },
+    "melanesians-codrington": {
+      "text_id": "melanesians-codrington",
+      "tradition": "oceanic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\oceanic\\melanesians-codrington\\normalized\\melanesians-codrington_best.txt",
+      "source_file": "melanesiansstudi00codruoft_R.H.-Codrington.pdf",
+      "source_format": "pdf",
+      "word_count": 72653,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=72653"
+    },
+    "oceanic-mythology": {
+      "text_id": "oceanic-mythology",
+      "tradition": "oceanic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "oceanic-mythology-dixon": {
+      "text_id": "oceanic-mythology-dixon",
+      "tradition": "oceanic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "pacific-island-legends": {
+      "text_id": "pacific-island-legends",
+      "tradition": "oceanic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "shāhnāmeh": {
+      "text_id": "shāhnāmeh",
+      "tradition": "persian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\persian\\shāhnāmeh\\normalized\\shāhnāmeh_best.txt",
+      "source_file": "sacred-texts_neu_shahnama.txt_Helen-Zimmern.txt",
+      "source_format": "sacred-texts",
+      "word_count": 86077,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=86077"
+    },
+    "the-conference-of-the-birds": {
+      "text_id": "the-conference-of-the-birds",
+      "tradition": "persian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "hawaiian-legends-gods-ghosts": {
+      "text_id": "hawaiian-legends-gods-ghosts",
+      "tradition": "polynesian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\hawaiian-legends-gods-ghosts\\normalized\\hawaiian-legends-gods-ghosts_best.txt",
+      "source_file": "pg39195_W.D.-Westervelt.txt",
+      "source_format": "gutenberg",
+      "word_count": 64970,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=64970"
+    },
+    "legends-of-maui": {
+      "text_id": "legends-of-maui",
+      "tradition": "polynesian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\legends-of-maui\\normalized\\legends-of-maui_best.txt",
+      "source_file": "pg22384_W.D.-Westervelt.txt",
+      "source_format": "gutenberg",
+      "word_count": 42801,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=42801"
+    },
+    "maui-thousand-tricks": {
+      "text_id": "maui-thousand-tricks",
+      "tradition": "polynesian",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "polynesian-mythology": {
+      "text_id": "polynesian-mythology",
+      "tradition": "polynesian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\polynesian-mythology\\normalized\\polynesian-mythology_best.txt",
+      "source_file": "polynesianmythol00grey_unknown.pdf",
+      "source_format": "pdf",
+      "word_count": 47694,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=47694"
+    },
+    "polynesian-mythology-grey": {
+      "text_id": "polynesian-mythology-grey",
+      "tradition": "polynesian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\polynesian-mythology-grey\\normalized\\polynesian-mythology-grey_best.txt",
+      "source_file": "polynesianmythol00greyuoft_Sir-George-Grey.pdf",
+      "source_format": "pdf",
+      "word_count": 37135,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=37135"
+    },
+    "the-legends-and-myths-of-hawaii": {
+      "text_id": "the-legends-and-myths-of-hawaii",
+      "tradition": "polynesian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\polynesian\\the-legends-and-myths-of-hawaii\\normalized\\the-legends-and-myths-of-hawaii_best.txt",
+      "source_file": "pg6956_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 13350,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=13350"
+    },
+    "aeneid": {
+      "text_id": "aeneid",
+      "tradition": "roman",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\roman\\aeneid\\normalized\\aeneid_best.txt",
+      "source_file": "pg228_John-Dryden.txt",
+      "source_format": "gutenberg",
+      "word_count": 107551,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=107551"
+    },
+    "divine-comedy": {
+      "text_id": "divine-comedy",
+      "tradition": "roman",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\roman\\divine-comedy\\normalized\\divine-comedy_best.txt",
+      "source_file": "pg8800_Henry-Wadsworth-Longfellow.txt",
+      "source_format": "gutenberg",
+      "word_count": 108629,
+      "versions_found": 2,
+      "selection_reason": "format=gutenberg, words=108629"
+    },
+    "fasti-ovid": {
+      "text_id": "fasti-ovid",
+      "tradition": "roman",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\roman\\fasti-ovid\\normalized\\fasti-ovid_best.txt",
+      "source_file": "sacred-texts_cla_ovid_lboo_index.htm_H.T.-Riley.txt",
+      "source_format": "sacred-texts",
+      "word_count": 1015,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=1015"
+    },
+    "metamorphoses": {
+      "text_id": "metamorphoses",
+      "tradition": "roman",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\roman\\metamorphoses\\normalized\\metamorphoses_best.txt",
+      "source_file": "pg28621_J.J.-Howard.txt",
+      "source_format": "gutenberg",
+      "word_count": 117065,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=117065"
+    },
+    "siberian-mythology": {
+      "text_id": "siberian-mythology",
+      "tradition": "siberian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\siberian\\siberian-mythology\\normalized\\siberian-mythology_best.txt",
+      "source_file": "MythologyOfAllRacesVolume4_Uno-Holmberg.pdf",
+      "source_format": "pdf",
+      "word_count": 197750,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=197750"
+    },
+    "byliny-hero-tales": {
+      "text_id": "byliny-hero-tales",
+      "tradition": "slavic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\slavic\\byliny-hero-tales\\normalized\\byliny-hero-tales_best.txt",
+      "source_file": "bylinybookherota00harr_Marion-Chilton-Harrison.pdf",
+      "source_format": "pdf",
+      "word_count": 16505,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=16505"
+    },
+    "byliny-russian-epics": {
+      "text_id": "byliny-russian-epics",
+      "tradition": "slavic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\slavic\\byliny-russian-epics\\normalized\\byliny-russian-epics_best.txt",
+      "source_file": "sacred-texts_neu_sfs_index.htm_A.H.-Wratislaw.txt",
+      "source_format": "sacred-texts",
+      "word_count": 544,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=544"
+    },
+    "folk-tales-russian": {
+      "text_id": "folk-tales-russian",
+      "tradition": "slavic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "sixty-slavonic-folktales": {
+      "text_id": "sixty-slavonic-folktales",
+      "tradition": "slavic",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\slavic\\sixty-slavonic-folktales\\normalized\\sixty-slavonic-folktales_best.txt",
+      "source_file": "sacred-texts_neu_sfs_index.htm_A.H.-Wratislaw.txt",
+      "source_format": "sacred-texts",
+      "word_count": 544,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=544"
+    },
+    "songs-russian-people": {
+      "text_id": "songs-russian-people",
+      "tradition": "slavic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "apu-ollantay": {
+      "text_id": "apu-ollantay",
+      "tradition": "south-american",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\south-american\\apu-ollantay\\normalized\\apu-ollantay_best.txt",
+      "source_file": "pg9068_Clements-R.-Markham.txt",
+      "source_format": "gutenberg",
+      "word_count": 17943,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=17943"
+    },
+    "guarani-creation-myths": {
+      "text_id": "guarani-creation-myths",
+      "tradition": "south-american",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "huarochiri-manuscript": {
+      "text_id": "huarochiri-manuscript",
+      "tradition": "south-american",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "laos-folk-lore-of-farther-india": {
+      "text_id": "laos-folk-lore-of-farther-india",
+      "tradition": "southeast-asian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\southeast-asian\\laos-folk-lore-of-farther-india\\normalized\\laos-folk-lore-of-farther-india_best.txt",
+      "source_file": "pg24247_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 4905,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=4905"
+    },
+    "malay-magic": {
+      "text_id": "malay-magic",
+      "tradition": "southeast-asian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\southeast-asian\\malay-magic\\normalized\\malay-magic_best.txt",
+      "source_file": "malaymagicbeingi00skea_unknown.pdf",
+      "source_format": "pdf",
+      "word_count": 144683,
+      "versions_found": 1,
+      "selection_reason": "format=pdf, words=144683"
+    },
+    "philippine-folk-tales": {
+      "text_id": "philippine-folk-tales",
+      "tradition": "southeast-asian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\southeast-asian\\philippine-folk-tales\\normalized\\philippine-folk-tales_best.txt",
+      "source_file": "pg12814_gutenberg.txt",
+      "source_format": "gutenberg",
+      "word_count": 48997,
+      "versions_found": 1,
+      "selection_reason": "format=gutenberg, words=48997"
+    },
+    "epic-of-king-gesar": {
+      "text_id": "epic-of-king-gesar",
+      "tradition": "tibetan",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "tibetan-book-of-dead-evans": {
+      "text_id": "tibetan-book-of-dead-evans",
+      "tradition": "tibetan",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "book-of-dede-korkut": {
+      "text_id": "book-of-dede-korkut",
+      "tradition": "turkic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "dede-korkut": {
+      "text_id": "dede-korkut",
+      "tradition": "turkic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "epic-of-manas": {
+      "text_id": "epic-of-manas",
+      "tradition": "turkic",
+      "status": "no_normalized_content",
+      "versions_found": 0
+    },
+    "zend-avesta": {
+      "text_id": "zend-avesta",
+      "tradition": "zoroastrian",
+      "status": "selected",
+      "best_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\zoroastrian\\zend-avesta\\normalized\\zend-avesta_best.txt",
+      "source_file": "sacred-texts_zor_sbe31_index.htm_L.H.-Mills.txt",
+      "source_format": "sacred-texts",
+      "word_count": 675,
+      "versions_found": 1,
+      "selection_reason": "format=sacred-texts, words=675"
+    }
+  }
+}

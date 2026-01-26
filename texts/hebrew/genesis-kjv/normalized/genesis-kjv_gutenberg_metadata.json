@@ -1,0 +1,17 @@
+{
+  "title": "The King James Version of the Bible",
+  "language": "English",
+  "release_date": "August 1, 1989",
+  "ebook_id": "10",
+  "source_format": "gutenberg",
+  "original_file": "pg10_King-James-Version.txt",
+  "text_id": "genesis-kjv",
+  "author": "Multiple authors",
+  "tradition": "hebrew",
+  "date_composed": "10th–5th c. BCE",
+  "material_type": "Religious scripture",
+  "normalization_date": "2026-01-26T10:04:03.709433",
+  "char_count": 4332446,
+  "line_count": 99458,
+  "word_count": 821496
+}

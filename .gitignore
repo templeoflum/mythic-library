@@ -1,0 +1,14 @@
+# Generated database (137MB, rebuild with: python scripts/database/create_db.py --reset)
+data/mythic_patterns.db
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Claude
+.claude/

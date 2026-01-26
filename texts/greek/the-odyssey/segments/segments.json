@@ -1,0 +1,504 @@
+{
+  "text_id": "the-odyssey",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\the-odyssey\\normalized\\the-odyssey_best.txt",
+  "strategy": "structural",
+  "segment_count": 55,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_001_i.txt",
+      "word_count": 2,
+      "start_line": 14,
+      "end_line": 14
+    },
+    {
+      "id": "seg_002",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_002_ii.txt",
+      "word_count": 2,
+      "start_line": 15,
+      "end_line": 15
+    },
+    {
+      "id": "seg_003",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_003_iii.txt",
+      "word_count": 2,
+      "start_line": 16,
+      "end_line": 16
+    },
+    {
+      "id": "seg_004",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_004_iv.txt",
+      "word_count": 2,
+      "start_line": 17,
+      "end_line": 17
+    },
+    {
+      "id": "seg_005",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_005_v.txt",
+      "word_count": 2,
+      "start_line": 18,
+      "end_line": 18
+    },
+    {
+      "id": "seg_006",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_006_vi.txt",
+      "word_count": 2,
+      "start_line": 19,
+      "end_line": 19
+    },
+    {
+      "id": "seg_007",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_007_vii.txt",
+      "word_count": 2,
+      "start_line": 20,
+      "end_line": 20
+    },
+    {
+      "id": "seg_008",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_008_viii.txt",
+      "word_count": 2,
+      "start_line": 21,
+      "end_line": 21
+    },
+    {
+      "id": "seg_009",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_009_ix.txt",
+      "word_count": 2,
+      "start_line": 22,
+      "end_line": 22
+    },
+    {
+      "id": "seg_010",
+      "label": "X",
+      "segment_type": "book",
+      "file": "seg_010_x.txt",
+      "word_count": 2,
+      "start_line": 23,
+      "end_line": 23
+    },
+    {
+      "id": "seg_011",
+      "label": "XI",
+      "segment_type": "book",
+      "file": "seg_011_xi.txt",
+      "word_count": 2,
+      "start_line": 24,
+      "end_line": 24
+    },
+    {
+      "id": "seg_012",
+      "label": "XII",
+      "segment_type": "book",
+      "file": "seg_012_xii.txt",
+      "word_count": 2,
+      "start_line": 25,
+      "end_line": 25
+    },
+    {
+      "id": "seg_013",
+      "label": "XIII",
+      "segment_type": "book",
+      "file": "seg_013_xiii.txt",
+      "word_count": 2,
+      "start_line": 26,
+      "end_line": 26
+    },
+    {
+      "id": "seg_014",
+      "label": "XIV",
+      "segment_type": "book",
+      "file": "seg_014_xiv.txt",
+      "word_count": 2,
+      "start_line": 27,
+      "end_line": 27
+    },
+    {
+      "id": "seg_015",
+      "label": "XV",
+      "segment_type": "book",
+      "file": "seg_015_xv.txt",
+      "word_count": 2,
+      "start_line": 28,
+      "end_line": 28
+    },
+    {
+      "id": "seg_016",
+      "label": "XVI",
+      "segment_type": "book",
+      "file": "seg_016_xvi.txt",
+      "word_count": 2,
+      "start_line": 29,
+      "end_line": 29
+    },
+    {
+      "id": "seg_017",
+      "label": "XVII",
+      "segment_type": "book",
+      "file": "seg_017_xvii.txt",
+      "word_count": 2,
+      "start_line": 30,
+      "end_line": 30
+    },
+    {
+      "id": "seg_018",
+      "label": "XVIII",
+      "segment_type": "book",
+      "file": "seg_018_xviii.txt",
+      "word_count": 2,
+      "start_line": 31,
+      "end_line": 31
+    },
+    {
+      "id": "seg_019",
+      "label": "XIX",
+      "segment_type": "book",
+      "file": "seg_019_xix.txt",
+      "word_count": 2,
+      "start_line": 32,
+      "end_line": 32
+    },
+    {
+      "id": "seg_020",
+      "label": "XX",
+      "segment_type": "book",
+      "file": "seg_020_xx.txt",
+      "word_count": 2,
+      "start_line": 33,
+      "end_line": 33
+    },
+    {
+      "id": "seg_021",
+      "label": "XXI",
+      "segment_type": "book",
+      "file": "seg_021_xxi.txt",
+      "word_count": 2,
+      "start_line": 34,
+      "end_line": 34
+    },
+    {
+      "id": "seg_022",
+      "label": "XXII",
+      "segment_type": "book",
+      "file": "seg_022_xxii.txt",
+      "word_count": 2,
+      "start_line": 35,
+      "end_line": 35
+    },
+    {
+      "id": "seg_023",
+      "label": "XXIII",
+      "segment_type": "book",
+      "file": "seg_023_xxiii.txt",
+      "word_count": 2,
+      "start_line": 36,
+      "end_line": 36
+    },
+    {
+      "id": "seg_024",
+      "label": "XXIV",
+      "segment_type": "book",
+      "file": "seg_024_xxiv.txt",
+      "word_count": 10245,
+      "start_line": 37,
+      "end_line": 1038
+    },
+    {
+      "id": "seg_025",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_025_i.txt",
+      "word_count": 4253,
+      "start_line": 1039,
+      "end_line": 1649
+    },
+    {
+      "id": "seg_026",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_026_ii.txt",
+      "word_count": 3911,
+      "start_line": 1650,
+      "end_line": 2188
+    },
+    {
+      "id": "seg_027",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_027_iii.txt",
+      "word_count": 4921,
+      "start_line": 2189,
+      "end_line": 2865
+    },
+    {
+      "id": "seg_028",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_028_iv.txt",
+      "word_count": 445,
+      "start_line": 2866,
+      "end_line": 2936
+    },
+    {
+      "id": "seg_029",
+      "label": "Part led the coursers, from the car enlarged,",
+      "segment_type": "part",
+      "file": "seg_029_part-led-the-coursers-from-the-car-enlar.txt",
+      "word_count": 16,
+      "start_line": 2937,
+      "end_line": 2938
+    },
+    {
+      "id": "seg_030",
+      "label": "Part in a portico, profusely graced",
+      "segment_type": "part",
+      "file": "seg_030_part-in-a-portico-profusely-graced.txt",
+      "word_count": 4538,
+      "start_line": 2939,
+      "end_line": 3581
+    },
+    {
+      "id": "seg_031",
+      "label": "Part live! the rest, a lamentable train!",
+      "segment_type": "part",
+      "file": "seg_031_part-live-the-rest-a-lamentable-train.txt",
+      "word_count": 3285,
+      "start_line": 3582,
+      "end_line": 4063
+    },
+    {
+      "id": "seg_032",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_032_v.txt",
+      "word_count": 5062,
+      "start_line": 4064,
+      "end_line": 4752
+    },
+    {
+      "id": "seg_033",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_033_vi.txt",
+      "word_count": 3129,
+      "start_line": 4753,
+      "end_line": 5188
+    },
+    {
+      "id": "seg_034",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_034_vii.txt",
+      "word_count": 3429,
+      "start_line": 5189,
+      "end_line": 5674
+    },
+    {
+      "id": "seg_035",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_035_viii.txt",
+      "word_count": 5021,
+      "start_line": 5675,
+      "end_line": 6384
+    },
+    {
+      "id": "seg_036",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_036_ix.txt",
+      "word_count": 5275,
+      "start_line": 6385,
+      "end_line": 7093
+    },
+    {
+      "id": "seg_037",
+      "label": "X",
+      "segment_type": "book",
+      "file": "seg_037_x.txt",
+      "word_count": 5492,
+      "start_line": 7094,
+      "end_line": 7851
+    },
+    {
+      "id": "seg_038",
+      "label": "XI",
+      "segment_type": "book",
+      "file": "seg_038_xi.txt",
+      "word_count": 6362,
+      "start_line": 7852,
+      "end_line": 8743
+    },
+    {
+      "id": "seg_039",
+      "label": "XII",
+      "segment_type": "book",
+      "file": "seg_039_xii.txt",
+      "word_count": 4412,
+      "start_line": 8744,
+      "end_line": 9342
+    },
+    {
+      "id": "seg_040",
+      "label": "XIII",
+      "segment_type": "book",
+      "file": "seg_040_xiii.txt",
+      "word_count": 4064,
+      "start_line": 9343,
+      "end_line": 9916
+    },
+    {
+      "id": "seg_041",
+      "label": "XIV",
+      "segment_type": "book",
+      "file": "seg_041_xiv.txt",
+      "word_count": 1728,
+      "start_line": 9917,
+      "end_line": 10160
+    },
+    {
+      "id": "seg_042",
+      "label": "The cautious chief his ready story told",
+      "segment_type": "tale",
+      "file": "seg_042_the-cautious-chief-his-ready-story-told.txt",
+      "word_count": 367,
+      "start_line": 10161,
+      "end_line": 10207
+    },
+    {
+      "id": "seg_043",
+      "label": "The various thoughts and talents of mankind",
+      "segment_type": "tale",
+      "file": "seg_043_the-various-thoughts-and-talents-of-mank.txt",
+      "word_count": 2642,
+      "start_line": 10208,
+      "end_line": 10560
+    },
+    {
+      "id": "seg_044",
+      "label": "XV",
+      "segment_type": "book",
+      "file": "seg_044_xv.txt",
+      "word_count": 3199,
+      "start_line": 10561,
+      "end_line": 11021
+    },
+    {
+      "id": "seg_045",
+      "label": "The whole sad story, from its first, declare:",
+      "segment_type": "tale",
+      "file": "seg_045_the-whole-sad-story-from-its-first-decla.txt",
+      "word_count": 1415,
+      "start_line": 11022,
+      "end_line": 11222
+    },
+    {
+      "id": "seg_046",
+      "label": "XVI",
+      "segment_type": "book",
+      "file": "seg_046_xvi.txt",
+      "word_count": 3954,
+      "start_line": 11223,
+      "end_line": 11783
+    },
+    {
+      "id": "seg_047",
+      "label": "XVII",
+      "segment_type": "book",
+      "file": "seg_047_xvii.txt",
+      "word_count": 5315,
+      "start_line": 11784,
+      "end_line": 12542
+    },
+    {
+      "id": "seg_048",
+      "label": "XVIII",
+      "segment_type": "book",
+      "file": "seg_048_xviii.txt",
+      "word_count": 3701,
+      "start_line": 12543,
+      "end_line": 13078
+    },
+    {
+      "id": "seg_049",
+      "label": "XIX",
+      "segment_type": "book",
+      "file": "seg_049_xix.txt",
+      "word_count": 5262,
+      "start_line": 13079,
+      "end_line": 13847
+    },
+    {
+      "id": "seg_050",
+      "label": "XX",
+      "segment_type": "book",
+      "file": "seg_050_xx.txt",
+      "word_count": 3544,
+      "start_line": 13848,
+      "end_line": 14376
+    },
+    {
+      "id": "seg_051",
+      "label": "XXI",
+      "segment_type": "book",
+      "file": "seg_051_xxi.txt",
+      "word_count": 3835,
+      "start_line": 14377,
+      "end_line": 14913
+    },
+    {
+      "id": "seg_052",
+      "label": "XXII",
+      "segment_type": "book",
+      "file": "seg_052_xxii.txt",
+      "word_count": 4217,
+      "start_line": 14914,
+      "end_line": 15521
+    },
+    {
+      "id": "seg_053",
+      "label": "XXIII",
+      "segment_type": "book",
+      "file": "seg_053_xxiii.txt",
+      "word_count": 2669,
+      "start_line": 15522,
+      "end_line": 15888
+    },
+    {
+      "id": "seg_054",
+      "label": "The king alternate a dire tale relates,",
+      "segment_type": "tale",
+      "file": "seg_054_the-king-alternate-a-dire-tale-relates.txt",
+      "word_count": 543,
+      "start_line": 15889,
+      "end_line": 15965
+    },
+    {
+      "id": "seg_055",
+      "label": "XXIV",
+      "segment_type": "book",
+      "file": "seg_055_xxiv.txt",
+      "word_count": 4967,
+      "start_line": 15966,
+      "end_line": 16651
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "text_id": "legends-of-egyptian-gods",
+  "tradition": "egyptian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\egyptian\\legends-of-egyptian-gods\\normalized\\legends-of-egyptian-gods_best.txt",
+  "strategy": "structural",
+  "segment_count": 30,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 789,
+      "start_line": 0,
+      "end_line": 144
+    },
+    {
+      "id": "seg_002",
+      "label": "I",
+      "segment_type": "section",
+      "file": "seg_002_i.txt",
+      "word_count": 1,
+      "start_line": 145,
+      "end_line": 147
+    },
+    {
+      "id": "seg_003",
+      "label": "THE LEGEND OF THE GOD NEB-ER-TCHER, AND THE HISTORY OF CREATION",
+      "segment_type": "tale",
+      "file": "seg_003_the-legend-of-the-god-neb-er-tcher-and-t.txt",
+      "word_count": 646,
+      "start_line": 148,
+      "end_line": 213
+    },
+    {
+      "id": "seg_004",
+      "label": "The Legend of the Creation is found in the third work which is given in",
+      "segment_type": "tale",
+      "file": "seg_004_the-legend-of-the-creation-is-found-in-t.txt",
+      "word_count": 311,
+      "start_line": 214,
+      "end_line": 241
+    },
+    {
+      "id": "seg_005",
+      "label": "The story of the Creation is supposed to be told by the god Neb-er-",
+      "segment_type": "tale",
+      "file": "seg_005_the-story-of-the-creation-is-supposed-to.txt",
+      "word_count": 1659,
+      "start_line": 242,
+      "end_line": 391
+    },
+    {
+      "id": "seg_006",
+      "label": "II",
+      "segment_type": "section",
+      "file": "seg_006_ii.txt",
+      "word_count": 1,
+      "start_line": 392,
+      "end_line": 394
+    },
+    {
+      "id": "seg_007",
+      "label": "THE LEGEND OF THE DESTRUCTION OF MANKIND",
+      "segment_type": "tale",
+      "file": "seg_007_the-legend-of-the-destruction-of-mankind.txt",
+      "word_count": 2527,
+      "start_line": 395,
+      "end_line": 634
+    },
+    {
+      "id": "seg_008",
+      "label": "III",
+      "segment_type": "section",
+      "file": "seg_008_iii.txt",
+      "word_count": 1,
+      "start_line": 635,
+      "end_line": 637
+    },
+    {
+      "id": "seg_009",
+      "label": "THE LEGEND OF RA AND ISIS",
+      "segment_type": "tale",
+      "file": "seg_009_the-legend-of-ra-and-isis.txt",
+      "word_count": 1476,
+      "start_line": 638,
+      "end_line": 776
+    },
+    {
+      "id": "seg_010",
+      "label": "IV",
+      "segment_type": "section",
+      "file": "seg_010_iv.txt",
+      "word_count": 1,
+      "start_line": 777,
+      "end_line": 779
+    },
+    {
+      "id": "seg_011",
+      "label": "THE LEGEND OF HERU-BEHUTET AND THE WINGED DISK",
+      "segment_type": "tale",
+      "file": "seg_011_the-legend-of-heru-behutet-and-the-winge.txt",
+      "word_count": 2480,
+      "start_line": 780,
+      "end_line": 1042
+    },
+    {
+      "id": "seg_012",
+      "label": "V",
+      "segment_type": "section",
+      "file": "seg_012_v.txt",
+      "word_count": 1481,
+      "start_line": 1043,
+      "end_line": 1200
+    },
+    {
+      "id": "seg_013",
+      "label": "VI",
+      "segment_type": "section",
+      "file": "seg_013_vi.txt",
+      "word_count": 1997,
+      "start_line": 1201,
+      "end_line": 1408
+    },
+    {
+      "id": "seg_014",
+      "label": "VII",
+      "segment_type": "section",
+      "file": "seg_014_vii.txt",
+      "word_count": 2090,
+      "start_line": 1409,
+      "end_line": 1596
+    },
+    {
+      "id": "seg_015",
+      "label": "VIII",
+      "segment_type": "section",
+      "file": "seg_015_viii.txt",
+      "word_count": 1,
+      "start_line": 1597,
+      "end_line": 1599
+    },
+    {
+      "id": "seg_016",
+      "label": "THE LEGEND OF THE DEATH AND RESURRECTION OF HORUS, AND OTHER MAGICAL",
+      "segment_type": "tale",
+      "file": "seg_016_the-legend-of-the-death-and-resurrection.txt",
+      "word_count": 3091,
+      "start_line": 1600,
+      "end_line": 1873
+    },
+    {
+      "id": "seg_017",
+      "label": "IX",
+      "segment_type": "section",
+      "file": "seg_017_ix.txt",
+      "word_count": 2891,
+      "start_line": 1874,
+      "end_line": 2150
+    },
+    {
+      "id": "seg_018",
+      "label": "THE LEGEND OF THE DESTRUCTION OF MANKIND",
+      "segment_type": "tale",
+      "file": "seg_018_the-legend-of-the-destruction-of-mankind.txt",
+      "word_count": 7,
+      "start_line": 2151,
+      "end_line": 2153
+    },
+    {
+      "id": "seg_019",
+      "label": "CHAPTER I",
+      "segment_type": "chapter",
+      "file": "seg_019_chapter-i.txt",
+      "word_count": 1821,
+      "start_line": 2154,
+      "end_line": 2313
+    },
+    {
+      "id": "seg_020",
+      "label": "THE LEGEND OF THE DESTRUCTION OF MANKIND",
+      "segment_type": "tale",
+      "file": "seg_020_the-legend-of-the-destruction-of-mankind.txt",
+      "word_count": 7,
+      "start_line": 2314,
+      "end_line": 2316
+    },
+    {
+      "id": "seg_021",
+      "label": "CHAPTER II",
+      "segment_type": "chapter",
+      "file": "seg_021_chapter-ii.txt",
+      "word_count": 443,
+      "start_line": 2317,
+      "end_line": 2354
+    },
+    {
+      "id": "seg_022",
+      "label": "THE LEGEND OF THE DESTRUCTION OF MANKIND",
+      "segment_type": "tale",
+      "file": "seg_022_the-legend-of-the-destruction-of-mankind.txt",
+      "word_count": 7,
+      "start_line": 2355,
+      "end_line": 2357
+    },
+    {
+      "id": "seg_023",
+      "label": "CHAPTER III",
+      "segment_type": "chapter",
+      "file": "seg_023_chapter-iii.txt",
+      "word_count": 290,
+      "start_line": 2358,
+      "end_line": 2384
+    },
+    {
+      "id": "seg_024",
+      "label": "THE LEGEND OF THE DESTRUCTION OF MANKIND",
+      "segment_type": "tale",
+      "file": "seg_024_the-legend-of-the-destruction-of-mankind.txt",
+      "word_count": 7,
+      "start_line": 2385,
+      "end_line": 2387
+    },
+    {
+      "id": "seg_025",
+      "label": "CHAPTER IV",
+      "segment_type": "chapter",
+      "file": "seg_025_chapter-iv.txt",
+      "word_count": 329,
+      "start_line": 2388,
+      "end_line": 2420
+    },
+    {
+      "id": "seg_026",
+      "label": "THE LEGEND OF THE DESTRUCTION OF MANKIND",
+      "segment_type": "tale",
+      "file": "seg_026_the-legend-of-the-destruction-of-mankind.txt",
+      "word_count": 7,
+      "start_line": 2421,
+      "end_line": 2423
+    },
+    {
+      "id": "seg_027",
+      "label": "CHAPTER V",
+      "segment_type": "chapter",
+      "file": "seg_027_chapter-v.txt",
+      "word_count": 814,
+      "start_line": 2424,
+      "end_line": 2499
+    },
+    {
+      "id": "seg_028",
+      "label": "THE LEGEND OF RA AND ISIS",
+      "segment_type": "tale",
+      "file": "seg_028_the-legend-of-ra-and-isis.txt",
+      "word_count": 1886,
+      "start_line": 2500,
+      "end_line": 2662
+    },
+    {
+      "id": "seg_029",
+      "label": "THE LEGEND OF HORUS OF BEHUTET AND THE WINGED DISK",
+      "segment_type": "tale",
+      "file": "seg_029_the-legend-of-horus-of-behutet-and-the-w.txt",
+      "word_count": 12225,
+      "start_line": 2663,
+      "end_line": 4097
+    },
+    {
+      "id": "seg_030",
+      "label": "THE LEGEND OF THE DEATH OF HORUS THROUGH THE STING OF A SCORPION AND OF",
+      "segment_type": "tale",
+      "file": "seg_030_the-legend-of-the-death-of-horus-through.txt",
+      "word_count": 21180,
+      "start_line": 4098,
+      "end_line": 6350
+    }
+  ]
+}

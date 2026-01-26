@@ -1,0 +1,18 @@
+{
+  "text_id": "ikom-folk-stories-from-southern-nigeria",
+  "tradition": "african",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\ikom-folk-stories-from-southern-nigeria\\normalized\\ikom-folk-stories-from-southern-nigeria_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 1,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 17691,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

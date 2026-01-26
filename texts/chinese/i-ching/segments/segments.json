@@ -1,0 +1,45 @@
+{
+  "text_id": "i-ching",
+  "tradition": "chinese",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\chinese\\i-ching\\normalized\\i-ching_best.txt",
+  "strategy": "structural",
+  "segment_count": 4,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "PART I.  THE WARRIOR",
+      "segment_type": "part",
+      "file": "seg_001_part-i-the-warrior.txt",
+      "word_count": 37,
+      "start_line": 23,
+      "end_line": 32
+    },
+    {
+      "id": "seg_002",
+      "label": "PART II.  THE WOMAN",
+      "segment_type": "part",
+      "file": "seg_002_part-ii-the-woman.txt",
+      "word_count": 34,
+      "start_line": 33,
+      "end_line": 46
+    },
+    {
+      "id": "seg_003",
+      "label": "PART ONE. THE WARRIOR",
+      "segment_type": "part",
+      "file": "seg_003_part-one-the-warrior.txt",
+      "word_count": 29420,
+      "start_line": 47,
+      "end_line": 3200
+    },
+    {
+      "id": "seg_004",
+      "label": "PART TWO. THE WOMAN",
+      "segment_type": "part",
+      "file": "seg_004_part-two-the-woman.txt",
+      "word_count": 18951,
+      "start_line": 3201,
+      "end_line": 5344
+    }
+  ]
+}

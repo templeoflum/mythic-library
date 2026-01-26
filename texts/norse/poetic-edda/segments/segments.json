@@ -1,0 +1,36 @@
+{
+  "text_id": "poetic-edda",
+  "tradition": "norse",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\norse\\poetic-edda\\normalized\\poetic-edda_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 39238,
+      "start_line": 0,
+      "end_line": 6002
+    },
+    {
+      "id": "seg_002",
+      "label": "part in such uncertainty. Show me the way--all is decreed",
+      "segment_type": "part",
+      "file": "seg_002_part-in-such-uncertainty-show-me-the-way.txt",
+      "word_count": 47690,
+      "start_line": 6003,
+      "end_line": 12262
+    },
+    {
+      "id": "seg_003",
+      "label": "The story of Siegfried and Brynhild constitutes the greatest epic in",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-siegfried-and-brynhild-cons.txt",
+      "word_count": 368,
+      "start_line": 12263,
+      "end_line": 12308
+    }
+  ]
+}

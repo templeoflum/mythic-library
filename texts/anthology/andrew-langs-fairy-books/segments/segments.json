@@ -1,0 +1,63 @@
+{
+  "text_id": "andrew-langs-fairy-books",
+  "tradition": "anthology",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\anthology\\andrew-langs-fairy-books\\normalized\\andrew-langs-fairy-books_best.txt",
+  "strategy": "structural",
+  "segment_count": 6,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 754,
+      "start_line": 0,
+      "end_line": 90
+    },
+    {
+      "id": "seg_002",
+      "label": "The purely ritualistic tales, called diams, are learned word by word",
+      "segment_type": "tale",
+      "file": "seg_002_the-purely-ritualistic-tales-called-diam.txt",
+      "word_count": 8392,
+      "start_line": 91,
+      "end_line": 887
+    },
+    {
+      "id": "seg_003",
+      "label": "the other tales without any hint of celestial qualities. Aside from",
+      "segment_type": "tale",
+      "file": "seg_003_the-other-tales-without-any-hint-of-cele.txt",
+      "word_count": 240,
+      "start_line": 888,
+      "end_line": 915
+    },
+    {
+      "id": "seg_004",
+      "label": "The second division of the tales now assumes a position of importance",
+      "segment_type": "tale",
+      "file": "seg_004_the-second-division-of-the-tales-now-ass.txt",
+      "word_count": 1307,
+      "start_line": 916,
+      "end_line": 1038
+    },
+    {
+      "id": "seg_005",
+      "label": "the first part of tale 85 is identical with that of the Ilocano,",
+      "segment_type": "tale",
+      "file": "seg_005_the-first-part-of-tale-85-is-identical-w.txt",
+      "word_count": 13395,
+      "start_line": 1039,
+      "end_line": 2704
+    },
+    {
+      "id": "seg_006",
+      "label": "the Tagalog version of this tale see Bayliss, (Jour. Am. Folk-lore,",
+      "segment_type": "tale",
+      "file": "seg_006_the-tagalog-version-of-this-tale-see-bay.txt",
+      "word_count": 349,
+      "start_line": 2705,
+      "end_line": 2760
+    }
+  ]
+}

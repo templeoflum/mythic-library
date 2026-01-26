@@ -1,0 +1,45 @@
+{
+  "text_id": "genesis-kjv",
+  "tradition": "hebrew",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\hebrew\\genesis-kjv\\normalized\\genesis-kjv_best.txt",
+  "strategy": "structural",
+  "segment_count": 4,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 143355,
+      "start_line": 0,
+      "end_line": 16806
+    },
+    {
+      "id": "seg_002",
+      "label": "did",
+      "segment_type": "section",
+      "file": "seg_002_did.txt",
+      "word_count": 205679,
+      "start_line": 16807,
+      "end_line": 40425
+    },
+    {
+      "id": "seg_003",
+      "label": "the land in an hundred talents of silver and a talent of gold",
+      "segment_type": "tale",
+      "file": "seg_003_the-land-in-an-hundred-talents-of-silver.txt",
+      "word_count": 202907,
+      "start_line": 40426,
+      "end_line": 66998
+    },
+    {
+      "id": "seg_004",
+      "label": "part into all the winds, and I will draw out a sword after them",
+      "segment_type": "part",
+      "file": "seg_004_part-into-all-the-winds-and-i-will-draw-.txt",
+      "word_count": 269555,
+      "start_line": 66999,
+      "end_line": 99457
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "text_id": "the-iliad",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\the-iliad\\normalized\\the-iliad_best.txt",
+  "strategy": "structural",
+  "segment_count": 50,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_001_i.txt",
+      "word_count": 2,
+      "start_line": 22,
+      "end_line": 22
+    },
+    {
+      "id": "seg_002",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_002_ii.txt",
+      "word_count": 2,
+      "start_line": 23,
+      "end_line": 23
+    },
+    {
+      "id": "seg_003",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_003_iii.txt",
+      "word_count": 2,
+      "start_line": 24,
+      "end_line": 24
+    },
+    {
+      "id": "seg_004",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_004_iv.txt",
+      "word_count": 2,
+      "start_line": 25,
+      "end_line": 25
+    },
+    {
+      "id": "seg_005",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_005_v.txt",
+      "word_count": 2,
+      "start_line": 26,
+      "end_line": 26
+    },
+    {
+      "id": "seg_006",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_006_vi.txt",
+      "word_count": 2,
+      "start_line": 27,
+      "end_line": 27
+    },
+    {
+      "id": "seg_007",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_007_vii.txt",
+      "word_count": 2,
+      "start_line": 28,
+      "end_line": 28
+    },
+    {
+      "id": "seg_008",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_008_viii.txt",
+      "word_count": 2,
+      "start_line": 29,
+      "end_line": 29
+    },
+    {
+      "id": "seg_009",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_009_ix.txt",
+      "word_count": 2,
+      "start_line": 30,
+      "end_line": 30
+    },
+    {
+      "id": "seg_010",
+      "label": "X",
+      "segment_type": "book",
+      "file": "seg_010_x.txt",
+      "word_count": 2,
+      "start_line": 31,
+      "end_line": 31
+    },
+    {
+      "id": "seg_011",
+      "label": "XI",
+      "segment_type": "book",
+      "file": "seg_011_xi.txt",
+      "word_count": 2,
+      "start_line": 32,
+      "end_line": 32
+    },
+    {
+      "id": "seg_012",
+      "label": "XII",
+      "segment_type": "book",
+      "file": "seg_012_xii.txt",
+      "word_count": 2,
+      "start_line": 33,
+      "end_line": 33
+    },
+    {
+      "id": "seg_013",
+      "label": "XIII",
+      "segment_type": "book",
+      "file": "seg_013_xiii.txt",
+      "word_count": 2,
+      "start_line": 34,
+      "end_line": 34
+    },
+    {
+      "id": "seg_014",
+      "label": "XIV",
+      "segment_type": "book",
+      "file": "seg_014_xiv.txt",
+      "word_count": 2,
+      "start_line": 35,
+      "end_line": 35
+    },
+    {
+      "id": "seg_015",
+      "label": "XV",
+      "segment_type": "book",
+      "file": "seg_015_xv.txt",
+      "word_count": 2,
+      "start_line": 36,
+      "end_line": 36
+    },
+    {
+      "id": "seg_016",
+      "label": "XVI",
+      "segment_type": "book",
+      "file": "seg_016_xvi.txt",
+      "word_count": 2,
+      "start_line": 37,
+      "end_line": 37
+    },
+    {
+      "id": "seg_017",
+      "label": "XVII",
+      "segment_type": "book",
+      "file": "seg_017_xvii.txt",
+      "word_count": 2,
+      "start_line": 38,
+      "end_line": 38
+    },
+    {
+      "id": "seg_018",
+      "label": "XVIII",
+      "segment_type": "book",
+      "file": "seg_018_xviii.txt",
+      "word_count": 2,
+      "start_line": 39,
+      "end_line": 39
+    },
+    {
+      "id": "seg_019",
+      "label": "XIX",
+      "segment_type": "book",
+      "file": "seg_019_xix.txt",
+      "word_count": 2,
+      "start_line": 40,
+      "end_line": 40
+    },
+    {
+      "id": "seg_020",
+      "label": "XX",
+      "segment_type": "book",
+      "file": "seg_020_xx.txt",
+      "word_count": 2,
+      "start_line": 41,
+      "end_line": 41
+    },
+    {
+      "id": "seg_021",
+      "label": "XXI",
+      "segment_type": "book",
+      "file": "seg_021_xxi.txt",
+      "word_count": 2,
+      "start_line": 42,
+      "end_line": 42
+    },
+    {
+      "id": "seg_022",
+      "label": "XXII",
+      "segment_type": "book",
+      "file": "seg_022_xxii.txt",
+      "word_count": 2,
+      "start_line": 43,
+      "end_line": 43
+    },
+    {
+      "id": "seg_023",
+      "label": "XXIII",
+      "segment_type": "book",
+      "file": "seg_023_xxiii.txt",
+      "word_count": 2,
+      "start_line": 44,
+      "end_line": 44
+    },
+    {
+      "id": "seg_024",
+      "label": "XXIV",
+      "segment_type": "book",
+      "file": "seg_024_xxiv.txt",
+      "word_count": 20070,
+      "start_line": 45,
+      "end_line": 1992
+    },
+    {
+      "id": "seg_025",
+      "label": "I",
+      "segment_type": "book",
+      "file": "seg_025_i.txt",
+      "word_count": 6306,
+      "start_line": 1993,
+      "end_line": 2901
+    },
+    {
+      "id": "seg_026",
+      "label": "II",
+      "segment_type": "book",
+      "file": "seg_026_ii.txt",
+      "word_count": 8200,
+      "start_line": 2902,
+      "end_line": 4096
+    },
+    {
+      "id": "seg_027",
+      "label": "III",
+      "segment_type": "book",
+      "file": "seg_027_iii.txt",
+      "word_count": 4654,
+      "start_line": 4097,
+      "end_line": 4753
+    },
+    {
+      "id": "seg_028",
+      "label": "IV",
+      "segment_type": "book",
+      "file": "seg_028_iv.txt",
+      "word_count": 5133,
+      "start_line": 4754,
+      "end_line": 5466
+    },
+    {
+      "id": "seg_029",
+      "label": "V",
+      "segment_type": "book",
+      "file": "seg_029_v.txt",
+      "word_count": 8866,
+      "start_line": 5467,
+      "end_line": 6720
+    },
+    {
+      "id": "seg_030",
+      "label": "VI",
+      "segment_type": "book",
+      "file": "seg_030_vi.txt",
+      "word_count": 5374,
+      "start_line": 6721,
+      "end_line": 7485
+    },
+    {
+      "id": "seg_031",
+      "label": "VII",
+      "segment_type": "book",
+      "file": "seg_031_vii.txt",
+      "word_count": 4790,
+      "start_line": 7486,
+      "end_line": 8149
+    },
+    {
+      "id": "seg_032",
+      "label": "VIII",
+      "segment_type": "book",
+      "file": "seg_032_viii.txt",
+      "word_count": 5741,
+      "start_line": 8150,
+      "end_line": 8941
+    },
+    {
+      "id": "seg_033",
+      "label": "IX",
+      "segment_type": "book",
+      "file": "seg_033_ix.txt",
+      "word_count": 6628,
+      "start_line": 8942,
+      "end_line": 9857
+    },
+    {
+      "id": "seg_034",
+      "label": "X",
+      "segment_type": "book",
+      "file": "seg_034_x.txt",
+      "word_count": 5487,
+      "start_line": 9858,
+      "end_line": 10620
+    },
+    {
+      "id": "seg_035",
+      "label": "XI",
+      "segment_type": "book",
+      "file": "seg_035_xi.txt",
+      "word_count": 7915,
+      "start_line": 10621,
+      "end_line": 11707
+    },
+    {
+      "id": "seg_036",
+      "label": "XII",
+      "segment_type": "book",
+      "file": "seg_036_xii.txt",
+      "word_count": 4492,
+      "start_line": 11708,
+      "end_line": 12329
+    },
+    {
+      "id": "seg_037",
+      "label": "XIII",
+      "segment_type": "book",
+      "file": "seg_037_xiii.txt",
+      "word_count": 8395,
+      "start_line": 12330,
+      "end_line": 13496
+    },
+    {
+      "id": "seg_038",
+      "label": "XIV",
+      "segment_type": "book",
+      "file": "seg_038_xiv.txt",
+      "word_count": 4996,
+      "start_line": 13497,
+      "end_line": 14204
+    },
+    {
+      "id": "seg_039",
+      "label": "XV",
+      "segment_type": "book",
+      "file": "seg_039_xv.txt",
+      "word_count": 7303,
+      "start_line": 14205,
+      "end_line": 15207
+    },
+    {
+      "id": "seg_040",
+      "label": "XVI",
+      "segment_type": "book",
+      "file": "seg_040_xvi.txt",
+      "word_count": 8299,
+      "start_line": 15208,
+      "end_line": 16383
+    },
+    {
+      "id": "seg_041",
+      "label": "XVII",
+      "segment_type": "book",
+      "file": "seg_041_xvii.txt",
+      "word_count": 6829,
+      "start_line": 16384,
+      "end_line": 17341
+    },
+    {
+      "id": "seg_042",
+      "label": "XVIII",
+      "segment_type": "book",
+      "file": "seg_042_xviii.txt",
+      "word_count": 5714,
+      "start_line": 17342,
+      "end_line": 18149
+    },
+    {
+      "id": "seg_043",
+      "label": "XIX",
+      "segment_type": "book",
+      "file": "seg_043_xix.txt",
+      "word_count": 3810,
+      "start_line": 18150,
+      "end_line": 18692
+    },
+    {
+      "id": "seg_044",
+      "label": "XX",
+      "segment_type": "book",
+      "file": "seg_044_xx.txt",
+      "word_count": 4641,
+      "start_line": 18693,
+      "end_line": 19346
+    },
+    {
+      "id": "seg_045",
+      "label": "XXI",
+      "segment_type": "book",
+      "file": "seg_045_xxi.txt",
+      "word_count": 5760,
+      "start_line": 19347,
+      "end_line": 20153
+    },
+    {
+      "id": "seg_046",
+      "label": "XXII",
+      "segment_type": "book",
+      "file": "seg_046_xxii.txt",
+      "word_count": 5340,
+      "start_line": 20154,
+      "end_line": 20898
+    },
+    {
+      "id": "seg_047",
+      "label": "XXIII",
+      "segment_type": "book",
+      "file": "seg_047_xxiii.txt",
+      "word_count": 5639,
+      "start_line": 20899,
+      "end_line": 21677
+    },
+    {
+      "id": "seg_048",
+      "label": "The golden talents Merion next obtain’d;",
+      "segment_type": "tale",
+      "file": "seg_048_the-golden-talents-merion-next-obtaind.txt",
+      "word_count": 2763,
+      "start_line": 21678,
+      "end_line": 22068
+    },
+    {
+      "id": "seg_049",
+      "label": "XXIV",
+      "segment_type": "book",
+      "file": "seg_049_xxiv.txt",
+      "word_count": 9780,
+      "start_line": 22069,
+      "end_line": 23393
+    },
+    {
+      "id": "seg_050",
+      "label": "xxx",
+      "segment_type": "section",
+      "file": "seg_050_xxx.txt",
+      "word_count": 16070,
+      "start_line": 23394,
+      "end_line": 25609
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "text_id": "zanzibar-tales",
+  "tradition": "african",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\african\\zanzibar-tales\\normalized\\zanzibar-tales_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 68,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 905,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_002",
+      "label": "section_2",
+      "segment_type": "section",
+      "file": "seg_002_section-2.txt",
+      "word_count": 2075,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_003",
+      "label": "section_3",
+      "segment_type": "section",
+      "file": "seg_003_section-3.txt",
+      "word_count": 519,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_004",
+      "label": "section_4",
+      "segment_type": "section",
+      "file": "seg_004_section-4.txt",
+      "word_count": 1783,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_005",
+      "label": "section_5",
+      "segment_type": "section",
+      "file": "seg_005_section-5.txt",
+      "word_count": 520,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_006",
+      "label": "section_6",
+      "segment_type": "section",
+      "file": "seg_006_section-6.txt",
+      "word_count": 1807,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_007",
+      "label": "section_7",
+      "segment_type": "section",
+      "file": "seg_007_section-7.txt",
+      "word_count": 552,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_008",
+      "label": "section_8",
+      "segment_type": "section",
+      "file": "seg_008_section-8.txt",
+      "word_count": 1953,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_009",
+      "label": "section_9",
+      "segment_type": "section",
+      "file": "seg_009_section-9.txt",
+      "word_count": 532,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_010",
+      "label": "section_10",
+      "segment_type": "section",
+      "file": "seg_010_section-10.txt",
+      "word_count": 519,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_011",
+      "label": "section_11",
+      "segment_type": "section",
+      "file": "seg_011_section-11.txt",
+      "word_count": 1749,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_012",
+      "label": "section_12",
+      "segment_type": "section",
+      "file": "seg_012_section-12.txt",
+      "word_count": 547,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_013",
+      "label": "section_13",
+      "segment_type": "section",
+      "file": "seg_013_section-13.txt",
+      "word_count": 1808,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_014",
+      "label": "section_14",
+      "segment_type": "section",
+      "file": "seg_014_section-14.txt",
+      "word_count": 540,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_015",
+      "label": "section_15",
+      "segment_type": "section",
+      "file": "seg_015_section-15.txt",
+      "word_count": 1979,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_016",
+      "label": "section_16",
+      "segment_type": "section",
+      "file": "seg_016_section-16.txt",
+      "word_count": 554,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_017",
+      "label": "section_17",
+      "segment_type": "section",
+      "file": "seg_017_section-17.txt",
+      "word_count": 1663,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_018",
+      "label": "section_18",
+      "segment_type": "section",
+      "file": "seg_018_section-18.txt",
+      "word_count": 566,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_019",
+      "label": "section_19",
+      "segment_type": "section",
+      "file": "seg_019_section-19.txt",
+      "word_count": 1621,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_020",
+      "label": "section_20",
+      "segment_type": "section",
+      "file": "seg_020_section-20.txt",
+      "word_count": 513,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_021",
+      "label": "section_21",
+      "segment_type": "section",
+      "file": "seg_021_section-21.txt",
+      "word_count": 1975,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_022",
+      "label": "section_22",
+      "segment_type": "section",
+      "file": "seg_022_section-22.txt",
+      "word_count": 587,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_023",
+      "label": "section_23",
+      "segment_type": "section",
+      "file": "seg_023_section-23.txt",
+      "word_count": 1940,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_024",
+      "label": "section_24",
+      "segment_type": "section",
+      "file": "seg_024_section-24.txt",
+      "word_count": 648,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_025",
+      "label": "section_25",
+      "segment_type": "section",
+      "file": "seg_025_section-25.txt",
+      "word_count": 1997,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_026",
+      "label": "section_26",
+      "segment_type": "section",
+      "file": "seg_026_section-26.txt",
+      "word_count": 605,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_027",
+      "label": "section_27",
+      "segment_type": "section",
+      "file": "seg_027_section-27.txt",
+      "word_count": 1900,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_028",
+      "label": "section_28",
+      "segment_type": "section",
+      "file": "seg_028_section-28.txt",
+      "word_count": 543,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_029",
+      "label": "section_29",
+      "segment_type": "section",
+      "file": "seg_029_section-29.txt",
+      "word_count": 1623,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_030",
+      "label": "section_30",
+      "segment_type": "section",
+      "file": "seg_030_section-30.txt",
+      "word_count": 589,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_031",
+      "label": "section_31",
+      "segment_type": "section",
+      "file": "seg_031_section-31.txt",
+      "word_count": 1916,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_032",
+      "label": "section_32",
+      "segment_type": "section",
+      "file": "seg_032_section-32.txt",
+      "word_count": 567,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_033",
+      "label": "section_33",
+      "segment_type": "section",
+      "file": "seg_033_section-33.txt",
+      "word_count": 1983,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_034",
+      "label": "section_34",
+      "segment_type": "section",
+      "file": "seg_034_section-34.txt",
+      "word_count": 522,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_035",
+      "label": "section_35",
+      "segment_type": "section",
+      "file": "seg_035_section-35.txt",
+      "word_count": 1866,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_036",
+      "label": "section_36",
+      "segment_type": "section",
+      "file": "seg_036_section-36.txt",
+      "word_count": 513,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_037",
+      "label": "section_37",
+      "segment_type": "section",
+      "file": "seg_037_section-37.txt",
+      "word_count": 1932,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_038",
+      "label": "section_38",
+      "segment_type": "section",
+      "file": "seg_038_section-38.txt",
+      "word_count": 608,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_039",
+      "label": "section_39",
+      "segment_type": "section",
+      "file": "seg_039_section-39.txt",
+      "word_count": 1888,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_040",
+      "label": "section_40",
+      "segment_type": "section",
+      "file": "seg_040_section-40.txt",
+      "word_count": 553,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_041",
+      "label": "section_41",
+      "segment_type": "section",
+      "file": "seg_041_section-41.txt",
+      "word_count": 1858,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_042",
+      "label": "section_42",
+      "segment_type": "section",
+      "file": "seg_042_section-42.txt",
+      "word_count": 531,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_043",
+      "label": "section_43",
+      "segment_type": "section",
+      "file": "seg_043_section-43.txt",
+      "word_count": 2049,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_044",
+      "label": "section_44",
+      "segment_type": "section",
+      "file": "seg_044_section-44.txt",
+      "word_count": 542,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_045",
+      "label": "section_45",
+      "segment_type": "section",
+      "file": "seg_045_section-45.txt",
+      "word_count": 1767,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_046",
+      "label": "section_46",
+      "segment_type": "section",
+      "file": "seg_046_section-46.txt",
+      "word_count": 590,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_047",
+      "label": "section_47",
+      "segment_type": "section",
+      "file": "seg_047_section-47.txt",
+      "word_count": 1744,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_048",
+      "label": "section_48",
+      "segment_type": "section",
+      "file": "seg_048_section-48.txt",
+      "word_count": 726,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_049",
+      "label": "section_49",
+      "segment_type": "section",
+      "file": "seg_049_section-49.txt",
+      "word_count": 1857,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_050",
+      "label": "section_50",
+      "segment_type": "section",
+      "file": "seg_050_section-50.txt",
+      "word_count": 547,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_051",
+      "label": "section_51",
+      "segment_type": "section",
+      "file": "seg_051_section-51.txt",
+      "word_count": 1622,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_052",
+      "label": "section_52",
+      "segment_type": "section",
+      "file": "seg_052_section-52.txt",
+      "word_count": 505,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_053",
+      "label": "section_53",
+      "segment_type": "section",
+      "file": "seg_053_section-53.txt",
+      "word_count": 1744,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_054",
+      "label": "section_54",
+      "segment_type": "section",
+      "file": "seg_054_section-54.txt",
+      "word_count": 567,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_055",
+      "label": "section_55",
+      "segment_type": "section",
+      "file": "seg_055_section-55.txt",
+      "word_count": 1703,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_056",
+      "label": "section_56",
+      "segment_type": "section",
+      "file": "seg_056_section-56.txt",
+      "word_count": 539,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_057",
+      "label": "section_57",
+      "segment_type": "section",
+      "file": "seg_057_section-57.txt",
+      "word_count": 2067,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_058",
+      "label": "section_58",
+      "segment_type": "section",
+      "file": "seg_058_section-58.txt",
+      "word_count": 723,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_059",
+      "label": "section_59",
+      "segment_type": "section",
+      "file": "seg_059_section-59.txt",
+      "word_count": 2081,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_060",
+      "label": "section_60",
+      "segment_type": "section",
+      "file": "seg_060_section-60.txt",
+      "word_count": 562,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_061",
+      "label": "section_61",
+      "segment_type": "section",
+      "file": "seg_061_section-61.txt",
+      "word_count": 1842,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_062",
+      "label": "section_62",
+      "segment_type": "section",
+      "file": "seg_062_section-62.txt",
+      "word_count": 572,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_063",
+      "label": "section_63",
+      "segment_type": "section",
+      "file": "seg_063_section-63.txt",
+      "word_count": 1959,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_064",
+      "label": "section_64",
+      "segment_type": "section",
+      "file": "seg_064_section-64.txt",
+      "word_count": 654,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_065",
+      "label": "section_65",
+      "segment_type": "section",
+      "file": "seg_065_section-65.txt",
+      "word_count": 1550,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_066",
+      "label": "section_66",
+      "segment_type": "section",
+      "file": "seg_066_section-66.txt",
+      "word_count": 4031,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_067",
+      "label": "section_67",
+      "segment_type": "section",
+      "file": "seg_067_section-67.txt",
+      "word_count": 505,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_068",
+      "label": "section_68",
+      "segment_type": "section",
+      "file": "seg_068_section-68.txt",
+      "word_count": 1261,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

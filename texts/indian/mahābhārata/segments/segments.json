@@ -1,0 +1,117 @@
+{
+  "text_id": "mahābhārata",
+  "tradition": "indian",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\indian\\mahābhārata\\normalized\\mahābhārata_best.txt",
+  "strategy": "structural",
+  "segment_count": 12,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "1",
+      "segment_type": "book",
+      "file": "seg_001_1.txt",
+      "word_count": 10726,
+      "start_line": 10,
+      "end_line": 1024
+    },
+    {
+      "id": "seg_002",
+      "label": "story of ‘Savitri’ illustrating the great merit of connubial chastity",
+      "segment_type": "tale",
+      "file": "seg_002_story-of-savitri-illustrating-the-great-.txt",
+      "word_count": 252,
+      "start_line": 1025,
+      "end_line": 1045
+    },
+    {
+      "id": "seg_003",
+      "label": "story of the installation of Bhishma as commander-in-chief. The next is",
+      "segment_type": "tale",
+      "file": "seg_003_story-of-the-installation-of-bhishma-as-.txt",
+      "word_count": 5697,
+      "start_line": 1046,
+      "end_line": 1553
+    },
+    {
+      "id": "seg_004",
+      "label": "story of Samvarta and Marutta. Then is described the discovery (by the",
+      "segment_type": "tale",
+      "file": "seg_004_story-of-samvarta-and-marutta-then-is-de.txt",
+      "word_count": 214066,
+      "start_line": 1554,
+      "end_line": 21882
+    },
+    {
+      "id": "seg_005",
+      "label": "2",
+      "segment_type": "book",
+      "file": "seg_005_2.txt",
+      "word_count": 74573,
+      "start_line": 21883,
+      "end_line": 28869
+    },
+    {
+      "id": "seg_006",
+      "label": "3",
+      "segment_type": "book",
+      "file": "seg_006_3.txt",
+      "word_count": 4491,
+      "start_line": 28870,
+      "end_line": 29307
+    },
+    {
+      "id": "seg_007",
+      "label": "hymn of praise (to the sun).’",
+      "segment_type": "hymn",
+      "file": "seg_007_hymn-of-praise-to-the-sun.txt",
+      "word_count": 246655,
+      "start_line": 29308,
+      "end_line": 50984
+    },
+    {
+      "id": "seg_008",
+      "label": "the tale of our cattle. We have no mind to see the sons of Pandu. We will",
+      "segment_type": "tale",
+      "file": "seg_008_the-tale-of-our-cattle-we-have-no-mind-t.txt",
+      "word_count": 360,
+      "start_line": 50985,
+      "end_line": 51019
+    },
+    {
+      "id": "seg_009",
+      "label": "the task of tale by marking and counting every calf that was three years",
+      "segment_type": "tale",
+      "file": "seg_009_the-task-of-tale-by-marking-and-counting.txt",
+      "word_count": 13824,
+      "start_line": 51020,
+      "end_line": 52296
+    },
+    {
+      "id": "seg_010",
+      "label": "the old story regarding the fruit obtained by Mudgala, for having given",
+      "segment_type": "tale",
+      "file": "seg_010_the-old-story-regarding-the-fruit-obtain.txt",
+      "word_count": 13192,
+      "start_line": 52297,
+      "end_line": 53480
+    },
+    {
+      "id": "seg_011",
+      "label": "story of Rama of great achievements!’",
+      "segment_type": "tale",
+      "file": "seg_011_story-of-rama-of-great-achievements.txt",
+      "word_count": 28216,
+      "start_line": 53481,
+      "end_line": 55942
+    },
+    {
+      "id": "seg_012",
+      "label": "story of Savitri, attaineth to happiness, and success in everything, and",
+      "segment_type": "tale",
+      "file": "seg_012_story-of-savitri-attaineth-to-happiness-.txt",
+      "word_count": 19826,
+      "start_line": 55943,
+      "end_line": 57831
+    }
+  ]
+}

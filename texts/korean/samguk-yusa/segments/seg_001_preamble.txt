@@ -1,0 +1,448 @@
+Table of Contents
+SAMGUK YUSA
+PREF ACE
+BOOK ONE
+I. Wonder I (the Founding of the Kingdoms)
+BOOK TWO
+II. Wonder 2. (United Silla)
+BOOK THREE
+III. The Rise of Buddhism
+IV. Pagodas and Buddhist Images
+BOOK FOUR
+V. Anecdotes of Renowned Monks
+BOOK FIVE
+VI. Miracles
+VII. T ales of Devotion
+VIII. Seclusion
+IX. Filial Piety
+Epilogue
+APPENDIX
+
+S A MGU K  Y U S A
+Ilyon
+This page copyright © 2006 Silk Pagoda.
+Legends and History of the Thr ee Kingdoms of Ancient Kor ea
+PREFACE
+I
+Modern civiliza tions developed from the beliefs and customs of people
+in prehistoric times. It is thus essential, if we are to understand a
+civilization, to study these ancient practices. The dif ficulty is usually that
+source materials are very scarce, and most of our understandin g of ancient
+times is based on the findings of archaeology .
+In the case of K orea we are fo rtunate to have two documents which,
+while by  no means contemporary with the events they describe, rely on
+ancient sources which by now have mostly disappeared. The first of these,
+Samguk Sagi  (History of the Three Kingdoms) was compiled by Kim Pu-sik
+(1075-1 151), a high of ficial of the Koryo court, as the of ficially sanctioned
+history o f that ancient period. It has the faults of most of ficial  chronicles,
+forcing events into a framework pleasing to the government and omitting all
+matter thought to be embarrassing or indecorous.
+The second such document is the present work,  Samguk Y usa  (roughly ,
+Legends of the Three Kingdo ms) compiled by Ilyon (1206— 1289),
+National Priest (Pogak kukjon) of Koryo. One of the chief values of this
+book is that it includes a great deal of material omitted by the of ficial
+history , so that t hrough it we can gain an understanding of the beliefs and
+practices of the people of anc ient times, if somewhat distorted by the
+author's Buddhist point of view .
+For that matter , the introduction of Buddhism itself dates from the Three
+Kingdoms period, and Buddhis m has had a strong influence on Korean
+culture ever since. The book is thus also valuable in that it gives us an
+insight into the way this religion developed in the course of Korean history .
+
+The book was written at a time when Korea was under the domination
+of the Mongols, who at that time ruled all China and Central Asia.
+Ilyon m akes ha rdly any mention of this fact, but the very wr iting of
+such a book at such a time is  significant, and the author's love for his
+country shines through every page.
+Since the termination of the Pac ific W ar (1941-1945) Oriental scholars
+have undertaken restudy of  Samguk Y usa  in orde r to discover historical
+developments o f peoples in the East buried in mythology an d the  sagas
+such as  Samguk Y usa.  Bot h Korean and Japanese sc holars naturally take
+special interest in the reinterpre tation of the tales in the book as a part of
+Oriental studies in history , early  poetry in archaic language, and  customs in
+addition to lar ge portions of the book on Buddhism and also interregional
+contacts between Korea and Japan.
+During t he past year I had a booklet “T ales from the Three Kin gdoms"
+published containing selected materials from Samguk Y usa, Samguk Sagi
+and some other old literature to  give preliminary information on the Three
+Kingdoms, befo re I completed the unabridged translation of  Samguk Y usa.
+If this volume can be of service to W estern scholars and general readers
+interested in Korea and Korean culture I shall have attained my purpose.
+Like all such books of its time,  Samguk Y usa  was written in literary
+Chinese. In preparing this Engli sh version, I have been greatly aided by Mr .
+Y i C hae-ho's translation of the book into modern Korean, and by a similar
+work by Dr . Y i Pyung-do. I would also like to thank Dr . L. Geor ge Paik,
+President Emeritus of Y onsei University , who inspired me to undertake this
+work, and Mr . G rafton K. Mintz of the Korea T imes for language of the
+manuscript and for his suggestions concerning the general arrangement of
+the book . Finall y , I am deeply grateful to the Y onsei Universi ty Press for
+agreeing to publish the book and for its help and understanding during the
+preparation of the volume.
+T ae-Hung Ha
+October , 1971 Seoul, Korea
+II
+In preparing this version of the  Samguk Y usa  my chie f care has been to
+make th e text easily accessible to the reader . For this reason I have kept
+footnotes to a minimum and have supplied explanations in parentheses
+where necessary . Except where indicated, therefore, the material in
+parentheses has been added by me. It should be added that almost all this
+
+information is taken from the very full annotations made by Mr . Ha in his
+original manuscript.
+Ilyon, like his c ontemporaries, d ates events in two ways, by the reigns
+of Chine se emp erors and by th e twelve-year cycle of the ani mals of the
+zodiac. E ach suc ceeding empero r had an of ficial name for the p eriod of his
+reign, an d some times he might have more than one for dif ferent periods. I
+have let  these stand, though mostly in abbreviated form, and have added
+Christian-era da tes in parentheses. All dates are A.D. unles s otherwise
+noted.
+Certain suf fixes occur rather frequently in place-names. I have
+explained them in the text, but for the convenience of the reader will also
+translate a few o f the most frequ ent ones here. Thus  sa  means “temple”  jon
+means “pavilion,”  song  m eans  “wall or fortress,” and  san  means
+“mountain.” I should like to acknowledge here the kind cooper ation of Mr .
+Ha and also of Professor Jun Hyung-kook, the director of the Y onsei
+University Press . Their cordial attitude and their toleration of m y crochets
+about the English language have  made my work on this book a joy . It is my
+hope that the reader will find equal pleasure in it.
+G. K. M
+INTRODUCTION
+FOR THE READERS
+Our kno wledge of the ancient h istory of Korea is scanty . Contemporary
+documents are few , and consis t mainly of Chinese writings w hich allude
+here and  there to Korea. Other documents we know only by q uotations in
+later wri tings, for wars and invasions destroyed the originals an d they have
+not surv ived. During the Koryo dynasty (935-1392) two chronicles of
+Korea's earliest period were com piled. The first,  Samguk Sagi,  was written
+by Kim Pu-sik, a high government of ficial, in the twelfth century . It
+followed the pattern of Chinese dynastic histories and the conventions of
+Confucian histor iography , the idea being that one may learn from history by
+studying the virtues and vices of the rulers of the past.
+The Confucian tendency was to  “humanize” the myths and leg ends of
+the past, to int erpret them as early distortions of events th at actually
+occurred, and thus much of what was actually mythology and folklore has
+been ob scured b y attempts to fit it into the framework of ac tual events.
+Thus the  Samguk Sagi,  while it contains considerable material that is
+
+obviously legen dary , attempts to fit the legends of early Korea into the
+framework of Confucian attitudes.
+The sec ond such document is t he  Samguk Y usa,  the present work, Its
+author was a Bu ddhist priest who was interested in the early history of his
+country . The book had no of ficial sanction and was thus not at the mercy of
+the of fi cial philosophy of history , While the writer subscribed to the
+Confucian idea of history to a great extent, he was also intelligent enough to
+see that history could not be fo rced into a predetermined framework and
+was con tent to set down the old stories as he found them, wi thout much
+ef fort at interpretation.
+The title is dif fi cult to translate.  Y usa  doe s not mean precisely legends,
+although that idea is implied by the word. It also carries the ideas of
+anecdotes, mem orabilia and the like. It was not conceived as a set piece of
+scholarship but was written in  the author's leisure hours as  a kind of
+diversion. Its value is not so much historical in the strict sense of a
+chronicle of events as it is an account of the beliefs and folklore of
+medieval Korea,  much of it dating back to earlier times. It is thus a valuable
+supplement to the of ficially san ctioned view of history found in  Samguk
+Sagi,  and is of the highest value to the student of folklore and religion.
+The title  of the book is somewh at of a misnomer , for it is not really an
+account of the histories of the three ancient kingdoms of Korea. It is
+concerned primarily with only one of them, Silla, which in time conquered
+the othe r two with the help of C hina. Moreover , it covers the pe riod during
+which Silla ruled the peninsula down to its fall to the Koryo dynasty in 935.
+For a proper understanding of th e book, a brief account of the events of
+the period it covers as modern history sees them is necessary . As we have
+mentioned, materials for this early period are scanty . Contemporary Chinese
+documents mention the Korean peninsula from time to time, and a region in
+the nort heast was colonized during the Han dynasty and continued under
+Chinese rule until as late as 313, over a century after Han rule had collapsed
+in China proper .
+Three ki ngdoms developed on the peninsula, probably during the course
+of the first century A.D. The traditional founding dates are 57 B.C. for Silla,
+37 B .C. for Kog uryo and 18 B. C. for Paekje. These dates are unsupported
+by c ontemporar y evidence, however , and most scholars think they are too
+early . In any ca se, these kingdoms were certainly in existence  during the
+
+period of Chinese history know n as the Later Han dynasty (25-220 A.D.)
+and afterwards.
+Koguryo was initially the lar gest and most powerful of the three. The
+tribes w hich orig inally compose d it lived along the banks of the  Y alu river ,
+which forms the present northw estern boundary of Korea, and may have
+been related to the stock-breed ing nomads of the central As ian steppes.
+They are known to have been ex cellent horsemen. When they emer ge upon
+the s cene of history we find them ruling an area which extended  from south
+of the Han River across the pr esent Korean boundary and far north into
+Manchuria and west to the Liaotung peninsula.
+The two  kingdo ms of the south  are thought to have been founded by
+migrants from the north, since  civilization was more highly developed
+there, mainly because of closer contacts with China. Paekje in the southwest
+is know n to have been dominated by a northern tribe called P uyo, which
+had com e origin ally from Manchuria and had been dominated f or a time by
+Koguryo. Paekje played an important part in the transmission of Chinese
+civilization to Japan. Its rule rs are frequently pictured as ef fete and
+dissolute, but this is probably because its history has been written mainly by
+its enemies.
+Silla in the southeast is given the earliest founding date, but this is
+probably because it conquered  the others. In any case, there is clear
+evidence that it was the latest to develop. W e are told that it was the last to
+set u p Chinese-style institution s of government and the last to adopt the
+Buddhist religion.
+In additi on to these three there w as for a time a relatively small area in
+the sout h, on the coast and alo ng the Naktong River , known as Kaya or
+Karak, w hich persisted as a kingdom until it was absorbed by Silla in 562
+A.D. Li ttle is known of it exc ept that it was considerably in fluenced by
+Japan.
+The thre e kingd oms were in a state of more or less constant conflict
+throughout their  existence, with frequent alliances of two of th em against
+the third. In the  earlier part of the three kingdoms period it w as usual for
+Silla and Paekje to be in alliance  against the more powerful Koguryo, and a
+rough ba lance of power was thu s created. But during the latter  part of the
+period S illa pow er grew and she began to expand at the expense  of both her
+rivals. O f particular significance was the Silla seizure of the territory along
+the Han River , for this drove a wedge between her two rivals.
+
+Even so, Silla power alone might not have enabled her to conquer the
+whole p eninsula. Events in China now began to influence Korea, however ,
+and to these events we must now turn.
+After th e fall of the Han dynasty in 220 A.D. China was divided into
+numerous states. There were frequent wars and revolts and consequent
+changes of boundaries and governments during a period of abo ut three and
+a h alf centuries,  and thus, while  Chinese cultural influence continued, there
+was hardly any Chinese political or military intervention in K orea. In the
+year 589 , howev er , China was o nce more unified under the Sui dynasty , and
+the rule rs promptly began to concern themselves with subduing the
+“barbarians” on China's borders.
+One of the resul ts of this policy  was a series of attacks upon Koguryo.
+These were successfully beaten of f, and their failure was one of the causes
+of th e fall of the Sui dynasty in 618. But China was not to suf fer another
+period of disunity . The T'ang d ynasty immediately succeeded the Sui and
+ruled Ch ina for  the next three centuries. This was the period  of China's
+greatest cultural influence upon her neighbors, so much so that the word
+“T'ang” was used as a name for China long after the dynasty had perished.
+From the Chinese point of view the main problem of foreign relations
+was to prevent attacks by the nomadic tribes whose territories bordered
+China, particularly in the north. T o this end it was Chinese poli cy to set up
+subordinate states in border areas which acknowledged suzerainty to the
+Emperor or , where possible, to conquer these areas and incorporate them
+into the empire.
+Observing that the Sui attacks on Koguryo along its northern borders in
+Manchuria had failed, the T'an g rulers entered into an alliance with Silla
+whose o bject w as to subdue th e entire peninsula and if possi ble bring it
+under Chinese rule. This policy succeeded to a certain extent. Coordinated
+attacks by T'ang and Silla troo ps destroyed Paekje in 663, an d Koguryo
+finally fell in 668. In both instances the Chinese set up provincial
+governments and  stationed military garrisons in the conquered t erritory , and
+when Koguryo had been conquered appeared ready to turn upon Silla.
+But even at thi s early date the Korean people had a long hi story of
+resistance to foreign rule and the Chinese found Silla unexpectedly dif ficult
+to conquer . Moreover , revolts  broke out in the previously conquered
+territory , which Silla supported. Eventually an arrangement was worked out
+whereby the Silla dynasty ru led all of Korea but acknow ledged the
+
+superiority of the Chinese Em peror . It became the custom for each
+succeeding Kore an King to app ly to the Chinese court for confirmation of
+his legitimacy , in token of which he received a golden seal from the
+Emperor . This practice persisted throughout the Korean monarchy .
+In p ractice there was little Ch inese interference in domestic Korean
+af fairs and the Korean government did pretty much as it liked, but Chinese
+cultural influence was profoun d. During the period when Silla ruled the
+peninsula, which  roughly corresponded to the period of T'ang rule in China,
+Korean monks and scholars vi sited China in lar ge numbers, and Korean
+social, p olitical and religious institutions, while not slavish imitations, were
+or ganized lar gely along Chinese lines.
+The mat ter of language is an imp ortant case in point. When cont act with
+Chinese civiliza tion began Korea had not yet developed a system  of writing
+her lang uage. Naturally the script of the more highly developed Chinese
+civilization was taken over , but here a dif ficulty arose. Korean is a highly
+inflected language, verb suf fixes being of particular importance. Chinese,
+on t he other han d, resembles English in this respect, its inflec tions being
+few and simple. Moreover , Chinese was not written in a phonetic script but
+in id eographs, signs representin g ideas rather than sounds. It was thus all
+but impossible to convey the K orean language in the Chinese script, and
+literacy became a matter of learning the Chinese language.
+In time a system was worked out, called  Idu,  of using some Chinese
+ideographs phonetically in ord er to represent the sounds of the Korean
+language, and a few songs and poems were thus preserved, some of which
+are quoted in the present volum e. But this was clumsy and dif ficult to use,
+and in general Korean scholars  wrote in Chinese. In time, of course, the
+Koreans gave their own peculiar pronunciations to the Chinese words, but
+what they wrote remained Chin ese in syntax and vocabulary . All Korean
+writing down to the invention of Hangul, the Korean alpha bet, in the
+fifteenth century , is therefore in the Chinese language. The sam e holds true
+for t he l iterature of several other nations in the Chinese sphere o f influence,
+including Japan and V ietnam.
+This led also, of course, to a m assive influx of Chinese words into the
+Korean vocabulary , although th ere was no particular influence on Korean
+grammar . This borrowing is so mewhat comparable to the borrowing of
+Latin words by the English language.
+
+Another important result of Chinese cultural influence was the
+introduction of the Buddhist religion. The present work describes this as
+happening in the late fourth ce ntury , which corresponds well  with other
+evidence. It seems unlikely , however , that Buddhism became really
+influential until well into the period of united Silla rule.
+Buddhism was already about eight hundred years old when  it first
+reached Korea, and had changed a great deal from the austere doctrines of
+the o riginal Buddha. The sect k nown as Mahayana had developed in north
+India in the religion's earlier centuries, and it was this sect which  penetrated
+China, a nd subsequently Korea. Of particular importance was the doctrine
+of Bodh isattvas. These were supposed to be persons who had attained the
+state of enlightenment which made it possible for them to escape the eternal
+round of death and rebirth whic h is the fate of all creatures, bu t who chose
+rather to remain in existence in order to help others.
+Buddhism had, in other words, developed a doctrine of salvation by
+grace, w hereas its founder had held that a person attained enlightenment
+and eventually Nirvana solely by his own ef forts. This meant a vast increase
+in th e religion's popular appeal and a multiplication of its deities. There
+were believed to have been a s uccession of Buddhas, one for each era of
+history , and there is even a Buddha of the future, Maitreya, who
+paradoxically also exists in the present.
+Another characteristic of Buddhism is its easy adaptation to local beliefs
+when it enters new areas. Bud dhism is not an exclusivist, a uthoritarian
+religion like Christianity or Islam . Doctrinal purity is of far less importance,
+and various dif ferent sects live amicably side by side. In like manner , the
+gods an d spirits of primitive religion were simply given the trappings of
+Bodhisattvas an d adopted into the pantheon. Thus in the present work we
+find several allusions to the Mountain Spirit, a survivor of ancient Korean
+animistic beliefs. Even today this Mountain Spirit has a shrin e in almost
+every Buddhist temple in Korea . He is always portrayed as an old man, and
+is usually accompanied by a tiger .
+The author of  Samguk Y usa  was a man of the Kim family who was born
+in Kyon gju, whi ch had been the Silla capital, in 1206. He entered the order
+of Budd hist mo nks while still a child, and was given the reli gious name
+Ilyon. He passed the national examinations for monks of the Son (Zen) sect
+with the  highest  distinction at th e age of 22, and thereafter devoted himself
+to teaching and study , residing at various temples at dif ferent times.
+
+There ar e few details available about his life, but it is said that  he was
+greatly admired not only for his knowledge of the Buddhist scriptures but
+also for his mas tery of the Conf ucian Classics, which were the basis of all
+secular learning in his time. He was also a very diligent author , and a stone
+monument erected in his honor on his death at 83 gives a list o f his works.
+Samguk Y usa  is not on the list, which leads one to suppose that the book
+was not printed until after his death, a supposition which is supported by the
+fact that at least two short sections of the work are added by Muguk, one of
+Uyon's disciples.
+Knowledge of his authorship barely survived. In the sixteenth century it
+was found that the carved w ooden plates from which the book had
+originally been printed were so worn as to be nearly useless. A nobleman
+named Y i Kye-pok, however , managed to obtain a copy of an earlier
+printing, and from this he had a new edition prepared. It was found that
+Ilyon was named as author only at the beginning of the fifth volume, his
+name having been dropped, probably by accident, from the other four .
+Modern texts of the work are ba sed on this 1512 edition, the earliest in
+existence. The translator has been permitted to consult an actual copy of
+this 1512 edition in making the present English version, based on the reprint
+of a n original book of Chinese  composition, known as “Chongdok-Pon”
+(Cheng-te T ext) , printed from hand-carved wooden blocks in the reign of
+King Chungjong  (1488-1544) of the Y i Dynasty which corresponds to the
+reign of Emperor Cheng-te of Ming China, according to the postscript
+written by Y i Kye-pok.
+Samguk Y usa had a wide audi ence in former times as a reliable source
+of inform ation for academic and popular interest, as its stories are included
+in  Koryosa  (Hi story of Koryo),  Y oji-sungnam  (Places of Interest in the
+Eastern Nation) and  T aedong-Unpu-kun-ok  (Great Eastern Galaxy of
+Rhythmic Gems). Thus it was highlighted as an important work of literature
+although some Confucian sch olars like Y i Kyukyong in the reign of
+Honjong, in his book “Demonstrative Essays on Historical W orks” called it
+a collection of fantastic stories.
+More recently , in his book “Ou tline of Eastern History” Ahn Chong-
+hwa made an analysis of  Samguk Y usa,  but  after that time its traces w ere
+lost to the world. Ch'oe Nam-son obtained only three of its volumes on
+Buddhist stories from temples. Then its treasured volumes in the possession
+of Sunam-Ahnsi were discovered and passed into the hands of a Japanese
+
+named I manishi in Aichi. These were a full set of the five volumes of
+Chongdok Reprints,  w hich appear ed in about th e 7th year of King
+Chungjong of the Y i Dynasty . In 1921 these volumes were reproduced in
+reduced size on glass plates as Facsimiles in V ol. VI, History S eries of the
+Literary Depart ment, Kyoto Imperial University , and in 1932 they were
+reprinted in the original lar ge size by the Old Classics Publishing Society in
+Seoul. B efore th is, in 1928, its type-printed copies appeared in the name of
+the Cho sun Sahak Hoe (Korean History Science Society) with Imanishi's
+proof reading.
+It is not clear when  Samguk Y usa  was first introduced into Japan, but
+according to  “Samguk Y usa Haeje”  by Cho e Nam-s on, one volume carried
+of f during the Hideyoshi Invasion (l592-98) has been handed down in the
+families of T okugawa in Owari and Kanda in T okyo, with two leaves of the
+Royal Chronolo gical T ables and several leaves in the text missing and some
+letters b lank. Th is volume was p ublished as research material in the History
+Series, L iterary Department, T okyo Imperial University in 1904 . The Kanda
+copy bears the seal of  Y oanin Library ,  signifying the house of a medical
+doctor in the T o kugawa shogunate, because this copy was give n the doctor
+by U kida Hideiye, one of the Ja panese field generals fighting in Korea, in
+gratitude for the doctor's marvellous cure of his wife's singular  malady , on
+his trium phal return from Korea after the Hideyoshi W ar with trophies
+including thousands of treasured books from Korea.
+Since Il yon was greatly interested in preserving legends and f olklore,
+some knowledge of ancient beliefs and society is necessary for a full
+understanding of his book. Underlying the more sophisticated faiths which
+came fr om other countries there has always been in Korea a tenacious
+native animism.  Mountains, rivers, trees and the like are all inhabited by
+spirits w hich frequently take a hand in human af fairs. These blended
+inextricably with Chinese lore , with some T aoist ideas, and with the
+numerous supernatural beings of popular Buddhism. Many of the events of
+which Il yon wrote were as rem ote in time from him as he is from us, and
+the b eliefs and p ractices which he describes were frequently very ancient.
+As will be seen  in the text, a good many of them probably a ntedate the
+coming of Buddhism to Korea.
+A good case in point is the T angun story , which is found near the
+beginning of Book One. T angun is often described as the “founder” of
+Korea, b ut it would be more accurate to say “ancestor of the Koreans.” The
+
+fact that his mot her is said to have been a bear transformed into  a woman is
+clear evi dence o f the existence i n very ancient times of totemism , the belief
+that a given tribe or clan is id entified with or descended from a certain
+animal. Moreover , the fact that this clan symbol, the bear , is fem ale may be
+evidence of the existence of a m atriarchal, or at any rate matrilin eal, society
+in ancient times.
+Another element in ancient Korean religion was sun worship. This is
+shown b y the fact that several of the legendary founders of s tates in this
+book are described as having been born from divine eggs which descended
+from heaven, the egg in this case being a sun symbol.
+T urning to the social structure of Silla, there are two matters of
+importance. Firs t of all, this was a highly aristocratic society , much more so
+than Ch ina. The dif ferent classes of society were carefully di stinguished,
+and cros sing class lines was almost unheard of. The highest class consisted
+of the members of the royal clan and the important court and government
+posts we re held  by them exclus ively . This was the Kim clan of Kyongju,
+whose founding legend is found in Book One.
+Secondly , mention must be made of the Order of Hwarang. The word
+may be translated “Flower Y ou th” and describes an institution resembling
+the order of knighthood in medieval Europe. It consisted of specially
+selected youths of aristocratic lineage and of superior mental and physical
+attainments. The y were trained in the martial arts, but also in  intellectual
+and relig ious ma tters, and then became the nation s military elite. Kim Y u-
+sin, who commanded the armie s that helped conquer Paekje an d Koguryo,
+is a good example.
+The book itself is not a systema tic work. It was, we are told, an activity
+of the author's le isure hours and was probably put together bit by bit over a
+rather lo ng period. The accounts are grouped by subjects, but within each
+section they vary extremely . Some consist of entirely legendary material,
+some ar e factua l history , and a lar ge number are a blend of the two. The
+first two  parts relate to the fou ndations of the various kingdoms and to
+various events during the histor y of the Silla kingdom. The last three parts
+are devoted mainly to Buddhism, especially to the lives and miracles of
+famous monks.
+Ilyon is very particular as to na mes and dates, and frequently records
+disagreements on these matte rs in his source material. He is not,
+unfortunately , so meticulous in the citation of the sources themselves. He
+
+refers often to the  Samguk Sagi,  and since this book still ex ists the
+references can be checked. But for the rest, he is vague, For exa mple, early
+in B ook One he refers to a book which he calls the  W ei Shu  (“W ei W riting,”
+that is, the history of the Chinese kingdom of W ei). A book of th is title does
+exist, but none of the quotation s Ilyon uses are to be found in  it. One can
+only con clude t hat there was more than one  W ei Shu  (as there was more
+than one W ei state) and that Ilyon has not indicated which one he means.
+In other  places he is content si mply to cite “an old book” or “an old
+Silla book.” It is certain in any case that he had access to many documents
+which a re no longer in existence. There appear to have been, f or example,
+several collections of the lives of famous monks, some Korea n and some
+Chinese, and these he quotes frequently .
+But perh aps mor e important even than his use of now lost docu ments is
+the fact that Ilyon records many  of the beliefs and practices of th e people of
+thirteenth-century Korea, a fact which makes his book extremely important
+for t he study of that period as well as earlier ones. The T ang un story as
+given h ere, for example, is th e earliest documentary evidence for this
+legend.
+One must add finally that this is a book which can be read simply for
+pleasure. Its tales are comparab le, though on a more sophisticated level, to

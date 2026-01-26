@@ -1,0 +1,99 @@
+{
+  "text_id": "theogony",
+  "tradition": "greek",
+  "source_file": "C:\\Users\\User\\Documents\\0000000\\mythic library\\texts\\greek\\theogony\\normalized\\theogony_best.txt",
+  "strategy": "structural",
+  "segment_count": 10,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 258,
+      "start_line": 0,
+      "end_line": 87
+    },
+    {
+      "id": "seg_002",
+      "label": "THE STORY OF OEDIPUS",
+      "segment_type": "tale",
+      "file": "seg_002_the-story-of-oedipus.txt",
+      "word_count": 2521,
+      "start_line": 88,
+      "end_line": 389
+    },
+    {
+      "id": "seg_003",
+      "label": "The story of the end of Hesiod may be told in outline. After the",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-the-end-of-hesiod-may-be-to.txt",
+      "word_count": 3352,
+      "start_line": 390,
+      "end_line": 709
+    },
+    {
+      "id": "seg_004",
+      "label": "the famous story of Thebes, while others dealt with the beginnings of",
+      "segment_type": "tale",
+      "file": "seg_004_the-famous-story-of-thebes-while-others-.txt",
+      "word_count": 1186,
+      "start_line": 710,
+      "end_line": 824
+    },
+    {
+      "id": "seg_005",
+      "label": "the story of the war is detailed up to the quarrel between Achilles and",
+      "segment_type": "tale",
+      "file": "seg_005_the-story-of-the-war-is-detailed-up-to-t.txt",
+      "word_count": 641,
+      "start_line": 825,
+      "end_line": 890
+    },
+    {
+      "id": "seg_006",
+      "label": "hymn of the longer type 1115, we have no evidence to show either its",
+      "segment_type": "hymn",
+      "file": "seg_006_hymn-of-the-longer-type-1115-we-have-no-.txt",
+      "word_count": 408,
+      "start_line": 891,
+      "end_line": 929
+    },
+    {
+      "id": "seg_007",
+      "label": "part is as definitely continental; Delos is ignored and Delphi alone is",
+      "segment_type": "part",
+      "file": "seg_007_part-is-as-definitely-continental-delos-.txt",
+      "word_count": 1154,
+      "start_line": 930,
+      "end_line": 1046
+    },
+    {
+      "id": "seg_008",
+      "label": "story of the quarrel which arose between the two tribes, and how they",
+      "segment_type": "tale",
+      "file": "seg_008_story-of-the-quarrel-which-arose-between.txt",
+      "word_count": 62429,
+      "start_line": 1047,
+      "end_line": 7561
+    },
+    {
+      "id": "seg_009",
+      "label": "THE STORY OF OEDIPUS",
+      "segment_type": "tale",
+      "file": "seg_009_the-story-of-oedipus.txt",
+      "word_count": 994,
+      "start_line": 7562,
+      "end_line": 7682
+    },
+    {
+      "id": "seg_010",
+      "label": "story of Oedipus, the madness of Heracles, and the story of Theseus and",
+      "segment_type": "tale",
+      "file": "seg_010_story-of-oedipus-the-madness-of-heracles.txt",
+      "word_count": 17888,
+      "start_line": 7683,
+      "end_line": 9903
+    }
+  ]
+}

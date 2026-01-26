@@ -1,0 +1,15 @@
+{
+  "text_id": "legends-of-maui",
+  "tradition": "polynesian",
+  "source_format": "pdf",
+  "original_file": "legendsofmauid00west_W.D.-Westervelt.pdf",
+  "extraction_date": "2026-01-26T10:07:29.916514",
+  "total_pages": 248,
+  "pages_with_text": 224,
+  "total_chars": 211516,
+  "garbled_ratio": 0.0,
+  "extraction_quality": "good",
+  "word_count": 25422,
+  "line_count": 5678,
+  "char_count": 211516
+}

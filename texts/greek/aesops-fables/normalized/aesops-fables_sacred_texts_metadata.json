@@ -1,0 +1,16 @@
+{
+  "source_format": "sacred-texts",
+  "text_id": "aesops-fables",
+  "source_url": "https://sacred-texts.com/cla/aesop/",
+  "download_date": "2026-01-25T05:19:00.660825",
+  "title": "Aesop's Fables",
+  "author": "Aesop",
+  "tradition": "greek",
+  "date_composed": "~6th century BCE",
+  "material_type": "Fables",
+  "original_file": "sacred-texts_cla_aesop_George-Fyler-Townsen.txt",
+  "normalization_date": "2026-01-26T10:04:03.186949",
+  "char_count": 7966,
+  "line_count": 320,
+  "word_count": 1577
+}
