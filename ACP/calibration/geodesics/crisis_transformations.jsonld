@@ -1,0 +1,150 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "geodesics:crisis_transformations",
+  "@type": "GeodesicCollection",
+  "name": "Crisis Transformation Geodesics",
+  "description": "Rapid, often involuntary transformations under extreme conditions. These bypass normal developmental paths.",
+
+  "crisisTypes": [
+    {
+      "@id": "crisis:dark_night",
+      "name": "The Dark Night of the Soul",
+      "source": "St. John of the Cross",
+      "trigger": "Loss of meaning, spiritual desolation",
+      "spectralMovement": {
+        "primaryAxis": "light-shadow",
+        "direction": "descent",
+        "magnitude": "severe",
+        "shift": {"light-shadow": 0.5, "ascent-descent": 0.4, "voluntary-fated": -0.4}
+      },
+      "archetypesActivated": ["primordial:outcast", "primordial:shadow"],
+      "potentialOutcome": {
+        "positive": {"archetype": "primordial:self", "notes": "Deeper integration after surrender"},
+        "negative": {"archetype": "primordial:monster", "notes": "Fragmentation, depression"}
+      },
+      "duration": "Variable—weeks to years",
+      "integrationRequirements": ["Surrender", "Patience", "Support", "Meaning-making after"]
+    },
+    {
+      "@id": "crisis:ego_death",
+      "name": "Ego Death",
+      "trigger": "Overwhelming experience, psychedelics, near-death, extreme meditation",
+      "spectralMovement": {
+        "shift": {
+          "individual-collective": 0.6,
+          "light-shadow": 0.3,
+          "stasis-transformation": 0.5
+        }
+      },
+      "archetypesActivated": ["primordial:destroyer", "primordial:self"],
+      "potentialOutcome": {
+        "positive": {"archetype": "primordial:self", "notes": "Transcendence of ego boundaries"},
+        "negative": {"archetype": "primordial:monster", "notes": "Psychotic break, depersonalization"}
+      },
+      "duration": "Acute phase: minutes to hours. Integration: months to years",
+      "integrationRequirements": ["Safe container", "Grounding practices", "Gradual re-entry", "Meaning integration"]
+    },
+    {
+      "@id": "crisis:sudden_awakening",
+      "name": "Sudden Awakening",
+      "trigger": "Spontaneous spiritual opening, satori, enlightenment experience",
+      "spectralMovement": {
+        "shift": {
+          "light-shadow": -0.4,
+          "individual-collective": 0.3,
+          "ascent-descent": -0.3
+        }
+      },
+      "archetypesActivated": ["primordial:wise_elder", "primordial:self"],
+      "potentialOutcome": {
+        "positive": {"notes": "Stable realization integrated into daily life"},
+        "negative": {"notes": "Spiritual inflation, inability to function, 'enlightenment sickness'"}
+      },
+      "duration": "Experience: instantaneous. Stabilization: years",
+      "integrationRequirements": ["Continued practice", "Teacher guidance", "Embodiment work", "Shadow integration"]
+    },
+    {
+      "@id": "crisis:trauma_transformation",
+      "name": "Post-Traumatic Transformation",
+      "trigger": "Severe trauma, loss, violence, catastrophe",
+      "spectralMovement": {
+        "immediate": {
+          "shift": {"light-shadow": 0.5, "order-chaos": 0.4, "voluntary-fated": -0.5}
+        },
+        "potential_growth": {
+          "shift": {"stasis-transformation": 0.3, "individual-collective": 0.2}
+        }
+      },
+      "archetypesActivated": ["primordial:shadow", "primordial:destroyer", "primordial:outcast"],
+      "potentialOutcome": {
+        "positive": {"archetype": "primordial:healer", "notes": "Wounded healer—trauma becomes source of wisdom"},
+        "negative": {"archetype": "primordial:monster", "notes": "PTSD, fragmentation, perpetuating cycle"}
+      },
+      "integrationRequirements": ["Safety first", "Titrated exposure", "Somatic processing", "Meaning reconstruction", "Community support"]
+    },
+    {
+      "@id": "crisis:initiatory_death",
+      "name": "Initiatory Death-Rebirth",
+      "trigger": "Traditional initiation, vision quest, rite of passage",
+      "spectralMovement": {
+        "death_phase": {"stasis-transformation": 0.6, "creation-destruction": 0.4},
+        "liminal_phase": {"order-chaos": 0.3, "light-shadow": 0.2},
+        "rebirth_phase": {"stasis-transformation": -0.3, "creation-destruction": -0.4}
+      },
+      "archetypesActivated": ["primordial:destroyer", "primordial:divine_child", "primordial:creator"],
+      "potentialOutcome": {
+        "positive": {"notes": "New identity integrated with community recognition"},
+        "negative": {"notes": "Incomplete initiation, liminal stuckness"}
+      },
+      "duration": "Ritually contained—hours to weeks",
+      "integrationRequirements": ["Ritual container", "Elder guidance", "Community witnessing", "New role in society"]
+    },
+    {
+      "@id": "crisis:possession_states",
+      "name": "Archetypal Possession",
+      "trigger": "Extreme stress, ritual, substance, psychological vulnerability",
+      "description": "One archetype dominates personality completely, eclipsing ego.",
+      "spectralMovement": {
+        "shift": {"individual-collective": 0.5, "voluntary-fated": -0.6}
+      },
+      "examples": [
+        {"archetype": "primordial:warrior", "manifestation": "Berserker rage"},
+        {"archetype": "primordial:lover", "manifestation": "Erotic obsession"},
+        {"archetype": "primordial:trickster", "manifestation": "Manic episode"},
+        {"archetype": "primordial:great_mother", "manifestation": "Overwhelming fusion desire"}
+      ],
+      "potentialOutcome": {
+        "positive": {"notes": "Controlled ritual use, shamanic work, creative breakthrough"},
+        "negative": {"notes": "Psychosis, destruction, loss of self"}
+      },
+      "integrationRequirements": ["Containment", "Ritual framework", "Grounding", "Differentiation work"]
+    }
+  ],
+
+  "emergencyGeodesicRules": {
+    "nonLinear": "Crisis transformations can skip developmental stages entirely.",
+    "reversibilityUncertain": "May or may not return to prior state; often permanently altered.",
+    "containerEssential": "Without containing structure (ritual, relationship, meaning-system), crisis leads to fragmentation.",
+    "regressionNormal": "Temporary regression to earlier stages is normal during crisis; not failure.",
+    "integrationTakesTime": "Acute phase may be brief; integration takes much longer."
+  },
+
+  "supportArchetypes": [
+    {
+      "archetype": "primordial:healer",
+      "role": "Provides containment, witnesses suffering, facilitates repair"
+    },
+    {
+      "archetype": "primordial:wise_elder",
+      "role": "Provides meaning, perspective, has navigated similar territory"
+    },
+    {
+      "archetype": "primordial:psychopomp",
+      "role": "Guides through transitions, accompanies into underworld and back"
+    },
+    {
+      "archetype": "primordial:great_mother",
+      "role": "Provides unconditional acceptance, holding, basic safety"
+    }
+  ]
+}

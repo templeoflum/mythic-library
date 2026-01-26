@@ -1,0 +1,276 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "developmental:spiral_dynamics",
+  "@type": "DevelopmentalSystem",
+  "name": "Spiral Dynamics",
+  "description": "Clare Graves' model of human development as value memes (vMemes) representing stages of consciousness.",
+  "domain": "psychology",
+  "subdomain": "developmental",
+  "cardinality": 8,
+  "source": "Don Beck and Christopher Cowan, based on Clare Graves",
+  "structuralNotes": "Alternates between individual-focused (warm colors) and collective-focused (cool colors) stages. Each transcends and includes prior stages.",
+
+  "entries": [
+    {
+      "@id": "spiral:beige",
+      "@type": "Archetype",
+      "name": "Beige (Survival)",
+      "theme": "Survival, instinct, basic needs",
+      "focus": "individual",
+      "level": 1,
+      "keywords": ["survival", "instinct", "automatic", "biological", "primal"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.58,
+        "active-receptive": 0.35,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.78,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.82
+      },
+      "instantiates": [
+        {"primordial": "primordial:monster", "weight": 0.55, "aspects": ["primal", "instinct"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["survival", "biological"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:purple", "note": "Survival leads to tribal bonding"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:muladhara", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:four_of_pentacles", "fidelity": 0.6}
+      ]
+    },
+    {
+      "@id": "spiral:purple",
+      "@type": "Archetype",
+      "name": "Purple (Tribal)",
+      "theme": "Safety through tribe, magic, ancestors",
+      "focus": "collective",
+      "level": 2,
+      "keywords": ["tribe", "magic", "ancestors", "ritual", "safety"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.55,
+        "active-receptive": 0.62,
+        "individual-collective": 0.78,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.32,
+        "voluntary-fated": 0.72
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.85, "aspects": ["ancestors", "tradition"]},
+        {"primordial": "primordial:great_mother", "weight": 0.7, "aspects": ["tribe", "safety"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:red", "note": "Tribal yields to individual power"},
+        {"type": "DEVOLUTION", "target": "spiral:beige", "note": "Regression under extreme threat"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:svadhisthana", "fidelity": 0.65},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "spiral:red",
+      "@type": "Archetype",
+      "name": "Red (Power)",
+      "theme": "Power, dominance, heroic ego",
+      "focus": "individual",
+      "level": 3,
+      "keywords": ["power", "dominance", "ego", "conquest", "impulsivity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.68,
+        "creation-destruction": 0.58,
+        "light-shadow": 0.42,
+        "active-receptive": 0.12,
+        "individual-collective": 0.18,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.22
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["power", "conquest"]},
+        {"primordial": "primordial:rebel", "weight": 0.75, "aspects": ["dominance", "ego"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:blue", "note": "Power yields to order"},
+        {"type": "DEVOLUTION", "target": "spiral:purple", "note": "Regression to tribal under defeat"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:manipura", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_8", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "spiral:blue",
+      "@type": "Archetype",
+      "name": "Blue (Order)",
+      "theme": "Order, purpose, meaning, truth",
+      "focus": "collective",
+      "level": 4,
+      "keywords": ["order", "purpose", "meaning", "truth", "discipline"],
+      "spectralCoordinates": {
+        "order-chaos": 0.12,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.32,
+        "active-receptive": 0.45,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.22,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["order", "authority"]},
+        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["discipline", "tradition"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:orange", "note": "Order yields to achievement"},
+        {"type": "DEVOLUTION", "target": "spiral:red", "note": "Regression to power under chaos"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_1", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "spiral:orange",
+      "@type": "Archetype",
+      "name": "Orange (Achievement)",
+      "theme": "Success, achievement, science, progress",
+      "focus": "individual",
+      "level": 5,
+      "keywords": ["success", "achievement", "science", "progress", "strategy"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.28,
+        "active-receptive": 0.22,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["achievement", "success"]},
+        {"primordial": "primordial:magician", "weight": 0.7, "aspects": ["science", "strategy"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:green", "note": "Achievement yields to community"},
+        {"type": "DEVOLUTION", "target": "spiral:blue", "note": "Regression to order under failure"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_3", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "spiral:green",
+      "@type": "Archetype",
+      "name": "Green (Communitarian)",
+      "theme": "Community, equality, feelings, ecology",
+      "focus": "collective",
+      "level": 6,
+      "keywords": ["community", "equality", "feelings", "ecology", "consensus"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.38,
+        "active-receptive": 0.58,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["community", "feelings"]},
+        {"primordial": "primordial:lover", "weight": 0.7, "aspects": ["equality", "connection"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:yellow", "note": "Community yields to integration"},
+        {"type": "DEVOLUTION", "target": "spiral:orange", "note": "Regression to achievement under scarcity"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:anahata", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_2", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "spiral:yellow",
+      "@type": "Archetype",
+      "name": "Yellow (Integral)",
+      "theme": "Integration, systems thinking, flexibility",
+      "focus": "individual",
+      "level": 7,
+      "keywords": ["integration", "systems", "flexibility", "functionality", "knowledge"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["knowledge", "integration"]},
+        {"primordial": "primordial:magician", "weight": 0.7, "aspects": ["systems", "flexibility"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "spiral:turquoise", "note": "Integration yields to holism"},
+        {"type": "DEVOLUTION", "target": "spiral:green", "note": "Regression to community under emotional crisis"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:ajna", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_5", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "spiral:turquoise",
+      "@type": "Archetype",
+      "name": "Turquoise (Holistic)",
+      "theme": "Global view, collective consciousness, unity",
+      "focus": "collective",
+      "level": 8,
+      "keywords": ["holistic", "global", "unity", "consciousness", "spirituality"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.68,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.9, "aspects": ["unity", "wholeness"]},
+        {"primordial": "primordial:great_mother", "weight": 0.65, "aspects": ["global", "consciousness"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "spiral:yellow", "note": "Regression to integration under complexity"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:sahasrara", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "journey:master_two_worlds", "fidelity": 0.8}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "tiers": {
+      "firstTier": ["spiral:beige", "spiral:purple", "spiral:red", "spiral:blue", "spiral:orange", "spiral:green"],
+      "secondTier": ["spiral:yellow", "spiral:turquoise"],
+      "note": "Second tier transcends and includes all first tier perspectives"
+    },
+    "oscillation": {
+      "individual": ["spiral:beige", "spiral:red", "spiral:orange", "spiral:yellow"],
+      "collective": ["spiral:purple", "spiral:blue", "spiral:green", "spiral:turquoise"],
+      "note": "Alternation between self-expression and self-sacrifice"
+    },
+    "polarPairs": [
+      {"pair": ["spiral:red", "spiral:blue"], "axis": "power-order"},
+      {"pair": ["spiral:orange", "spiral:green"], "axis": "achievement-community"},
+      {"pair": ["spiral:yellow", "spiral:turquoise"], "axis": "integration-holism"}
+    ]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

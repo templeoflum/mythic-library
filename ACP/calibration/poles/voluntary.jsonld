@@ -1,0 +1,29 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_voluntary",
+  "@type": "CalibrationPoint",
+  "name": "Pure Voluntary",
+  "axis": "voluntary-fated",
+  "polarity": "negative",
+  "description": "Maximum free choice, agency, self-determination. The theoretical extreme of complete autonomy unbound by fate or necessity.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.0
+  },
+  "polarOpposite": "calibration:pole_fated",
+  "nearestPrimordials": [
+    {"@id": "primordial:trickster", "distance": 0.2},
+    {"@id": "primordial:rebel", "distance": 0.2},
+    {"@id": "primordial:hero", "distance": 0.25}
+  ],
+  "culturalExamples": ["Prometheus (defying fate)", "Loki (unbound)", "The Fool"],
+  "psychologicalManifestation": "Free will, agency, choice, self-determination, autonomy",
+  "shadowWhenExtreme": "Denial of limits, hubris, illusion of total control",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

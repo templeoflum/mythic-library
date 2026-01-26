@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_fated",
+  "@type": "CalibrationPoint",
+  "name": "Pure Fated",
+  "axis": "voluntary-fated",
+  "polarity": "positive",
+  "description": "Maximum destiny, necessity, cosmic inevitability. The theoretical extreme of complete predetermination where all unfolds according to inescapable pattern.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 1.0
+  },
+  "polarOpposite": "calibration:pole_voluntary",
+  "nearestPrimordials": [
+    {"@id": "primordial:crone", "distance": 0.25},
+    {"@id": "primordial:wise_elder", "distance": 0.3}
+  ],
+  "culturalExamples": ["The Moirai/Fates", "Norns", "Ananke", "Wyrd"],
+  "psychologicalManifestation": "Acceptance of fate, surrender to necessity, recognition of limits",
+  "shadowWhenExtreme": "Fatalism, passivity, abdication of responsibility, victimhood",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

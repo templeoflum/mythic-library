@@ -1,0 +1,92 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "geodesics:developmental_spirals",
+  "@type": "GeodesicCollection",
+  "name": "Developmental Spiral Geodesics",
+  "description": "Growth patterns that cycle through similar positions at increasing levels of integration.",
+
+  "spirals": [
+    {
+      "@id": "spiral:individuation",
+      "name": "The Individuation Spiral",
+      "source": "Jung",
+      "description": "Progressive integration of unconscious contents into conscious wholeness.",
+      "turns": [
+        {
+          "level": 1,
+          "name": "Persona Development",
+          "primaryAxis": "light-shadow",
+          "range": [0.1, 0.3],
+          "tasks": ["Develop functional persona", "Adapt to social expectations"],
+          "risks": ["Over-identification with persona", "Loss of authentic self"]
+        },
+        {
+          "level": 2,
+          "name": "Shadow Encounter",
+          "primaryAxis": "light-shadow",
+          "range": [0.3, 0.6],
+          "tasks": ["Recognize shadow projections", "Withdraw projections", "Accept dark aspects"],
+          "risks": ["Shadow possession", "Inflation", "Depression"]
+        },
+        {
+          "level": 3,
+          "name": "Anima/Animus Integration",
+          "primaryAxis": "active-receptive",
+          "range": [0.3, 0.7],
+          "tasks": ["Recognize contrasexual element", "Integrate opposite-gender qualities"],
+          "risks": ["Possession by anima/animus", "Projection onto partners"]
+        },
+        {
+          "level": 4,
+          "name": "Self Realization",
+          "primaryAxis": "individual-collective",
+          "range": [0.4, 0.6],
+          "destination": "primordial:self",
+          "tasks": ["Unite opposites", "Achieve wholeness", "Transcend ego"],
+          "risks": ["Inflation", "Spiritual bypassing"]
+        }
+      ],
+      "notes": "Not strictly linear—spirals back through earlier material at deeper levels"
+    },
+    {
+      "@id": "spiral:consciousness_evolution",
+      "name": "Spiral Dynamics Ascent",
+      "source": "Graves/Beck/Cowan",
+      "description": "Evolution through value systems (vMemes).",
+      "structure": "alternating",
+      "pattern": "individual-collective oscillation",
+      "turns": [
+        {"level": "Beige", "focus": "individual", "theme": "Survival", "instantiates": ["primordial:monster", "primordial:preserver"]},
+        {"level": "Purple", "focus": "collective", "theme": "Tribal safety", "instantiates": ["primordial:ancestor", "primordial:great_mother"]},
+        {"level": "Red", "focus": "individual", "theme": "Power/ego", "instantiates": ["primordial:warrior", "primordial:rebel"]},
+        {"level": "Blue", "focus": "collective", "theme": "Order/meaning", "instantiates": ["primordial:sovereign", "primordial:preserver"]},
+        {"level": "Orange", "focus": "individual", "theme": "Achievement", "instantiates": ["primordial:hero", "primordial:magician"]},
+        {"level": "Green", "focus": "collective", "theme": "Community", "instantiates": ["primordial:healer", "primordial:lover"]},
+        {"level": "Yellow", "focus": "individual", "theme": "Integration", "instantiates": ["primordial:wise_elder", "primordial:magician"]},
+        {"level": "Turquoise", "focus": "collective", "theme": "Holistic", "instantiates": ["primordial:self", "primordial:great_mother"]}
+      ],
+      "notes": "Each level transcends AND includes previous levels. Not hierarchy of worth, but complexity."
+    },
+    {
+      "@id": "spiral:heros_return",
+      "name": "The Return Spiral",
+      "description": "Post-adventure integration where hero returns to ordinary world transformed.",
+      "stages": [
+        {"name": "Refusal of Return", "challenge": "Why go back?", "archetype": "primordial:outcast"},
+        {"name": "Magic Flight", "challenge": "Escape with boon", "archetype": "primordial:trickster"},
+        {"name": "Rescue from Without", "challenge": "Need help returning", "archetype": "primordial:healer"},
+        {"name": "Crossing Return Threshold", "challenge": "Integrate two worlds", "archetype": "primordial:psychopomp"},
+        {"name": "Master of Two Worlds", "achievement": "Freedom to live", "archetype": "primordial:self"},
+        {"name": "Freedom to Live", "achievement": "Present-moment mastery", "archetype": "primordial:wise_elder"}
+      ],
+      "spiralNature": "Hero may cycle through journey multiple times, each at deeper level"
+    }
+  ],
+
+  "developmentalPrinciples": {
+    "transcendAndInclude": "Each stage includes capacities of previous stages while adding new ones.",
+    "regressionUnderStress": "Under sufficient stress, earlier stages become dominant temporarily.",
+    "partialDevelopment": "Different lines (cognitive, emotional, moral) can develop at different rates.",
+    "shadowAtEveryLevel": "Each stage has its own shadow; development doesn't eliminate shadow, just changes its form."
+  }
+}

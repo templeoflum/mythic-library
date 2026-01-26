@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_order",
+  "@type": "CalibrationPoint",
+  "name": "Pure Order",
+  "axis": "order-chaos",
+  "polarity": "negative",
+  "description": "Maximum structure, law, pattern. The theoretical extreme of perfect crystalline organization where nothing is out of place and all follows immutable rules.",
+  "spectralCoordinates": {
+    "order-chaos": 0.0,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_chaos",
+  "nearestPrimordials": [
+    {"@id": "primordial:sovereign", "distance": 0.25},
+    {"@id": "primordial:preserver", "distance": 0.3}
+  ],
+  "culturalExamples": ["Ma'at (cosmic order)", "Varuna (rta)", "Apollo (measured harmony)"],
+  "psychologicalManifestation": "The drive for control, predictability, systems, rules",
+  "shadowWhenExtreme": "Rigidity, tyranny, lifelessness, inability to adapt",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

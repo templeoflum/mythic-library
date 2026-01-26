@@ -1,0 +1,175 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "geodesics:canonical_paths",
+  "@type": "GeodesicCollection",
+  "name": "Canonical Transformation Paths",
+  "description": "Major geodesics between primordial archetypes representing archetypal transformation routes.",
+
+  "axisGeodesics": [
+    {
+      "@id": "geodesic:creation_destruction",
+      "name": "The Great Cycle",
+      "axis": "creation-destruction",
+      "endpoints": ["primordial:creator", "primordial:destroyer"],
+      "midpoint": "primordial:preserver",
+      "description": "The fundamental cycle of making, maintaining, and unmaking.",
+      "waypoints": [
+        {"position": 0.0, "archetype": "primordial:creator", "state": "Pure genesis"},
+        {"position": 0.25, "state": "Creation complete, nurturing begins"},
+        {"position": 0.5, "archetype": "primordial:preserver", "state": "Maintenance, holding form"},
+        {"position": 0.75, "state": "Decay begins, transformation imminent"},
+        {"position": 1.0, "archetype": "primordial:destroyer", "state": "Pure dissolution"}
+      ],
+      "cyclical": true,
+      "notes": "Destroyer feeds back into Creator—destruction creates space for new creation"
+    },
+    {
+      "@id": "geodesic:order_chaos",
+      "name": "The Structure Dance",
+      "axis": "order-chaos",
+      "endpoints": ["primordial:sovereign", "primordial:trickster"],
+      "description": "Movement between structure/law and freedom/disruption.",
+      "waypoints": [
+        {"position": 0.0, "archetype": "primordial:sovereign", "state": "Pure order, law, structure"},
+        {"position": 0.3, "archetype": "primordial:preserver", "state": "Maintaining established patterns"},
+        {"position": 0.5, "state": "Dynamic balance"},
+        {"position": 0.7, "archetype": "primordial:rebel", "state": "Challenging structures"},
+        {"position": 1.0, "archetype": "primordial:trickster", "state": "Pure chaos, boundary dissolution"}
+      ],
+      "cyclical": true,
+      "notes": "Too much order calcifies; too much chaos fragments. Healthy systems oscillate."
+    },
+    {
+      "@id": "geodesic:light_shadow",
+      "name": "The Integration Path",
+      "axis": "light-shadow",
+      "endpoints": ["primordial:hero", "primordial:shadow"],
+      "description": "Movement between conscious integration and unconscious material.",
+      "waypoints": [
+        {"position": 0.0, "state": "Full consciousness, nothing hidden"},
+        {"position": 0.25, "state": "Aware of shadow, beginning integration"},
+        {"position": 0.5, "archetype": "primordial:self", "state": "Balanced integration"},
+        {"position": 0.75, "state": "Shadow material emerging"},
+        {"position": 1.0, "state": "Full shadow possession, unconscious dominance"}
+      ],
+      "cyclical": false,
+      "notes": "Not truly cyclical—integration is progressive, though shadow always regenerates"
+    },
+    {
+      "@id": "geodesic:stasis_transformation",
+      "name": "The Change Spectrum",
+      "axis": "stasis-transformation",
+      "endpoints": ["primordial:preserver", "primordial:destroyer"],
+      "description": "Movement between holding form and radical change.",
+      "waypoints": [
+        {"position": 0.0, "archetype": "primordial:preserver", "state": "Complete stasis, perfect preservation"},
+        {"position": 0.3, "archetype": "primordial:ancestor", "state": "Slow change, tradition"},
+        {"position": 0.5, "state": "Balanced adaptation"},
+        {"position": 0.7, "archetype": "primordial:trickster", "state": "Active transformation"},
+        {"position": 1.0, "archetype": "primordial:destroyer", "state": "Total transformation, death-rebirth"}
+      ],
+      "cyclical": true
+    },
+    {
+      "@id": "geodesic:ascent_descent",
+      "name": "The Vertical Axis",
+      "axis": "ascent-descent",
+      "endpoints": ["primordial:wise_elder", "primordial:great_mother"],
+      "description": "Movement between transcendence (sky/spirit) and immanence (earth/matter).",
+      "waypoints": [
+        {"position": 0.0, "state": "Pure transcendence, spirit realm"},
+        {"position": 0.25, "archetype": "primordial:wise_elder", "state": "Wisdom from above"},
+        {"position": 0.5, "archetype": "primordial:self", "state": "Heaven and earth united"},
+        {"position": 0.75, "archetype": "primordial:healer", "state": "Working with matter"},
+        {"position": 1.0, "archetype": "primordial:great_mother", "state": "Pure immanence, embodiment"}
+      ],
+      "cyclical": true,
+      "notes": "The axis mundi—shamanic ascent and descent"
+    }
+  ],
+
+  "diagonalGeodesics": [
+    {
+      "@id": "geodesic:hero_journey",
+      "name": "The Hero's Path",
+      "description": "Multi-axis transformation of the hero archetype through trials.",
+      "startPoint": "primordial:divine_child",
+      "endPoint": "primordial:hero",
+      "ultimateDestination": "primordial:wise_elder",
+      "axesInvolved": ["light-shadow", "individual-collective", "stasis-transformation", "voluntary-fated"],
+      "stages": [
+        {"name": "Innocent", "coordinates": {"light-shadow": 0.2, "individual-collective": 0.3, "stasis-transformation": 0.2, "voluntary-fated": 0.7}},
+        {"name": "Call", "shift": {"voluntary-fated": -0.2}, "notes": "Fate intervenes"},
+        {"name": "Threshold", "shift": {"stasis-transformation": 0.2, "light-shadow": 0.1}},
+        {"name": "Trials", "shift": {"light-shadow": 0.2, "individual-collective": 0.1}},
+        {"name": "Shadow Encounter", "shift": {"light-shadow": 0.3}, "notes": "Maximum shadow contact"},
+        {"name": "Integration", "shift": {"light-shadow": -0.2}, "notes": "Shadow integrated, not bypassed"},
+        {"name": "Return", "shift": {"individual-collective": 0.2, "voluntary-fated": 0.1}}
+      ],
+      "reversible": false
+    },
+    {
+      "@id": "geodesic:maiden_mother_crone",
+      "name": "The Triple Goddess Path",
+      "description": "Feminine developmental trajectory.",
+      "stages": [
+        {"archetype": "primordial:maiden", "coordinates": {"creation-destruction": 0.2, "ascent-descent": 0.4, "stasis-transformation": 0.3}},
+        {"archetype": "primordial:great_mother", "shift": {"creation-destruction": 0.1, "ascent-descent": 0.3, "stasis-transformation": 0.2}},
+        {"archetype": "primordial:crone", "shift": {"creation-destruction": 0.3, "ascent-descent": -0.1, "stasis-transformation": 0.3}}
+      ],
+      "axesInvolved": ["creation-destruction", "ascent-descent", "stasis-transformation"],
+      "reversible": false,
+      "notes": "Biological and psychological maturation—linear in time, though aspects can be accessed nonlinearly"
+    },
+    {
+      "@id": "geodesic:king_warrior_magician_lover",
+      "name": "The KWML Quaternio",
+      "description": "The four masculine archetypes as quadrants of mature masculinity.",
+      "structure": "quaternio",
+      "members": ["primordial:sovereign", "primordial:warrior", "primordial:magician", "primordial:lover"],
+      "center": "primordial:self",
+      "transitions": [
+        {"from": "primordial:sovereign", "to": "primordial:warrior", "axis": "active-receptive", "direction": "increase"},
+        {"from": "primordial:warrior", "to": "primordial:magician", "axis": "ascent-descent", "direction": "decrease"},
+        {"from": "primordial:magician", "to": "primordial:lover", "axis": "individual-collective", "direction": "increase"},
+        {"from": "primordial:lover", "to": "primordial:sovereign", "axis": "order-chaos", "direction": "decrease"}
+      ],
+      "reversible": true,
+      "notes": "Can be traversed in any direction; integration means holding all four"
+    }
+  ],
+
+  "complementaryPaths": [
+    {
+      "@id": "geodesic:creator_destroyer_dance",
+      "name": "Shiva-Shakti Dance",
+      "participants": ["primordial:creator", "primordial:destroyer"],
+      "type": "oscillation",
+      "description": "Rapid alternation between creation and destruction.",
+      "frequency": "contextual",
+      "notes": "In some traditions, these are not separate but aspects of one dynamic"
+    },
+    {
+      "@id": "geodesic:trickster_sovereign_tension",
+      "name": "The Court and the Fool",
+      "participants": ["primordial:sovereign", "primordial:trickster"],
+      "type": "tension_field",
+      "description": "Productive opposition maintaining system health.",
+      "notes": "The Fool is the only one who can speak truth to the King"
+    }
+  ],
+
+  "forbiddenTransitions": [
+    {
+      "from": "primordial:self",
+      "to": "primordial:monster",
+      "reason": "Self represents integration; Monster is pre-integration. Regression possible under extreme trauma but not a natural geodesic."
+    },
+    {
+      "from": "primordial:wise_elder",
+      "to": "primordial:divine_child",
+      "reason": "Developmental regression. The Elder can ACCESS child energy but doesn't BECOME the child.",
+      "exception": "Second childhood in dementia is pathological, not archetypal"
+    }
+  ]
+}

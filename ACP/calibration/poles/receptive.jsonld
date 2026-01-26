@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_receptive",
+  "@type": "CalibrationPoint",
+  "name": "Pure Receptive",
+  "axis": "active-receptive",
+  "polarity": "positive",
+  "description": "Maximum yin, absorptive, responding force. The theoretical extreme of pure inward drawing and acceptance.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 1.0,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_active",
+  "nearestPrimordials": [
+    {"@id": "primordial:great_mother", "distance": 0.25},
+    {"@id": "primordial:healer", "distance": 0.3}
+  ],
+  "culturalExamples": ["Gaia (receiving)", "Nut", "Frigg", "Quan Yin"],
+  "psychologicalManifestation": "The capacity to receive, accept, absorb, respond",
+  "shadowWhenExtreme": "Passivity, victimhood, inability to act, dissolution of self",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

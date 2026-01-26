@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_chaos",
+  "@type": "CalibrationPoint",
+  "name": "Pure Chaos",
+  "axis": "order-chaos",
+  "polarity": "positive",
+  "description": "Maximum entropy, dissolution, freedom. The theoretical extreme where all structure dissolves into pure potentiality and infinite possibility.",
+  "spectralCoordinates": {
+    "order-chaos": 1.0,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_order",
+  "nearestPrimordials": [
+    {"@id": "primordial:trickster", "distance": 0.2},
+    {"@id": "primordial:destroyer", "distance": 0.3}
+  ],
+  "culturalExamples": ["Apophis", "Tiamat (primordial)", "Loki (unbound)", "Dionysus (ecstatic)"],
+  "psychologicalManifestation": "The drive for freedom, novelty, breaking constraints, creative destruction",
+  "shadowWhenExtreme": "Meaninglessness, disintegration, madness, inability to form",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

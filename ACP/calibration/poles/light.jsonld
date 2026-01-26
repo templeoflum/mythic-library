@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_light",
+  "@type": "CalibrationPoint",
+  "name": "Pure Light",
+  "axis": "light-shadow",
+  "polarity": "negative",
+  "description": "Maximum consciousness, revelation, knowing. The theoretical extreme of complete awareness where nothing is hidden or repressed.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.0,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_shadow",
+  "nearestPrimordials": [
+    {"@id": "primordial:self", "distance": 0.2},
+    {"@id": "primordial:wise_elder", "distance": 0.25}
+  ],
+  "culturalExamples": ["Ra", "Apollo (illuminating)", "Baldur", "Amaterasu"],
+  "psychologicalManifestation": "Conscious awareness, clarity, insight, revealed truth",
+  "shadowWhenExtreme": "Blinding truth, inability to accept mystery, harsh exposure",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

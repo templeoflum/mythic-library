@@ -1,0 +1,286 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "enneagram:types",
+  "@type": "PsychologicalSystem",
+  "name": "Enneagram Types",
+  "description": "The 9 personality types of the Enneagram system, representing core motivations and fears.",
+  "domain": "psychology",
+  "subdomain": "enneagram",
+  "cardinality": 9,
+  "structuralNotes": "Types arranged in circle. Each has wing options (adjacent types), stress/growth arrows, and instinctual variants.",
+
+  "entries": [
+    {
+      "@id": "enneagram:type_1",
+      "@type": "Archetype",
+      "name": "Type 1: The Reformer",
+      "coreMotivation": "To be good, right, perfect",
+      "coreFear": "Being corrupt, bad, defective",
+      "center": "body",
+      "keywords": ["perfectionism", "integrity", "reform", "principle", "improvement"],
+      "spectralCoordinates": {
+        "order-chaos": 0.12,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.28,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["principle", "reform"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["integrity", "improvement"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_4", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_7", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "enneagram:type_2",
+      "@type": "Archetype",
+      "name": "Type 2: The Helper",
+      "coreMotivation": "To be loved, needed",
+      "coreFear": "Being unwanted, unlovable",
+      "center": "heart",
+      "keywords": ["helping", "nurturing", "giving", "love", "relationship"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.35,
+        "active-receptive": 0.58,
+        "individual-collective": 0.68,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.8, "aspects": ["nurturing", "giving"]},
+        {"primordial": "primordial:healer", "weight": 0.7, "aspects": ["helping", "love"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_4", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_8", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "enneagram:type_3",
+      "@type": "Archetype",
+      "name": "Type 3: The Achiever",
+      "coreMotivation": "To be successful, admired",
+      "coreFear": "Being worthless, a failure",
+      "center": "heart",
+      "keywords": ["achievement", "success", "image", "efficiency", "admiration"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.25,
+        "active-receptive": 0.18,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["achievement", "success"]},
+        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["image", "efficiency"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_6", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_9", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "enneagram:type_4",
+      "@type": "Archetype",
+      "name": "Type 4: The Individualist",
+      "coreMotivation": "To be unique, authentic",
+      "coreFear": "Having no identity or significance",
+      "center": "heart",
+      "keywords": ["uniqueness", "authenticity", "depth", "emotion", "melancholy"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.58,
+        "active-receptive": 0.55,
+        "individual-collective": 0.15,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["uniqueness", "melancholy"]},
+        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["authenticity", "depth"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_1", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_2", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "enneagram:type_5",
+      "@type": "Archetype",
+      "name": "Type 5: The Investigator",
+      "coreMotivation": "To understand, be competent",
+      "coreFear": "Being useless, incapable",
+      "center": "head",
+      "keywords": ["knowledge", "understanding", "observation", "analysis", "detachment"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.45,
+        "active-receptive": 0.68,
+        "individual-collective": 0.18,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.8, "aspects": ["knowledge", "understanding"]},
+        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["analysis", "observation"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_8", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_7", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "enneagram:type_6",
+      "@type": "Archetype",
+      "name": "Type 6: The Loyalist",
+      "coreMotivation": "To have security, support",
+      "coreFear": "Being without guidance, abandoned",
+      "center": "head",
+      "keywords": ["loyalty", "security", "vigilance", "doubt", "support"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.52,
+        "active-receptive": 0.55,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.32,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["vigilance", "loyalty"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["security", "support"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_9", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_3", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "enneagram:type_7",
+      "@type": "Archetype",
+      "name": "Type 7: The Enthusiast",
+      "coreMotivation": "To be happy, satisfied",
+      "coreFear": "Being deprived, trapped in pain",
+      "center": "head",
+      "keywords": ["enthusiasm", "adventure", "options", "joy", "spontaneity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.68,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.22,
+        "active-receptive": 0.22,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.18
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["enthusiasm", "joy"]},
+        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["adventure", "spontaneity"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_5", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_1", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "enneagram:type_8",
+      "@type": "Archetype",
+      "name": "Type 8: The Challenger",
+      "coreMotivation": "To be strong, in control",
+      "coreFear": "Being controlled, harmed",
+      "center": "body",
+      "keywords": ["power", "control", "strength", "protection", "challenge"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.38,
+        "active-receptive": 0.08,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.18
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["power", "strength"]},
+        {"primordial": "primordial:rebel", "weight": 0.7, "aspects": ["challenge", "control"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_2", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_5", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "enneagram:type_9",
+      "@type": "Archetype",
+      "name": "Type 9: The Peacemaker",
+      "coreMotivation": "To have inner peace, harmony",
+      "coreFear": "Loss, separation, conflict",
+      "center": "body",
+      "keywords": ["peace", "harmony", "unity", "acceptance", "mediation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.42,
+        "active-receptive": 0.72,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["peace", "harmony"]},
+        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["unity", "mediation"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "enneagram:type_3", "note": "Growth direction"},
+        {"type": "TENSION", "target": "enneagram:type_6", "note": "Stress direction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.8}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "centers": {
+      "body": ["enneagram:type_8", "enneagram:type_9", "enneagram:type_1"],
+      "heart": ["enneagram:type_2", "enneagram:type_3", "enneagram:type_4"],
+      "head": ["enneagram:type_5", "enneagram:type_6", "enneagram:type_7"]
+    },
+    "harmonicGroups": {
+      "positive": ["enneagram:type_7", "enneagram:type_9", "enneagram:type_2"],
+      "competency": ["enneagram:type_1", "enneagram:type_3", "enneagram:type_5"],
+      "reactive": ["enneagram:type_4", "enneagram:type_6", "enneagram:type_8"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

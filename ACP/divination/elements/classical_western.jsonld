@@ -1,0 +1,221 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "elements:classical_western",
+  "@type": "SymbolicSystem",
+  "name": "Classical Western Elements",
+  "description": "The four classical elements plus quintessence, foundational to Western esoteric systems.",
+  "domain": "divination",
+  "subdomain": "elements",
+  "cardinality": 5,
+  "structuralNotes": "Four elements form quaternio; fifth (Aether) is transcendent center. Maps to Tarot suits, humors, temperaments, seasons.",
+
+  "entries": [
+    {
+      "@id": "element:fire",
+      "@type": "Archetype",
+      "name": "Fire",
+      "keywords": ["energy", "will", "passion", "transformation", "spirit"],
+      "qualities": {
+        "hot": true,
+        "dry": true,
+        "direction": "South",
+        "season": "Summer",
+        "humor": "Yellow Bile (Choleric)"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.25,
+        "active-receptive": 0.1,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.2,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.3
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.7},
+        {"primordial": "primordial:creator", "weight": 0.6}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "element:water", "note": "Hot-dry vs cold-wet"},
+        {"type": "COMPLEMENT", "target": "element:air", "note": "Share hot quality"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:wands", "note": "Suit correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "astrology:aries", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:leo", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:sagittarius", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "element:water",
+      "@type": "Archetype",
+      "name": "Water",
+      "keywords": ["emotion", "intuition", "flow", "purification", "receptivity"],
+      "qualities": {
+        "cold": true,
+        "wet": true,
+        "direction": "West",
+        "season": "Autumn",
+        "humor": "Phlegm (Phlegmatic)"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.6,
+        "active-receptive": 0.85,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.6
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.7},
+        {"primordial": "primordial:healer", "weight": 0.5}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "element:fire", "note": "Cold-wet vs hot-dry"},
+        {"type": "COMPLEMENT", "target": "element:earth", "note": "Share cold quality"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:cups", "note": "Suit correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "astrology:cancer", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:scorpio", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:pisces", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "element:air",
+      "@type": "Archetype",
+      "name": "Air",
+      "keywords": ["intellect", "communication", "movement", "thought", "breath"],
+      "qualities": {
+        "hot": true,
+        "wet": true,
+        "direction": "East",
+        "season": "Spring",
+        "humor": "Blood (Sanguine)"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.3,
+        "active-receptive": 0.35,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.6},
+        {"primordial": "primordial:trickster", "weight": 0.5}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "element:earth", "note": "Hot-wet vs cold-dry"},
+        {"type": "COMPLEMENT", "target": "element:fire", "note": "Share hot quality"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:swords", "note": "Suit correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "astrology:gemini", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:libra", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:aquarius", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "element:earth",
+      "@type": "Archetype",
+      "name": "Earth",
+      "keywords": ["stability", "matter", "body", "grounding", "manifestation"],
+      "qualities": {
+        "cold": true,
+        "dry": true,
+        "direction": "North",
+        "season": "Winter",
+        "humor": "Black Bile (Melancholic)"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.2,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.5,
+        "active-receptive": 0.7,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.9,
+        "stasis-transformation": 0.15,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.8},
+        {"primordial": "primordial:great_mother", "weight": 0.6}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "element:air", "note": "Cold-dry vs hot-wet"},
+        {"type": "COMPLEMENT", "target": "element:water", "note": "Share cold quality"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:pentacles", "note": "Suit correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "astrology:taurus", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:virgo", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:capricorn", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "element:aether",
+      "@type": "Archetype",
+      "name": "Aether (Quintessence)",
+      "keywords": ["spirit", "void", "quintessence", "unity", "transcendence"],
+      "qualities": {
+        "transcendent": true,
+        "direction": "Center",
+        "season": "Eternal",
+        "note": "Beyond the four, containing and transcending all"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.9}
+      ],
+      "relationships": [
+        {"type": "CONTAINS", "target": "element:fire"},
+        {"type": "CONTAINS", "target": "element:water"},
+        {"type": "CONTAINS", "target": "element:air"},
+        {"type": "CONTAINS", "target": "element:earth"},
+        {"type": "CULTURAL_ECHO", "target": "calibration:origin", "note": "Both represent center"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "internalStructure": {
+      "quaternio": ["element:fire", "element:water", "element:air", "element:earth"],
+      "polarPairs": [
+        {"pair": ["element:fire", "element:water"], "axis": "hot-dry / cold-wet"},
+        {"pair": ["element:air", "element:earth"], "axis": "hot-wet / cold-dry"}
+      ],
+      "qualities": {
+        "hot": ["element:fire", "element:air"],
+        "cold": ["element:water", "element:earth"],
+        "wet": ["element:water", "element:air"],
+        "dry": ["element:fire", "element:earth"]
+      }
+    },
+    "externalCorrespondences": {
+      "tarot": {
+        "element:fire": "tarot:wands",
+        "element:water": "tarot:cups",
+        "element:air": "tarot:swords",
+        "element:earth": "tarot:pentacles"
+      },
+      "astrology": "Triplicities (3 signs per element)",
+      "kabbalah": "Four worlds",
+      "seasons": "Fire-Summer, Water-Autumn, Air-Spring, Earth-Winter",
+      "directions": "Fire-South, Water-West, Air-East, Earth-North"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

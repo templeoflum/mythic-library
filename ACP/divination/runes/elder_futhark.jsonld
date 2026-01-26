@@ -1,0 +1,681 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "runes:elder_futhark",
+  "@type": "SymbolicSystem",
+  "name": "Elder Futhark Runes",
+  "description": "The 24 runes of the Elder Futhark, the oldest runic alphabet, used for divination and magic.",
+  "domain": "divination",
+  "subdomain": "runes",
+  "cardinality": 24,
+  "structuralNotes": "Divided into three aettir (families) of 8 runes each: Freya's, Hagal's, and Tyr's aett.",
+
+  "entries": [
+    {
+      "@id": "rune:fehu",
+      "@type": "Archetype",
+      "name": "Fehu",
+      "meaning": "Cattle, Wealth",
+      "aett": "freya",
+      "position": 1,
+      "keywords": ["wealth", "abundance", "cattle", "prosperity", "mobile-property"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.32,
+        "active-receptive": 0.38,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["abundance", "generation"]},
+        {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["wealth", "prosperity"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:pentacles_ace", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "rune:uruz",
+      "@type": "Archetype",
+      "name": "Uruz",
+      "meaning": "Aurochs, Strength",
+      "aett": "freya",
+      "position": 2,
+      "keywords": ["strength", "vitality", "endurance", "primal-power", "health"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["strength", "endurance"]},
+        {"primordial": "primordial:monster", "weight": 0.5, "aspects": ["primal-power"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "rune:thurisaz",
+      "@type": "Archetype",
+      "name": "Thurisaz",
+      "meaning": "Giant, Thorn",
+      "aett": "freya",
+      "position": 3,
+      "keywords": ["giant", "thorn", "protection", "destruction", "chaos-force", "Thor"],
+      "spectralCoordinates": {
+        "order-chaos": 0.78,
+        "creation-destruction": 0.72,
+        "light-shadow": 0.58,
+        "active-receptive": 0.18,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["chaos-force", "breaking"]},
+        {"primordial": "primordial:monster", "weight": 0.65, "aspects": ["giant", "primal"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-THOR", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "rune:ansuz",
+      "@type": "Archetype",
+      "name": "Ansuz",
+      "meaning": "God (Odin), Breath",
+      "aett": "freya",
+      "position": 4,
+      "keywords": ["Odin", "breath", "communication", "wisdom", "divine-message", "inspiration"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.32,
+        "active-receptive": 0.35,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.8, "aspects": ["wisdom", "communication"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["divine-message"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-ODIN", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "rune:raidho",
+      "@type": "Archetype",
+      "name": "Raidho",
+      "meaning": "Journey, Riding",
+      "aett": "freya",
+      "position": 5,
+      "keywords": ["journey", "riding", "movement", "rhythm", "order", "right-action"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.35,
+        "active-receptive": 0.28,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["journey", "quest"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["movement", "guidance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "rune:kenaz",
+      "@type": "Archetype",
+      "name": "Kenaz",
+      "meaning": "Torch, Knowledge",
+      "aett": "freya",
+      "position": 6,
+      "keywords": ["torch", "knowledge", "illumination", "creativity", "craft", "transformation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.18,
+        "active-receptive": 0.32,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["knowledge", "craft"]},
+        {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["illumination", "creativity"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.65},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:gebo",
+      "@type": "Archetype",
+      "name": "Gebo",
+      "meaning": "Gift, Exchange",
+      "aett": "freya",
+      "position": 7,
+      "keywords": ["gift", "exchange", "partnership", "balance", "generosity", "sacrifice"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.38,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["partnership", "exchange"]},
+        {"primordial": "primordial:twin", "weight": 0.55, "aspects": ["balance", "reciprocity"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:cups_02", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:wunjo",
+      "@type": "Archetype",
+      "name": "Wunjo",
+      "meaning": "Joy, Harmony",
+      "aett": "freya",
+      "position": 8,
+      "keywords": ["joy", "harmony", "fellowship", "hope", "ecstasy", "glory"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.22,
+        "active-receptive": 0.45,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.75, "aspects": ["joy", "hope"]},
+        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["harmony", "fellowship"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:cups_10", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:hagalaz",
+      "@type": "Archetype",
+      "name": "Hagalaz",
+      "meaning": "Hail, Disruption",
+      "aett": "hagal",
+      "position": 9,
+      "keywords": ["hail", "disruption", "destruction", "transformation", "uncontrolled-force"],
+      "spectralCoordinates": {
+        "order-chaos": 0.82,
+        "creation-destruction": 0.78,
+        "light-shadow": 0.55,
+        "active-receptive": 0.35,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.88,
+        "voluntary-fated": 0.82
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["disruption", "hail"]},
+        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["uncontrolled", "chaos"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "rune:nauthiz",
+      "@type": "Archetype",
+      "name": "Nauthiz",
+      "meaning": "Need, Necessity",
+      "aett": "hagal",
+      "position": 10,
+      "keywords": ["need", "necessity", "constraint", "resistance", "endurance", "survival"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.62,
+        "active-receptive": 0.58,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.82
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.65, "aspects": ["necessity", "fate"]},
+        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["constraint", "survival"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:pentacles_05", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.6}
+      ]
+    },
+    {
+      "@id": "rune:isa",
+      "@type": "Archetype",
+      "name": "Isa",
+      "meaning": "Ice, Stillness",
+      "aett": "hagal",
+      "position": 11,
+      "keywords": ["ice", "stillness", "stasis", "ego", "concentration", "waiting"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.55,
+        "active-receptive": 0.78,
+        "individual-collective": 0.22,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.05,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["stillness", "stasis"]},
+        {"primordial": "primordial:shadow", "weight": 0.5, "aspects": ["frozen", "ego"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:swords_04", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.55}
+      ]
+    },
+    {
+      "@id": "rune:jera",
+      "@type": "Archetype",
+      "name": "Jera",
+      "meaning": "Year, Harvest",
+      "aett": "hagal",
+      "position": 12,
+      "keywords": ["year", "harvest", "cycle", "reward", "season", "patience"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.7, "aspects": ["harvest", "cycle"]},
+        {"primordial": "primordial:preserver", "weight": 0.55, "aspects": ["patience", "reward"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:pentacles_07", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "rune:eihwaz",
+      "@type": "Archetype",
+      "name": "Eihwaz",
+      "meaning": "Yew, Death/Rebirth",
+      "aett": "hagal",
+      "position": 13,
+      "keywords": ["yew", "death", "rebirth", "endurance", "axis", "Yggdrasil"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.68,
+        "light-shadow": 0.58,
+        "active-receptive": 0.48,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.82,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.8, "aspects": ["death-rebirth", "axis"]},
+        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["transformation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:perthro",
+      "@type": "Archetype",
+      "name": "Perthro",
+      "meaning": "Lot Cup, Mystery",
+      "aett": "hagal",
+      "position": 14,
+      "keywords": ["lot-cup", "mystery", "fate", "divination", "wyrd", "hidden"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.68,
+        "active-receptive": 0.62,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.85
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.75, "aspects": ["fate", "wyrd"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["mystery", "divination"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:algiz",
+      "@type": "Archetype",
+      "name": "Algiz",
+      "meaning": "Elk, Protection",
+      "aett": "hagal",
+      "position": 15,
+      "keywords": ["elk", "protection", "defense", "sanctuary", "awakening", "connection"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.28,
+        "active-receptive": 0.42,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["protection", "defense"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["sanctuary", "awakening"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:wands_07", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:sowilo",
+      "@type": "Archetype",
+      "name": "Sowilo",
+      "meaning": "Sun, Victory",
+      "aett": "hagal",
+      "position": 16,
+      "keywords": ["sun", "victory", "success", "wholeness", "life-force", "guidance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.08,
+        "active-receptive": 0.28,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.18,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["victory", "success"]},
+        {"primordial": "primordial:self", "weight": 0.7, "aspects": ["wholeness", "life-force"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:wands_06", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:tiwaz",
+      "@type": "Archetype",
+      "name": "Tiwaz",
+      "meaning": "Tyr, Justice",
+      "aett": "tyr",
+      "position": 17,
+      "keywords": ["Tyr", "justice", "sacrifice", "victory", "order", "law"],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.25,
+        "active-receptive": 0.22,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["justice", "sacrifice"]},
+        {"primordial": "primordial:sovereign", "weight": 0.65, "aspects": ["order", "law"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-TYR", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "rune:berkano",
+      "@type": "Archetype",
+      "name": "Berkano",
+      "meaning": "Birch, Birth",
+      "aett": "tyr",
+      "position": 18,
+      "keywords": ["birch", "birth", "fertility", "growth", "renewal", "mother"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.32,
+        "active-receptive": 0.68,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.62,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["birth", "fertility"]},
+        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["growth", "renewal"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "rune:ehwaz",
+      "@type": "Archetype",
+      "name": "Ehwaz",
+      "meaning": "Horse, Partnership",
+      "aett": "tyr",
+      "position": 19,
+      "keywords": ["horse", "partnership", "movement", "trust", "loyalty", "teamwork"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.35,
+        "active-receptive": 0.42,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:twin", "weight": 0.7, "aspects": ["partnership", "trust"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["movement", "journey"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:cups_02", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "rune:mannaz",
+      "@type": "Archetype",
+      "name": "Mannaz",
+      "meaning": "Human, Self",
+      "aett": "tyr",
+      "position": 20,
+      "keywords": ["human", "self", "humanity", "intelligence", "awareness", "mortality"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.85, "aspects": ["humanity", "awareness"]},
+        {"primordial": "primordial:ancestor", "weight": 0.55, "aspects": ["mortality", "lineage"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:laguz",
+      "@type": "Archetype",
+      "name": "Laguz",
+      "meaning": "Water, Flow",
+      "aett": "tyr",
+      "position": 21,
+      "keywords": ["water", "flow", "intuition", "unconscious", "dreams", "emotion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.62,
+        "active-receptive": 0.72,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.65, "aspects": ["flow", "emotion"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.6, "aspects": ["unconscious", "dreams"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "iching:kan", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "rune:ingwaz",
+      "@type": "Archetype",
+      "name": "Ingwaz",
+      "meaning": "Ing (Freyr), Fertility",
+      "aett": "tyr",
+      "position": 22,
+      "keywords": ["Freyr", "fertility", "gestation", "potential", "peace", "completion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.18,
+        "light-shadow": 0.32,
+        "active-receptive": 0.58,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["potential", "gestation"]},
+        {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["fertility", "completion"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-FREYR", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "rune:dagaz",
+      "@type": "Archetype",
+      "name": "Dagaz",
+      "meaning": "Day, Breakthrough",
+      "aett": "tyr",
+      "position": 23,
+      "keywords": ["day", "breakthrough", "awakening", "transformation", "hope", "balance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.12,
+        "active-receptive": 0.45,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.75, "aspects": ["breakthrough", "balance"]},
+        {"primordial": "primordial:divine_child", "weight": 0.6, "aspects": ["awakening", "hope"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "rune:othala",
+      "@type": "Archetype",
+      "name": "Othala",
+      "meaning": "Heritage, Ancestry",
+      "aett": "tyr",
+      "position": 24,
+      "keywords": ["heritage", "ancestry", "home", "inheritance", "tradition", "belonging"],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.42,
+        "active-receptive": 0.62,
+        "individual-collective": 0.78,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.22,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.9, "aspects": ["heritage", "ancestry"]},
+        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["tradition", "home"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:pentacles_10", "fidelity": 0.85}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "aettir": {
+      "freya": {
+        "runes": ["fehu", "uruz", "thurisaz", "ansuz", "raidho", "kenaz", "gebo", "wunjo"],
+        "theme": "Creation and worldly matters",
+        "deity": "Freya/Freyr"
+      },
+      "hagal": {
+        "runes": ["hagalaz", "nauthiz", "isa", "jera", "eihwaz", "perthro", "algiz", "sowilo"],
+        "theme": "Transformation and the elements",
+        "deity": "Heimdall/Mordgud"
+      },
+      "tyr": {
+        "runes": ["tiwaz", "berkano", "ehwaz", "mannaz", "laguz", "ingwaz", "dagaz", "othala"],
+        "theme": "Humanity and social order",
+        "deity": "Tyr"
+      }
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

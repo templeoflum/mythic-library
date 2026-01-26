@@ -1,0 +1,152 @@
+{
+  "@context": "./ACP_CONTEXT.jsonld",
+  "@graph": [
+    {
+      "@id": "acp:axes",
+      "@type": "skos:ConceptScheme",
+      "name": "ACP Spectral Axes",
+      "description": "The seven fundamental polarities upon which all archetypes can be positioned. Each axis represents a continuous spectrum from 0.0 to 1.0, where 0.0 is the negative pole and 1.0 is the positive pole."
+    },
+
+    {
+      "@id": "axis:order-chaos",
+      "@type": "Axis",
+      "name": "Order-Chaos",
+      "negativePoleName": "Order",
+      "positivePoleName": "Chaos",
+      "description": "The spectrum between structure/law/pattern and entropy/freedom/dissolution. Order seeks to maintain, categorize, and stabilize. Chaos disrupts, liberates, and dissolves boundaries.",
+      "keywords": ["structure", "entropy", "law", "freedom", "pattern", "dissolution", "stability", "disruption"],
+      "examples": {
+        "order_0.0": "The ultimate lawgiver, pure cosmic order (Ma'at, Themis)",
+        "order_0.25": "Strong structure with flexibility (Athena, Apollo)",
+        "balanced_0.5": "Dynamic equilibrium (Hermes, Mercury)",
+        "chaos_0.75": "Creative destruction, necessary disruption (Loki, Set)",
+        "chaos_1.0": "Primordial chaos, pure entropy (Tiamat, Apophis)"
+      }
+    },
+
+    {
+      "@id": "axis:creation-destruction",
+      "@type": "Axis",
+      "name": "Creation-Destruction",
+      "negativePoleName": "Creation",
+      "positivePoleName": "Destruction",
+      "description": "The spectrum between genesis/building/growth and ending/breaking/transformation. Note: destruction is not evil - it is necessary for transformation and renewal.",
+      "keywords": ["genesis", "ending", "building", "breaking", "growth", "decay", "birth", "death"],
+      "examples": {
+        "creation_0.0": "Pure generative force (Brahma, Ptah)",
+        "creation_0.25": "Nurturing growth (Demeter, Gaia)",
+        "balanced_0.5": "Preservation, maintaining what exists (Vishnu, Hestia)",
+        "destruction_0.75": "Transformative ending (Kali, Sekhmet)",
+        "destruction_1.0": "Pure dissolution (Shiva as Mahakala, Thanatos)"
+      }
+    },
+
+    {
+      "@id": "axis:light-shadow",
+      "@type": "Axis",
+      "name": "Light-Shadow",
+      "negativePoleName": "Light",
+      "positivePoleName": "Shadow",
+      "description": "The spectrum between conscious/revealed/known and unconscious/hidden/repressed. This is not good vs evil, but visible vs invisible, integrated vs unintegrated.",
+      "keywords": ["conscious", "unconscious", "revealed", "hidden", "known", "repressed", "clarity", "mystery"],
+      "examples": {
+        "light_0.0": "Pure solar consciousness (Ra, Apollo, Surya)",
+        "light_0.25": "Illuminating wisdom (Athena, Saraswati)",
+        "balanced_0.5": "Liminal, threshold-dwelling (Hermes, Hecate)",
+        "shadow_0.75": "Underworld wisdom (Hades, Ereshkigal)",
+        "shadow_1.0": "Pure unconscious depths (Nyx, Erebus)"
+      }
+    },
+
+    {
+      "@id": "axis:active-receptive",
+      "@type": "Axis",
+      "name": "Active-Receptive",
+      "negativePoleName": "Active",
+      "positivePoleName": "Receptive",
+      "description": "The spectrum between yang/projective/initiating and yin/absorptive/responding. Neither pole is superior; both are necessary for any process.",
+      "keywords": ["yang", "yin", "projective", "absorptive", "initiating", "responding", "doing", "being"],
+      "examples": {
+        "active_0.0": "Pure initiating force (Ares, Mars, Indra)",
+        "active_0.25": "Strategic action (Athena, Skanda)",
+        "balanced_0.5": "Responsive action (Hermes, Vishnu)",
+        "receptive_0.75": "Nurturing receptivity (Demeter, Yemoja)",
+        "receptive_1.0": "Pure receptive stillness (Hestia, Nut)"
+      }
+    },
+
+    {
+      "@id": "axis:individual-collective",
+      "@type": "Axis",
+      "name": "Individual-Collective",
+      "negativePoleName": "Individual",
+      "positivePoleName": "Collective",
+      "description": "The spectrum between self/ego/personal and group/unconscious/transpersonal. Ranges from intensely personal archetypes to those representing collective forces.",
+      "keywords": ["self", "group", "ego", "collective", "personal", "transpersonal", "hero", "tribe"],
+      "examples": {
+        "individual_0.0": "Pure ego-consciousness, the Hero's I (Perseus, Arjuna)",
+        "individual_0.25": "Individual path within community (Odysseus)",
+        "balanced_0.5": "Mediator between self and collective (Hermes, Ganesha)",
+        "collective_0.75": "Voice of the collective (Zeus as law, Olodumare)",
+        "collective_1.0": "Pure collective unconscious (Brahman, Tao, World Soul)"
+      }
+    },
+
+    {
+      "@id": "axis:ascent-descent",
+      "@type": "Axis",
+      "name": "Ascent-Descent",
+      "negativePoleName": "Ascent",
+      "positivePoleName": "Descent",
+      "description": "The spectrum between sky/spirit/transcendence and earth/matter/immanence. Vertical axis of the cosmic order.",
+      "keywords": ["sky", "earth", "spirit", "matter", "transcendence", "immanence", "above", "below"],
+      "examples": {
+        "ascent_0.0": "Pure sky/spirit (Uranus, Anu, Heaven)",
+        "ascent_0.25": "Solar height (Zeus, Jupiter, Indra)",
+        "balanced_0.5": "Threshold between worlds (Hermes, Inanna)",
+        "descent_0.75": "Earth-rooted (Demeter, Pachamama, Geb)",
+        "descent_1.0": "Pure underworld/depth (Hades, Ereshkigal, Hel)"
+      }
+    },
+
+    {
+      "@id": "axis:stasis-transformation",
+      "@type": "Axis",
+      "name": "Stasis-Transformation",
+      "negativePoleName": "Stasis",
+      "positivePoleName": "Transformation",
+      "description": "The spectrum between preservation/continuity and change/metamorphosis/death-rebirth. How much an archetype embodies or catalyzes change.",
+      "keywords": ["preservation", "change", "continuity", "metamorphosis", "stability", "flux", "permanence", "impermanence"],
+      "examples": {
+        "stasis_0.0": "Eternal unchanging (Vishnu as Preserver, Hestia)",
+        "stasis_0.25": "Stable growth (Demeter, Saturn as structure)",
+        "balanced_0.5": "Cyclical renewal (Persephone, Dumuzi)",
+        "transformation_0.75": "Active transformation (Dionysus, Loki)",
+        "transformation_1.0": "Pure metamorphosis (Shiva as Nataraja, Phoenix)"
+      }
+    },
+
+    {
+      "@id": "axis:voluntary-fated",
+      "@type": "Axis",
+      "name": "Voluntary-Fated",
+      "negativePoleName": "Voluntary",
+      "positivePoleName": "Fated",
+      "description": "The spectrum between free choice/agency/self-determination and destiny/necessity/cosmic inevitability. Some archetypes embody radical freedom and choice; others embody inescapable fate, prophecy, or karmic necessity. This axis captures whether an archetype CHOOSES or IS CHOSEN.",
+      "keywords": ["choice", "destiny", "agency", "necessity", "freedom", "fate", "will", "karma", "prophecy", "determination"],
+      "examples": {
+        "voluntary_0.0": "Pure agency, self-determination, radical freedom (Prometheus stealing fire, Trickster choosing chaos)",
+        "voluntary_0.25": "Strategic choice within constraints, cunning navigation (Odysseus, Athena advising)",
+        "balanced_0.5": "Choice and fate intertwined, accepting the call (Hero answering destiny, Arjuna at Kurukshetra)",
+        "fated_0.75": "Instrument of destiny, vessel of prophecy (Cassandra, Pythia, oracles)",
+        "fated_1.0": "Pure fate/necessity, cosmic inevitability (Moirai/Fates, Norns, Ananke, Karma itself)"
+      },
+      "notes": {
+        "philosophical_context": "This axis engages the ancient tension between free will and determinism. Neither pole is 'better' - both are necessary forces in mythic and psychological reality.",
+        "narrative_function": "High-voluntary archetypes drive plot through choice; high-fated archetypes reveal plot through prophecy and necessity.",
+        "psychological_mapping": "Relates to locus of control, sense of agency, relationship to destiny and meaning."
+      }
+    }
+  ]
+}

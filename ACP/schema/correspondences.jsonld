@@ -1,0 +1,808 @@
+{
+  "@context": "./ACP_CONTEXT.jsonld",
+  "@graph": [
+    {
+      "@id": "acp:correspondences",
+      "@type": "skos:ConceptScheme",
+      "name": "ACP Cross-System Correspondences",
+      "description": "Mapping system that links archetypes to their correspondences across Tarot, I Ching, Runes, Chakras, Elements, Planets, and other symbolic systems. Each correspondence is a node that can be linked from multiple archetypes.",
+      "version": "2.1",
+      "provenanceFramework": {
+        "description": "Framework for tracking the origin, tradition, and confidence of correspondences",
+        "provenanceTypes": {
+          "traditional": {
+            "code": "TRAD",
+            "description": "Attested in historical/classical sources; part of established esoteric traditions",
+            "examples": ["Golden Dawn attributions", "Vedic correspondences", "Classical astrology"]
+          },
+          "syncretic": {
+            "code": "SYNC",
+            "description": "Modern synthesis combining multiple traditions; New Age or contemporary",
+            "examples": ["Chakra-to-Greek-god mappings", "Modern Tarot-astrology blends"]
+          },
+          "scholarly": {
+            "code": "SCHOL",
+            "description": "Based on academic comparative mythology or religious studies",
+            "examples": ["Dumézil's tripartite structure", "Campbell's monomyth mappings"]
+          },
+          "original": {
+            "code": "ORIG",
+            "description": "Created for this system based on structural/spectral analysis",
+            "examples": ["Spectral coordinate assignments", "Novel archetype-correspondence links"]
+          }
+        },
+        "confidenceLevels": {
+          "high": {
+            "range": "0.8-1.0",
+            "description": "Widely accepted; multiple corroborating sources; strong structural fit"
+          },
+          "medium": {
+            "range": "0.5-0.79",
+            "description": "Common but debated; some tradition supports; reasonable structural fit"
+          },
+          "low": {
+            "range": "0.2-0.49",
+            "description": "Minority position; novel or contested; weak structural support"
+          },
+          "speculative": {
+            "range": "0.0-0.19",
+            "description": "Experimental; little precedent; exploratory mapping"
+          }
+        },
+        "usageExample": {
+          "correspondence": "Hermes = Throat Chakra",
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.6,
+            "sources": ["Modern chakra-deity integration practices"],
+            "conflicts": ["No traditional Vedic connection to Greek deities"],
+            "rationale": "Communication/messenger function aligns with Vishuddha themes"
+          }
+        }
+      }
+    },
+
+    {
+      "@id": "corr:tarot",
+      "@type": "skos:Collection",
+      "name": "Tarot Major Arcana Correspondences",
+      "systemProvenance": {
+        "type": "TRAD",
+        "note": "Tarot-archetype mappings draw primarily from Golden Dawn tradition (late 19th century) and Jungian interpretations. Card meanings have historical depth but archetype links vary by school.",
+        "baseConfidence": 0.75,
+        "primarySources": ["Golden Dawn", "Waite-Smith", "Thoth/Crowley", "Jungian Tarot"]
+      },
+      "members": [
+        {
+          "@id": "TAMA-FOOL",
+          "name": "The Fool",
+          "number": 0,
+          "spectralCoordinates": {
+            "order-chaos": 0.7,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.4,
+            "active-receptive": 0.4,
+            "individual-collective": 0.3,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.8
+          },
+          "keywords": ["beginnings", "innocence", "spontaneity", "leap of faith"],
+          "archetypalLinks": ["primordial:divine-child", "primordial:trickster"],
+          "greekEchoes": ["arch:GR-HERMES", "arch:GR-DIONYSUS"]
+        },
+        {
+          "@id": "TAMA-MAGICIAN",
+          "name": "The Magician",
+          "number": 1,
+          "spectralCoordinates": {
+            "order-chaos": 0.4,
+            "creation-destruction": 0.25,
+            "light-shadow": 0.3,
+            "active-receptive": 0.15,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.4,
+            "stasis-transformation": 0.6
+          },
+          "keywords": ["will", "manifestation", "skill", "concentration"],
+          "archetypalLinks": ["primordial:magician"],
+          "greekEchoes": ["arch:GR-HERMES", "arch:GR-HEPHAESTUS"],
+          "planet": "7P-MERCURY"
+        },
+        {
+          "@id": "TAMA-HIGH-PRIESTESS",
+          "name": "The High Priestess",
+          "number": 2,
+          "spectralCoordinates": {
+            "order-chaos": 0.3,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.6,
+            "active-receptive": 0.85,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.35
+          },
+          "keywords": ["intuition", "mystery", "inner knowledge", "the unconscious"],
+          "archetypalLinks": ["primordial:wise-elder", "primordial:maiden"],
+          "greekEchoes": ["arch:GR-PERSEPHONE", "arch:GR-HESTIA"],
+          "planet": "7P-MOON"
+        },
+        {
+          "@id": "TAMA-EMPRESS",
+          "name": "The Empress",
+          "number": 3,
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.15,
+            "light-shadow": 0.3,
+            "active-receptive": 0.7,
+            "individual-collective": 0.6,
+            "ascent-descent": 0.65,
+            "stasis-transformation": 0.4
+          },
+          "keywords": ["abundance", "fertility", "nurturing", "nature"],
+          "archetypalLinks": ["primordial:great-mother"],
+          "greekEchoes": ["arch:GR-DEMETER", "arch:GR-APHRODITE"],
+          "planet": "7P-VENUS"
+        },
+        {
+          "@id": "TAMA-EMPEROR",
+          "name": "The Emperor",
+          "number": 4,
+          "spectralCoordinates": {
+            "order-chaos": 0.1,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.25,
+            "active-receptive": 0.15,
+            "individual-collective": 0.65,
+            "ascent-descent": 0.25,
+            "stasis-transformation": 0.2
+          },
+          "keywords": ["authority", "structure", "control", "fatherhood"],
+          "archetypalLinks": ["primordial:great-father", "primordial:sovereign"],
+          "greekEchoes": ["arch:GR-ZEUS"],
+          "zodiac": "WZ-ARIES"
+        },
+        {
+          "@id": "TAMA-HIEROPHANT",
+          "name": "The Hierophant",
+          "number": 5,
+          "spectralCoordinates": {
+            "order-chaos": 0.15,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.35,
+            "active-receptive": 0.45,
+            "individual-collective": 0.75,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.25
+          },
+          "keywords": ["tradition", "conformity", "teaching", "beliefs"],
+          "archetypalLinks": ["primordial:wise-elder"],
+          "zodiac": "WZ-TAURUS"
+        },
+        {
+          "@id": "TAMA-LOVERS",
+          "name": "The Lovers",
+          "number": 6,
+          "spectralCoordinates": {
+            "order-chaos": 0.45,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.35,
+            "active-receptive": 0.5,
+            "individual-collective": 0.45,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.55
+          },
+          "keywords": ["love", "union", "choice", "alignment"],
+          "archetypalLinks": ["primordial:lover"],
+          "greekEchoes": ["arch:GR-APHRODITE", "arch:GR-EROS"],
+          "zodiac": "WZ-GEMINI"
+        },
+        {
+          "@id": "TAMA-CHARIOT",
+          "name": "The Chariot",
+          "number": 7,
+          "spectralCoordinates": {
+            "order-chaos": 0.3,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.3,
+            "active-receptive": 0.1,
+            "individual-collective": 0.25,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.55
+          },
+          "keywords": ["willpower", "triumph", "determination", "control"],
+          "archetypalLinks": ["primordial:hero", "primordial:warrior"],
+          "greekEchoes": ["arch:GR-ARES", "arch:GR-APOLLO"],
+          "zodiac": "WZ-CANCER"
+        },
+        {
+          "@id": "TAMA-STRENGTH",
+          "name": "Strength",
+          "number": 8,
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.35,
+            "active-receptive": 0.4,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.45
+          },
+          "keywords": ["courage", "patience", "inner strength", "compassion"],
+          "archetypalLinks": ["primordial:warrior", "primordial:healer"],
+          "greekEchoes": ["arch:GR-ARTEMIS", "arch:GR-HEPHAESTUS"],
+          "zodiac": "WZ-LEO"
+        },
+        {
+          "@id": "TAMA-HERMIT",
+          "name": "The Hermit",
+          "number": 9,
+          "spectralCoordinates": {
+            "order-chaos": 0.25,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.5,
+            "active-receptive": 0.65,
+            "individual-collective": 0.15,
+            "ascent-descent": 0.4,
+            "stasis-transformation": 0.35
+          },
+          "keywords": ["solitude", "introspection", "guidance", "inner light"],
+          "archetypalLinks": ["primordial:wise-elder"],
+          "zodiac": "WZ-VIRGO"
+        },
+        {
+          "@id": "TAMA-WHEEL",
+          "name": "Wheel of Fortune",
+          "number": 10,
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.5,
+            "active-receptive": 0.5,
+            "individual-collective": 0.7,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.8
+          },
+          "keywords": ["cycles", "fate", "destiny", "turning points"],
+          "planet": "7P-JUPITER"
+        },
+        {
+          "@id": "TAMA-JUSTICE",
+          "name": "Justice",
+          "number": 11,
+          "spectralCoordinates": {
+            "order-chaos": 0.1,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.25,
+            "active-receptive": 0.5,
+            "individual-collective": 0.6,
+            "ascent-descent": 0.4,
+            "stasis-transformation": 0.3
+          },
+          "keywords": ["fairness", "truth", "law", "cause and effect"],
+          "archetypalLinks": ["primordial:sovereign"],
+          "greekEchoes": ["arch:GR-ATHENA", "arch:GR-ZEUS"],
+          "zodiac": "WZ-LIBRA"
+        },
+        {
+          "@id": "TAMA-HANGED-MAN",
+          "name": "The Hanged Man",
+          "number": 12,
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.55,
+            "active-receptive": 0.9,
+            "individual-collective": 0.45,
+            "ascent-descent": 0.6,
+            "stasis-transformation": 0.65
+          },
+          "keywords": ["surrender", "new perspective", "sacrifice", "letting go"],
+          "archetypalLinks": ["primordial:divine-child"],
+          "greekEchoes": ["arch:GR-DIONYSUS", "arch:GR-PROMETHEUS"]
+        },
+        {
+          "@id": "TAMA-DEATH",
+          "name": "Death",
+          "number": 13,
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.85,
+            "light-shadow": 0.7,
+            "active-receptive": 0.5,
+            "individual-collective": 0.7,
+            "ascent-descent": 0.75,
+            "stasis-transformation": 0.95
+          },
+          "keywords": ["transformation", "endings", "transition", "release"],
+          "archetypalLinks": ["primordial:destroyer", "primordial:crone"],
+          "greekEchoes": ["arch:GR-HADES", "arch:GR-PERSEPHONE"],
+          "zodiac": "WZ-SCORPIO"
+        },
+        {
+          "@id": "TAMA-TEMPERANCE",
+          "name": "Temperance",
+          "number": 14,
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.4,
+            "active-receptive": 0.55,
+            "individual-collective": 0.5,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.5
+          },
+          "keywords": ["balance", "moderation", "patience", "synthesis"],
+          "archetypalLinks": ["primordial:healer"],
+          "zodiac": "WZ-SAGITTARIUS"
+        },
+        {
+          "@id": "TAMA-DEVIL",
+          "name": "The Devil",
+          "number": 15,
+          "spectralCoordinates": {
+            "order-chaos": 0.65,
+            "creation-destruction": 0.55,
+            "light-shadow": 0.85,
+            "active-receptive": 0.35,
+            "individual-collective": 0.4,
+            "ascent-descent": 0.8,
+            "stasis-transformation": 0.45
+          },
+          "keywords": ["bondage", "materialism", "shadow", "addiction"],
+          "archetypalLinks": ["primordial:shadow", "primordial:trickster"],
+          "greekEchoes": ["arch:GR-PAN", "arch:GR-HADES"],
+          "zodiac": "WZ-CAPRICORN",
+          "provenance": {
+            "archetypalLinks": {
+              "confidence": 0.8,
+              "note": "Shadow link is Jungian standard; Trickster link from Pan's mischievous nature"
+            },
+            "greekEchoes": {
+              "confidence": 0.85,
+              "note": "Pan-Devil iconography is well-attested (goat imagery); Hades link is more thematic (underworld)"
+            }
+          }
+        },
+        {
+          "@id": "TAMA-TOWER",
+          "name": "The Tower",
+          "number": 16,
+          "spectralCoordinates": {
+            "order-chaos": 0.9,
+            "creation-destruction": 0.9,
+            "light-shadow": 0.5,
+            "active-receptive": 0.2,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.95
+          },
+          "keywords": ["upheaval", "revelation", "sudden change", "liberation"],
+          "archetypalLinks": ["primordial:destroyer", "primordial:rebel"],
+          "greekEchoes": ["arch:GR-ARES", "arch:GR-DIONYSUS"],
+          "planet": "7P-MARS"
+        },
+        {
+          "@id": "TAMA-STAR",
+          "name": "The Star",
+          "number": 17,
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.3,
+            "light-shadow": 0.2,
+            "active-receptive": 0.65,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.3,
+            "stasis-transformation": 0.55
+          },
+          "keywords": ["hope", "faith", "renewal", "inspiration"],
+          "archetypalLinks": ["primordial:healer", "primordial:divine-child"],
+          "zodiac": "WZ-AQUARIUS"
+        },
+        {
+          "@id": "TAMA-MOON",
+          "name": "The Moon",
+          "number": 18,
+          "spectralCoordinates": {
+            "order-chaos": 0.6,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.75,
+            "active-receptive": 0.7,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.55
+          },
+          "keywords": ["illusion", "intuition", "the unconscious", "fear"],
+          "archetypalLinks": ["primordial:crone", "primordial:shadow"],
+          "greekEchoes": ["arch:GR-ARTEMIS", "arch:GR-HECATE", "arch:GR-POSEIDON"],
+          "zodiac": "WZ-PISCES"
+        },
+        {
+          "@id": "TAMA-SUN",
+          "name": "The Sun",
+          "number": 19,
+          "spectralCoordinates": {
+            "order-chaos": 0.25,
+            "creation-destruction": 0.25,
+            "light-shadow": 0.05,
+            "active-receptive": 0.35,
+            "individual-collective": 0.4,
+            "ascent-descent": 0.15,
+            "stasis-transformation": 0.45
+          },
+          "keywords": ["joy", "success", "vitality", "consciousness"],
+          "archetypalLinks": ["primordial:divine-child", "primordial:hero"],
+          "greekEchoes": ["arch:GR-APOLLO"],
+          "planet": "7P-SUN"
+        },
+        {
+          "@id": "TAMA-JUDGEMENT",
+          "name": "Judgement",
+          "number": 20,
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.35,
+            "active-receptive": 0.45,
+            "individual-collective": 0.75,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.8
+          },
+          "keywords": ["rebirth", "reckoning", "absolution", "calling"],
+          "archetypalLinks": ["primordial:psychopomp"]
+        },
+        {
+          "@id": "TAMA-WORLD",
+          "name": "The World",
+          "number": 21,
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.5,
+            "active-receptive": 0.5,
+            "individual-collective": 0.5,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.5
+          },
+          "keywords": ["completion", "integration", "accomplishment", "wholeness"],
+          "archetypalLinks": ["primordial:self"],
+          "planet": "7P-SATURN"
+        }
+      ]
+    },
+
+    {
+      "@id": "corr:chakras",
+      "@type": "skos:Collection",
+      "name": "Chakra System Correspondences",
+      "systemProvenance": {
+        "type": "SYNC",
+        "note": "Mapping Vedic chakras to Greek/Western archetypes is a modern syncretic practice. Traditional chakra systems don't reference Western deities.",
+        "baseConfidence": 0.5
+      },
+      "members": [
+        {
+          "@id": "CH-MULADHARA",
+          "name": "Muladhara (Root)",
+          "position": 1,
+          "location": "Base of spine",
+          "element": "EL-EARTH",
+          "color": "red",
+          "spectralCoordinates": {
+            "order-chaos": 0.2,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.6,
+            "active-receptive": 0.7,
+            "individual-collective": 0.3,
+            "ascent-descent": 0.95,
+            "stasis-transformation": 0.2
+          },
+          "themes": ["survival", "grounding", "security", "physical needs"],
+          "archetypalLinks": ["primordial:great-mother"],
+          "greekEchoes": ["arch:GR-HADES", "arch:GR-PERSEPHONE"]
+        },
+        {
+          "@id": "CH-SVADHISTHANA",
+          "name": "Svadhisthana (Sacral)",
+          "position": 2,
+          "location": "Lower abdomen",
+          "element": "EL-WATER",
+          "color": "orange",
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.3,
+            "light-shadow": 0.5,
+            "active-receptive": 0.6,
+            "individual-collective": 0.4,
+            "ascent-descent": 0.75,
+            "stasis-transformation": 0.6
+          },
+          "themes": ["emotion", "sexuality", "creativity", "pleasure"],
+          "archetypalLinks": ["primordial:lover"],
+          "greekEchoes": ["arch:GR-POSEIDON", "arch:GR-APHRODITE", "arch:GR-ARTEMIS"]
+        },
+        {
+          "@id": "CH-MANIPURA",
+          "name": "Manipura (Solar Plexus)",
+          "position": 3,
+          "location": "Upper abdomen",
+          "element": "EL-FIRE",
+          "color": "yellow",
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.35,
+            "active-receptive": 0.25,
+            "individual-collective": 0.3,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.55
+          },
+          "themes": ["will", "power", "self-esteem", "transformation"],
+          "archetypalLinks": ["primordial:warrior", "primordial:hero"],
+          "greekEchoes": ["arch:GR-APOLLO", "arch:GR-ARES", "arch:GR-HEPHAESTUS"]
+        },
+        {
+          "@id": "CH-ANAHATA",
+          "name": "Anahata (Heart)",
+          "position": 4,
+          "location": "Center of chest",
+          "element": "EL-AIR",
+          "color": "green",
+          "spectralCoordinates": {
+            "order-chaos": 0.45,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.4,
+            "active-receptive": 0.5,
+            "individual-collective": 0.5,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.5
+          },
+          "themes": ["love", "compassion", "connection", "healing"],
+          "archetypalLinks": ["primordial:lover", "primordial:healer"],
+          "greekEchoes": ["arch:GR-APHRODITE", "arch:GR-HESTIA"]
+        },
+        {
+          "@id": "CH-VISHUDDHA",
+          "name": "Vishuddha (Throat)",
+          "position": 5,
+          "location": "Throat",
+          "element": "EL-AETHER",
+          "color": "blue",
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.4,
+            "active-receptive": 0.4,
+            "individual-collective": 0.45,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.55
+          },
+          "themes": ["communication", "expression", "truth", "creativity"],
+          "archetypalLinks": ["primordial:trickster", "primordial:magician"],
+          "greekEchoes": ["arch:GR-HERMES"],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.6,
+            "note": "Hermes-Vishuddha link based on shared communication theme; not traditional Vedic. Trickster/Magician links via Hermes association.",
+            "rationale": "Throat=voice=messenger function creates structural parallel despite cultural distance"
+          }
+        },
+        {
+          "@id": "CH-AJNA",
+          "name": "Ajna (Third Eye)",
+          "position": 6,
+          "location": "Between eyebrows",
+          "element": "EL-LIGHT",
+          "color": "indigo",
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.3,
+            "active-receptive": 0.55,
+            "individual-collective": 0.5,
+            "ascent-descent": 0.25,
+            "stasis-transformation": 0.45
+          },
+          "themes": ["intuition", "wisdom", "insight", "vision"],
+          "archetypalLinks": ["primordial:wise-elder", "primordial:magician"],
+          "greekEchoes": ["arch:GR-ATHENA"]
+        },
+        {
+          "@id": "CH-SAHASRARA",
+          "name": "Sahasrara (Crown)",
+          "position": 7,
+          "location": "Top of head",
+          "element": "EL-COSMIC",
+          "color": "violet/white",
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.5,
+            "active-receptive": 0.5,
+            "individual-collective": 0.9,
+            "ascent-descent": 0.05,
+            "stasis-transformation": 0.5
+          },
+          "themes": ["transcendence", "unity", "enlightenment", "cosmic consciousness"],
+          "archetypalLinks": ["primordial:self"],
+          "greekEchoes": ["arch:GR-ZEUS"]
+        }
+      ]
+    },
+
+    {
+      "@id": "corr:elements",
+      "@type": "skos:Collection",
+      "name": "Classical Elements",
+      "systemProvenance": {
+        "type": "TRAD",
+        "note": "Classical elements (Greek/Western tradition) with correspondences from Aristotelian physics, medieval alchemy, and Golden Dawn synthesis.",
+        "baseConfidence": 0.85,
+        "primarySources": ["Empedocles", "Aristotle", "Medieval Alchemy", "Golden Dawn"]
+      },
+      "members": [
+        {
+          "@id": "EL-FIRE",
+          "name": "Fire",
+          "spectralCoordinates": {
+            "order-chaos": 0.6,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.2,
+            "active-receptive": 0.1,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.2,
+            "stasis-transformation": 0.75,
+            "voluntary-fated": 0.30
+          },
+          "qualities": ["hot", "dry", "ascending", "transforming"],
+          "tarotSuit": "Wands",
+          "zodiacTriplicity": ["WZ-ARIES", "WZ-LEO", "WZ-SAGITTARIUS"]
+        },
+        {
+          "@id": "EL-WATER",
+          "name": "Water",
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.6,
+            "active-receptive": 0.8,
+            "individual-collective": 0.70,
+            "ascent-descent": 0.7,
+            "stasis-transformation": 0.60,
+            "voluntary-fated": 0.65
+          },
+          "qualities": ["cold", "wet", "descending", "dissolving"],
+          "tarotSuit": "Cups",
+          "zodiacTriplicity": ["WZ-CANCER", "WZ-SCORPIO", "WZ-PISCES"]
+        },
+        {
+          "@id": "EL-AIR",
+          "name": "Air",
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.35,
+            "active-receptive": 0.35,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.25,
+            "stasis-transformation": 0.50,
+            "voluntary-fated": 0.25
+          },
+          "qualities": ["hot", "wet", "ascending", "connecting"],
+          "tarotSuit": "Swords",
+          "zodiacTriplicity": ["WZ-GEMINI", "WZ-LIBRA", "WZ-AQUARIUS"]
+        },
+        {
+          "@id": "EL-EARTH",
+          "name": "Earth",
+          "spectralCoordinates": {
+            "order-chaos": 0.2,
+            "creation-destruction": 0.4,
+            "light-shadow": 0.55,
+            "active-receptive": 0.75,
+            "individual-collective": 0.60,
+            "ascent-descent": 0.9,
+            "stasis-transformation": 0.15,
+            "voluntary-fated": 0.70
+          },
+          "qualities": ["cold", "dry", "descending", "stabilizing"],
+          "tarotSuit": "Pentacles",
+          "zodiacTriplicity": ["WZ-TAURUS", "WZ-VIRGO", "WZ-CAPRICORN"]
+        },
+        {
+          "@id": "EL-AETHER",
+          "name": "Aether/Spirit",
+          "spectralCoordinates": {
+            "order-chaos": 0.5,
+            "creation-destruction": 0.5,
+            "light-shadow": 0.5,
+            "active-receptive": 0.5,
+            "individual-collective": 0.85,
+            "ascent-descent": 0.5,
+            "stasis-transformation": 0.45,
+            "voluntary-fated": 0.50
+          },
+          "qualities": ["quintessence", "binding", "transcendent"],
+          "note": "The fifth element that unifies and transcends the four"
+        }
+      ]
+    },
+
+    {
+      "@id": "corr:planets",
+      "@type": "skos:Collection",
+      "name": "Classical Planets",
+      "systemProvenance": {
+        "type": "TRAD",
+        "note": "Classical planetary correspondences from Greco-Roman tradition. Planet-deity links are ancient and well-attested; archetype links derive from deity associations.",
+        "baseConfidence": 0.9,
+        "primarySources": ["Hellenistic Astrology", "Roman Religion", "Medieval Astrology"]
+      },
+      "members": [
+        {
+          "@id": "7P-SUN",
+          "name": "Sun",
+          "symbol": "☉",
+          "metal": "gold",
+          "day": "Sunday",
+          "archetypalLinks": ["primordial:hero", "primordial:sovereign"],
+          "greekDeity": "arch:GR-APOLLO"
+        },
+        {
+          "@id": "7P-MOON",
+          "name": "Moon",
+          "symbol": "☽",
+          "metal": "silver",
+          "day": "Monday",
+          "archetypalLinks": ["primordial:great-mother", "primordial:maiden"],
+          "greekDeity": "arch:GR-ARTEMIS"
+        },
+        {
+          "@id": "7P-MERCURY",
+          "name": "Mercury",
+          "symbol": "☿",
+          "metal": "quicksilver",
+          "day": "Wednesday",
+          "archetypalLinks": ["primordial:trickster", "primordial:magician"],
+          "greekDeity": "arch:GR-HERMES"
+        },
+        {
+          "@id": "7P-VENUS",
+          "name": "Venus",
+          "symbol": "♀",
+          "metal": "copper",
+          "day": "Friday",
+          "archetypalLinks": ["primordial:lover"],
+          "greekDeity": "arch:GR-APHRODITE"
+        },
+        {
+          "@id": "7P-MARS",
+          "name": "Mars",
+          "symbol": "♂",
+          "metal": "iron",
+          "day": "Tuesday",
+          "archetypalLinks": ["primordial:warrior"],
+          "greekDeity": "arch:GR-ARES"
+        },
+        {
+          "@id": "7P-JUPITER",
+          "name": "Jupiter",
+          "symbol": "♃",
+          "metal": "tin",
+          "day": "Thursday",
+          "archetypalLinks": ["primordial:sovereign", "primordial:great-father"],
+          "greekDeity": "arch:GR-ZEUS"
+        },
+        {
+          "@id": "7P-SATURN",
+          "name": "Saturn",
+          "symbol": "♄",
+          "metal": "lead",
+          "day": "Saturday",
+          "archetypalLinks": ["primordial:wise-elder", "primordial:crone"],
+          "greekDeity": "arch:GR-CRONUS"
+        }
+      ]
+    }
+  ]
+}

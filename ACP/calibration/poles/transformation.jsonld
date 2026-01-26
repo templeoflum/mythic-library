@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_transformation",
+  "@type": "CalibrationPoint",
+  "name": "Pure Transformation",
+  "axis": "stasis-transformation",
+  "polarity": "positive",
+  "description": "Maximum change, metamorphosis, death-rebirth. The theoretical extreme of constant flux where nothing remains the same.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 1.0,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_stasis",
+  "nearestPrimordials": [
+    {"@id": "primordial:psychopomp", "distance": 0.2},
+    {"@id": "primordial:trickster", "distance": 0.25}
+  ],
+  "culturalExamples": ["Hermes", "Loki", "Osiris (death-rebirth)", "Persephone"],
+  "psychologicalManifestation": "Adaptability, growth through crisis, death-rebirth, metamorphosis",
+  "shadowWhenExtreme": "Inability to stabilize, chaos addiction, loss of identity",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

@@ -1,0 +1,384 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "modern:brand_archetypes",
+  "@type": "ModernSystem",
+  "name": "Brand Archetypes",
+  "description": "The 12 brand personality archetypes used in marketing and brand strategy.",
+  "domain": "modern",
+  "subdomain": "cultural",
+  "cardinality": 12,
+  "source": "Carol Pearson and Margaret Mark, The Hero and the Outlaw",
+  "structuralNotes": "Organized into four quadrants based on motivation: Stability, Independence, Mastery, Belonging.",
+
+  "entries": [
+    {
+      "@id": "brand:innocent",
+      "@type": "Archetype",
+      "name": "The Innocent",
+      "motivation": "Safety",
+      "promise": "Life can be simple and good",
+      "examples": ["Coca-Cola", "Dove", "Nintendo"],
+      "keywords": ["simplicity", "optimism", "purity", "nostalgia", "trust"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.18,
+        "active-receptive": 0.55,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.85, "aspects": ["purity", "optimism"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["safety", "simplicity"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:child", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.75},
+        {"type": "TENSION", "target": "brand:outlaw", "note": "Safety vs liberation"},
+        {"type": "COMPLEMENT", "target": "brand:caregiver", "note": "Both value safety"}
+      ]
+    },
+    {
+      "@id": "brand:sage",
+      "@type": "Archetype",
+      "name": "The Sage",
+      "motivation": "Understanding",
+      "promise": "The truth will set you free",
+      "examples": ["Google", "BBC", "TED"],
+      "keywords": ["wisdom", "knowledge", "truth", "expertise", "intelligence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.28,
+        "active-receptive": 0.58,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.9, "aspects": ["wisdom", "truth"]},
+        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["knowledge", "expertise"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.8},
+        {"type": "TENSION", "target": "brand:jester", "note": "Serious vs playful"}
+      ]
+    },
+    {
+      "@id": "brand:explorer",
+      "@type": "Archetype",
+      "name": "The Explorer",
+      "motivation": "Freedom",
+      "promise": "Don't fence me in",
+      "examples": ["Jeep", "REI", "Patagonia"],
+      "keywords": ["adventure", "freedom", "discovery", "independence", "authenticity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.62,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.38,
+        "active-receptive": 0.22,
+        "individual-collective": 0.22,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.22
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["adventure", "discovery"]},
+        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["freedom", "independence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "journey:call_to_adventure", "fidelity": 0.8},
+        {"type": "COMPLEMENT", "target": "brand:outlaw", "note": "Both value freedom"},
+        {"type": "TENSION", "target": "brand:ruler", "note": "Freedom vs control"}
+      ]
+    },
+    {
+      "@id": "brand:outlaw",
+      "@type": "Archetype",
+      "name": "The Outlaw",
+      "motivation": "Liberation",
+      "promise": "Rules are made to be broken",
+      "examples": ["Harley-Davidson", "Virgin", "Diesel"],
+      "keywords": ["rebellion", "disruption", "revolution", "liberation", "edge"],
+      "spectralCoordinates": {
+        "order-chaos": 0.78,
+        "creation-destruction": 0.58,
+        "light-shadow": 0.52,
+        "active-receptive": 0.18,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.15
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.9, "aspects": ["rebellion", "liberation"]},
+        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["disruption", "edge"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.65},
+        {"type": "POLAR_OPPOSITE", "target": "brand:ruler", "axis": "order-chaos"},
+        {"type": "TENSION", "target": "brand:innocent", "note": "Liberation vs safety"}
+      ]
+    },
+    {
+      "@id": "brand:magician",
+      "@type": "Archetype",
+      "name": "The Magician",
+      "motivation": "Power",
+      "promise": "Make dreams come true",
+      "examples": ["Apple", "Disney", "Dyson"],
+      "keywords": ["transformation", "vision", "innovation", "imagination", "experience"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.42,
+        "active-receptive": 0.28,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.78,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.9, "aspects": ["transformation", "vision"]},
+        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["innovation", "imagination"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.65},
+        {"type": "COMPLEMENT", "target": "brand:creator", "note": "Both transform reality"},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "brand:hero",
+      "@type": "Archetype",
+      "name": "The Hero",
+      "motivation": "Mastery",
+      "promise": "Where there's a will, there's a way",
+      "examples": ["Nike", "FedEx", "US Army"],
+      "keywords": ["courage", "achievement", "determination", "strength", "victory"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.25,
+        "active-receptive": 0.12,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.9, "aspects": ["courage", "achievement"]},
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["strength", "determination"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vogler:hero", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "jungian:hero", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.85},
+        {"type": "COMPLEMENT", "target": "brand:ruler", "note": "Both seek mastery"}
+      ]
+    },
+    {
+      "@id": "brand:lover",
+      "@type": "Archetype",
+      "name": "The Lover",
+      "motivation": "Intimacy",
+      "promise": "I only have eyes for you",
+      "examples": ["Victoria's Secret", "Chanel", "Häagen-Dazs"],
+      "keywords": ["passion", "sensuality", "romance", "beauty", "desire"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.38,
+        "active-receptive": 0.55,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.9, "aspects": ["passion", "desire"]},
+        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["beauty", "romance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "astrology:venus", "fidelity": 0.85},
+        {"type": "COMPLEMENT", "target": "brand:caregiver", "note": "Both value connection"},
+        {"type": "TENSION", "target": "brand:sage", "note": "Heart vs mind"}
+      ]
+    },
+    {
+      "@id": "brand:jester",
+      "@type": "Archetype",
+      "name": "The Jester",
+      "motivation": "Enjoyment",
+      "promise": "If I can't dance, I don't want to be part of your revolution",
+      "examples": ["M&Ms", "Old Spice", "Dollar Shave Club"],
+      "keywords": ["humor", "fun", "irreverence", "joy", "mischief"],
+      "spectralCoordinates": {
+        "order-chaos": 0.72,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.35,
+        "active-receptive": 0.28,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.18
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["humor", "mischief"]},
+        {"primordial": "primordial:divine_child", "weight": 0.65, "aspects": ["fun", "joy"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "vogler:trickster", "fidelity": 0.85},
+        {"type": "TENSION", "target": "brand:ruler", "note": "Levity vs authority"}
+      ]
+    },
+    {
+      "@id": "brand:everyman",
+      "@type": "Archetype",
+      "name": "The Everyman",
+      "motivation": "Belonging",
+      "promise": "Everyone is created equal",
+      "examples": ["IKEA", "Target", "Budweiser"],
+      "keywords": ["belonging", "authenticity", "realism", "equality", "comfort"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.42,
+        "active-receptive": 0.52,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.32,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["comfort", "realism"]},
+        {"primordial": "primordial:ancestor", "weight": 0.65, "aspects": ["belonging", "equality"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "spiral:green", "fidelity": 0.7},
+        {"type": "TENSION", "target": "brand:hero", "note": "Ordinary vs extraordinary"},
+        {"type": "TENSION", "target": "brand:ruler", "note": "Common vs elite"},
+        {"type": "COMPLEMENT", "target": "brand:caregiver", "note": "Both value community"}
+      ]
+    },
+    {
+      "@id": "brand:caregiver",
+      "@type": "Archetype",
+      "name": "The Caregiver",
+      "motivation": "Service",
+      "promise": "Love your neighbor as yourself",
+      "examples": ["Johnson & Johnson", "UNICEF", "Volvo"],
+      "keywords": ["nurturing", "protection", "compassion", "service", "generosity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.35,
+        "active-receptive": 0.62,
+        "individual-collective": 0.68,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "protection"]},
+        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["compassion", "service"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:great_mother", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_2", "fidelity": 0.85},
+        {"type": "COMPLEMENT", "target": "brand:innocent", "note": "Both value safety"}
+      ]
+    },
+    {
+      "@id": "brand:ruler",
+      "@type": "Archetype",
+      "name": "The Ruler",
+      "motivation": "Control",
+      "promise": "Power isn't everything, it's the only thing",
+      "examples": ["Mercedes-Benz", "Rolex", "Microsoft"],
+      "keywords": ["power", "leadership", "status", "success", "control"],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.32,
+        "active-receptive": 0.25,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.9, "aspects": ["power", "leadership"]},
+        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["control", "status"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.75},
+        {"type": "POLAR_OPPOSITE", "target": "brand:outlaw", "axis": "order-chaos"},
+        {"type": "COMPLEMENT", "target": "brand:hero", "note": "Both seek mastery"}
+      ]
+    },
+    {
+      "@id": "brand:creator",
+      "@type": "Archetype",
+      "name": "The Creator",
+      "motivation": "Innovation",
+      "promise": "If you can imagine it, it can be done",
+      "examples": ["Lego", "Adobe", "Crayola"],
+      "keywords": ["creativity", "imagination", "innovation", "self-expression", "vision"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.12,
+        "light-shadow": 0.32,
+        "active-receptive": 0.25,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.9, "aspects": ["creativity", "vision"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["innovation", "imagination"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_4", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "brand:magician", "note": "Both transform reality"},
+        {"type": "TENSION", "target": "brand:ruler", "note": "Innovation vs tradition"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "quadrants": {
+      "stability": ["brand:caregiver", "brand:ruler", "brand:creator"],
+      "belonging": ["brand:everyman", "brand:jester", "brand:lover"],
+      "mastery": ["brand:hero", "brand:magician", "brand:outlaw"],
+      "independence": ["brand:innocent", "brand:sage", "brand:explorer"]
+    },
+    "polarPairs": [
+      {"pair": ["brand:ruler", "brand:outlaw"], "axis": "order-chaos"},
+      {"pair": ["brand:sage", "brand:jester"], "axis": "serious-playful"},
+      {"pair": ["brand:hero", "brand:everyman"], "axis": "extraordinary-ordinary"}
+    ]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

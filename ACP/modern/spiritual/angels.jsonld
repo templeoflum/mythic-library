@@ -1,0 +1,289 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "modern:angels",
+  "@type": "ModernSystem",
+  "name": "Angelic Hierarchy",
+  "description": "The traditional nine choirs of angels as archetypal intermediaries between human and divine.",
+  "domain": "modern",
+  "subdomain": "spiritual",
+  "cardinality": 9,
+  "source": "Pseudo-Dionysius, Christian/Jewish/Islamic angelology",
+  "structuralNotes": "Three triads: highest (closest to divine), middle (cosmic governors), lowest (closest to humans).",
+
+  "entries": [
+    {
+      "@id": "angel:seraphim",
+      "@type": "Archetype",
+      "name": "Seraphim",
+      "triad": "highest",
+      "function": "Love, fire, closest to divine",
+      "keywords": ["love", "fire", "worship", "purification", "divine-presence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.08,
+        "active-receptive": 0.35,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.08,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["love", "devotion"]},
+        {"primordial": "primordial:destroyer", "weight": 0.6, "aspects": ["fire", "purification"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "astrology:sun", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "angel:cherubim", "note": "Love and Wisdom at divine throne"},
+        {"type": "TENSION", "target": "angel:angels", "note": "Highest vs lowest choir"}
+      ]
+    },
+    {
+      "@id": "angel:cherubim",
+      "@type": "Archetype",
+      "name": "Cherubim",
+      "triad": "highest",
+      "function": "Wisdom, knowledge, guardians",
+      "keywords": ["wisdom", "knowledge", "guardianship", "gnosis", "light"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.12,
+        "active-receptive": 0.55,
+        "individual-collective": 0.68,
+        "ascent-descent": 0.12,
+        "stasis-transformation": 0.32,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "gnosis"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["guardianship", "protection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:chokmah", "fidelity": 0.8},
+        {"type": "COMPLEMENT", "target": "angel:seraphim", "note": "Wisdom and Love together"},
+        {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "angel:thrones",
+      "@type": "Archetype",
+      "name": "Thrones",
+      "triad": "highest",
+      "function": "Divine justice, humility",
+      "keywords": ["justice", "humility", "stability", "judgment", "throne"],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.22,
+        "active-receptive": 0.65,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.18,
+        "stasis-transformation": 0.22,
+        "voluntary-fated": 0.72
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["justice", "judgment"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["stability", "humility"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:binah", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "angel:dominions", "note": "Thrones support Dominions' rule"}
+      ]
+    },
+    {
+      "@id": "angel:dominions",
+      "@type": "Archetype",
+      "name": "Dominions",
+      "triad": "middle",
+      "function": "Leadership, regulation of duties",
+      "keywords": ["leadership", "regulation", "hierarchy", "command", "order"],
+      "spectralCoordinates": {
+        "order-chaos": 0.12,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.28,
+        "active-receptive": 0.32,
+        "individual-collective": 0.68,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["leadership", "command"]},
+        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["hierarchy", "order"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "angel:thrones", "note": "Receive authority from Thrones"},
+        {"type": "TENSION", "target": "angel:virtues", "note": "Command vs action"}
+      ]
+    },
+    {
+      "@id": "angel:virtues",
+      "@type": "Archetype",
+      "name": "Virtues",
+      "triad": "middle",
+      "function": "Miracles, courage, grace",
+      "keywords": ["miracles", "courage", "grace", "blessing", "strength"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.22,
+        "active-receptive": 0.38,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["miracles", "grace"]},
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["courage", "strength"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "angel:powers", "note": "Grace complements defense"}
+      ]
+    },
+    {
+      "@id": "angel:powers",
+      "@type": "Archetype",
+      "name": "Powers",
+      "triad": "middle",
+      "function": "Defense against evil, warriors",
+      "keywords": ["defense", "warfare", "protection", "vigilance", "combat"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.32,
+        "active-receptive": 0.22,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["warfare", "combat"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["defense", "protection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "angel:virtues", "note": "Defense complements grace"},
+        {"type": "TENSION", "target": "jungian:shadow", "note": "Combat against shadow forces"}
+      ]
+    },
+    {
+      "@id": "angel:principalities",
+      "@type": "Archetype",
+      "name": "Principalities",
+      "triad": "lowest",
+      "function": "Nations, groups, institutions",
+      "keywords": ["nations", "institutions", "guidance", "civilization", "governance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.35,
+        "active-receptive": 0.42,
+        "individual-collective": 0.82,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["governance", "nations"]},
+        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["civilization", "institutions"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "angel:archangels", "note": "Collective vs individual guidance"}
+      ]
+    },
+    {
+      "@id": "angel:archangels",
+      "@type": "Archetype",
+      "name": "Archangels",
+      "triad": "lowest",
+      "function": "Important messages, major missions",
+      "keywords": ["messenger", "announcement", "mission", "revelation", "herald"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.28,
+        "active-receptive": 0.28,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["messenger", "herald"]},
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["mission", "revelation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vogler:herald", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "journey:call_to_adventure", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "angel:angels", "note": "Major vs everyday guidance"}
+      ]
+    },
+    {
+      "@id": "angel:angels",
+      "@type": "Archetype",
+      "name": "Angels",
+      "triad": "lowest",
+      "function": "Personal guardians, everyday guidance",
+      "keywords": ["guardian", "guidance", "protection", "presence", "assistance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.28,
+        "active-receptive": 0.52,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["guardian", "assistance"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["guidance", "presence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "angel:archangels", "note": "Everyday vs major guidance"},
+        {"type": "TENSION", "target": "angel:seraphim", "note": "Closest to humans vs closest to divine"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "triads": {
+      "highest": ["angel:seraphim", "angel:cherubim", "angel:thrones"],
+      "middle": ["angel:dominions", "angel:virtues", "angel:powers"],
+      "lowest": ["angel:principalities", "angel:archangels", "angel:angels"],
+      "note": "Hierarchy from divine source to human realm"
+    },
+    "functionalGroups": {
+      "contemplative": ["angel:seraphim", "angel:cherubim", "angel:thrones"],
+      "governing": ["angel:dominions", "angel:virtues", "angel:powers"],
+      "ministering": ["angel:principalities", "angel:archangels", "angel:angels"]
+    },
+    "ascentPath": {
+      "fromHuman": ["angel:angels", "angel:archangels", "angel:principalities", "angel:powers", "angel:virtues", "angel:dominions", "angel:thrones", "angel:cherubim", "angel:seraphim"],
+      "note": "Ladder from humanity to divine presence"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}
