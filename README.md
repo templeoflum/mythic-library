@@ -68,7 +68,23 @@ mythic-library/
 │   ├── segment/                    # Phase 3.2: Text segmentation
 │   ├── extract/                    # Phase 3.3: Entity extraction
 │   ├── motif/                      # Phase 3.4: Motif tagging
-│   └── database/                   # Phase 3.5: Pattern database
+│   ├── database/                   # Phase 3.5: Pattern database
+│   ├── explorer/                   # Browser-based data explorer
+│   │   ├── server.py               # HTTP server + embedded UI
+│   │   └── find_suspects.py        # Entity false positive detector
+│   └── integration/                # Validation runners
+│       ├── run_validation.py       # ACP validation suite
+│       └── setup_integration.py    # Prerequisite checker
+├── integration/                    # ACP ↔ Library bridge
+│   ├── acp_loader.py               # Load ACP JSON-LD, extract coordinates
+│   ├── library_loader.py           # Query mythic_patterns.db
+│   └── entity_mapper.py            # Map library entities → ACP archetypes
+├── validation/                     # Hypothesis tests
+│   ├── test_coordinate_accuracy.py # Co-occurrence vs ACP distance
+│   └── test_motif_clustering.py    # Motif signatures in 8D space
+├── ACP/                            # Archetypal Compression Protocol (subtree)
+│   ├── schema/                     # Primordials, axes, ontology
+│   └── archetypes/                 # 524 archetypes as JSON-LD
 └── docs/
     ├── gap_analysis_v3.md          # Current gap analysis
     └── DEVELOPMENT.md              # Development log
@@ -169,6 +185,40 @@ python scripts/database/query_patterns.py --sql "SELECT * FROM patterns ORDER BY
 - Demeter/Persephone (Homeric Hymns)
 - Devi traditions (Hindu), Amaterasu (Kojiki)
 
+## ACP Integration
+
+The [Archetypal Compression Protocol](ACP/) provides an 8-dimensional coordinate system for archetypes. The integration tests whether ACP coordinates predict narrative co-occurrence patterns in the library corpus.
+
+### Running the Validation Suite
+
+```bash
+# Check prerequisites
+python scripts/integration/setup_integration.py
+
+# Run full validation (entity mapping + coordinate correlation + motif clustering)
+python scripts/integration/run_validation.py
+```
+
+### Browsing the Data
+
+```bash
+# Start the explorer UI at http://127.0.0.1:8421
+python scripts/explorer/server.py
+```
+
+The explorer provides views for entity details, ACP coordinate projections, co-occurrence networks, Thompson motif distributions, and validation results.
+
+### Current Results
+
+| Metric | Value |
+|--------|-------|
+| ACP Archetypes | 524 |
+| Entities Mapped | 94 / 173 (54.3%) |
+| Pearson r (distance vs co-occurrence) | -0.036 (p=0.019) |
+| Spearman r | -0.050 (p=0.001) |
+
+The negative correlation confirms the ACP hypothesis: archetypes closer in 8D space co-occur more often in narratives.
+
 ## Validation Approach
 
 Each text includes:
@@ -186,7 +236,7 @@ The SQLite database at `data/mythic_patterns.db` contains:
 | `texts` | 132 | Core metadata (96 usable with content) |
 | `segments` | 4,000 | Structural units with full text |
 | `entities` | 173 | Canonical entity records |
-| `entity_mentions` | 32,897 | Entity occurrences in segments |
+| `entity_mentions` | 28,104 | Entity occurrences in segments |
 | `motifs` | 149 | Thompson Motif Index reference |
 | `motif_tags` | 55,539 | Motif assignments with confidence |
 | `patterns` | 18 | Cross-cultural pattern definitions |
@@ -225,13 +275,22 @@ The SQLite database at `data/mythic_patterns.db` contains:
 ### Phase 3: Structured Extraction (Complete)
 - [x] Corpus audit & text normalization (126 texts normalized)
 - [x] Structural segmentation (4,000 segments)
-- [x] Entity extraction (173 entities, 32,897 mentions)
+- [x] Entity extraction (173 entities, 28,104 mentions)
 - [x] Thompson Motif Index tagging (149 motifs, 55,539 tags)
 - [x] SQLite pattern database with FTS5 search (137 MB)
 - [x] 18 cross-cultural patterns identified across 20-26 traditions
+- [x] Case-sensitive disambiguation for 27 ambiguous entity names
 
-### Phase 4: Mythopoetic OS Integration (Planned)
-- [ ] ACP (Archetypal Compression Protocol) encoding
+### Phase 4: ACP Integration (In Progress)
+- [x] ACP pulled as git subtree (524 archetypes, 24 primordials, 8D coordinates)
+- [x] Integration bridge: ACP loader, library loader, entity mapper
+- [x] Entity mapping: 94/173 entities mapped to ACP archetypes (54.3%)
+- [x] Coordinate validation: distance vs co-occurrence correlation (r=-0.036, p=0.019)
+- [x] Thompson motif clustering analysis in 8D coordinate space
+- [x] Browser-based data explorer (entities, coordinates, co-occurrence, motifs)
+- [ ] Resolve shared archetype mappings (12 archetypes with multiple entities)
+- [ ] Investigate active-receptive axis bias in motif signatures
+- [ ] Expand entity mapping coverage beyond 54%
 - [ ] Narrative engine pattern feeds
 - [ ] Cross-cultural validation layer
 

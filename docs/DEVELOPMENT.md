@@ -184,11 +184,11 @@ Built `scripts/extract/extract_entities.py` with:
 - ~200 curated entity entries across 16 traditions (Mesopotamian, Egyptian, Greek, Norse, Celtic, Indian, Japanese, Chinese, Roman, Polynesian, Mesoamerican, Zoroastrian, Finnish, African, Persian, Hebrew/Christian)
 - Compiled regex patterns with word boundary matching
 - Records: entity name, type, tradition, char offset, sentence context
-- Result: 173 unique entities, 32,897 mentions, 85 texts with entities
+- Result: 173 unique entities, 28,104 mentions, 85 texts with entities
 
 Created `data/entity_aliases.json` with ~50 cross-cultural mappings (Ishtar→Inanna→Astarte, Zeus→Jupiter→Jove, etc.)
 
-**Known issue**: Short deity names (Set, Nut, Eve, Mars) produce false positives as common English words. Handled with exclusion lists in queries.
+**Fixed**: Short deity names (Set, Nut, Eve, Mars) initially produced false positives as common English words. Now handled with case-sensitive matching for 27 ambiguous names (32,897 → 28,104 mentions after cleanup).
 
 #### Sub-Phase 3.4: Motif Tagging
 
@@ -215,7 +215,7 @@ Built `scripts/database/create_db.py` — SQLite database at `data/mythic_patter
 | `segments` | 4,000 | Structural units with full text |
 | `entities` | 173 | Canonical entity records |
 | `entity_aliases` | 77 | Cross-cultural name mappings |
-| `entity_mentions` | 32,897 | Entity occurrences per segment |
+| `entity_mentions` | 28,104 | Entity occurrences per segment |
 | `motifs` | 149 | Thompson Motif Index reference |
 | `motif_tags` | 55,539 | Motif assignments with confidence |
 | `patterns` | 18 | Cross-cultural pattern definitions |
@@ -236,14 +236,95 @@ Database size: 137 MB. Query tool: `scripts/database/query_patterns.py`.
 
 ---
 
+## Session Log: January 2026 (Phase 4)
+
+### Phase 4: ACP Integration — In Progress
+
+Connected the ACP's 8-dimensional coordinate system with the library's empirical data to test whether coordinates predict narrative co-occurrence.
+
+#### 4.1: ACP Subtree & Integration Bridge
+
+Pulled ACP repository as git subtree at `ACP/`. Built `integration/` package:
+
+- **`acp_loader.py`**: Loads all 524 archetypes from `ACP/**/*.jsonld`. Parses `@graph` arrays, extracts 8D `spectralCoordinates`, builds alias index from archetype `aliases` (with `fidelity` scores). Loads 24 primordials from `ACP/schema/primordials.jsonld`.
+
+- **`library_loader.py`**: Queries `mythic_patterns.db` with corrected schema (joins through `entity_mentions` and `motif_tags` tables, not inline columns). Provides co-occurrence, motif-entity associations, and entity stats.
+
+- **`entity_mapper.py`**: Three-phase mapping:
+  1. ACP alias matching (uses alias `fidelity` as confidence)
+  2. Exact name matching against library entities
+  3. Library alias matching via `entity_aliases.json`
+  - Fuzzy fallback via `difflib.SequenceMatcher`
+  - Result: 94/173 entities mapped (54.3%)
+
+#### 4.2: Validation Suite
+
+Built `validation/` package with two hypothesis tests:
+
+- **`test_coordinate_accuracy.py`**: For each mapped entity pair, computes 8D Euclidean distance (ACP) vs segment co-occurrence count (library). Tests Pearson and Spearman correlation. Identifies outliers.
+
+- **`test_motif_clustering.py`**: For each Thompson motif, finds associated entities via segment joins, maps to ACP coordinates, computes centroid and variance. Tests whether motif-related archetypes cluster tightly in 8D space.
+
+**Results (after false positive cleanup):**
+
+| Metric | All Entities | Excluding "Set" |
+|--------|-------------|-----------------|
+| Pearson r | -0.036 (p=0.019) | -0.043 (p=0.005) |
+| Spearman r | -0.050 (p=0.001) | -0.062 (p=0.00006) |
+
+The negative correlation confirms the ACP hypothesis at weak but statistically significant levels: archetypes closer in coordinate space co-occur more often in narratives.
+
+#### 4.3: Entity False Positive Cleanup
+
+Discovered "Set" had 4,275 mentions across 25 traditions — only 3.7% were in Egyptian texts. The case-insensitive regex was matching the English verb "set".
+
+Built `scripts/explorer/find_suspects.py` to systematically identify entities where home-tradition mentions are disproportionately low. Found 16 suspects.
+
+Added `CASE_SENSITIVE` set of 27 ambiguous names to `extract_entities.py` — these compile without `re.IGNORECASE`. Re-extraction reduced mentions from 32,897 → 28,104 (4,793 false positives removed). Key improvements:
+
+| Entity | Before | After |
+|--------|--------|-------|
+| Set | 4,275 | 190 |
+| Nut | 426 | 55 |
+| Eve | 266 | 140 |
+| Jupiter | 393 | 130 |
+| Saturn | 148 | 90 |
+
+#### 4.4: Browser-Based Data Explorer
+
+Built `scripts/explorer/server.py` — a self-contained Python HTTP server (single file, no dependencies beyond stdlib + integration packages) serving an embedded HTML/JS frontend at `http://127.0.0.1:8421`.
+
+Six views:
+- **Dashboard**: Summary statistics, tradition distribution, top entities
+- **Entities**: Searchable/filterable entity list with ACP mapping status
+- **Entity Detail**: ACP coordinates as axis bars, nearby archetypes, co-occurrences, motifs, sample passages
+- **Coordinate Space**: 2D scatter plot with selectable axis pair projection, hover tooltips, click-to-detail
+- **Co-occurrence**: Entity pair co-occurrence data
+- **Motifs**: Thompson motif distribution with entity associations
+- **Validation**: Correlation results and outlier analysis
+
+#### Open Issues
+
+1. **12 ACP archetypes have multiple library entities** — e.g., Zeus/Jupiter/Indra all map to `arch:GR-ZEUS`. Need to determine whether these should map to distinct tradition-specific archetypes.
+
+2. **Active-receptive axis bias** — All 16 Thompson motif categories show `active-receptive` as the dominant axis in their ACP centroid. Possible causes: coordinate encoding bias, extraction bias, or genuine mythological pattern.
+
+3. **Mapping coverage at 54%** — 79 entities remain unmapped. Many are tradition-specific figures without ACP archetypes (e.g., Bantu, Australian Aboriginal entities).
+
 ## Integration Roadmap
 
-### Phase 4: Mythopoetic OS Integration
+### Remaining Phase 4 Work
 
-The extracted patterns feed into higher OS layers:
-- **ACP (Archetypal Compression Protocol)**: Pattern encoding
+- [ ] Resolve shared archetype mappings (12 archetypes with multiple entities)
+- [ ] Investigate active-receptive axis bias
+- [ ] Expand entity mapping coverage
+- [ ] Per-tradition coordinate analysis
+
+### Phase 5: Mythopoetic OS Integration
+
+The validated patterns feed into higher OS layers:
 - **Narrative Engine**: Story generation from patterns
-- **Validation Layer**: Cross-cultural pattern verification
+- **Cross-cultural Validation Layer**: Pattern verification across traditions
 
 ---
 
@@ -273,7 +354,7 @@ The extracted patterns feed into higher OS layers:
 | Segments | 4,000 |
 | Total Word Count | 8,137,973 |
 | Unique Entities | 173 |
-| Entity Mentions | 32,897 |
+| Entity Mentions | 28,104 |
 | Thompson Motifs | 149 |
 | Motif Tags | 55,539 |
 | Cross-Cultural Patterns | 18 |
