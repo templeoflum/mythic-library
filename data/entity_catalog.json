@@ -1,433 +1,21 @@
 {
-  "Set": {
-    "entity_name": "Set",
-    "entity_type": "deity",
-    "primary_tradition": "egyptian",
-    "total_mentions": 4275,
-    "text_count": 75,
-    "tradition_count": 25,
-    "texts": [
-      {
-        "text_id": "anansi-tales",
-        "tradition": "african",
-        "count": 38
-      },
-      {
-        "text_id": "ikom-folk-stories-from-southern-nigeria",
-        "tradition": "african",
-        "count": 19
-      },
-      {
-        "text_id": "south-african-folk-tales",
-        "tradition": "african",
-        "count": 27
-      },
-      {
-        "text_id": "yoruba-speaking-peoples",
-        "tradition": "african",
-        "count": 4
-      },
-      {
-        "text_id": "zanzibar-tales",
-        "tradition": "african",
-        "count": 24
-      },
-      {
-        "text_id": "andrew-langs-fairy-books",
-        "tradition": "anthology",
-        "count": 14
-      },
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 180
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 35
-      },
-      {
-        "text_id": "australian-legendary-tales",
-        "tradition": "australian-aboriginal",
-        "count": 6
-      },
-      {
-        "text_id": "cuchulain-of-muirthemne",
-        "tradition": "celtic",
-        "count": 59
-      },
-      {
-        "text_id": "gods-fighting-men",
-        "tradition": "celtic",
-        "count": 109
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 277
-      },
-      {
-        "text_id": "the-mabinogion",
-        "tradition": "celtic",
-        "count": 110
-      },
-      {
-        "text_id": "analects-confucius",
-        "tradition": "chinese",
-        "count": 14
-      },
-      {
-        "text_id": "i-ching",
-        "tradition": "chinese",
-        "count": 27
-      },
-      {
-        "text_id": "journey-to-the-west",
-        "tradition": "chinese",
-        "count": 2
-      },
-      {
-        "text_id": "tao-te-ching",
-        "tradition": "chinese",
-        "count": 3
-      },
-      {
-        "text_id": "book-of-the-dead",
-        "tradition": "egyptian",
-        "count": 35
-      },
-      {
-        "text_id": "burden-of-isis",
-        "tradition": "egyptian",
-        "count": 8
-      },
-      {
-        "text_id": "legends-of-egyptian-gods",
-        "tradition": "egyptian",
-        "count": 114
-      },
-      {
-        "text_id": "pyramid-texts",
-        "tradition": "egyptian",
-        "count": 1
-      },
-      {
-        "text_id": "le-morte-darthur",
-        "tradition": "european",
-        "count": 87
-      },
-      {
-        "text_id": "mother-goose-tales",
-        "tradition": "european",
-        "count": 15
-      },
-      {
-        "text_id": "paradise-lost",
-        "tradition": "european",
-        "count": 37
-      },
-      {
-        "text_id": "russian-fairy-tales",
-        "tradition": "european",
-        "count": 151
-      },
-      {
-        "text_id": "the-pilgrims-progress",
-        "tradition": "european",
-        "count": 42
-      },
-      {
-        "text_id": "grimms-fairy-tales",
-        "tradition": "germanic",
-        "count": 233
-      },
-      {
-        "text_id": "aesops-fables",
-        "tradition": "greek",
-        "count": 5
-      },
-      {
-        "text_id": "argonautica",
-        "tradition": "greek",
-        "count": 43
-      },
-      {
-        "text_id": "bacchae",
-        "tradition": "greek",
-        "count": 28
-      },
-      {
-        "text_id": "homeric-hymns",
-        "tradition": "greek",
-        "count": 55
-      },
-      {
-        "text_id": "orphic-hymns",
-        "tradition": "greek",
-        "count": 2
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 25
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 21
-      },
-      {
-        "text_id": "theogony",
-        "tradition": "greek",
-        "count": 55
-      },
-      {
-        "text_id": "works-and-days",
-        "tradition": "greek",
-        "count": 8
-      },
-      {
-        "text_id": "genesis-kjv",
-        "tradition": "hebrew",
-        "count": 695
-      },
-      {
-        "text_id": "bhagavad-gita",
-        "tradition": "indian",
-        "count": 25
-      },
-      {
-        "text_id": "jataka-cowell",
-        "tradition": "indian",
-        "count": 16
-      },
-      {
-        "text_id": "joseph-jacobs-fairy-tales",
-        "tradition": "indian",
-        "count": 44
-      },
-      {
-        "text_id": "jātaka-tales",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 290
-      },
-      {
-        "text_id": "one-thousand-and-one-nights",
-        "tradition": "indian",
-        "count": 205
-      },
-      {
-        "text_id": "pañchatantra",
-        "tradition": "indian",
-        "count": 18
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 140
-      },
-      {
-        "text_id": "tale-of-heike",
-        "tradition": "japanese",
-        "count": 138
-      },
-      {
-        "text_id": "samguk-yusa",
-        "tradition": "korean",
-        "count": 48
-      },
-      {
-        "text_id": "popol-vuh",
-        "tradition": "mesoamerican",
-        "count": 5
-      },
-      {
-        "text_id": "the-myths-of-mexico-and-peru",
-        "tradition": "mesoamerican",
-        "count": 28
-      },
-      {
-        "text_id": "enūma-eliš",
-        "tradition": "mesopotamian",
-        "count": 21
-      },
-      {
-        "text_id": "inannas-descent",
-        "tradition": "mesopotamian",
-        "count": 6
-      },
-      {
-        "text_id": "beowulf",
-        "tradition": "norse",
-        "count": 14
-      },
-      {
-        "text_id": "poetic-edda",
-        "tradition": "norse",
-        "count": 47
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 31
-      },
-      {
-        "text_id": "volsunga-saga",
-        "tradition": "norse",
-        "count": 51
-      },
-      {
-        "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
-        "tradition": "north-american",
-        "count": 17
-      },
-      {
-        "text_id": "myths-north-american-indians",
-        "tradition": "north-american",
-        "count": 76
-      },
-      {
-        "text_id": "myths-of-the-cherokee",
-        "tradition": "north-american",
-        "count": 120
-      },
-      {
-        "text_id": "seneca-myths",
-        "tradition": "north-american",
-        "count": 2
-      },
-      {
-        "text_id": "tlingit-myths-texts",
-        "tradition": "north-american",
-        "count": 6
-      },
-      {
-        "text_id": "melanesians-codrington",
-        "tradition": "oceanic",
-        "count": 6
-      },
-      {
-        "text_id": "shāhnāmeh",
-        "tradition": "persian",
-        "count": 67
-      },
-      {
-        "text_id": "hawaiian-legends-gods-ghosts",
-        "tradition": "polynesian",
-        "count": 16
-      },
-      {
-        "text_id": "polynesian-mythology",
-        "tradition": "polynesian",
-        "count": 3
-      },
-      {
-        "text_id": "polynesian-mythology-grey",
-        "tradition": "polynesian",
-        "count": 2
-      },
-      {
-        "text_id": "the-legends-and-myths-of-hawaii",
-        "tradition": "polynesian",
-        "count": 10
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 30
-      },
-      {
-        "text_id": "divine-comedy",
-        "tradition": "roman",
-        "count": 52
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 5
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 67
-      },
-      {
-        "text_id": "byliny-hero-tales",
-        "tradition": "slavic",
-        "count": 15
-      },
-      {
-        "text_id": "apu-ollantay",
-        "tradition": "south-american",
-        "count": 4
-      },
-      {
-        "text_id": "laos-folk-lore-of-farther-india",
-        "tradition": "southeast-asian",
-        "count": 2
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 9
-      },
-      {
-        "text_id": "philippine-folk-tales",
-        "tradition": "southeast-asian",
-        "count": 30
-      }
-    ],
-    "traditions": [
-      "african",
-      "anthology",
-      "australian-aboriginal",
-      "celtic",
-      "chinese",
-      "egyptian",
-      "european",
-      "germanic",
-      "greek",
-      "hebrew",
-      "indian",
-      "japanese",
-      "korean",
-      "mesoamerican",
-      "mesopotamian",
-      "norse",
-      "north-american",
-      "oceanic",
-      "persian",
-      "polynesian",
-      "roman",
-      "siberian",
-      "slavic",
-      "south-american",
-      "southeast-asian"
-    ]
-  },
   "Finn": {
     "entity_name": "Finn",
     "entity_type": "hero",
     "primary_tradition": "celtic",
-    "total_mentions": 1367,
-    "text_count": 7,
-    "tradition_count": 4,
+    "total_mentions": 1348,
+    "text_count": 6,
+    "tradition_count": 3,
     "texts": [
       {
         "text_id": "cuchulain-of-muirthemne",
         "tradition": "celtic",
-        "count": 229
+        "count": 222
       },
       {
         "text_id": "gods-fighting-men",
         "tradition": "celtic",
-        "count": 1112
+        "count": 1101
       },
       {
         "text_id": "lebor-gabala",
@@ -448,18 +36,12 @@
         "text_id": "myths-of-the-cherokee",
         "tradition": "north-american",
         "count": 1
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 1
       }
     ],
     "traditions": [
       "celtic",
       "norse",
-      "north-american",
-      "siberian"
+      "north-american"
     ]
   },
   "Zeus": {
@@ -847,9 +429,9 @@
     "entity_name": "Troy",
     "entity_type": "place",
     "primary_tradition": "greek",
-    "total_mentions": 715,
-    "text_count": 18,
-    "tradition_count": 10,
+    "total_mentions": 706,
+    "text_count": 17,
+    "tradition_count": 9,
     "texts": [
       {
         "text_id": "yoruba-speaking-peoples",
@@ -859,7 +441,7 @@
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 72
+        "count": 67
       },
       {
         "text_id": "le-morte-darthur",
@@ -899,7 +481,7 @@
       {
         "text_id": "rāmāyaṇa",
         "tradition": "indian",
-        "count": 4
+        "count": 3
       },
       {
         "text_id": "prose-edda",
@@ -914,7 +496,7 @@
       {
         "text_id": "the-legends-and-myths-of-hawaii",
         "tradition": "polynesian",
-        "count": 3
+        "count": 1
       },
       {
         "text_id": "aeneid",
@@ -935,11 +517,6 @@
         "text_id": "siberian-mythology",
         "tradition": "siberian",
         "count": 1
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 1
       }
     ],
     "traditions": [
@@ -951,8 +528,7 @@
       "norse",
       "polynesian",
       "roman",
-      "siberian",
-      "southeast-asian"
+      "siberian"
     ]
   },
   "Krishna": {
@@ -1524,298 +1100,6 @@
       "siberian"
     ]
   },
-  "Nut": {
-    "entity_name": "Nut",
-    "entity_type": "deity",
-    "primary_tradition": "egyptian",
-    "total_mentions": 426,
-    "text_count": 25,
-    "tradition_count": 13,
-    "texts": [
-      {
-        "text_id": "anansi-tales",
-        "tradition": "african",
-        "count": 3
-      },
-      {
-        "text_id": "yoruba-speaking-peoples",
-        "tradition": "african",
-        "count": 4
-      },
-      {
-        "text_id": "andrew-langs-fairy-books",
-        "tradition": "anthology",
-        "count": 29
-      },
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 1
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 3
-      },
-      {
-        "text_id": "gods-fighting-men",
-        "tradition": "celtic",
-        "count": 10
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 21
-      },
-      {
-        "text_id": "the-mabinogion",
-        "tradition": "celtic",
-        "count": 1
-      },
-      {
-        "text_id": "book-of-the-dead",
-        "tradition": "egyptian",
-        "count": 3
-      },
-      {
-        "text_id": "burden-of-isis",
-        "tradition": "egyptian",
-        "count": 3
-      },
-      {
-        "text_id": "legends-of-egyptian-gods",
-        "tradition": "egyptian",
-        "count": 33
-      },
-      {
-        "text_id": "pyramid-texts",
-        "tradition": "egyptian",
-        "count": 3
-      },
-      {
-        "text_id": "grimms-fairy-tales",
-        "tradition": "germanic",
-        "count": 24
-      },
-      {
-        "text_id": "homeric-hymns",
-        "tradition": "greek",
-        "count": 3
-      },
-      {
-        "text_id": "theogony",
-        "tradition": "greek",
-        "count": 3
-      },
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "one-thousand-and-one-nights",
-        "tradition": "indian",
-        "count": 3
-      },
-      {
-        "text_id": "samguk-yusa",
-        "tradition": "korean",
-        "count": 1
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 3
-      },
-      {
-        "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
-        "tradition": "north-american",
-        "count": 2
-      },
-      {
-        "text_id": "myths-of-the-cherokee",
-        "tradition": "north-american",
-        "count": 9
-      },
-      {
-        "text_id": "melanesians-codrington",
-        "tradition": "oceanic",
-        "count": 76
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 1
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 147
-      },
-      {
-        "text_id": "philippine-folk-tales",
-        "tradition": "southeast-asian",
-        "count": 39
-      }
-    ],
-    "traditions": [
-      "african",
-      "anthology",
-      "celtic",
-      "egyptian",
-      "germanic",
-      "greek",
-      "indian",
-      "korean",
-      "norse",
-      "north-american",
-      "oceanic",
-      "roman",
-      "southeast-asian"
-    ]
-  },
-  "Jupiter": {
-    "entity_name": "Jupiter",
-    "entity_type": "deity",
-    "primary_tradition": "roman",
-    "total_mentions": 393,
-    "text_count": 23,
-    "tradition_count": 15,
-    "texts": [
-      {
-        "text_id": "kaffir-xhosa-folk-lore",
-        "tradition": "african",
-        "count": 2
-      },
-      {
-        "text_id": "yoruba-speaking-peoples",
-        "tradition": "african",
-        "count": 1
-      },
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 161
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 24
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 70
-      },
-      {
-        "text_id": "mother-goose-tales",
-        "tradition": "european",
-        "count": 4
-      },
-      {
-        "text_id": "aesops-fables",
-        "tradition": "greek",
-        "count": 5
-      },
-      {
-        "text_id": "orphic-hymns",
-        "tradition": "greek",
-        "count": 1
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 52
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 2
-      },
-      {
-        "text_id": "genesis-kjv",
-        "tradition": "hebrew",
-        "count": 3
-      },
-      {
-        "text_id": "pañchatantra",
-        "tradition": "indian",
-        "count": 25
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 8
-      },
-      {
-        "text_id": "samguk-yusa",
-        "tradition": "korean",
-        "count": 1
-      },
-      {
-        "text_id": "the-myths-of-mexico-and-peru",
-        "tradition": "mesoamerican",
-        "count": 3
-      },
-      {
-        "text_id": "enūma-eliš",
-        "tradition": "mesopotamian",
-        "count": 1
-      },
-      {
-        "text_id": "poetic-edda",
-        "tradition": "norse",
-        "count": 2
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 9
-      },
-      {
-        "text_id": "myths-north-american-indians",
-        "tradition": "north-american",
-        "count": 1
-      },
-      {
-        "text_id": "shāhnāmeh",
-        "tradition": "persian",
-        "count": 1
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 9
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 6
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 2
-      }
-    ],
-    "traditions": [
-      "african",
-      "anthology",
-      "celtic",
-      "european",
-      "greek",
-      "hebrew",
-      "indian",
-      "korean",
-      "mesoamerican",
-      "mesopotamian",
-      "norse",
-      "north-american",
-      "persian",
-      "roman",
-      "southeast-asian"
-    ]
-  },
   "Brahma": {
     "entity_name": "Brahma",
     "entity_type": "deity",
@@ -1981,6 +1265,148 @@
       "southeast-asian"
     ]
   },
+  "Jupiter": {
+    "entity_name": "Jupiter",
+    "entity_type": "deity",
+    "primary_tradition": "roman",
+    "total_mentions": 370,
+    "text_count": 23,
+    "tradition_count": 15,
+    "texts": [
+      {
+        "text_id": "kaffir-xhosa-folk-lore",
+        "tradition": "african",
+        "count": 2
+      },
+      {
+        "text_id": "yoruba-speaking-peoples",
+        "tradition": "african",
+        "count": 1
+      },
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 154
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 23
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 70
+      },
+      {
+        "text_id": "mother-goose-tales",
+        "tradition": "european",
+        "count": 3
+      },
+      {
+        "text_id": "aesops-fables",
+        "tradition": "greek",
+        "count": 5
+      },
+      {
+        "text_id": "orphic-hymns",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 41
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 2
+      },
+      {
+        "text_id": "genesis-kjv",
+        "tradition": "hebrew",
+        "count": 3
+      },
+      {
+        "text_id": "pañchatantra",
+        "tradition": "indian",
+        "count": 22
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 8
+      },
+      {
+        "text_id": "samguk-yusa",
+        "tradition": "korean",
+        "count": 1
+      },
+      {
+        "text_id": "the-myths-of-mexico-and-peru",
+        "tradition": "mesoamerican",
+        "count": 3
+      },
+      {
+        "text_id": "enūma-eliš",
+        "tradition": "mesopotamian",
+        "count": 1
+      },
+      {
+        "text_id": "poetic-edda",
+        "tradition": "norse",
+        "count": 2
+      },
+      {
+        "text_id": "prose-edda",
+        "tradition": "norse",
+        "count": 9
+      },
+      {
+        "text_id": "myths-north-american-indians",
+        "tradition": "north-american",
+        "count": 1
+      },
+      {
+        "text_id": "shāhnāmeh",
+        "tradition": "persian",
+        "count": 1
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 9
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 6
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 2
+      }
+    ],
+    "traditions": [
+      "african",
+      "anthology",
+      "celtic",
+      "european",
+      "greek",
+      "hebrew",
+      "indian",
+      "korean",
+      "mesoamerican",
+      "mesopotamian",
+      "norse",
+      "north-american",
+      "persian",
+      "roman",
+      "southeast-asian"
+    ]
+  },
   "Isis": {
     "entity_name": "Isis",
     "entity_type": "deity",
@@ -2082,19 +1508,19 @@
     "entity_name": "Juno",
     "entity_type": "deity",
     "primary_tradition": "roman",
-    "total_mentions": 304,
+    "total_mentions": 287,
     "text_count": 16,
     "tradition_count": 6,
     "texts": [
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 69
+        "count": 65
       },
       {
         "text_id": "introduction-to-mythology",
         "tradition": "anthology",
-        "count": 7
+        "count": 6
       },
       {
         "text_id": "the-golden-bough",
@@ -2119,7 +1545,7 @@
       {
         "text_id": "the-iliad",
         "tradition": "greek",
-        "count": 77
+        "count": 68
       },
       {
         "text_id": "the-odyssey",
@@ -2134,7 +1560,7 @@
       {
         "text_id": "pañchatantra",
         "tradition": "indian",
-        "count": 10
+        "count": 7
       },
       {
         "text_id": "rāmāyaṇa",
@@ -2305,368 +1731,6 @@
       "mesoamerican"
     ]
   },
-  "Venus": {
-    "entity_name": "Venus",
-    "entity_type": "deity",
-    "primary_tradition": "roman",
-    "total_mentions": 278,
-    "text_count": 24,
-    "tradition_count": 14,
-    "texts": [
-      {
-        "text_id": "kaffir-xhosa-folk-lore",
-        "tradition": "african",
-        "count": 3
-      },
-      {
-        "text_id": "yoruba-speaking-peoples",
-        "tradition": "african",
-        "count": 1
-      },
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 83
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 13
-      },
-      {
-        "text_id": "eskimo-folk-tales",
-        "tradition": "arctic",
-        "count": 2
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 8
-      },
-      {
-        "text_id": "journey-to-the-west",
-        "tradition": "chinese",
-        "count": 1
-      },
-      {
-        "text_id": "russian-fairy-tales",
-        "tradition": "european",
-        "count": 2
-      },
-      {
-        "text_id": "aesops-fables",
-        "tradition": "greek",
-        "count": 4
-      },
-      {
-        "text_id": "orphic-hymns",
-        "tradition": "greek",
-        "count": 1
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 45
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 6
-      },
-      {
-        "text_id": "one-thousand-and-one-nights",
-        "tradition": "indian",
-        "count": 2
-      },
-      {
-        "text_id": "pañchatantra",
-        "tradition": "indian",
-        "count": 9
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 9
-      },
-      {
-        "text_id": "the-myths-of-mexico-and-peru",
-        "tradition": "mesoamerican",
-        "count": 10
-      },
-      {
-        "text_id": "poetic-edda",
-        "tradition": "norse",
-        "count": 1
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 3
-      },
-      {
-        "text_id": "myths-of-the-cherokee",
-        "tradition": "north-american",
-        "count": 2
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 28
-      },
-      {
-        "text_id": "divine-comedy",
-        "tradition": "roman",
-        "count": 1
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 36
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 5
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 3
-      }
-    ],
-    "traditions": [
-      "african",
-      "anthology",
-      "arctic",
-      "celtic",
-      "chinese",
-      "european",
-      "greek",
-      "indian",
-      "mesoamerican",
-      "norse",
-      "north-american",
-      "roman",
-      "siberian",
-      "southeast-asian"
-    ]
-  },
-  "Eve": {
-    "entity_name": "Eve",
-    "entity_type": "hero",
-    "primary_tradition": "hebrew",
-    "total_mentions": 266,
-    "text_count": 37,
-    "tradition_count": 19,
-    "texts": [
-      {
-        "text_id": "anansi-tales",
-        "tradition": "african",
-        "count": 1
-      },
-      {
-        "text_id": "south-african-folk-tales",
-        "tradition": "african",
-        "count": 1
-      },
-      {
-        "text_id": "zanzibar-tales",
-        "tradition": "african",
-        "count": 1
-      },
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 14
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 7
-      },
-      {
-        "text_id": "cuchulain-of-muirthemne",
-        "tradition": "celtic",
-        "count": 2
-      },
-      {
-        "text_id": "gods-fighting-men",
-        "tradition": "celtic",
-        "count": 1
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 100
-      },
-      {
-        "text_id": "the-mabinogion",
-        "tradition": "celtic",
-        "count": 5
-      },
-      {
-        "text_id": "i-ching",
-        "tradition": "chinese",
-        "count": 4
-      },
-      {
-        "text_id": "tao-te-ching",
-        "tradition": "chinese",
-        "count": 1
-      },
-      {
-        "text_id": "paradise-lost",
-        "tradition": "european",
-        "count": 3
-      },
-      {
-        "text_id": "russian-fairy-tales",
-        "tradition": "european",
-        "count": 9
-      },
-      {
-        "text_id": "grimms-fairy-tales",
-        "tradition": "germanic",
-        "count": 11
-      },
-      {
-        "text_id": "bacchae",
-        "tradition": "greek",
-        "count": 1
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 2
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 5
-      },
-      {
-        "text_id": "genesis-kjv",
-        "tradition": "hebrew",
-        "count": 4
-      },
-      {
-        "text_id": "jātaka-tales",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 10
-      },
-      {
-        "text_id": "one-thousand-and-one-nights",
-        "tradition": "indian",
-        "count": 2
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 8
-      },
-      {
-        "text_id": "tale-of-heike",
-        "tradition": "japanese",
-        "count": 7
-      },
-      {
-        "text_id": "samguk-yusa",
-        "tradition": "korean",
-        "count": 10
-      },
-      {
-        "text_id": "beowulf",
-        "tradition": "norse",
-        "count": 1
-      },
-      {
-        "text_id": "poetic-edda",
-        "tradition": "norse",
-        "count": 13
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 5
-      },
-      {
-        "text_id": "volsunga-saga",
-        "tradition": "norse",
-        "count": 2
-      },
-      {
-        "text_id": "myths-north-american-indians",
-        "tradition": "north-american",
-        "count": 2
-      },
-      {
-        "text_id": "myths-of-the-cherokee",
-        "tradition": "north-american",
-        "count": 3
-      },
-      {
-        "text_id": "shāhnāmeh",
-        "tradition": "persian",
-        "count": 1
-      },
-      {
-        "text_id": "the-legends-and-myths-of-hawaii",
-        "tradition": "polynesian",
-        "count": 4
-      },
-      {
-        "text_id": "divine-comedy",
-        "tradition": "roman",
-        "count": 8
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 4
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 10
-      },
-      {
-        "text_id": "byliny-hero-tales",
-        "tradition": "slavic",
-        "count": 1
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 2
-      }
-    ],
-    "traditions": [
-      "african",
-      "anthology",
-      "celtic",
-      "chinese",
-      "european",
-      "germanic",
-      "greek",
-      "hebrew",
-      "indian",
-      "japanese",
-      "korean",
-      "norse",
-      "north-american",
-      "persian",
-      "polynesian",
-      "roman",
-      "siberian",
-      "slavic",
-      "southeast-asian"
-    ]
-  },
   "Olympus": {
     "entity_name": "Olympus",
     "entity_type": "place",
@@ -2815,6 +1879,141 @@
     "traditions": [
       "celtic",
       "european"
+    ]
+  },
+  "Venus": {
+    "entity_name": "Venus",
+    "entity_type": "deity",
+    "primary_tradition": "roman",
+    "total_mentions": 255,
+    "text_count": 22,
+    "tradition_count": 13,
+    "texts": [
+      {
+        "text_id": "yoruba-speaking-peoples",
+        "tradition": "african",
+        "count": 1
+      },
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 78
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 12
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 8
+      },
+      {
+        "text_id": "journey-to-the-west",
+        "tradition": "chinese",
+        "count": 1
+      },
+      {
+        "text_id": "russian-fairy-tales",
+        "tradition": "european",
+        "count": 2
+      },
+      {
+        "text_id": "aesops-fables",
+        "tradition": "greek",
+        "count": 4
+      },
+      {
+        "text_id": "orphic-hymns",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 36
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 6
+      },
+      {
+        "text_id": "one-thousand-and-one-nights",
+        "tradition": "indian",
+        "count": 2
+      },
+      {
+        "text_id": "pañchatantra",
+        "tradition": "indian",
+        "count": 8
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 8
+      },
+      {
+        "text_id": "the-myths-of-mexico-and-peru",
+        "tradition": "mesoamerican",
+        "count": 10
+      },
+      {
+        "text_id": "poetic-edda",
+        "tradition": "norse",
+        "count": 1
+      },
+      {
+        "text_id": "prose-edda",
+        "tradition": "norse",
+        "count": 3
+      },
+      {
+        "text_id": "myths-of-the-cherokee",
+        "tradition": "north-american",
+        "count": 2
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 28
+      },
+      {
+        "text_id": "divine-comedy",
+        "tradition": "roman",
+        "count": 1
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 36
+      },
+      {
+        "text_id": "siberian-mythology",
+        "tradition": "siberian",
+        "count": 4
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 3
+      }
+    ],
+    "traditions": [
+      "african",
+      "anthology",
+      "celtic",
+      "chinese",
+      "european",
+      "greek",
+      "indian",
+      "mesoamerican",
+      "norse",
+      "north-american",
+      "roman",
+      "siberian",
+      "southeast-asian"
     ]
   },
   "Agni": {
@@ -3079,23 +2278,41 @@
       "greek"
     ]
   },
+  "Draupadi": {
+    "entity_name": "Draupadi",
+    "entity_type": "hero",
+    "primary_tradition": "indian",
+    "total_mentions": 228,
+    "text_count": 1,
+    "tradition_count": 1,
+    "texts": [
+      {
+        "text_id": "mahābhārata",
+        "tradition": "indian",
+        "count": 228
+      }
+    ],
+    "traditions": [
+      "indian"
+    ]
+  },
   "Minerva": {
     "entity_name": "Minerva",
     "entity_type": "deity",
     "primary_tradition": "roman",
-    "total_mentions": 230,
+    "total_mentions": 220,
     "text_count": 9,
     "tradition_count": 5,
     "texts": [
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 77
+        "count": 73
       },
       {
         "text_id": "introduction-to-mythology",
         "tradition": "anthology",
-        "count": 7
+        "count": 6
       },
       {
         "text_id": "the-golden-bough",
@@ -3105,12 +2322,12 @@
       {
         "text_id": "the-iliad",
         "tradition": "greek",
-        "count": 65
+        "count": 61
       },
       {
         "text_id": "the-odyssey",
         "tradition": "greek",
-        "count": 45
+        "count": 44
       },
       {
         "text_id": "pañchatantra",
@@ -3138,64 +2355,6 @@
       "celtic",
       "greek",
       "indian",
-      "roman"
-    ]
-  },
-  "Draupadi": {
-    "entity_name": "Draupadi",
-    "entity_type": "hero",
-    "primary_tradition": "indian",
-    "total_mentions": 228,
-    "text_count": 1,
-    "tradition_count": 1,
-    "texts": [
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 228
-      }
-    ],
-    "traditions": [
-      "indian"
-    ]
-  },
-  "Ajax": {
-    "entity_name": "Ajax",
-    "entity_type": "hero",
-    "primary_tradition": "greek",
-    "total_mentions": 218,
-    "text_count": 5,
-    "tradition_count": 3,
-    "texts": [
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 23
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 162
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 6
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 1
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 26
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "greek",
       "roman"
     ]
   },
@@ -3249,6 +2408,46 @@
       "norse",
       "north-american",
       "oceanic"
+    ]
+  },
+  "Ajax": {
+    "entity_name": "Ajax",
+    "entity_type": "hero",
+    "primary_tradition": "greek",
+    "total_mentions": 212,
+    "text_count": 5,
+    "tradition_count": 3,
+    "texts": [
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 23
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 156
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 6
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 1
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 26
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "greek",
+      "roman"
     ]
   },
   "Vishnu": {
@@ -3311,248 +2510,6 @@
       "celtic",
       "european",
       "indian",
-      "southeast-asian"
-    ]
-  },
-  "Neptune": {
-    "entity_name": "Neptune",
-    "entity_type": "deity",
-    "primary_tradition": "roman",
-    "total_mentions": 206,
-    "text_count": 12,
-    "tradition_count": 6,
-    "texts": [
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 57
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 3
-      },
-      {
-        "text_id": "russian-fairy-tales",
-        "tradition": "european",
-        "count": 1
-      },
-      {
-        "text_id": "orphic-hymns",
-        "tradition": "greek",
-        "count": 1
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 56
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 43
-      },
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 3
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 22
-      },
-      {
-        "text_id": "divine-comedy",
-        "tradition": "roman",
-        "count": 2
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 16
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "european",
-      "greek",
-      "indian",
-      "norse",
-      "roman"
-    ]
-  },
-  "Mars": {
-    "entity_name": "Mars",
-    "entity_type": "deity",
-    "primary_tradition": "roman",
-    "total_mentions": 202,
-    "text_count": 27,
-    "tradition_count": 17,
-    "texts": [
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 10
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 7
-      },
-      {
-        "text_id": "eskimo-folk-tales",
-        "tradition": "arctic",
-        "count": 2
-      },
-      {
-        "text_id": "australian-legendary-tales",
-        "tradition": "australian-aboriginal",
-        "count": 1
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 16
-      },
-      {
-        "text_id": "journey-to-the-west",
-        "tradition": "chinese",
-        "count": 6
-      },
-      {
-        "text_id": "orphic-hymns",
-        "tradition": "greek",
-        "count": 1
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 67
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 16
-      },
-      {
-        "text_id": "genesis-kjv",
-        "tradition": "hebrew",
-        "count": 1
-      },
-      {
-        "text_id": "bhagavad-gita",
-        "tradition": "indian",
-        "count": 2
-      },
-      {
-        "text_id": "jātaka-tales",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "one-thousand-and-one-nights",
-        "tradition": "indian",
-        "count": 3
-      },
-      {
-        "text_id": "pañchatantra",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 17
-      },
-      {
-        "text_id": "tale-of-heike",
-        "tradition": "japanese",
-        "count": 1
-      },
-      {
-        "text_id": "samguk-yusa",
-        "tradition": "korean",
-        "count": 1
-      },
-      {
-        "text_id": "the-myths-of-mexico-and-peru",
-        "tradition": "mesoamerican",
-        "count": 1
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 3
-      },
-      {
-        "text_id": "melanesians-codrington",
-        "tradition": "oceanic",
-        "count": 1
-      },
-      {
-        "text_id": "legends-of-maui",
-        "tradition": "polynesian",
-        "count": 11
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 6
-      },
-      {
-        "text_id": "divine-comedy",
-        "tradition": "roman",
-        "count": 9
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 13
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 2
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 2
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "arctic",
-      "australian-aboriginal",
-      "celtic",
-      "chinese",
-      "greek",
-      "hebrew",
-      "indian",
-      "japanese",
-      "korean",
-      "mesoamerican",
-      "norse",
-      "oceanic",
-      "polynesian",
-      "roman",
-      "siberian",
       "southeast-asian"
     ]
   },
@@ -3684,6 +2641,84 @@
       "roman"
     ]
   },
+  "Neptune": {
+    "entity_name": "Neptune",
+    "entity_type": "deity",
+    "primary_tradition": "roman",
+    "total_mentions": 199,
+    "text_count": 12,
+    "tradition_count": 6,
+    "texts": [
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 55
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 3
+      },
+      {
+        "text_id": "russian-fairy-tales",
+        "tradition": "european",
+        "count": 1
+      },
+      {
+        "text_id": "orphic-hymns",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 51
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 43
+      },
+      {
+        "text_id": "mahābhārata",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "prose-edda",
+        "tradition": "norse",
+        "count": 3
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 22
+      },
+      {
+        "text_id": "divine-comedy",
+        "tradition": "roman",
+        "count": 2
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 16
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "european",
+      "greek",
+      "indian",
+      "norse",
+      "roman"
+    ]
+  },
   "Priam": {
     "entity_name": "Priam",
     "entity_type": "hero",
@@ -3751,58 +2786,93 @@
       "roman"
     ]
   },
-  "Helen": {
-    "entity_name": "Helen",
-    "entity_type": "hero",
-    "primary_tradition": "greek",
-    "total_mentions": 188,
-    "text_count": 18,
-    "tradition_count": 10,
+  "Set": {
+    "entity_name": "Set",
+    "entity_type": "deity",
+    "primary_tradition": "egyptian",
+    "total_mentions": 190,
+    "text_count": 34,
+    "tradition_count": 17,
     "texts": [
+      {
+        "text_id": "zanzibar-tales",
+        "tradition": "african",
+        "count": 2
+      },
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 23
+        "count": 2
       },
       {
-        "text_id": "gods-fighting-men",
-        "tradition": "celtic",
-        "count": 1
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 8
       },
       {
         "text_id": "the-golden-bough",
         "tradition": "celtic",
-        "count": 2
+        "count": 6
       },
       {
         "text_id": "the-mabinogion",
         "tradition": "celtic",
-        "count": 6
+        "count": 2
       },
       {
-        "text_id": "russian-fairy-tales",
+        "text_id": "book-of-the-dead",
+        "tradition": "egyptian",
+        "count": 29
+      },
+      {
+        "text_id": "burden-of-isis",
+        "tradition": "egyptian",
+        "count": 7
+      },
+      {
+        "text_id": "legends-of-egyptian-gods",
+        "tradition": "egyptian",
+        "count": 63
+      },
+      {
+        "text_id": "paradise-lost",
         "tradition": "european",
+        "count": 2
+      },
+      {
+        "text_id": "the-pilgrims-progress",
+        "tradition": "european",
+        "count": 2
+      },
+      {
+        "text_id": "grimms-fairy-tales",
+        "tradition": "germanic",
+        "count": 2
+      },
+      {
+        "text_id": "argonautica",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "bacchae",
+        "tradition": "greek",
         "count": 1
       },
       {
         "text_id": "homeric-hymns",
         "tradition": "greek",
-        "count": 33
+        "count": 1
       },
       {
         "text_id": "the-iliad",
         "tradition": "greek",
-        "count": 49
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 18
+        "count": 2
       },
       {
         "text_id": "theogony",
         "tradition": "greek",
-        "count": 33
+        "count": 1
       },
       {
         "text_id": "works-and-days",
@@ -3810,14 +2880,64 @@
         "count": 1
       },
       {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 4
+        "text_id": "genesis-kjv",
+        "tradition": "hebrew",
+        "count": 19
       },
       {
-        "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
-        "tradition": "north-american",
+        "text_id": "bhagavad-gita",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "joseph-jacobs-fairy-tales",
+        "tradition": "indian",
+        "count": 3
+      },
+      {
+        "text_id": "mahābhārata",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "one-thousand-and-one-nights",
+        "tradition": "indian",
+        "count": 5
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 6
+      },
+      {
+        "text_id": "samguk-yusa",
+        "tradition": "korean",
+        "count": 1
+      },
+      {
+        "text_id": "poetic-edda",
+        "tradition": "norse",
         "count": 2
+      },
+      {
+        "text_id": "volsunga-saga",
+        "tradition": "norse",
+        "count": 2
+      },
+      {
+        "text_id": "myths-north-american-indians",
+        "tradition": "north-american",
+        "count": 1
+      },
+      {
+        "text_id": "myths-of-the-cherokee",
+        "tradition": "north-american",
+        "count": 6
+      },
+      {
+        "text_id": "tlingit-myths-texts",
+        "tradition": "north-american",
+        "count": 1
       },
       {
         "text_id": "shāhnāmeh",
@@ -3830,19 +2950,14 @@
         "count": 2
       },
       {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 6
-      },
-      {
         "text_id": "divine-comedy",
         "tradition": "roman",
-        "count": 1
+        "count": 5
       },
       {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 4
+        "text_id": "siberian-mythology",
+        "tradition": "siberian",
+        "count": 1
       },
       {
         "text_id": "malay-magic",
@@ -3851,15 +2966,22 @@
       }
     ],
     "traditions": [
+      "african",
       "anthology",
       "celtic",
+      "egyptian",
       "european",
+      "germanic",
       "greek",
+      "hebrew",
       "indian",
+      "korean",
+      "norse",
       "north-american",
       "persian",
       "polynesian",
       "roman",
+      "siberian",
       "southeast-asian"
     ]
   },
@@ -4082,6 +3204,112 @@
       "siberian"
     ]
   },
+  "Helen": {
+    "entity_name": "Helen",
+    "entity_type": "hero",
+    "primary_tradition": "greek",
+    "total_mentions": 180,
+    "text_count": 17,
+    "tradition_count": 9,
+    "texts": [
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 21
+      },
+      {
+        "text_id": "gods-fighting-men",
+        "tradition": "celtic",
+        "count": 1
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 2
+      },
+      {
+        "text_id": "the-mabinogion",
+        "tradition": "celtic",
+        "count": 6
+      },
+      {
+        "text_id": "russian-fairy-tales",
+        "tradition": "european",
+        "count": 1
+      },
+      {
+        "text_id": "homeric-hymns",
+        "tradition": "greek",
+        "count": 33
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 45
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 18
+      },
+      {
+        "text_id": "theogony",
+        "tradition": "greek",
+        "count": 33
+      },
+      {
+        "text_id": "works-and-days",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 4
+      },
+      {
+        "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
+        "tradition": "north-american",
+        "count": 2
+      },
+      {
+        "text_id": "shāhnāmeh",
+        "tradition": "persian",
+        "count": 1
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 6
+      },
+      {
+        "text_id": "divine-comedy",
+        "tradition": "roman",
+        "count": 1
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 4
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 1
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "celtic",
+      "european",
+      "greek",
+      "indian",
+      "north-american",
+      "persian",
+      "roman",
+      "southeast-asian"
+    ]
+  },
   "Thoth": {
     "entity_name": "Thoth",
     "entity_type": "deity",
@@ -4222,11 +3450,169 @@
       "roman"
     ]
   },
+  "Mars": {
+    "entity_name": "Mars",
+    "entity_type": "deity",
+    "primary_tradition": "roman",
+    "total_mentions": 173,
+    "text_count": 26,
+    "tradition_count": 16,
+    "texts": [
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 10
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 7
+      },
+      {
+        "text_id": "eskimo-folk-tales",
+        "tradition": "arctic",
+        "count": 1
+      },
+      {
+        "text_id": "australian-legendary-tales",
+        "tradition": "australian-aboriginal",
+        "count": 1
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 16
+      },
+      {
+        "text_id": "journey-to-the-west",
+        "tradition": "chinese",
+        "count": 5
+      },
+      {
+        "text_id": "orphic-hymns",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 59
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 16
+      },
+      {
+        "text_id": "genesis-kjv",
+        "tradition": "hebrew",
+        "count": 1
+      },
+      {
+        "text_id": "bhagavad-gita",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "jātaka-tales",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "mahābhārata",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "one-thousand-and-one-nights",
+        "tradition": "indian",
+        "count": 3
+      },
+      {
+        "text_id": "pañchatantra",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 12
+      },
+      {
+        "text_id": "tale-of-heike",
+        "tradition": "japanese",
+        "count": 1
+      },
+      {
+        "text_id": "samguk-yusa",
+        "tradition": "korean",
+        "count": 1
+      },
+      {
+        "text_id": "the-myths-of-mexico-and-peru",
+        "tradition": "mesoamerican",
+        "count": 1
+      },
+      {
+        "text_id": "prose-edda",
+        "tradition": "norse",
+        "count": 3
+      },
+      {
+        "text_id": "melanesians-codrington",
+        "tradition": "oceanic",
+        "count": 1
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 6
+      },
+      {
+        "text_id": "divine-comedy",
+        "tradition": "roman",
+        "count": 8
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 13
+      },
+      {
+        "text_id": "siberian-mythology",
+        "tradition": "siberian",
+        "count": 1
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 2
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "arctic",
+      "australian-aboriginal",
+      "celtic",
+      "chinese",
+      "greek",
+      "hebrew",
+      "indian",
+      "japanese",
+      "korean",
+      "mesoamerican",
+      "norse",
+      "oceanic",
+      "roman",
+      "siberian",
+      "southeast-asian"
+    ]
+  },
   "Virgil": {
     "entity_name": "Virgil",
     "entity_type": "hero",
     "primary_tradition": "roman",
-    "total_mentions": 173,
+    "total_mentions": 170,
     "text_count": 12,
     "tradition_count": 7,
     "texts": [
@@ -4238,7 +3624,7 @@
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 16
+        "count": 13
       },
       {
         "text_id": "introduction-to-mythology",
@@ -4502,8 +3888,8 @@
     "entity_name": "Soma",
     "entity_type": "deity",
     "primary_tradition": "indian",
-    "total_mentions": 153,
-    "text_count": 8,
+    "total_mentions": 150,
+    "text_count": 7,
     "tradition_count": 5,
     "texts": [
       {
@@ -4512,14 +3898,9 @@
         "count": 3
       },
       {
-        "text_id": "kalevala",
-        "tradition": "european",
-        "count": 2
-      },
-      {
         "text_id": "russian-fairy-tales",
         "tradition": "european",
-        "count": 3
+        "count": 2
       },
       {
         "text_id": "bhagavad-gita",
@@ -4653,6 +4034,139 @@
       "north-american"
     ]
   },
+  "Eve": {
+    "entity_name": "Eve",
+    "entity_type": "hero",
+    "primary_tradition": "hebrew",
+    "total_mentions": 140,
+    "text_count": 21,
+    "tradition_count": 16,
+    "texts": [
+      {
+        "text_id": "south-african-folk-tales",
+        "tradition": "african",
+        "count": 1
+      },
+      {
+        "text_id": "zanzibar-tales",
+        "tradition": "african",
+        "count": 1
+      },
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 7
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 4
+      },
+      {
+        "text_id": "gods-fighting-men",
+        "tradition": "celtic",
+        "count": 1
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 80
+      },
+      {
+        "text_id": "the-mabinogion",
+        "tradition": "celtic",
+        "count": 2
+      },
+      {
+        "text_id": "paradise-lost",
+        "tradition": "european",
+        "count": 3
+      },
+      {
+        "text_id": "russian-fairy-tales",
+        "tradition": "european",
+        "count": 6
+      },
+      {
+        "text_id": "grimms-fairy-tales",
+        "tradition": "germanic",
+        "count": 10
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "genesis-kjv",
+        "tradition": "hebrew",
+        "count": 4
+      },
+      {
+        "text_id": "one-thousand-and-one-nights",
+        "tradition": "indian",
+        "count": 1
+      },
+      {
+        "text_id": "tale-of-heike",
+        "tradition": "japanese",
+        "count": 1
+      },
+      {
+        "text_id": "samguk-yusa",
+        "tradition": "korean",
+        "count": 1
+      },
+      {
+        "text_id": "prose-edda",
+        "tradition": "norse",
+        "count": 2
+      },
+      {
+        "text_id": "myths-of-the-cherokee",
+        "tradition": "north-american",
+        "count": 1
+      },
+      {
+        "text_id": "the-legends-and-myths-of-hawaii",
+        "tradition": "polynesian",
+        "count": 1
+      },
+      {
+        "text_id": "divine-comedy",
+        "tradition": "roman",
+        "count": 3
+      },
+      {
+        "text_id": "siberian-mythology",
+        "tradition": "siberian",
+        "count": 8
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 2
+      }
+    ],
+    "traditions": [
+      "african",
+      "anthology",
+      "celtic",
+      "european",
+      "germanic",
+      "greek",
+      "hebrew",
+      "indian",
+      "japanese",
+      "korean",
+      "norse",
+      "north-american",
+      "polynesian",
+      "roman",
+      "siberian",
+      "southeast-asian"
+    ]
+  },
   "Telemachus": {
     "entity_name": "Telemachus",
     "entity_type": "hero",
@@ -4696,7 +4210,7 @@
     "entity_name": "Jason",
     "entity_type": "hero",
     "primary_tradition": "greek",
-    "total_mentions": 139,
+    "total_mentions": 138,
     "text_count": 11,
     "tradition_count": 7,
     "texts": [
@@ -4708,7 +4222,7 @@
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 31
+        "count": 30
       },
       {
         "text_id": "argonautica",
@@ -4892,7 +4406,7 @@
     "entity_name": "Adam",
     "entity_type": "hero",
     "primary_tradition": "hebrew",
-    "total_mentions": 134,
+    "total_mentions": 133,
     "text_count": 25,
     "tradition_count": 15,
     "texts": [
@@ -4999,7 +4513,7 @@
       {
         "text_id": "myths-north-american-indians",
         "tradition": "north-american",
-        "count": 2
+        "count": 1
       },
       {
         "text_id": "myths-of-the-cherokee",
@@ -5629,18 +5143,59 @@
       "persian"
     ]
   },
+  "Tezcatlipoca": {
+    "entity_name": "Tezcatlipoca",
+    "entity_type": "deity",
+    "primary_tradition": "mesoamerican",
+    "total_mentions": 105,
+    "text_count": 5,
+    "tradition_count": 4,
+    "texts": [
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 17
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 1
+      },
+      {
+        "text_id": "popol-vuh",
+        "tradition": "mesoamerican",
+        "count": 4
+      },
+      {
+        "text_id": "the-myths-of-mexico-and-peru",
+        "tradition": "mesoamerican",
+        "count": 82
+      },
+      {
+        "text_id": "myths-north-american-indians",
+        "tradition": "north-american",
+        "count": 1
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "celtic",
+      "mesoamerican",
+      "north-american"
+    ]
+  },
   "Pluto": {
     "entity_name": "Pluto",
     "entity_type": "deity",
     "primary_tradition": "roman",
-    "total_mentions": 105,
+    "total_mentions": 102,
     "text_count": 16,
     "tradition_count": 9,
     "texts": [
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 28
+        "count": 27
       },
       {
         "text_id": "introduction-to-mythology",
@@ -5675,7 +5230,7 @@
       {
         "text_id": "the-iliad",
         "tradition": "greek",
-        "count": 14
+        "count": 12
       },
       {
         "text_id": "the-odyssey",
@@ -5728,47 +5283,6 @@
       "norse",
       "north-american",
       "roman"
-    ]
-  },
-  "Tezcatlipoca": {
-    "entity_name": "Tezcatlipoca",
-    "entity_type": "deity",
-    "primary_tradition": "mesoamerican",
-    "total_mentions": 105,
-    "text_count": 5,
-    "tradition_count": 4,
-    "texts": [
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 17
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 1
-      },
-      {
-        "text_id": "popol-vuh",
-        "tradition": "mesoamerican",
-        "count": 4
-      },
-      {
-        "text_id": "the-myths-of-mexico-and-peru",
-        "tradition": "mesoamerican",
-        "count": 82
-      },
-      {
-        "text_id": "myths-north-american-indians",
-        "tradition": "north-american",
-        "count": 1
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "celtic",
-      "mesoamerican",
-      "north-american"
     ]
   },
   "Poseidon": {
@@ -5910,14 +5424,14 @@
     "entity_name": "Saturn",
     "entity_type": "deity",
     "primary_tradition": "roman",
-    "total_mentions": 91,
+    "total_mentions": 90,
     "text_count": 17,
     "tradition_count": 11,
     "texts": [
       {
         "text_id": "bulfinchs-mythology",
         "tradition": "anthology",
-        "count": 26
+        "count": 25
       },
       {
         "text_id": "introduction-to-mythology",
@@ -6358,107 +5872,6 @@
       "celtic"
     ]
   },
-  "Mercury": {
-    "entity_name": "Mercury",
-    "entity_type": "deity",
-    "primary_tradition": "roman",
-    "total_mentions": 79,
-    "text_count": 16,
-    "tradition_count": 9,
-    "texts": [
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 33
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 6
-      },
-      {
-        "text_id": "the-golden-bough",
-        "tradition": "celtic",
-        "count": 1
-      },
-      {
-        "text_id": "orphic-hymns",
-        "tradition": "greek",
-        "count": 1
-      },
-      {
-        "text_id": "the-iliad",
-        "tradition": "greek",
-        "count": 2
-      },
-      {
-        "text_id": "the-odyssey",
-        "tradition": "greek",
-        "count": 5
-      },
-      {
-        "text_id": "one-thousand-and-one-nights",
-        "tradition": "indian",
-        "count": 2
-      },
-      {
-        "text_id": "pañchatantra",
-        "tradition": "indian",
-        "count": 8
-      },
-      {
-        "text_id": "rāmāyaṇa",
-        "tradition": "indian",
-        "count": 8
-      },
-      {
-        "text_id": "the-myths-of-mexico-and-peru",
-        "tradition": "mesoamerican",
-        "count": 1
-      },
-      {
-        "text_id": "myths-and-legends-of-the-mississippi-valley-and-th",
-        "tradition": "north-american",
-        "count": 1
-      },
-      {
-        "text_id": "aeneid",
-        "tradition": "roman",
-        "count": 3
-      },
-      {
-        "text_id": "divine-comedy",
-        "tradition": "roman",
-        "count": 1
-      },
-      {
-        "text_id": "metamorphoses",
-        "tradition": "roman",
-        "count": 4
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 1
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 2
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "celtic",
-      "greek",
-      "indian",
-      "mesoamerican",
-      "north-american",
-      "roman",
-      "siberian",
-      "southeast-asian"
-    ]
-  },
   "Kali": {
     "entity_name": "Kali",
     "entity_type": "deity",
@@ -6701,6 +6114,95 @@
       "greek",
       "indian",
       "roman"
+    ]
+  },
+  "Mercury": {
+    "entity_name": "Mercury",
+    "entity_type": "deity",
+    "primary_tradition": "roman",
+    "total_mentions": 73,
+    "text_count": 14,
+    "tradition_count": 7,
+    "texts": [
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 32
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 5
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 1
+      },
+      {
+        "text_id": "orphic-hymns",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "the-iliad",
+        "tradition": "greek",
+        "count": 2
+      },
+      {
+        "text_id": "the-odyssey",
+        "tradition": "greek",
+        "count": 5
+      },
+      {
+        "text_id": "one-thousand-and-one-nights",
+        "tradition": "indian",
+        "count": 2
+      },
+      {
+        "text_id": "pañchatantra",
+        "tradition": "indian",
+        "count": 7
+      },
+      {
+        "text_id": "rāmāyaṇa",
+        "tradition": "indian",
+        "count": 7
+      },
+      {
+        "text_id": "aeneid",
+        "tradition": "roman",
+        "count": 3
+      },
+      {
+        "text_id": "divine-comedy",
+        "tradition": "roman",
+        "count": 1
+      },
+      {
+        "text_id": "metamorphoses",
+        "tradition": "roman",
+        "count": 4
+      },
+      {
+        "text_id": "siberian-mythology",
+        "tradition": "siberian",
+        "count": 1
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 2
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "celtic",
+      "greek",
+      "indian",
+      "roman",
+      "siberian",
+      "southeast-asian"
     ]
   },
   "Asgard": {
@@ -7279,81 +6781,6 @@
       "european"
     ]
   },
-  "Anu": {
-    "entity_name": "Anu",
-    "entity_type": "deity",
-    "primary_tradition": "mesopotamian",
-    "total_mentions": 56,
-    "text_count": 11,
-    "tradition_count": 8,
-    "texts": [
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 7
-      },
-      {
-        "text_id": "book-of-the-dead",
-        "tradition": "egyptian",
-        "count": 6
-      },
-      {
-        "text_id": "legends-of-egyptian-gods",
-        "tradition": "egyptian",
-        "count": 6
-      },
-      {
-        "text_id": "jataka-cowell",
-        "tradition": "indian",
-        "count": 1
-      },
-      {
-        "text_id": "mahābhārata",
-        "tradition": "indian",
-        "count": 11
-      },
-      {
-        "text_id": "enūma-eliš",
-        "tradition": "mesopotamian",
-        "count": 16
-      },
-      {
-        "text_id": "myths-of-the-cherokee",
-        "tradition": "north-american",
-        "count": 1
-      },
-      {
-        "text_id": "tlingit-myths-texts",
-        "tradition": "north-american",
-        "count": 2
-      },
-      {
-        "text_id": "hawaiian-legends-gods-ghosts",
-        "tradition": "polynesian",
-        "count": 3
-      },
-      {
-        "text_id": "siberian-mythology",
-        "tradition": "siberian",
-        "count": 1
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 2
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "egyptian",
-      "indian",
-      "mesopotamian",
-      "north-american",
-      "polynesian",
-      "siberian",
-      "southeast-asian"
-    ]
-  },
   "Grendel": {
     "entity_name": "Grendel",
     "entity_type": "creature",
@@ -7392,6 +6819,67 @@
       "anthology",
       "european",
       "norse"
+    ]
+  },
+  "Nut": {
+    "entity_name": "Nut",
+    "entity_type": "deity",
+    "primary_tradition": "egyptian",
+    "total_mentions": 55,
+    "text_count": 9,
+    "tradition_count": 4,
+    "texts": [
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 3
+      },
+      {
+        "text_id": "gods-fighting-men",
+        "tradition": "celtic",
+        "count": 6
+      },
+      {
+        "text_id": "the-golden-bough",
+        "tradition": "celtic",
+        "count": 2
+      },
+      {
+        "text_id": "book-of-the-dead",
+        "tradition": "egyptian",
+        "count": 3
+      },
+      {
+        "text_id": "burden-of-isis",
+        "tradition": "egyptian",
+        "count": 3
+      },
+      {
+        "text_id": "legends-of-egyptian-gods",
+        "tradition": "egyptian",
+        "count": 33
+      },
+      {
+        "text_id": "pyramid-texts",
+        "tradition": "egyptian",
+        "count": 3
+      },
+      {
+        "text_id": "homeric-hymns",
+        "tradition": "greek",
+        "count": 1
+      },
+      {
+        "text_id": "theogony",
+        "tradition": "greek",
+        "count": 1
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "celtic",
+      "egyptian",
+      "greek"
     ]
   },
   "Shango": {
@@ -7487,6 +6975,65 @@
       "siberian"
     ]
   },
+  "Anu": {
+    "entity_name": "Anu",
+    "entity_type": "deity",
+    "primary_tradition": "mesopotamian",
+    "total_mentions": 49,
+    "text_count": 8,
+    "tradition_count": 7,
+    "texts": [
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 7
+      },
+      {
+        "text_id": "book-of-the-dead",
+        "tradition": "egyptian",
+        "count": 6
+      },
+      {
+        "text_id": "legends-of-egyptian-gods",
+        "tradition": "egyptian",
+        "count": 5
+      },
+      {
+        "text_id": "mahābhārata",
+        "tradition": "indian",
+        "count": 11
+      },
+      {
+        "text_id": "enūma-eliš",
+        "tradition": "mesopotamian",
+        "count": 16
+      },
+      {
+        "text_id": "tlingit-myths-texts",
+        "tradition": "north-american",
+        "count": 2
+      },
+      {
+        "text_id": "siberian-mythology",
+        "tradition": "siberian",
+        "count": 1
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 1
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "egyptian",
+      "indian",
+      "mesopotamian",
+      "north-american",
+      "siberian",
+      "southeast-asian"
+    ]
+  },
   "Tiamat": {
     "entity_name": "Tiamat",
     "entity_type": "deity",
@@ -7559,45 +7106,6 @@
       "greek",
       "north-american",
       "roman"
-    ]
-  },
-  "Tyr": {
-    "entity_name": "Tyr",
-    "entity_type": "deity",
-    "primary_tradition": "norse",
-    "total_mentions": 47,
-    "text_count": 5,
-    "tradition_count": 2,
-    "texts": [
-      {
-        "text_id": "bulfinchs-mythology",
-        "tradition": "anthology",
-        "count": 3
-      },
-      {
-        "text_id": "introduction-to-mythology",
-        "tradition": "anthology",
-        "count": 8
-      },
-      {
-        "text_id": "poetic-edda",
-        "tradition": "norse",
-        "count": 14
-      },
-      {
-        "text_id": "prose-edda",
-        "tradition": "norse",
-        "count": 20
-      },
-      {
-        "text_id": "volsunga-saga",
-        "tradition": "norse",
-        "count": 2
-      }
-    ],
-    "traditions": [
-      "anthology",
-      "norse"
     ]
   },
   "Ragnarok": {
@@ -7717,6 +7225,45 @@
       "roman"
     ]
   },
+  "Tyr": {
+    "entity_name": "Tyr",
+    "entity_type": "deity",
+    "primary_tradition": "norse",
+    "total_mentions": 41,
+    "text_count": 5,
+    "tradition_count": 2,
+    "texts": [
+      {
+        "text_id": "bulfinchs-mythology",
+        "tradition": "anthology",
+        "count": 2
+      },
+      {
+        "text_id": "introduction-to-mythology",
+        "tradition": "anthology",
+        "count": 8
+      },
+      {
+        "text_id": "poetic-edda",
+        "tradition": "norse",
+        "count": 12
+      },
+      {
+        "text_id": "prose-edda",
+        "tradition": "norse",
+        "count": 17
+      },
+      {
+        "text_id": "volsunga-saga",
+        "tradition": "norse",
+        "count": 2
+      }
+    ],
+    "traditions": [
+      "anthology",
+      "norse"
+    ]
+  },
   "Centaur": {
     "entity_name": "Centaur",
     "entity_type": "creature",
@@ -7816,40 +7363,6 @@
     ],
     "traditions": [
       "north-american"
-    ]
-  },
-  "Tane": {
-    "entity_name": "Tane",
-    "entity_type": "deity",
-    "primary_tradition": "polynesian",
-    "total_mentions": 37,
-    "text_count": 4,
-    "tradition_count": 2,
-    "texts": [
-      {
-        "text_id": "tale-of-heike",
-        "tradition": "japanese",
-        "count": 1
-      },
-      {
-        "text_id": "hawaiian-legends-gods-ghosts",
-        "tradition": "polynesian",
-        "count": 3
-      },
-      {
-        "text_id": "polynesian-mythology",
-        "tradition": "polynesian",
-        "count": 19
-      },
-      {
-        "text_id": "polynesian-mythology-grey",
-        "tradition": "polynesian",
-        "count": 14
-      }
-    ],
-    "traditions": [
-      "japanese",
-      "polynesian"
     ]
   },
   "Romulus": {
@@ -8006,41 +7519,6 @@
     ],
     "traditions": [
       "anthology"
-    ]
-  },
-  "Kur": {
-    "entity_name": "Kur",
-    "entity_type": "place",
-    "primary_tradition": "mesopotamian",
-    "total_mentions": 33,
-    "text_count": 4,
-    "tradition_count": 3,
-    "texts": [
-      {
-        "text_id": "legends-of-egyptian-gods",
-        "tradition": "egyptian",
-        "count": 1
-      },
-      {
-        "text_id": "enūma-eliš",
-        "tradition": "mesopotamian",
-        "count": 1
-      },
-      {
-        "text_id": "inannas-descent",
-        "tradition": "mesopotamian",
-        "count": 13
-      },
-      {
-        "text_id": "malay-magic",
-        "tradition": "southeast-asian",
-        "count": 18
-      }
-    ],
-    "traditions": [
-      "egyptian",
-      "mesopotamian",
-      "southeast-asian"
     ]
   },
   "Eurydice": {
@@ -8233,6 +7711,40 @@
       "european",
       "greek",
       "roman"
+    ]
+  },
+  "Tane": {
+    "entity_name": "Tane",
+    "entity_type": "deity",
+    "primary_tradition": "polynesian",
+    "total_mentions": 26,
+    "text_count": 4,
+    "tradition_count": 2,
+    "texts": [
+      {
+        "text_id": "tale-of-heike",
+        "tradition": "japanese",
+        "count": 1
+      },
+      {
+        "text_id": "hawaiian-legends-gods-ghosts",
+        "tradition": "polynesian",
+        "count": 3
+      },
+      {
+        "text_id": "polynesian-mythology",
+        "tradition": "polynesian",
+        "count": 12
+      },
+      {
+        "text_id": "polynesian-mythology-grey",
+        "tradition": "polynesian",
+        "count": 10
+      }
+    ],
+    "traditions": [
+      "japanese",
+      "polynesian"
     ]
   },
   "Pele": {
@@ -8794,6 +8306,30 @@
     "traditions": [
       "anthology",
       "celtic"
+    ]
+  },
+  "Kur": {
+    "entity_name": "Kur",
+    "entity_type": "place",
+    "primary_tradition": "mesopotamian",
+    "total_mentions": 15,
+    "text_count": 2,
+    "tradition_count": 2,
+    "texts": [
+      {
+        "text_id": "legends-of-egyptian-gods",
+        "tradition": "egyptian",
+        "count": 1
+      },
+      {
+        "text_id": "malay-magic",
+        "tradition": "southeast-asian",
+        "count": 14
+      }
+    ],
+    "traditions": [
+      "egyptian",
+      "southeast-asian"
     ]
   },
   "Minotaur": {

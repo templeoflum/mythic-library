@@ -274,14 +274,31 @@ GAZETTEER = {
 
 
 def build_regex_patterns() -> list:
-    """Build compiled regex patterns from gazetteer for fast matching."""
+    """Build compiled regex patterns from gazetteer for fast matching.
+
+    Ambiguous names (common English words like 'Set', 'Nut', 'Eve') use
+    case-sensitive matching to reduce false positives. A capitalized 'Set'
+    is likely the Egyptian god; a lowercase 'set' is the English verb.
+    """
+    # Names that are also common English words — require case-sensitive match
+    CASE_SENSITIVE = {
+        "Set", "Nut", "Eve", "Adam", "Mars", "Venus", "Mercury",
+        "Saturn", "Jupiter", "Juno", "Neptune", "Minerva", "Pluto",
+        "Soma", "Finn", "Virgil", "Dante", "Beatrice", "Jason",
+        "Helen", "Ajax", "Troy", "Tyr", "Kur", "Anu", "Tane",
+    }
+
     # Sort by length (longest first) to match multi-word names first
     names = sorted(GAZETTEER.keys(), key=len, reverse=True)
     patterns = []
     for name in names:
         # Escape regex special chars and create word-boundary pattern
         escaped = re.escape(name)
-        pattern = re.compile(r'\b' + escaped + r'\b', re.IGNORECASE)
+        if name in CASE_SENSITIVE:
+            # Case-sensitive: only match when capitalized (e.g., "Set" not "set")
+            pattern = re.compile(r'\b' + escaped + r'\b')
+        else:
+            pattern = re.compile(r'\b' + escaped + r'\b', re.IGNORECASE)
         patterns.append((name, pattern))
     return patterns
 
