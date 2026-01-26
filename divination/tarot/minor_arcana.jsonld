@@ -1,0 +1,1312 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "tarot:minor_arcana",
+  "@type": "SymbolicSystem",
+  "name": "Tarot Minor Arcana",
+  "description": "The 56 cards of the Minor Arcana, representing everyday situations and energies across four suits.",
+  "domain": "divination",
+  "subdomain": "tarot",
+  "cardinality": 56,
+  "structuralNotes": "Four suits (Wands, Cups, Swords, Pentacles) x 14 cards each. Suits = elements, Numbers = developmental stages, Courts = personality expressions.",
+
+  "coordinateDerivation": {
+    "method": "algorithmic-v1",
+    "suitBaselines": {
+      "wands": {"element": "fire", "active-receptive": 0.2, "ascent-descent": 0.35, "note": "Active, ascending, creative will"},
+      "cups": {"element": "water", "active-receptive": 0.7, "ascent-descent": 0.6, "note": "Receptive, descending, emotional"},
+      "swords": {"element": "air", "active-receptive": 0.3, "ascent-descent": 0.25, "note": "Active intellect, ascending, mental"},
+      "pentacles": {"element": "earth", "active-receptive": 0.6, "ascent-descent": 0.75, "note": "Receptive, descending, material"}
+    },
+    "numberProgression": {
+      "ace": "Pure potential - creation pole",
+      "2-3": "Early development, choices",
+      "4-5": "Stability/conflict midpoint",
+      "6-7": "Progress/challenge",
+      "8-9": "Near completion, mastery/burden",
+      "10": "Completion/culmination"
+    },
+    "courtRoles": {
+      "page": {"role": "student/messenger", "instantiates": "divine_child"},
+      "knight": {"role": "active pursuit", "instantiates": "hero/warrior"},
+      "queen": {"role": "receptive mastery", "instantiates": "great_mother/sovereign"},
+      "king": {"role": "active mastery", "instantiates": "great_father/sovereign"}
+    }
+  },
+
+  "suits": [
+    {
+      "@id": "tarot:wands",
+      "name": "Wands",
+      "element": "element:fire",
+      "domain": "Will, creativity, action, passion, enterprise",
+      "spectralBaseline": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.2,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.3
+      },
+      "cards": [
+        {
+          "@id": "tarot:wands_ace",
+          "@type": "Archetype",
+          "name": "Ace of Wands",
+          "number": 1,
+          "keywords": ["inspiration", "new enterprise", "creative spark", "potential", "birth of will"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.12,
+            "light-shadow": 0.28,
+            "active-receptive": 0.18,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.32,
+            "stasis-transformation": 0.65,
+            "voluntary-fated": 0.25
+          },
+          "instantiates": [
+            {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["spark", "potential"]},
+            {"primordial": "primordial:divine_child", "weight": 0.5, "aspects": ["new-beginning"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_02",
+          "@type": "Archetype",
+          "name": "Two of Wands",
+          "number": 2,
+          "keywords": ["planning", "decisions", "discovery", "future vision", "personal power"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.32,
+            "active-receptive": 0.22,
+            "individual-collective": 0.28,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.55,
+            "voluntary-fated": 0.22
+          },
+          "instantiates": [
+            {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["planning", "vision"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_03",
+          "@type": "Archetype",
+          "name": "Three of Wands",
+          "number": 3,
+          "keywords": ["expansion", "foresight", "enterprise", "exploration", "leadership"],
+          "spectralCoordinates": {
+            "order-chaos": 0.52,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.30,
+            "active-receptive": 0.20,
+            "individual-collective": 0.42,
+            "ascent-descent": 0.32,
+            "stasis-transformation": 0.58,
+            "voluntary-fated": 0.28
+          },
+          "instantiates": [
+            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["quest", "expansion"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_04",
+          "@type": "Archetype",
+          "name": "Four of Wands",
+          "number": 4,
+          "keywords": ["celebration", "harmony", "homecoming", "community", "foundation"],
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.25,
+            "light-shadow": 0.25,
+            "active-receptive": 0.35,
+            "individual-collective": 0.62,
+            "ascent-descent": 0.42,
+            "stasis-transformation": 0.35,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["stability", "foundation"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_05",
+          "@type": "Archetype",
+          "name": "Five of Wands",
+          "number": 5,
+          "keywords": ["conflict", "competition", "tension", "diversity", "struggle"],
+          "spectralCoordinates": {
+            "order-chaos": 0.68,
+            "creation-destruction": 0.52,
+            "light-shadow": 0.42,
+            "active-receptive": 0.15,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.40,
+            "stasis-transformation": 0.62,
+            "voluntary-fated": 0.28
+          },
+          "instantiates": [
+            {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["conflict", "competition"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_06",
+          "@type": "Archetype",
+          "name": "Six of Wands",
+          "number": 6,
+          "keywords": ["victory", "recognition", "success", "acclaim", "progress"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.22,
+            "active-receptive": 0.18,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.28,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.32
+          },
+          "instantiates": [
+            {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["victory", "recognition"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_07",
+          "@type": "Archetype",
+          "name": "Seven of Wands",
+          "number": 7,
+          "keywords": ["challenge", "perseverance", "defense", "maintaining position", "courage"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.38,
+            "active-receptive": 0.15,
+            "individual-collective": 0.25,
+            "ascent-descent": 0.38,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.25
+          },
+          "instantiates": [
+            {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["defense", "perseverance"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_08",
+          "@type": "Archetype",
+          "name": "Eight of Wands",
+          "number": 8,
+          "keywords": ["speed", "movement", "swift action", "air travel", "progress"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.32,
+            "active-receptive": 0.12,
+            "individual-collective": 0.38,
+            "ascent-descent": 0.28,
+            "stasis-transformation": 0.75,
+            "voluntary-fated": 0.28
+          },
+          "instantiates": [
+            {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["speed", "movement"]},
+            {"primordial": "primordial:psychopomp", "weight": 0.4, "aspects": ["messenger"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_09",
+          "@type": "Archetype",
+          "name": "Nine of Wands",
+          "number": 9,
+          "keywords": ["resilience", "persistence", "last stand", "boundaries", "wounded warrior"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.48,
+            "light-shadow": 0.45,
+            "active-receptive": 0.22,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.42,
+            "stasis-transformation": 0.42,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["wounded", "persisting"]},
+            {"primordial": "primordial:hero", "weight": 0.4, "aspects": ["endurance"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_10",
+          "@type": "Archetype",
+          "name": "Ten of Wands",
+          "number": 10,
+          "keywords": ["burden", "responsibility", "hard work", "accomplishment", "overwhelm"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.52,
+            "light-shadow": 0.48,
+            "active-receptive": 0.25,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.35,
+            "voluntary-fated": 0.58
+          },
+          "instantiates": [
+            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["burden", "responsibility"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_page",
+          "@type": "Archetype",
+          "name": "Page of Wands",
+          "court": "page",
+          "keywords": ["exploration", "excitement", "freedom", "discovery", "enthusiasm"],
+          "spectralCoordinates": {
+            "order-chaos": 0.62,
+            "creation-destruction": 0.22,
+            "light-shadow": 0.28,
+            "active-receptive": 0.25,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.68,
+            "voluntary-fated": 0.28
+          },
+          "instantiates": [
+            {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["enthusiasm", "discovery"]},
+            {"primordial": "primordial:trickster", "weight": 0.4, "aspects": ["playful"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_knight",
+          "@type": "Archetype",
+          "name": "Knight of Wands",
+          "court": "knight",
+          "keywords": ["adventure", "energy", "passion", "impulsiveness", "action"],
+          "spectralCoordinates": {
+            "order-chaos": 0.68,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.32,
+            "active-receptive": 0.10,
+            "individual-collective": 0.28,
+            "ascent-descent": 0.32,
+            "stasis-transformation": 0.72,
+            "voluntary-fated": 0.18
+          },
+          "instantiates": [
+            {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["adventure", "quest"]},
+            {"primordial": "primordial:warrior", "weight": 0.6, "aspects": ["action", "passion"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_queen",
+          "@type": "Archetype",
+          "name": "Queen of Wands",
+          "court": "queen",
+          "keywords": ["confidence", "determination", "warmth", "vibrancy", "courage"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.25,
+            "active-receptive": 0.35,
+            "individual-collective": 0.48,
+            "ascent-descent": 0.38,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.32
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["confident-leadership"]},
+            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["warmth", "nurturing-fire"]}
+          ]
+        },
+        {
+          "@id": "tarot:wands_king",
+          "@type": "Archetype",
+          "name": "King of Wands",
+          "court": "king",
+          "keywords": ["leadership", "vision", "entrepreneur", "honor", "bold action"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.22,
+            "active-receptive": 0.15,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.28,
+            "stasis-transformation": 0.55,
+            "voluntary-fated": 0.25
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["leadership", "vision"]},
+            {"primordial": "primordial:great_father", "weight": 0.6, "aspects": ["authority"]}
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "tarot:cups",
+      "name": "Cups",
+      "element": "element:water",
+      "domain": "Emotion, relationships, intuition, love, imagination",
+      "spectralBaseline": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.45,
+        "active-receptive": 0.7,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.55
+      },
+      "cards": [
+        {
+          "@id": "tarot:cups_ace",
+          "@type": "Archetype",
+          "name": "Ace of Cups",
+          "number": 1,
+          "keywords": ["new love", "compassion", "creativity", "overwhelming emotion", "spiritual love"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.15,
+            "light-shadow": 0.32,
+            "active-receptive": 0.65,
+            "individual-collective": 0.52,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.58,
+            "voluntary-fated": 0.48
+          },
+          "instantiates": [
+            {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["emotional-birth"]},
+            {"primordial": "primordial:lover", "weight": 0.7, "aspects": ["new-love"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_02",
+          "@type": "Archetype",
+          "name": "Two of Cups",
+          "number": 2,
+          "keywords": ["partnership", "unity", "attraction", "connection", "mutual respect"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.35,
+            "active-receptive": 0.52,
+            "individual-collective": 0.48,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.48,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:lover", "weight": 0.9, "aspects": ["partnership", "union"]},
+            {"primordial": "primordial:twin", "weight": 0.5, "aspects": ["duality"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_03",
+          "@type": "Archetype",
+          "name": "Three of Cups",
+          "number": 3,
+          "keywords": ["celebration", "friendship", "community", "creativity", "collaboration"],
+          "spectralCoordinates": {
+            "order-chaos": 0.52,
+            "creation-destruction": 0.25,
+            "light-shadow": 0.28,
+            "active-receptive": 0.55,
+            "individual-collective": 0.72,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.38
+          },
+          "instantiates": [
+            {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["friendship"]},
+            {"primordial": "primordial:divine_child", "weight": 0.4, "aspects": ["celebration"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_04",
+          "@type": "Archetype",
+          "name": "Four of Cups",
+          "number": 4,
+          "keywords": ["contemplation", "apathy", "reevaluation", "discontent", "meditation"],
+          "spectralCoordinates": {
+            "order-chaos": 0.45,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.52,
+            "active-receptive": 0.78,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.58,
+            "stasis-transformation": 0.32,
+            "voluntary-fated": 0.58
+          },
+          "instantiates": [
+            {"primordial": "primordial:wise_elder", "weight": 0.4, "aspects": ["contemplation"]},
+            {"primordial": "primordial:outcast", "weight": 0.4, "aspects": ["withdrawal"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_05",
+          "@type": "Archetype",
+          "name": "Five of Cups",
+          "number": 5,
+          "keywords": ["loss", "grief", "disappointment", "regret", "mourning"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.65,
+            "light-shadow": 0.68,
+            "active-receptive": 0.72,
+            "individual-collective": 0.28,
+            "ascent-descent": 0.72,
+            "stasis-transformation": 0.48,
+            "voluntary-fated": 0.72
+          },
+          "instantiates": [
+            {"primordial": "primordial:crone", "weight": 0.5, "aspects": ["loss", "grief"]},
+            {"primordial": "primordial:shadow", "weight": 0.5, "aspects": ["mourning"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_06",
+          "@type": "Archetype",
+          "name": "Six of Cups",
+          "number": 6,
+          "keywords": ["nostalgia", "childhood", "innocence", "reunion", "memories"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.32,
+            "active-receptive": 0.62,
+            "individual-collective": 0.58,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.32,
+            "voluntary-fated": 0.62
+          },
+          "instantiates": [
+            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["innocence", "nostalgia"]},
+            {"primordial": "primordial:ancestor", "weight": 0.5, "aspects": ["memories", "past"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_07",
+          "@type": "Archetype",
+          "name": "Seven of Cups",
+          "number": 7,
+          "keywords": ["choices", "fantasy", "illusion", "wishful thinking", "imagination"],
+          "spectralCoordinates": {
+            "order-chaos": 0.68,
+            "creation-destruction": 0.38,
+            "light-shadow": 0.62,
+            "active-receptive": 0.68,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.58,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["illusion"]},
+            {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["imagination"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_08",
+          "@type": "Archetype",
+          "name": "Eight of Cups",
+          "number": 8,
+          "keywords": ["walking away", "disillusionment", "leaving behind", "seeking truth", "journey"],
+          "spectralCoordinates": {
+            "order-chaos": 0.52,
+            "creation-destruction": 0.55,
+            "light-shadow": 0.55,
+            "active-receptive": 0.45,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.58,
+            "stasis-transformation": 0.68,
+            "voluntary-fated": 0.48
+          },
+          "instantiates": [
+            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["quest", "leaving"]},
+            {"primordial": "primordial:outcast", "weight": 0.5, "aspects": ["walking-away"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_09",
+          "@type": "Archetype",
+          "name": "Nine of Cups",
+          "number": 9,
+          "keywords": ["contentment", "satisfaction", "gratitude", "wish fulfilled", "pleasure"],
+          "spectralCoordinates": {
+            "order-chaos": 0.38,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.25,
+            "active-receptive": 0.58,
+            "individual-collective": 0.38,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.35,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["satisfaction"]},
+            {"primordial": "primordial:self", "weight": 0.4, "aspects": ["contentment"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_10",
+          "@type": "Archetype",
+          "name": "Ten of Cups",
+          "number": 10,
+          "keywords": ["harmony", "family", "alignment", "happiness", "emotional fulfillment"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.22,
+            "light-shadow": 0.22,
+            "active-receptive": 0.55,
+            "individual-collective": 0.78,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.52
+          },
+          "instantiates": [
+            {"primordial": "primordial:self", "weight": 0.6, "aspects": ["harmony", "wholeness"]},
+            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["family"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_page",
+          "@type": "Archetype",
+          "name": "Page of Cups",
+          "court": "page",
+          "keywords": ["creative opportunity", "intuitive message", "curiosity", "dreamer", "sensitive"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.22,
+            "light-shadow": 0.38,
+            "active-receptive": 0.62,
+            "individual-collective": 0.38,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.58,
+            "voluntary-fated": 0.52
+          },
+          "instantiates": [
+            {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["dreamer", "sensitive"]},
+            {"primordial": "primordial:lover", "weight": 0.4, "aspects": ["romantic"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_knight",
+          "@type": "Archetype",
+          "name": "Knight of Cups",
+          "court": "knight",
+          "keywords": ["romance", "charm", "imagination", "following the heart", "idealist"],
+          "spectralCoordinates": {
+            "order-chaos": 0.52,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.35,
+            "active-receptive": 0.45,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.62,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:lover", "weight": 0.8, "aspects": ["romance", "pursuit"]},
+            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["quest-for-love"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_queen",
+          "@type": "Archetype",
+          "name": "Queen of Cups",
+          "court": "queen",
+          "keywords": ["compassion", "calm", "intuitive", "nurturing", "emotional security"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.42,
+            "active-receptive": 0.78,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.58,
+            "stasis-transformation": 0.42,
+            "voluntary-fated": 0.55
+          },
+          "instantiates": [
+            {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "compassion"]},
+            {"primordial": "primordial:healer", "weight": 0.5, "aspects": ["emotional-healing"]}
+          ]
+        },
+        {
+          "@id": "tarot:cups_king",
+          "@type": "Archetype",
+          "name": "King of Cups",
+          "court": "king",
+          "keywords": ["emotional balance", "diplomacy", "compassion", "wisdom", "calm"],
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.38,
+            "active-receptive": 0.52,
+            "individual-collective": 0.58,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.38,
+            "voluntary-fated": 0.48
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["emotional-mastery"]},
+            {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["wisdom", "balance"]}
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "tarot:swords",
+      "name": "Swords",
+      "element": "element:air",
+      "domain": "Intellect, conflict, truth, communication, decision",
+      "spectralBaseline": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.4,
+        "active-receptive": 0.3,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "cards": [
+        {
+          "@id": "tarot:swords_ace",
+          "@type": "Archetype",
+          "name": "Ace of Swords",
+          "number": 1,
+          "keywords": ["clarity", "breakthrough", "truth", "new idea", "mental force"],
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.25,
+            "light-shadow": 0.15,
+            "active-receptive": 0.22,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.18,
+            "stasis-transformation": 0.62,
+            "voluntary-fated": 0.25
+          },
+          "instantiates": [
+            {"primordial": "primordial:creator", "weight": 0.5, "aspects": ["mental-birth"]},
+            {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["clarity", "truth"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_02",
+          "@type": "Archetype",
+          "name": "Two of Swords",
+          "number": 2,
+          "keywords": ["stalemate", "difficult decision", "avoidance", "truce", "blocked emotions"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.48,
+            "light-shadow": 0.52,
+            "active-receptive": 0.55,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.42,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.55
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.4, "aspects": ["stalemate"]},
+            {"primordial": "primordial:shadow", "weight": 0.4, "aspects": ["avoidance"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_03",
+          "@type": "Archetype",
+          "name": "Three of Swords",
+          "number": 3,
+          "keywords": ["heartbreak", "sorrow", "grief", "painful truth", "separation"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.72,
+            "light-shadow": 0.58,
+            "active-receptive": 0.52,
+            "individual-collective": 0.28,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.62,
+            "voluntary-fated": 0.72
+          },
+          "instantiates": [
+            {"primordial": "primordial:destroyer", "weight": 0.5, "aspects": ["painful-truth"]},
+            {"primordial": "primordial:crone", "weight": 0.4, "aspects": ["grief"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_04",
+          "@type": "Archetype",
+          "name": "Four of Swords",
+          "number": 4,
+          "keywords": ["rest", "recovery", "contemplation", "meditation", "passive"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.45,
+            "active-receptive": 0.82,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.18,
+            "voluntary-fated": 0.58
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["rest"]},
+            {"primordial": "primordial:healer", "weight": 0.5, "aspects": ["recovery"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_05",
+          "@type": "Archetype",
+          "name": "Five of Swords",
+          "number": 5,
+          "keywords": ["defeat", "conflict", "winning at all costs", "betrayal", "loss"],
+          "spectralCoordinates": {
+            "order-chaos": 0.68,
+            "creation-destruction": 0.72,
+            "light-shadow": 0.62,
+            "active-receptive": 0.18,
+            "individual-collective": 0.18,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.55,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:warrior", "weight": 0.6, "aspects": ["conflict", "defeat"]},
+            {"primordial": "primordial:trickster", "weight": 0.4, "aspects": ["betrayal"], "note": "shadow"}
+          ]
+        },
+        {
+          "@id": "tarot:swords_06",
+          "@type": "Archetype",
+          "name": "Six of Swords",
+          "number": 6,
+          "keywords": ["transition", "change", "rite of passage", "releasing baggage", "moving on"],
+          "spectralCoordinates": {
+            "order-chaos": 0.45,
+            "creation-destruction": 0.52,
+            "light-shadow": 0.48,
+            "active-receptive": 0.48,
+            "individual-collective": 0.42,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.68,
+            "voluntary-fated": 0.55
+          },
+          "instantiates": [
+            {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["transition", "passage"]},
+            {"primordial": "primordial:hero", "weight": 0.4, "aspects": ["journey"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_07",
+          "@type": "Archetype",
+          "name": "Seven of Swords",
+          "number": 7,
+          "keywords": ["deception", "trickery", "strategy", "stealth", "getting away with something"],
+          "spectralCoordinates": {
+            "order-chaos": 0.72,
+            "creation-destruction": 0.48,
+            "light-shadow": 0.68,
+            "active-receptive": 0.22,
+            "individual-collective": 0.18,
+            "ascent-descent": 0.42,
+            "stasis-transformation": 0.58,
+            "voluntary-fated": 0.18
+          },
+          "instantiates": [
+            {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["deception", "strategy"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_08",
+          "@type": "Archetype",
+          "name": "Eight of Swords",
+          "number": 8,
+          "keywords": ["imprisonment", "restriction", "self-imposed limitation", "victim mentality", "trapped"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.55,
+            "light-shadow": 0.72,
+            "active-receptive": 0.75,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.62,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.78
+          },
+          "instantiates": [
+            {"primordial": "primordial:outcast", "weight": 0.6, "aspects": ["imprisoned", "trapped"]},
+            {"primordial": "primordial:shadow", "weight": 0.5, "aspects": ["self-limitation"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_09",
+          "@type": "Archetype",
+          "name": "Nine of Swords",
+          "number": 9,
+          "keywords": ["anxiety", "worry", "fear", "nightmares", "despair"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.58,
+            "light-shadow": 0.82,
+            "active-receptive": 0.68,
+            "individual-collective": 0.15,
+            "ascent-descent": 0.65,
+            "stasis-transformation": 0.45,
+            "voluntary-fated": 0.72
+          },
+          "instantiates": [
+            {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["anxiety", "fear"]},
+            {"primordial": "primordial:monster", "weight": 0.4, "aspects": ["nightmares"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_10",
+          "@type": "Archetype",
+          "name": "Ten of Swords",
+          "number": 10,
+          "keywords": ["painful ending", "rock bottom", "betrayal", "loss", "crisis"],
+          "spectralCoordinates": {
+            "order-chaos": 0.65,
+            "creation-destruction": 0.88,
+            "light-shadow": 0.68,
+            "active-receptive": 0.72,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.72,
+            "stasis-transformation": 0.82,
+            "voluntary-fated": 0.85
+          },
+          "instantiates": [
+            {"primordial": "primordial:destroyer", "weight": 0.8, "aspects": ["ending", "crisis"]},
+            {"primordial": "primordial:psychopomp", "weight": 0.4, "aspects": ["death-rebirth"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_page",
+          "@type": "Archetype",
+          "name": "Page of Swords",
+          "court": "page",
+          "keywords": ["curiosity", "restless", "mental energy", "new ideas", "vigilance"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.32,
+            "active-receptive": 0.28,
+            "individual-collective": 0.28,
+            "ascent-descent": 0.28,
+            "stasis-transformation": 0.62,
+            "voluntary-fated": 0.28
+          },
+          "instantiates": [
+            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["curiosity"]},
+            {"primordial": "primordial:trickster", "weight": 0.4, "aspects": ["clever"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_knight",
+          "@type": "Archetype",
+          "name": "Knight of Swords",
+          "court": "knight",
+          "keywords": ["ambition", "action-oriented", "fast-thinking", "driven", "assertive"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.52,
+            "light-shadow": 0.32,
+            "active-receptive": 0.08,
+            "individual-collective": 0.25,
+            "ascent-descent": 0.28,
+            "stasis-transformation": 0.72,
+            "voluntary-fated": 0.18
+          },
+          "instantiates": [
+            {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["driven", "assertive"]},
+            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["action"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_queen",
+          "@type": "Archetype",
+          "name": "Queen of Swords",
+          "court": "queen",
+          "keywords": ["independence", "perception", "clear boundaries", "direct communication", "unbiased"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.28,
+            "active-receptive": 0.38,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.28,
+            "stasis-transformation": 0.42,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["clear-judgment"]},
+            {"primordial": "primordial:wise_elder", "weight": 0.5, "aspects": ["perception"]}
+          ]
+        },
+        {
+          "@id": "tarot:swords_king",
+          "@type": "Archetype",
+          "name": "King of Swords",
+          "court": "king",
+          "keywords": ["intellectual power", "authority", "truth", "clear thinking", "ethical"],
+          "spectralCoordinates": {
+            "order-chaos": 0.22,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.22,
+            "active-receptive": 0.22,
+            "individual-collective": 0.52,
+            "ascent-descent": 0.22,
+            "stasis-transformation": 0.38,
+            "voluntary-fated": 0.32
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["authority", "judgment"]},
+            {"primordial": "primordial:great_father", "weight": 0.5, "aspects": ["law"]}
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "tarot:pentacles",
+      "name": "Pentacles",
+      "element": "element:earth",
+      "domain": "Material, body, wealth, work, practical, nature",
+      "spectralBaseline": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
+        "active-receptive": 0.6,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.5
+      },
+      "cards": [
+        {
+          "@id": "tarot:pentacles_ace",
+          "@type": "Archetype",
+          "name": "Ace of Pentacles",
+          "number": 1,
+          "keywords": ["new financial opportunity", "manifestation", "abundance", "prosperity", "new venture"],
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.12,
+            "light-shadow": 0.28,
+            "active-receptive": 0.52,
+            "individual-collective": 0.48,
+            "ascent-descent": 0.68,
+            "stasis-transformation": 0.55,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["material-birth"]},
+            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["abundance"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_02",
+          "@type": "Archetype",
+          "name": "Two of Pentacles",
+          "number": 2,
+          "keywords": ["balance", "adaptability", "time management", "prioritization", "juggling"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.42,
+            "active-receptive": 0.45,
+            "individual-collective": 0.42,
+            "ascent-descent": 0.62,
+            "stasis-transformation": 0.58,
+            "voluntary-fated": 0.38
+          },
+          "instantiates": [
+            {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["adaptability", "juggling"]},
+            {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["balance"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_03",
+          "@type": "Archetype",
+          "name": "Three of Pentacles",
+          "number": 3,
+          "keywords": ["teamwork", "collaboration", "learning", "implementation", "craftsmanship"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.32,
+            "active-receptive": 0.42,
+            "individual-collective": 0.68,
+            "ascent-descent": 0.62,
+            "stasis-transformation": 0.48,
+            "voluntary-fated": 0.38
+          },
+          "instantiates": [
+            {"primordial": "primordial:creator", "weight": 0.5, "aspects": ["craftsmanship"]},
+            {"primordial": "primordial:magician", "weight": 0.5, "aspects": ["skill"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_04",
+          "@type": "Archetype",
+          "name": "Four of Pentacles",
+          "number": 4,
+          "keywords": ["security", "control", "conservation", "frugality", "possessiveness"],
+          "spectralCoordinates": {
+            "order-chaos": 0.18,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.48,
+            "active-receptive": 0.55,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.72,
+            "stasis-transformation": 0.12,
+            "voluntary-fated": 0.52
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["security", "holding"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_05",
+          "@type": "Archetype",
+          "name": "Five of Pentacles",
+          "number": 5,
+          "keywords": ["hardship", "loss", "isolation", "worry", "poverty"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.68,
+            "light-shadow": 0.68,
+            "active-receptive": 0.68,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.78,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.75
+          },
+          "instantiates": [
+            {"primordial": "primordial:outcast", "weight": 0.8, "aspects": ["hardship", "isolation"]},
+            {"primordial": "primordial:shadow", "weight": 0.4, "aspects": ["poverty"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_06",
+          "@type": "Archetype",
+          "name": "Six of Pentacles",
+          "number": 6,
+          "keywords": ["generosity", "charity", "giving", "receiving", "sharing wealth"],
+          "spectralCoordinates": {
+            "order-chaos": 0.38,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.28,
+            "active-receptive": 0.52,
+            "individual-collective": 0.72,
+            "ascent-descent": 0.65,
+            "stasis-transformation": 0.42,
+            "voluntary-fated": 0.45
+          },
+          "instantiates": [
+            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["giving"]},
+            {"primordial": "primordial:sovereign", "weight": 0.4, "aspects": ["distribution"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_07",
+          "@type": "Archetype",
+          "name": "Seven of Pentacles",
+          "number": 7,
+          "keywords": ["patience", "long-term view", "perseverance", "investment", "reward"],
+          "spectralCoordinates": {
+            "order-chaos": 0.38,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.42,
+            "active-receptive": 0.62,
+            "individual-collective": 0.38,
+            "ascent-descent": 0.68,
+            "stasis-transformation": 0.38,
+            "voluntary-fated": 0.55
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["patience"]},
+            {"primordial": "primordial:wise_elder", "weight": 0.4, "aspects": ["long-term-view"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_08",
+          "@type": "Archetype",
+          "name": "Eight of Pentacles",
+          "number": 8,
+          "keywords": ["apprenticeship", "skill development", "diligence", "craftsmanship", "dedication"],
+          "spectralCoordinates": {
+            "order-chaos": 0.28,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.32,
+            "active-receptive": 0.35,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.65,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["skill", "craft"]},
+            {"primordial": "primordial:hero", "weight": 0.4, "aspects": ["dedication"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_09",
+          "@type": "Archetype",
+          "name": "Nine of Pentacles",
+          "number": 9,
+          "keywords": ["abundance", "luxury", "self-sufficiency", "financial independence", "reward"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.25,
+            "active-receptive": 0.55,
+            "individual-collective": 0.28,
+            "ascent-descent": 0.62,
+            "stasis-transformation": 0.32,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.5, "aspects": ["independence"]},
+            {"primordial": "primordial:self", "weight": 0.5, "aspects": ["self-sufficiency"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_10",
+          "@type": "Archetype",
+          "name": "Ten of Pentacles",
+          "number": 10,
+          "keywords": ["wealth", "inheritance", "family", "establishment", "legacy"],
+          "spectralCoordinates": {
+            "order-chaos": 0.22,
+            "creation-destruction": 0.32,
+            "light-shadow": 0.28,
+            "active-receptive": 0.58,
+            "individual-collective": 0.82,
+            "ascent-descent": 0.72,
+            "stasis-transformation": 0.22,
+            "voluntary-fated": 0.68
+          },
+          "instantiates": [
+            {"primordial": "primordial:ancestor", "weight": 0.8, "aspects": ["legacy", "inheritance"]},
+            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["establishment"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_page",
+          "@type": "Archetype",
+          "name": "Page of Pentacles",
+          "court": "page",
+          "keywords": ["manifestation", "financial opportunity", "skill development", "ambition", "student"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.25,
+            "light-shadow": 0.32,
+            "active-receptive": 0.48,
+            "individual-collective": 0.38,
+            "ascent-descent": 0.62,
+            "stasis-transformation": 0.55,
+            "voluntary-fated": 0.38
+          },
+          "instantiates": [
+            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["student", "ambition"]},
+            {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["skill-development"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_knight",
+          "@type": "Archetype",
+          "name": "Knight of Pentacles",
+          "court": "knight",
+          "keywords": ["routine", "conservatism", "methodical", "responsibility", "efficiency"],
+          "spectralCoordinates": {
+            "order-chaos": 0.22,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.35,
+            "active-receptive": 0.35,
+            "individual-collective": 0.42,
+            "ascent-descent": 0.68,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["methodical", "routine"]},
+            {"primordial": "primordial:warrior", "weight": 0.5, "aspects": ["responsibility"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_queen",
+          "@type": "Archetype",
+          "name": "Queen of Pentacles",
+          "court": "queen",
+          "keywords": ["nurturing", "practical", "providing", "homebody", "security"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.32,
+            "active-receptive": 0.68,
+            "individual-collective": 0.62,
+            "ascent-descent": 0.72,
+            "stasis-transformation": 0.35,
+            "voluntary-fated": 0.52
+          },
+          "instantiates": [
+            {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "providing"]},
+            {"primordial": "primordial:preserver", "weight": 0.4, "aspects": ["security"]}
+          ]
+        },
+        {
+          "@id": "tarot:pentacles_king",
+          "@type": "Archetype",
+          "name": "King of Pentacles",
+          "court": "king",
+          "keywords": ["wealth", "business", "leadership", "security", "discipline"],
+          "spectralCoordinates": {
+            "order-chaos": 0.22,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.28,
+            "active-receptive": 0.35,
+            "individual-collective": 0.62,
+            "ascent-descent": 0.68,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.45
+          },
+          "instantiates": [
+            {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["wealth", "business"]},
+            {"primordial": "primordial:great_father", "weight": 0.5, "aspects": ["discipline", "security"]}
+          ]
+        }
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "suitCorrespondences": {
+      "wands-fire": {"planet": "sun/mars", "direction": "south", "season": "summer"},
+      "cups-water": {"planet": "moon/venus", "direction": "west", "season": "autumn"},
+      "swords-air": {"planet": "mercury/saturn", "direction": "east", "season": "spring"},
+      "pentacles-earth": {"planet": "venus/saturn", "direction": "north", "season": "winter"}
+    },
+    "courtProgression": {
+      "page": "Learning/receiving the element's energy",
+      "knight": "Actively pursuing/expressing the element",
+      "queen": "Mastering/nurturing the element receptively",
+      "king": "Mastering/commanding the element actively"
+    },
+    "numberMeanings": {
+      "1": "Pure potential, beginnings",
+      "2": "Balance, choices, duality",
+      "3": "Growth, creativity, expression",
+      "4": "Stability, foundation, structure",
+      "5": "Conflict, challenge, change",
+      "6": "Harmony, communication, flow",
+      "7": "Reflection, assessment, inner work",
+      "8": "Movement, power, action",
+      "9": "Near completion, attainment",
+      "10": "Completion, end of cycle"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1-suit-number-matrix",
+    "relationshipsValidated": true,
+    "correspondencesVerified": true,
+    "derivedAt": "2025-01-20"
+  }
+}

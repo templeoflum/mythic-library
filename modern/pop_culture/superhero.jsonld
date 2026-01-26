@@ -1,0 +1,364 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "modern:superhero",
+  "@type": "ModernSystem",
+  "name": "Superhero Archetypes",
+  "description": "Recurring archetypal patterns in superhero narratives.",
+  "domain": "modern",
+  "subdomain": "pop_culture",
+  "cardinality": 12,
+  "source": "Comic books, film, collective modern mythology",
+  "structuralNotes": "Modern instantiations of classical archetypes in secular heroic narrative.",
+
+  "entries": [
+    {
+      "@id": "superhero:paragon",
+      "@type": "Archetype",
+      "name": "The Paragon",
+      "description": "Ideal hero, symbol of hope and virtue (Superman)",
+      "keywords": ["hope", "virtue", "ideal", "inspiration", "power"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.12,
+        "active-receptive": 0.18,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.9, "aspects": ["hope", "virtue"]},
+        {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["ideal", "inspiration"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vogler:hero", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "jungian:hero", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8},
+        {"type": "POLAR_OPPOSITE", "target": "superhero:dark_knight", "axis": "light-shadow"},
+        {"type": "COMPLEMENT", "target": "superhero:team_leader", "note": "Both inspire others"}
+      ]
+    },
+    {
+      "@id": "superhero:dark_knight",
+      "@type": "Archetype",
+      "name": "The Dark Knight",
+      "description": "Shadow-integrated hero, fights fire with fire (Batman)",
+      "keywords": ["darkness", "fear", "discipline", "vengeance", "preparation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.68,
+        "active-receptive": 0.18,
+        "individual-collective": 0.22,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["discipline", "preparation"]},
+        {"primordial": "primordial:shadow", "weight": 0.7, "aspects": ["darkness", "fear"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "superhero:paragon", "axis": "light-shadow"},
+        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "superhero:antihero", "note": "Both use shadow methods"}
+      ]
+    },
+    {
+      "@id": "superhero:outsider",
+      "@type": "Archetype",
+      "name": "The Outsider",
+      "description": "Misunderstood, feared hero (X-Men, Hulk)",
+      "keywords": ["alienation", "fear", "mutation", "persecution", "otherness"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.58,
+        "active-receptive": 0.42,
+        "individual-collective": 0.18,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.85, "aspects": ["alienation", "otherness"]},
+        {"primordial": "primordial:monster", "weight": 0.65, "aspects": ["fear", "mutation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_4", "fidelity": 0.7},
+        {"type": "TENSION", "target": "superhero:paragon", "note": "Accepted vs rejected hero"},
+        {"type": "COMPLEMENT", "target": "superhero:antihero", "note": "Both operate outside norms"}
+      ]
+    },
+    {
+      "@id": "superhero:trickster_hero",
+      "@type": "Archetype",
+      "name": "The Trickster Hero",
+      "description": "Wit and humor as weapon (Spider-Man, Deadpool)",
+      "keywords": ["humor", "wit", "agility", "irreverence", "youth"],
+      "spectralCoordinates": {
+        "order-chaos": 0.68,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.38,
+        "active-receptive": 0.25,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.8, "aspects": ["humor", "irreverence"]},
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["wit", "youth"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "vogler:trickster", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75},
+        {"type": "TENSION", "target": "superhero:paragon", "note": "Levity vs gravity"}
+      ]
+    },
+    {
+      "@id": "superhero:cosmic_being",
+      "@type": "Archetype",
+      "name": "The Cosmic Being",
+      "description": "Godlike power, universal scope (Dr. Manhattan, Silver Surfer)",
+      "keywords": ["transcendence", "omnipotence", "detachment", "cosmic", "isolation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.58,
+        "light-shadow": 0.48,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.18,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.8, "aspects": ["transcendence", "cosmic"]},
+        {"primordial": "primordial:destroyer", "weight": 0.6, "aspects": ["omnipotence", "detachment"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "journey:apotheosis", "fidelity": 0.8},
+        {"type": "TENSION", "target": "superhero:outsider", "note": "Isolation at both extremes"}
+      ]
+    },
+    {
+      "@id": "superhero:tech_genius",
+      "@type": "Archetype",
+      "name": "The Tech Genius",
+      "description": "Mastery through knowledge and invention (Iron Man, Mr. Fantastic)",
+      "keywords": ["invention", "intellect", "technology", "ego", "innovation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.32,
+        "active-receptive": 0.22,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["invention", "intellect"]},
+        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["technology", "innovation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "brand:magician", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_5", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "superhero:mentor_hero", "note": "Both value knowledge"}
+      ]
+    },
+    {
+      "@id": "superhero:warrior_woman",
+      "@type": "Archetype",
+      "name": "The Warrior Woman",
+      "description": "Feminine strength and combat (Wonder Woman, Storm)",
+      "keywords": ["strength", "grace", "combat", "compassion", "leadership"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.28,
+        "active-receptive": 0.22,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["strength", "combat"]},
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["grace", "compassion"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "jungian:anima", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "superhero:team_leader", "note": "Often leads teams"},
+        {"type": "TENSION", "target": "superhero:antihero", "note": "Compassion vs vengeance"}
+      ]
+    },
+    {
+      "@id": "superhero:speedster",
+      "@type": "Archetype",
+      "name": "The Speedster",
+      "description": "Time-defying movement (Flash, Quicksilver)",
+      "keywords": ["speed", "time", "urgency", "impulsivity", "rescue"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.78,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.7, "aspects": ["speed", "impulsivity"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["time", "threshold-crossing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.8},
+        {"type": "COMPLEMENT", "target": "superhero:trickster_hero", "note": "Both quick-witted"}
+      ]
+    },
+    {
+      "@id": "superhero:team_leader",
+      "@type": "Archetype",
+      "name": "The Team Leader",
+      "description": "Unites others, strategic mind (Captain America, Cyclops)",
+      "keywords": ["leadership", "strategy", "unity", "sacrifice", "duty"],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.28,
+        "active-receptive": 0.25,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["leadership", "unity"]},
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["sacrifice", "duty"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.7},
+        {"type": "COMPLEMENT", "target": "superhero:paragon", "note": "Both inspire others"},
+        {"type": "TENSION", "target": "superhero:antihero", "note": "Duty vs personal code"}
+      ]
+    },
+    {
+      "@id": "superhero:antihero",
+      "@type": "Archetype",
+      "name": "The Antihero",
+      "description": "Morally ambiguous, ends justify means (Punisher, Wolverine)",
+      "keywords": ["vengeance", "violence", "gray-morality", "pain", "isolation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.62,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.62,
+        "active-receptive": 0.18,
+        "individual-collective": 0.22,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.8, "aspects": ["gray-morality", "isolation"]},
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["vengeance", "violence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "brand:outlaw", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "superhero:dark_knight", "note": "Both use shadow methods"},
+        {"type": "TENSION", "target": "superhero:paragon", "note": "Dark vs light heroism"}
+      ]
+    },
+    {
+      "@id": "superhero:mentor_hero",
+      "@type": "Archetype",
+      "name": "The Mentor Hero",
+      "description": "Elder who guides next generation (Professor X, Nick Fury)",
+      "keywords": ["guidance", "wisdom", "training", "legacy", "vision"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.32,
+        "active-receptive": 0.52,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "guidance"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["training", "vision"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "journey:supernatural_aid", "fidelity": 0.85},
+        {"type": "COMPLEMENT", "target": "superhero:legacy_hero", "note": "Mentor-student pair"}
+      ]
+    },
+    {
+      "@id": "superhero:legacy_hero",
+      "@type": "Archetype",
+      "name": "The Legacy Hero",
+      "description": "Inherits mantle from predecessor (Robin, Ms. Marvel)",
+      "keywords": ["inheritance", "growth", "potential", "succession", "youth"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.28,
+        "active-receptive": 0.42,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["potential", "youth"]},
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["growth", "succession"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:child", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "journey:road_of_trials", "fidelity": 0.75},
+        {"type": "COMPLEMENT", "target": "superhero:mentor_hero", "note": "Student-mentor pair"},
+        {"type": "EVOLUTION", "target": "superhero:paragon", "note": "May become ideal hero"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "lightShadowSpectrum": {
+      "light": ["superhero:paragon", "superhero:team_leader", "superhero:legacy_hero"],
+      "shadow-integrated": ["superhero:dark_knight", "superhero:antihero", "superhero:outsider"]
+    },
+    "powerSource": {
+      "physical": ["superhero:warrior_woman", "superhero:speedster"],
+      "technological": ["superhero:tech_genius", "superhero:dark_knight"],
+      "cosmic": ["superhero:cosmic_being", "superhero:paragon"],
+      "mutation": ["superhero:outsider", "superhero:trickster_hero"]
+    },
+    "narrativeFunction": {
+      "protagonists": ["superhero:paragon", "superhero:dark_knight", "superhero:trickster_hero"],
+      "leaders": ["superhero:team_leader", "superhero:mentor_hero"],
+      "wildcards": ["superhero:antihero", "superhero:outsider", "superhero:cosmic_being"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_destruction",
+  "@type": "CalibrationPoint",
+  "name": "Pure Destruction",
+  "axis": "creation-destruction",
+  "polarity": "positive",
+  "description": "Maximum ending, breaking, transformation through dissolution. The theoretical extreme where all forms return to formlessness.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 1.0,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_creation",
+  "nearestPrimordials": [
+    {"@id": "primordial:destroyer", "distance": 0.15},
+    {"@id": "primordial:crone", "distance": 0.3}
+  ],
+  "culturalExamples": ["Shiva (Mahakala)", "Sekhmet", "Kali", "Morrigan"],
+  "psychologicalManifestation": "The drive to end, clear away, make space, transform through destruction",
+  "shadowWhenExtreme": "Nihilism, annihilation without purpose, destruction for its own sake",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

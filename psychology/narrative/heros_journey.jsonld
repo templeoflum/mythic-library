@@ -1,0 +1,520 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "narrative:heros_journey",
+  "@type": "NarrativeSystem",
+  "name": "The Hero's Journey (Monomyth)",
+  "description": "Joseph Campbell's universal story structure, representing stages of transformation.",
+  "domain": "psychology",
+  "subdomain": "narrative",
+  "cardinality": 17,
+  "source": "Joseph Campbell, The Hero with a Thousand Faces",
+  "structuralNotes": "Three acts: Departure, Initiation, Return. Each stage represents a psychological transformation.",
+
+  "acts": [
+    {
+      "name": "Departure",
+      "stages": [
+        {
+          "@id": "journey:ordinary_world",
+          "@type": "NarrativeStage",
+          "name": "The Ordinary World",
+          "description": "Hero in their mundane environment before the call",
+          "keywords": ["stability", "comfort", "routine", "innocence", "limitation"],
+          "spectralCoordinates": {
+            "order-chaos": 0.18,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.35,
+            "active-receptive": 0.55,
+            "individual-collective": 0.58,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.12,
+            "voluntary-fated": 0.55
+          },
+          "instantiates": [
+            {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["stability", "routine"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:call_to_adventure", "note": "Disruption of stability"},
+            {"type": "TENSION", "target": "journey:master_two_worlds", "note": "Beginning vs completion"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:four_of_pentacles", "fidelity": 0.65}
+          ]
+        },
+        {
+          "@id": "journey:call_to_adventure",
+          "@type": "NarrativeStage",
+          "name": "Call to Adventure",
+          "description": "The summons to transformation",
+          "keywords": ["invitation", "disruption", "destiny", "opportunity", "threshold"],
+          "spectralCoordinates": {
+            "order-chaos": 0.58,
+            "creation-destruction": 0.38,
+            "light-shadow": 0.42,
+            "active-receptive": 0.35,
+            "individual-collective": 0.45,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.65,
+            "voluntary-fated": 0.72
+          },
+          "instantiates": [
+            {"primordial": "primordial:psychopomp", "weight": 0.75, "aspects": ["threshold", "invitation"]},
+            {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["disruption"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:refusal_of_call", "note": "Call prompts fear"},
+            {"type": "CULTURAL_ECHO", "target": "vogler:herald", "fidelity": 0.9},
+            {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.7}
+          ]
+        },
+        {
+          "@id": "journey:refusal_of_call",
+          "@type": "NarrativeStage",
+          "name": "Refusal of the Call",
+          "description": "Fear and hesitation before the journey",
+          "keywords": ["fear", "doubt", "hesitation", "resistance", "denial"],
+          "spectralCoordinates": {
+            "order-chaos": 0.35,
+            "creation-destruction": 0.52,
+            "light-shadow": 0.68,
+            "active-receptive": 0.65,
+            "individual-collective": 0.38,
+            "ascent-descent": 0.55,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["fear", "denial", "resistance"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:supernatural_aid", "note": "Aid overcomes refusal"},
+            {"type": "TENSION", "target": "journey:call_to_adventure", "note": "Resistance to destiny"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:four_of_cups", "fidelity": 0.75}
+          ]
+        },
+        {
+          "@id": "journey:supernatural_aid",
+          "@type": "NarrativeStage",
+          "name": "Supernatural Aid",
+          "description": "Meeting the mentor/helper",
+          "keywords": ["mentor", "gift", "wisdom", "protection", "guidance"],
+          "spectralCoordinates": {
+            "order-chaos": 0.32,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.28,
+            "active-receptive": 0.52,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.38,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.58
+          },
+          "instantiates": [
+            {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "guidance"]},
+            {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["gift", "protection"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:crossing_threshold", "note": "Aid enables crossing"},
+            {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.95},
+            {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.85}
+          ]
+        },
+        {
+          "@id": "journey:crossing_threshold",
+          "@type": "NarrativeStage",
+          "name": "Crossing the First Threshold",
+          "description": "Entering the unknown world",
+          "keywords": ["commitment", "boundary", "departure", "adventure", "unknown"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.48,
+            "active-receptive": 0.28,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.72,
+            "voluntary-fated": 0.38
+          },
+          "instantiates": [
+            {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["boundary", "threshold-crossing"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:belly_of_whale", "note": "Entry leads to transformation"},
+            {"type": "CULTURAL_ECHO", "target": "vogler:threshold_guardian", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75}
+          ]
+        },
+        {
+          "@id": "journey:belly_of_whale",
+          "@type": "NarrativeStage",
+          "name": "Belly of the Whale",
+          "description": "Symbolic death and rebirth, separation from known world",
+          "keywords": ["death", "rebirth", "containment", "darkness", "transformation"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.68,
+            "light-shadow": 0.78,
+            "active-receptive": 0.72,
+            "individual-collective": 0.42,
+            "ascent-descent": 0.75,
+            "stasis-transformation": 0.82,
+            "voluntary-fated": 0.72
+          },
+          "instantiates": [
+            {"primordial": "primordial:destroyer", "weight": 0.7, "aspects": ["death", "transformation"]},
+            {"primordial": "primordial:great_mother", "weight": 0.65, "aspects": ["containment", "rebirth"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:road_of_trials", "note": "Rebirth begins initiation"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.8},
+            {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.75}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Initiation",
+      "stages": [
+        {
+          "@id": "journey:road_of_trials",
+          "@type": "NarrativeStage",
+          "name": "Road of Trials",
+          "description": "Tests, allies, enemies encountered",
+          "keywords": ["challenge", "test", "growth", "combat", "allies"],
+          "spectralCoordinates": {
+            "order-chaos": 0.52,
+            "creation-destruction": 0.48,
+            "light-shadow": 0.42,
+            "active-receptive": 0.18,
+            "individual-collective": 0.35,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.68,
+            "voluntary-fated": 0.35
+          },
+          "instantiates": [
+            {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["challenge", "combat"]},
+            {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["test", "growth"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:meeting_goddess", "note": "Trials lead to grace"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_wands", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.75}
+          ]
+        },
+        {
+          "@id": "journey:meeting_goddess",
+          "@type": "NarrativeStage",
+          "name": "Meeting with the Goddess",
+          "description": "Experience of unconditional love",
+          "keywords": ["love", "grace", "anima", "union", "blessing"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.22,
+            "light-shadow": 0.32,
+            "active-receptive": 0.68,
+            "individual-collective": 0.55,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.48,
+            "voluntary-fated": 0.52
+          },
+          "instantiates": [
+            {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["love", "blessing"]},
+            {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["union", "grace"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:woman_temptress", "note": "Love faces temptation"},
+            {"type": "TENSION", "target": "journey:atonement_father", "note": "Feminine vs masculine power"},
+            {"type": "CULTURAL_ECHO", "target": "jungian:anima", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.8}
+          ]
+        },
+        {
+          "@id": "journey:woman_temptress",
+          "@type": "NarrativeStage",
+          "name": "Woman as Temptress",
+          "description": "Temptation to abandon the quest",
+          "keywords": ["temptation", "distraction", "desire", "illusion", "attachment"],
+          "spectralCoordinates": {
+            "order-chaos": 0.55,
+            "creation-destruction": 0.48,
+            "light-shadow": 0.62,
+            "active-receptive": 0.52,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.58,
+            "stasis-transformation": 0.38,
+            "voluntary-fated": 0.32
+          },
+          "instantiates": [
+            {"primordial": "primordial:shadow", "weight": 0.7, "aspects": ["temptation", "illusion"]},
+            {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["desire", "attachment"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:atonement_father", "note": "Overcoming leads to atonement"},
+            {"type": "TENSION", "target": "journey:meeting_goddess", "note": "True love vs temptation"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_cups", "fidelity": 0.7}
+          ]
+        },
+        {
+          "@id": "journey:atonement_father",
+          "@type": "NarrativeStage",
+          "name": "Atonement with the Father",
+          "description": "Confronting the ultimate power",
+          "keywords": ["father", "authority", "confrontation", "reconciliation", "initiation"],
+          "spectralCoordinates": {
+            "order-chaos": 0.28,
+            "creation-destruction": 0.52,
+            "light-shadow": 0.45,
+            "active-receptive": 0.32,
+            "individual-collective": 0.52,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.65,
+            "voluntary-fated": 0.58
+          },
+          "instantiates": [
+            {"primordial": "primordial:great_father", "weight": 0.85, "aspects": ["authority", "initiation"]},
+            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["power", "reconciliation"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:apotheosis", "note": "Reconciliation enables transcendence"},
+            {"type": "COMPLEMENT", "target": "journey:meeting_goddess", "note": "Animus-anima balance"},
+            {"type": "CULTURAL_ECHO", "target": "jungian:animus", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.8}
+          ]
+        },
+        {
+          "@id": "journey:apotheosis",
+          "@type": "NarrativeStage",
+          "name": "Apotheosis",
+          "description": "Death of the old self, divine knowledge attained",
+          "keywords": ["transcendence", "divinity", "enlightenment", "death", "rebirth"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.55,
+            "light-shadow": 0.35,
+            "active-receptive": 0.52,
+            "individual-collective": 0.58,
+            "ascent-descent": 0.22,
+            "stasis-transformation": 0.78,
+            "voluntary-fated": 0.55
+          },
+          "instantiates": [
+            {"primordial": "primordial:self", "weight": 0.85, "aspects": ["transcendence", "wholeness"]},
+            {"primordial": "primordial:destroyer", "weight": 0.6, "aspects": ["death", "transformation"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:ultimate_boon", "note": "Enlightenment yields boon"},
+            {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.8},
+            {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.7}
+          ]
+        },
+        {
+          "@id": "journey:ultimate_boon",
+          "@type": "NarrativeStage",
+          "name": "The Ultimate Boon",
+          "description": "Achievement of the goal, the elixir obtained",
+          "keywords": ["achievement", "treasure", "elixir", "wisdom", "power"],
+          "spectralCoordinates": {
+            "order-chaos": 0.42,
+            "creation-destruction": 0.28,
+            "light-shadow": 0.28,
+            "active-receptive": 0.42,
+            "individual-collective": 0.48,
+            "ascent-descent": 0.32,
+            "stasis-transformation": 0.55,
+            "voluntary-fated": 0.42
+          },
+          "instantiates": [
+            {"primordial": "primordial:magician", "weight": 0.8, "aspects": ["power", "treasure"]},
+            {"primordial": "primordial:self", "weight": 0.7, "aspects": ["achievement", "wisdom"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:refusal_return", "note": "Boon creates new dilemma"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:ace_of_cups", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.65}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Return",
+      "stages": [
+        {
+          "@id": "journey:refusal_return",
+          "@type": "NarrativeStage",
+          "name": "Refusal of the Return",
+          "description": "Reluctance to return to ordinary world",
+          "keywords": ["reluctance", "attachment", "isolation", "transcendence", "withdrawal"],
+          "spectralCoordinates": {
+            "order-chaos": 0.45,
+            "creation-destruction": 0.45,
+            "light-shadow": 0.52,
+            "active-receptive": 0.58,
+            "individual-collective": 0.22,
+            "ascent-descent": 0.35,
+            "stasis-transformation": 0.28,
+            "voluntary-fated": 0.45
+          },
+          "instantiates": [
+            {"primordial": "primordial:outcast", "weight": 0.8, "aspects": ["isolation", "withdrawal"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:magic_flight", "note": "Return becomes necessary"},
+            {"type": "MIRRORS", "target": "journey:refusal_of_call", "note": "Symmetrical refusal"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.7}
+          ]
+        },
+        {
+          "@id": "journey:magic_flight",
+          "@type": "NarrativeStage",
+          "name": "The Magic Flight",
+          "description": "Escape with the boon, pursued by forces",
+          "keywords": ["escape", "pursuit", "adventure", "danger", "speed"],
+          "spectralCoordinates": {
+            "order-chaos": 0.68,
+            "creation-destruction": 0.48,
+            "light-shadow": 0.42,
+            "active-receptive": 0.18,
+            "individual-collective": 0.32,
+            "ascent-descent": 0.45,
+            "stasis-transformation": 0.72,
+            "voluntary-fated": 0.28
+          },
+          "instantiates": [
+            {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["escape", "cunning"]},
+            {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["adventure", "danger"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:rescue_without", "note": "Flight may need assistance"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:eight_of_wands", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:knight_of_swords", "fidelity": 0.65}
+          ]
+        },
+        {
+          "@id": "journey:rescue_without",
+          "@type": "NarrativeStage",
+          "name": "Rescue from Without",
+          "description": "Assistance from guides to return",
+          "keywords": ["rescue", "assistance", "grace", "intervention", "help"],
+          "spectralCoordinates": {
+            "order-chaos": 0.38,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.38,
+            "active-receptive": 0.65,
+            "individual-collective": 0.62,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.52,
+            "voluntary-fated": 0.68
+          },
+          "instantiates": [
+            {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["rescue", "grace"]},
+            {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["assistance", "guidance"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:crossing_return", "note": "Rescue enables return"},
+            {"type": "MIRRORS", "target": "journey:supernatural_aid", "note": "Aid at both thresholds"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:six_of_swords", "fidelity": 0.7}
+          ]
+        },
+        {
+          "@id": "journey:crossing_return",
+          "@type": "NarrativeStage",
+          "name": "Crossing the Return Threshold",
+          "description": "Integrating two worlds, retaining wisdom",
+          "keywords": ["integration", "return", "threshold", "wisdom", "bridge"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.42,
+            "active-receptive": 0.45,
+            "individual-collective": 0.52,
+            "ascent-descent": 0.52,
+            "stasis-transformation": 0.62,
+            "voluntary-fated": 0.48
+          },
+          "instantiates": [
+            {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["threshold", "bridge"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:master_two_worlds", "note": "Crossing enables mastery"},
+            {"type": "MIRRORS", "target": "journey:crossing_threshold", "note": "Symmetrical threshold"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.75}
+          ]
+        },
+        {
+          "@id": "journey:master_two_worlds",
+          "@type": "NarrativeStage",
+          "name": "Master of Two Worlds",
+          "description": "Balance between inner and outer, material and spiritual",
+          "keywords": ["mastery", "balance", "integration", "freedom", "wisdom"],
+          "spectralCoordinates": {
+            "order-chaos": 0.45,
+            "creation-destruction": 0.42,
+            "light-shadow": 0.38,
+            "active-receptive": 0.48,
+            "individual-collective": 0.52,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.48,
+            "voluntary-fated": 0.45
+          },
+          "instantiates": [
+            {"primordial": "primordial:self", "weight": 0.9, "aspects": ["mastery", "integration"]},
+            {"primordial": "primordial:sovereign", "weight": 0.65, "aspects": ["balance", "wisdom"]}
+          ],
+          "relationships": [
+            {"type": "EVOLUTION", "target": "journey:freedom_to_live", "note": "Mastery yields freedom"},
+            {"type": "TENSION", "target": "journey:ordinary_world", "note": "Transformed vs original state"},
+            {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.9},
+            {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85}
+          ]
+        },
+        {
+          "@id": "journey:freedom_to_live",
+          "@type": "NarrativeStage",
+          "name": "Freedom to Live",
+          "description": "Living in the present, without fear",
+          "keywords": ["freedom", "presence", "peace", "wholeness", "completion"],
+          "spectralCoordinates": {
+            "order-chaos": 0.48,
+            "creation-destruction": 0.35,
+            "light-shadow": 0.28,
+            "active-receptive": 0.52,
+            "individual-collective": 0.52,
+            "ascent-descent": 0.48,
+            "stasis-transformation": 0.42,
+            "voluntary-fated": 0.38
+          },
+          "instantiates": [
+            {"primordial": "primordial:self", "weight": 0.85, "aspects": ["wholeness", "peace"]},
+            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["freedom", "presence"]}
+          ],
+          "relationships": [
+            {"type": "COMPLEMENT", "target": "journey:ordinary_world", "note": "Return completes departure"},
+            {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8},
+            {"type": "CULTURAL_ECHO", "target": "jungian:child", "fidelity": 0.75}
+          ]
+        }
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "threeActs": {
+      "departure": ["journey:ordinary_world", "journey:call_to_adventure", "journey:refusal_of_call", "journey:supernatural_aid", "journey:crossing_threshold", "journey:belly_of_whale"],
+      "initiation": ["journey:road_of_trials", "journey:meeting_goddess", "journey:woman_temptress", "journey:atonement_father", "journey:apotheosis", "journey:ultimate_boon"],
+      "return": ["journey:refusal_return", "journey:magic_flight", "journey:rescue_without", "journey:crossing_return", "journey:master_two_worlds", "journey:freedom_to_live"]
+    },
+    "mirroredPairs": [
+      {"pair": ["journey:refusal_of_call", "journey:refusal_return"], "note": "Symmetrical resistance"},
+      {"pair": ["journey:crossing_threshold", "journey:crossing_return"], "note": "Entry and exit"},
+      {"pair": ["journey:supernatural_aid", "journey:rescue_without"], "note": "Help at both boundaries"}
+    ],
+    "transformationArc": ["journey:ordinary_world", "journey:belly_of_whale", "journey:apotheosis", "journey:freedom_to_live"]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

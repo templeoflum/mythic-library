@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACP Explorer - Archetypal Context Protocol</title>
+    <style>
+        :root {
+            --bg-dark: #1a1a2e;
+            --bg-card: #16213e;
+            --bg-hover: #1f3460;
+            --text-primary: #eaeaea;
+            --text-secondary: #a0a0a0;
+            --accent: #e94560;
+            --accent-secondary: #0f3460;
+            --border: #2a2a4a;
+            --axis-positive: #4ade80;
+            --axis-negative: #f87171;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--accent), #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover {
+            background: var(--bg-hover);
+        }
+
+        .filter-btn.active {
+            border-color: var(--accent);
+            background: var(--accent);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+        }
+
+        @media (max-width: 1200px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .archetypes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .archetype-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .archetype-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+        }
+
+        .archetype-card.selected {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card-system {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            background: var(--accent-secondary);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+
+        .card-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .keyword {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+
+        .detail-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            position: sticky;
+            top: 20px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+        }
+
+        .detail-title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .detail-system {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .detail-section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .coordinates-grid {
+            display: grid;
+            gap: 10px;
+        }
+
+        .coord-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .coord-label {
+            width: 140px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .coord-bar-container {
+            flex: 1;
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .coord-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+
+        .coord-value {
+            width: 45px;
+            text-align: right;
+            font-size: 0.85rem;
+            font-family: monospace;
+        }
+
+        .instantiates-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .instantiate-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        .instantiate-name {
+            font-weight: 500;
+        }
+
+        .instantiate-weight {
+            font-family: monospace;
+            color: var(--accent);
+        }
+
+        .relationships-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .relationship-item {
+            padding: 10px 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .relationship-item:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .rel-type {
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .rel-target {
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .rel-note {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .axis-legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+        }
+
+        .axis-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+        }
+
+        .axis-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .vis-container {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+
+        .radar-chart {
+            width: 100%;
+            height: 300px;
+        }
+
+        #no-selection {
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ACP Explorer</h1>
+            <p class="subtitle">Archetypal Context Protocol - Interactive Navigator</p>
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value" id="total-count">-</div>
+                    <div class="stat-label">Total Archetypes</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="system-count">-</div>
+                    <div class="stat-label">Systems</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="relationship-count">-</div>
+                    <div class="stat-label">Relationships</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search archetypes by name or keyword...">
+            </div>
+            <div class="filter-group" id="system-filters">
+                <button class="filter-btn active" data-system="all">All</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="archetypes-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading archetypes...</p>
+                </div>
+            </div>
+
+            <div class="detail-panel" id="detail-panel">
+                <div id="no-selection">
+                    <p>Select an archetype to view details</p>
+                </div>
+                <div id="detail-content" style="display: none;">
+                    <h2 class="detail-title" id="detail-name"></h2>
+                    <p class="detail-system" id="detail-id"></p>
+
+                    <div class="detail-section">
+                        <h3 class="section-title">Spectral Coordinates</h3>
+                        <div class="coordinates-grid" id="coordinates-display"></div>
+                    </div>
+
+                    <div class="detail-section" id="instantiates-section">
+                        <h3 class="section-title">Instantiates Primordials</h3>
+                        <div class="instantiates-list" id="instantiates-display"></div>
+                    </div>
+
+                    <div class="detail-section" id="relationships-section">
+                        <h3 class="section-title">Relationships</h3>
+                        <div class="relationships-list" id="relationships-display"></div>
+                    </div>
+
+                    <div class="detail-section" id="keywords-section">
+                        <h3 class="section-title">Keywords</h3>
+                        <div class="card-keywords" id="keywords-display"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ACP Explorer Application
+        const AXES = [
+            { key: 'order-chaos', negative: 'Order', positive: 'Chaos', color: '#f87171' },
+            { key: 'creation-destruction', negative: 'Creation', positive: 'Destruction', color: '#fbbf24' },
+            { key: 'light-shadow', negative: 'Light', positive: 'Shadow', color: '#a78bfa' },
+            { key: 'active-receptive', negative: 'Active', positive: 'Receptive', color: '#34d399' },
+            { key: 'individual-collective', negative: 'Individual', positive: 'Collective', color: '#60a5fa' },
+            { key: 'ascent-descent', negative: 'Ascent', positive: 'Descent', color: '#f472b6' },
+            { key: 'stasis-transformation', negative: 'Stasis', positive: 'Transform', color: '#fb923c' },
+            { key: 'voluntary-fated', negative: 'Voluntary', positive: 'Fated', color: '#94a3b8' }
+        ];
+
+        const DATA_FILES = [
+            // Divination
+            'divination/tarot/major_arcana.jsonld',
+            'divination/tarot/minor_arcana.jsonld',
+            'divination/iching/trigrams.jsonld',
+            'divination/iching/hexagrams.jsonld',
+            'divination/astrology/zodiac.jsonld',
+            'divination/astrology/planets.jsonld',
+            'divination/runes/elder_futhark.jsonld',
+            'divination/kabbalah/sephiroth.jsonld',
+            'divination/chakras/energy_centers.jsonld',
+            'divination/elements/classical_western.jsonld',
+            // Psychology
+            'psychology/jungian/core_archetypes.jsonld',
+            'psychology/enneagram/types.jsonld',
+            'psychology/narrative/heros_journey.jsonld',
+            'psychology/narrative/vogler_archetypes.jsonld',
+            'psychology/developmental/spiral_dynamics.jsonld',
+            // Modern
+            'modern/cultural/brand_archetypes.jsonld',
+            'modern/digital/internet_archetypes.jsonld',
+            'modern/pop_culture/superhero.jsonld',
+            'modern/spiritual/angels.jsonld',
+            // Mythological Pantheons
+            'archetypes/greek/GR_OLYMPIANS.jsonld',
+            'archetypes/norse/NO_AESIR_VANIR.jsonld',
+            'archetypes/egyptian/EG_NETJERU.jsonld',
+            'archetypes/mesopotamian/ME_PANTHEON.jsonld',
+            'archetypes/hindu/IN_PANTHEON.jsonld',
+            'archetypes/celtic/CE_PANTHEON.jsonld',
+            'archetypes/chinese/CN_PANTHEON.jsonld',
+            'archetypes/japanese/JP_KAMI.jsonld',
+            'archetypes/african/AF_ORISHA.jsonld',
+            'archetypes/mesoamerican/MA_PANTHEON.jsonld',
+            'archetypes/polynesian/PL_PANTHEON.jsonld',
+            'archetypes/native_american/NA_PANTHEON.jsonld',
+            'archetypes/slavic/SL_PANTHEON.jsonld',
+            'archetypes/finnish/FI_PANTHEON.jsonld',
+            'archetypes/persian/PE_PANTHEON.jsonld',
+            'archetypes/incan/IC_PANTHEON.jsonld',
+            'archetypes/australian/AU_DREAMTIME.jsonld',
+            // Schema
+            'schema/primordials.jsonld'
+        ];
+
+        let allArchetypes = [];
+        let systemsSet = new Set();
+        let selectedArchetype = null;
+
+        // Utility to extract entries from various file structures
+        function extractEntries(data, filename) {
+            const entries = [];
+            const systemName = filename.split('/').pop().replace('.jsonld', '');
+
+            // Handle entries array (standard format)
+            if (data.entries && Array.isArray(data.entries)) {
+                for (const entry of data.entries) {
+                    // Skip System/ConceptScheme metadata entries
+                    if (entry['@type'] === 'System' || entry['@type'] === 'skos:ConceptScheme') {
+                        continue;
+                    }
+                    // Include entries with spectralCoordinates (Archetypes)
+                    if (entry['@id'] && entry.spectralCoordinates) {
+                        entries.push({ ...entry, _source: systemName });
+                    }
+                    // Also include Primordials (which have spectralCoordinates)
+                    if (entry['@type'] === 'skos:Concept' && entry.spectralCoordinates) {
+                        entries.push({ ...entry, _source: 'primordials' });
+                    }
+                }
+            }
+
+            // Handle suits with cards (Tarot minor arcana)
+            if (data.suits && Array.isArray(data.suits)) {
+                for (const suit of data.suits) {
+                    if (suit.cards && Array.isArray(suit.cards)) {
+                        for (const card of suit.cards) {
+                            if (card['@id'] && card.spectralCoordinates) {
+                                entries.push({ ...card, _source: systemName, _suit: suit.name });
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Handle acts with stages (Hero's Journey)
+            if (data.acts && Array.isArray(data.acts)) {
+                for (const act of data.acts) {
+                    if (act.stages && Array.isArray(act.stages)) {
+                        for (const stage of act.stages) {
+                            if (stage['@id'] && stage.spectralCoordinates) {
+                                entries.push({ ...stage, _source: systemName, _act: act.name });
+                            }
+                        }
+                    }
+                }
+            }
+
+            return entries;
+        }
+
+        // Get system prefix from @id
+        function getSystemPrefix(id) {
+            return id.split(':')[0];
+        }
+
+        // Load all data files
+        async function loadData() {
+            const container = document.getElementById('archetypes-container');
+
+            for (const file of DATA_FILES) {
+                try {
+                    const response = await fetch('../' + file);
+                    if (response.ok) {
+                        const data = await response.json();
+                        const entries = extractEntries(data, file);
+                        allArchetypes.push(...entries);
+
+                        for (const entry of entries) {
+                            systemsSet.add(getSystemPrefix(entry['@id']));
+                        }
+                    }
+                } catch (e) {
+                    console.warn(`Failed to load ${file}:`, e);
+                }
+            }
+
+            // Update stats
+            document.getElementById('total-count').textContent = allArchetypes.length;
+            document.getElementById('system-count').textContent = systemsSet.size;
+
+            let relCount = 0;
+            for (const a of allArchetypes) {
+                if (a.relationships) relCount += a.relationships.length;
+            }
+            document.getElementById('relationship-count').textContent = relCount;
+
+            // Create system filter buttons
+            const filterGroup = document.getElementById('system-filters');
+            const sortedSystems = Array.from(systemsSet).sort();
+            for (const system of sortedSystems) {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.system = system;
+                btn.textContent = system;
+                btn.addEventListener('click', () => filterBySystem(system));
+                filterGroup.appendChild(btn);
+            }
+
+            renderArchetypes(allArchetypes);
+        }
+
+        // Filter by system
+        function filterBySystem(system) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.system === system || (system === 'all' && btn.dataset.system === 'all'));
+            });
+
+            const filtered = system === 'all'
+                ? allArchetypes
+                : allArchetypes.filter(a => getSystemPrefix(a['@id']) === system);
+
+            renderArchetypes(filtered);
+        }
+
+        // Search
+        function searchArchetypes(query) {
+            if (!query.trim()) {
+                renderArchetypes(allArchetypes);
+                return;
+            }
+
+            const q = query.toLowerCase();
+            const filtered = allArchetypes.filter(a => {
+                const name = (a.name || '').toLowerCase();
+                const keywords = (a.keywords || []).join(' ').toLowerCase();
+                const id = (a['@id'] || '').toLowerCase();
+                return name.includes(q) || keywords.includes(q) || id.includes(q);
+            });
+
+            renderArchetypes(filtered);
+        }
+
+        // Render archetype cards
+        function renderArchetypes(archetypes) {
+            const container = document.getElementById('archetypes-container');
+
+            if (archetypes.length === 0) {
+                container.innerHTML = '<div class="empty-state"><p>No archetypes found</p></div>';
+                return;
+            }
+
+            const html = `
+                <div class="archetypes-grid">
+                    ${archetypes.map(a => `
+                        <div class="archetype-card ${selectedArchetype && selectedArchetype['@id'] === a['@id'] ? 'selected' : ''}"
+                             data-id="${a['@id']}"
+                             onclick="selectArchetype('${a['@id']}')">
+                            <div class="card-header">
+                                <span class="card-title">${a.name || a['@id']}</span>
+                                <span class="card-system">${getSystemPrefix(a['@id'])}</span>
+                            </div>
+                            ${a.keywords ? `
+                                <div class="card-keywords">
+                                    ${a.keywords.slice(0, 4).map(k => `<span class="keyword">${k}</span>`).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        // Select an archetype and show details
+        function selectArchetype(id) {
+            selectedArchetype = allArchetypes.find(a => a['@id'] === id);
+
+            if (!selectedArchetype) return;
+
+            // Update card selection state
+            document.querySelectorAll('.archetype-card').forEach(card => {
+                card.classList.toggle('selected', card.dataset.id === id);
+            });
+
+            // Show detail panel
+            document.getElementById('no-selection').style.display = 'none';
+            document.getElementById('detail-content').style.display = 'block';
+
+            // Populate details
+            document.getElementById('detail-name').textContent = selectedArchetype.name || selectedArchetype['@id'];
+            document.getElementById('detail-id').textContent = selectedArchetype['@id'];
+
+            // Coordinates
+            const coordsContainer = document.getElementById('coordinates-display');
+            if (selectedArchetype.spectralCoordinates) {
+                coordsContainer.innerHTML = AXES.map(axis => {
+                    const value = selectedArchetype.spectralCoordinates[axis.key];
+                    const percent = (value * 100).toFixed(0);
+                    return `
+                        <div class="coord-row">
+                            <span class="coord-label">${axis.negative}/${axis.positive}</span>
+                            <div class="coord-bar-container">
+                                <div class="coord-bar" style="width: ${percent}%; background: ${axis.color}"></div>
+                            </div>
+                            <span class="coord-value">${value.toFixed(2)}</span>
+                        </div>
+                    `;
+                }).join('');
+            } else {
+                coordsContainer.innerHTML = '<p style="color: var(--text-secondary)">No coordinates</p>';
+            }
+
+            // Instantiates
+            const instSection = document.getElementById('instantiates-section');
+            const instContainer = document.getElementById('instantiates-display');
+            if (selectedArchetype.instantiates && selectedArchetype.instantiates.length > 0) {
+                instSection.style.display = 'block';
+                instContainer.innerHTML = selectedArchetype.instantiates.map(inst => `
+                    <div class="instantiate-item">
+                        <span class="instantiate-name">${inst.primordial.replace('primordial:', '')}</span>
+                        <span class="instantiate-weight">${(inst.weight * 100).toFixed(0)}%</span>
+                    </div>
+                `).join('');
+            } else {
+                instSection.style.display = 'none';
+            }
+
+            // Relationships
+            const relSection = document.getElementById('relationships-section');
+            const relContainer = document.getElementById('relationships-display');
+            if (selectedArchetype.relationships && selectedArchetype.relationships.length > 0) {
+                relSection.style.display = 'block';
+                relContainer.innerHTML = selectedArchetype.relationships.map(rel => `
+                    <div class="relationship-item" onclick="navigateToRelationship('${rel.target}')">
+                        <div class="rel-type">${rel.type}</div>
+                        <div class="rel-target">${rel.target}</div>
+                        ${rel.note ? `<div class="rel-note">${rel.note}</div>` : ''}
+                        ${rel.fidelity ? `<div class="rel-note">Fidelity: ${(rel.fidelity * 100).toFixed(0)}%</div>` : ''}
+                    </div>
+                `).join('');
+            } else {
+                relSection.style.display = 'none';
+            }
+
+            // Keywords
+            const kwSection = document.getElementById('keywords-section');
+            const kwContainer = document.getElementById('keywords-display');
+            if (selectedArchetype.keywords && selectedArchetype.keywords.length > 0) {
+                kwSection.style.display = 'block';
+                kwContainer.innerHTML = selectedArchetype.keywords.map(k =>
+                    `<span class="keyword">${k}</span>`
+                ).join('');
+            } else {
+                kwSection.style.display = 'none';
+            }
+        }
+
+        // Navigate to a related archetype
+        function navigateToRelationship(targetId) {
+            const target = allArchetypes.find(a => a['@id'] === targetId);
+            if (target) {
+                selectArchetype(targetId);
+                // Scroll to card if visible
+                const card = document.querySelector(`[data-id="${targetId}"]`);
+                if (card) {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+
+            // Search input
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', (e) => {
+                searchArchetypes(e.target.value);
+            });
+
+            // All filter
+            document.querySelector('[data-system="all"]').addEventListener('click', () => {
+                filterBySystem('all');
+            });
+        });
+    </script>
+</body>
+</html>

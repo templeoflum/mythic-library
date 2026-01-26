@@ -1,0 +1,1631 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "iching:hexagrams",
+  "@type": "SymbolicSystem",
+  "name": "I Ching Hexagrams",
+  "description": "The 64 hexagrams of the I Ching, representing archetypal situations and transformations.",
+  "domain": "divination",
+  "subdomain": "iching",
+  "cardinality": 64,
+  "structuralNotes": "Each hexagram is two trigrams stacked (lower/upper). Represents a situation, not a static archetype. Changing lines indicate transformation to another hexagram.",
+
+  "entries": [
+    {
+      "@id": "iching:hex_01",
+      "@type": "Archetype",
+      "name": "1. Qian (The Creative)",
+      "upper": "iching:qian",
+      "lower": "iching:qian",
+      "keywords": ["creative power", "heaven", "strong action", "initiative", "leadership"],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.18,
+        "active-receptive": 0.08,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.08,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.9, "aspects": ["creative-force", "initiation"]},
+        {"primordial": "primordial:great_father", "weight": 0.8, "aspects": ["heaven", "leadership"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_02", "axis": "creative-receptive"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_02",
+      "@type": "Archetype",
+      "name": "2. Kun (The Receptive)",
+      "upper": "iching:kun",
+      "lower": "iching:kun",
+      "keywords": ["receptive", "earth", "yielding", "nurturing", "devotion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.42,
+        "active-receptive": 0.88,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.85,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.9, "aspects": ["earth", "nurturing"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["devoted", "supporting"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_01", "axis": "creative-receptive"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "iching:hex_03",
+      "@type": "Archetype",
+      "name": "3. Zhun (Difficulty at Beginning)",
+      "upper": "iching:kan",
+      "lower": "iching:zhen",
+      "keywords": ["difficult beginning", "sprouting", "chaos", "birth pangs", "perseverance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.55,
+        "active-receptive": 0.38,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["perseverance", "struggle"]},
+        {"primordial": "primordial:divine_child", "weight": 0.6, "aspects": ["birth", "beginning"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "iching:hex_04", "note": "Difficulty leads to learning"}
+      ]
+    },
+    {
+      "@id": "iching:hex_04",
+      "@type": "Archetype",
+      "name": "4. Meng (Youthful Folly)",
+      "upper": "iching:gen",
+      "lower": "iching:kan",
+      "keywords": ["inexperience", "learning", "naivety", "education", "immaturity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.58,
+        "active-receptive": 0.62,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["inexperience", "learning"]},
+        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["folly", "mistakes"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:hex_05",
+      "@type": "Archetype",
+      "name": "5. Xu (Waiting)",
+      "upper": "iching:kan",
+      "lower": "iching:qian",
+      "keywords": ["waiting", "patience", "nourishment", "timing", "trust"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.48,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["patience", "endurance"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["timing", "trust"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "iching:hex_06", "note": "Waiting vs conflict"}
+      ]
+    },
+    {
+      "@id": "iching:hex_06",
+      "@type": "Archetype",
+      "name": "6. Song (Conflict)",
+      "upper": "iching:qian",
+      "lower": "iching:kan",
+      "keywords": ["conflict", "dispute", "litigation", "opposition", "caution"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.48,
+        "active-receptive": 0.28,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["conflict", "opposition"]},
+        {"primordial": "primordial:rebel", "weight": 0.5, "aspects": ["dispute", "resistance"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "iching:hex_05", "note": "Conflict vs waiting"}
+      ]
+    },
+    {
+      "@id": "iching:hex_07",
+      "@type": "Archetype",
+      "name": "7. Shi (The Army)",
+      "upper": "iching:kun",
+      "lower": "iching:kan",
+      "keywords": ["discipline", "army", "organization", "leadership", "collective action"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.55,
+        "active-receptive": 0.45,
+        "individual-collective": 0.78,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["discipline", "army"]},
+        {"primordial": "primordial:sovereign", "weight": 0.6, "aspects": ["leadership", "organization"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_08",
+      "@type": "Archetype",
+      "name": "8. Bi (Holding Together)",
+      "upper": "iching:kan",
+      "lower": "iching:kun",
+      "keywords": ["union", "alliance", "support", "belonging", "cooperation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.52,
+        "active-receptive": 0.65,
+        "individual-collective": 0.82,
+        "ascent-descent": 0.68,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["belonging", "union"]},
+        {"primordial": "primordial:great_mother", "weight": 0.6, "aspects": ["support", "nurturing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "iching:hex_09",
+      "@type": "Archetype",
+      "name": "9. Xiao Chu (Small Taming)",
+      "upper": "iching:xun",
+      "lower": "iching:qian",
+      "keywords": ["restraint", "gentle influence", "patience", "small accumulation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.32,
+        "active-receptive": 0.45,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["gentle influence"]},
+        {"primordial": "primordial:preserver", "weight": 0.55, "aspects": ["restraint", "accumulation"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_26", "note": "Small vs great taming"}
+      ]
+    },
+    {
+      "@id": "iching:hex_10",
+      "@type": "Archetype",
+      "name": "10. Lu (Treading)",
+      "upper": "iching:qian",
+      "lower": "iching:dui",
+      "keywords": ["conduct", "careful progress", "propriety", "caution", "stepping carefully"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.28,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.6, "aspects": ["courage", "conduct"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.55, "aspects": ["propriety", "caution"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_11",
+      "@type": "Archetype",
+      "name": "11. Tai (Peace)",
+      "upper": "iching:kun",
+      "lower": "iching:qian",
+      "keywords": ["peace", "harmony", "prosperity", "balance", "flourishing"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.32,
+        "active-receptive": 0.50,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.75, "aspects": ["harmony", "balance"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["peace", "prosperity"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_12", "axis": "peace-stagnation"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_12",
+      "@type": "Archetype",
+      "name": "12. Pi (Standstill)",
+      "upper": "iching:qian",
+      "lower": "iching:kun",
+      "keywords": ["stagnation", "standstill", "decline", "obstruction", "withdrawal"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.58,
+        "active-receptive": 0.55,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.18,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.6, "aspects": ["stagnation", "obstruction"]},
+        {"primordial": "primordial:crone", "weight": 0.5, "aspects": ["decline", "withdrawal"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_11", "axis": "peace-stagnation"}
+      ]
+    },
+    {
+      "@id": "iching:hex_13",
+      "@type": "Archetype",
+      "name": "13. Tong Ren (Fellowship)",
+      "upper": "iching:qian",
+      "lower": "iching:li",
+      "keywords": ["fellowship", "community", "harmony with others", "shared purpose"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.22,
+        "active-receptive": 0.32,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["community", "fellowship"]},
+        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["harmony", "connection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:three_of_cups", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_14",
+      "@type": "Archetype",
+      "name": "14. Da You (Great Possession)",
+      "upper": "iching:li",
+      "lower": "iching:qian",
+      "keywords": ["abundance", "great possession", "supreme success", "wealth"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.18,
+        "active-receptive": 0.28,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["wealth", "success"]},
+        {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["abundance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:nine_of_pentacles", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_15",
+      "@type": "Archetype",
+      "name": "15. Qian (Modesty)",
+      "upper": "iching:kun",
+      "lower": "iching:gen",
+      "keywords": ["modesty", "humility", "temperance", "balance", "quiet accomplishment"],
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.42,
+        "active-receptive": 0.72,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.72,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.75, "aspects": ["humility", "modesty"]},
+        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["temperance", "balance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:hex_16",
+      "@type": "Archetype",
+      "name": "16. Yu (Enthusiasm)",
+      "upper": "iching:zhen",
+      "lower": "iching:kun",
+      "keywords": ["enthusiasm", "joy", "movement", "inspiration", "devotion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.38,
+        "active-receptive": 0.42,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.75, "aspects": ["enthusiasm", "joy"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["inspiration", "movement"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_17",
+      "@type": "Archetype",
+      "name": "17. Sui (Following)",
+      "upper": "iching:dui",
+      "lower": "iching:zhen",
+      "keywords": ["following", "adaptability", "service", "flexibility", "responsiveness"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.35,
+        "active-receptive": 0.58,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.6, "aspects": ["adaptability", "flexibility"]},
+        {"primordial": "primordial:preserver", "weight": 0.55, "aspects": ["service"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_18",
+      "@type": "Archetype",
+      "name": "18. Gu (Decay)",
+      "upper": "iching:gen",
+      "lower": "iching:xun",
+      "keywords": ["decay", "corruption", "repair", "work on what is spoiled"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.62,
+        "light-shadow": 0.55,
+        "active-receptive": 0.52,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.6, "aspects": ["decay", "breakdown"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["repair", "restoration"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_19",
+      "@type": "Archetype",
+      "name": "19. Lin (Approach)",
+      "upper": "iching:kun",
+      "lower": "iching:dui",
+      "keywords": ["approach", "advance", "becoming great", "oversight"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.38,
+        "active-receptive": 0.65,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.62,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.65, "aspects": ["oversight", "approach"]},
+        {"primordial": "primordial:great_mother", "weight": 0.55, "aspects": ["nurturing growth"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_20", "note": "Approach vs contemplation"}
+      ]
+    },
+    {
+      "@id": "iching:hex_20",
+      "@type": "Archetype",
+      "name": "20. Guan (Contemplation)",
+      "upper": "iching:xun",
+      "lower": "iching:kun",
+      "keywords": ["contemplation", "viewing", "observation", "perspective"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.45,
+        "active-receptive": 0.68,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.75, "aspects": ["contemplation", "observation"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.5, "aspects": ["perspective"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_19", "note": "Contemplation vs approach"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:hex_21",
+      "@type": "Archetype",
+      "name": "21. Shi He (Biting Through)",
+      "upper": "iching:li",
+      "lower": "iching:zhen",
+      "keywords": ["decisive action", "justice", "cutting through", "obstacles"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.28,
+        "active-receptive": 0.22,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.38,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["decisive action", "cutting through"]},
+        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["justice"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_22",
+      "@type": "Archetype",
+      "name": "22. Bi (Grace)",
+      "upper": "iching:gen",
+      "lower": "iching:li",
+      "keywords": ["grace", "beauty", "adornment", "form", "elegance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.28,
+        "active-receptive": 0.55,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.7, "aspects": ["beauty", "grace"]},
+        {"primordial": "primordial:maiden", "weight": 0.6, "aspects": ["elegance", "form"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "iching:hex_23",
+      "@type": "Archetype",
+      "name": "23. Bo (Splitting Apart)",
+      "upper": "iching:gen",
+      "lower": "iching:kun",
+      "keywords": ["splitting apart", "deterioration", "stripping away", "letting go"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.72,
+        "light-shadow": 0.58,
+        "active-receptive": 0.72,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.72
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["splitting", "deterioration"]},
+        {"primordial": "primordial:crone", "weight": 0.6, "aspects": ["letting go"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "iching:hex_24", "note": "Splitting leads to return"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "iching:hex_24",
+      "@type": "Archetype",
+      "name": "24. Fu (Return)",
+      "upper": "iching:kun",
+      "lower": "iching:zhen",
+      "keywords": ["return", "renewal", "turning point", "recovery", "solstice"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.42,
+        "active-receptive": 0.58,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.62,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.75, "aspects": ["renewal", "return"]},
+        {"primordial": "primordial:healer", "weight": 0.6, "aspects": ["recovery"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "iching:hex_23", "note": "Return after splitting"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_25",
+      "@type": "Archetype",
+      "name": "25. Wu Wang (Innocence)",
+      "upper": "iching:qian",
+      "lower": "iching:zhen",
+      "keywords": ["innocence", "unexpected", "natural", "spontaneous"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.28,
+        "active-receptive": 0.25,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.85, "aspects": ["innocence", "natural"]},
+        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["unexpected", "spontaneous"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:hex_26",
+      "@type": "Archetype",
+      "name": "26. Da Chu (Great Taming)",
+      "upper": "iching:gen",
+      "lower": "iching:qian",
+      "keywords": ["great accumulation", "restraint", "potential", "holding firm"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.32,
+        "active-receptive": 0.48,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["accumulation", "holding"]},
+        {"primordial": "primordial:great_father", "weight": 0.6, "aspects": ["restraint"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_09", "note": "Great vs small taming"}
+      ]
+    },
+    {
+      "@id": "iching:hex_27",
+      "@type": "Archetype",
+      "name": "27. Yi (Nourishment)",
+      "upper": "iching:gen",
+      "lower": "iching:zhen",
+      "keywords": ["nourishment", "sustenance", "providing", "care"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.38,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.75, "aspects": ["nourishment", "care"]},
+        {"primordial": "primordial:healer", "weight": 0.6, "aspects": ["sustenance", "providing"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_28",
+      "@type": "Archetype",
+      "name": "28. Da Guo (Great Excess)",
+      "upper": "iching:dui",
+      "lower": "iching:xun",
+      "keywords": ["excess", "critical mass", "extraordinary times", "bending under pressure"],
+      "spectralCoordinates": {
+        "order-chaos": 0.62,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.42,
+        "active-receptive": 0.48,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["excess", "extraordinary"]},
+        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["critical mass"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_29",
+      "@type": "Archetype",
+      "name": "29. Kan (The Abysmal)",
+      "upper": "iching:kan",
+      "lower": "iching:kan",
+      "keywords": ["danger", "depth", "the abyss", "perseverance through difficulty"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.72,
+        "active-receptive": 0.58,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.68,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["depth", "danger"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["abyss", "passage"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_30", "axis": "water-fire"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:hex_30",
+      "@type": "Archetype",
+      "name": "30. Li (The Clinging)",
+      "upper": "iching:li",
+      "lower": "iching:li",
+      "keywords": ["clarity", "fire", "illumination", "awareness", "dependence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.12,
+        "active-receptive": 0.38,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.75, "aspects": ["clarity", "awareness"]},
+        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["clinging", "dependence"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_29", "axis": "fire-water"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:hex_31",
+      "@type": "Archetype",
+      "name": "31. Xian (Influence)",
+      "upper": "iching:dui",
+      "lower": "iching:gen",
+      "keywords": ["influence", "attraction", "courtship", "stimulation", "mutual response"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.8, "aspects": ["attraction", "courtship"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["influence"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_32", "note": "Attraction leads to duration"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:hex_32",
+      "@type": "Archetype",
+      "name": "32. Heng (Duration)",
+      "upper": "iching:zhen",
+      "lower": "iching:xun",
+      "keywords": ["duration", "perseverance", "constancy", "continuity", "marriage"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["duration", "constancy"]},
+        {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["marriage", "commitment"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_31", "note": "Duration follows attraction"}
+      ]
+    },
+    {
+      "@id": "iching:hex_33",
+      "@type": "Archetype",
+      "name": "33. Dun (Retreat)",
+      "upper": "iching:qian",
+      "lower": "iching:gen",
+      "keywords": ["retreat", "withdrawal", "yielding", "strategic withdrawal"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.48,
+        "active-receptive": 0.58,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["strategic withdrawal"]},
+        {"primordial": "primordial:hermit", "weight": 0.6, "aspects": ["retreat", "solitude"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "iching:hex_34", "note": "Retreat vs power"}
+      ]
+    },
+    {
+      "@id": "iching:hex_34",
+      "@type": "Archetype",
+      "name": "34. Da Zhuang (Great Power)",
+      "upper": "iching:zhen",
+      "lower": "iching:qian",
+      "keywords": ["great power", "strength", "vigor", "momentum"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.28,
+        "active-receptive": 0.12,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.28,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["power", "strength"]},
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["vigor", "momentum"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "iching:hex_33", "note": "Power vs retreat"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:hex_35",
+      "@type": "Archetype",
+      "name": "35. Jin (Progress)",
+      "upper": "iching:li",
+      "lower": "iching:kun",
+      "keywords": ["progress", "advancement", "promotion", "dawning"],
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.28,
+        "active-receptive": 0.52,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["advancement", "progress"]},
+        {"primordial": "primordial:self", "weight": 0.55, "aspects": ["dawning", "clarity"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_36", "axis": "light-darkness"}
+      ]
+    },
+    {
+      "@id": "iching:hex_36",
+      "@type": "Archetype",
+      "name": "36. Ming Yi (Darkening)",
+      "upper": "iching:kun",
+      "lower": "iching:li",
+      "keywords": ["darkening", "wounded light", "adversity", "hidden brightness"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.72,
+        "active-receptive": 0.68,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.72,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.72
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.75, "aspects": ["darkening", "hidden"]},
+        {"primordial": "primordial:outcast", "weight": 0.6, "aspects": ["wounded", "adversity"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_35", "axis": "light-darkness"}
+      ]
+    },
+    {
+      "@id": "iching:hex_37",
+      "@type": "Archetype",
+      "name": "37. Jia Ren (Family)",
+      "upper": "iching:xun",
+      "lower": "iching:li",
+      "keywords": ["family", "clan", "domestic order", "tradition", "roles"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.78,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.32,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.8, "aspects": ["family", "tradition"]},
+        {"primordial": "primordial:great_mother", "weight": 0.65, "aspects": ["domestic", "nurturing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:ten_of_pentacles", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:hex_38",
+      "@type": "Archetype",
+      "name": "38. Kui (Opposition)",
+      "upper": "iching:li",
+      "lower": "iching:dui",
+      "keywords": ["opposition", "estrangement", "difference", "contrast"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.35,
+        "active-receptive": 0.42,
+        "individual-collective": 0.32,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["opposition", "difference"]},
+        {"primordial": "primordial:twin", "weight": 0.55, "aspects": ["contrast", "otherness"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_39",
+      "@type": "Archetype",
+      "name": "39. Jian (Obstruction)",
+      "upper": "iching:kan",
+      "lower": "iching:gen",
+      "keywords": ["obstruction", "hardship", "obstacles", "limping"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.62,
+        "active-receptive": 0.62,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.72
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["obstruction", "difficulty"]},
+        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["hardship"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "iching:hex_40", "note": "Obstruction leads to deliverance"}
+      ]
+    },
+    {
+      "@id": "iching:hex_40",
+      "@type": "Archetype",
+      "name": "40. Xie (Deliverance)",
+      "upper": "iching:zhen",
+      "lower": "iching:kan",
+      "keywords": ["deliverance", "release", "liberation", "resolution"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.48,
+        "active-receptive": 0.35,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["liberation", "release"]},
+        {"primordial": "primordial:rebel", "weight": 0.6, "aspects": ["deliverance", "breakthrough"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "iching:hex_39", "note": "Deliverance from obstruction"}
+      ]
+    },
+    {
+      "@id": "iching:hex_41",
+      "@type": "Archetype",
+      "name": "41. Sun (Decrease)",
+      "upper": "iching:gen",
+      "lower": "iching:dui",
+      "keywords": ["decrease", "reduction", "simplification", "sacrifice"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.58,
+        "light-shadow": 0.45,
+        "active-receptive": 0.62,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.7, "aspects": ["decrease", "letting go"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.55, "aspects": ["simplification"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_42", "axis": "decrease-increase"}
+      ]
+    },
+    {
+      "@id": "iching:hex_42",
+      "@type": "Archetype",
+      "name": "42. Yi (Increase)",
+      "upper": "iching:xun",
+      "lower": "iching:zhen",
+      "keywords": ["increase", "benefit", "growth", "expansion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["growth", "increase"]},
+        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["benefit", "expansion"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_41", "axis": "increase-decrease"}
+      ]
+    },
+    {
+      "@id": "iching:hex_43",
+      "@type": "Archetype",
+      "name": "43. Guai (Breakthrough)",
+      "upper": "iching:dui",
+      "lower": "iching:qian",
+      "keywords": ["breakthrough", "resoluteness", "decision", "displacing"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.28,
+        "active-receptive": 0.22,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["breakthrough", "resolution"]},
+        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["decision", "action"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_44", "note": "Breakthrough and meeting"}
+      ]
+    },
+    {
+      "@id": "iching:hex_44",
+      "@type": "Archetype",
+      "name": "44. Gou (Coming to Meet)",
+      "upper": "iching:qian",
+      "lower": "iching:xun",
+      "keywords": ["encounter", "coming to meet", "temptation", "influence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.42,
+        "active-receptive": 0.42,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["encounter", "meeting"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["temptation", "seduction"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_43", "note": "Meeting after breakthrough"}
+      ]
+    },
+    {
+      "@id": "iching:hex_45",
+      "@type": "Archetype",
+      "name": "45. Cui (Gathering)",
+      "upper": "iching:dui",
+      "lower": "iching:kun",
+      "keywords": ["gathering", "congregation", "assembly", "bringing together"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.42,
+        "active-receptive": 0.65,
+        "individual-collective": 0.82,
+        "ascent-descent": 0.62,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.75, "aspects": ["gathering", "assembly"]},
+        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["bringing together"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_46", "note": "Gathering before rising"}
+      ]
+    },
+    {
+      "@id": "iching:hex_46",
+      "@type": "Archetype",
+      "name": "46. Sheng (Pushing Upward)",
+      "upper": "iching:kun",
+      "lower": "iching:xun",
+      "keywords": ["pushing upward", "ascending", "growth", "effort"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.42,
+        "active-receptive": 0.55,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["ascending", "effort"]},
+        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["growth"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_45", "note": "Rising from gathering"}
+      ]
+    },
+    {
+      "@id": "iching:hex_47",
+      "@type": "Archetype",
+      "name": "47. Kun (Oppression)",
+      "upper": "iching:dui",
+      "lower": "iching:kan",
+      "keywords": ["oppression", "exhaustion", "adversity", "confinement"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.58,
+        "light-shadow": 0.65,
+        "active-receptive": 0.62,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.62,
+        "stasis-transformation": 0.38,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["oppression", "confinement"]},
+        {"primordial": "primordial:shadow", "weight": 0.6, "aspects": ["exhaustion", "adversity"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "iching:hex_48", "note": "Oppression seeks the well"}
+      ]
+    },
+    {
+      "@id": "iching:hex_48",
+      "@type": "Archetype",
+      "name": "48. Jing (The Well)",
+      "upper": "iching:kan",
+      "lower": "iching:xun",
+      "keywords": ["the well", "source", "nourishment", "inexhaustible"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.52,
+        "active-receptive": 0.62,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.7, "aspects": ["source", "nourishment"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["inexhaustible"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "iching:hex_47", "note": "Well relieves oppression"}
+      ]
+    },
+    {
+      "@id": "iching:hex_49",
+      "@type": "Archetype",
+      "name": "49. Ge (Revolution)",
+      "upper": "iching:dui",
+      "lower": "iching:li",
+      "keywords": ["revolution", "transformation", "radical change", "molting"],
+      "spectralCoordinates": {
+        "order-chaos": 0.72,
+        "creation-destruction": 0.62,
+        "light-shadow": 0.35,
+        "active-receptive": 0.28,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.92,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.9, "aspects": ["revolution", "change"]},
+        {"primordial": "primordial:destroyer", "weight": 0.7, "aspects": ["transformation"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_50", "note": "Revolution and the cauldron"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:hex_50",
+      "@type": "Archetype",
+      "name": "50. Ding (The Cauldron)",
+      "upper": "iching:li",
+      "lower": "iching:xun",
+      "keywords": ["the cauldron", "transformation", "nourishment", "sacrifice"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.32,
+        "active-receptive": 0.48,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["transformation", "alchemy"]},
+        {"primordial": "primordial:great_mother", "weight": 0.6, "aspects": ["nourishment"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_49", "note": "Cauldron follows revolution"}
+      ]
+    },
+    {
+      "@id": "iching:hex_51",
+      "@type": "Archetype",
+      "name": "51. Zhen (Shock)",
+      "upper": "iching:zhen",
+      "lower": "iching:zhen",
+      "keywords": ["shock", "thunder", "arousing", "awakening"],
+      "spectralCoordinates": {
+        "order-chaos": 0.72,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.32,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.82,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["arousing", "initiative"]},
+        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["shock", "awakening"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_52", "axis": "movement-stillness"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_52",
+      "@type": "Archetype",
+      "name": "52. Gen (Keeping Still)",
+      "upper": "iching:gen",
+      "lower": "iching:gen",
+      "keywords": ["stillness", "meditation", "stopping", "rest"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.38,
+        "active-receptive": 0.72,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.12,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["stillness", "stopping"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["meditation", "contemplation"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_51", "axis": "stillness-movement"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "iching:hex_53",
+      "@type": "Archetype",
+      "name": "53. Jian (Development)",
+      "upper": "iching:xun",
+      "lower": "iching:gen",
+      "keywords": ["gradual progress", "development", "infiltration", "patience"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.40,
+        "active-receptive": 0.58,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["gradual influence"]},
+        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["patience", "development"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_54", "note": "Gradual vs sudden union"}
+      ]
+    },
+    {
+      "@id": "iching:hex_54",
+      "@type": "Archetype",
+      "name": "54. Gui Mei (Marrying Maiden)",
+      "upper": "iching:zhen",
+      "lower": "iching:dui",
+      "keywords": ["marrying maiden", "subordinate position", "affection", "propriety"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.42,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.8, "aspects": ["youth", "subordinate"]},
+        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["affection", "union"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_53", "note": "Sudden vs gradual union"}
+      ]
+    },
+    {
+      "@id": "iching:hex_55",
+      "@type": "Archetype",
+      "name": "55. Feng (Abundance)",
+      "upper": "iching:zhen",
+      "lower": "iching:li",
+      "keywords": ["abundance", "fullness", "zenith", "greatness"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.25,
+        "active-receptive": 0.28,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["abundance", "greatness"]},
+        {"primordial": "primordial:self", "weight": 0.6, "aspects": ["fullness", "zenith"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_56", "note": "Abundance vs wandering"}
+      ]
+    },
+    {
+      "@id": "iching:hex_56",
+      "@type": "Archetype",
+      "name": "56. Lu (The Wanderer)",
+      "upper": "iching:li",
+      "lower": "iching:gen",
+      "keywords": ["wandering", "travel", "stranger", "transience"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.38,
+        "active-receptive": 0.45,
+        "individual-collective": 0.22,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.7, "aspects": ["stranger", "wandering"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["journey", "travel"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:hex_55", "note": "Wandering vs abundance"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "iching:hex_57",
+      "@type": "Archetype",
+      "name": "57. Xun (The Gentle)",
+      "upper": "iching:xun",
+      "lower": "iching:xun",
+      "keywords": ["gentle penetration", "wind", "gradual influence", "flexibility"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.42,
+        "active-receptive": 0.45,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.7, "aspects": ["penetrating", "influence"]},
+        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["gentle", "gradual"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_58", "axis": "gentle-joyous"}
+      ]
+    },
+    {
+      "@id": "iching:hex_58",
+      "@type": "Archetype",
+      "name": "58. Dui (The Joyous)",
+      "upper": "iching:dui",
+      "lower": "iching:dui",
+      "keywords": ["joy", "lake", "pleasure", "openness", "communication"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.32,
+        "active-receptive": 0.52,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["joy", "pleasure"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["playful", "exchange"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_57", "axis": "joyous-gentle"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_59",
+      "@type": "Archetype",
+      "name": "59. Huan (Dispersion)",
+      "upper": "iching:xun",
+      "lower": "iching:kan",
+      "keywords": ["dispersion", "dissolution", "scattering", "overcoming barriers"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.52,
+        "active-receptive": 0.52,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["dissolution", "passage"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["dispersion", "overcoming"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_60",
+      "@type": "Archetype",
+      "name": "60. Jie (Limitation)",
+      "upper": "iching:kan",
+      "lower": "iching:dui",
+      "keywords": ["limitation", "moderation", "articulating", "boundaries"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.52,
+        "active-receptive": 0.58,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["limitation", "boundaries"]},
+        {"primordial": "primordial:great_father", "weight": 0.55, "aspects": ["moderation", "structure"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_61",
+      "@type": "Archetype",
+      "name": "61. Zhong Fu (Inner Truth)",
+      "upper": "iching:xun",
+      "lower": "iching:dui",
+      "keywords": ["inner truth", "sincerity", "confidence", "trust"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.28,
+        "active-receptive": 0.48,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.8, "aspects": ["truth", "sincerity"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["confidence", "trust"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:hex_62",
+      "@type": "Archetype",
+      "name": "62. Xiao Guo (Small Excess)",
+      "upper": "iching:zhen",
+      "lower": "iching:gen",
+      "keywords": ["small exceeding", "attention to detail", "small matters", "humility"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.42,
+        "active-receptive": 0.52,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["small matters", "detail"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.5, "aspects": ["humility", "caution"]}
+      ],
+      "relationships": []
+    },
+    {
+      "@id": "iching:hex_63",
+      "@type": "Archetype",
+      "name": "63. Ji Ji (After Completion)",
+      "upper": "iching:kan",
+      "lower": "iching:li",
+      "keywords": ["completion", "success", "transition", "vigilance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.7, "aspects": ["completion", "balance"]},
+        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["vigilance", "maintenance"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_64", "axis": "completion-incompletion"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:hex_64",
+      "@type": "Archetype",
+      "name": "64. Wei Ji (Before Completion)",
+      "upper": "iching:li",
+      "lower": "iching:kan",
+      "keywords": ["incompletion", "transition", "potential", "almost there"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.42,
+        "active-receptive": 0.45,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.65, "aspects": ["potential", "becoming"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["striving", "transition"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:hex_63", "axis": "incompletion-completion"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.7}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "polarPairs": [
+      {"pair": ["iching:hex_01", "iching:hex_02"], "axis": "creative-receptive", "note": "Primary polarity"},
+      {"pair": ["iching:hex_11", "iching:hex_12"], "axis": "peace-stagnation"},
+      {"pair": ["iching:hex_29", "iching:hex_30"], "axis": "water-fire"},
+      {"pair": ["iching:hex_51", "iching:hex_52"], "axis": "movement-stillness"},
+      {"pair": ["iching:hex_63", "iching:hex_64"], "axis": "completion-incompletion"}
+    ],
+    "derivationMethod": "Each hexagram's coordinates derived from upper/lower trigram average plus semantic adjustment based on traditional meaning"
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

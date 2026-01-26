@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_active",
+  "@type": "CalibrationPoint",
+  "name": "Pure Active",
+  "axis": "active-receptive",
+  "polarity": "negative",
+  "description": "Maximum yang, projective, initiating force. The theoretical extreme of pure outward movement and assertion.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.0,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_receptive",
+  "nearestPrimordials": [
+    {"@id": "primordial:warrior", "distance": 0.2},
+    {"@id": "primordial:hero", "distance": 0.25}
+  ],
+  "culturalExamples": ["Ares", "Thor", "Indra", "Mars"],
+  "psychologicalManifestation": "The drive to act, assert, initiate, project outward",
+  "shadowWhenExtreme": "Aggression without purpose, inability to receive, exhaustion",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_descent",
+  "@type": "CalibrationPoint",
+  "name": "Pure Descent",
+  "axis": "ascent-descent",
+  "polarity": "positive",
+  "description": "Maximum earth, matter, immanence. The theoretical extreme of complete embodiment and grounding in physical reality.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 1.0,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_ascent",
+  "nearestPrimordials": [
+    {"@id": "primordial:great_mother", "distance": 0.2},
+    {"@id": "primordial:healer", "distance": 0.25}
+  ],
+  "culturalExamples": ["Gaia", "Demeter", "Pachamama", "Hades (underworld)"],
+  "psychologicalManifestation": "Embodiment, groundedness, material concern, earthly wisdom",
+  "shadowWhenExtreme": "Materialism, inability to see beyond physical, soul-loss",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

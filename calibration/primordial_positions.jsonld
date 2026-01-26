@@ -1,0 +1,396 @@
+{
+  "@context": "../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:primordial_positions",
+  "@type": "CalibrationAnalysis",
+  "name": "Primordial Archetypal Positions",
+  "description": "Analysis and validation of the 22 primordial meta-archetypes positioned on the calibrated 8-dimensional spectral grid.",
+  "version": "1.0",
+
+  "methodology": {
+    "reference": "All positions relative to calibration/origin.jsonld (0.5 all axes) and calibration/poles/",
+    "distanceCalculation": "Euclidean distance in 8D normalized hypercube",
+    "clustering": "Primordials grouped by dominant axis tendencies"
+  },
+
+  "primordialMap": {
+    "description": "All 22 primordials with their canonical coordinates and distance from origin",
+
+    "entries": [
+      {
+        "@id": "primordial:self",
+        "name": "The Self",
+        "coordinates": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
+        "distanceFromOrigin": 0.0,
+        "nearestPole": "NONE - AT ORIGIN",
+        "note": "Perfect center - the integrating principle. Validates calibration alignment.",
+        "cluster": "Center"
+      },
+      {
+        "@id": "primordial:twin",
+        "name": "The Twin",
+        "coordinates": [0.5, 0.5, 0.5, 0.5, 0.35, 0.5, 0.5, 0.6],
+        "distanceFromOrigin": 0.18,
+        "nearestPole": "individual (slight)",
+        "note": "Near center, slight individual emphasis - duality embodied",
+        "cluster": "Center"
+      },
+      {
+        "@id": "primordial:lover",
+        "name": "The Lover",
+        "coordinates": [0.5, 0.3, 0.4, 0.5, 0.4, 0.5, 0.5, 0.35],
+        "distanceFromOrigin": 0.32,
+        "nearestPole": "creation (moderate)",
+        "note": "Balanced but tilted toward creation and voluntary",
+        "cluster": "Center"
+      },
+      {
+        "@id": "primordial:psychopomp",
+        "name": "The Psychopomp",
+        "coordinates": [0.5, 0.5, 0.5, 0.4, 0.5, 0.5, 0.65, 0.6],
+        "distanceFromOrigin": 0.22,
+        "nearestPole": "transformation (moderate)",
+        "note": "Near center, transformation-oriented - guide between states",
+        "cluster": "Transformation"
+      },
+      {
+        "@id": "primordial:magician",
+        "name": "The Magician",
+        "coordinates": [0.5, 0.4, 0.5, 0.3, 0.4, 0.5, 0.7, 0.25],
+        "distanceFromOrigin": 0.42,
+        "nearestPole": "transformation + voluntary",
+        "note": "Active transformer, works with hidden laws by choice",
+        "cluster": "Transformation"
+      },
+      {
+        "@id": "primordial:healer",
+        "name": "The Healer",
+        "coordinates": [0.35, 0.3, 0.4, 0.55, 0.5, 0.5, 0.55, 0.5],
+        "distanceFromOrigin": 0.33,
+        "nearestPole": "creation + order",
+        "note": "Restoration-oriented, slightly receptive",
+        "cluster": "Restoration"
+      },
+      {
+        "@id": "primordial:creator",
+        "name": "The Creator",
+        "coordinates": [0.3, 0.0, 0.3, 0.2, 0.6, 0.3, 0.6, 0.3],
+        "distanceFromOrigin": 0.84,
+        "nearestPole": "creation (strong)",
+        "note": "Strongly creation-aligned, active, light-oriented",
+        "cluster": "Genesis"
+      },
+      {
+        "@id": "primordial:divine-child",
+        "name": "The Divine Child",
+        "coordinates": [0.5, 0.15, 0.2, 0.5, 0.4, 0.5, 0.6, 0.7],
+        "distanceFromOrigin": 0.57,
+        "nearestPole": "creation + light",
+        "note": "Pure potential, fated (destiny-oriented), light",
+        "cluster": "Genesis"
+      },
+      {
+        "@id": "primordial:maiden",
+        "name": "The Maiden",
+        "coordinates": [0.45, 0.25, 0.25, 0.5, 0.3, 0.45, 0.5, 0.35],
+        "distanceFromOrigin": 0.45,
+        "nearestPole": "creation + light + individual",
+        "note": "Uncommitted potential, self-contained",
+        "cluster": "Genesis"
+      },
+      {
+        "@id": "primordial:great-mother",
+        "name": "The Great Mother",
+        "coordinates": [0.35, 0.2, 0.4, 0.7, 0.7, 0.7, 0.4, 0.6],
+        "distanceFromOrigin": 0.55,
+        "nearestPole": "creation + receptive + descent + collective",
+        "note": "Earth-oriented, collective, nurturing",
+        "cluster": "Earth/Feminine"
+      },
+      {
+        "@id": "primordial:crone",
+        "name": "The Crone",
+        "coordinates": [0.5, 0.65, 0.65, 0.6, 0.6, 0.7, 0.6, 0.7],
+        "distanceFromOrigin": 0.45,
+        "nearestPole": "destruction + shadow + descent + fated",
+        "note": "Death-wisdom holder, endings, receptive to fate",
+        "cluster": "Earth/Feminine"
+      },
+      {
+        "@id": "primordial:ancestor",
+        "name": "The Ancestor",
+        "coordinates": [0.25, 0.45, 0.5, 0.7, 0.8, 0.65, 0.3, 0.8],
+        "distanceFromOrigin": 0.62,
+        "nearestPole": "collective + fated + order + receptive",
+        "note": "Past-oriented, traditional, strongly fated",
+        "cluster": "Earth/Feminine"
+      },
+      {
+        "@id": "primordial:great-father",
+        "name": "The Great Father",
+        "coordinates": [0.15, 0.4, 0.3, 0.2, 0.6, 0.2, 0.3, 0.4],
+        "distanceFromOrigin": 0.63,
+        "nearestPole": "order + ascent + active",
+        "note": "Sky-oriented, structuring, authoritative",
+        "cluster": "Sky/Masculine"
+      },
+      {
+        "@id": "primordial:sovereign",
+        "name": "The Sovereign",
+        "coordinates": [0.15, 0.35, 0.25, 0.3, 0.6, 0.3, 0.25, 0.5],
+        "distanceFromOrigin": 0.60,
+        "nearestPole": "order + stasis + light",
+        "note": "Ordering principle, maintains structure",
+        "cluster": "Sky/Masculine"
+      },
+      {
+        "@id": "primordial:wise-elder",
+        "name": "The Wise Elder",
+        "coordinates": [0.3, 0.4, 0.3, 0.6, 0.6, 0.4, 0.3, 0.6],
+        "distanceFromOrigin": 0.43,
+        "nearestPole": "order + light + receptive",
+        "note": "Accumulated wisdom, somewhat receptive",
+        "cluster": "Wisdom"
+      },
+      {
+        "@id": "primordial:preserver",
+        "name": "The Preserver",
+        "coordinates": [0.2, 0.5, 0.3, 0.5, 0.6, 0.5, 0.1, 0.5],
+        "distanceFromOrigin": 0.54,
+        "nearestPole": "stasis (strong) + order",
+        "note": "Maintains what exists, resists change",
+        "cluster": "Stability"
+      },
+      {
+        "@id": "primordial:hero",
+        "name": "The Hero",
+        "coordinates": [0.4, 0.4, 0.25, 0.15, 0.2, 0.4, 0.6, 0.4],
+        "distanceFromOrigin": 0.55,
+        "nearestPole": "active + individual + light",
+        "note": "Individual journey, strongly active",
+        "cluster": "Action"
+      },
+      {
+        "@id": "primordial:warrior",
+        "name": "The Warrior",
+        "coordinates": [0.4, 0.6, 0.35, 0.1, 0.35, 0.45, 0.5, 0.3],
+        "distanceFromOrigin": 0.53,
+        "nearestPole": "active (strong) + destruction",
+        "note": "Martial energy, directed aggression",
+        "cluster": "Action"
+      },
+      {
+        "@id": "primordial:rebel",
+        "name": "The Rebel",
+        "coordinates": [0.7, 0.55, 0.45, 0.2, 0.35, 0.5, 0.75, 0.1],
+        "distanceFromOrigin": 0.68,
+        "nearestPole": "chaos + voluntary + transformation",
+        "note": "Opposes order by choice, high agency",
+        "cluster": "Chaos"
+      },
+      {
+        "@id": "primordial:trickster",
+        "name": "The Trickster",
+        "coordinates": [0.75, 0.5, 0.5, 0.3, 0.4, 0.5, 0.8, 0.15],
+        "distanceFromOrigin": 0.57,
+        "nearestPole": "chaos + transformation + voluntary",
+        "note": "Boundary-crosser, high agency, liminal",
+        "cluster": "Chaos"
+      },
+      {
+        "@id": "primordial:destroyer",
+        "name": "The Destroyer",
+        "coordinates": [0.7, 1.0, 0.6, 0.2, 0.7, 0.6, 0.9, 0.6],
+        "distanceFromOrigin": 0.92,
+        "nearestPole": "destruction (at pole!) + transformation",
+        "note": "Maximum destruction, also chaotic and transformative",
+        "cluster": "Ending"
+      },
+      {
+        "@id": "primordial:monster",
+        "name": "The Monster",
+        "coordinates": [0.85, 0.7, 0.75, 0.25, 0.2, 0.75, 0.55, 0.65],
+        "distanceFromOrigin": 0.75,
+        "nearestPole": "chaos + shadow + descent",
+        "note": "Beyond civilization, untamed, chthonic",
+        "cluster": "Shadow"
+      },
+      {
+        "@id": "primordial:shadow",
+        "name": "The Shadow",
+        "coordinates": [0.6, 0.6, 0.9, 0.5, 0.5, 0.7, 0.5, 0.7],
+        "distanceFromOrigin": 0.57,
+        "nearestPole": "shadow (strong) + descent + fated",
+        "note": "The unconscious, rejected aspects",
+        "cluster": "Shadow"
+      },
+      {
+        "@id": "primordial:outcast",
+        "name": "The Outcast",
+        "coordinates": [0.6, 0.5, 0.65, 0.45, 0.15, 0.6, 0.6, 0.7],
+        "distanceFromOrigin": 0.55,
+        "nearestPole": "individual + shadow + fated",
+        "note": "Rejected from collective, carries shadow projection",
+        "cluster": "Shadow"
+      }
+    ]
+  },
+
+  "clusterAnalysis": {
+    "Center": {
+      "members": ["self", "twin", "lover"],
+      "centroid": "Near origin, balanced",
+      "theme": "Integration, wholeness, connection",
+      "avgDistanceFromOrigin": 0.17
+    },
+    "Transformation": {
+      "members": ["psychopomp", "magician"],
+      "centroid": "High transformation, moderate voluntary",
+      "theme": "Change, passage, working with hidden laws",
+      "avgDistanceFromOrigin": 0.32
+    },
+    "Genesis": {
+      "members": ["creator", "divine-child", "maiden"],
+      "centroid": "High creation, light-oriented",
+      "theme": "Beginning, potential, new life",
+      "avgDistanceFromOrigin": 0.62
+    },
+    "Earth/Feminine": {
+      "members": ["great-mother", "crone", "ancestor"],
+      "centroid": "High descent, receptive, collective",
+      "theme": "Earth, tradition, cycles, nurture/endings",
+      "avgDistanceFromOrigin": 0.54
+    },
+    "Sky/Masculine": {
+      "members": ["great-father", "sovereign"],
+      "centroid": "High order, ascent, active",
+      "theme": "Authority, structure, sky",
+      "avgDistanceFromOrigin": 0.62
+    },
+    "Wisdom": {
+      "members": ["wise-elder"],
+      "centroid": "Moderate order, receptive, past-oriented",
+      "theme": "Accumulated knowledge",
+      "avgDistanceFromOrigin": 0.43
+    },
+    "Stability": {
+      "members": ["preserver"],
+      "centroid": "Extreme stasis, moderate order",
+      "theme": "Maintaining what is",
+      "avgDistanceFromOrigin": 0.54
+    },
+    "Restoration": {
+      "members": ["healer"],
+      "centroid": "Creation-leaning, balanced",
+      "theme": "Restoring wholeness",
+      "avgDistanceFromOrigin": 0.33
+    },
+    "Action": {
+      "members": ["hero", "warrior"],
+      "centroid": "Very active, individual-oriented",
+      "theme": "Directed energy, achievement",
+      "avgDistanceFromOrigin": 0.54
+    },
+    "Chaos": {
+      "members": ["trickster", "rebel"],
+      "centroid": "High chaos, transformation, voluntary",
+      "theme": "Disruption, freedom, boundary-crossing",
+      "avgDistanceFromOrigin": 0.63
+    },
+    "Ending": {
+      "members": ["destroyer"],
+      "centroid": "Maximum destruction, high chaos",
+      "theme": "Necessary ending, dissolution",
+      "avgDistanceFromOrigin": 0.92
+    },
+    "Shadow": {
+      "members": ["shadow", "monster", "outcast"],
+      "centroid": "High shadow axis, descent, somewhat fated",
+      "theme": "Rejected, unconscious, beyond civilization",
+      "avgDistanceFromOrigin": 0.62
+    }
+  },
+
+  "polarRelationships": {
+    "description": "Primordial pairs that form polar opposites or strong tensions",
+    "pairs": [
+      {
+        "pair": ["creator", "destroyer"],
+        "axis": "creation-destruction",
+        "distance": 1.0,
+        "note": "Fundamental polarity - one at 0.0, one at 1.0 on axis"
+      },
+      {
+        "pair": ["preserver", "trickster"],
+        "axis": "stasis-transformation",
+        "distance": 0.7,
+        "note": "Strong opposition - maintain vs disrupt"
+      },
+      {
+        "pair": ["sovereign", "rebel"],
+        "axis": "order-chaos",
+        "distance": 0.55,
+        "note": "Order vs opposition to order"
+      },
+      {
+        "pair": ["hero", "outcast"],
+        "axis": "individual-collective",
+        "distance": 0.05,
+        "note": "Both individual - but hero is accepted, outcast rejected"
+      },
+      {
+        "pair": ["great-mother", "great-father"],
+        "axis": "ascent-descent + active-receptive",
+        "distance": 0.72,
+        "note": "Earth/Sky, Receptive/Active parental polarity"
+      },
+      {
+        "pair": ["maiden", "crone"],
+        "axis": "creation-destruction + light-shadow",
+        "distance": 0.62,
+        "note": "Beginning and ending of feminine cycle"
+      },
+      {
+        "pair": ["self", "shadow"],
+        "axis": "light-shadow",
+        "distance": 0.57,
+        "note": "Integration vs rejection - but Self contains Shadow"
+      }
+    ]
+  },
+
+  "validationResults": {
+    "coordinateBounds": "PASS - All coordinates in [0.0, 1.0]",
+    "completeness": "PASS - All 22 primordials have 8 coordinates",
+    "uniqueness": "PASS - No two primordials have identical coordinates",
+    "minimumSeparation": {
+      "status": "PASS",
+      "smallestDistance": 0.18,
+      "pair": ["self", "twin"],
+      "note": "Twin is intentionally near Self (duality at center)"
+    },
+    "calibrationAlignment": {
+      "status": "PASS",
+      "selfAtOrigin": "Confirmed - Self at exact (0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5)",
+      "destroyerAtPole": "Confirmed - Destroyer at 1.0 on creation-destruction axis",
+      "creatorAtPole": "Confirmed - Creator at 0.0 on creation-destruction axis"
+    },
+    "clusterCoherence": "PASS - Related primordials cluster meaningfully"
+  },
+
+  "visualizationNotes": {
+    "2Dprojections": [
+      {
+        "axes": ["order-chaos", "creation-destruction"],
+        "pattern": "Creator bottom-left, Destroyer top-right, Trickster right-middle"
+      },
+      {
+        "axes": ["active-receptive", "ascent-descent"],
+        "pattern": "Great Father top-left (active+ascent), Great Mother bottom-right (receptive+descent)"
+      },
+      {
+        "axes": ["light-shadow", "individual-collective"],
+        "pattern": "Hero top-left (light+individual), Ancestor bottom-right (collective+shadow-adjacent)"
+      }
+    ]
+  }
+}

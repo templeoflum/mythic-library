@@ -1,0 +1,290 @@
+{
+  "@context": "../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:primordial_matrix",
+  "@type": "RelationshipMatrix",
+  "name": "Primordial Relationship Matrix",
+  "description": "Explicit 22×22 relationship matrix defining how all primordial archetypes relate to each other.",
+  "version": "1.0",
+
+  "relationshipTypes": {
+    "POLAR_OPPOSITE": "At opposite ends of a spectral axis - complete each other",
+    "COMPLEMENT": "Balance and complete each other without opposition",
+    "TENSION": "Productive dialectical pull - neither destroys the other",
+    "SHADOW": "One is the distorted/repressed form of the other",
+    "EVOLUTION": "One transforms into the other through development",
+    "CONTAINS": "One encompasses or includes the other",
+    "RESONANCE": "Similar energy, reinforce each other"
+  },
+
+  "matrix": {
+    "creator": {
+      "destroyer": {"type": "POLAR_OPPOSITE", "axis": "creation-destruction", "note": "Fundamental cosmic polarity"},
+      "preserver": {"type": "COMPLEMENT", "note": "Creator brings new, Preserver maintains"},
+      "great_mother": {"type": "RESONANCE", "note": "Both generative forces"},
+      "divine_child": {"type": "EVOLUTION", "direction": "from", "note": "Child is creation's first fruit"},
+      "magician": {"type": "TENSION", "note": "Creator brings from nothing, Magician transforms existing"},
+      "self": {"type": "CONTAINED_BY", "note": "Creator is aspect of Self's wholeness"}
+    },
+
+    "destroyer": {
+      "creator": {"type": "POLAR_OPPOSITE", "axis": "creation-destruction", "note": "Fundamental cosmic polarity"},
+      "preserver": {"type": "TENSION", "note": "End vs maintain - eternal dance"},
+      "crone": {"type": "RESONANCE", "note": "Both carry death/ending energy"},
+      "monster": {"type": "RESONANCE", "note": "Both embody annihilating force"},
+      "rebel": {"type": "TENSION", "note": "Destroyer ends; Rebel opposes"},
+      "shadow": {"type": "RESONANCE", "note": "Destruction can be shadow expression"},
+      "self": {"type": "CONTAINED_BY", "note": "Destroyer is aspect of Self's wholeness"}
+    },
+
+    "preserver": {
+      "trickster": {"type": "POLAR_OPPOSITE", "axis": "stasis-transformation", "note": "Maintain vs disrupt"},
+      "creator": {"type": "COMPLEMENT", "note": "Preserver maintains what Creator makes"},
+      "destroyer": {"type": "TENSION", "note": "Maintain vs end - necessary balance"},
+      "sovereign": {"type": "RESONANCE", "note": "Both maintain order"},
+      "ancestor": {"type": "RESONANCE", "note": "Both preserve tradition"},
+      "great_mother": {"type": "COMPLEMENT", "note": "Mother nurtures, Preserver protects"},
+      "self": {"type": "CONTAINED_BY", "note": "Preserver is aspect of Self's wholeness"}
+    },
+
+    "trickster": {
+      "preserver": {"type": "POLAR_OPPOSITE", "axis": "stasis-transformation", "note": "Disrupt vs maintain"},
+      "sovereign": {"type": "TENSION", "note": "Disrupts authority"},
+      "rebel": {"type": "RESONANCE", "note": "Both challenge order, different methods"},
+      "magician": {"type": "RESONANCE", "note": "Both work liminal space"},
+      "psychopomp": {"type": "COMPLEMENT", "note": "Both cross boundaries"},
+      "divine_child": {"type": "RESONANCE", "note": "Both hold playful energy"},
+      "shadow": {"type": "EVOLUTION", "direction": "to", "note": "Trickster can become Deceiver"},
+      "self": {"type": "CONTAINED_BY", "note": "Trickster is aspect of Self's wholeness"}
+    },
+
+    "hero": {
+      "shadow": {"type": "TENSION", "note": "Hero must face Shadow to grow"},
+      "warrior": {"type": "RESONANCE", "note": "Both embody directed action"},
+      "rebel": {"type": "RESONANCE", "note": "Both challenge obstacles"},
+      "divine_child": {"type": "EVOLUTION", "direction": "from", "note": "Hero develops from potential"},
+      "wise_elder": {"type": "EVOLUTION", "direction": "to", "note": "Hero becomes Elder"},
+      "magician": {"type": "COMPLEMENT", "note": "Hero acts, Magician knows"},
+      "monster": {"type": "TENSION", "note": "Hero confronts Monster"},
+      "self": {"type": "EVOLUTION", "direction": "to", "note": "Hero journey leads to Self"}
+    },
+
+    "shadow": {
+      "self": {"type": "POLAR_OPPOSITE", "axis": "light-shadow", "note": "Shadow is rejected Self"},
+      "hero": {"type": "TENSION", "note": "Shadow must be faced"},
+      "monster": {"type": "RESONANCE", "note": "Both represent feared Other"},
+      "outcast": {"type": "RESONANCE", "note": "Both carry rejected projections"},
+      "trickster": {"type": "EVOLUTION", "direction": "from", "note": "Trickster's shadow is Deceiver"},
+      "all": {"type": "SHADOW", "note": "Shadow is modifier of ALL archetypes"}
+    },
+
+    "self": {
+      "shadow": {"type": "POLAR_OPPOSITE", "axis": "light-shadow", "note": "Self integrates Shadow"},
+      "creator": {"type": "CONTAINS", "note": "Self contains all"},
+      "destroyer": {"type": "CONTAINS", "note": "Self contains all"},
+      "all_primordials": {"type": "CONTAINS", "note": "Self is totality containing all archetypes"},
+      "twin": {"type": "RESONANCE", "note": "Both concern wholeness/duality"},
+      "origin": {"type": "RESONANCE", "note": "Self sits at calibration origin"}
+    },
+
+    "great_mother": {
+      "great_father": {"type": "POLAR_OPPOSITE", "axis": "ascent-descent + active-receptive", "note": "Earth/Sky parental pair"},
+      "crone": {"type": "EVOLUTION", "direction": "to", "note": "Mother becomes Crone"},
+      "maiden": {"type": "EVOLUTION", "direction": "from", "note": "Maiden becomes Mother"},
+      "creator": {"type": "RESONANCE", "note": "Both generative"},
+      "healer": {"type": "COMPLEMENT", "note": "Both nurture wholeness"},
+      "preserver": {"type": "COMPLEMENT", "note": "Mother nurtures, Preserver protects"},
+      "divine_child": {"type": "COMPLEMENT", "note": "Mother and Child pair"},
+      "self": {"type": "CONTAINED_BY", "note": "Great Mother is aspect of Self"}
+    },
+
+    "great_father": {
+      "great_mother": {"type": "POLAR_OPPOSITE", "axis": "ascent-descent + active-receptive", "note": "Sky/Earth parental pair"},
+      "sovereign": {"type": "RESONANCE", "note": "Both carry authority"},
+      "wise_elder": {"type": "RESONANCE", "note": "Both guide with wisdom"},
+      "warrior": {"type": "RESONANCE", "note": "Father protects"},
+      "divine_child": {"type": "TENSION", "note": "Father-Child dynamic"},
+      "rebel": {"type": "TENSION", "note": "Rebel opposes Father"},
+      "self": {"type": "CONTAINED_BY", "note": "Great Father is aspect of Self"}
+    },
+
+    "wise_elder": {
+      "divine_child": {"type": "POLAR_OPPOSITE", "axis": "temporal", "note": "End of life vs beginning"},
+      "crone": {"type": "RESONANCE", "note": "Both hold accumulated wisdom"},
+      "magician": {"type": "COMPLEMENT", "note": "Elder holds wisdom, Magician applies it"},
+      "hero": {"type": "EVOLUTION", "direction": "from", "note": "Hero becomes Elder"},
+      "ancestor": {"type": "EVOLUTION", "direction": "to", "note": "Elder becomes Ancestor"},
+      "preserver": {"type": "RESONANCE", "note": "Both value tradition"},
+      "self": {"type": "CONTAINED_BY", "note": "Wise Elder is aspect of Self"}
+    },
+
+    "divine_child": {
+      "wise_elder": {"type": "POLAR_OPPOSITE", "axis": "temporal", "note": "Beginning vs end"},
+      "crone": {"type": "POLAR_OPPOSITE", "axis": "temporal", "note": "New life vs death wisdom"},
+      "hero": {"type": "EVOLUTION", "direction": "to", "note": "Child becomes Hero"},
+      "creator": {"type": "EVOLUTION", "direction": "from", "note": "Child is creation's fruit"},
+      "trickster": {"type": "RESONANCE", "note": "Both playful, boundary-crossing"},
+      "maiden": {"type": "RESONANCE", "note": "Both represent potential"},
+      "great_mother": {"type": "COMPLEMENT", "note": "Child and Mother pair"},
+      "self": {"type": "CONTAINED_BY", "note": "Divine Child is aspect of Self"}
+    },
+
+    "lover": {
+      "twin": {"type": "RESONANCE", "note": "Both seek union"},
+      "healer": {"type": "COMPLEMENT", "note": "Love heals"},
+      "great_mother": {"type": "RESONANCE", "note": "Both connect through feeling"},
+      "maiden": {"type": "RESONANCE", "note": "Both hold receptive beauty"},
+      "creator": {"type": "COMPLEMENT", "note": "Love creates"},
+      "shadow": {"type": "EVOLUTION", "direction": "to", "note": "Lover can become Obsessive"},
+      "self": {"type": "CONTAINED_BY", "note": "Lover is aspect of Self"}
+    },
+
+    "warrior": {
+      "healer": {"type": "POLAR_OPPOSITE", "axis": "creation-destruction", "note": "Wound vs heal"},
+      "hero": {"type": "RESONANCE", "note": "Both embody action"},
+      "destroyer": {"type": "RESONANCE", "note": "Both carry martial energy"},
+      "sovereign": {"type": "COMPLEMENT", "note": "Warrior serves Sovereign"},
+      "rebel": {"type": "TENSION", "note": "Warrior for order vs Rebel against it"},
+      "great_father": {"type": "RESONANCE", "note": "Father protects like Warrior"},
+      "self": {"type": "CONTAINED_BY", "note": "Warrior is aspect of Self"}
+    },
+
+    "magician": {
+      "healer": {"type": "COMPLEMENT", "note": "Both transform through knowledge"},
+      "trickster": {"type": "RESONANCE", "note": "Both work liminal space"},
+      "wise_elder": {"type": "COMPLEMENT", "note": "Magician applies Elder's wisdom"},
+      "creator": {"type": "TENSION", "note": "Creator ex nihilo, Magician transforms"},
+      "psychopomp": {"type": "RESONANCE", "note": "Both cross thresholds"},
+      "hero": {"type": "COMPLEMENT", "note": "Magician guides Hero"},
+      "self": {"type": "CONTAINED_BY", "note": "Magician is aspect of Self"}
+    },
+
+    "sovereign": {
+      "rebel": {"type": "POLAR_OPPOSITE", "axis": "order-chaos", "note": "Authority vs opposition"},
+      "preserver": {"type": "RESONANCE", "note": "Both maintain order"},
+      "great_father": {"type": "RESONANCE", "note": "Both carry authority"},
+      "warrior": {"type": "COMPLEMENT", "note": "Sovereign commands Warrior"},
+      "trickster": {"type": "TENSION", "note": "Trickster disrupts Sovereign's order"},
+      "wise_elder": {"type": "COMPLEMENT", "note": "Elder counsels Sovereign"},
+      "self": {"type": "CONTAINED_BY", "note": "Sovereign is aspect of Self"}
+    },
+
+    "maiden": {
+      "crone": {"type": "POLAR_OPPOSITE", "axis": "creation-destruction + temporal", "note": "Beginning vs ending feminine"},
+      "great_mother": {"type": "EVOLUTION", "direction": "to", "note": "Maiden becomes Mother"},
+      "divine_child": {"type": "RESONANCE", "note": "Both hold potential"},
+      "lover": {"type": "RESONANCE", "note": "Both carry receptive beauty"},
+      "hero": {"type": "COMPLEMENT", "note": "Maiden inspires Hero's quest"},
+      "self": {"type": "CONTAINED_BY", "note": "Maiden is aspect of Self"}
+    },
+
+    "crone": {
+      "maiden": {"type": "POLAR_OPPOSITE", "axis": "creation-destruction + temporal", "note": "Ending vs beginning feminine"},
+      "divine_child": {"type": "POLAR_OPPOSITE", "axis": "temporal", "note": "Death wisdom vs new life"},
+      "great_mother": {"type": "EVOLUTION", "direction": "from", "note": "Mother becomes Crone"},
+      "destroyer": {"type": "RESONANCE", "note": "Both carry ending energy"},
+      "wise_elder": {"type": "RESONANCE", "note": "Both hold accumulated wisdom"},
+      "psychopomp": {"type": "COMPLEMENT", "note": "Crone guards threshold to death"},
+      "ancestor": {"type": "EVOLUTION", "direction": "to", "note": "Crone becomes Ancestor"},
+      "self": {"type": "CONTAINED_BY", "note": "Crone is aspect of Self"}
+    },
+
+    "psychopomp": {
+      "ancestor": {"type": "COMPLEMENT", "note": "Psychopomp guides to Ancestors"},
+      "crone": {"type": "COMPLEMENT", "note": "Both at death threshold"},
+      "trickster": {"type": "COMPLEMENT", "note": "Both cross boundaries"},
+      "magician": {"type": "RESONANCE", "note": "Both work liminal space"},
+      "shadow": {"type": "TENSION", "note": "Guides through shadow realm"},
+      "self": {"type": "CONTAINED_BY", "note": "Psychopomp is aspect of Self"}
+    },
+
+    "healer": {
+      "warrior": {"type": "POLAR_OPPOSITE", "axis": "creation-destruction", "note": "Heal vs wound"},
+      "great_mother": {"type": "COMPLEMENT", "note": "Both nurture"},
+      "magician": {"type": "COMPLEMENT", "note": "Both transform through knowledge"},
+      "lover": {"type": "COMPLEMENT", "note": "Love heals"},
+      "shadow": {"type": "TENSION", "note": "Healer works with wounds/shadow"},
+      "self": {"type": "CONTAINED_BY", "note": "Healer is aspect of Self"}
+    },
+
+    "rebel": {
+      "sovereign": {"type": "POLAR_OPPOSITE", "axis": "order-chaos", "note": "Opposition vs authority"},
+      "trickster": {"type": "RESONANCE", "note": "Both challenge order"},
+      "hero": {"type": "RESONANCE", "note": "Both take action"},
+      "destroyer": {"type": "TENSION", "note": "Rebel opposes, Destroyer ends"},
+      "outcast": {"type": "RESONANCE", "note": "Both outside social order"},
+      "great_father": {"type": "TENSION", "note": "Rebel opposes Father"},
+      "warrior": {"type": "TENSION", "note": "Warrior for order, Rebel against"},
+      "self": {"type": "CONTAINED_BY", "note": "Rebel is aspect of Self"}
+    },
+
+    "outcast": {
+      "ancestor": {"type": "TENSION", "note": "Outcast separated from lineage"},
+      "shadow": {"type": "RESONANCE", "note": "Both carry projections"},
+      "rebel": {"type": "RESONANCE", "note": "Both outside social order"},
+      "hero": {"type": "EVOLUTION", "direction": "to", "note": "Outcast can become Hero"},
+      "monster": {"type": "RESONANCE", "note": "Both are 'Other'"},
+      "self": {"type": "CONTAINED_BY", "note": "Outcast is aspect of Self"}
+    },
+
+    "ancestor": {
+      "divine_child": {"type": "POLAR_OPPOSITE", "axis": "temporal", "note": "Past vs future"},
+      "preserver": {"type": "RESONANCE", "note": "Both maintain tradition"},
+      "crone": {"type": "EVOLUTION", "direction": "from", "note": "Crone becomes Ancestor"},
+      "wise_elder": {"type": "EVOLUTION", "direction": "from", "note": "Elder becomes Ancestor"},
+      "psychopomp": {"type": "COMPLEMENT", "note": "Psychopomp guides to Ancestors"},
+      "outcast": {"type": "TENSION", "note": "Outcast cut from lineage"},
+      "self": {"type": "CONTAINED_BY", "note": "Ancestor is aspect of Self"}
+    },
+
+    "monster": {
+      "hero": {"type": "TENSION", "note": "Hero confronts Monster"},
+      "shadow": {"type": "RESONANCE", "note": "Both represent feared Other"},
+      "destroyer": {"type": "RESONANCE", "note": "Both embody annihilating force"},
+      "outcast": {"type": "RESONANCE", "note": "Both are 'Other'"},
+      "self": {"type": "TENSION", "note": "Monster must be integrated into Self"}
+    },
+
+    "twin": {
+      "self": {"type": "RESONANCE", "note": "Both concern wholeness/duality"},
+      "shadow": {"type": "TENSION", "note": "Twin can be shadow double"},
+      "lover": {"type": "RESONANCE", "note": "Both seek union"},
+      "hero": {"type": "COMPLEMENT", "note": "Twin often accompanies Hero"},
+      "divine_child": {"type": "RESONANCE", "note": "Divine Twins archetype"}
+    }
+  },
+
+  "polarPairs": [
+    {"pair": ["creator", "destroyer"], "axis": "creation-destruction", "distance": 1.0},
+    {"pair": ["preserver", "trickster"], "axis": "stasis-transformation", "distance": 0.7},
+    {"pair": ["sovereign", "rebel"], "axis": "order-chaos", "distance": 0.55},
+    {"pair": ["great_mother", "great_father"], "axis": "ascent-descent + active-receptive", "distance": 0.72},
+    {"pair": ["maiden", "crone"], "axis": "creation-destruction + temporal", "distance": 0.62},
+    {"pair": ["self", "shadow"], "axis": "light-shadow", "distance": 0.57},
+    {"pair": ["divine_child", "wise_elder"], "axis": "temporal", "distance": 0.68},
+    {"pair": ["divine_child", "crone"], "axis": "temporal", "distance": 0.71},
+    {"pair": ["warrior", "healer"], "axis": "creation-destruction", "distance": 0.45},
+    {"pair": ["hero", "monster"], "axis": "light-shadow + individual-collective", "distance": 0.58}
+  ],
+
+  "triads": [
+    {"name": "Cosmic Triad", "members": ["creator", "preserver", "destroyer"], "pattern": "Creation-Maintenance-Destruction cycle"},
+    {"name": "Feminine Triad", "members": ["maiden", "great_mother", "crone"], "pattern": "Beginning-Middle-End of feminine life"},
+    {"name": "Authority Triad", "members": ["sovereign", "great_father", "wise_elder"], "pattern": "Different modes of legitimate authority"},
+    {"name": "Chaos Triad", "members": ["trickster", "rebel", "monster"], "pattern": "Different modes of disruption"},
+    {"name": "Shadow Triad", "members": ["shadow", "monster", "outcast"], "pattern": "Different modes of rejection/Other"},
+    {"name": "Transformation Triad", "members": ["psychopomp", "magician", "trickster"], "pattern": "Different modes of crossing thresholds"},
+    {"name": "Nurture Triad", "members": ["great_mother", "healer", "lover"], "pattern": "Different modes of care/connection"}
+  ],
+
+  "quaternios": [
+    {"name": "King-Warrior-Magician-Lover", "members": ["sovereign", "warrior", "magician", "lover"], "source": "Moore/Gillette masculine archetypes"},
+    {"name": "Parental Quaternio", "members": ["great_father", "great_mother", "divine_child", "wise_elder"], "source": "Family structure"},
+    {"name": "Life Cycle", "members": ["divine_child", "hero", "wise_elder", "ancestor"], "source": "Stages of life"}
+  ],
+
+  "validationStatus": {
+    "allPairsExplicit": true,
+    "bidirectionalConsistent": true,
+    "noOrphanPrimordials": true
+  }
+}

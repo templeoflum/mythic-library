@@ -1,0 +1,515 @@
+{
+  "@context": "./ACP_CONTEXT.jsonld",
+  "@id": "acp:dynamics",
+  "@type": "skos:ConceptScheme",
+  "name": "ACP Dynamics & Foundations",
+  "description": "Mathematical, geometric, and physics-like rules governing the archetypal coordinate space and interactions between archetypes.",
+  "version": "1.0",
+
+  "spectralGeometry": {
+    "@id": "acp:spectralGeometry",
+    "description": "The mathematical structure of the 8-dimensional spectral space in which all archetypes are positioned.",
+
+    "dimensionality": {
+      "value": 8,
+      "note": "Each axis is independent but not orthogonal in meaning - correlations exist between axes.",
+      "axes": [
+        "axis:order-chaos",
+        "axis:creation-destruction",
+        "axis:light-shadow",
+        "axis:active-receptive",
+        "axis:individual-collective",
+        "axis:ascent-descent",
+        "axis:stasis-transformation",
+        "axis:voluntary-fated"
+      ]
+    },
+
+    "coordinateSystem": {
+      "type": "normalized-hypercube",
+      "range": "[0.0, 1.0]",
+      "origin": {
+        "value": 0.5,
+        "meaning": "The center point (0.5 on all axes) represents perfect balance - the undifferentiated potential before polarization."
+      },
+      "poles": {
+        "negative": 0.0,
+        "positive": 1.0,
+        "interpretation": "Poles are not 'good' or 'bad' but represent full expression of that polarity"
+      }
+    },
+
+    "distanceMetrics": {
+      "@id": "acp:distanceMetrics",
+      "description": "How to measure 'distance' between archetypes in spectral space.",
+
+      "euclidean": {
+        "formula": "sqrt(sum((a[i] - b[i])^2 for i in axes))",
+        "maxDistance": 2.83,
+        "note": "sqrt(8) for diagonal across 8-dimensional unit hypercube",
+        "useCase": "General similarity/difference measurement"
+      },
+
+      "manhattan": {
+        "formula": "sum(|a[i] - b[i]| for i in axes)",
+        "maxDistance": 8.0,
+        "useCase": "Step-by-step transformation paths"
+      },
+
+      "polarityDistance": {
+        "formula": "For a specific axis: |a[axis] - b[axis]|",
+        "maxDistance": 1.0,
+        "useCase": "Measuring opposition on a single axis"
+      },
+
+      "weightedDistance": {
+        "formula": "sqrt(sum(w[i] * (a[i] - b[i])^2 for i in axes))",
+        "note": "Weights allow emphasizing certain axes for specific query contexts",
+        "useCase": "Context-sensitive similarity (e.g., emphasize light-shadow for psychological analysis)"
+      }
+    },
+
+    "geometricStructures": {
+      "@id": "acp:geometricStructures",
+      "description": "Named geometric patterns that emerge from archetypal positions.",
+
+      "polarPair": {
+        "definition": "Two archetypes at opposite ends of a single axis (difference > 0.7 on that axis, similar on others)",
+        "geometry": "Line segment along axis",
+        "examples": ["Hestia-Hermes on stasis-transformation", "Apollo-Dionysus on order-chaos"]
+      },
+
+      "triad": {
+        "definition": "Three archetypes forming a triangle in spectral space",
+        "geometry": "Triangle (2D projection of 3 points)",
+        "types": {
+          "balanced": "Equilateral - equal distances between all three",
+          "hierarchical": "Isoceles - one apex, two base",
+          "sequential": "Right triangle - transformation path"
+        },
+        "examples": ["Maiden-Mother-Crone", "Creator-Preserver-Destroyer"]
+      },
+
+      "quaternio": {
+        "definition": "Four archetypes forming a balanced cross or square",
+        "geometry": "Square or tetrahedron projection",
+        "jungianResonance": "Maps to Jung's quaternity principle",
+        "examples": ["King-Warrior-Magician-Lover", "Four Elements", "Cardinal directions"]
+      },
+
+      "constellation": {
+        "definition": "Cluster of archetypes within a bounded region of spectral space",
+        "geometry": "Convex hull enclosing N points",
+        "properties": {
+          "centroid": "Average position of all members",
+          "radius": "Maximum distance from centroid to any member",
+          "density": "Number of archetypes per unit volume"
+        }
+      },
+
+      "axis": {
+        "definition": "The line from (0,0,...,0) to (1,1,...,1) on a single dimension while others are held at 0.5",
+        "geometry": "1D line embedded in 8D space",
+        "note": "Each of the 8 axes defines such a line"
+      }
+    },
+
+    "symmetryOperations": {
+      "@id": "acp:symmetryOperations",
+      "description": "Transformations that preserve archetypal relationships.",
+
+      "reflection": {
+        "definition": "Mirror across the 0.5 midpoint of an axis",
+        "formula": "reflected[axis] = 1.0 - original[axis]",
+        "meaning": "Produces polar opposite on that axis",
+        "example": "Reflecting Creator on creation-destruction axis yields Destroyer"
+      },
+
+      "rotation": {
+        "definition": "Rotation in the plane defined by two axes",
+        "meaning": "Gradual transformation between two polarities while preserving distance from center",
+        "example": "Rotating from order-pole toward chaos-pole through active-receptive plane"
+      },
+
+      "translation": {
+        "definition": "Shifting position along an axis",
+        "meaning": "Evolution or devolution - movement toward one pole",
+        "constraints": "Cannot exceed [0.0, 1.0] bounds"
+      },
+
+      "scaling": {
+        "definition": "Moving toward or away from the center (0.5, 0.5, ...)",
+        "meaning": "Intensification (away from center) or integration (toward center)",
+        "note": "Center represents undifferentiated potential; edges represent full differentiation"
+      }
+    }
+  },
+
+  "archetypeDynamics": {
+    "@id": "acp:archetypeDynamics",
+    "description": "Physics-like rules governing how archetypes interact, attract, repel, and transform.",
+
+    "forcesAndFields": {
+      "@id": "acp:forcesAndFields",
+
+      "polarAttraction": {
+        "description": "Polar opposites are drawn together - they complete each other.",
+        "formula": "F_attract = k * polarityDistance / (euclideanDistance^2 + epsilon)",
+        "note": "Strong attraction when spectrally distant but on same axis",
+        "examples": ["Order needs Chaos to define itself", "Light requires Shadow"]
+      },
+
+      "shadowGravity": {
+        "description": "Every archetype has gravitational pull toward its shadow form.",
+        "formula": "F_shadow = activationThreshold * stress_level",
+        "note": "Under stress, archetypes fall toward their shadow manifestation",
+        "resistance": "Consciousness/integration provides counter-force"
+      },
+
+      "evolutionaryMomentum": {
+        "description": "Archetypes in transformation continue moving in that direction.",
+        "formula": "momentum = transformationDepth * direction_vector",
+        "note": "Evolution paths have inertia - hard to reverse mid-transformation"
+      },
+
+      "resonanceField": {
+        "description": "Archetypes with similar spectral positions resonate and amplify each other.",
+        "formula": "resonance = 1.0 / (1.0 + euclideanDistance)",
+        "effect": "Similar archetypes cluster; cultural echoes emerge from resonance"
+      },
+
+      "complementaryBinding": {
+        "description": "Complements lock together in stable configurations.",
+        "formula": "binding_energy = narrativeIntensity * overlap_coefficient",
+        "stability": "Bound pairs resist separation"
+      }
+    },
+
+    "transformationLaws": {
+      "@id": "acp:transformationLaws",
+      "description": "Rules governing how archetypes change over time.",
+
+      "conservationOfEnergy": {
+        "statement": "The total archetypal 'energy' in a system is conserved.",
+        "meaning": "When one archetype weakens, another strengthens. Archetypes don't disappear - they transform.",
+        "corollary": "Repressed archetypes don't vanish; they go underground (shadow)."
+      },
+
+      "entropyPrinciple": {
+        "statement": "Undifferentiated systems tend toward differentiation; over-differentiated systems tend toward integration.",
+        "meaning": "The 'center' (0.5, 0.5, ...) is unstable; systems naturally polarize. But extreme polarization is also unstable; synthesis eventually occurs.",
+        "cycles": "This creates the eternal cycle of differentiation and return."
+      },
+
+      "thresholdEffects": {
+        "statement": "Transformations require activation energy to cross thresholds.",
+        "meaning": "Evolution and devolution don't happen gradually - they occur at critical moments.",
+        "triggers": "Crisis, initiation, revelation, death-rebirth experiences"
+      },
+
+      "pathDependence": {
+        "statement": "The route taken through spectral space affects the final destination.",
+        "meaning": "Two archetypes at the same position may have different 'histories' and thus different potentials.",
+        "example": "A Hero who evolved from Innocent vs one who evolved from Orphan"
+      },
+
+      "superposition": {
+        "statement": "An individual can hold multiple archetypal positions simultaneously.",
+        "meaning": "Human psyche is not single-point but probability cloud across spectral space.",
+        "collapse": "Specific situations cause 'collapse' to dominant archetype."
+      }
+    },
+
+    "interactionTypes": {
+      "@id": "acp:interactionTypes",
+      "description": "What happens when archetypes encounter each other.",
+
+      "fusion": {
+        "condition": "High resonance + complementary binding + sufficient energy",
+        "result": "SYNTHESIS relationship - new emergent archetype",
+        "example": "Hermes + Thoth → Hermes Trismegistus"
+      },
+
+      "fission": {
+        "condition": "Internal tension exceeds binding energy",
+        "result": "DECOMPOSITION relationship - archetype splits",
+        "example": "Unified Goddess → Maiden + Mother + Crone"
+      },
+
+      "eclipse": {
+        "condition": "One archetype's field overwhelms another",
+        "result": "Temporary suppression; the eclipsed archetype goes dormant",
+        "example": "Hero energy eclipsing Lover energy during war"
+      },
+
+      "conjunction": {
+        "condition": "Two archetypes occupy same space temporarily",
+        "result": "Intensification of shared qualities; both affected",
+        "example": "Magician and Trickster in conjunction amplify cunning"
+      },
+
+      "opposition": {
+        "condition": "Polar opposites in same field",
+        "result": "Creative tension; neither destroyed but both transformed",
+        "example": "Order and Chaos in eternal dance of cosmos"
+      }
+    }
+  },
+
+  "correspondenceMapping": {
+    "@id": "acp:correspondenceMapping",
+    "description": "Rules for how archetypes map to other symbolic systems (Tarot, Astrology, I Ching, etc.).",
+
+    "mappingPrinciples": {
+      "structuralIsomorphism": {
+        "definition": "Correspondences are valid when structures match, not just surface symbols.",
+        "test": "Do the relationships between elements in System A mirror relationships in System B?",
+        "example": "Major Arcana sequence mirrors Hero's Journey stages structurally, not just symbolically"
+      },
+
+      "spectralAlignment": {
+        "definition": "Correspondences should have similar spectral coordinates.",
+        "tolerance": "Euclidean distance < 0.3 for strong correspondence",
+        "example": "The Tower (Tarot) and Mars (Astrology) both high on destruction, transformation"
+      },
+
+      "functionalEquivalence": {
+        "definition": "Elements that serve same function in their systems correspond.",
+        "test": "Does Element A in System X serve the same narrative/psychological function as Element B in System Y?",
+        "example": "Threshold Guardian (narrative) = Saturn (astrology) = Key (Tarot) - all gate/limit function"
+      },
+
+      "numericalResonance": {
+        "definition": "Numbers carry archetypal weight; same numbers across systems resonate.",
+        "examples": {
+          "3": "Triad, trinity, thesis-antithesis-synthesis",
+          "4": "Quaternio, wholeness, four directions/elements",
+          "7": "Completion, planetary cycle, chakras",
+          "12": "Zodiac, disciples, months - complete cycle with variation"
+        }
+      }
+    },
+
+    "systemAlignmentRules": {
+      "tarot": {
+        "majorArcana": {
+          "mappingMethod": "Each Major Arcana card maps to 1-2 primordials",
+          "spectralBasis": "Card meanings define spectral position",
+          "sequenceSignificance": "0-21 sequence is developmental journey"
+        },
+        "minorArcana": {
+          "suits": {
+            "Wands": "Fire element; active-receptive skewed active",
+            "Cups": "Water element; active-receptive skewed receptive",
+            "Swords": "Air element; individual-collective skewed individual",
+            "Pentacles": "Earth element; ascent-descent skewed descent"
+          },
+          "numbers": "1-10 sequence mirrors cycle from potential to completion"
+        }
+      },
+
+      "astrology": {
+        "planets": {
+          "mappingMethod": "Each planet is an archetypal force",
+          "spectralBasis": "Traditional and modern astrological meanings",
+          "examples": {
+            "Sun": "Self, individuation - high individual, high light",
+            "Moon": "Unconscious, receptivity - high receptive, high shadow",
+            "Mars": "Aggression, action - high active, high destruction",
+            "Venus": "Love, harmony - balanced creation, high receptive"
+          }
+        },
+        "signs": {
+          "mappingMethod": "Signs are 'flavors' that modify planetary archetypes",
+          "elementalBasis": "Fire/Earth/Air/Water map to elemental composition",
+          "modalityBasis": "Cardinal/Fixed/Mutable map to stasis-transformation"
+        },
+        "houses": {
+          "mappingMethod": "Houses are domains/contexts where archetypes manifest",
+          "mappingNote": "Houses don't have spectral positions; they are contexts"
+        }
+      },
+
+      "iChing": {
+        "hexagrams": {
+          "mappingMethod": "64 hexagrams as 64 archetypal situations",
+          "spectralBasis": "Yin/Yang line composition determines active-receptive position",
+          "structuralNote": "Trigram pairs (upper/lower) create compound archetypes"
+        },
+        "trigrams": {
+          "mappingMethod": "8 trigrams as primordial building blocks",
+          "elementalCorrespondence": "Heaven/Earth/Thunder/Wind/Water/Fire/Mountain/Lake"
+        },
+        "changingLines": {
+          "mappingMethod": "Represent transformation dynamics",
+          "spectralNote": "Show movement along stasis-transformation axis"
+        }
+      },
+
+      "kabbalah": {
+        "sephiroth": {
+          "mappingMethod": "10 sephiroth as 10 archetypal principles",
+          "treeStructure": "Three pillars map to order-chaos axis",
+          "examples": {
+            "Kether": "Unity, crown - center of all axes, highest ascent",
+            "Chokmah": "Wisdom, active - high active, high individual",
+            "Binah": "Understanding, receptive - high receptive, high order",
+            "Malkuth": "Kingdom, manifestation - high descent, high order"
+          }
+        },
+        "paths": {
+          "mappingMethod": "22 paths are transformational relationships",
+          "tarotCorrespondence": "22 paths = 22 Major Arcana"
+        }
+      },
+
+      "chakras": {
+        "mappingMethod": "7 chakras as developmental/vibrational levels",
+        "spectralBasis": "Ascent-descent axis primary; others secondary",
+        "examples": {
+          "Muladhara": "Root - maximum descent, high stasis",
+          "Svadhisthana": "Sacral - high descent, high creation",
+          "Anahata": "Heart - balanced ascent-descent, balanced active-receptive",
+          "Sahasrara": "Crown - maximum ascent, high transformation"
+        }
+      },
+
+      "elements": {
+        "classical": {
+          "Fire": {"active-receptive": 0.9, "ascent-descent": 0.2, "stasis-transformation": 0.7},
+          "Water": {"active-receptive": 0.2, "ascent-descent": 0.6, "stasis-transformation": 0.6},
+          "Air": {"active-receptive": 0.7, "ascent-descent": 0.3, "stasis-transformation": 0.5},
+          "Earth": {"active-receptive": 0.3, "ascent-descent": 0.9, "stasis-transformation": 0.2}
+        },
+        "fifth": {
+          "Aether": {"note": "Center point - all axes at 0.5", "meaning": "Quintessence, spirit, the unifying principle"}
+        }
+      }
+    },
+
+    "validationRules": {
+      "@id": "acp:correspondenceValidation",
+
+      "transitivity": {
+        "rule": "If A corresponds to B, and B corresponds to C, then A should reasonably correspond to C.",
+        "tolerance": "Spectral distance(A,C) should be < spectral distance(A,B) + spectral distance(B,C)",
+        "violation": "Indicates one or more correspondences may be incorrect"
+      },
+
+      "symmetry": {
+        "rule": "Cultural echoes should be bidirectional.",
+        "test": "If Hermes echoes Mercury, Mercury should echo Hermes with similar fidelity",
+        "asymmetry": "May indicate one is derivative of other rather than parallel emergence"
+      },
+
+      "spectralConsistency": {
+        "rule": "Correspondences between systems should preserve relative positions.",
+        "test": "If A > B on axis X in System 1, their correspondences should maintain A' > B' on equivalent axis in System 2",
+        "example": "If Tower > Strength on destruction in Tarot, Mars > Venus should hold in astrology"
+      },
+
+      "numericalHarmony": {
+        "rule": "Systems with same cardinality should map cleanly.",
+        "examples": {
+          "4elements-4suits": "Fire-Wands, Water-Cups, Air-Swords, Earth-Pentacles",
+          "7planets-7chakras": "Each classical planet to each chakra",
+          "12signs-12houses": "Each sign rules corresponding house"
+        },
+        "note": "Numerical mismatch (e.g., 8 trigrams vs 7 chakras) requires more complex mapping"
+      }
+    }
+  },
+
+  "coherenceConstraints": {
+    "@id": "acp:coherenceConstraints",
+    "description": "Validation rules that ensure the archetypal system remains internally consistent.",
+
+    "spectralConstraints": {
+      "boundedness": {
+        "rule": "All spectral coordinates must be in [0.0, 1.0]",
+        "validation": "Reject any archetype with out-of-bounds coordinates"
+      },
+
+      "completeness": {
+        "rule": "Every archetype must have all 8 spectral coordinates defined",
+        "validation": "Reject archetypes missing any axis value"
+      },
+
+      "differentiation": {
+        "rule": "No two distinct archetypes should have identical spectral coordinates",
+        "tolerance": "Euclidean distance > 0.05 for distinct archetypes",
+        "exception": "Aspects/Epithets of same deity may share coordinates with parent"
+      }
+    },
+
+    "relationshipConstraints": {
+      "polarOppositeValidation": {
+        "rule": "POLAR_OPPOSITE relationships require high polarity on specified axis",
+        "validation": "polarity > 0.7 on the axis, euclidean distance < 1.5 overall",
+        "note": "Polar opposites are close on most axes, distant on one"
+      },
+
+      "shadowValidation": {
+        "rule": "SHADOW relationships require light-shadow axis difference",
+        "validation": "Shadow form should have higher light-shadow coordinate",
+        "note": "Shadows emerge from repression - movement toward unconscious"
+      },
+
+      "evolutionValidation": {
+        "rule": "EVOLUTION relationships imply consistent transformation direction",
+        "validation": "Evolved form should show movement on at least one axis",
+        "note": "Evolution isn't random - it follows archetypal logic"
+      },
+
+      "culturalEchoValidation": {
+        "rule": "CULTURAL_ECHO relationships require structural similarity",
+        "validation": "Euclidean distance < 0.5 for fidelity > 0.7",
+        "note": "True echoes share deep structure, not just surface attributes"
+      },
+
+      "bidirectionalConsistency": {
+        "rule": "Bidirectional relationships must have matching reverse entries",
+        "validation": "If A → B exists as bidirectional, B → A must exist with same type",
+        "note": "System generates reverse automatically if missing"
+      },
+
+      "inverseConsistency": {
+        "rule": "Inverse relationships must be properly paired",
+        "validation": "If A CONTAINS B, then B CONTAINED_BY A must exist",
+        "note": "System generates inverse automatically if missing"
+      }
+    },
+
+    "hierarchyConstraints": {
+      "levelValidation": {
+        "rule": "Hierarchy levels must be properly ordered",
+        "validation": "Primordial > CulturalArchetype > Epithet > Aspect > LocalVariant",
+        "note": "Each level can only reference levels above it in 'is*Of' relationships"
+      },
+
+      "instantiationValidation": {
+        "rule": "CulturalArchetypes must instantiate at least one Primordial",
+        "validation": "Every CulturalArchetype has non-empty 'instantiates' array",
+        "note": "Unconnected cultural figures break the schema's purpose"
+      },
+
+      "weightValidation": {
+        "rule": "Each instantiation weight represents how strongly a figure embodies that primordial (0.0-1.0 scale per primordial)",
+        "interpretation": "Weights are NOT required to sum to 1.0. A figure can strongly embody multiple primordials simultaneously.",
+        "scale": {
+          "0.9-1.0": "Defines the archetype - this primordial IS the figure's core identity",
+          "0.7-0.89": "Major aspect - strongly embodies this primordial",
+          "0.5-0.69": "Significant aspect - clearly present but not defining",
+          "0.3-0.49": "Minor aspect - present in certain contexts or narratives",
+          "0.0-0.29": "Trace aspect - barely present, usually only in specific variants"
+        },
+        "examples": {
+          "single-primordial": "Hestia: Preserver(0.9) - sums to 0.9, valid",
+          "multi-primordial": "Hermes: Trickster(0.85) + Psychopomp(0.65) + Magician(0.45) + Divine Child(0.3) = 2.25, valid",
+          "complex-deity": "Odin: Magician(0.85) + Wise Elder(0.8) + Sovereign(0.7) + Warrior(0.6) + Psychopomp(0.5) = 3.45, valid"
+        },
+        "note": "This approach captures archetypal complexity - most deities embody multiple primordials with varying intensity"
+      }
+    }
+  }
+}

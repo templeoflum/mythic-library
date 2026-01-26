@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_individual",
+  "@type": "CalibrationPoint",
+  "name": "Pure Individual",
+  "axis": "individual-collective",
+  "polarity": "negative",
+  "description": "Maximum self, ego, personal identity. The theoretical extreme of complete individuation and separation from the collective.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.0,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_collective",
+  "nearestPrimordials": [
+    {"@id": "primordial:hero", "distance": 0.2},
+    {"@id": "primordial:rebel", "distance": 0.25}
+  ],
+  "culturalExamples": ["Prometheus", "Lucifer (light-bearer)", "Narcissus"],
+  "psychologicalManifestation": "Ego strength, personal identity, differentiation from mass",
+  "shadowWhenExtreme": "Isolation, narcissism, inability to connect, alienation",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

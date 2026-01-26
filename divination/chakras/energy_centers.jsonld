@@ -1,0 +1,262 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "chakras:energy_centers",
+  "@type": "SymbolicSystem",
+  "name": "Chakra System",
+  "description": "The 7 primary chakras of the subtle body, representing energy centers and consciousness levels.",
+  "domain": "divination",
+  "subdomain": "chakras",
+  "cardinality": 7,
+  "structuralNotes": "Vertical arrangement from root to crown. Each associated with element, color, sound, and psychological function.",
+
+  "entries": [
+    {
+      "@id": "chakra:muladhara",
+      "@type": "Archetype",
+      "name": "Muladhara (Root)",
+      "number": 1,
+      "location": "base of spine",
+      "element": "earth",
+      "color": "red",
+      "sound": "LAM",
+      "keywords": ["survival", "grounding", "security", "stability", "roots", "physical"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.52,
+        "active-receptive": 0.65,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.95,
+        "stasis-transformation": 0.18,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["survival", "stability"]},
+        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["roots", "grounding"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "chakra:sahasrara", "axis": "earth-spirit"},
+        {"type": "EVOLUTION", "target": "chakra:svadhisthana", "note": "Kundalini ascent"},
+        {"type": "CULTURAL_ECHO", "target": "element:earth", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:malkuth", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "astrology:saturn", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "chakra:svadhisthana",
+      "@type": "Archetype",
+      "name": "Svadhisthana (Sacral)",
+      "number": 2,
+      "location": "lower abdomen",
+      "element": "water",
+      "color": "orange",
+      "sound": "VAM",
+      "keywords": ["creativity", "sexuality", "emotion", "pleasure", "flow", "desire"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.48,
+        "active-receptive": 0.58,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.78,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["sexuality", "desire"]},
+        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["creativity", "flow"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "chakra:muladhara", "note": "Below"},
+        {"type": "EVOLUTION", "target": "chakra:manipura", "note": "Kundalini ascent"},
+        {"type": "CULTURAL_ECHO", "target": "element:water", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:yesod", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "chakra:manipura",
+      "@type": "Archetype",
+      "name": "Manipura (Solar Plexus)",
+      "number": 3,
+      "location": "solar plexus",
+      "element": "fire",
+      "color": "yellow",
+      "sound": "RAM",
+      "keywords": ["will", "power", "confidence", "ego", "action", "transformation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.32,
+        "active-receptive": 0.18,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.68,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["will", "power"]},
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["action", "confidence"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "chakra:svadhisthana", "note": "Below"},
+        {"type": "EVOLUTION", "target": "chakra:anahata", "note": "Kundalini ascent"},
+        {"type": "CULTURAL_ECHO", "target": "element:fire", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:sun", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "chakra:anahata",
+      "@type": "Archetype",
+      "name": "Anahata (Heart)",
+      "number": 4,
+      "location": "heart",
+      "element": "air",
+      "color": "green",
+      "sound": "YAM",
+      "keywords": ["love", "compassion", "healing", "balance", "connection", "integration"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.32,
+        "light-shadow": 0.35,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["love", "connection"]},
+        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["compassion", "healing"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "chakra:manipura", "note": "Below"},
+        {"type": "EVOLUTION", "target": "chakra:vishuddha", "note": "Kundalini ascent"},
+        {"type": "CULTURAL_ECHO", "target": "element:air", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:tiphareth", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:venus", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "chakra:vishuddha",
+      "@type": "Archetype",
+      "name": "Vishuddha (Throat)",
+      "number": 5,
+      "location": "throat",
+      "element": "ether",
+      "color": "blue",
+      "sound": "HAM",
+      "keywords": ["communication", "expression", "truth", "creativity", "voice", "purification"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.28,
+        "active-receptive": 0.35,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.8, "aspects": ["communication", "expression"]},
+        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["creativity", "voice"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "chakra:anahata", "note": "Below"},
+        {"type": "EVOLUTION", "target": "chakra:ajna", "note": "Kundalini ascent"},
+        {"type": "CULTURAL_ECHO", "target": "element:aether", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:hod", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "chakra:ajna",
+      "@type": "Archetype",
+      "name": "Ajna (Third Eye)",
+      "number": 6,
+      "location": "brow",
+      "element": "light",
+      "color": "indigo",
+      "sound": "OM",
+      "keywords": ["intuition", "vision", "wisdom", "insight", "perception", "imagination"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.22,
+        "active-receptive": 0.55,
+        "individual-collective": 0.52,
+        "ascent-descent": 0.18,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "insight"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["vision", "perception"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "chakra:vishuddha", "note": "Below"},
+        {"type": "EVOLUTION", "target": "chakra:sahasrara", "note": "Kundalini ascent"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:neptune", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:binah", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "chakra:sahasrara",
+      "@type": "Archetype",
+      "name": "Sahasrara (Crown)",
+      "number": 7,
+      "location": "crown",
+      "element": "thought/consciousness",
+      "color": "violet/white",
+      "sound": "silence",
+      "keywords": ["transcendence", "enlightenment", "unity", "consciousness", "divine", "liberation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.08,
+        "active-receptive": 0.50,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.05,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.9, "aspects": ["unity", "consciousness"]},
+        {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["enlightenment", "liberation"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "chakra:muladhara", "axis": "earth-spirit"},
+        {"type": "DEVOLUTION", "target": "chakra:ajna", "note": "Below"},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:kether", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "astrology:uranus", "fidelity": 0.65}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "verticalPath": ["chakra:muladhara", "chakra:svadhisthana", "chakra:manipura", "chakra:anahata", "chakra:vishuddha", "chakra:ajna", "chakra:sahasrara"],
+    "elementalCorrespondence": {
+      "chakra:muladhara": "element:earth",
+      "chakra:svadhisthana": "element:water",
+      "chakra:manipura": "element:fire",
+      "chakra:anahata": "element:air",
+      "chakra:vishuddha": "element:aether"
+    },
+    "polarPairs": [
+      {"pair": ["chakra:muladhara", "chakra:sahasrara"], "axis": "matter-spirit"},
+      {"pair": ["chakra:svadhisthana", "chakra:ajna"], "axis": "emotion-intuition"},
+      {"pair": ["chakra:manipura", "chakra:vishuddha"], "axis": "power-expression"}
+    ],
+    "centerPoint": "chakra:anahata"
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

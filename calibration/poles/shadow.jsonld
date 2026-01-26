@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_shadow",
+  "@type": "CalibrationPoint",
+  "name": "Pure Shadow",
+  "axis": "light-shadow",
+  "polarity": "positive",
+  "description": "Maximum unconscious, hidden, repressed. The theoretical extreme of complete darkness where nothing is visible to consciousness.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 1.0,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_light",
+  "nearestPrimordials": [
+    {"@id": "primordial:monster", "distance": 0.25},
+    {"@id": "primordial:outcast", "distance": 0.3}
+  ],
+  "culturalExamples": ["Erebus", "Set (hidden)", "Hel", "The Unseen"],
+  "psychologicalManifestation": "The unconscious, repressed content, hidden motivations, the unknown self",
+  "shadowWhenExtreme": "Complete unconsciousness, possession by complexes, lost in darkness",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

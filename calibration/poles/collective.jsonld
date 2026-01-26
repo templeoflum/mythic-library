@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_collective",
+  "@type": "CalibrationPoint",
+  "name": "Pure Collective",
+  "axis": "individual-collective",
+  "polarity": "positive",
+  "description": "Maximum group, collective unconscious, transpersonal identity. The theoretical extreme of complete dissolution into the greater whole.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 1.0,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_individual",
+  "nearestPrimordials": [
+    {"@id": "primordial:ancestor", "distance": 0.25},
+    {"@id": "primordial:self", "distance": 0.3}
+  ],
+  "culturalExamples": ["The Ancestors", "World Soul (Anima Mundi)", "Brahman"],
+  "psychologicalManifestation": "Connection to collective, transpersonal identity, belonging",
+  "shadowWhenExtreme": "Loss of self, mob mentality, inability to individuate",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

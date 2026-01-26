@@ -1,0 +1,329 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "astrology:planets",
+  "@type": "SymbolicSystem",
+  "name": "Astrological Planets",
+  "description": "The 10 planetary bodies used in Western astrology, representing archetypal forces and drives.",
+  "domain": "divination",
+  "subdomain": "astrology",
+  "cardinality": 10,
+  "structuralNotes": "Includes classical 7 (Sun through Saturn) plus modern 3 (Uranus, Neptune, Pluto). Each rules 1-2 signs.",
+
+  "entries": [
+    {
+      "@id": "astrology:sun",
+      "@type": "Archetype",
+      "name": "Sun",
+      "symbol": "☉",
+      "category": "luminary",
+      "rules": ["astrology:leo"],
+      "keywords": ["identity", "ego", "vitality", "consciousness", "will", "purpose", "father"],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.12,
+        "active-receptive": 0.20,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.22,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.9, "aspects": ["identity", "consciousness"]},
+        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["will", "authority"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "astrology:moon", "axis": "conscious-unconscious"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-APOLLO", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "iching:li", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "astrology:moon",
+      "@type": "Archetype",
+      "name": "Moon",
+      "symbol": "☽",
+      "category": "luminary",
+      "rules": ["astrology:cancer"],
+      "keywords": ["emotion", "instinct", "unconscious", "nurturing", "cycles", "mother", "receptivity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.72,
+        "active-receptive": 0.82,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "cycles"]},
+        {"primordial": "primordial:shadow", "weight": 0.6, "aspects": ["unconscious", "hidden"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "astrology:sun", "axis": "conscious-unconscious"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARTEMIS", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "iching:kan", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "astrology:mercury",
+      "@type": "Archetype",
+      "name": "Mercury",
+      "symbol": "☿",
+      "category": "personal",
+      "rules": ["astrology:gemini", "astrology:virgo"],
+      "keywords": ["communication", "intellect", "travel", "commerce", "adaptability", "trickery"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.42,
+        "active-receptive": 0.35,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.72,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.8, "aspects": ["adaptability", "boundary-crossing"]},
+        {"primordial": "primordial:magician", "weight": 0.7, "aspects": ["intellect", "communication"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-ODIN", "fidelity": 0.6, "note": "Mercury-Wotan connection"},
+        {"type": "CULTURAL_ECHO", "target": "iching:xun", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "astrology:venus",
+      "@type": "Archetype",
+      "name": "Venus",
+      "symbol": "♀",
+      "category": "personal",
+      "rules": ["astrology:taurus", "astrology:libra"],
+      "keywords": ["love", "beauty", "pleasure", "harmony", "values", "attraction", "art"],
+      "spectralCoordinates": {
+        "order-chaos": 0.42,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.32,
+        "active-receptive": 0.62,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.42,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.9, "aspects": ["love", "beauty", "attraction"]},
+        {"primordial": "primordial:maiden", "weight": 0.6, "aspects": ["grace", "harmony"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "astrology:mars", "note": "Attraction and assertion"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "iching:dui", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "astrology:mars",
+      "@type": "Archetype",
+      "name": "Mars",
+      "symbol": "♂",
+      "category": "personal",
+      "rules": ["astrology:aries"],
+      "keywords": ["action", "aggression", "drive", "courage", "passion", "conflict", "assertion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.58,
+        "light-shadow": 0.35,
+        "active-receptive": 0.12,
+        "individual-collective": 0.28,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.9, "aspects": ["aggression", "conflict", "courage"]},
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["action", "drive"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "astrology:venus", "note": "Assertion and attraction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.6},
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARES", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "iching:zhen", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "astrology:jupiter",
+      "@type": "Archetype",
+      "name": "Jupiter",
+      "symbol": "♃",
+      "category": "social",
+      "rules": ["astrology:sagittarius"],
+      "keywords": ["expansion", "abundance", "wisdom", "philosophy", "luck", "growth", "benevolence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.28,
+        "active-receptive": 0.35,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.48,
+        "voluntary-fated": 0.52
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["abundance", "benevolence"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["wisdom", "philosophy"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "astrology:saturn", "note": "Expansion vs restriction"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.95},
+        {"type": "CULTURAL_ECHO", "target": "iching:qian", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "astrology:saturn",
+      "@type": "Archetype",
+      "name": "Saturn",
+      "symbol": "♄",
+      "category": "social",
+      "rules": ["astrology:capricorn"],
+      "keywords": ["restriction", "discipline", "structure", "time", "karma", "authority", "maturity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.52,
+        "active-receptive": 0.55,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.22,
+        "voluntary-fated": 0.78
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_father", "weight": 0.85, "aspects": ["authority", "structure"]},
+        {"primordial": "primordial:crone", "weight": 0.7, "aspects": ["time", "endings", "karma"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "astrology:jupiter", "note": "Restriction vs expansion"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.65},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-CRONUS", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "iching:gen", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "astrology:uranus",
+      "@type": "Archetype",
+      "name": "Uranus",
+      "symbol": "♅",
+      "category": "transpersonal",
+      "rules": ["astrology:aquarius"],
+      "keywords": ["revolution", "liberation", "innovation", "sudden change", "awakening", "eccentricity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.78,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.38,
+        "active-receptive": 0.22,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.85,
+        "voluntary-fated": 0.18
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.9, "aspects": ["revolution", "liberation"]},
+        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["sudden change", "disruption"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "astrology:saturn", "note": "Innovation vs tradition"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-PROMETHEUS", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "astrology:neptune",
+      "@type": "Archetype",
+      "name": "Neptune",
+      "symbol": "♆",
+      "category": "transpersonal",
+      "rules": ["astrology:pisces"],
+      "keywords": ["dreams", "illusion", "spirituality", "dissolution", "compassion", "transcendence", "mysticism"],
+      "spectralCoordinates": {
+        "order-chaos": 0.62,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.68,
+        "active-receptive": 0.78,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.72
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.8, "aspects": ["transcendence", "dissolution"]},
+        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["compassion", "spirituality"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "astrology:pluto", "note": "Dissolution and transformation"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-POSEIDON", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "iching:kan", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "astrology:pluto",
+      "@type": "Archetype",
+      "name": "Pluto",
+      "symbol": "♇",
+      "category": "transpersonal",
+      "rules": ["astrology:scorpio"],
+      "keywords": ["transformation", "death-rebirth", "power", "obsession", "underworld", "regeneration"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.82,
+        "light-shadow": 0.85,
+        "active-receptive": 0.42,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.82,
+        "stasis-transformation": 0.92,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["death-rebirth", "transformation"]},
+        {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["underworld", "hidden power"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "astrology:neptune", "note": "Transformation and dissolution"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HADES", "fidelity": 0.9}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "categories": {
+      "luminaries": ["astrology:sun", "astrology:moon"],
+      "personal": ["astrology:mercury", "astrology:venus", "astrology:mars"],
+      "social": ["astrology:jupiter", "astrology:saturn"],
+      "transpersonal": ["astrology:uranus", "astrology:neptune", "astrology:pluto"]
+    },
+    "polarPairs": [
+      {"pair": ["astrology:sun", "astrology:moon"], "axis": "conscious-unconscious"},
+      {"pair": ["astrology:venus", "astrology:mars"], "axis": "attraction-assertion"},
+      {"pair": ["astrology:jupiter", "astrology:saturn"], "axis": "expansion-restriction"}
+    ]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

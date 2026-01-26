@@ -1,0 +1,205 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "geodesics:shadow_dynamics",
+  "@type": "GeodesicCollection",
+  "name": "Shadow Descent and Integration Paths",
+  "description": "Geodesics governing movement into shadow states and paths back to integration.",
+
+  "shadowDescentPatterns": [
+    {
+      "@id": "shadow:sovereign_tyrant",
+      "archetype": "primordial:sovereign",
+      "shadowForm": "The Tyrant",
+      "descentTriggers": ["Threatened authority", "Fear of chaos", "Unprocessed wound"],
+      "spectralShift": {
+        "order-chaos": -0.2,
+        "light-shadow": 0.4,
+        "voluntary-fated": -0.2
+      },
+      "manifestations": ["Rigid control", "Crushing dissent", "Paranoia"],
+      "integrationPath": {
+        "steps": [
+          "Recognize control as fear response",
+          "Grieve the wound beneath the fear",
+          "Trust in natural order",
+          "Servant leadership"
+        ],
+        "requiredArchetypes": ["primordial:healer", "primordial:wise_elder"]
+      }
+    },
+    {
+      "@id": "shadow:warrior_sadist",
+      "archetype": "primordial:warrior",
+      "shadowForm": "The Sadist/Masochist",
+      "descentTriggers": ["Purposeless aggression", "Directionless energy", "Trauma response"],
+      "spectralShift": {
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
+        "individual-collective": -0.2
+      },
+      "manifestations": ["Cruelty for its own sake", "Self-destruction", "Compulsive conflict"],
+      "integrationPath": {
+        "steps": [
+          "Channel aggression toward worthy cause",
+          "Develop compassion for enemy",
+          "Recognize strength in restraint",
+          "Protect rather than dominate"
+        ],
+        "requiredArchetypes": ["primordial:healer", "primordial:sovereign"]
+      }
+    },
+    {
+      "@id": "shadow:magician_manipulator",
+      "archetype": "primordial:magician",
+      "shadowForm": "The Manipulator/Charlatan",
+      "descentTriggers": ["Knowledge without ethics", "Power hunger", "Disconnection from heart"],
+      "spectralShift": {
+        "light-shadow": 0.5,
+        "individual-collective": -0.3,
+        "voluntary-fated": 0.2
+      },
+      "manifestations": ["Deception", "Using others as means", "Spiritual materialism"],
+      "integrationPath": {
+        "steps": [
+          "Reconnect knowledge to service",
+          "Develop heart alongside mind",
+          "Use power for collective good",
+          "Transparency in method"
+        ],
+        "requiredArchetypes": ["primordial:lover", "primordial:wise_elder"]
+      }
+    },
+    {
+      "@id": "shadow:lover_addict",
+      "archetype": "primordial:lover",
+      "shadowForm": "The Addict/Impotent",
+      "descentTriggers": ["Fear of loss", "Boundary dissolution", "Unmet needs"],
+      "spectralShift": {
+        "active-receptive": 0.3,
+        "individual-collective": 0.3,
+        "stasis-transformation": 0.2
+      },
+      "manifestations": ["Compulsive attachment", "Boundary violations", "Emotional flooding", "Numbness"],
+      "integrationPath": {
+        "steps": [
+          "Establish healthy boundaries",
+          "Self-love before other-love",
+          "Tolerate aloneness",
+          "Channel passion productively"
+        ],
+        "requiredArchetypes": ["primordial:sovereign", "primordial:warrior"]
+      }
+    },
+    {
+      "@id": "shadow:hero_inflated_ego",
+      "archetype": "primordial:hero",
+      "shadowForm": "The Inflated Ego/Coward",
+      "descentTriggers": ["Unchecked success", "Failure to integrate shadow", "Fear of inadequacy"],
+      "spectralShift": {
+        "light-shadow": 0.3,
+        "individual-collective": -0.4,
+        "voluntary-fated": 0.3
+      },
+      "manifestations": ["Grandiosity", "Savior complex", "Cowardice disguised as caution", "Recklessness"],
+      "integrationPath": {
+        "steps": [
+          "Accept limitations",
+          "Recognize need for help",
+          "Serve cause greater than ego",
+          "Balance courage with wisdom"
+        ],
+        "requiredArchetypes": ["primordial:wise_elder", "primordial:trickster"]
+      }
+    },
+    {
+      "@id": "shadow:trickster_deceiver",
+      "archetype": "primordial:trickster",
+      "shadowForm": "The Deceiver/Fool",
+      "descentTriggers": ["Cunning without purpose", "Detachment from consequences", "Nihilism"],
+      "spectralShift": {
+        "order-chaos": 0.2,
+        "light-shadow": 0.4,
+        "individual-collective": -0.2
+      },
+      "manifestations": ["Pathological lying", "Destructive pranks", "Inability to commit", "Self-sabotage"],
+      "integrationPath": {
+        "steps": [
+          "Ground humor in compassion",
+          "Accept consequences of actions",
+          "Use wit in service of truth",
+          "Commit to something"
+        ],
+        "requiredArchetypes": ["primordial:sovereign", "primordial:lover"]
+      }
+    },
+    {
+      "@id": "shadow:great_mother_devouring",
+      "archetype": "primordial:great_mother",
+      "shadowForm": "The Devouring Mother",
+      "descentTriggers": ["Fear of child's independence", "Unmet needs projected", "Control through care"],
+      "spectralShift": {
+        "creation-destruction": 0.3,
+        "active-receptive": -0.2,
+        "individual-collective": 0.3
+      },
+      "manifestations": ["Smothering", "Guilt manipulation", "Preventing growth", "Consuming love"],
+      "integrationPath": {
+        "steps": [
+          "Allow separation",
+          "Meet own needs directly",
+          "Trust child's journey",
+          "Love without possessing"
+        ],
+        "requiredArchetypes": ["primordial:wise_elder", "primordial:maiden"]
+      }
+    },
+    {
+      "@id": "shadow:wise_elder_cynical",
+      "archetype": "primordial:wise_elder",
+      "shadowForm": "The Cynic/Dogmatist",
+      "descentTriggers": ["Disappointment", "Betrayal by students", "Rigidity with age"],
+      "spectralShift": {
+        "order-chaos": -0.3,
+        "light-shadow": 0.3,
+        "stasis-transformation": -0.3
+      },
+      "manifestations": ["Bitter wisdom", "Closed-mindedness", "Judgment without compassion", "Hoarding knowledge"],
+      "integrationPath": {
+        "steps": [
+          "Reconnect with beginner's mind",
+          "Forgive betrayals",
+          "Wisdom serves, not judges",
+          "Accept not-knowing"
+        ],
+        "requiredArchetypes": ["primordial:divine_child", "primordial:trickster"]
+      }
+    }
+  ],
+
+  "collectiveShadowPatterns": [
+    {
+      "@id": "shadow:scapegoat_mechanism",
+      "name": "The Scapegoat Dynamic",
+      "description": "Collective shadow projected onto individual or group.",
+      "mechanism": "Group projects disowned aspects onto sacrificial carrier",
+      "archetypes": ["primordial:outcast", "primordial:monster"],
+      "resolution": "Conscious withdrawal of projections by collective"
+    },
+    {
+      "@id": "shadow:golden_shadow",
+      "name": "The Golden Shadow",
+      "description": "Positive qualities projected outward (hero worship).",
+      "mechanism": "Disowned gifts seen only in others",
+      "archetypes": ["primordial:hero", "primordial:magician"],
+      "resolution": "Reclaim projected positive potential"
+    }
+  ],
+
+  "integrationPrinciples": {
+    "shadowNeverEliminated": "Shadow is integrated, not destroyed. It becomes ally, not enemy.",
+    "gradualApproach": "Direct confrontation can overwhelm; spiral approach is safer.",
+    "bodyShadow": "Shadow often held in body; somatic work essential for full integration.",
+    "relationalMirror": "Others reflect our shadow; relationships are integration laboratories.",
+    "creativeExpression": "Art, dream work, and active imagination provide safe shadow encounter."
+  }
+}

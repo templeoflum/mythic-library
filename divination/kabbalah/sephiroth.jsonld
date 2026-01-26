@@ -1,0 +1,330 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "kabbalah:sephiroth",
+  "@type": "SymbolicSystem",
+  "name": "Kabbalistic Sephiroth",
+  "description": "The 10 sephiroth of the Tree of Life, representing divine emanations and archetypal principles.",
+  "domain": "divination",
+  "subdomain": "kabbalah",
+  "cardinality": 10,
+  "structuralNotes": "Arranged in three pillars: Severity (left), Mercy (right), and Middle. Connected by 22 paths corresponding to Major Arcana.",
+
+  "entries": [
+    {
+      "@id": "kabbalah:kether",
+      "@type": "Archetype",
+      "name": "Kether (Crown)",
+      "number": 1,
+      "pillar": "middle",
+      "attribute": "Unity, Source",
+      "keywords": ["unity", "source", "divine will", "crown", "infinite", "beginning"],
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.10,
+        "light-shadow": 0.05,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.02,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.95, "aspects": ["unity", "source"]},
+        {"primordial": "primordial:creator", "weight": 0.8, "aspects": ["divine will", "beginning"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "kabbalah:chokmah", "note": "First emanation"},
+        {"type": "EVOLUTION", "target": "kabbalah:binah", "note": "First emanation"},
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:malkuth", "axis": "spirit-matter"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.7, "note": "Before manifestation"},
+        {"type": "CULTURAL_ECHO", "target": "chakra:sahasrara", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "kabbalah:chokmah",
+      "@type": "Archetype",
+      "name": "Chokmah (Wisdom)",
+      "number": 2,
+      "pillar": "mercy",
+      "attribute": "Active wisdom, Father",
+      "keywords": ["wisdom", "active force", "father", "yang", "creative impulse"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.22,
+        "active-receptive": 0.15,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.15,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_father", "weight": 0.9, "aspects": ["father", "active force"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.75, "aspects": ["wisdom"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:binah", "axis": "active-receptive"},
+        {"type": "COMPLEMENT", "target": "kabbalah:binah", "note": "Supernal pair"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "astrology:neptune", "fidelity": 0.6},
+        {"type": "CULTURAL_ECHO", "target": "iching:qian", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "kabbalah:binah",
+      "@type": "Archetype",
+      "name": "Binah (Understanding)",
+      "number": 3,
+      "pillar": "severity",
+      "attribute": "Receptive understanding, Mother",
+      "keywords": ["understanding", "receptive", "mother", "yin", "form", "restriction"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.85,
+        "individual-collective": 0.68,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.9, "aspects": ["mother", "form"]},
+        {"primordial": "primordial:crone", "weight": 0.7, "aspects": ["understanding", "restriction"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:chokmah", "axis": "active-receptive"},
+        {"type": "COMPLEMENT", "target": "kabbalah:chokmah", "note": "Supernal pair"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "astrology:saturn", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "iching:kun", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "kabbalah:chesed",
+      "@type": "Archetype",
+      "name": "Chesed (Mercy)",
+      "number": 4,
+      "pillar": "mercy",
+      "attribute": "Love, Expansion",
+      "keywords": ["mercy", "love", "expansion", "benevolence", "grace", "abundance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.25,
+        "active-receptive": 0.35,
+        "individual-collective": 0.62,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["benevolence", "abundance"]},
+        {"primordial": "primordial:healer", "weight": 0.7, "aspects": ["mercy", "love"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:geburah", "axis": "mercy-severity"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "astrology:jupiter", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "kabbalah:geburah",
+      "@type": "Archetype",
+      "name": "Geburah (Severity)",
+      "number": 5,
+      "pillar": "severity",
+      "attribute": "Strength, Judgment",
+      "keywords": ["severity", "strength", "judgment", "discipline", "justice", "power"],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.68,
+        "light-shadow": 0.45,
+        "active-receptive": 0.18,
+        "individual-collective": 0.38,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["strength", "power"]},
+        {"primordial": "primordial:destroyer", "weight": 0.7, "aspects": ["judgment", "severity"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:chesed", "axis": "mercy-severity"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "kabbalah:tiphareth",
+      "@type": "Archetype",
+      "name": "Tiphareth (Beauty)",
+      "number": 6,
+      "pillar": "middle",
+      "attribute": "Harmony, Son",
+      "keywords": ["beauty", "harmony", "balance", "son", "christ-consciousness", "heart"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.48
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.85, "aspects": ["harmony", "balance"]},
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["son", "sacrifice"]}
+      ],
+      "relationships": [
+        {"type": "CONTAINS", "target": "kabbalah:kether", "note": "Reflects crown below"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "astrology:sun", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "chakra:anahata", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "kabbalah:netzach",
+      "@type": "Archetype",
+      "name": "Netzach (Victory)",
+      "number": 7,
+      "pillar": "mercy",
+      "attribute": "Emotion, Nature",
+      "keywords": ["victory", "emotion", "nature", "desire", "endurance", "passion"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.35,
+        "active-receptive": 0.42,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.58,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["emotion", "desire"]},
+        {"primordial": "primordial:divine_child", "weight": 0.6, "aspects": ["nature", "passion"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:hod", "axis": "emotion-intellect"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "astrology:venus", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "kabbalah:hod",
+      "@type": "Archetype",
+      "name": "Hod (Glory)",
+      "number": 8,
+      "pillar": "severity",
+      "attribute": "Intellect, Form",
+      "keywords": ["glory", "intellect", "form", "communication", "logic", "splendor"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.38,
+        "active-receptive": 0.38,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.52,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["intellect", "communication"]},
+        {"primordial": "primordial:trickster", "weight": 0.6, "aspects": ["form", "adaptation"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:netzach", "axis": "emotion-intellect"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.9}
+      ]
+    },
+    {
+      "@id": "kabbalah:yesod",
+      "@type": "Archetype",
+      "name": "Yesod (Foundation)",
+      "number": 9,
+      "pillar": "middle",
+      "attribute": "Unconscious, Moon",
+      "keywords": ["foundation", "unconscious", "moon", "dreams", "sexuality", "astral"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.72,
+        "active-receptive": 0.62,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.68,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.58
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.8, "aspects": ["unconscious", "dreams"]},
+        {"primordial": "primordial:shadow", "weight": 0.7, "aspects": ["hidden", "astral"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "kabbalah:malkuth", "note": "Channels to manifestation"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "chakra:svadhisthana", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "kabbalah:malkuth",
+      "@type": "Archetype",
+      "name": "Malkuth (Kingdom)",
+      "number": 10,
+      "pillar": "middle",
+      "attribute": "Manifestation, Earth",
+      "keywords": ["kingdom", "manifestation", "earth", "physical", "completion", "bride"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.48,
+        "active-receptive": 0.68,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.92,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["manifestation", "physical"]},
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["bride", "earth"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "kabbalah:kether", "axis": "spirit-matter"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "element:earth", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "chakra:muladhara", "fidelity": 0.8}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "pillars": {
+      "severity": ["kabbalah:binah", "kabbalah:geburah", "kabbalah:hod"],
+      "mercy": ["kabbalah:chokmah", "kabbalah:chesed", "kabbalah:netzach"],
+      "middle": ["kabbalah:kether", "kabbalah:tiphareth", "kabbalah:yesod", "kabbalah:malkuth"]
+    },
+    "triads": {
+      "supernal": ["kabbalah:kether", "kabbalah:chokmah", "kabbalah:binah"],
+      "ethical": ["kabbalah:chesed", "kabbalah:geburah", "kabbalah:tiphareth"],
+      "astral": ["kabbalah:netzach", "kabbalah:hod", "kabbalah:yesod"]
+    },
+    "polarPairs": [
+      {"pair": ["kabbalah:chokmah", "kabbalah:binah"], "axis": "wisdom-understanding"},
+      {"pair": ["kabbalah:chesed", "kabbalah:geburah"], "axis": "mercy-severity"},
+      {"pair": ["kabbalah:netzach", "kabbalah:hod"], "axis": "emotion-intellect"},
+      {"pair": ["kabbalah:kether", "kabbalah:malkuth"], "axis": "spirit-matter"}
+    ]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

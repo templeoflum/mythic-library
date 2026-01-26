@@ -1,0 +1,30 @@
+{
+  "@context": "../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:origin",
+  "@type": "CalibrationPoint",
+  "name": "The Origin",
+  "description": "The undifferentiated center - pure potential before polarization. All archetypes emerge from and return to this point. Represents the primordial unity before any distinction.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.5,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "mathematicalProperties": {
+    "euclideanDistanceFromOrigin": 0.0,
+    "isEquidistantFromAllPoles": true,
+    "distanceToAnyPole": 0.5
+  },
+  "symbolicAssociations": [
+    "The Tao before naming",
+    "Ein Sof before emanation",
+    "The Void (Sunyata)",
+    "Prima Materia",
+    "The Monad"
+  ],
+  "notes": "No archetype sits exactly here - this is the theoretical center from which all differentiation flows. Used as reference point for all spectral calculations."
+}

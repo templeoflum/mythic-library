@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version:*)",
+      "Bash(git config:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(gh --version:*)",
+      "Bash(ssh:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git checkout:*)",
+      "Bash(node calibration/validate.js:*)",
+      "Bash(where:*)",
+      "Bash(cmd.exe /c \"where node\")",
+      "Bash(/c/Program Files/nodejs/node.exe --version)",
+      "Bash(/c/nodejs/node.exe --version)",
+      "Bash(git merge:*)",
+      "Bash(git stash:*)",
+      "Bash(wc:*)",
+      "Bash(du:*)",
+      "Bash(node tools/derive_coordinates.js:*)",
+      "Bash(node tools/validate.js:*)"
+    ]
+  }
+}

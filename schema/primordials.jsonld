@@ -1,0 +1,857 @@
+{
+  "@context": "./ACP_CONTEXT.jsonld",
+  "entries": [
+    {
+      "@id": "acp:primordials",
+      "@type": "skos:ConceptScheme",
+      "name": "Primordial Meta-Archetypes",
+      "description": "The fundamental archetypal patterns that transcend culture. All cultural instantiations (Zeus, Odin, Indra) are expressions of these meta-patterns. Primordials exist at a higher level of abstraction.",
+      "version": "2.3",
+      "changes": [
+        "Added 8th axis: voluntary-fated",
+        "Restructured shadow as modifier with activation conditions",
+        "Added differentiation fields for similar primordials",
+        "Added temporal orientation field",
+        "Added 4 new primordials: Outcast, Ancestor, Monster, Twin"
+      ],
+      "temporalOrientationSchema": {
+        "description": "Optional field capturing an archetype's relationship to time. Some archetypes are inherently past, present, or future oriented.",
+        "values": {
+          "past": "Concerned with origins, memory, tradition, ancestors, what-was",
+          "present": "Concerned with immediate experience, presence, now, being",
+          "future": "Concerned with prophecy, potential, becoming, what-will-be",
+          "cyclical": "Concerned with eternal return, seasons, death-rebirth cycles",
+          "liminal": "Exists outside normal time, in threshold/transitional time",
+          "eternal": "Transcends temporal distinctions, exists in all times equally"
+        },
+        "note": "Most archetypes don't have strong temporal orientation. Field is optional and should only be added when temporality is a defining characteristic."
+      }
+    },
+
+    {
+      "@id": "primordial:creator",
+      "@type": "Archetype",
+      "name": "The Creator",
+      "description": "The generative force that brings form from formlessness. Pure creative potential manifesting into actuality.",
+      "spectralCoordinates": {
+        "order-chaos": 0.3,
+        "creation-destruction": 0.0,
+        "light-shadow": 0.3,
+        "active-receptive": 0.2,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.3,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.3
+      },
+      "coreFunction": "To bring new forms into being",
+      "temporalOrientation": "present",
+      "temporalNotes": "Creation occurs in the eternal now; the moment of genesis",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When creation becomes compulsive, unable to stop",
+          "When the created is used to control rather than liberate",
+          "When creation serves ego-inflation rather than genuine generation"
+        ],
+        "shadowManifestations": ["False Creator", "Mad Scientist", "Frankenstein Complex", "Demiurge (Gnostic negative)"],
+        "integrationPath": "Align creative power with wisdom and responsibility for what is created"
+      },
+      "culturalInstantiations": ["Brahma", "Ptah", "Viracocha", "Elohim", "Khnum"],
+      "differentiatesFrom": {
+        "primordial:magician": "Creator brings from nothing; Magician transforms what exists"
+      }
+    },
+
+    {
+      "@id": "primordial:destroyer",
+      "@type": "Archetype",
+      "name": "The Destroyer",
+      "description": "The force of necessary ending, clearing, and dissolution. Makes space for new creation through sacred destruction.",
+      "spectralCoordinates": {
+        "order-chaos": 0.7,
+        "creation-destruction": 1.0,
+        "light-shadow": 0.6,
+        "active-receptive": 0.2,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.9,
+        "voluntary-fated": 0.6
+      },
+      "coreFunction": "To end what must end, to clear and dissolve",
+      "temporalOrientation": "cyclical",
+      "temporalNotes": "Destruction as part of the eternal cycle; ends enable new beginnings",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When destruction becomes an end in itself",
+          "When ending serves rage rather than renewal",
+          "When dissolution is indiscriminate, destroying what should be preserved"
+        ],
+        "shadowManifestations": ["Nihilist", "Annihilator", "Void-Bringer", "Entropy Worship"],
+        "integrationPath": "Destruction in service of life; clearing for new growth"
+      },
+      "culturalInstantiations": ["Shiva", "Kali", "Sekhmet", "Morrigan", "Hel"],
+      "differentiatesFrom": {
+        "primordial:rebel": "Destroyer ends; Rebel opposes. Destruction is ontological; rebellion is relational."
+      }
+    },
+
+    {
+      "@id": "primordial:preserver",
+      "@type": "Archetype",
+      "name": "The Preserver",
+      "description": "The force of maintenance, protection, and continuation. Holds the world in balance between creation and destruction.",
+      "spectralCoordinates": {
+        "order-chaos": 0.2,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.3,
+        "active-receptive": 0.5,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.1,
+        "voluntary-fated": 0.5
+      },
+      "coreFunction": "To maintain, protect, and sustain what exists",
+      "temporalOrientation": "present",
+      "temporalNotes": "Preservation is ongoing present-tense work; holding what-is",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When preservation becomes stagnation",
+          "When protection becomes imprisonment",
+          "When maintaining the old prevents necessary new growth"
+        ],
+        "shadowManifestations": ["Stagnator", "Fossilizer", "Oppressive Guardian", "Status Quo Tyrant"],
+        "integrationPath": "Preserve what is living; release what has completed its cycle"
+      },
+      "culturalInstantiations": ["Vishnu", "Hestia", "Vesta", "Ma'at"],
+      "differentiatesFrom": {
+        "primordial:sovereign": "Preserver maintains existence; Sovereign maintains order. Preserver is cosmic; Sovereign is social."
+      }
+    },
+
+    {
+      "@id": "primordial:trickster",
+      "@type": "Archetype",
+      "name": "The Trickster",
+      "description": "The boundary-crosser who disrupts order to reveal hidden truths. Agent of necessary chaos and transformation through mischief, cunning, and sacred foolishness.",
+      "spectralCoordinates": {
+        "order-chaos": 0.75,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.3,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.8,
+        "voluntary-fated": 0.15
+      },
+      "coreFunction": "To disrupt, reveal, and catalyze change through cunning and sacred mischief",
+      "temporalOrientation": "liminal",
+      "temporalNotes": "Trickster operates in the gaps; threshold moments where time is suspended",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When disruption serves self-interest rather than truth",
+          "When cunning becomes manipulation",
+          "When boundary-crossing becomes boundary-violation",
+          "When the joke becomes cruelty"
+        ],
+        "shadowManifestations": ["Deceiver", "Con Artist", "Manipulator", "Sadistic Prankster", "Gaslighter"],
+        "integrationPath": "Align trickster energy with truth-telling; disrupt in service of revelation, not ego"
+      },
+      "culturalInstantiations": ["Hermes", "Loki", "Coyote", "Eshu", "Anansi", "Maui", "Br'er Rabbit"],
+      "differentiatesFrom": {
+        "primordial:rebel": "Trickster disrupts through cunning and mischief; Rebel through direct opposition. Trickster is amoral; Rebel has a cause.",
+        "primordial:magician": "Trickster breaks rules; Magician works with hidden rules. Trickster is chaos-aligned; Magician is knowledge-aligned."
+      }
+    },
+
+    {
+      "@id": "primordial:rebel",
+      "@type": "Archetype",
+      "name": "The Rebel",
+      "description": "The one who stands against corrupt order. Fights for freedom and transformation of unjust systems through direct opposition.",
+      "spectralCoordinates": {
+        "order-chaos": 0.7,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.45,
+        "active-receptive": 0.2,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.1
+      },
+      "coreFunction": "To challenge corrupt authority and fight for freedom",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When rebellion becomes identity rather than response to injustice",
+          "When opposition becomes destruction for its own sake",
+          "When the rebel becomes the new tyrant"
+        ],
+        "shadowManifestations": ["Terrorist", "Nihilistic Destroyer", "Perpetual Adolescent", "Revolutionary Tyrant"],
+        "integrationPath": "Rebel in service of genuine values; build as well as tear down"
+      },
+      "culturalInstantiations": ["Prometheus", "Lucifer (as light-bringer)", "Loki (rebel aspect)", "Set", "Spartacus"],
+      "differentiatesFrom": {
+        "primordial:trickster": "Rebel has a cause and opposes directly; Trickster is amoral and works through indirection.",
+        "primordial:hero": "Rebel opposes existing order; Hero often restores or fulfills order."
+      }
+    },
+
+    {
+      "@id": "primordial:hero",
+      "@type": "Archetype",
+      "name": "The Hero",
+      "description": "The one who answers the call, faces trials, and returns transformed. The ego's journey toward wholeness through courageous action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.4,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.25,
+        "active-receptive": 0.15,
+        "individual-collective": 0.2,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.4
+      },
+      "coreFunction": "To face trials, overcome obstacles, and return transformed",
+      "temporalOrientation": "present",
+      "temporalNotes": "The Hero exists in the eternal now of action; the quest is always present-tense",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When heroism serves ego-inflation rather than genuine service",
+          "When the hero refuses to return and share the boon",
+          "When strength becomes domination",
+          "When the hero cannot integrate the journey and becomes rigid"
+        ],
+        "shadowManifestations": ["Tyrant", "Bully", "Narcissistic Savior", "Martyr Complex", "Perpetual Quester"],
+        "integrationPath": "Hero serves the community; strength in service of protection, not domination"
+      },
+      "culturalInstantiations": ["Perseus", "Hercules", "Gilgamesh", "Arjuna", "Sigurd", "Beowulf"],
+      "differentiatesFrom": {
+        "primordial:warrior": "Hero undertakes a transformative journey; Warrior embodies martial energy. Hero arc is narrative; Warrior is stance.",
+        "primordial:rebel": "Hero often restores/fulfills order; Rebel opposes order."
+      }
+    },
+
+    {
+      "@id": "primordial:shadow",
+      "@type": "Archetype",
+      "name": "The Shadow",
+      "description": "The rejected, denied, and repressed aspects of self and collective. That which we refuse to see becomes the Shadow. Unlike other primordials, Shadow is both an archetype AND a universal modifier that can apply to any archetype.",
+      "spectralCoordinates": {
+        "order-chaos": 0.6,
+        "creation-destruction": 0.6,
+        "light-shadow": 0.9,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.7
+      },
+      "coreFunction": "To hold what is rejected until it can be integrated",
+      "uniqueProperties": {
+        "note": "Shadow has a dual nature: (1) as primordial archetype representing the Unknown/Rejected, and (2) as a modifier that describes the distorted form of ANY archetype under specific conditions.",
+        "asModifier": "Every primordial has a shadow form accessible through its shadowDynamics field",
+        "asArchetype": "The Shadow itself represents pure rejected-ness, the encounter with the Unknown Other"
+      },
+      "integrationDynamics": {
+        "process": "Shadow becomes ally and source of power when acknowledged rather than rejected",
+        "danger": "Unintegrated shadow is projected onto others, creating enemies and scapegoats",
+        "gift": "Integrated shadow provides access to rejected power, creativity, and wholeness"
+      },
+      "culturalInstantiations": ["Set", "Loki (shadow aspect)", "Hades (as feared)", "Mara", "Satan", "Doppelgänger"],
+      "differentiatesFrom": {
+        "primordial:destroyer": "Shadow is rejected/hidden; Destroyer is acknowledged cosmic force. Shadow is psychological; Destroyer is ontological."
+      }
+    },
+
+    {
+      "@id": "primordial:self",
+      "@type": "Archetype",
+      "name": "The Self",
+      "description": "The totality of psyche. The organizing principle that unifies all opposites. The goal of individuation. The Self is the center and circumference, containing all other archetypes in balance.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
+      },
+      "coreFunction": "To unify all opposites into wholeness",
+      "temporalOrientation": "eternal",
+      "temporalNotes": "The Self transcends time; contains past, present, and future in unity",
+      "uniqueProperties": {
+        "note": "The Self is the perfect center of all axes - total integration. It is both goal and ground of archetypal work.",
+        "paradox": "The Self is both the smallest (individual soul) and largest (cosmic wholeness)",
+        "relationship_to_shadow": "The Self includes the Shadow; it is wholeness that embraces all rejected parts"
+      },
+      "shadowDynamics": {
+        "activationConditions": [
+          "When Self-realization becomes spiritual inflation",
+          "When wholeness is claimed prematurely (inflation)",
+          "When the Self is identified with ego"
+        ],
+        "shadowManifestations": ["Spiritual Inflation", "God Complex", "Messianic Delusion", "Premature Transcendence"],
+        "integrationPath": "Humility; recognizing Self as goal, not possession; serving the Self rather than claiming to be it"
+      },
+      "culturalInstantiations": ["Atman", "Buddha-nature", "Christ-consciousness", "Anthropos", "Tao"]
+    },
+
+    {
+      "@id": "primordial:great-mother",
+      "@type": "Archetype",
+      "name": "The Great Mother",
+      "description": "The source of life, nourishment, protection, and unconditional love. Contains both the nurturing mother who gives life and the terrible mother who devours.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.2,
+        "light-shadow": 0.4,
+        "active-receptive": 0.7,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.6
+      },
+      "coreFunction": "To birth, nourish, protect, and when necessary, transform through dissolution",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When nurturance becomes smothering",
+          "When protection becomes imprisonment",
+          "When the mother cannot release the child to independence",
+          "When love becomes devouring possession"
+        ],
+        "shadowManifestations": ["Devouring Mother", "Smothering Mother", "Terrible Mother", "Kali (destructive aspect)", "Medusa"],
+        "integrationPath": "Love that releases; protection that empowers independence; holding that eventually lets go"
+      },
+      "culturalInstantiations": ["Gaia", "Isis", "Demeter", "Pachamama", "Yemoja", "Durga", "Cybele"],
+      "differentiatesFrom": {
+        "primordial:maiden": "Mother has committed to generativity; Maiden holds potential uncommitted."
+      }
+    },
+
+    {
+      "@id": "primordial:great-father",
+      "@type": "Archetype",
+      "name": "The Great Father",
+      "description": "The principle of authority, law, protection, and structure. Contains both the wise father who guides and the tyrannical father who oppresses.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.2,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.2,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.4
+      },
+      "coreFunction": "To protect, structure, guide, and establish order",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When protection becomes control",
+          "When guidance becomes domination",
+          "When structure becomes rigidity",
+          "When the father cannot see the child as separate"
+        ],
+        "shadowManifestations": ["Tyrant Father", "Devouring Father (Cronus)", "Absent Father", "Rigid Patriarch"],
+        "integrationPath": "Authority that empowers; structure that enables growth; law in service of life"
+      },
+      "culturalInstantiations": ["Zeus", "Odin", "Jupiter", "Indra", "Yahweh", "El"],
+      "differentiatesFrom": {
+        "primordial:sovereign": "Father is relational (to children); Sovereign is positional (to subjects). Overlap exists but distinction is important."
+      }
+    },
+
+    {
+      "@id": "primordial:wise-elder",
+      "@type": "Archetype",
+      "name": "The Wise Elder",
+      "description": "The holder of wisdom accumulated through experience. Guide, teacher, and keeper of knowledge. Includes both Wise Old Man and Wise Old Woman / Crone.",
+      "spectralCoordinates": {
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.6
+      },
+      "coreFunction": "To guide through accumulated wisdom",
+      "temporalOrientation": "past",
+      "temporalNotes": "Wisdom comes from accumulated experience; the Elder embodies what has been learned",
+      "genderVariants": {
+        "masculine": "Wise Old Man (Gandalf, Merlin, Odin as seeker)",
+        "feminine": "Wise Old Woman / Crone (Hecate, Baba Yaga, Spider Woman)"
+      },
+      "shadowDynamics": {
+        "activationConditions": [
+          "When wisdom becomes rigidity (Senex)",
+          "When knowledge is hoarded rather than shared",
+          "When the elder cannot adapt to new circumstances",
+          "When wisdom becomes cynicism"
+        ],
+        "shadowManifestations": ["Senex (rigid old man)", "Cynical Elder", "Knowledge Hoarder", "Dogmatist"],
+        "integrationPath": "Wisdom that remains alive and growing; teaching that empowers rather than creates dependency"
+      },
+      "culturalInstantiations": ["Odin (wisdom aspect)", "Thoth", "Athena", "Metis", "Saraswati"],
+      "differentiatesFrom": {
+        "primordial:magician": "Elder holds accumulated wisdom; Magician works with hidden laws. Elder is receptive; Magician is active.",
+        "primordial:crone": "Wise Elder is gender-flexible and wisdom-focused; Crone specifically carries death-wisdom and feminine ending power."
+      }
+    },
+
+    {
+      "@id": "primordial:divine-child",
+      "@type": "Archetype",
+      "name": "The Divine Child",
+      "description": "The symbol of new beginning, potential, and wholeness. Vulnerability combined with cosmic significance. The future breaking into the present.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.2,
+        "active-receptive": 0.5,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.7
+      },
+      "coreFunction": "To represent new beginning and unlimited potential",
+      "temporalOrientation": "future",
+      "temporalNotes": "The Child represents what is coming into being; pure potential not yet actualized",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When the child refuses to grow (Puer Aeternus)",
+          "When potential is never actualized",
+          "When vulnerability becomes manipulation",
+          "When newness becomes avoidance of maturity"
+        ],
+        "shadowManifestations": ["Eternal Child (Puer/Puella)", "Peter Pan", "Infantile Regression", "Manipulative Innocence"],
+        "integrationPath": "Allow potential to actualize; maintain wonder while accepting responsibility"
+      },
+      "culturalInstantiations": ["Christ child", "Horus as child", "Krishna as child", "Divine Twins", "Maui as child"],
+      "differentiatesFrom": {
+        "primordial:maiden": "Divine Child is pre-gendered potential; Maiden is feminine potential before commitment."
+      }
+    },
+
+    {
+      "@id": "primordial:lover",
+      "@type": "Archetype",
+      "name": "The Lover",
+      "description": "The force of connection, passion, desire, and union. Seeks merging and relationship with the Other. Encompasses erotic, romantic, aesthetic, and mystical love.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
+        "active-receptive": 0.5,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.35
+      },
+      "coreFunction": "To connect, unite, and experience passion",
+      "temporalOrientation": "present",
+      "temporalNotes": "Love exists in the eternal present of encounter; passion is always now",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When desire becomes addiction",
+          "When love becomes possession",
+          "When union dissolves necessary boundaries",
+          "When passion overrides wisdom"
+        ],
+        "shadowManifestations": ["Addict", "Obsessive Lover", "Seducer/Seductress (negative)", "Love Addict", "Boundary-less Merger"],
+        "integrationPath": "Love that honors both union and individuality; passion in service of life"
+      },
+      "culturalInstantiations": ["Aphrodite", "Eros", "Freya", "Oshun", "Kamadeva", "Inanna (lover aspect)"],
+      "differentiatesFrom": {
+        "primordial:great-mother": "Lover seeks union with Other; Mother nurtures what she has birthed. Lover is horizontal (to partner); Mother is vertical (to child)."
+      }
+    },
+
+    {
+      "@id": "primordial:warrior",
+      "@type": "Archetype",
+      "name": "The Warrior",
+      "description": "The force of directed aggression, discipline, and protection. Fights for what matters with skill and courage.",
+      "spectralCoordinates": {
+        "order-chaos": 0.4,
+        "creation-destruction": 0.6,
+        "light-shadow": 0.35,
+        "active-receptive": 0.1,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.3
+      },
+      "coreFunction": "To fight, protect, and direct aggressive energy skillfully",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When fighting becomes an end in itself",
+          "When protection becomes aggression",
+          "When discipline becomes cruelty",
+          "When the warrior cannot find peace"
+        ],
+        "shadowManifestations": ["Sadist", "Berserker (uncontrolled)", "Mercenary (soulless)", "War Addict"],
+        "integrationPath": "Fight only for what truly matters; strength in service of protection; know when to sheathe the sword"
+      },
+      "culturalInstantiations": ["Ares", "Mars", "Thor", "Durga", "Ogun", "Skanda", "Athena (strategic)"],
+      "differentiatesFrom": {
+        "primordial:hero": "Warrior embodies martial stance; Hero undertakes transformative journey. Warrior is eternal readiness; Hero has an arc."
+      }
+    },
+
+    {
+      "@id": "primordial:magician",
+      "@type": "Archetype",
+      "name": "The Magician",
+      "description": "The transformer who works with hidden laws to create change. Master of the liminal, worker of will. Understands the secret connections between things.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.5,
+        "active-receptive": 0.3,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.25
+      },
+      "coreFunction": "To transform through knowledge of hidden laws",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When knowledge serves manipulation rather than transformation",
+          "When power is used for ego rather than service",
+          "When the magician becomes detached from humanity",
+          "When secrets become weapons"
+        ],
+        "shadowManifestations": ["Manipulator", "Dark Sorcerer", "Detached Technician", "Power-Hungry Occultist"],
+        "integrationPath": "Power in service of genuine transformation; knowledge that liberates rather than controls"
+      },
+      "culturalInstantiations": ["Hermes Trismegistus", "Thoth", "Odin (magic aspect)", "Merlin", "Isis (magic aspect)", "Circe"],
+      "differentiatesFrom": {
+        "primordial:trickster": "Magician works with hidden laws; Trickster breaks laws. Magician seeks transformation; Trickster seeks disruption.",
+        "primordial:wise-elder": "Magician actively transforms; Elder holds wisdom. Magician is active; Elder is receptive."
+      }
+    },
+
+    {
+      "@id": "primordial:sovereign",
+      "@type": "Archetype",
+      "name": "The Sovereign",
+      "description": "The principle of rightful authority, responsibility, and order. Rules through legitimacy, not force. Includes King and Queen.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.25,
+        "active-receptive": 0.3,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.3,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.5
+      },
+      "coreFunction": "To establish and maintain rightful order",
+      "genderVariants": {
+        "masculine": "King (Zeus, Odin, Osiris)",
+        "feminine": "Queen (Hera, Isis, Frigga)"
+      },
+      "shadowDynamics": {
+        "activationConditions": [
+          "When order becomes oppression",
+          "When authority becomes tyranny",
+          "When the sovereign serves self rather than realm",
+          "When legitimacy is claimed without service"
+        ],
+        "shadowManifestations": ["Tyrant", "Dictator", "Corrupt Ruler", "Empty Crown"],
+        "integrationPath": "Authority in service of the whole; power as responsibility; the sovereign serves the realm"
+      },
+      "culturalInstantiations": ["Zeus (king aspect)", "Hera (queen aspect)", "Odin (king aspect)", "Osiris", "Arthur"],
+      "differentiatesFrom": {
+        "primordial:great-father": "Sovereign is positional (to subjects); Father is relational (to children).",
+        "primordial:preserver": "Sovereign maintains social order; Preserver maintains cosmic existence."
+      }
+    },
+
+    {
+      "@id": "primordial:maiden",
+      "@type": "Archetype",
+      "name": "The Maiden",
+      "description": "Pure potential of the feminine before commitment. Independence, self-containment, and the power of being unto oneself.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.25,
+        "active-receptive": 0.5,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.35
+      },
+      "coreFunction": "To embody pure potential and self-belonging",
+      "temporalOrientation": "future",
+      "temporalNotes": "The Maiden is what-will-be; potential not yet actualized into Mother or Crone",
+      "evolutionPaths": {
+        "toMother": "Through commitment to generativity",
+        "toCrone": "Through accumulated experience and death-wisdom"
+      },
+      "shadowDynamics": {
+        "activationConditions": [
+          "When independence becomes isolation",
+          "When potential is never actualized",
+          "When self-containment becomes coldness",
+          "When the maiden cannot commit"
+        ],
+        "shadowManifestations": ["Frozen Maiden", "Persephone (stuck)", "Eternal Virgin (rigid)", "Commitment-phobic"],
+        "integrationPath": "Maintain self-belonging while engaging with life; potential that flowers into actuality"
+      },
+      "culturalInstantiations": ["Artemis", "Athena (virgin aspect)", "Persephone (before descent)", "Kore", "Diana"],
+      "differentiatesFrom": {
+        "primordial:divine-child": "Maiden is specifically feminine potential; Child is pre-gendered potential."
+      }
+    },
+
+    {
+      "@id": "primordial:crone",
+      "@type": "Archetype",
+      "name": "The Crone",
+      "description": "Wisdom beyond childbearing. The power of ending, transition, and the gate to death. Keeper of mysteries that only age reveals.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.65,
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.7
+      },
+      "coreFunction": "To guide through endings and hold death-wisdom",
+      "temporalOrientation": "past",
+      "temporalNotes": "The Crone holds memory, knows what has passed, stands at the end of cycles",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When ending becomes bitterness",
+          "When wisdom becomes cynicism",
+          "When death-power becomes death-worship",
+          "When the crone becomes the hag who curses"
+        ],
+        "shadowManifestations": ["Hag", "Bitter Old Woman", "Death-Dealer (negative)", "Curse-Giver"],
+        "integrationPath": "Death-wisdom in service of life; endings that enable new beginnings"
+      },
+      "culturalInstantiations": ["Hecate", "Baba Yaga", "Kali (crone aspect)", "Cerridwen", "Hel", "La Llorona"],
+      "differentiatesFrom": {
+        "primordial:wise-elder": "Crone specifically holds death-wisdom and feminine ending power; Elder is gender-flexible and broader."
+      }
+    },
+
+    {
+      "@id": "primordial:psychopomp",
+      "@type": "Archetype",
+      "name": "The Psychopomp",
+      "description": "Guide of souls between worlds. Escorts the dying, leads the living through transitions. Specialist of thresholds and passages.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.4,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.6
+      },
+      "coreFunction": "To guide between worlds and through transitions",
+      "temporalOrientation": "liminal",
+      "temporalNotes": "Exists in the threshold between states; the moment of passage that is neither before nor after",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When guidance becomes control over transitions",
+          "When the guide becomes gatekeeper who blocks",
+          "When liminality becomes permanent (stuck between)",
+          "When death-companioning becomes death-dealing"
+        ],
+        "shadowManifestations": ["False Guide", "Soul-Trapper", "Threshold Blocker", "Liminal Prisoner"],
+        "integrationPath": "Guide without controlling; accompany without possessing; honor the transition's own timing"
+      },
+      "culturalInstantiations": ["Hermes", "Anubis", "Charon", "Valkyries", "Papa Legba", "Hecate (liminal)"],
+      "differentiatesFrom": {
+        "primordial:trickster": "Psychopomp guides through legitimate passages; Trickster crosses boundaries illegitimately. Psychopomp serves transitions; Trickster disrupts them."
+      }
+    },
+
+    {
+      "@id": "primordial:healer",
+      "@type": "Archetype",
+      "name": "The Healer",
+      "description": "The one who restores wholeness. Works with wounds - physical, emotional, spiritual - to bring integration. Often carries the wound they heal.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
+        "active-receptive": 0.55,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.5
+      },
+      "coreFunction": "To restore wholeness and heal wounds",
+      "relatedPattern": {
+        "woundedHealer": "The healer who heals from their own wound; the wound becomes the source of healing power (Chiron pattern)"
+      },
+      "shadowDynamics": {
+        "activationConditions": [
+          "When healing serves the healer's ego",
+          "When the wound takes over the healer",
+          "When healing creates dependency",
+          "When the healer cannot heal themselves"
+        ],
+        "shadowManifestations": ["Wounded Healer (negative)", "Savior Complex", "Codependent Helper", "Charlatan Healer"],
+        "integrationPath": "Heal from the wound, not despite it; empower rather than create dependency; tend one's own wounds"
+      },
+      "culturalInstantiations": ["Asclepius", "Hygieia", "Brigid", "Dhanvantari", "Eir", "Chiron"],
+      "differentiatesFrom": {
+        "primordial:great-mother": "Healer restores wholeness; Mother nurtures growth. Healer works with wounds; Mother works with needs."
+      }
+    },
+
+    {
+      "@id": "primordial:outcast",
+      "@type": "Archetype",
+      "name": "The Outcast",
+      "description": "The one who is rejected, exiled, or set apart from community. Carries the projection of collective shadow but also holds unique perspective and potential for return with gifts.",
+      "spectralCoordinates": {
+        "order-chaos": 0.6,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.65,
+        "active-receptive": 0.45,
+        "individual-collective": 0.15,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.7
+      },
+      "coreFunction": "To carry what the collective rejects; to return with hard-won wisdom",
+      "temporalOrientation": "liminal",
+      "temporalNotes": "Exists outside the time of community; in exile time moves differently",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When exile becomes identity rather than passage",
+          "When rejection breeds only bitterness",
+          "When the outcast refuses all belonging",
+          "When scapegoating is internalized as deserved"
+        ],
+        "shadowManifestations": ["Eternal Victim", "Bitter Exile", "Self-Outcast", "Scapegoat (internalized)"],
+        "integrationPath": "Transform exile into vision; return with gifts; find belonging without losing hard-won perspective"
+      },
+      "culturalInstantiations": ["Cain", "Oedipus", "Hagar", "Enkidu (early)", "Prometheus (post-punishment)"],
+      "differentiatesFrom": {
+        "primordial:shadow": "Outcast is socially rejected; Shadow is psychologically rejected. Outcast has agency; Shadow is unconscious.",
+        "primordial:rebel": "Outcast is cast out; Rebel chooses opposition. Outcast may want belonging; Rebel opposes belonging's terms."
+      }
+    },
+
+    {
+      "@id": "primordial:ancestor",
+      "@type": "Archetype",
+      "name": "The Ancestor",
+      "description": "The honored dead who remain connected to the living. Keeper of lineage, tradition, and the wisdom of those who came before. Bridge between living and dead.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.5,
+        "active-receptive": 0.7,
+        "individual-collective": 0.8,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.8
+      },
+      "coreFunction": "To connect living to lineage; to transmit wisdom across generations",
+      "temporalOrientation": "past",
+      "temporalNotes": "Embodies the accumulated past; the dead who still speak through tradition and blood",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When tradition becomes tyranny over the living",
+          "When ancestor worship prevents present growth",
+          "When the dead control rather than guide",
+          "When lineage becomes curse rather than blessing"
+        ],
+        "shadowManifestations": ["Tyrannical Dead", "Ancestral Curse", "Tradition as Prison", "Haunting Presence"],
+        "integrationPath": "Honor the dead without being ruled by them; carry forward what gives life; release what binds"
+      },
+      "culturalInstantiations": ["Manes (Roman)", "Ancestral Spirits", "Obon spirits", "Day of Dead honored ones", "Lares"],
+      "differentiatesFrom": {
+        "primordial:wise-elder": "Ancestor is specifically the dead who guide; Elder is living wisdom. Ancestor connects to lineage; Elder connects to experience.",
+        "primordial:crone": "Ancestor is post-death; Crone is at life's end. Ancestor speaks from beyond; Crone guards the threshold."
+      }
+    },
+
+    {
+      "@id": "primordial:monster",
+      "@type": "Archetype",
+      "name": "The Monster",
+      "description": "The inhuman Other that embodies what lies beyond civilization. Raw instinct, chaos, the untamed. Both terrifying and potentially sacred.",
+      "spectralCoordinates": {
+        "order-chaos": 0.85,
+        "creation-destruction": 0.7,
+        "light-shadow": 0.75,
+        "active-receptive": 0.25,
+        "individual-collective": 0.2,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.65
+      },
+      "coreFunction": "To embody the untamed; to mark the boundary between human and inhuman",
+      "shadowDynamics": {
+        "activationConditions": [
+          "When the monstrous is projected onto human others",
+          "When instinct overwhelms all humanity",
+          "When the monster serves only destruction",
+          "When dehumanization becomes permanent identity"
+        ],
+        "shadowManifestations": ["Pure Destroyer", "Dehumanized Other", "Chaos Without Purpose", "Beast Mode (permanent)"],
+        "integrationPath": "Recognize the monster within; channel primal energy purposefully; find the sacred in the wild"
+      },
+      "culturalInstantiations": ["Typhon", "Fenrir", "Tiamat", "Grendel", "Minotaur", "Dragons"],
+      "differentiatesFrom": {
+        "primordial:shadow": "Monster is external/ontological otherness; Shadow is internal/psychological rejection. Monster is inhuman; Shadow is rejected human.",
+        "primordial:destroyer": "Monster embodies chaos/wildness; Destroyer serves cosmic function. Monster may be slain; Destroyer is necessary."
+      }
+    },
+
+    {
+      "@id": "primordial:twin",
+      "@type": "Archetype",
+      "name": "The Twin",
+      "description": "The doubled self, the other who is same. Embodies duality, mirroring, and the paradox of identity. Often one light and one dark, or mortal and immortal.",
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.6
+      },
+      "coreFunction": "To mirror the self; to embody duality and the tension of sameness-in-difference",
+      "uniqueProperties": {
+        "note": "The Twin is inherently relational - it only exists as part of a pair. Spectral coordinates represent the pair's center; individual twins may diverge.",
+        "polarities": {
+          "light-dark": "Castor/Pollux, Osiris/Set, good twin/evil twin",
+          "mortal-immortal": "One twin dies, one lives forever",
+          "complementary": "Twins complete each other, represent wholeness split"
+        }
+      },
+      "shadowDynamics": {
+        "activationConditions": [
+          "When twins become locked in eternal conflict",
+          "When one twin destroys the other",
+          "When the double becomes the doppelgänger threat",
+          "When twinship prevents individual identity"
+        ],
+        "shadowManifestations": ["Cain/Abel dynamic", "Evil Twin", "Doppelgänger", "Identity Fusion", "Fratricide"],
+        "integrationPath": "Honor both sides of duality; neither merge nor destroy; hold paradox of same-and-different"
+      },
+      "culturalInstantiations": ["Castor and Pollux", "Romulus and Remus", "Osiris and Set", "Ashvins", "Hero Twins (Mayan)"],
+      "differentiatesFrom": {
+        "primordial:shadow": "Twin is external other; Shadow is internal rejected. Twin is acknowledged; Shadow is repressed.",
+        "primordial:self": "Twin is duality embodied; Self is unity achieved. Twin holds tension; Self resolves it."
+      }
+    }
+  ]
+}

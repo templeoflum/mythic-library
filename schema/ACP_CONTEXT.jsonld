@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "@vocab": "https://archetypeprotocol.org/schema/",
+    "acp": "https://archetypeprotocol.org/schema/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+
+    "Archetype": "acp:Archetype",
+    "Primordial": "acp:Primordial",
+    "CulturalArchetype": "acp:CulturalArchetype",
+    "Epithet": "acp:Epithet",
+    "Aspect": "acp:Aspect",
+    "LocalVariant": "acp:LocalVariant",
+    "System": "acp:System",
+    "Axis": "acp:Axis",
+    "Relationship": "acp:Relationship",
+    "Correspondence": "acp:Correspondence",
+
+    "id": "@id",
+    "type": "@type",
+
+    "name": {"@id": "acp:name", "@type": "xsd:string"},
+    "description": {"@id": "acp:description", "@type": "xsd:string"},
+    "aliases": {"@id": "acp:aliases", "@container": "@set"},
+    "systemCode": {"@id": "acp:systemCode", "@type": "xsd:string"},
+
+    "spectralPosition": {"@id": "acp:spectralPosition", "@type": "xsd:decimal"},
+    "negativePoleName": {"@id": "acp:negativePoleName", "@type": "xsd:string"},
+    "positivePoleName": {"@id": "acp:positivePoleName", "@type": "xsd:string"},
+
+    "source": {"@id": "acp:source", "@type": "@id"},
+    "target": {"@id": "acp:target", "@type": "@id"},
+    "relationshipType": {"@id": "acp:relationshipType", "@type": "xsd:string"},
+    "strength": {"@id": "acp:strength", "@type": "xsd:decimal"},
+    "axis": {"@id": "acp:axis", "@type": "@id"},
+    "bidirectional": {"@id": "acp:bidirectional", "@type": "xsd:boolean"},
+
+    "fidelity": {"@id": "acp:fidelity", "@type": "xsd:decimal"},
+    "aspect": {"@id": "acp:aspect", "@type": "xsd:string"},
+    "notes": {"@id": "acp:notes", "@type": "xsd:string"},
+
+    "belongsToSystem": {"@id": "acp:belongsToSystem", "@type": "@id"},
+    "hasRelationship": {"@id": "acp:hasRelationship", "@type": "@id", "@container": "@set"},
+    "hasCorrespondence": {"@id": "acp:hasCorrespondence", "@type": "@id", "@container": "@set"},
+    "spectralCoordinates": {"@id": "acp:spectralCoordinates", "@container": "@index"},
+    "elementalComposition": {"@id": "acp:elementalComposition", "@container": "@index"},
+
+    "prefLabel": "skos:prefLabel",
+    "altLabel": "skos:altLabel",
+    "broader": "skos:broader",
+    "narrower": "skos:narrower",
+    "related": "skos:related",
+
+    "instantiates": {"@id": "acp:instantiates", "@type": "@id"},
+    "hasEpithet": {"@id": "acp:hasEpithet", "@type": "@id", "@container": "@set"},
+    "hasAspect": {"@id": "acp:hasAspect", "@type": "@id", "@container": "@set"},
+    "hasLocalVariant": {"@id": "acp:hasLocalVariant", "@type": "@id", "@container": "@set"},
+    "isEpithetOf": {"@id": "acp:isEpithetOf", "@type": "@id"},
+    "isAspectOf": {"@id": "acp:isAspectOf", "@type": "@id"},
+    "isVariantOf": {"@id": "acp:isVariantOf", "@type": "@id"},
+    "region": {"@id": "acp:region", "@type": "xsd:string"},
+    "period": {"@id": "acp:period", "@type": "xsd:string"},
+    "cultCenter": {"@id": "acp:cultCenter", "@type": "xsd:string"}
+  },
+
+  "hierarchySchema": {
+    "@documentation": "Multi-level hierarchy for archetypal instantiation",
+    "levels": [
+      {
+        "level": 1,
+        "type": "Primordial",
+        "description": "Culture-transcendent meta-archetypes (Creator, Trickster, Hero, etc.)",
+        "example": "primordial:trickster"
+      },
+      {
+        "level": 2,
+        "type": "CulturalArchetype",
+        "description": "Named deities/figures within a cultural system",
+        "example": "arch:GR-HERMES",
+        "relatesUp": "instantiates Primordial (weighted, with aspects)"
+      },
+      {
+        "level": 3,
+        "type": "Epithet",
+        "description": "Named functional titles (Hermes Psychopompos, Zeus Xenios)",
+        "example": "arch:GR-HERMES-PSYCHOPOMPOS",
+        "relatesUp": "isEpithetOf CulturalArchetype",
+        "spectralShift": "May have different spectral coordinates than base deity"
+      },
+      {
+        "level": 4,
+        "type": "Aspect",
+        "description": "Functional/domain aspects (Aphrodite Urania vs Aphrodite Pandemos)",
+        "example": "arch:GR-APHRODITE-URANIA",
+        "relatesUp": "isAspectOf CulturalArchetype",
+        "note": "Aspects may be more distinct than epithets, representing significantly different functions"
+      },
+      {
+        "level": 5,
+        "type": "LocalVariant",
+        "description": "Regional/temporal variations (Arcadian Hermes, Hellenistic Isis)",
+        "example": "arch:GR-HERMES-ARCADIAN",
+        "relatesUp": "isVariantOf CulturalArchetype or Aspect",
+        "metadata": ["region", "period", "cultCenter"]
+      }
+    ],
+    "usageNotes": {
+      "spectralInheritance": "Lower levels inherit spectral coordinates from parent unless explicitly overridden",
+      "relationshipScope": "Relationships can be defined at any level; lower levels inherit but may override",
+      "queryPattern": "Queries at higher levels should aggregate or sample from lower levels"
+    }
+  }
+}

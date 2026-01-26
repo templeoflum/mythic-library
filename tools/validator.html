@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACP Validator - Archetypal Context Protocol</title>
+    <style>
+        :root {
+            --bg-dark: #1a1a2e;
+            --bg-card: #16213e;
+            --text-primary: #eaeaea;
+            --text-secondary: #a0a0a0;
+            --accent: #e94560;
+            --success: #4ade80;
+            --warning: #fbbf24;
+            --error: #f87171;
+            --border: #2a2a4a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+        }
+
+        .run-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: opacity 0.2s;
+        }
+
+        .run-btn:hover {
+            opacity: 0.9;
+        }
+
+        .run-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .stat-value.success { color: var(--success); }
+        .stat-value.warning { color: var(--warning); }
+        .stat-value.error { color: var(--error); }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .results-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 12px;
+            background: var(--border);
+        }
+
+        .badge.success { background: var(--success); color: black; }
+        .badge.warning { background: var(--warning); color: black; }
+        .badge.error { background: var(--error); color: black; }
+
+        .issue-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .issue-item {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .issue-item:last-child {
+            border-bottom: none;
+        }
+
+        .issue-item .file {
+            color: var(--accent);
+        }
+
+        .issue-item .message {
+            color: var(--text-primary);
+            margin-top: 4px;
+        }
+
+        .progress {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .log {
+            background: #0d1117;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            max-height: 200px;
+            overflow-y: auto;
+            color: var(--text-secondary);
+        }
+
+        .log-entry {
+            margin-bottom: 4px;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .summary-table th,
+        .summary-table td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .summary-table th {
+            color: var(--text-secondary);
+            font-weight: normal;
+        }
+
+        .summary-table td:last-child {
+            text-align: right;
+            font-family: monospace;
+        }
+
+        .coord-dist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .axis-stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        .axis-name {
+            color: var(--text-secondary);
+        }
+
+        .axis-values {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ACP Validator</h1>
+            <p class="subtitle">Validate Archetypal Context Protocol data files</p>
+            <button class="run-btn" id="run-btn" onclick="runValidation()">Run Validation</button>
+        </header>
+
+        <div class="progress" id="progress-container" style="display: none;">
+            <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+        </div>
+
+        <div class="log" id="log" style="display: none;"></div>
+
+        <div id="results" style="display: none;">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-files">0</div>
+                    <div class="stat-label">Files Checked</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-archetypes">0</div>
+                    <div class="stat-label">Archetypes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-relationships">0</div>
+                    <div class="stat-label">Relationships</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value success" id="stat-passed">0</div>
+                    <div class="stat-label">Checks Passed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value warning" id="stat-warnings">0</div>
+                    <div class="stat-label">Warnings</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value error" id="stat-errors">0</div>
+                    <div class="stat-label">Errors</div>
+                </div>
+            </div>
+
+            <div class="results-section" id="summary-section">
+                <h2 class="section-title">Entry Counts by System</h2>
+                <table class="summary-table" id="system-table"></table>
+            </div>
+
+            <div class="results-section" id="coord-section">
+                <h2 class="section-title">Coordinate Distribution</h2>
+                <div class="coord-dist" id="coord-dist"></div>
+            </div>
+
+            <div class="results-section" id="errors-section" style="display: none;">
+                <h2 class="section-title">
+                    Errors
+                    <span class="badge error" id="error-count"></span>
+                </h2>
+                <div class="issue-list" id="errors-list"></div>
+            </div>
+
+            <div class="results-section" id="warnings-section" style="display: none;">
+                <h2 class="section-title">
+                    Warnings
+                    <span class="badge warning" id="warning-count"></span>
+                </h2>
+                <div class="issue-list" id="warnings-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const AXES = [
+            'order-chaos', 'creation-destruction', 'light-shadow', 'active-receptive',
+            'individual-collective', 'ascent-descent', 'stasis-transformation', 'voluntary-fated'
+        ];
+
+        const MIN_DISTANCE = 0.05;
+
+        const DATA_FILES = [
+            // Divination Systems
+            'divination/tarot/major_arcana.jsonld',
+            'divination/tarot/minor_arcana.jsonld',
+            'divination/iching/trigrams.jsonld',
+            'divination/iching/hexagrams.jsonld',
+            'divination/astrology/zodiac.jsonld',
+            'divination/astrology/planets.jsonld',
+            'divination/runes/elder_futhark.jsonld',
+            'divination/kabbalah/sephiroth.jsonld',
+            'divination/chakras/energy_centers.jsonld',
+            'divination/elements/classical_western.jsonld',
+            // Psychology Systems
+            'psychology/jungian/core_archetypes.jsonld',
+            'psychology/enneagram/types.jsonld',
+            'psychology/narrative/heros_journey.jsonld',
+            'psychology/narrative/vogler_archetypes.jsonld',
+            'psychology/developmental/spiral_dynamics.jsonld',
+            // Modern Systems
+            'modern/cultural/brand_archetypes.jsonld',
+            'modern/digital/internet_archetypes.jsonld',
+            'modern/pop_culture/superhero.jsonld',
+            'modern/spiritual/angels.jsonld',
+            // Mythological Pantheons
+            'archetypes/greek/GR_OLYMPIANS.jsonld',
+            'archetypes/norse/NO_AESIR_VANIR.jsonld',
+            'archetypes/egyptian/EG_NETJERU.jsonld',
+            'archetypes/celtic/CE_PANTHEON.jsonld',
+            'archetypes/hindu/IN_PANTHEON.jsonld',
+            'archetypes/japanese/JP_KAMI.jsonld',
+            'archetypes/chinese/CN_PANTHEON.jsonld',
+            'archetypes/mesopotamian/ME_PANTHEON.jsonld',
+            'archetypes/african/AF_ORISHA.jsonld',
+            'archetypes/mesoamerican/MA_PANTHEON.jsonld',
+            'archetypes/slavic/SL_PANTHEON.jsonld',
+            'archetypes/polynesian/PL_PANTHEON.jsonld',
+            'archetypes/native_american/NA_PANTHEON.jsonld',
+            'archetypes/finnish/FI_PANTHEON.jsonld',
+            'archetypes/incan/IC_PANTHEON.jsonld',
+            'archetypes/persian/PE_PANTHEON.jsonld',
+            'archetypes/australian/AU_DREAMTIME.jsonld',
+            // Schema
+            'schema/primordials.jsonld'
+        ];
+
+        let allArchetypes = new Map();
+        let allRelationships = [];
+        let errors = [];
+        let warnings = [];
+        let filesChecked = 0;
+        let checksPass = 0;
+
+        function log(message) {
+            const logEl = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.textContent = message;
+            logEl.appendChild(entry);
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+
+        function euclideanDistance(c1, c2) {
+            let sum = 0;
+            for (const axis of AXES) {
+                if (c1[axis] == null || c2[axis] == null) return null;
+                sum += Math.pow(c1[axis] - c2[axis], 2);
+            }
+            return Math.sqrt(sum);
+        }
+
+        function getSystemPrefix(id) {
+            return id.split(':')[0];
+        }
+
+        function extractEntries(data) {
+            const entries = [];
+
+            // Helper to check if entry is a valid archetype (not metadata)
+            function isArchetype(e) {
+                if (!e['@id']) return false;
+                // Skip metadata entries
+                if (e['@type'] === 'System' || e['@type'] === 'skos:ConceptScheme') return false;
+                // Must have spectral coordinates to be a true archetype
+                return e.spectralCoordinates != null;
+            }
+
+            // Standard entries array
+            if (data.entries && Array.isArray(data.entries)) {
+                for (const e of data.entries) {
+                    if (isArchetype(e)) entries.push(e);
+                }
+            }
+
+            // JSON-LD @graph format (fallback)
+            if (data['@graph'] && Array.isArray(data['@graph'])) {
+                for (const e of data['@graph']) {
+                    if (isArchetype(e)) entries.push(e);
+                }
+            }
+
+            // Minor arcana suits structure
+            if (data.suits && Array.isArray(data.suits)) {
+                for (const suit of data.suits) {
+                    if (suit.cards && Array.isArray(suit.cards)) {
+                        for (const card of suit.cards) {
+                            if (isArchetype(card)) entries.push(card);
+                        }
+                    }
+                }
+            }
+
+            // Hero's journey acts structure
+            if (data.acts && Array.isArray(data.acts)) {
+                for (const act of data.acts) {
+                    if (act.stages && Array.isArray(act.stages)) {
+                        for (const stage of act.stages) {
+                            if (isArchetype(stage)) entries.push(stage);
+                        }
+                    }
+                }
+            }
+
+            return entries;
+        }
+
+        function validateEntry(entry, file) {
+            const id = entry['@id'];
+            const coords = entry.spectralCoordinates;
+            const instantiates = entry.instantiates;
+            const relationships = entry.relationships;
+
+            // Coordinate bounds
+            if (coords) {
+                let hasCoords = false;
+                for (const axis of AXES) {
+                    const val = coords[axis];
+                    if (val !== null && val !== undefined) {
+                        hasCoords = true;
+                        if (typeof val !== 'number') {
+                            errors.push({ file, message: `${id}: ${axis} is not a number` });
+                        } else if (val < 0 || val > 1) {
+                            errors.push({ file, message: `${id}: ${axis} out of bounds: ${val}` });
+                        } else {
+                            checksPass++;
+                        }
+                    }
+                }
+
+                // Coordinate completeness
+                if (hasCoords) {
+                    for (const axis of AXES) {
+                        if (coords[axis] === null || coords[axis] === undefined) {
+                            errors.push({ file, message: `${id}: Missing axis ${axis}` });
+                        }
+                    }
+                    allArchetypes.set(id, { coords, file, name: entry.name || id });
+                }
+            }
+
+            // Weight validation
+            if (instantiates && Array.isArray(instantiates)) {
+                for (const inst of instantiates) {
+                    const w = inst.weight;
+                    if (w !== undefined && w !== null) {
+                        if (typeof w !== 'number' || w < 0 || w > 1) {
+                            errors.push({ file, message: `${id}: Invalid weight ${w}` });
+                        } else {
+                            checksPass++;
+                        }
+                    }
+                }
+            }
+
+            // Collect relationships
+            if (relationships && Array.isArray(relationships)) {
+                for (const rel of relationships) {
+                    allRelationships.push({ source: id, target: rel.target, type: rel.type, axis: rel.axis, file });
+                }
+            }
+        }
+
+        // I Ching trigram/hexagram pairs that intentionally share coordinates
+        // When a trigram is doubled (e.g., ☰ over ☰), it forms a pure hexagram
+        const ICHING_TRIGRAM_HEXAGRAM_PAIRS = [
+            ['iching:qian', 'iching:hex_01'],    // ☰ Heaven (doubled = hex 1)
+            ['iching:kun', 'iching:hex_02'],     // ☷ Earth (doubled = hex 2)
+            ['iching:zhen', 'iching:hex_51'],    // ☳ Thunder (doubled = hex 51)
+            ['iching:kan', 'iching:hex_29'],     // ☵ Water (doubled = hex 29)
+            ['iching:gen', 'iching:hex_52'],     // ☶ Mountain (doubled = hex 52)
+            ['iching:xun', 'iching:hex_57'],     // ☴ Wind (doubled = hex 57)
+            ['iching:li', 'iching:hex_30'],      // ☲ Fire (doubled = hex 30)
+            ['iching:dui', 'iching:hex_58']      // ☱ Lake (doubled = hex 58)
+        ];
+
+        function isIntentionalCollision(id1, id2) {
+            for (const [trigram, hexagram] of ICHING_TRIGRAM_HEXAGRAM_PAIRS) {
+                if ((id1 === trigram && id2 === hexagram) ||
+                    (id1 === hexagram && id2 === trigram)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function checkCollisions() {
+            const archetypes = Array.from(allArchetypes.entries());
+            log(`Checking collisions among ${archetypes.length} archetypes...`);
+
+            for (let i = 0; i < archetypes.length; i++) {
+                for (let j = i + 1; j < archetypes.length; j++) {
+                    const [id1, d1] = archetypes[i];
+                    const [id2, d2] = archetypes[j];
+                    const dist = euclideanDistance(d1.coords, d2.coords);
+                    if (dist !== null && dist < MIN_DISTANCE) {
+                        // Skip intentional I Ching trigram/hexagram pairs
+                        if (isIntentionalCollision(id1, id2)) {
+                            checksPass++; // Count as a pass, not a warning
+                            continue;
+                        }
+                        warnings.push({
+                            file: d1.file,
+                            message: `Collision: ${id1} and ${id2} (distance: ${dist.toFixed(4)})`
+                        });
+                    } else if (dist !== null) {
+                        checksPass++;
+                    }
+                }
+            }
+        }
+
+        function checkBidirectionality() {
+            const BIDIRECTIONAL = ['POLAR_OPPOSITE', 'COMPLEMENT', 'TENSION', 'CULTURAL_ECHO', 'MIRRORS', 'TWIN'];
+            const relMap = new Map();
+
+            for (const rel of allRelationships) {
+                relMap.set(`${rel.source}|${rel.target}|${rel.type}`, rel);
+            }
+
+            log(`Checking bidirectionality for ${allRelationships.length} relationships...`);
+
+            for (const rel of allRelationships) {
+                if (BIDIRECTIONAL.includes(rel.type)) {
+                    const reverse = `${rel.target}|${rel.source}|${rel.type}`;
+                    if (!relMap.has(reverse)) {
+                        warnings.push({
+                            file: rel.file,
+                            message: `Missing reverse: ${rel.target} -> ${rel.source} (${rel.type})`
+                        });
+                    } else {
+                        checksPass++;
+                    }
+                }
+            }
+        }
+
+        async function runValidation() {
+            // Reset
+            allArchetypes.clear();
+            allRelationships = [];
+            errors = [];
+            warnings = [];
+            filesChecked = 0;
+            checksPass = 0;
+
+            const btn = document.getElementById('run-btn');
+            btn.disabled = true;
+            btn.textContent = 'Running...';
+
+            document.getElementById('progress-container').style.display = 'block';
+            document.getElementById('log').style.display = 'block';
+            document.getElementById('log').innerHTML = '';
+            document.getElementById('results').style.display = 'none';
+
+            log('Starting ACP validation...');
+
+            // Load files
+            for (let i = 0; i < DATA_FILES.length; i++) {
+                const file = DATA_FILES[i];
+                const progress = ((i + 1) / DATA_FILES.length * 100).toFixed(0);
+                document.getElementById('progress-bar').style.width = progress + '%';
+
+                try {
+                    log(`Loading ${file}...`);
+                    const response = await fetch('../' + file);
+                    if (response.ok) {
+                        const data = await response.json();
+                        const entries = extractEntries(data);
+                        filesChecked++;
+
+                        for (const entry of entries) {
+                            validateEntry(entry, file);
+                        }
+                    } else {
+                        warnings.push({ file, message: `Failed to load: ${response.status}` });
+                    }
+                } catch (e) {
+                    warnings.push({ file, message: `Error: ${e.message}` });
+                }
+            }
+
+            // Run checks
+            checkCollisions();
+            checkBidirectionality();
+
+            // Display results
+            displayResults();
+
+            btn.disabled = false;
+            btn.textContent = 'Run Validation';
+        }
+
+        function displayResults() {
+            document.getElementById('results').style.display = 'block';
+
+            // Stats
+            document.getElementById('stat-files').textContent = filesChecked;
+            document.getElementById('stat-archetypes').textContent = allArchetypes.size;
+            document.getElementById('stat-relationships').textContent = allRelationships.length;
+            document.getElementById('stat-passed').textContent = checksPass;
+            document.getElementById('stat-warnings').textContent = warnings.length;
+            document.getElementById('stat-errors').textContent = errors.length;
+
+            // System counts
+            const systemCounts = new Map();
+            for (const [id] of allArchetypes) {
+                const prefix = getSystemPrefix(id);
+                systemCounts.set(prefix, (systemCounts.get(prefix) || 0) + 1);
+            }
+
+            const tableEl = document.getElementById('system-table');
+            tableEl.innerHTML = '<tr><th>System</th><th>Count</th></tr>';
+            const sorted = Array.from(systemCounts.entries()).sort((a, b) => b[1] - a[1]);
+            let total = 0;
+            for (const [sys, count] of sorted) {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${sys}</td><td>${count}</td>`;
+                tableEl.appendChild(row);
+                total += count;
+            }
+            const totalRow = document.createElement('tr');
+            totalRow.innerHTML = `<td><strong>TOTAL</strong></td><td><strong>${total}</strong></td>`;
+            tableEl.appendChild(totalRow);
+
+            // Coordinate distribution
+            const coordRanges = {};
+            for (const axis of AXES) {
+                coordRanges[axis] = { min: 1, max: 0, sum: 0, count: 0 };
+            }
+
+            for (const [, data] of allArchetypes) {
+                if (data.coords) {
+                    for (const axis of AXES) {
+                        const val = data.coords[axis];
+                        if (val !== null && val !== undefined) {
+                            coordRanges[axis].min = Math.min(coordRanges[axis].min, val);
+                            coordRanges[axis].max = Math.max(coordRanges[axis].max, val);
+                            coordRanges[axis].sum += val;
+                            coordRanges[axis].count++;
+                        }
+                    }
+                }
+            }
+
+            const coordEl = document.getElementById('coord-dist');
+            coordEl.innerHTML = '';
+            for (const axis of AXES) {
+                const r = coordRanges[axis];
+                if (r.count > 0) {
+                    const avg = (r.sum / r.count).toFixed(2);
+                    const div = document.createElement('div');
+                    div.className = 'axis-stat';
+                    div.innerHTML = `
+                        <span class="axis-name">${axis}</span>
+                        <span class="axis-values">min: ${r.min.toFixed(2)} | max: ${r.max.toFixed(2)} | avg: ${avg}</span>
+                    `;
+                    coordEl.appendChild(div);
+                }
+            }
+
+            // Errors
+            if (errors.length > 0) {
+                document.getElementById('errors-section').style.display = 'block';
+                document.getElementById('error-count').textContent = errors.length;
+                const list = document.getElementById('errors-list');
+                list.innerHTML = '';
+                for (const err of errors) {
+                    const div = document.createElement('div');
+                    div.className = 'issue-item';
+                    div.innerHTML = `<div class="file">${err.file}</div><div class="message">${err.message}</div>`;
+                    list.appendChild(div);
+                }
+            } else {
+                document.getElementById('errors-section').style.display = 'none';
+            }
+
+            // Warnings
+            if (warnings.length > 0) {
+                document.getElementById('warnings-section').style.display = 'block';
+                document.getElementById('warning-count').textContent = warnings.length;
+                const list = document.getElementById('warnings-list');
+                list.innerHTML = '';
+                for (const warn of warnings.slice(0, 100)) {  // Limit to 100
+                    const div = document.createElement('div');
+                    div.className = 'issue-item';
+                    div.innerHTML = `<div class="file">${warn.file}</div><div class="message">${warn.message}</div>`;
+                    list.appendChild(div);
+                }
+                if (warnings.length > 100) {
+                    const div = document.createElement('div');
+                    div.className = 'issue-item';
+                    div.innerHTML = `<div class="message">... and ${warnings.length - 100} more warnings</div>`;
+                    list.appendChild(div);
+                }
+            } else {
+                document.getElementById('warnings-section').style.display = 'none';
+            }
+
+            log(`Validation complete: ${errors.length} errors, ${warnings.length} warnings`);
+        }
+    </script>
+</body>
+</html>

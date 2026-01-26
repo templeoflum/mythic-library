@@ -1,0 +1,392 @@
+{
+  "@context": "./ACP_CONTEXT.jsonld",
+  "@graph": [
+    {
+      "@id": "acp:relationshipTypes",
+      "@type": "skos:ConceptScheme",
+      "name": "ACP Relationship Ontology",
+      "description": "The typed relationships that connect archetypes, enabling graph-based queries and revealing hidden patterns.",
+      "version": "2.2",
+      "strengthSemantics": {
+        "note": "Different relationship types use different strength/weight properties with distinct semantics. This section documents what each measurement means.",
+        "properties": {
+          "polarity": {
+            "appliesTo": ["rel:polar-opposite"],
+            "range": "0.0-1.0",
+            "meaning": "Degree of opposition on the specified axis. 1.0 = perfect polar opposite, 0.5 = moderate opposition, 0.0 = not opposite"
+          },
+          "fidelity": {
+            "appliesTo": ["rel:cultural-echo", "rel:mirrors"],
+            "range": "0.0-1.0",
+            "meaning": "Structural similarity between patterns. 1.0 = nearly identical pattern, 0.5 = significant overlap, 0.0 = weak echo"
+          },
+          "activationThreshold": {
+            "appliesTo": ["rel:shadow", "rel:devolution"],
+            "range": "0.0-1.0",
+            "meaning": "How easily the shadow/devolved form manifests. 0.0 = requires extreme conditions, 0.5 = moderate stress triggers, 1.0 = highly accessible/volatile"
+          },
+          "transformationDepth": {
+            "appliesTo": ["rel:evolution", "rel:transcends", "rel:synthesis"],
+            "range": "0.0-1.0",
+            "meaning": "Degree of structural change in transformation. 1.0 = complete metamorphosis, 0.5 = significant growth, 0.0 = surface change"
+          },
+          "containmentRatio": {
+            "appliesTo": ["rel:contains", "rel:contained-by"],
+            "range": "0.0-1.0",
+            "meaning": "How much of the container is represented by the contained. 1.0 = core aspect, 0.5 = significant sub-function, 0.0 = minor aspect"
+          },
+          "narrativeIntensity": {
+            "appliesTo": ["rel:antagonist", "rel:ally", "rel:complement"],
+            "range": "0.0-1.0",
+            "meaning": "Strength of narrative/functional connection. 1.0 = inseparable pair, 0.5 = common pairing, 0.0 = occasional connection"
+          },
+          "instantiationWeight": {
+            "appliesTo": ["rel:instantiates", "rel:exemplifies"],
+            "range": "0.0-1.0",
+            "meaning": "How strongly a cultural figure embodies a primordial. 1.0 = primary identity, 0.5 = significant aspect, 0.0 = minor trace"
+          },
+          "sequencePosition": {
+            "appliesTo": ["rel:precedes", "rel:succeeds"],
+            "range": "integer or null",
+            "meaning": "Position in a numbered sequence if applicable, otherwise null for relative ordering"
+          }
+        }
+      }
+    },
+
+    {
+      "@id": "rel:polar-opposite",
+      "@type": "Relationship",
+      "name": "POLAR_OPPOSITE",
+      "description": "Exists at the opposite end of a specific spectral axis. True polar opposites are complementary - they need each other for wholeness.",
+      "bidirectional": true,
+      "requiresAxis": true,
+      "strengthProperty": "polarity",
+      "strengthSemantics": "Degree of opposition on the specified axis (0.0 = not opposite, 1.0 = perfect polar opposite)",
+      "examples": [
+        "Hestia ↔ Hermes (stillness ↔ movement)",
+        "Apollo ↔ Dionysus (reason ↔ ecstasy)",
+        "Order ↔ Chaos archetypes"
+      ]
+    },
+
+    {
+      "@id": "rel:shadow",
+      "@type": "Relationship",
+      "name": "SHADOW",
+      "description": "The repressed, distorted, or inverted form of the same archetypal energy. Shadows emerge when an archetype is denied, wounded, or unconscious.",
+      "bidirectional": false,
+      "requiresActivation": true,
+      "strengthProperty": "activationThreshold",
+      "strengthSemantics": "How easily the shadow manifests (0.0 = extreme conditions required, 1.0 = highly volatile/accessible)",
+      "examples": [
+        "Caregiver → Martyr/Enabler",
+        "Hero → Tyrant/Bully",
+        "Trickster → Deceiver/Manipulator"
+      ]
+    },
+
+    {
+      "@id": "rel:complement",
+      "@type": "Relationship",
+      "name": "COMPLEMENT",
+      "description": "Balances and completes. Unlike polar opposites, complements work together synergistically without tension.",
+      "bidirectional": true,
+      "strengthProperty": "narrativeIntensity",
+      "strengthSemantics": "Strength of complementary pairing (0.0 = occasional, 1.0 = inseparable pair)",
+      "examples": [
+        "Athena + Hermes (strategy + execution)",
+        "Apollo + Artemis (sun + moon twins)",
+        "King + Queen"
+      ]
+    },
+
+    {
+      "@id": "rel:evolution",
+      "@type": "Relationship",
+      "name": "EVOLUTION",
+      "description": "Transforms into a more integrated/mature form. Represents developmental growth of archetypal energy.",
+      "bidirectional": false,
+      "hasTrigger": true,
+      "strengthProperty": "transformationDepth",
+      "strengthSemantics": "Degree of structural change (0.0 = surface change, 1.0 = complete metamorphosis)",
+      "examples": [
+        "Innocent → Hero (through loss of innocence)",
+        "Trickster → Psychopomp (through wisdom)",
+        "Orphan → Caregiver (through healing)"
+      ]
+    },
+
+    {
+      "@id": "rel:devolution",
+      "@type": "Relationship",
+      "name": "DEVOLUTION",
+      "description": "Degrades into a less integrated form. Represents regression under stress, trauma, or possession.",
+      "bidirectional": false,
+      "hasTrigger": true,
+      "strengthProperty": "activationThreshold",
+      "strengthSemantics": "How easily regression occurs (0.0 = extreme stress required, 1.0 = highly vulnerable to regression)",
+      "examples": [
+        "Hero → Martyr (through exhaustion)",
+        "Sage → Cynic (through despair)",
+        "Lover → Addict (through wound)"
+      ]
+    },
+
+    {
+      "@id": "rel:cultural-echo",
+      "@type": "Relationship",
+      "name": "CULTURAL_ECHO",
+      "description": "Similar archetypal pattern expressed in a different cultural context. Echoes share structure but differ in cultural nuance.",
+      "bidirectional": true,
+      "strengthProperty": "fidelity",
+      "strengthSemantics": "Structural similarity between patterns (0.0 = weak echo, 1.0 = nearly identical pattern)",
+      "examples": [
+        "Hermes ≈ Mercury ≈ Thoth ≈ Odin (messenger/wisdom aspects)",
+        "Zeus ≈ Jupiter ≈ Indra ≈ Thor (sky-father/thunderer)",
+        "Inanna ≈ Ishtar ≈ Aphrodite ≈ Freyja (love/war goddess)"
+      ]
+    },
+
+    {
+      "@id": "rel:synthesis",
+      "@type": "Relationship",
+      "name": "SYNTHESIS",
+      "description": "Two or more archetypes combine to form a new emergent archetype. The synthesis is more than the sum of its parts.",
+      "bidirectional": false,
+      "requiresMultipleSources": true,
+      "strengthProperty": "transformationDepth",
+      "strengthSemantics": "Degree of emergent novelty (0.0 = simple combination, 1.0 = transcendent new form)",
+      "examples": [
+        "Hermes + Thoth → Hermes Trismegistus",
+        "Warrior + Lover → Sacred Knight",
+        "Mother + Crone → Wise Mother"
+      ]
+    },
+
+    {
+      "@id": "rel:decomposition",
+      "@type": "Relationship",
+      "name": "DECOMPOSITION",
+      "description": "A complex archetype splits into component archetypes. Reveals the primordial elements within a synthesis.",
+      "bidirectional": false,
+      "strengthProperty": "containmentRatio",
+      "strengthSemantics": "How much of the original is represented by each component (components should sum to ~1.0)",
+      "examples": [
+        "Triple Goddess → Maiden + Mother + Crone",
+        "Psyche → Mind + Soul + Spirit aspects",
+        "Sovereign → King + Judge + Protector"
+      ]
+    },
+
+    {
+      "@id": "rel:contains",
+      "@type": "Relationship",
+      "name": "CONTAINS",
+      "description": "A larger archetype contains a smaller archetype as an aspect or sub-function.",
+      "bidirectional": false,
+      "inverseOf": "rel:contained-by",
+      "strengthProperty": "containmentRatio",
+      "strengthSemantics": "How central the contained is to the container (0.0 = minor aspect, 1.0 = core aspect)",
+      "examples": [
+        "Great Mother contains Nurturer",
+        "Trickster contains Fool",
+        "Hero contains Warrior"
+      ]
+    },
+
+    {
+      "@id": "rel:contained-by",
+      "@type": "Relationship",
+      "name": "CONTAINED_BY",
+      "description": "A smaller archetype is an aspect or sub-function of a larger archetype.",
+      "bidirectional": false,
+      "inverseOf": "rel:contains",
+      "strengthProperty": "containmentRatio",
+      "strengthSemantics": "How central this aspect is to the larger archetype (0.0 = minor aspect, 1.0 = core aspect)",
+      "examples": [
+        "Nurturer contained by Great Mother",
+        "Fool contained by Trickster"
+      ]
+    },
+
+    {
+      "@id": "rel:mirrors",
+      "@type": "Relationship",
+      "name": "MIRRORS",
+      "description": "Reflects the same archetypal energy in a different domain or register. Same pattern, different expression.",
+      "bidirectional": true,
+      "hasDomain": true,
+      "strengthProperty": "fidelity",
+      "strengthSemantics": "Structural similarity across domains (0.0 = loose reflection, 1.0 = exact pattern match)",
+      "examples": [
+        "Inner Critic mirrors Tyrant (internal vs external)",
+        "Personal shadow mirrors Cultural shadow",
+        "Romantic Lover mirrors Divine Lover"
+      ]
+    },
+
+    {
+      "@id": "rel:antagonist",
+      "@type": "Relationship",
+      "name": "ANTAGONIST",
+      "description": "Narrative opposition - not the same as polar opposite. Antagonists create story tension but may share spectral positions.",
+      "bidirectional": true,
+      "strengthProperty": "narrativeIntensity",
+      "strengthSemantics": "Strength of opposition in narrative (0.0 = occasional conflict, 1.0 = eternal enemies)",
+      "examples": [
+        "Hero vs Shadow (narrative conflict)",
+        "Horus vs Set (mythic antagonism)",
+        "Order-bringer vs Chaos-bringer"
+      ]
+    },
+
+    {
+      "@id": "rel:ally",
+      "@type": "Relationship",
+      "name": "ALLY",
+      "description": "Narrative alignment - archetypes that naturally support each other in story structures.",
+      "bidirectional": true,
+      "strengthProperty": "narrativeIntensity",
+      "strengthSemantics": "Strength of alliance in narrative (0.0 = occasional ally, 1.0 = inseparable partners)",
+      "examples": [
+        "Hero + Mentor",
+        "Seeker + Guide",
+        "Creator + Muse"
+      ]
+    },
+
+    {
+      "@id": "rel:precedes",
+      "@type": "Relationship",
+      "name": "PRECEDES",
+      "description": "Comes before in a developmental or cyclical sequence. Not the same as evolution - precedes is positional.",
+      "bidirectional": false,
+      "inverseOf": "rel:succeeds",
+      "strengthProperty": "sequencePosition",
+      "strengthSemantics": "Position in sequence (integer) or null for relative-only ordering",
+      "examples": [
+        "Innocent precedes Orphan (in Pearson's journey)",
+        "Maiden precedes Mother (in life cycle)",
+        "Nigredo precedes Albedo (in alchemical process)"
+      ]
+    },
+
+    {
+      "@id": "rel:succeeds",
+      "@type": "Relationship",
+      "name": "SUCCEEDS",
+      "description": "Comes after in a developmental or cyclical sequence.",
+      "bidirectional": false,
+      "inverseOf": "rel:precedes",
+      "strengthProperty": "sequencePosition",
+      "strengthSemantics": "Position in sequence (integer) or null for relative-only ordering",
+      "examples": [
+        "Mother succeeds Maiden",
+        "Rubedo succeeds Albedo"
+      ]
+    },
+
+    {
+      "@id": "rel:transcends",
+      "@type": "Relationship",
+      "name": "TRANSCENDS",
+      "description": "A higher octave or more universal expression of the same pattern. The transcendent form includes but goes beyond the base form.",
+      "bidirectional": false,
+      "strengthProperty": "transformationDepth",
+      "strengthSemantics": "Degree of transcendence (0.0 = slight elevation, 1.0 = complete transcendence to higher order)",
+      "examples": [
+        "Self transcends Ego",
+        "Cosmic Mother transcends Personal Mother",
+        "Buddha transcends Sage"
+      ]
+    },
+
+    {
+      "@id": "rel:instantiates",
+      "@type": "Relationship",
+      "name": "INSTANTIATES",
+      "description": "A specific cultural figure that embodies a meta-archetype. Links primordial patterns to named deities/figures.",
+      "bidirectional": false,
+      "inverseOf": "rel:exemplifies",
+      "strengthProperty": "instantiationWeight",
+      "strengthSemantics": "How strongly the cultural figure embodies this primordial (0.0 = minor aspect, 1.0 = primary identity)",
+      "usageNote": "For multi-instantiation, use weighted array format: [{primordial, weight, aspects}]",
+      "examples": [
+        "Hermes instantiates Trickster",
+        "Kali instantiates Dark Mother",
+        "Odin instantiates Wounded Healer + Magician"
+      ]
+    },
+
+    {
+      "@id": "rel:exemplifies",
+      "@type": "Relationship",
+      "name": "EXEMPLIFIES",
+      "description": "A meta-archetype is exemplified by specific cultural instantiations.",
+      "bidirectional": false,
+      "inverseOf": "rel:instantiates",
+      "strengthProperty": "instantiationWeight",
+      "strengthSemantics": "How strongly this primordial is represented by the cultural figure (inverse of instantiates)",
+      "examples": [
+        "Trickster exemplified by Hermes, Loki, Coyote, Eshu",
+        "Sky Father exemplified by Zeus, Jupiter, Indra, Odin"
+      ]
+    },
+
+    {
+      "@id": "rel:tension",
+      "@type": "Relationship",
+      "name": "TENSION",
+      "description": "Exists in productive, ongoing tension with another archetype. Unlike ANTAGONIST (narrative opposition) or POLAR_OPPOSITE (axis opposition), TENSION describes archetypes that perpetually pull against each other in a generative dialectic.",
+      "bidirectional": true,
+      "strengthProperty": "narrativeIntensity",
+      "strengthSemantics": "Strength of ongoing dialectical pull (0.0 = mild tension, 1.0 = fundamental cosmic tension)",
+      "examples": [
+        "Order ⟷ Chaos (neither can exist without the other)",
+        "Individual ⟷ Collective (perpetual negotiation)",
+        "Tradition ⟷ Innovation (creative tension)",
+        "Eros ⟷ Thanatos (life-drive vs death-drive)"
+      ],
+      "differentiatesFrom": {
+        "POLAR_OPPOSITE": "Polar opposites are on same axis; tensions may not be",
+        "ANTAGONIST": "Antagonists fight; tensions pull without resolution"
+      }
+    },
+
+    {
+      "@id": "rel:constellation",
+      "@type": "Relationship",
+      "name": "CONSTELLATION",
+      "description": "A group of archetypes that consistently appear together, forming a pattern larger than any individual. The constellation has emergent properties beyond its members.",
+      "bidirectional": true,
+      "isGroupRelationship": true,
+      "strengthProperty": "narrativeIntensity",
+      "strengthSemantics": "How tightly bound the constellation is (0.0 = loose association, 1.0 = inseparable cluster)",
+      "examples": [
+        "Triple Goddess constellation: Maiden + Mother + Crone",
+        "Hero's Journey constellation: Hero + Mentor + Shadow + Threshold Guardian",
+        "Divine Family constellation: Father + Mother + Child",
+        "Olympian Brothers: Zeus + Poseidon + Hades (tripartite cosmos)"
+      ],
+      "usageNote": "Use members array to list all archetypes in the constellation; each member has this relationship to the constellation as a whole"
+    },
+
+    {
+      "@id": "rel:sublimation",
+      "@type": "Relationship",
+      "name": "SUBLIMATION",
+      "description": "Transforms the same archetypal energy into a higher or more refined form. Unlike EVOLUTION (development over time) or TRANSCENDS (moving to higher octave), SUBLIMATION is specifically about redirecting energy while preserving its essential nature.",
+      "bidirectional": false,
+      "strengthProperty": "transformationDepth",
+      "strengthSemantics": "Degree of refinement achieved (0.0 = minimal sublimation, 1.0 = complete alchemical transformation)",
+      "examples": [
+        "Warrior aggression → Warrior's discipline and protection",
+        "Lover's passion → Divine love / Devotional eros",
+        "Trickster's chaos → Creative innovation",
+        "Shadow rage → Righteous anger in service of justice"
+      ],
+      "alchemicalParallel": "Corresponds to alchemical sublimation - solid to gas without passing through liquid; transformation that purifies while preserving essence"
+    }
+  ]
+}

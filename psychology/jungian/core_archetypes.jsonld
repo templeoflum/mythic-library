@@ -1,0 +1,325 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "jungian:core_archetypes",
+  "@type": "PsychologicalSystem",
+  "name": "Jungian Core Archetypes",
+  "description": "Carl Jung's primary archetypal structures of the collective unconscious.",
+  "domain": "psychology",
+  "subdomain": "jungian",
+  "cardinality": 12,
+  "source": "Jung's collected works, particularly Archetypes and the Collective Unconscious",
+
+  "entries": [
+    {
+      "@id": "jungian:self",
+      "@type": "Archetype",
+      "name": "The Self",
+      "description": "The totality of the psyche, the organizing center",
+      "keywords": ["wholeness", "integration", "center", "totality", "individuation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.50,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 1.0, "aspects": ["wholeness", "totality"]}
+      ],
+      "relationships": [
+        {"type": "CONTAINS", "target": "jungian:shadow", "note": "Shadow is part of the Self"},
+        {"type": "CONTAINS", "target": "jungian:anima", "note": "Anima/Animus are aspects of Self"},
+        {"type": "CONTAINS", "target": "jungian:animus"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "kabbalah:tiphareth", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "jungian:shadow",
+      "@type": "Archetype",
+      "name": "The Shadow",
+      "description": "The repressed, denied aspects of the personality",
+      "keywords": ["repression", "darkness", "hidden", "denied", "unconscious"],
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.90,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 1.0, "aspects": ["repression", "hidden"]}
+      ],
+      "relationships": [
+        {"type": "CONTAINED_BY", "target": "jungian:self"},
+        {"type": "POLAR_OPPOSITE", "target": "jungian:persona", "axis": "hidden-shown"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "jungian:anima",
+      "@type": "Archetype",
+      "name": "The Anima",
+      "description": "The feminine aspect in men's unconscious",
+      "keywords": ["feminine", "soul", "receptivity", "relatedness", "eros"],
+      "spectralCoordinates": {
+        "order-chaos": 0.48,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.55,
+        "active-receptive": 0.75,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.7, "aspects": ["feminine", "nurturing"]},
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["soul", "relatedness"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "jungian:animus", "note": "Paired contrasexual archetypes"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "jungian:animus",
+      "@type": "Archetype",
+      "name": "The Animus",
+      "description": "The masculine aspect in women's unconscious",
+      "keywords": ["masculine", "spirit", "logos", "assertion", "meaning"],
+      "spectralCoordinates": {
+        "order-chaos": 0.38,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.42,
+        "active-receptive": 0.25,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.42
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["masculine", "spirit"]},
+        {"primordial": "primordial:hero", "weight": 0.6, "aspects": ["assertion", "logos"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "jungian:anima", "note": "Paired contrasexual archetypes"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "jungian:persona",
+      "@type": "Archetype",
+      "name": "The Persona",
+      "description": "The social mask, the face shown to the world",
+      "keywords": ["mask", "social", "adaptation", "role", "appearance"],
+      "spectralCoordinates": {
+        "order-chaos": 0.28,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.18,
+        "active-receptive": 0.42,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.32,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["adaptation", "role"]}
+      ],
+      "note": "Persona is a functional complex rather than a primordial archetype",
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "jungian:shadow", "axis": "shown-hidden"},
+        {"type": "TENSION", "target": "jungian:self", "note": "Persona can eclipse Self"}
+      ]
+    },
+    {
+      "@id": "jungian:wise_old_man",
+      "@type": "Archetype",
+      "name": "The Wise Old Man",
+      "description": "The archetype of meaning and wisdom",
+      "keywords": ["wisdom", "meaning", "guidance", "knowledge", "spirit"],
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.60,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise_elder", "weight": 1.0, "aspects": ["wisdom", "meaning", "guidance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "jungian:great_mother",
+      "@type": "Archetype",
+      "name": "The Great Mother",
+      "description": "The nurturing and devouring feminine principle",
+      "keywords": ["nurturing", "devouring", "fertility", "nature", "containment"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.40,
+        "active-receptive": 0.70,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 1.0, "aspects": ["nurturing", "devouring", "fertility"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "iching:kun", "fidelity": 0.85}
+      ]
+    },
+    {
+      "@id": "jungian:hero",
+      "@type": "Archetype",
+      "name": "The Hero",
+      "description": "The ego's journey toward individuation",
+      "keywords": ["courage", "quest", "transformation", "ego", "victory"],
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.25,
+        "active-receptive": 0.15,
+        "individual-collective": 0.20,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 1.0, "aspects": ["courage", "quest", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "vogler:hero", "fidelity": 0.95}
+      ]
+    },
+    {
+      "@id": "jungian:child",
+      "@type": "Archetype",
+      "name": "The Child",
+      "description": "The archetype of new beginnings and wholeness",
+      "keywords": ["innocence", "potential", "new beginning", "wholeness", "future"],
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.20,
+        "active-receptive": 0.50,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 1.0, "aspects": ["innocence", "potential", "wholeness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "jungian:trickster",
+      "@type": "Archetype",
+      "name": "The Trickster",
+      "description": "The disruptor of order, the shadow's messenger",
+      "keywords": ["disruption", "chaos", "boundary-crossing", "humor", "transformation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.75,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.50,
+        "active-receptive": 0.30,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.15
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 1.0, "aspects": ["disruption", "boundary-crossing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.9},
+        {"type": "CULTURAL_ECHO", "target": "vogler:trickster", "fidelity": 0.95}
+      ]
+    },
+    {
+      "@id": "jungian:maiden",
+      "@type": "Archetype",
+      "name": "The Maiden (Kore)",
+      "description": "The feminine potential before commitment",
+      "keywords": ["potential", "youth", "purity", "spring", "possibility"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.25,
+        "active-receptive": 0.50,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 1.0, "aspects": ["potential", "purity", "youth"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "jungian:great_mother", "note": "Maiden transforms to Mother"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.9}
+      ]
+    },
+    {
+      "@id": "jungian:crone",
+      "@type": "Archetype",
+      "name": "The Crone",
+      "description": "The wisdom of endings and transitions",
+      "keywords": ["wisdom", "endings", "transition", "death", "transformation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.65,
+        "active-receptive": 0.60,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 1.0, "aspects": ["wisdom", "endings", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "DEVOLUTION", "target": "jungian:great_mother", "note": "Mother transforms to Crone"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HECATE", "fidelity": 0.85}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "tripleGoddess": ["jungian:maiden", "jungian:great_mother", "jungian:crone"],
+    "contrasexualPair": ["jungian:anima", "jungian:animus"],
+    "lightShadowDyad": ["jungian:persona", "jungian:shadow"]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}

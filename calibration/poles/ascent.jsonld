@@ -1,0 +1,28 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "calibration:pole_ascent",
+  "@type": "CalibrationPoint",
+  "name": "Pure Ascent",
+  "axis": "ascent-descent",
+  "polarity": "negative",
+  "description": "Maximum sky, spirit, transcendence. The theoretical extreme of complete liberation from matter and earthly concerns.",
+  "spectralCoordinates": {
+    "order-chaos": 0.5,
+    "creation-destruction": 0.5,
+    "light-shadow": 0.5,
+    "active-receptive": 0.5,
+    "individual-collective": 0.5,
+    "ascent-descent": 0.0,
+    "stasis-transformation": 0.5,
+    "voluntary-fated": 0.5
+  },
+  "polarOpposite": "calibration:pole_descent",
+  "nearestPrimordials": [
+    {"@id": "primordial:great_father", "distance": 0.2},
+    {"@id": "primordial:magician", "distance": 0.3}
+  ],
+  "culturalExamples": ["Zeus (sky)", "Odin (all-father)", "Dyaus Pita", "Uranus"],
+  "psychologicalManifestation": "Spiritual aspiration, transcendence, abstract thought, idealism",
+  "shadowWhenExtreme": "Dissociation, spiritual bypassing, contempt for body/earth",
+  "notes": "No real archetype sits exactly here - this is a theoretical limit"
+}

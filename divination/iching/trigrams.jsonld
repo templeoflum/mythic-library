@@ -1,0 +1,276 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "iching:trigrams",
+  "@type": "SymbolicSystem",
+  "name": "I Ching Trigrams",
+  "description": "The 8 trigrams (bagua) - fundamental building blocks of the I Ching, representing primal forces.",
+  "domain": "divination",
+  "subdomain": "iching",
+  "cardinality": 8,
+  "structuralNotes": "Each trigram is 3 lines (yin or yang). Pairs of trigrams form the 64 hexagrams. Arranged in Earlier Heaven and Later Heaven sequences.",
+
+  "entries": [
+    {
+      "@id": "iching:qian",
+      "@type": "Archetype",
+      "name": "Qian (Heaven)",
+      "symbol": "☰",
+      "lines": "yang-yang-yang",
+      "attribute": "creative, strong, initiating",
+      "family": "father",
+      "element": "metal/sky",
+      "keywords": ["heaven", "creative", "strong", "initiating", "active", "firm"],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.18,
+        "active-receptive": 0.08,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.08,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.85, "aspects": ["creative-force"]},
+        {"primordial": "primordial:great_father", "weight": 0.8, "aspects": ["heaven", "initiating"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:kun", "axis": "active-receptive"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.7},
+        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75}
+      ]
+    },
+    {
+      "@id": "iching:kun",
+      "@type": "Archetype",
+      "name": "Kun (Earth)",
+      "symbol": "☷",
+      "lines": "yin-yin-yin",
+      "attribute": "receptive, yielding, devoted",
+      "family": "mother",
+      "element": "earth",
+      "keywords": ["earth", "receptive", "yielding", "nurturing", "devoted", "supportive"],
+      "spectralCoordinates": {
+        "order-chaos": 0.32,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.42,
+        "active-receptive": 0.88,
+        "individual-collective": 0.72,
+        "ascent-descent": 0.85,
+        "stasis-transformation": 0.28,
+        "voluntary-fated": 0.62
+      },
+      "instantiates": [
+        {"primordial": "primordial:great_mother", "weight": 0.9, "aspects": ["earth", "nurturing"]},
+        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["devoted", "supporting"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:qian", "axis": "active-receptive"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-GAIA", "fidelity": 0.85},
+        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:zhen",
+      "@type": "Archetype",
+      "name": "Zhen (Thunder)",
+      "symbol": "☳",
+      "lines": "yang-yin-yin",
+      "attribute": "arousing, shocking, movement",
+      "family": "eldest son",
+      "element": "wood",
+      "keywords": ["thunder", "arousing", "shock", "movement", "initiative", "spring"],
+      "spectralCoordinates": {
+        "order-chaos": 0.72,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.32,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.82,
+        "voluntary-fated": 0.28
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["initiative", "movement"]},
+        {"primordial": "primordial:rebel", "weight": 0.6, "aspects": ["shock", "awakening"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:xun", "note": "Thunder and wind"},
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-THOR", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:kan",
+      "@type": "Archetype",
+      "name": "Kan (Water)",
+      "symbol": "☵",
+      "lines": "yin-yang-yin",
+      "attribute": "abysmal, dangerous, flowing",
+      "family": "middle son",
+      "element": "water",
+      "keywords": ["water", "abyss", "danger", "depth", "flowing", "hidden"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.72,
+        "active-receptive": 0.58,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.68,
+        "stasis-transformation": 0.62,
+        "voluntary-fated": 0.68
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.7, "aspects": ["depth", "hidden"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.6, "aspects": ["flowing", "passage"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:li", "axis": "light-shadow"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.75},
+        {"type": "CULTURAL_ECHO", "target": "astrology:scorpio", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:gen",
+      "@type": "Archetype",
+      "name": "Gen (Mountain)",
+      "symbol": "☶",
+      "lines": "yang-yin-yin",
+      "attribute": "stillness, stopping, meditation",
+      "family": "youngest son",
+      "element": "earth",
+      "keywords": ["mountain", "stillness", "stopping", "meditation", "boundary", "contemplation"],
+      "spectralCoordinates": {
+        "order-chaos": 0.22,
+        "creation-destruction": 0.42,
+        "light-shadow": 0.38,
+        "active-receptive": 0.72,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.12,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["stillness", "boundary"]},
+        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["meditation", "contemplation"]}
+      ],
+      "relationships": [
+        {"type": "TENSION", "target": "iching:zhen", "note": "Stillness vs movement"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.8}
+      ]
+    },
+    {
+      "@id": "iching:xun",
+      "@type": "Archetype",
+      "name": "Xun (Wind/Wood)",
+      "symbol": "☴",
+      "lines": "yin-yang-yang",
+      "attribute": "gentle, penetrating, dispersing",
+      "family": "eldest daughter",
+      "element": "wood",
+      "keywords": ["wind", "wood", "gentle", "penetrating", "gradual", "influence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.52,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.42,
+        "active-receptive": 0.45,
+        "individual-collective": 0.48,
+        "ascent-descent": 0.42,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["penetrating", "influence"]},
+        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["gentle", "gradual"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:zhen", "note": "Wind follows thunder"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.65}
+      ]
+    },
+    {
+      "@id": "iching:li",
+      "@type": "Archetype",
+      "name": "Li (Fire)",
+      "symbol": "☲",
+      "lines": "yang-yin-yang",
+      "attribute": "clinging, clarity, illumination",
+      "family": "middle daughter",
+      "element": "fire",
+      "keywords": ["fire", "clinging", "clarity", "illumination", "awareness", "beauty"],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.12,
+        "active-receptive": 0.38,
+        "individual-collective": 0.42,
+        "ascent-descent": 0.32,
+        "stasis-transformation": 0.52,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.7, "aspects": ["clarity", "awareness"]},
+        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["clinging", "beauty"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "iching:kan", "axis": "light-shadow"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8},
+        {"type": "CULTURAL_ECHO", "target": "astrology:leo", "fidelity": 0.7}
+      ]
+    },
+    {
+      "@id": "iching:dui",
+      "@type": "Archetype",
+      "name": "Dui (Lake)",
+      "symbol": "☱",
+      "lines": "yin-yin-yang",
+      "attribute": "joyous, open, pleasure",
+      "family": "youngest daughter",
+      "element": "metal",
+      "keywords": ["lake", "joy", "pleasure", "open", "communication", "exchange"],
+      "spectralCoordinates": {
+        "order-chaos": 0.58,
+        "creation-destruction": 0.28,
+        "light-shadow": 0.32,
+        "active-receptive": 0.52,
+        "individual-collective": 0.58,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.32
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["joy", "pleasure"]},
+        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["playful", "exchange"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "iching:gen", "note": "Openness vs stillness"},
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.65},
+        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.6}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "earlierHeavenSequence": ["qian", "dui", "li", "zhen", "xun", "kan", "gen", "kun"],
+    "laterHeavenSequence": ["li", "kun", "dui", "qian", "kan", "gen", "zhen", "xun"],
+    "polarPairs": [
+      {"pair": ["qian", "kun"], "axis": "heaven-earth", "note": "Primary polarity"},
+      {"pair": ["li", "kan"], "axis": "fire-water", "note": "Light and shadow"},
+      {"pair": ["zhen", "xun"], "axis": "thunder-wind", "note": "Movement and penetration"},
+      {"pair": ["gen", "dui"], "axis": "mountain-lake", "note": "Stillness and joy"}
+    ],
+    "familyStructure": {
+      "father": "qian",
+      "mother": "kun",
+      "sons": ["zhen", "kan", "gen"],
+      "daughters": ["xun", "li", "dui"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1",
+    "relationshipsValidated": true,
+    "derivedAt": "2025-01-20"
+  }
+}
