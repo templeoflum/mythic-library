@@ -64,12 +64,11 @@ def main():
     mapper = EntityMapper(acp, library)
     map_summary = mapper.auto_map_all()
 
-    print(f"  ACP alias matches:     {map_summary['acp_alias_matches']}")
-    print(f"  Exact name matches:    {map_summary['exact_name_matches']}")
-    print(f"  Library alias matches: {map_summary['library_alias_matches']}")
-    print(f"  Total mapped:          {map_summary['total_mapped']} / {map_summary['total_entities']}")
+    print(f"  Tradition-aware matches: {map_summary.get('tradition_aware_matches', map_summary.get('acp_alias_matches', 0) + map_summary.get('exact_name_matches', 0))}")
+    print(f"  Library alias matches:  {map_summary['library_alias_matches']}")
+    print(f"  Total mapped:           {map_summary['total_mapped']} / {map_summary['total_entities']}")
     pct = map_summary['total_mapped'] / max(map_summary['total_entities'], 1) * 100
-    print(f"  Coverage:              {pct:.1f}%")
+    print(f"  Coverage:               {pct:.1f}%")
 
     # Show mappings
     print(f"\n  Mapped entities:")

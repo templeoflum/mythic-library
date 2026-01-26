@@ -119,7 +119,7 @@ GAZETTEER = {
     "Theseus": {"type": "hero", "tradition": "greek"},
     "Perseus": {"type": "hero", "tradition": "greek"},
     "Heracles": {"type": "hero", "tradition": "greek"},
-    "Hercules": {"type": "hero", "tradition": "greek"},
+    "Hercules": {"type": "hero", "tradition": "roman"},
     "Orpheus": {"type": "hero", "tradition": "greek"},
     "Eurydice": {"type": "hero", "tradition": "greek"},
     "Troy": {"type": "place", "tradition": "greek"},

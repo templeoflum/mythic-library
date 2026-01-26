@@ -1,4 +1,10 @@
-"""Map library entities to ACP archetypes."""
+"""Map library entities to ACP archetypes.
+
+Mapping strategy: entity-driven with tradition preference.
+For each library entity, find all candidate ACP archetypes and prefer
+the one whose tradition prefix matches the entity's primary_tradition.
+This prevents Norse Odin from collapsing into Greek Hermes, etc.
+"""
 import json
 from difflib import SequenceMatcher
 from typing import Dict, List, Optional, Tuple
@@ -6,6 +12,31 @@ from dataclasses import dataclass, asdict
 
 from integration.acp_loader import ACPLoader
 from integration.library_loader import LibraryLoader
+
+
+# Map library tradition names to ACP archetype ID prefixes.
+# An entity with primary_tradition "norse" should prefer "arch:NO-*" archetypes.
+TRADITION_TO_PREFIX = {
+    "african": "AF",
+    "australian": "AU",
+    "celtic": "CE",
+    "chinese": "CN",
+    "egyptian": "EG",
+    "finnish": "FI",
+    "greek": "GR",
+    "roman": "RO",
+    "indian": "IN",
+    "japanese": "JP",
+    "mesoamerican": "MA",
+    "mesopotamian": "ME",
+    "north_american": "NA",
+    "norse": "NO",
+    "polynesian": "PL",
+    "slavic": "SL",
+    "persian": "persian",
+    "zoroastrian": "persian",
+    "christian": "christian",
+}
 
 
 @dataclass
@@ -19,6 +50,17 @@ class EntityMapping:
     notes: str = ""
 
 
+def _arch_matches_tradition(arch_id: str, tradition: str) -> bool:
+    """Check if an archetype ID belongs to the given tradition."""
+    prefix = TRADITION_TO_PREFIX.get(tradition, "")
+    if not prefix:
+        return False
+    # arch:GR-ZEUS -> prefix "GR", persian:ahura-mazda -> prefix "persian"
+    id_body = arch_id.split(":", 1)[1] if ":" in arch_id else arch_id
+    id_prefix = id_body.split("-", 1)[0] if "-" in id_body else id_body
+    return id_prefix.upper() == prefix.upper()
+
+
 class EntityMapper:
     def __init__(self, acp: ACPLoader, library: LibraryLoader):
         self.acp = acp
@@ -28,43 +70,44 @@ class EntityMapper:
 
     def auto_map_all(self) -> dict:
         """Run all mapping phases in order. Returns summary."""
-        phase1 = self._map_via_acp_aliases()
-        phase2 = self._map_via_exact_name()
-        phase3 = self._map_via_library_aliases()
+        phase1 = self._map_tradition_aware()
+        phase2 = self._map_via_library_aliases()
 
         return {
-            "acp_alias_matches": len(phase1),
-            "exact_name_matches": len(phase2),
-            "library_alias_matches": len(phase3),
+            "tradition_aware_matches": len(phase1),
+            "library_alias_matches": len(phase2),
             "total_mapped": len(self.mappings),
             "total_entities": len(self.library.get_all_entities()),
         }
 
-    def _map_via_acp_aliases(self) -> List[EntityMapping]:
-        """Phase 1: Match library entities against ACP alias lists."""
-        entities = self.library.get_all_entities()
-        entity_names = {e.canonical_name.lower(): e.canonical_name for e in entities}
-        matches = []
+    def _find_all_candidates(self, name: str) -> List[Dict]:
+        """Find all ACP archetypes that match a name (exact, alias, or qualified alias).
+
+        Handles parenthetical qualifiers in ACP aliases — e.g., searching for
+        "Ishtar" will also match an alias "Ishtar (Akkadian)" in the ACP.
+
+        Returns list of dicts with keys: arch_id, arch_name, confidence,
+        method, fidelity, notes.
+        """
+        candidates = []
+        name_lower = name.lower().strip()
 
         for arch_id, arch_data in self.acp.archetypes.items():
             arch_name = arch_data.get("name", "")
 
-            # Check archetype's own name
-            if arch_name.lower() in entity_names:
-                lib_name = entity_names[arch_name.lower()]
-                if lib_name not in self._mapped_entities:
-                    m = EntityMapping(
-                        library_entity=lib_name,
-                        acp_archetype_id=arch_id,
-                        acp_name=arch_name,
-                        confidence=1.0,
-                        method="exact_name",
-                        fidelity=1.0,
-                    )
-                    matches.append(m)
-                    self._mapped_entities.add(lib_name)
+            # Direct name match
+            if arch_name.lower().strip() == name_lower:
+                candidates.append({
+                    "arch_id": arch_id,
+                    "arch_name": arch_name,
+                    "confidence": 1.0,
+                    "method": "exact_name",
+                    "fidelity": 1.0,
+                    "notes": "",
+                })
+                continue
 
-            # Check aliases
+            # Alias match
             for alias in arch_data.get("aliases", []):
                 if isinstance(alias, dict):
                     alias_name = alias.get("name", "")
@@ -75,68 +118,128 @@ class EntityMapper:
                 else:
                     continue
 
-                if alias_name.lower() in entity_names:
-                    lib_name = entity_names[alias_name.lower()]
-                    if lib_name not in self._mapped_entities:
-                        m = EntityMapping(
-                            library_entity=lib_name,
-                            acp_archetype_id=arch_id,
-                            acp_name=arch_name,
-                            confidence=fidelity,
-                            method="acp_alias",
-                            fidelity=fidelity,
-                            notes=f"ACP alias: {alias_name} (fidelity {fidelity})",
-                        )
-                        matches.append(m)
-                        self._mapped_entities.add(lib_name)
+                alias_lower = alias_name.lower().strip()
 
-        self.mappings.extend(matches)
-        return matches
+                # Exact alias match
+                if alias_lower == name_lower:
+                    candidates.append({
+                        "arch_id": arch_id,
+                        "arch_name": arch_name,
+                        "confidence": fidelity,
+                        "method": "acp_alias",
+                        "fidelity": fidelity,
+                        "notes": f"ACP alias: {alias_name} (fidelity {fidelity})",
+                    })
+                    break
 
-    def _map_via_exact_name(self) -> List[EntityMapping]:
-        """Phase 2: Direct name match for anything not caught by aliases."""
+                # Qualified alias match: "Ishtar (Akkadian)" matches "Ishtar"
+                # Strip parenthetical qualifier and re-check
+                if "(" in alias_lower:
+                    base = alias_lower.split("(")[0].strip()
+                    if base == name_lower:
+                        candidates.append({
+                            "arch_id": arch_id,
+                            "arch_name": arch_name,
+                            "confidence": fidelity,
+                            "method": "acp_alias",
+                            "fidelity": fidelity,
+                            "notes": f"ACP alias: {alias_name} (fidelity {fidelity})",
+                        })
+                        break
+
+        return candidates
+
+    def _pick_best_candidate(self, candidates: List[Dict], tradition: str) -> Optional[Dict]:
+        """Pick the best archetype candidate, preferring tradition match.
+
+        Priority:
+        1. Exact name match in the entity's own tradition
+        2. Any match in the entity's own tradition
+        3. Exact name match in any tradition
+        4. Highest-fidelity alias match
+        """
+        if not candidates:
+            return None
+
+        # Partition into tradition-matched vs other
+        native = [c for c in candidates if _arch_matches_tradition(c["arch_id"], tradition)]
+        foreign = [c for c in candidates if not _arch_matches_tradition(c["arch_id"], tradition)]
+
+        # Prefer native tradition
+        if native:
+            # Among native, prefer exact_name over alias
+            exact = [c for c in native if c["method"] == "exact_name"]
+            if exact:
+                return exact[0]
+            # Highest fidelity alias in native tradition
+            native.sort(key=lambda c: -c["fidelity"])
+            return native[0]
+
+        # No native match — use best foreign
+        exact = [c for c in foreign if c["method"] == "exact_name"]
+        if exact:
+            return exact[0]
+        foreign.sort(key=lambda c: -c["fidelity"])
+        return foreign[0]
+
+    def _map_tradition_aware(self) -> List[EntityMapping]:
+        """Map entities to ACP archetypes with tradition preference.
+
+        For each library entity, find all candidate archetypes and prefer
+        the one from the entity's own tradition. This prevents cross-cultural
+        alias collapsing (e.g., Odin -> arch:GR-HERMES when arch:NO-ODIN exists).
+        """
         entities = self.library.get_all_entities()
         matches = []
 
         for entity in entities:
-            if entity.canonical_name in self._mapped_entities:
-                continue
+            name = entity.canonical_name
+            tradition = entity.primary_tradition or ""
 
-            results = self.acp.find_by_name(entity.canonical_name)
-            if results:
-                best = results[0]
+            candidates = self._find_all_candidates(name)
+            best = self._pick_best_candidate(candidates, tradition)
+
+            if best:
                 m = EntityMapping(
-                    library_entity=entity.canonical_name,
-                    acp_archetype_id=best["id"],
-                    acp_name=best["data"].get("name", ""),
-                    confidence=1.0 if best["match_type"] == "exact" else 0.7,
-                    method="exact_name",
+                    library_entity=name,
+                    acp_archetype_id=best["arch_id"],
+                    acp_name=best["arch_name"],
+                    confidence=best["confidence"],
+                    method=best["method"],
+                    fidelity=best["fidelity"],
+                    notes=best["notes"],
                 )
                 matches.append(m)
-                self._mapped_entities.add(entity.canonical_name)
+                self._mapped_entities.add(name)
 
         self.mappings.extend(matches)
         return matches
 
     def _map_via_library_aliases(self) -> List[EntityMapping]:
-        """Phase 3: Use library entity_aliases to find ACP matches."""
+        """Phase 2: Use library entity_aliases to find ACP matches for unmapped entities."""
         db_aliases = self.library.get_entity_aliases()
+        # Build tradition lookup
+        entities = self.library.get_all_entities()
+        entity_traditions = {e.canonical_name: (e.primary_tradition or "") for e in entities}
         matches = []
 
         for canonical, alias_list in db_aliases.items():
             if canonical in self._mapped_entities:
                 continue
 
+            tradition = entity_traditions.get(canonical, "")
+
             for alias_name in alias_list:
-                results = self.acp.find_by_name(alias_name)
-                if results:
-                    best = results[0]
+                candidates = self._find_all_candidates(alias_name)
+                best = self._pick_best_candidate(candidates, tradition)
+                if best:
                     m = EntityMapping(
                         library_entity=canonical,
-                        acp_archetype_id=best["id"],
-                        acp_name=best["data"].get("name", ""),
+                        acp_archetype_id=best["arch_id"],
+                        acp_name=best["arch_name"],
                         confidence=0.8,
                         method="library_alias",
+                        fidelity=best["fidelity"],
                         notes=f"Library alias: {alias_name}",
                     )
                     matches.append(m)
