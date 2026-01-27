@@ -378,6 +378,99 @@ Calibrated coordinates saved separately at `outputs/metrics/calibrated_coordinat
 
 4. **Correlation is still "weak"** — Post-calibration Spearman r=-0.23 is statistically significant but modest. This may reflect the inherent limitations of the data (co-occurrence counts ≠ narrative similarity) or the ACP's 8D space being richer than simple distance metrics capture.
 
+---
+
+## Session Log: January 2026 (Phase 5)
+
+### Phase 5: Statistical Rigor — Complete
+
+Built `validation/statistical_tests.py` — a comprehensive statistical testing module that answers: "Is the ACP signal real, or could random coordinates do equally well?"
+
+#### 5.1: Permutation Test (Null Model)
+
+The most important test. Shuffled entity-to-archetype coordinate assignments 1,000 times, recomputing Spearman correlation each time.
+
+| Metric | Value |
+|--------|-------|
+| Observed Spearman r | -0.0946 |
+| Null distribution mean | +0.0011 |
+| Null distribution std | 0.0546 |
+| Null 5th–95th percentile | [-0.096, +0.091] |
+| Empirical p-value | **0.053** |
+
+**Verdict**: The observed correlation (-0.095) sits right at the boundary of the null distribution's 5th percentile (-0.096). The empirical p-value of 0.053 is marginally non-significant at α=0.05. This means random coordinate assignments can occasionally produce correlations as strong as the real ACP, though the real ACP is at the extreme edge of what's achievable by chance.
+
+Note: This tests the pre-calibration coordinates. Post-calibration correlations (-0.23) are stronger but are trained on the same data.
+
+#### 5.2: Bootstrap Confidence Intervals
+
+1,000 bootstrap resamples of entity pairs:
+
+| Metric | Observed | 95% CI |
+|--------|----------|--------|
+| Spearman r | -0.0946 | [-0.121, -0.070] |
+| Pearson r | -0.0834 | [-0.104, -0.061] |
+
+The CI excludes zero, confirming the correlation is reliably non-zero (the signal is consistent across resamples, even if small).
+
+#### 5.3: Effect Size
+
+| Metric | Value |
+|--------|-------|
+| Spearman r² | 0.0089 |
+| Variance explained | 0.89% |
+| Cohen's q | 0.095 (negligible) |
+
+By standard conventions, the effect is negligible. ACP coordinates explain less than 1% of the variance in narrative co-occurrence.
+
+#### 5.4: Multiple Comparison Correction
+
+Applied Benjamini-Hochberg FDR and Bonferroni correction to 12 per-tradition Spearman p-values:
+
+- **Bonferroni**: 0 traditions remain significant (Norse p=0.008 → adjusted p=0.096)
+- **Benjamini-Hochberg**: 0 traditions remain significant
+
+Norse mythology's p=0.008 does not survive correction for testing 12 traditions.
+
+#### 5.5: Cross-Validation for Calibration
+
+5-fold cross-validation: calibrate on 4 folds of entity pairs, test correlation on the held-out fold.
+
+| Fold | Held-out Spearman r | Train pairs | Test pairs |
+|------|---------------------|-------------|------------|
+| 0 | -0.246 | 4,203 | 1,050 |
+| 1 | -0.294 | 4,203 | 1,050 |
+| 2 | -0.178 | 4,203 | 1,050 |
+| 3 | -0.210 | 4,203 | 1,050 |
+| 4 | -0.195 | 4,200 | 1,053 |
+| **Mean** | **-0.225 ± 0.041** | | |
+
+**Verdict**: Calibration generalizes well. The cross-validated r (-0.225) is close to the in-sample r (-0.233), indicating minimal overfitting. The calibration is learning real structure, not noise.
+
+#### 5.6: Holdout Tradition Tests
+
+Calibrate on all traditions except one, test on the held-out tradition:
+
+| Held-out | Test entities | Spearman r | p-value | Cal. loss reduction |
+|----------|--------------|------------|---------|---------------------|
+| Norse | 11 | -0.354 | 0.008 | 37.3% |
+| Egyptian | 11 | -0.149 | 0.277 | 35.9% |
+| Indian | 13 | -0.160 | 0.162 | 35.7% |
+| Greek | 19 | +0.082 | 0.289 | 39.4% |
+
+Norse remains the strongest even when excluded from calibration training — the ACP coordinate structure genuinely captures something about Norse mythological relationships. Greek remains near-zero (co-occurrence saturation).
+
+#### Summary Assessment
+
+The statistical rigor tests reveal a nuanced picture:
+
+1. **The signal is real but tiny**: Pre-calibration r=-0.095 explains <1% of variance. The permutation test (p=0.053) is borderline — random coordinates can nearly match ACP.
+2. **Calibration generalizes**: Cross-validated r=-0.225 ± 0.041, close to in-sample r=-0.233. The calibration is capturing real structure.
+3. **Norse is the standout**: Consistently strong even when held out from calibration. But it doesn't survive multiple comparison correction.
+4. **No per-tradition results survive correction**: Testing 12 traditions, none remain significant after Bonferroni or BH.
+
+This is honest science: the ACP shows a weak directional signal that is consistent and calibratable, but not yet empirically distinguished from random assignment with high confidence. The next phase should focus on whether alternative distance metrics or co-occurrence normalization can amplify the signal.
+
 ## Roadmap: Standalone ACP Validation System
 
 The goal is a rigorous, empirically falsifiable validation of the Archetypal Compression Protocol — a standalone product that can be independently verified. No narrative generation, no OS integration. Pure validation science.
@@ -393,16 +486,14 @@ The goal is a rigorous, empirically falsifiable validation of the Archetypal Com
 - [x] Create ACP archetypes for high-mention unmapped deities (+5: Agni, Soma, Varuna, Apsu, Anansi)
 - [x] Coordinate calibration via gradient descent (Spearman r: -0.095 → -0.233)
 
-### Phase 5: Statistical Rigor
+### Phase 5: Statistical Rigor — Complete
 
-Make the validation trustworthy. Right now we have correlations but no controls, no cross-validation, no effect size reporting beyond r values.
-
-- [ ] **Cross-validation for calibration**: k-fold holdout — calibrate on k-1 folds, test on the held-out fold. Current calibration trains and tests on the same data.
-- [ ] **Null model / permutation test**: Shuffle entity-archetype assignments randomly 1,000+ times. What correlation do you get by chance? Report the empirical p-value (% of random shuffles that beat the real correlation). This is the single most important test — it answers "could random coordinates do this?"
-- [ ] **Effect size context**: Report Cohen's d or similar alongside r values. Spearman r=-0.23 is statistically significant but how practically meaningful is it?
-- [ ] **Confidence intervals**: Bootstrap 95% CIs for all reported correlations instead of just point estimates.
-- [ ] **Multiple comparison correction**: We test 12 traditions — apply Bonferroni or FDR correction to per-tradition p-values.
-- [ ] **Holdout tradition test**: Exclude one entire tradition from calibration (e.g., Norse), calibrate on the rest, then test on the held-out tradition. Does the calibration generalize?
+- [x] **Null model / permutation test**: 1,000 shuffles, empirical p=0.053 (borderline)
+- [x] **Cross-validation for calibration**: 5-fold CV, mean r=-0.225 ± 0.041 (generalizes well)
+- [x] **Effect size context**: r²=0.009, Cohen's q=0.095 (negligible)
+- [x] **Confidence intervals**: Bootstrap 95% CIs: Spearman [-0.121, -0.070]
+- [x] **Multiple comparison correction**: Bonferroni/BH applied — 0 traditions survive
+- [x] **Holdout tradition test**: Norse r=-0.354 even when excluded from calibration
 
 ### Phase 6: Alternative Metrics & Hypothesis Tests
 

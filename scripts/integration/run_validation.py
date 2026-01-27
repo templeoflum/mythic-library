@@ -25,6 +25,7 @@ from integration.entity_mapper import EntityMapper
 from validation.test_coordinate_accuracy import CoordinateValidation
 from validation.test_motif_clustering import MotifClustering
 from validation.calibrate_coordinates import CoordinateCalibrator
+from validation.statistical_tests import StatisticalTests
 
 ACP_PATH = PROJECT_ROOT / "ACP"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
@@ -33,7 +34,7 @@ OUTPUTS = PROJECT_ROOT / "outputs"
 
 def main():
     print("=" * 60)
-    print("  MythOS Validation Suite")
+    print("  ACP Validation Suite")
     print("  ACP + Mythic Library Integration")
     print("=" * 60)
     timestamp = datetime.now(timezone.utc).isoformat()
@@ -263,6 +264,113 @@ def main():
     cal_coord_results = validator.test_distance_correlation(exclude_entities=["Set"])
     print_correlation("After calibration (excluding 'Set')", cal_coord_results)
 
+    # ── Statistical Rigor (Phase 5) ─────────────────────────
+    # Reload ACP to get clean (uncalibrated) coordinates for statistical tests
+    print("\n" + "-" * 60)
+    print("PHASE 6: Statistical Rigor")
+    print("-" * 60)
+
+    acp_clean = ACPLoader(str(ACP_PATH))
+    mapper_clean = EntityMapper(acp_clean, library)
+    mapper_clean.auto_map_all()
+    stat_tests = StatisticalTests(acp_clean, library, mapper_clean)
+
+    # 6a. Permutation test
+    print("\n  6a. Permutation Test (1000 shuffles)...")
+    perm_result = stat_tests.permutation_test(
+        n_permutations=1000, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in perm_result:
+        null = perm_result["null_distribution"]
+        print(f"      Observed Spearman r:  {perm_result['observed_spearman_r']}")
+        print(f"      Null mean ± std:      {null['mean']} ± {null['std']}")
+        print(f"      Null 5th-95th %%ile:   [{null['percentile_5']}, {null['percentile_95']}]")
+        print(f"      Empirical p-value:    {perm_result['empirical_p_value']}")
+        print(f"      -> {perm_result['conclusion']}")
+    else:
+        print(f"      ERROR: {perm_result['error']}")
+
+    # 6b. Bootstrap confidence intervals
+    print("\n  6b. Bootstrap Confidence Intervals (1000 resamples)...")
+    boot_result = stat_tests.bootstrap_confidence_intervals(
+        n_bootstrap=1000, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in boot_result:
+        sp = boot_result["spearman"]
+        pe = boot_result["pearson"]
+        print(f"      Spearman r = {sp['observed']}  95% CI [{sp['ci_lower']}, {sp['ci_upper']}]")
+        print(f"      Pearson r  = {pe['observed']}  95% CI [{pe['ci_lower']}, {pe['ci_upper']}]")
+    else:
+        print(f"      ERROR: {boot_result['error']}")
+
+    # 6c. Effect size
+    print("\n  6c. Effect Size Report...")
+    effect_result = stat_tests.effect_size_report(exclude_entities=["Set"])
+    if "error" not in effect_result:
+        print(f"      Spearman r² = {effect_result['r_squared_spearman']} "
+              f"({effect_result['variance_explained_pct']}% variance explained)")
+        print(f"      Cohen's q   = {effect_result['cohens_q']} ({effect_result['effect_strength']} effect)")
+    else:
+        print(f"      ERROR: {effect_result['error']}")
+
+    # 6d. Multiple comparison correction for per-tradition tests
+    print("\n  6d. Multiple Comparison Correction...")
+    tradition_pvals = {}
+    for trad, data in tradition_results.items():
+        if "spearman_p" in data:
+            tradition_pvals[trad] = data["spearman_p"]
+
+    if tradition_pvals:
+        mc_result = StatisticalTests.benjamini_hochberg(tradition_pvals)
+        print(f"      {mc_result['n_tests']} traditions tested")
+        print(f"      Significant after Bonferroni:          {mc_result['n_significant_bonferroni']}")
+        print(f"      Significant after Benjamini-Hochberg:  {mc_result['n_significant_bh']}")
+        for trad, data in sorted(mc_result["bh_results"].items(),
+                                  key=lambda x: x[1]["adjusted_p"]):
+            sig = "*" if data["significant_after_correction"] else ""
+            print(f"        {trad:15s}  p={data['original_p']:.6f}  adj_p={data['adjusted_p']:.6f} {sig}")
+    else:
+        mc_result = {}
+        print("      No tradition p-values available")
+
+    # 6e. Cross-validation for calibration
+    print("\n  6e. Cross-Validation (5-fold)...")
+    cv_result = stat_tests.cross_validate_calibration(
+        k=5, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in cv_result:
+        agg = cv_result["aggregate"]
+        print(f"      {agg['valid_folds']}/{cv_result['k']} valid folds")
+        if agg["mean_spearman_r"] is not None:
+            print(f"      Mean held-out Spearman r = {agg['mean_spearman_r']} ± {agg['std_spearman_r']}")
+        for fold in cv_result["fold_results"]:
+            if "spearman_r" in fold:
+                print(f"        Fold {fold['fold']}: r={fold['spearman_r']}, "
+                      f"train={fold['train_pairs']}, test={fold['test_pairs']}")
+            else:
+                print(f"        Fold {fold['fold']}: {fold.get('note', 'failed')}")
+        print(f"      -> {cv_result['conclusion']}")
+    else:
+        print(f"      ERROR: {cv_result['error']}")
+
+    # 6f. Holdout tradition tests
+    print("\n  6f. Holdout Tradition Tests...")
+    holdout_traditions = ["norse", "greek", "indian", "egyptian"]
+    holdout_results = {}
+    for trad in holdout_traditions:
+        hr = stat_tests.holdout_tradition_test(
+            holdout_tradition=trad, exclude_entities=["Set"]
+        )
+        holdout_results[trad] = hr
+        if "error" in hr:
+            print(f"      {trad:12s}: {hr['error']}")
+        elif "note" in hr:
+            print(f"      {trad:12s}: {hr['note']} ({hr['test_entities']} entities, {hr['test_pairs']} pairs)")
+        else:
+            print(f"      {trad:12s}: r={hr['spearman_r']}, p={hr['spearman_p']:.6f}, "
+                  f"test_entities={hr['test_entities']}, test_pairs={hr['test_pairs']}, "
+                  f"cal_loss_reduction={hr['calibration_loss_reduction_pct']}%")
+
     # ── Save Results ──────────────────────────────────────────
     print("\n" + "-" * 60)
     print("Saving Results")
@@ -298,6 +406,14 @@ def main():
             "mean_shift": cal_result["mean_shift"],
             "max_shift": cal_result["max_shift"],
             "post_calibration_correlation": cal_coord_results.get("all_pairs", {}),
+        },
+        "statistical_rigor": {
+            "permutation_test": perm_result,
+            "bootstrap_ci": boot_result,
+            "effect_size": effect_result,
+            "multiple_comparison": mc_result,
+            "cross_validation": cv_result,
+            "holdout_traditions": holdout_results,
         },
     }
 

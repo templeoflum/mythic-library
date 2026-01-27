@@ -293,12 +293,12 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Per-tradition correlation analysis (Norse r=-0.354, p=0.008)
 - [x] Coordinate calibration via gradient descent (Spearman r: -0.095 → -0.233)
 
-### Phase 5: Statistical Rigor — Next
-- [ ] Permutation test (null model): can random coordinates match real ACP?
-- [ ] Cross-validation for coordinate calibration (k-fold holdout)
-- [ ] Confidence intervals (bootstrap 95% CIs)
-- [ ] Multiple comparison correction for per-tradition tests
-- [ ] Holdout tradition generalization test
+### Phase 5: Statistical Rigor — Complete
+- [x] Permutation test: empirical p=0.053 (borderline — random can nearly match)
+- [x] Cross-validation: 5-fold CV r=-0.225 ± 0.041 (calibration generalizes)
+- [x] Bootstrap 95% CIs: Spearman [-0.121, -0.070], excludes zero
+- [x] Multiple comparison correction: 0/12 traditions survive Bonferroni/BH
+- [x] Holdout tradition test: Norse r=-0.354 robust when excluded from training
 
 ### Phase 6: Alternative Metrics & Hypothesis Tests
 - [ ] Cosine similarity, axis-weighted distance, per-axis correlation
