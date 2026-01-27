@@ -799,6 +799,173 @@ Criteria passed: 2/4. The ACP coordinate system shows a real, statistically sign
 
 This is honest science. The ACP has a real but weak signal that needs significant improvement to justify its 8-dimensional complexity.
 
+## Session Log: January 2026 (Phase 11 — v2 Validation)
+
+### Phase 11: v2 Validation — Cross-Cultural Structural Equivalence
+
+v1 validated ACP by testing whether coordinate distance predicts textual co-occurrence. The key finding was that tradition identity (a trivial 1D binary) outperforms the full 8D system (|r|=0.361 vs |r|=0.095), indicating co-occurrence primarily reflects cultural origin. This motivated a fundamentally different v2 hypothesis.
+
+#### v2 Hypothesis
+
+The ACP encodes a system of **cross-cultural structural equivalence**. Its coordinates, relationships, and primordial hierarchy form an internally coherent and externally meaningful framework where:
+1. Archetypes labeled as cross-cultural echoes are geometrically close, with fidelity predicting distance
+2. Archetypes sharing primordial profiles cluster together in spectral space
+3. Typed relationships produce distinct geometric signatures
+4. ACP proximity predicts shared narrative motifs *across* traditions
+5. Axis positions align with externally-derived semantic categories
+6. Expert reviewers agree with ACP's structural claims
+
+#### Architecture
+
+Created `validation/v2_tests/` package with 6 independent test modules plus `validation/v2_run.py` orchestrator:
+
+```
+validation/
+  v2_run.py                    # Orchestrator: runs all 6 tests, verdict synthesis, report
+  v2_tests/
+    __init__.py
+    echo_coherence.py          # Test 1: CULTURAL_ECHO distance coherence
+    primordial_clustering.py   # Test 2: Primordial profile clustering
+    relationship_geometry.py   # Test 3: Typed relationship geometric signatures
+    motif_bridging.py          # Test 4: Cross-tradition motif bridging
+    axis_interpretability.py   # Test 5: Axis interpretability audit
+    human_audit.py             # Test 6: Human expert concordance audit
+```
+
+Also added two methods to `integration/acp_loader.py`:
+- `get_all_relationships(type_filter=None)` — walks all archetype `relationships` arrays, returns structured dicts with source ID
+- `get_primordial_ids()` — returns sorted list of primordial IDs
+
+#### 11.1: Test 1 — CULTURAL_ECHO Distance Coherence (PASS)
+
+Tests whether archetypes labeled as cultural echoes (Zeus↔Jupiter, Odin↔Woden) actually sit close in 8D space, and whether the fidelity score predicts distance.
+
+| Metric | Echo Pairs | Control Pairs |
+|--------|-----------|--------------|
+| N | 535 | 1,605 |
+| Mean distance | 0.431 | 0.702 |
+
+| Sub-test | Result | Criterion |
+|----------|--------|-----------|
+| Mann-Whitney U | p=0.0, Cohen's d=1.18 | p<0.05, d>0.3 |
+| Fidelity-distance correlation | r=-0.4532, p=0.0 | r<-0.2, p<0.05 |
+
+Both sub-tests pass with strong effect sizes. Echo pairs are **38% closer** than random cross-tradition pairs. Fidelity is a strong predictor of distance — higher fidelity echoes sit closer together.
+
+#### 11.2: Test 2 — Primordial Profile Clustering (PASS)
+
+Tests whether archetypes sharing primordial instantiation profiles (e.g. both strongly instantiate Trickster+Psychopomp) cluster in spectral space.
+
+Used vectorized computation: `scipy.spatial.distance.pdist(metric="cosine")` for primordial similarity, `squareform` for permutation reindexing.
+
+| Sub-test | Result | Criterion |
+|----------|--------|-----------|
+| Primordial-spectral Spearman | r=-0.2128, perm_p=0.0 | r<-0.15, perm p<0.01 |
+| Cluster separation ratio | 0.2122 (within=0.506, between=0.643) | ratio ≥0.10 |
+
+Both pass. Archetypes with similar primordial profiles sit closer in spectral space, and dominant-primordial clusters show 21% separation.
+
+#### 11.3: Test 3 — Typed Relationship Geometric Signatures (FAIL)
+
+Tests whether POLAR_OPPOSITE, COMPLEMENT, SHADOW, EVOLUTION relationships produce distinct distance patterns.
+
+| Type | N | Mean Distance | Median |
+|------|---|--------------|--------|
+| POLAR_OPPOSITE | 119 | 0.933 | 0.954 |
+| ANTAGONIST | 26 | 1.010 | 0.902 |
+| SHADOW | 4 | 1.019 | 0.818 |
+| EVOLUTION | 31 | 0.588 | 0.519 |
+| COMPLEMENT | 157 | 0.537 | 0.505 |
+| RANDOM | 500 | 0.645 | 0.603 |
+
+| Sub-test | Result | Criterion |
+|----------|--------|-----------|
+| Polar axis diff >0.5 | 56.6% (64/113) | ≥70% |
+| Polar max-diff = declared axis | 54.9% | ≥50% |
+| Kruskal-Wallis | H=106.85, p=0.0 | p<0.05 |
+
+**Overall: FAIL** (needs 2/3 sub-tests). The Kruskal-Wallis test strongly differentiates types, and the max-diff-axis test passes, but only 56.6% of polar pairs have diff >0.5 on their declared axis (needed 70%). Approximately 50 polar opposite pairs need coordinate revision.
+
+#### 11.4: Test 4 — Cross-Tradition Motif Bridging (FAIL)
+
+Tests whether entities from different traditions that share Thompson motifs sit closer in ACP space. Eliminates the tradition confound that dominated v1.
+
+| Metric | Value |
+|--------|-------|
+| Cross-tradition pairs | 9,695 |
+| Motif-sharing pairs | 9,408 (97%) |
+| Non-sharing pairs | 287 (3%) |
+
+| Sub-test | Result | Criterion |
+|----------|--------|-----------|
+| Distance-Jaccard Spearman | r=-0.0876, p=0.0 | r<-0.05, p<0.05 |
+| Mann-Whitney (sharing vs non) | p=1.0 | p<0.05 |
+| 3-axis subset Spearman | r=-0.1415, improvement=0.054 | — |
+
+**Overall: FAIL** (1/2 sub-tests). The correlation test passes — higher motif Jaccard does correlate with closer ACP distance across traditions. But the group test fails because 97% of cross-tradition pairs share at least one motif, making the binary split meaningless. The 3-axis subset (order-chaos, creation-destruction, individual-collective) outperforms full 8D by 0.054.
+
+**Insight**: The group test needs redesign. Use Jaccard quantiles (top vs bottom quartile) instead of binary sharing/non-sharing.
+
+#### 11.5: Test 5 — Axis Interpretability Audit (FAIL)
+
+Tests whether entities tagged with specific Thompson motif categories cluster on the expected ACP axis.
+
+10 axis-motif mappings tested (e.g. A=Creation → creation-destruction low, K=Deceptions → order-chaos high):
+
+| Result | Count |
+|--------|-------|
+| PASS | 0 |
+| FAIL | 9 |
+| SKIPPED | 1 (insufficient data) |
+
+**All 9 testable mappings failed.** Group means were within ±0.01 of global mean on every axis. The deltas are essentially zero.
+
+**Root cause**: Thompson letter categories are too broad. Every letter category (A, D, E, K, Q, H, T, F, L) includes entities from all traditions, and entities span multiple motif categories simultaneously. This averages positions to the global mean, destroying any axis-level signal. Individual motif codes (A1, D1000, E700) mapped to specific axes would be more diagnostic.
+
+#### 11.6: Test 6 — Human Expert Concordance Audit (PENDING)
+
+Generated 40 structured audit cases stratified across 5 categories:
+
+| Category | Cases |
+|----------|-------|
+| CULTURAL_ECHO (high/med/low fidelity) | 10 |
+| POLAR_OPPOSITE (across different axes) | 5 |
+| COMPLEMENT | 5 |
+| NEAREST_NEIGHBOR (Zeus, Odin, Isis, Quetzalcoatl, Shiva) | 15 |
+| DISTANT_SAME_PRIMORDIAL | 5 |
+
+Each case includes: archetype names, traditions, full 8D coordinates, primordial profiles, the ACP's claim, 8D distance, per-axis breakdown, and fields for reviewer judgment (AGREE/DISAGREE/UNSURE).
+
+Output: `outputs/audits/human_audit_cases.json`
+
+Pass criterion: ≥80% concordance (32/40 AGREE).
+
+#### 11.7: Verdict Framework
+
+| Tier | Description | Result |
+|------|-------------|--------|
+| **A: Internal Coherence** (Tests 1-3) | Do ACP's relational claims match its geometry? | **PARTIAL** (2/3 PASS) |
+| **B: External Validity** (Tests 4-5) | Do coordinates predict independent phenomena? | **FAIL** (0/2 PASS overall, 1 sub-test passes) |
+| **C: Expert Plausibility** (Test 6) | Human sanity check | **PENDING** |
+
+**Overall Verdict: MIXED** — Partial internal consistency; needs targeted improvements.
+
+#### Performance Notes
+
+- **Permutation test bottleneck**: Initial Python-loop implementation of Test 2 (1000 permutations × O(n²) pairs) hung indefinitely. Replaced with vectorized `scipy.spatial.distance.pdist` + `squareform` + numpy fancy indexing for ~100x speedup.
+- **Entity mapper key fix**: `auto_map_all()` returns `total_mapped`/`total_entities`, not `mapped`/`total`. Fixed in v2_run.py.
+
+#### Proposed Next Directions
+
+1. **Polar Axis Recalibration** — Revise coordinates for ~50 POLAR_OPPOSITE pairs where declared axis diff <0.5
+2. **Fine-Grained Motif Mappings** — Map individual Thompson motif codes (not letter categories) to specific axis expectations
+3. **Motif Bridging Redesign** — Use Jaccard quantiles instead of binary sharing/non-sharing split
+4. **Human Audit Completion** — Score the 40 cases in `outputs/audits/human_audit_cases.json`
+5. **Axis-Weighted v2 Tests** — Apply the 3-axis subset or per-axis weights from v1 Phase 10 across all v2 tests
+6. **Shadow/Evolution Expansion** — Add more SHADOW (only 4) and EVOLUTION (31) relationships to the ACP
+
+---
+
 ## Roadmap: Standalone ACP Validation System
 
 The goal is a rigorous, empirically falsifiable validation of the Archetypal Context Protocol — a standalone product that can be independently verified. No narrative generation, no OS integration. Pure validation science.
@@ -855,6 +1022,27 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 - [x] **Coordinate sensitivity**: 100% of ±0.05 noise trials negative — **PASS**
 - [x] **New archetype sensitivity**: Removing 5 new archetypes: delta_r=+0.009 (minimal impact) — **PASS**
 - [x] **Verdict**: 2/4 criteria pass. ACP PARTIALLY SURVIVES with significant concerns.
+
+### Phase 11: v2 Validation (Cross-Cultural Structural Equivalence) — Complete
+
+- [x] **New hypothesis**: ACP encodes cross-cultural structural equivalence (pivot from co-occurrence)
+- [x] **6-test falsification suite**: 3 tiers (internal coherence, external validity, expert review)
+- [x] **Test 1 PASS**: CULTURAL_ECHO distance coherence (d=1.18, fidelity r=-0.45)
+- [x] **Test 2 PASS**: Primordial profile clustering (r=-0.21, perm p=0.0)
+- [x] **Test 3 FAIL**: Typed relationship geometry (56.6% polar axis diff >0.5, needed ≥70%)
+- [x] **Test 4 FAIL**: Cross-tradition motif bridging (correlation r=-0.09 PASS, group test FAIL)
+- [x] **Test 5 FAIL**: Axis interpretability audit (0/9 mappings significant)
+- [x] **Test 6 PENDING**: Human concordance audit (40 cases generated)
+- [x] **Verdict**: Tier A PARTIAL, Tier B FAIL, Tier C PENDING → **MIXED**
+
+### Proposed: Phase 12 — Targeted Refinement
+
+- [ ] **Polar axis recalibration**: Revise coordinates for ~50 POLAR_OPPOSITE pairs violating axis diff threshold
+- [ ] **Fine-grained motif mappings**: Map individual Thompson codes (A1, D1000) to axes instead of letter categories
+- [ ] **Motif bridging redesign**: Use Jaccard quantiles instead of binary sharing/non-sharing
+- [ ] **Human audit scoring**: Complete the 40-case concordance audit
+- [ ] **Axis-weighted v2**: Apply 3-axis subset across all v2 tests
+- [ ] **Shadow/Evolution expansion**: Add more SHADOW (currently 4) and EVOLUTION (31) relationships
 
 ---
 
@@ -978,6 +1166,26 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 | New archetype sensitivity | Δr = +0.0089 (PASS: not driving signal) |
 | Falsification verdict | PARTIALLY SURVIVES (2/4 criteria pass) |
 
+### Phase 11 State (v2 Validation)
+
+| Metric | Value |
+|--------|-------|
+| v2 Hypothesis | Cross-cultural structural equivalence |
+| Tests designed | 6 (3 tiers) |
+| Tier A (Internal Coherence) | 2/3 PASS |
+| Tier B (External Validity) | 0/2 PASS (1 sub-test passes) |
+| Tier C (Expert Plausibility) | PENDING |
+| Overall verdict | MIXED |
+| Echo pairs Cohen's d | 1.18 |
+| Fidelity-distance r | -0.4532 |
+| Primordial-spectral r | -0.2128 (perm p=0.0) |
+| Cluster separation ratio | 0.2122 |
+| Polar axis diff ≥0.5 | 56.6% (needed 70%) |
+| Cross-tradition motif r | -0.0876 |
+| 3-axis subset motif r | -0.1415 |
+| Axis interpretability score | 0/9 |
+| Human audit cases | 40 (pending review) |
+
 ---
 
 ## Lessons Learned
@@ -994,4 +1202,4 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 
 ---
 
-*Last updated: January 2026*
+*Last updated: January 2026 (Phase 11 — v2 Validation)*

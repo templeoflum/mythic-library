@@ -81,9 +81,17 @@ mythic-library/
 │   ├── entity_mapper.py            # Map library entities → ACP archetypes
 │   └── coordinate_calculator.py    # Axis-weighted & reduced-dimension distances
 ├── validation/                     # Hypothesis tests
-│   ├── run.py                      # Single-command validation entry point
-│   ├── test_coordinate_accuracy.py # Co-occurrence vs ACP distance
-│   ├── test_motif_clustering.py    # Motif signatures in 8D space
+│   ├── run.py                      # v1 validation entry point (archived)
+│   ├── v2_run.py                   # v2 validation: cross-cultural structural equivalence
+│   ├── v2_tests/                   # v2 test suite (6 falsifiable tests)
+│   │   ├── echo_coherence.py       # Test 1: CULTURAL_ECHO distance coherence
+│   │   ├── primordial_clustering.py# Test 2: Primordial profile clustering
+│   │   ├── relationship_geometry.py# Test 3: Typed relationship geometric signatures
+│   │   ├── motif_bridging.py       # Test 4: Cross-tradition motif bridging
+│   │   ├── axis_interpretability.py# Test 5: Axis interpretability audit
+│   │   └── human_audit.py          # Test 6: Human expert concordance audit
+│   ├── test_coordinate_accuracy.py # v1: Co-occurrence vs ACP distance
+│   ├── test_motif_clustering.py    # v1: Motif signatures in 8D space
 │   ├── calibrate_coordinates.py    # Gradient descent coordinate calibration
 │   ├── statistical_tests.py        # Permutation, bootstrap, cross-validation
 │   ├── alternative_metrics.py      # Cosine, Mantel, per-axis, motif similarity
@@ -202,7 +210,12 @@ The [Archetypal Context Protocol](ACP/) provides an 8-dimensional coordinate sys
 # Check prerequisites
 python scripts/integration/setup_integration.py
 
-# Run full validation (all 10 phases)
+# --- v2 Validation (current) ---
+# Run full v2 suite (6 falsifiable tests, 3-tier verdict)
+python -m validation.v2_run --full
+
+# --- v1 Validation (archived) ---
+# Run v1 co-occurrence validation (all 10 phases)
 python -m validation.run
 
 # Quick mode (fewer permutations, faster)
@@ -227,7 +240,29 @@ python scripts/explorer/server.py
 
 The explorer provides views for entity details, ACP coordinate projections, co-occurrence networks, Thompson motif distributions, validation results, and an interactive audit view with live falsification tests.
 
-### Current Results
+### Current Results — v2 Validation (Cross-Cultural Structural Equivalence)
+
+v2 tests whether the ACP's internal structure (relationships, primordials, coordinates) is geometrically self-consistent and externally meaningful. 6 falsifiable tests across 3 tiers:
+
+| Tier | Test | Result |
+|------|------|--------|
+| **A: Internal Coherence** | 1. CULTURAL_ECHO Distance Coherence | **PASS** (d=1.18, fidelity r=-0.45) |
+| | 2. Primordial Profile Clustering | **PASS** (r=-0.21, perm p=0.0) |
+| | 3. Typed Relationship Geometry | **FAIL** (56.6% polar axis diff >0.5, needed 70%) |
+| **B: External Validity** | 4. Cross-Tradition Motif Bridging | **FAIL** (correlation r=-0.09 PASS, group test FAIL) |
+| | 5. Axis Interpretability Audit | **FAIL** (0/9 motif-category alignments) |
+| **C: Expert Review** | 6. Human Concordance Audit | **PENDING** (40 cases generated) |
+
+**Overall Verdict: MIXED** — Partial internal consistency; needs targeted improvements.
+
+Key findings:
+- Echo pairs (Zeus-Jupiter, Odin-Woden) are significantly closer than random (Cohen's d=1.18), and fidelity scores predict distance (r=-0.45)
+- Primordial instantiation profiles (Trickster+Psychopomp, etc.) cluster meaningfully in spectral space
+- Polar opposite axis alignment needs recalibration (56.6% vs 70% threshold)
+- Thompson motif categories are too broad to produce axis-level signal — finer-grained motif mappings needed
+- 3-axis subset (order-chaos, creation-destruction, individual-collective) outperforms full 8D for motif bridging
+
+### v1 Results (Archived — Co-occurrence Based)
 
 | Metric | Pre-Calibration | Post-Calibration |
 |--------|----------------|------------------|
@@ -239,7 +274,7 @@ The explorer provides views for entity details, ACP coordinate projections, co-o
 | Optimized 6D weighted r | -0.140 | — |
 | Best 3D subset r | -0.147 | — |
 
-The negative correlation is consistent with the ACP hypothesis: archetypes closer in coordinate space co-occur more often in narratives. Falsification testing (Phase 9) shows the signal **partially survives** (2/4 criteria pass): the Mantel test is significant (p=0.039), coordinates are robust to noise perturbation, but a simpler 1D tradition-similarity model outperforms full 8D ACP (|r|=0.420 vs |r|=0.074). Phase 10 optimization zeroes 2 harmful axes (ascent-descent, stasis-transformation) and applies per-axis weighting, nearly doubling the correlation (r=-0.074 to r=-0.140), though tradition identity remains the stronger predictor. The best 3D subset (order-chaos, creation-destruction, individual-collective) at r=-0.147 outperforms the full 8D system.
+v1 used textual co-occurrence as the validation target. Key finding: simple 1D "same tradition?" outperforms 8D ACP (|r|=0.420 vs |r|=0.074), indicating co-occurrence primarily reflects cultural origin rather than archetypal structure. This motivated v2's pivot to testing cross-cultural structural equivalence directly.
 
 ## Validation Approach
 
@@ -367,6 +402,35 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Interactive "Optimized" audit tab in browser explorer
 - [x] Performance: bulk co-occurrence caching (150K queries → 1 query), vectorized calibration (10x speedup)
 - [x] Verdict: PARTIALLY SURVIVES (2/4) — optimization improves signal but doesn't close the tradition gap
+
+### Phase 11: v2 Validation (Cross-Cultural Structural Equivalence) — Complete
+- [x] New hypothesis: ACP encodes cross-cultural structural equivalence (not co-occurrence)
+- [x] 6-test falsification suite across 3 tiers (internal coherence, external validity, expert review)
+- [x] Test 1: CULTURAL_ECHO distance coherence — **PASS** (d=1.18, fidelity r=-0.45)
+- [x] Test 2: Primordial profile clustering — **PASS** (r=-0.21, permutation p=0.0)
+- [x] Test 3: Typed relationship geometry — **FAIL** (56.6% polar axis diff >0.5, needed ≥70%)
+- [x] Test 4: Cross-tradition motif bridging — **FAIL** (correlation PASS r=-0.09, group test FAIL)
+- [x] Test 5: Axis interpretability audit — **FAIL** (0/9 motif-category alignments significant)
+- [x] Test 6: Human concordance audit — 40 structured cases generated, **PENDING** review
+- [x] 3-tier verdict framework: Tier A PARTIAL, Tier B FAIL, Tier C PENDING → Overall **MIXED**
+- [x] Vectorized permutation testing (scipy pdist + squareform + numpy fancy indexing)
+- [x] Full report at `outputs/reports/v2_validation_report.md`
+
+### Proposed Next Directions
+
+The v2 results point to specific, actionable improvements:
+
+1. **Polar Axis Recalibration** (Test 3 fix): 56.6% of POLAR_OPPOSITE pairs have axis diff >0.5 on the declared axis, vs 70% threshold. Either recalibrate coordinates for the ~50 pairs that violate or relax the threshold to 50% with a stronger absolute-diff requirement.
+
+2. **Fine-Grained Motif Mappings** (Test 5 fix): Thompson letter categories (A=Creation, D=Magic, etc.) are too broad — entities tagged with any category come from all traditions, averaging positions to the global mean. Map individual Thompson motif codes (A1, D1000, E700) to specific axis expectations instead of using letter-level categories.
+
+3. **Motif Bridging Group Test Redesign** (Test 4 fix): 97% of cross-tradition pairs share at least one motif (9408/9695), making the binary sharing/non-sharing split meaningless. Use Jaccard similarity quantiles instead (top quartile vs bottom quartile distances), or require a minimum Jaccard threshold (>0.1) for the "sharing" group.
+
+4. **Human Audit Completion** (Test 6): Review the 40 structured cases in `outputs/audits/human_audit_cases.json`. Score each AGREE/DISAGREE/UNSURE. Target: ≥80% concordance (32/40 AGREE).
+
+5. **Axis Weight Integration**: v1 Phase 10 found that 3 axes (order-chaos, creation-destruction, individual-collective) carry the most signal. v2 Test 4 confirms the 3-axis subset outperforms full 8D (r=-0.14 vs r=-0.09). Consider an axis-weighted distance metric for all v2 tests.
+
+6. **Shadow/Evolution Expansion**: Test 3 found only 4 SHADOW and 31 EVOLUTION relationships — too few for robust geometric testing. Expand the ACP's relational coverage for these types.
 
 ## Contributing
 

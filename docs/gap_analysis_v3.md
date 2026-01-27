@@ -206,6 +206,34 @@ The extracted patterns feed into:
 
 ---
 
+## v2 Validation Findings (January 2026)
+
+The v2 validation suite tested ACP cross-cultural structural equivalence using 6 falsifiable tests. Results revealed specific gaps where the ACP's geometry doesn't match its own claims or external data:
+
+### ACP Relational Gaps
+
+| Gap | Impact | Source |
+|-----|--------|--------|
+| **~50 POLAR_OPPOSITE pairs with axis diff <0.5** | Test 3 fails (56.6% vs 70% threshold) | Coordinates under-express declared axis polarity |
+| **Only 4 SHADOW relationships** | Insufficient for geometric testing | ACP needs more SHADOW type declarations |
+| **Only 31 EVOLUTION relationships** | Marginal sample size | ACP needs more EVOLUTION type declarations |
+| **Thompson motif letter categories too broad** | Test 5 fails (0/9 axis alignments) | Need fine-grained motif-code-to-axis mappings |
+
+### Corpus-Level Gaps Exposed by v2
+
+| Gap | Impact | Recommended Action |
+|-----|--------|-------------------|
+| **97% of cross-tradition entity pairs share motifs** | Test 4 group test meaningless (binary split fails) | Need finer Jaccard thresholds or more diverse entity coverage |
+| **Motif tagging too uniform** | All motif categories span all traditions equally | Need motif-code-level (A1, D1000) entity associations, not letter-level |
+| **42 unmapped heroes** | 44% of mention mass unrepresented in ACP | Impacts cross-tradition motif bridging test sensitivity |
+
+### Strengths Confirmed
+
+- Entity extraction quality is high (0% error rate in 100-sample audit)
+- CULTURAL_ECHO relationships are well-calibrated (d=1.18, fidelity r=-0.45)
+- Primordial hierarchy creates meaningful spectral clustering (r=-0.21)
+- 3-axis subset (order-chaos, creation-destruction, individual-collective) consistently outperforms 8D
+
 ## Conclusion
 
 The Mythic Library has reached **critical mass** for Phase 3 work. With 132 texts across 32 traditions, we have sufficient coverage to:
@@ -214,13 +242,10 @@ The Mythic Library has reached **critical mass** for Phase 3 work. With 132 text
 2. **Extract** recurring motifs with statistical confidence
 3. **Build** a pattern database for computational mythology
 
-The remaining gaps are either:
-- **Specialized** (Coffin Texts, Hermetic) - nice to have, not essential
-- **Deep expansion** (more Mesopotamian, more Pali) - diminishing returns
-- **Source issues** (texts exist but public domain access limited)
+v2 validation demonstrates that the ACP is **partially self-consistent** (Tests 1-2 pass, Test 3 marginal) but **lacks external predictive validity** (Tests 4-5 fail). The main corpus-level bottleneck is motif granularity — Thompson letter categories are too broad for axis-level testing, and the high baseline motif sharing rate (97%) makes binary group comparisons ineffective.
 
-**Recommendation**: Proceed to Phase 3 (Structured Extraction) while opportunistically filling remaining gaps.
+**Recommendation**: Proceed with Phase 12 (targeted refinement) focusing on: polar axis recalibration, fine-grained motif-code-to-axis mappings, and Jaccard quantile redesign for the motif bridging test.
 
 ---
 
-*Analysis complete. Library ready for pattern extraction phase.*
+*Last updated: January 2026 (v2 Validation findings added)*

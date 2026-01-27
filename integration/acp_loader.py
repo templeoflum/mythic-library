@@ -194,6 +194,35 @@ class ACPLoader:
 
         return sorted(nearby, key=lambda x: x[1])
 
+    def get_all_relationships(self, type_filter: Optional[str] = None) -> List[Dict]:
+        """Extract all relationships from all archetypes.
+
+        Walks every archetype's 'relationships' array and collects entries
+        with the source archetype ID added.
+
+        Args:
+            type_filter: If set, only return relationships of this type
+                         (e.g. "CULTURAL_ECHO", "POLAR_OPPOSITE").
+
+        Returns:
+            List of dicts, each with 'source', 'target', 'type', plus all
+            type-specific properties (fidelity, axis, strength, etc.).
+        """
+        results = []
+        for arch_id, arch in self.archetypes.items():
+            for rel in arch.get("relationships", []):
+                rel_type = rel.get("type", "")
+                if type_filter and rel_type != type_filter:
+                    continue
+                entry = {"source": arch_id}
+                entry.update(rel)
+                results.append(entry)
+        return results
+
+    def get_primordial_ids(self) -> List[str]:
+        """Return sorted list of all primordial IDs."""
+        return sorted(self.primordials.keys())
+
     def get_all_names(self) -> Dict[str, str]:
         """Return dict of archetype_id -> name."""
         return {
