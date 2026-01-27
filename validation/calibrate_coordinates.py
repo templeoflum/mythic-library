@@ -84,6 +84,7 @@ class CoordinateCalibrator:
         max_steps: int = 200,
         max_shift: float = 0.10,
         exclude_entities: Optional[List[str]] = None,
+        axis_weights: Optional[np.ndarray] = None,
     ) -> Dict:
         """Run gradient descent to calibrate coordinates.
 
@@ -92,6 +93,9 @@ class CoordinateCalibrator:
             max_steps: Maximum optimization iterations.
             max_shift: Maximum allowed coordinate shift per dimension (preserves ACP structure).
             exclude_entities: Entities to exclude (e.g., ["Set"]).
+            axis_weights: Optional (8,) array of per-axis weights. Axes with
+                weight 0 are frozen and excluded from distance computation.
+                Default: equal weights (all 1.0).
 
         Returns:
             Dict with calibrated coordinates, before/after metrics, and shift statistics.
@@ -100,36 +104,42 @@ class CoordinateCalibrator:
         n, d = original_coords.shape
         coords = original_coords.copy()
 
-        # Loss function: sum of (distance - (1 - target_similarity))^2
-        # High similarity -> want small distance, low similarity -> want large distance
+        # Axis weights: default to uniform
+        if axis_weights is None:
+            w = np.ones(d)
+        else:
+            w = np.asarray(axis_weights, dtype=float)
+
         # Target distance = 1 - similarity (scaled)
         target_distances = 1.0 - targets
 
+        # Pre-compute upper triangle indices for vectorized operations
+        idx_i, idx_j = np.triu_indices(n, k=1)
+        target_upper = target_distances[idx_i, idx_j]
+        n_pairs = len(idx_i)
+
         def compute_loss(coords):
-            loss = 0.0
-            for i in range(n):
-                for j in range(i + 1, n):
-                    dist = np.sqrt(np.sum((coords[i] - coords[j]) ** 2))
-                    target = target_distances[i, j]
-                    loss += (dist - target) ** 2
-            return loss / (n * (n - 1) / 2)
+            # Vectorized: compute all pairwise weighted distances at once
+            diffs = coords[idx_i] - coords[idx_j]  # (n_pairs, d)
+            dists = np.sqrt(np.sum(w * diffs ** 2, axis=1))  # (n_pairs,)
+            return float(np.mean((dists - target_upper) ** 2))
 
         initial_loss = compute_loss(coords)
 
-        # Gradient descent
+        # Gradient descent (vectorized)
         for step in range(max_steps):
-            grad = np.zeros_like(coords)
-            for i in range(n):
-                for j in range(i + 1, n):
-                    diff = coords[i] - coords[j]
-                    dist = np.sqrt(np.sum(diff ** 2)) + 1e-8
-                    target = target_distances[i, j]
-                    # gradient of (dist - target)^2 w.r.t. coords[i]
-                    scale = 2 * (dist - target) / dist
-                    grad[i] += scale * diff
-                    grad[j] -= scale * diff
+            diffs = coords[idx_i] - coords[idx_j]  # (n_pairs, d)
+            dists = np.sqrt(np.sum(w * diffs ** 2, axis=1)) + 1e-8  # (n_pairs,)
+            scales = 2.0 * (dists - target_upper) / dists  # (n_pairs,)
+            # Per-pair gradient contribution: scales[:, None] * w * diffs
+            pair_grads = scales[:, None] * w * diffs  # (n_pairs, d)
 
-            grad /= (n * (n - 1) / 2)
+            # Accumulate gradients using np.add.at for both i and j indices
+            grad = np.zeros_like(coords)
+            np.add.at(grad, idx_i, pair_grads)
+            np.add.at(grad, idx_j, -pair_grads)
+
+            grad /= n_pairs
             coords -= learning_rate * grad
 
             # Clamp coordinates to [0, 1]

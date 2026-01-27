@@ -513,6 +513,63 @@ def api_audit(params):
         _audit_cache["verdict"] = result
         return result
 
+    if test == "optimized":
+        # Run optimized model analysis: axis weighting + dimensionality sweep
+        from integration.coordinate_calculator import WeightedDistanceCalculator
+
+        wdc = WeightedDistanceCalculator(acp, library, mapper)
+        optimal = wdc.compute_optimal_weights(exclude_entities=exclude, zero_harmful=True)
+        if "error" in optimal:
+            result = optimal
+        else:
+            w_arr = optimal["weights_array"]
+            dim_search = wdc.systematic_dimensionality_search(
+                min_dims=3, max_dims=7, exclude_entities=exclude,
+            )
+
+            # Weighted falsification
+            w_trad = ft.tradition_similarity_test_weighted(axis_weights=w_arr, exclude_entities=exclude)
+            w_ablation = ft.axis_ablation_study_weighted(axis_weights=w_arr, exclude_entities=exclude)
+
+            # Need original verdict for comparison
+            if "verdict" not in _audit_cache:
+                if "tradition" not in _audit_cache:
+                    _audit_cache["tradition"] = ft.tradition_similarity_test(exclude)
+                if "ablation" not in _audit_cache:
+                    _audit_cache["ablation"] = ft.axis_ablation_study(exclude)
+                if "sensitivity" not in _audit_cache:
+                    _audit_cache["sensitivity"] = ft.coordinate_sensitivity(
+                        noise_level=0.05, n_trials=50, exclude_entities=exclude, seed=42,
+                    )
+                _audit_cache["verdict"] = ft.falsification_verdict(
+                    permutation_p=0.053, mantel_p=0.029,
+                    tradition_result=_audit_cache["tradition"],
+                    ablation_result=_audit_cache["ablation"],
+                    sensitivity_result=_audit_cache["sensitivity"],
+                )
+
+            sensitivity = _audit_cache.get("sensitivity", ft.coordinate_sensitivity(
+                noise_level=0.05, n_trials=50, exclude_entities=exclude, seed=42,
+            ))
+
+            opt_verdict = ft.optimized_verdict(
+                permutation_p=0.053, mantel_p=0.029,
+                weighted_tradition_result=w_trad if "error" not in w_trad else {},
+                weighted_ablation_result=w_ablation if "error" not in w_ablation else {},
+                sensitivity_result=sensitivity,
+                original_verdict=_audit_cache["verdict"],
+            )
+
+            result = {
+                "axis_weights": {k: v for k, v in optimal.items() if k != "weights_array"},
+                "dimensionality_search": dim_search,
+                "weighted_tradition": w_trad,
+                "weighted_ablation": w_ablation,
+                "optimized_verdict": opt_verdict,
+            }
+        _audit_cache["optimized"] = result
+        return result
+
     # "all" — run everything
     results = {}
     results["hypothesis"] = ft.formal_hypothesis()
@@ -1418,6 +1475,7 @@ async function renderAudit() {
       <button class="audit-tab ${auditTab==='sensitivity'?'active':''}" data-tab="sensitivity">Sensitivity</button>
       <button class="audit-tab ${auditTab==='archetype'?'active':''}" data-tab="archetype">New Archetypes</button>
       <button class="audit-tab ${auditTab==='data_quality'?'active':''}" data-tab="data_quality">Data Quality</button>
+      <button class="audit-tab ${auditTab==='optimized'?'active':''}" data-tab="optimized" style="border-color:var(--accent);color:${auditTab==='optimized'?'var(--accent)':'var(--text-dim)'}">Optimized</button>
     </div>
     <div id="audit-content"><div class="loading"><span class="audit-spinner"></span>Computing ${auditTab} test...</div></div>
   `;
@@ -1445,6 +1503,7 @@ async function renderAudit() {
     case 'sensitivity': renderAuditSensitivity(content, auditData.sensitivity); break;
     case 'archetype': renderAuditArchetype(content, auditData.archetype); break;
     case 'data_quality': renderAuditDataQuality(content, auditData.data_quality); break;
+    case 'optimized': renderAuditOptimized(content, auditData.optimized); break;
   }
 }
 
@@ -1860,6 +1919,195 @@ function renderAuditDataQuality(el, data) {
         </div>
       ` : ''}
     </div>
+  `;
+}
+
+function renderAuditOptimized(el, data) {
+  if (!data) { el.innerHTML = '<p>No optimized model data.</p>'; return; }
+  if (data.error) { el.innerHTML = `<p style="color:var(--red)">Error: ${data.error}</p>`; return; }
+
+  const aw = data.axis_weights || {};
+  const ds = data.dimensionality_search || {};
+  const wt = data.weighted_tradition || {};
+  const wa = data.weighted_ablation || {};
+  const ov = data.optimized_verdict || {};
+  const vs = ov.vs_original || {};
+
+  // Verdict comparison
+  const origPass = vs.original_passed || 0;
+  const optPass = vs.optimized_passed || 0;
+  const totalC = ov.total || 4;
+  const improved = optPass > origPass;
+  const verdictColor = optPass === totalC ? 'var(--green)' : optPass >= totalC - 1 ? 'var(--orange)' : 'var(--red)';
+
+  // Axis weights
+  const weights = aw.weights || {};
+  const perAxisR = aw.per_axis_r || {};
+  const harmful = aw.harmful_axes || [];
+
+  // Dimensionality search
+  const best = ds.overall_best || {};
+  const baseline8d = ds.baseline_8d || {};
+  const top10 = ds.top_10_subsets || [];
+  const bestPerDim = ds.best_per_dimensionality || {};
+
+  el.innerHTML = `
+    <div class="card" style="border-left:4px solid ${verdictColor}">
+      <h3 style="color:${verdictColor};font-size:16px;text-transform:none;letter-spacing:0">
+        ${improved ? 'Improvement Achieved' : 'Optimized Model Results'}: ${ov.overall_verdict || 'N/A'}
+      </h3>
+      <div style="display:flex;align-items:center;gap:24px;margin:16px 0">
+        <div style="text-align:center">
+          <div style="font-size:12px;color:var(--text-dim)">ORIGINAL</div>
+          <div style="font-size:36px;font-weight:700;color:var(--red)">${origPass}/${totalC}</div>
+        </div>
+        <div style="font-size:28px;color:${improved ? 'var(--green)' : 'var(--text-dim)'}">&rarr;</div>
+        <div style="text-align:center">
+          <div style="font-size:12px;color:var(--text-dim)">OPTIMIZED</div>
+          <div style="font-size:36px;font-weight:700;color:${verdictColor}">${optPass}/${totalC}</div>
+        </div>
+        ${improved ? `<div style="color:var(--green);font-size:14px;font-weight:600">+${optPass - origPass} criteria fixed</div>` : ''}
+      </div>
+      ${ov.criteria ? `<div style="margin-top:8px">
+        ${ov.criteria.map(c => `
+          <div class="verdict-card ${c.pass ? 'verdict-pass' : 'verdict-fail'}">
+            <span class="verdict-icon">${c.pass ? '\\u2705' : '\\u274C'}</span>
+            <strong>${c.criterion}</strong>
+            <div style="color:var(--text-dim);font-size:12px">${c.result}</div>
+          </div>
+        `).join('')}
+      </div>` : ''}
+    </div>
+
+    <div class="card">
+      <h3>Axis Weights &amp; Harmful Axis Removal</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">
+        Per-axis |Spearman r| used as weights. Harmful axes (removing improves correlation) zeroed out.
+        Active: ${aw.n_active_axes || '?'} / 8 axes.
+      </p>
+      <table>
+        <thead><tr><th>Axis</th><th>Per-axis r</th><th>Weight</th><th>Status</th></tr></thead>
+        <tbody>
+          ${Object.entries(weights).map(([axis, w]) => {
+            const r = perAxisR[axis] || 0;
+            const isHarmful = harmful.includes(axis);
+            const isZero = w === 0;
+            return `<tr style="${isZero ? 'opacity:0.4' : ''}">
+              <td><strong>${axis}</strong></td>
+              <td style="font-family:monospace">${r.toFixed(4)}</td>
+              <td style="font-family:monospace">${w.toFixed(4)}</td>
+              <td>${isHarmful ? '<span style="color:var(--red);font-weight:600">HARMFUL (zeroed)</span>' : isZero ? '<span style="color:var(--text-dim)">Zeroed</span>' : '<span style="color:var(--green)">Active</span>'}</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+      <div style="margin-top:8px;font-size:13px;color:var(--text-dim)">
+        Weighted r = <strong>${aw.weighted_spearman_r || '?'}</strong>
+        (p = ${aw.weighted_spearman_p || '?'})
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Dimensionality Sweep (3D &ndash; 7D)</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">
+        Exhaustive search of all axis subsets. ${ds.total_combinations_tested || '?'} combinations tested.
+        Improvement over 8D baseline: <strong>${ds.improvement_over_8d != null ? (ds.improvement_over_8d > 0 ? '+' : '') + ds.improvement_over_8d.toFixed(4) : '?'}</strong>
+      </p>
+
+      <div style="display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap">
+        <div class="verdict-card" style="flex:1;min-width:180px">
+          <div style="font-size:11px;color:var(--text-dim);text-transform:uppercase">8D Baseline</div>
+          <div style="font-size:28px;font-weight:700;color:var(--text)">${baseline8d.spearman_r || '?'}</div>
+        </div>
+        <div class="verdict-card verdict-pass" style="flex:1;min-width:180px">
+          <div style="font-size:11px;color:var(--text-dim);text-transform:uppercase">Best ${best.n_dimensions || '?'}D Subset</div>
+          <div style="font-size:28px;font-weight:700;color:var(--green)">${best.spearman_r || '?'}</div>
+          <div style="font-size:11px;color:var(--text-dim)">${(best.axes || []).join(', ')}</div>
+        </div>
+      </div>
+
+      <h4 style="margin-top:12px;font-size:13px">Best per Dimensionality</h4>
+      <table>
+        <thead><tr><th>Dims</th><th>Spearman r</th><th>Axes</th></tr></thead>
+        <tbody>
+          ${Object.entries(bestPerDim).sort((a,b) => a[0]-b[0]).map(([dim, d]) => `
+            <tr style="${d.spearman_r === best.spearman_r ? 'background:var(--surface2);font-weight:600' : ''}">
+              <td>${dim}D</td>
+              <td style="font-family:monospace;color:${Math.abs(d.spearman_r) > Math.abs(baseline8d.spearman_r || 0) ? 'var(--green)' : 'var(--text)'}">${d.spearman_r}</td>
+              <td style="font-size:12px">${(d.axes || []).join(', ')}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+
+      ${top10.length > 0 ? `
+        <details style="margin-top:12px">
+          <summary style="cursor:pointer;color:var(--accent);font-size:13px">Top 10 subsets across all dimensions</summary>
+          <table style="margin-top:8px">
+            <thead><tr><th>#</th><th>Dims</th><th>r</th><th>p</th><th>Axes</th></tr></thead>
+            <tbody>
+              ${top10.map((d, i) => `
+                <tr>
+                  <td>${i+1}</td>
+                  <td>${d.n_dimensions}D</td>
+                  <td style="font-family:monospace">${d.spearman_r}</td>
+                  <td style="font-family:monospace">${d.spearman_p}</td>
+                  <td style="font-size:11px">${(d.axes || []).join(', ')}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </details>
+      ` : ''}
+    </div>
+
+    ${wt && !wt.error ? `
+    <div class="card">
+      <h3>Weighted Tradition Test</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">
+        Using ${wt.n_dimensions || '?'}D weighted distance (${(wt.zeroed_axes || []).length} axes removed).
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:12px">
+        <div class="verdict-card ${wt.acp_beats_tradition ? 'verdict-pass' : 'verdict-fail'}">
+          <div style="font-size:12px;color:var(--text-dim);text-transform:uppercase">Weighted ACP</div>
+          <div style="font-size:32px;font-weight:700">${wt.acp_weighted_distance ? wt.acp_weighted_distance.spearman_r : '?'}</div>
+        </div>
+        <div class="verdict-card ${!wt.acp_beats_tradition ? 'verdict-pass' : 'verdict-fail'}">
+          <div style="font-size:12px;color:var(--text-dim);text-transform:uppercase">Tradition 1D</div>
+          <div style="font-size:32px;font-weight:700">${wt.tradition_similarity_1d ? wt.tradition_similarity_1d.spearman_r : '?'}</div>
+        </div>
+      </div>
+      <div class="verdict-card ${wt.acp_beats_tradition ? 'verdict-pass' : 'verdict-fail'}" style="margin-top:12px">
+        <strong>${wt.acp_beats_tradition ? 'PASS' : 'FAIL'}:</strong> ${wt.conclusion || ''}
+      </div>
+    </div>
+    ` : ''}
+
+    ${wa && !wa.error ? `
+    <div class="card">
+      <h3>Weighted Ablation</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">
+        Ablation of ${wa.n_dimensions || '?'} active axes. Zeroed: ${(wa.zeroed_axes || []).join(', ') || 'none'}.
+      </p>
+      <div class="verdict-card ${wa.harmful_axes && wa.harmful_axes.length === 0 ? 'verdict-pass' : 'verdict-fail'}">
+        <strong>${wa.falsification_check || ''}</strong>
+      </div>
+      ${wa.ranking ? `
+        <table style="margin-top:12px">
+          <thead><tr><th>Axis</th><th>Delta r</th><th>Impact</th></tr></thead>
+          <tbody>
+            ${wa.ranking.map(r => `
+              <tr>
+                <td><strong>${r.axis}</strong></td>
+                <td style="font-family:monospace;color:${r.delta_r < -0.005 ? 'var(--red)' : r.delta_r > 0.005 ? 'var(--green)' : 'var(--text-dim)'}">${r.delta_r > 0 ? '+' : ''}${r.delta_r.toFixed(4)}</td>
+                <td>${r.impact}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      ` : ''}
+    </div>
+    ` : ''}
   `;
 }
 

@@ -77,8 +77,9 @@ mythic-library/
 │       └── setup_integration.py    # Prerequisite checker
 ├── integration/                    # ACP ↔ Library bridge
 │   ├── acp_loader.py               # Load ACP JSON-LD, extract coordinates
-│   ├── library_loader.py           # Query mythic_patterns.db
-│   └── entity_mapper.py            # Map library entities → ACP archetypes
+│   ├── library_loader.py           # Query mythic_patterns.db (cached co-occurrence)
+│   ├── entity_mapper.py            # Map library entities → ACP archetypes
+│   └── coordinate_calculator.py    # Axis-weighted & reduced-dimension distances
 ├── validation/                     # Hypothesis tests
 │   ├── run.py                      # Single-command validation entry point
 │   ├── test_coordinate_accuracy.py # Co-occurrence vs ACP distance
@@ -201,7 +202,7 @@ The [Archetypal Compression Protocol](ACP/) provides an 8-dimensional coordinate
 # Check prerequisites
 python scripts/integration/setup_integration.py
 
-# Run full validation (all 9 phases)
+# Run full validation (all 10 phases)
 python -m validation.run
 
 # Quick mode (fewer permutations, faster)
@@ -224,19 +225,21 @@ pytest tests/ -v
 python scripts/explorer/server.py
 ```
 
-The explorer provides views for entity details, ACP coordinate projections, co-occurrence networks, Thompson motif distributions, and validation results.
+The explorer provides views for entity details, ACP coordinate projections, co-occurrence networks, Thompson motif distributions, validation results, and an interactive audit view with live falsification tests.
 
 ### Current Results
 
 | Metric | Pre-Calibration | Post-Calibration |
 |--------|----------------|------------------|
 | ACP Archetypes | 539 | — |
-| Entities Mapped | 109 / 173 (63.0%) | — |
-| Pearson r (clean) | -0.083 (p<0.000001) | -0.185 (p<0.000001) |
-| Spearman r (clean) | -0.095 (p<0.000001) | -0.233 (p<0.000001) |
-| Norse intra-tradition | -0.354 (p=0.008) | — |
+| Entities Mapped | 148 / 173 (85.5%) | — |
+| Pearson r | -0.064 (p<0.000001) | -0.156 (p<0.000001) |
+| Spearman r | -0.074 (p<0.000001) | -0.203 (p<0.000001) |
+| Axis-weighted r | -0.125 | — |
+| Optimized 6D weighted r | -0.140 | — |
+| Best 3D subset r | -0.147 | — |
 
-The negative correlation is consistent with the ACP hypothesis: archetypes closer in 8D coordinate space co-occur more often in narratives. The correlation is statistically significant but modest (r=-0.23 explains ~5% of variance). Falsification testing reveals the signal partially survives: Mantel test is significant (p=0.029), coordinates are robust to noise, but a simpler 1D tradition model outperforms 8D ACP (|r|=0.361 vs |r|=0.095). Two axes (active-receptive, ascent-descent) are harmful — a 5-6D system may be more effective.
+The negative correlation is consistent with the ACP hypothesis: archetypes closer in coordinate space co-occur more often in narratives. Falsification testing (Phase 9) shows the signal **partially survives** (2/4 criteria pass): the Mantel test is significant (p=0.039), coordinates are robust to noise perturbation, but a simpler 1D tradition-similarity model outperforms full 8D ACP (|r|=0.420 vs |r|=0.074). Phase 10 optimization zeroes 2 harmful axes (ascent-descent, stasis-transformation) and applies per-axis weighting, nearly doubling the correlation (r=-0.074 to r=-0.140), though tradition identity remains the stronger predictor. The best 3D subset (order-chaos, creation-destruction, individual-collective) at r=-0.147 outperforms the full 8D system.
 
 ## Validation Approach
 
@@ -303,12 +306,12 @@ The SQLite database at `data/mythic_patterns.db` contains:
 ### Phase 4: ACP Integration Bridge — Complete
 - [x] ACP pulled as git subtree (539 archetypes, 24 primordials, 8D coordinates)
 - [x] Integration bridge: ACP loader, library loader, entity mapper
-- [x] Tradition-aware entity mapping: 109/173 (63.0%)
+- [x] Tradition-aware entity mapping: 148/173 (85.5%) including fuzzy hero matching
 - [x] Coordinate validation: distance vs co-occurrence correlation
 - [x] Thompson motif clustering analysis in 8D coordinate space
 - [x] Browser-based data explorer (entities, coordinates, co-occurrence, motifs)
 - [x] Per-tradition correlation analysis (Norse r=-0.354, p=0.008)
-- [x] Coordinate calibration via gradient descent (Spearman r: -0.095 → -0.233)
+- [x] Coordinate calibration via gradient descent (Spearman r: -0.074 → -0.203)
 
 ### Phase 5: Statistical Rigor — Complete
 - [x] Permutation test: empirical p=0.053 (borderline — random can nearly match)
@@ -330,7 +333,7 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Unmapped analysis: 64 entities (44% mentions) unmapped, 42 heroes — ACP scope is deities, documented
 
 ### Phase 8: Reproducibility & Reporting — Complete
-- [x] Single-command validation: `python -m validation.run --full` (all 8 phases)
+- [x] Single-command validation: `python -m validation.run --full` (all 10 phases)
 - [x] Automated pytest suite: 32 tests across 9 classes, all passing
 - [x] Standalone markdown report generator (`--report` flag)
 - [x] Versioned metric baselines per git commit (`--baseline` flag)
@@ -342,6 +345,18 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Axis ablation: 2 harmful axes (active-receptive, ascent-descent), 5-6D system may be better
 - [x] Coordinate sensitivity: 100% robust to ±0.05 noise, new archetypes don't drive signal
 - [x] Verdict: PARTIALLY SURVIVES — real but modest signal, tradition is a stronger predictor
+
+### Phase 10: Optimized Model — Complete
+- [x] Per-axis weight computation from |Spearman r| correlations
+- [x] Harmful axis identification and zeroing (ascent-descent, stasis-transformation)
+- [x] 6D weighted model: r=-0.140 (90% improvement over 8D r=-0.074)
+- [x] Exhaustive dimensionality search: 218 axis subsets from 3D to 7D
+- [x] Best subset: 3D (order-chaos, creation-destruction, individual-collective) r=-0.147
+- [x] Weighted calibration with axis-frozen gradient descent (loss reduction 39.1%)
+- [x] Weighted falsification: tradition still outperforms (|r|=0.420 vs |r|=0.301)
+- [x] Interactive "Optimized" audit tab in browser explorer
+- [x] Performance: bulk co-occurrence caching (150K queries → 1 query), vectorized calibration (10x speedup)
+- [x] Verdict: PARTIALLY SURVIVES (2/4) — optimization improves signal but doesn't close the tradition gap
 
 ## Contributing
 

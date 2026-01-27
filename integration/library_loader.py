@@ -31,6 +31,7 @@ class LibraryLoader:
             raise FileNotFoundError(f"Database not found: {self.db_path}")
         self.conn = sqlite3.connect(str(self.db_path))
         self.conn.row_factory = sqlite3.Row
+        self._cooccurrence_cache: Optional[Dict[Tuple[str, str], int]] = None
 
     def get_all_entities(self) -> List[Entity]:
         """Retrieve all entities."""
@@ -67,19 +68,40 @@ class LibraryLoader:
             aliases.setdefault(r["canonical_name"], []).append(r["alias_name"])
         return aliases
 
-    def get_entity_cooccurrence(self, entity1_name: str, entity2_name: str) -> int:
-        """Count segments where both entities appear."""
-        row = self.conn.execute("""
-            SELECT COUNT(DISTINCT em1.segment_id) as count
+    def _ensure_cooccurrence_cache(self) -> Dict[Tuple[str, str], int]:
+        """Build co-occurrence cache with a single bulk SQL query.
+
+        Returns a dict mapping (entity1, entity2) -> shared_segment_count
+        where entity1 < entity2 lexicographically. Pairs with zero
+        co-occurrence are not stored (defaulting to 0 on lookup).
+        """
+        if self._cooccurrence_cache is not None:
+            return self._cooccurrence_cache
+
+        rows = self.conn.execute("""
+            SELECT e1.canonical_name as name1, e2.canonical_name as name2,
+                   COUNT(DISTINCT em1.segment_id) as shared_segments
             FROM entity_mentions em1
             JOIN entity_mentions em2 ON em1.segment_id = em2.segment_id
             JOIN entities e1 ON em1.entity_id = e1.entity_id
             JOIN entities e2 ON em2.entity_id = e2.entity_id
-            WHERE e1.canonical_name = ? AND e2.canonical_name = ?
-              AND e1.entity_id != e2.entity_id
-        """, (entity1_name, entity2_name)).fetchone()
+            WHERE e1.entity_id < e2.entity_id
+            GROUP BY e1.entity_id, e2.entity_id
+        """).fetchall()
 
-        return row["count"] if row else 0
+        cache: Dict[Tuple[str, str], int] = {}
+        for r in rows:
+            key = tuple(sorted((r["name1"], r["name2"])))
+            cache[key] = r["shared_segments"]
+
+        self._cooccurrence_cache = cache
+        return cache
+
+    def get_entity_cooccurrence(self, entity1_name: str, entity2_name: str) -> int:
+        """Count segments where both entities appear (cached)."""
+        cache = self._ensure_cooccurrence_cache()
+        key = tuple(sorted((entity1_name, entity2_name)))
+        return cache.get(key, 0)
 
     def get_all_cooccurrences(self, min_count: int = 1) -> List[CooccurrencePair]:
         """Get all entity co-occurrence pairs above threshold."""

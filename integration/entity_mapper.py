@@ -73,10 +73,12 @@ class EntityMapper:
         """Run all mapping phases in order. Returns summary."""
         phase1 = self._map_tradition_aware()
         phase2 = self._map_via_library_aliases()
+        phase3 = self._map_fuzzy_heroes()
 
         return {
             "tradition_aware_matches": len(phase1),
             "library_alias_matches": len(phase2),
+            "fuzzy_hero_matches": len(phase3),
             "total_mapped": len(self.mappings),
             "total_entities": len(self.library.get_all_entities()),
         }
@@ -403,6 +405,80 @@ class EntityMapper:
                     )
                     matches.append(m)
                     self._mapped_entities.add(entity.canonical_name)
+
+        self.mappings.extend(matches)
+        return matches
+
+    def _map_fuzzy_heroes(self, threshold: float = 0.55) -> List[EntityMapping]:
+        """Phase 3: Fuzzy-match unmapped heroes at a lower threshold.
+
+        Heroes are under-represented in ACP (which focuses on deities), so
+        we use a relaxed SequenceMatcher threshold (0.55 vs the default 0.7)
+        but only for entities whose entity_type is 'hero'. This recovers
+        names like Gilgamesh, Achilles, Sigurd etc. that may have slight
+        spelling variations between ACP and the library.
+        """
+        entities = self.library.get_all_entities()
+        unmapped_heroes = [
+            e for e in entities
+            if e.canonical_name not in self._mapped_entities
+            and getattr(e, "entity_type", "") == "hero"
+        ]
+
+        if not unmapped_heroes:
+            return []
+
+        # Build lookup of ACP archetype names + aliases
+        acp_targets = {}
+        for arch_id, arch_data in self.acp.archetypes.items():
+            name = arch_data.get("name", "")
+            if name:
+                acp_targets[(arch_id, name)] = name.lower()
+            for alias in arch_data.get("aliases", []):
+                if isinstance(alias, dict):
+                    alias_name = alias.get("name", "")
+                elif isinstance(alias, str):
+                    alias_name = alias
+                else:
+                    continue
+                if alias_name:
+                    acp_targets[(arch_id, alias_name)] = alias_name.lower()
+
+        entity_traditions = {e.canonical_name: (e.primary_tradition or "") for e in entities}
+        matches = []
+
+        for entity in unmapped_heroes:
+            name_lower = entity.canonical_name.lower()
+            tradition = entity_traditions.get(entity.canonical_name, "")
+
+            best_score = 0.0
+            best_arch_id = None
+            best_arch_name = None
+            best_match_name = None
+
+            for (arch_id, match_name), target_lower in acp_targets.items():
+                ratio = SequenceMatcher(None, name_lower, target_lower).ratio()
+                # Prefer tradition-matched archetypes by boosting their score
+                if _arch_matches_tradition(arch_id, tradition):
+                    ratio += 0.1
+                if ratio > best_score:
+                    best_score = ratio
+                    best_arch_id = arch_id
+                    best_arch_name = self.acp.archetypes[arch_id].get("name", arch_id)
+                    best_match_name = match_name
+
+            if best_score >= threshold and best_arch_id:
+                m = EntityMapping(
+                    library_entity=entity.canonical_name,
+                    acp_archetype_id=best_arch_id,
+                    acp_name=best_arch_name,
+                    confidence=round(min(best_score, 1.0), 3),
+                    method="fuzzy_hero",
+                    fidelity=round(min(best_score, 1.0), 3),
+                    notes=f"Fuzzy hero match: {entity.canonical_name} ~ {best_match_name} ({best_score:.3f})",
+                )
+                matches.append(m)
+                self._mapped_entities.add(entity.canonical_name)
 
         self.mappings.extend(matches)
         return matches
