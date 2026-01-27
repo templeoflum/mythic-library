@@ -26,6 +26,7 @@ from validation.test_coordinate_accuracy import CoordinateValidation
 from validation.test_motif_clustering import MotifClustering
 from validation.calibrate_coordinates import CoordinateCalibrator
 from validation.statistical_tests import StatisticalTests
+from validation.alternative_metrics import AlternativeMetrics
 
 ACP_PATH = PROJECT_ROOT / "ACP"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
@@ -371,6 +372,74 @@ def main():
                   f"test_entities={hr['test_entities']}, test_pairs={hr['test_pairs']}, "
                   f"cal_loss_reduction={hr['calibration_loss_reduction_pct']}%")
 
+    # ── Alternative Metrics (Phase 6) ────────────────────────
+    print("\n" + "-" * 60)
+    print("PHASE 7: Alternative Metrics")
+    print("-" * 60)
+
+    alt_metrics = AlternativeMetrics(acp_clean, library, mapper_clean)
+
+    # 7a. Cosine vs Euclidean
+    print("\n  7a. Cosine vs Euclidean Distance...")
+    cosine_result = alt_metrics.cosine_similarity_test(exclude_entities=["Set"])
+    if "error" not in cosine_result:
+        print(f"      Euclidean Spearman r:  {cosine_result['euclidean']['spearman_r']}")
+        print(f"      Cosine Spearman r:     {cosine_result['cosine']['spearman_r']}")
+        print(f"      Winner: {cosine_result['winner']} (by {cosine_result['improvement']})")
+    else:
+        print(f"      ERROR: {cosine_result['error']}")
+
+    # 7b. Per-axis correlation
+    print("\n  7b. Per-Axis Correlation (which axes predict co-occurrence?)...")
+    axis_result = alt_metrics.per_axis_correlation(exclude_entities=["Set"])
+    if "ranking" in axis_result:
+        for item in axis_result["ranking"]:
+            sig = "*" if item["spearman_p"] < 0.05 else ""
+            print(f"      {item['axis']:25s}  r={item['spearman_r']:+.4f}  p={item['spearman_p']:.6f} {sig}")
+        print(f"      Strongest: {axis_result['strongest_axis']}")
+        print(f"      Weakest:   {axis_result['weakest_axis']}")
+
+    # 7c. Axis-weighted distance
+    print("\n  7c. Axis-Weighted Distance...")
+    weighted_result = alt_metrics.axis_weighted_distance_test(exclude_entities=["Set"])
+    if "error" not in weighted_result:
+        print(f"      Unweighted Spearman r: {weighted_result['unweighted']['spearman_r']}")
+        print(f"      Weighted Spearman r:   {weighted_result['weighted']['spearman_r']}")
+        print(f"      Winner: {weighted_result['winner']} (by {weighted_result['improvement']})")
+        print(f"      Weights: ", end="")
+        top_weights = sorted(weighted_result["weights"].items(), key=lambda x: -x[1])[:3]
+        print(", ".join(f"{a}={w}" for a, w in top_weights))
+    else:
+        print(f"      ERROR: {weighted_result['error']}")
+
+    # 7d. Mantel test
+    print("\n  7d. Mantel Test (1000 permutations)...")
+    mantel_result = alt_metrics.mantel_test(
+        n_permutations=1000, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in mantel_result:
+        null = mantel_result["null_distribution"]
+        print(f"      Observed Pearson r:  {mantel_result['observed_pearson_r']}")
+        print(f"      Null mean ± std:     {null['mean']} ± {null['std']}")
+        print(f"      Empirical p-value:   {mantel_result['empirical_p_value']}")
+    else:
+        print(f"      ERROR: {mantel_result['error']}")
+
+    # 7e. Motif-mediated similarity
+    print("\n  7e. Motif-Mediated Similarity (Jaccard)...")
+    motif_sim_result = alt_metrics.motif_similarity_test(exclude_entities=["Set"])
+    if "error" not in motif_sim_result:
+        dvc = motif_sim_result["distance_vs_cooccurrence"]
+        jvc = motif_sim_result["jaccard_vs_cooccurrence"]
+        dvj = motif_sim_result["distance_vs_jaccard"]
+        print(f"      Pairs with shared motifs: {motif_sim_result['pairs_with_shared_motifs']}")
+        print(f"      ACP dist vs co-occurrence:     r={dvc['spearman_r']}")
+        print(f"      Motif Jaccard vs co-occurrence: r={jvc['spearman_r']}")
+        print(f"      ACP dist vs Jaccard:            r={dvj['spearman_r']}")
+        print(f"      Better predictor: {motif_sim_result['better_predictor_of_cooccurrence']}")
+    else:
+        print(f"      ERROR: {motif_sim_result['error']}")
+
     # ── Save Results ──────────────────────────────────────────
     print("\n" + "-" * 60)
     print("Saving Results")
@@ -414,6 +483,13 @@ def main():
             "multiple_comparison": mc_result,
             "cross_validation": cv_result,
             "holdout_traditions": holdout_results,
+        },
+        "alternative_metrics": {
+            "cosine_similarity": cosine_result,
+            "per_axis_correlation": axis_result,
+            "axis_weighted_distance": weighted_result,
+            "mantel_test": mantel_result,
+            "motif_similarity": motif_sim_result,
         },
     }
 

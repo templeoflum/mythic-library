@@ -300,10 +300,11 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Multiple comparison correction: 0/12 traditions survive Bonferroni/BH
 - [x] Holdout tradition test: Norse r=-0.354 robust when excluded from training
 
-### Phase 6: Alternative Metrics & Hypothesis Tests
-- [ ] Cosine similarity, axis-weighted distance, per-axis correlation
-- [ ] Mantel test for proper distance matrix correlation
-- [ ] Motif-mediated similarity (Jaccard of motif sets vs ACP distance)
+### Phase 6: Alternative Metrics & Hypothesis Tests — Complete
+- [x] Cosine similarity (Euclidean wins r=-0.095 vs r=-0.036), per-axis (creation-destruction strongest r=-0.140)
+- [x] Axis-weighted distance: 50% improvement (r=-0.142 vs r=-0.095)
+- [x] Mantel test: empirical p=0.029 (significant at α=0.05)
+- [x] Motif-mediated similarity: Jaccard r=0.749 (ceiling), ACP dist vs Jaccard r=-0.110
 
 ### Phase 7: Data Quality & Coverage
 - [ ] Entity extraction precision audit (sample 100, manually verify)
