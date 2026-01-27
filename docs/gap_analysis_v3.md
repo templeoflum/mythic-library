@@ -200,7 +200,7 @@ Once corpus is stable, extract:
 ### Integration with Mythopoetic OS
 
 The extracted patterns feed into:
-- **ACP (Archetypal Compression Protocol)**: Encode patterns as reusable primitives
+- **ACP (Archetypal Context Protocol)**: Encode patterns as reusable primitives
 - **Narrative Engine**: Generate stories from pattern combinations
 - **Validation Layer**: Cross-check new narratives against attested patterns
 

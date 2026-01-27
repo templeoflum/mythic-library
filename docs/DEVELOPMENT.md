@@ -2,7 +2,7 @@
 
 ## Project Vision
 
-The Mythic Library serves as the empirical corpus for the Mythogenetic OS — the raw textual substrate from which mythic patterns are extracted. The goal is not merely to collect texts, but to build a corpus sufficient to **validate or falsify** claims about universal mythic structures, specifically the Archetypal Compression Protocol's (ACP) claim that an 8-dimensional coordinate system can meaningfully represent archetypal relationships across cultures.
+The Mythic Library serves as the empirical corpus for the Mythogenetic OS — the raw textual substrate from which mythic patterns are extracted. The goal is not merely to collect texts, but to build a corpus sufficient to **validate or falsify** claims about universal mythic structures, specifically the Archetypal Context Protocol's (ACP) claim that an 8-dimensional coordinate system can meaningfully represent archetypal relationships across cultures.
 
 ### Core Hypothesis
 
@@ -801,7 +801,7 @@ This is honest science. The ACP has a real but weak signal that needs significan
 
 ## Roadmap: Standalone ACP Validation System
 
-The goal is a rigorous, empirically falsifiable validation of the Archetypal Compression Protocol — a standalone product that can be independently verified. No narrative generation, no OS integration. Pure validation science.
+The goal is a rigorous, empirically falsifiable validation of the Archetypal Context Protocol — a standalone product that can be independently verified. No narrative generation, no OS integration. Pure validation science.
 
 ### Phase 4: ACP Integration Bridge — Complete
 

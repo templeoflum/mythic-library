@@ -1,6 +1,6 @@
 # Mythic Library
 
-A curated collection of public domain mythological and ancient texts serving as the **empirical corpus** for validating the Archetypal Compression Protocol (ACP). This library provides the raw mythic substrate from which universal patterns, archetypes, and narrative structures are extracted and tested against ACP's 8-dimensional coordinate system across cultures.
+A curated collection of public domain mythological and ancient texts serving as the **empirical corpus** for validating the Archetypal Context Protocol (ACP). This library provides the raw mythic substrate from which universal patterns, archetypes, and narrative structures are extracted and tested against ACP's 8-dimensional coordinate system across cultures.
 
 ## Current Status
 
@@ -89,7 +89,7 @@ mythic-library/
 │   ├── alternative_metrics.py      # Cosine, Mantel, per-axis, motif similarity
 │   ├── data_quality.py             # Entity audits, normalization, deduplication
 │   └── falsification.py            # Formal null hypothesis & falsification criteria
-├── ACP/                            # Archetypal Compression Protocol (subtree)
+├── ACP/                            # Archetypal Context Protocol (subtree)
 │   ├── schema/                     # Primordials, axes, ontology
 │   └── archetypes/                 # 539 archetypes as JSON-LD
 └── docs/
@@ -194,7 +194,7 @@ python scripts/database/query_patterns.py --sql "SELECT * FROM patterns ORDER BY
 
 ## ACP Integration
 
-The [Archetypal Compression Protocol](ACP/) provides an 8-dimensional coordinate system for archetypes. The integration tests whether ACP coordinates predict narrative co-occurrence patterns in the library corpus.
+The [Archetypal Context Protocol](ACP/) provides an 8-dimensional coordinate system for archetypes. The integration tests whether ACP coordinates predict narrative co-occurrence patterns in the library corpus.
 
 ### Running the Validation Suite
 
@@ -281,6 +281,16 @@ The SQLite database at `data/mythic_patterns.db` contains:
 | Dying & Rising God | 20 | 40 |
 
 ## Roadmap
+
+### v1 Validation (Co-occurrence Based) — Archived
+
+> Phases 4-10 used textual co-occurrence (entities appearing in the same text
+> segments) as the validation target. This measures textual proximity, not the
+> relational archetypal meaning the ACP claims to encode. The key finding:
+> simple 1D "same tradition?" outperforms the full 8D system, indicating
+> co-occurrence primarily reflects cultural origin rather than archetypal
+> structure. This approach is archived; v2 will test cross-cultural functional
+> equivalence, axis interpretability, and relational prediction directly.
 
 ### Phase 1: Foundation — Complete
 - [x] Core texts from major traditions
@@ -373,4 +383,4 @@ All texts are public domain. Scripts and tooling are MIT licensed.
 
 ---
 
-*This library is part of the Mythogenetic OS project, providing the empirical corpus for validating the Archetypal Compression Protocol against cross-cultural narrative data.*
+*This library is part of the Mythogenetic OS project, providing the empirical corpus for validating the Archetypal Context Protocol against cross-cultural narrative data.*
