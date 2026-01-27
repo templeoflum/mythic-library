@@ -2,7 +2,7 @@
 
 ## Project Vision
 
-The Mythic Library serves as **Layer 0** of the Mythopoetic OS - the raw textual substrate from which mythic patterns are extracted. The goal is not merely to collect texts, but to build a corpus sufficient to **validate or falsify** claims about universal mythic structures.
+The Mythic Library serves as the empirical corpus for the Mythogenetic OS — the raw textual substrate from which mythic patterns are extracted. The goal is not merely to collect texts, but to build a corpus sufficient to **validate or falsify** claims about universal mythic structures, specifically the Archetypal Compression Protocol's (ACP) claim that an 8-dimensional coordinate system can meaningfully represent archetypal relationships across cultures.
 
 ### Core Hypothesis
 
@@ -378,22 +378,72 @@ Calibrated coordinates saved separately at `outputs/metrics/calibrated_coordinat
 
 4. **Correlation is still "weak"** — Post-calibration Spearman r=-0.23 is statistically significant but modest. This may reflect the inherent limitations of the data (co-occurrence counts ≠ narrative similarity) or the ACP's 8D space being richer than simple distance metrics capture.
 
-## Integration Roadmap
+## Roadmap: Standalone ACP Validation System
 
-### Remaining Phase 4 Work
+The goal is a rigorous, empirically falsifiable validation of the Archetypal Compression Protocol — a standalone product that can be independently verified. No narrative generation, no OS integration. Pure validation science.
 
+### Phase 4: ACP Integration Bridge — Complete
+
+- [x] ACP pulled as git subtree (539 archetypes, 24 primordials, 8D coordinates)
+- [x] Integration bridge (ACP loader, library loader, entity mapper)
+- [x] Tradition-aware entity mapping (109/173, 63.0%)
 - [x] Resolve shared archetype mappings (12 → 5, remaining intentional)
 - [x] Investigate active-receptive axis bias (ACP encoding property, fixed with mean-centering)
-- [x] Expand entity mapping coverage (89 → 109, 63.0%)
-- [x] Per-tradition coordinate analysis (Norse strongest at r=-0.354)
-- [x] Create ACP archetypes for high-mention unmapped deities (Agni, Soma, Varuna, Apsu, Anansi)
-- [x] Calibrate ACP coordinates using empirical co-occurrence data (Spearman r: -0.095 → -0.233)
+- [x] Per-tradition correlation analysis (Norse strongest at r=-0.354)
+- [x] Create ACP archetypes for high-mention unmapped deities (+5: Agni, Soma, Varuna, Apsu, Anansi)
+- [x] Coordinate calibration via gradient descent (Spearman r: -0.095 → -0.233)
 
-### Phase 5: Mythopoetic OS Integration
+### Phase 5: Statistical Rigor
 
-The validated patterns feed into higher OS layers:
-- **Narrative Engine**: Story generation from patterns
-- **Cross-cultural Validation Layer**: Pattern verification across traditions
+Make the validation trustworthy. Right now we have correlations but no controls, no cross-validation, no effect size reporting beyond r values.
+
+- [ ] **Cross-validation for calibration**: k-fold holdout — calibrate on k-1 folds, test on the held-out fold. Current calibration trains and tests on the same data.
+- [ ] **Null model / permutation test**: Shuffle entity-archetype assignments randomly 1,000+ times. What correlation do you get by chance? Report the empirical p-value (% of random shuffles that beat the real correlation). This is the single most important test — it answers "could random coordinates do this?"
+- [ ] **Effect size context**: Report Cohen's d or similar alongside r values. Spearman r=-0.23 is statistically significant but how practically meaningful is it?
+- [ ] **Confidence intervals**: Bootstrap 95% CIs for all reported correlations instead of just point estimates.
+- [ ] **Multiple comparison correction**: We test 12 traditions — apply Bonferroni or FDR correction to per-tradition p-values.
+- [ ] **Holdout tradition test**: Exclude one entire tradition from calibration (e.g., Norse), calibrate on the rest, then test on the held-out tradition. Does the calibration generalize?
+
+### Phase 6: Alternative Metrics & Hypothesis Tests
+
+The current setup uses one metric (Euclidean distance) and one signal (segment co-occurrence). Expand both.
+
+- [ ] **Cosine similarity**: Test whether direction in 8D space matters more than distance.
+- [ ] **Axis-weighted distance**: Weight axes by their variance contribution. Some axes may be more predictive than others.
+- [ ] **Per-axis correlation**: Which of the 8 axes individually predict co-occurrence? Some may carry all the signal, others may be noise.
+- [ ] **Mantel test**: Proper matrix-level correlation test for distance matrices (more appropriate than pairwise Spearman for spatial data).
+- [ ] **Narrative role co-occurrence**: Instead of raw segment co-occurrence, weight by narrative function — do entities appear together in creation segments differently than descent segments?
+- [ ] **Motif-mediated similarity**: Two entities sharing many Thompson motifs should be closer in ACP space. Test this directly (Jaccard similarity of motif sets vs ACP distance).
+
+### Phase 7: Data Quality & Coverage
+
+The empirical side needs strengthening. 63% entity coverage leaves gaps, and co-occurrence counts are noisy.
+
+- [ ] **Entity extraction audit**: Spot-check entity mentions for precision (are the 28,104 mentions actually correct?). Sample 100 random mentions, manually verify.
+- [ ] **Co-occurrence normalization**: Normalize co-occurrence by text length and tradition size. Greek texts are long and numerous, inflating Greek co-occurrence counts.
+- [ ] **Segment-level co-occurrence weighting**: Weight by segment length or by inverse document frequency (rare co-occurrences are more meaningful than common ones).
+- [ ] **Expand ACP coverage for heroes**: 42 unmapped heroes (Achilles, Arjuna, Sigurd, etc.) are a major gap. Either expand ACP scope beyond deities or explicitly document and justify the exclusion.
+- [ ] **Cross-tradition entity deduplication**: Ensure Ishtar/Inanna/Astarte aren't double-counted when computing cross-tradition patterns.
+
+### Phase 8: Reproducibility & Reporting
+
+Make the whole pipeline reproducible and the results interpretable by someone who isn't us.
+
+- [ ] **Single-command validation**: `python -m validation.run --full` runs everything from scratch and produces a self-contained report.
+- [ ] **Automated test suite**: pytest tests for each integration/validation module. Test determinism, edge cases, known-good outputs.
+- [ ] **Validation report generator**: Produce a standalone HTML or markdown report with all metrics, charts, and methodology description. Someone should be able to read this and understand exactly what was tested and what the results mean.
+- [ ] **Versioned baselines**: Save validation results per commit so we can track metric drift over time.
+- [ ] **Data explorer improvements**: Add calibrated coordinate view, per-tradition filtering, significance indicators.
+
+### Phase 9: Falsification Criteria
+
+Define what would constitute falsification of the ACP hypothesis. This is what makes it science.
+
+- [ ] **Define null hypothesis formally**: "ACP 8D coordinates are no better than random 8D assignments at predicting narrative co-occurrence."
+- [ ] **Define success threshold**: What Spearman r (with permutation-tested p-value) would we need to reject the null? Pre-register this before running the permutation test.
+- [ ] **Alternative hypotheses**: Test simpler models — does a 1D "tradition similarity" score predict co-occurrence better than 8D ACP coordinates? If so, ACP's dimensionality isn't earning its keep.
+- [ ] **Ablation study**: Remove each axis one at a time. If removing an axis doesn't hurt correlation, that axis isn't contributing. How many axes actually matter?
+- [ ] **Inter-rater reliability for new archetypes**: When we added Agni/Soma/Varuna/Apsu/Anansi, we assigned coordinates based on judgment. How sensitive are results to those assignments? Perturb them and measure.
 
 ---
 

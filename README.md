@@ -1,6 +1,6 @@
 # Mythic Library
 
-A curated collection of public domain mythological and ancient texts serving as the **foundation layer** for the Mythopoetic OS. This library provides the raw mythic substrate from which universal patterns, archetypes, and narrative structures can be extracted and validated across cultures.
+A curated collection of public domain mythological and ancient texts serving as the **empirical corpus** for validating the Archetypal Compression Protocol (ACP). This library provides the raw mythic substrate from which universal patterns, archetypes, and narrative structures are extracted and tested against ACP's 8-dimensional coordinate system across cultures.
 
 ## Current Status
 
@@ -81,10 +81,11 @@ mythic-library/
 │   └── entity_mapper.py            # Map library entities → ACP archetypes
 ├── validation/                     # Hypothesis tests
 │   ├── test_coordinate_accuracy.py # Co-occurrence vs ACP distance
-│   └── test_motif_clustering.py    # Motif signatures in 8D space
+│   ├── test_motif_clustering.py    # Motif signatures in 8D space
+│   └── calibrate_coordinates.py    # Gradient descent coordinate calibration
 ├── ACP/                            # Archetypal Compression Protocol (subtree)
 │   ├── schema/                     # Primordials, axes, ontology
-│   └── archetypes/                 # 524 archetypes as JSON-LD
+│   └── archetypes/                 # 539 archetypes as JSON-LD
 └── docs/
     ├── gap_analysis_v3.md          # Current gap analysis
     └── DEVELOPMENT.md              # Development log
@@ -210,14 +211,15 @@ The explorer provides views for entity details, ACP coordinate projections, co-o
 
 ### Current Results
 
-| Metric | Value |
-|--------|-------|
-| ACP Archetypes | 524 |
-| Entities Mapped | 94 / 173 (54.3%) |
-| Pearson r (distance vs co-occurrence) | -0.036 (p=0.019) |
-| Spearman r | -0.050 (p=0.001) |
+| Metric | Pre-Calibration | Post-Calibration |
+|--------|----------------|------------------|
+| ACP Archetypes | 539 | — |
+| Entities Mapped | 109 / 173 (63.0%) | — |
+| Pearson r (clean) | -0.083 (p<0.000001) | -0.185 (p<0.000001) |
+| Spearman r (clean) | -0.095 (p<0.000001) | -0.233 (p<0.000001) |
+| Norse intra-tradition | -0.354 (p=0.008) | — |
 
-The negative correlation confirms the ACP hypothesis: archetypes closer in 8D space co-occur more often in narratives.
+The negative correlation is consistent with the ACP hypothesis: archetypes closer in 8D coordinate space co-occur more often in narratives. The correlation is statistically significant but modest (r=-0.23 explains ~5% of variance). Rigorous falsification testing (permutation tests, cross-validation, null models) is the next priority.
 
 ## Validation Approach
 
@@ -260,19 +262,19 @@ The SQLite database at `data/mythic_patterns.db` contains:
 
 ## Roadmap
 
-### Phase 1: Foundation (Complete)
+### Phase 1: Foundation — Complete
 - [x] Core texts from major traditions
 - [x] Automated multi-source downloader
 - [x] Content validation system
 - [x] Gap analysis framework
 
-### Phase 2: Expansion (Complete)
+### Phase 2: Expansion — Complete
 - [x] Regional gap filling (Australian, Korean, Mongol, Baltic, etc.)
 - [x] Archetype-focused additions (Dying God, Trickster cycles)
 - [x] Chinese/Confucian classics
 - [x] Japanese literary expansion
 
-### Phase 3: Structured Extraction (Complete)
+### Phase 3: Structured Extraction — Complete
 - [x] Corpus audit & text normalization (126 texts normalized)
 - [x] Structural segmentation (4,000 segments)
 - [x] Entity extraction (173 entities, 28,104 mentions)
@@ -281,18 +283,45 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] 18 cross-cultural patterns identified across 20-26 traditions
 - [x] Case-sensitive disambiguation for 27 ambiguous entity names
 
-### Phase 4: ACP Integration (In Progress)
-- [x] ACP pulled as git subtree (524 archetypes, 24 primordials, 8D coordinates)
+### Phase 4: ACP Integration Bridge — Complete
+- [x] ACP pulled as git subtree (539 archetypes, 24 primordials, 8D coordinates)
 - [x] Integration bridge: ACP loader, library loader, entity mapper
-- [x] Entity mapping: 94/173 entities mapped to ACP archetypes (54.3%)
-- [x] Coordinate validation: distance vs co-occurrence correlation (r=-0.036, p=0.019)
+- [x] Tradition-aware entity mapping: 109/173 (63.0%)
+- [x] Coordinate validation: distance vs co-occurrence correlation
 - [x] Thompson motif clustering analysis in 8D coordinate space
 - [x] Browser-based data explorer (entities, coordinates, co-occurrence, motifs)
-- [ ] Resolve shared archetype mappings (12 archetypes with multiple entities)
-- [ ] Investigate active-receptive axis bias in motif signatures
-- [ ] Expand entity mapping coverage beyond 54%
-- [ ] Narrative engine pattern feeds
-- [ ] Cross-cultural validation layer
+- [x] Per-tradition correlation analysis (Norse r=-0.354, p=0.008)
+- [x] Coordinate calibration via gradient descent (Spearman r: -0.095 → -0.233)
+
+### Phase 5: Statistical Rigor — Next
+- [ ] Permutation test (null model): can random coordinates match real ACP?
+- [ ] Cross-validation for coordinate calibration (k-fold holdout)
+- [ ] Confidence intervals (bootstrap 95% CIs)
+- [ ] Multiple comparison correction for per-tradition tests
+- [ ] Holdout tradition generalization test
+
+### Phase 6: Alternative Metrics & Hypothesis Tests
+- [ ] Cosine similarity, axis-weighted distance, per-axis correlation
+- [ ] Mantel test for proper distance matrix correlation
+- [ ] Motif-mediated similarity (Jaccard of motif sets vs ACP distance)
+
+### Phase 7: Data Quality & Coverage
+- [ ] Entity extraction precision audit (sample 100, manually verify)
+- [ ] Co-occurrence normalization by text length / tradition size
+- [ ] Expand ACP coverage or formally justify exclusion of heroes/creatures
+
+### Phase 8: Reproducibility & Reporting
+- [ ] Single-command full validation pipeline
+- [ ] Automated pytest suite
+- [ ] Standalone validation report generator
+- [ ] Versioned metric baselines
+
+### Phase 9: Falsification Criteria
+- [ ] Formal null hypothesis definition
+- [ ] Pre-registered success threshold
+- [ ] Alternative hypothesis testing (simpler models)
+- [ ] Axis ablation study
+- [ ] Coordinate sensitivity analysis
 
 ## Contributing
 
@@ -309,4 +338,4 @@ All texts are public domain. Scripts and tooling are MIT licensed.
 
 ---
 
-*This library is part of the Mythopoetic OS project, providing the foundational mythic substrate for computational mythology and archetypal pattern analysis.*
+*This library is part of the Mythogenetic OS project, providing the empirical corpus for validating the Archetypal Compression Protocol against cross-cultural narrative data.*
