@@ -6,6 +6,7 @@ the one whose tradition prefix matches the entity's primary_tradition.
 This prevents Norse Odin from collapsing into Greek Hermes, etc.
 """
 import json
+import unicodedata
 from difflib import SequenceMatcher
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, asdict
@@ -80,23 +81,66 @@ class EntityMapper:
             "total_entities": len(self.library.get_all_entities()),
         }
 
-    def _find_all_candidates(self, name: str) -> List[Dict]:
-        """Find all ACP archetypes that match a name (exact, alias, or qualified alias).
+    @staticmethod
+    def _strip_diacritics(s: str) -> str:
+        """Remove diacritical marks: Cú -> Cu, Ōmikami -> Omikami, Nüwa -> Nuwa."""
+        nfkd = unicodedata.normalize("NFKD", s)
+        return "".join(c for c in nfkd if not unicodedata.combining(c))
 
-        Handles parenthetical qualifiers in ACP aliases — e.g., searching for
-        "Ishtar" will also match an alias "Ishtar (Akkadian)" in the ACP.
+    @staticmethod
+    def _collapse_name(s: str) -> str:
+        """Collapse a name to alphanumeric only for fuzzy comparison.
+
+        'Cú Chulainn' -> 'cuchulainn', 'Amaterasu-Ōmikami' -> 'amaterasuomikami'
+        """
+        nfkd = unicodedata.normalize("NFKD", s.lower())
+        return "".join(c for c in nfkd if c.isalnum())
+
+    @staticmethod
+    def _is_word_boundary_match(needle: str, haystack: str) -> bool:
+        """Check if needle appears as a complete word/prefix in haystack.
+
+        Matches cases like:
+        - "Amaterasu" in "Amaterasu-Ōmikami" (hyphen-separated prefix)
+        - "Dagda" in "The Dagda" (space-separated word)
+        - "Izanagi" in "Izanagi-no-Mikoto"
+
+        Requires needle to be >= 4 chars and match at a word boundary.
+        """
+        if len(needle) < 4:
+            return False
+        idx = haystack.find(needle)
+        if idx < 0:
+            return False
+        before_ok = (idx == 0 or not haystack[idx - 1].isalpha())
+        end = idx + len(needle)
+        after_ok = (end >= len(haystack) or not haystack[end].isalpha())
+        return before_ok and after_ok
+
+    def _find_all_candidates(self, name: str) -> List[Dict]:
+        """Find all ACP archetypes that match a name.
+
+        Matching strategies (in priority order):
+        1. Exact name match (confidence 1.0)
+        2. Exact alias match (confidence = alias fidelity)
+        3. Qualified alias match: "Ishtar (Akkadian)" matches "Ishtar"
+        4. Word-boundary name match: "Amaterasu" matches "Amaterasu-Ōmikami"
 
         Returns list of dicts with keys: arch_id, arch_name, confidence,
         method, fidelity, notes.
         """
         candidates = []
         name_lower = name.lower().strip()
+        name_norm = self._strip_diacritics(name_lower)
+        name_collapsed = self._collapse_name(name)
 
         for arch_id, arch_data in self.acp.archetypes.items():
             arch_name = arch_data.get("name", "")
+            arch_name_lower = arch_name.lower().strip()
+            arch_name_norm = self._strip_diacritics(arch_name_lower)
 
-            # Direct name match
-            if arch_name.lower().strip() == name_lower:
+            # Direct name match (diacritics-insensitive)
+            if arch_name_norm == name_norm:
                 candidates.append({
                     "arch_id": arch_id,
                     "arch_name": arch_name,
@@ -108,6 +152,7 @@ class EntityMapper:
                 continue
 
             # Alias match
+            alias_matched = False
             for alias in arch_data.get("aliases", []):
                 if isinstance(alias, dict):
                     alias_name = alias.get("name", "")
@@ -119,9 +164,10 @@ class EntityMapper:
                     continue
 
                 alias_lower = alias_name.lower().strip()
+                alias_norm = self._strip_diacritics(alias_lower)
 
-                # Exact alias match
-                if alias_lower == name_lower:
+                # Exact alias match (diacritics-insensitive)
+                if alias_norm == name_norm:
                     candidates.append({
                         "arch_id": arch_id,
                         "arch_name": arch_name,
@@ -130,13 +176,13 @@ class EntityMapper:
                         "fidelity": fidelity,
                         "notes": f"ACP alias: {alias_name} (fidelity {fidelity})",
                     })
+                    alias_matched = True
                     break
 
                 # Qualified alias match: "Ishtar (Akkadian)" matches "Ishtar"
-                # Strip parenthetical qualifier and re-check
-                if "(" in alias_lower:
-                    base = alias_lower.split("(")[0].strip()
-                    if base == name_lower:
+                if "(" in alias_norm:
+                    base = alias_norm.split("(")[0].strip()
+                    if base == name_norm:
                         candidates.append({
                             "arch_id": arch_id,
                             "arch_name": arch_name,
@@ -145,7 +191,84 @@ class EntityMapper:
                             "fidelity": fidelity,
                             "notes": f"ACP alias: {alias_name} (fidelity {fidelity})",
                         })
+                        alias_matched = True
                         break
+
+            if alias_matched:
+                continue
+
+            # Collapsed name match: strip all non-alphanumeric chars + diacritics
+            # "Cuchulainn" matches "Cú Chulainn", "Setanta" matches "Sétanta"
+            arch_collapsed = self._collapse_name(arch_name)
+            if arch_collapsed == name_collapsed and len(name_collapsed) >= 4:
+                candidates.append({
+                    "arch_id": arch_id,
+                    "arch_name": arch_name,
+                    "confidence": 0.95,
+                    "method": "collapsed_name",
+                    "fidelity": 0.95,
+                    "notes": f"Collapsed match: {name} ~ {arch_name}",
+                })
+                continue
+
+            # Also check collapsed aliases
+            collapsed_alias_matched = False
+            for alias in arch_data.get("aliases", []):
+                if isinstance(alias, dict):
+                    alias_name = alias.get("name", "")
+                    fidelity = alias.get("fidelity", 0.5)
+                elif isinstance(alias, str):
+                    alias_name = alias
+                    fidelity = 0.7
+                else:
+                    continue
+                if self._collapse_name(alias_name) == name_collapsed and len(name_collapsed) >= 4:
+                    candidates.append({
+                        "arch_id": arch_id,
+                        "arch_name": arch_name,
+                        "confidence": fidelity,
+                        "method": "collapsed_alias",
+                        "fidelity": fidelity,
+                        "notes": f"Collapsed alias match: {name} ~ {alias_name}",
+                    })
+                    collapsed_alias_matched = True
+                    break
+
+            if collapsed_alias_matched:
+                continue
+
+            # Word-boundary name match (lower confidence, diacritics-insensitive)
+            # "Amaterasu" matches "Amaterasu-Ōmikami", "Dagda" matches "The Dagda"
+            if self._is_word_boundary_match(name_norm, arch_name_norm):
+                candidates.append({
+                    "arch_id": arch_id,
+                    "arch_name": arch_name,
+                    "confidence": 0.85,
+                    "method": "word_boundary",
+                    "fidelity": 0.85,
+                    "notes": f"Word-boundary match: {name} in {arch_name}",
+                })
+                continue
+
+            # Word-boundary alias match: "Amun" matches alias "Amun-Ra"
+            for alias in arch_data.get("aliases", []):
+                if isinstance(alias, dict):
+                    alias_name = alias.get("name", "")
+                elif isinstance(alias, str):
+                    alias_name = alias
+                else:
+                    continue
+                alias_norm = self._strip_diacritics(alias_name.lower().strip())
+                if self._is_word_boundary_match(name_norm, alias_norm):
+                    candidates.append({
+                        "arch_id": arch_id,
+                        "arch_name": arch_name,
+                        "confidence": 0.7,
+                        "method": "word_boundary",
+                        "fidelity": 0.7,
+                        "notes": f"Word-boundary alias match: {name} in {alias_name}",
+                    })
+                    break
 
         return candidates
 
@@ -216,13 +339,19 @@ class EntityMapper:
         return matches
 
     def _map_via_library_aliases(self) -> List[EntityMapping]:
-        """Phase 2: Use library entity_aliases to find ACP matches for unmapped entities."""
+        """Phase 2: Use library entity_aliases to find ACP matches for unmapped entities.
+
+        Two strategies:
+        1. Forward: for each canonical in alias table, try its aliases against ACP.
+        2. Reverse: for each unmapped entity, check if its name appears as an alias
+           value — if so, use the canonical name to search ACP.
+        """
         db_aliases = self.library.get_entity_aliases()
-        # Build tradition lookup
         entities = self.library.get_all_entities()
         entity_traditions = {e.canonical_name: (e.primary_tradition or "") for e in entities}
         matches = []
 
+        # Forward lookup: canonical -> alias_list
         for canonical, alias_list in db_aliases.items():
             if canonical in self._mapped_entities:
                 continue
@@ -245,6 +374,35 @@ class EntityMapper:
                     matches.append(m)
                     self._mapped_entities.add(canonical)
                     break
+
+        # Reverse lookup: if an unmapped entity's name appears as an alias value,
+        # use the canonical name to search ACP.
+        # e.g., library entity "Balder" is an alias of canonical "Baldur" -> search "Baldur" in ACP
+        reverse_index: Dict[str, str] = {}
+        for canonical, alias_list in db_aliases.items():
+            for alias_name in alias_list:
+                reverse_index[alias_name.lower()] = canonical
+
+        unmapped = [e for e in entities if e.canonical_name not in self._mapped_entities]
+        for entity in unmapped:
+            name_lower = entity.canonical_name.lower()
+            if name_lower in reverse_index:
+                canonical_alias = reverse_index[name_lower]
+                tradition = entity.primary_tradition or ""
+                candidates = self._find_all_candidates(canonical_alias)
+                best = self._pick_best_candidate(candidates, tradition)
+                if best:
+                    m = EntityMapping(
+                        library_entity=entity.canonical_name,
+                        acp_archetype_id=best["arch_id"],
+                        acp_name=best["arch_name"],
+                        confidence=0.75,
+                        method="reverse_alias",
+                        fidelity=best["fidelity"],
+                        notes=f"Reverse alias: {entity.canonical_name} -> {canonical_alias}",
+                    )
+                    matches.append(m)
+                    self._mapped_entities.add(entity.canonical_name)
 
         self.mappings.extend(matches)
         return matches

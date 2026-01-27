@@ -173,6 +173,24 @@ def main():
     coord_results_clean = validator.test_distance_correlation(exclude_entities=["Set"])
     print_correlation("Excluding 'Set' (false positive entity)", coord_results_clean)
 
+    # ── Per-Tradition Correlation ────────────────────────────
+    print("\n" + "-" * 60)
+    print("PHASE 2b: Per-Tradition Correlation")
+    print("-" * 60)
+
+    tradition_results = validator.test_per_tradition_correlation(min_entities=3)
+    print(f"  Traditions analyzed: {len(tradition_results)}")
+    print(f"\n  {'Tradition':15s} {'Entities':>8s} {'Pairs':>6s} {'w/cooc':>6s} {'Spearman r':>10s} {'p-value':>10s}")
+    print("  " + "-" * 58)
+    for trad, data in sorted(tradition_results.items(), key=lambda x: x[1].get('spearman_r', 0)):
+        if 'note' in data:
+            print(f"  {trad:15s} {data['entity_count']:8d} {data['pair_count']:6d}    -- {data['note']}")
+        else:
+            r = data['spearman_r']
+            p = data['spearman_p']
+            sig = '***' if p < 0.001 else '**' if p < 0.01 else '*' if p < 0.05 else ''
+            print(f"  {trad:15s} {data['entity_count']:8d} {data['pair_count']:6d} {data['pairs_with_cooccurrence']:6d} {r:10.4f} {p:10.6f} {sig}")
+
     # ── Primordial Clustering ─────────────────────────────────
     print("\n" + "-" * 60)
     print("PHASE 3: Primordial Clustering")
@@ -207,11 +225,19 @@ def main():
     print(f"  Broadly spread:    {summary['spread_count']}")
     print(f"  Categories:        {summary['categories_analyzed']}")
 
+    if motif_results.get("global_mean"):
+        print(f"\n  Global mean (across all mapped entities):")
+        for axis, val in motif_results["global_mean"].items():
+            print(f"    {axis:25s}: {val:.4f}")
+
     if motif_results.get("category_centroids"):
-        print(f"\n  Category centroids (dominant axis):")
+        print(f"\n  Category centroids (mean-centered dominant axis):")
         for cat, data in sorted(motif_results["category_centroids"].items()):
-            print(f"    {cat}: {data['motif_count']} motifs, "
-                  f"dominant axis = {data['dominant_axis']}")
+            dom = data['dominant_axis']
+            direction = data.get('dominant_direction', '?')
+            dev = data.get('deviation_from_mean', {}).get(dom, 0)
+            print(f"    {cat}: {data['motif_count']:3d} motifs, "
+                  f"dominant = {dom} ({direction}, dev={dev:+.4f})")
 
     # ── Save Results ──────────────────────────────────────────
     print("\n" + "-" * 60)
@@ -233,9 +259,11 @@ def main():
         "entity_mapping": map_summary,
         "coordinate_validation": coord_results,
         "coordinate_validation_clean": coord_results_clean,
+        "per_tradition_correlation": tradition_results,
         "primordial_clustering": prim_results,
         "motif_analysis": {
             "summary": motif_results["summary"],
+            "global_mean": motif_results.get("global_mean", {}),
             "category_centroids": motif_results.get("category_centroids", {}),
         },
     }

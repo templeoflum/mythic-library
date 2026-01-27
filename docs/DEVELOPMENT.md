@@ -246,16 +246,16 @@ Connected the ACP's 8-dimensional coordinate system with the library's empirical
 
 Pulled ACP repository as git subtree at `ACP/`. Built `integration/` package:
 
-- **`acp_loader.py`**: Loads all 524 archetypes from `ACP/**/*.jsonld`. Parses `@graph` arrays, extracts 8D `spectralCoordinates`, builds alias index from archetype `aliases` (with `fidelity` scores). Loads 24 primordials from `ACP/schema/primordials.jsonld`.
+- **`acp_loader.py`**: Loads all 534 archetypes from `ACP/**/*.jsonld`. Parses `@graph` arrays, extracts 8D `spectralCoordinates`, builds alias index from archetype `aliases` (with `fidelity` scores). Loads 24 primordials from `ACP/schema/primordials.jsonld`.
 
 - **`library_loader.py`**: Queries `mythic_patterns.db` with corrected schema (joins through `entity_mentions` and `motif_tags` tables, not inline columns). Provides co-occurrence, motif-entity associations, and entity stats.
 
-- **`entity_mapper.py`**: Three-phase mapping:
-  1. ACP alias matching (uses alias `fidelity` as confidence)
-  2. Exact name matching against library entities
-  3. Library alias matching via `entity_aliases.json`
+- **`entity_mapper.py`**: Tradition-aware entity-driven mapping:
+  1. For each library entity, finds all candidate ACP archetypes via exact name, alias, collapsed name (diacritics/space-insensitive), and word-boundary matching
+  2. Prefers the candidate from the entity's own tradition (e.g., Norse Odin → `arch:NO-ODIN` instead of Greek `arch:GR-HERMES`)
+  3. Reverse alias lookup for spelling variants (e.g., library "Balder" → canonical "Baldur" → `arch:NO-BALDUR`)
   - Fuzzy fallback via `difflib.SequenceMatcher`
-  - Result: 94/173 entities mapped (54.3%)
+  - Result: 104/173 entities mapped (60.1%)
 
 #### 4.2: Validation Suite
 
@@ -265,14 +265,25 @@ Built `validation/` package with two hypothesis tests:
 
 - **`test_motif_clustering.py`**: For each Thompson motif, finds associated entities via segment joins, maps to ACP coordinates, computes centroid and variance. Tests whether motif-related archetypes cluster tightly in 8D space.
 
-**Results (after false positive cleanup):**
+**Results (after tradition-aware mapping and de-collapsing):**
 
 | Metric | All Entities | Excluding "Set" |
 |--------|-------------|-----------------|
-| Pearson r | -0.036 (p=0.019) | -0.043 (p=0.005) |
-| Spearman r | -0.050 (p=0.001) | -0.062 (p=0.00006) |
+| Pearson r | -0.069 (p=0.000001) | -0.077 (p<0.000001) |
+| Spearman r | -0.072 (p<0.000001) | -0.086 (p<0.000001) |
 
-The negative correlation confirms the ACP hypothesis at weak but statistically significant levels: archetypes closer in coordinate space co-occur more often in narratives.
+The negative correlation confirms the ACP hypothesis at weak but highly statistically significant levels: archetypes closer in coordinate space co-occur more often in narratives. The improved correlation (from r=-0.036 to r=-0.069) is due to tradition-aware mapping preventing cross-cultural alias collapsing.
+
+**Per-tradition correlation (Spearman, sorted by strength):**
+
+| Tradition | Entities | Spearman r | p-value |
+|-----------|----------|------------|---------|
+| Norse | 11 | -0.354 | 0.008 ** |
+| Indian | 10 | -0.200 | 0.188 |
+| Roman | 11 | -0.148 | 0.280 |
+| Greek | 19 | +0.088 | 0.255 |
+
+Norse mythology shows the strongest intra-tradition correlation, significant at the 1% level. Most other traditions lack sufficient mapped entities or have too many co-occurring pairs (Greek deities appear together in nearly every Greek text).
 
 #### 4.3: Entity False Positive Cleanup
 
@@ -303,22 +314,49 @@ Six views:
 - **Motifs**: Thompson motif distribution with entity associations
 - **Validation**: Correlation results and outlier analysis
 
+#### 4.5: Tradition-Aware Mapping & Roman Archetypes
+
+Rewrote `entity_mapper.py` from archetype-driven to entity-driven mapping with tradition preference. Previously, Norse Odin would sometimes map to `arch:GR-HERMES` instead of `arch:NO-ODIN` because Hermes' alias list included "Odin".
+
+Key changes:
+- **TRADITION_TO_PREFIX mapping**: Maps library tradition names to ACP archetype ID prefixes (e.g., "norse" → "NO")
+- **`_find_all_candidates()`**: Finds all matching ACP archetypes for a name via exact, alias, qualified alias, collapsed name (strips diacritics/spaces), and word-boundary matching
+- **`_pick_best_candidate()`**: Prefers matches from entity's own tradition
+- **Diacritics normalization**: "Nuwa" matches "Nüwa", "Morrigan" matches "Morrígan"
+- **Reverse alias lookup**: If library entity "Balder" is listed as an alias of canonical "Baldur", uses "Baldur" to search ACP
+
+Created `ACP/archetypes/roman/RO_PANTHEON.jsonld` with 10 distinct Roman archetypes (Jupiter, Juno, Neptune, Minerva, Pluto, Venus, Mars, Mercury, Saturn, Hercules). Roman gods are not simple aliases of Greek counterparts — Mars has order-chaos 0.30 (vs Ares 0.80) reflecting Rome's civic martial tradition.
+
+Result: Shared archetype collisions reduced from 12 to 5 (remaining are intentional: Jove/Jupiter, Baldur/Balder, Prometheus/Satan, Hero Twins pair, Cuchulainn/Cuchulain).
+
+#### 4.6: Mean-Centered Motif Analysis
+
+Investigated the active-receptive axis bias: 72% of ACP mythological archetypes sit below 0.5 on order-chaos, 64% below 0.5 on active-receptive. This is a genuine encoding property (most named deities are order-bringers), not a bug.
+
+Fixed `test_motif_clustering.py` to compute `dominant_axis` relative to the global mean coordinate instead of the 0.5 midpoint. Result: motif categories now show 3 distinct dominant axes (individual-collective, voluntary-fated, order-chaos) instead of all converging on active-receptive.
+
+#### 4.7: Per-Tradition Correlation Analysis
+
+Added `test_per_tradition_correlation()` to `test_coordinate_accuracy.py`. Computes Spearman correlation within each tradition. Norse shows strongest intra-tradition correlation (r=-0.354, p=0.008), suggesting ACP coordinates are well-calibrated for Norse mythology. Greek shows near-zero correlation because Greek deities co-occur in nearly all Greek texts regardless of archetype distance.
+
 #### Open Issues
 
-1. **12 ACP archetypes have multiple library entities** — e.g., Zeus/Jupiter/Indra all map to `arch:GR-ZEUS`. Need to determine whether these should map to distinct tradition-specific archetypes.
+1. **69 unmapped entities** — Mostly mortal heroes (Achilles, Sigurd, Arjuna), places (Troy, Olympus), creatures (Cerberus, Minotaur), and tradition-specific deities without ACP entries (Agni, Varuna, Anansi).
 
-2. **Active-receptive axis bias** — All 16 Thompson motif categories show `active-receptive` as the dominant axis in their ACP centroid. Possible causes: coordinate encoding bias, extraction bias, or genuine mythological pattern.
+2. **Motif category deviations are small** — Mean-centered deviations are ±0.01 to ±0.05, suggesting Thompson motif categories don't differentiate strongly in ACP space. Likely because the same broad deity pool appears across most motifs.
 
-3. **Mapping coverage at 54%** — 79 entities remain unmapped. Many are tradition-specific figures without ACP archetypes (e.g., Bantu, Australian Aboriginal entities).
+3. **Greek intra-tradition correlation is near zero** — Greek deities co-occur in almost all Greek texts, making distance-co-occurrence correlation meaningless within that tradition.
 
 ## Integration Roadmap
 
 ### Remaining Phase 4 Work
 
-- [ ] Resolve shared archetype mappings (12 archetypes with multiple entities)
-- [ ] Investigate active-receptive axis bias
-- [ ] Expand entity mapping coverage
-- [ ] Per-tradition coordinate analysis
+- [x] Resolve shared archetype mappings (12 → 5, remaining intentional)
+- [x] Investigate active-receptive axis bias (ACP encoding property, fixed with mean-centering)
+- [x] Expand entity mapping coverage (89 → 104, 60.1%)
+- [x] Per-tradition coordinate analysis (Norse strongest at r=-0.354)
+- [ ] Create ACP archetypes for high-mention unmapped deities (Agni, Varuna, Anansi)
+- [ ] Calibrate ACP coordinates using empirical co-occurrence data
 
 ### Phase 5: Mythopoetic OS Integration
 
@@ -375,6 +413,24 @@ The validated patterns feed into higher OS layers:
 | European | 6 |
 | Egyptian | 6 |
 | Japanese | 5 |
+
+### Phase 4 State (ACP Integration)
+
+| Metric | Value |
+|--------|-------|
+| ACP Archetypes Loaded | 534 |
+| ACP Primordials | 24 |
+| ACP Systems | 4 |
+| ACP Aliases | 606 |
+| Entities Mapped | 104 / 173 (60.1%) |
+| Entities Unmapped | 69 |
+| Pearson r (all) | -0.069 (p<0.000001) |
+| Spearman r (all) | -0.072 (p<0.000001) |
+| Pearson r (clean) | -0.077 (p<0.000001) |
+| Spearman r (clean) | -0.086 (p<0.000001) |
+| Norse Spearman r | -0.354 (p=0.008) |
+| Motifs Analyzed | 124 |
+| Motif Categories | 16 |
 
 ---
 

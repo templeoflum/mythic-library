@@ -201,6 +201,75 @@ class CoordinateValidation:
 
         return sorted(outliers, key=lambda x: -x["anomaly_score"])[:20]
 
+    def test_per_tradition_correlation(self, min_entities: int = 3) -> Dict:
+        """Test distance-vs-co-occurrence correlation within each tradition.
+
+        For each tradition with at least min_entities mapped entities,
+        compute Spearman correlation on intra-tradition entity pairs.
+        This reveals whether ACP coordinates are better calibrated for
+        some traditions than others.
+        """
+        # Group mappings by tradition
+        from collections import defaultdict
+        tradition_mappings = defaultdict(list)
+        for m in self.mapper.mappings:
+            # Look up tradition from library
+            entities = self.library.get_all_entities()
+            entity_dict = {e.canonical_name: e for e in entities}
+            e = entity_dict.get(m.library_entity)
+            if e and e.primary_tradition:
+                coords = self.acp.get_coordinates(m.acp_archetype_id)
+                if coords is not None:
+                    tradition_mappings[e.primary_tradition].append(m)
+
+        results = {}
+        for tradition, mappings in sorted(tradition_mappings.items()):
+            if len(mappings) < min_entities:
+                continue
+
+            distances = []
+            cooccurrences = []
+
+            for i, m1 in enumerate(mappings):
+                for m2 in mappings[i + 1:]:
+                    dist = self.acp.calculate_distance(
+                        m1.acp_archetype_id, m2.acp_archetype_id
+                    )
+                    if dist is None:
+                        continue
+                    coocc = self.library.get_entity_cooccurrence(
+                        m1.library_entity, m2.library_entity
+                    )
+                    distances.append(dist)
+                    cooccurrences.append(coocc)
+
+            if len(distances) < 3:
+                continue
+
+            # Check if all values are constant (can't compute correlation)
+            if len(set(distances)) < 2 or len(set(cooccurrences)) < 2:
+                results[tradition] = {
+                    "entity_count": len(mappings),
+                    "pair_count": len(distances),
+                    "note": "Insufficient variance for correlation",
+                }
+                continue
+
+            spearman_r, spearman_p = spearmanr(distances, cooccurrences)
+            pairs_with_coocc = sum(1 for c in cooccurrences if c > 0)
+
+            results[tradition] = {
+                "entity_count": len(mappings),
+                "pair_count": len(distances),
+                "pairs_with_cooccurrence": pairs_with_coocc,
+                "spearman_r": round(float(spearman_r), 4),
+                "spearman_p": round(float(spearman_p), 6),
+                "mean_distance": round(float(np.mean(distances)), 4),
+                "mean_cooccurrence": round(float(np.mean(cooccurrences)), 2),
+            }
+
+        return results
+
     def test_primordial_clustering(self) -> Dict:
         """Test if archetypes sharing the same primordial cluster together."""
         primordial_groups: Dict[str, List[str]] = {}

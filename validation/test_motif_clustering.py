@@ -61,12 +61,33 @@ class MotifClustering:
 
         return signatures
 
+    def _compute_global_mean(self) -> np.ndarray:
+        """Compute the global mean coordinate across all mapped entities.
+
+        This corrects for ACP encoding bias (e.g., most deities cluster
+        toward 'ordered' on order-chaos). By mean-centering, motif category
+        signatures reveal relative deviations rather than absolute bias.
+        """
+        all_coords = []
+        for m in self.mapper.mappings:
+            coords = self.acp.get_coordinates(m.acp_archetype_id)
+            if coords is not None:
+                all_coords.append(coords)
+        if all_coords:
+            return np.mean(all_coords, axis=0)
+        return np.full(len(AXES), 0.5)
+
     def find_motif_category_patterns(self) -> Dict:
         """
         Group motifs by Thompson category letter and find
         which ACP axes correlate with which motif categories.
+
+        Uses mean-centering: dominant_axis is computed relative to the
+        global mean of all mapped entities, not the 0.5 midpoint. This
+        corrects for ACP coordinate encoding bias.
         """
         signatures = self.analyze_motif_signatures()
+        global_mean = self._compute_global_mean()
 
         # Group by first character of motif code
         categories: Dict[str, List[np.ndarray]] = defaultdict(list)
@@ -84,6 +105,9 @@ class MotifClustering:
             if len(centroid_list) >= 2:
                 avg = np.mean(centroid_list, axis=0)
                 std = np.std(centroid_list, axis=0)
+                # Mean-centered deviation: how far this category deviates
+                # from the global mean on each axis
+                deviation = avg - global_mean
                 category_centroids[cat] = {
                     "motif_count": len(centroid_list),
                     "centroid": {
@@ -92,12 +116,19 @@ class MotifClustering:
                     "std": {
                         axis: round(float(std[i]), 4) for i, axis in enumerate(AXES)
                     },
-                    "dominant_axis": AXES[int(np.argmax(np.abs(avg - 0.5)))],
+                    "deviation_from_mean": {
+                        axis: round(float(deviation[i]), 4) for i, axis in enumerate(AXES)
+                    },
+                    "dominant_axis": AXES[int(np.argmax(np.abs(deviation)))],
+                    "dominant_direction": "positive" if deviation[int(np.argmax(np.abs(deviation)))] > 0 else "negative",
                 }
 
         return {
             "motif_signatures": signatures,
             "category_centroids": category_centroids,
+            "global_mean": {
+                axis: round(float(global_mean[i]), 4) for i, axis in enumerate(AXES)
+            },
             "summary": {
                 "total_motifs_analyzed": len(signatures),
                 "clustered_count": sum(
