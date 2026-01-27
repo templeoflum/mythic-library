@@ -20,6 +20,8 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from integration.acp_loader import ACPLoader
+from integration.library_loader import LibraryLoader
+from integration.entity_mapper import EntityMapper
 
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
 ACP_PATH = PROJECT_ROOT / "ACP"
@@ -31,6 +33,8 @@ PORT = 8421
 
 # ── Global data loaded at startup ─────────────────────────────────────────────
 acp: ACPLoader = None
+library: LibraryLoader = None
+mapper: EntityMapper = None
 db: sqlite3.Connection = None
 mappings: list = []
 validation_results: dict = {}
@@ -38,7 +42,7 @@ motif_signatures: dict = {}
 
 
 def load_data():
-    global acp, db, mappings, validation_results, motif_signatures
+    global acp, library, mapper, db, mappings, validation_results, motif_signatures
 
     print("Loading ACP...")
     acp = ACPLoader(str(ACP_PATH))
@@ -50,6 +54,15 @@ def load_data():
     db.row_factory = sqlite3.Row
     row = db.execute("SELECT COUNT(*) as c FROM entities").fetchone()
     print(f"  {row['c']} entities")
+
+    print("Loading library + mapper...")
+    library = LibraryLoader(str(DB_PATH))
+    mapper = EntityMapper(acp, library)
+    if MAPPINGS_PATH.exists():
+        mapper.load_mappings(str(MAPPINGS_PATH))
+    else:
+        mapper.auto_map_all()
+    print(f"  {len(mapper.mappings)} mapped entities")
 
     print("Loading mappings...")
     if MAPPINGS_PATH.exists():
@@ -418,6 +431,120 @@ def api_motifs(params):
     }
 
 
+# ── Audit API (live compute) ──────────────────────────────────────────────────
+
+_audit_cache: dict = {}
+
+
+def api_audit(params):
+    """Run live falsification/data-quality tests and return results.
+
+    ?test= parameter selects which test to run:
+      - tradition:      1D tradition vs 8D ACP comparison
+      - ablation:       per-axis ablation study
+      - sensitivity:    coordinate noise robustness
+      - archetype:      new archetype sensitivity
+      - verdict:        overall falsification verdict
+      - data_quality:   entity mention audit + normalization + dedup
+      - all:            everything (cached)
+    """
+    test = params.get("test", ["all"])[0]
+
+    # Quick seed/params from URL
+    exclude = ["Set"]  # standard exclusion
+
+    if test == "all" and "all" in _audit_cache:
+        return _audit_cache["all"]
+
+    if test != "all" and test in _audit_cache:
+        return _audit_cache[test]
+
+    from validation.falsification import FalsificationTests
+    from validation.data_quality import DataQualityAuditor
+
+    ft = FalsificationTests(acp, library, mapper)
+    dq = DataQualityAuditor(acp, library, mapper)
+
+    if test == "tradition":
+        result = ft.tradition_similarity_test(exclude)
+        _audit_cache["tradition"] = result
+        return result
+
+    if test == "ablation":
+        result = ft.axis_ablation_study(exclude)
+        _audit_cache["ablation"] = result
+        return result
+
+    if test == "sensitivity":
+        result = ft.coordinate_sensitivity(
+            noise_level=0.05, n_trials=50, exclude_entities=exclude, seed=42,
+        )
+        _audit_cache["sensitivity"] = result
+        return result
+
+    if test == "archetype":
+        result = ft.new_archetype_sensitivity(
+            n_trials=50, noise_level=0.1, exclude_entities=exclude, seed=42,
+        )
+        _audit_cache["archetype"] = result
+        return result
+
+    if test == "data_quality":
+        result = dq.run_all()
+        _audit_cache["data_quality"] = result
+        return result
+
+    if test == "verdict":
+        # Need tradition, ablation, sensitivity first
+        if "tradition" not in _audit_cache:
+            _audit_cache["tradition"] = ft.tradition_similarity_test(exclude)
+        if "ablation" not in _audit_cache:
+            _audit_cache["ablation"] = ft.axis_ablation_study(exclude)
+        if "sensitivity" not in _audit_cache:
+            _audit_cache["sensitivity"] = ft.coordinate_sensitivity(
+                noise_level=0.05, n_trials=50, exclude_entities=exclude, seed=42,
+            )
+        result = ft.falsification_verdict(
+            permutation_p=0.053, mantel_p=0.029,
+            tradition_result=_audit_cache["tradition"],
+            ablation_result=_audit_cache["ablation"],
+            sensitivity_result=_audit_cache["sensitivity"],
+        )
+        _audit_cache["verdict"] = result
+        return result
+
+    # "all" — run everything
+    results = {}
+    results["hypothesis"] = ft.formal_hypothesis()
+    results["tradition"] = ft.tradition_similarity_test(exclude)
+    results["ablation"] = ft.axis_ablation_study(exclude)
+    results["sensitivity"] = ft.coordinate_sensitivity(
+        noise_level=0.05, n_trials=50, exclude_entities=exclude, seed=42,
+    )
+    results["archetype"] = ft.new_archetype_sensitivity(
+        n_trials=50, noise_level=0.1, exclude_entities=exclude, seed=42,
+    )
+    results["verdict"] = ft.falsification_verdict(
+        permutation_p=0.053, mantel_p=0.029,
+        tradition_result=results["tradition"],
+        ablation_result=results["ablation"],
+        sensitivity_result=results["sensitivity"],
+    )
+    results["data_quality"] = dq.run_all()
+
+    # Cache individual results too
+    for k, v in results.items():
+        _audit_cache[k] = v
+    _audit_cache["all"] = results
+    return results
+
+
+def api_audit_clear(params):
+    """Clear the audit cache to force re-computation."""
+    _audit_cache.clear()
+    return {"status": "cache cleared"}
+
+
 # ── Request handler ───────────────────────────────────────────────────────────
 
 API_ROUTES = {
@@ -428,6 +555,8 @@ API_ROUTES = {
     "/api/cooccurrence": api_cooccurrence,
     "/api/validation": lambda p: api_validation(),
     "/api/motifs": api_motifs,
+    "/api/audit": api_audit,
+    "/api/audit/clear": api_audit_clear,
 }
 
 
@@ -600,6 +729,27 @@ canvas { display: block; }
 
 /* Loading */
 .loading { text-align: center; padding: 40px; color: var(--text-dim); }
+
+/* Audit */
+.audit-tabs { display: flex; gap: 4px; margin-bottom: 20px; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.audit-tab { padding: 8px 16px; background: none; border: 1px solid transparent; color: var(--text-dim); border-radius: var(--radius) var(--radius) 0 0; cursor: pointer; font-size: 13px; transition: all 0.15s; }
+.audit-tab:hover { color: var(--text); background: var(--surface2); }
+.audit-tab.active { color: var(--accent); border-color: var(--border); border-bottom-color: var(--bg); background: var(--surface); font-weight: 600; }
+.verdict-card { border-left: 4px solid var(--border); padding: 16px; margin: 8px 0; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+.verdict-pass { border-left-color: var(--green); }
+.verdict-fail { border-left-color: var(--red); }
+.verdict-warn { border-left-color: var(--orange); }
+.verdict-icon { font-size: 18px; margin-right: 8px; }
+.ablation-bar { display: flex; align-items: center; gap: 8px; padding: 6px 0; }
+.ablation-track { width: 200px; height: 12px; background: var(--border); border-radius: 6px; overflow: hidden; position: relative; }
+.ablation-fill { height: 100%; border-radius: 6px; transition: width 0.3s; }
+.ablation-center { position: absolute; left: 50%; top: 0; width: 2px; height: 100%; background: var(--text-dim); }
+.sensitivity-dist { display: flex; align-items: flex-end; gap: 1px; height: 60px; margin: 12px 0; }
+.sensitivity-bar { background: var(--accent); border-radius: 2px 2px 0 0; min-width: 4px; flex: 1; transition: height 0.3s; }
+.audit-spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.hypothesis-box { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin: 12px 0; font-size: 14px; line-height: 1.7; }
+.hypothesis-box code { background: var(--border); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
 </style>
 </head>
 <body>
@@ -613,6 +763,7 @@ canvas { display: block; }
       <button class="nav-item" data-view="cooccurrence">Co-occurrence</button>
       <button class="nav-item" data-view="motifs">Motifs</button>
       <button class="nav-item" data-view="validation">Validation</button>
+      <button class="nav-item" data-view="audit">Audit</button>
     </div>
   </div>
   <div class="main" id="main">
@@ -662,6 +813,7 @@ function renderView(view) {
     case 'cooccurrence': renderCooccurrence(); break;
     case 'motifs': renderMotifs(); break;
     case 'validation': renderValidation(); break;
+    case 'audit': renderAudit(); break;
   }
 }
 
@@ -1247,6 +1399,467 @@ async function renderValidation() {
         </tbody>
       </table>
     </div>` : ''}
+  `;
+}
+
+// ── Audit ────────────────────────────────────────────
+let auditTab = 'verdict';
+let auditData = {};
+
+async function renderAudit() {
+  const main = document.getElementById('main');
+  main.innerHTML = `
+    <h2>Validation Audit</h2>
+    <p style="color:var(--text-dim);margin-bottom:16px">Live falsification tests — verify and challenge the ACP hypothesis interactively.</p>
+    <div class="audit-tabs">
+      <button class="audit-tab ${auditTab==='verdict'?'active':''}" data-tab="verdict">Verdict</button>
+      <button class="audit-tab ${auditTab==='tradition'?'active':''}" data-tab="tradition">Tradition vs ACP</button>
+      <button class="audit-tab ${auditTab==='ablation'?'active':''}" data-tab="ablation">Axis Ablation</button>
+      <button class="audit-tab ${auditTab==='sensitivity'?'active':''}" data-tab="sensitivity">Sensitivity</button>
+      <button class="audit-tab ${auditTab==='archetype'?'active':''}" data-tab="archetype">New Archetypes</button>
+      <button class="audit-tab ${auditTab==='data_quality'?'active':''}" data-tab="data_quality">Data Quality</button>
+    </div>
+    <div id="audit-content"><div class="loading"><span class="audit-spinner"></span>Computing ${auditTab} test...</div></div>
+  `;
+  main.querySelectorAll('.audit-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      auditTab = btn.dataset.tab;
+      renderAudit();
+    });
+  });
+  // Fetch data for this tab
+  const testKey = auditTab === 'verdict' ? 'verdict' : auditTab;
+  if (!auditData[testKey]) {
+    try {
+      auditData[testKey] = await fetchJSON('/api/audit?test=' + testKey);
+    } catch(e) {
+      document.getElementById('audit-content').innerHTML = `<div class="card" style="color:var(--red)">Error: ${e.message}</div>`;
+      return;
+    }
+  }
+  const content = document.getElementById('audit-content');
+  switch(auditTab) {
+    case 'verdict': renderAuditVerdict(content, auditData.verdict); break;
+    case 'tradition': renderAuditTradition(content, auditData.tradition); break;
+    case 'ablation': renderAuditAblation(content, auditData.ablation); break;
+    case 'sensitivity': renderAuditSensitivity(content, auditData.sensitivity); break;
+    case 'archetype': renderAuditArchetype(content, auditData.archetype); break;
+    case 'data_quality': renderAuditDataQuality(content, auditData.data_quality); break;
+  }
+}
+
+function renderAuditVerdict(el, data) {
+  if (!data || !data.criteria) { el.innerHTML = '<p>No verdict data.</p>'; return; }
+  const passCount = data.passed;
+  const totalCount = data.total;
+  const verdictColor = passCount === totalCount ? 'var(--green)' :
+                       passCount >= totalCount - 1 ? 'var(--orange)' : 'var(--red)';
+  el.innerHTML = `
+    <div class="card" style="border-left:4px solid ${verdictColor}">
+      <h3 style="color:${verdictColor};font-size:16px;text-transform:none;letter-spacing:0">
+        ${data.overall_verdict}
+      </h3>
+      <div style="font-size:48px;font-weight:700;color:${verdictColor};margin:12px 0">${passCount} / ${totalCount}</div>
+      <div style="color:var(--text-dim)">falsification criteria passed</div>
+    </div>
+    <div style="margin-top:16px">
+      ${data.criteria.map(c => `
+        <div class="verdict-card ${c.pass ? 'verdict-pass' : 'verdict-fail'}">
+          <div style="display:flex;align-items:center;margin-bottom:6px">
+            <span class="verdict-icon">${c.pass ? '\u2705' : '\u274C'}</span>
+            <strong>${c.criterion}</strong>
+          </div>
+          <div style="color:var(--text-dim);font-size:13px">${c.result}</div>
+          ${c.note ? `<div style="color:var(--text-dim);font-size:12px;margin-top:4px;font-style:italic">${c.note}</div>` : ''}
+        </div>
+      `).join('')}
+    </div>
+    <div class="hypothesis-box" style="margin-top:20px">
+      <strong>Interpretation:</strong> The ACP coordinate system encodes a real but modest signal.
+      Mantel test confirms non-random structure (p=0.029), and coordinates are robust to noise.
+      However, a simpler 1D tradition-similarity baseline outperforms the full 8D system,
+      and 2 of 8 axes actively degrade performance. A reduced 5-6 dimensional system may be more effective.
+    </div>
+  `;
+}
+
+function renderAuditTradition(el, data) {
+  if (!data || data.error) { el.innerHTML = '<p>Error: ' + (data?.error || 'no data') + '</p>'; return; }
+  const acpR = data.acp_8d_distance.spearman_r;
+  const tradR = data.tradition_similarity_1d.spearman_r;
+  const acpWins = data.acp_beats_tradition;
+  const winColor = acpWins ? 'var(--green)' : 'var(--red)';
+  el.innerHTML = `
+    <div class="card">
+      <h3>Does ACP's 8D system beat a simple "same tradition?" check?</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px">
+        <div class="verdict-card ${acpWins ? 'verdict-pass' : 'verdict-fail'}">
+          <div style="font-size:12px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.5px">ACP 8D Distance</div>
+          <div style="font-size:36px;font-weight:700;color:${acpWins ? 'var(--green)' : 'var(--text)'}">${acpR}</div>
+          <div style="font-size:12px;color:var(--text-dim)">Spearman r (p=${data.acp_8d_distance.spearman_p})</div>
+        </div>
+        <div class="verdict-card ${!acpWins ? 'verdict-pass' : 'verdict-fail'}">
+          <div style="font-size:12px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.5px">Tradition 1D Similarity</div>
+          <div style="font-size:36px;font-weight:700;color:${!acpWins ? 'var(--green)' : 'var(--text)'}">${tradR}</div>
+          <div style="font-size:12px;color:var(--text-dim)">Spearman r (p=${data.tradition_similarity_1d.spearman_p})</div>
+        </div>
+      </div>
+      <div class="verdict-card ${acpWins ? 'verdict-pass' : 'verdict-warn'}" style="margin-top:16px">
+        <strong>${acpWins ? 'PASS' : 'FAIL'}:</strong> ${data.conclusion}
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Within vs Across Traditions</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">Does ACP capture structure <em>within</em> traditions, beyond just grouping by tradition?</p>
+      <table>
+        <thead><tr><th>Subset</th><th>Pairs</th><th>Spearman r</th><th>p-value</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Intra-tradition</strong> (same tradition pairs)</td>
+            <td>${data.intra_tradition_acp.n_pairs}</td>
+            <td style="font-family:monospace;color:${data.intra_tradition_acp.spearman_r && data.intra_tradition_acp.spearman_r < 0 ? 'var(--green)' : 'var(--text)'}">${data.intra_tradition_acp.spearman_r ?? 'n/a'}</td>
+            <td style="font-family:monospace">${data.intra_tradition_acp.spearman_p ?? 'n/a'}</td>
+          </tr>
+          <tr>
+            <td><strong>Inter-tradition</strong> (different tradition pairs)</td>
+            <td>${data.inter_tradition_acp.n_pairs}</td>
+            <td style="font-family:monospace;color:${data.inter_tradition_acp.spearman_r && data.inter_tradition_acp.spearman_r < 0 ? 'var(--green)' : 'var(--text)'}">${data.inter_tradition_acp.spearman_r ?? 'n/a'}</td>
+            <td style="font-family:monospace">${data.inter_tradition_acp.spearman_p ?? 'n/a'}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="hypothesis-box" style="margin-top:12px">
+        ${data.intra_tradition_acp.spearman_r && data.intra_tradition_acp.spearman_r < -0.05
+          ? '<strong>Key finding:</strong> ACP shows negative correlation <em>within</em> traditions (r=' + data.intra_tradition_acp.spearman_r + '), meaning it captures archetypal structure beyond tradition labels.'
+          : '<strong>Key finding:</strong> ACP intra-tradition signal is weak, suggesting most predictive power comes from tradition grouping.'}
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Pair Statistics</h3>
+      <div class="stats" style="margin-bottom:0">
+        <div class="stat"><div class="value">${data.n_pairs.toLocaleString()}</div><div class="label">Total Pairs</div></div>
+        <div class="stat"><div class="value">${data.same_tradition_pairs}</div><div class="label">Same Tradition</div></div>
+        <div class="stat"><div class="value">${data.diff_tradition_pairs}</div><div class="label">Different Tradition</div></div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAuditAblation(el, data) {
+  if (!data || data.error) { el.innerHTML = '<p>Error: ' + (data?.error || 'no data') + '</p>'; return; }
+  const baseline = data.full_8d_baseline.spearman_r;
+  const maxAbsDelta = Math.max(...data.ranking.map(r => Math.abs(r.delta_r)), 0.01);
+
+  el.innerHTML = `
+    <div class="card">
+      <h3>Which axes contribute to the ACP signal?</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:8px">
+        Each axis is removed one at a time. Negative delta = removing <em>improves</em> correlation (axis is harmful).
+        Positive delta = removing <em>hurts</em> correlation (axis is beneficial).
+      </p>
+      <div style="margin:16px 0;padding:12px;background:var(--surface2);border-radius:var(--radius)">
+        <strong>8D Baseline:</strong> Spearman r = <code>${baseline}</code> (p=${data.full_8d_baseline.spearman_p})
+      </div>
+      <table>
+        <thead><tr><th>Rank</th><th>Axis</th><th>7D Spearman r</th><th>Delta r</th><th>Impact</th><th style="width:220px">Contribution</th></tr></thead>
+        <tbody>
+          ${data.ranking.map((r, i) => {
+            const absDelta = Math.abs(r.delta_r);
+            const pct = (absDelta / maxAbsDelta) * 100;
+            const isHarmful = r.delta_r < -0.005;
+            const isBeneficial = r.delta_r > 0.005;
+            const color = isHarmful ? 'var(--red)' : isBeneficial ? 'var(--green)' : 'var(--text-dim)';
+            const barColor = isHarmful ? 'var(--red)' : isBeneficial ? 'var(--green)' : 'var(--border)';
+            const dir = r.delta_r < 0 ? 'right' : 'left';
+            return `<tr>
+              <td>${i+1}</td>
+              <td><strong>${r.axis}</strong></td>
+              <td style="font-family:monospace">${data.ablation[r.axis].reduced_spearman_r}</td>
+              <td style="font-family:monospace;color:${color}">${r.delta_r > 0 ? '+' : ''}${r.delta_r}</td>
+              <td><span style="color:${color}">${r.impact}</span></td>
+              <td>
+                <div class="ablation-track">
+                  <div class="ablation-center"></div>
+                  <div class="ablation-fill" style="width:${pct/2}%;margin-left:${dir==='left'?50-pct/2:50}%;background:${barColor}"></div>
+                </div>
+              </td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="verdict-card ${data.harmful_axes.length === 0 ? 'verdict-pass' : 'verdict-fail'}" style="margin-top:16px">
+      <strong>${data.falsification_check}</strong>
+    </div>
+
+    ${data.harmful_axes.length > 0 ? `
+    <div class="card" style="margin-top:16px">
+      <h3>Recommendation</h3>
+      <p style="color:var(--text-dim)">
+        Consider removing <strong>${data.harmful_axes.join(', ')}</strong> to create a
+        ${8 - data.harmful_axes.length}D system. The most important axis is
+        <strong>${data.most_important_axis}</strong> (removing it causes the largest drop in correlation).
+      </p>
+    </div>` : ''}
+  `;
+}
+
+function renderAuditSensitivity(el, data) {
+  if (!data || data.error) { el.innerHTML = '<p>Error: ' + (data?.error || 'no data') + '</p>'; return; }
+  const d = data.perturbed_distribution;
+
+  // Build histogram bins
+  const binCount = 20;
+  const minR = Math.min(d.min, data.baseline_spearman_r) - 0.02;
+  const maxR = Math.max(d.max, 0.02);
+  const binWidth = (maxR - minR) / binCount;
+  const bins = new Array(binCount).fill(0);
+  // We don't have raw values, so show a gaussian approximation
+  for (let i = 0; i < binCount; i++) {
+    const x = minR + (i + 0.5) * binWidth;
+    bins[i] = Math.exp(-0.5 * Math.pow((x - d.mean) / d.std, 2));
+  }
+  const maxBin = Math.max(...bins);
+
+  el.innerHTML = `
+    <div class="card">
+      <h3>Are coordinates robust to noise?</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:16px">
+        Gaussian noise (\u03C3=${data.noise_level}) added to all 8D coordinates across ${data.n_trials} trials.
+        If &ge;95% of trials still show r&lt;0, the result is robust.
+      </p>
+
+      <div class="stats">
+        <div class="stat"><div class="value" style="color:${data.robust?'var(--green)':'var(--red)'}">${data.robust ? 'ROBUST' : 'FRAGILE'}</div><div class="label">Status</div></div>
+        <div class="stat"><div class="value">${data.pct_negative}%</div><div class="label">Trials with r&lt;0</div></div>
+        <div class="stat"><div class="value">${data.baseline_spearman_r}</div><div class="label">Baseline r</div></div>
+        <div class="stat"><div class="value">${d.mean}</div><div class="label">Mean Perturbed r</div></div>
+      </div>
+
+      <div style="margin-top:20px">
+        <h3 style="margin-bottom:8px">Perturbed Distribution (Gaussian approximation)</h3>
+        <div style="position:relative">
+          <div class="sensitivity-dist">
+            ${bins.map((b, i) => {
+              const x = minR + (i + 0.5) * binWidth;
+              const isNeg = x < 0;
+              return `<div class="sensitivity-bar" style="height:${Math.max(2, (b/maxBin)*100)}%;background:${isNeg ? 'var(--green)' : 'var(--red)'}"></div>`;
+            }).join('')}
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-dim);margin-top:4px">
+            <span>${minR.toFixed(3)}</span>
+            <span>0</span>
+            <span>${maxR.toFixed(3)}</span>
+          </div>
+        </div>
+      </div>
+
+      <table style="margin-top:16px">
+        <thead><tr><th>Statistic</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Mean perturbed r</td><td style="font-family:monospace">${d.mean}</td></tr>
+          <tr><td>Std deviation</td><td style="font-family:monospace">${d.std}</td></tr>
+          <tr><td>Min</td><td style="font-family:monospace">${d.min}</td></tr>
+          <tr><td>Max</td><td style="font-family:monospace">${d.max}</td></tr>
+          <tr><td>5th percentile</td><td style="font-family:monospace">${d.percentile_5}</td></tr>
+          <tr><td>95th percentile</td><td style="font-family:monospace">${d.percentile_95}</td></tr>
+          <tr><td>% trials with r &lt; 0</td><td style="font-family:monospace;font-weight:700;color:${data.pct_negative >= 95 ? 'var(--green)' : 'var(--red)'}">${data.pct_negative}%</td></tr>
+          <tr><td>% trials with r &lt; -0.05</td><td style="font-family:monospace">${data.pct_below_threshold}%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="verdict-card ${data.robust ? 'verdict-pass' : 'verdict-fail'}" style="margin-top:16px">
+      <strong>${data.falsification_check}</strong>
+    </div>
+  `;
+}
+
+function renderAuditArchetype(el, data) {
+  if (!data || data.error) { el.innerHTML = '<p>Error: ' + (data?.error || 'no data') + '</p>'; return; }
+  const delta = data.delta_r_removing_new;
+  const deltaColor = Math.abs(delta) < 0.02 ? 'var(--green)' : 'var(--orange)';
+
+  el.innerHTML = `
+    <div class="card">
+      <h3>Are manually-added archetypes driving the signal?</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">
+        Five archetypes (${data.new_archetypes.join(', ')}) were manually added with hand-assigned coordinates.
+        This test checks if removing or perturbing them changes the result.
+      </p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0">
+        <div class="verdict-card verdict-pass">
+          <div style="font-size:12px;color:var(--text-dim);text-transform:uppercase">With New Archetypes</div>
+          <div style="font-size:28px;font-weight:700">${data.with_new.spearman_r}</div>
+          <div style="font-size:12px;color:var(--text-dim)">${data.with_new.n_entities} entities, p=${data.with_new.spearman_p}</div>
+        </div>
+        <div class="verdict-card verdict-pass">
+          <div style="font-size:12px;color:var(--text-dim);text-transform:uppercase">Without New Archetypes</div>
+          <div style="font-size:28px;font-weight:700">${data.without_new.spearman_r}</div>
+          <div style="font-size:12px;color:var(--text-dim)">${data.without_new.n_entities} entities, p=${data.without_new.spearman_p}</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;padding:12px;background:var(--surface2);border-radius:var(--radius)">
+        <span style="color:var(--text-dim)">Delta r (removing new):</span>
+        <span style="font-size:20px;font-weight:700;color:${deltaColor};margin-left:8px">${delta > 0 ? '+' : ''}${delta}</span>
+      </div>
+
+      <div style="margin-top:16px">
+        <h3>Perturbation Test</h3>
+        <p style="color:var(--text-dim);font-size:13px">Only the 5 new archetype coordinates are perturbed (\u03C3=${data.perturbation.noise_level}), ${data.perturbation.n_trials} trials.</p>
+        <table style="margin-top:8px">
+          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Mean perturbed r</td><td style="font-family:monospace">${data.perturbation.mean_r}</td></tr>
+            <tr><td>Std deviation</td><td style="font-family:monospace">${data.perturbation.std_r}</td></tr>
+            <tr><td>% trials with r &lt; 0</td><td style="font-family:monospace;color:${data.perturbation.pct_negative >= 90 ? 'var(--green)' : 'var(--red)'}">${data.perturbation.pct_negative}%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="verdict-card ${Math.abs(delta) < 0.02 ? 'verdict-pass' : 'verdict-warn'}" style="margin-top:16px">
+      <strong>${data.conclusion}</strong>
+    </div>
+  `;
+}
+
+function renderAuditDataQuality(el, data) {
+  if (!data) { el.innerHTML = '<p>No data quality results.</p>'; return; }
+
+  const ea = data.entity_mention_audit || {};
+  const norm = data.normalized_cooccurrence || {};
+  const dedup = data.deduplication_check || {};
+  const unmap = data.unmapped_analysis || {};
+
+  // Entity audit: sum up flags
+  const flagCounts = ea.flags || {};
+  const totalFlags = Object.values(flagCounts).reduce((a,b) => a+b, 0);
+
+  // Normalization: convert methods dict to array
+  const normMethods = norm.ranking || [];
+
+  // Dedup: cross-tradition details
+  const dedupDetails = dedup.shared_archetypes ? dedup.shared_archetypes.details || {} : {};
+  const crossTradCount = dedup.shared_archetypes ? dedup.shared_archetypes.cross_tradition || 0 : 0;
+
+  el.innerHTML = `
+    <div class="card">
+      <h3>Entity Mention Audit</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">Random sample of ${ea.sample_size || 100} entity mentions checked for extraction quality.</p>
+      <div class="stats">
+        <div class="stat"><div class="value" style="color:${totalFlags === 0 ? 'var(--green)' : 'var(--red)'}">${totalFlags}</div><div class="label">Flags Found</div></div>
+        <div class="stat"><div class="value">${ea.sample_size || '-'}</div><div class="label">Samples Checked</div></div>
+        <div class="stat"><div class="value">${ea.total_mentions ? ea.total_mentions.toLocaleString() : '-'}</div><div class="label">Total Mentions</div></div>
+      </div>
+      ${totalFlags > 0 ? `
+        <table>
+          <thead><tr><th>Flag Type</th><th>Count</th></tr></thead>
+          <tbody>${Object.entries(flagCounts).map(([k,v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}</tbody>
+        </table>
+      ` : '<p style="color:var(--green)">All samples passed quality checks.</p>'}
+      ${ea.global_stats ? `
+        <div style="margin-top:12px;font-size:13px;color:var(--text-dim)">
+          Global: ${ea.global_stats.duplicate_offsets} duplicate offsets,
+          ${ea.global_stats.mentions_without_context} mentions without context (${ea.global_stats.pct_without_context}%)
+        </div>
+      ` : ''}
+    </div>
+
+    <div class="card">
+      <h3>Co-occurrence Normalization</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">Which normalization of co-occurrence counts best correlates with ACP distance?</p>
+      ${normMethods.length > 0 ? `
+        <table>
+          <thead><tr><th>Method</th><th>Spearman r</th><th>Strength</th></tr></thead>
+          <tbody>${normMethods.map(m => {
+            const r = m.spearman_r;
+            const absR = Math.abs(r);
+            const details = norm.methods ? norm.methods[m.method] : null;
+            const color = absR > 0.09 ? 'var(--green)' : absR > 0.05 ? 'var(--orange)' : 'var(--red)';
+            return `<tr>
+              <td><strong>${m.method}</strong>${m.method === norm.best_method ? ' <span class="badge badge-mapped">BEST</span>' : ''}</td>
+              <td style="font-family:monospace;color:${color}">${r.toFixed(4)}</td>
+              <td>
+                <div style="width:100px;height:6px;background:var(--border);border-radius:3px;overflow:hidden">
+                  <div style="height:100%;width:${absR*500}%;background:${color};border-radius:3px"></div>
+                </div>
+              </td>
+            </tr>`;
+          }).join('')}</tbody>
+        </table>
+        <div style="margin-top:8px;font-size:13px;color:var(--text-dim)">
+          Best: <strong>${norm.best_method}</strong>
+          ${norm.improvement_over_raw != null ? ` (improvement over raw: ${norm.improvement_over_raw > 0 ? '+' : ''}${norm.improvement_over_raw})` : ''}
+        </div>
+      ` : '<p style="color:var(--text-dim)">No normalization data.</p>'}
+    </div>
+
+    <div class="card">
+      <h3>Cross-Tradition Deduplication</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">Entities sharing the same ACP archetype across different traditions (potential duplicates inflating correlation).</p>
+      <div class="stats">
+        <div class="stat"><div class="value">${crossTradCount}</div><div class="label">Cross-Tradition Shares</div></div>
+        <div class="stat"><div class="value">${dedup.shared_archetypes ? dedup.shared_archetypes.total : '-'}</div><div class="label">Total Shared</div></div>
+        <div class="stat"><div class="value">${dedup.impact ? dedup.impact.pct_of_mappings + '%' : '-'}</div><div class="label">Mappings Affected</div></div>
+      </div>
+      ${Object.keys(dedupDetails).length > 0 ? `
+        <table>
+          <thead><tr><th>Archetype</th><th>Entities</th><th>Traditions</th></tr></thead>
+          <tbody>${Object.entries(dedupDetails).map(([k,v]) => `
+            <tr>
+              <td><strong>${k}</strong></td>
+              <td>${v.entities.join(', ')}</td>
+              <td>${v.traditions.join(', ')}</td>
+            </tr>
+          `).join('')}</tbody>
+        </table>
+      ` : '<p style="color:var(--green)">Minimal cross-tradition duplication. Results not artificially inflated.</p>'}
+    </div>
+
+    <div class="card">
+      <h3>Unmapped Entity Analysis</h3>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:12px">Entities with no ACP archetype mapping &mdash; what are we missing?</p>
+      <div class="stats">
+        <div class="stat"><div class="value">${unmap.unmapped ?? '-'}</div><div class="label">Unmapped Entities</div></div>
+        <div class="stat"><div class="value">${unmap.mention_mass ? unmap.mention_mass.pct_unmapped.toFixed(1) + '%' : '-'}</div><div class="label">Mention Mass</div></div>
+        <div class="stat"><div class="value">${unmap.mapped ?? '-'}</div><div class="label">Mapped Entities</div></div>
+        <div class="stat"><div class="value">${unmap.pct_mapped ? unmap.pct_mapped + '%' : '-'}</div><div class="label">Coverage</div></div>
+      </div>
+      ${unmap.by_type ? `
+        <table>
+          <thead><tr><th>Entity Type</th><th>Count</th><th>Top Unmapped</th></tr></thead>
+          <tbody>${Object.entries(unmap.by_type).sort((a,b) => b[1].count - a[1].count).map(([k,v]) => `
+            <tr>
+              <td><strong>${k}</strong></td>
+              <td>${v.count}</td>
+              <td style="font-size:12px;color:var(--text-dim)">${v.top_5 ? v.top_5.slice(0,3).map(e => e.name || e).join(', ') : '-'}</td>
+            </tr>
+          `).join('')}</tbody>
+        </table>
+      ` : ''}
+      ${unmap.high_importance_unmapped && unmap.high_importance_unmapped.length > 0 ? `
+        <div style="margin-top:12px">
+          <h3>High-Importance Unmapped (&ge;50 mentions)</h3>
+          <table>
+            <thead><tr><th>Entity</th><th>Type</th><th>Tradition</th><th>Mentions</th></tr></thead>
+            <tbody>${unmap.high_importance_unmapped.slice(0,15).map(e => `
+              <tr>
+                <td><strong>${e.name}</strong></td>
+                <td>${e.type}</td>
+                <td>${e.tradition || '-'}</td>
+                <td>${e.mentions}</td>
+              </tr>
+            `).join('')}</tbody>
+          </table>
+        </div>
+      ` : ''}
+    </div>
   `;
 }
 
