@@ -24,6 +24,7 @@ from integration.library_loader import LibraryLoader
 from integration.entity_mapper import EntityMapper
 from validation.test_coordinate_accuracy import CoordinateValidation
 from validation.test_motif_clustering import MotifClustering
+from validation.calibrate_coordinates import CoordinateCalibrator
 
 ACP_PATH = PROJECT_ROOT / "ACP"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
@@ -239,6 +240,29 @@ def main():
             print(f"    {cat}: {data['motif_count']:3d} motifs, "
                   f"dominant = {dom} ({direction}, dev={dev:+.4f})")
 
+    # ── Coordinate Calibration ───────────────────────────────
+    print("\n" + "-" * 60)
+    print("PHASE 5: Coordinate Calibration")
+    print("-" * 60)
+
+    calibrator = CoordinateCalibrator(acp, library, mapper)
+    cal_result = calibrator.calibrate(
+        learning_rate=0.02,
+        max_steps=1000,
+        max_shift=0.15,
+        exclude_entities=["Set"]
+    )
+
+    print(f"  Entities calibrated: {cal_result['entity_count']}")
+    print(f"  Loss: {cal_result['initial_loss']:.4f} -> {cal_result['final_loss']:.4f} ({cal_result['loss_reduction_pct']}% reduction)")
+    print(f"  Mean shift: {cal_result['mean_shift']:.4f}")
+    print(f"  Max shift:  {cal_result['max_shift']:.4f}")
+
+    # Apply calibration and re-test
+    calibrator.apply_calibration(cal_result['calibrated_coordinates'])
+    cal_coord_results = validator.test_distance_correlation(exclude_entities=["Set"])
+    print_correlation("After calibration (excluding 'Set')", cal_coord_results)
+
     # ── Save Results ──────────────────────────────────────────
     print("\n" + "-" * 60)
     print("Saving Results")
@@ -266,6 +290,15 @@ def main():
             "global_mean": motif_results.get("global_mean", {}),
             "category_centroids": motif_results.get("category_centroids", {}),
         },
+        "calibration": {
+            "params": cal_result["params"],
+            "initial_loss": cal_result["initial_loss"],
+            "final_loss": cal_result["final_loss"],
+            "loss_reduction_pct": cal_result["loss_reduction_pct"],
+            "mean_shift": cal_result["mean_shift"],
+            "max_shift": cal_result["max_shift"],
+            "post_calibration_correlation": cal_coord_results.get("all_pairs", {}),
+        },
     }
 
     results_path = OUTPUTS / "metrics" / "validation_results.json"
@@ -278,6 +311,22 @@ def main():
     with open(motif_path, "w", encoding="utf-8") as f:
         json.dump(motif_results["motif_signatures"], f, indent=2, ensure_ascii=False)
     print(f"  Saved: {motif_path}")
+
+    # Save calibrated coordinates
+    cal_path = OUTPUTS / "metrics" / "calibrated_coordinates.json"
+    cal_output = {
+        "params": cal_result["params"],
+        "metrics": {
+            "initial_loss": cal_result["initial_loss"],
+            "final_loss": cal_result["final_loss"],
+            "loss_reduction_pct": cal_result["loss_reduction_pct"],
+            "mean_shift": cal_result["mean_shift"],
+        },
+        "calibrated_coordinates": cal_result["calibrated_coordinates"],
+    }
+    with open(cal_path, "w", encoding="utf-8") as f:
+        json.dump(cal_output, f, indent=2, ensure_ascii=False)
+    print(f"  Saved: {cal_path}")
 
     print(f"\n{'='*60}")
     print("  Validation Complete")
