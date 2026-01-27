@@ -196,8 +196,20 @@ The [Archetypal Compression Protocol](ACP/) provides an 8-dimensional coordinate
 # Check prerequisites
 python scripts/integration/setup_integration.py
 
-# Run full validation (entity mapping + coordinate correlation + motif clustering)
-python scripts/integration/run_validation.py
+# Run full validation (all 8 phases)
+python -m validation.run
+
+# Quick mode (fewer permutations, faster)
+python -m validation.run --quick
+
+# Generate standalone markdown report
+python -m validation.run --report
+
+# Save versioned baseline metrics
+python -m validation.run --baseline
+
+# Run pytest suite
+pytest tests/ -v
 ```
 
 ### Browsing the Data
@@ -312,11 +324,11 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Cross-tradition deduplication: 1 cross-tradition share (Prometheus/Satan), not inflating results
 - [x] Unmapped analysis: 64 entities (44% mentions) unmapped, 42 heroes — ACP scope is deities, documented
 
-### Phase 8: Reproducibility & Reporting
-- [ ] Single-command full validation pipeline
-- [ ] Automated pytest suite
-- [ ] Standalone validation report generator
-- [ ] Versioned metric baselines
+### Phase 8: Reproducibility & Reporting — Complete
+- [x] Single-command validation: `python -m validation.run --full` (all 8 phases)
+- [x] Automated pytest suite: 32 tests across 9 classes, all passing
+- [x] Standalone markdown report generator (`--report` flag)
+- [x] Versioned metric baselines per git commit (`--baseline` flag)
 
 ### Phase 9: Falsification Criteria
 - [ ] Formal null hypothesis definition
