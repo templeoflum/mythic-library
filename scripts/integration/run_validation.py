@@ -28,6 +28,7 @@ from validation.calibrate_coordinates import CoordinateCalibrator
 from validation.statistical_tests import StatisticalTests
 from validation.alternative_metrics import AlternativeMetrics
 from validation.data_quality import DataQualityAuditor
+from validation.falsification import FalsificationTests
 
 ACP_PATH = PROJECT_ROOT / "ACP"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
@@ -512,6 +513,98 @@ def main():
         for e in unmapped_result["high_importance_unmapped"][:10]:
             print(f"        {e['name']} ({e['type']}, {e['tradition']}, {e['mentions']} mentions, {e['texts']} texts)")
 
+    # ── Falsification Criteria (Phase 9) ─────────────────────
+    print("\n" + "-" * 60)
+    print("PHASE 9: Falsification Criteria")
+    print("-" * 60)
+
+    falsification = FalsificationTests(acp_clean, library, mapper_clean)
+
+    # Get p-values from earlier phases
+    perm_p = perm_result.get("empirical_p_value", 1.0) if "error" not in perm_result else 1.0
+    mantel_p_val = mantel_result.get("empirical_p_value", 1.0) if "error" not in mantel_result else 1.0
+
+    print("\n  9a. Formal Hypothesis...")
+    hyp = falsification.formal_hypothesis()
+    print(f"      H0: {hyp['null_hypothesis']}")
+    print(f"      H1: {hyp['alternative_hypothesis']}")
+    print(f"      Threshold: Spearman r < {hyp['success_threshold']['minimum_spearman_r']}, p < {hyp['success_threshold']['maximum_p_value']}")
+
+    print("\n  9b. Tradition Similarity Baseline (1D vs 8D)...")
+    trad_sim_result = falsification.tradition_similarity_test(exclude_entities=["Set"])
+    if "error" not in trad_sim_result:
+        acp_d = trad_sim_result["acp_8d_distance"]
+        trad_d = trad_sim_result["tradition_similarity_1d"]
+        print(f"      ACP 8D:           r={acp_d['spearman_r']}, p={acp_d['spearman_p']}")
+        print(f"      Tradition 1D:     r={trad_d['spearman_r']}, p={trad_d['spearman_p']}")
+        print(f"      Same-tradition pairs: {trad_sim_result['same_tradition_pairs']}")
+        intra = trad_sim_result["intra_tradition_acp"]
+        if intra["spearman_r"] is not None:
+            print(f"      Intra-tradition ACP:  r={intra['spearman_r']} ({intra['n_pairs']} pairs)")
+        inter = trad_sim_result["inter_tradition_acp"]
+        if inter["spearman_r"] is not None:
+            print(f"      Inter-tradition ACP:  r={inter['spearman_r']} ({inter['n_pairs']} pairs)")
+        print(f"      -> ACP beats tradition: {trad_sim_result['acp_beats_tradition']}")
+    else:
+        print(f"      ERROR: {trad_sim_result['error']}")
+
+    print("\n  9c. Axis Ablation Study...")
+    ablation_result = falsification.axis_ablation_study(exclude_entities=["Set"])
+    if "error" not in ablation_result:
+        base = ablation_result["full_8d_baseline"]
+        print(f"      Full 8D baseline: r={base['spearman_r']}")
+        for item in ablation_result["ranking"]:
+            print(f"        Remove {item['axis']:25s}  delta_r={item['delta_r']:+.4f}  ({item['impact']})")
+        print(f"      Most important: {ablation_result['most_important_axis']}")
+        print(f"      Harmful axes: {len(ablation_result['harmful_axes'])} ({', '.join(ablation_result['harmful_axes']) or 'none'})")
+    else:
+        print(f"      ERROR: {ablation_result['error']}")
+
+    print("\n  9d. Coordinate Sensitivity (±0.05 noise, 100 trials)...")
+    sensitivity_result = falsification.coordinate_sensitivity(
+        noise_level=0.05, n_trials=100, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in sensitivity_result:
+        pd = sensitivity_result["perturbed_distribution"]
+        print(f"      Baseline r:     {sensitivity_result['baseline_spearman_r']}")
+        print(f"      Perturbed mean: {pd['mean']} ± {pd['std']}")
+        print(f"      Perturbed range: [{pd['min']}, {pd['max']}]")
+        print(f"      % negative:     {sensitivity_result['pct_negative']:.0f}%")
+        print(f"      Robust: {sensitivity_result['robust']}")
+    else:
+        print(f"      ERROR: {sensitivity_result['error']}")
+
+    print("\n  9e. New Archetype Sensitivity...")
+    new_arch_result = falsification.new_archetype_sensitivity(
+        n_trials=100, noise_level=0.1, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in new_arch_result:
+        print(f"      New archetypes: {', '.join(new_arch_result['new_archetypes'])}")
+        print(f"      With new:    r={new_arch_result['with_new']['spearman_r']} ({new_arch_result['with_new']['n_entities']} entities)")
+        print(f"      Without new: r={new_arch_result['without_new']['spearman_r']} ({new_arch_result['without_new']['n_entities']} entities)")
+        print(f"      Delta r:     {new_arch_result['delta_r_removing_new']}")
+        pert = new_arch_result["perturbation"]
+        print(f"      Perturbation (±{pert['noise_level']}): mean r={pert['mean_r']}, {pert['pct_negative']:.0f}% negative")
+    else:
+        print(f"      ERROR: {new_arch_result['error']}")
+
+    print("\n  9f. Falsification Verdict...")
+    verdict_result = falsification.falsification_verdict(
+        permutation_p=perm_p,
+        mantel_p=mantel_p_val,
+        tradition_result=trad_sim_result if "error" not in trad_sim_result else {},
+        ablation_result=ablation_result if "error" not in ablation_result else {},
+        sensitivity_result=sensitivity_result if "error" not in sensitivity_result else {},
+    )
+    print(f"\n      {'=' * 50}")
+    print(f"      VERDICT: {verdict_result['overall_verdict']}")
+    print(f"      Criteria passed: {verdict_result['passed']}/{verdict_result['total']}")
+    print(f"      {'=' * 50}")
+    for c in verdict_result["criteria"]:
+        status = "PASS" if c["pass"] else "FAIL"
+        print(f"      [{status}] {c['criterion']}")
+        print(f"             {c['result']}")
+
     # ── Save Results ──────────────────────────────────────────
     print("\n" + "-" * 60)
     print("Saving Results")
@@ -568,6 +661,14 @@ def main():
             "normalized_cooccurrence": norm_result,
             "deduplication_check": dedup_result,
             "unmapped_analysis": unmapped_result,
+        },
+        "falsification": {
+            "hypothesis": hyp,
+            "tradition_similarity": trad_sim_result,
+            "axis_ablation": ablation_result,
+            "coordinate_sensitivity": sensitivity_result,
+            "new_archetype_sensitivity": new_arch_result,
+            "verdict": verdict_result,
         },
     }
 

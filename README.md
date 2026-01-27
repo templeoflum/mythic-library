@@ -80,9 +80,14 @@ mythic-library/
 │   ├── library_loader.py           # Query mythic_patterns.db
 │   └── entity_mapper.py            # Map library entities → ACP archetypes
 ├── validation/                     # Hypothesis tests
+│   ├── run.py                      # Single-command validation entry point
 │   ├── test_coordinate_accuracy.py # Co-occurrence vs ACP distance
 │   ├── test_motif_clustering.py    # Motif signatures in 8D space
-│   └── calibrate_coordinates.py    # Gradient descent coordinate calibration
+│   ├── calibrate_coordinates.py    # Gradient descent coordinate calibration
+│   ├── statistical_tests.py        # Permutation, bootstrap, cross-validation
+│   ├── alternative_metrics.py      # Cosine, Mantel, per-axis, motif similarity
+│   ├── data_quality.py             # Entity audits, normalization, deduplication
+│   └── falsification.py            # Formal null hypothesis & falsification criteria
 ├── ACP/                            # Archetypal Compression Protocol (subtree)
 │   ├── schema/                     # Primordials, axes, ontology
 │   └── archetypes/                 # 539 archetypes as JSON-LD
@@ -196,7 +201,7 @@ The [Archetypal Compression Protocol](ACP/) provides an 8-dimensional coordinate
 # Check prerequisites
 python scripts/integration/setup_integration.py
 
-# Run full validation (all 8 phases)
+# Run full validation (all 9 phases)
 python -m validation.run
 
 # Quick mode (fewer permutations, faster)
@@ -231,7 +236,7 @@ The explorer provides views for entity details, ACP coordinate projections, co-o
 | Spearman r (clean) | -0.095 (p<0.000001) | -0.233 (p<0.000001) |
 | Norse intra-tradition | -0.354 (p=0.008) | — |
 
-The negative correlation is consistent with the ACP hypothesis: archetypes closer in 8D coordinate space co-occur more often in narratives. The correlation is statistically significant but modest (r=-0.23 explains ~5% of variance). Rigorous falsification testing (permutation tests, cross-validation, null models) is the next priority.
+The negative correlation is consistent with the ACP hypothesis: archetypes closer in 8D coordinate space co-occur more often in narratives. The correlation is statistically significant but modest (r=-0.23 explains ~5% of variance). Falsification testing reveals the signal partially survives: Mantel test is significant (p=0.029), coordinates are robust to noise, but a simpler 1D tradition model outperforms 8D ACP (|r|=0.361 vs |r|=0.095). Two axes (active-receptive, ascent-descent) are harmful — a 5-6D system may be more effective.
 
 ## Validation Approach
 
@@ -330,12 +335,13 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Standalone markdown report generator (`--report` flag)
 - [x] Versioned metric baselines per git commit (`--baseline` flag)
 
-### Phase 9: Falsification Criteria
-- [ ] Formal null hypothesis definition
-- [ ] Pre-registered success threshold
-- [ ] Alternative hypothesis testing (simpler models)
-- [ ] Axis ablation study
-- [ ] Coordinate sensitivity analysis
+### Phase 9: Falsification Criteria — Complete
+- [x] Formal null hypothesis: H0 = "ACP 8D coordinates no better than random at predicting co-occurrence"
+- [x] Pre-registered threshold: Mantel p < 0.05 required
+- [x] Alternative model: 1D tradition beats 8D ACP (|r|=0.361 vs |r|=0.095) — but ACP shows intra-tradition signal
+- [x] Axis ablation: 2 harmful axes (active-receptive, ascent-descent), 5-6D system may be better
+- [x] Coordinate sensitivity: 100% robust to ±0.05 noise, new archetypes don't drive signal
+- [x] Verdict: PARTIALLY SURVIVES — real but modest signal, tradition is a stronger predictor
 
 ## Contributing
 

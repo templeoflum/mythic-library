@@ -29,6 +29,7 @@ from validation.calibrate_coordinates import CoordinateCalibrator
 from validation.statistical_tests import StatisticalTests
 from validation.alternative_metrics import AlternativeMetrics
 from validation.data_quality import DataQualityAuditor
+from validation.falsification import FalsificationTests
 
 ACP_PATH = PROJECT_ROOT / "ACP"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
@@ -64,7 +65,7 @@ def run_validation(full: bool = True) -> dict:
           f"Segments: {lib_summary['segments']}")
 
     # ── Entity Mapping ───────────────────────────────────────
-    print("\n[1/8] Entity Mapping...")
+    print("\n[1/9] Entity Mapping...")
     mapper = EntityMapper(acp, library)
     map_summary = mapper.auto_map_all()
     pct = map_summary['total_mapped'] / max(map_summary['total_entities'], 1) * 100
@@ -74,7 +75,7 @@ def run_validation(full: bool = True) -> dict:
     mapper.save_mappings(str(OUTPUTS / "mappings" / "entity_to_archetype.json"))
 
     # ── Coordinate Validation ────────────────────────────────
-    print("\n[2/8] Coordinate Validation...")
+    print("\n[2/9] Coordinate Validation...")
     validator = CoordinateValidation(acp, library, mapper)
     coord_results = validator.test_distance_correlation(exclude_entities=["Set"])
     if "error" not in coord_results:
@@ -82,20 +83,20 @@ def run_validation(full: bool = True) -> dict:
         print(f"  Spearman r={ap['spearman_r']:+.4f} (p={ap['spearman_p']:.6f})")
 
     # ── Per-Tradition ────────────────────────────────────────
-    print("\n[3/8] Per-Tradition Correlation...")
+    print("\n[3/9] Per-Tradition Correlation...")
     tradition_results = validator.test_per_tradition_correlation(min_entities=3)
     sig_trads = [t for t, d in tradition_results.items() if d.get("spearman_p", 1) < 0.05]
     print(f"  {len(tradition_results)} traditions analyzed, {len(sig_trads)} significant at p<0.05")
 
     # ── Motif Clustering ─────────────────────────────────────
-    print("\n[4/8] Motif Clustering...")
+    print("\n[4/9] Motif Clustering...")
     motif_analyzer = MotifClustering(acp, library, mapper)
     motif_results = motif_analyzer.find_motif_category_patterns()
     ms = motif_results["summary"]
     print(f"  {ms['total_motifs_analyzed']} motifs, {ms['categories_analyzed']} categories")
 
     # ── Calibration ──────────────────────────────────────────
-    print("\n[5/8] Coordinate Calibration...")
+    print("\n[5/9] Coordinate Calibration...")
     calibrator = CoordinateCalibrator(acp, library, mapper)
     cal_result = calibrator.calibrate(
         learning_rate=0.02, max_steps=1000, max_shift=0.15, exclude_entities=["Set"]
@@ -108,7 +109,7 @@ def run_validation(full: bool = True) -> dict:
         print(f"  Post-cal Spearman r={cal_coord['all_pairs']['spearman_r']:+.4f}")
 
     # ── Statistical Rigor ────────────────────────────────────
-    print("\n[6/8] Statistical Rigor...")
+    print("\n[6/9] Statistical Rigor...")
     acp_clean = ACPLoader(str(ACP_PATH))
     mapper_clean = EntityMapper(acp_clean, library)
     mapper_clean.auto_map_all()
@@ -155,7 +156,7 @@ def run_validation(full: bool = True) -> dict:
         )
 
     # ── Alternative Metrics ──────────────────────────────────
-    print("\n[7/8] Alternative Metrics...")
+    print("\n[7/9] Alternative Metrics...")
     alt_metrics = AlternativeMetrics(acp_clean, library, mapper_clean)
 
     cosine_result = alt_metrics.cosine_similarity_test(exclude_entities=["Set"])
@@ -175,7 +176,7 @@ def run_validation(full: bool = True) -> dict:
         print(f"  Mantel p={mantel_result['empirical_p_value']}")
 
     # ── Data Quality ─────────────────────────────────────────
-    print("\n[8/8] Data Quality...")
+    print("\n[8/9] Data Quality...")
     dq = DataQualityAuditor(acp_clean, library, mapper_clean)
     audit_result = dq.entity_mention_audit(sample_size=100, seed=42)
     norm_result = dq.normalized_cooccurrence_test(exclude_entities=["Set"])
@@ -184,6 +185,52 @@ def run_validation(full: bool = True) -> dict:
     print(f"  Audit flags: {sum(audit_result['flags'].values())}")
     print(f"  Best normalization: {norm_result.get('best_method', 'N/A')}")
     print(f"  Unmapped: {unmapped_result['unmapped']}/{unmapped_result['total_entities']}")
+
+    # ── Falsification Criteria (Phase 9) ─────────────────────
+    print("\n[9/9] Falsification Criteria...")
+    falsification = FalsificationTests(acp_clean, library, mapper_clean)
+
+    # Get p-values from Phase 6
+    perm_p = perm_result.get("empirical_p_value", 1.0) if "error" not in perm_result else 1.0
+    mantel_p = mantel_result.get("empirical_p_value", 1.0) if "error" not in mantel_result else 1.0
+
+    trad_sim_result = falsification.tradition_similarity_test(exclude_entities=["Set"])
+    if "error" not in trad_sim_result:
+        print(f"  Tradition test: ACP r={trad_sim_result['acp_8d_distance']['spearman_r']}, "
+              f"1D tradition r={trad_sim_result['tradition_similarity_1d']['spearman_r']}, "
+              f"ACP wins: {trad_sim_result['acp_beats_tradition']}")
+
+    ablation_result = falsification.axis_ablation_study(exclude_entities=["Set"])
+    if "error" not in ablation_result:
+        print(f"  Ablation: most important={ablation_result['most_important_axis']}, "
+              f"harmful={len(ablation_result['harmful_axes'])}")
+
+    n_sens = 100 if full else 50
+    sensitivity_result = falsification.coordinate_sensitivity(
+        noise_level=0.05, n_trials=n_sens, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in sensitivity_result:
+        print(f"  Sensitivity: {sensitivity_result['pct_negative']:.0f}% negative after ±0.05 noise, "
+              f"robust={sensitivity_result['robust']}")
+
+    new_arch_result = falsification.new_archetype_sensitivity(
+        n_trials=n_sens, noise_level=0.1, exclude_entities=["Set"], seed=42
+    )
+    if "error" not in new_arch_result:
+        print(f"  New archetype sensitivity: delta_r={new_arch_result['delta_r_removing_new']}")
+
+    verdict_result = falsification.falsification_verdict(
+        permutation_p=perm_p,
+        mantel_p=mantel_p,
+        tradition_result=trad_sim_result if "error" not in trad_sim_result else {},
+        ablation_result=ablation_result if "error" not in ablation_result else {},
+        sensitivity_result=sensitivity_result if "error" not in sensitivity_result else {},
+    )
+    print(f"\n  VERDICT: {verdict_result['overall_verdict']}")
+    print(f"  Criteria passed: {verdict_result['passed']}/{verdict_result['total']}")
+    for c in verdict_result["criteria"]:
+        status = "PASS" if c["pass"] else "FAIL"
+        print(f"    [{status}] {c['criterion']}")
 
     # ── Assemble results ─────────────────────────────────────
     results = {
@@ -229,6 +276,14 @@ def run_validation(full: bool = True) -> dict:
             "normalized_cooccurrence": norm_result,
             "deduplication_check": dedup_result,
             "unmapped_analysis": unmapped_result,
+        },
+        "falsification": {
+            "hypothesis": falsification.formal_hypothesis(),
+            "tradition_similarity": trad_sim_result,
+            "axis_ablation": ablation_result,
+            "coordinate_sensitivity": sensitivity_result,
+            "new_archetype_sensitivity": new_arch_result,
+            "verdict": verdict_result,
         },
     }
 
