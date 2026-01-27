@@ -27,6 +27,7 @@ from validation.test_motif_clustering import MotifClustering
 from validation.calibrate_coordinates import CoordinateCalibrator
 from validation.statistical_tests import StatisticalTests
 from validation.alternative_metrics import AlternativeMetrics
+from validation.data_quality import DataQualityAuditor
 
 ACP_PATH = PROJECT_ROOT / "ACP"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
@@ -440,6 +441,77 @@ def main():
     else:
         print(f"      ERROR: {motif_sim_result['error']}")
 
+    # ── Data Quality (Phase 7) ───────────────────────────────
+    print("\n" + "-" * 60)
+    print("PHASE 8: Data Quality & Coverage")
+    print("-" * 60)
+
+    dq_auditor = DataQualityAuditor(acp_clean, library, mapper_clean)
+
+    # 8a. Entity mention audit
+    print("\n  8a. Entity Mention Audit (100 random samples)...")
+    audit_result = dq_auditor.entity_mention_audit(sample_size=100, seed=42)
+    gs = audit_result["global_stats"]
+    print(f"      Total mentions: {audit_result['total_mentions']}")
+    print(f"      Sampled: {audit_result['sample_size']}")
+    print(f"      Flags in sample: {audit_result['flags']}")
+    print(f"      Global: {gs['mentions_without_context']} without context "
+          f"({gs['pct_without_context']}%), {gs['duplicate_offsets']} duplicate offsets")
+    if audit_result.get("flagged_samples"):
+        for flag_type, examples in audit_result["flagged_samples"].items():
+            if examples:
+                print(f"      {flag_type} examples:")
+                for ex in examples[:3]:
+                    print(f"        {ex['entity']} in '{ex['text']}' (mention: {ex['mention_text']})")
+
+    # 8b. Co-occurrence normalization
+    print("\n  8b. Co-occurrence Normalization...")
+    norm_result = dq_auditor.normalized_cooccurrence_test(exclude_entities=["Set"])
+    if "error" not in norm_result:
+        print(f"      Pairs: {norm_result['n_pairs']}")
+        for item in norm_result["ranking"]:
+            marker = " <-- best" if item["method"] == norm_result["best_method"] else ""
+            print(f"      {item['method']:25s}  r={item['spearman_r']:+.4f}{marker}")
+        imp = norm_result["improvement_over_raw"]
+        if imp > 0:
+            print(f"      Best method improves over raw by {imp}")
+        else:
+            print(f"      Raw co-occurrence is already the best predictor")
+    else:
+        print(f"      ERROR: {norm_result['error']}")
+
+    # 8c. Cross-tradition deduplication
+    print("\n  8c. Cross-Tradition Entity Deduplication...")
+    dedup_result = dq_auditor.cross_tradition_deduplication_check()
+    sa = dedup_result["shared_archetypes"]
+    impact = dedup_result["impact"]
+    print(f"      Shared archetypes: {sa['total']} ({sa['cross_tradition']} cross-tradition, "
+          f"{sa['same_tradition']} same-tradition)")
+    print(f"      Entities affected: {impact['entities_sharing_archetypes']} "
+          f"({impact['pct_of_mappings']}% of mappings)")
+    if sa["details"]:
+        print(f"      Cross-tradition details:")
+        for arch_id, detail in list(sa["details"].items())[:10]:
+            print(f"        {arch_id}: {', '.join(detail['entities'])} ({', '.join(detail['traditions'])})")
+
+    # 8d. Unmapped entity analysis
+    print("\n  8d. Unmapped Entity Analysis...")
+    unmapped_result = dq_auditor.unmapped_entity_analysis()
+    mm = unmapped_result["mention_mass"]
+    print(f"      Mapped: {unmapped_result['mapped']}/{unmapped_result['total_entities']} "
+          f"({unmapped_result['pct_mapped']}%)")
+    print(f"      Unmapped mention mass: {mm['unmapped_mentions']:,} mentions "
+          f"({mm['pct_unmapped']}% of total)")
+    print(f"      By type:")
+    for etype, data in unmapped_result["by_type"].items():
+        print(f"        {etype}: {data['count']} unmapped")
+        for e in data["top_5"][:3]:
+            print(f"          {e['name']} ({e['tradition']}, {e['mentions']} mentions)")
+    if unmapped_result["high_importance_unmapped"]:
+        print(f"      High-importance unmapped (>=50 mentions):")
+        for e in unmapped_result["high_importance_unmapped"][:10]:
+            print(f"        {e['name']} ({e['type']}, {e['tradition']}, {e['mentions']} mentions, {e['texts']} texts)")
+
     # ── Save Results ──────────────────────────────────────────
     print("\n" + "-" * 60)
     print("Saving Results")
@@ -490,6 +562,12 @@ def main():
             "axis_weighted_distance": weighted_result,
             "mantel_test": mantel_result,
             "motif_similarity": motif_sim_result,
+        },
+        "data_quality": {
+            "entity_mention_audit": audit_result,
+            "normalized_cooccurrence": norm_result,
+            "deduplication_check": dedup_result,
+            "unmapped_analysis": unmapped_result,
         },
     }
 

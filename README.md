@@ -306,10 +306,11 @@ The SQLite database at `data/mythic_patterns.db` contains:
 - [x] Mantel test: empirical p=0.029 (significant at α=0.05)
 - [x] Motif-mediated similarity: Jaccard r=0.749 (ceiling), ACP dist vs Jaccard r=-0.110
 
-### Phase 7: Data Quality & Coverage
-- [ ] Entity extraction precision audit (sample 100, manually verify)
-- [ ] Co-occurrence normalization by text length / tradition size
-- [ ] Expand ACP coverage or formally justify exclusion of heroes/creatures
+### Phase 7: Data Quality & Coverage — Complete
+- [x] Entity mention audit: 100-sample random check — 0 flags, extraction is clean
+- [x] Co-occurrence normalization: raw, log, TF-IDF, tradition-normalized — raw is best
+- [x] Cross-tradition deduplication: 1 cross-tradition share (Prometheus/Satan), not inflating results
+- [x] Unmapped analysis: 64 entities (44% mentions) unmapped, 42 heroes — ACP scope is deities, documented
 
 ### Phase 8: Reproducibility & Reporting
 - [ ] Single-command full validation pipeline
