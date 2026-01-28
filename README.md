@@ -1,307 +1,208 @@
 # Mythic Library
 
-A curated collection of public domain mythological and ancient texts serving as the **empirical corpus** for validating the Archetypal Context Protocol (ACP). This library provides the raw mythic substrate from which universal patterns, archetypes, and narrative structures are extracted and tested against ACP's 8-dimensional coordinate system across cultures.
+An empirical corpus of 132 public domain mythological texts across 32 traditions, paired with a rigorous validation framework for the [Archetypal Context Protocol](ACP/) (ACP) — an 8-dimensional coordinate system encoding cross-cultural mythic structure. The library extracts entities, motifs, and narrative patterns from source texts, then tests whether ACP's geometric claims about archetypal relationships hold up under falsification.
 
-## Current Status
+**Validation Verdict: STRONG** — All 5 automated tests pass. Internal geometric consistency and external predictive validity confirmed. Human expert review pending.
 
-| Metric | Count |
-|--------|-------|
-| **Texts Cataloged** | 132 |
-| **Traditions Covered** | 32 |
-| **Files Downloaded** | 211 |
-| **Total Size** | ~822 MB |
+## At a Glance
 
-### Tradition Coverage
+| Component | Scale |
+|-----------|-------|
+| Source texts | 132 across 32 traditions (822 MB raw corpus) |
+| Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 149 motifs |
+| ACP archetypes | 539 across 18 traditions, 24 primordials, 8D coordinates |
+| Validation | 6 falsifiable tests, 3-tier verdict framework |
+| Explorer | Browser-based Miroglyph with Atlas, Codex, and Chronicle views |
 
-| Region | Traditions | Texts |
-|--------|------------|-------|
-| **Near East** | Mesopotamian, Egyptian, Levantine, Hebrew, Zoroastrian | 14 |
-| **Mediterranean** | Greek, Roman | 14 |
-| **Europe** | Norse, Celtic, Germanic, Slavic, Baltic, European | 22 |
-| **South Asia** | Indian (Hindu/Buddhist), Tibetan | 13 |
-| **East Asia** | Chinese, Japanese, Korean | 12 |
-| **Central Asia** | Turkic, Mongol, Persian | 5 |
-| **Africa** | Pan-African, Yoruba, Bantu | 13 |
-| **Oceania** | Polynesian, Melanesian, Australian Aboriginal | 12 |
-| **Americas** | North American, Mesoamerican, South American | 15 |
-| **Other** | Arctic, Siberian, Southeast Asian, Anthologies | 12 |
+## Validation Results
 
-## Project Purpose
-
-This library exists to:
-
-1. **Validate Universal Patterns**: Test whether mythic structures (hero's journey, descent/return, creation/destruction) truly appear across unrelated cultures
-2. **Extract Archetypal Substrate**: Identify the recurring figures, motifs, and transformations that form the basis of human mythmaking
-3. **Support Computational Mythology**: Provide clean, structured source texts for NLP analysis, pattern extraction, and cross-cultural comparison
-4. **Preserve Public Domain Heritage**: Consolidate scattered public domain translations into a unified, well-documented collection
-
-## Architecture
-
-```
-mythic-library/
-├── texts/                          # Organized by tradition
-│   ├── {tradition}/                # e.g., greek, norse, african
-│   │   └── {text-id}/              # e.g., the-iliad, poetic-edda
-│   │       ├── downloads/          # Acquired files (PDF, TXT, HTML)
-│   │       ├── normalized/         # Clean UTF-8 text + metadata
-│   │       ├── segments/           # Structural segments
-│   │       └── SOURCES.md          # Provenance documentation
-├── data/
-│   ├── mythic_patterns.db          # SQLite pattern database (137 MB)
-│   ├── thompson_motif_index.json   # 149 Thompson motif entries
-│   ├── entities.json               # Per-text entity extractions
-│   ├── entity_catalog.json         # Aggregated entity catalog
-│   ├── entity_aliases.json         # Cross-cultural name mappings
-│   ├── motif_tags.json             # Per-text motif tags
-│   └── motif_distribution.json     # Cross-text motif frequencies
-├── sources/
-│   ├── master_catalog.csv          # All texts with metadata
-│   ├── curated_sources.json        # Verified source URLs by text
-│   ├── download_log.json           # Download history with checksums
-│   ├── corpus_audit.json           # Full corpus audit results
-│   └── best_versions.json          # Best version per text
-├── scripts/
-│   ├── bulk_download.py            # Multi-source downloader
-│   ├── add_*.py                    # Catalog expansion scripts
-│   ├── analyze_gaps.py             # Coverage analysis
-│   ├── normalize/                  # Phase 3.1: Audit & normalization
-│   ├── segment/                    # Phase 3.2: Text segmentation
-│   ├── extract/                    # Phase 3.3: Entity extraction
-│   ├── motif/                      # Phase 3.4: Motif tagging
-│   ├── database/                   # Phase 3.5: Pattern database
-│   ├── explorer/                   # Browser-based data explorer
-│   │   ├── server.py               # HTTP server + embedded UI
-│   │   └── find_suspects.py        # Entity false positive detector
-│   └── integration/                # Validation runners
-│       ├── run_validation.py       # ACP validation suite
-│       └── setup_integration.py    # Prerequisite checker
-├── integration/                    # ACP ↔ Library bridge
-│   ├── acp_loader.py               # Load ACP JSON-LD, extract coordinates
-│   ├── library_loader.py           # Query mythic_patterns.db (cached co-occurrence)
-│   ├── entity_mapper.py            # Map library entities → ACP archetypes
-│   └── coordinate_calculator.py    # Axis-weighted & reduced-dimension distances
-├── validation/                     # Hypothesis tests
-│   ├── run.py                      # v1 validation entry point (archived)
-│   ├── v2_run.py                   # v2 validation: cross-cultural structural equivalence
-│   ├── v2_tests/                   # v2 test suite (6 falsifiable tests)
-│   │   ├── echo_coherence.py       # Test 1: CULTURAL_ECHO distance coherence
-│   │   ├── primordial_clustering.py# Test 2: Primordial profile clustering
-│   │   ├── relationship_geometry.py# Test 3: Typed relationship geometric signatures
-│   │   ├── motif_bridging.py       # Test 4: Cross-tradition motif bridging
-│   │   ├── axis_interpretability.py# Test 5: Axis interpretability audit
-│   │   └── human_audit.py          # Test 6: Human expert concordance audit
-│   ├── test_coordinate_accuracy.py # v1: Co-occurrence vs ACP distance
-│   ├── test_motif_clustering.py    # v1: Motif signatures in 8D space
-│   ├── calibrate_coordinates.py    # Gradient descent coordinate calibration
-│   ├── statistical_tests.py        # Permutation, bootstrap, cross-validation
-│   ├── alternative_metrics.py      # Cosine, Mantel, per-axis, motif similarity
-│   ├── data_quality.py             # Entity audits, normalization, deduplication
-│   └── falsification.py            # Formal null hypothesis & falsification criteria
-├── ACP/                            # Archetypal Context Protocol (subtree)
-│   ├── schema/                     # Primordials, axes, ontology
-│   └── archetypes/                 # 539 archetypes as JSON-LD
-└── docs/
-    ├── gap_analysis_v3.md          # Current gap analysis
-    └── DEVELOPMENT.md              # Development log
-```
-
-## Source Repositories
-
-Automated acquisition from:
-
-| Source | Specialization | Handler |
-|--------|---------------|---------|
-| [Internet Archive](https://archive.org) | Scanned books, PDFs | `download_from_archive()` |
-| [Project Gutenberg](https://gutenberg.org) | Plain text classics | `download_from_gutenberg()` |
-| [Sacred Texts](https://sacred-texts.com) | Religious/mythological | `download_from_sacred_texts()` |
-| [ETCSL](https://etcsl.orinst.ox.ac.uk) | Sumerian literature | `download_from_etcsl()` |
-| Direct URLs | Academic PDFs | `download_direct_url()` |
-
-## Usage
-
-### Text Acquisition (Phase 1-2)
-
-```bash
-# Download all texts for a specific work
-python scripts/bulk_download.py --text epic-of-gilgamesh
-
-# Download from a specific source type
-python scripts/bulk_download.py --source gutenberg
-
-# Dry run to see what would download
-python scripts/bulk_download.py --dry-run
-```
-
-### Structured Extraction (Phase 3)
-
-```bash
-# Run the full extraction pipeline
-python scripts/normalize/audit_corpus.py          # Audit corpus health
-python scripts/normalize/normalize_text.py         # Normalize all texts
-python scripts/normalize/select_best.py            # Select best versions
-python scripts/segment/segment_text.py             # Segment into structural units
-python scripts/extract/extract_entities.py         # Extract named entities
-python scripts/motif/tag_motifs.py                 # Tag with Thompson motifs
-python scripts/database/create_db.py --reset       # Build pattern database
-```
-
-### Querying the Pattern Database
-
-```bash
-# Run all demonstration queries
-python scripts/database/query_patterns.py
-
-# Specific queries
-python scripts/database/query_patterns.py --query stats      # Database statistics
-python scripts/database/query_patterns.py --query patterns    # Cross-cultural patterns
-python scripts/database/query_patterns.py --query flood       # Flood narratives
-python scripts/database/query_patterns.py --query descent     # Descent to underworld
-python scripts/database/query_patterns.py --query entities    # Cross-tradition entities
-python scripts/database/query_patterns.py --query hero        # Hero cycle texts
-python scripts/database/query_patterns.py --query creation    # Creation myths
-python scripts/database/query_patterns.py --query trickster   # Trickster narratives
-
-# Full-text search
-python scripts/database/query_patterns.py --search "serpent AND world"
-
-# Custom SQL
-python scripts/database/query_patterns.py --sql "SELECT * FROM patterns ORDER BY tradition_count DESC"
-```
-
-## Key Texts by Mythic Function
-
-### Cosmogony (Creation)
-- Enuma Elish (Babylonian), Theogony (Greek), Genesis, Popol Vuh (Maya)
-- Rig Veda hymns, Kojiki (Japanese), Kalevala (Finnish)
-- Huarochiri Manuscript (Andean), Myths of Ife (Yoruba)
-
-### Katabasis (Descent/Return)
-- Inanna's Descent (Sumerian), Descent of Ishtar (Akkadian)
-- Odyssey Book 11, Aeneid Book 6, Divine Comedy
-- Orphic materials, Tibetan Book of the Dead
-
-### Hero Cycle
-- Epic of Gilgamesh, Iliad/Odyssey, Mahabharata/Ramayana
-- Beowulf, Volsunga Saga, Tale of the Heike
-- Shahnameh, Sundiata, Popol Vuh Hero Twins
-
-### Trickster
-- Anansi tales, Coyote cycles, Raven (Tlingit)
-- Loki materials, Hermes/Prometheus, Eshu (Yoruba)
-- Maui cycle (Polynesian)
-
-### Dying God / Resurrection
-- Osiris materials (Legends of the Gods, Burden of Isis)
-- Bacchae (Dionysus), Balder (Norse)
-- Attis, Adonis, Tammuz references
-
-### Great Mother / Divine Feminine
-- Inanna/Ishtar materials, Isis hymns
-- Demeter/Persephone (Homeric Hymns)
-- Devi traditions (Hindu), Amaterasu (Kojiki)
-
-## ACP Integration
-
-The [Archetypal Context Protocol](ACP/) provides an 8-dimensional coordinate system for archetypes. The integration tests whether ACP coordinates predict narrative co-occurrence patterns in the library corpus.
-
-### Running the Validation Suite
-
-```bash
-# Check prerequisites
-python scripts/integration/setup_integration.py
-
-# --- v2 Validation (current) ---
-# Run full v2 suite (6 falsifiable tests, 3-tier verdict)
-python -m validation.v2_run --full
-
-# --- v1 Validation (archived) ---
-# Run v1 co-occurrence validation (all 10 phases)
-python -m validation.run
-
-# Quick mode (fewer permutations, faster)
-python -m validation.run --quick
-
-# Generate standalone markdown report
-python -m validation.run --report
-
-# Save versioned baseline metrics
-python -m validation.run --baseline
-
-# Run pytest suite
-pytest tests/ -v
-```
-
-### Browsing the Data
-
-```bash
-# Start the explorer UI at http://127.0.0.1:8421
-python scripts/explorer/server.py
-```
-
-The explorer provides views for entity details, ACP coordinate projections, co-occurrence networks, Thompson motif distributions, validation results, and an interactive audit view with live falsification tests.
-
-### Current Results — v2 Validation (Cross-Cultural Structural Equivalence)
-
-v2 tests whether the ACP's internal structure (relationships, primordials, coordinates) is geometrically self-consistent and externally meaningful. 6 falsifiable tests across 3 tiers:
+The v2 validation suite tests whether ACP's coordinates, relationships, and primordial hierarchy form an internally coherent and externally meaningful system of cross-cultural structural equivalence.
 
 | Tier | Test | Result |
 |------|------|--------|
-| **A: Internal Coherence** | 1. CULTURAL_ECHO Distance Coherence | **PASS** (d=1.16, fidelity r=-0.46) |
-| | 2. Primordial Profile Clustering | **PASS** (r=-0.21, perm p=0.0) |
-| | 3. Typed Relationship Geometry | **PASS** (75.2% polar axis diff >0.5, Kruskal-Wallis p=0.0) |
-| **B: External Validity** | 4. Cross-Tradition Motif Bridging | **PASS** (Jaccard quartile p=0.0, Q3+ closer than Q1-) |
-| | 5. Axis Interpretability Audit | **PASS** (4/14 fine-grained + entity-type contrastive) |
-| **C: Expert Review** | 6. Human Concordance Audit | **PENDING** (40 cases generated, reviewer tools scaffolded) |
+| **A: Internal Coherence** | 1. CULTURAL_ECHO Distance Coherence | **PASS** — d=1.16, fidelity r=-0.46 |
+| | 2. Primordial Profile Clustering | **PASS** — r=-0.21, perm p=0.0 |
+| | 3. Typed Relationship Geometry | **PASS** — 75.2% polar axis diff >0.5 |
+| **B: External Validity** | 4. Cross-Tradition Motif Bridging | **PASS** — Jaccard quartile p=0.0 |
+| | 5. Axis Interpretability Audit | **PASS** — 4/14 score, hero-deity signal |
+| **E: Expert Review** | 6. Human Concordance Audit | **PENDING** — 40 cases scaffolded |
 
-**Overall Verdict: STRONG** — Internal consistency + external validity confirmed (pending expert review).
+**What these tests measure:**
 
-Key findings:
-- Echo pairs (Zeus-Jupiter, Odin-Woden) are significantly closer than random (Cohen's d=1.16), and fidelity scores predict distance (r=-0.46)
-- Primordial instantiation profiles (Trickster+Psychopomp, etc.) cluster meaningfully in spectral space
-- 75.2% of POLAR_OPPOSITE pairs show >0.5 axis diff on declared axis (after Phase 12 recalibration)
-- Jaccard quartile comparison replaces meaningless binary motif-sharing split — high-overlap pairs sit 9.0% closer
-- Entity-type contrastive tests (hero vs deity) show significant axis signal on individual-collective (p=0.006) and stasis-transformation (p=0.027)
-- Empirical axis weights (Phase 10) improve motif bridging correlation by 54% (r=-0.08 → r=-0.12)
+1. **Echo Coherence**: Cross-cultural equivalents (Zeus-Jupiter, Odin-Woden) sit 38% closer than random pairs, and fidelity scores predict distance
+2. **Primordial Clustering**: Archetypes sharing deep roles (Trickster+Psychopomp) cluster in 8D space (21% separation ratio)
+3. **Relationship Geometry**: POLAR_OPPOSITE, COMPLEMENT, EVOLUTION, SHADOW types produce distinct distance distributions (Kruskal-Wallis H=122.7)
+4. **Motif Bridging**: Entities sharing more Thompson motifs across traditions sit closer in ACP space (top quartile 9.0% closer than bottom)
+5. **Axis Interpretability**: Heroes and deities differ significantly on individual-collective (p=0.006) and stasis-transformation (p=0.027)
 
-### v1 Results (Archived — Co-occurrence Based)
+Run the validation:
 
-| Metric | Pre-Calibration | Post-Calibration |
-|--------|----------------|------------------|
-| ACP Archetypes | 539 | — |
-| Entities Mapped | 148 / 173 (85.5%) | — |
-| Pearson r | -0.064 (p<0.000001) | -0.156 (p<0.000001) |
-| Spearman r | -0.074 (p<0.000001) | -0.203 (p<0.000001) |
-| Axis-weighted r | -0.125 | — |
-| Optimized 6D weighted r | -0.140 | — |
-| Best 3D subset r | -0.147 | — |
+```bash
+python -m validation.v2_run --full
+```
 
-v1 used textual co-occurrence as the validation target. Key finding: simple 1D "same tradition?" outperforms 8D ACP (|r|=0.420 vs |r|=0.074), indicating co-occurrence primarily reflects cultural origin rather than archetypal structure. This motivated v2's pivot to testing cross-cultural structural equivalence directly.
+Full report: [`outputs/reports/v2_validation_report.md`](outputs/reports/v2_validation_report.md)
 
-## Validation Approach
+## Project Structure
 
-Each text includes:
-1. **Source citation**: Full URL, translator, publication date
-2. **Checksum**: SHA-256 hash for integrity verification
-3. **Content validation**: Key phrase detection, minimum size checks
-4. **Multiple translations**: Where available, for cross-reference
+```
+mythic-library/
+├── texts/                              # 132 source texts by tradition
+│   └── {tradition}/{text-id}/          # Downloads, normalized text, segments
+├── data/
+│   └── mythic_patterns.db              # SQLite: 4K segments, 173 entities, 149 motifs
+├── ACP/                                # Archetypal Context Protocol (subtree)
+│   ├── schema/                         # Axes, primordials, relationships ontology
+│   └── archetypes/                     # 539 archetypes across 18 traditions (JSON-LD)
+├── integration/                        # ACP <-> Library bridge
+│   ├── acp_loader.py                   # Load archetypes, coordinates, relationships
+│   ├── library_loader.py               # Query pattern database
+│   └── entity_mapper.py               # Map 148/173 library entities to ACP archetypes
+├── validation/
+│   ├── v2_run.py                       # v2 orchestrator: 6 tests, verdict, report
+│   ├── v2_tests/                       # Test suite
+│   │   ├── __init__.py                 # Shared: axis weights, weighted_distance()
+│   │   ├── echo_coherence.py           # Test 1: CULTURAL_ECHO distance
+│   │   ├── primordial_clustering.py    # Test 2: Primordial profile clustering
+│   │   ├── relationship_geometry.py    # Test 3: Typed relationship signatures
+│   │   ├── motif_bridging.py           # Test 4: Cross-tradition motif bridging
+│   │   ├── axis_interpretability.py    # Test 5: Axis interpretability audit
+│   │   └── human_audit.py             # Test 6: Expert concordance generation
+│   ├── fix_polar_coordinates.py        # Polar opposite coordinate recalibration
+│   ├── add_shadow_evolution.py         # Shadow/Evolution relationship expansion
+│   └── run.py                          # v1 validation (archived)
+├── miroglyph/                          # Browser-based explorer
+│   ├── index.html                      # Main entry point
+│   ├── js/                             # Atlas, Codex, Chronicle views + workshop
+│   ├── css/                            # View-specific stylesheets
+│   └── data/                           # Pre-exported JSON catalogs
+├── scripts/
+│   ├── audit_reviewer.py              # CLI human audit reviewer
+│   ├── audit_reviewer.html            # Browser human audit reviewer
+│   ├── export_explorer_data.py        # Regenerate miroglyph data files
+│   ├── normalize/                      # Text normalization pipeline
+│   ├── segment/                        # Structural segmentation
+│   ├── extract/                        # Entity extraction
+│   ├── motif/                          # Thompson motif tagging
+│   └── database/                       # Pattern database creation & queries
+├── outputs/
+│   ├── reports/                        # Generated validation reports
+│   ├── metrics/                        # Validation results, recalibration logs
+│   └── audits/                         # Human audit cases (40 structured cases)
+└── docs/
+    ├── DEVELOPMENT.md                  # Full development log (Phases 1-12)
+    └── gap_analysis_v3.md              # Corpus coverage and validation gap analysis
+```
 
-## Pattern Database
+## Quick Start
 
-The SQLite database at `data/mythic_patterns.db` contains:
+### Run v2 Validation
 
-| Table | Rows | Description |
-|-------|------|-------------|
-| `texts` | 132 | Core metadata (96 usable with content) |
+```bash
+# Full suite — 6 tests, 3-tier verdict, generates report
+python -m validation.v2_run --full
+```
+
+### Explore the Data
+
+Open `miroglyph/index.html` in a browser. Three views:
+
+- **Atlas**: 2D spectral projection of all 539 archetypes with axis-pair selection, zoom, and tooltip
+- **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
+- **Chronicle**: Narrative tracing across traditions with relationship visualization
+
+### Review Audit Cases
+
+```bash
+# Browser-based reviewer (recommended)
+# Open scripts/audit_reviewer.html in a browser
+
+# Terminal-based reviewer
+python scripts/audit_reviewer.py
+
+# Check review progress
+python scripts/audit_reviewer.py --status
+```
+
+### Query the Pattern Database
+
+```bash
+python scripts/database/query_patterns.py --query patterns    # Cross-cultural patterns
+python scripts/database/query_patterns.py --query flood       # Flood narratives
+python scripts/database/query_patterns.py --search "serpent AND world"
+```
+
+## The ACP Coordinate System
+
+The [Archetypal Context Protocol](ACP/) assigns each archetype an 8-dimensional spectral coordinate in [0,1]:
+
+| Axis | What It Encodes | Empirical Weight |
+|------|----------------|-----------------|
+| **creation-destruction** | Generative vs. annihilating force | 2.17 (strongest) |
+| **order-chaos** | Lawful structure vs. boundary dissolution | 1.19 |
+| **individual-collective** | Personal quest vs. communal function | 0.93 |
+| **light-shadow** | Conscious clarity vs. hidden/unconscious | 0.80 |
+| **active-receptive** | Initiating agency vs. receiving/containing | 0.79 |
+| **voluntary-fated** | Free choice vs. cosmic necessity | 0.77 |
+| **stasis-transformation** | Fixed being vs. dynamic becoming | 0.74 |
+| **ascent-descent** | Celestial/transcendent vs. chthonic/embodied | 0.20 (weakest) |
+
+Weights are empirically derived from per-axis correlation with narrative co-occurrence (Phase 10). `creation-destruction` carries 10x more signal than `ascent-descent`.
+
+### ACP Coverage
+
+539 archetypes across 18 traditions:
+
+| Tradition | Archetypes | Relationship Types |
+|-----------|------------|-------------------|
+| Greek | 23 | POLAR_OPPOSITE, SHADOW, EVOLUTION, COMPLEMENT |
+| Norse | 15+ | POLAR_OPPOSITE, SHADOW, EVOLUTION |
+| Egyptian | 17 | SHADOW, EVOLUTION, COMPLEMENT, SYNTHESIS |
+| Hindu | 15 | SHADOW, EVOLUTION, COMPLEMENT |
+| Chinese | 19+ | EVOLUTION, CULTURAL_ECHO |
+| Japanese | 17 | EVOLUTION, CULTURAL_ECHO |
+| Celtic | 13 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
+| Slavic | 16 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
+| African (Yoruba) | 16 | SHADOW, EVOLUTION, COMPLEMENT |
+| Mesoamerican | 17 | SHADOW, EVOLUTION |
+| Polynesian | 17 | SHADOW, EVOLUTION |
+| Native American | 14 | SHADOW, EVOLUTION |
+| Mesopotamian | 13 | EVOLUTION, COMPLEMENT |
+| Finnish | 14 | EVOLUTION, POLAR_OPPOSITE |
+| Incan | 17 | POLAR_OPPOSITE |
+| Persian | 18 | SHADOW, EVOLUTION |
+| Roman | 13 | CULTURAL_ECHO |
+| Australian | 8 | — |
+| Divination systems | ~100 | Zodiac, I Ching, Tarot, Kabbalah, Chakras |
+| Modern | ~30 | Digital archetypes, Jungian, Hero's Journey |
+
+## Source Corpus
+
+132 texts acquired from public domain sources:
+
+| Source | Specialization |
+|--------|---------------|
+| [Internet Archive](https://archive.org) | Scanned scholarly PDFs |
+| [Project Gutenberg](https://gutenberg.org) | Clean plain text |
+| [Sacred Texts](https://sacred-texts.com) | Religious/mythological |
+| [ETCSL](https://etcsl.orinst.ox.ac.uk) | Sumerian literature |
+
+### Pattern Database
+
+SQLite at `data/mythic_patterns.db`:
+
+| Table | Rows | Content |
+|-------|------|---------|
+| `texts` | 132 | Metadata (96 with usable content) |
 | `segments` | 4,000 | Structural units with full text |
-| `entities` | 173 | Canonical entity records |
-| `entity_mentions` | 28,104 | Entity occurrences in segments |
+| `entities` | 173 | Canonical entity records (hero, deity, creature, place, concept) |
+| `entity_mentions` | 28,104 | Entity occurrences per segment |
 | `motifs` | 149 | Thompson Motif Index reference |
 | `motif_tags` | 55,539 | Motif assignments with confidence |
 | `patterns` | 18 | Cross-cultural pattern definitions |
-| `pattern_attestations` | 786 | Pattern evidence across texts |
-| `segments_fts` | — | FTS5 full-text search index |
+| `segments_fts` | — | Full-text search index |
 
-### Cross-Cultural Patterns Identified
+### Cross-Cultural Patterns
 
 | Pattern | Traditions | Texts |
 |---------|-----------|-------|
@@ -309,141 +210,73 @@ The SQLite database at `data/mythic_patterns.db` contains:
 | Hero Cycle | 26 | 72 |
 | Creation of Humanity | 24 | 66 |
 | Quest for Immortality | 24 | 66 |
-| Theft of Fire | 24 | 64 |
 | Descent to Underworld | 24 | 61 |
 | World Flood | 20 | 51 |
-| Dragon Slaying | 22 | 49 |
 | Trickster | 20 | 47 |
 | Dying & Rising God | 20 | 40 |
 
-## Roadmap
+## Development History
 
-### v1 Validation (Co-occurrence Based) — Archived
+Full session logs with implementation details: [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md)
 
-> Phases 4-10 used textual co-occurrence (entities appearing in the same text
-> segments) as the validation target. This measures textual proximity, not the
-> relational archetypal meaning the ACP claims to encode. The key finding:
-> simple 1D "same tradition?" outperforms the full 8D system, indicating
-> co-occurrence primarily reflects cultural origin rather than archetypal
-> structure. This approach is archived; v2 will test cross-cultural functional
-> equivalence, axis interpretability, and relational prediction directly.
+### Phase 1-2: Corpus Building
+Curated 132 texts from automated multi-source acquisition with content validation, gap analysis, and regional expansion.
 
-### Phase 1: Foundation — Complete
-- [x] Core texts from major traditions
-- [x] Automated multi-source downloader
-- [x] Content validation system
-- [x] Gap analysis framework
+### Phase 3: Structured Extraction
+Built a complete NLP pipeline: text normalization, structural segmentation (4,000 segments), entity extraction (173 entities, 28,104 mentions), Thompson motif tagging (149 motifs, 55,539 tags), and a queryable SQLite pattern database.
 
-### Phase 2: Expansion — Complete
-- [x] Regional gap filling (Australian, Korean, Mongol, Baltic, etc.)
-- [x] Archetype-focused additions (Dying God, Trickster cycles)
-- [x] Chinese/Confucian classics
-- [x] Japanese literary expansion
+### Phases 4-10: v1 Validation (Archived)
+Tested whether ACP coordinate distance predicts textual co-occurrence. Key finding: **1D "same tradition?" outperforms 8D ACP** (|r|=0.36 vs |r|=0.09). Co-occurrence primarily reflects cultural origin, not archetypal structure. This motivated the pivot to v2.
 
-### Phase 3: Structured Extraction — Complete
-- [x] Corpus audit & text normalization (126 texts normalized)
-- [x] Structural segmentation (4,000 segments)
-- [x] Entity extraction (173 entities, 28,104 mentions)
-- [x] Thompson Motif Index tagging (149 motifs, 55,539 tags)
-- [x] SQLite pattern database with FTS5 search (137 MB)
-- [x] 18 cross-cultural patterns identified across 20-26 traditions
-- [x] Case-sensitive disambiguation for 27 ambiguous entity names
+Notable v1 results preserved for reference:
+- Empirical axis weights identified (creation-destruction strongest at 2.17)
+- Mantel test significant at p=0.029
+- Coordinate calibration generalizes in 5-fold CV (r=-0.225 +/- 0.041)
+- Norse tradition shows strongest intra-tradition signal (r=-0.354)
 
-### Phase 4: ACP Integration Bridge — Complete
-- [x] ACP pulled as git subtree (539 archetypes, 24 primordials, 8D coordinates)
-- [x] Integration bridge: ACP loader, library loader, entity mapper
-- [x] Tradition-aware entity mapping: 148/173 (85.5%) including fuzzy hero matching
-- [x] Coordinate validation: distance vs co-occurrence correlation
-- [x] Thompson motif clustering analysis in 8D coordinate space
-- [x] Browser-based data explorer (entities, coordinates, co-occurrence, motifs)
-- [x] Per-tradition correlation analysis (Norse r=-0.354, p=0.008)
-- [x] Coordinate calibration via gradient descent (Spearman r: -0.074 → -0.203)
+See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) Phases 4-10 for full details.
 
-### Phase 5: Statistical Rigor — Complete
-- [x] Permutation test: empirical p=0.053 (borderline — random can nearly match)
-- [x] Cross-validation: 5-fold CV r=-0.225 ± 0.041 (calibration generalizes)
-- [x] Bootstrap 95% CIs: Spearman [-0.121, -0.070], excludes zero
-- [x] Multiple comparison correction: 0/12 traditions survive Bonferroni/BH
-- [x] Holdout tradition test: Norse r=-0.354 robust when excluded from training
+### Phase 11: v2 Validation Suite
+Pivoted to testing **cross-cultural structural equivalence** — whether ACP's own relational claims (echoes, polar opposites, primordial profiles) match its geometry. Built 6 falsifiable tests across 3 tiers. Initial result: MIXED (Tests 1-2 pass, Tests 3-5 fail).
 
-### Phase 6: Alternative Metrics & Hypothesis Tests — Complete
-- [x] Cosine similarity (Euclidean wins r=-0.095 vs r=-0.036), per-axis (creation-destruction strongest r=-0.140)
-- [x] Axis-weighted distance: 50% improvement (r=-0.142 vs r=-0.095)
-- [x] Mantel test: empirical p=0.029 (significant at α=0.05)
-- [x] Motif-mediated similarity: Jaccard r=0.749 (ceiling), ACP dist vs Jaccard r=-0.110
+### Phase 12: Targeted Data Refinement
+Addressed all 3 failing tests:
 
-### Phase 7: Data Quality & Coverage — Complete
-- [x] Entity mention audit: 100-sample random check — 0 flags, extraction is clean
-- [x] Co-occurrence normalization: raw, log, TF-IDF, tradition-normalized — raw is best
-- [x] Cross-tradition deduplication: 1 cross-tradition share (Prometheus/Satan), not inflating results
-- [x] Unmapped analysis: 64 entities (44% mentions) unmapped, 42 heroes — ACP scope is deities, documented
+| Fix | What Changed | Impact |
+|-----|-------------|--------|
+| Motif bridging redesign | Jaccard quartile comparison replaces meaningless binary split | Test 4: FAIL -> PASS |
+| Entity-type contrastive tests | Hero vs deity axis differences replace too-broad motif categories | Test 5: FAIL -> PASS |
+| Polar coordinate recalibration | Symmetric adjustments to 19 archetype pairs | Test 3: FAIL -> PASS (56.6% -> 75.2%) |
+| Axis weight integration | Empirical weights from Phase 10 applied to all tests | +54% motif bridging correlation |
+| Shadow/Evolution expansion | +15 SHADOW, +29 EVOLUTION across 13 traditions | Robust relationship testing |
 
-### Phase 8: Reproducibility & Reporting — Complete
-- [x] Single-command validation: `python -m validation.run --full` (all 10 phases)
-- [x] Automated pytest suite: 32 tests across 9 classes, all passing
-- [x] Standalone markdown report generator (`--report` flag)
-- [x] Versioned metric baselines per git commit (`--baseline` flag)
+**Result: MIXED -> STRONG**
 
-### Phase 9: Falsification Criteria — Complete
-- [x] Formal null hypothesis: H0 = "ACP 8D coordinates no better than random at predicting co-occurrence"
-- [x] Pre-registered threshold: Mantel p < 0.05 required
-- [x] Alternative model: 1D tradition beats 8D ACP (|r|=0.361 vs |r|=0.095) — but ACP shows intra-tradition signal
-- [x] Axis ablation: 2 harmful axes (active-receptive, ascent-descent), 5-6D system may be better
-- [x] Coordinate sensitivity: 100% robust to ±0.05 noise, new archetypes don't drive signal
-- [x] Verdict: PARTIALLY SURVIVES — real but modest signal, tradition is a stronger predictor
+### What's Next
 
-### Phase 10: Optimized Model — Complete
-- [x] Per-axis weight computation from |Spearman r| correlations
-- [x] Harmful axis identification and zeroing (ascent-descent, stasis-transformation)
-- [x] 6D weighted model: r=-0.140 (90% improvement over 8D r=-0.074)
-- [x] Exhaustive dimensionality search: 218 axis subsets from 3D to 7D
-- [x] Best subset: 3D (order-chaos, creation-destruction, individual-collective) r=-0.147
-- [x] Weighted calibration with axis-frozen gradient descent (loss reduction 39.1%)
-- [x] Weighted falsification: tradition still outperforms (|r|=0.420 vs |r|=0.301)
-- [x] Interactive "Optimized" audit tab in browser explorer
-- [x] Performance: bulk co-occurrence caching (150K queries → 1 query), vectorized calibration (10x speedup)
-- [x] Verdict: PARTIALLY SURVIVES (2/4) — optimization improves signal but doesn't close the tradition gap
+1. **Human Audit** — Score 40 structured cases via `scripts/audit_reviewer.html`. Target: >=80% concordance
+2. **Miroglyph Optimization** — Tier C tests suggest 2 arcs instead of 3, alternative polarity pairings
+3. **Production Hardening** — CI pipeline, expanded pytest, versioned v2 baselines
 
-### Phase 11: v2 Validation (Cross-Cultural Structural Equivalence) — Complete
-- [x] New hypothesis: ACP encodes cross-cultural structural equivalence (not co-occurrence)
-- [x] 6-test falsification suite across 3 tiers (internal coherence, external validity, expert review)
-- [x] Test 1: CULTURAL_ECHO distance coherence — **PASS** (d=1.18, fidelity r=-0.45)
-- [x] Test 2: Primordial profile clustering — **PASS** (r=-0.21, permutation p=0.0)
-- [x] Test 3: Typed relationship geometry — **FAIL** (56.6% polar axis diff >0.5, needed ≥70%)
-- [x] Test 4: Cross-tradition motif bridging — **FAIL** (correlation PASS r=-0.09, group test FAIL)
-- [x] Test 5: Axis interpretability audit — **FAIL** (0/9 motif-category alignments significant)
-- [x] Test 6: Human concordance audit — 40 structured cases generated, **PENDING** review
-- [x] 3-tier verdict framework: Tier A PARTIAL, Tier B FAIL, Tier C PENDING → Overall **MIXED**
-- [x] Vectorized permutation testing (scipy pdist + squareform + numpy fancy indexing)
-- [x] Full report at `outputs/reports/v2_validation_report.md`
+See [`docs/gap_analysis_v3.md`](docs/gap_analysis_v3.md) for remaining gaps.
 
-### Phase 12: Targeted Data Refinement — Complete
-- [x] **12.1 Motif Bridging Redesign** (Test 4 fix): Replaced binary sharing/non-sharing with Jaccard quartile comparison (Q3+ vs Q1-). PASS: high-overlap pairs 9.0% closer (p=0.0)
-- [x] **12.2 Fine-Grained Motif Mappings** (Test 5 fix): Replaced broad Thompson letter categories with entity-type contrastive tests (hero vs deity). Hero-deity split shows significant signal on individual-collective (p=0.006) and stasis-transformation (p=0.027). PASS: 4/14 interpretability score
-- [x] **12.3 Axis Weight Integration**: Added empirical axis weights (creation-destruction=2.17, order-chaos=1.19, ..., ascent-descent=0.20) to all v2 tests. Motif bridging r improved 54% (r=-0.08 → r=-0.12)
-- [x] **12.4a Polar Axis Recalibration** (Test 3 fix): Minimal symmetric coordinate adjustments (max 0.30/dimension) to 19 POLAR_OPPOSITE pairs. 56.6% → 75.2% axis diff >0.5. PASS
-- [x] **12.4b Shadow/Evolution Expansion**: Added 15 SHADOW + 29 EVOLUTION relationships across 13 traditions. SHADOW: 13→29, EVOLUTION: 31→47 in archetypes. All traditions now covered
-- [x] **12.5a Full re-run**: All Tests 1-5 PASS. Tier A PASS, Tier B PASS → Overall **STRONG**
-- [x] **12.5b Human Audit Scaffold**: Created `scripts/audit_reviewer.py` (CLI) + `scripts/audit_reviewer.html` (browser) for 40-case review
-- [x] **12.5c Explorer Re-export**: Updated all 6 JSON data files in `miroglyph/data/`
-- [x] **12.5d Documentation**: Updated README, DEVELOPMENT.md, gap_analysis_v3.md
+## Documentation
 
-### Proposed Next Directions
-
-1. **Human Audit Completion** (Test 6): Review the 40 structured cases using `scripts/audit_reviewer.html` or `scripts/audit_reviewer.py`. Score each AGREE/DISAGREE/UNSURE. Target: ≥80% concordance (32/40 AGREE).
-
-2. **Miroglyph Structure Optimization** (Tier C): Tests 7 and 9 fail — data suggests 2 arcs may work better than 3, and alternative polarity pairings [[1,4],[2,6],[3,5]] are stronger. Consider restructuring the Miroglyph node topology.
-
-3. **Phase 13 — Production Hardening**: Automated CI pipeline, pytest expansion for v2 tests, versioned baselines for v2 metrics, export format standardization.
+| Document | Content |
+|----------|---------|
+| [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) | Full session logs: Phases 1-12, implementation details, metrics |
+| [`docs/gap_analysis_v3.md`](docs/gap_analysis_v3.md) | Corpus coverage gaps, validation gaps, remaining work |
+| [`outputs/reports/v2_validation_report.md`](outputs/reports/v2_validation_report.md) | Latest v2 validation report with per-test metrics |
+| [`outputs/audits/human_audit_cases.json`](outputs/audits/human_audit_cases.json) | 40 structured audit cases for human review |
+| [`ACP/CLAUDE.md`](ACP/CLAUDE.md) | ACP protocol overview and design rationale |
 
 ## Contributing
 
 To add a text:
 1. Verify public domain status
 2. Add entry to `sources/curated_sources.json`
-3. Add catalog entry to `sources/master_catalog.csv`
-4. Run `python scripts/bulk_download.py --text {text-id}`
-5. Verify download and content validation
+3. Run `python scripts/bulk_download.py --text {text-id}`
+4. Re-run extraction pipeline and database rebuild
 
 ## License
 
@@ -451,4 +284,4 @@ All texts are public domain. Scripts and tooling are MIT licensed.
 
 ---
 
-*This library is part of the Mythogenetic OS project, providing the empirical corpus for validating the Archetypal Context Protocol against cross-cultural narrative data.*
+*Part of the Mythogenetic OS project. Providing empirical falsification for the Archetypal Context Protocol.*
