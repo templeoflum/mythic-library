@@ -1,0 +1,1692 @@
+{
+  "version": "1.0",
+  "method": "position_bin_x_motif_cluster",
+  "axes": [
+    "order-chaos",
+    "creation-destruction",
+    "light-shadow",
+    "active-receptive",
+    "individual-collective",
+    "ascent-descent",
+    "stasis-transformation",
+    "voluntary-fated"
+  ],
+  "stats": {
+    "direct_profiles": 18,
+    "interpolated_profiles": 0,
+    "total_nodes": 18
+  },
+  "condition_profiles": {
+    "1": {
+      "mean_coordinates": [
+        0.34728155339805816,
+        0.41922330097087385,
+        0.39873786407767,
+        0.3632038834951458,
+        0.5011650485436893,
+        0.45854368932038825,
+        0.5210679611650484,
+        0.4669902912621361
+      ],
+      "std_coordinates": [
+        0.19100751865828403,
+        0.1481647555826641,
+        0.18951998440439388,
+        0.16755937126147205,
+        0.1435087424749629,
+        0.1891647854448822,
+        0.1692640415730098,
+        0.18028475292922072
+      ],
+      "n_entities": 103,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Finn",
+        "Hermes",
+        "Sigurd",
+        "Hades",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu"
+      ],
+      "confidence": 1.0,
+      "label": "Dawn/Initiation",
+      "n_texts": 62,
+      "total_entity_mentions": 368
+    },
+    "2": {
+      "mean_coordinates": [
+        0.3454,
+        0.4116,
+        0.3832000000000001,
+        0.3588000000000001,
+        0.513,
+        0.4416,
+        0.5148999999999999,
+        0.4565000000000001
+      ],
+      "std_coordinates": [
+        0.204158859714684,
+        0.1621833530298347,
+        0.19062990321562878,
+        0.17160000000000003,
+        0.15339817469578967,
+        0.18378639775565547,
+        0.1781038741858245,
+        0.18325596852490245
+      ],
+      "n_entities": 100,
+      "sample_entities": [
+        "Apollo",
+        "Sigurd",
+        "Finn",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu",
+        "Poseidon"
+      ],
+      "confidence": 1.0,
+      "label": "Immersion/Encounter",
+      "n_texts": 62,
+      "total_entity_mentions": 443
+    },
+    "3": {
+      "mean_coordinates": [
+        0.33581967213114766,
+        0.41049180327868856,
+        0.3796721311475411,
+        0.3689344262295084,
+        0.500983606557377,
+        0.4424590163934426,
+        0.5165573770491803,
+        0.45204918032786895
+      ],
+      "std_coordinates": [
+        0.1897273287777446,
+        0.15486034141331936,
+        0.18403017583203485,
+        0.17066796148407526,
+        0.14976161295492776,
+        0.1916550499110565,
+        0.17673621397672032,
+        0.17301539078980172
+      ],
+      "n_entities": 122,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Finn",
+        "Hermes",
+        "Sigurd",
+        "Eshu",
+        "Hades",
+        "Ptah",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "label": "Crucible/Crisis",
+      "n_texts": 62,
+      "total_entity_mentions": 642
+    },
+    "4": {
+      "mean_coordinates": [
+        0.3379166666666668,
+        0.41625000000000006,
+        0.37750000000000006,
+        0.3624166666666669,
+        0.5012499999999999,
+        0.44025000000000003,
+        0.5182499999999999,
+        0.4498333333333335
+      ],
+      "std_coordinates": [
+        0.19276451883638296,
+        0.15111840004888002,
+        0.18179315168619514,
+        0.17342623712178673,
+        0.145948406980001,
+        0.18538906161547572,
+        0.17783729689428668,
+        0.17548496295187868
+      ],
+      "n_entities": 120,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Finn",
+        "Hermes",
+        "Sigurd",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "label": "Alignment/Harmony",
+      "n_texts": 62,
+      "total_entity_mentions": 816
+    },
+    "5": {
+      "mean_coordinates": [
+        0.35046728971962615,
+        0.4196261682242991,
+        0.3934579439252337,
+        0.3559813084112151,
+        0.5009345794392523,
+        0.44934579439252337,
+        0.5344859813084111,
+        0.4390654205607478
+      ],
+      "std_coordinates": [
+        0.19082890108886866,
+        0.14382573329628703,
+        0.17081499421882776,
+        0.16817803102044643,
+        0.14784136933384165,
+        0.17971041621805375,
+        0.17963740033152562,
+        0.17021444808526867
+      ],
+      "n_entities": 107,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Finn",
+        "Hermes",
+        "Sigurd",
+        "Hades",
+        "Arjuna",
+        "Adam",
+        "Enlil",
+        "Poseidon"
+      ],
+      "confidence": 1.0,
+      "label": "Unveiling/Wisdom",
+      "n_texts": 62,
+      "total_entity_mentions": 752
+    },
+    "6": {
+      "mean_coordinates": [
+        0.34621212121212125,
+        0.4151515151515153,
+        0.3886363636363638,
+        0.3681060606060607,
+        0.49545454545454537,
+        0.4498484848484849,
+        0.522651515151515,
+        0.46045454545454545
+      ],
+      "std_coordinates": [
+        0.19152707816718245,
+        0.15482876586774355,
+        0.18616045835097075,
+        0.17143393716459376,
+        0.152903037389632,
+        0.18724876035712515,
+        0.17575318372255289,
+        0.1767975371604635
+      ],
+      "n_entities": 132,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Finn",
+        "Hermes",
+        "Sigurd",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "label": "Return/Integration",
+      "n_texts": 62,
+      "total_entity_mentions": 1344
+    }
+  },
+  "arc_profiles": {
+    "D": {
+      "mean_coordinates": [
+        0.3552447552447553,
+        0.42167832167832187,
+        0.39335664335664344,
+        0.3660139860139861,
+        0.4895104895104894,
+        0.4530069930069931,
+        0.5268531468531468,
+        0.4704895104895105
+      ],
+      "std_coordinates": [
+        0.2011777635386741,
+        0.16487751764190486,
+        0.19129278279530595,
+        0.17190882223153875,
+        0.15696121596287277,
+        0.191687518754359,
+        0.17570007653866204,
+        0.18506974180165064
+      ],
+      "n_entities": 143,
+      "sample_entities": [
+        "Apollo",
+        "Sigurd",
+        "Anubis",
+        "Hermes",
+        "Finn",
+        "Eshu",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna"
+      ],
+      "confidence": 1.0,
+      "label": "Descent/Shadow",
+      "patterns_used": [
+        "descent_to_underworld",
+        "dying_and_rising_god",
+        "world_destruction_renewal",
+        "divine_conflict",
+        "dragon_slaying",
+        "forbidden_knowledge"
+      ],
+      "motif_codes": [
+        "A1030",
+        "Z300",
+        "A1000",
+        "A1020",
+        "A150",
+        "Q240",
+        "A162",
+        "A560",
+        "G300",
+        "F110",
+        "Q260",
+        "E0",
+        "Q220",
+        "F100",
+        "F81",
+        "E100",
+        "A1310",
+        "F80",
+        "G500",
+        "A530",
+        "A151",
+        "F90",
+        "A1050"
+      ]
+    },
+    "R": {
+      "mean_coordinates": [
+        0.3634751773049646,
+        0.42588652482269523,
+        0.396808510638298,
+        0.364113475177305,
+        0.48900709219858146,
+        0.45553191489361705,
+        0.5314893617021276,
+        0.4707801418439717
+      ],
+      "std_coordinates": [
+        0.20668606343064838,
+        0.16901076772103504,
+        0.19245822665083243,
+        0.17309477960418396,
+        0.1588804134099089,
+        0.18979057338918875,
+        0.17670721936635278,
+        0.1855032293958569
+      ],
+      "n_entities": 141,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Sigurd",
+        "Hermes",
+        "Finn",
+        "Eshu",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna"
+      ],
+      "confidence": 1.0,
+      "label": "Resonance/Mirror",
+      "patterns_used": [
+        "transformation_metamorphosis",
+        "trickster",
+        "prophecy_fate",
+        "hero_cycle"
+      ],
+      "motif_codes": [
+        "K100",
+        "D200",
+        "D100",
+        "D0",
+        "K0",
+        "Z310",
+        "M370",
+        "Z210",
+        "H300",
+        "D610",
+        "K200",
+        "M340",
+        "H1200",
+        "K300",
+        "H1220",
+        "D10",
+        "M300",
+        "Z200"
+      ]
+    },
+    "E": {
+      "mean_coordinates": [
+        0.3616438356164384,
+        0.42431506849315087,
+        0.3979452054794522,
+        0.36294520547945214,
+        0.4856164383561643,
+        0.4573972602739727,
+        0.52972602739726,
+        0.4693835616438357
+      ],
+      "std_coordinates": [
+        0.20697107003604004,
+        0.16952353671088835,
+        0.19603926713246622,
+        0.1719794819245597,
+        0.15808343818506287,
+        0.19391798433881308,
+        0.1756317177547344,
+        0.18850610470380633
+      ],
+      "n_entities": 146,
+      "sample_entities": [
+        "Apollo",
+        "Anubis",
+        "Eshu",
+        "Hermes",
+        "Sigurd",
+        "Finn",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna"
+      ],
+      "confidence": 1.0,
+      "label": "Emergence/Mythogenesis",
+      "patterns_used": [
+        "cosmogony_creation",
+        "creation_of_humanity",
+        "theft_of_fire",
+        "miraculous_birth",
+        "abandoned_child_hero",
+        "quest_for_immortality",
+        "great_mother",
+        "world_flood"
+      ],
+      "motif_codes": [
+        "D1500",
+        "A1010",
+        "A700",
+        "T540",
+        "A1000",
+        "A1270",
+        "H1200",
+        "A1400",
+        "A1",
+        "A410",
+        "A1415",
+        "T500",
+        "A540",
+        "L100",
+        "S310",
+        "A800",
+        "T510",
+        "A431",
+        "S300",
+        "A600",
+        "A1240",
+        "A1210",
+        "A620",
+        "E50",
+        "A400",
+        "A1200",
+        "A610"
+      ]
+    }
+  },
+  "node_profiles": {
+    "D1": {
+      "mean_coordinates": [
+        0.3467,
+        0.4183,
+        0.39720000000000005,
+        0.3651000000000002,
+        0.5022,
+        0.45679999999999993,
+        0.5216999999999998,
+        0.4705000000000002
+      ],
+      "std_coordinates": [
+        0.1922241139919755,
+        0.14809493576756763,
+        0.18964218939887825,
+        0.16924830870646826,
+        0.1452899170624031,
+        0.19048821485855763,
+        0.17130706348542665,
+        0.18084454650334353
+      ],
+      "n_entities": 100,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "D1",
+      "arc": "Descent",
+      "condition": "Dawn",
+      "title": "The Catalyst Shard",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.728,
+          "count": 30
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.787,
+          "count": 23
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.789,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.774,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.738,
+          "count": 17
+        }
+      ]
+    },
+    "D2": {
+      "mean_coordinates": [
+        0.3370103092783505,
+        0.40577319587628863,
+        0.3739175257731959,
+        0.3611340206185569,
+        0.5175257731958762,
+        0.43360824742268045,
+        0.5112371134020618,
+        0.4551546391752578
+      ],
+      "std_coordinates": [
+        0.1967213998833611,
+        0.15316479267288757,
+        0.18002609605237122,
+        0.17291840807995779,
+        0.1519700928786872,
+        0.17894988970313316,
+        0.17839639479020247,
+        0.1798459443957285
+      ],
+      "n_entities": 97,
+      "sample_entities": [
+        "Apollo",
+        "Sigurd",
+        "Finn",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu",
+        "Poseidon"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "D2",
+      "arc": "Descent",
+      "condition": "Immersion",
+      "title": "The Watcher Without Eyes",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.743,
+          "count": 36
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.796,
+          "count": 24
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.752,
+          "count": 20
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.8,
+          "count": 18
+        },
+        {
+          "primordial_id": "primordial:great-mother",
+          "mean_weight": 0.83,
+          "count": 15
+        }
+      ]
+    },
+    "D3": {
+      "mean_coordinates": [
+        0.33683333333333343,
+        0.41108333333333336,
+        0.38058333333333344,
+        0.3705000000000002,
+        0.5018333333333332,
+        0.44149999999999995,
+        0.51725,
+        0.4545833333333334
+      ],
+      "std_coordinates": [
+        0.1908925672262339,
+        0.15524065099780476,
+        0.18539280745367537,
+        0.17137604850153354,
+        0.1507203997104868,
+        0.19212691118112518,
+        0.1778574452569623,
+        0.1728433579542149
+      ],
+      "n_entities": 120,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Eshu",
+        "Hades",
+        "Ptah",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "D3",
+      "arc": "Descent",
+      "condition": "Crucible",
+      "title": "The Echo Engine",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.737,
+          "count": 43
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.78,
+          "count": 27
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.761,
+          "count": 27
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.798,
+          "count": 21
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.732,
+          "count": 22
+        }
+      ]
+    },
+    "D4": {
+      "mean_coordinates": [
+        0.3389830508474577,
+        0.41694915254237297,
+        0.37838983050847463,
+        0.3638983050847459,
+        0.5021186440677965,
+        0.43923728813559326,
+        0.5189830508474575,
+        0.45237288135593234
+      ],
+      "std_coordinates": [
+        0.19397007383417333,
+        0.15142547797724706,
+        0.18316876694654308,
+        0.17423943149773152,
+        0.14688201015317026,
+        0.18576528282892427,
+        0.17898200757271704,
+        0.17538663326772053
+      ],
+      "n_entities": 118,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "D4",
+      "arc": "Descent",
+      "condition": "Alignment",
+      "title": "The Idol of Symmetry",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.74,
+          "count": 40
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.786,
+          "count": 28
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.788,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.744,
+          "count": 24
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.76,
+          "count": 20
+        }
+      ]
+    },
+    "D5": {
+      "mean_coordinates": [
+        0.34660194174757275,
+        0.4184466019417476,
+        0.39077669902912626,
+        0.359611650485437,
+        0.5038834951456311,
+        0.44737864077669903,
+        0.534368932038835,
+        0.443980582524272
+      ],
+      "std_coordinates": [
+        0.18979576861099245,
+        0.1442944486989933,
+        0.17081579995807525,
+        0.1694704621288592,
+        0.14901770931253375,
+        0.18155189241886455,
+        0.18224420777569725,
+        0.17014180154409544
+      ],
+      "n_entities": 103,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Arjuna",
+        "Adam",
+        "Poseidon",
+        "Telemachus"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "D5",
+      "arc": "Descent",
+      "condition": "Unveiling",
+      "title": "The Archivist of Shame",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.737,
+          "count": 34
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.794,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.792,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.72,
+          "count": 20
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.741,
+          "count": 17
+        }
+      ]
+    },
+    "D6": {
+      "mean_coordinates": [
+        0.3446564885496184,
+        0.4137404580152674,
+        0.386259541984733,
+        0.3682442748091605,
+        0.49541984732824423,
+        0.4490839694656488,
+        0.522442748091603,
+        0.4605343511450382
+      ],
+      "std_coordinates": [
+        0.1914241432279912,
+        0.15457074705152016,
+        0.18486362160294442,
+        0.17207969446116578,
+        0.1534850095471928,
+        0.18775674688959637,
+        0.17640641661077874,
+        0.17746868545234123
+      ],
+      "n_entities": 131,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "D6",
+      "arc": "Descent",
+      "condition": "Return",
+      "title": "The Haunting",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.731,
+          "count": 42
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.787,
+          "count": 31
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.762,
+          "count": 29
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.78,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.741,
+          "count": 23
+        }
+      ]
+    },
+    "E1": {
+      "mean_coordinates": [
+        0.3467326732673267,
+        0.4166336633663366,
+        0.3967326732673268,
+        0.36495049504950516,
+        0.5011881188118812,
+        0.4587128712871286,
+        0.5219801980198018,
+        0.467821782178218
+      ],
+      "std_coordinates": [
+        0.19127042134363711,
+        0.14829911723846656,
+        0.18875889021560793,
+        0.16841499758229964,
+        0.14492256128611747,
+        0.19050565006218875,
+        0.17047992711306398,
+        0.18192917760532687
+      ],
+      "n_entities": 101,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "E1",
+      "arc": "Emergence",
+      "condition": "Dawn",
+      "title": "The Seedbearer of Stillness",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.728,
+          "count": 30
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.787,
+          "count": 23
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.775,
+          "count": 20
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.789,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.747,
+          "count": 18
+        }
+      ]
+    },
+    "E2": {
+      "mean_coordinates": [
+        0.3433333333333334,
+        0.4096969696969698,
+        0.38000000000000006,
+        0.358888888888889,
+        0.5131313131313131,
+        0.4405050505050505,
+        0.5145454545454544,
+        0.4565656565656566
+      ],
+      "std_coordinates": [
+        0.2041439381288298,
+        0.1618856969583977,
+        0.18889898962892393,
+        0.17246219839878887,
+        0.15416537404631867,
+        0.1843874584210576,
+        0.17896601295349393,
+        0.1841780079665004
+      ],
+      "n_entities": 99,
+      "sample_entities": [
+        "Apollo",
+        "Sigurd",
+        "Finn",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu",
+        "Poseidon"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "E2",
+      "arc": "Emergence",
+      "condition": "Immersion",
+      "title": "The Harmonizer of the Lattice",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.743,
+          "count": 36
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.796,
+          "count": 24
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.755,
+          "count": 21
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.8,
+          "count": 18
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.762,
+          "count": 17
+        }
+      ]
+    },
+    "E3": {
+      "mean_coordinates": [
+        0.3369421487603307,
+        0.4097520661157025,
+        0.3803305785123968,
+        0.3703305785123969,
+        0.5009917355371899,
+        0.44322314049586775,
+        0.5175206611570247,
+        0.45247933884297525
+      ],
+      "std_coordinates": [
+        0.19010585557171975,
+        0.15528413205889666,
+        0.18464589243706514,
+        0.17067650462276235,
+        0.15037916243177482,
+        0.1922602182736543,
+        0.1771457866798018,
+        0.17366387688606988
+      ],
+      "n_entities": 121,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Eshu",
+        "Hades",
+        "Ptah",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "E3",
+      "arc": "Emergence",
+      "condition": "Crucible",
+      "title": "The Flame of Synthesis",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.737,
+          "count": 43
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.762,
+          "count": 28
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.78,
+          "count": 27
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.739,
+          "count": 23
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.798,
+          "count": 21
+        }
+      ]
+    },
+    "E4": {
+      "mean_coordinates": [
+        0.33907563025210097,
+        0.41554621848739504,
+        0.3781512605042017,
+        0.3637815126050422,
+        0.5012605042016806,
+        0.44100840336134456,
+        0.5192436974789915,
+        0.4502521008403363
+      ],
+      "std_coordinates": [
+        0.19315597214215924,
+        0.15155606045450667,
+        0.1824159361429679,
+        0.17351042686145643,
+        0.1465603074989936,
+        0.18598091055010832,
+        0.17825088383042773,
+        0.17616103301925207
+      ],
+      "n_entities": 119,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "E4",
+      "arc": "Emergence",
+      "condition": "Alignment",
+      "title": "The Lattice Keeper",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.74,
+          "count": 40
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.786,
+          "count": 28
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.788,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.746,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.767,
+          "count": 21
+        }
+      ]
+    },
+    "E5": {
+      "mean_coordinates": [
+        0.3499999999999999,
+        0.4171428571428572,
+        0.3914285714285715,
+        0.35752380952380963,
+        0.5009523809523809,
+        0.4493333333333333,
+        0.5356190476190476,
+        0.4393333333333335
+      ],
+      "std_coordinates": [
+        0.19108711551092528,
+        0.1438829834454724,
+        0.16956206096001206,
+        0.16908031876895466,
+        0.14924268385688885,
+        0.18088810888642712,
+        0.18085471048290358,
+        0.17178206939340143
+      ],
+      "n_entities": 105,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Arjuna",
+        "Adam",
+        "Poseidon",
+        "Telemachus"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "E5",
+      "arc": "Emergence",
+      "condition": "Unveiling",
+      "title": "The Dream Spore",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.737,
+          "count": 34
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.794,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.724,
+          "count": 21
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.792,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.75,
+          "count": 18
+        }
+      ]
+    },
+    "E6": {
+      "mean_coordinates": [
+        0.3446564885496184,
+        0.4137404580152674,
+        0.386259541984733,
+        0.3682442748091605,
+        0.49541984732824423,
+        0.4490839694656488,
+        0.522442748091603,
+        0.4605343511450382
+      ],
+      "std_coordinates": [
+        0.1914241432279912,
+        0.15457074705152016,
+        0.18486362160294442,
+        0.17207969446116578,
+        0.1534850095471928,
+        0.18775674688959637,
+        0.17640641661077874,
+        0.17746868545234123
+      ],
+      "n_entities": 131,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "E6",
+      "arc": "Emergence",
+      "condition": "Return",
+      "title": "The Symphony",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.731,
+          "count": 42
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.787,
+          "count": 31
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.762,
+          "count": 29
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.78,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.741,
+          "count": 23
+        }
+      ]
+    },
+    "R1": {
+      "mean_coordinates": [
+        0.34818181818181815,
+        0.42,
+        0.39767676767676763,
+        0.36626262626262646,
+        0.5032323232323233,
+        0.4573737373737373,
+        0.5214141414141413,
+        0.47070707070707096
+      ],
+      "std_coordinates": [
+        0.19262337584505865,
+        0.14786698909711543,
+        0.19053793218588602,
+        0.16970316246516598,
+        0.14565649560793503,
+        0.19136187021159806,
+        0.1721463442551844,
+        0.18174381195058156
+      ],
+      "n_entities": 99,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "R1",
+      "arc": "Resonance",
+      "condition": "Dawn",
+      "title": "The Welcomer of Echoes",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.728,
+          "count": 30
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.798,
+          "count": 22
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.789,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.764,
+          "count": 18
+        },
+        {
+          "primordial_id": "primordial:great-mother",
+          "mean_weight": 0.781,
+          "count": 16
+        }
+      ]
+    },
+    "R2": {
+      "mean_coordinates": [
+        0.3447422680412371,
+        0.4129896907216495,
+        0.38061855670103095,
+        0.3601030927835053,
+        0.5154639175257731,
+        0.4387628865979381,
+        0.5138144329896907,
+        0.45927835051546395
+      ],
+      "std_coordinates": [
+        0.20571771662903063,
+        0.161897033259584,
+        0.19078683756383102,
+        0.17387336810093879,
+        0.15487953828207077,
+        0.18500631213505092,
+        0.18072844183635306,
+        0.18421327522307726
+      ],
+      "n_entities": 97,
+      "sample_entities": [
+        "Apollo",
+        "Sigurd",
+        "Finn",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam",
+        "Apsu",
+        "Poseidon"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "R2",
+      "arc": "Resonance",
+      "condition": "Immersion",
+      "title": "The Reflector of Tension",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.743,
+          "count": 36
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.807,
+          "count": 23
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.8,
+          "count": 18
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.742,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:great-mother",
+          "mean_weight": 0.83,
+          "count": 15
+        }
+      ]
+    },
+    "R3": {
+      "mean_coordinates": [
+        0.337983193277311,
+        0.41243697478991603,
+        0.3808403361344539,
+        0.37151260504201705,
+        0.502689075630252,
+        0.4418487394957983,
+        0.5169747899159663,
+        0.4546218487394958
+      ],
+      "std_coordinates": [
+        0.19127866877751631,
+        0.15518471718565255,
+        0.1861488508573643,
+        0.17173674721885987,
+        0.15106177421358888,
+        0.19289465225391572,
+        0.17857773592419918,
+        0.17356755842541163
+      ],
+      "n_entities": 119,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Eshu",
+        "Hades",
+        "Ptah",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "R3",
+      "arc": "Resonance",
+      "condition": "Crucible",
+      "title": "The Mirror-Kin",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.737,
+          "count": 43
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.788,
+          "count": 26
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.754,
+          "count": 26
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.798,
+          "count": 21
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.731,
+          "count": 21
+        }
+      ]
+    },
+    "R4": {
+      "mean_coordinates": [
+        0.3389830508474577,
+        0.41694915254237297,
+        0.37838983050847463,
+        0.3638983050847459,
+        0.5021186440677965,
+        0.43923728813559326,
+        0.5189830508474575,
+        0.45237288135593234
+      ],
+      "std_coordinates": [
+        0.19397007383417333,
+        0.15142547797724706,
+        0.18316876694654308,
+        0.17423943149773152,
+        0.14688201015317026,
+        0.18576528282892427,
+        0.17898200757271704,
+        0.17538663326772053
+      ],
+      "n_entities": 118,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "R4",
+      "arc": "Resonance",
+      "condition": "Alignment",
+      "title": "The Integrator of Dissonance",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.74,
+          "count": 40
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.786,
+          "count": 28
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.788,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.744,
+          "count": 24
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.76,
+          "count": 20
+        }
+      ]
+    },
+    "R5": {
+      "mean_coordinates": [
+        0.34803921568627444,
+        0.4200980392156863,
+        0.39117647058823535,
+        0.360686274509804,
+        0.5049019607843138,
+        0.44784313725490194,
+        0.5342156862745098,
+        0.44392156862745114
+      ],
+      "std_coordinates": [
+        0.1901652491690891,
+        0.14402815014909764,
+        0.1716031337848996,
+        0.16994958770362026,
+        0.14938924744123086,
+        0.18237876688300497,
+        0.1831287786172953,
+        0.17097274672599014
+      ],
+      "n_entities": 102,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Arjuna",
+        "Adam",
+        "Poseidon",
+        "Telemachus"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "R5",
+      "arc": "Resonance",
+      "condition": "Unveiling",
+      "title": "The Rememberer",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.737,
+          "count": 34
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.804,
+          "count": 24
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.792,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.708,
+          "count": 19
+        },
+        {
+          "primordial_id": "primordial:lover",
+          "mean_weight": 0.726,
+          "count": 17
+        }
+      ]
+    },
+    "R6": {
+      "mean_coordinates": [
+        0.3457692307692308,
+        0.4150000000000002,
+        0.3865384615384617,
+        0.36915384615384633,
+        0.49615384615384606,
+        0.44946153846153847,
+        0.5222307692307692,
+        0.46061538461538465
+      ],
+      "std_coordinates": [
+        0.1917364592937015,
+        0.1544929672285341,
+        0.18554581245802892,
+        0.1724262813065546,
+        0.15384499999567303,
+        0.18842795619163363,
+        0.1770669816095914,
+        0.17814753542695513
+      ],
+      "n_entities": 130,
+      "sample_entities": [
+        "Sigurd",
+        "Apollo",
+        "Finn",
+        "Hermes",
+        "Anubis",
+        "Hades",
+        "Ptah",
+        "Hathor",
+        "Arjuna",
+        "Adam"
+      ],
+      "confidence": 1.0,
+      "method": "direct",
+      "node_id": "R6",
+      "arc": "Resonance",
+      "condition": "Return",
+      "title": "The Resonator",
+      "dominant_primordials": [
+        {
+          "primordial_id": "primordial:sovereign",
+          "mean_weight": 0.731,
+          "count": 42
+        },
+        {
+          "primordial_id": "primordial:hero",
+          "mean_weight": 0.795,
+          "count": 30
+        },
+        {
+          "primordial_id": "primordial:creator",
+          "mean_weight": 0.755,
+          "count": 28
+        },
+        {
+          "primordial_id": "primordial:warrior",
+          "mean_weight": 0.78,
+          "count": 25
+        },
+        {
+          "primordial_id": "primordial:magician",
+          "mean_weight": 0.741,
+          "count": 22
+        }
+      ]
+    }
+  }
+}

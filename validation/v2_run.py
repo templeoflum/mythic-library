@@ -27,8 +27,12 @@ from validation.v2_tests.relationship_geometry import RelationshipGeometryTest
 from validation.v2_tests.motif_bridging import MotifBridgingTest
 from validation.v2_tests.axis_interpretability import AxisInterpretabilityTest
 from validation.v2_tests.human_audit import HumanAuditTest
+from validation.v2_tests.miroglyph_structure import MiroStructureTest
+from integration.miroglyph_loader import MiroGlyphLoader
+from integration.node_profiler import NodeProfiler
 
 ACP_PATH = PROJECT_ROOT / "ACP"
+MIRO_SPEC = PROJECT_ROOT / "miroglyph" / "miroglyph_v4_technical_spec.json"
 DB_PATH = PROJECT_ROOT / "data" / "mythic_patterns.db"
 OUTPUTS = PROJECT_ROOT / "outputs"
 
@@ -129,6 +133,43 @@ def run_validation(full: bool = True) -> dict:
     audit_path = audit_test.save_audit(results["test6_human_audit"], str(OUTPUTS / "audits"))
     print(f"  Saved to {audit_path}")
 
+    # ── Tests 7-10: Miroglyph Structure Validation ────────────
+    print("\n[Tests 7-10] Miroglyph Structure Validation...")
+    miroglyph = MiroGlyphLoader(str(MIRO_SPEC))
+    print(f"  Loaded {miroglyph.summary()['nodes']} Miroglyph nodes")
+
+    from integration.unified_loader import UnifiedLoader
+
+    class _QuickUnified:
+        """Lightweight wrapper to avoid re-loading everything."""
+        def __init__(self, acp, library, miroglyph, mapper):
+            self.acp = acp
+            self.library = library
+            self.miroglyph = miroglyph
+            self.mapper = mapper
+        def get_entity_coordinates(self, entity_name):
+            mapping = self.mapper.get_mapping(entity_name)
+            if not mapping:
+                return None
+            return self.acp.get_coordinates(mapping.acp_archetype_id)
+
+    quick_unified = _QuickUnified(acp, library, miroglyph, mapper)
+    profiler = NodeProfiler(quick_unified)
+    miro_test = MiroStructureTest(acp, library, mapper, miroglyph, profiler)
+    results["miroglyph_structure"] = miro_test.run()
+
+    miro_verdicts = results["miroglyph_structure"].get("verdicts", {})
+    tier_c_miro = miro_verdicts.get("tier_c_overall", {})
+    print(f"  Tier C (Miroglyph): {'PASS' if tier_c_miro.get('pass') else 'FAIL'}")
+    for tkey in ["test7_arc_separation", "test8_condition_progression", "test9_polarity_pairs"]:
+        tv = miro_verdicts.get(tkey, {})
+        label = tkey.replace("test7_", "").replace("test8_", "").replace("test9_", "")
+        print(f"    {label}: {'PASS' if tv.get('pass') else 'FAIL'} — {tv.get('detail', '')}")
+
+    t10 = results["miroglyph_structure"].get("test10_structural_optimality", {})
+    for rec in t10.get("recommendations", []):
+        print(f"    [Recommendation] {rec}")
+
     # ── Compute Verdict ───────────────────────────────────────
     results["verdict"] = compute_verdict(results)
     print_verdict(results["verdict"])
@@ -177,9 +218,37 @@ def compute_verdict(results: dict) -> dict:
         tier_b_verdict = "FAIL"
         tier_b_label = "No external validation"
 
-    # Tier C: Expert Plausibility (Test 6) — awaiting human review
-    tier_c_verdict = "PENDING"
-    tier_c_label = "Awaiting human review"
+    # Tier C: Miroglyph Structural Validity (Tests 7-9)
+    miro = results.get("miroglyph_structure", {})
+    miro_v = miro.get("verdicts", {})
+    tier_c = [
+        ("Test 7: Arc Separation", miro_v.get("test7_arc_separation", {}).get("pass", False)),
+        ("Test 8: Condition Progression", miro_v.get("test8_condition_progression", {}).get("pass", False)),
+        ("Test 9: Polarity Pairs", miro_v.get("test9_polarity_pairs", {}).get("pass", False)),
+    ]
+    tier_c_passed = sum(1 for _, p in tier_c if p)
+
+    if tier_c_passed >= 2:
+        tier_c_verdict = "PASS"
+        tier_c_label = "Miroglyph structure empirically supported"
+    elif tier_c_passed == 1:
+        tier_c_verdict = "PARTIAL"
+        tier_c_label = "Partial structural support"
+    else:
+        tier_c_verdict = "FAIL"
+        tier_c_label = "Miroglyph structure not supported by data"
+
+    # Tier D: Cross-System Integration (Test 10)
+    t10 = miro.get("test10_structural_optimality", {})
+    structure_confirmed = t10.get("structure_confirmed", False)
+    tier_d_verdict = "CONFIRMED" if structure_confirmed else "ALTERNATIVES_FOUND"
+    tier_d_label = ("Current 3x6 structure is optimal"
+                    if structure_confirmed else
+                    "Data suggests structural alternatives")
+
+    # Tier E: Expert Plausibility (Test 6) — awaiting human review
+    tier_e_verdict = "PENDING"
+    tier_e_label = "Awaiting human review"
 
     # Combined verdict
     if tier_a_verdict == "FAIL":
@@ -223,6 +292,20 @@ def compute_verdict(results: dict) -> dict:
         "tier_c": {
             "verdict": tier_c_verdict,
             "label": tier_c_label,
+            "tests": [{
+                "name": name, "pass": p,
+            } for name, p in tier_c],
+            "passed": tier_c_passed,
+            "total": 3,
+        },
+        "tier_d": {
+            "verdict": tier_d_verdict,
+            "label": tier_d_label,
+            "recommendations": t10.get("recommendations", []),
+        },
+        "tier_e": {
+            "verdict": tier_e_verdict,
+            "label": tier_e_label,
             "tests": [{"name": "Test 6: Human Audit", "pass": None}],
             "passed": 0,
             "total": 1,
@@ -240,14 +323,18 @@ def print_verdict(verdict: dict):
     print("VERDICT")
     print("=" * 60)
 
-    for tier_key in ["tier_a", "tier_b", "tier_c"]:
-        tier = verdict[tier_key]
+    for tier_key in ["tier_a", "tier_b", "tier_c", "tier_d", "tier_e"]:
+        tier = verdict.get(tier_key, {})
+        if not tier:
+            continue
         label = tier_key.replace("tier_", "Tier ").upper()
         print(f"\n{label}: {tier['verdict']} — {tier['label']}")
-        for t in tier["tests"]:
+        for t in tier.get("tests", []):
             status = "PASS" if t["pass"] else ("PENDING" if t["pass"] is None else "FAIL")
             mark = "+" if t["pass"] else ("?" if t["pass"] is None else "-")
             print(f"  [{mark}] {t['name']}: {status}")
+        for rec in tier.get("recommendations", []):
+            print(f"  >> {rec}")
 
     overall = verdict["overall"]
     print(f"\nOVERALL: {overall['verdict']}")

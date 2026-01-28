@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythic System Explorer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/tab-archetypes.css">
+  <link rel="stylesheet" href="css/tab-tracing.css">
+  <link rel="stylesheet" href="css/tab-validation.css">
+  <link rel="stylesheet" href="css/tab-patterns.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="logo">Mythic System Explorer <span class="version">v4</span></h1>
+      <nav class="tab-nav">
+        <button class="tab-btn" data-tab="topology">Topology</button>
+        <button class="tab-btn" data-tab="archetypes">Archetypes</button>
+        <button class="tab-btn" data-tab="tracing">Entity Tracing</button>
+        <button class="tab-btn" data-tab="validation">Validation</button>
+        <button class="tab-btn" data-tab="patterns">Patterns</button>
+      </nav>
+      <div class="header-actions">
+        <button id="btn-export" class="btn btn-secondary">Export JSON</button>
+        <label class="btn btn-secondary">
+          Import JSON
+          <input type="file" id="file-import" accept=".json" hidden>
+        </label>
+      </div>
+    </header>
+
+    <!-- Tab Container -->
+    <main class="tab-container">
+
+      <!-- Topology Tab (existing traversal editor) -->
+      <div id="tab-content-topology" class="tab-content" hidden>
+        <div class="main">
+          <!-- Left Panel - Controls -->
+          <aside class="panel panel-left">
+            <section class="panel-section">
+              <h3>Create Traversal</h3>
+              <p class="hint">Click nodes in sequence to define a route.</p>
+              <div id="path-sequence" class="path-sequence">
+                <span class="hint">Click nodes to start...</span>
+              </div>
+              <div class="traversal-actions">
+                <button id="btn-undo" class="btn btn-small" disabled>Undo</button>
+                <button id="btn-clear-path" class="btn btn-small" disabled>Clear</button>
+              </div>
+              <div class="save-section">
+                <button id="btn-save-path" class="btn btn-primary btn-full" disabled>Save Traversal</button>
+              </div>
+            </section>
+
+            <section class="panel-section">
+              <h3>Node Info</h3>
+              <div id="node-info" class="node-info">
+                <p class="hint">Hover over a node to see details.</p>
+              </div>
+            </section>
+
+            <section class="panel-section" id="enrichment-panel" hidden>
+              <h3>Mythic Profile</h3>
+              <div id="node-enrichment">
+                <p class="hint">Hover a node to see its mythic profile.</p>
+              </div>
+            </section>
+
+            <section class="panel-section">
+              <h3>Legend</h3>
+              <div class="legend">
+                <div class="legend-item">
+                  <span class="legend-color" style="background: #8b5cf6"></span>
+                  <span>Descent / Shadow</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color" style="background: #3b82f6"></span>
+                  <span>Resonance / Mirror</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color" style="background: #10b981"></span>
+                  <span>Emergence / Mythogenesis</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color" style="background: #f59e0b"></span>
+                  <span>Nontion (Center)</span>
+                </div>
+              </div>
+            </section>
+          </aside>
+
+          <!-- Center - Canvas -->
+          <div class="canvas-container">
+            <svg id="canvas" class="canvas"></svg>
+          </div>
+
+          <!-- Right Panel - Saved Traversals -->
+          <aside class="panel panel-right">
+            <section class="panel-section">
+              <div class="section-header">
+                <h3>Groups</h3>
+                <button id="btn-add-group" class="btn-icon" title="Add Group">+</button>
+              </div>
+              <div id="groups-list" class="groups-list">
+                <!-- Groups rendered here -->
+              </div>
+            </section>
+            <section class="panel-section">
+              <div class="section-header">
+                <h3>Ungrouped</h3>
+                <span id="stat-paths" class="stat-badge">0</span>
+              </div>
+              <div id="paths-list" class="paths-list">
+                <p class="hint">No traversals saved yet.</p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Archetypes Tab -->
+      <div id="tab-content-archetypes" class="tab-content" hidden></div>
+
+      <!-- Entity Tracing Tab -->
+      <div id="tab-content-tracing" class="tab-content" hidden></div>
+
+      <!-- Validation Tab -->
+      <div id="tab-content-validation" class="tab-content" hidden></div>
+
+      <!-- Patterns Tab -->
+      <div id="tab-content-patterns" class="tab-content" hidden></div>
+
+    </main>
+  </div>
+
+  <!-- Traversal Save/Edit Modal -->
+  <div id="modal-save-path" class="modal" hidden>
+    <div class="modal-content">
+      <h2 id="modal-title">Save Traversal</h2>
+      <form id="form-save-path">
+        <input type="hidden" id="edit-path-id" value="">
+        <div class="form-group">
+          <label for="path-name">Name *</label>
+          <input type="text" id="path-name" required placeholder="e.g., Hero's Journey">
+        </div>
+        <div class="form-group">
+          <label for="path-color">Color</label>
+          <div class="color-picker">
+            <input type="color" id="path-color" value="#fbbf24">
+            <div class="color-presets" id="color-presets"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="path-group">Group</label>
+          <select id="path-group">
+            <option value="">None (Ungrouped)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="path-description">Description</label>
+          <textarea id="path-description" rows="2" placeholder="Optional..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="btn-cancel-save">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Group Create/Edit Modal -->
+  <div id="modal-group" class="modal" hidden>
+    <div class="modal-content modal-small">
+      <h2 id="modal-group-title">New Group</h2>
+      <form id="form-group">
+        <input type="hidden" id="edit-group-id" value="">
+        <div class="form-group">
+          <label for="group-name">Name *</label>
+          <input type="text" id="group-name" required placeholder="e.g., Spiral Paths">
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="btn-cancel-group">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/nodes.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/paths.js"></script>
+  <script src="js/enrichment.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/tab-router.js"></script>
+  <script src="js/tab-topology.js"></script>
+  <script src="js/tab-archetypes.js"></script>
+  <script src="js/tab-tracing.js"></script>
+  <script src="js/tab-validation.js"></script>
+  <script src="js/tab-patterns.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

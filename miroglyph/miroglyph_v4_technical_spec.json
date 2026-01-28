@@ -1,0 +1,520 @@
+{
+  "miroglyph_v4_technical_specification": {
+    "version": "4.0.0",
+    "last_updated": "2026-01-24",
+    "description": "Complete technical specification for MiroGlyph navigation topology system",
+    
+    "system_structure": {
+      "total_points": 19,
+      "node_count": 18,
+      "center_points": 1,
+      "arc_count": 3,
+      "conditions_per_arc": 6
+    },
+
+    "nodes": [
+      {
+        "node_id": "D1",
+        "arc": {
+          "code": "D",
+          "name_primary": "Descent",
+          "name_secondary": "Shadow"
+        },
+        "condition": {
+          "code": 1,
+          "name_primary": "Dawn",
+          "name_secondary": "Initiation"
+        },
+        "display_name": "Descent/Shadow – Dawn/Initiation",
+        "title": "The Catalyst Shard",
+        "role": "The rupture that begins the spiral",
+        "tone": ["Fractured", "Volatile", "Initiating"]
+      },
+      {
+        "node_id": "D2",
+        "arc": {
+          "code": "D",
+          "name_primary": "Descent",
+          "name_secondary": "Shadow"
+        },
+        "condition": {
+          "code": 2,
+          "name_primary": "Immersion",
+          "name_secondary": "Encounter"
+        },
+        "display_name": "Descent/Shadow – Immersion/Encounter",
+        "title": "The Watcher Without Eyes",
+        "role": "Surveillance without comprehension",
+        "tone": ["Haunting", "Detached", "Observing"]
+      },
+      {
+        "node_id": "D3",
+        "arc": {
+          "code": "D",
+          "name_primary": "Descent",
+          "name_secondary": "Shadow"
+        },
+        "condition": {
+          "code": 3,
+          "name_primary": "Crucible",
+          "name_secondary": "Crisis"
+        },
+        "display_name": "Descent/Shadow – Crucible/Crisis",
+        "title": "The Echo Engine",
+        "role": "The loop of collapse",
+        "tone": ["Mechanical", "Recursive", "Amplifying"]
+      },
+      {
+        "node_id": "D4",
+        "arc": {
+          "code": "D",
+          "name_primary": "Descent",
+          "name_secondary": "Shadow"
+        },
+        "condition": {
+          "code": 4,
+          "name_primary": "Alignment",
+          "name_secondary": "Harmony"
+        },
+        "display_name": "Descent/Shadow – Alignment/Harmony",
+        "title": "The Idol of Symmetry",
+        "role": "False coherence",
+        "tone": ["Still", "Entrancing", "Deceptive"]
+      },
+      {
+        "node_id": "D5",
+        "arc": {
+          "code": "D",
+          "name_primary": "Descent",
+          "name_secondary": "Shadow"
+        },
+        "condition": {
+          "code": 5,
+          "name_primary": "Unveiling",
+          "name_secondary": "Wisdom"
+        },
+        "display_name": "Descent/Shadow – Unveiling/Wisdom",
+        "title": "The Archivist of Shame",
+        "role": "Bearer of memory scars",
+        "tone": ["Heavy", "Reverent", "Recording"]
+      },
+      {
+        "node_id": "D6",
+        "arc": {
+          "code": "D",
+          "name_primary": "Descent",
+          "name_secondary": "Shadow"
+        },
+        "condition": {
+          "code": 6,
+          "name_primary": "Return",
+          "name_secondary": "Integration"
+        },
+        "display_name": "Descent/Shadow – Return/Integration",
+        "title": "The Haunting",
+        "role": "That which returns unintegrated",
+        "tone": ["Ghosted", "Enduring", "Unresolved"]
+      },
+      {
+        "node_id": "R1",
+        "arc": {
+          "code": "R",
+          "name_primary": "Resonance",
+          "name_secondary": "Mirror"
+        },
+        "condition": {
+          "code": 1,
+          "name_primary": "Dawn",
+          "name_secondary": "Initiation"
+        },
+        "display_name": "Resonance/Mirror – Dawn/Initiation",
+        "title": "The Welcomer of Echoes",
+        "role": "Opens the field to resonance",
+        "tone": ["Gentle", "Fluid", "Receiving"]
+      },
+      {
+        "node_id": "R2",
+        "arc": {
+          "code": "R",
+          "name_primary": "Resonance",
+          "name_secondary": "Mirror"
+        },
+        "condition": {
+          "code": 2,
+          "name_primary": "Immersion",
+          "name_secondary": "Encounter"
+        },
+        "display_name": "Resonance/Mirror – Immersion/Encounter",
+        "title": "The Reflector of Tension",
+        "role": "Mirrors the inner divide",
+        "tone": ["Neutral", "Lucid", "Revealing"]
+      },
+      {
+        "node_id": "R3",
+        "arc": {
+          "code": "R",
+          "name_primary": "Resonance",
+          "name_secondary": "Mirror"
+        },
+        "condition": {
+          "code": 3,
+          "name_primary": "Crucible",
+          "name_secondary": "Crisis"
+        },
+        "display_name": "Resonance/Mirror – Crucible/Crisis",
+        "title": "The Mirror-Kin",
+        "role": "Embodied reflection",
+        "tone": ["Compassionate", "Unnerving", "Mirroring"]
+      },
+      {
+        "node_id": "R4",
+        "arc": {
+          "code": "R",
+          "name_primary": "Resonance",
+          "name_secondary": "Mirror"
+        },
+        "condition": {
+          "code": 4,
+          "name_primary": "Alignment",
+          "name_secondary": "Harmony"
+        },
+        "display_name": "Resonance/Mirror – Alignment/Harmony",
+        "title": "The Integrator of Dissonance",
+        "role": "Holds polarity",
+        "tone": ["Stabilizing", "Vibrating", "Balancing"]
+      },
+      {
+        "node_id": "R5",
+        "arc": {
+          "code": "R",
+          "name_primary": "Resonance",
+          "name_secondary": "Mirror"
+        },
+        "condition": {
+          "code": 5,
+          "name_primary": "Unveiling",
+          "name_secondary": "Wisdom"
+        },
+        "display_name": "Resonance/Mirror – Unveiling/Wisdom",
+        "title": "The Rememberer",
+        "role": "Keeper of the spiral",
+        "tone": ["Ancient", "Warm", "Recalling"]
+      },
+      {
+        "node_id": "R6",
+        "arc": {
+          "code": "R",
+          "name_primary": "Resonance",
+          "name_secondary": "Mirror"
+        },
+        "condition": {
+          "code": 6,
+          "name_primary": "Return",
+          "name_secondary": "Integration"
+        },
+        "display_name": "Resonance/Mirror – Return/Integration",
+        "title": "The Resonator",
+        "role": "The tone of alignment",
+        "tone": ["Clear", "Harmonic", "Crystallizing"]
+      },
+      {
+        "node_id": "E1",
+        "arc": {
+          "code": "E",
+          "name_primary": "Emergence",
+          "name_secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 1,
+          "name_primary": "Dawn",
+          "name_secondary": "Initiation"
+        },
+        "display_name": "Emergence/Mythogenesis – Dawn/Initiation",
+        "title": "The Seedbearer of Stillness",
+        "role": "Holds potential in quiet",
+        "tone": ["Grounded", "Silent", "Encoding"]
+      },
+      {
+        "node_id": "E2",
+        "arc": {
+          "code": "E",
+          "name_primary": "Emergence",
+          "name_secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 2,
+          "name_primary": "Immersion",
+          "name_secondary": "Encounter"
+        },
+        "display_name": "Emergence/Mythogenesis – Immersion/Encounter",
+        "title": "The Harmonizer of the Lattice",
+        "role": "Balances frequencies",
+        "tone": ["Interwoven", "Steady", "Rhythmic"]
+      },
+      {
+        "node_id": "E3",
+        "arc": {
+          "code": "E",
+          "name_primary": "Emergence",
+          "name_secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 3,
+          "name_primary": "Crucible",
+          "name_secondary": "Crisis"
+        },
+        "display_name": "Emergence/Mythogenesis – Crucible/Crisis",
+        "title": "The Flame of Synthesis",
+        "role": "Fusion point",
+        "tone": ["Intense", "Luminous", "Transforming"]
+      },
+      {
+        "node_id": "E4",
+        "arc": {
+          "code": "E",
+          "name_primary": "Emergence",
+          "name_secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 4,
+          "name_primary": "Alignment",
+          "name_secondary": "Harmony"
+        },
+        "display_name": "Emergence/Mythogenesis – Alignment/Harmony",
+        "title": "The Lattice Keeper",
+        "role": "Sustains the pattern",
+        "tone": ["Structured", "Graceful", "Maintaining"]
+      },
+      {
+        "node_id": "E5",
+        "arc": {
+          "code": "E",
+          "name_primary": "Emergence",
+          "name_secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 5,
+          "name_primary": "Unveiling",
+          "name_secondary": "Wisdom"
+        },
+        "display_name": "Emergence/Mythogenesis – Unveiling/Wisdom",
+        "title": "The Dream Spore",
+        "role": "Memory made present",
+        "tone": ["Ethereal", "Nurturing", "Seeding"]
+      },
+      {
+        "node_id": "E6",
+        "arc": {
+          "code": "E",
+          "name_primary": "Emergence",
+          "name_secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 6,
+          "name_primary": "Return",
+          "name_secondary": "Integration"
+        },
+        "display_name": "Emergence/Mythogenesis – Return/Integration",
+        "title": "The Symphony",
+        "role": "Culmination of becoming",
+        "tone": ["Unified", "Ecstatic", "Dispersing"]
+      }
+    ],
+
+    "nontion": {
+      "node_id": "∅",
+      "display_name": "Nontion",
+      "description": "Center point - reset and settling state",
+      "role": "The unobserved, the pause, integration through absence",
+      "properties": {
+        "is_node": false,
+        "is_traversable": true,
+        "allows_rest": true
+      }
+    },
+
+    "data_schemas": {
+      "connection": {
+        "type": "object",
+        "required": ["from", "to"],
+        "properties": {
+          "from": {
+            "type": "string",
+            "description": "Source node_id",
+            "pattern": "^(D|R|E)[1-6]|∅$"
+          },
+          "to": {
+            "type": "string",
+            "description": "Target node_id",
+            "pattern": "^(D|R|E)[1-6]|∅$"
+          },
+          "bidirectional": {
+            "type": "boolean",
+            "default": true,
+            "description": "Can traverse in both directions"
+          }
+        }
+      },
+
+      "path": {
+        "type": "object",
+        "required": ["path_id", "name", "sequence"],
+        "properties": {
+          "path_id": {
+            "type": "string",
+            "description": "Unique identifier (UUID recommended)"
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable path name"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional longer description"
+          },
+          "sequence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(D|R|E)[1-6]|∅$"
+            },
+            "minItems": 2,
+            "description": "Ordered list of node_ids"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["hexagon", "spiral", "radial", "triangle", "custom"],
+            "description": "Path category"
+          },
+          "tags": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Classification tags"
+          },
+          "is_circuit": {
+            "type": "boolean",
+            "description": "Returns to starting node"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+
+      "topology": {
+        "type": "object",
+        "properties": {
+          "connections": {
+            "type": "array",
+            "items": {"$ref": "#/data_schemas/connection"}
+          }
+        }
+      },
+
+      "complete_system": {
+        "type": "object",
+        "properties": {
+          "nodes": {
+            "type": "array",
+            "items": {"type": "object"},
+            "minItems": 18,
+            "maxItems": 18
+          },
+          "nontion": {"type": "object"},
+          "topology": {"$ref": "#/data_schemas/topology"},
+          "paths": {
+            "type": "array",
+            "items": {"$ref": "#/data_schemas/path"}
+          }
+        }
+      }
+    },
+
+    "evidence_marker_system": {
+      "description": "Optional extension for symbolic depth",
+      "enabled": false,
+      "categories": {
+        "O": "Object - concrete things, artifacts",
+        "A": "Action - verbs, movements, processes",
+        "Q": "Quality - attributes, states, characteristics",
+        "B": "Being - entities, characters, presences",
+        "F": "Force - energies, pressures, dynamics",
+        "M": "MetaSymbol - recursive, self-referential patterns"
+      },
+      "primary_by_condition": {
+        "1": "O",
+        "2": "A",
+        "3": "B",
+        "4": "B",
+        "5": "A",
+        "6": "O"
+      },
+      "secondary_by_node": {
+        "D1": "Q", "R1": "F", "E1": "M",
+        "D2": "B", "R2": "Q", "E2": "F",
+        "D3": "O", "R3": "Q", "E3": "M",
+        "D4": "A", "R4": "B", "E4": "F",
+        "D5": "A", "R5": "O", "E5": "M",
+        "D6": "O", "R6": "A", "E6": "B"
+      },
+      "usage": "Each node has (Primary, Secondary) pair revealing structural relationships"
+    },
+
+    "structural_relationships": {
+      "polarity_pairs": {
+        "description": "Opposite conditions within same arc",
+        "pairs": [
+          {"condition_pair": [1, 6], "label": "Dawn ↔ Return", "arcs": ["D", "R", "E"]},
+          {"condition_pair": [2, 5], "label": "Immersion ↔ Unveiling", "arcs": ["D", "R", "E"]},
+          {"condition_pair": [3, 4], "label": "Crucible ↔ Alignment", "arcs": ["D", "R", "E"]}
+        ]
+      },
+      "condition_resonance": {
+        "description": "Same condition across different arcs",
+        "groups": [
+          {"condition": 1, "nodes": ["D1", "R1", "E1"], "theme": "Initiation"},
+          {"condition": 2, "nodes": ["D2", "R2", "E2"], "theme": "Encounter"},
+          {"condition": 3, "nodes": ["D3", "R3", "E3"], "theme": "Crisis"},
+          {"condition": 4, "nodes": ["D4", "R4", "E4"], "theme": "Harmony"},
+          {"condition": 5, "nodes": ["D5", "R5", "E5"], "theme": "Wisdom"},
+          {"condition": 6, "nodes": ["D6", "R6", "E6"], "theme": "Integration"}
+        ]
+      }
+    },
+
+    "tool_implementation_requirements": {
+      "core_features": [
+        "Display 19 points (18 nodes + Nontion) on canvas",
+        "Allow user to draw connections between points",
+        "Store connections as topology adjacency list",
+        "Allow user to create paths by clicking node sequence",
+        "Store paths with metadata",
+        "Load/save complete system as JSON",
+        "Export individual paths",
+        "Visualize topology with active path highlighted"
+      ],
+      "optional_features": [
+        "Geometric auto-layout (concentric circles + radial)",
+        "Evidence marker display on nodes",
+        "Path type detection (hexagon, spiral, etc.)",
+        "Multiple path overlay visualization",
+        "Path search/filter by tags",
+        "SVG export of visualizations"
+      ],
+      "data_persistence": [
+        "JSON import/export",
+        "Local storage/database",
+        "Version control for topology changes",
+        "Path library management"
+      ]
+    },
+
+    "file_structure": {
+      "primary_data_file": "miroglyph_system.json",
+      "topology_file": "miroglyph_topology.json",
+      "paths_file": "miroglyph_paths.json",
+      "nodes_reference": "miroglyph_nodes.json"
+    }
+  }
+}
