@@ -1,0 +1,325 @@
+/* Atlas View — Map + Node Drawer */
+
+.atlas-layout {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.atlas-map-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-surface-0);
+  background-image: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.03) 0%, transparent 60%);
+  position: relative;
+}
+
+.atlas-map-area .canvas {
+  flex: 1;
+  width: 100%;
+}
+
+.atlas-legend {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: rgba(15, 23, 42, 0.8);
+  border-top: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+/* Node Drawer */
+.node-drawer {
+  width: var(--drawer-width);
+  background: var(--color-surface-2);
+  border-left: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: width var(--transition-drawer), opacity 200ms ease;
+}
+
+.node-drawer-closed {
+  width: 0;
+  opacity: 0;
+  border-left: none;
+  overflow: hidden;
+}
+
+.drawer-header {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.drawer-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+
+.drawer-node-id {
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.drawer-node-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.drawer-node-meta {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.drawer-node-tones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.drawer-tone-tag {
+  font-size: 0.7rem;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+/* Drawer Inner Tabs */
+.drawer-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.drawer-tab {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-xs);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.drawer-tab:hover {
+  color: var(--color-text);
+}
+
+.drawer-tab-active {
+  color: var(--color-primary-hover);
+  border-bottom-color: var(--color-primary);
+}
+
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Drawer content sections */
+.drawer-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.drawer-section-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Drawer archetype cards */
+.drawer-arch-card {
+  background: var(--color-bg);
+  border-radius: 8px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-left: 3px solid transparent;
+}
+
+.drawer-arch-card:hover {
+  background: var(--color-bg-hover);
+  transform: translateY(-1px);
+}
+
+.drawer-arch-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.drawer-arch-card-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.drawer-arch-card-affinity {
+  font-size: 0.7rem;
+  font-family: monospace;
+  color: var(--color-miroglyph);
+}
+
+.drawer-arch-card-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+
+.drawer-arch-card-prims {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Drawer entity rows */
+.drawer-entity-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.drawer-entity-row:hover {
+  background: var(--color-bg-hover);
+}
+
+.drawer-entity-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.drawer-entity-meta {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+}
+
+/* Drawer stat grid */
+.drawer-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.drawer-stat {
+  background: var(--color-bg);
+  border-radius: 6px;
+  padding: var(--spacing-sm);
+  text-align: center;
+}
+
+.drawer-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.drawer-stat-label {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Sibling / polarity nodes */
+.drawer-sibling-nodes {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.drawer-sibling-card {
+  flex: 1;
+  background: var(--color-bg);
+  border-radius: 6px;
+  padding: var(--spacing-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.drawer-sibling-card:hover {
+  background: var(--color-bg-hover);
+  transform: translateY(-1px);
+}
+
+.drawer-sibling-id {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.drawer-sibling-title {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+}
+
+/* Node glow animation */
+@keyframes nodeGlow {
+  0%, 100% { filter: drop-shadow(0 0 6px var(--glow-color)); }
+  50% { filter: drop-shadow(0 0 12px var(--glow-color)); }
+}
+
+.node-group.selected .node-circle {
+  stroke: white;
+  stroke-width: 3;
+  animation: nodeGlow 2s ease-in-out infinite;
+}
+
+.node-group.dimmed {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+/* Drawer pattern mini-cards */
+.drawer-pattern-card {
+  background: var(--color-bg);
+  border-radius: 6px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border-left: 3px solid;
+}
+
+.drawer-pattern-card:hover {
+  background: var(--color-bg-hover);
+}
+
+.drawer-pattern-name {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  margin-bottom: 2px;
+}
+
+.drawer-pattern-meta {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+}

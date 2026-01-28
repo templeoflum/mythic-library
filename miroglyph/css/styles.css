@@ -25,8 +25,27 @@
   --spacing-xl: 2rem;
 
   /* Layout */
-  --header-height: 60px;
+  --header-height: 56px;
+  --nav-height: 44px;
   --panel-width: 280px;
+  --drawer-width: 420px;
+  --workshop-width: 360px;
+  --card-min-width: 280px;
+
+  /* Surface hierarchy */
+  --color-surface-0: #0a0f1e;
+  --color-surface-1: #0f172a;
+  --color-surface-2: #1e293b;
+  --color-surface-3: #283548;
+
+  /* System layer accents */
+  --color-library: #f59e0b;
+  --color-acp: #8b5cf6;
+  --color-miroglyph: #10b981;
+
+  /* Animation */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-drawer: 300ms var(--ease-out-expo);
 }
 
 * {
@@ -83,6 +102,8 @@ body {
 .main {
   display: flex;
   flex: 1;
+  height: 100%;
+  min-height: 0;
   overflow: hidden;
 }
 

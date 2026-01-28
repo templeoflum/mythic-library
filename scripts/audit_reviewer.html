@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACP v2 Audit Reviewer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --card: #12121a;
+    --card-raised: #1a1a26;
+    --border: #2a2a3a;
+    --border-light: #3a3a4e;
+    --accent: #fbbf24;
+    --accent-dim: #b8860b;
+    --text: #e5e5e5;
+    --text-muted: #8888a0;
+    --text-dim: #55556a;
+    --agree: #22c55e;
+    --disagree: #ef4444;
+    --unsure: #f59e0b;
+    --echo: #8b5cf6;
+    --polar: #ef4444;
+    --complement: #3b82f6;
+    --neighbor: #10b981;
+    --distant: #f97316;
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+
+  html { font-size: 15px; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* -- Loading State -- */
+  #loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1.5rem;
+  }
+  #loading .spinner {
+    width: 48px; height: 48px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #loading .label { color: var(--text-muted); font-size: 0.95rem; letter-spacing: 0.03em; }
+  #loading .error { color: var(--disagree); max-width: 500px; text-align: center; }
+
+  /* -- App Shell -- */
+  #app { display: none; }
+  #app.visible { display: flex; flex-direction: column; min-height: 100vh; }
+
+  /* -- Header -- */
+  header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header .title-group { display: flex; align-items: baseline; gap: 0.75rem; }
+  header h1 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+  }
+  header .subtitle { font-size: 0.8rem; color: var(--text-muted); }
+
+  /* -- Progress Bar -- */
+  .progress-strip {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .progress-track {
+    width: 180px; height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  .progress-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  /* -- Main Layout -- */
+  .main-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* -- Sidebar -- */
+  .sidebar {
+    width: 280px;
+    min-width: 280px;
+    background: var(--card);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .sidebar-section {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar-section h3 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  /* Summary rows */
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+    font-size: 0.85rem;
+  }
+  .summary-row .cat-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+  .summary-row .cat-label { display: flex; align-items: center; }
+  .summary-row .cat-counts {
+    display: flex; gap: 0.5rem;
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .summary-row .c-agree { color: var(--agree); }
+  .summary-row .c-disagree { color: var(--disagree); }
+  .summary-row .c-unsure { color: var(--unsure); }
+
+  /* Case list */
+  .case-list { display: flex; flex-direction: column; gap: 2px; }
+  .case-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.15s;
+  }
+  .case-list-item:hover { background: var(--card-raised); }
+  .case-list-item.active { background: var(--border); }
+  .case-list-item .case-num {
+    width: 28px;
+    text-align: right;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+  .case-list-item .case-name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-muted);
+  }
+  .case-list-item .case-status {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .case-list-item .case-status.judged-AGREE { background: var(--agree); }
+  .case-list-item .case-status.judged-DISAGREE { background: var(--disagree); }
+  .case-list-item .case-status.judged-UNSURE { background: var(--unsure); }
+  .case-list-item .case-status.judged-null { background: var(--border); }
+
+  /* Export button */
+  .export-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: 1px solid var(--accent-dim);
+    color: var(--accent);
+    border-radius: var(--radius);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .export-btn:hover {
+    background: rgba(251, 191, 36, 0.08);
+    border-color: var(--accent);
+  }
+
+  /* -- Content Area -- */
+  .content-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem 2rem 3rem;
+  }
+
+  /* Case Header */
+  .case-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .case-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .nav-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 36px; height: 36px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    font-size: 1.1rem;
+  }
+  .nav-btn:hover:not(:disabled) { background: var(--card-raised); border-color: var(--border-light); }
+  .nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+  .case-counter {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    min-width: 80px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .category-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border: 1px solid;
+  }
+
+  /* Claim */
+  .claim-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .claim-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .claim-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .fidelity-tag {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(139, 92, 246, 0.15);
+    color: var(--echo);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+  }
+
+  /* Archetype Pair */
+  .archetype-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 900px) {
+    .archetype-pair { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+    .content-area { padding: 1rem; }
+  }
+
+  .archetype-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+  }
+  .archetype-card .arch-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .archetype-card .arch-role {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-bottom: 0.25rem;
+  }
+  .archetype-card .arch-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.15rem;
+  }
+  .archetype-card .arch-id {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+  .archetype-card .arch-system {
+    display: inline-block;
+    margin-top: 0.35rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+  }
+  .archetype-card .arch-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    min-height: 1.5em;
+  }
+
+  /* Spectral bars */
+  .spectral-chart { margin-bottom: 1rem; }
+  .spectral-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+  .spectral-label {
+    width: 130px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-align: right;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .spectral-track {
+    flex: 1;
+    height: 14px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  .spectral-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+  }
+  .spectral-val {
+    width: 32px;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+
+  /* Primordials */
+  .primordials-section h4 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 0.4rem;
+  }
+  .primordial-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.55rem;
+    margin: 0.15rem 0.2rem 0.15rem 0;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    background: var(--card-raised);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+  .primordial-tag .pw {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+  }
+
+  /* Comparison card */
+  .comparison-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .comparison-card h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+  .distance-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 1rem;
+  }
+  .diff-chart-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+  }
+
+  .diff-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+  .diff-label {
+    width: 130px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .diff-track {
+    flex: 1;
+    height: 14px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .diff-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+  }
+  .diff-val {
+    width: 32px;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+
+  /* Reviewer Panel */
+  .reviewer-panel {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+  }
+  .reviewer-panel h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  .judgment-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .judgment-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius);
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.03em;
+  }
+  .judgment-btn:hover {
+    border-color: var(--border-light);
+    color: var(--text);
+  }
+  .judgment-btn.selected-AGREE {
+    border-color: var(--agree);
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--agree);
+  }
+  .judgment-btn.selected-DISAGREE {
+    border-color: var(--disagree);
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--disagree);
+  }
+  .judgment-btn.selected-UNSURE {
+    border-color: var(--unsure);
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--unsure);
+  }
+
+  .notes-area {
+    width: 100%;
+    min-height: 90px;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.2s;
+  }
+  .notes-area:focus {
+    outline: none;
+    border-color: var(--accent-dim);
+  }
+  .notes-area::placeholder {
+    color: var(--text-dim);
+  }
+  .notes-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+  }
+
+  /* Keyboard hint */
+  .keyboard-hints {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .key-hint {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+  }
+  kbd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 20px;
+    padding: 0 0.35rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-light);
+    background: var(--card-raised);
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.68rem;
+    font-weight: 600;
+  }
+
+  /* Axis color palette */
+  .axis-0 { background: #ef4444; }
+  .axis-1 { background: #f97316; }
+  .axis-2 { background: #eab308; }
+  .axis-3 { background: #22c55e; }
+  .axis-4 { background: #14b8a6; }
+  .axis-5 { background: #3b82f6; }
+  .axis-6 { background: #8b5cf6; }
+  .axis-7 { background: #ec4899; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-light); }
+</style>
+</head>
+<body>
+
+<!-- Loading State -->
+<div id="loading">
+  <div class="spinner"></div>
+  <div class="label">Loading audit cases...</div>
+</div>
+
+<!-- App -->
+<div id="app">
+  <header>
+    <div class="title-group">
+      <h1>ACP v2 Audit Reviewer</h1>
+      <span class="subtitle">Human Validation Suite</span>
+    </div>
+    <div class="progress-strip">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+      <span class="progress-label" id="progressLabel">0 / 40 reviewed</span>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3>Summary by Category</h3>
+        <div id="categorySummary"></div>
+      </div>
+      <div class="sidebar-section" style="flex:1; overflow-y:auto;">
+        <h3>All Cases</h3>
+        <div class="case-list" id="caseList"></div>
+      </div>
+      <div class="sidebar-section">
+        <button class="export-btn" id="exportBtn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v8M4 7l4 4 4-4M2 12v1.5a.5.5 0 00.5.5h11a.5.5 0 00.5-.5V12"/>
+          </svg>
+          Export Judgments
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content-area" id="contentArea">
+      <!-- Case Header -->
+      <div class="case-header">
+        <div class="case-nav">
+          <button class="nav-btn" id="prevBtn" title="Previous case">&larr;</button>
+          <span class="case-counter" id="caseCounter">Case 1 / 40</span>
+          <button class="nav-btn" id="nextBtn" title="Next case">&rarr;</button>
+        </div>
+        <span class="category-badge" id="categoryBadge"></span>
+      </div>
+
+      <!-- Claim -->
+      <div class="claim-card" id="claimCard">
+        <div class="claim-label">Claim Under Review</div>
+        <div class="claim-text" id="claimText"></div>
+        <div id="fidelityTag"></div>
+      </div>
+
+      <!-- Archetype Pair -->
+      <div class="archetype-pair">
+        <div class="archetype-card" id="sourceCard"></div>
+        <div class="archetype-card" id="targetCard"></div>
+      </div>
+
+      <!-- Comparison -->
+      <div class="comparison-card" id="comparisonCard"></div>
+
+      <!-- Reviewer Input -->
+      <div class="reviewer-panel">
+        <h3>Your Judgment</h3>
+        <div class="judgment-buttons" id="judgmentButtons">
+          <button class="judgment-btn" data-value="AGREE">AGREE</button>
+          <button class="judgment-btn" data-value="DISAGREE">DISAGREE</button>
+          <button class="judgment-btn" data-value="UNSURE">UNSURE</button>
+        </div>
+        <div class="notes-label">Reviewer Notes</div>
+        <textarea class="notes-area" id="notesArea" placeholder="Optional notes about this case..."></textarea>
+        <div class="keyboard-hints">
+          <span class="key-hint"><kbd>&larr;</kbd><kbd>&rarr;</kbd> Navigate</span>
+          <span class="key-hint"><kbd>1</kbd> Agree</span>
+          <span class="key-hint"><kbd>2</kbd> Disagree</span>
+          <span class="key-hint"><kbd>3</kbd> Unsure</span>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  const STORAGE_KEY = 'acp_v2_audit_judgments';
+  const DATA_URL = '../outputs/audits/human_audit_cases.json';
+
+  const AXES = [
+    'order-chaos',
+    'creation-destruction',
+    'light-shadow',
+    'active-receptive',
+    'individual-collective',
+    'ascent-descent',
+    'stasis-transformation',
+    'voluntary-fated'
+  ];
+
+  const AXIS_LABELS = {
+    'order-chaos': 'Order \u2014 Chaos',
+    'creation-destruction': 'Creation \u2014 Destruction',
+    'light-shadow': 'Light \u2014 Shadow',
+    'active-receptive': 'Active \u2014 Receptive',
+    'individual-collective': 'Individual \u2014 Collective',
+    'ascent-descent': 'Ascent \u2014 Descent',
+    'stasis-transformation': 'Stasis \u2014 Transform.',
+    'voluntary-fated': 'Voluntary \u2014 Fated'
+  };
+
+  const CATEGORY_COLORS = {
+    'CULTURAL_ECHO': 'var(--echo)',
+    'POLAR_OPPOSITE': 'var(--polar)',
+    'COMPLEMENT': 'var(--complement)',
+    'NEAREST_NEIGHBOR': 'var(--neighbor)',
+    'DISTANT_SAME_PRIMORDIAL': 'var(--distant)'
+  };
+
+  const CATEGORY_SHORT = {
+    'CULTURAL_ECHO': 'CULTURAL ECHO',
+    'POLAR_OPPOSITE': 'POLAR OPPOSITE',
+    'COMPLEMENT': 'COMPLEMENT',
+    'NEAREST_NEIGHBOR': 'NEAREST NEIGHBOR',
+    'DISTANT_SAME_PRIMORDIAL': 'DISTANT PRIMORDIAL'
+  };
+
+  let allCases = [];
+  let judgments = {};
+  let currentIndex = 0;
+
+  // --- Helpers ---
+
+  function normalizeCategory(raw) {
+    if (raw.startsWith('CULTURAL_ECHO')) return 'CULTURAL_ECHO';
+    return raw;
+  }
+
+  function loadJudgments() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) judgments = JSON.parse(stored);
+    } catch (_) {}
+  }
+
+  function saveJudgments() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(judgments));
+  }
+
+  function getJudgment(idx) {
+    return judgments[idx] || { judgment: null, notes: '' };
+  }
+
+  function setJudgment(idx, field, value) {
+    if (!judgments[idx]) judgments[idx] = { judgment: null, notes: '' };
+    judgments[idx][field] = value;
+    saveJudgments();
+    updateProgress();
+    updateSidebar();
+    updateCaseList();
+  }
+
+  function countReviewed() {
+    return Object.values(judgments).filter(j => j.judgment !== null).length;
+  }
+
+  // --- Rendering ---
+
+  function renderArchetypeCard(container, role, arch) {
+    const system = arch.system && arch.system !== 'unknown' ? arch.system : arch.id.split(':')[0];
+    const desc = arch.description || '(No description provided)';
+    const primHTML = (arch.primordials || []).map(p => {
+      const name = p.primordial.replace('primordial:', '');
+      return `<span class="primordial-tag">${name}<span class="pw">${p.weight.toFixed(2)}</span></span>`;
+    }).join('');
+
+    const barsHTML = AXES.map((axis, i) => {
+      const val = (arch.coordinates && arch.coordinates[axis]) || 0;
+      const pct = (val * 100).toFixed(1);
+      return `<div class="spectral-row">
+        <span class="spectral-label">${AXIS_LABELS[axis]}</span>
+        <div class="spectral-track">
+          <span class="spectral-fill axis-${i}" style="width:${pct}%"></span>
+        </div>
+        <span class="spectral-val">${val.toFixed(2)}</span>
+      </div>`;
+    }).join('');
+
+    container.innerHTML = `
+      <div class="arch-header">
+        <div class="arch-role">${role}</div>
+        <div class="arch-name">${arch.name || arch.id}</div>
+        <div class="arch-id">${arch.id}</div>
+        <span class="arch-system">${system}</span>
+      </div>
+      <div class="arch-desc">${desc}</div>
+      <div class="spectral-chart">${barsHTML}</div>
+      <div class="primordials-section">
+        <h4>Primordial Instantiations</h4>
+        ${primHTML || '<span style="font-size:0.75rem;color:var(--text-dim)">None</span>'}
+      </div>
+    `;
+  }
+
+  function renderComparison(container, c) {
+    const diffBarsHTML = AXES.map((axis, i) => {
+      const val = (c.per_axis_difference && c.per_axis_difference[axis]) || 0;
+      const pct = (val * 100).toFixed(1);
+      return `<div class="diff-row">
+        <span class="diff-label">${AXIS_LABELS[axis]}</span>
+        <div class="diff-track">
+          <span class="diff-fill axis-${i}" style="width:${pct}%"></span>
+        </div>
+        <span class="diff-val">${val.toFixed(2)}</span>
+      </div>`;
+    }).join('');
+
+    container.innerHTML = `
+      <h3>8D Euclidean Distance</h3>
+      <div class="distance-value">${c.distance_8d.toFixed(4)}</div>
+      <div class="diff-chart-label">Per-Axis Absolute Differences (0\u20131 scale)</div>
+      ${diffBarsHTML}
+    `;
+  }
+
+  function renderCase(idx) {
+    const c = allCases[idx];
+    const cat = normalizeCategory(c.category);
+    const color = CATEGORY_COLORS[cat] || 'var(--text-muted)';
+    const label = CATEGORY_SHORT[cat] || cat;
+
+    // Counter
+    document.getElementById('caseCounter').textContent = `Case ${idx + 1} / ${allCases.length}`;
+
+    // Nav buttons
+    document.getElementById('prevBtn').disabled = idx === 0;
+    document.getElementById('nextBtn').disabled = idx === allCases.length - 1;
+
+    // Category badge
+    const badge = document.getElementById('categoryBadge');
+    badge.textContent = label;
+    badge.style.color = color;
+    badge.style.borderColor = color;
+    badge.style.background = color.replace(')', ', 0.08)').replace('var(', 'rgba(').replace('--echo', '139,92,246').replace('--polar', '239,68,68').replace('--complement', '59,130,246').replace('--neighbor', '16,185,129').replace('--distant', '249,115,22');
+    // Simpler approach for background
+    badge.style.background = 'transparent';
+
+    // Claim
+    document.getElementById('claimText').textContent = c.claim;
+
+    // Fidelity
+    const fidelityTag = document.getElementById('fidelityTag');
+    if (c.fidelity != null) {
+      fidelityTag.innerHTML = `<span class="fidelity-tag">Fidelity: ${c.fidelity.toFixed(2)}</span>`;
+    } else {
+      fidelityTag.innerHTML = '';
+    }
+
+    // Archetypes
+    renderArchetypeCard(document.getElementById('sourceCard'), 'Source Archetype', c.source);
+    renderArchetypeCard(document.getElementById('targetCard'), 'Target Archetype', c.target);
+
+    // Comparison
+    renderComparison(document.getElementById('comparisonCard'), c);
+
+    // Reviewer judgment
+    const j = getJudgment(idx);
+    document.querySelectorAll('.judgment-btn').forEach(btn => {
+      btn.className = 'judgment-btn';
+      if (j.judgment === btn.dataset.value) {
+        btn.classList.add('selected-' + btn.dataset.value);
+      }
+    });
+
+    // Notes
+    document.getElementById('notesArea').value = j.notes || '';
+
+    // Active list item
+    document.querySelectorAll('.case-list-item').forEach((el, i) => {
+      el.classList.toggle('active', i === idx);
+    });
+
+    // Scroll content to top
+    document.getElementById('contentArea').scrollTop = 0;
+  }
+
+  function updateProgress() {
+    const reviewed = countReviewed();
+    const total = allCases.length;
+    const pct = total > 0 ? (reviewed / total * 100) : 0;
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressLabel').textContent = `${reviewed} / ${total} reviewed`;
+  }
+
+  function updateSidebar() {
+    // Category summary
+    const categories = ['CULTURAL_ECHO', 'POLAR_OPPOSITE', 'COMPLEMENT', 'NEAREST_NEIGHBOR', 'DISTANT_SAME_PRIMORDIAL'];
+    const summaryEl = document.getElementById('categorySummary');
+    let html = '';
+
+    categories.forEach(cat => {
+      const indices = [];
+      allCases.forEach((c, i) => { if (normalizeCategory(c.category) === cat) indices.push(i); });
+      if (indices.length === 0) return;
+
+      let agree = 0, disagree = 0, unsure = 0;
+      indices.forEach(i => {
+        const j = getJudgment(i);
+        if (j.judgment === 'AGREE') agree++;
+        else if (j.judgment === 'DISAGREE') disagree++;
+        else if (j.judgment === 'UNSURE') unsure++;
+      });
+
+      const color = CATEGORY_COLORS[cat] || 'var(--text-muted)';
+      const label = CATEGORY_SHORT[cat] || cat;
+
+      html += `<div class="summary-row">
+        <span class="cat-label"><span class="cat-dot" style="background:${color}"></span>${label}</span>
+        <span class="cat-counts">
+          <span class="c-agree" title="Agree">${agree}</span>/
+          <span class="c-disagree" title="Disagree">${disagree}</span>/
+          <span class="c-unsure" title="Unsure">${unsure}</span>
+          <span style="color:var(--text-dim)" title="Total">(${indices.length})</span>
+        </span>
+      </div>`;
+    });
+
+    summaryEl.innerHTML = html;
+  }
+
+  function buildCaseList() {
+    const container = document.getElementById('caseList');
+    let html = '';
+    allCases.forEach((c, i) => {
+      const j = getJudgment(i);
+      const statusClass = 'judged-' + j.judgment;
+      const name = (c.source.name || c.source.id) + ' \u2194 ' + (c.target.name || c.target.id);
+      html += `<div class="case-list-item" data-idx="${i}">
+        <span class="case-num">${i + 1}</span>
+        <span class="case-name" title="${name}">${name}</span>
+        <span class="case-status ${statusClass}"></span>
+      </div>`;
+    });
+    container.innerHTML = html;
+
+    container.querySelectorAll('.case-list-item').forEach(el => {
+      el.addEventListener('click', () => {
+        currentIndex = parseInt(el.dataset.idx, 10);
+        renderCase(currentIndex);
+      });
+    });
+  }
+
+  function updateCaseList() {
+    document.querySelectorAll('.case-list-item').forEach((el, i) => {
+      const j = getJudgment(i);
+      const dot = el.querySelector('.case-status');
+      dot.className = 'case-status judged-' + j.judgment;
+      el.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  // --- Export ---
+
+  function exportJudgments() {
+    const categories = ['CULTURAL_ECHO', 'POLAR_OPPOSITE', 'COMPLEMENT', 'NEAREST_NEIGHBOR', 'DISTANT_SAME_PRIMORDIAL'];
+    const summaryStats = { total: allCases.length, reviewed: 0, agree: 0, disagree: 0, unsure: 0, by_category: {} };
+
+    categories.forEach(cat => {
+      summaryStats.by_category[cat] = { total: 0, agree: 0, disagree: 0, unsure: 0 };
+    });
+
+    const caseResults = allCases.map((c, i) => {
+      const j = getJudgment(i);
+      const cat = normalizeCategory(c.category);
+
+      if (j.judgment) {
+        summaryStats.reviewed++;
+        if (j.judgment === 'AGREE') summaryStats.agree++;
+        else if (j.judgment === 'DISAGREE') summaryStats.disagree++;
+        else if (j.judgment === 'UNSURE') summaryStats.unsure++;
+
+        if (summaryStats.by_category[cat]) {
+          summaryStats.by_category[cat][j.judgment.toLowerCase()]++;
+        }
+      }
+      if (summaryStats.by_category[cat]) {
+        summaryStats.by_category[cat].total++;
+      }
+
+      return {
+        case_index: i,
+        category: c.category,
+        source_id: c.source.id,
+        target_id: c.target.id,
+        source_name: c.source.name,
+        target_name: c.target.name,
+        claim: c.claim,
+        distance_8d: c.distance_8d,
+        fidelity: c.fidelity || null,
+        reviewer_judgment: j.judgment,
+        reviewer_notes: j.notes || ''
+      };
+    });
+
+    const exportData = {
+      export_type: 'acp_v2_human_audit_review',
+      exported_at: new Date().toISOString(),
+      summary: summaryStats,
+      cases: caseResults
+    };
+
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `audit_review_${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  // --- Event Handlers ---
+
+  function setupEvents() {
+    // Navigation
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      if (currentIndex > 0) { currentIndex--; renderCase(currentIndex); }
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      if (currentIndex < allCases.length - 1) { currentIndex++; renderCase(currentIndex); }
+    });
+
+    // Judgment buttons
+    document.querySelectorAll('.judgment-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.dataset.value;
+        const current = getJudgment(currentIndex);
+        // Toggle off if clicking same
+        const newVal = current.judgment === val ? null : val;
+        setJudgment(currentIndex, 'judgment', newVal);
+        // Update button states
+        document.querySelectorAll('.judgment-btn').forEach(b => {
+          b.className = 'judgment-btn';
+          if (newVal === b.dataset.value) b.classList.add('selected-' + b.dataset.value);
+        });
+      });
+    });
+
+    // Notes
+    const notesArea = document.getElementById('notesArea');
+    let notesTimeout;
+    notesArea.addEventListener('input', () => {
+      clearTimeout(notesTimeout);
+      notesTimeout = setTimeout(() => {
+        setJudgment(currentIndex, 'notes', notesArea.value);
+      }, 300);
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      // Don't intercept when typing in textarea
+      if (document.activeElement === notesArea) return;
+
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (currentIndex > 0) { currentIndex--; renderCase(currentIndex); }
+      } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (currentIndex < allCases.length - 1) { currentIndex++; renderCase(currentIndex); }
+      } else if (e.key === '1') {
+        e.preventDefault();
+        simulateJudgmentClick('AGREE');
+      } else if (e.key === '2') {
+        e.preventDefault();
+        simulateJudgmentClick('DISAGREE');
+      } else if (e.key === '3') {
+        e.preventDefault();
+        simulateJudgmentClick('UNSURE');
+      }
+    });
+
+    // Export
+    document.getElementById('exportBtn').addEventListener('click', exportJudgments);
+  }
+
+  function simulateJudgmentClick(value) {
+    const btn = document.querySelector(`.judgment-btn[data-value="${value}"]`);
+    if (btn) btn.click();
+  }
+
+  // --- Init ---
+
+  async function init() {
+    loadJudgments();
+
+    try {
+      const resp = await fetch(DATA_URL);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${resp.statusText}`);
+      const data = await resp.json();
+      allCases = data.cases || [];
+
+      if (allCases.length === 0) throw new Error('No cases found in data file');
+
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('app').classList.add('visible');
+
+      buildCaseList();
+      setupEvents();
+      updateProgress();
+      updateSidebar();
+      renderCase(0);
+    } catch (err) {
+      const loading = document.getElementById('loading');
+      loading.querySelector('.spinner').style.display = 'none';
+      loading.querySelector('.label').style.display = 'none';
+      loading.innerHTML += `<div class="error">
+        <strong>Failed to load audit data</strong><br>
+        ${err.message}<br><br>
+        <span style="font-size:0.85rem;color:var(--text-dim)">
+          Expected file at: ${DATA_URL}<br>
+          Make sure to serve this page via HTTP (e.g. <code>python -m http.server</code>) rather than opening the file directly.
+        </span>
+      </div>`;
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>

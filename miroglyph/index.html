@@ -6,137 +6,160 @@
   <title>Mythic System Explorer</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/tabs.css">
-  <link rel="stylesheet" href="css/tab-archetypes.css">
-  <link rel="stylesheet" href="css/tab-tracing.css">
-  <link rel="stylesheet" href="css/tab-validation.css">
-  <link rel="stylesheet" href="css/tab-patterns.css">
+  <link rel="stylesheet" href="css/view-atlas.css">
+  <link rel="stylesheet" href="css/view-codex.css">
+  <link rel="stylesheet" href="css/view-chronicle.css">
+  <link rel="stylesheet" href="css/workshop.css">
 </head>
 <body>
   <div class="app">
     <!-- Header -->
     <header class="header">
-      <h1 class="logo">Mythic System Explorer <span class="version">v4</span></h1>
-      <nav class="tab-nav">
-        <button class="tab-btn" data-tab="topology">Topology</button>
-        <button class="tab-btn" data-tab="archetypes">Archetypes</button>
-        <button class="tab-btn" data-tab="tracing">Entity Tracing</button>
-        <button class="tab-btn" data-tab="validation">Validation</button>
-        <button class="tab-btn" data-tab="patterns">Patterns</button>
-      </nav>
+      <h1 class="logo">Mythic System Explorer</h1>
+      <div class="global-search-wrap">
+        <input type="text" id="global-search" class="global-search-input" placeholder="Search nodes, archetypes, entities, patterns...">
+        <div id="search-dropdown" class="search-dropdown" hidden></div>
+      </div>
       <div class="header-actions">
-        <button id="btn-export" class="btn btn-secondary">Export JSON</button>
-        <label class="btn btn-secondary">
-          Import JSON
-          <input type="file" id="file-import" accept=".json" hidden>
-        </label>
+        <button id="btn-workshop" class="btn btn-secondary btn-workshop">Workshop</button>
+        <div class="gear-menu-wrap">
+          <button id="btn-gear" class="btn btn-secondary btn-icon-gear" title="Settings">&middot;&middot;&middot;</button>
+          <div id="gear-dropdown" class="gear-dropdown" hidden>
+            <button id="btn-export" class="gear-item">Export Traversals</button>
+            <label class="gear-item">
+              Import Traversals
+              <input type="file" id="file-import" accept=".json" hidden>
+            </label>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- Tab Container -->
+    <!-- Navigation -->
+    <nav class="tab-nav">
+      <button class="tab-btn" data-view="atlas">Atlas</button>
+      <button class="tab-btn" data-view="codex">Codex</button>
+      <button class="tab-btn" data-view="chronicle">Chronicle</button>
+    </nav>
+
+    <!-- View Container -->
     <main class="tab-container">
 
-      <!-- Topology Tab (existing traversal editor) -->
-      <div id="tab-content-topology" class="tab-content" hidden>
-        <div class="main">
-          <!-- Left Panel - Controls -->
-          <aside class="panel panel-left">
-            <section class="panel-section">
-              <h3>Create Traversal</h3>
-              <p class="hint">Click nodes in sequence to define a route.</p>
-              <div id="path-sequence" class="path-sequence">
-                <span class="hint">Click nodes to start...</span>
-              </div>
-              <div class="traversal-actions">
-                <button id="btn-undo" class="btn btn-small" disabled>Undo</button>
-                <button id="btn-clear-path" class="btn btn-small" disabled>Clear</button>
-              </div>
-              <div class="save-section">
-                <button id="btn-save-path" class="btn btn-primary btn-full" disabled>Save Traversal</button>
-              </div>
-            </section>
-
-            <section class="panel-section">
-              <h3>Node Info</h3>
-              <div id="node-info" class="node-info">
-                <p class="hint">Hover over a node to see details.</p>
-              </div>
-            </section>
-
-            <section class="panel-section" id="enrichment-panel" hidden>
-              <h3>Mythic Profile</h3>
-              <div id="node-enrichment">
-                <p class="hint">Hover a node to see its mythic profile.</p>
-              </div>
-            </section>
-
-            <section class="panel-section">
-              <h3>Legend</h3>
-              <div class="legend">
-                <div class="legend-item">
-                  <span class="legend-color" style="background: #8b5cf6"></span>
-                  <span>Descent / Shadow</span>
-                </div>
-                <div class="legend-item">
-                  <span class="legend-color" style="background: #3b82f6"></span>
-                  <span>Resonance / Mirror</span>
-                </div>
-                <div class="legend-item">
-                  <span class="legend-color" style="background: #10b981"></span>
-                  <span>Emergence / Mythogenesis</span>
-                </div>
-                <div class="legend-item">
-                  <span class="legend-color" style="background: #f59e0b"></span>
-                  <span>Nontion (Center)</span>
-                </div>
-              </div>
-            </section>
-          </aside>
-
-          <!-- Center - Canvas -->
-          <div class="canvas-container">
+      <!-- Atlas View -->
+      <div id="view-atlas" class="view-content" hidden>
+        <div class="atlas-layout">
+          <!-- Map Area -->
+          <div class="atlas-map-area">
             <svg id="canvas" class="canvas"></svg>
+            <div class="atlas-legend">
+              <div class="legend-item">
+                <span class="legend-color" style="background: var(--color-descent)"></span>
+                <span>Descent</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color" style="background: var(--color-resonance)"></span>
+                <span>Resonance</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color" style="background: var(--color-emergence)"></span>
+                <span>Emergence</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color" style="background: var(--color-nontion)"></span>
+                <span>Nontion</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Right Panel - Saved Traversals -->
-          <aside class="panel panel-right">
-            <section class="panel-section">
-              <div class="section-header">
-                <h3>Groups</h3>
-                <button id="btn-add-group" class="btn-icon" title="Add Group">+</button>
+          <!-- Node Drawer (hidden until a node is selected) -->
+          <aside id="node-drawer" class="node-drawer node-drawer-closed">
+            <div class="drawer-header">
+              <div class="drawer-header-top">
+                <div class="drawer-node-id" id="drawer-node-id"></div>
+                <button id="drawer-close" class="btn-icon" title="Close">&times;</button>
               </div>
-              <div id="groups-list" class="groups-list">
-                <!-- Groups rendered here -->
-              </div>
-            </section>
-            <section class="panel-section">
-              <div class="section-header">
-                <h3>Ungrouped</h3>
-                <span id="stat-paths" class="stat-badge">0</span>
-              </div>
-              <div id="paths-list" class="paths-list">
-                <p class="hint">No traversals saved yet.</p>
-              </div>
-            </section>
+              <div class="drawer-node-title" id="drawer-node-title"></div>
+              <div class="drawer-node-meta" id="drawer-node-meta"></div>
+              <div class="drawer-node-tones" id="drawer-node-tones"></div>
+            </div>
+            <div class="drawer-tabs">
+              <button class="drawer-tab drawer-tab-active" data-drawer-tab="profile">Profile</button>
+              <button class="drawer-tab" data-drawer-tab="archetypes">Archetypes</button>
+              <button class="drawer-tab" data-drawer-tab="entities">Entities</button>
+              <button class="drawer-tab" data-drawer-tab="patterns">Patterns</button>
+            </div>
+            <div class="drawer-body" id="drawer-body">
+              <!-- Populated dynamically -->
+            </div>
           </aside>
         </div>
       </div>
 
-      <!-- Archetypes Tab -->
-      <div id="tab-content-archetypes" class="tab-content" hidden></div>
+      <!-- Codex View -->
+      <div id="view-codex" class="view-content" hidden>
+        <!-- Populated dynamically by view-codex.js -->
+      </div>
 
-      <!-- Entity Tracing Tab -->
-      <div id="tab-content-tracing" class="tab-content" hidden></div>
-
-      <!-- Validation Tab -->
-      <div id="tab-content-validation" class="tab-content" hidden></div>
-
-      <!-- Patterns Tab -->
-      <div id="tab-content-patterns" class="tab-content" hidden></div>
+      <!-- Chronicle View -->
+      <div id="view-chronicle" class="view-content" hidden>
+        <!-- Populated dynamically by view-chronicle.js -->
+      </div>
 
     </main>
+
+    <!-- Traversal Workshop (slide-over panel) -->
+    <div id="workshop-overlay" class="workshop-overlay" hidden></div>
+    <aside id="workshop-panel" class="workshop-panel workshop-closed">
+      <div class="workshop-header">
+        <h2 class="workshop-title">Traversal Workshop</h2>
+        <button id="workshop-close" class="btn-icon" title="Close">&times;</button>
+      </div>
+      <div class="workshop-body">
+        <!-- Current path -->
+        <section class="workshop-section">
+          <h3 class="section-title">Current Path</h3>
+          <div id="workshop-sequence" class="path-sequence">
+            <span class="hint">Click nodes to build a path...</span>
+          </div>
+          <div class="traversal-actions">
+            <button id="ws-btn-undo" class="btn btn-small" disabled>Undo</button>
+            <button id="ws-btn-clear" class="btn btn-small" disabled>Clear</button>
+          </div>
+          <button id="ws-btn-save" class="btn btn-primary btn-full" disabled>Save Traversal</button>
+        </section>
+
+        <!-- Node Picker (for non-atlas views) -->
+        <section class="workshop-section" id="workshop-node-picker" hidden>
+          <h3 class="section-title">Node Picker</h3>
+          <div id="workshop-picker-grid" class="picker-grid">
+            <!-- Populated dynamically -->
+          </div>
+        </section>
+
+        <!-- Saved Traversals -->
+        <section class="workshop-section">
+          <div class="section-header">
+            <h3 class="section-title">Groups</h3>
+            <button id="ws-btn-add-group" class="btn-icon" title="Add Group">+</button>
+          </div>
+          <div id="ws-groups-list" class="groups-list">
+            <!-- Groups rendered here -->
+          </div>
+        </section>
+        <section class="workshop-section">
+          <div class="section-header">
+            <h3 class="section-title">Ungrouped</h3>
+            <span id="ws-stat-paths" class="stat-badge">0</span>
+          </div>
+          <div id="ws-paths-list" class="paths-list">
+            <p class="hint">No traversals saved yet.</p>
+          </div>
+        </section>
+      </div>
+    </aside>
   </div>
 
-  <!-- Traversal Save/Edit Modal -->
+  <!-- Traversal Save Modal -->
   <div id="modal-save-path" class="modal" hidden>
     <div class="modal-content">
       <h2 id="modal-title">Save Traversal</h2>
@@ -189,19 +212,32 @@
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Scripts: Infrastructure -->
   <script src="js/nodes.js"></script>
   <script src="js/storage.js"></script>
-  <script src="js/canvas.js"></script>
-  <script src="js/paths.js"></script>
-  <script src="js/enrichment.js"></script>
   <script src="js/data-loader.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/tab-router.js"></script>
-  <script src="js/tab-topology.js"></script>
-  <script src="js/tab-archetypes.js"></script>
-  <script src="js/tab-tracing.js"></script>
-  <script src="js/tab-validation.js"></script>
-  <script src="js/tab-patterns.js"></script>
+  <script src="js/global-search.js"></script>
+
+  <!-- Scripts: Canvas & Rendering -->
+  <script src="js/canvas.js"></script>
+  <script src="js/card-renderer.js"></script>
+
+  <!-- Scripts: Features -->
+  <script src="js/enrichment.js"></script>
+  <script src="js/paths.js"></script>
+
+  <!-- Scripts: Views -->
+  <script src="js/node-drawer.js"></script>
+  <script src="js/detail-sheet.js"></script>
+  <script src="js/view-atlas.js"></script>
+  <script src="js/view-codex.js"></script>
+  <script src="js/mini-map.js"></script>
+  <script src="js/view-chronicle.js"></script>
+  <script src="js/workshop.js"></script>
+
+  <!-- Scripts: App Init -->
   <script src="js/app.js"></script>
 </body>
 </html>

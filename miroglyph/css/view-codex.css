@@ -1,0 +1,473 @@
+/* Codex View — Card Grid + Detail Sheets */
+
+.codex-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Sub-tab toggles */
+.codex-sub-tabs {
+  display: flex;
+  gap: 2px;
+  background: var(--color-bg);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.codex-sub-tab {
+  padding: var(--spacing-xs) var(--spacing-md);
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.codex-sub-tab.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Card Grid */
+.codex-grid {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
+  gap: 12px;
+}
+
+/* Archetype Card */
+.arch-card {
+  background: var(--color-surface-2);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.arch-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background: var(--color-surface-3);
+}
+
+.arch-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.arch-card-name {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arch-card-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+/* Sparkline (8D mini bars) */
+.sparkline {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 20px;
+}
+
+.sparkline-bar {
+  flex: 1;
+  background: var(--color-primary);
+  border-radius: 1px;
+  opacity: 0.6;
+  min-height: 2px;
+}
+
+.arch-card-prims {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.arch-card-prim {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.arch-card-nodes {
+  display: flex;
+  gap: var(--spacing-xs);
+  font-size: 0.7rem;
+  font-family: monospace;
+}
+
+.node-badge {
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.65rem;
+}
+
+.node-badge-D { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+.node-badge-R { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.node-badge-E { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+
+/* Entity Card */
+.entity-card {
+  background: var(--color-surface-2);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.entity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background: var(--color-surface-3);
+}
+
+.entity-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.entity-card-name {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  flex: 1;
+}
+
+.entity-card-summary {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.entity-card-mapping {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.entity-card-mapping-label {
+  color: var(--color-text-muted);
+}
+
+.badge-unmapped {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  font-size: 0.65rem;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+/* Detail Sheet */
+.detail-sheet {
+  padding: var(--spacing-lg);
+  overflow-y: auto;
+  flex: 1;
+}
+
+.detail-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.detail-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.detail-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.detail-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+}
+
+/* Detail sections in multi-column grid */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 1024px) {
+  .detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-section {
+  background: var(--color-bg);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+}
+
+.detail-section-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Relationship groups */
+.rel-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.rel-group-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xs);
+}
+
+.rel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.1s;
+  margin-bottom: 2px;
+}
+
+.rel-item:hover {
+  background: var(--color-bg-hover);
+}
+
+.rel-item-name {
+  font-size: 0.8125rem;
+  color: var(--color-primary-hover);
+}
+
+.rel-item-fidelity {
+  font-size: 0.7rem;
+  font-family: monospace;
+  color: var(--color-text-muted);
+}
+
+/* Entity Connection Chain */
+.chain-visual {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: var(--color-bg);
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.chain-card {
+  flex: 1;
+  min-width: 180px;
+  background: var(--color-surface-2);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  border-top: 3px solid;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chain-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.chain-card-library { border-top-color: var(--color-library); }
+.chain-card-acp { border-top-color: var(--color-acp); }
+.chain-card-miroglyph { border-top-color: var(--color-miroglyph); }
+
+.chain-card-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.chain-card-library .chain-card-label { color: var(--color-library); }
+.chain-card-acp .chain-card-label { color: var(--color-acp); }
+.chain-card-miroglyph .chain-card-label { color: var(--color-miroglyph); }
+
+.chain-card-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.chain-card-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.chain-arrow {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.chain-broken {
+  color: var(--color-text-muted);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Coordinate Comparison */
+.coord-compare {
+  margin-bottom: var(--spacing-lg);
+}
+
+.coord-compare-legend {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.75rem;
+}
+
+.coord-compare-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.coord-compare-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: 4px;
+}
+
+.coord-compare-track {
+  flex: 1;
+  height: 8px;
+  background: var(--color-bg);
+  border-radius: 4px;
+  position: relative;
+}
+
+.coord-compare-marker {
+  position: absolute;
+  top: -2px;
+  width: 4px;
+  height: 12px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.coord-compare-marker-entity { background: var(--color-library); }
+.coord-compare-marker-node { background: var(--color-miroglyph); }
+
+/* Node affinities grid */
+.affinity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 6px;
+}
+
+.affinity-cell {
+  background: var(--color-bg);
+  border-radius: 4px;
+  padding: 6px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.affinity-cell.nearest {
+  outline: 2px solid var(--color-miroglyph);
+}
+
+.affinity-cell-id {
+  font-family: monospace;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.affinity-cell-val {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+}
+
+/* Load more sentinel */
+.load-more-sentinel {
+  padding: var(--spacing-lg);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
+
+/* Source entities list in archetype detail */
+.source-entities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.source-entity-tag {
+  font-size: 0.75rem;
+  background: var(--color-bg);
+  color: var(--color-library);
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.source-entity-tag:hover {
+  background: var(--color-bg-hover);
+}

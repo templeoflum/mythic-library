@@ -249,6 +249,13 @@
           "target": "arch:EG-PTAH",
           "fidelity": 0.55,
           "notes": "Creator craftsman, shaper"
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Olodumare's delegate creating the earth",
+          "target": "Patient king who accepts wrongful imprisonment without complaint",
+          "trigger": "Falsely imprisoned in Ile-Ife; demonstrates divine patience that becomes his defining quality",
+          "direction": "forward"
         }
       ],
       "shadowDynamics": {
@@ -359,6 +366,12 @@
           "target": "arch:JP-SARUTAHIKO",
           "fidelity": 0.55,
           "notes": "Crossroads guardian"
+        },
+        {
+          "type": "SHADOW",
+          "target": "primordial:deceiver",
+          "activation": "When crossroads trickery becomes cosmic sabotage; when message-bearing becomes message-distortion",
+          "strength": 0.65
         }
       ],
       "shadowDynamics": {
@@ -628,6 +641,19 @@
           "target": "arch:IN-INDRA",
           "fidelity": 0.7,
           "notes": "Thunder, warrior, king of gods"
+        },
+        {
+          "type": "SHADOW",
+          "target": "primordial:tyrant",
+          "activation": "When thunder justice becomes tyrannical wrath; when kingly power cannot accept challenge",
+          "strength": 0.7
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Fourth Alafin of Oyo (mortal king)",
+          "target": "Orisha of thunder and lightning",
+          "trigger": "Death (or ascension) — rope-hanging transforms mortal king into divine force",
+          "direction": "forward"
         }
       ],
       "shadowDynamics": {

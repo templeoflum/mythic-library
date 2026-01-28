@@ -68,10 +68,15 @@
       groups.map(g => `<option value="${g.group_id}">${escapeHtml(g.name)}</option>`).join('');
   }
 
+  // Safe canvas helpers — canvas may not be initialized when not on Atlas view
+  function canvasAvailable() {
+    return canvas && document.getElementById('canvas');
+  }
+
   // Handle node click - add to sequence
   function handleNodeClick(nodeId) {
     currentSequence.push(nodeId);
-    canvas.markNodeInSequence(nodeId, true);
+    if (canvasAvailable()) canvas.markNodeInSequence(nodeId, true);
     updateSequenceDisplay();
     drawPreviewPath();
     updateButtons();
@@ -81,7 +86,7 @@
   function undo() {
     if (currentSequence.length > 0) {
       const removed = currentSequence.pop();
-      canvas.markNodeInSequence(removed, false);
+      if (canvasAvailable()) canvas.markNodeInSequence(removed, false);
       updateSequenceDisplay();
       drawPreviewPath();
       updateButtons();
@@ -90,15 +95,18 @@
 
   // Clear current sequence
   function clearSequence() {
-    currentSequence.forEach(id => canvas.markNodeInSequence(id, false));
+    if (canvasAvailable()) {
+      currentSequence.forEach(id => canvas.markNodeInSequence(id, false));
+    }
     currentSequence = [];
-    canvas.clearPreview();
+    if (canvasAvailable()) canvas.clearPreview();
     updateSequenceDisplay();
     updateButtons();
   }
 
   // Draw preview of current path
   function drawPreviewPath() {
+    if (!canvasAvailable()) return;
     canvas.clearPreview();
     if (currentSequence.length >= 2) {
       canvas.drawTraversal(currentSequence, '#fbbf24', true);
@@ -107,7 +115,7 @@
 
   // Update sequence display
   function updateSequenceDisplay() {
-    const container = document.getElementById('path-sequence');
+    const container = document.getElementById('workshop-sequence');
     if (!container) return;
 
     if (currentSequence.length === 0) {
@@ -126,9 +134,9 @@
 
   // Update button states
   function updateButtons() {
-    const undoBtn = document.getElementById('btn-undo');
-    const clearBtn = document.getElementById('btn-clear-path');
-    const saveBtn = document.getElementById('btn-save-path');
+    const undoBtn = document.getElementById('ws-btn-undo');
+    const clearBtn = document.getElementById('ws-btn-clear');
+    const saveBtn = document.getElementById('ws-btn-save');
 
     if (undoBtn) undoBtn.disabled = currentSequence.length === 0;
     if (clearBtn) clearBtn.disabled = currentSequence.length === 0;
@@ -395,7 +403,7 @@
   }
 
   function renderGroups() {
-    const container = document.getElementById('groups-list');
+    const container = document.getElementById('ws-groups-list');
     if (!container) return;
 
     if (groups.length === 0) {
@@ -472,7 +480,7 @@
   }
 
   function renderUngrouped() {
-    const container = document.getElementById('paths-list');
+    const container = document.getElementById('ws-paths-list');
     if (!container) return;
 
     const ungrouped = traversals.filter(t => !t.group_id);
@@ -582,6 +590,8 @@
   }
 
   function redrawAllTraversals() {
+    if (!canvasAvailable()) return;
+
     canvas.clearTraversals();
 
     traversals.forEach(traversal => {
@@ -596,7 +606,7 @@
   }
 
   function updateStats() {
-    const el = document.getElementById('stat-paths');
+    const el = document.getElementById('ws-stat-paths');
     if (el) el.textContent = traversals.filter(t => !t.group_id).length;
   }
 

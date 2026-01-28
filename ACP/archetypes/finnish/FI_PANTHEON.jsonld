@@ -142,7 +142,8 @@
         {"type": "rel:COMPLEMENT", "target": "arch:FI-ILMARINEN", "description": "Wisdom and craft united"},
         {"type": "rel:CULTURAL_ECHO", "target": "arch:NO-ODIN", "fidelity": 0.6, "notes": "Wisdom, magic, poetry, old age"},
         {"type": "rel:CULTURAL_ECHO", "target": "arch:GR-ORPHEUS", "fidelity": 0.65, "notes": "Magic through music, underworld journey"},
-        {"type": "rel:CULTURAL_ECHO", "target": "arch:MA-QUETZALCOATL", "fidelity": 0.5, "notes": "Culture hero who departed promising return"}
+        {"type": "rel:CULTURAL_ECHO", "target": "arch:MA-QUETZALCOATL", "fidelity": 0.5, "notes": "Culture hero who departed promising return"},
+        {"type": "EVOLUTION", "source": "Ancient sage-singer born from Ilmatar", "target": "Eternal wanderer who departs Finland, leaving the kantele", "trigger": "Birth of Marjatta's son displaces the old order; Väinämöinen sails away in a copper boat", "direction": "forward"}
       ],
       "shadowDynamics": {
         "activationConditions": ["When wisdom becomes pride", "When age rejects youth"],

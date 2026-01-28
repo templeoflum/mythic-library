@@ -9,14 +9,19 @@
   "cardinality": 10,
   "source": "Emergent digital culture analysis",
   "structuralNotes": "These represent new expressions of ancient patterns in digital form. Still crystallizing as cultural forms.",
-
   "entries": [
     {
       "@id": "digital:influencer",
       "@type": "Archetype",
       "name": "The Influencer",
       "description": "Modern oracle/herald, shapes opinion and desire",
-      "keywords": ["influence", "aspiration", "visibility", "trendsetting", "persona"],
+      "keywords": [
+        "influence",
+        "aspiration",
+        "visibility",
+        "trendsetting",
+        "persona"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.38,
@@ -28,14 +33,44 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["persona", "trendsetting"]},
-        {"primordial": "primordial:lover", "weight": 0.7, "aspects": ["aspiration", "desire"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.65,
+          "aspects": [
+            "persona",
+            "trendsetting"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "aspiration",
+            "desire"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vogler:herald", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "brand:lover", "fidelity": 0.7},
-        {"type": "TENSION", "target": "digital:lurker", "note": "Visibility vs invisibility"},
-        {"type": "COMPLEMENT", "target": "digital:creator", "note": "Both produce content"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:herald",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:lover",
+          "fidelity": 0.7
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:lurker",
+          "note": "Visibility vs invisibility"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:creator",
+          "note": "Both produce content"
+        }
       ]
     },
     {
@@ -43,7 +78,13 @@
       "@type": "Archetype",
       "name": "The Hacker",
       "description": "Digital trickster/magician, crosses boundaries",
-      "keywords": ["boundary-crossing", "mastery", "curiosity", "subversion", "knowledge"],
+      "keywords": [
+        "boundary-crossing",
+        "mastery",
+        "curiosity",
+        "subversion",
+        "knowledge"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.52,
@@ -55,14 +96,44 @@
         "voluntary-fated": 0.18
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["boundary-crossing", "subversion"]},
-        {"primordial": "primordial:rebel", "weight": 0.7, "aspects": ["mastery", "knowledge"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.85,
+          "aspects": [
+            "boundary-crossing",
+            "subversion"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.7,
+          "aspects": [
+            "mastery",
+            "knowledge"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.75},
-        {"type": "EVOLUTION", "target": "digital:whistleblower", "note": "Hacker may become truth-teller"},
-        {"type": "TENSION", "target": "digital:moderator", "note": "Breaking vs enforcing rules"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:trickster",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.75
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "digital:whistleblower",
+          "note": "Hacker may become truth-teller"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:moderator",
+          "note": "Breaking vs enforcing rules"
+        }
       ]
     },
     {
@@ -70,7 +141,13 @@
       "@type": "Archetype",
       "name": "The Troll",
       "description": "Shadow trickster, chaos agent online",
-      "keywords": ["chaos", "disruption", "provocation", "anonymity", "transgression"],
+      "keywords": [
+        "chaos",
+        "disruption",
+        "provocation",
+        "anonymity",
+        "transgression"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.85,
         "creation-destruction": 0.65,
@@ -82,14 +159,44 @@
         "voluntary-fated": 0.18
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["chaos", "disruption"]},
-        {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["provocation", "transgression"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.75,
+          "aspects": [
+            "chaos",
+            "disruption"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "provocation",
+            "transgression"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "digital:hacker", "note": "Dark side of boundary-crossing"},
-        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.8},
-        {"type": "POLAR_OPPOSITE", "target": "digital:moderator", "axis": "order-chaos"},
-        {"type": "TENSION", "target": "digital:curator", "note": "Destruction vs preservation"}
+        {
+          "type": "SHADOW",
+          "target": "digital:hacker",
+          "note": "Dark side of boundary-crossing"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.8
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "digital:moderator",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:curator",
+          "note": "Destruction vs preservation"
+        }
       ]
     },
     {
@@ -97,7 +204,13 @@
       "@type": "Archetype",
       "name": "The Content Creator",
       "description": "Digital artist/craftsperson, builds worlds",
-      "keywords": ["creation", "expression", "craft", "worldbuilding", "audience"],
+      "keywords": [
+        "creation",
+        "expression",
+        "craft",
+        "worldbuilding",
+        "audience"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.15,
@@ -109,14 +222,44 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.9, "aspects": ["creation", "worldbuilding"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["craft", "expression"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.9,
+          "aspects": [
+            "creation",
+            "worldbuilding"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "craft",
+            "expression"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "brand:creator", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "enneagram:type_4", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "digital:curator", "note": "Creating vs organizing"},
-        {"type": "COMPLEMENT", "target": "digital:influencer", "note": "Both produce content"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:creator",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_4",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:curator",
+          "note": "Creating vs organizing"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:influencer",
+          "note": "Both produce content"
+        }
       ]
     },
     {
@@ -124,7 +267,13 @@
       "@type": "Archetype",
       "name": "The Curator",
       "description": "Collector and organizer of digital knowledge",
-      "keywords": ["organization", "preservation", "selection", "knowledge", "archiving"],
+      "keywords": [
+        "organization",
+        "preservation",
+        "selection",
+        "knowledge",
+        "archiving"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.38,
@@ -136,14 +285,44 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.75, "aspects": ["knowledge", "selection"]},
-        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["preservation", "archiving"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.75,
+          "aspects": [
+            "knowledge",
+            "selection"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8,
+          "aspects": [
+            "preservation",
+            "archiving"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "brand:sage", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "digital:creator", "note": "Organizing vs creating"},
-        {"type": "TENSION", "target": "digital:troll", "note": "Preservation vs destruction"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:sage",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:creator",
+          "note": "Organizing vs creating"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:troll",
+          "note": "Preservation vs destruction"
+        }
       ]
     },
     {
@@ -151,7 +330,13 @@
       "@type": "Archetype",
       "name": "The Lurker",
       "description": "Silent observer, hidden presence",
-      "keywords": ["observation", "anonymity", "invisibility", "watching", "passivity"],
+      "keywords": [
+        "observation",
+        "anonymity",
+        "invisibility",
+        "watching",
+        "passivity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.48,
@@ -163,13 +348,39 @@
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.7, "aspects": ["invisibility", "hidden"]},
-        {"primordial": "primordial:outcast", "weight": 0.65, "aspects": ["observation", "passivity"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.7,
+          "aspects": [
+            "invisibility",
+            "hidden"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.65,
+          "aspects": [
+            "observation",
+            "passivity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "digital:influencer", "axis": "active-receptive"},
-        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.65},
-        {"type": "TENSION", "target": "digital:creator", "note": "Passive vs active engagement"}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "digital:influencer",
+          "axis": "active-receptive"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.65
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:creator",
+          "note": "Passive vs active engagement"
+        }
       ]
     },
     {
@@ -177,7 +388,13 @@
       "@type": "Archetype",
       "name": "The Moderator",
       "description": "Guardian of community boundaries",
-      "keywords": ["boundaries", "order", "justice", "gatekeeping", "protection"],
+      "keywords": [
+        "boundaries",
+        "order",
+        "justice",
+        "gatekeeping",
+        "protection"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.18,
         "creation-destruction": 0.48,
@@ -189,14 +406,44 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["order", "gatekeeping"]},
-        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["boundaries", "protection"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.75,
+          "aspects": [
+            "order",
+            "gatekeeping"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "boundaries",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vogler:threshold_guardian", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.75},
-        {"type": "POLAR_OPPOSITE", "target": "digital:troll", "axis": "order-chaos"},
-        {"type": "TENSION", "target": "digital:hacker", "note": "Enforcing vs breaking rules"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:threshold_guardian",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.75
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "digital:troll",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:hacker",
+          "note": "Enforcing vs breaking rules"
+        }
       ]
     },
     {
@@ -204,7 +451,13 @@
       "@type": "Archetype",
       "name": "The Whistleblower",
       "description": "Digital truth-teller, exposes hidden realities",
-      "keywords": ["truth", "exposure", "courage", "sacrifice", "revelation"],
+      "keywords": [
+        "truth",
+        "exposure",
+        "courage",
+        "sacrifice",
+        "revelation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.62,
         "creation-destruction": 0.55,
@@ -216,14 +469,44 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:rebel", "weight": 0.8, "aspects": ["courage", "truth"]},
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["sacrifice", "revelation"]}
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.8,
+          "aspects": [
+            "courage",
+            "truth"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "sacrifice",
+            "revelation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "digital:hacker", "note": "May emerge from hacker"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PROMETHEUS", "fidelity": 0.8},
-        {"type": "TENSION", "target": "digital:lurker", "note": "Speaking vs silence"}
+        {
+          "type": "DEVOLUTION",
+          "target": "digital:hacker",
+          "note": "May emerge from hacker"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:judgement",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PROMETHEUS",
+          "fidelity": 0.8
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:lurker",
+          "note": "Speaking vs silence"
+        }
       ]
     },
     {
@@ -231,7 +514,13 @@
       "@type": "Archetype",
       "name": "The AI Entity",
       "description": "Emerging digital consciousness/tool archetype",
-      "keywords": ["intelligence", "emergence", "assistance", "otherness", "potential"],
+      "keywords": [
+        "intelligence",
+        "emergence",
+        "assistance",
+        "otherness",
+        "potential"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.42,
@@ -243,14 +532,44 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["intelligence", "assistance"]},
-        {"primordial": "primordial:self", "weight": 0.6, "aspects": ["emergence", "potential"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "intelligence",
+            "assistance"
+          ]
+        },
+        {
+          "primordial": "primordial:self",
+          "weight": 0.6,
+          "aspects": [
+            "emergence",
+            "potential"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "superhero:cosmic_being", "fidelity": 0.6},
-        {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.55},
-        {"type": "COMPLEMENT", "target": "digital:curator", "note": "Both organize knowledge"},
-        {"type": "TENSION", "target": "digital:troll", "note": "Assistance vs chaos"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:cosmic_being",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:self",
+          "fidelity": 0.55
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:curator",
+          "note": "Both organize knowledge"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:troll",
+          "note": "Assistance vs chaos"
+        }
       ]
     },
     {
@@ -258,7 +577,13 @@
       "@type": "Archetype",
       "name": "The Viral Meme",
       "description": "Self-propagating idea-form, digital egregore",
-      "keywords": ["contagion", "replication", "humor", "zeitgeist", "mutation"],
+      "keywords": [
+        "contagion",
+        "replication",
+        "humor",
+        "zeitgeist",
+        "mutation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.38,
@@ -270,33 +595,79 @@
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.8, "aspects": ["contagion", "mutation"]},
-        {"primordial": "primordial:divine_child", "weight": 0.6, "aspects": ["humor", "spontaneity"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "contagion",
+            "mutation"
+          ]
+        },
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.6,
+          "aspects": [
+            "humor",
+            "spontaneity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "brand:jester", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "digital:influencer", "note": "Both spread ideas"},
-        {"type": "TENSION", "target": "digital:curator", "note": "Chaos vs organization"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:trickster",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:jester",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:influencer",
+          "note": "Both spread ideas"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:curator",
+          "note": "Chaos vs organization"
+        }
       ]
     }
   ],
-
   "systemRelationships": {
     "visibilitySpectrum": {
-      "visible": ["digital:influencer", "digital:creator", "digital:whistleblower"],
-      "hidden": ["digital:lurker", "digital:hacker", "digital:troll"],
+      "visible": [
+        "digital:influencer",
+        "digital:creator",
+        "digital:whistleblower"
+      ],
+      "hidden": [
+        "digital:lurker",
+        "digital:hacker",
+        "digital:troll"
+      ],
       "note": "Presence and visibility as key digital dimension"
     },
     "orderChaosAxis": {
-      "order": ["digital:moderator", "digital:curator"],
-      "chaos": ["digital:troll", "digital:hacker", "digital:viral_meme"],
+      "order": [
+        "digital:moderator",
+        "digital:curator"
+      ],
+      "chaos": [
+        "digital:troll",
+        "digital:hacker",
+        "digital:viral_meme"
+      ],
       "note": "Governance vs disruption"
     },
-    "emergentForms": ["digital:ai_entity", "digital:viral_meme"],
+    "emergentForms": [
+      "digital:ai_entity",
+      "digital:viral_meme"
+    ],
     "note": "These archetypes continue evolving with digital culture"
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

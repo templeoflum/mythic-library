@@ -9,6 +9,7 @@ from scipy.stats import mannwhitneyu, spearmanr
 from typing import Dict, List, Optional
 
 from integration.acp_loader import ACPLoader
+from validation.v2_tests import weighted_distance
 
 
 class EchoCoherenceTest:
@@ -101,11 +102,54 @@ class EchoCoherenceTest:
         else:
             fid_r, fid_p = 0.0, 1.0
 
-        # 5. Pass/fail criteria
+        # 5. Weighted distance comparison
+        w_echo_dists = []
+        for rel in echoes:
+            c1 = self.acp.get_coordinates(rel["source"])
+            c2 = self.acp.get_coordinates(rel.get("target", ""))
+            if c1 is not None and c2 is not None:
+                w_echo_dists.append(weighted_distance(c1, c2))
+
+        w_control_dists = []
+        rng2 = np.random.default_rng(seed)
+        attempts2 = 0
+        while len(w_control_dists) < n_control and attempts2 < n_control * 20:
+            i, j = rng2.choice(len(all_ids), size=2, replace=False)
+            id1, id2 = all_ids[i], all_ids[j]
+            if arch_traditions[id1] == arch_traditions[id2]:
+                attempts2 += 1
+                continue
+            if (id1, id2) in echo_pair_set:
+                attempts2 += 1
+                continue
+            c1 = self.acp.get_coordinates(id1)
+            c2 = self.acp.get_coordinates(id2)
+            w_control_dists.append(weighted_distance(c1, c2))
+            attempts2 += 1
+
+        w_echo_arr = np.array(w_echo_dists) if w_echo_dists else np.array([0.0])
+        w_ctrl_arr = np.array(w_control_dists) if w_control_dists else np.array([0.0])
+
+        if len(w_echo_arr) >= 5 and len(w_ctrl_arr) >= 5:
+            w_u, w_p = mannwhitneyu(w_echo_arr, w_ctrl_arr, alternative="less")
+            w_pool_std = np.sqrt((w_echo_arr.std()**2 + w_ctrl_arr.std()**2) / 2)
+            w_d = (w_ctrl_arr.mean() - w_echo_arr.mean()) / w_pool_std if w_pool_std > 0 else 0.0
+        else:
+            w_u, w_p, w_d = 0.0, 1.0, 0.0
+
+        weighted_section = {
+            "echo_mean": round(float(w_echo_arr.mean()), 4),
+            "control_mean": round(float(w_ctrl_arr.mean()), 4),
+            "mann_whitney_p": round(float(w_p), 6),
+            "cohens_d": round(float(w_d), 4),
+            "improvement_over_unweighted": round(float(w_d) - float(cohens_d), 4),
+        }
+
+        # 6. Pass/fail criteria
         distance_pass = u_p < 0.05 and cohens_d > 0.3
         fidelity_pass = float(fid_r) < -0.2 and fid_p < 0.05
 
-        # 6. Human review tables
+        # 7. Human review tables
         sorted_by_fidelity = sorted(
             [e for e in valid_echoes if e["fidelity"] is not None],
             key=lambda x: x["fidelity"], reverse=True,
@@ -154,6 +198,7 @@ class EchoCoherenceTest:
                 },
                 "overall_pass": distance_pass and fidelity_pass,
             },
+            "weighted_comparison": weighted_section,
             "human_review": {
                 "highest_fidelity": sorted_by_fidelity[:10],
                 "lowest_fidelity": sorted_by_fidelity[-10:] if len(sorted_by_fidelity) > 10 else sorted_by_fidelity,

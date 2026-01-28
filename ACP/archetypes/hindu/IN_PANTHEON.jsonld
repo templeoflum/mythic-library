@@ -319,6 +319,13 @@
             "supreme-god",
             "cosmic-order"
           ]
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Cosmic preserver in celestial ocean",
+          "target": "Sequential avatar incarnations (Matsya through Kalki)",
+          "trigger": "Each avatar descends when dharma is threatened; progressive revelation of divine purpose",
+          "direction": "forward"
         }
       ],
       "contextualVariants": [
@@ -522,6 +529,12 @@
             "wisdom-seeker",
             "death-associated"
           ]
+        },
+        {
+          "type": "SHADOW",
+          "target": "primordial:destroyer",
+          "activation": "When ascetic detachment becomes world-annihilation; Tandava dance of dissolution",
+          "strength": 0.8
         }
       ],
       "contextualVariants": [
@@ -1444,6 +1457,13 @@
             "divine-wife",
             "marriage"
           ]
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Sati (self-immolating devotee)",
+          "target": "Parvati (patient ascetic who wins Shiva through tapas)",
+          "trigger": "Reincarnation after Sati's death; transformation from passionate devotion to disciplined power",
+          "direction": "forward"
         }
       ],
       "correspondences": {
@@ -1945,6 +1965,13 @@
             "faithful-spouse",
             "heroic-journey"
           ]
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Prince of Ayodhya",
+          "target": "Maryada Purushottam (ideal man who embodies dharma)",
+          "trigger": "Exile, Sita's abduction, war with Ravana; trials that forge ideal kingship",
+          "direction": "forward"
         }
       ],
       "correspondences": {
@@ -2219,6 +2246,12 @@
             "chaos-dragon-slayer",
             "storm"
           ]
+        },
+        {
+          "type": "SHADOW",
+          "target": "primordial:tyrant",
+          "activation": "When divine kingship becomes arrogant excess; fear of displacement by mortals",
+          "strength": 0.75
         }
       ],
       "contextualVariants": [

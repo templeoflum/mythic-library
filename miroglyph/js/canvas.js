@@ -231,6 +231,43 @@
     return positions[nodeId];
   }
 
+  // Select a node — highlight it and dim all others
+  function selectNode(nodeId) {
+    if (!nodesGroup) return;
+    var allGroups = nodesGroup.querySelectorAll('.node-group');
+    for (var i = 0; i < allGroups.length; i++) {
+      var g = allGroups[i];
+      var gId = g.getAttribute('data-node-id');
+      if (gId === nodeId) {
+        g.classList.add('selected');
+        g.classList.remove('dimmed');
+        // Set glow color from the node's arc color
+        var node = window.MiroGlyph.nodes.getNode(nodeId);
+        var color = '';
+        if (nodeId === '\u2205') {
+          color = node ? node.color : '#f59e0b';
+        } else {
+          color = node && node.arc ? node.arc.color : '#6366f1';
+        }
+        g.style.setProperty('--glow-color', color);
+      } else {
+        g.classList.remove('selected');
+        g.classList.add('dimmed');
+      }
+    }
+  }
+
+  // Clear all selection and dimming state
+  function clearSelection() {
+    if (!nodesGroup) return;
+    var allGroups = nodesGroup.querySelectorAll('.node-group');
+    for (var i = 0; i < allGroups.length; i++) {
+      allGroups[i].classList.remove('selected');
+      allGroups[i].classList.remove('dimmed');
+      allGroups[i].style.removeProperty('--glow-color');
+    }
+  }
+
   // Export canvas functions
   window.MiroGlyph.canvas = {
     init,
@@ -240,6 +277,8 @@
     markNodeInSequence,
     clearSequenceMarks,
     getNodeFromEvent,
-    getPosition
+    getPosition,
+    selectNode,
+    clearSelection
   };
 })();

@@ -8,7 +8,6 @@
   "subdomain": "astrology",
   "cardinality": 12,
   "structuralNotes": "Signs grouped by element (Fire/Earth/Air/Water) and modality (Cardinal/Fixed/Mutable). Each sign ruled by a planet.",
-
   "entries": [
     {
       "@id": "astrology:aries",
@@ -18,25 +17,58 @@
       "element": "fire",
       "modality": "cardinal",
       "ruler": "astrology:mars",
-      "keywords": ["initiative", "courage", "impulse", "leadership", "competition", "pioneering"],
+      "keywords": [
+        "initiative",
+        "courage",
+        "impulse",
+        "leadership",
+        "competition",
+        "pioneering"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.42,
         "light-shadow": 0.28,
         "active-receptive": 0.08,
-        "individual-collective": 0.18,
+        "individual-collective": 0.12,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.72,
         "voluntary-fated": 0.18
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["combat", "initiative"]},
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["courage", "pioneering"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "combat",
+            "initiative"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "courage",
+            "pioneering"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:libra", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARES", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.7}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:libra",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ARES",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.7
+        }
       ]
     },
     {
@@ -47,7 +79,14 @@
       "element": "earth",
       "modality": "fixed",
       "ruler": "astrology:venus",
-      "keywords": ["stability", "sensuality", "persistence", "material", "pleasure", "value"],
+      "keywords": [
+        "stability",
+        "sensuality",
+        "persistence",
+        "material",
+        "pleasure",
+        "value"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.32,
@@ -59,13 +98,39 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["stability", "persistence"]},
-        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["sensuality", "pleasure"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.85,
+          "aspects": [
+            "stability",
+            "persistence"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.65,
+          "aspects": [
+            "sensuality",
+            "pleasure"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:scorpio", "axis": "stasis-transformation"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.6},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.75}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:scorpio",
+          "axis": "stasis-transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hierophant",
+          "fidelity": 0.75
+        }
       ]
     },
     {
@@ -76,25 +141,58 @@
       "element": "air",
       "modality": "mutable",
       "ruler": "astrology:mercury",
-      "keywords": ["communication", "duality", "adaptability", "curiosity", "intellect", "versatility"],
+      "keywords": [
+        "communication",
+        "duality",
+        "adaptability",
+        "curiosity",
+        "intellect",
+        "versatility"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.68,
         "creation-destruction": 0.45,
         "light-shadow": 0.42,
         "active-receptive": 0.35,
-        "individual-collective": 0.45,
+        "individual-collective": 0.21,
         "ascent-descent": 0.32,
         "stasis-transformation": 0.78,
         "voluntary-fated": 0.22
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.8, "aspects": ["adaptability", "wit"]},
-        {"primordial": "primordial:twin", "weight": 0.75, "aspects": ["duality", "multiplicity"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "adaptability",
+            "wit"
+          ]
+        },
+        {
+          "primordial": "primordial:twin",
+          "weight": 0.75,
+          "aspects": [
+            "duality",
+            "multiplicity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:sagittarius", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.75}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:sagittarius",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.75
+        }
       ]
     },
     {
@@ -105,25 +203,57 @@
       "element": "water",
       "modality": "cardinal",
       "ruler": "astrology:moon",
-      "keywords": ["nurturing", "emotion", "home", "protection", "intuition", "memory"],
+      "keywords": [
+        "nurturing",
+        "emotion",
+        "home",
+        "protection",
+        "intuition",
+        "memory"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.25,
         "light-shadow": 0.48,
         "active-receptive": 0.72,
         "individual-collective": 0.65,
-        "ascent-descent": 0.68,
+        "ascent-descent": 0.89,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "protection"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["emotional-care"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.85,
+          "aspects": [
+            "nurturing",
+            "protection"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "emotional-care"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:capricorn", "axis": "ascent-descent"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.75}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:capricorn",
+          "axis": "ascent-descent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:chariot",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.75
+        }
       ]
     },
     {
@@ -134,26 +264,63 @@
       "element": "fire",
       "modality": "fixed",
       "ruler": "astrology:sun",
-      "keywords": ["creativity", "pride", "generosity", "leadership", "drama", "self-expression"],
+      "keywords": [
+        "creativity",
+        "pride",
+        "generosity",
+        "leadership",
+        "drama",
+        "self-expression"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.28,
         "light-shadow": 0.12,
         "active-receptive": 0.18,
-        "individual-collective": 0.22,
+        "individual-collective": 0.21,
         "ascent-descent": 0.25,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["leadership", "nobility"]},
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["courage", "generosity"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.85,
+          "aspects": [
+            "leadership",
+            "nobility"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "courage",
+            "generosity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:aquarius", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APOLLO", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:aquarius",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APOLLO",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:strength",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.8
+        }
       ]
     },
     {
@@ -164,9 +331,16 @@
       "element": "earth",
       "modality": "mutable",
       "ruler": "astrology:mercury",
-      "keywords": ["analysis", "service", "purity", "discernment", "craft", "health"],
+      "keywords": [
+        "analysis",
+        "service",
+        "purity",
+        "discernment",
+        "craft",
+        "health"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.18,
+        "order-chaos": 0.12,
         "creation-destruction": 0.38,
         "light-shadow": 0.32,
         "active-receptive": 0.55,
@@ -176,13 +350,39 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["service", "health"]},
-        {"primordial": "primordial:maiden", "weight": 0.7, "aspects": ["purity", "discernment"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.75,
+          "aspects": [
+            "service",
+            "health"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "purity",
+            "discernment"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:pisces", "axis": "order-chaos"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.6},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.8}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:pisces",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.8
+        }
       ]
     },
     {
@@ -193,25 +393,58 @@
       "element": "air",
       "modality": "cardinal",
       "ruler": "astrology:venus",
-      "keywords": ["balance", "harmony", "partnership", "justice", "beauty", "diplomacy"],
+      "keywords": [
+        "balance",
+        "harmony",
+        "partnership",
+        "justice",
+        "beauty",
+        "diplomacy"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.42,
         "light-shadow": 0.35,
         "active-receptive": 0.52,
-        "individual-collective": 0.62,
+        "individual-collective": 0.68,
         "ascent-descent": 0.42,
         "stasis-transformation": 0.48,
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["partnership", "harmony"]},
-        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["justice", "balance"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.75,
+          "aspects": [
+            "partnership",
+            "harmony"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.55,
+          "aspects": [
+            "justice",
+            "balance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:aries", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-THEMIS", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.9}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:aries",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-THEMIS",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.9
+        }
       ]
     },
     {
@@ -222,7 +455,14 @@
       "element": "water",
       "modality": "fixed",
       "ruler": "astrology:pluto",
-      "keywords": ["transformation", "intensity", "depth", "power", "secrets", "regeneration"],
+      "keywords": [
+        "transformation",
+        "intensity",
+        "depth",
+        "power",
+        "secrets",
+        "regeneration"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.75,
@@ -234,13 +474,39 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["transformation", "death-rebirth"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["depth", "secrets"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.75,
+          "aspects": [
+            "transformation",
+            "death-rebirth"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.7,
+          "aspects": [
+            "depth",
+            "secrets"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:taurus", "axis": "stasis-transformation"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HADES", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.9}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:taurus",
+          "axis": "stasis-transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HADES",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:death",
+          "fidelity": 0.9
+        }
       ]
     },
     {
@@ -251,25 +517,58 @@
       "element": "fire",
       "modality": "mutable",
       "ruler": "astrology:jupiter",
-      "keywords": ["expansion", "philosophy", "adventure", "optimism", "truth", "freedom"],
+      "keywords": [
+        "expansion",
+        "philosophy",
+        "adventure",
+        "optimism",
+        "truth",
+        "freedom"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.35,
         "light-shadow": 0.28,
         "active-receptive": 0.25,
-        "individual-collective": 0.52,
+        "individual-collective": 0.76,
         "ascent-descent": 0.28,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["adventure", "quest"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["philosophy", "truth"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "adventure",
+            "quest"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.6,
+          "aspects": [
+            "philosophy",
+            "truth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:gemini", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.65}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:gemini",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:temperance",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wheel_of_fortune",
+          "fidelity": 0.65
+        }
       ]
     },
     {
@@ -280,26 +579,63 @@
       "element": "earth",
       "modality": "cardinal",
       "ruler": "astrology:saturn",
-      "keywords": ["ambition", "discipline", "structure", "responsibility", "mastery", "authority"],
+      "keywords": [
+        "ambition",
+        "discipline",
+        "structure",
+        "responsibility",
+        "mastery",
+        "authority"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.12,
         "creation-destruction": 0.45,
         "light-shadow": 0.42,
         "active-receptive": 0.32,
         "individual-collective": 0.55,
-        "ascent-descent": 0.55,
+        "ascent-descent": 0.34,
         "stasis-transformation": 0.25,
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["authority", "mastery"]},
-        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["discipline", "structure"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "authority",
+            "mastery"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.7,
+          "aspects": [
+            "discipline",
+            "structure"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:cancer", "axis": "ascent-descent"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-CRONUS", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.65}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:cancer",
+          "axis": "ascent-descent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-CRONUS",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:devil",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:world",
+          "fidelity": 0.65
+        }
       ]
     },
     {
@@ -310,25 +646,58 @@
       "element": "air",
       "modality": "fixed",
       "ruler": "astrology:uranus",
-      "keywords": ["innovation", "humanity", "rebellion", "idealism", "eccentricity", "vision"],
+      "keywords": [
+        "innovation",
+        "humanity",
+        "rebellion",
+        "idealism",
+        "eccentricity",
+        "vision"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.42,
         "light-shadow": 0.35,
         "active-receptive": 0.35,
-        "individual-collective": 0.75,
+        "individual-collective": 0.76,
         "ascent-descent": 0.32,
         "stasis-transformation": 0.72,
         "voluntary-fated": 0.15
       },
       "instantiates": [
-        {"primordial": "primordial:rebel", "weight": 0.8, "aspects": ["innovation", "rebellion"]},
-        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["vision", "idealism"]}
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.8,
+          "aspects": [
+            "innovation",
+            "rebellion"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "vision",
+            "idealism"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:leo", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PROMETHEUS", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.85}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:leo",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PROMETHEUS",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:star",
+          "fidelity": 0.85
+        }
       ]
     },
     {
@@ -339,9 +708,16 @@
       "element": "water",
       "modality": "mutable",
       "ruler": "astrology:neptune",
-      "keywords": ["intuition", "compassion", "transcendence", "dreams", "dissolution", "unity"],
+      "keywords": [
+        "intuition",
+        "compassion",
+        "transcendence",
+        "dreams",
+        "dissolution",
+        "unity"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.62,
+        "order-chaos": 0.68,
         "creation-destruction": 0.48,
         "light-shadow": 0.62,
         "active-receptive": 0.78,
@@ -351,40 +727,135 @@
         "voluntary-fated": 0.75
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.75, "aspects": ["transcendence", "dissolution"]},
-        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["compassion", "unity"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.75,
+          "aspects": [
+            "transcendence",
+            "dissolution"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.65,
+          "aspects": [
+            "compassion",
+            "unity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "astrology:virgo", "axis": "order-chaos"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-POSEIDON", "fidelity": 0.55},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.7}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "astrology:virgo",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-POSEIDON",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hanged_man",
+          "fidelity": 0.7
+        }
       ]
     }
   ],
-
   "systemRelationships": {
     "elements": {
-      "fire": ["aries", "leo", "sagittarius"],
-      "earth": ["taurus", "virgo", "capricorn"],
-      "air": ["gemini", "libra", "aquarius"],
-      "water": ["cancer", "scorpio", "pisces"]
+      "fire": [
+        "aries",
+        "leo",
+        "sagittarius"
+      ],
+      "earth": [
+        "taurus",
+        "virgo",
+        "capricorn"
+      ],
+      "air": [
+        "gemini",
+        "libra",
+        "aquarius"
+      ],
+      "water": [
+        "cancer",
+        "scorpio",
+        "pisces"
+      ]
     },
     "modalities": {
-      "cardinal": ["aries", "cancer", "libra", "capricorn"],
-      "fixed": ["taurus", "leo", "scorpio", "aquarius"],
-      "mutable": ["gemini", "virgo", "sagittarius", "pisces"]
+      "cardinal": [
+        "aries",
+        "cancer",
+        "libra",
+        "capricorn"
+      ],
+      "fixed": [
+        "taurus",
+        "leo",
+        "scorpio",
+        "aquarius"
+      ],
+      "mutable": [
+        "gemini",
+        "virgo",
+        "sagittarius",
+        "pisces"
+      ]
     },
     "polarities": [
-      {"pair": ["aries", "libra"], "theme": "Self vs Other"},
-      {"pair": ["taurus", "scorpio"], "theme": "Having vs Transforming"},
-      {"pair": ["gemini", "sagittarius"], "theme": "Information vs Wisdom"},
-      {"pair": ["cancer", "capricorn"], "theme": "Private vs Public"},
-      {"pair": ["leo", "aquarius"], "theme": "Individual vs Collective"},
-      {"pair": ["virgo", "pisces"], "theme": "Analysis vs Synthesis"}
+      {
+        "pair": [
+          "aries",
+          "libra"
+        ],
+        "theme": "Self vs Other"
+      },
+      {
+        "pair": [
+          "taurus",
+          "scorpio"
+        ],
+        "theme": "Having vs Transforming"
+      },
+      {
+        "pair": [
+          "gemini",
+          "sagittarius"
+        ],
+        "theme": "Information vs Wisdom"
+      },
+      {
+        "pair": [
+          "cancer",
+          "capricorn"
+        ],
+        "theme": "Private vs Public"
+      },
+      {
+        "pair": [
+          "leo",
+          "aquarius"
+        ],
+        "theme": "Individual vs Collective"
+      },
+      {
+        "pair": [
+          "virgo",
+          "pisces"
+        ],
+        "theme": "Analysis vs Synthesis"
+      }
     ]
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

@@ -8,6 +8,7 @@ from scipy.stats import kruskal, mannwhitneyu
 from typing import Dict, List, Optional
 
 from integration.acp_loader import ACPLoader, AXES
+from validation.v2_tests import weighted_distance
 
 
 class RelationshipGeometryTest:
@@ -38,6 +39,7 @@ class RelationshipGeometryTest:
                 c2 = self.acp.get_coordinates(rel.get("target", ""))
                 if c1 is not None and c2 is not None:
                     dist = float(np.linalg.norm(c1 - c2))
+                    w_dist = weighted_distance(c1, c2)
                     per_axis = {
                         AXES[k]: round(abs(float(c1[k] - c2[k])), 4)
                         for k in range(len(AXES))
@@ -49,6 +51,7 @@ class RelationshipGeometryTest:
                         "source_name": self.acp.archetypes.get(rel["source"], {}).get("name", ""),
                         "target_name": self.acp.archetypes.get(rel.get("target", ""), {}).get("name", ""),
                         "distance": dist,
+                        "weighted_distance": w_dist,
                         "per_axis_diff": per_axis,
                         "max_diff_axis": AXES[max_axis_idx],
                         "max_diff_value": round(abs(float(c1[max_axis_idx] - c2[max_axis_idx])), 4),
@@ -131,6 +134,45 @@ class RelationshipGeometryTest:
                     evo_correct_direction += 1
         evo_dir_pct = (evo_correct_direction / len(evolution) * 100) if evolution else 0
 
+        # --- Weighted distance comparison ---
+        w_type_distances = {}
+        for t, pairs in type_groups.items():
+            if pairs:
+                w_dists = [p["weighted_distance"] for p in pairs]
+                w_type_distances[t] = {
+                    "n_pairs": len(pairs),
+                    "mean": round(float(np.mean(w_dists)), 4),
+                    "median": round(float(np.median(w_dists)), 4),
+                    "std": round(float(np.std(w_dists)), 4),
+                }
+
+        # Weighted random baseline
+        w_random_dists = []
+        rng_w = np.random.default_rng(seed)
+        for _ in range(500):
+            i, j = rng_w.choice(len(all_ids), size=2, replace=False)
+            c1 = self.acp.get_coordinates(all_ids[i])
+            c2 = self.acp.get_coordinates(all_ids[j])
+            w_random_dists.append(weighted_distance(c1, c2))
+        w_random_arr = np.array(w_random_dists)
+        w_type_distances["RANDOM"] = {
+            "n_pairs": len(w_random_dists),
+            "mean": round(float(w_random_arr.mean()), 4),
+            "median": round(float(np.median(w_random_arr)), 4),
+            "std": round(float(w_random_arr.std()), 4),
+        }
+
+        # Weighted Kruskal-Wallis
+        w_group_arrays = []
+        w_group_labels = []
+        for t, pairs in type_groups.items():
+            if len(pairs) >= 3:
+                w_group_arrays.append([p["weighted_distance"] for p in pairs])
+                w_group_labels.append(t)
+        w_kw_stat, w_kw_p = (0, 1.0)
+        if len(w_group_arrays) >= 2:
+            w_kw_stat, w_kw_p = kruskal(*w_group_arrays)
+
         # --- Verdicts ---
         polar_axis_pass = polar_axis_pct >= 70
         polar_max_pass = polar_max_pct >= 50
@@ -182,6 +224,15 @@ class RelationshipGeometryTest:
                     "result": f"H={kw_stat:.2f}, p={kw_p:.4f}",
                 },
                 "overall_pass": polar_axis_pass and kw_pass,
+            },
+            "weighted_comparison": {
+                "weighted_distance_by_type": w_type_distances,
+                "weighted_kruskal_wallis": {
+                    "statistic": round(float(w_kw_stat), 4),
+                    "p_value": round(float(w_kw_p), 6),
+                    "groups_tested": w_group_labels,
+                },
+                "improvement_kw_p": round(float(kw_p) - float(w_kw_p), 6),
             },
             "human_review": human_review,
         }

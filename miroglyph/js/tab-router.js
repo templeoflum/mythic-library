@@ -1,76 +1,85 @@
-// MiroGlyph — Tab Router
-// Manages tab navigation, lazy initialization, and hash-based routing
+// Mythic System Explorer — View Router
+// Manages 3 views (atlas/codex/chronicle) with nested hash routing
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
 
-  let activeTabId = null;
-  const tabs = {};
+  var activeViewId = null;
+  var views = {};
 
-  function register(tabId, module) {
-    tabs[tabId] = {
+  function register(viewId, module) {
+    views[viewId] = {
       init: module.init,
       activate: module.activate || function() {},
       deactivate: module.deactivate || function() {},
-      initialized: false,
+      onRoute: module.onRoute || function() {},
+      initialized: false
     };
   }
 
-  function switchTo(tabId) {
-    if (tabId === activeTabId) return;
-    if (!tabs[tabId]) return;
+  function switchTo(viewId, routeParams) {
+    if (!views[viewId]) return;
 
-    // Deactivate current
-    if (activeTabId && tabs[activeTabId]) {
-      const oldContent = document.getElementById('tab-content-' + activeTabId);
+    // Deactivate current view
+    if (activeViewId && views[activeViewId] && activeViewId !== viewId) {
+      var oldContent = document.getElementById('view-' + activeViewId);
       if (oldContent) oldContent.hidden = true;
-      const oldBtn = document.querySelector('[data-tab="' + activeTabId + '"]');
+      var oldBtn = document.querySelector('[data-view="' + activeViewId + '"]');
       if (oldBtn) oldBtn.classList.remove('tab-active');
-      tabs[activeTabId].deactivate();
+      views[activeViewId].deactivate();
     }
 
-    // Activate new
-    activeTabId = tabId;
-    const tab = tabs[tabId];
-    const content = document.getElementById('tab-content-' + tabId);
-    const btn = document.querySelector('[data-tab="' + tabId + '"]');
+    // Activate new view
+    activeViewId = viewId;
+    var view = views[viewId];
+    var content = document.getElementById('view-' + viewId);
+    var btn = document.querySelector('[data-view="' + viewId + '"]');
 
     if (content) content.hidden = false;
     if (btn) btn.classList.add('tab-active');
 
-    if (!tab.initialized) {
-      tab.init(content);
-      tab.initialized = true;
+    if (!view.initialized) {
+      view.init(content);
+      view.initialized = true;
     }
-    tab.activate();
 
-    // Update hash without triggering hashchange
-    history.replaceState(null, '', '#' + tabId);
+    view.activate();
+
+    // Pass route params to the view for sub-navigation
+    if (routeParams) {
+      view.onRoute(routeParams);
+    }
   }
 
-  function getActiveTab() {
-    return activeTabId;
+  function getActiveView() {
+    return activeViewId;
+  }
+
+  function handleRoute() {
+    var hash = window.location.hash.slice(1) || 'atlas';
+    var parsed = window.MiroGlyph.nav.parseRoute(hash);
+    switchTo(parsed.view, parsed);
   }
 
   function init() {
     // Set up nav click handlers
-    document.querySelectorAll('[data-tab]').forEach(function(btn) {
+    document.querySelectorAll('[data-view]').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        switchTo(btn.dataset.tab);
+        window.location.hash = btn.dataset.view;
       });
     });
 
-    // Read hash or default to topology
-    const hash = window.location.hash.slice(1);
-    const startTab = (hash && tabs[hash]) ? hash : 'topology';
-    switchTo(startTab);
+    // Initial route
+    handleRoute();
 
-    // Handle browser back/forward
-    window.addEventListener('hashchange', function() {
-      const h = window.location.hash.slice(1);
-      if (h && tabs[h]) switchTo(h);
-    });
+    // Handle browser back/forward and hash changes
+    window.addEventListener('hashchange', handleRoute);
   }
 
-  window.MiroGlyph.tabRouter = { register, switchTo, getActiveTab, init };
+  window.MiroGlyph.tabRouter = {
+    register: register,
+    switchTo: switchTo,
+    getActiveView: getActiveView,
+    init: init
+  };
 })();

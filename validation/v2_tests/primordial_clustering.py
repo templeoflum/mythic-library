@@ -11,6 +11,7 @@ from typing import Dict, List
 from collections import defaultdict
 
 from integration.acp_loader import ACPLoader, AXES
+from validation.v2_tests import weighted_pdist
 
 
 class PrimordialClusteringTest:
@@ -61,6 +62,9 @@ class PrimordialClusteringTest:
         # Spectral distances (Euclidean in 8D)
         sd_arr = pdist(coords, metric="euclidean")
 
+        # Weighted spectral distances
+        w_sd_arr = weighted_pdist(coords)
+
         # Primordial cosine similarity (1 - cosine_distance)
         # pdist returns distances; we want similarity = 1 - distance
         prim_cos_dists = pdist(prim_vecs, metric="cosine")
@@ -69,6 +73,7 @@ class PrimordialClusteringTest:
         ps_arr = 1.0 - prim_cos_dists
 
         obs_r, obs_p = spearmanr(ps_arr, sd_arr)
+        w_obs_r, w_obs_p = spearmanr(ps_arr, w_sd_arr)
 
         # 2. Vectorized permutation test: shuffle rows of primordial matrix
         # Pre-compute the full cosine similarity matrix for permutation reindexing
@@ -181,6 +186,11 @@ class PrimordialClusteringTest:
                     "result": f"ratio={cluster_ratio:.4f} ({cluster_ratio*100:.1f}% separation)",
                 },
                 "overall_pass": correlation_pass and cluster_pass,
+            },
+            "weighted_comparison": {
+                "weighted_spearman_r": round(float(w_obs_r), 4),
+                "weighted_spearman_p": round(float(w_obs_p), 6),
+                "improvement_over_unweighted": round(abs(float(w_obs_r)) - abs(float(obs_r)), 4),
             },
             "human_review": {
                 "primordial_centroids": primordial_centroids,

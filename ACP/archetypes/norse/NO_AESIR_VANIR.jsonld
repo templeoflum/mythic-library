@@ -8,7 +8,13 @@
       "name": "Norse Pantheon – Aesir & Vanir",
       "description": "The gods of Norse/Germanic mythology, divided into the warlike Aesir and the fertility-focused Vanir. Characterized by a fatalistic worldview culminating in Ragnarök, emphasizing honor, wisdom-seeking, and acceptance of fate.",
       "culturalContext": "Scandinavia and Germanic regions, ~200 CE - 1100 CE",
-      "primarySources": ["Poetic Edda", "Prose Edda (Snorri Sturluson)", "Völuspá", "Hávamál", "Sagas"],
+      "primarySources": [
+        "Poetic Edda",
+        "Prose Edda (Snorri Sturluson)",
+        "Völuspá",
+        "Hávamál",
+        "Sagas"
+      ],
       "characteristics": [
         "Fatalistic cosmology - even gods will die at Ragnarök",
         "Wisdom through sacrifice and suffering",
@@ -17,12 +23,21 @@
         "Strong emphasis on fate (wyrd), honor, and hospitality"
       ],
       "cosmology": {
-        "realms": ["Asgard", "Midgard", "Jotunheim", "Niflheim", "Muspelheim", "Vanaheim", "Alfheim", "Svartalfheim", "Helheim"],
+        "realms": [
+          "Asgard",
+          "Midgard",
+          "Jotunheim",
+          "Niflheim",
+          "Muspelheim",
+          "Vanaheim",
+          "Alfheim",
+          "Svartalfheim",
+          "Helheim"
+        ],
         "worldTree": "Yggdrasil connects all realms",
         "eschatology": "Ragnarök - the twilight of the gods, followed by renewal"
       }
     },
-
     {
       "@id": "arch:NO-ODIN",
       "@type": "Archetype",
@@ -30,16 +45,33 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Allfather, god of wisdom, war, death, poetry, and magic. Sacrificed his eye for wisdom and hung on Yggdrasil for nine nights to gain the runes. The wandering seeker who trades all for knowledge, yet knows his own doom.",
-
       "aliases": [
-        {"name": "Woden/Wotan", "system": "Germanic", "fidelity": 0.95},
-        {"name": "Mercury", "system": "Roman", "fidelity": 0.5, "aspect": "interpretatio romana - messenger/psychopomp"},
-        {"name": "Zeus", "system": "Greek", "fidelity": 0.4, "aspect": "sky-father, king of gods"},
-        {"name": "Hermes", "system": "Greek", "fidelity": 0.5, "aspect": "traveler, wisdom, psychopomp"}
+        {
+          "name": "Woden/Wotan",
+          "system": "Germanic",
+          "fidelity": 0.95
+        },
+        {
+          "name": "Mercury",
+          "system": "Roman",
+          "fidelity": 0.5,
+          "aspect": "interpretatio romana - messenger/psychopomp"
+        },
+        {
+          "name": "Zeus",
+          "system": "Greek",
+          "fidelity": 0.4,
+          "aspect": "sky-father, king of gods"
+        },
+        {
+          "name": "Hermes",
+          "system": "Greek",
+          "fidelity": 0.5,
+          "aspect": "traveler, wisdom, psychopomp"
+        }
       ],
-
       "spectralCoordinates": {
-        "order-chaos": 0.45,
+        "order-chaos": 0.62,
         "creation-destruction": 0.5,
         "light-shadow": 0.55,
         "active-receptive": 0.3,
@@ -48,7 +80,6 @@
         "stasis-transformation": 0.7,
         "voluntary-fated": 0.65
       },
-
       "elementalComposition": {
         "air": 0.8,
         "fire": 0.4,
@@ -56,59 +87,96 @@
         "earth": 0.2,
         "aether": 0.7
       },
-
       "instantiates": [
         {
           "primordial": "primordial:magician",
           "weight": 0.85,
-          "aspects": ["rune-master", "seidr practitioner", "shapeshifter", "hidden knowledge"]
+          "aspects": [
+            "rune-master",
+            "seidr practitioner",
+            "shapeshifter",
+            "hidden knowledge"
+          ]
         },
         {
           "primordial": "primordial:wise-elder",
           "weight": 0.8,
-          "aspects": ["wisdom-seeker", "sacrificer for knowledge", "counselor"]
+          "aspects": [
+            "wisdom-seeker",
+            "sacrificer for knowledge",
+            "counselor"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.7,
-          "aspects": ["Allfather", "ruler of Asgard", "war-leader"]
+          "aspects": [
+            "Allfather",
+            "ruler of Asgard",
+            "war-leader"
+          ]
         },
         {
           "primordial": "primordial:psychopomp",
           "weight": 0.6,
-          "aspects": ["chooser of slain", "Valkyrie-commander", "guide to Valhalla"]
+          "aspects": [
+            "chooser of slain",
+            "Valkyrie-commander",
+            "guide to Valhalla"
+          ]
         },
         {
           "primordial": "primordial:trickster",
           "weight": 0.4,
-          "aspects": ["deceiver in war", "oath-breaker when necessary", "shape-shifter"]
+          "aspects": [
+            "deceiver in war",
+            "oath-breaker when necessary",
+            "shape-shifter"
+          ]
         }
       ],
-
       "coreFunction": "To seek wisdom at any cost, to prepare for doom while knowing it cannot be averted",
       "symbolicCore": "The one-eyed god who sees more than those with two - wisdom through sacrifice",
-      "domains": ["wisdom", "war", "death", "poetry", "magic", "runes", "fury", "hanging"],
-
+      "domains": [
+        "wisdom",
+        "war",
+        "death",
+        "poetry",
+        "magic",
+        "runes",
+        "fury",
+        "hanging"
+      ],
       "temporalOrientation": "future",
       "temporalNotes": "Obsessed with Ragnarök; all his actions prepare for the end he cannot prevent",
-
       "psychologicalMapping": {
         "jungianStructure": "Wounded healer, Senex with Puer elements",
         "developmentalStage": "Elder wisdom through sacrifice",
-        "cognitiveFunctions": ["Ni (introverted intuition)", "Ti (introverted thinking)"],
+        "cognitiveFunctions": [
+          "Ni (introverted intuition)",
+          "Ti (introverted thinking)"
+        ],
         "integrationTask": "Accepting that wisdom cannot prevent fate"
       },
-
-      "narrativeRoles": ["wanderer", "wisdom-seeker", "war-god", "father of slain", "shape-shifter"],
-      "storyFunctions": ["tests heroes", "bestows wisdom/runes", "chooses who lives and dies", "prepares for Ragnarök"],
-
+      "narrativeRoles": [
+        "wanderer",
+        "wisdom-seeker",
+        "war-god",
+        "father of slain",
+        "shape-shifter"
+      ],
+      "storyFunctions": [
+        "tests heroes",
+        "bestows wisdom/runes",
+        "chooses who lives and dies",
+        "prepares for Ragnarök"
+      ],
       "developmentalArc": {
         "origin": "Among the first Aesir, participated in creation",
         "sacrifice": "Eye for wisdom, hanging for runes, various costs for knowledge",
         "reign": "Rules Asgard while preparing for inevitable doom",
         "doom": "Dies to Fenrir at Ragnarök"
       },
-
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -153,24 +221,43 @@
           "target": "primordial:tyrant",
           "activation": "When manipulation serves only self-preservation",
           "strength": 0.5
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Young war-god",
+          "target": "All-Father and wisdom-seeker",
+          "trigger": "Self-sacrifice on Yggdrasil; eye-sacrifice at Mímir's well",
+          "direction": "forward"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-HANGED-MAN", "TAMA-HERMIT", "TAMA-MAGICIAN"],
+        "tarot": [
+          "TAMA-HANGED-MAN",
+          "TAMA-HERMIT",
+          "TAMA-MAGICIAN"
+        ],
         "planet": "7P-MERCURY",
         "element": "EL-AIR",
         "rune": "RN-ANSUZ",
         "day": "Wednesday (Woden's day)",
-        "animals": ["ravens (Huginn & Muninn)", "wolves (Geri & Freki)", "eight-legged horse (Sleipnir)"],
-        "plants": ["ash (Yggdrasil)", "mistletoe"],
-        "colors": ["grey", "deep blue", "black"]
+        "animals": [
+          "ravens (Huginn & Muninn)",
+          "wolves (Geri & Freki)",
+          "eight-legged horse (Sleipnir)"
+        ],
+        "plants": [
+          "ash (Yggdrasil)",
+          "mistletoe"
+        ],
+        "colors": [
+          "grey",
+          "deep blue",
+          "black"
+        ]
       },
-
       "ritualFunction": "Invoked for wisdom, victory, poetry, runic magic, communication with the dead",
       "poeticInvocation": "Allfather, Gallows-Lord, Raven-God, One-Eyed Wanderer who traded flesh for wisdom"
     },
-
     {
       "@id": "arch:NO-THOR",
       "@type": "Archetype",
@@ -178,16 +265,33 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "God of thunder, strength, and the protection of humanity. Mjölnir-wielding defender against giants and chaos. Unlike his father Odin's cunning, Thor represents direct, honest strength in service of cosmic order.",
-
       "aliases": [
-        {"name": "Donar/Thunor", "system": "Germanic", "fidelity": 0.95},
-        {"name": "Jupiter", "system": "Roman", "fidelity": 0.6, "aspect": "interpretatio romana - thunderer"},
-        {"name": "Zeus", "system": "Greek", "fidelity": 0.5, "aspect": "thunderer"},
-        {"name": "Indra", "system": "Hindu", "fidelity": 0.6, "aspect": "thunderer, giant-slayer"}
+        {
+          "name": "Donar/Thunor",
+          "system": "Germanic",
+          "fidelity": 0.95
+        },
+        {
+          "name": "Jupiter",
+          "system": "Roman",
+          "fidelity": 0.6,
+          "aspect": "interpretatio romana - thunderer"
+        },
+        {
+          "name": "Zeus",
+          "system": "Greek",
+          "fidelity": 0.5,
+          "aspect": "thunderer"
+        },
+        {
+          "name": "Indra",
+          "system": "Hindu",
+          "fidelity": 0.6,
+          "aspect": "thunderer, giant-slayer"
+        }
       ],
-
       "spectralCoordinates": {
-        "order-chaos": 0.25,
+        "order-chaos": 0.07,
         "creation-destruction": 0.5,
         "light-shadow": 0.2,
         "active-receptive": 0.1,
@@ -196,43 +300,59 @@
         "stasis-transformation": 0.4,
         "voluntary-fated": 0.35
       },
-
       "elementalComposition": {
         "fire": 0.7,
         "air": 0.6,
         "earth": 0.5,
         "water": 0.2
       },
-
       "instantiates": [
         {
           "primordial": "primordial:warrior",
           "weight": 0.95,
-          "aspects": ["protector", "giant-slayer", "champion of order"]
+          "aspects": [
+            "protector",
+            "giant-slayer",
+            "champion of order"
+          ]
         },
         {
           "primordial": "primordial:hero",
           "weight": 0.8,
-          "aspects": ["defender of Midgard", "enemy of chaos"]
+          "aspects": [
+            "defender of Midgard",
+            "enemy of chaos"
+          ]
         },
         {
           "primordial": "primordial:great-father",
           "weight": 0.4,
-          "aspects": ["protector of humanity", "patron of common folk"]
+          "aspects": [
+            "protector of humanity",
+            "patron of common folk"
+          ]
         }
       ],
-
       "coreFunction": "To defend cosmic order against chaos through direct, honest strength",
       "symbolicCore": "The hammer that hallows and destroys - protective violence",
-      "domains": ["thunder", "lightning", "storms", "strength", "protection", "oak trees", "fertility (through rain)"],
-
+      "domains": [
+        "thunder",
+        "lightning",
+        "storms",
+        "strength",
+        "protection",
+        "oak trees",
+        "fertility (through rain)"
+      ],
       "psychologicalMapping": {
         "jungianStructure": "Heroic ego, masculine strength",
         "developmentalStage": "Peak of warrior function",
-        "cognitiveFunctions": ["Se (extraverted sensing)", "Te (extraverted thinking)"],
+        "cognitiveFunctions": [
+          "Se (extraverted sensing)",
+          "Te (extraverted thinking)"
+        ],
         "integrationTask": "Tempering strength with wisdom"
       },
-
       "relationships": [
         {
           "type": "POLAR_OPPOSITE",
@@ -271,24 +391,39 @@
           "target": "arch:IN-INDRA",
           "fidelity": 0.7,
           "notes": "Thunder god, serpent-slayer (Vritra), warrior-king"
+        },
+        {
+          "type": "SHADOW",
+          "target": "primordial:berserker",
+          "activation": "When protective rage becomes indiscriminate violence; when strength substitutes for wisdom",
+          "strength": 0.65
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-STRENGTH", "TAMA-CHARIOT"],
+        "tarot": [
+          "TAMA-STRENGTH",
+          "TAMA-CHARIOT"
+        ],
         "planet": "7P-JUPITER",
         "element": "EL-FIRE",
         "rune": "RN-THURISAZ",
         "day": "Thursday (Thor's day)",
         "metal": "iron",
-        "animals": ["goats (Tanngrisnir & Tanngnjóstr)"],
-        "plants": ["oak", "houseleek"],
-        "colors": ["red", "gold", "storm-grey"]
+        "animals": [
+          "goats (Tanngrisnir & Tanngnjóstr)"
+        ],
+        "plants": [
+          "oak",
+          "houseleek"
+        ],
+        "colors": [
+          "red",
+          "gold",
+          "storm-grey"
+        ]
       },
-
       "poeticInvocation": "Thunderer, Defender of Midgard, Mjölnir-wielder, Bane of Giants"
     },
-
     {
       "@id": "arch:NO-FREYJA",
       "@type": "Archetype",
@@ -296,14 +431,31 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Vanir goddess of love, beauty, fertility, war, and seiðr magic. She claims half the battle-slain for her hall Sessrúmnir. Embodies feminine sovereignty, erotic power, and magical knowledge independent of male authority.",
-
       "aliases": [
-        {"name": "Freya", "system": "Modern", "fidelity": 1.0},
-        {"name": "Vanadís", "system": "Norse", "fidelity": 1.0, "aspect": "Lady of the Vanir"},
-        {"name": "Aphrodite", "system": "Greek", "fidelity": 0.5, "aspect": "love, beauty"},
-        {"name": "Ishtar", "system": "Mesopotamian", "fidelity": 0.5, "aspect": "love and war goddess"}
+        {
+          "name": "Freya",
+          "system": "Modern",
+          "fidelity": 1.0
+        },
+        {
+          "name": "Vanadís",
+          "system": "Norse",
+          "fidelity": 1.0,
+          "aspect": "Lady of the Vanir"
+        },
+        {
+          "name": "Aphrodite",
+          "system": "Greek",
+          "fidelity": 0.5,
+          "aspect": "love, beauty"
+        },
+        {
+          "name": "Ishtar",
+          "system": "Mesopotamian",
+          "fidelity": 0.5,
+          "aspect": "love and war goddess"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.5,
         "creation-destruction": 0.35,
@@ -314,47 +466,66 @@
         "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
-
       "elementalComposition": {
         "water": 0.6,
         "fire": 0.5,
         "earth": 0.5,
         "air": 0.4
       },
-
       "instantiates": [
         {
           "primordial": "primordial:lover",
           "weight": 0.85,
-          "aspects": ["erotic power", "beauty", "desire", "passion"]
+          "aspects": [
+            "erotic power",
+            "beauty",
+            "desire",
+            "passion"
+          ]
         },
         {
           "primordial": "primordial:magician",
           "weight": 0.7,
-          "aspects": ["seiðr mistress", "taught magic to Odin"]
+          "aspects": [
+            "seiðr mistress",
+            "taught magic to Odin"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.6,
-          "aspects": ["queen", "claimer of battle-slain", "Vanir leader"]
+          "aspects": [
+            "queen",
+            "claimer of battle-slain",
+            "Vanir leader"
+          ]
         },
         {
           "primordial": "primordial:warrior",
           "weight": 0.5,
-          "aspects": ["battle goddess", "Valkyrie aspect"]
+          "aspects": [
+            "battle goddess",
+            "Valkyrie aspect"
+          ]
         }
       ],
-
       "coreFunction": "To embody sovereign feminine power - love, magic, war, and death",
       "symbolicCore": "The falcon cloak that allows flight between worlds - feminine magic unrestricted",
-      "domains": ["love", "beauty", "fertility", "war", "death", "seiðr magic", "gold", "cats"],
-
+      "domains": [
+        "love",
+        "beauty",
+        "fertility",
+        "war",
+        "death",
+        "seiðr magic",
+        "gold",
+        "cats"
+      ],
       "psychologicalMapping": {
         "jungianStructure": "Integrated anima, feminine power undivided",
         "developmentalStage": "Mature feminine independence",
         "integrationTask": "Owning all aspects of feminine power without fragmentation"
       },
-
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -387,22 +558,34 @@
           "strength": 0.5
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-EMPRESS", "TAMA-LOVERS", "TAMA-STAR"],
+        "tarot": [
+          "TAMA-EMPRESS",
+          "TAMA-LOVERS",
+          "TAMA-STAR"
+        ],
         "planet": "7P-VENUS",
         "element": "EL-WATER",
         "rune": "RN-FEHU",
         "day": "Friday (Freyja's day)",
         "metal": "gold",
-        "animals": ["cats", "falcon", "boar (Hildisvíni)"],
-        "plants": ["flax", "primrose"],
-        "colors": ["gold", "amber", "green"]
+        "animals": [
+          "cats",
+          "falcon",
+          "boar (Hildisvíni)"
+        ],
+        "plants": [
+          "flax",
+          "primrose"
+        ],
+        "colors": [
+          "gold",
+          "amber",
+          "green"
+        ]
       },
-
       "poeticInvocation": "Vanadís, Lady of the Slain, Wearer of Brísingamen, Mistress of Seiðr"
     },
-
     {
       "@id": "arch:NO-LOKI",
       "@type": "Archetype",
@@ -410,13 +593,26 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Trickster god, shape-shifter, blood-brother of Odin, and father of monsters. Moves from mischief-maker to world-destroyer. His chaos tests and eventually breaks the cosmic order.",
-
       "aliases": [
-        {"name": "Lopt", "system": "Norse", "fidelity": 1.0, "aspect": "sky-treader"},
-        {"name": "Hermes", "system": "Greek", "fidelity": 0.4, "aspect": "trickster only"},
-        {"name": "Prometheus", "system": "Greek", "fidelity": 0.4, "aspect": "fire-bringer, bound punished"}
+        {
+          "name": "Lopt",
+          "system": "Norse",
+          "fidelity": 1.0,
+          "aspect": "sky-treader"
+        },
+        {
+          "name": "Hermes",
+          "system": "Greek",
+          "fidelity": 0.4,
+          "aspect": "trickster only"
+        },
+        {
+          "name": "Prometheus",
+          "system": "Greek",
+          "fidelity": 0.4,
+          "aspect": "fire-bringer, bound punished"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.85,
         "creation-destruction": 0.6,
@@ -427,7 +623,6 @@
         "stasis-transformation": 0.9,
         "voluntary-fated": 0.2
       },
-
       "contextualVariants": [
         {
           "context": "Early myths (helper trickster)",
@@ -448,38 +643,53 @@
           "notes": "Fully adversarial; bound, will lead giants at Ragnarök"
         }
       ],
-
       "instantiates": [
         {
           "primordial": "primordial:trickster",
           "weight": 0.95,
-          "aspects": ["shape-shifter", "boundary-crosser", "chaos-agent", "sacred clown"]
+          "aspects": [
+            "shape-shifter",
+            "boundary-crosser",
+            "chaos-agent",
+            "sacred clown"
+          ]
         },
         {
           "primordial": "primordial:rebel",
           "weight": 0.7,
-          "aspects": ["order-breaker", "truth-teller through chaos"]
+          "aspects": [
+            "order-breaker",
+            "truth-teller through chaos"
+          ]
         },
         {
           "primordial": "primordial:destroyer",
           "weight": 0.6,
-          "aspects": ["father of monsters", "Ragnarök catalyst", "world-ender"]
+          "aspects": [
+            "father of monsters",
+            "Ragnarök catalyst",
+            "world-ender"
+          ]
         }
       ],
-
       "coreFunction": "To test and ultimately break cosmic order through chaos and transformation",
       "symbolicCore": "Fire that warms and destroys - chaos that creates and unmakes",
-      "domains": ["fire", "trickery", "shape-shifting", "lies", "chaos", "mischief", "destruction"],
-
+      "domains": [
+        "fire",
+        "trickery",
+        "shape-shifting",
+        "lies",
+        "chaos",
+        "mischief",
+        "destruction"
+      ],
       "temporalOrientation": "liminal",
       "temporalNotes": "Exists in threshold moments; his binding is the pause before Ragnarök",
-
       "psychologicalMapping": {
         "jungianStructure": "Shadow that becomes conscious and oppositional",
         "developmentalStage": "Trickster refusing to mature, or mature trickster gone dark",
         "integrationTask": "Cannot be integrated - must be bound; represents limit of integration"
       },
-
       "developmentalArc": {
         "origin": "Jotun blood, blood-oath with Odin makes him Aesir",
         "helper": "Aids gods, retrieves treasures, solves problems through cunning",
@@ -487,7 +697,6 @@
         "punishment": "Bound with serpent venom until Ragnarök",
         "doom": "Leads giants, slain by Heimdall (mutual kill)"
       },
-
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -532,21 +741,44 @@
           "target": "primordial:destroyer",
           "trigger": "After Baldur's death - trickster becomes world-ender",
           "direction": "devolution"
+        },
+        {
+          "type": "SHADOW",
+          "target": "primordial:destroyer",
+          "activation": "When trickster's playfulness curdles into malice; after Baldur's death",
+          "strength": 0.9
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Mischievous blood-brother of Odin",
+          "target": "Bound world-ender leading Naglfar at Ragnarök",
+          "trigger": "Causing Baldur's death; binding and punishment by the Aesir",
+          "direction": "devolution"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-FOOL", "TAMA-DEVIL", "TAMA-TOWER"],
+        "tarot": [
+          "TAMA-FOOL",
+          "TAMA-DEVIL",
+          "TAMA-TOWER"
+        ],
         "planet": "7P-MERCURY",
         "element": "EL-FIRE",
         "rune": "RN-KENAZ",
-        "animals": ["fly", "salmon", "horse", "serpent (children)"],
-        "colors": ["red", "orange", "black"]
+        "animals": [
+          "fly",
+          "salmon",
+          "horse",
+          "serpent (children)"
+        ],
+        "colors": [
+          "red",
+          "orange",
+          "black"
+        ]
       },
-
       "poeticInvocation": "Sky-treader, Shape-shifter, Sly-One, Father of Monsters, Bringer of Ragnarök"
     },
-
     {
       "@id": "arch:NO-FRIGG",
       "@type": "Archetype",
@@ -554,13 +786,24 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Queen of Asgard, goddess of marriage, motherhood, and domestic wisdom. Knows all fates but speaks none. Her silent knowledge and grief (for Baldur) represent the weight of seeing what cannot be changed.",
-
       "aliases": [
-        {"name": "Frigga", "system": "Germanic", "fidelity": 0.95},
-        {"name": "Frija", "system": "Proto-Germanic", "fidelity": 0.9},
-        {"name": "Hera", "system": "Greek", "fidelity": 0.5, "aspect": "queen of gods, marriage"}
+        {
+          "name": "Frigga",
+          "system": "Germanic",
+          "fidelity": 0.95
+        },
+        {
+          "name": "Frija",
+          "system": "Proto-Germanic",
+          "fidelity": 0.9
+        },
+        {
+          "name": "Hera",
+          "system": "Greek",
+          "fidelity": 0.5,
+          "aspect": "queen of gods, marriage"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.2,
         "creation-destruction": 0.35,
@@ -571,29 +814,43 @@
         "stasis-transformation": 0.3,
         "voluntary-fated": 0.75
       },
-
       "instantiates": [
         {
           "primordial": "primordial:great-mother",
           "weight": 0.8,
-          "aspects": ["motherhood", "grief-bearer", "protector of children"]
+          "aspects": [
+            "motherhood",
+            "grief-bearer",
+            "protector of children"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.7,
-          "aspects": ["queen", "domestic order", "household management"]
+          "aspects": [
+            "queen",
+            "domestic order",
+            "household management"
+          ]
         },
         {
           "primordial": "primordial:crone",
           "weight": 0.5,
-          "aspects": ["fate-knowledge", "silent wisdom"]
+          "aspects": [
+            "fate-knowledge",
+            "silent wisdom"
+          ]
         }
       ],
-
       "coreFunction": "To hold space for fate's unfolding; to grieve what wisdom cannot prevent",
       "symbolicCore": "The spindle that spins fate - knowledge that must remain unspoken",
-      "domains": ["marriage", "motherhood", "domestic arts", "fate-knowledge", "clouds/sky"],
-
+      "domains": [
+        "marriage",
+        "motherhood",
+        "domestic arts",
+        "fate-knowledge",
+        "clouds/sky"
+      ],
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -620,21 +877,30 @@
           "notes": "Queen of gods, marriage goddess"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-EMPRESS", "TAMA-HIGH-PRIESTESS"],
+        "tarot": [
+          "TAMA-EMPRESS",
+          "TAMA-HIGH-PRIESTESS"
+        ],
         "planet": "7P-MOON",
         "element": "EL-EARTH",
         "rune": "RN-BERKANO",
         "day": "Friday (shares with Freyja)",
-        "animals": ["falcon", "heron"],
-        "plants": ["mistletoe (ironically)"],
-        "colors": ["white", "silver", "sky blue"]
+        "animals": [
+          "falcon",
+          "heron"
+        ],
+        "plants": [
+          "mistletoe (ironically)"
+        ],
+        "colors": [
+          "white",
+          "silver",
+          "sky blue"
+        ]
       },
-
       "poeticInvocation": "Asgard's Queen, Mother of Baldur, She who knows but does not speak"
     },
-
     {
       "@id": "arch:NO-FREYR",
       "@type": "Archetype",
@@ -642,13 +908,25 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Vanir god of fertility, prosperity, peace, and sunshine. Lord of Alfheim. Gave up his magic sword for love of Gerðr - will die unarmed at Ragnarök. Embodies masculine fertility and sacrifice for love.",
-
       "aliases": [
-        {"name": "Frey", "system": "Modern", "fidelity": 1.0},
-        {"name": "Yngvi-Freyr", "system": "Norse", "fidelity": 1.0, "aspect": "ancestor of Yngling dynasty"},
-        {"name": "Apollo", "system": "Greek", "fidelity": 0.4, "aspect": "sunshine, beauty"}
+        {
+          "name": "Frey",
+          "system": "Modern",
+          "fidelity": 1.0
+        },
+        {
+          "name": "Yngvi-Freyr",
+          "system": "Norse",
+          "fidelity": 1.0,
+          "aspect": "ancestor of Yngling dynasty"
+        },
+        {
+          "name": "Apollo",
+          "system": "Greek",
+          "fidelity": 0.4,
+          "aspect": "sunshine, beauty"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.2,
@@ -659,29 +937,43 @@
         "stasis-transformation": 0.4,
         "voluntary-fated": 0.4
       },
-
       "instantiates": [
         {
           "primordial": "primordial:lover",
           "weight": 0.75,
-          "aspects": ["sacrifices for love", "union with earth (Gerðr)"]
+          "aspects": [
+            "sacrifices for love",
+            "union with earth (Gerðr)"
+          ]
         },
         {
           "primordial": "primordial:creator",
           "weight": 0.7,
-          "aspects": ["fertility", "growth", "abundance"]
+          "aspects": [
+            "fertility",
+            "growth",
+            "abundance"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.5,
-          "aspects": ["lord of Alfheim", "dynastic ancestor"]
+          "aspects": [
+            "lord of Alfheim",
+            "dynastic ancestor"
+          ]
         }
       ],
-
       "coreFunction": "To bring abundance and sacrifice for love, accepting the cost",
       "symbolicCore": "The sword given away for love - fertility through sacrifice",
-      "domains": ["fertility", "prosperity", "peace", "sunshine", "rain", "elves"],
-
+      "domains": [
+        "fertility",
+        "prosperity",
+        "peace",
+        "sunshine",
+        "rain",
+        "elves"
+      ],
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -708,20 +1000,29 @@
           "notes": "Fertility god, phallus symbolism"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-SUN", "TAMA-LOVERS"],
+        "tarot": [
+          "TAMA-SUN",
+          "TAMA-LOVERS"
+        ],
         "planet": "7P-SUN",
         "element": "EL-EARTH",
         "rune": "RN-INGWAZ",
-        "animals": ["boar (Gullinbursti)", "horse"],
-        "plants": ["barley", "wheat"],
-        "colors": ["gold", "green"]
+        "animals": [
+          "boar (Gullinbursti)",
+          "horse"
+        ],
+        "plants": [
+          "barley",
+          "wheat"
+        ],
+        "colors": [
+          "gold",
+          "green"
+        ]
       },
-
       "poeticInvocation": "Lord of Alfheim, Bringer of Peace, He who gave his sword for love"
     },
-
     {
       "@id": "arch:NO-TYR",
       "@type": "Archetype",
@@ -729,13 +1030,25 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "God of war, justice, and oaths. Sacrificed his hand to bind Fenrir, knowing the cost. Represents honor, law, and the willingness to sacrifice self for cosmic order.",
-
       "aliases": [
-        {"name": "Tiw/Tiwaz", "system": "Germanic", "fidelity": 0.95},
-        {"name": "Mars", "system": "Roman", "fidelity": 0.5, "aspect": "war god"},
-        {"name": "Zeus", "system": "Greek", "fidelity": 0.4, "aspect": "sky-father etymology (Dyeus)"}
+        {
+          "name": "Tiw/Tiwaz",
+          "system": "Germanic",
+          "fidelity": 0.95
+        },
+        {
+          "name": "Mars",
+          "system": "Roman",
+          "fidelity": 0.5,
+          "aspect": "war god"
+        },
+        {
+          "name": "Zeus",
+          "system": "Greek",
+          "fidelity": 0.4,
+          "aspect": "sky-father etymology (Dyeus)"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.1,
         "creation-destruction": 0.45,
@@ -746,29 +1059,44 @@
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.25
       },
-
       "instantiates": [
         {
           "primordial": "primordial:warrior",
           "weight": 0.85,
-          "aspects": ["war god", "battle leader", "honorable combat"]
+          "aspects": [
+            "war god",
+            "battle leader",
+            "honorable combat"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.6,
-          "aspects": ["lawgiver", "oath-keeper", "possibly original sky-father"]
+          "aspects": [
+            "lawgiver",
+            "oath-keeper",
+            "possibly original sky-father"
+          ]
         },
         {
           "primordial": "primordial:hero",
           "weight": 0.7,
-          "aspects": ["self-sacrifice", "binding Fenrir"]
+          "aspects": [
+            "self-sacrifice",
+            "binding Fenrir"
+          ]
         }
       ],
-
       "coreFunction": "To uphold cosmic law through sacrifice; honor above self-preservation",
       "symbolicCore": "The hand given to bind chaos - justice requires sacrifice",
-      "domains": ["war", "justice", "oaths", "law", "honor", "sacrifice"],
-
+      "domains": [
+        "war",
+        "justice",
+        "oaths",
+        "law",
+        "honor",
+        "sacrifice"
+      ],
       "relationships": [
         {
           "type": "ANTAGONIST",
@@ -797,19 +1125,22 @@
           "notes": "War god, but Tyr is more honorable and ordered"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-JUSTICE", "TAMA-STRENGTH"],
+        "tarot": [
+          "TAMA-JUSTICE",
+          "TAMA-STRENGTH"
+        ],
         "planet": "7P-MARS",
         "element": "EL-FIRE",
         "rune": "RN-TIWAZ",
         "day": "Tuesday (Tyr's day)",
-        "colors": ["red", "white"]
+        "colors": [
+          "red",
+          "white"
+        ]
       },
-
       "poeticInvocation": "One-Handed God, Fenrir's Bane, Keeper of Oaths, Lord of Just Battle"
     },
-
     {
       "@id": "arch:NO-BALDUR",
       "@type": "Archetype",
@@ -817,12 +1148,19 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "God of light, purity, and beauty. The shining one whose death signals the beginning of Ragnarök. His invulnerability failed at mistletoe; his death breaks the world. Will return after Ragnarök.",
-
       "aliases": [
-        {"name": "Baldr", "system": "Norse", "fidelity": 1.0},
-        {"name": "Apollo", "system": "Greek", "fidelity": 0.5, "aspect": "radiant, beautiful god"}
+        {
+          "name": "Baldr",
+          "system": "Norse",
+          "fidelity": 1.0
+        },
+        {
+          "name": "Apollo",
+          "system": "Greek",
+          "fidelity": 0.5,
+          "aspect": "radiant, beautiful god"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.3,
@@ -833,27 +1171,37 @@
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.85
       },
-
       "instantiates": [
         {
           "primordial": "primordial:divine-child",
           "weight": 0.85,
-          "aspects": ["beloved son", "innocence", "purity", "hope"]
+          "aspects": [
+            "beloved son",
+            "innocence",
+            "purity",
+            "hope"
+          ]
         },
         {
           "primordial": "primordial:healer",
           "weight": 0.5,
-          "aspects": ["light that heals", "beauty"]
+          "aspects": [
+            "light that heals",
+            "beauty"
+          ]
         }
       ],
-
       "coreFunction": "To embody the light that must be lost before renewal is possible",
       "symbolicCore": "The shining god who dies - light must descend into darkness before returning",
-      "domains": ["light", "beauty", "purity", "joy", "death and rebirth"],
-
+      "domains": [
+        "light",
+        "beauty",
+        "purity",
+        "joy",
+        "death and rebirth"
+      ],
       "temporalOrientation": "cyclical",
       "temporalNotes": "His death triggers Ragnarök; his return follows it - the pivot of cosmic cycles",
-
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -885,21 +1233,35 @@
           "target": "arch:EG-OSIRIS",
           "fidelity": 0.6,
           "notes": "Beautiful god killed, will return/rule in afterlife"
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Shining god of beauty and peace",
+          "target": "Returned ruler of the post-Ragnarök world",
+          "trigger": "Death by mistletoe; passage through Hel; rebirth after world-renewal",
+          "direction": "forward"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-SUN", "TAMA-HANGED-MAN"],
+        "tarot": [
+          "TAMA-SUN",
+          "TAMA-HANGED-MAN"
+        ],
         "planet": "7P-SUN",
         "element": "EL-FIRE",
         "rune": "RN-SOWILO",
-        "plants": ["mistletoe (his bane)", "chamomile"],
-        "colors": ["white", "gold", "light blue"]
+        "plants": [
+          "mistletoe (his bane)",
+          "chamomile"
+        ],
+        "colors": [
+          "white",
+          "gold",
+          "light blue"
+        ]
       },
-
       "poeticInvocation": "The Shining One, Beloved of All, He who will return after the world's renewal"
     },
-
     {
       "@id": "arch:NO-HEIMDALL",
       "@type": "Archetype",
@@ -907,11 +1269,14 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Guardian of Bifröst, the watchman of the gods. Born of nine mothers, he needs less sleep than a bird, can see a hundred leagues, and will blow Gjallarhorn to announce Ragnarök. The eternal sentinel.",
-
       "aliases": [
-        {"name": "Rig", "system": "Norse", "fidelity": 0.8, "aspect": "founder of social classes"}
+        {
+          "name": "Rig",
+          "system": "Norse",
+          "fidelity": 0.8,
+          "aspect": "founder of social classes"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.5,
@@ -922,24 +1287,34 @@
         "stasis-transformation": 0.25,
         "voluntary-fated": 0.6
       },
-
       "instantiates": [
         {
           "primordial": "primordial:preserver",
           "weight": 0.85,
-          "aspects": ["guardian", "watchman", "protector of boundaries"]
+          "aspects": [
+            "guardian",
+            "watchman",
+            "protector of boundaries"
+          ]
         },
         {
           "primordial": "primordial:warrior",
           "weight": 0.6,
-          "aspects": ["will fight at Ragnarök", "slays Loki"]
+          "aspects": [
+            "will fight at Ragnarök",
+            "slays Loki"
+          ]
         }
       ],
-
       "coreFunction": "To watch and wait at the threshold; to announce the end when it comes",
       "symbolicCore": "The horn that will sound doom - vigilance that cannot prevent what comes",
-      "domains": ["vigilance", "boundaries", "dawn", "threshold", "social order"],
-
+      "domains": [
+        "vigilance",
+        "boundaries",
+        "dawn",
+        "threshold",
+        "social order"
+      ],
       "relationships": [
         {
           "type": "ANTAGONIST",
@@ -962,19 +1337,24 @@
           "notes": "Threshold guardian aspect only"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-JUDGEMENT"],
+        "tarot": [
+          "TAMA-JUDGEMENT"
+        ],
         "planet": "7P-SATURN",
         "element": "EL-AIR",
         "rune": "RN-HAGALAZ",
-        "animals": ["ram"],
-        "colors": ["white", "gold", "rainbow (Bifröst)"]
+        "animals": [
+          "ram"
+        ],
+        "colors": [
+          "white",
+          "gold",
+          "rainbow (Bifröst)"
+        ]
       },
-
       "poeticInvocation": "Whitest of the Aesir, Guardian of Bifröst, He who will sound the last horn"
     },
-
     {
       "@id": "arch:NO-HEL",
       "@type": "Archetype",
@@ -982,7 +1362,6 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "Daughter of Loki, ruler of the realm of the dead (Helheim). Half living and half corpse. Receives those who die of sickness or old age. Neither good nor evil - simply the face of necessary death.",
-
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.55,
@@ -993,24 +1372,33 @@
         "stasis-transformation": 0.5,
         "voluntary-fated": 0.9
       },
-
       "instantiates": [
         {
           "primordial": "primordial:crone",
           "weight": 0.8,
-          "aspects": ["death-keeper", "underworld ruler", "receiver of dead"]
+          "aspects": [
+            "death-keeper",
+            "underworld ruler",
+            "receiver of dead"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.6,
-          "aspects": ["queen of her realm", "holder of Baldur"]
+          "aspects": [
+            "queen of her realm",
+            "holder of Baldur"
+          ]
         }
       ],
-
       "coreFunction": "To receive and hold the ordinary dead; to be the face of inevitable death",
       "symbolicCore": "Half-living, half-corpse - death is part of life",
-      "domains": ["death", "underworld", "disease", "old age"],
-
+      "domains": [
+        "death",
+        "underworld",
+        "disease",
+        "old age"
+      ],
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -1044,18 +1432,21 @@
           "notes": "Queen of underworld"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-DEATH"],
+        "tarot": [
+          "TAMA-DEATH"
+        ],
         "planet": "7P-PLUTO",
         "element": "EL-EARTH",
         "rune": "RN-HAGALAZ",
-        "colors": ["black", "grey", "half-white/half-black"]
+        "colors": [
+          "black",
+          "grey",
+          "half-white/half-black"
+        ]
       },
-
       "poeticInvocation": "Half-Born, Keeper of the Dead, Queen of the Cold Realm"
     },
-
     {
       "@id": "arch:NO-FENRIR",
       "@type": "Archetype",
@@ -1063,7 +1454,6 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "The great wolf, son of Loki, bound by the gods until Ragnarök. Will swallow Odin at the end. Embodies chaos that cannot be destroyed, only temporarily contained.",
-
       "spectralCoordinates": {
         "order-chaos": 0.95,
         "creation-destruction": 0.9,
@@ -1074,24 +1464,33 @@
         "stasis-transformation": 0.8,
         "voluntary-fated": 0.9
       },
-
       "instantiates": [
         {
           "primordial": "primordial:monster",
           "weight": 0.95,
-          "aspects": ["chaos embodied", "world-destroyer", "untameable"]
+          "aspects": [
+            "chaos embodied",
+            "world-destroyer",
+            "untameable"
+          ]
         },
         {
           "primordial": "primordial:destroyer",
           "weight": 0.85,
-          "aspects": ["Odin's doom", "devourer"]
+          "aspects": [
+            "Odin's doom",
+            "devourer"
+          ]
         }
       ],
-
       "coreFunction": "To embody the chaos that order cannot permanently contain",
       "symbolicCore": "The wolf that breaks all chains - chaos eventually consumes",
-      "domains": ["chaos", "destruction", "hunger", "doom"],
-
+      "domains": [
+        "chaos",
+        "destruction",
+        "hunger",
+        "doom"
+      ],
       "relationships": [
         {
           "type": "COMPLEMENT",
@@ -1114,21 +1513,29 @@
         {
           "type": "CONSTELLATION",
           "target": "Ragnarök Monsters",
-          "members": ["arch:NO-FENRIR", "arch:NO-JORMUNGANDR", "arch:NO-HEL"],
+          "members": [
+            "arch:NO-FENRIR",
+            "arch:NO-JORMUNGANDR",
+            "arch:NO-HEL"
+          ],
           "strength": 0.9
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-TOWER", "TAMA-DEVIL"],
+        "tarot": [
+          "TAMA-TOWER",
+          "TAMA-DEVIL"
+        ],
         "element": "EL-FIRE",
         "rune": "RN-NAUTHIZ",
-        "colors": ["black", "grey", "blood red"]
+        "colors": [
+          "black",
+          "grey",
+          "blood red"
+        ]
       },
-
       "poeticInvocation": "Bane of Odin, Bound Wolf, He who will swallow the sun"
     },
-
     {
       "@id": "arch:NO-JORMUNGANDR",
       "@type": "Archetype",
@@ -1136,7 +1543,6 @@
       "systemCode": "NO",
       "belongsToSystem": "system:norse",
       "description": "The Midgard Serpent, child of Loki, who encircles the world biting its own tail. When it releases its tail, Ragnarök begins. Destined for mutual destruction with Thor.",
-
       "spectralCoordinates": {
         "order-chaos": 0.85,
         "creation-destruction": 0.8,
@@ -1147,24 +1553,32 @@
         "stasis-transformation": 0.7,
         "voluntary-fated": 0.95
       },
-
       "instantiates": [
         {
           "primordial": "primordial:monster",
           "weight": 0.9,
-          "aspects": ["world-encircler", "chaos serpent", "Thor's doom"]
+          "aspects": [
+            "world-encircler",
+            "chaos serpent",
+            "Thor's doom"
+          ]
         },
         {
           "primordial": "primordial:destroyer",
           "weight": 0.7,
-          "aspects": ["releases world-ending chaos"]
+          "aspects": [
+            "releases world-ending chaos"
+          ]
         }
       ],
-
       "coreFunction": "To embody the boundary that holds the world together - until it doesn't",
       "symbolicCore": "The ouroboros that, when it releases its tail, ends the world",
-      "domains": ["oceans", "boundaries", "poison", "cosmic containment"],
-
+      "domains": [
+        "oceans",
+        "boundaries",
+        "poison",
+        "cosmic containment"
+      ],
       "relationships": [
         {
           "type": "ANTAGONIST",
@@ -1181,7 +1595,11 @@
         {
           "type": "CONSTELLATION",
           "target": "Ragnarök Monsters",
-          "members": ["arch:NO-FENRIR", "arch:NO-JORMUNGANDR", "arch:NO-HEL"],
+          "members": [
+            "arch:NO-FENRIR",
+            "arch:NO-JORMUNGANDR",
+            "arch:NO-HEL"
+          ],
           "strength": 0.9
         },
         {
@@ -1191,14 +1609,19 @@
           "notes": "World-serpent archetype"
         }
       ],
-
       "correspondences": {
-        "tarot": ["TAMA-WHEEL", "TAMA-DEATH"],
+        "tarot": [
+          "TAMA-WHEEL",
+          "TAMA-DEATH"
+        ],
         "element": "EL-WATER",
         "rune": "RN-LAGUZ",
-        "colors": ["sea green", "black", "poison green"]
+        "colors": [
+          "sea green",
+          "black",
+          "poison green"
+        ]
       },
-
       "poeticInvocation": "World-Girdler, Midgard's Bane, Serpent of the Encircling Sea"
     }
   ]

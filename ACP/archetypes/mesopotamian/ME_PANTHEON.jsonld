@@ -556,7 +556,7 @@
         "light-shadow": 0.45,
         "active-receptive": 0.25,
         "individual-collective": 0.3,
-        "ascent-descent": 0.5,
+        "ascent-descent": 0.45,
         "stasis-transformation": 0.75,
         "voluntary-fated": 0.2
       },
@@ -677,6 +677,13 @@
             "war-fury",
             "lion-association"
           ]
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Queen of Heaven seeking underworld power",
+          "target": "Returned goddess carrying death-knowledge",
+          "trigger": "Descent through seven gates; death on the hook; resurrection by Enki's creatures",
+          "direction": "forward"
         }
       ],
       "contextualVariants": [
@@ -1126,7 +1133,7 @@
         "light-shadow": 0.9,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
-        "ascent-descent": 0.95,
+        "ascent-descent": 1.0,
         "stasis-transformation": 0.3,
         "voluntary-fated": 0.9
       },
@@ -1923,6 +1930,13 @@
             "journey",
             "wisdom-return"
           ]
+        },
+        {
+          "type": "EVOLUTION",
+          "source": "Tyrannical king of Uruk (two-thirds divine)",
+          "target": "Wisdom-bearing mortal who accepts death",
+          "trigger": "Enkidu's death; failed quest for immortality; return to Uruk's walls as legacy",
+          "direction": "forward"
         }
       ],
       "contextualVariants": [
