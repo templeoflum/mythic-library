@@ -4,6 +4,8 @@ An empirical corpus of 132 public domain mythological texts across 32 traditions
 
 **Validation Verdict: STRONG** — All 6 tests pass. Internal geometric consistency, external predictive validity, and expert concordance (87.5%) confirmed.
 
+**[Explore the data live →](https://templeoflum.github.io/mythic-library/)**
+
 ## At a Glance
 
 | Component | Scale |
@@ -111,7 +113,9 @@ python -m validation.v2_run --full
 
 ### Explore the Data
 
-Open `miroglyph/index.html` in a browser. Three views:
+**Live version: [templeoflum.github.io/mythic-library](https://templeoflum.github.io/mythic-library/)**
+
+Or open `miroglyph/index.html` locally. Three views:
 
 - **Atlas**: 2D spectral projection of all 539 archetypes with axis-pair selection, zoom, and tooltip
 - **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
