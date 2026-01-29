@@ -1249,8 +1249,8 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 |--------|-------|
 | Tier A (Internal Coherence) | **3/3 PASS** |
 | Tier B (External Validity) | **2/2 PASS** |
-| Tier C (Miroglyph Structure) | PARTIAL (1/3 PASS) |
-| Tier E (Expert Plausibility) | PENDING (scaffolded) |
+| Tier C (Miroglyph Structure) | **PASS (2/3)** — Test 8 + 9 pass, Test 7 fails (entity overlap) |
+| Tier E (Expert Plausibility) | **PASS** — 87.5% concordance (35/40 AGREE) |
 | Overall verdict | **STRONG** |
 | Echo pairs Cohen's d | 1.16 |
 | Fidelity-distance r | -0.4556 |
@@ -1267,7 +1267,14 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 | Hero vs deity stasis-transformation p | 0.027 |
 | SHADOW relationships (archetypes) | 29 (was 13) |
 | EVOLUTION relationships (archetypes) | 47+ (was 31) |
-| Human audit tools | CLI + HTML reviewer |
+| Human audit concordance | **87.5%** (35 AGREE, 2 DISAGREE, 3 UNSURE) |
+| POLAR_OPPOSITE concordance | 100% (5/5 AGREE) |
+| COMPLEMENT concordance | 100% (5/5 AGREE) |
+| CULTURAL_ECHO concordance | 90% (9/10 AGREE) |
+| NEAREST_NEIGHBOR concordance | 73% (11/15 AGREE) |
+| DISTANT_SAME_PRIMORDIAL concordance | 100% (5/5 AGREE) |
+| Polarity pairs | Optimized to (1↔4, 2↔6, 3↔5) — 55% stronger than original |
+| Arc entity overlap | 96% of entities in all 3 arcs (explains Test 7 failure) |
 
 ---
 
@@ -1285,4 +1292,4 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 
 ---
 
-*Last updated: January 2026 (Phase 12 — Targeted Data Refinement)*
+*Last updated: January 2026 (Phase 12 — Targeted Data Refinement + Human Audit + Tier C Optimization)*

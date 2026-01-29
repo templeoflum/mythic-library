@@ -124,14 +124,33 @@ def run_validation(full: bool = True) -> dict:
     print(f"  Top 3 alignment: {'PASS' if v.get('top_3_alignment', {}).get('pass') else 'FAIL'}")
 
     # ── Test 6: Human Expert Concordance Audit ────────────────
-    print("\n[Test 6/6] Generating Human Expert Audit Cases...")
+    print("\n[Test 6/6] Human Expert Concordance Audit...")
     audit_test = HumanAuditTest(acp)
-    results["test6_human_audit"] = audit_test.run()
-    print(f"  Generated {results['test6_human_audit'].get('n_cases', 0)} audit cases")
 
-    # Save audit document
-    audit_path = audit_test.save_audit(results["test6_human_audit"], str(OUTPUTS / "audits"))
-    print(f"  Saved to {audit_path}")
+    # Check if completed audit results already exist
+    audit_cases_path = OUTPUTS / "audits" / "human_audit_cases.json"
+    audit_results_path = OUTPUTS / "audits" / "human_audit_results.json"
+
+    if audit_results_path.exists():
+        print("  Found existing audit results — loading and scoring...")
+        with open(audit_cases_path, "r", encoding="utf-8") as f:
+            existing_audit = json.load(f)
+        # Score the completed audit
+        scored = audit_test.score_audit(existing_audit)
+        existing_audit["scoring"] = scored
+        results["test6_human_audit"] = existing_audit
+        if "error" in scored:
+            print(f"  {scored['error']}")
+        else:
+            print(f"  {scored['agree']}/{scored['total_judged']} AGREE = "
+                  f"{scored['concordance']:.1%} concordance")
+            print(f"  Pass (≥80%): {'YES' if scored['pass'] else 'NO'}")
+    else:
+        print("  No existing results — generating audit cases...")
+        results["test6_human_audit"] = audit_test.run()
+        print(f"  Generated {results['test6_human_audit'].get('n_cases', 0)} audit cases")
+        audit_path = audit_test.save_audit(results["test6_human_audit"], str(OUTPUTS / "audits"))
+        print(f"  Saved to {audit_path}")
 
     # ── Tests 7-10: Miroglyph Structure Validation ────────────
     print("\n[Tests 7-10] Miroglyph Structure Validation...")
@@ -246,20 +265,40 @@ def compute_verdict(results: dict) -> dict:
                     if structure_confirmed else
                     "Data suggests structural alternatives")
 
-    # Tier E: Expert Plausibility (Test 6) — awaiting human review
-    tier_e_verdict = "PENDING"
-    tier_e_label = "Awaiting human review"
+    # Tier E: Expert Plausibility (Test 6)
+    t6_scoring = results.get("test6_human_audit", {}).get("scoring", {})
+    if t6_scoring and "error" not in t6_scoring:
+        t6_pass = t6_scoring.get("pass", False)
+        concordance = t6_scoring.get("concordance", 0)
+        tier_e_verdict = "PASS" if t6_pass else ("PARTIAL" if t6_scoring.get("partial") else "FAIL")
+        tier_e_label = (f"Expert concordance {concordance:.1%} "
+                        f"({t6_scoring.get('agree', 0)}/{t6_scoring.get('total_judged', 0)} AGREE)")
+    else:
+        tier_e_verdict = "PENDING"
+        tier_e_label = "Awaiting human review"
+        t6_pass = None
 
     # Combined verdict
+    # Expert review suffix
+    expert_suffix = ""
+    if tier_e_verdict == "PASS":
+        expert_suffix = " + expert concordance confirmed"
+    elif tier_e_verdict == "PARTIAL":
+        expert_suffix = " (expert concordance partial)"
+    elif tier_e_verdict == "FAIL":
+        expert_suffix = " (expert concordance failed)"
+    elif tier_e_verdict == "PENDING":
+        expert_suffix = " (pending expert review)"
+
     if tier_a_verdict == "FAIL":
         overall = "REVISE"
         overall_label = "Fundamental geometric inconsistencies; coordinates need reworking"
     elif tier_a_verdict == "PASS" and tier_b_verdict == "PASS":
         overall = "STRONG"
-        overall_label = "Internal consistency + external validity (pending expert review)"
+        overall_label = "Internal consistency + external validity" + expert_suffix
     elif tier_a_verdict == "PASS" and tier_b_verdict == "PARTIAL":
         overall = "PROMISING"
-        overall_label = "Internal consistency confirmed; partial external signal"
+        overall_label = "Internal consistency confirmed; partial external signal" + expert_suffix
     elif tier_a_verdict == "PASS" and tier_b_verdict == "FAIL":
         overall = "SELF-CONSISTENT BUT UNGROUNDED"
         overall_label = "Coordinates are coherent but don't predict external phenomena"
@@ -306,8 +345,8 @@ def compute_verdict(results: dict) -> dict:
         "tier_e": {
             "verdict": tier_e_verdict,
             "label": tier_e_label,
-            "tests": [{"name": "Test 6: Human Audit", "pass": None}],
-            "passed": 0,
+            "tests": [{"name": "Test 6: Human Audit", "pass": t6_pass}],
+            "passed": 1 if (tier_e_verdict == "PASS") else 0,
             "total": 1,
         },
         "overall": {
@@ -507,11 +546,28 @@ def generate_report(results: dict) -> str:
 
     # ── Test 6 ────────────────────────────────────────────────
     t6 = results.get("test6_human_audit", {})
+    t6_scoring = t6.get("scoring", {})
     lines.append("## Test 6: Human Expert Concordance Audit")
     lines.append("")
-    lines.append("**Status**: Audit cases generated, awaiting human review.")
-    lines.append("")
-    lines.append(f"Cases generated: {t6.get('n_cases', '?')}")
+
+    if t6_scoring and "error" not in t6_scoring:
+        concordance = t6_scoring.get("concordance", 0)
+        passed = t6_scoring.get("pass", False)
+        lines.append(f"**Status**: Completed — {'PASS' if passed else 'FAIL'}")
+        lines.append("")
+        lines.append(f"| Metric | Value |")
+        lines.append(f"|--------|-------|")
+        lines.append(f"| Total judged | {t6_scoring.get('total_judged', '?')} |")
+        lines.append(f"| AGREE | {t6_scoring.get('agree', '?')} |")
+        lines.append(f"| DISAGREE | {t6_scoring.get('disagree', '?')} |")
+        lines.append(f"| UNSURE | {t6_scoring.get('unsure', '?')} |")
+        lines.append(f"| Concordance | {concordance:.1%} |")
+        lines.append(f"| Pass (≥80%) | {'YES' if passed else 'NO'} |")
+    else:
+        lines.append("**Status**: Audit cases generated, awaiting human review.")
+        lines.append("")
+        lines.append(f"Cases generated: {t6.get('n_cases', '?')}")
+
     cbc = t6.get("cases_by_category", {})
     if cbc:
         lines.append("")
@@ -566,7 +622,14 @@ def generate_report(results: dict) -> str:
     else:
         lines.append("2. **External validity not established**: ACP coordinates do not predict external cross-cultural measures. The system may be internally consistent but circular.")
 
-    lines.append("3. **Expert review pending**: Human concordance audit has been generated and awaits reviewer scoring.")
+    t6_scoring_c = results.get("test6_human_audit", {}).get("scoring", {})
+    if t6_scoring_c and "error" not in t6_scoring_c:
+        conc = t6_scoring_c.get("concordance", 0)
+        lines.append(f"3. **Expert review completed**: Human concordance audit scored "
+                      f"{conc:.1%} ({t6_scoring_c.get('agree', 0)}/{t6_scoring_c.get('total_judged', 0)} AGREE), "
+                      f"{'exceeding' if conc >= 0.80 else 'below'} the 80% threshold.")
+    else:
+        lines.append("3. **Expert review pending**: Human concordance audit has been generated and awaits reviewer scoring.")
     lines.append("")
 
     # ── Weighted Distance Comparison ─────────────────────────────

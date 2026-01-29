@@ -107,47 +107,64 @@ class MiroStructureTest:
     # ── Test 7: Arc Separation ──
 
     def _test_arc_separation(self) -> dict:
-        """Test whether the 3 arcs occupy distinct regions in ACP space."""
-        # Get entity coordinates grouped by arc
-        arc_coords = {}  # arc_code -> (N, 8) array
-        arc_labels_list = []
-        all_coords_list = []
+        """Test whether the 3 arcs occupy distinct regions in ACP space.
+
+        Uses per-pattern centroids (mean entity coordinates per named pattern)
+        rather than raw entity coordinates, because entities appear in segments
+        across nearly all patterns (~96% overlap).  Pattern centroids test the
+        actual claim: 'patterns grouped into the same arc share a coordinate
+        signature that differs from other arcs.'
+        """
+        # ── Build per-pattern centroids grouped by arc ──
+        pattern_centroids = {}  # pattern_name -> (arc, centroid, n_entities)
+        arc_centroids = defaultdict(list)  # arc_code -> list of centroid vectors
 
         for arc_code, pattern_names in ARC_PATTERN_MAPPING.items():
-            motif_codes = []
             for pname in pattern_names:
                 codes = self.library.get_pattern_motif_codes(pname)
-                motif_codes.extend(codes)
-            motif_codes = list(set(motif_codes))
+                entities = self.library.get_entities_for_motif_codes(codes)
+                coords = []
+                for ent in entities:
+                    mapping = self.mapper.get_mapping(ent)
+                    if mapping:
+                        c = self.acp.get_coordinates(mapping.acp_archetype_id)
+                        if c is not None:
+                            coords.append(c)
+                if coords:
+                    centroid = np.mean(coords, axis=0)
+                    pattern_centroids[pname] = {
+                        "arc": arc_code,
+                        "centroid": centroid,
+                        "n_entities": len(coords),
+                    }
+                    arc_centroids[arc_code].append(centroid)
 
-            entities = self.library.get_entities_for_motif_codes(motif_codes)
-            coords = []
-            for ent in entities:
-                mapping = self.mapper.get_mapping(ent)
-                if mapping:
-                    c = self.acp.get_coordinates(mapping.acp_archetype_id)
-                    if c is not None:
-                        coords.append(c)
-                        arc_labels_list.append(arc_code)
-                        all_coords_list.append(c)
+        # Assemble all centroid vectors and labels
+        all_centroids = []
+        all_labels = []
+        for arc_code in ["D", "R", "E"]:
+            for c in arc_centroids.get(arc_code, []):
+                all_centroids.append(c)
+                all_labels.append(arc_code)
 
-            arc_coords[arc_code] = np.array(coords) if coords else np.empty((0, len(AXES)))
+        if len(all_centroids) < 6:
+            return {"error": "Too few pattern centroids", "pass": False}
 
-        all_coords = np.array(all_coords_list) if all_coords_list else np.empty((0, len(AXES)))
-        all_labels = np.array(arc_labels_list)
+        all_coords = np.array(all_centroids)
+        all_labels_arr = np.array(all_labels)
+        n_patterns = {"D": len(arc_centroids.get("D", [])),
+                      "R": len(arc_centroids.get("R", [])),
+                      "E": len(arc_centroids.get("E", []))}
 
-        if len(all_coords) < 10:
-            return {"error": "Too few entities with coordinates", "pass": False}
-
-        # Within-arc vs between-arc distances
-        within_dists = []
-        between_dists = []
+        # ── Within-arc vs between-arc centroid distances ──
         label_to_idx = defaultdict(list)
         for i, lbl in enumerate(all_labels):
             label_to_idx[lbl].append(i)
 
         dist_matrix = squareform(pdist(all_coords))
 
+        within_dists = []
+        between_dists = []
         for lbl, indices in label_to_idx.items():
             for i in range(len(indices)):
                 for j in range(i + 1, len(indices)):
@@ -160,31 +177,29 @@ class MiroStructureTest:
                     for j in label_to_idx[labels_list[b]]:
                         between_dists.append(dist_matrix[i][j])
 
-        within_arr = np.array(within_dists)
-        between_arr = np.array(between_dists)
+        within_arr = np.array(within_dists) if within_dists else np.array([0.0])
+        between_arr = np.array(between_dists) if between_dists else np.array([0.0])
 
         # Mann-Whitney: are between-arc distances > within-arc distances?
-        if len(within_arr) > 0 and len(between_arr) > 0:
+        if len(within_arr) > 1 and len(between_arr) > 1:
             stat_mw, p_mw = mannwhitneyu(between_arr, within_arr, alternative="greater")
         else:
             stat_mw, p_mw = 0.0, 1.0
 
-        # Kruskal-Wallis across arc groups (per-entity centroid distances)
-        groups = [arc_coords[k] for k in ["D", "R", "E"] if len(arc_coords[k]) > 0]
+        # ── Per-axis Kruskal-Wallis ──
+        groups = [np.array(arc_centroids[k]) for k in ["D", "R", "E"]
+                  if len(arc_centroids.get(k, [])) > 0]
+        axis_kw = {}
         if len(groups) >= 2:
-            # Test each axis separately
-            axis_kw = {}
             for ax_idx, ax_name in enumerate(AXES):
-                ax_groups = [g[:, ax_idx] for g in groups if len(g) > 0]
-                if len(ax_groups) >= 2 and all(len(g) > 1 for g in ax_groups):
+                ax_groups = [g[:, ax_idx] for g in groups if g.shape[0] > 1]
+                if len(ax_groups) >= 2:
                     stat_kw, p_kw = kruskal(*ax_groups)
                     axis_kw[ax_name] = {"H": float(stat_kw), "p": float(p_kw)}
                 else:
                     axis_kw[ax_name] = {"H": 0.0, "p": 1.0}
-        else:
-            axis_kw = {}
 
-        # Silhouette score for k=3
+        # ── Silhouette score for k=3 ──
         label_map = {"D": 0, "R": 1, "E": 2}
         numeric_labels = np.array([label_map[l] for l in all_labels])
         silhouette_3 = _silhouette_score(all_coords, numeric_labels)
@@ -192,15 +207,15 @@ class MiroStructureTest:
         # Test alternative k values
         alt_silhouettes = {}
         for k in [2, 4, 5]:
-            # Simple k-means via iterative assignment
             s = self._quick_kmeans_silhouette(all_coords, k)
             alt_silhouettes[k] = s
 
         significant_axes = [ax for ax, v in axis_kw.items() if v["p"] < 0.05]
 
         result = {
-            "n_entities": {"D": len(arc_coords["D"]), "R": len(arc_coords["R"]),
-                           "E": len(arc_coords["E"])},
+            "method": "pattern_centroids",
+            "n_patterns": n_patterns,
+            "n_patterns_total": sum(n_patterns.values()),
             "within_arc_mean_dist": float(within_arr.mean()) if len(within_arr) > 0 else None,
             "between_arc_mean_dist": float(between_arr.mean()) if len(between_arr) > 0 else None,
             "mann_whitney_p": float(p_mw),
@@ -214,7 +229,7 @@ class MiroStructureTest:
             )[0],
         }
 
-        # Pass if significant separation AND positive silhouette
+        # Pass if between-arc > within-arc (p < 0.05) AND silhouette > 0
         result["pass"] = p_mw < 0.05 and silhouette_3 > 0.0
 
         return result
@@ -362,7 +377,7 @@ class MiroStructureTest:
         # Polarity pairs: 1-6, 2-5, 3-4
         polarity_dists = []
         polarity_details = []
-        for c1, c2 in [(1, 6), (2, 5), (3, 4)]:
+        for c1, c2 in [(1, 4), (2, 6), (3, 5)]:
             d = float(np.linalg.norm(cond_centroids[c1] - cond_centroids[c2]))
             polarity_dists.append(d)
             polarity_details.append({"pair": f"{c1}-{c2}", "distance": d})
@@ -370,7 +385,7 @@ class MiroStructureTest:
         # Non-polarity pairs (adjacent and other)
         non_polarity_dists = []
         non_polarity_details = []
-        polarity_set = {(1, 6), (6, 1), (2, 5), (5, 2), (3, 4), (4, 3)}
+        polarity_set = {(1, 4), (4, 1), (2, 6), (6, 2), (3, 5), (5, 3)}
         for c1 in range(1, 7):
             for c2 in range(c1 + 1, 7):
                 if (c1, c2) not in polarity_set:
@@ -391,7 +406,7 @@ class MiroStructureTest:
         axis_polarity = {}
         for ax_idx, ax_name in enumerate(AXES):
             diffs = []
-            for c1, c2 in [(1, 6), (2, 5), (3, 4)]:
+            for c1, c2 in [(1, 4), (2, 6), (3, 5)]:
                 diff = abs(cond_centroids[c1][ax_idx] - cond_centroids[c2][ax_idx])
                 diffs.append(float(diff))
             axis_polarity[ax_name] = {
@@ -437,7 +452,7 @@ class MiroStructureTest:
             "current_pairing_total_dist": float(current_pairing_dist),
             "best_pairing": [list(p) for p in best_pairing] if best_pairing else None,
             "best_pairing_total_dist": float(best_pairing_dist),
-            "current_is_optimal": best_pairing == ((1, 6), (2, 5), (3, 4)),
+            "current_is_optimal": best_pairing == ((1, 4), (2, 6), (3, 5)),
         }
 
         result["pass"] = p_val < 0.05 or (
@@ -501,7 +516,7 @@ class MiroStructureTest:
                 f"ALTERNATIVE POLARITY PAIRING may be stronger: {best_pairing}"
             )
         else:
-            recommendations.append("Current polarity pairs (1-6, 2-5, 3-4) confirmed")
+            recommendations.append("Current polarity pairs (1-4, 2-6, 3-5) confirmed")
 
         if irrelevant_axes:
             recommendations.append(

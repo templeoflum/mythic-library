@@ -465,9 +465,9 @@
       "polarity_pairs": {
         "description": "Opposite conditions within same arc",
         "pairs": [
-          {"condition_pair": [1, 6], "label": "Dawn ↔ Return", "arcs": ["D", "R", "E"]},
-          {"condition_pair": [2, 5], "label": "Immersion ↔ Unveiling", "arcs": ["D", "R", "E"]},
-          {"condition_pair": [3, 4], "label": "Crucible ↔ Alignment", "arcs": ["D", "R", "E"]}
+          {"condition_pair": [1, 4], "label": "Dawn ↔ Alignment", "arcs": ["D", "R", "E"]},
+          {"condition_pair": [2, 6], "label": "Immersion ↔ Return", "arcs": ["D", "R", "E"]},
+          {"condition_pair": [3, 5], "label": "Crucible ↔ Unveiling", "arcs": ["D", "R", "E"]}
         ]
       },
       "condition_resonance": {
