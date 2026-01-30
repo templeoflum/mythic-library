@@ -61,7 +61,7 @@ mythic-library/
 │   └── mythic_patterns.db              # SQLite: 4K segments, 173 entities, 149 motifs
 ├── ACP/                                # Archetypal Context Protocol (subtree)
 │   ├── schema/                         # Axes, primordials, relationships ontology
-│   └── archetypes/                     # 938 archetypes across 60+ systems (JSON-LD)
+│   └── archetypes/                     # 951 archetypes across 60+ systems (JSON-LD)
 ├── integration/                        # ACP <-> Library bridge
 │   ├── acp_loader.py                   # Load archetypes, coordinates, relationships
 │   ├── library_loader.py               # Query pattern database
@@ -117,7 +117,7 @@ python -m validation.v2_run --full
 
 Or open `miroglyph/index.html` locally. Three views:
 
-- **Atlas**: 2D spectral projection of all 938 archetypes with axis-pair selection, zoom, and tooltip
+- **Atlas**: 2D spectral projection of all 951 archetypes with axis-pair selection, zoom, and tooltip
 - **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
 - **Chronicle**: Narrative tracing across traditions with relationship visualization
 
@@ -161,7 +161,7 @@ Weights are empirically derived from per-axis correlation with narrative co-occu
 
 ### ACP Coverage
 
-938 archetypes across 60+ systems in four domains:
+951 archetypes across 60+ systems in four domains (95% at "rich" tier or above):
 
 **Mythological Pantheons (354 entries)**
 | Tradition | Archetypes | Relationship Types |

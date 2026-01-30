@@ -59,7 +59,14 @@ Cultural figures instantiate these with weights:
 
 ## Current Coverage
 
-ACP currently includes **938 fully-mapped archetypes** across four domains:
+ACP currently includes **951 fully-mapped archetypes** across four domains:
+
+**Enrichment Status (v0.3.0):**
+- 88% Complete (838 entries at 80%+ completeness)
+- 95% at "Rich" tier or above
+- Mean completeness score: 84.5%
+- 3,574 total relationships
+- 1,840 cultural echo cross-links
 
 ### Mythological Pantheons (354 entries)
 | Pantheon | Entries |
