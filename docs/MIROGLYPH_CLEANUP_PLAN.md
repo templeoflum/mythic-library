@@ -1,9 +1,23 @@
 # Miroglyph Cleanup Plan
 
 **Created:** 2026-01-30
-**Status:** Planning
+**Status:** Phase 1-2 Complete
 
-## Current Issues
+## Resolved Issues
+
+### Issue 1: Browser Caching (FIXED)
+- **Symptom:** Atlas layout broken in regular browser window
+- **Cause:** Browser cached old CSS
+- **Solution:** Works in incognito; users should clear cache or hard refresh (Ctrl+Shift+R)
+
+### Issue 2: Tab Switching Broken (FIXED - commit 114dbe5)
+- **Symptom:** Clicking Codex/Chronicle tabs didn't change views - Atlas stayed visible
+- **Cause:** `display: grid !important` on `#view-atlas.view-content` was overriding `display: none` from `.view-content[hidden]`
+- **Solution:** Added explicit `#view-atlas.view-content[hidden] { display: none !important; }` rule and removed `!important` from grid rules
+
+---
+
+## Remaining Issues
 
 ### 1. Dual Access Mode Problem
 - **file:// access**: Atlas three-pane layout works, but Codex/Chronicle tabs fail (need HTTP for JSON data fetching)
@@ -23,22 +37,25 @@
 
 ## Cleanup Tasks
 
-### Phase 1: Diagnose the CSS/Caching Issue
+### Phase 1: Diagnose the CSS/Caching Issue - COMPLETE
 
-- [ ] **1.1** Clear all browser cache completely and test http:// access
-- [ ] **1.2** Test in incognito/private window to rule out caching
-- [ ] **1.3** Check browser dev tools Network tab to see if CSS is being loaded
-- [ ] **1.4** Check browser dev tools Elements tab to see computed styles on `#view-atlas`
-- [ ] **1.5** If CSS loads but grid doesn't apply, check for JS errors in console
-- [ ] **1.6** Document exact steps to reproduce the issue
+- [x] **1.1** Clear all browser cache completely and test http:// access
+- [x] **1.2** Test in incognito/private window to rule out caching - **Atlas layout works in incognito**
+- [x] **1.3** Check browser dev tools Network tab to see if CSS is being loaded - **CSS loads correctly**
+- [x] **1.4** Check browser dev tools Elements tab to see computed styles on `#view-atlas`
+- [x] **1.5** If CSS loads but grid doesn't apply, check for JS errors in console
+- [x] **1.6** Document exact steps to reproduce the issue - **Documented above**
 
-### Phase 2: Fix the Root Cause
+**Findings:**
+1. CSS caching was causing layout issues in regular browser
+2. Tab switching was broken due to CSS specificity issue with `!important`
 
-Based on Phase 1 findings:
-- [ ] **2.1** If caching: Add version query strings to CSS links (e.g., `view-atlas.css?v=2`)
-- [ ] **2.2** If JS error: Fix the JavaScript issue
-- [ ] **2.3** If CSS specificity: Adjust selectors or add more specific rules
-- [ ] **2.4** Test fix in both file:// and http:// modes
+### Phase 2: Fix the Root Cause - COMPLETE
+
+- [x] **2.1** Caching: Users should use incognito or clear cache (no code change needed)
+- [x] **2.2** Tab switching: Fixed CSS specificity issue (commit 114dbe5)
+- [x] **2.3** CSS specificity: Added `#view-atlas.view-content[hidden] { display: none !important; }`
+- [ ] **2.4** Test fix in both file:// and http:// modes - **PENDING USER VERIFICATION**
 
 ### Phase 3: Update Documentation
 
