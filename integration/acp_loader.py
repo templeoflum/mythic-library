@@ -59,6 +59,19 @@ class ACPLoader:
             if "@id" in data:
                 entries = [data]
 
+        # Handle nested structures
+        # Tarot minor arcana: suits[].cards[]
+        for suit in data.get("suits", []):
+            for card in suit.get("cards", []):
+                if card.get("@id") and "spectralCoordinates" in card:
+                    entries.append(card)
+
+        # Hero's Journey: acts[].stages[]
+        for act in data.get("acts", []):
+            for stage in act.get("stages", []):
+                if stage.get("@id") and "spectralCoordinates" in stage:
+                    entries.append(stage)
+
         for entry in entries:
             entry_id = entry.get("@id", "")
             entry_type = entry.get("@type", "")

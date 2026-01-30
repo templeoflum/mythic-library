@@ -3,7 +3,7 @@
 A semantic framework for mapping archetypes across mythology, psychology, divination, and culture using an 8-dimensional coordinate system.
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
-[![Archetypes](https://img.shields.io/badge/archetypes-1006-green)]()
+[![Archetypes](https://img.shields.io/badge/archetypes-938-green)]()
 [![Version](https://img.shields.io/badge/version-0.2.0-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
@@ -58,7 +58,7 @@ Cultural figures instantiate these with weights:
 
 ## Current Coverage
 
-ACP currently includes **1,006 fully-mapped archetypes** across four domains:
+ACP currently includes **938 fully-mapped archetypes** across four domains:
 
 ### Mythological Pantheons (354 entries)
 | Pantheon | Entries |

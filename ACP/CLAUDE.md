@@ -5,7 +5,7 @@
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
 **Version**: 0.2.0 (Major Expansion)
-**Total Archetypes**: 1,006 entries with full spectral coordinates
+**Total Archetypes**: 938 entries with full spectral coordinates
 **Target**: ~1,200 archetypes for v1.0 release
 
 ## Architecture (ORAS v2.0)
