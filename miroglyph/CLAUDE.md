@@ -162,16 +162,34 @@ Same topology applies at any zoom level: beat, scene, chapter, book
 The tool is built with vanilla JavaScript + SVG rendering:
 
 ```
-Miroglyph/
-├── index.html       # Main entry point
-├── css/styles.css   # Dark theme styling
+miroglyph/
+├── index.html              # Main HTML with three-view layout
+├── css/
+│   ├── styles.css          # Base styles and CSS variables
+│   ├── tabs.css            # Tab navigation and shared components
+│   ├── view-atlas.css      # Atlas view (three-pane layout)
+│   ├── view-codex.css      # Codex view (card grid + details)
+│   └── view-chronicle.css  # Chronicle view (patterns + validation)
 ├── js/
-│   ├── nodes.js     # 18 nodes + Nontion definitions
-│   ├── storage.js   # LocalStorage + JSON import/export
-│   ├── canvas.js    # SVG rendering (centrifugal layout)
-│   ├── paths.js     # Traversal creation & management
-│   └── app.js       # Main controller
+│   ├── nodes.js            # 19-node definitions (arcs, conditions)
+│   ├── storage.js          # LocalStorage + JSON import/export
+│   ├── data-loader.js      # JSON fetching with cache
+│   ├── nav.js              # Cross-navigation utilities
+│   ├── tab-router.js       # View switching
+│   ├── global-search.js    # Omni-search
+│   ├── canvas.js           # SVG rendering (centrifugal layout)
+│   ├── paths.js            # Traversal creation & management
+│   ├── view-atlas.js       # Atlas view controller
+│   ├── view-codex.js       # Codex view controller
+│   ├── view-chronicle.js   # Chronicle view controller
+│   └── app.js              # Main controller (boot sequence)
+└── data/                   # Pre-exported JSON data files
 ```
+
+### Three Views
+- **Atlas**: Three-pane layout (Node Info | Canvas | Traversals) for path building
+- **Codex**: Card grid for browsing archetypes and entities with detail views
+- **Chronicle**: Patterns (with mini-map) and validation results
 
 ### Core Features
 1. **Display** - 19 points in centrifugal concentric layout
