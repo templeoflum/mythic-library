@@ -111,6 +111,22 @@ Mythic Library          ACP                      Miroglyph
 
 Entity Tracing follows the full chain: a library entity (e.g., Zeus) maps to an ACP archetype (arch:GR-ZEUS) via name matching, which maps to a Miroglyph node (E5) via Gaussian affinity scoring on 8D coordinates.
 
+## Troubleshooting
+
+### Layout looks wrong / CSS not applying
+1. Hard refresh: `Ctrl+Shift+R` (Windows/Linux) or `Cmd+Shift+R` (Mac)
+2. Or use incognito/private window
+3. Clear browser cache if persistent
+
+### Codex/Chronicle tabs don't load data
+- Must use HTTP server (not file:// protocol)
+- Run: `python scripts/serve_miroglyph.py`
+- Access: `http://localhost:8080`
+
+### Duplicate actions in traversal editor
+- Hard refresh to clear stale event listeners
+- If issue persists after refresh, clear localStorage
+
 ## Original Specification
 
 The original MiroGlyph v4 specification documents remain in this directory:

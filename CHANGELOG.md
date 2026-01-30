@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed - Miroglyph Explorer
+- **Tab switching:** Fixed CSS specificity issue where Atlas view's `display: grid !important` was overriding the hidden state
+- **Traversal duplication:** Fixed duplicate event handlers causing nodes to be added twice, paths to save twice, and groups to create twice
+- **Node ID visibility:** Fixed CSS specificity so node IDs display as white text in the "Current Path" sequence instead of invisible text
+- Added initialization guards and debounce protection to prevent duplicate event listener attachment
+
 ## [0.3.1] - 2026-01-30
 
 ### Added - Miroglyph & Validation Improvements
