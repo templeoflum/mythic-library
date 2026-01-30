@@ -4,7 +4,7 @@ name: Deploy Explorer
 on:
   # Run on pushes to main branch
   push:
-    branches: ["main", "claude/mythic-text-library-G1LsT"]
+    branches: ["main"]
     paths:
       - 'miroglyph/**'
 
