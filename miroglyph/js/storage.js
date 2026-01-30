@@ -2,6 +2,7 @@
 
 (function() {
   const STORAGE_KEY = 'miroglyph_v4_data';
+  const CONFIG_KEY = 'miroglyph_v4_config';
 
   // Default empty state
   const defaultState = {
@@ -140,6 +141,30 @@
     localStorage.removeItem(STORAGE_KEY);
   }
 
+  // Load configuration (miroglyph orientation)
+  function loadConfig() {
+    try {
+      const config = localStorage.getItem(CONFIG_KEY);
+      if (config) {
+        return JSON.parse(config);
+      }
+    } catch (e) {
+      console.error('Failed to load config:', e);
+    }
+    return { configuration: 'inverted' }; // default
+  }
+
+  // Save configuration
+  function saveConfig(config) {
+    try {
+      localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+      return true;
+    } catch (e) {
+      console.error('Failed to save config:', e);
+      return false;
+    }
+  }
+
   // Export storage functions
   window.MiroGlyph = window.MiroGlyph || {};
   window.MiroGlyph.storage = {
@@ -149,6 +174,8 @@
     importJSON,
     exportPath,
     generateId,
-    clear
+    clear,
+    loadConfig,
+    saveConfig
   };
 })();

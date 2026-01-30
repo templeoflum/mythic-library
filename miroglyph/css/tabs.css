@@ -172,6 +172,11 @@
   cursor: pointer;
 }
 .gear-item:hover { background: var(--color-bg-hover); }
+.gear-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--spacing-xs) 0;
+}
 
 /* Shared Badges */
 .badge {

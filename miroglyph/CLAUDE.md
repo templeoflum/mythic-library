@@ -39,10 +39,11 @@ Each node has dual naming: `Arc/Secondary – Condition/Secondary`
 - Traversable but different ontological status
 - Represents pause, integration through absence
 
-## Visual Layout: Centrifugal Topology
+## Visual Layout: Dual Orientation Topology
 
-The 19 points are arranged in concentric circles following a **centrifugal journey pattern**:
+The 19 points are arranged in concentric circles with **two valid orientations** that can be toggled:
 
+### Inverted (Default)
 ```
                     ┌─────────────────────────────────────┐
                     │                                     │
@@ -57,17 +58,42 @@ The 19 points are arranged in concentric circles following a **centrifugal journ
                     └─────────────────────────────────────┘
 ```
 
-**Why this arrangement:**
+### Standard
+```
+                    ┌─────────────────────────────────────┐
+                    │                                     │
+                    │      D1  D2  D3  D4  D5  D6        │  ← Outer: Descent
+                    │                                     │
+                    │         R1  R2  R3  R4  R5  R6     │  ← Middle: Resonance
+                    │                                     │
+                    │            E1  E2  E3  E4  E5  E6  │  ← Inner: Emergence
+                    │                                     │
+                    │                  ∅                  │  ← Center: Nontion
+                    │                                     │
+                    └─────────────────────────────────────┘
+```
 
-1. **Descent nearest the void** - Shadow work, fragmentation, rupture happens closest to stillness. You descend *inward* before you can emerge *outward*.
+**Why two orientations:**
 
-2. **Resonance as threshold** - The Mirror sits between descent and emergence. It's the witnessing layer, the mediator between inner collapse and outer becoming.
+Both configurations are mythologically valid lenses:
 
-3. **Emergence radiates outward** - Mythogenesis, synthesis, "The Symphony" (E6) disperses outward into the world. You emerge *out of* the system.
+1. **Inverted (E outer, D inner)** - "Dissolve outward"
+   - Dissolution happens at the core, near stillness
+   - Emergence radiates outward into manifestation
+   - Suits: katabasis, shadow work, death-rebirth narratives
 
-4. **Nontion touches Shadow first** - The reset state connects most directly to the wound. You cannot integrate what you haven't descended into.
+2. **Standard (D outer, E inner)** - "Emerge outward"
+   - Emergence begins at the core, near potential
+   - Dissolution happens at the edge, dispersing outward
+   - Suits: creation myths, emanation, becoming narratives
 
-This creates a natural **centrifugal flow**: Center → Descent → Resonance → Emergence. Traversals expand outward rather than contracting inward. You're not spiraling into a point; you're spiraling out into becoming.
+**What stays fixed:**
+- Resonance (R) is always the middle ring - the threshold, the mirror
+- Nontion (∅) is always the center - the pause, the reset
+- Polarity pairs (1↔6, 2↔5, 3↔4) work identically in both
+- Condition resonance (D1/R1/E1) works identically in both
+
+**Toggle:** Settings menu (gear icon) → "Orientation: Standard/Inverted"
 
 ## Critical Design Principles
 

@@ -1,6 +1,32 @@
 // MiroGlyph v4 - Node Definitions
 // 18 nodes (3 arcs × 6 conditions) + 1 center point (Nontion)
 
+// Configuration state: 'standard' or 'inverted'
+// Standard: E (inner) → R (middle) → D (outer) - emerge outward
+// Inverted: D (inner) → R (middle) → E (outer) - dissolve outward (current default)
+let configuration = 'inverted';
+
+function getArcOrder() {
+  return configuration === 'standard'
+    ? ['E', 'R', 'D']  // E inner, D outer
+    : ['D', 'R', 'E']; // D inner, E outer
+}
+
+function setConfiguration(config) {
+  if (config === 'standard' || config === 'inverted') {
+    configuration = config;
+  }
+}
+
+function getConfiguration() {
+  return configuration;
+}
+
+function toggleConfiguration() {
+  configuration = configuration === 'standard' ? 'inverted' : 'standard';
+  return configuration;
+}
+
 const ARCS = {
   D: { code: 'D', primary: 'Descent', secondary: 'Shadow', color: '#8b5cf6' },
   R: { code: 'R', primary: 'Resonance', secondary: 'Mirror', color: '#3b82f6' },
@@ -182,9 +208,10 @@ const NONTION = {
 
 // Calculate node positions using polar coordinates
 // Layout: 3 concentric rings with conditions aligned radially
+// Arc order determined by configuration (standard vs inverted)
 function calculatePositions(centerX, centerY, innerRadius = 100, ringSpacing = 80) {
   const positions = {};
-  const arcOrder = ['D', 'R', 'E'];
+  const arcOrder = getArcOrder();
 
   // Nontion at center
   positions['∅'] = { x: centerX, y: centerY };
@@ -237,5 +264,9 @@ window.MiroGlyph.nodes = {
   calculatePositions,
   getNode,
   getDisplayName,
-  getAllNodeIds
+  getAllNodeIds,
+  getConfiguration,
+  setConfiguration,
+  toggleConfiguration,
+  getArcOrder
 };

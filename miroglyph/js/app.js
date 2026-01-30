@@ -8,6 +8,42 @@
   var tabRouter = window.MiroGlyph.tabRouter;
   var storage = window.MiroGlyph.storage;
   var paths = window.MiroGlyph.paths;
+  var nodes = window.MiroGlyph.nodes;
+  var canvas = window.MiroGlyph.canvas;
+
+  // Load and apply saved configuration
+  function loadConfiguration() {
+    var config = storage.loadConfig();
+    if (config && config.configuration) {
+      nodes.setConfiguration(config.configuration);
+    }
+    updateOrientationLabel();
+  }
+
+  // Update the orientation label in the UI
+  function updateOrientationLabel() {
+    var label = document.getElementById('orientation-label');
+    if (label) {
+      var config = nodes.getConfiguration();
+      var displayName = config === 'standard' ? 'Standard' : 'Inverted';
+      label.textContent = 'Orientation: ' + displayName;
+    }
+  }
+
+  // Toggle orientation and redraw
+  function handleOrientationToggle() {
+    var newConfig = nodes.toggleConfiguration();
+    storage.saveConfig({ configuration: newConfig });
+    updateOrientationLabel();
+
+    // Redraw canvas if it's initialized
+    if (canvas && canvas.init) {
+      canvas.init();
+    }
+    if (paths && paths.redraw) {
+      paths.redraw();
+    }
+  }
 
   // Set up import/export handlers (gear menu)
   function setupImportExport() {
@@ -55,11 +91,23 @@
         gearDropdown.hidden = true;
       });
     }
+
+    // Orientation toggle
+    var orientationBtn = document.getElementById('btn-toggle-orientation');
+    if (orientationBtn) {
+      orientationBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        handleOrientationToggle();
+      });
+    }
   }
 
   // Boot sequence
   function boot() {
     console.log('Mythic System Explorer: loading data...');
+
+    // 0. Load configuration (orientation) before anything else
+    loadConfiguration();
 
     // 1. Load all catalogs and build cross-reference indices
     dataLoader.loadAll().then(function() {
