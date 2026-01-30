@@ -139,6 +139,13 @@
 
     // Build node picker grid
     buildNodePicker();
+
+    // Listen for view changes to update picker visibility
+    window.addEventListener('hashchange', function() {
+      if (isOpen) {
+        updateNodePicker();
+      }
+    });
   }
 
   function toggle() {
@@ -191,21 +198,21 @@
 
     var html = '';
 
-    // Arc nodes (6 each)
+    // Arc nodes (6 each) - one row per arc
     for (var a = 0; a < ARCS.length; a++) {
       var arc = ARCS[a];
       for (var c = 1; c <= 6; c++) {
         var nodeId = arc.code + c;
-        html += '<button class="picker-node" data-node-id="' + nodeId +
-          '" style="border-color:' + arc.color + ';color:' + arc.color + '">' +
+        html += '<button class="picker-node picker-node-' + arc.code + '" data-node-id="' + nodeId +
+          '" style="border-color:' + arc.color + ';color:' + arc.color + ';background:' + arc.color + '22">' +
           nodeId + '</button>';
       }
     }
 
-    // Nontion
+    // Nontion (spans full width)
     html += '<button class="picker-node picker-node-nontion" data-node-id="\u2205"' +
-      ' style="border-color:var(--color-nontion);color:var(--color-nontion)">' +
-      '\u2205</button>';
+      ' style="border-color:var(--color-nontion);color:var(--color-nontion);background:rgba(245,158,11,0.1)">' +
+      '\u2205 Nontion</button>';
 
     grid.innerHTML = html;
 
