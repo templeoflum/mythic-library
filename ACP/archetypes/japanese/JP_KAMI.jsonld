@@ -68,7 +68,9 @@
       "name": "Izanagi-no-Mikoto",
       "aliases": [
         "Izanagi-no-Kami",
-        "He Who Invites"
+        "He Who Invites",
+        "Izanaki",
+        "The Izanagi-no-Mikoto"
       ],
       "domain": [
         "Creation",
@@ -250,7 +252,9 @@
       "aliases": [
         "Izanami-no-Kami",
         "She Who Invites",
-        "Yomotsu-Ōkami"
+        "Yomotsu-Ōkami",
+        "Izanami-no-Mikoto",
+        "The Izanami-no-Mikoto"
       ],
       "domain": [
         "Creation",
@@ -442,7 +446,9 @@
         "Ōhirume-no-Muchi",
         "Tensho Daijin",
         "Amaterasu-Omikami",
-        "Great Divinity Illuminating Heaven"
+        "Great Divinity Illuminating Heaven",
+        "Ohirume-no-muchi",
+        "The Amaterasu-Ōmikami"
       ],
       "domain": [
         "Sun",
@@ -647,7 +653,9 @@
         "Tsukiyomi",
         "Tsukuyomi-no-Kami",
         "Moon Reader",
-        "Moon God"
+        "Moon God",
+        "Tsuki-yomi",
+        "The Tsukuyomi-no-Mikoto"
       ],
       "domain": [
         "Moon",
@@ -798,7 +806,9 @@
         "Takehaya-Susanoo-no-Mikoto",
         "Gozu Tennō",
         "Susano-o",
-        "The Impetuous Male"
+        "The Impetuous Male",
+        "Susanowo",
+        "The Susanoo-no-Mikoto"
       ],
       "domain": [
         "Storms",
@@ -1003,7 +1013,8 @@
       "aliases": [
         "Uzume",
         "Ama-no-Uzume",
-        "The Great Persuader"
+        "The Great Persuader",
+        "The Ame-no-Uzume-no-Mikoto"
       ],
       "domain": [
         "Dawn",
@@ -1159,7 +1170,8 @@
       "name": "Sarutahiko-Ōkami",
       "aliases": [
         "Sarutahiko-no-Kami",
-        "The Great Kami of the Crossroads"
+        "The Great Kami of the Crossroads",
+        "The Sarutahiko-Ōkami"
       ],
       "domain": [
         "Crossroads",
@@ -1306,7 +1318,8 @@
         "Ōkuninushi",
         "Ōnamuchi",
         "Daikokuten",
-        "Great Land Master"
+        "Great Land Master",
+        "The Ōkuninushi-no-Kami"
       ],
       "domain": [
         "Earth",
@@ -1487,7 +1500,8 @@
       "name": "Ninigi-no-Mikoto",
       "aliases": [
         "Ame-nigishi-kuni-nigishi-amatsuhiko-hiko-ho-no-ninigi-no-Mikoto",
-        "Heavenly Grandchild"
+        "Heavenly Grandchild",
+        "The Ninigi-no-Mikoto"
       ],
       "domain": [
         "Divine Descent",
@@ -1632,7 +1646,8 @@
       "aliases": [
         "Sakuya-hime",
         "Princess of the Blossoming Trees",
-        "Sengen"
+        "Sengen",
+        "The Konohanasakuya-hime"
       ],
       "domain": [
         "Cherry Blossoms",
@@ -1781,7 +1796,9 @@
       "aliases": [
         "Inari",
         "Oinari-sama",
-        "Uka-no-Mitama"
+        "Uka-no-Mitama",
+        "O-Inari-sama",
+        "The Inari-Ōkami"
       ],
       "domain": [
         "Rice",
@@ -1956,7 +1973,8 @@
       "aliases": [
         "Hachiman-shin",
         "Yawata-no-Kami",
-        "Emperor Ōjin"
+        "Emperor Ōjin",
+        "The Hachiman"
       ],
       "domain": [
         "War",
@@ -2105,7 +2123,8 @@
       "name": "Benzaiten",
       "aliases": [
         "Benten",
-        "Sarasvatī (Sanskrit origin)"
+        "Sarasvatī (Sanskrit origin)",
+        "The Benzaiten"
       ],
       "domain": [
         "Music",
@@ -2250,7 +2269,8 @@
       "aliases": [
         "Raiden",
         "Kaminari-sama",
-        "Thunder Kami"
+        "Thunder Kami",
+        "The Raijin"
       ],
       "domain": [
         "Thunder",
@@ -2400,7 +2420,9 @@
       "name": "Fūjin",
       "aliases": [
         "Fūten",
-        "Wind Kami"
+        "Wind Kami",
+        "Futen",
+        "The Fūjin"
       ],
       "domain": [
         "Wind",
@@ -2677,7 +2699,8 @@
       "aliases": [
         "Emma",
         "Yama (Sanskrit origin)",
-        "King of Hell"
+        "King of Hell",
+        "The Enma-Ō"
       ],
       "domain": [
         "Underworld",

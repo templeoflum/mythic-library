@@ -98,7 +98,12 @@
         "archetypal",
         "protection",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "pearson:orphan",
@@ -202,7 +207,12 @@
       "domains": [
         "archetypal",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      }
     },
     {
       "@id": "pearson:warrior",
@@ -288,7 +298,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "pearson:caregiver",
@@ -396,7 +411,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "pearson:seeker",
@@ -497,7 +517,12 @@
         "archetypal",
         "psychology",
         "truth"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "pearson:destroyer",
@@ -586,7 +611,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "pearson:lover",
@@ -672,7 +702,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "pearson:creator",
@@ -761,7 +796,12 @@
       "domains": [
         "archetypal",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "pearson:ruler",
@@ -848,7 +888,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "pearson:magician",
@@ -933,7 +978,12 @@
       "domains": [
         "archetypal",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "pearson:sage",
@@ -1038,7 +1088,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "pearson:jester",
@@ -1139,7 +1194,12 @@
         "archetypal",
         "psychology",
         "truth"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     }
   ],
   "systemRelationships": {

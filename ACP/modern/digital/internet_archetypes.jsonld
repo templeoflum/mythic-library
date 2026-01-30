@@ -118,7 +118,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "digital:hacker",
@@ -224,7 +229,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "digital:troll",
@@ -330,7 +340,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "digital:creator",
@@ -432,7 +447,12 @@
       "domains": [
         "internet",
         "modern"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "digital:curator",
@@ -540,7 +560,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     },
     {
       "@id": "digital:lurker",
@@ -643,7 +668,12 @@
       "domains": [
         "internet",
         "modern"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      }
     },
     {
       "@id": "digital:moderator",
@@ -744,7 +774,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "digital:whistleblower",
@@ -844,7 +879,12 @@
         "internet",
         "modern",
         "truth"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "digital:ai_entity",
@@ -942,7 +982,12 @@
       "domains": [
         "internet",
         "modern"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "digital:viral_meme",
@@ -1039,7 +1084,12 @@
       "domains": [
         "internet",
         "modern"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     }
   ],
   "systemRelationships": {

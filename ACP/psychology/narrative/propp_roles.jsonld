@@ -105,7 +105,12 @@
         "narrative",
         "psychology",
         "war"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "propp:donor",
@@ -202,7 +207,12 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "propp:helper",
@@ -298,7 +308,12 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "propp:princess",
@@ -395,7 +410,12 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "propp:dispatcher",
@@ -485,7 +505,12 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "propp:hero",
@@ -603,7 +628,12 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "propp:false-hero",
@@ -699,7 +729,12 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "propp:father",
@@ -790,7 +825,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:jupiter",
+        "element": "element:air"
+      }
     }
   ],
   "systemRelationships": {

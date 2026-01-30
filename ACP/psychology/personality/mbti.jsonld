@@ -111,7 +111,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "mbti:intp",
@@ -210,7 +215,12 @@
         "personality-types",
         "psychology",
         "truth"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "mbti:entj",
@@ -308,7 +318,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "mbti:entp",
@@ -414,7 +429,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "mbti:infj",
@@ -514,7 +534,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "mbti:infp",
@@ -617,7 +642,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "mbti:enfj",
@@ -715,7 +745,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "mbti:enfp",
@@ -819,7 +854,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "mbti:istj",
@@ -923,7 +963,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     },
     {
       "@id": "mbti:isfj",
@@ -1027,7 +1072,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "mbti:estj",
@@ -1127,7 +1177,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "mbti:esfj",
@@ -1225,7 +1280,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "mbti:istp",
@@ -1323,7 +1383,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "mbti:isfp",
@@ -1420,7 +1485,12 @@
         "beauty",
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "mbti:estp",
@@ -1518,7 +1588,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "mbti:esfp",
@@ -1617,7 +1692,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     }
   ],
   "systemRelationships": {

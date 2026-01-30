@@ -118,7 +118,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Kether"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Kether (Crown) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "kabbalah:chokmah",
@@ -222,7 +231,11 @@
         "divination",
         "kabbalah",
         "wisdom"
-      ]
+      ],
+      "aliases": [
+        "The Chokmah"
+      ],
+      "description": "Chokmah (Wisdom) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "kabbalah:binah",
@@ -337,7 +350,16 @@
         "divination",
         "kabbalah",
         "wisdom"
-      ]
+      ],
+      "aliases": [
+        "The Binah"
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Binah (Understanding) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "kabbalah:chesed",
@@ -434,7 +456,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Chesed"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Chesed (Mercy) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "kabbalah:geburah",
@@ -535,7 +566,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Geburah"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Geburah (Severity) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "kabbalah:tiphareth",
@@ -642,7 +682,16 @@
         "beauty",
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Tiphareth"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Tiphareth (Beauty) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "kabbalah:netzach",
@@ -737,7 +786,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Netzach"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Netzach (Victory) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "kabbalah:hod",
@@ -838,7 +896,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Hod"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Hod (Glory) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "kabbalah:yesod",
@@ -940,7 +1007,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Yesod"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Yesod (Foundation) serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "kabbalah:malkuth",
@@ -1046,7 +1122,16 @@
       "domains": [
         "divination",
         "kabbalah"
-      ]
+      ],
+      "aliases": [
+        "The Malkuth"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Malkuth (Kingdom) embodies the sustaining forces that maintain cosmic order and protect existence."
     }
   ],
   "systemRelationships": {

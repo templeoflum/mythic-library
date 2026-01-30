@@ -70,7 +70,8 @@
         "Ranginui (Maori)",
         "Wakea (Hawaiian)",
         "Atea (Tahitian)",
-        "Sky Father"
+        "Sky Father",
+        "The Rangi"
       ],
       "domain": [
         "Sky",
@@ -226,7 +227,8 @@
       "aliases": [
         "Papatūānuku (Maori)",
         "Papa (Hawaiian)",
-        "Earth Mother"
+        "Earth Mother",
+        "The Papa"
       ],
       "domain": [
         "Earth",
@@ -380,7 +382,8 @@
       "aliases": [
         "Tāne Mahuta (Maori)",
         "Kāne (Hawaiian)",
-        "Ta'aroa aspect (Tahitian)"
+        "Ta'aroa aspect (Tahitian)",
+        "The Tāne"
       ],
       "domain": [
         "Forests",
@@ -540,7 +543,8 @@
       "aliases": [
         "Tūmatauenga (Maori)",
         "Kū (Hawaiian)",
-        "Tu (Tahitian)"
+        "Tu (Tahitian)",
+        "The Tū"
       ],
       "domain": [
         "War",
@@ -702,7 +706,8 @@
       "aliases": [
         "Kanaloa (Hawaiian)",
         "Ta'aroa (Tahitian)",
-        "Tagaloa (Samoan)"
+        "Tagaloa (Samoan)",
+        "The Tangaroa"
       ],
       "domain": [
         "Ocean",
@@ -868,7 +873,8 @@
       "name": "Rongo",
       "aliases": [
         "Lono (Hawaiian)",
-        "Ro'o (Tahitian)"
+        "Ro'o (Tahitian)",
+        "The Rongo"
       ],
       "domain": [
         "Peace",
@@ -1022,7 +1028,8 @@
       "aliases": [
         "Māui-tikitiki-a-Taranga",
         "Maui (Hawaiian)",
-        "Ti'iti'i (Samoan)"
+        "Ti'iti'i (Samoan)",
+        "The Māui"
       ],
       "domain": [
         "Trickery",
@@ -1219,7 +1226,8 @@
       "name": "Pele",
       "aliases": [
         "Pelehonuamea",
-        "She Who Shapes the Sacred Land"
+        "She Who Shapes the Sacred Land",
+        "The Pele"
       ],
       "domain": [
         "Volcanoes",
@@ -1385,7 +1393,8 @@
       "name": "Hi'iaka",
       "aliases": [
         "Hi'iakaikapoliopele",
-        "Hi'iaka-in-the-bosom-of-Pele"
+        "Hi'iaka-in-the-bosom-of-Pele",
+        "The Hi'iaka"
       ],
       "domain": [
         "Hula",
@@ -1539,7 +1548,8 @@
       "aliases": [
         "Hina-i-ka-malama (Hawaiian)",
         "Hina (Maori/Tahitian)",
-        "Sina (Samoan)"
+        "Sina (Samoan)",
+        "The Hina"
       ],
       "domain": [
         "Moon",
@@ -1692,7 +1702,8 @@
       "name": "Hine-nui-te-pō",
       "aliases": [
         "Great Woman of Night",
-        "Goddess of Death"
+        "Goddess of Death",
+        "The Hine-nui-te-pō"
       ],
       "domain": [
         "Death",
@@ -1852,7 +1863,8 @@
       "@type": "Archetype",
       "name": "Tāwhirimātea",
       "aliases": [
-        "God of Storms and Winds"
+        "God of Storms and Winds",
+        "The Tāwhirimātea"
       ],
       "domain": [
         "Storms",
@@ -2006,7 +2018,8 @@
       "name": "Kāne",
       "aliases": [
         "Kane",
-        "Tāne (as Hawaiian form)"
+        "Tāne (as Hawaiian form)",
+        "The Kāne"
       ],
       "domain": [
         "Life",
@@ -2152,7 +2165,8 @@
       "name": "Kū",
       "aliases": [
         "Ku",
-        "Kūka'ilimoku (war aspect)"
+        "Kūka'ilimoku (war aspect)",
+        "The Kū"
       ],
       "domain": [
         "War",
@@ -2296,7 +2310,8 @@
       "@type": "Archetype",
       "name": "Lono",
       "aliases": [
-        "Lono-i-ka-makahiki"
+        "Lono-i-ka-makahiki",
+        "The Lono"
       ],
       "domain": [
         "Peace",
@@ -2442,7 +2457,8 @@
       "@type": "Archetype",
       "name": "Kanaloa",
       "aliases": [
-        "Tangaroa (as Hawaiian form)"
+        "Tangaroa (as Hawaiian form)",
+        "The Kanaloa"
       ],
       "domain": [
         "Ocean",
@@ -2594,7 +2610,8 @@
       "name": "Nāmaka",
       "aliases": [
         "Nā-maka-o-Kaha'i",
-        "Sea Goddess"
+        "Sea Goddess",
+        "The Nāmaka"
       ],
       "domain": [
         "Sea",

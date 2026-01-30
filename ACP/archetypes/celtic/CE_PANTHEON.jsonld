@@ -264,7 +264,8 @@
         "Bride (Scottish)",
         "Brighid",
         "Bride",
-        "Saint Brigid (Christian sync)"
+        "Saint Brigid (Christian sync)",
+        "The Brigid"
       ],
       "epithets": [
         "The Exalted One",
@@ -482,7 +483,10 @@
       "aliases": [
         "Lugh Lámhfhada (Long-Arm)",
         "Lugh Samildánach (Many-Skilled)",
-        "Lugus (Gaulish)"
+        "Lugus (Gaulish)",
+        "Lug",
+        "Lugus",
+        "The Lugh"
       ],
       "epithets": [
         "The Shining One",
@@ -682,7 +686,8 @@
         "Morrígu",
         "Great Queen",
         "Phantom Queen",
-        "The Great Queen"
+        "The Great Queen",
+        "Morrígan"
       ],
       "epithets": [
         "Phantom Queen",
@@ -894,7 +899,8 @@
         "Anu",
         "Ana",
         "Dana",
-        "Dôn (Welsh)"
+        "Dôn (Welsh)",
+        "The Danu"
       ],
       "epithets": [
         "Mother of the Gods",
@@ -1056,7 +1062,8 @@
       "name": "Cernunnos",
       "aliases": [
         "The Horned One",
-        "Lord of Wild Things"
+        "Lord of Wild Things",
+        "The Cernunnos"
       ],
       "epithets": [
         "Lord of the Animals",
@@ -1569,7 +1576,9 @@
       "aliases": [
         "Nuada of the Silver Hand",
         "Nodens (Romano-British)",
-        "Nudd (Welsh)"
+        "Nudd (Welsh)",
+        "Nuadu",
+        "Nodens"
       ],
       "epithets": [
         "Silver Hand",
@@ -1922,7 +1931,8 @@
       "name": "Rhiannon",
       "aliases": [
         "Rigantona (Great Queen)",
-        "Epona (Gaulish cognate)"
+        "Epona (Gaulish cognate)",
+        "The Rhiannon"
       ],
       "epithets": [
         "The Great Queen",
@@ -2096,7 +2106,8 @@
       "@type": "Archetype",
       "name": "Arawn",
       "aliases": [
-        "King of Annwfn"
+        "King of Annwfn",
+        "The Arawn"
       ],
       "epithets": [
         "Lord of the Otherworld",
@@ -2253,7 +2264,8 @@
       "name": "Balor",
       "aliases": [
         "Balor of the Evil Eye",
-        "Balor of the Mighty Blows"
+        "Balor of the Mighty Blows",
+        "The Balor"
       ],
       "epithets": [
         "Balor of the Piercing Eye",

@@ -112,7 +112,16 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "aliases": [
+        "The Qian"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Qian (Heaven) represents the creative principle, the power to bring new forms and realities into being."
     },
     {
       "@id": "iching:kun",
@@ -214,7 +223,16 @@
         "divination",
         "earth",
         "i-ching"
-      ]
+      ],
+      "aliases": [
+        "The Kun"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Kun (Earth) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:zhen",
@@ -323,7 +341,16 @@
         "divination",
         "i-ching",
         "thunder"
-      ]
+      ],
+      "aliases": [
+        "The Zhen"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Zhen (Thunder) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:kan",
@@ -438,7 +465,16 @@
         "i-ching",
         "sea",
         "water"
-      ]
+      ],
+      "aliases": [
+        "The Kan"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Kan (Water) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:gen",
@@ -540,7 +576,16 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "aliases": [
+        "The Gen"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Gen (Mountain) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "iching:xun",
@@ -638,7 +683,16 @@
         "air",
         "divination",
         "i-ching"
-      ]
+      ],
+      "aliases": [
+        "The Xun"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Xun (Wind/Wood) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "iching:li",
@@ -742,7 +796,16 @@
         "fire",
         "hearth",
         "i-ching"
-      ]
+      ],
+      "aliases": [
+        "The Li"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Li (Fire) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:dui",
@@ -837,7 +900,16 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "aliases": [
+        "The Dui"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Dui (Lake) is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {

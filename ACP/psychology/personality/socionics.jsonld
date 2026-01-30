@@ -95,7 +95,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The ILE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "socionics:sei",
@@ -184,7 +192,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The SEI"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "socionics:ese",
@@ -273,7 +289,15 @@
         "hearth",
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The ESE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "socionics:lii",
@@ -362,7 +386,15 @@
         "personality-types",
         "psychology",
         "truth"
-      ]
+      ],
+      "aliases": [
+        "The LII"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "socionics:eie",
@@ -450,7 +482,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The EIE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "socionics:lsi",
@@ -539,7 +579,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The LSI"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "socionics:sle",
@@ -628,7 +676,15 @@
         "personality-types",
         "psychology",
         "strength"
-      ]
+      ],
+      "aliases": [
+        "The SLE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "socionics:iei",
@@ -717,7 +773,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The IEI"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "socionics:lie",
@@ -805,7 +869,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The LIE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "socionics:esi",
@@ -893,7 +965,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The ESI"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     },
     {
       "@id": "socionics:see",
@@ -981,7 +1061,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The SEE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "socionics:ili",
@@ -1069,7 +1157,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The ILI"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "socionics:lse",
@@ -1157,7 +1253,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The LSE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     },
     {
       "@id": "socionics:eii",
@@ -1245,7 +1349,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The EII"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "socionics:iee",
@@ -1333,7 +1445,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The IEE"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "socionics:sli",
@@ -1421,7 +1541,15 @@
         "crafts",
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The SLI"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     }
   ],
   "systemRelationships": {

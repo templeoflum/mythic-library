@@ -64,7 +64,8 @@
         "Perkūnas (Baltic)",
         "Perkunas",
         "The Thunderer",
-        "Thunderer"
+        "Thunderer",
+        "The Perun"
       ],
       "domain": [
         "Thunder",
@@ -233,7 +234,8 @@
         "Volos",
         "Weles",
         "The Hairy One",
-        "Lord of the Underworld"
+        "Lord of the Underworld",
+        "The Veles"
       ],
       "domain": [
         "Underworld",
@@ -403,7 +405,8 @@
       "aliases": [
         "Mokos",
         "Mokoš",
-        "The Moist One"
+        "The Moist One",
+        "The Mokosh"
       ],
       "domain": [
         "Earth",
@@ -554,7 +557,8 @@
       "aliases": [
         "Dažbog",
         "Dabog",
-        "The Giving God"
+        "The Giving God",
+        "The Dazhbog"
       ],
       "domain": [
         "Sun",
@@ -703,7 +707,8 @@
       "name": "Khors",
       "aliases": [
         "Chors",
-        "Xors"
+        "Xors",
+        "The Khors"
       ],
       "domain": [
         "Sun Disc",
@@ -833,7 +838,8 @@
       "name": "Stribog",
       "aliases": [
         "Strzybog",
-        "The Flowing One"
+        "The Flowing One",
+        "The Stribog"
       ],
       "domain": [
         "Wind",
@@ -964,7 +970,8 @@
       "name": "Svarog",
       "aliases": [
         "The Bright One",
-        "The Sky Forger"
+        "The Sky Forger",
+        "The Svarog"
       ],
       "domain": [
         "Sky",
@@ -1114,7 +1121,8 @@
       "aliases": [
         "Svarožić",
         "Radegast (Western Slavic)",
-        "Son of Svarog"
+        "Son of Svarog",
+        "The Svarozhich"
       ],
       "domain": [
         "Fire",
@@ -1256,7 +1264,8 @@
       "name": "Simargl",
       "aliases": [
         "Semargl",
-        "Simargł"
+        "Simargł",
+        "The Simargl"
       ],
       "domain": [
         "Vegetation",
@@ -1383,7 +1392,8 @@
       "aliases": [
         "Yarilo",
         "Jarovit",
-        "The Furious One"
+        "The Furious One",
+        "The Jarilo"
       ],
       "domain": [
         "Spring",
@@ -1538,7 +1548,8 @@
         "Marzanna",
         "Morena",
         "Mara",
-        "The Death Goddess"
+        "The Death Goddess",
+        "The Morana"
       ],
       "domain": [
         "Winter",
@@ -1692,7 +1703,8 @@
       "name": "Lada",
       "aliases": [
         "Lado (male consort)",
-        "Lady Lada"
+        "Lady Lada",
+        "The Lada"
       ],
       "domain": [
         "Love",
@@ -1837,7 +1849,8 @@
       "aliases": [
         "Domowik",
         "Dedushka (Grandfather)",
-        "House Spirit"
+        "House Spirit",
+        "The Domovoi"
       ],
       "domain": [
         "Home",
@@ -2124,7 +2137,8 @@
       "aliases": [
         "Leszy",
         "Leshii",
-        "Forest Master"
+        "Forest Master",
+        "The Leshy"
       ],
       "domain": [
         "Forest",
@@ -2253,7 +2267,8 @@
       "name": "Rusalka",
       "aliases": [
         "Rusalki (plural)",
-        "Water Maiden"
+        "Water Maiden",
+        "The Rusalka"
       ],
       "domain": [
         "Water",

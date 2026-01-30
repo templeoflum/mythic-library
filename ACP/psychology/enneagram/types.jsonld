@@ -112,7 +112,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Type 1: The Reformer represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "enneagram:type_2",
@@ -222,7 +228,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Type 2: The Helper is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "enneagram:type_3",
@@ -322,7 +334,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Type 3: The Achiever embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "enneagram:type_4",
@@ -438,7 +456,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      },
+      "description": "Type 4: The Individualist exists at the margins, representing those excluded from society who gain unique perspective."
     },
     {
       "@id": "enneagram:type_5",
@@ -547,7 +571,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Type 5: The Investigator is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "enneagram:type_6",
@@ -642,7 +672,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Type 6: The Loyalist embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "enneagram:type_7",
@@ -741,7 +777,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Type 7: The Enthusiast is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "enneagram:type_8",
@@ -842,7 +884,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Type 8: The Challenger represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "enneagram:type_9",
@@ -937,7 +985,13 @@
       "domains": [
         "enneagram",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Type 9: The Peacemaker embodies the sustaining forces that maintain cosmic order and protect existence."
     }
   ],
   "systemRelationships": {

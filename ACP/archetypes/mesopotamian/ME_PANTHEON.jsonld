@@ -54,7 +54,8 @@
       "name": "Anu",
       "aliases": [
         "An (Sumerian)",
-        "Anum"
+        "Anum",
+        "The Anu"
       ],
       "epithets": [
         "Father of the Gods",
@@ -236,7 +237,8 @@
       "name": "Enlil",
       "aliases": [
         "Ellil (Akkadian)",
-        "Nunamnir"
+        "Nunamnir",
+        "The Enlil"
       ],
       "epithets": [
         "Lord Wind",
@@ -448,7 +450,8 @@
         "Ea (Akkadian)",
         "Nudimmud",
         "Ea",
-        "Lord of the Abzu"
+        "Lord of the Abzu",
+        "The Enki"
       ],
       "epithets": [
         "Lord of the Earth/Waters",
@@ -685,7 +688,8 @@
       "name": "Inanna",
       "aliases": [
         "Ishtar (Akkadian)",
-        "Astarte (Canaanite echo)"
+        "Astarte (Canaanite echo)",
+        "The Inanna"
       ],
       "epithets": [
         "Queen of Heaven",
@@ -1005,7 +1009,8 @@
         "Bel (Lord)",
         "Asarluhi",
         "Bel",
-        "Lord of Babylon"
+        "Lord of Babylon",
+        "The Marduk"
       ],
       "epithets": [
         "King of the Gods",
@@ -1233,7 +1238,8 @@
       "@type": "Archetype",
       "name": "Tiamat",
       "aliases": [
-        "Tamtu"
+        "Tamtu",
+        "The Tiamat"
       ],
       "epithets": [
         "The Shining One",
@@ -1443,7 +1449,8 @@
       "aliases": [
         "Allatu (Akkadian)",
         "Irkalla (metonym for realm)",
-        "Queen of the Great Below"
+        "Queen of the Great Below",
+        "The Ereshkigal"
       ],
       "epithets": [
         "Queen of the Underworld",
@@ -1668,7 +1675,8 @@
       "name": "Dumuzi",
       "aliases": [
         "Tammuz (Akkadian)",
-        "Damu"
+        "Damu",
+        "The Dumuzi"
       ],
       "epithets": [
         "The Shepherd",
@@ -1865,7 +1873,8 @@
       "name": "Nergal",
       "aliases": [
         "Erra",
-        "Meslamtaea"
+        "Meslamtaea",
+        "The Nergal"
       ],
       "epithets": [
         "Lord of the Underworld",
@@ -2055,7 +2064,8 @@
       "name": "Shamash",
       "aliases": [
         "Utu (Sumerian)",
-        "Shemesh"
+        "Shemesh",
+        "The Shamash"
       ],
       "epithets": [
         "The Sun",
@@ -2248,7 +2258,8 @@
       "name": "Sin",
       "aliases": [
         "Nanna (Sumerian)",
-        "Su'en"
+        "Su'en",
+        "The Sin"
       ],
       "epithets": [
         "Lord of Wisdom",
@@ -2425,7 +2436,8 @@
       "@type": "Archetype",
       "name": "Gilgamesh",
       "aliases": [
-        "Bilgamesh (Sumerian)"
+        "Bilgamesh (Sumerian)",
+        "The Gilgamesh"
       ],
       "epithets": [
         "King of Uruk",
@@ -2662,7 +2674,9 @@
       "@id": "arch:ME-ENKIDU",
       "@type": "Archetype",
       "name": "Enkidu",
-      "aliases": [],
+      "aliases": [
+        "The Enkidu"
+      ],
       "epithets": [
         "The Wild Man",
         "Created One",
@@ -2875,7 +2889,8 @@
       "name": "Apsu",
       "aliases": [
         "Abzu",
-        "Engur"
+        "Engur",
+        "The Apsu"
       ],
       "epithets": [
         "The Deep",

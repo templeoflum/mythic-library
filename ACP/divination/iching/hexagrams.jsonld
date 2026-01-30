@@ -100,7 +100,13 @@
         "creation",
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "1. Qian (The Creative) represents the creative principle, the power to bring new forms and realities into being."
     },
     {
       "@id": "iching:hex_02",
@@ -182,7 +188,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "2. Kun (The Receptive) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_03",
@@ -265,7 +277,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "3. Zhun (Difficulty at Beginning) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_04",
@@ -346,7 +364,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "4. Meng (Youthful Folly) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_05",
@@ -429,7 +453,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "5. Xu (Waiting) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "iching:hex_06",
@@ -515,7 +545,13 @@
         "i-ching",
         "music",
         "war"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "6. Song (Conflict) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "iching:hex_07",
@@ -599,7 +635,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "7. Shi (The Army) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "iching:hex_08",
@@ -678,7 +720,8 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "description": "8. Bi (Holding Together) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_09",
@@ -759,7 +802,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "9. Xiao Chu (Small Taming) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "iching:hex_10",
@@ -802,7 +851,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "arch:CN-LU-DONGBIN",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "hero"
       ],
@@ -835,7 +890,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "10. Lu (Treading) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_11",
@@ -924,7 +985,13 @@
         "divination",
         "i-ching",
         "peace"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "11. Tai (Peace) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_12",
@@ -1007,7 +1074,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "12. Pi (Standstill) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_13",
@@ -1088,7 +1161,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "13. Tong Ren (Fellowship) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_14",
@@ -1170,7 +1249,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "14. Da You (Great Possession) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "iching:hex_15",
@@ -1246,7 +1331,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "15. Qian (Modesty) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_16",
@@ -1289,7 +1380,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "arch:NA-KOKOPELLI",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "hero"
       ],
@@ -1316,7 +1413,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "16. Yu (Enthusiasm) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_17",
@@ -1358,7 +1461,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_54",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "caregiver",
         "trickster"
@@ -1392,7 +1501,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "17. Sui (Following) is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "iching:hex_18",
@@ -1434,7 +1549,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "myss:prostitute",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "destroyer",
         "healer"
@@ -1468,7 +1589,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "18. Gu (Decay) embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "iching:hex_19",
@@ -1548,7 +1675,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "19. Lin (Approach) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "iching:hex_20",
@@ -1627,7 +1760,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "20. Guan (Contemplation) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_21",
@@ -1709,7 +1848,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "21. Shi He (Biting Through) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "iching:hex_22",
@@ -1794,7 +1939,13 @@
         "beauty",
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "22. Bi (Grace) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "iching:hex_23",
@@ -1880,7 +2031,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "23. Bo (Splitting Apart) embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "iching:hex_24",
@@ -1960,7 +2117,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "24. Fu (Return) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_25",
@@ -2036,7 +2199,13 @@
         "childhood",
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "25. Wu Wang (Innocence) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_26",
@@ -2117,7 +2286,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "26. Da Chu (Great Taming) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "iching:hex_27",
@@ -2159,7 +2334,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "chinese:pig",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "healer"
       ],
@@ -2186,7 +2367,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "27. Yi (Nourishment) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_28",
@@ -2227,7 +2414,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "arch:AU-TIDDALIK",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "destroyer",
         "trickster"
@@ -2261,7 +2454,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "28. Da Guo (Great Excess) is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "iching:hex_29",
@@ -2349,7 +2548,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "29. Kan (The Abysmal) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_30",
@@ -2437,7 +2642,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "30. Li (The Clinging) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_31",
@@ -2525,7 +2736,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "31. Xian (Influence) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "iching:hex_32",
@@ -2609,7 +2826,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "32. Heng (Duration) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "iching:hex_33",
@@ -2680,7 +2903,8 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "description": "33. Dun (Retreat) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_34",
@@ -2768,7 +2992,13 @@
         "divination",
         "i-ching",
         "strength"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "34. Da Zhuang (Great Power) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "iching:hex_35",
@@ -2851,7 +3081,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "35. Jin (Progress) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_36",
@@ -2934,7 +3170,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      },
+      "description": "36. Ming Yi (Darkening) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_37",
@@ -3014,7 +3256,8 @@
         "divination",
         "family",
         "i-ching"
-      ]
+      ],
+      "description": "37. Jia Ren (Family) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_38",
@@ -3056,7 +3299,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_56",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "rebel"
       ],
@@ -3089,7 +3338,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      },
+      "description": "38. Kui (Opposition) challenges established order, breaks boundaries, and catalyzes revolutionary change."
     },
     {
       "@id": "iching:hex_39",
@@ -3170,7 +3425,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      },
+      "description": "39. Jian (Obstruction) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_40",
@@ -3253,7 +3514,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "40. Xie (Deliverance) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_41",
@@ -3335,7 +3602,13 @@
         "divination",
         "i-ching",
         "sun"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "41. Sun (Decrease) represents the wisdom of age, knowledge of mysteries, and power over life's transitions."
     },
     {
       "@id": "iching:hex_42",
@@ -3417,7 +3690,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "42. Yi (Increase) represents the creative principle, the power to bring new forms and realities into being."
     },
     {
       "@id": "iching:hex_43",
@@ -3499,7 +3778,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "43. Guai (Breakthrough) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_44",
@@ -3581,7 +3866,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "44. Gou (Coming to Meet) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "iching:hex_45",
@@ -3661,7 +3952,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "45. Cui (Gathering) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_46",
@@ -3743,7 +4040,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "46. Sheng (Pushing Upward) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_47",
@@ -3826,7 +4129,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      },
+      "description": "47. Kun (Oppression) exists at the margins, representing those excluded from society who gain unique perspective."
     },
     {
       "@id": "iching:hex_48",
@@ -3900,7 +4209,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "48. Jing (The Well) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_49",
@@ -3992,7 +4307,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      },
+      "description": "49. Ge (Revolution) challenges established order, breaks boundaries, and catalyzes revolutionary change."
     },
     {
       "@id": "iching:hex_50",
@@ -4073,7 +4394,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "50. Ding (The Cauldron) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "iching:hex_51",
@@ -4161,7 +4488,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "51. Zhen (Shock) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "iching:hex_52",
@@ -4248,7 +4581,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "52. Gen (Keeping Still) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "iching:hex_53",
@@ -4329,7 +4668,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "53. Jian (Development) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "iching:hex_54",
@@ -4376,6 +4721,10 @@
           "type": "COMPLEMENT",
           "target": "iching:hex_53",
           "note": "Sudden vs gradual union"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_17"
         }
       ],
       "narrativeRoles": [
@@ -4412,7 +4761,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      },
+      "description": "54. Gui Mei (Marrying Maiden) embodies youthful vitality, purity, and the potential of new growth."
     },
     {
       "@id": "iching:hex_55",
@@ -4497,7 +4852,13 @@
         "fertility",
         "i-ching",
         "wealth"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "55. Feng (Abundance) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "iching:hex_56",
@@ -4549,6 +4910,10 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:fool",
           "fidelity": 0.65
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_38"
         }
       ],
       "narrativeRoles": [
@@ -4585,7 +4950,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      },
+      "description": "56. Lu (The Wanderer) exists at the margins, representing those excluded from society who gain unique perspective."
     },
     {
       "@id": "iching:hex_57",
@@ -4668,7 +5039,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "57. Xun (The Gentle) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "iching:hex_58",
@@ -4749,7 +5126,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "58. Dui (The Joyous) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_59",
@@ -4791,7 +5174,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "arch:MA-TLAZOLTEOTL",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "magician",
         "threshold-guardian"
@@ -4825,7 +5214,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "59. Huan (Dispersion) serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "iching:hex_60",
@@ -4867,7 +5262,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "tzolkin:oc",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "caregiver",
         "sovereign"
@@ -4901,7 +5302,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "60. Jie (Limitation) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "iching:hex_61",
@@ -4983,7 +5390,8 @@
         "divination",
         "i-ching",
         "truth"
-      ]
+      ],
+      "description": "61. Zhong Fu (Inner Truth) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_62",
@@ -5025,7 +5433,13 @@
           ]
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "MIRRORS",
+          "target": "rune:mannaz",
+          "note": "Similar spectral position"
+        }
+      ],
       "narrativeRoles": [
         "trickster"
       ],
@@ -5058,7 +5472,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "62. Xiao Guo (Small Excess) is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "iching:hex_63",
@@ -5145,7 +5565,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "63. Ji Ji (After Completion) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "iching:hex_64",
@@ -5225,7 +5651,13 @@
       "domains": [
         "divination",
         "i-ching"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "64. Wei Ji (Before Completion) is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {

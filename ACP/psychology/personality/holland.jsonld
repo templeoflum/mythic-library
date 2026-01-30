@@ -116,7 +116,15 @@
         "personality-types",
         "psychology",
         "wilderness"
-      ]
+      ],
+      "aliases": [
+        "The Realistic"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "holland:investigative",
@@ -225,7 +233,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Investigative"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "holland:artistic",
@@ -335,7 +351,15 @@
         "creation",
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Artistic"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "holland:social",
@@ -443,7 +467,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Social"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "holland:enterprising",
@@ -552,7 +584,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Enterprising"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "holland:conventional",
@@ -661,7 +701,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Conventional"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     }
   ],
   "systemRelationships": {

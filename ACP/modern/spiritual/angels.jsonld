@@ -103,7 +103,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Seraphim"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Seraphim embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "angel:cherubim",
@@ -191,7 +200,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Cherubim"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Cherubim is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "angel:thrones",
@@ -281,7 +299,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Thrones"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Thrones represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "angel:dominions",
@@ -375,7 +402,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Dominions"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Dominions represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "angel:virtues",
@@ -471,7 +507,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Virtues"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Virtues represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     },
     {
       "@id": "angel:powers",
@@ -567,7 +612,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Powers"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Powers represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "angel:principalities",
@@ -656,7 +710,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Principalities"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Principalities represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "angel:archangels",
@@ -756,7 +819,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Archangels"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Archangels serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "angel:angels",
@@ -851,7 +923,16 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Angels"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Angels represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     }
   ],
   "systemRelationships": {

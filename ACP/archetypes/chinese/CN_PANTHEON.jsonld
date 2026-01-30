@@ -67,7 +67,8 @@
       "name": "Pangu",
       "aliases": [
         "P'an Ku",
-        "The First Being"
+        "The First Being",
+        "The Pangu"
       ],
       "domain": [
         "Creation",
@@ -204,7 +205,8 @@
       "aliases": [
         "Nu Kua",
         "Nügua",
-        "Empress Wa"
+        "Empress Wa",
+        "The Nüwa"
       ],
       "domain": [
         "Creation of Humanity",
@@ -364,7 +366,8 @@
       "aliases": [
         "Fu Hsi",
         "Paoxi",
-        "Taihao"
+        "Taihao",
+        "The Fuxi"
       ],
       "domain": [
         "Civilization",
@@ -519,7 +522,8 @@
       "aliases": [
         "Shen Nung",
         "Divine Farmer",
-        "Yandi (Flame Emperor)"
+        "Yandi (Flame Emperor)",
+        "The Shennong"
       ],
       "domain": [
         "Agriculture",
@@ -675,7 +679,8 @@
       "aliases": [
         "Yellow Emperor",
         "Huang Ti",
-        "Xuanyuan"
+        "Xuanyuan",
+        "The Huangdi"
       ],
       "domain": [
         "Sovereignty",
@@ -836,7 +841,8 @@
       "name": "Chiyou",
       "aliases": [
         "Chi You",
-        "War God"
+        "War God",
+        "The Chiyou"
       ],
       "domain": [
         "War",
@@ -1160,7 +1166,8 @@
       "aliases": [
         "Queen Mother of the West",
         "Xi Wang Mu",
-        "Golden Mother of the Shining Lake"
+        "Golden Mother of the Shining Lake",
+        "The Xiwangmu"
       ],
       "domain": [
         "Immortality",
@@ -1547,7 +1554,8 @@
         "Guanshiyin",
         "Avalokiteśvara (Sanskrit)",
         "Goddess of Mercy",
-        "Kannon (Japanese)"
+        "Kannon (Japanese)",
+        "The Guanyin"
       ],
       "domain": [
         "Compassion",
@@ -1843,7 +1851,8 @@
       "aliases": [
         "Ne Zha",
         "Third Lotus Prince",
-        "Marshal of the Central Altar"
+        "Marshal of the Central Altar",
+        "The Nezha"
       ],
       "domain": [
         "Youth",
@@ -2246,6 +2255,10 @@
           "target": "arch:NO-ODIN",
           "fidelity": 0.45,
           "notes": "Wanderer, magic-seeker, poetry"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_10"
         }
       ],
       "shadowDynamics": {
@@ -2324,7 +2337,8 @@
       "aliases": [
         "Matsu",
         "Tianhou (Empress of Heaven)",
-        "Lin Moniang"
+        "Lin Moniang",
+        "The Mazu"
       ],
       "domain": [
         "Sea",
@@ -2617,7 +2631,8 @@
       "aliases": [
         "Ch'ang O",
         "Lady of the Moon",
-        "Heng'e"
+        "Heng'e",
+        "The Chang'e"
       ],
       "domain": [
         "Moon",

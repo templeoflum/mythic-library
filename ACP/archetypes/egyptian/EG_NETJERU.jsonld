@@ -56,7 +56,8 @@
         "Re",
         "Ra-Horakhty",
         "Atum-Ra",
-        "Amun-Ra"
+        "Amun-Ra",
+        "The Ra"
       ],
       "epithets": [
         "Lord of the Sky",
@@ -334,7 +335,8 @@
         "Usir",
         "Wesir",
         "Onnophris",
-        "Lord of the Underworld"
+        "Lord of the Underworld",
+        "The Osiris"
       ],
       "epithets": [
         "Lord of the Underworld",
@@ -641,7 +643,8 @@
         "Aset",
         "Eset",
         "Iset",
-        "Great of Magic"
+        "Great of Magic",
+        "The Isis"
       ],
       "epithets": [
         "Great of Magic",
@@ -944,7 +947,8 @@
         "Hor",
         "Haroeris",
         "Harpocrates",
-        "The Distant One"
+        "The Distant One",
+        "The Horus"
       ],
       "epithets": [
         "The Distant One",
@@ -1212,7 +1216,8 @@
       "aliases": [
         "Seth",
         "Sutekh",
-        "Setesh"
+        "Setesh",
+        "The Set"
       ],
       "epithets": [
         "Lord of the Red Land",
@@ -1511,7 +1516,8 @@
       "aliases": [
         "Djehuty",
         "Tehuti",
-        "Hermes Trismegistus (syncretic)"
+        "Hermes Trismegistus (syncretic)",
+        "The Thoth"
       ],
       "epithets": [
         "Lord of Divine Words",
@@ -1788,7 +1794,8 @@
         "Anpu",
         "Inpu",
         "Inpw",
-        "Lord of the Sacred Land"
+        "Lord of the Sacred Land",
+        "The Anubis"
       ],
       "epithets": [
         "Lord of the Sacred Land",
@@ -2002,7 +2009,8 @@
       "@type": "Archetype",
       "name": "Ma'at",
       "aliases": [
-        "Maat"
+        "Maat",
+        "The Ma'at"
       ],
       "epithets": [
         "Lady of Truth",
@@ -2230,7 +2238,9 @@
         "Sakhmet",
         "Sachmis",
         "The Powerful One",
-        "Eye of Ra"
+        "Eye of Ra",
+        "Sachmet",
+        "The Sekhmet"
       ],
       "epithets": [
         "The Powerful One",
@@ -2497,7 +2507,9 @@
       "aliases": [
         "Het-Heru",
         "Het-Hert",
-        "Lady of the West"
+        "Lady of the West",
+        "Hwt-Hr",
+        "The Hathor"
       ],
       "epithets": [
         "Mistress of the West",
@@ -2739,7 +2751,8 @@
       "@type": "Archetype",
       "name": "Ptah",
       "aliases": [
-        "Peteh"
+        "Peteh",
+        "The Ptah"
       ],
       "epithets": [
         "Lord of Truth",
@@ -2946,7 +2959,8 @@
       "name": "Nephthys",
       "aliases": [
         "Nebthet",
-        "Nebet-Het"
+        "Nebet-Het",
+        "The Nephthys"
       ],
       "epithets": [
         "Mistress of the House",
@@ -3159,7 +3173,8 @@
       "name": "Apophis",
       "aliases": [
         "Apep",
-        "Apepi"
+        "Apepi",
+        "The Apophis"
       ],
       "epithets": [
         "The Evil Lizard",
@@ -3352,7 +3367,8 @@
       "name": "Geb",
       "aliases": [
         "Seb",
-        "Keb"
+        "Keb",
+        "The Geb"
       ],
       "epithets": [
         "Father of the Gods",
@@ -3556,7 +3572,8 @@
       "@type": "Archetype",
       "name": "Nut",
       "aliases": [
-        "Nuit"
+        "Nuit",
+        "The Nut"
       ],
       "epithets": [
         "She of a Thousand Souls",
@@ -3760,7 +3777,8 @@
       "name": "Sobek",
       "aliases": [
         "Sebek",
-        "Suchos"
+        "Suchos",
+        "The Sobek"
       ],
       "epithets": [
         "Lord of the Nile",
@@ -3931,7 +3949,9 @@
       "name": "Bastet",
       "aliases": [
         "Bast",
-        "Ubaste"
+        "Ubaste",
+        "Ubasti",
+        "The Bastet"
       ],
       "epithets": [
         "Lady of the East",

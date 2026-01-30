@@ -7,6 +7,50 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-01-29
+
+### Added - ACP Enrichment Phase 3 (Final)
+
+**Infrastructure Scripts:**
+- `scripts/enrich_phase3_aliases.py` - Aliases, correspondences, and description generation
+- `scripts/enrich_phase3_stubs.py` - Fix remaining stubs and relationship gaps
+- `scripts/fix_remaining_stubs.py` - Add spectral coordinates to astrology houses
+
+**Alias Enrichment:**
+- 586 aliases added (Roman equivalents, transliteration variants, epithets)
+- Greek↔Roman deity name mappings (Zeus/Jupiter, Athena/Minerva, etc.)
+- Norse↔Germanic variants (Odin/Wotan, Thor/Donar)
+- Egyptian transliterations (Ra/Re, Isis/Aset, Osiris/Usir)
+- Hindu Sanskrit variants (Vishnu/Narayana, Shiva/Mahadeva)
+
+**Correspondence Enrichment:**
+- 558 correspondences added (tarot, planet, element mappings)
+- Primordial-to-system correspondence mappings implemented
+- Cross-system symbolic links established
+
+**Description Generation:**
+- 325 descriptions generated for entries missing them
+- Template-based generation using primordial types
+- All entries now have descriptions
+
+**Completeness Results:**
+| Tier | Before | After | Change |
+|------|--------|-------|--------|
+| Complete (80%+) | 273 (29.1%) | 838 (88.1%) | +565 |
+| Rich (60-79%) | 597 (63.6%) | 65 (6.8%) | - |
+| Partial (40-59%) | 51 (5.4%) | 31 (3.3%) | -20 |
+| Stub (<40%) | 17 (1.8%) | 17 (1.8%) | 0 |
+
+**94.9% of entries now at "rich" tier or above**
+
+**Mean completeness score:** 76% → 84.5%
+
+### Changed
+- Astrology houses now have full spectral coordinates
+- Greek deity aspects (Aphrodite-Anadyomene) enriched with coordinates
+- Total archetypes: 938 → 951 (houses now fully countable)
+- Total relationships: 3,541 → 3,574
+
 ## [0.2.2] - 2026-01-29
 
 ### Added - ACP Enrichment Phase 2

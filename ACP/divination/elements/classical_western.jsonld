@@ -226,7 +226,16 @@
         "elements",
         "fire",
         "hearth"
-      ]
+      ],
+      "aliases": [
+        "The Fire"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Fire represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "element:water",
@@ -431,7 +440,16 @@
         "elements",
         "sea",
         "water"
-      ]
+      ],
+      "aliases": [
+        "The Water"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Water is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "element:air",
@@ -648,7 +666,16 @@
         "air",
         "divination",
         "elements"
-      ]
+      ],
+      "aliases": [
+        "The Air"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Air embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "element:earth",
@@ -864,7 +891,16 @@
         "divination",
         "earth",
         "elements"
-      ]
+      ],
+      "aliases": [
+        "The Earth"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Earth embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "element:aether",
@@ -959,7 +995,11 @@
       "domains": [
         "divination",
         "elements"
-      ]
+      ],
+      "aliases": [
+        "The Aether"
+      ],
+      "description": "Aether (Quintessence) is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {

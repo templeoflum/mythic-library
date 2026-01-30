@@ -50,21 +50,10 @@
       "belongsToSystem": "system:roman",
       "description": "Jupiter Optimus Maximus, king of the Roman gods, guardian of the state, guarantor of oaths and treaties. Unlike Zeus, Jupiter is primarily a civic sovereign whose authority manifests through law, augury, and institutional legitimacy rather than personal dominion and erratic passion.",
       "aliases": [
-        {
-          "name": "Jove",
-          "system": "Roman",
-          "fidelity": 1.0
-        },
-        {
-          "name": "Jupiter Optimus Maximus",
-          "system": "Roman",
-          "fidelity": 1.0
-        },
-        {
-          "name": "Diespiter",
-          "system": "Archaic Roman",
-          "fidelity": 0.9
-        }
+        "Jove",
+        "Jupiter Optimus Maximus",
+        "Diespiter",
+        "The Jupiter"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.1,
@@ -172,7 +161,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:RO-JUNO",
@@ -182,17 +176,9 @@
       "belongsToSystem": "system:roman",
       "description": "Queen of the gods, protector of the Roman state, guardian of women and marriage. Juno Regina watched over the Roman people collectively. While Hera is defined by marital jealousy, Juno emphasizes civic protection and the sanctity of institutional bonds.",
       "aliases": [
-        {
-          "name": "Juno Regina",
-          "system": "Roman",
-          "fidelity": 1.0
-        },
-        {
-          "name": "Juno Moneta",
-          "system": "Roman",
-          "fidelity": 0.9,
-          "aspect": "protector of finances"
-        }
+        "Juno Regina",
+        "Juno Moneta",
+        "The Juno"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.1,
@@ -280,7 +266,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:RO-NEPTUNE",
@@ -290,11 +281,8 @@
       "belongsToSystem": "system:roman",
       "description": "God of the sea and freshwater. In early Roman religion, Neptune was an agricultural water deity before absorbing Poseidon's maritime attributes. Retains a more ordered, less wrathful character than his Greek counterpart.",
       "aliases": [
-        {
-          "name": "Neptunus",
-          "system": "Archaic Roman",
-          "fidelity": 1.0
-        }
+        "Neptunus",
+        "The Neptune"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -381,7 +369,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:RO-MINERVA",
@@ -391,12 +384,8 @@
       "belongsToSystem": "system:roman",
       "description": "Goddess of wisdom, strategic warfare, crafts, and trade. Member of the Capitoline Triad with Jupiter and Juno. Minerva places greater emphasis on practical craft (artisans, physicians, teachers) alongside Athena's strategic wisdom.",
       "aliases": [
-        {
-          "name": "Minerva Medica",
-          "system": "Roman",
-          "fidelity": 0.9,
-          "aspect": "patroness of medicine"
-        }
+        "Minerva Medica",
+        "The Minerva"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.08,
@@ -494,17 +483,9 @@
       "belongsToSystem": "system:roman",
       "description": "God of the underworld and wealth (from Greek Plouton, 'the wealthy one'). Also known as Dis Pater. Less dread-inspiring than Hades; the Roman conception emphasizes the wealth stored in the earth and the orderly passage of the dead.",
       "aliases": [
-        {
-          "name": "Dis Pater",
-          "system": "Roman",
-          "fidelity": 0.95
-        },
-        {
-          "name": "Orcus",
-          "system": "Roman",
-          "fidelity": 0.8,
-          "aspect": "punisher of the dead"
-        }
+        "Dis Pater",
+        "Orcus",
+        "The Pluto"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.2,
@@ -585,18 +566,9 @@
       "belongsToSystem": "system:roman",
       "description": "Goddess of love, beauty, fertility, and victory. Mother of Aeneas and thus ancestress of Rome (Venus Genetrix). Unlike Aphrodite's emphasis on erotic passion, Venus carries deep civic and ancestral significance as the divine progenitor of the Roman people.",
       "aliases": [
-        {
-          "name": "Venus Genetrix",
-          "system": "Roman",
-          "fidelity": 1.0,
-          "aspect": "ancestress of Rome"
-        },
-        {
-          "name": "Venus Victrix",
-          "system": "Roman",
-          "fidelity": 0.9,
-          "aspect": "goddess of victory"
-        }
+        "Venus Genetrix",
+        "Venus Victrix",
+        "The Venus"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
@@ -697,7 +669,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:RO-MARS",
@@ -707,23 +684,10 @@
       "belongsToSystem": "system:roman",
       "description": "God of war, agriculture, and civic guardianship. Father of Romulus and Remus, thus father of Rome. Unlike the despised Ares, Mars was one of the most important and honored Roman gods — a protector of fields and borders, patron of soldiers who fight for civic duty, not bloodlust.",
       "aliases": [
-        {
-          "name": "Mars Ultor",
-          "system": "Roman",
-          "fidelity": 1.0,
-          "aspect": "Mars the Avenger"
-        },
-        {
-          "name": "Mars Pater",
-          "system": "Roman",
-          "fidelity": 0.95,
-          "aspect": "father Mars, agricultural guardian"
-        },
-        {
-          "name": "Mavors",
-          "system": "Archaic Roman",
-          "fidelity": 0.9
-        }
+        "Mars Ultor",
+        "Mars Pater",
+        "Mavors",
+        "The Mars"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.3,
@@ -822,7 +786,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:RO-MERCURY",
@@ -832,11 +801,8 @@
       "belongsToSystem": "system:roman",
       "description": "God of commerce, trade, communication, and travelers. While Hermes emphasizes trickery and psychopomp roles, Roman Mercury centers on commercial enterprise and reliable communication — the god of merchants and the marketplace.",
       "aliases": [
-        {
-          "name": "Mercurius",
-          "system": "Archaic Roman",
-          "fidelity": 1.0
-        }
+        "Mercurius",
+        "The Mercury"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -928,7 +894,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "arch:RO-SATURN",
@@ -938,11 +909,8 @@
       "belongsToSystem": "system:roman",
       "description": "God of agriculture, time, and the Golden Age. While Greek Cronus is the devouring father overthrown by Zeus, Roman Saturn ruled the Golden Age of peace and plenty. The Saturnalia festival celebrated this utopian past with role-reversals and gift-giving.",
       "aliases": [
-        {
-          "name": "Saturnus",
-          "system": "Archaic Roman",
-          "fidelity": 1.0
-        }
+        "Saturnus",
+        "The Saturn"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -1030,7 +998,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "arch:RO-HERCULES",
@@ -1040,12 +1013,8 @@
       "belongsToSystem": "system:roman",
       "description": "Deified hero, patron of commerce, strength, and good faith. Roman Hercules is more civilized than Greek Heracles — a patron of merchants and travelers, honored at the Ara Maxima for his defeat of Cacus. Less tragic madness, more institutional heroism.",
       "aliases": [
-        {
-          "name": "Hercules Invictus",
-          "system": "Roman",
-          "fidelity": 1.0,
-          "aspect": "the unconquered"
-        }
+        "Hercules Invictus",
+        "The Hercules"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
@@ -1132,7 +1101,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     }
   ]
 }

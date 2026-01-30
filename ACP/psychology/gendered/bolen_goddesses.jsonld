@@ -106,7 +106,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Artemis"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "bolen:athena",
@@ -204,7 +212,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Athena"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "bolen:hestia",
@@ -296,7 +312,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Hestia"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "bolen:hera",
@@ -390,7 +414,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Hera"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "bolen:demeter",
@@ -488,7 +520,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Demeter"
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "bolen:persephone",
@@ -582,7 +622,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Persephone"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "bolen:aphrodite",
@@ -678,7 +726,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Aphrodite"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     }
   ],
   "systemRelationships": {

@@ -143,7 +143,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      }
     },
     {
       "@id": "arch:VO-DAMBALLAH",
@@ -264,7 +269,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:VO-AYIDA-WEDO",
@@ -356,7 +366,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:VO-OGOU",
@@ -476,7 +491,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:VO-ERZULIE-FREDA",
@@ -587,7 +607,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:VO-ERZULIE-DANTOR",
@@ -689,7 +714,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:VO-BARON-SAMEDI",
@@ -801,7 +831,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      }
     },
     {
       "@id": "arch:VO-MAMAN-BRIGITTE",
@@ -900,7 +935,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "arch:VO-GHEDE-NIBO",
@@ -994,7 +1034,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      }
     },
     {
       "@id": "arch:VO-AGWE",
@@ -1099,7 +1144,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Agwe"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:VO-LA-SIRENE",
@@ -1201,7 +1254,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:VO-SIMBI",
@@ -1295,7 +1353,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Simbi"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "arch:VO-LOKO",
@@ -1390,7 +1456,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:VO-AYIZAN",
@@ -1484,7 +1555,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Ayizan"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "arch:VO-MARASA",
@@ -1570,7 +1649,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Marasa"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:VO-DANBALA-LA-FLAMBEAU",
@@ -1660,7 +1747,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:VO-EZILI-JE-ROUGE",
@@ -1751,7 +1843,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "arch:VO-TI-JEAN-PETRO",
@@ -1847,7 +1944,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     }
   ],
   "systemRelationships": {

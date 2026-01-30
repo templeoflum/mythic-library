@@ -3,9 +3,9 @@
 A semantic framework for mapping archetypes across mythology, psychology, divination, and culture using an 8-dimensional coordinate system.
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
-[![Archetypes](https://img.shields.io/badge/archetypes-938-green)]()
-[![Completeness](https://img.shields.io/badge/completeness-93%25%20rich+-brightgreen)]()
-[![Version](https://img.shields.io/badge/version-0.2.2-yellow)]()
+[![Archetypes](https://img.shields.io/badge/archetypes-951-green)]()
+[![Completeness](https://img.shields.io/badge/completeness-95%25%20rich+-brightgreen)]()
+[![Version](https://img.shields.io/badge/version-0.3.0-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 ---
@@ -366,19 +366,24 @@ The system enforces coherence:
 - [x] **Tarot Minor Arcana**: Fully enriched with Tier 3 fields (56 cards)
 - [x] **Mean Score**: 64% (up from 44%)
 
-### 0.2.2 ✅ Enrichment Phase 2 — Current
+### 0.2.2 ✅ Enrichment Phase 2
 - [x] **culturalEchoes**: 1,840 cross-system links (98% → 5% missing)
-- [x] **Bidirectional relationships**: 951 reverse links added (934 → 59 missing)
-- [x] **Domain vocabulary**: 1,680 domains added, 70 normalized
-- [x] **Completeness**: 29% complete (273), 64% rich (597), 5% partial (51), 2% stub (17)
-- [x] **Target achieved**: 93% entries at "rich" tier or above (target was 80%)
+- [x] **Bidirectional relationships**: 951 reverse links added
+- [x] **Domain vocabulary**: 1,680 domains added
 - [x] **Mean Score**: 76% (up from 64%)
 
-### 0.3.0 — Final Enrichment
-- [ ] Add aliases for remaining entries (697 missing)
-- [ ] Add correspondences for remaining entries (614 missing)
-- [ ] Fix remaining 59 bidirectional relationship gaps
-- [ ] Reduce stubs to zero
+### 0.3.0 ✅ Enrichment Phase 3 — Current
+- [x] **Aliases**: 586 added (Roman, Germanic, Sanskrit variants)
+- [x] **Correspondences**: 558 added (tarot, planet, element mappings)
+- [x] **Descriptions**: 325 generated for all missing entries
+- [x] **Completeness**: 88% complete (838), 7% rich (65), 3% partial (31)
+- [x] **Target exceeded**: 95% entries at "rich" tier or above
+- [x] **Mean Score**: 84.5% (up from 76%)
+
+### 0.4.0 — Polish & API
+- [ ] Expand domain vocabulary (1,274 unknown domain warnings)
+- [ ] Add missing primordials (storyteller, culture-hero, guardian, etc.)
+- [ ] Fix remaining orphan relationship targets (369)
 
 ### 1.0.0 — Production Release
 - [ ] Complete ~1,200 archetype database

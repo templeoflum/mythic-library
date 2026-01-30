@@ -105,7 +105,12 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "ocean:conscientiousness",
@@ -205,7 +210,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Conscientiousness"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     },
     {
       "@id": "ocean:extraversion",
@@ -304,7 +317,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Extraversion"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "ocean:agreeableness",
@@ -404,7 +425,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Agreeableness"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "ocean:neuroticism",
@@ -503,7 +532,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Neuroticism"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      }
     }
   ],
   "systemRelationships": {

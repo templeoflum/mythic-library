@@ -19,7 +19,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "First House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "first"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.25,
+        "active-receptive": 0.2,
+        "individual-collective": 0.15,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      }
     },
     {
       "@id": "astrology:house_2",
@@ -31,7 +61,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Second House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "second"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.3,
+        "active-receptive": 0.55,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.4
+      }
     },
     {
       "@id": "astrology:house_3",
@@ -43,7 +103,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Third House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "third",
+        "archetype",
+        "symbol",
+        "house"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.3,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.4
+      }
     },
     {
       "@id": "astrology:house_4",
@@ -55,7 +145,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Fourth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "fourth"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.45,
+        "active-receptive": 0.7,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.55
+      }
     },
     {
       "@id": "astrology:house_5",
@@ -67,7 +187,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Fifth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "fifth"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.2,
+        "light-shadow": 0.25,
+        "active-receptive": 0.25,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.3
+      }
     },
     {
       "@id": "astrology:house_6",
@@ -79,7 +229,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Sixth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "sixth"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.2,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.5
+      }
     },
     {
       "@id": "astrology:house_7",
@@ -91,7 +271,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Seventh House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "seventh"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.3,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.55
+      }
     },
     {
       "@id": "astrology:house_8",
@@ -103,7 +313,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Eighth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "eighth",
+        "archetype",
+        "symbol"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.5,
+        "creation-destruction": 0.7,
+        "light-shadow": 0.75,
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.8,
+        "voluntary-fated": 0.7
+      }
     },
     {
       "@id": "astrology:house_9",
@@ -115,7 +355,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Ninth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "ninth",
+        "archetype",
+        "symbol",
+        "house"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.25,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.4
+      }
     },
     {
       "@id": "astrology:house_10",
@@ -127,7 +397,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Tenth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "tenth",
+        "archetype",
+        "symbol",
+        "house"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.2,
+        "active-receptive": 0.25,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.2,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      }
     },
     {
       "@id": "astrology:house_11",
@@ -139,7 +439,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Eleventh House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "eleventh"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
+        "active-receptive": 0.45,
+        "individual-collective": 0.8,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.4
+      }
     },
     {
       "@id": "astrology:house_12",
@@ -151,7 +481,37 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "description": "Twelfth House is an archetypal figure in the mythological tradition.",
+      "instantiates": [
+        {
+          "primordial": "primordial:self",
+          "weight": 0.5
+        }
+      ],
+      "keywords": [
+        "house",
+        "archetype",
+        "symbol",
+        "twelfth"
+      ],
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:self",
+          "note": "Primary archetype instantiation"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.6,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.85,
+        "active-receptive": 0.8,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.8
+      }
     }
   ],
   "note": "Houses don't have spectral coordinates - they are contexts that modify archetypal expression, not archetypes themselves.",

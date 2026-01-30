@@ -165,7 +165,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Fool is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:magician",
@@ -307,7 +313,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Magician embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "tarot:high_priestess",
@@ -431,7 +443,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      },
+      "description": "The High Priestess is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:empress",
@@ -576,7 +594,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "The Empress is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:emperor",
@@ -708,7 +732,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "The Emperor represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "tarot:hierophant",
@@ -809,7 +839,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "The Hierophant is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:lovers",
@@ -937,7 +973,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "The Lovers embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "tarot:chariot",
@@ -1079,7 +1121,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "The Chariot embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "tarot:strength",
@@ -1202,7 +1250,16 @@
         "divination",
         "strength",
         "tarot"
-      ]
+      ],
+      "aliases": [
+        "The Strength"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Strength embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "tarot:hermit",
@@ -1331,7 +1388,8 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "description": "The Hermit is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:wheel_of_fortune",
@@ -1439,7 +1497,13 @@
         "divination",
         "fate",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Wheel of Fortune represents the wisdom of age, knowledge of mysteries, and power over life's transitions."
     },
     {
       "@id": "tarot:justice",
@@ -1573,7 +1637,16 @@
         "divination",
         "justice",
         "tarot"
-      ]
+      ],
+      "aliases": [
+        "The Justice"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Justice represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "tarot:hanged_man",
@@ -1686,7 +1759,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      },
+      "description": "The Hanged Man exists at the margins, representing those excluded from society who gain unique perspective."
     },
     {
       "@id": "tarot:death",
@@ -1818,7 +1897,16 @@
         "death",
         "divination",
         "tarot"
-      ]
+      ],
+      "aliases": [
+        "The Death"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "Death embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "tarot:temperance",
@@ -1921,7 +2009,16 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "aliases": [
+        "The Temperance"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Temperance represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     },
     {
       "@id": "tarot:devil",
@@ -2027,7 +2124,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Devil is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:tower",
@@ -2150,7 +2253,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "The Tower embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "tarot:star",
@@ -2258,7 +2367,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "The Star represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     },
     {
       "@id": "tarot:moon",
@@ -2400,7 +2515,13 @@
         "divination",
         "moon",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "The Moon is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:sun",
@@ -2547,7 +2668,13 @@
         "divination",
         "sun",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "The Sun is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "tarot:judgement",
@@ -2649,7 +2776,16 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "aliases": [
+        "The Judgement"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Judgement serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "tarot:world",
@@ -2792,7 +2928,13 @@
       "domains": [
         "divination",
         "tarot"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "The World is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {

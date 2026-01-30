@@ -355,7 +355,12 @@
         "dreams",
         "jungian",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "jungian:animus",
@@ -450,7 +455,12 @@
         "dreams",
         "jungian",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "jungian:persona",
@@ -529,7 +539,12 @@
       "domains": [
         "jungian",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "jungian:wise_old_man",
@@ -792,7 +807,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "jungian:child",
@@ -980,7 +1000,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "jungian:maiden",
@@ -1060,7 +1085,12 @@
       "domains": [
         "jungian",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "jungian:crone",
@@ -1141,7 +1171,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     }
   ],
   "systemRelationships": {

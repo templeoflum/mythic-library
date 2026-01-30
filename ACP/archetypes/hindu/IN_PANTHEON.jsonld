@@ -59,7 +59,8 @@
         "Vidhi",
         "Svayambhu",
         "The Creator",
-        "Prajapati"
+        "Prajapati",
+        "The Brahma"
       ],
       "epithets": [
         "The Creator",
@@ -249,7 +250,8 @@
         "Hari",
         "Madhava",
         "Kesava",
-        "The Preserver"
+        "The Preserver",
+        "The Vishnu"
       ],
       "epithets": [
         "The Preserver",
@@ -501,7 +503,8 @@
         "Rudra",
         "Nataraja",
         "Shankara",
-        "The Destroyer"
+        "The Destroyer",
+        "The Shiva"
       ],
       "epithets": [
         "The Destroyer",
@@ -810,7 +813,8 @@
       "aliases": [
         "Devi",
         "Mahadevi",
-        "Adi Parashakti"
+        "Adi Parashakti",
+        "The Shakti"
       ],
       "epithets": [
         "Divine Energy",
@@ -1010,7 +1014,9 @@
       "aliases": [
         "Mahishasuramardini",
         "Chandika",
-        "Ambika"
+        "Ambika",
+        "Devi",
+        "The Durga"
       ],
       "epithets": [
         "The Invincible",
@@ -1209,7 +1215,9 @@
       "aliases": [
         "Kalika",
         "Mahakali",
-        "Shyama"
+        "Shyama",
+        "Dark Mother",
+        "The Kali"
       ],
       "epithets": [
         "The Black One",
@@ -1455,7 +1463,8 @@
         "Shri",
         "Mahalakshmi",
         "Kamala",
-        "Goddess of Fortune"
+        "Goddess of Fortune",
+        "The Lakshmi"
       ],
       "epithets": [
         "Goddess of Wealth",
@@ -1666,7 +1675,8 @@
         "Bharati",
         "Sharada",
         "Goddess of Learning",
-        "Vani"
+        "Vani",
+        "The Saraswati"
       ],
       "epithets": [
         "Goddess of Knowledge",
@@ -1861,7 +1871,9 @@
       "aliases": [
         "Uma",
         "Gauri",
-        "Himavati"
+        "Himavati",
+        "Shakti",
+        "The Parvati"
       ],
       "epithets": [
         "Daughter of the Mountain",
@@ -2075,7 +2087,8 @@
         "Ganapati",
         "Vinayaka",
         "Vighnaharta",
-        "Elephant-Headed God"
+        "Elephant-Headed God",
+        "The Ganesha"
       ],
       "epithets": [
         "Remover of Obstacles",
@@ -2269,7 +2282,8 @@
         "Vasudeva",
         "Govinda",
         "Madhava",
-        "Keshava"
+        "Keshava",
+        "The Krishna"
       ],
       "epithets": [
         "The Dark One",
@@ -2546,7 +2560,8 @@
       "aliases": [
         "Ramachandra",
         "Raghava",
-        "Dasharathi"
+        "Dasharathi",
+        "The Rama"
       ],
       "epithets": [
         "Maryada Purushottama (Perfect Man)",
@@ -2745,7 +2760,8 @@
       "aliases": [
         "Anjaneya",
         "Maruti",
-        "Bajrangbali"
+        "Bajrangbali",
+        "The Hanuman"
       ],
       "epithets": [
         "Son of the Wind",
@@ -2929,7 +2945,9 @@
         "Vajrapani",
         "Purandara",
         "King of the Devas",
-        "Lord of Heaven"
+        "Lord of Heaven",
+        "King of Devas",
+        "The Indra"
       ],
       "epithets": [
         "King of the Gods",
@@ -3192,7 +3210,8 @@
       "aliases": [
         "Dharmaraja",
         "Kala",
-        "Mrityu"
+        "Mrityu",
+        "The Yama"
       ],
       "epithets": [
         "Lord of Death",
@@ -3381,7 +3400,8 @@
       "aliases": [
         "Vahni",
         "Anala",
-        "Hutashana"
+        "Hutashana",
+        "The Agni"
       ],
       "epithets": [
         "Lord of Fire",
@@ -3573,7 +3593,8 @@
       "aliases": [
         "Chandra",
         "Indu",
-        "Nishakar"
+        "Nishakar",
+        "The Soma"
       ],
       "epithets": [
         "Lord of Plants",
@@ -3761,7 +3782,8 @@
       "name": "Varuna",
       "aliases": [
         "Pracetas",
-        "Jalapati"
+        "Jalapati",
+        "The Varuna"
       ],
       "epithets": [
         "Lord of Waters",

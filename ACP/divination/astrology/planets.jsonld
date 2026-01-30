@@ -127,7 +127,16 @@
         "astrology",
         "divination",
         "sun"
-      ]
+      ],
+      "aliases": [
+        "The Sun"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Sun is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "astrology:moon",
@@ -245,7 +254,11 @@
         "astrology",
         "divination",
         "moon"
-      ]
+      ],
+      "aliases": [
+        "The Moon"
+      ],
+      "description": "Moon is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "astrology:mercury",
@@ -370,7 +383,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Mercury"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Mercury is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "astrology:venus",
@@ -491,7 +513,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Venus"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Venus embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "astrology:mars",
@@ -615,7 +646,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Mars"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Mars represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "astrology:jupiter",
@@ -723,7 +763,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Jupiter"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Jupiter represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "astrology:saturn",
@@ -841,7 +890,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Saturn"
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Saturn is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "astrology:uranus",
@@ -949,7 +1007,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Uranus"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      },
+      "description": "Uranus challenges established order, breaks boundaries, and catalyzes revolutionary change."
     },
     {
       "@id": "astrology:neptune",
@@ -1068,7 +1135,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Neptune"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Neptune serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "astrology:pluto",
@@ -1171,7 +1247,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Pluto"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "Pluto embodies the necessary forces of destruction and transformation that clear the way for renewal."
     }
   ],
   "systemRelationships": {

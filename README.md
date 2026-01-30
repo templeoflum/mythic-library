@@ -12,7 +12,7 @@ An empirical corpus of 132 public domain mythological texts across 32 traditions
 |-----------|-------|
 | Source texts | 132 across 32 traditions (822 MB raw corpus) |
 | Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 149 motifs |
-| ACP archetypes | 938 across 60+ systems, 22 primordials, 8D coordinates (93% rich+) |
+| ACP archetypes | 951 across 60+ systems, 22 primordials, 8D coordinates (95% rich+) |
 | Validation | 10 tests across 5 tiers (A/B/C/D/E), all core tiers PASS |
 | Explorer | Browser-based Miroglyph with Atlas, Codex, and Chronicle views |
 

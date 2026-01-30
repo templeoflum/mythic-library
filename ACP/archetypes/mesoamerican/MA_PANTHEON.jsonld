@@ -70,7 +70,8 @@
         "Kukulkan (Maya)",
         "Q'uq'umatz (K'iche')",
         "Ce Acatl Topiltzin",
-        "Ehecatl (wind aspect)"
+        "Ehecatl (wind aspect)",
+        "The Quetzalcoatl"
       ],
       "domain": [
         "Wind",
@@ -281,7 +282,8 @@
         "Ipalnemoani",
         "Night Wind",
         "Yaotl (Enemy)",
-        "Lord of the Night"
+        "Lord of the Night",
+        "The Tezcatlipoca"
       ],
       "domain": [
         "Night",
@@ -463,7 +465,8 @@
       "aliases": [
         "Left-Handed Hummingbird",
         "Blue Hummingbird on the Left",
-        "Portent"
+        "Portent",
+        "The Huitzilopochtli"
       ],
       "domain": [
         "Sun",
@@ -623,7 +626,8 @@
       "aliases": [
         "He Who Makes Things Sprout",
         "Chaac (Maya)",
-        "Cocijo (Zapotec)"
+        "Cocijo (Zapotec)",
+        "The Tlaloc"
       ],
       "domain": [
         "Rain",
@@ -780,7 +784,8 @@
       "name": "Chalchiuhtlicue",
       "aliases": [
         "She of the Jade Skirt",
-        "Lady Precious Green"
+        "Lady Precious Green",
+        "The Chalchiuhtlicue"
       ],
       "domain": [
         "Rivers",
@@ -923,7 +928,8 @@
       "aliases": [
         "Serpent Skirt",
         "Mother of Gods",
-        "Toci (Our Grandmother)"
+        "Toci (Our Grandmother)",
+        "The Coatlicue"
       ],
       "domain": [
         "Earth",
@@ -1076,7 +1082,8 @@
       "name": "Coyolxauhqui",
       "aliases": [
         "Painted with Bells",
-        "Moon Goddess"
+        "Moon Goddess",
+        "The Coyolxauhqui"
       ],
       "domain": [
         "Moon",
@@ -1223,7 +1230,8 @@
       "name": "Mictlantecuhtli",
       "aliases": [
         "Lord of Mictlan",
-        "Lord of the Dead"
+        "Lord of the Dead",
+        "The Mictlantecuhtli"
       ],
       "domain": [
         "Death",
@@ -1387,7 +1395,8 @@
       "aliases": [
         "Lady of the Dead",
         "Queen of Mictlan",
-        "La Catrina (modern)"
+        "La Catrina (modern)",
+        "The Mictecacihuatl"
       ],
       "domain": [
         "Death",
@@ -1682,7 +1691,8 @@
       "name": "Tonatiuh",
       "aliases": [
         "Movement of the Sun",
-        "Fifth Sun"
+        "Fifth Sun",
+        "The Tonatiuh"
       ],
       "domain": [
         "Sun",
@@ -1830,7 +1840,8 @@
       "name": "Nanahuatzin",
       "aliases": [
         "The Pimpled One",
-        "The Humble One"
+        "The Humble One",
+        "The Nanahuatzin"
       ],
       "domain": [
         "Self-Sacrifice",
@@ -1987,7 +1998,8 @@
       "aliases": [
         "Filth Deity",
         "Eater of Sins",
-        "Ixcuina"
+        "Ixcuina",
+        "The Tlazolteotl"
       ],
       "domain": [
         "Sin",
@@ -2052,6 +2064,10 @@
           "target": "arch:AF-OYA",
           "fidelity": 0.4,
           "notes": "Transformation, death-rebirth aspects"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_59"
         }
       ],
       "shadowDynamics": {
@@ -2130,7 +2146,8 @@
       "name": "Xochiquetzal",
       "aliases": [
         "Precious Feather Flower",
-        "Goddess of Beauty"
+        "Goddess of Beauty",
+        "The Xochiquetzal"
       ],
       "domain": [
         "Beauty",
@@ -2441,7 +2458,8 @@
       "aliases": [
         "Lizard House",
         "God D",
-        "Zamná"
+        "Zamná",
+        "The Itzamná"
       ],
       "domain": [
         "Sky",

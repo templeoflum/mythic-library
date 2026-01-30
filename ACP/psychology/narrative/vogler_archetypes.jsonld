@@ -124,7 +124,13 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "The Hero embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "vogler:mentor",
@@ -229,7 +235,13 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Mentor is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "vogler:threshold_guardian",
@@ -334,7 +346,13 @@
         "protection",
         "psychology",
         "threshold"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "The Threshold Guardian represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "vogler:herald",
@@ -438,7 +456,13 @@
         "messenger",
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "The Herald serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "vogler:shapeshifter",
@@ -537,7 +561,13 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Shapeshifter is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "vogler:shadow",
@@ -628,7 +658,8 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "description": "The Shadow is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "vogler:ally",
@@ -714,7 +745,13 @@
       "domains": [
         "narrative",
         "psychology"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "The Ally is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "vogler:trickster",
@@ -815,7 +852,13 @@
         "narrative",
         "psychology",
         "trickster"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Trickster is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     }
   ],
   "systemRelationships": {

@@ -66,7 +66,8 @@
         "Olorun",
         "Olofi",
         "Olofin",
-        "The Owner of Heaven"
+        "The Owner of Heaven",
+        "The Olodumare"
       ],
       "domain": [
         "Supreme Being",
@@ -209,7 +210,8 @@
       "aliases": [
         "Oxalá (Candomblé)",
         "Our Lady of Mercy (Santería sync)",
-        "King of White Cloth"
+        "King of White Cloth",
+        "The Obatala"
       ],
       "domain": [
         "Creation",
@@ -394,7 +396,8 @@
         "Exu (Candomblé)",
         "Papa Legba (Vodou)",
         "The Trickster",
-        "Elegua (Santería)"
+        "Elegua (Santería)",
+        "The Eshu"
       ],
       "domain": [
         "Crossroads",
@@ -606,7 +609,8 @@
         "Ogou (Vodou)",
         "Saint Peter/James (sync)",
         "Ogún (Santería)",
-        "Saint George (sync)"
+        "Saint George (sync)",
+        "The Ogun"
       ],
       "domain": [
         "Iron",
@@ -785,7 +789,8 @@
         "Xangô (Candomblé)",
         "Saint Barbara (sync)",
         "Fourth Alafin of Oyo",
-        "Changó (Santería)"
+        "Changó (Santería)",
+        "The Shango"
       ],
       "domain": [
         "Thunder",
@@ -1000,7 +1005,8 @@
         "Oyá",
         "Yansa",
         "Iansã (Candomblé)",
-        "Our Lady of Candelaria (sync)"
+        "Our Lady of Candelaria (sync)",
+        "The Oya"
       ],
       "domain": [
         "Wind",
@@ -1172,7 +1178,8 @@
         "Iemanjá",
         "La Sirene (Vodou)",
         "Our Lady of Regla (sync)",
-        "Yemayá (Santería)"
+        "Yemayá (Santería)",
+        "The Yemoja"
       ],
       "domain": [
         "Ocean",
@@ -1348,7 +1355,8 @@
         "Oxum (Candomblé)",
         "Erzulie Freda (Vodou)",
         "Our Lady of Charity (sync)",
-        "Ochún (Santería)"
+        "Ochún (Santería)",
+        "The Oshun"
       ],
       "domain": [
         "Fresh Water",
@@ -1547,7 +1555,8 @@
         "Orula",
         "Ifá",
         "Saint Francis of Assisi (sync)",
-        "Witness to Destiny"
+        "Witness to Destiny",
+        "The Orunmila"
       ],
       "domain": [
         "Divination",
@@ -1708,7 +1717,8 @@
       "name": "Olokun",
       "aliases": [
         "Owner of the Ocean",
-        "Ruler of the Deep"
+        "Ruler of the Deep",
+        "The Olokun"
       ],
       "domain": [
         "Ocean Depths",
@@ -1873,7 +1883,8 @@
         "Obaluaiyê",
         "Omolu (Candomblé)",
         "Shopona",
-        "Saint Lazarus (sync)"
+        "Saint Lazarus (sync)",
+        "The Babalú-Ayé"
       ],
       "domain": [
         "Disease",
@@ -2030,7 +2041,8 @@
       "name": "Obba",
       "aliases": [
         "Oba",
-        "Saint Catherine of Siena (sync)"
+        "Saint Catherine of Siena (sync)",
+        "The Obba"
       ],
       "domain": [
         "Marriage",
@@ -2336,7 +2348,8 @@
       "name": "Oduduwa",
       "aliases": [
         "Odudua",
-        "Founder of Ile-Ife"
+        "Founder of Ile-Ife",
+        "The Oduduwa"
       ],
       "domain": [
         "Earth",
@@ -2477,7 +2490,8 @@
       "aliases": [
         "Ossain",
         "Osain",
-        "Saint Joseph/Sylvester (sync)"
+        "Saint Joseph/Sylvester (sync)",
+        "The Osanyin"
       ],
       "domain": [
         "Herbs",
@@ -2624,7 +2638,8 @@
       "name": "Aganju",
       "aliases": [
         "Aganyu",
-        "Saint Christopher (sync)"
+        "Saint Christopher (sync)",
+        "The Aganju"
       ],
       "domain": [
         "Volcanoes",
@@ -2771,7 +2786,8 @@
         "Ananse",
         "Kwaku Ananse",
         "Mr. Spider",
-        "Aunt Nancy (Caribbean)"
+        "Aunt Nancy (Caribbean)",
+        "The Anansi"
       ],
       "epithets": [
         "The Spider",

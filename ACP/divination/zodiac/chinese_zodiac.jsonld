@@ -105,7 +105,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Rat"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Rat (Shu) is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "chinese:ox",
@@ -203,7 +212,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Ox"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Ox (Niu) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "chinese:tiger",
@@ -301,7 +319,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Tiger"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Tiger (Hu) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "chinese:rabbit",
@@ -398,7 +425,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Rabbit"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      },
+      "description": "Rabbit (Tu) embodies youthful vitality, purity, and the potential of new growth."
     },
     {
       "@id": "chinese:dragon",
@@ -497,7 +533,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Dragon"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Dragon (Long) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "chinese:snake",
@@ -594,7 +639,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Snake"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Snake (She) represents wisdom, knowledge, and guidance, serving as a teacher and keeper of sacred traditions."
     },
     {
       "@id": "chinese:horse",
@@ -692,7 +746,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Horse"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Horse (Ma) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "chinese:goat",
@@ -788,7 +851,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Goat/Sheep"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Goat/Sheep (Yang) represents the creative principle, the power to bring new forms and realities into being."
     },
     {
       "@id": "chinese:monkey",
@@ -892,7 +964,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Monkey"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Monkey (Hou) is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "chinese:rooster",
@@ -988,7 +1069,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Rooster"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Rooster (Ji) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "chinese:dog",
@@ -1085,7 +1175,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Dog"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Dog (Gou) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "chinese:pig",
@@ -1146,6 +1245,10 @@
           "type": "ANTAGONIST",
           "target": "chinese:snake",
           "note": "Clash"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_27"
         }
       ],
       "narrativeRoles": [
@@ -1182,7 +1285,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Pig"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Pig (Zhu) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     }
   ],
   "systemRelationships": {

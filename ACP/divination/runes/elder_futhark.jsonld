@@ -97,7 +97,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Fehu"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Fehu represents the creative principle, the power to bring new forms and realities into being."
     },
     {
       "@id": "rune:uruz",
@@ -180,7 +189,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Uruz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Uruz represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "rune:thurisaz",
@@ -275,7 +293,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Thurisaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "Thurisaz embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "rune:ansuz",
@@ -370,7 +397,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Ansuz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Ansuz embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "rune:raidho",
@@ -456,7 +492,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Raidho"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Raidho embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "rune:kenaz",
@@ -553,7 +598,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Kenaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Kenaz embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "rune:gebo",
@@ -643,7 +697,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Gebo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Gebo embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "rune:wunjo",
@@ -726,7 +789,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Wunjo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Wunjo is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:hagalaz",
@@ -810,7 +882,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Hagalaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "Hagalaz embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "rune:nauthiz",
@@ -906,7 +987,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Nauthiz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Nauthiz represents the wisdom of age, knowledge of mysteries, and power over life's transitions."
     },
     {
       "@id": "rune:isa",
@@ -997,7 +1087,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Isa"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Isa embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "rune:jera",
@@ -1080,7 +1179,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Jera"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Jera is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:eihwaz",
@@ -1176,7 +1284,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Eihwaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Eihwaz serves as a guide between worlds, conducting souls through transitions and thresholds."
     },
     {
       "@id": "rune:perthro",
@@ -1267,7 +1384,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Perthro"
+      ],
+      "correspondences": {
+        "tarot": "tarot:high_priestess",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Perthro represents the wisdom of age, knowledge of mysteries, and power over life's transitions."
     },
     {
       "@id": "rune:algiz",
@@ -1358,7 +1484,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Algiz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Algiz represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "rune:sowilo",
@@ -1449,7 +1584,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Sowilo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Sowilo embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "rune:tiwaz",
@@ -1540,7 +1684,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Tiwaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Tiwaz represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "rune:berkano",
@@ -1624,7 +1777,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Berkano"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      },
+      "description": "Berkano is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:ehwaz",
@@ -1713,7 +1875,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Ehwaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Ehwaz is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:mannaz",
@@ -1763,6 +1934,10 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:world",
           "fidelity": 0.7
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_62"
         }
       ],
       "narrativeRoles": [
@@ -1797,7 +1972,11 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Mannaz"
+      ],
+      "description": "Mannaz is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:laguz",
@@ -1880,7 +2059,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Laguz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Laguz is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:ingwaz",
@@ -1963,7 +2151,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Ingwaz"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Ingwaz is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:dagaz",
@@ -2052,7 +2249,11 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Dagaz"
+      ],
+      "description": "Dagaz is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rune:othala",
@@ -2136,7 +2337,16 @@
       "domains": [
         "divination",
         "runes"
-      ]
+      ],
+      "aliases": [
+        "The Othala"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Othala is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {

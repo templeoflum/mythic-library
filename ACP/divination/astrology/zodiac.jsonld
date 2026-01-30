@@ -114,7 +114,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Aries"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Aries represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "astrology:taurus",
@@ -222,7 +231,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Taurus"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Taurus embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "astrology:gemini",
@@ -329,7 +347,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Gemini"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Gemini is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "astrology:cancer",
@@ -428,7 +455,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Cancer"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Cancer is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "astrology:leo",
@@ -546,7 +582,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Leo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Leo represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "astrology:virgo",
@@ -655,7 +700,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Virgo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Virgo represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     },
     {
       "@id": "astrology:libra",
@@ -763,7 +817,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Libra"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Libra embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "astrology:scorpio",
@@ -876,7 +939,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Scorpio"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      },
+      "description": "Scorpio embodies the necessary forces of destruction and transformation that clear the way for renewal."
     },
     {
       "@id": "astrology:sagittarius",
@@ -989,7 +1061,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Sagittarius"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Sagittarius embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "astrology:capricorn",
@@ -1101,7 +1182,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Capricorn"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Capricorn represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "astrology:aquarius",
@@ -1209,7 +1299,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Aquarius"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      },
+      "description": "Aquarius challenges established order, breaks boundaries, and catalyzes revolutionary change."
     },
     {
       "@id": "astrology:pisces",
@@ -1322,7 +1421,16 @@
       "domains": [
         "astrology",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Pisces"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Pisces serves as a guide between worlds, conducting souls through transitions and thresholds."
     }
   ],
   "systemRelationships": {

@@ -116,7 +116,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Arlecchino"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "commedia:brighella",
@@ -207,7 +215,15 @@
       ],
       "domains": [
         "trickster"
-      ]
+      ],
+      "aliases": [
+        "The Brighella"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "commedia:pantalone",
@@ -298,7 +314,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Pantalone"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:jupiter",
+        "element": "element:air"
+      }
     },
     {
       "@id": "commedia:dottore",
@@ -388,7 +412,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "commedia:capitano",
@@ -474,7 +503,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "commedia:colombina",
@@ -565,7 +599,15 @@
       ],
       "domains": [
         "trickster"
-      ]
+      ],
+      "aliases": [
+        "The Colombina"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "commedia:innamorato",
@@ -655,7 +697,15 @@
       ],
       "domains": [
         "childhood"
-      ]
+      ],
+      "aliases": [
+        "The Innamorato"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "commedia:innamorata",
@@ -748,7 +798,15 @@
       "domains": [
         "beauty",
         "childhood"
-      ]
+      ],
+      "aliases": [
+        "The Innamorata"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "commedia:pulcinella",
@@ -836,7 +894,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Pulcinella"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "commedia:pierrot",
@@ -929,7 +995,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Pierrot"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     }
   ],
   "systemRelationships": {

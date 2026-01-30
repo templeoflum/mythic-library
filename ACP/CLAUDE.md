@@ -4,10 +4,10 @@
 
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
-**Version**: 0.2.2 (Enrichment Phase 2)
-**Total Archetypes**: 938 entries with full spectral coordinates
-**Completeness**: 29% complete, 64% rich, 5% partial, 2% stub (mean score: 76%)
-**Cultural Echoes**: 1,840 cross-system links, 3,541 total relationships
+**Version**: 0.3.0 (Enrichment Phase 3 Complete)
+**Total Archetypes**: 951 entries with full spectral coordinates
+**Completeness**: 88% complete, 7% rich, 3% partial, 2% stub (mean score: 84.5%)
+**Cultural Echoes**: 1,840 cross-system links, 3,574 total relationships
 **Target**: ~1,200 archetypes for v1.0 release
 
 ## Architecture (ORAS v2.0)
@@ -343,18 +343,24 @@ When adding cross-system correspondences:
 - Tarot minor arcana fully enriched with Tier 3 fields
 - Mean completeness score: 64% (up from 44%)
 
-### 0.2.2 ✅ Enrichment Phase 2 (Current)
-- **Completeness**: 29% complete (273), 64% rich (597), 5% partial (51), 2% stub (17)
-- **culturalEchoes**: 1,840 cross-system links (98% → 5% missing)
+### 0.2.2 ✅ Enrichment Phase 2
+- **culturalEchoes**: 1,840 cross-system links
 - **Bidirectional relationships**: 951 reverse links added
-- **Domain vocabulary**: 1,680 domains added, expanded controlled vocabulary
-- **93% entries at "rich" tier** (target was 80%)
-- Mean completeness score: 76% (up from 64%)
+- **Domain vocabulary**: 1,680 domains added
+- Mean completeness score: 76%
 
-### 0.3.0 — Final Enrichment
-- Add aliases for remaining 697 entries
-- Add correspondences for remaining 614 entries
-- Fix remaining 59 bidirectional relationship gaps
+### 0.3.0 ✅ Enrichment Phase 3 (Current)
+- **Completeness**: 88% complete (838), 7% rich (65), 3% partial (31)
+- **Aliases**: 586 added (Roman, Germanic, Sanskrit variants)
+- **Correspondences**: 558 added (tarot, planet, element mappings)
+- **Descriptions**: 325 generated for all missing entries
+- **95% entries at "rich" tier** (exceeded 80% target)
+- Mean completeness score: 84.5% (up from 76%)
+
+### 0.4.0 — Polish & API
+- Expand domain vocabulary (1,274 warnings)
+- Add missing primordials (storyteller, culture-hero, etc.)
+- Fix orphan relationship targets
 
 ### 1.0.0 — Production Release
 Complete database, REST/GraphQL API, 3D visualization

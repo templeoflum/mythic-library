@@ -125,7 +125,16 @@
       "domains": [
         "chakras",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Muladhara"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Muladhara (Root) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "chakra:svadhisthana",
@@ -238,7 +247,16 @@
       "domains": [
         "chakras",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Svadhisthana"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Svadhisthana (Sacral) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "chakra:manipura",
@@ -351,7 +369,16 @@
         "chakras",
         "divination",
         "sun"
-      ]
+      ],
+      "aliases": [
+        "The Manipura"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Manipura (Solar Plexus) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "chakra:anahata",
@@ -465,7 +492,16 @@
       "domains": [
         "chakras",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Anahata"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Anahata (Heart) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "chakra:vishuddha",
@@ -573,7 +609,16 @@
       "domains": [
         "chakras",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Vishuddha"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Vishuddha (Throat) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "chakra:ajna",
@@ -679,7 +724,16 @@
       "domains": [
         "chakras",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Ajna"
+      ],
+      "correspondences": {
+        "tarot": "tarot:death",
+        "planet": "planet:pluto",
+        "element": "element:spirit"
+      },
+      "description": "Ajna (Third Eye) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "chakra:sahasrara",
@@ -790,7 +844,11 @@
       "domains": [
         "chakras",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Sahasrara"
+      ],
+      "description": "Sahasrara (Crown) is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {

@@ -206,7 +206,8 @@
         "Biame",
         "Byamee",
         "Sky Father",
-        "All-Father"
+        "All-Father",
+        "The Baiame"
       ],
       "domain": [
         "Sky",
@@ -490,7 +491,8 @@
       "name": "Wandjina",
       "aliases": [
         "Wondjina",
-        "Cloud and Rain Spirits"
+        "Cloud and Rain Spirits",
+        "The Wandjina"
       ],
       "domain": [
         "Rain",
@@ -764,7 +766,8 @@
       "aliases": [
         "Doolagarl",
         "Yahoo",
-        "Wild Man"
+        "Wild Man",
+        "The Yowie"
       ],
       "domain": [
         "Wilderness",
@@ -892,7 +895,8 @@
       "@type": "Archetype",
       "name": "Tiddalik",
       "aliases": [
-        "The Flood-Causing Frog"
+        "The Flood-Causing Frog",
+        "The Tiddalik"
       ],
       "domain": [
         "Water",
@@ -950,6 +954,10 @@
           "target": "arch:JP-UZUME",
           "fidelity": 0.45,
           "notes": "Laughter solving cosmic problem"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_28"
         }
       ],
       "shadowDynamics": {
@@ -1019,7 +1027,8 @@
       "@type": "Archetype",
       "name": "Bunyip",
       "aliases": [
-        "Various regional names"
+        "Various regional names",
+        "The Bunyip"
       ],
       "domain": [
         "Waterholes",

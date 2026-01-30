@@ -94,7 +94,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Mesha"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Mesha (Aries) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "rashi:vrishabha",
@@ -183,7 +192,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Vrishabha"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Vrishabha (Taurus) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "rashi:mithuna",
@@ -264,7 +282,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Mithuna"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Mithuna (Gemini) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "rashi:karka",
@@ -352,7 +379,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Karka"
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      },
+      "description": "Karka (Cancer) represents the nurturing, life-giving aspect of the feminine divine, associated with fertility, abundance, and protection."
     },
     {
       "@id": "rashi:simha",
@@ -440,7 +476,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Simha"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Simha (Leo) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "rashi:kanya",
@@ -528,7 +573,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Kanya"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Kanya (Virgo) represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     },
     {
       "@id": "rashi:tula",
@@ -616,7 +670,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Tula"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "Tula (Libra) embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "rashi:vrishchika",
@@ -705,7 +768,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Vrishchika"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Vrishchika (Scorpio) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "rashi:dhanu",
@@ -793,7 +865,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Dhanu"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Dhanu (Sagittarius) represents wisdom, knowledge, and guidance, serving as a teacher and keeper of sacred traditions."
     },
     {
       "@id": "rashi:makara",
@@ -880,7 +961,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Makara"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Makara (Capricorn) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "rashi:kumbha",
@@ -968,7 +1058,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Kumbha"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      },
+      "description": "Kumbha (Aquarius) challenges established order, breaks boundaries, and catalyzes revolutionary change."
     },
     {
       "@id": "rashi:meena",
@@ -1056,7 +1155,16 @@
       "domains": [
         "divination",
         "zodiac"
-      ]
+      ],
+      "aliases": [
+        "The Meena"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Meena (Pisces) represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     }
   ],
   "systemRelationships": {

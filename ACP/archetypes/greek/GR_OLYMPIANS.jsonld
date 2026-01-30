@@ -408,19 +408,11 @@
       "belongsToSystem": "system:greek",
       "description": "Queen of the gods, goddess of marriage, women, and family. Embodies the dignified and wrathful aspects of committed partnership.",
       "aliases": [
-        {
-          "name": "Juno",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Frigg",
-          "system": "Norse",
-          "fidelity": 0.5,
-          "aspect": "queen of gods"
-        },
+        "Juno",
+        "Frigg",
         "Juno (Roman)",
-        "Queen of Heaven"
+        "Queen of Heaven",
+        "The Hera"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -590,19 +582,11 @@
       "belongsToSystem": "system:greek",
       "description": "God of the sea, earthquakes, and horses. Represents the vast emotional unconscious, instinctual power, and the forces beneath civilization.",
       "aliases": [
-        {
-          "name": "Neptune",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Njord",
-          "system": "Norse",
-          "fidelity": 0.4,
-          "aspect": "sea god"
-        },
+        "Neptune",
+        "Njord",
         "Neptune (Roman)",
-        "Earth-Shaker"
+        "Earth-Shaker",
+        "The Poseidon"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.6,
@@ -793,20 +777,13 @@
       "belongsToSystem": "system:greek",
       "description": "Goddess of wisdom, strategic warfare, and crafts. Born from Zeus's head fully armored. Represents rational intelligence, civilization, and the integrated feminine that needs no masculine completion.",
       "aliases": [
-        {
-          "name": "Minerva",
-          "system": "Roman",
-          "fidelity": 0.85
-        },
-        {
-          "name": "Neith",
-          "system": "Egyptian",
-          "fidelity": 0.4,
-          "aspect": "weaving, warfare"
-        },
+        "Minerva",
+        "Neith",
         "Minerva (Roman)",
         "Pallas Athena",
-        "Athene"
+        "Athene",
+        "Pallas",
+        "The Athena"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.05,
@@ -1054,25 +1031,12 @@
       "belongsToSystem": "system:greek",
       "description": "God of light, reason, prophecy, music, poetry, and healing. The ideal of classical beauty, clarity, and measured harmony. Twin of Artemis.",
       "aliases": [
-        {
-          "name": "Apollo",
-          "system": "Roman",
-          "fidelity": 0.98
-        },
-        {
-          "name": "Helios",
-          "system": "Greek",
-          "fidelity": 0.6,
-          "aspect": "later conflation with sun"
-        },
-        {
-          "name": "Baldr",
-          "system": "Norse",
-          "fidelity": 0.5,
-          "aspect": "radiant god killed"
-        },
+        "Apollo",
+        "Helios",
+        "Baldr",
         "Phoebus",
-        "Phoebus Apollo"
+        "Phoebus Apollo",
+        "The Apollo"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -1320,20 +1284,12 @@
       "belongsToSystem": "system:greek",
       "description": "Goddess of the hunt, wilderness, moon, and childbirth. Virgin huntress who embodies wild feminine independence and the boundary between civilization and nature.",
       "aliases": [
-        {
-          "name": "Diana",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Selene",
-          "system": "Greek",
-          "fidelity": 0.5,
-          "aspect": "moon goddess conflation"
-        },
+        "Diana",
+        "Selene",
         "Diana (Roman)",
         "Phoebe",
-        "Cynthia"
+        "Cynthia",
+        "The Artemis"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -1523,31 +1479,13 @@
       "belongsToSystem": "system:greek",
       "description": "Messenger of the gods, guide of souls, god of boundaries, travelers, thieves, and commerce. The quintessential trickster and threshold-crosser of Greek myth.",
       "aliases": [
-        {
-          "name": "Mercury",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Thoth",
-          "system": "Egyptian",
-          "fidelity": 0.65,
-          "aspect": "wisdom, writing, magic"
-        },
-        {
-          "name": "Odin",
-          "system": "Norse",
-          "fidelity": 0.5,
-          "aspect": "wisdom-seeker, traveler"
-        },
-        {
-          "name": "Eshu",
-          "system": "Yoruba",
-          "fidelity": 0.7,
-          "aspect": "crossroads, messenger, trickster"
-        },
+        "Mercury",
+        "Thoth",
+        "Odin",
+        "Eshu",
         "Mercury (Roman)",
-        "Psychopompos"
+        "Psychopompos",
+        "The Hermes"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
@@ -2003,25 +1941,13 @@
       "belongsToSystem": "system:greek",
       "description": "God of wine, ecstasy, theatre, and ritual madness. The twice-born who dissolves boundaries between divine and mortal, civilized and wild, self and other.",
       "aliases": [
-        {
-          "name": "Bacchus",
-          "system": "Roman",
-          "fidelity": 0.85
-        },
-        {
-          "name": "Liber",
-          "system": "Roman",
-          "fidelity": 0.7
-        },
-        {
-          "name": "Osiris",
-          "system": "Egyptian",
-          "fidelity": 0.5,
-          "aspect": "dying-rising god"
-        },
+        "Bacchus",
+        "Liber",
+        "Osiris",
         "Bacchus (Roman)",
         "Bromios",
-        "Twice-Born"
+        "Twice-Born",
+        "The Dionysus"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.8,
@@ -2270,26 +2196,14 @@
       "belongsToSystem": "system:greek",
       "description": "King of the Underworld, lord of the dead and hidden wealth. The unseen one who receives all souls. Represents depth, interiority, and the riches beneath the surface.",
       "aliases": [
-        {
-          "name": "Pluto",
-          "system": "Roman",
-          "fidelity": 0.85
-        },
-        {
-          "name": "Dis Pater",
-          "system": "Roman",
-          "fidelity": 0.8
-        },
-        {
-          "name": "Osiris",
-          "system": "Egyptian",
-          "fidelity": 0.5,
-          "aspect": "lord of dead"
-        },
+        "Pluto",
+        "Dis Pater",
+        "Osiris",
         "Pluto (Roman)",
         "Plouton",
         "Aidoneus",
-        "The Unseen One"
+        "The Unseen One",
+        "The Hades"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
@@ -2535,12 +2449,9 @@
       "belongsToSystem": "system:greek",
       "description": "Goddess of the hearth, home, and sacred fire. The still center around which all revolves. First and last in every offering, yet rarely appears in myth because she IS the center.",
       "aliases": [
-        {
-          "name": "Vesta",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        "Vesta (Roman)"
+        "Vesta",
+        "Vesta (Roman)",
+        "The Hestia"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.05,
@@ -2684,32 +2595,14 @@
       "belongsToSystem": "system:greek",
       "description": "Goddess of love, beauty, pleasure, and procreation. Born from sea foam, she embodies desire itself - the force that draws all things together.",
       "aliases": [
-        {
-          "name": "Venus",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Inanna",
-          "system": "Mesopotamian",
-          "fidelity": 0.6,
-          "aspect": "love goddess"
-        },
-        {
-          "name": "Ishtar",
-          "system": "Mesopotamian",
-          "fidelity": 0.6,
-          "aspect": "love goddess"
-        },
-        {
-          "name": "Hathor",
-          "system": "Egyptian",
-          "fidelity": 0.5,
-          "aspect": "love, beauty"
-        },
+        "Venus",
+        "Inanna",
+        "Ishtar",
+        "Hathor",
         "Venus (Roman)",
         "Cyprian",
-        "Cytherea"
+        "Cytherea",
+        "The Aphrodite"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.5,
@@ -3046,7 +2939,12 @@
           "primordial": "primordial:great-mother",
           "weight": 0.4
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:GR-APHRODITE-PANDEMOS",
@@ -3126,7 +3024,12 @@
           "primordial": "primordial:great-mother",
           "weight": 0.5
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "arch:GR-APHRODITE-ANADYOMENE",
@@ -3148,7 +3051,29 @@
         "chaos",
         "mythology",
         "olympian"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "relationships": [
+        {
+          "type": "INSTANTIATES",
+          "target": "primordial:hero",
+          "note": "Primary archetype"
+        }
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.2,
+        "light-shadow": 0.25,
+        "active-receptive": 0.55,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.5
+      }
     },
     {
       "@id": "arch:GR-ARES",
@@ -3158,20 +3083,11 @@
       "belongsToSystem": "system:greek",
       "description": "God of war, violence, and bloodlust. Unlike Athena's strategic warfare, Ares embodies the raw chaos and brutality of battle. Feared and disliked even by the gods.",
       "aliases": [
-        {
-          "name": "Mars",
-          "system": "Roman",
-          "fidelity": 0.75,
-          "notes": "Mars more honorable in Rome"
-        },
-        {
-          "name": "Tyr",
-          "system": "Norse",
-          "fidelity": 0.4,
-          "aspect": "war god only"
-        },
+        "Mars",
+        "Tyr",
         "Mars (Roman)",
-        "Enyalios"
+        "Enyalios",
+        "The Ares"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.8,
@@ -3404,13 +3320,10 @@
       "belongsToSystem": "system:greek",
       "description": "God of fire, forge, and craftsmanship. The wounded creator - cast from Olympus, lame, yet maker of the most beautiful works. Represents transformation of suffering into art.",
       "aliases": [
-        {
-          "name": "Vulcan",
-          "system": "Roman",
-          "fidelity": 0.85
-        },
+        "Vulcan",
         "Vulcan (Roman)",
-        "The Lame God"
+        "The Lame God",
+        "The Hephaestus"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
@@ -3586,17 +3499,10 @@
       "belongsToSystem": "system:greek",
       "description": "Queen of the Underworld and goddess of spring. The maiden who descends and returns, embodying the cycle of death and rebirth, innocence transformed through the underworld journey.",
       "aliases": [
-        {
-          "name": "Proserpina",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Kore",
-          "system": "Greek",
-          "fidelity": 1.0,
-          "aspect": "maiden aspect before descent"
-        }
+        "Proserpina",
+        "Kore",
+        "Proserpina (Roman)",
+        "The Persephone"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -3800,19 +3706,11 @@
       "belongsToSystem": "system:greek",
       "description": "Goddess of the harvest, agriculture, and fertility. The grieving mother whose loss brings winter and whose reunion brings spring. Embodies the nourishing earth and the fierce love of mother for child.",
       "aliases": [
-        {
-          "name": "Ceres",
-          "system": "Roman",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Devi",
-          "system": "Hindu",
-          "fidelity": 0.4,
-          "aspect": "earth mother"
-        },
+        "Ceres",
+        "Devi",
         "Ceres (Roman)",
-        "Grain Mother"
+        "Grain Mother",
+        "The Demeter"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.3,
@@ -4022,18 +3920,9 @@
       "belongsToSystem": "system:greek",
       "description": "Titan who stole fire from the gods and gave it to humanity. The suffering benefactor, chained to a rock for eternity. Embodies defiance of divine authority in service of human progress.",
       "aliases": [
-        {
-          "name": "Lucifer",
-          "system": "Gnostic",
-          "fidelity": 0.5,
-          "aspect": "light-bringer, defiant"
-        },
-        {
-          "name": "Loki",
-          "system": "Norse",
-          "fidelity": 0.4,
-          "aspect": "fire-bringer, bound punished"
-        }
+        "Lucifer",
+        "Loki",
+        "The Prometheus"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
@@ -4229,17 +4118,10 @@
       "belongsToSystem": "system:greek",
       "description": "Titan king who ruled before Zeus, castrated his father Ouranos, and devoured his children to prevent prophecy of his overthrow. Embodies time that consumes, the old order, and the father who fears succession.",
       "aliases": [
-        {
-          "name": "Saturn",
-          "system": "Roman",
-          "fidelity": 0.85
-        },
-        {
-          "name": "Chronos",
-          "system": "Greek",
-          "fidelity": 0.6,
-          "notes": "Later conflation with Time personified"
-        }
+        "Saturn",
+        "Chronos",
+        "Saturn (Roman)",
+        "The Cronus"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.2,
@@ -4412,17 +4294,9 @@
       "belongsToSystem": "system:greek",
       "description": "Greatest of Greek heroes, son of Zeus and mortal Alcmene. Performed the Twelve Labors, descended to the underworld, and was eventually deified. The quintessential Hero archetype struggling toward transcendence.",
       "aliases": [
-        {
-          "name": "Hercules",
-          "system": "Roman",
-          "fidelity": 0.95
-        },
-        {
-          "name": "Melqart",
-          "system": "Phoenician",
-          "fidelity": 0.5,
-          "aspect": "laboring hero"
-        }
+        "Hercules",
+        "Melqart",
+        "The Heracles"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -4617,11 +4491,8 @@
       "belongsToSystem": "system:greek",
       "description": "King of Ithaca, hero of the Trojan War, famed for cunning (metis). His ten-year journey home is the archetypal nostos - the return that transforms. Represents practical wisdom over brute strength.",
       "aliases": [
-        {
-          "name": "Ulysses",
-          "system": "Roman",
-          "fidelity": 0.95
-        }
+        "Ulysses",
+        "The Odysseus"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -4924,6 +4795,9 @@
           ],
           "provenance": "ORIG"
         }
+      ],
+      "aliases": [
+        "The Penelope"
       ]
     }
   ]

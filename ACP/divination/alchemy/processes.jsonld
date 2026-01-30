@@ -136,7 +136,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Nigredo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "alchemy:albedo",
@@ -240,7 +248,15 @@
         "alchemy",
         "divination",
         "moon"
-      ]
+      ],
+      "aliases": [
+        "The Albedo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:star",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "alchemy:citrinitas",
@@ -333,7 +349,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Citrinitas"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "alchemy:rubedo",
@@ -447,7 +471,15 @@
       "domains": [
         "alchemy",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Rubedo"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "alchemy:calcination",
@@ -539,7 +571,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Calcination"
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:pluto",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "alchemy:dissolution",
@@ -627,7 +667,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Dissolution"
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      }
     },
     {
       "@id": "alchemy:separation",
@@ -708,7 +756,15 @@
       "domains": [
         "alchemy",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Separation"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     },
     {
       "@id": "alchemy:conjunction",
@@ -796,7 +852,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Conjunction"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "alchemy:fermentation",
@@ -878,7 +942,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Fermentation"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "alchemy:distillation",
@@ -958,7 +1030,15 @@
       "domains": [
         "alchemy",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Distillation"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "alchemy:coagulation",
@@ -1038,7 +1118,15 @@
       "domains": [
         "alchemy",
         "divination"
-      ]
+      ],
+      "aliases": [
+        "The Coagulation"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      }
     },
     {
       "@id": "alchemy:prima-materia",
@@ -1216,7 +1304,12 @@
       "domains": [
         "alchemy",
         "divination"
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "alchemy:mercury",
@@ -1303,7 +1396,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Mercurius"
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "alchemy:sulphur",
@@ -1390,7 +1491,15 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "aliases": [
+        "The Sulphur"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     }
   ],
   "systemRelationships": {

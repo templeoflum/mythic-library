@@ -46,32 +46,14 @@
       "belongsToSystem": "system:norse",
       "description": "Allfather, god of wisdom, war, death, poetry, and magic. Sacrificed his eye for wisdom and hung on Yggdrasil for nine nights to gain the runes. The wandering seeker who trades all for knowledge, yet knows his own doom.",
       "aliases": [
-        {
-          "name": "Woden/Wotan",
-          "system": "Germanic",
-          "fidelity": 0.95
-        },
-        {
-          "name": "Mercury",
-          "system": "Roman",
-          "fidelity": 0.5,
-          "aspect": "interpretatio romana - messenger/psychopomp"
-        },
-        {
-          "name": "Zeus",
-          "system": "Greek",
-          "fidelity": 0.4,
-          "aspect": "sky-father, king of gods"
-        },
-        {
-          "name": "Hermes",
-          "system": "Greek",
-          "fidelity": 0.5,
-          "aspect": "traveler, wisdom, psychopomp"
-        },
+        "Woden/Wotan",
+        "Mercury",
+        "Zeus",
+        "Hermes",
         "Wotan (Germanic)",
         "Woden (Anglo-Saxon)",
-        "Allfather"
+        "Allfather",
+        "The Odin"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.62,
@@ -385,32 +367,14 @@
       "belongsToSystem": "system:norse",
       "description": "God of thunder, strength, and the protection of humanity. Mjölnir-wielding defender against giants and chaos. Unlike his father Odin's cunning, Thor represents direct, honest strength in service of cosmic order.",
       "aliases": [
-        {
-          "name": "Donar/Thunor",
-          "system": "Germanic",
-          "fidelity": 0.95
-        },
-        {
-          "name": "Jupiter",
-          "system": "Roman",
-          "fidelity": 0.6,
-          "aspect": "interpretatio romana - thunderer"
-        },
-        {
-          "name": "Zeus",
-          "system": "Greek",
-          "fidelity": 0.5,
-          "aspect": "thunderer"
-        },
-        {
-          "name": "Indra",
-          "system": "Hindu",
-          "fidelity": 0.6,
-          "aspect": "thunderer, giant-slayer"
-        },
+        "Donar/Thunor",
+        "Jupiter",
+        "Zeus",
+        "Indra",
         "Donar (Germanic)",
         "Thunor (Anglo-Saxon)",
-        "Thunderer"
+        "Thunderer",
+        "The Thor"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.07,
@@ -634,29 +598,11 @@
       "belongsToSystem": "system:norse",
       "description": "Vanir goddess of love, beauty, fertility, war, and seiðr magic. She claims half the battle-slain for her hall Sessrúmnir. Embodies feminine sovereignty, erotic power, and magical knowledge independent of male authority.",
       "aliases": [
-        {
-          "name": "Freya",
-          "system": "Modern",
-          "fidelity": 1.0
-        },
-        {
-          "name": "Vanadís",
-          "system": "Norse",
-          "fidelity": 1.0,
-          "aspect": "Lady of the Vanir"
-        },
-        {
-          "name": "Aphrodite",
-          "system": "Greek",
-          "fidelity": 0.5,
-          "aspect": "love, beauty"
-        },
-        {
-          "name": "Ishtar",
-          "system": "Mesopotamian",
-          "fidelity": 0.5,
-          "aspect": "love and war goddess"
-        }
+        "Freya",
+        "Vanadís",
+        "Aphrodite",
+        "Ishtar",
+        "The Freyja"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.5,
@@ -833,26 +779,12 @@
       "belongsToSystem": "system:norse",
       "description": "Trickster god, shape-shifter, blood-brother of Odin, and father of monsters. Moves from mischief-maker to world-destroyer. His chaos tests and eventually breaks the cosmic order.",
       "aliases": [
-        {
-          "name": "Lopt",
-          "system": "Norse",
-          "fidelity": 1.0,
-          "aspect": "sky-treader"
-        },
-        {
-          "name": "Hermes",
-          "system": "Greek",
-          "fidelity": 0.4,
-          "aspect": "trickster only"
-        },
-        {
-          "name": "Prometheus",
-          "system": "Greek",
-          "fidelity": 0.4,
-          "aspect": "fire-bringer, bound punished"
-        },
+        "Lopt",
+        "Hermes",
+        "Prometheus",
         "The Trickster",
-        "Sky-Treader"
+        "Sky-Treader",
+        "The Loki"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.85,
@@ -1121,22 +1053,11 @@
       "belongsToSystem": "system:norse",
       "description": "Queen of Asgard, goddess of marriage, motherhood, and domestic wisdom. Knows all fates but speaks none. Her silent knowledge and grief (for Baldur) represent the weight of seeing what cannot be changed.",
       "aliases": [
-        {
-          "name": "Frigga",
-          "system": "Germanic",
-          "fidelity": 0.95
-        },
-        {
-          "name": "Frija",
-          "system": "Proto-Germanic",
-          "fidelity": 0.9
-        },
-        {
-          "name": "Hera",
-          "system": "Greek",
-          "fidelity": 0.5,
-          "aspect": "queen of gods, marriage"
-        }
+        "Frigga",
+        "Frija",
+        "Hera",
+        "Frige",
+        "The Frigg"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.2,
@@ -1289,23 +1210,11 @@
       "belongsToSystem": "system:norse",
       "description": "Vanir god of fertility, prosperity, peace, and sunshine. Lord of Alfheim. Gave up his magic sword for love of Gerðr - will die unarmed at Ragnarök. Embodies masculine fertility and sacrifice for love.",
       "aliases": [
-        {
-          "name": "Frey",
-          "system": "Modern",
-          "fidelity": 1.0
-        },
-        {
-          "name": "Yngvi-Freyr",
-          "system": "Norse",
-          "fidelity": 1.0,
-          "aspect": "ancestor of Yngling dynasty"
-        },
-        {
-          "name": "Apollo",
-          "system": "Greek",
-          "fidelity": 0.4,
-          "aspect": "sunshine, beauty"
-        }
+        "Frey",
+        "Yngvi-Freyr",
+        "Apollo",
+        "Yngvi",
+        "The Freyr"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
@@ -1460,25 +1369,12 @@
       "belongsToSystem": "system:norse",
       "description": "God of war, justice, and oaths. Sacrificed his hand to bind Fenrir, knowing the cost. Represents honor, law, and the willingness to sacrifice self for cosmic order.",
       "aliases": [
-        {
-          "name": "Tiw/Tiwaz",
-          "system": "Germanic",
-          "fidelity": 0.95
-        },
-        {
-          "name": "Mars",
-          "system": "Roman",
-          "fidelity": 0.5,
-          "aspect": "war god"
-        },
-        {
-          "name": "Zeus",
-          "system": "Greek",
-          "fidelity": 0.4,
-          "aspect": "sky-father etymology (Dyeus)"
-        },
+        "Tiw/Tiwaz",
+        "Mars",
+        "Zeus",
         "Tiw (Anglo-Saxon)",
-        "Ziu (Germanic)"
+        "Ziu (Germanic)",
+        "The Tyr"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.1,
@@ -1642,17 +1538,10 @@
       "belongsToSystem": "system:norse",
       "description": "God of light, purity, and beauty. The shining one whose death signals the beginning of Ragnarök. His invulnerability failed at mistletoe; his death breaks the world. Will return after Ragnarök.",
       "aliases": [
-        {
-          "name": "Baldr",
-          "system": "Norse",
-          "fidelity": 1.0
-        },
-        {
-          "name": "Apollo",
-          "system": "Greek",
-          "fidelity": 0.5,
-          "aspect": "radiant, beautiful god"
-        }
+        "Baldr",
+        "Apollo",
+        "Balder",
+        "The Baldur"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -1809,12 +1698,8 @@
       "belongsToSystem": "system:norse",
       "description": "Guardian of Bifröst, the watchman of the gods. Born of nine mothers, he needs less sleep than a bird, can see a hundred leagues, and will blow Gjallarhorn to announce Ragnarök. The eternal sentinel.",
       "aliases": [
-        {
-          "name": "Rig",
-          "system": "Norse",
-          "fidelity": 0.8,
-          "aspect": "founder of social classes"
-        }
+        "Rig",
+        "The Heimdall"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -2063,6 +1948,10 @@
           ],
           "provenance": "SCHOL"
         }
+      ],
+      "aliases": [
+        "Hela",
+        "The Hel"
       ]
     },
     {
@@ -2182,6 +2071,9 @@
           ],
           "provenance": "ORIG"
         }
+      ],
+      "aliases": [
+        "The Fenrir"
       ]
     },
     {
@@ -2297,6 +2189,9 @@
       ],
       "narrativeRoles": [
         "destroyer"
+      ],
+      "aliases": [
+        "The Jörmungandr"
       ]
     }
   ]

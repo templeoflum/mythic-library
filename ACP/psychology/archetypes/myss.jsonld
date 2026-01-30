@@ -116,7 +116,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "myss:victim",
@@ -224,7 +229,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:water"
+      }
     },
     {
       "@id": "myss:prostitute",
@@ -288,6 +298,10 @@
           "target": "heros_journey:temptation",
           "fidelity": 0.65,
           "note": "Test of integrity"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "iching:hex_18"
         }
       ],
       "domains": [
@@ -325,7 +339,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     },
     {
       "@id": "myss:saboteur",
@@ -433,7 +452,12 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      }
     }
   ],
   "systemRelationships": {

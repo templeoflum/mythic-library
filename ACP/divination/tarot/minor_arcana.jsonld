@@ -174,7 +174,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ace of Wands represents the creative principle, the power to bring new forms and realities into being."
         },
         {
           "@id": "tarot:wands_02",
@@ -262,7 +263,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Two of Wands embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
         },
         {
           "@id": "tarot:wands_03",
@@ -349,7 +351,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Three of Wands embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
         },
         {
           "@id": "tarot:wands_04",
@@ -437,7 +440,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Four of Wands embodies the sustaining forces that maintain cosmic order and protect existence."
         },
         {
           "@id": "tarot:wands_05",
@@ -527,7 +531,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Five of Wands represents martial prowess, courage in battle, and the protective use of force."
         },
         {
           "@id": "tarot:wands_06",
@@ -620,7 +625,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Six of Wands embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
         },
         {
           "@id": "tarot:wands_07",
@@ -713,7 +719,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Seven of Wands represents martial prowess, courage in battle, and the protective use of force."
         },
         {
           "@id": "tarot:wands_08",
@@ -807,7 +814,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Eight of Wands is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
         },
         {
           "@id": "tarot:wands_09",
@@ -902,7 +910,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Nine of Wands represents martial prowess, courage in battle, and the protective use of force."
         },
         {
           "@id": "tarot:wands_10",
@@ -992,7 +1001,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ten of Wands embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
         },
         {
           "@id": "tarot:wands_page",
@@ -1090,7 +1100,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Page of Wands is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:wands_knight",
@@ -1188,7 +1199,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Knight of Wands embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
         },
         {
           "@id": "tarot:wands_queen",
@@ -1286,7 +1298,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Queen of Wands represents divine kingship, justice, and the right ordering of society and cosmos."
         },
         {
           "@id": "tarot:wands_king",
@@ -1384,7 +1397,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "King of Wands represents divine kingship, justice, and the right ordering of society and cosmos."
         }
       ]
     },
@@ -1498,7 +1512,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ace of Cups embodies love, passion, and connection, representing the transformative power of emotional bonds."
         },
         {
           "@id": "tarot:cups_02",
@@ -1603,7 +1618,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Two of Cups embodies love, passion, and connection, representing the transformative power of emotional bonds."
         },
         {
           "@id": "tarot:cups_03",
@@ -1697,7 +1713,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Three of Cups embodies love, passion, and connection, representing the transformative power of emotional bonds."
         },
         {
           "@id": "tarot:cups_04",
@@ -1791,7 +1808,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Four of Cups is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:cups_05",
@@ -1888,7 +1906,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Five of Cups represents the wisdom of age, knowledge of mysteries, and power over life's transitions."
         },
         {
           "@id": "tarot:cups_06",
@@ -1983,7 +2002,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Six of Cups is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:cups_07",
@@ -2077,7 +2097,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Seven of Cups is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
         },
         {
           "@id": "tarot:cups_08",
@@ -2172,7 +2193,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Eight of Cups embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
         },
         {
           "@id": "tarot:cups_09",
@@ -2266,7 +2288,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Nine of Cups embodies love, passion, and connection, representing the transformative power of emotional bonds."
         },
         {
           "@id": "tarot:cups_10",
@@ -2368,7 +2391,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ten of Cups is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:cups_page",
@@ -2466,7 +2490,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Page of Cups is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:cups_knight",
@@ -2564,7 +2589,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Knight of Cups embodies love, passion, and connection, representing the transformative power of emotional bonds."
         },
         {
           "@id": "tarot:cups_queen",
@@ -2662,7 +2688,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Queen of Cups is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:cups_king",
@@ -2760,7 +2787,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "King of Cups represents divine kingship, justice, and the right ordering of society and cosmos."
         }
       ]
     },
@@ -2875,7 +2903,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ace of Swords embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
         },
         {
           "@id": "tarot:swords_02",
@@ -2969,7 +2998,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Two of Swords embodies the sustaining forces that maintain cosmic order and protect existence."
         },
         {
           "@id": "tarot:swords_03",
@@ -3063,7 +3093,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Three of Swords embodies the necessary forces of destruction and transformation that clear the way for renewal."
         },
         {
           "@id": "tarot:swords_04",
@@ -3162,7 +3193,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Four of Swords embodies the sustaining forces that maintain cosmic order and protect existence."
         },
         {
           "@id": "tarot:swords_05",
@@ -3258,7 +3290,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Five of Swords represents martial prowess, courage in battle, and the protective use of force."
         },
         {
           "@id": "tarot:swords_06",
@@ -3353,7 +3386,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Six of Swords serves as a guide between worlds, conducting souls through transitions and thresholds."
         },
         {
           "@id": "tarot:swords_07",
@@ -3440,7 +3474,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Seven of Swords is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
         },
         {
           "@id": "tarot:swords_08",
@@ -3535,7 +3570,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Eight of Swords exists at the margins, representing those excluded from society who gain unique perspective."
         },
         {
           "@id": "tarot:swords_09",
@@ -3629,7 +3665,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Nine of Swords is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:swords_10",
@@ -3708,7 +3745,8 @@
             "developmentalStage": "completion, fulfillment, and endings",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "description": "Ten of Swords embodies the necessary forces of destruction and transformation that clear the way for renewal."
         },
         {
           "@id": "tarot:swords_page",
@@ -3805,7 +3843,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Page of Swords is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:swords_knight",
@@ -3902,7 +3941,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Knight of Swords represents martial prowess, courage in battle, and the protective use of force."
         },
         {
           "@id": "tarot:swords_queen",
@@ -3998,7 +4038,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Queen of Swords represents divine kingship, justice, and the right ordering of society and cosmos."
         },
         {
           "@id": "tarot:swords_king",
@@ -4096,7 +4137,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "King of Swords represents divine kingship, justice, and the right ordering of society and cosmos."
         }
       ]
     },
@@ -4215,7 +4257,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ace of Pentacles represents the creative principle, the power to bring new forms and realities into being."
         },
         {
           "@id": "tarot:pentacles_02",
@@ -4310,7 +4353,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Two of Pentacles is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
         },
         {
           "@id": "tarot:pentacles_03",
@@ -4404,7 +4448,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Three of Pentacles represents the creative principle, the power to bring new forms and realities into being."
         },
         {
           "@id": "tarot:pentacles_04",
@@ -4491,7 +4536,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Four of Pentacles embodies the sustaining forces that maintain cosmic order and protect existence."
         },
         {
           "@id": "tarot:pentacles_05",
@@ -4593,7 +4639,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Five of Pentacles exists at the margins, representing those excluded from society who gain unique perspective."
         },
         {
           "@id": "tarot:pentacles_06",
@@ -4687,7 +4734,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Six of Pentacles is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:pentacles_07",
@@ -4786,7 +4834,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Seven of Pentacles embodies the sustaining forces that maintain cosmic order and protect existence."
         },
         {
           "@id": "tarot:pentacles_08",
@@ -4881,7 +4930,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Eight of Pentacles embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
         },
         {
           "@id": "tarot:pentacles_09",
@@ -4975,7 +5025,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Nine of Pentacles represents divine kingship, justice, and the right ordering of society and cosmos."
         },
         {
           "@id": "tarot:pentacles_10",
@@ -5076,7 +5127,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Ten of Pentacles is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:pentacles_page",
@@ -5174,7 +5226,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Page of Pentacles is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:pentacles_knight",
@@ -5272,7 +5325,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Knight of Pentacles embodies the sustaining forces that maintain cosmic order and protect existence."
         },
         {
           "@id": "tarot:pentacles_queen",
@@ -5368,7 +5422,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "Queen of Pentacles is an archetypal figure embodying key patterns in the mythological tradition."
         },
         {
           "@id": "tarot:pentacles_king",
@@ -5466,7 +5521,8 @@
               ],
               "provenance": "ORIG"
             }
-          ]
+          ],
+          "description": "King of Pentacles represents divine kingship, justice, and the right ordering of society and cosmos."
         }
       ]
     }

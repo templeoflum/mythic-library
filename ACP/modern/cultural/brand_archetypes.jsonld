@@ -100,7 +100,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "The Innocent is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "brand:sage",
@@ -202,7 +208,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Sage is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "brand:explorer",
@@ -302,7 +314,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "The Explorer embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "brand:outlaw",
@@ -412,7 +430,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:tower",
+        "planet": "planet:uranus",
+        "element": "element:fire"
+      },
+      "description": "The Outlaw challenges established order, breaks boundaries, and catalyzes revolutionary change."
     },
     {
       "@id": "brand:magician",
@@ -517,7 +541,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Magician embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "brand:hero",
@@ -621,7 +651,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "The Hero embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "brand:lover",
@@ -726,7 +762,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      },
+      "description": "The Lover embodies love, passion, and connection, representing the transformative power of emotional bonds."
     },
     {
       "@id": "brand:jester",
@@ -835,7 +877,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:fool",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "The Jester is a trickster figure who crosses boundaries, challenges conventions, and brings change through cunning and mischief."
     },
     {
       "@id": "brand:everyman",
@@ -934,7 +982,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "The Everyman embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "brand:caregiver",
@@ -1037,7 +1091,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "The Caregiver is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "brand:ruler",
@@ -1156,7 +1216,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "The Ruler represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "brand:creator",
@@ -1260,7 +1326,13 @@
           ],
           "provenance": "ORIG"
         }
-      ]
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "The Creator represents the creative principle, the power to bring new forms and realities into being."
     }
   ],
   "systemRelationships": {

@@ -121,7 +121,16 @@
       "domains": [
         "divination",
         "elements"
-      ]
+      ],
+      "aliases": [
+        "The Wood"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Wood (Mu) represents the creative principle, the power to bring new forms and realities into being."
     },
     {
       "@id": "wuxing:fire",
@@ -237,7 +246,16 @@
         "elements",
         "fire",
         "hearth"
-      ]
+      ],
+      "aliases": [
+        "The Fire"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Fire (Huo) embodies the power of transformation, hidden knowledge, and the manipulation of natural forces."
     },
     {
       "@id": "wuxing:earth",
@@ -352,7 +370,16 @@
         "divination",
         "earth",
         "elements"
-      ]
+      ],
+      "aliases": [
+        "The Earth"
+      ],
+      "correspondences": {
+        "tarot": "tarot:empress",
+        "planet": "planet:moon",
+        "element": "element:water"
+      },
+      "description": "Earth (Tu) represents the nurturing, life-giving aspect of the feminine divine, associated with fertility, abundance, and protection."
     },
     {
       "@id": "wuxing:metal",
@@ -466,7 +493,16 @@
       "domains": [
         "divination",
         "elements"
-      ]
+      ],
+      "aliases": [
+        "The Metal"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Metal (Jin) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "wuxing:water",
@@ -583,7 +619,16 @@
         "elements",
         "sea",
         "water"
-      ]
+      ],
+      "aliases": [
+        "The Water"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      },
+      "description": "Water (Shui) represents wisdom, knowledge, and guidance, serving as a teacher and keeper of sacred traditions."
     }
   ],
   "systemRelationships": {

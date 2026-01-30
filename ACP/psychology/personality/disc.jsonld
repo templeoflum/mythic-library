@@ -113,7 +113,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Dominance"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      }
     },
     {
       "@id": "disc:influence",
@@ -218,7 +226,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Influence"
+      ],
+      "correspondences": {
+        "tarot": "tarot:lovers",
+        "planet": "planet:venus",
+        "element": "element:water"
+      }
     },
     {
       "@id": "disc:steadiness",
@@ -323,7 +339,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Steadiness"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      }
     },
     {
       "@id": "disc:conscientiousness",
@@ -428,7 +452,15 @@
       "domains": [
         "personality-types",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Conscientiousness"
+      ],
+      "correspondences": {
+        "tarot": "tarot:hermit",
+        "planet": "planet:saturn",
+        "element": "element:earth"
+      }
     }
   ],
   "systemRelationships": {

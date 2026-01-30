@@ -84,7 +84,16 @@
       "domains": [
         "developmental",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Beige"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:jupiter",
+        "element": "element:water"
+      },
+      "description": "Beige (Survival) embodies the sustaining forces that maintain cosmic order and protect existence."
     },
     {
       "@id": "spiral:purple",
@@ -179,7 +188,11 @@
       "domains": [
         "developmental",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Purple"
+      ],
+      "description": "Purple (Tribal) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "spiral:red",
@@ -286,7 +299,16 @@
         "developmental",
         "psychology",
         "strength"
-      ]
+      ],
+      "aliases": [
+        "The Red"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Red (Power) represents martial prowess, courage in battle, and the protective use of force."
     },
     {
       "@id": "spiral:blue",
@@ -413,7 +435,16 @@
         "law",
         "order",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Blue"
+      ],
+      "correspondences": {
+        "tarot": "tarot:emperor",
+        "planet": "planet:sun",
+        "element": "element:fire"
+      },
+      "description": "Blue (Order) represents divine kingship, justice, and the right ordering of society and cosmos."
     },
     {
       "@id": "spiral:orange",
@@ -514,7 +545,16 @@
       "domains": [
         "developmental",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Orange"
+      ],
+      "correspondences": {
+        "tarot": "tarot:chariot",
+        "planet": "planet:mars",
+        "element": "element:fire"
+      },
+      "description": "Orange (Achievement) embodies the archetypal hero, representing courage, adventure, and the triumph over adversity."
     },
     {
       "@id": "spiral:green",
@@ -625,7 +665,16 @@
       "domains": [
         "developmental",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Green"
+      ],
+      "correspondences": {
+        "tarot": "tarot:temperance",
+        "planet": "planet:chiron",
+        "element": "element:water"
+      },
+      "description": "Green (Communitarian) represents the power of healing, restoration, and the mending of wounds both physical and spiritual."
     },
     {
       "@id": "spiral:yellow",
@@ -723,7 +772,16 @@
       "domains": [
         "developmental",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Yellow"
+      ],
+      "correspondences": {
+        "tarot": "tarot:magician",
+        "planet": "planet:mercury",
+        "element": "element:air"
+      },
+      "description": "Yellow (Integral) is an archetypal figure embodying key patterns in the mythological tradition."
     },
     {
       "@id": "spiral:turquoise",
@@ -826,7 +884,11 @@
       "domains": [
         "developmental",
         "psychology"
-      ]
+      ],
+      "aliases": [
+        "The Turquoise"
+      ],
+      "description": "Turquoise (Holistic) is an archetypal figure embodying key patterns in the mythological tradition."
     }
   ],
   "systemRelationships": {
