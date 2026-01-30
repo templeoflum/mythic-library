@@ -1,10 +1,15 @@
 /* Atlas View — Three-Pane Layout */
 
+/* Hide when hidden attribute is present (must come before grid rule) */
+#view-atlas.view-content[hidden] {
+  display: none !important;
+}
+
 /* Apply grid directly to the view container - three columns side by side */
 #view-atlas.view-content {
-  display: grid !important;
-  grid-template-columns: 280px 1fr 300px !important;
-  grid-template-rows: 1fr !important;
+  display: grid;
+  grid-template-columns: 280px 1fr 300px;
+  grid-template-rows: 1fr;
   gap: 0;
   padding: 0;
   height: 100%;
