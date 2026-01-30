@@ -31,12 +31,27 @@
   let collapsedGroups = new Set();
   let editingPathId = null;
   let onChangeCallback = null;
+  let initialized = false;
 
   // Drag state
   let draggedPathId = null;
 
+  // Debounce protection for rapid clicks
+  let lastNodeClickTime = 0;
+  let lastSaveTime = 0;
+  const DEBOUNCE_MS = 50;
+
   // Initialize
   function init(existingData = {}, onChange = null) {
+    // Prevent duplicate initialization - just update data if already initialized
+    if (initialized) {
+      traversals = existingData.paths || traversals;
+      groups = existingData.groups || groups;
+      if (onChange) onChangeCallback = onChange;
+      renderAll();
+      return;
+    }
+
     traversals = existingData.paths || [];
     groups = existingData.groups || [];
     onChangeCallback = onChange;
@@ -47,6 +62,8 @@
     renderColorPresets();
     updateGroupSelect();
     renderAll();
+
+    initialized = true;
   }
 
   // Render color preset buttons
@@ -75,6 +92,11 @@
 
   // Handle node click - add to sequence
   function handleNodeClick(nodeId) {
+    // Debounce protection against duplicate event handlers
+    const now = Date.now();
+    if (now - lastNodeClickTime < DEBOUNCE_MS) return;
+    lastNodeClickTime = now;
+
     currentSequence.push(nodeId);
     if (canvasAvailable()) canvas.markNodeInSequence(nodeId, true);
     updateSequenceDisplay();
@@ -233,7 +255,15 @@
     if (modal) modal.hidden = true;
   }
 
+  // Track last group save time
+  let lastGroupSaveTime = 0;
+
   function saveGroup(name) {
+    // Debounce protection against duplicate form submissions
+    const now = Date.now();
+    if (now - lastGroupSaveTime < DEBOUNCE_MS) return;
+    lastGroupSaveTime = now;
+
     const editId = document.getElementById('edit-group-id')?.value;
 
     if (editId) {
@@ -272,6 +302,11 @@
   // === TRAVERSAL FUNCTIONS ===
 
   function saveTraversal(name, color, description, groupId) {
+    // Debounce protection against duplicate form submissions
+    const now = Date.now();
+    if (now - lastSaveTime < DEBOUNCE_MS) return null;
+    lastSaveTime = now;
+
     const editId = document.getElementById('edit-path-id')?.value;
 
     if (editId) {

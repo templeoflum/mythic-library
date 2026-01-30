@@ -242,10 +242,10 @@ body {
   color: white;
 }
 
-.path-sequence .node-chip.arc-D { background: var(--color-descent); }
-.path-sequence .node-chip.arc-R { background: var(--color-resonance); }
-.path-sequence .node-chip.arc-E { background: var(--color-emergence); }
-.path-sequence .node-chip.arc-nontion { background: var(--color-nontion); }
+.path-sequence .node-chip.arc-D { background: var(--color-descent); color: white; }
+.path-sequence .node-chip.arc-R { background: var(--color-resonance); color: white; }
+.path-sequence .node-chip.arc-E { background: var(--color-emergence); color: white; }
+.path-sequence .node-chip.arc-nontion { background: var(--color-nontion); color: white; }
 
 .path-sequence .arrow {
   color: var(--color-text-muted);

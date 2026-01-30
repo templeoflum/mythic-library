@@ -20,6 +20,9 @@
   // =========================================================================
 
   function init() {
+    // Prevent duplicate initialization
+    if (initialized) return;
+
     canvas.init();
     enrichment.load();
     setupCanvasEvents();
