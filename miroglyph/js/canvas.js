@@ -19,8 +19,24 @@
     svg = document.getElementById('canvas');
     if (!svg) return;
 
+    // Get dimensions - use requestAnimationFrame to ensure layout is computed
+    requestAnimationFrame(() => {
+      doInit();
+    });
+  }
+
+  function doInit() {
+    if (!svg) return;
+
     // Get dimensions
     const rect = svg.getBoundingClientRect();
+
+    // If dimensions are too small, the layout hasn't computed yet - retry
+    if (rect.width < 100 || rect.height < 100) {
+      requestAnimationFrame(() => doInit());
+      return;
+    }
+
     centerX = rect.width / 2;
     centerY = rect.height / 2;
 
