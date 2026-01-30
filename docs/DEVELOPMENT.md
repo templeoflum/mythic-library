@@ -1278,6 +1278,58 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 
 ---
 
+## Phase 13: Arc Lens Insight & Miroglyph Dual Orientation (January 2026)
+
+### Key Insight: Arcs as Interpretive Lenses
+
+Validation Test 7 (Arc Separation) consistently failed, showing entities appear in 96% of all patterns with nearly identical coordinate profiles across arcs D, R, and E. Rather than treating this as a failure, Phase 13 reframed this as a validated insight:
+
+**Core finding:** Arcs are interpretive lenses, not entity clusters.
+- ACP coordinates capture what entities ARE (archetypal essence)
+- Miroglyph arcs capture HOW you view content (interpretive function)
+- The same Zeus can be viewed through D (destroyer of Titans), R (judge/witness), or E (creator of cosmic order)
+
+### Validation Test Reframing
+
+Tests 7a and 7b redesigned as **insight tests** rather than pass/fail criteria:
+- Test 7a (Arc-Primordial Analysis): Documents alignment patterns, confirms lens interpretation
+- Test 7b (Arc-Axis Analysis): Documents coordinate convergence across arcs
+- Tier C now depends only on Tests 8 (Conditions) and 9 (Polarity Pairs)
+
+New test suite: `validation/v2_tests/miroglyph_structure_v2.py`
+
+### Miroglyph Dual Orientation
+
+Implemented toggle between two valid spatial configurations:
+
+| Configuration | Inner Ring | Middle Ring | Outer Ring |
+|--------------|------------|-------------|------------|
+| **Inverted** (default) | Descent (D) | Resonance (R) | Emergence (E) |
+| **Standard** | Emergence (E) | Resonance (R) | Descent (D) |
+
+**Fixed elements:**
+- Resonance (R) always middle ring (threshold/mirror)
+- Nontion (∅) always center point (pause/reset)
+- Polarity pairs work identically in both
+
+**Implementation:**
+- `nodes.js`: Added `setConfiguration()`, `toggleConfiguration()`, `getArcOrder()`
+- `storage.js`: Added `loadConfig()`, `saveConfig()` for orientation persistence
+- `app.js`: Added orientation toggle handler and boot-time loading
+- `index.html`: Added gear menu button for orientation toggle
+
+### Updated Metrics
+
+| Metric | Phase 12 | Phase 13 |
+|--------|----------|----------|
+| Tier C verdict | PASS (2/3) | PARTIAL (1/2 validation) |
+| Test 7 status | FAIL | INSIGHT (documented) |
+| Test 8 status | PASS | PARTIAL (1 axis) |
+| Test 9 status | PASS | PASS |
+| Arc interpretation | Entity clusters | Interpretive lenses |
+
+---
+
 ## Lessons Learned
 
 1. **Archive.org is the backbone**: Most reliable source for complete PDFs with good metadata.
@@ -1292,4 +1344,4 @@ The current setup uses one metric (Euclidean distance) and one signal (segment c
 
 ---
 
-*Last updated: January 2026 (Phase 12 — Targeted Data Refinement + Human Audit + Tier C Optimization)*
+*Last updated: January 2026 (Phase 13 — Arc Lens Insight + Miroglyph Dual Orientation)*

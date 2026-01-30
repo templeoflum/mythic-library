@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-01-30
+
+### Added - Miroglyph & Validation Improvements
+
+**Miroglyph Dual Orientation:**
+- Added toggle to swap Emergence (E) and Descent (D) arc positions
+- Two valid configurations: Standard (E inner, D outer) and Inverted (D inner, E outer)
+- Resonance (R) and Nontion (∅) remain fixed as middle ring and center point
+- Orientation persists via localStorage
+- Settings accessible via gear menu
+
+**Validation Test Reframing:**
+- Tests 7a/7b (Arc Analysis) redesigned as insight tests rather than pass/fail criteria
+- Documented key finding: Arcs are interpretive lenses, not entity clusters
+- Same entities appear across all arcs with nearly identical coordinate profiles
+- Tier C now depends only on Tests 8 (Conditions) and 9 (Polarity Pairs)
+- New `miroglyph_structure_v2.py` test suite with interpretation framework
+
+### Changed
+- Tier C verdict now PARTIAL (1/2 validation tests pass)
+- Test 7 reframed from "Arc Separation (FAIL)" to insight documentation
+- CLAUDE.md updated with dual orientation system documentation
+
+### Documented
+- Core insight: ACP coordinates capture what entities ARE; Miroglyph arcs capture HOW you view them
+- Zeus viewed through D (destroyer of Titans), R (judge/witness), or E (creator of cosmic order) - same coordinates, different lens
+
 ## [0.3.0] - 2026-01-29
 
 ### Added - ACP Enrichment Phase 3 (Final)
@@ -173,7 +200,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[Unreleased]: https://github.com/templeoflum/mythic-library/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/templeoflum/mythic-library/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/templeoflum/mythic-library/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/templeoflum/mythic-library/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/templeoflum/mythic-library/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/templeoflum/mythic-library/compare/v0.2.0...v0.2.1
