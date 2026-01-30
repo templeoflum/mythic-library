@@ -8,7 +8,13 @@
       "name": "Roman Pantheon – Dii Consentes",
       "description": "The gods of the Roman state religion, adapted from Greek models but fundamentally reshaped by Roman civic values. Roman deities emphasize institutional order, civic duty, agricultural fertility, and ancestral authority over the personal drama and moral ambiguity of their Greek counterparts.",
       "culturalContext": "Roman Republic and Empire, ~753 BCE - 476 CE",
-      "primarySources": ["Ovid's Metamorphoses", "Virgil's Aeneid", "Livy's Ab Urbe Condita", "Cicero's De Natura Deorum", "Varro's Antiquitates Rerum Divinarum"],
+      "primarySources": [
+        "Ovid's Metamorphoses",
+        "Virgil's Aeneid",
+        "Livy's Ab Urbe Condita",
+        "Cicero's De Natura Deorum",
+        "Varro's Antiquitates Rerum Divinarum"
+      ],
       "characteristics": [
         "Civic religion - gods serve the state and its people",
         "Pietas (duty to gods, state, family) as central virtue",
@@ -17,12 +23,25 @@
         "Ancestral tradition (mos maiorum) shapes divine character"
       ],
       "cosmology": {
-        "capitalTemples": ["Jupiter Optimus Maximus (Capitoline Hill)", "Mars Ultor (Forum of Augustus)", "Venus Genetrix (Forum of Caesar)"],
-        "priesthoods": ["Pontifex Maximus", "Augures", "Flamines", "Vestal Virgins"],
-        "festivals": ["Saturnalia", "Lupercalia", "Parentalia", "Ludi Romani"]
+        "capitalTemples": [
+          "Jupiter Optimus Maximus (Capitoline Hill)",
+          "Mars Ultor (Forum of Augustus)",
+          "Venus Genetrix (Forum of Caesar)"
+        ],
+        "priesthoods": [
+          "Pontifex Maximus",
+          "Augures",
+          "Flamines",
+          "Vestal Virgins"
+        ],
+        "festivals": [
+          "Saturnalia",
+          "Lupercalia",
+          "Parentalia",
+          "Ludi Romani"
+        ]
       }
     },
-
     {
       "@id": "arch:RO-JUPITER",
       "@type": "Archetype",
@@ -30,13 +49,23 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "Jupiter Optimus Maximus, king of the Roman gods, guardian of the state, guarantor of oaths and treaties. Unlike Zeus, Jupiter is primarily a civic sovereign whose authority manifests through law, augury, and institutional legitimacy rather than personal dominion and erratic passion.",
-
       "aliases": [
-        {"name": "Jove", "system": "Roman", "fidelity": 1.0},
-        {"name": "Jupiter Optimus Maximus", "system": "Roman", "fidelity": 1.0},
-        {"name": "Diespiter", "system": "Archaic Roman", "fidelity": 0.9}
+        {
+          "name": "Jove",
+          "system": "Roman",
+          "fidelity": 1.0
+        },
+        {
+          "name": "Jupiter Optimus Maximus",
+          "system": "Roman",
+          "fidelity": 1.0
+        },
+        {
+          "name": "Diespiter",
+          "system": "Archaic Roman",
+          "fidelity": 0.9
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.1,
         "creation-destruction": 0.3,
@@ -47,25 +76,65 @@
         "stasis-transformation": 0.2,
         "voluntary-fated": 0.3
       },
-
       "instantiates": [
         {
           "primordial": "primordial:sovereign",
           "weight": 0.95,
-          "aspects": ["supreme civic authority", "guarantor of law", "protector of the state"]
+          "aspects": [
+            "supreme civic authority",
+            "guarantor of law",
+            "protector of the state"
+          ]
         },
         {
           "primordial": "primordial:sky-father",
           "weight": 0.85,
-          "aspects": ["thunder and lightning", "augury through sky-signs", "celestial order"]
+          "aspects": [
+            "thunder and lightning",
+            "augury through sky-signs",
+            "celestial order"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-ZEUS", "type": "CULTURAL_ECHO", "fidelity": 0.85, "notes": "Jupiter is more civic and less capricious than Zeus. Lacks Zeus's sexual adventures and personal vendettas."}
-      ]
+        {
+          "target": "arch:GR-ZEUS",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.85,
+          "notes": "Jupiter is more civic and less capricious than Zeus. Lacks Zeus's sexual adventures and personal vendettas."
+        }
+      ],
+      "domains": [
+        "justice",
+        "love",
+        "protection",
+        "sovereignty"
+      ],
+      "keywords": [
+        "augury",
+        "authority",
+        "civic",
+        "dominion",
+        "erratic",
+        "gods",
+        "guarantor",
+        "guardian",
+        "institutional",
+        "jupiter"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through supreme civic authority and guarantor of law",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
-
     {
       "@id": "arch:RO-JUNO",
       "@type": "Archetype",
@@ -73,12 +142,19 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "Queen of the gods, protector of the Roman state, guardian of women and marriage. Juno Regina watched over the Roman people collectively. While Hera is defined by marital jealousy, Juno emphasizes civic protection and the sanctity of institutional bonds.",
-
       "aliases": [
-        {"name": "Juno Regina", "system": "Roman", "fidelity": 1.0},
-        {"name": "Juno Moneta", "system": "Roman", "fidelity": 0.9, "aspect": "protector of finances"}
+        {
+          "name": "Juno Regina",
+          "system": "Roman",
+          "fidelity": 1.0
+        },
+        {
+          "name": "Juno Moneta",
+          "system": "Roman",
+          "fidelity": 0.9,
+          "aspect": "protector of finances"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.1,
         "creation-destruction": 0.35,
@@ -89,25 +165,66 @@
         "stasis-transformation": 0.15,
         "voluntary-fated": 0.4
       },
-
       "instantiates": [
         {
           "primordial": "primordial:great-mother",
           "weight": 0.85,
-          "aspects": ["protector of women", "guardian of marriage", "civic motherhood"]
+          "aspects": [
+            "protector of women",
+            "guardian of marriage",
+            "civic motherhood"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.75,
-          "aspects": ["queen of gods", "protector of the state", "institutional authority"]
+          "aspects": [
+            "queen of gods",
+            "protector of the state",
+            "institutional authority"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-HERA", "type": "CULTURAL_ECHO", "fidelity": 0.8, "notes": "Juno is more civic protector than jealous wife. Emphasis on institutional guardianship over personal vendetta."}
-      ]
+        {
+          "target": "arch:GR-HERA",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.8,
+          "notes": "Juno is more civic protector than jealous wife. Emphasis on institutional guardianship over personal vendetta."
+        }
+      ],
+      "domains": [
+        "marriage",
+        "protection",
+        "sovereignty"
+      ],
+      "keywords": [
+        "bonds",
+        "civic",
+        "collectively",
+        "defined",
+        "emphasizes",
+        "gods",
+        "great mother",
+        "guardian",
+        "hera",
+        "institutional"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great mother energy through protector of women and guardian of marriage",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
-
     {
       "@id": "arch:RO-NEPTUNE",
       "@type": "Archetype",
@@ -115,11 +232,13 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "God of the sea and freshwater. In early Roman religion, Neptune was an agricultural water deity before absorbing Poseidon's maritime attributes. Retains a more ordered, less wrathful character than his Greek counterpart.",
-
       "aliases": [
-        {"name": "Neptunus", "system": "Archaic Roman", "fidelity": 1.0}
+        {
+          "name": "Neptunus",
+          "system": "Archaic Roman",
+          "fidelity": 1.0
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.4,
         "creation-destruction": 0.45,
@@ -130,20 +249,53 @@
         "stasis-transformation": 0.4,
         "voluntary-fated": 0.45
       },
-
       "instantiates": [
         {
           "primordial": "primordial:sovereign",
           "weight": 0.7,
-          "aspects": ["lord of the seas", "maritime power"]
+          "aspects": [
+            "lord of the seas",
+            "maritime power"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-POSEIDON", "type": "CULTURAL_ECHO", "fidelity": 0.85, "notes": "Neptune is slightly more orderly; originally an agricultural freshwater deity."}
-      ]
+        {
+          "target": "arch:GR-POSEIDON",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.85,
+          "notes": "Neptune is slightly more orderly; originally an agricultural freshwater deity."
+        }
+      ],
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "absorbing",
+        "agricultural",
+        "attributes",
+        "before",
+        "character",
+        "counterpart",
+        "deity",
+        "early",
+        "freshwater",
+        "greek"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through lord of the seas and maritime power",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
-
     {
       "@id": "arch:RO-MINERVA",
       "@type": "Archetype",
@@ -151,11 +303,14 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "Goddess of wisdom, strategic warfare, crafts, and trade. Member of the Capitoline Triad with Jupiter and Juno. Minerva places greater emphasis on practical craft (artisans, physicians, teachers) alongside Athena's strategic wisdom.",
-
       "aliases": [
-        {"name": "Minerva Medica", "system": "Roman", "fidelity": 0.9, "aspect": "patroness of medicine"}
+        {
+          "name": "Minerva Medica",
+          "system": "Roman",
+          "fidelity": 0.9,
+          "aspect": "patroness of medicine"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.08,
         "creation-destruction": 0.35,
@@ -166,25 +321,55 @@
         "stasis-transformation": 0.4,
         "voluntary-fated": 0.25
       },
-
       "instantiates": [
         {
           "primordial": "primordial:sage",
           "weight": 0.9,
-          "aspects": ["wisdom", "strategy", "practical knowledge"]
+          "aspects": [
+            "wisdom",
+            "strategy",
+            "practical knowledge"
+          ]
         },
         {
           "primordial": "primordial:artisan",
           "weight": 0.8,
-          "aspects": ["craft patronage", "artisans", "teachers", "physicians"]
+          "aspects": [
+            "craft patronage",
+            "artisans",
+            "teachers",
+            "physicians"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-ATHENA", "type": "CULTURAL_ECHO", "fidelity": 0.9, "notes": "Very close parallel. Minerva emphasizes craft patronage more explicitly."}
-      ]
+        {
+          "target": "arch:GR-ATHENA",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.9,
+          "notes": "Very close parallel. Minerva emphasizes craft patronage more explicitly."
+        }
+      ],
+      "domains": [
+        "commerce",
+        "crafts",
+        "wisdom"
+      ],
+      "keywords": [
+        "alongside",
+        "artisan",
+        "artisans",
+        "athena",
+        "capitoline",
+        "commerce",
+        "craft",
+        "crafts",
+        "emphasis",
+        "goddess"
+      ],
+      "coreFunction": "To embody sage energy through wisdom and strategy",
+      "symbolicCore": "The commerce that transforms through Minerva's essence"
     },
-
     {
       "@id": "arch:RO-PLUTO",
       "@type": "Archetype",
@@ -192,12 +377,19 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "God of the underworld and wealth (from Greek Plouton, 'the wealthy one'). Also known as Dis Pater. Less dread-inspiring than Hades; the Roman conception emphasizes the wealth stored in the earth and the orderly passage of the dead.",
-
       "aliases": [
-        {"name": "Dis Pater", "system": "Roman", "fidelity": 0.95},
-        {"name": "Orcus", "system": "Roman", "fidelity": 0.8, "aspect": "punisher of the dead"}
+        {
+          "name": "Dis Pater",
+          "system": "Roman",
+          "fidelity": 0.95
+        },
+        {
+          "name": "Orcus",
+          "system": "Roman",
+          "fidelity": 0.8,
+          "aspect": "punisher of the dead"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.2,
         "creation-destruction": 0.45,
@@ -208,20 +400,46 @@
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.7
       },
-
       "instantiates": [
         {
           "primordial": "primordial:underworld-lord",
           "weight": 0.9,
-          "aspects": ["ruler of the dead", "guardian of underworld", "keeper of earthly wealth"]
+          "aspects": [
+            "ruler of the dead",
+            "guardian of underworld",
+            "keeper of earthly wealth"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-HADES", "type": "CULTURAL_ECHO", "fidelity": 0.85, "notes": "Pluto/Dis Pater emphasizes wealth and orderly passage; less isolation and dread than Hades."}
-      ]
+        {
+          "target": "arch:GR-HADES",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.85,
+          "notes": "Pluto/Dis Pater emphasizes wealth and orderly passage; less isolation and dread than Hades."
+        }
+      ],
+      "domains": [
+        "death",
+        "earth",
+        "initiation",
+        "underworld"
+      ],
+      "keywords": [
+        "conception",
+        "dead",
+        "death",
+        "dread",
+        "earth",
+        "emphasizes",
+        "greek",
+        "hades",
+        "initiation",
+        "inspiring"
+      ],
+      "coreFunction": "To embody underworld lord energy through ruler of the dead and guardian of underworld",
+      "symbolicCore": "The death that transforms through Pluto's essence"
     },
-
     {
       "@id": "arch:RO-VENUS",
       "@type": "Archetype",
@@ -229,12 +447,20 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "Goddess of love, beauty, fertility, and victory. Mother of Aeneas and thus ancestress of Rome (Venus Genetrix). Unlike Aphrodite's emphasis on erotic passion, Venus carries deep civic and ancestral significance as the divine progenitor of the Roman people.",
-
       "aliases": [
-        {"name": "Venus Genetrix", "system": "Roman", "fidelity": 1.0, "aspect": "ancestress of Rome"},
-        {"name": "Venus Victrix", "system": "Roman", "fidelity": 0.9, "aspect": "goddess of victory"}
+        {
+          "name": "Venus Genetrix",
+          "system": "Roman",
+          "fidelity": 1.0,
+          "aspect": "ancestress of Rome"
+        },
+        {
+          "name": "Venus Victrix",
+          "system": "Roman",
+          "fidelity": 0.9,
+          "aspect": "goddess of victory"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.2,
@@ -245,25 +471,67 @@
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.35
       },
-
       "instantiates": [
         {
           "primordial": "primordial:great-mother",
           "weight": 0.8,
-          "aspects": ["ancestress of Rome", "divine motherhood", "fertility"]
+          "aspects": [
+            "ancestress of Rome",
+            "divine motherhood",
+            "fertility"
+          ]
         },
         {
           "primordial": "primordial:lover",
           "weight": 0.7,
-          "aspects": ["beauty", "love", "desire"]
+          "aspects": [
+            "beauty",
+            "love",
+            "desire"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-APHRODITE", "type": "CULTURAL_ECHO", "fidelity": 0.8, "notes": "Venus is more civic and ancestral. Venus Genetrix as mother of Rome elevates her beyond personal erotic force."}
-      ]
+        {
+          "target": "arch:GR-APHRODITE",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.8,
+          "notes": "Venus is more civic and ancestral. Venus Genetrix as mother of Rome elevates her beyond personal erotic force."
+        }
+      ],
+      "domains": [
+        "fertility",
+        "love",
+        "memory",
+        "motherhood"
+      ],
+      "keywords": [
+        "aeneas",
+        "ancestral",
+        "ancestress",
+        "aphrodite",
+        "beauty",
+        "carries",
+        "civic",
+        "deep",
+        "divine",
+        "emphasis"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody great mother energy through ancestress of Rome and divine motherhood",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
-
     {
       "@id": "arch:RO-MARS",
       "@type": "Archetype",
@@ -271,13 +539,25 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "God of war, agriculture, and civic guardianship. Father of Romulus and Remus, thus father of Rome. Unlike the despised Ares, Mars was one of the most important and honored Roman gods — a protector of fields and borders, patron of soldiers who fight for civic duty, not bloodlust.",
-
       "aliases": [
-        {"name": "Mars Ultor", "system": "Roman", "fidelity": 1.0, "aspect": "Mars the Avenger"},
-        {"name": "Mars Pater", "system": "Roman", "fidelity": 0.95, "aspect": "father Mars, agricultural guardian"},
-        {"name": "Mavors", "system": "Archaic Roman", "fidelity": 0.9}
+        {
+          "name": "Mars Ultor",
+          "system": "Roman",
+          "fidelity": 1.0,
+          "aspect": "Mars the Avenger"
+        },
+        {
+          "name": "Mars Pater",
+          "system": "Roman",
+          "fidelity": 0.95,
+          "aspect": "father Mars, agricultural guardian"
+        },
+        {
+          "name": "Mavors",
+          "system": "Archaic Roman",
+          "fidelity": 0.9
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.3,
         "creation-destruction": 0.5,
@@ -288,25 +568,66 @@
         "stasis-transformation": 0.5,
         "voluntary-fated": 0.2
       },
-
       "instantiates": [
         {
           "primordial": "primordial:warrior",
           "weight": 0.9,
-          "aspects": ["civic warfare", "disciplined combat", "guardian of borders"]
+          "aspects": [
+            "civic warfare",
+            "disciplined combat",
+            "guardian of borders"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.6,
-          "aspects": ["father of Rome", "agricultural protector", "civic patron"]
+          "aspects": [
+            "father of Rome",
+            "agricultural protector",
+            "civic patron"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-ARES", "type": "CULTURAL_ECHO", "fidelity": 0.6, "notes": "Mars is radically different from Ares. Mars is honorable, civic, agricultural; Ares is despised, chaotic, bloodthirsty."}
-      ]
+        {
+          "target": "arch:GR-ARES",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.6,
+          "notes": "Mars is radically different from Ares. Mars is honorable, civic, agricultural; Ares is despised, chaotic, bloodthirsty."
+        }
+      ],
+      "domains": [
+        "boundaries",
+        "fatherhood",
+        "harvest",
+        "war"
+      ],
+      "keywords": [
+        "agriculture",
+        "ares",
+        "bloodlust",
+        "borders",
+        "boundaries",
+        "civic",
+        "despised",
+        "duty",
+        "father",
+        "fatherhood"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through civic warfare and disciplined combat",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
-
     {
       "@id": "arch:RO-MERCURY",
       "@type": "Archetype",
@@ -314,11 +635,13 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "God of commerce, trade, communication, and travelers. While Hermes emphasizes trickery and psychopomp roles, Roman Mercury centers on commercial enterprise and reliable communication — the god of merchants and the marketplace.",
-
       "aliases": [
-        {"name": "Mercurius", "system": "Archaic Roman", "fidelity": 1.0}
+        {
+          "name": "Mercurius",
+          "system": "Archaic Roman",
+          "fidelity": 1.0
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.4,
         "creation-destruction": 0.45,
@@ -329,25 +652,57 @@
         "stasis-transformation": 0.6,
         "voluntary-fated": 0.25
       },
-
       "instantiates": [
         {
           "primordial": "primordial:trickster",
           "weight": 0.55,
-          "aspects": ["clever speech", "mediation", "boundary-crossing"]
+          "aspects": [
+            "clever speech",
+            "mediation",
+            "boundary-crossing"
+          ]
         },
         {
           "primordial": "primordial:messenger",
           "weight": 0.9,
-          "aspects": ["commerce", "trade", "communication", "travelers"]
+          "aspects": [
+            "commerce",
+            "trade",
+            "communication",
+            "travelers"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-HERMES", "type": "CULTURAL_ECHO", "fidelity": 0.8, "notes": "Mercury is more commerce-focused, less trickster. Hermes's psychopomp and thief aspects are downplayed."}
-      ]
+        {
+          "target": "arch:GR-HERMES",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.8,
+          "notes": "Mercury is more commerce-focused, less trickster. Hermes's psychopomp and thief aspects are downplayed."
+        }
+      ],
+      "domains": [
+        "commerce",
+        "communication"
+      ],
+      "keywords": [
+        "centers",
+        "commerce",
+        "commercial",
+        "communication",
+        "emphasizes",
+        "enterprise",
+        "hermes",
+        "marketplace",
+        "merchants",
+        "mercury"
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody messenger energy through commerce and trade",
+      "symbolicCore": "The commerce that transforms through Mercury's essence"
     },
-
     {
       "@id": "arch:RO-SATURN",
       "@type": "Archetype",
@@ -355,11 +710,13 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "God of agriculture, time, and the Golden Age. While Greek Cronus is the devouring father overthrown by Zeus, Roman Saturn ruled the Golden Age of peace and plenty. The Saturnalia festival celebrated this utopian past with role-reversals and gift-giving.",
-
       "aliases": [
-        {"name": "Saturnus", "system": "Archaic Roman", "fidelity": 1.0}
+        {
+          "name": "Saturnus",
+          "system": "Archaic Roman",
+          "fidelity": 1.0
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.45,
@@ -370,25 +727,65 @@
         "stasis-transformation": 0.25,
         "voluntary-fated": 0.6
       },
-
       "instantiates": [
         {
           "primordial": "primordial:wise-elder",
           "weight": 0.75,
-          "aspects": ["Golden Age ruler", "agricultural wisdom", "time and cycles"]
+          "aspects": [
+            "Golden Age ruler",
+            "agricultural wisdom",
+            "time and cycles"
+          ]
         },
         {
           "primordial": "primordial:sovereign",
           "weight": 0.6,
-          "aspects": ["ruler of the Golden Age", "ancestral authority"]
+          "aspects": [
+            "ruler of the Golden Age",
+            "ancestral authority"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-CRONUS", "type": "CULTURAL_ECHO", "fidelity": 0.7, "notes": "Saturn is far more benevolent. Cronus devours children; Saturn rules a Golden Age. The devouring myth is downplayed in Roman tradition."}
-      ]
+        {
+          "target": "arch:GR-CRONUS",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.7,
+          "notes": "Saturn is far more benevolent. Cronus devours children; Saturn rules a Golden Age. The devouring myth is downplayed in Roman tradition."
+        }
+      ],
+      "domains": [
+        "fatherhood",
+        "harvest",
+        "peace",
+        "time"
+      ],
+      "keywords": [
+        "agriculture",
+        "celebrated",
+        "cronus",
+        "devouring",
+        "father",
+        "fatherhood",
+        "festival",
+        "gift",
+        "giving",
+        "golden"
+      ],
+      "narrativeRoles": [
+        "mentor",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody wise elder energy through Golden Age ruler and agricultural wisdom",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
-
     {
       "@id": "arch:RO-HERCULES",
       "@type": "Archetype",
@@ -396,11 +793,14 @@
       "systemCode": "RO",
       "belongsToSystem": "system:roman",
       "description": "Deified hero, patron of commerce, strength, and good faith. Roman Hercules is more civilized than Greek Heracles — a patron of merchants and travelers, honored at the Ara Maxima for his defeat of Cacus. Less tragic madness, more institutional heroism.",
-
       "aliases": [
-        {"name": "Hercules Invictus", "system": "Roman", "fidelity": 1.0, "aspect": "the unconquered"}
+        {
+          "name": "Hercules Invictus",
+          "system": "Roman",
+          "fidelity": 1.0,
+          "aspect": "the unconquered"
+        }
       ],
-
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.4,
@@ -411,23 +811,62 @@
         "stasis-transformation": 0.6,
         "voluntary-fated": 0.4
       },
-
       "instantiates": [
         {
           "primordial": "primordial:hero",
           "weight": 0.9,
-          "aspects": ["civilizing hero", "protector of travelers", "defeater of monsters"]
+          "aspects": [
+            "civilizing hero",
+            "protector of travelers",
+            "defeater of monsters"
+          ]
         },
         {
           "primordial": "primordial:warrior",
           "weight": 0.7,
-          "aspects": ["strength", "endurance", "combat"]
+          "aspects": [
+            "strength",
+            "endurance",
+            "combat"
+          ]
         }
       ],
-
       "relationships": [
-        {"target": "arch:GR-HERACLES", "type": "CULTURAL_ECHO", "fidelity": 0.85, "notes": "Hercules is more civilized and institutional. Less emphasis on tragic madness, more on commerce patronage and civic heroism."}
-      ]
+        {
+          "target": "arch:GR-HERACLES",
+          "type": "CULTURAL_ECHO",
+          "fidelity": 0.85,
+          "notes": "Hercules is more civilized and institutional. Less emphasis on tragic madness, more on commerce patronage and civic heroism."
+        }
+      ],
+      "domains": [
+        "commerce",
+        "madness"
+      ],
+      "keywords": [
+        "cacus",
+        "civilized",
+        "commerce",
+        "defeat",
+        "deified",
+        "faith",
+        "good",
+        "greek",
+        "heracles",
+        "hercules"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through civilizing hero and protector of travelers",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ]
 }

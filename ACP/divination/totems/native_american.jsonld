@@ -8,7 +8,6 @@
   "subdomain": "totems",
   "cardinality": 12,
   "structuralNotes": "Based on Sun Bear's medicine wheel synthesis. 12 animal totems correspond to moon cycles and seasons. Each has elemental, directional, and plant associations.",
-
   "entries": [
     {
       "@id": "totem:snow_goose",
@@ -19,25 +18,66 @@
       "direction": "North",
       "element": "Earth",
       "season": "Winter",
-      "keywords": ["tradition", "ambition", "determination", "community", "goals"],
+      "keywords": [
+        "tradition",
+        "ambition",
+        "determination",
+        "community",
+        "goals"
+      ],
       "description": "The snow goose brings the medicine of tradition and ambitious goals. Represents determination, community bonds, and the drive to achieve despite harsh conditions.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
-        "individual-collective": 0.70,
+        "active-receptive": 0.4,
+        "individual-collective": 0.7,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["tradition", "community"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["determination", "ambition"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.75,
+          "aspects": [
+            "tradition",
+            "community"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "determination",
+            "ambition"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:capricorn", "fidelity": 0.70, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:capricorn",
+          "fidelity": 0.7,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "hero",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through tradition and community",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:otter",
@@ -48,25 +88,67 @@
       "direction": "North",
       "element": "Air",
       "season": "Winter",
-      "keywords": ["playfulness", "curiosity", "independence", "unconventional", "nurturing"],
+      "keywords": [
+        "playfulness",
+        "curiosity",
+        "independence",
+        "unconventional",
+        "nurturing"
+      ],
       "description": "The otter brings medicine of playful curiosity and unconventional thinking. Represents independent spirit, nurturing through play, and creative problem-solving.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
-        "individual-collective": 0.40,
+        "active-receptive": 0.4,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["playfulness", "curiosity"]},
-        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["independence", "joy"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.75,
+          "aspects": [
+            "playfulness",
+            "curiosity"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.6,
+          "aspects": [
+            "independence",
+            "joy"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:aquarius", "fidelity": 0.65, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:aquarius",
+          "fidelity": 0.65,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "healing",
+        "motherhood"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through playfulness and curiosity",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:wolf",
@@ -77,25 +159,66 @@
       "direction": "North",
       "element": "Water",
       "season": "Winter/Spring",
-      "keywords": ["intuition", "teacher", "pathfinder", "loyalty", "compassion"],
+      "keywords": [
+        "intuition",
+        "teacher",
+        "pathfinder",
+        "loyalty",
+        "compassion"
+      ],
       "description": "The wolf brings medicine of intuition and teaching. Represents the pathfinder who guides others, deep loyalty, and compassionate leadership.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.50,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.5,
         "active-receptive": 0.55,
         "individual-collective": 0.65,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["teacher", "pathfinder"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.60, "aspects": ["intuition", "guidance"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "teacher",
+            "pathfinder"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.6,
+          "aspects": [
+            "intuition",
+            "guidance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:pisces", "fidelity": 0.60, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:pisces",
+          "fidelity": 0.6,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "mentor",
+        "sage",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody wise elder energy through teacher and pathfinder",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:red_hawk",
@@ -106,25 +229,67 @@
       "direction": "East",
       "element": "Fire",
       "season": "Spring",
-      "keywords": ["vision", "leadership", "courage", "messenger", "initiative"],
+      "keywords": [
+        "vision",
+        "leadership",
+        "courage",
+        "messenger",
+        "initiative"
+      ],
       "description": "The red hawk brings medicine of far-seeing vision and bold leadership. Represents the messenger between worlds, courage to act, and initiating force.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
         "active-receptive": 0.25,
         "individual-collective": 0.35,
-        "ascent-descent": 0.30,
-        "stasis-transformation": 0.60,
+        "ascent-descent": 0.3,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.80, "aspects": ["courage", "initiative"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["vision", "messenger"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.8,
+          "aspects": [
+            "courage",
+            "initiative"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "vision",
+            "messenger"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:aries", "fidelity": 0.75, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:aries",
+          "fidelity": 0.75,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "communication",
+        "healing"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through courage and initiative",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:beaver",
@@ -135,25 +300,66 @@
       "direction": "East",
       "element": "Earth",
       "season": "Spring",
-      "keywords": ["builder", "persistence", "security", "resourcefulness", "home"],
+      "keywords": [
+        "builder",
+        "persistence",
+        "security",
+        "resourcefulness",
+        "home"
+      ],
       "description": "The beaver brings medicine of industrious building and persistent effort. Represents creating security through work, resourcefulness, and the sacred home.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
         "individual-collective": 0.55,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["builder", "resourcefulness"]},
-        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["security", "home"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.8,
+          "aspects": [
+            "builder",
+            "resourcefulness"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.65,
+          "aspects": [
+            "security",
+            "home"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:taurus", "fidelity": 0.75, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:taurus",
+          "fidelity": 0.75,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "healing",
+        "home"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody creator energy through builder and resourcefulness",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:deer",
@@ -164,26 +370,74 @@
       "direction": "East",
       "element": "Air",
       "season": "Spring/Summer",
-      "keywords": ["gentleness", "sensitivity", "grace", "alertness", "communication"],
+      "keywords": [
+        "gentleness",
+        "sensitivity",
+        "grace",
+        "alertness",
+        "communication"
+      ],
       "description": "The deer brings medicine of gentle sensitivity and graceful movement. Represents alert awareness, the power of gentleness, and heartfelt communication.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["gentleness", "grace"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["sensitivity", "communication"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "gentleness",
+            "grace"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "sensitivity",
+            "communication"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:gemini", "fidelity": 0.60, "note": "Same season"},
-        {"type": "CULTURAL_ECHO", "target": "nakshatra:mrigashira", "fidelity": 0.70, "note": "Deer symbolism"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:gemini",
+          "fidelity": 0.6,
+          "note": "Same season"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:mrigashira",
+          "fidelity": 0.7,
+          "note": "Deer symbolism"
+        }
+      ],
+      "domains": [
+        "communication",
+        "dance",
+        "healing"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "innocent",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through gentleness and grace",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:woodpecker",
@@ -194,25 +448,70 @@
       "direction": "South",
       "element": "Water",
       "season": "Summer",
-      "keywords": ["nurturing", "rhythm", "devotion", "protection", "heartbeat"],
+      "keywords": [
+        "nurturing",
+        "rhythm",
+        "devotion",
+        "protection",
+        "heartbeat"
+      ],
       "description": "The woodpecker brings medicine of nurturing rhythm and protective devotion. Represents the heartbeat of the earth, family protection, and persistent care.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.30,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
-        "active-receptive": 0.60,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.40,
+        "active-receptive": 0.6,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.4,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["nurturing", "protection"]},
-        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["devotion", "rhythm"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.8,
+          "aspects": [
+            "nurturing",
+            "protection"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "devotion",
+            "rhythm"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:cancer", "fidelity": 0.75, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:cancer",
+          "fidelity": 0.75,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "dance",
+        "earth",
+        "family",
+        "healing",
+        "motherhood",
+        "protection"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through nurturing and protection",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:salmon",
@@ -223,25 +522,68 @@
       "direction": "South",
       "element": "Fire",
       "season": "Summer",
-      "keywords": ["determination", "wisdom", "creativity", "pride", "return"],
+      "keywords": [
+        "determination",
+        "wisdom",
+        "creativity",
+        "pride",
+        "return"
+      ],
       "description": "The salmon brings medicine of determined return and deep wisdom. Represents creative pride, the drive to return home, and knowledge gained through struggle.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["determination", "return"]},
-        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["wisdom", "creativity"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "determination",
+            "return"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.6,
+          "aspects": [
+            "wisdom",
+            "creativity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:leo", "fidelity": 0.65, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:leo",
+          "fidelity": 0.65,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "healing",
+        "home",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sage",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through determination and return",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:brown_bear",
@@ -252,25 +594,67 @@
       "direction": "South",
       "element": "Earth",
       "season": "Summer/Autumn",
-      "keywords": ["introspection", "healing", "strength", "dreams", "harvest"],
+      "keywords": [
+        "introspection",
+        "healing",
+        "strength",
+        "dreams",
+        "harvest"
+      ],
       "description": "The brown bear brings medicine of introspective healing and quiet strength. Represents dream work, harvesting wisdom, and the power of going within.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.50,
-        "active-receptive": 0.60,
-        "individual-collective": 0.40,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.5,
+        "active-receptive": 0.6,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["healing", "introspection"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["dreams", "strength"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "healing",
+            "introspection"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "dreams",
+            "strength"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:virgo", "fidelity": 0.60, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:virgo",
+          "fidelity": 0.6,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "healing",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "magician"
+      ],
+      "coreFunction": "To embody healer energy through healing and introspection",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:raven",
@@ -281,26 +665,74 @@
       "direction": "West",
       "element": "Air",
       "season": "Autumn",
-      "keywords": ["magic", "balance", "justice", "shape-shifting", "diplomacy"],
+      "keywords": [
+        "magic",
+        "balance",
+        "justice",
+        "shape-shifting",
+        "diplomacy"
+      ],
       "description": "The raven brings medicine of transformative magic and balanced justice. Represents diplomatic wisdom, shape-shifting ability, and seeing both sides.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.50,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["magic", "shape-shifting"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["balance", "transformation"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "magic",
+            "shape-shifting"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "balance",
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:libra", "fidelity": 0.60, "note": "Same season"},
-        {"type": "CULTURAL_ECHO", "target": "arch:NO-ODIN", "fidelity": 0.55, "note": "Raven wisdom"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:libra",
+          "fidelity": 0.6,
+          "note": "Same season"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.55,
+          "note": "Raven wisdom"
+        }
+      ],
+      "domains": [
+        "healing",
+        "justice",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through magic and shape-shifting",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:snake",
@@ -311,25 +743,69 @@
       "direction": "West",
       "element": "Water",
       "season": "Autumn",
-      "keywords": ["transformation", "sexuality", "secrets", "death-rebirth", "power"],
+      "keywords": [
+        "transformation",
+        "sexuality",
+        "secrets",
+        "death-rebirth",
+        "power"
+      ],
       "description": "The snake brings medicine of deep transformation and hidden power. Represents shedding old skins, sexual energy, and the secrets of death-rebirth.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.55,
-        "light-shadow": 0.60,
+        "light-shadow": 0.6,
         "active-receptive": 0.45,
         "individual-collective": 0.35,
-        "ascent-descent": 0.60,
-        "stasis-transformation": 0.80,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["transformation", "secrets"]},
-        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["death-rebirth", "shedding"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.8,
+          "aspects": [
+            "transformation",
+            "secrets"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.6,
+          "aspects": [
+            "death-rebirth",
+            "shedding"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:scorpio", "fidelity": 0.75, "note": "Same season"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:scorpio",
+          "fidelity": 0.75,
+          "note": "Same season"
+        }
+      ],
+      "domains": [
+        "death",
+        "healing",
+        "rebirth",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and secrets",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "totem:elk",
@@ -340,50 +816,142 @@
       "direction": "West",
       "element": "Fire",
       "season": "Autumn/Winter",
-      "keywords": ["stamina", "truth", "wisdom", "endurance", "seeking"],
+      "keywords": [
+        "stamina",
+        "truth",
+        "wisdom",
+        "endurance",
+        "seeking"
+      ],
       "description": "The elk brings medicine of stamina and truth-seeking. Represents the endurance to pursue wisdom, strength through winter, and the seeker's path.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["seeking", "endurance"]},
-        {"primordial": "primordial:wise-elder", "weight": 0.65, "aspects": ["truth", "wisdom"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "seeking",
+            "endurance"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.65,
+          "aspects": [
+            "truth",
+            "wisdom"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "zodiac:sagittarius", "fidelity": 0.65, "note": "Same season"},
-        {"type": "EVOLUTION", "target": "totem:snow_goose", "note": "Wheel continues"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "zodiac:sagittarius",
+          "fidelity": 0.65,
+          "note": "Same season"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "totem:snow_goose",
+          "note": "Wheel continues"
+        }
+      ],
+      "domains": [
+        "healing",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sage",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through seeking and endurance",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "directionalGroups": {
-      "north": ["snow_goose", "otter", "wolf"],
-      "east": ["red_hawk", "beaver", "deer"],
-      "south": ["woodpecker", "salmon", "brown_bear"],
-      "west": ["raven", "snake", "elk"]
+      "north": [
+        "snow_goose",
+        "otter",
+        "wolf"
+      ],
+      "east": [
+        "red_hawk",
+        "beaver",
+        "deer"
+      ],
+      "south": [
+        "woodpecker",
+        "salmon",
+        "brown_bear"
+      ],
+      "west": [
+        "raven",
+        "snake",
+        "elk"
+      ]
     },
     "elementalGroups": {
-      "earth": ["snow_goose", "beaver", "brown_bear"],
-      "air": ["otter", "deer", "raven"],
-      "water": ["wolf", "woodpecker", "snake"],
-      "fire": ["red_hawk", "salmon", "elk"]
+      "earth": [
+        "snow_goose",
+        "beaver",
+        "brown_bear"
+      ],
+      "air": [
+        "otter",
+        "deer",
+        "raven"
+      ],
+      "water": [
+        "wolf",
+        "woodpecker",
+        "snake"
+      ],
+      "fire": [
+        "red_hawk",
+        "salmon",
+        "elk"
+      ]
     },
     "seasonalPowers": {
-      "cleansing_winter": ["snow_goose", "otter", "wolf"],
-      "growth_spring": ["red_hawk", "beaver", "deer"],
-      "ripening_summer": ["woodpecker", "salmon", "brown_bear"],
-      "harvest_autumn": ["raven", "snake", "elk"]
+      "cleansing_winter": [
+        "snow_goose",
+        "otter",
+        "wolf"
+      ],
+      "growth_spring": [
+        "red_hawk",
+        "beaver",
+        "deer"
+      ],
+      "ripening_summer": [
+        "woodpecker",
+        "salmon",
+        "brown_bear"
+      ],
+      "harvest_autumn": [
+        "raven",
+        "snake",
+        "elk"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

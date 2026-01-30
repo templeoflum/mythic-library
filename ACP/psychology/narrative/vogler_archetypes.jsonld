@@ -9,42 +9,89 @@
   "cardinality": 8,
   "source": "Christopher Vogler, The Writer's Journey",
   "structuralNotes": "These are narrative functions/roles that can shift between characters. Any character can wear these 'masks' at different points.",
-
   "entries": [
     {
       "@id": "vogler:hero",
       "@type": "Archetype",
       "name": "The Hero",
       "function": "Serves and sacrifices for others, undergoes transformation",
-      "keywords": ["protagonist", "sacrifice", "transformation", "courage", "growth"],
+      "keywords": [
+        "protagonist",
+        "sacrifice",
+        "transformation",
+        "courage",
+        "growth"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.4,
         "light-shadow": 0.25,
         "active-receptive": 0.15,
         "individual-collective": 0.25,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 1.0, "aspects": ["sacrifice", "transformation", "courage"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 1.0,
+          "aspects": [
+            "sacrifice",
+            "transformation",
+            "courage"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:hero", "fidelity": 0.95},
-        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.8},
-        {"type": "TENSION", "target": "vogler:shadow", "note": "Hero confronts shadow"},
-        {"type": "COMPLEMENT", "target": "vogler:mentor", "note": "Hero learns from mentor"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:hero",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:chariot",
+          "fidelity": 0.8
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:shadow",
+          "note": "Hero confronts shadow"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "vogler:mentor",
+          "note": "Hero learns from mentor"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through sacrifice and transformation",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "vogler:mentor",
       "@type": "Archetype",
       "name": "The Mentor",
       "function": "Teaches, guides, gives gifts, motivates hero",
-      "keywords": ["teacher", "guide", "wisdom", "gift-giver", "motivation"],
+      "keywords": [
+        "teacher",
+        "guide",
+        "wisdom",
+        "gift-giver",
+        "motivation"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.38,
         "light-shadow": 0.28,
         "active-receptive": 0.55,
@@ -54,22 +101,63 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.9, "aspects": ["wisdom", "guidance"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["gift-giver", "knowledge"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.9,
+          "aspects": [
+            "wisdom",
+            "guidance"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "gift-giver",
+            "knowledge"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "journey:supernatural_aid", "fidelity": 0.9},
-        {"type": "COMPLEMENT", "target": "vogler:hero", "note": "Mentor guides hero"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:wise_old_man",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:supernatural_aid",
+          "fidelity": 0.9
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "vogler:hero",
+          "note": "Mentor guides hero"
+        }
+      ],
+      "narrativeRoles": [
+        "magician"
+      ],
+      "coreFunction": "To embody wise_elder energy through wisdom and guidance",
+      "symbolicCore": "The essential pattern of The Mentor"
     },
     {
       "@id": "vogler:threshold_guardian",
       "@type": "Archetype",
       "name": "The Threshold Guardian",
       "function": "Tests hero at boundaries, obstacles to overcome",
-      "keywords": ["test", "obstacle", "boundary", "gatekeeper", "challenge"],
+      "keywords": [
+        "test",
+        "obstacle",
+        "boundary",
+        "gatekeeper",
+        "challenge"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.52,
@@ -81,21 +169,66 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["test", "challenge"]},
-        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["boundary", "gatekeeper"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "test",
+            "challenge"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.65,
+          "aspects": [
+            "boundary",
+            "gatekeeper"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "journey:crossing_threshold", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.65},
-        {"type": "TENSION", "target": "vogler:hero", "note": "Guardian tests hero"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:crossing_threshold",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.65
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:hero",
+          "note": "Guardian tests hero"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through test and challenge",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "vogler:herald",
       "@type": "Archetype",
       "name": "The Herald",
       "function": "Announces change, delivers the call",
-      "keywords": ["messenger", "announcement", "change", "catalyst", "summons"],
+      "keywords": [
+        "messenger",
+        "announcement",
+        "change",
+        "catalyst",
+        "summons"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.42,
@@ -107,21 +240,66 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.8, "aspects": ["messenger", "threshold"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["catalyst", "change"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.8,
+          "aspects": [
+            "messenger",
+            "threshold"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "catalyst",
+            "change"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "journey:call_to_adventure", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.75}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:call_to_adventure",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wheel_of_fortune",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "herald",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody psychopomp energy through messenger and threshold",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "vogler:shapeshifter",
       "@type": "Archetype",
       "name": "The Shapeshifter",
       "function": "Changes allegiance or nature, creates doubt",
-      "keywords": ["change", "deception", "doubt", "mystery", "ambiguity"],
+      "keywords": [
+        "change",
+        "deception",
+        "doubt",
+        "mystery",
+        "ambiguity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.68,
         "creation-destruction": 0.48,
@@ -133,22 +311,72 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.8, "aspects": ["change", "ambiguity"]},
-        {"primordial": "primordial:shadow", "weight": 0.6, "aspects": ["deception", "doubt"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "change",
+            "ambiguity"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.6,
+          "aspects": [
+            "deception",
+            "doubt"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:anima", "fidelity": 0.7, "note": "Often represents contrasexual"},
-        {"type": "CULTURAL_ECHO", "target": "jungian:animus", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.75},
-        {"type": "TENSION", "target": "vogler:ally", "note": "Uncertain loyalty"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:anima",
+          "fidelity": 0.7,
+          "note": "Often represents contrasexual"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:animus",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.75
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:ally",
+          "note": "Uncertain loyalty"
+        }
+      ],
+      "narrativeRoles": [
+        "shadow",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through change and ambiguity",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "vogler:shadow",
       "@type": "Archetype",
       "name": "The Shadow",
       "function": "Represents the dark side, villain, internal demons",
-      "keywords": ["villain", "antagonist", "darkness", "repression", "mirror"],
+      "keywords": [
+        "villain",
+        "antagonist",
+        "darkness",
+        "repression",
+        "mirror"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.62,
@@ -160,20 +388,59 @@
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 1.0, "aspects": ["repression", "darkness", "mirror"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 1.0,
+          "aspects": [
+            "repression",
+            "darkness",
+            "mirror"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.95},
-        {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.8},
-        {"type": "POLAR_OPPOSITE", "target": "vogler:hero", "axis": "light-shadow", "note": "Hero's dark mirror"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:devil",
+          "fidelity": 0.8
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "vogler:hero",
+          "axis": "light-shadow",
+          "note": "Hero's dark mirror"
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through repression and darkness",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "vogler:ally",
       "@type": "Archetype",
       "name": "The Ally",
       "function": "Accompanies hero, provides support and skills",
-      "keywords": ["companion", "support", "friendship", "loyalty", "assistance"],
+      "keywords": [
+        "companion",
+        "support",
+        "friendship",
+        "loyalty",
+        "assistance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.38,
@@ -185,21 +452,59 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:twin", "weight": 0.8, "aspects": ["companion", "mirror"]},
-        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["loyalty", "support"]}
+        {
+          "primordial": "primordial:twin",
+          "weight": 0.8,
+          "aspects": [
+            "companion",
+            "mirror"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.55,
+          "aspects": [
+            "loyalty",
+            "support"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "vogler:hero", "note": "Ally supports hero"},
-        {"type": "TENSION", "target": "vogler:shapeshifter", "note": "True vs uncertain loyalty"},
-        {"type": "CULTURAL_ECHO", "target": "journey:road_of_trials", "fidelity": 0.65, "note": "Allies met on trials"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "vogler:hero",
+          "note": "Ally supports hero"
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:shapeshifter",
+          "note": "True vs uncertain loyalty"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:road_of_trials",
+          "fidelity": 0.65,
+          "note": "Allies met on trials"
+        }
+      ],
+      "narrativeRoles": [
+        "lover"
+      ],
+      "coreFunction": "To embody twin energy through companion and mirror",
+      "symbolicCore": "The essential pattern of The Ally"
     },
     {
       "@id": "vogler:trickster",
       "@type": "Archetype",
       "name": "The Trickster",
       "function": "Brings comic relief, challenges status quo",
-      "keywords": ["humor", "disruption", "mischief", "catalyst", "boundary-crossing"],
+      "keywords": [
+        "humor",
+        "disruption",
+        "mischief",
+        "catalyst",
+        "boundary-crossing"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.75,
         "creation-destruction": 0.48,
@@ -211,31 +516,88 @@
         "voluntary-fated": 0.15
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 1.0, "aspects": ["humor", "disruption", "boundary-crossing"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 1.0,
+          "aspects": [
+            "humor",
+            "disruption",
+            "boundary-crossing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.95},
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.85},
-        {"type": "TENSION", "target": "vogler:threshold_guardian", "note": "Trickster circumvents guardians"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:trickster",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.85
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:threshold_guardian",
+          "note": "Trickster circumvents guardians"
+        }
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through humor and disruption",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
-    "protagonistCircle": ["vogler:hero", "vogler:mentor", "vogler:ally"],
-    "antagonistCircle": ["vogler:shadow", "vogler:threshold_guardian"],
-    "catalystFunctions": ["vogler:herald", "vogler:shapeshifter", "vogler:trickster"],
+    "protagonistCircle": [
+      "vogler:hero",
+      "vogler:mentor",
+      "vogler:ally"
+    ],
+    "antagonistCircle": [
+      "vogler:shadow",
+      "vogler:threshold_guardian"
+    ],
+    "catalystFunctions": [
+      "vogler:herald",
+      "vogler:shapeshifter",
+      "vogler:trickster"
+    ],
     "maskShifts": {
       "note": "Characters can shift between archetypes throughout narrative",
       "commonShifts": [
-        {"from": "vogler:ally", "to": "vogler:shapeshifter", "trigger": "betrayal or revelation"},
-        {"from": "vogler:mentor", "to": "vogler:shadow", "trigger": "fallen mentor"},
-        {"from": "vogler:trickster", "to": "vogler:herald", "trigger": "delivering call"}
+        {
+          "from": "vogler:ally",
+          "to": "vogler:shapeshifter",
+          "trigger": "betrayal or revelation"
+        },
+        {
+          "from": "vogler:mentor",
+          "to": "vogler:shadow",
+          "trigger": "fallen mentor"
+        },
+        {
+          "from": "vogler:trickster",
+          "to": "vogler:herald",
+          "trigger": "delivering call"
+        }
       ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

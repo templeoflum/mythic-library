@@ -163,6 +163,39 @@
         "color": "Variable (tawny, grey)",
         "symbol": "Coyote, fire, scattered stars",
         "association": "Trickery, transformation, fire, death, foolish wisdom"
+      },
+      "domains": [
+        "chaos",
+        "creation",
+        "death",
+        "fire",
+        "sky"
+      ],
+      "keywords": [
+        "across",
+        "both",
+        "chaos",
+        "continues",
+        "coyote",
+        "creation",
+        "creator",
+        "death",
+        "embody",
+        "fire"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through sacred-fool and transformer",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -268,6 +301,38 @@
         "color": "Black (iridescent)",
         "symbol": "Raven, sun disc, bentwood box",
         "association": "Light, creation, trickery, Northwest Coast cultures"
+      },
+      "domains": [
+        "creation",
+        "preservation",
+        "sky",
+        "wisdom"
+      ],
+      "keywords": [
+        "between",
+        "bird",
+        "both",
+        "bringing",
+        "constantly",
+        "created",
+        "creation",
+        "creative",
+        "creator",
+        "culture"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through light-thief and shapeshifter",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -362,6 +427,36 @@
         "color": "Variable",
         "symbol": "Spider, web, dreamcatcher",
         "association": "Stories, language, dreams, trickery, Lakota traditions"
+      },
+      "domains": [
+        "creation",
+        "wisdom"
+      ],
+      "keywords": [
+        "became",
+        "cleverness",
+        "creation",
+        "creator",
+        "deceive",
+        "dreamcatcher",
+        "example",
+        "happens",
+        "iktomi",
+        "invented"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "sage",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through deceiver and schemer",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -462,6 +557,40 @@
         "color": "Black (storm clouds), white",
         "symbol": "Great bird, lightning, thunder",
         "association": "Storms, power, cosmic balance, vision quests"
+      },
+      "domains": [
+        "air",
+        "preservation",
+        "sky",
+        "war",
+        "water"
+      ],
+      "keywords": [
+        "across",
+        "against",
+        "air",
+        "american",
+        "balance",
+        "beings",
+        "between",
+        "bird",
+        "bring",
+        "cosmic"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through sky-warrior and serpent-fighter",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -556,7 +685,30 @@
         "symbol": "Horned feline-serpent, copper, deep water",
         "taboo": "Disrespecting water, taking copper without offering",
         "association": "Lakes, rivers, medicine power, chaos"
-      }
+      },
+      "domains": [
+        "healing",
+        "sea",
+        "sky",
+        "water"
+      ],
+      "keywords": [
+        "balancing",
+        "celestial",
+        "chthonic",
+        "conflict",
+        "copper",
+        "deep",
+        "depicted",
+        "disrespect",
+        "eternal",
+        "features"
+      ],
+      "narrativeRoles": [
+        "magician"
+      ],
+      "coreFunction": "To embody monster energy through water-beast and chaos-power",
+      "symbolicCore": "The healing that transforms through Underwater Panther's essence"
     },
     {
       "@id": "arch:NA-WHITE-BUFFALO-WOMAN",
@@ -648,6 +800,38 @@
         "color": "White",
         "symbol": "Sacred pipe (chanunpa), white buffalo, smoke",
         "association": "Lakota, sacred pipe, ceremony, prophecy"
+      },
+      "domains": [
+        "earth",
+        "preservation",
+        "sky"
+      ],
+      "keywords": [
+        "appearing",
+        "beautiful",
+        "between",
+        "bones",
+        "brought",
+        "buckskin",
+        "buffalo",
+        "calf",
+        "ceremonies",
+        "chanunpa"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "innocent",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody great mother energy through ceremony-giver and people-establisher",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -761,6 +945,40 @@
         "symbol": "Four seasons, renewal, sacred stones",
         "ceremony": "Kinaalda (girls' puberty), Blessing Way",
         "association": "Navajo, earth, seasons, womanhood, harmony"
+      },
+      "domains": [
+        "earth",
+        "initiation",
+        "motherhood",
+        "music",
+        "peace"
+      ],
+      "keywords": [
+        "aging",
+        "back",
+        "beauty",
+        "beloved",
+        "blessing",
+        "ceremony",
+        "changing",
+        "changing woman",
+        "clans",
+        "created"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "healer",
+        "innocent"
+      ],
+      "coreFunction": "To embody great mother energy through earth-mother and people-creator",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -855,6 +1073,36 @@
         "color": "Grey, white",
         "symbol": "Spider, web, loom",
         "association": "Weaving, creation, wisdom, Southwest traditions"
+      },
+      "domains": [
+        "creation",
+        "wisdom"
+      ],
+      "keywords": [
+        "against",
+        "connecting",
+        "creation",
+        "creative",
+        "creator",
+        "crone",
+        "elder",
+        "feminine",
+        "figure",
+        "form"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through grandmother and wisdom-keeper",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -959,6 +1207,36 @@
         "color": "Black (Monster Slayer), blue (Born for Water)",
         "symbol": "Lightning arrows, flint armor, sun",
         "association": "Navajo, monster-slaying, protection, balance"
+      },
+      "domains": [
+        "fatherhood",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "(navajo)",
+        "action",
+        "aggressive",
+        "balance",
+        "born",
+        "changing",
+        "confront",
+        "direct",
+        "divine child",
+        "evil"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through monster-slayers and people-protectors",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1063,6 +1341,34 @@
         "color": "Gold, white",
         "symbol": "Sun disc, rays, turquoise (Navajo)",
         "association": "Sun, life, fatherhood, testing, Southwest traditions"
+      },
+      "domains": [
+        "fatherhood"
+      ],
+      "keywords": [
+        "accepting",
+        "acknowledging",
+        "across",
+        "before",
+        "changing",
+        "creator",
+        "deity",
+        "demanding",
+        "father",
+        "fatherhood"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through sun-father and tester",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1155,6 +1461,38 @@
         "color": "Variable",
         "symbol": "Flute, humpback, phallus",
         "association": "Fertility, music, trade, spring, Southwest rock art"
+      },
+      "domains": [
+        "commerce",
+        "fertility",
+        "harvest",
+        "music"
+      ],
+      "keywords": [
+        "agriculture",
+        "ancient",
+        "associated",
+        "brings",
+        "carries",
+        "commerce",
+        "conception",
+        "creator",
+        "depicted",
+        "enables"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through joyful-fool and seducer",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1249,6 +1587,40 @@
         "color": "Blue, grey",
         "symbol": "Sea mammals, tangled hair, fingerless hands",
         "association": "Inuit, seals, whales, taboo, shamanic journey"
+      },
+      "domains": [
+        "creation",
+        "home",
+        "sea",
+        "transformation",
+        "travel"
+      ],
+      "keywords": [
+        "becomes",
+        "becoming",
+        "betrayal",
+        "bottom",
+        "broken",
+        "comb",
+        "controlling",
+        "creation",
+        "discover",
+        "dwelling"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "outcast",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great mother energy through sea-mother and game-provider",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1341,6 +1713,38 @@
         "color": "Yellow, green",
         "symbol": "Corn, agriculture, woman's body",
         "association": "Cherokee, corn, agriculture, sacrifice, Southeast traditions"
+      },
+      "domains": [
+        "earth",
+        "family",
+        "harvest",
+        "motherhood",
+        "transformation"
+      ],
+      "keywords": [
+        "beans",
+        "blood",
+        "body",
+        "cherokee",
+        "corn",
+        "creator",
+        "discovered",
+        "drag",
+        "earth",
+        "family"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "hero"
+      ],
+      "coreFunction": "To embody great mother energy through corn-mother and nourisher",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1435,6 +1839,32 @@
         "color": "Variable",
         "symbol": "Canoe, transformation, benevolent figure",
         "association": "Wabanaki, culture hero, transformation, protection"
+      },
+      "keywords": [
+        "abenaki",
+        "animals",
+        "benevolent",
+        "confederacy",
+        "creator",
+        "culture",
+        "defeating",
+        "departed",
+        "generally",
+        "giant"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through culture-hero and transformer",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ]

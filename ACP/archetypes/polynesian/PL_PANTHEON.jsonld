@@ -163,6 +163,41 @@
         "direction": "Above",
         "color": "Blue, white",
         "association": "Rain, mist, sky phenomena, fatherhood"
+      },
+      "domains": [
+        "childhood",
+        "earth",
+        "fatherhood",
+        "love",
+        "motherhood",
+        "sky",
+        "water"
+      ],
+      "keywords": [
+        "apart",
+        "became",
+        "between",
+        "celestial",
+        "childhood",
+        "children",
+        "close",
+        "creator",
+        "darkness",
+        "earth"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "lover",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through sky-father and progenitor",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -266,6 +301,37 @@
         "direction": "Below",
         "color": "Brown, green",
         "association": "Land, agriculture, stability, maternal love"
+      },
+      "domains": [
+        "childhood",
+        "earth",
+        "love",
+        "motherhood"
+      ],
+      "keywords": [
+        "beloved",
+        "below",
+        "body",
+        "childhood",
+        "children",
+        "creator",
+        "cycles",
+        "earth",
+        "embrace",
+        "eternally"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody great mother energy through earth-mother and nurturer",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -376,6 +442,37 @@
         "color": "Green, gold",
         "symbol": "Trees (especially kauri), birds",
         "association": "Forests, birds, light, human creation, beauty"
+      },
+      "domains": [
+        "earth",
+        "fatherhood",
+        "motherhood"
+      ],
+      "keywords": [
+        "ancestor",
+        "back",
+        "beauty",
+        "becoming",
+        "birds",
+        "breathed",
+        "clothed",
+        "created",
+        "creating",
+        "creator"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody creator energy through separator and life-giver",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -488,6 +585,36 @@
         "color": "Red",
         "symbol": "Weapons, war canoe prows",
         "association": "War, courage, hunting, fishing, human endeavor"
+      },
+      "domains": [
+        "air",
+        "war"
+      ],
+      "keywords": [
+        "air",
+        "alone",
+        "ancestor",
+        "became",
+        "brothers",
+        "capacity",
+        "courage",
+        "creatures",
+        "destroyer",
+        "fierce"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through battle-god and courage",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -604,6 +731,37 @@
         "color": "Blue, deep blue",
         "symbol": "Fish, octopus, sea creatures",
         "association": "Ocean, fishing, navigation, sea creatures"
+      },
+      "domains": [
+        "chaos",
+        "creation",
+        "order",
+        "sea"
+      ],
+      "keywords": [
+        "alone",
+        "aroa",
+        "before",
+        "brothers",
+        "chaos",
+        "cosmic",
+        "creating",
+        "creation",
+        "creator",
+        "creatures"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "seeker"
+      ],
+      "coreFunction": "To embody creator energy through ocean-lord and life-source",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -704,6 +862,41 @@
         "symbol": "Cultivated plants, rain clouds, Makahiki standard",
         "festival": "Makahiki (Hawaiian harvest festival)",
         "association": "Agriculture, peace, games, harvest, rain"
+      },
+      "domains": [
+        "fertility",
+        "harvest",
+        "hunt",
+        "motherhood",
+        "music",
+        "peace",
+        "time",
+        "war"
+      ],
+      "keywords": [
+        "agriculture",
+        "aspects",
+        "associated",
+        "conflict",
+        "creator",
+        "cultivated",
+        "cultivation",
+        "dominance",
+        "fertility",
+        "fled"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through cultivation and fertility-bringer",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -838,6 +1031,40 @@
         "direction": "Variable (wanderer)",
         "symbol": "Fish-hook, rope/snare, fire",
         "association": "Trickery, culture gifts, mortality, transformation"
+      },
+      "domains": [
+        "death",
+        "fire",
+        "initiation",
+        "sea",
+        "underworld"
+      ],
+      "keywords": [
+        "attempt",
+        "born",
+        "cast",
+        "culture",
+        "death",
+        "deeds",
+        "divine child",
+        "dying",
+        "entering",
+        "finally"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "shapeshifter",
+        "trickster",
+        "warrior"
+      ],
+      "coreFunction": "To embody trickster energy through cunning and rule-breaker",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -951,6 +1178,37 @@
         "symbol": "Volcanic eruption, 'ōhi'a lehua flower, lightning",
         "offerings": "'Ōhelo berries, offerings thrown into crater",
         "taboo": "Taking lava rocks (invites her wrath)"
+      },
+      "domains": [
+        "earth",
+        "fire",
+        "home"
+      ],
+      "keywords": [
+        "creates",
+        "creative",
+        "creator",
+        "destroyer",
+        "destroying",
+        "destructive",
+        "earth",
+        "embodies",
+        "eruption",
+        "fiercely"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "lover",
+        "rebel"
+      ],
+      "coreFunction": "To embody destroyer energy through volcano and consuming-fire",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1052,6 +1310,37 @@
         "color": "Green (forest)",
         "symbol": "Hula skirt, pahu drum, 'ōhi'a lehua",
         "association": "Hula, healing, chants, loyalty, the epic journey"
+      },
+      "domains": [
+        "healing",
+        "travel"
+      ],
+      "keywords": [
+        "arts",
+        "beloved",
+        "betrayal",
+        "born",
+        "bosom",
+        "carried",
+        "dancers",
+        "destroyed",
+        "devotion",
+        "during"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "hero",
+        "innocent",
+        "magician"
+      ],
+      "coreFunction": "To embody healer energy through medicine and restoration",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1153,6 +1442,36 @@
         "color": "White, silver",
         "symbol": "Tapa cloth, beater, moon",
         "association": "Moon, women's work, tides, fertility cycles"
+      },
+      "domains": [
+        "dance",
+        "motherhood"
+      ],
+      "keywords": [
+        "arts",
+        "associated",
+        "beats",
+        "becoming",
+        "cloth",
+        "creating",
+        "cycles",
+        "dance",
+        "earthly",
+        "escapes"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "innocent",
+        "magician"
+      ],
+      "coreFunction": "To embody great mother energy through moon-mother and cycles",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1263,6 +1582,39 @@
         "color": "Black, dark red",
         "symbol": "Obsidian teeth, vulva (through which souls pass)",
         "association": "Death, the underworld, human mortality"
+      },
+      "domains": [
+        "creation",
+        "death",
+        "earth",
+        "fate",
+        "fatherhood",
+        "underworld"
+      ],
+      "keywords": [
+        "body",
+        "both",
+        "created",
+        "creation",
+        "creator",
+        "crone",
+        "dawn",
+        "death",
+        "destroyer",
+        "discovered"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "innocent",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through death-goddess and underworld-queen",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1363,6 +1715,39 @@
         "color": "Grey, dark",
         "symbol": "Storm clouds, various winds",
         "association": "Storms, weather, winds, filial piety"
+      },
+      "domains": [
+        "air",
+        "childhood",
+        "fatherhood",
+        "sky",
+        "war"
+      ],
+      "keywords": [
+        "air",
+        "alone",
+        "among",
+        "anger",
+        "brothers",
+        "childhood",
+        "children",
+        "descended",
+        "destroyer",
+        "destructive"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody destroyer energy through storm-bringer and avenger",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1459,6 +1844,36 @@
         "color": "Yellow, white",
         "symbol": "Fresh water springs, sunlight, bamboo",
         "association": "Life, fresh water, procreation, forests"
+      },
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "ambiguous",
+        "created",
+        "creator",
+        "divine",
+        "figure",
+        "first",
+        "force",
+        "forms",
+        "four",
+        "fourth"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through life-giver and humanity-maker",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1555,6 +1970,36 @@
         "color": "Red",
         "symbol": "Feathered war god images, weapons",
         "association": "War, male activities, chiefs, sorcery"
+      },
+      "domains": [
+        "earth",
+        "war"
+      ],
+      "keywords": [
+        "activity",
+        "aspects",
+        "different",
+        "earth",
+        "endeavors",
+        "fishing",
+        "form",
+        "forms",
+        "four",
+        "gods"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through war-god and conqueror",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1651,6 +2096,37 @@
         "symbol": "Makahiki standard (crosspiece with white tapa and feathers)",
         "festival": "Makahiki (October-February)",
         "association": "Peace, harvest, games, rain, Captain Cook"
+      },
+      "domains": [
+        "harvest",
+        "peace",
+        "war"
+      ],
+      "keywords": [
+        "agriculture",
+        "annual",
+        "arrived",
+        "captain",
+        "celebrations",
+        "collected",
+        "consequences",
+        "cook",
+        "creator",
+        "during"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through seasonal-king and festival-lord",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1748,6 +2224,38 @@
         "color": "Blue, black",
         "symbol": "Octopus, squid, ocean creatures",
         "association": "Ocean, healing, navigation, underworld, sorcery"
+      },
+      "domains": [
+        "death",
+        "sea",
+        "underworld",
+        "water"
+      ],
+      "keywords": [
+        "associations",
+        "contrast",
+        "creatures",
+        "darker",
+        "death",
+        "forbidden",
+        "fourth",
+        "fresh",
+        "giving",
+        "gods"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "seeker",
+        "shapeshifter",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody magician energy through ocean-mysteries and healing",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1840,6 +2348,38 @@
         "color": "Blue, white (sea foam)",
         "symbol": "Waves, sea dragons",
         "association": "Ocean, waves, Pele's rival, island formation"
+      },
+      "domains": [
+        "fire",
+        "home",
+        "sea",
+        "war",
+        "water"
+      ],
+      "keywords": [
+        "across",
+        "battle",
+        "between",
+        "beyond",
+        "conflict",
+        "create",
+        "destroyer",
+        "drowning",
+        "each",
+        "elder"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "destroyer",
+        "warrior"
+      ],
+      "coreFunction": "To embody destroyer energy through wave-power and island-drowner",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
       }
     }
   ]

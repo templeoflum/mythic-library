@@ -8,13 +8,18 @@
   "subdomain": "elements",
   "cardinality": 5,
   "structuralNotes": "Four elements form quaternio; fifth (Aether) is transcendent center. Maps to Tarot suits, humors, temperaments, seasons.",
-
   "entries": [
     {
       "@id": "element:fire",
       "@type": "Archetype",
       "name": "Fire",
-      "keywords": ["energy", "will", "passion", "transformation", "spirit"],
+      "keywords": [
+        "energy",
+        "will",
+        "passion",
+        "transformation",
+        "spirit"
+      ],
       "qualities": {
         "hot": true,
         "dry": true,
@@ -33,23 +38,72 @@
         "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.7},
-        {"primordial": "primordial:creator", "weight": 0.6}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.6
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "element:water", "note": "Hot-dry vs cold-wet"},
-        {"type": "COMPLEMENT", "target": "element:air", "note": "Share hot quality"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:wands", "note": "Suit correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:aries", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:leo", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:sagittarius", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "element:water",
+          "note": "Hot-dry vs cold-wet"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "element:air",
+          "note": "Share hot quality"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands",
+          "note": "Suit correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:aries",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:leo",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sagittarius",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To manifest the archetypal pattern of the warrior",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "element:water",
       "@type": "Archetype",
       "name": "Water",
-      "keywords": ["emotion", "intuition", "flow", "purification", "receptivity"],
+      "keywords": [
+        "emotion",
+        "intuition",
+        "flow",
+        "purification",
+        "receptivity"
+      ],
       "qualities": {
         "cold": true,
         "wet": true,
@@ -68,23 +122,64 @@
         "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.7},
-        {"primordial": "primordial:healer", "weight": 0.5}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.7
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.5
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "element:fire", "note": "Cold-wet vs hot-dry"},
-        {"type": "COMPLEMENT", "target": "element:earth", "note": "Share cold quality"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:cups", "note": "Suit correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:cancer", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:scorpio", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:pisces", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "element:fire",
+          "note": "Cold-wet vs hot-dry"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "element:earth",
+          "note": "Share cold quality"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups",
+          "note": "Suit correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:cancer",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:scorpio",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pisces",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "healer"
+      ],
+      "coreFunction": "To manifest the archetypal pattern of the great_mother",
+      "symbolicCore": "The essential pattern of Water"
     },
     {
       "@id": "element:air",
       "@type": "Archetype",
       "name": "Air",
-      "keywords": ["intellect", "communication", "movement", "thought", "breath"],
+      "keywords": [
+        "intellect",
+        "communication",
+        "movement",
+        "thought",
+        "breath"
+      ],
       "qualities": {
         "hot": true,
         "wet": true,
@@ -103,23 +198,71 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.6},
-        {"primordial": "primordial:trickster", "weight": 0.5}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.5
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "element:earth", "note": "Hot-wet vs cold-dry"},
-        {"type": "COMPLEMENT", "target": "element:fire", "note": "Share hot quality"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:swords", "note": "Suit correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:gemini", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:libra", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:aquarius", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "element:earth",
+          "note": "Hot-wet vs cold-dry"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "element:fire",
+          "note": "Share hot quality"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords",
+          "note": "Suit correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:gemini",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:libra",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:aquarius",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "trickster"
+      ],
+      "coreFunction": "To manifest the archetypal pattern of the magician",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "element:earth",
       "@type": "Archetype",
       "name": "Earth",
-      "keywords": ["stability", "matter", "body", "grounding", "manifestation"],
+      "keywords": [
+        "stability",
+        "matter",
+        "body",
+        "grounding",
+        "manifestation"
+      ],
       "qualities": {
         "cold": true,
         "dry": true,
@@ -138,23 +281,71 @@
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.8},
-        {"primordial": "primordial:great_mother", "weight": 0.6}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8
+        },
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.6
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "element:air", "note": "Cold-dry vs hot-wet"},
-        {"type": "COMPLEMENT", "target": "element:water", "note": "Share cold quality"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:pentacles", "note": "Suit correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:taurus", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:virgo", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:capricorn", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "element:air",
+          "note": "Cold-dry vs hot-wet"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "element:water",
+          "note": "Share cold quality"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles",
+          "note": "Suit correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:taurus",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:virgo",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:capricorn",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To manifest the archetypal pattern of the preserver",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "element:aether",
       "@type": "Archetype",
       "name": "Aether (Quintessence)",
-      "keywords": ["spirit", "void", "quintessence", "unity", "transcendence"],
+      "keywords": [
+        "spirit",
+        "void",
+        "quintessence",
+        "unity",
+        "transcendence"
+      ],
       "qualities": {
         "transcendent": true,
         "direction": "Center",
@@ -172,30 +363,88 @@
         "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.9}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.9
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "element:fire"},
-        {"type": "CONTAINS", "target": "element:water"},
-        {"type": "CONTAINS", "target": "element:air"},
-        {"type": "CONTAINS", "target": "element:earth"},
-        {"type": "CULTURAL_ECHO", "target": "calibration:origin", "note": "Both represent center"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "element:fire"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "element:water"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "element:air"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "element:earth"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "calibration:origin",
+          "note": "Both represent center"
+        }
+      ],
+      "narrativeRoles": [
+        "seeker"
+      ],
+      "coreFunction": "To manifest the archetypal pattern of the self",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
     "internalStructure": {
-      "quaternio": ["element:fire", "element:water", "element:air", "element:earth"],
+      "quaternio": [
+        "element:fire",
+        "element:water",
+        "element:air",
+        "element:earth"
+      ],
       "polarPairs": [
-        {"pair": ["element:fire", "element:water"], "axis": "hot-dry / cold-wet"},
-        {"pair": ["element:air", "element:earth"], "axis": "hot-wet / cold-dry"}
+        {
+          "pair": [
+            "element:fire",
+            "element:water"
+          ],
+          "axis": "hot-dry / cold-wet"
+        },
+        {
+          "pair": [
+            "element:air",
+            "element:earth"
+          ],
+          "axis": "hot-wet / cold-dry"
+        }
       ],
       "qualities": {
-        "hot": ["element:fire", "element:air"],
-        "cold": ["element:water", "element:earth"],
-        "wet": ["element:water", "element:air"],
-        "dry": ["element:fire", "element:earth"]
+        "hot": [
+          "element:fire",
+          "element:air"
+        ],
+        "cold": [
+          "element:water",
+          "element:earth"
+        ],
+        "wet": [
+          "element:water",
+          "element:air"
+        ],
+        "dry": [
+          "element:fire",
+          "element:earth"
+        ]
       }
     },
     "externalCorrespondences": {
@@ -211,7 +460,6 @@
       "directions": "Fire-South, Water-West, Air-East, Earth-North"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

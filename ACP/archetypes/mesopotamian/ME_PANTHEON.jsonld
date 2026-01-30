@@ -180,6 +180,36 @@
           "Der"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "fatherhood",
+        "sky",
+        "sovereignty"
+      ],
+      "keywords": [
+        "absolute",
+        "abstract",
+        "anu",
+        "authority",
+        "creator",
+        "decree",
+        "directly",
+        "distant",
+        "divine",
+        "father"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through cosmic-king and authority-grantor",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -338,6 +368,38 @@
           "Assur (transferred)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "air",
+        "earth",
+        "fertility",
+        "water"
+      ],
+      "keywords": [
+        "active",
+        "air",
+        "benevolent",
+        "commands",
+        "cosmos",
+        "creator",
+        "decrees",
+        "destinies",
+        "destroyer",
+        "destructive"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through executor and cosmic-administrator",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -516,6 +578,39 @@
           "Eridu (oldest, paramount)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "crafts",
+        "creation",
+        "preservation",
+        "wisdom"
+      ],
+      "keywords": [
+        "circumvention",
+        "clever",
+        "crafts",
+        "created",
+        "creation",
+        "creator",
+        "decree",
+        "divine",
+        "enki",
+        "enlil"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through wisdom and cunning",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -760,6 +855,40 @@
           "Nineveh (as Ishtar)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "death",
+        "fertility",
+        "love",
+        "underworld",
+        "war"
+      ],
+      "keywords": [
+        "acquires",
+        "complex",
+        "cunning",
+        "death",
+        "deity",
+        "descends",
+        "divine",
+        "dying rising god",
+        "dynamic",
+        "embodies"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "hero",
+        "lover",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody lover energy through sexuality and passion",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -933,6 +1062,36 @@
           "Babylon (Esagila temple)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "chaos"
+      ],
+      "keywords": [
+        "absorbs",
+        "babylon",
+        "becomes",
+        "body",
+        "champion",
+        "chaos",
+        "chief",
+        "cosmocrator",
+        "creates",
+        "creator"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "magician",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody hero energy through chaos-slayer and champion",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1099,7 +1258,35 @@
           "None (anti-god, not worshipped)"
         ],
         "confidence": 0.95
-      }
+      },
+      "domains": [
+        "chaos",
+        "earth",
+        "motherhood",
+        "peace",
+        "sea",
+        "sky",
+        "water"
+      ],
+      "keywords": [
+        "apsu",
+        "becomes",
+        "body",
+        "chaos",
+        "destroyer",
+        "dragon",
+        "earth",
+        "first",
+        "fresh",
+        "goddess"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer"
+      ],
+      "coreFunction": "To embody monster energy through chaos-dragon and world-threat",
+      "symbolicCore": "The chaos that transforms through Tiamat's essence"
     },
     {
       "@id": "arch:ME-ERESHKIGAL",
@@ -1264,6 +1451,37 @@
           "No direct cult (underworld ruler)"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "death",
+        "sovereignty",
+        "underworld"
+      ],
+      "keywords": [
+        "absolute",
+        "alone",
+        "among",
+        "cannot",
+        "crone",
+        "dead",
+        "death",
+        "destroyer",
+        "domain",
+        "dread"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through absolute-ruler and law-of-dead",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1418,7 +1636,32 @@
           "Uruk"
         ],
         "confidence": 0.9
-      }
+      },
+      "domains": [
+        "death",
+        "marriage",
+        "sovereignty",
+        "underworld"
+      ],
+      "keywords": [
+        "below",
+        "condemns",
+        "consort",
+        "cycle",
+        "death",
+        "dies",
+        "divine child",
+        "dumuzi",
+        "dying",
+        "dying rising god"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "innocent",
+        "lover"
+      ],
+      "coreFunction": "To embody dying rising god energy through vegetation-death-rebirth and seasonal-cycle",
+      "symbolicCore": "The death that transforms through Dumuzi's essence"
     },
     {
       "@id": "arch:ME-NERGAL",
@@ -1554,6 +1797,41 @@
           "Kutha"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "death",
+        "fire",
+        "love",
+        "marriage",
+        "sovereignty",
+        "underworld",
+        "war"
+      ],
+      "keywords": [
+        "became",
+        "dangerous",
+        "death",
+        "deity",
+        "descent",
+        "destroyer",
+        "destructive",
+        "ereshkigal",
+        "fierce",
+        "fire"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody destroyer energy through plague-lord and war-god",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1693,6 +1971,38 @@
           "Larsa"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "death",
+        "justice",
+        "sky",
+        "underworld"
+      ],
+      "keywords": [
+        "across",
+        "code",
+        "cosmic",
+        "death",
+        "gives",
+        "hammurabi",
+        "hero",
+        "judges",
+        "justice",
+        "night"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through cosmic-judge and law-giver",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1821,6 +2131,36 @@
           "Harran"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "fatherhood",
+        "time",
+        "wisdom"
+      ],
+      "keywords": [
+        "associated",
+        "calendars",
+        "cattle",
+        "counts",
+        "crescent",
+        "father",
+        "fatherhood",
+        "great father",
+        "horns",
+        "illuminates"
+      ],
+      "narrativeRoles": [
+        "mentor",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody wise elder energy through time-keeper and calendar-lord",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -2009,6 +2349,37 @@
           "Uruk"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "death",
+        "sovereignty",
+        "travel",
+        "wisdom"
+      ],
+      "keywords": [
+        "archetypal",
+        "befriends",
+        "death",
+        "enkidu",
+        "epic",
+        "fails",
+        "find",
+        "gilgamesh",
+        "hero",
+        "human"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through quester and monster-slayer",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2179,7 +2550,25 @@
           "None (literary figure)"
         ],
         "confidence": 0.9
-      }
+      },
+      "keywords": [
+        "after",
+        "animals",
+        "becomes",
+        "beloved",
+        "born",
+        "civilized",
+        "civilizing",
+        "companion",
+        "created",
+        "dies"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "outcast"
+      ],
+      "coreFunction": "To embody wild man energy through nature-child and uncivilized",
+      "symbolicCore": "The essential pattern of Enkidu"
     },
     {
       "@id": "arch:ME-APSU",
@@ -2293,7 +2682,27 @@
         ],
         "iconography": "Rarely depicted; represented by temple pools (abzu)",
         "confidence": 0.85
-      }
+      },
+      "domains": [
+        "earth",
+        "order",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "abyss",
+        "abzu",
+        "apsu",
+        "beneath",
+        "body",
+        "built",
+        "cosmic",
+        "couple",
+        "deity",
+        "earth"
+      ],
+      "coreFunction": "To embody primeval waters energy through primordial-source and pre-creation-substance",
+      "symbolicCore": "The earth that transforms through Apsu's essence"
     }
   ],
   "systemRelationships": [

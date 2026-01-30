@@ -161,6 +161,36 @@
         "day": "Thursday (Perundan)",
         "symbol": "Axe, oak tree, eagle, thunderbolt",
         "sacred": "Oak groves, hilltops"
+      },
+      "domains": [
+        "sky"
+      ],
+      "keywords": [
+        "against",
+        "associated",
+        "atop",
+        "bolts",
+        "celestial",
+        "cosmic",
+        "defending",
+        "derives",
+        "destroyer",
+        "dwells"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through sky-king and divine-ruler",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -278,6 +308,38 @@
         "color": "Black, brown",
         "symbol": "Serpent, bear, cattle, willow tree",
         "sacred": "Lowlands, forests, waters"
+      },
+      "domains": [
+        "death",
+        "home",
+        "underworld"
+      ],
+      "keywords": [
+        "balance",
+        "cattle",
+        "chthonic",
+        "cosmic",
+        "dead",
+        "death",
+        "depicted",
+        "despite",
+        "dragon",
+        "dwelling"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "magician",
+        "shapeshifter",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through sorcerer and seer",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -379,6 +441,38 @@
         "day": "Friday (Paraskeva-Piatnitsa)",
         "symbol": "Spindle, distaff, sheep, flax",
         "taboo": "No spinning on Friday"
+      },
+      "domains": [
+        "earth",
+        "fate",
+        "fertility",
+        "motherhood"
+      ],
+      "keywords": [
+        "after",
+        "childbirth",
+        "christianization",
+        "determines",
+        "earth",
+        "fate",
+        "fertile",
+        "fertility",
+        "friday",
+        "giving"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "magician"
+      ],
+      "coreFunction": "To embody great mother energy through earth-mother and fertility-giver",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -478,6 +572,36 @@
         "color": "Gold, white",
         "symbol": "Sun disc, golden chariot, fire",
         "association": "Sun, wealth, Slavic ancestry"
+      },
+      "domains": [
+        "fertility",
+        "fire",
+        "sky"
+      ],
+      "keywords": [
+        "abundance",
+        "across",
+        "ancestor",
+        "aspect",
+        "benevolent",
+        "brings",
+        "chariot",
+        "creator",
+        "dazhbog",
+        "deity"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through sun-king and wealth-giver",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -560,6 +684,33 @@
         "color": "Pale gold, white",
         "symbol": "Sun disc, wheel",
         "association": "Winter sun, light itself, cosmic order"
+      },
+      "domains": [
+        "creation"
+      ],
+      "keywords": [
+        "body",
+        "cosmic",
+        "creation",
+        "dazhbog",
+        "disc",
+        "force",
+        "gives",
+        "giving",
+        "healer",
+        "iranian"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody healer energy through light-bringer and darkness-dispeller",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -643,6 +794,35 @@
         "color": "Grey, white",
         "symbol": "Wind, breath, movement",
         "association": "Wind, weather, distribution of wealth"
+      },
+      "domains": [
+        "air",
+        "dance",
+        "earth"
+      ],
+      "keywords": [
+        "across",
+        "air",
+        "ancestor",
+        "atmospheric",
+        "called",
+        "dance",
+        "distribution",
+        "earth",
+        "flowing",
+        "goods"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through wind-ancestor and air-lord",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -739,6 +919,38 @@
         "color": "Gold, orange",
         "symbol": "Forge, hammer, sun, fire",
         "association": "Smithing, fire, the sun, civilization"
+      },
+      "domains": [
+        "crafts",
+        "fatherhood",
+        "fire",
+        "sky"
+      ],
+      "keywords": [
+        "bright",
+        "clear",
+        "crafts",
+        "creator",
+        "dazhbog",
+        "deity",
+        "displaced",
+        "divine",
+        "earlier",
+        "father"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through sky-forger and sun-maker",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -831,6 +1043,37 @@
         "symbol": "Flames, hearth, torch",
         "taboo": "Spitting in fire, cursing near fire",
         "association": "Hearth fire, domestic warmth, hospitality"
+      },
+      "domains": [
+        "fire",
+        "home",
+        "war"
+      ],
+      "keywords": [
+        "curse",
+        "deity",
+        "destroyer",
+        "divine child",
+        "domestic",
+        "earthly",
+        "fire",
+        "forms",
+        "home",
+        "hospitality"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "innocent",
+        "warrior"
+      ],
+      "coreFunction": "To embody divine child energy through son-of-sky and fire-child",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -917,7 +1160,27 @@
         "color": "Green, gold",
         "symbol": "Winged dog, seeds, world tree",
         "association": "Vegetation, seeds, harvest, guardian"
-      }
+      },
+      "domains": [
+        "harvest"
+      ],
+      "keywords": [
+        "bird",
+        "deity",
+        "depicted",
+        "derived",
+        "guard",
+        "guardian",
+        "guarding",
+        "harvest",
+        "healer",
+        "iranian"
+      ],
+      "narrativeRoles": [
+        "healer"
+      ],
+      "coreFunction": "To embody guardian energy through seed-protector and harvest-guardian",
+      "symbolicCore": "The harvest that transforms through Simargl's essence"
     },
     {
       "@id": "arch:SL-JARILO",
@@ -1018,6 +1281,40 @@
         "symbol": "White horse, spring flowers, wheat",
         "festival": "Spring festivals, Kupala",
         "association": "Spring, fertility, youth, the dying god"
+      },
+      "domains": [
+        "death",
+        "fertility",
+        "marriage",
+        "underworld",
+        "war"
+      ],
+      "keywords": [
+        "agricultural",
+        "bring",
+        "cycle",
+        "death",
+        "divine child",
+        "each",
+        "embodies",
+        "explosive",
+        "fertility",
+        "fury"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "hero",
+        "innocent",
+        "lover",
+        "warrior"
+      ],
+      "coreFunction": "To embody divine child energy through spring-youth and returning-son",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1125,6 +1422,35 @@
         "symbol": "Effigy, sickle, winter imagery",
         "festival": "End of winter - drowning/burning of Marzanna effigy",
         "association": "Winter, death, nightmares, seasonal cycle"
+      },
+      "domains": [
+        "death",
+        "rebirth"
+      ],
+      "keywords": [
+        "allows",
+        "burned",
+        "causes",
+        "composting",
+        "crone",
+        "dark",
+        "death",
+        "destroyer",
+        "dies",
+        "drowned"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through winter-hag and death-bringer",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1218,6 +1544,38 @@
         "symbol": "Flowers, spring imagery, wedding symbols",
         "festival": "Spring songs, weddings",
         "association": "Love, marriage, spring, beauty"
+      },
+      "domains": [
+        "love",
+        "marriage",
+        "music",
+        "peace"
+      ],
+      "keywords": [
+        "beauty",
+        "ceremonies",
+        "consider",
+        "construction",
+        "familial",
+        "folk",
+        "folklore",
+        "goddess",
+        "great mother",
+        "harmony"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "innocent",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through love-goddess and beauty",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1307,6 +1665,35 @@
         "symbol": "Stove, threshold, small old man",
         "offerings": "Bread, porridge, milk (left by stove)",
         "taboo": "Whistling indoors, neglecting the hearth"
+      },
+      "domains": [
+        "family",
+        "fate",
+        "home",
+        "threshold"
+      ],
+      "keywords": [
+        "along",
+        "ancestor",
+        "appearing",
+        "becomes",
+        "behavior",
+        "behind",
+        "come",
+        "domovoi",
+        "dwelling",
+        "face"
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody ancestor energy through family-spirit and grandfather",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1408,6 +1795,36 @@
         "color": "Black, bone-white",
         "symbol": "Hut on chicken legs, mortar and pestle, skull fence",
         "association": "Initiation, death-rebirth, witchcraft, forest, thresholds"
+      },
+      "domains": [
+        "threshold"
+      ],
+      "keywords": [
+        "baba",
+        "baba yaga",
+        "between",
+        "brave",
+        "chicken",
+        "crone",
+        "dead",
+        "deep",
+        "devouring",
+        "evil"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician",
+        "sage",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody crone energy through ancient-witch and death-guardian",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1496,7 +1913,26 @@
         "symbol": "Trees, wolf, bear, variable size",
         "taboo": "Disrespecting forest, overhunting",
         "association": "Forest, wildlife, hunting, getting lost"
-      }
+      },
+      "keywords": [
+        "animals",
+        "appear",
+        "astray",
+        "avoided",
+        "bargain",
+        "bear",
+        "bears",
+        "behavior",
+        "depending",
+        "forest"
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "sovereign",
+        "trickster"
+      ],
+      "coreFunction": "To embody guardian energy through forest-protector and wildlife-lord",
+      "symbolicCore": "The essential pattern of Leshy"
     },
     {
       "@id": "arch:SL-RUSALKA",
@@ -1583,6 +2019,40 @@
         "symbol": "Water, long hair, flowers, drowning",
         "festival": "Rusalka Week (late spring)",
         "association": "Drowned women, fertility, seduction, vengeance"
+      },
+      "domains": [
+        "fate",
+        "fertility",
+        "sea",
+        "threshold",
+        "water"
+      ],
+      "keywords": [
+        "beautiful",
+        "bring",
+        "dangerous",
+        "dangers",
+        "destroyer",
+        "died",
+        "drowning",
+        "during",
+        "embody",
+        "fate"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "innocent",
+        "orphan",
+        "outcast",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through beautiful-dead and seductress",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
       }
     }
   ]

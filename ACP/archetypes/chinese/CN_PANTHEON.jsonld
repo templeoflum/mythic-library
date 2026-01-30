@@ -149,6 +149,38 @@
         "direction": "Center (origin point)",
         "symbol": "Cosmic egg, axe/chisel",
         "association": "Creation, cosmogony, primordial unity"
+      },
+      "domains": [
+        "air",
+        "earth",
+        "family",
+        "sky"
+      ],
+      "keywords": [
+        "air",
+        "apart",
+        "became",
+        "blood",
+        "body",
+        "breath",
+        "cosmic",
+        "creator",
+        "died",
+        "earth"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "seeker",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through world-shaper and cosmic-separator",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -260,6 +292,37 @@
         "direction": "Center",
         "symbol": "Serpent body, compass (with Fuxi's square), five-colored stones",
         "association": "Creation, marriage, cosmic order, humanity"
+      },
+      "domains": [
+        "earth",
+        "marriage",
+        "sky"
+      ],
+      "keywords": [
+        "bodied",
+        "burned",
+        "civilization",
+        "collapsed",
+        "colored",
+        "commoners",
+        "created",
+        "creator",
+        "earth",
+        "established"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through humanity-maker and world-repairer",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -365,6 +428,37 @@
         "direction": "East",
         "symbol": "Square (carpenter's), bagua trigrams, turtle shell",
         "association": "I Ching, divination, civilization, writing"
+      },
+      "domains": [
+        "earth",
+        "hunt"
+      ],
+      "keywords": [
+        "animal",
+        "bagua",
+        "basis",
+        "bodied",
+        "chinese",
+        "ching",
+        "cosmology",
+        "created",
+        "creator",
+        "culture"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "mentor",
+        "ruler",
+        "sage"
+      ],
+      "coreFunction": "To embody magician energy through divination-inventor and pattern-revealer",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -470,6 +564,38 @@
         "direction": "South",
         "symbol": "Plow, herbs, whip for testing plants",
         "association": "Traditional Chinese Medicine, agriculture, markets"
+      },
+      "domains": [
+        "fatherhood",
+        "harvest",
+        "healing"
+      ],
+      "keywords": [
+        "agriculture",
+        "body",
+        "chinese",
+        "considered",
+        "discover",
+        "divine",
+        "effects",
+        "established",
+        "farmer",
+        "father"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "hero",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody healer energy through medicine-discoverer and herbalist",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -582,6 +708,38 @@
         "direction": "Center",
         "symbol": "Dragon, yellow robes, Xuanyuan sword",
         "association": "Chinese civilization, Taoism, martial arts, medicine"
+      },
+      "domains": [
+        "healing",
+        "music",
+        "sky"
+      ],
+      "keywords": [
+        "ancestor",
+        "ascended",
+        "beings",
+        "calendar",
+        "chinese",
+        "chiyou",
+        "civilization",
+        "court",
+        "defeated",
+        "divine"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sage",
+        "seeker",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through divine-king and unifier",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -687,6 +845,37 @@
         "direction": "South (associated with Miao peoples)",
         "symbol": "Bronze weapons, monstrous form, fog",
         "association": "War, weapons, rebellion, the conquered other"
+      },
+      "domains": [
+        "air",
+        "war"
+      ],
+      "keywords": [
+        "against",
+        "air",
+        "aspects",
+        "battle",
+        "beast",
+        "body",
+        "bronze",
+        "chiyou",
+        "commanded",
+        "defeated"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "outcast",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through war-god and battle-fury",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -802,6 +991,36 @@
         "direction": "Celestial North (pole star)",
         "symbol": "Imperial regalia, jade, dragon robes",
         "festival": "Birthday on 9th day of first lunar month"
+      },
+      "domains": [
+        "order",
+        "sky",
+        "sovereignty"
+      ],
+      "keywords": [
+        "achieved",
+        "bureaucracy",
+        "celestial",
+        "chinese",
+        "cosmic",
+        "countless",
+        "court",
+        "cultivation",
+        "dead",
+        "divine"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through cosmic-emperor and supreme-judge",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -926,6 +1145,38 @@
         "direction": "West",
         "symbol": "Peaches, phoenixes, Mount Kunlun",
         "festival": "Peach Festival (immortality banquet)"
+      },
+      "domains": [
+        "motherhood",
+        "protection",
+        "sovereignty"
+      ],
+      "keywords": [
+        "counterpart",
+        "crone",
+        "destroyer",
+        "dwells",
+        "emperor",
+        "every",
+        "evolved",
+        "fearsome",
+        "female",
+        "goddess"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "ruler",
+        "sage"
+      ],
+      "coreFunction": "To embody sovereign energy through queen-of-immortals and western-ruler",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1072,6 +1323,41 @@
         "direction": "Variable (pilgrim)",
         "symbol": "Ruyi Jingu Bang (staff), golden headband, cloud-somersault",
         "association": "Buddhism, martial arts, transformation, rebellion, redemption"
+      },
+      "domains": [
+        "chaos",
+        "sky",
+        "sovereignty",
+        "transformation",
+        "travel",
+        "war"
+      ],
+      "keywords": [
+        "against",
+        "arts",
+        "born",
+        "buddhist",
+        "chaos",
+        "embodies",
+        "enlightened",
+        "heaven",
+        "hero",
+        "himself"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "outcast",
+        "rebel",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through shape-shifter and rule-breaker",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1180,6 +1466,33 @@
         "symbol": "Willow branch, pure water vase, thousand arms/eyes",
         "mantra": "Om mani padme hum",
         "association": "Buddhism, mercy, prayers, childbirth, seafarers"
+      },
+      "keywords": [
+        "appears",
+        "beings",
+        "bodhisattva",
+        "buddhism",
+        "call",
+        "china",
+        "compassion",
+        "cries",
+        "embodiment",
+        "feminine"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "sage",
+        "seeker"
+      ],
+      "coreFunction": "To embody healer energy through suffering-reliever and prayer-answerer",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1282,6 +1595,36 @@
         "direction": "Variable (pursuer)",
         "symbol": "Third eye, three-pointed spear, divine hound",
         "association": "Exorcism, truth, flood control, engineering"
+      },
+      "domains": [
+        "motherhood",
+        "sky",
+        "war"
+      ],
+      "keywords": [
+        "accompanied",
+        "battled",
+        "celestial",
+        "controlling",
+        "deceptions",
+        "divine",
+        "emperor",
+        "engineering",
+        "erlang",
+        "erlang shen"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through demon-slayer and heavenly-general",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1412,6 +1755,42 @@
         "direction": "Center (Central Altar)",
         "symbol": "Fire-tipped spear, wind-fire wheels, Qiankun ring, Universe Ring, red sash",
         "association": "Protection of children, demon-fighting, Taoist magic"
+      },
+      "domains": [
+        "air",
+        "fertility",
+        "fire",
+        "rebirth",
+        "sovereignty",
+        "time",
+        "war"
+      ],
+      "keywords": [
+        "after",
+        "against",
+        "air",
+        "ball",
+        "born",
+        "cosmic",
+        "debt",
+        "deity",
+        "demons",
+        "divine child"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "outcast",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody divine child energy through eternal-youth and miraculous-birth",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1501,6 +1880,36 @@
         "direction": "Variable",
         "symbol": "Fan that revives the dead, bare belly",
         "association": "Taoist alchemy, Eight Immortals, military arts"
+      },
+      "domains": [
+        "death"
+      ],
+      "keywords": [
+        "achieved",
+        "alchemical",
+        "bare",
+        "belly",
+        "cultivation",
+        "dead",
+        "death",
+        "depicted",
+        "dynasty",
+        "eight"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage",
+        "shapeshifter",
+        "warrior"
+      ],
+      "coreFunction": "To embody magician energy through alchemist and immortality-achiever",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1607,6 +2016,37 @@
         "direction": "East",
         "symbol": "Demon-slaying sword, fly-whisk",
         "association": "Scholars, barbers, ink-makers, exorcism"
+      },
+      "domains": [
+        "poetry",
+        "war"
+      ],
+      "keywords": [
+        "achieved",
+        "adventures",
+        "after",
+        "barbers",
+        "demon",
+        "dongbin",
+        "dynasty",
+        "eight",
+        "hero",
+        "immortality"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "lover",
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through swordsman and exorcist",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1707,6 +2147,38 @@
         "symbol": "Red robes, peaceful face, ruyi scepter",
         "festival": "Mazu Birthday (23rd of third lunar month)",
         "association": "Sailors, fishermen, overseas Chinese communities"
+      },
+      "domains": [
+        "childhood",
+        "fatherhood",
+        "sea"
+      ],
+      "keywords": [
+        "asian",
+        "became",
+        "brothers",
+        "childhood",
+        "china",
+        "chinese",
+        "coastal",
+        "communities",
+        "deity",
+        "father"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "innocent",
+        "magician"
+      ],
+      "coreFunction": "To embody healer energy through rescuer and protector",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1800,6 +2272,36 @@
         "direction": "Variable",
         "symbol": "Green Dragon Crescent Blade, red face, long beard",
         "association": "Police, soldiers, merchants, triads, brotherhood"
+      },
+      "domains": [
+        "death",
+        "protection",
+        "war"
+      ],
+      "keywords": [
+        "after",
+        "becoming",
+        "blade",
+        "both",
+        "brother",
+        "crescent",
+        "death",
+        "deified",
+        "dragon",
+        "eventually"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through righteous-fighter and loyal-general",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1898,6 +2400,32 @@
         "symbol": "Moon, jade rabbit, elixir of immortality",
         "festival": "Mid-Autumn Festival",
         "association": "Moon worship, separation, immortality's price"
+      },
+      "keywords": [
+        "archer",
+        "chang'e",
+        "cold",
+        "company",
+        "down",
+        "dwells",
+        "either",
+        "elixir",
+        "embodies",
+        "eternally"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "orphan",
+        "outcast",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through eternal-beauty and isolation",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1995,6 +2523,35 @@
         "symbol": "Bow and arrows, nine fallen suns",
         "festival": "Mid-Autumn Festival (mourning)",
         "association": "Archery, solar myths, tragic heroism"
+      },
+      "domains": [
+        "destruction",
+        "earth"
+      ],
+      "keywords": [
+        "alone",
+        "archer",
+        "chang",
+        "consumed",
+        "destruction",
+        "divine",
+        "down",
+        "dwells",
+        "earth",
+        "elixir"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "outcast",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through world-savior and monster-slayer",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2093,6 +2650,38 @@
         "direction": "Below",
         "symbol": "Judge's cap, Book of Life and Death, hell courts",
         "association": "Death, judgment, Chinese Buddhist hell realms"
+      },
+      "domains": [
+        "death",
+        "fate",
+        "sovereignty",
+        "underworld"
+      ],
+      "keywords": [
+        "adapted",
+        "appropriate",
+        "assigned",
+        "book",
+        "buddhist",
+        "bureaucratic",
+        "chief",
+        "chinese",
+        "cosmology",
+        "courts"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through underworld-king and supreme-judge",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ]

@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-01-29T22:58:29.476653",
+  "total_archetypes": 938,
+  "tier_distribution": {
+    "partial": 532,
+    "stub": 374,
+    "complete": 5,
+    "rich": 27
+  },
+  "completeness_stats": {
+    "mean_score": 43.71890547263681,
+    "min_score": 20.0,
+    "max_score": 85.0,
+    "median_score": 46.666666666666664
+  },
+  "relationship_stats": {
+    "total_relationships": 2478,
+    "missing_bidirectional": 878,
+    "orphan_targets": 313,
+    "no_relationships": 83
+  },
+  "issue_count": 1505,
+  "issues_by_severity": {
+    "warning": 1467,
+    "info": 19,
+    "error": 19
+  },
+  "issues_by_category": {
+    "schema": 157,
+    "domain": 132,
+    "narrative": 14,
+    "relationship": 1202
+  }
+}

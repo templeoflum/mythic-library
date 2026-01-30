@@ -190,6 +190,38 @@
         "direction": "Above",
         "shrine": "Taga Taisha (Shiga)",
         "festival": "Various creation-related matsuri"
+      },
+      "domains": [
+        "childhood",
+        "creation",
+        "death",
+        "sea"
+      ],
+      "keywords": [
+        "after",
+        "birth",
+        "childhood",
+        "children",
+        "consort",
+        "cosmic",
+        "create",
+        "creation",
+        "creator",
+        "death"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through world-shaper and island-maker",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -326,6 +358,41 @@
         "direction": "Below",
         "shrine": "Izanami Shrine (various)",
         "association": "Death, childbirth, the boundary between life and death"
+      },
+      "domains": [
+        "creation",
+        "death",
+        "destruction",
+        "fire",
+        "sovereignty",
+        "transformation",
+        "underworld"
+      ],
+      "keywords": [
+        "after",
+        "became",
+        "birth",
+        "consort",
+        "creation",
+        "creator",
+        "crone",
+        "dead",
+        "death",
+        "deity"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody great mother energy through life-giver and death-mother",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -469,6 +536,38 @@
         "shrine": "Ise Grand Shrine (Naiku)",
         "symbol": "Sacred mirror (Yata no Kagami)",
         "festival": "Various solar festivals, Imperial rites"
+      },
+      "domains": [
+        "fire",
+        "healing",
+        "sky",
+        "sovereignty"
+      ],
+      "keywords": [
+        "amaterasu",
+        "amaterasu-ōmikami",
+        "ancestress",
+        "born",
+        "cave",
+        "creator",
+        "deity",
+        "divine",
+        "during",
+        "eclipse"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through divine-ruler and heavenly-queen",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -569,6 +668,34 @@
         "direction": "West",
         "shrine": "Various lunar shrines",
         "association": "Lunar calendar, night, tides"
+      },
+      "domains": [
+        "sovereignty"
+      ],
+      "keywords": [
+        "after",
+        "amaterasu",
+        "banished",
+        "born",
+        "destroyer",
+        "disgust",
+        "explaining",
+        "food",
+        "goddess",
+        "izanagi"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through night-ruler and time-keeper",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -720,6 +847,41 @@
         "shrine": "Izumo Taisha, Yasaka Shrine (Gion)",
         "symbol": "Sword Kusanagi",
         "festival": "Gion Matsuri (plague protection)"
+      },
+      "domains": [
+        "air",
+        "chaos",
+        "sea",
+        "sky",
+        "sovereignty",
+        "transformation"
+      ],
+      "keywords": [
+        "air",
+        "amaterasu",
+        "born",
+        "bringer",
+        "chaos",
+        "culture",
+        "descended",
+        "discovered",
+        "eight",
+        "embodies"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "outcast",
+        "rebel",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody hero energy through monster-slayer and savior",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -824,6 +986,37 @@
         "direction": "East (dawn)",
         "shrine": "Various entertainment/performing arts shrines",
         "association": "Kagura dance, performing arts, shamanism"
+      },
+      "domains": [
+        "dance",
+        "ecstasy"
+      ],
+      "keywords": [
+        "amaterasu",
+        "ame",
+        "ame-no-uzume-no-mikoto",
+        "before",
+        "cave",
+        "confronted",
+        "dance",
+        "darkness",
+        "dawn",
+        "descent"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "lover",
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through sacred-fool and taboo-breaker",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -919,6 +1112,37 @@
         "direction": "All (crossroads)",
         "shrine": "Tsubaki Grand Shrine, various dōsojin shrines",
         "association": "Dōsojin (roadside kami), martial arts, travel safety"
+      },
+      "domains": [
+        "earth",
+        "sky",
+        "war"
+      ],
+      "keywords": [
+        "artists",
+        "became",
+        "between",
+        "blazing",
+        "blocked",
+        "boundary",
+        "confronted",
+        "descended",
+        "earth",
+        "earthly"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "sage",
+        "threshold-guardian",
+        "warrior"
+      ],
+      "coreFunction": "To embody psychopomp energy through guide and crossroads-guardian",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1052,6 +1276,37 @@
         "shrine": "Izumo Taisha (greatest shrine)",
         "symbol": "Mallet of fortune (as Daikokuten)",
         "association": "Marriage, medicine, prosperity, the unseen"
+      },
+      "domains": [
+        "earth",
+        "sovereignty"
+      ],
+      "keywords": [
+        "attempts",
+        "becoming",
+        "brothers",
+        "built",
+        "ceded",
+        "civilized",
+        "daughter",
+        "descended",
+        "dwarf",
+        "earth"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "hero",
+        "lover",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through land-ruler and nation-builder",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1146,6 +1401,37 @@
         "direction": "Descent (heaven to earth)",
         "symbol": "Three Sacred Treasures",
         "association": "Imperial legitimacy, rice cultivation"
+      },
+      "domains": [
+        "death",
+        "earth",
+        "sky"
+      ],
+      "keywords": [
+        "amaterasu",
+        "blossom",
+        "carrying",
+        "death",
+        "descended",
+        "descent",
+        "divine",
+        "divine child",
+        "earth",
+        "established"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through divine-king and mandate-bearer",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1244,6 +1530,38 @@
         "shrine": "Fujisan Hongū Sengen Taisha",
         "symbol": "Cherry blossoms, Mount Fuji",
         "festival": "Hanami (cherry blossom viewing)"
+      },
+      "domains": [
+        "childhood",
+        "creation",
+        "fire"
+      ],
+      "keywords": [
+        "against",
+        "beautiful",
+        "beauty",
+        "birth",
+        "blossom",
+        "blossoms",
+        "burning",
+        "cherry",
+        "childhood",
+        "children"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "innocent",
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through ephemeral-beauty and spring-bloom",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1366,6 +1684,38 @@
         "shrine": "Fushimi Inari Taisha (and thousands of others)",
         "symbol": "Fox, torii gates, rice",
         "color": "Red (torii), white (fox)"
+      },
+      "domains": [
+        "commerce",
+        "communication",
+        "fertility",
+        "harvest"
+      ],
+      "keywords": [
+        "agriculture",
+        "ambiguous",
+        "androgynous",
+        "appearing",
+        "commerce",
+        "communication",
+        "deities",
+        "domain",
+        "expanded",
+        "female"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "magician",
+        "trickster"
+      ],
+      "coreFunction": "To embody great mother energy through fertility and abundance",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1466,6 +1816,37 @@
         "shrine": "Usa Jingū, Tsurugaoka Hachimangū",
         "symbol": "Bow and arrow, tomoe (comma-spiral)",
         "association": "Samurai, archery, victory in righteous causes"
+      },
+      "domains": [
+        "family",
+        "protection",
+        "war"
+      ],
+      "keywords": [
+        "adopted",
+        "became",
+        "bloodlust",
+        "bodhisattva",
+        "clan",
+        "deity",
+        "divine",
+        "emperor",
+        "emphasizes",
+        "family"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through protector and righteous-battle",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1560,6 +1941,37 @@
         "shrine": "Enoshima Shrine, various island/water shrines",
         "symbol": "Biwa (lute), white snake, dragon",
         "association": "Seven Lucky Gods, music, learning, wealth"
+      },
+      "domains": [
+        "music",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "arts",
+        "associated",
+        "benzaiten",
+        "bodies",
+        "buddhist",
+        "creative",
+        "derived",
+        "dragons",
+        "eloquence",
+        "embodies"
+      ],
+      "narrativeRoles": [
+        "lover",
+        "magician",
+        "sage",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through arts and eloquence",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1663,6 +2075,34 @@
         "shrine": "Kaminarimon gates, various thunder shrines",
         "symbol": "Drum ring, lightning bolts",
         "association": "Thunder, lightning, rice fertility, temple protection"
+      },
+      "domains": [
+        "air"
+      ],
+      "keywords": [
+        "air",
+        "appearance",
+        "believed",
+        "demonic",
+        "depicted",
+        "despite",
+        "destroyer",
+        "drums",
+        "fearsome",
+        "fertilize"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "trickster",
+        "warrior"
+      ],
+      "coreFunction": "To embody destroyer energy through lightning-strike and terrifying-power",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1759,6 +2199,35 @@
         "shrine": "Paired with Raijin at temple gates",
         "symbol": "Bag of winds",
         "association": "Weather, breath, freedom, unpredictability"
+      },
+      "domains": [
+        "air"
+      ],
+      "keywords": [
+        "air",
+        "animates",
+        "breath",
+        "carrying",
+        "creator",
+        "demonic",
+        "depicted",
+        "figure",
+        "fūjin",
+        "iconography"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "rebel",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through unpredictable and boundary-crossing",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1853,6 +2322,37 @@
         "symbol": "Staff with six rings, wish-fulfilling jewel",
         "color": "Red (bibs and caps)",
         "association": "Mizuko kuyō (memorial for miscarried/aborted children), travelers, safety"
+      },
+      "domains": [
+        "childhood",
+        "underworld"
+      ],
+      "keywords": [
+        "achieve",
+        "beings",
+        "beloved",
+        "bibs",
+        "bodhisattva",
+        "bosatsu",
+        "buddhahood",
+        "caps",
+        "childhood",
+        "children"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "herald",
+        "sage",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through guide-of-dead and hell-traveler",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1951,6 +2451,38 @@
         "shrine": "Enma-dō temples",
         "symbol": "Judge's cap, register of sins, karma mirror",
         "association": "Buddhist hell realms, judgment, moral consequences"
+      },
+      "domains": [
+        "death",
+        "justice",
+        "sovereignty",
+        "underworld"
+      ],
+      "keywords": [
+        "buddhist",
+        "consulting",
+        "cosmic",
+        "dead",
+        "death",
+        "derived",
+        "despite",
+        "destroyer",
+        "enma",
+        "enma-ō"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through underworld-king and cosmic-judge",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ]

@@ -8,7 +8,6 @@
   "subdomain": "zodiac",
   "cardinality": 13,
   "structuralNotes": "Based on Robert Graves' reconstruction in 'The White Goddess' (1948). 13 lunar months plus one intercalary day. Trees correspond to Ogham letters.",
-
   "entries": [
     {
       "@id": "celtic_tree:birch",
@@ -17,25 +16,66 @@
       "oghamLetter": "B",
       "dates": "December 24 - January 20",
       "lunarMonth": 1,
-      "keywords": ["beginnings", "purification", "renewal", "youth", "cleansing"],
+      "keywords": [
+        "beginnings",
+        "purification",
+        "renewal",
+        "youth",
+        "cleansing"
+      ],
       "description": "The first tree of the Celtic year, symbolizing new beginnings, purification, and driving out the old. Associated with birth and the fresh start.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.25,
-        "light-shadow": 0.30,
-        "active-receptive": 0.40,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.40,
+        "light-shadow": 0.3,
+        "active-receptive": 0.4,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["beginnings", "youth"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["purification", "cleansing"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.75,
+          "aspects": [
+            "beginnings",
+            "youth"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "purification",
+            "cleansing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:beth", "fidelity": 0.95, "note": "Same tree"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:beth",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        }
+      ],
+      "domains": [
+        "creation"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody divine child energy through beginnings and youth",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:rowan",
@@ -44,26 +84,72 @@
       "oghamLetter": "L",
       "dates": "January 21 - February 17",
       "lunarMonth": 2,
-      "keywords": ["protection", "vision", "quickening", "magic", "threshold"],
+      "keywords": [
+        "protection",
+        "vision",
+        "quickening",
+        "magic",
+        "threshold"
+      ],
       "description": "Tree of quickening life and protection against enchantment. Associated with the goddess Brigid and the awakening of vision.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
         "individual-collective": 0.45,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["protection", "vision"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["quickening", "awakening"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "protection",
+            "vision"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "quickening",
+            "awakening"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:luis", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "arch:CE-BRIGID", "fidelity": 0.65, "note": "Brigid association"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:luis",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.65,
+          "note": "Brigid association"
+        }
+      ],
+      "domains": [
+        "protection"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through protection and vision",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:ash",
@@ -72,26 +158,72 @@
       "oghamLetter": "N",
       "dates": "February 18 - March 17",
       "lunarMonth": 3,
-      "keywords": ["connection", "world-tree", "linking", "balance", "sea"],
+      "keywords": [
+        "connection",
+        "world-tree",
+        "linking",
+        "balance",
+        "sea"
+      ],
       "description": "The world-tree connecting all realms. Associated with sea power, balance between inner and outer worlds, and sacred links.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.70, "aspects": ["connection", "linking-realms"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["world-tree", "balance"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.7,
+          "aspects": [
+            "connection",
+            "linking-realms"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "world-tree",
+            "balance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:nion", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "arch:NO-YGGDRASIL", "fidelity": 0.70, "note": "World-tree archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:nion",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-YGGDRASIL",
+          "fidelity": 0.7,
+          "note": "World-tree archetype"
+        }
+      ],
+      "domains": [
+        "sea"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "magician",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through connection and linking-realms",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:alder",
@@ -100,25 +232,63 @@
       "oghamLetter": "F",
       "dates": "March 18 - April 14",
       "lunarMonth": 4,
-      "keywords": ["foundation", "shield", "oracle", "strength", "protection"],
+      "keywords": [
+        "foundation",
+        "shield",
+        "oracle",
+        "strength",
+        "protection"
+      ],
       "description": "Tree of foundation and oracular power. Associated with Bran the Blessed, shielding, and the strength of foundations.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
-        "active-receptive": 0.40,
-        "individual-collective": 0.50,
+        "active-receptive": 0.4,
+        "individual-collective": 0.5,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["shield", "protection"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["oracle", "foundation"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "shield",
+            "protection"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "oracle",
+            "foundation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:fearn", "fidelity": 0.95, "note": "Same tree"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:fearn",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through shield and protection",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:willow",
@@ -127,26 +297,73 @@
       "oghamLetter": "S",
       "dates": "April 15 - May 12",
       "lunarMonth": 5,
-      "keywords": ["moon", "intuition", "dreams", "enchantment", "flexibility"],
+      "keywords": [
+        "moon",
+        "intuition",
+        "dreams",
+        "enchantment",
+        "flexibility"
+      ],
       "description": "Moon tree of enchantment and intuition. Associated with the goddess, night visions, and the flexibility of water.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.35,
         "light-shadow": 0.55,
-        "active-receptive": 0.70,
-        "individual-collective": 0.50,
+        "active-receptive": 0.7,
+        "individual-collective": 0.5,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["enchantment", "moon-magic"]},
-        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["intuition", "dreams"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "enchantment",
+            "moon-magic"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.55,
+          "aspects": [
+            "intuition",
+            "dreams"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:saille", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "goddess:crone-sorceress", "fidelity": 0.60, "note": "Moon magic"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:saille",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:crone-sorceress",
+          "fidelity": 0.6,
+          "note": "Moon magic"
+        }
+      ],
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through enchantment and moon-magic",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:hawthorn",
@@ -155,25 +372,65 @@
       "oghamLetter": "H",
       "dates": "May 13 - June 9",
       "lunarMonth": 6,
-      "keywords": ["cleansing", "chastity", "protection", "threshold", "fairy"],
+      "keywords": [
+        "cleansing",
+        "chastity",
+        "protection",
+        "threshold",
+        "fairy"
+      ],
       "description": "Tree of cleansing and fairy magic. Guards the threshold between worlds, associated with Beltane and sacred abstinence.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.50,
-        "active-receptive": 0.50,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
         "individual-collective": 0.45,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["chastity", "purity"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["threshold", "fairy-realm"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.65,
+          "aspects": [
+            "chastity",
+            "purity"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "threshold",
+            "fairy-realm"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:huath", "fidelity": 0.95, "note": "Same tree"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:huath",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        }
+      ],
+      "domains": [
+        "threshold"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician"
+      ],
+      "coreFunction": "To embody maiden energy through chastity and purity",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:oak",
@@ -182,26 +439,71 @@
       "oghamLetter": "D",
       "dates": "June 10 - July 7",
       "lunarMonth": 7,
-      "keywords": ["strength", "doorway", "king", "endurance", "midsummer"],
+      "keywords": [
+        "strength",
+        "doorway",
+        "king",
+        "endurance",
+        "midsummer"
+      ],
       "description": "King of the forest at midsummer. Sacred to the Druids, represents strength, doors between worlds, and royal authority.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
-        "individual-collective": 0.60,
+        "individual-collective": 0.6,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["king", "strength"]},
-        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["endurance", "protection"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.85,
+          "aspects": [
+            "king",
+            "strength"
+          ]
+        },
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.65,
+          "aspects": [
+            "endurance",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:duir", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.75, "note": "King archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:duir",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:king",
+          "fidelity": 0.75,
+          "note": "King archetype"
+        }
+      ],
+      "domains": [
+        "sovereignty"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through king and strength",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "celtic_tree:holly",
@@ -210,26 +512,73 @@
       "oghamLetter": "T",
       "dates": "July 8 - August 4",
       "lunarMonth": 8,
-      "keywords": ["warrior", "challenge", "protection", "combat", "holly-king"],
+      "keywords": [
+        "warrior",
+        "challenge",
+        "protection",
+        "combat",
+        "holly-king"
+      ],
       "description": "Tree of the warrior and the holly king who rules the waning year. Associated with challenges, combat readiness, and masculine force.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.55,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.25,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.40
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["combat", "challenge"]},
-        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["holly-king", "waning-year"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "combat",
+            "challenge"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.55,
+          "aspects": [
+            "holly-king",
+            "waning-year"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:tinne", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "POLAR_OPPOSITE", "target": "celtic_tree:oak", "axis": "creation-destruction", "note": "Oak vs Holly King"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:tinne",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "celtic_tree:oak",
+          "axis": "creation-destruction",
+          "note": "Oak vs Holly King"
+        }
+      ],
+      "domains": [
+        "sovereignty",
+        "war"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through combat and challenge",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "celtic_tree:hazel",
@@ -238,26 +587,73 @@
       "oghamLetter": "C",
       "dates": "August 5 - September 1",
       "lunarMonth": 9,
-      "keywords": ["wisdom", "inspiration", "poetry", "salmon", "knowledge"],
+      "keywords": [
+        "wisdom",
+        "inspiration",
+        "poetry",
+        "salmon",
+        "knowledge"
+      ],
       "description": "Tree of wisdom and poetic inspiration. The salmon gained all knowledge by eating hazelnuts from the sacred well.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.50,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.85, "aspects": ["wisdom", "knowledge"]},
-        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["poetry", "inspiration"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.85,
+          "aspects": [
+            "wisdom",
+            "knowledge"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.6,
+          "aspects": [
+            "poetry",
+            "inspiration"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:coll", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.75, "note": "Wisdom archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:coll",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:sage",
+          "fidelity": 0.75,
+          "note": "Wisdom archetype"
+        }
+      ],
+      "domains": [
+        "poetry",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through wisdom and knowledge",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "celtic_tree:vine",
@@ -266,26 +662,73 @@
       "oghamLetter": "M",
       "dates": "September 2 - September 29",
       "lunarMonth": 10,
-      "keywords": ["prophecy", "harvest", "intoxication", "release", "truth"],
+      "keywords": [
+        "prophecy",
+        "harvest",
+        "intoxication",
+        "release",
+        "truth"
+      ],
       "description": "Tree of prophecy and the autumn equinox. Associated with wine, harvest celebration, and the release of inhibition that reveals truth.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
+        "light-shadow": 0.5,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.60,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["prophecy", "truth-telling"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["intoxication", "release"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "prophecy",
+            "truth-telling"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "intoxication",
+            "release"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:muin", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-DIONYSUS", "fidelity": 0.65, "note": "Wine god"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:muin",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DIONYSUS",
+          "fidelity": 0.65,
+          "note": "Wine god"
+        }
+      ],
+      "domains": [
+        "harvest",
+        "prophecy"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through prophecy and truth-telling",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:ivy",
@@ -294,25 +737,65 @@
       "oghamLetter": "G",
       "dates": "September 30 - October 27",
       "lunarMonth": 11,
-      "keywords": ["spiral", "search", "persistence", "binding", "resurrection"],
+      "keywords": [
+        "spiral",
+        "search",
+        "persistence",
+        "binding",
+        "resurrection"
+      ],
       "description": "Tree of the labyrinth and resurrection. Spiraling ever inward, represents the search for self and the binding power of commitment.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
         "active-receptive": 0.55,
         "individual-collective": 0.45,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["search", "persistence"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["spiral", "binding"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "search",
+            "persistence"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "spiral",
+            "binding"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:gort", "fidelity": 0.95, "note": "Same tree"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:gort",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        }
+      ],
+      "domains": [
+        "rebirth"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician"
+      ],
+      "coreFunction": "To embody hero energy through search and persistence",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:reed",
@@ -321,25 +804,66 @@
       "oghamLetter": "Ng",
       "dates": "October 28 - November 24",
       "lunarMonth": 12,
-      "keywords": ["action", "direct", "threshold", "samhain", "ancestors"],
+      "keywords": [
+        "action",
+        "direct",
+        "threshold",
+        "samhain",
+        "ancestors"
+      ],
       "description": "Tree of direct action and the Samhain season. Associated with arrows, direct communication with ancestors, and focused will.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.5,
         "light-shadow": 0.55,
-        "active-receptive": 0.30,
+        "active-receptive": 0.3,
         "individual-collective": 0.55,
-        "ascent-descent": 0.60,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["action", "direction"]},
-        {"primordial": "primordial:ancestor", "weight": 0.65, "aspects": ["samhain", "communication"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "action",
+            "direction"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.65,
+          "aspects": [
+            "samhain",
+            "communication"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:ngetal", "fidelity": 0.95, "note": "Same tree"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:ngetal",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        }
+      ],
+      "domains": [
+        "communication",
+        "time"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through action and direction",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "celtic_tree:elder",
@@ -348,36 +872,103 @@
       "oghamLetter": "R",
       "dates": "November 25 - December 22",
       "lunarMonth": 13,
-      "keywords": ["endings", "crone", "regeneration", "judgement", "fairy-tree"],
+      "keywords": [
+        "endings",
+        "crone",
+        "regeneration",
+        "judgement",
+        "fairy-tree"
+      ],
       "description": "Tree of endings and regeneration. The crone's tree, associated with the elder mother, judgement, and the death that precedes rebirth.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.65,
-        "light-shadow": 0.60,
+        "light-shadow": 0.6,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
         "ascent-descent": 0.65,
-        "stasis-transformation": 0.70,
+        "stasis-transformation": 0.7,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.85, "aspects": ["endings", "wisdom"]},
-        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["death", "regeneration"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.85,
+          "aspects": [
+            "endings",
+            "wisdom"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.6,
+          "aspects": [
+            "death",
+            "regeneration"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "ogham:ruis", "fidelity": 0.95, "note": "Same tree"},
-        {"type": "CULTURAL_ECHO", "target": "goddess:crone", "fidelity": 0.80, "note": "Crone archetype"},
-        {"type": "EVOLUTION", "target": "celtic_tree:birch", "note": "Cycle completes"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:ruis",
+          "fidelity": 0.95,
+          "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:crone",
+          "fidelity": 0.8,
+          "note": "Crone archetype"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "celtic_tree:birch",
+          "note": "Cycle completes"
+        }
+      ],
+      "domains": [
+        "death",
+        "motherhood",
+        "rebirth"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through endings and wisdom",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
     "seasonalGroups": {
-      "winter": ["birch", "rowan"],
-      "spring": ["ash", "alder", "willow", "hawthorn"],
-      "summer": ["oak", "holly", "hazel"],
-      "autumn": ["vine", "ivy", "reed", "elder"]
+      "winter": [
+        "birch",
+        "rowan"
+      ],
+      "spring": [
+        "ash",
+        "alder",
+        "willow",
+        "hawthorn"
+      ],
+      "summer": [
+        "oak",
+        "holly",
+        "hazel"
+      ],
+      "autumn": [
+        "vine",
+        "ivy",
+        "reed",
+        "elder"
+      ]
     },
     "festivalsAssociated": {
       "yule": "birch",
@@ -390,7 +981,6 @@
       "samhain": "reed"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

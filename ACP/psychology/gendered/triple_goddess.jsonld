@@ -8,7 +8,6 @@
   "subdomain": "gendered",
   "cardinality": 9,
   "structuralNotes": "Three primary aspects with three sub-aspects each, totaling nine manifestations. Corresponds to waxing, full, and waning moon.",
-
   "entries": [
     {
       "@id": "goddess:maiden",
@@ -17,78 +16,214 @@
       "moonPhase": "Waxing",
       "lifestage": "Youth",
       "season": "Spring",
-      "keywords": ["innocence", "potential", "independence", "new-beginnings", "exploration"],
+      "keywords": [
+        "innocence",
+        "potential",
+        "independence",
+        "new-beginnings",
+        "exploration"
+      ],
       "description": "The virgin aspect - not sexual innocence but belonging-to-herself. Represents youth, new beginnings, enthusiasm, and untapped potential.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.25,
         "light-shadow": 0.25,
         "active-receptive": 0.45,
-        "individual-collective": 0.30,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.60,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.95, "aspects": ["innocence", "independence", "potential"]},
-        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["new-beginnings", "wonder"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.95,
+          "aspects": [
+            "innocence",
+            "independence",
+            "potential"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.6,
+          "aspects": [
+            "new-beginnings",
+            "wonder"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "goddess:mother", "notes": "Transitions with commitment"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARTEMIS", "fidelity": 0.80, "note": "Virgin huntress"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.75, "note": "Kore aspect"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "goddess:mother",
+          "notes": "Transitions with commitment"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ARTEMIS",
+          "fidelity": 0.8,
+          "note": "Virgin huntress"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.75,
+          "note": "Kore aspect"
+        }
+      ],
+      "domains": [
+        "childhood"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through innocence and independence",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "goddess:maiden-enchantress",
       "@type": "Archetype",
       "name": "The Enchantress (Maiden Aspect)",
       "parent": "goddess:maiden",
-      "keywords": ["allure", "awakening", "magic", "attraction", "desire"],
+      "keywords": [
+        "allure",
+        "awakening",
+        "magic",
+        "attraction",
+        "desire"
+      ],
       "description": "The Maiden's power of attraction and enchantment. The awakening of desire and the magic of youth's beauty.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.30,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.40,
+        "active-receptive": 0.4,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.80, "aspects": ["allure", "awakening"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["enchantment", "magic"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.8,
+          "aspects": [
+            "allure",
+            "awakening"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "enchantment",
+            "magic"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "goddess:maiden"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "goddess:maiden"
+        }
+      ],
+      "domains": [
+        "childhood",
+        "love"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through allure and awakening",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "goddess:maiden-amazon",
       "@type": "Archetype",
       "name": "The Amazon (Maiden Aspect)",
       "parent": "goddess:maiden",
-      "keywords": ["independence", "strength", "wilderness", "self-reliance", "freedom"],
+      "keywords": [
+        "independence",
+        "strength",
+        "wilderness",
+        "self-reliance",
+        "freedom"
+      ],
       "description": "The Maiden's fierce independence and warrior spirit. Self-sufficient, belonging to no one, protector of her own boundaries.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.25,
-        "individual-collective": 0.20,
+        "individual-collective": 0.2,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.75, "aspects": ["independence", "freedom"]},
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["strength", "protection"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.75,
+          "aspects": [
+            "independence",
+            "freedom"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "strength",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "goddess:maiden"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARTEMIS", "fidelity": 0.85, "note": "Warrior maiden"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "goddess:maiden"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ARTEMIS",
+          "fidelity": 0.85,
+          "note": "Warrior maiden"
+        }
+      ],
+      "domains": [
+        "boundaries",
+        "war"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "seeker",
+        "warrior"
+      ],
+      "coreFunction": "To embody maiden energy through independence and freedom",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "goddess:mother",
@@ -97,64 +232,159 @@
       "moonPhase": "Full",
       "lifestage": "Maturity",
       "season": "Summer",
-      "keywords": ["nurturing", "fertility", "creativity", "abundance", "protection"],
+      "keywords": [
+        "nurturing",
+        "fertility",
+        "creativity",
+        "abundance",
+        "protection"
+      ],
       "description": "The generative aspect - creativity in all forms, not just biological. Represents nurturing, fertility, abundance, and the fullness of life.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.20,
-        "light-shadow": 0.30,
+        "creation-destruction": 0.2,
+        "light-shadow": 0.3,
         "active-receptive": 0.65,
         "individual-collective": 0.75,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
+        "stasis-transformation": 0.4,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.95, "aspects": ["nurturing", "fertility", "abundance"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.95,
+          "aspects": [
+            "nurturing",
+            "fertility",
+            "abundance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "goddess:crone", "notes": "Transitions with release"},
-        {"type": "DEVOLUTION", "target": "goddess:maiden", "notes": "Was once maiden"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-DEMETER", "fidelity": 0.85, "note": "Earth mother"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "goddess:crone",
+          "notes": "Transitions with release"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "goddess:maiden",
+          "notes": "Was once maiden"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DEMETER",
+          "fidelity": 0.85,
+          "note": "Earth mother"
+        }
+      ],
+      "domains": [
+        "fertility",
+        "motherhood"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through nurturing and fertility",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "goddess:mother-queen",
       "@type": "Archetype",
       "name": "The Queen (Mother Aspect)",
       "parent": "goddess:mother",
-      "keywords": ["sovereignty", "authority", "partnership", "blessing", "leadership"],
+      "keywords": [
+        "sovereignty",
+        "authority",
+        "partnership",
+        "blessing",
+        "leadership"
+      ],
       "description": "The Mother's sovereign aspect. Authority earned through generativity, ruling through nurturing, partnership with the King.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.30,
-        "active-receptive": 0.50,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.40,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
+        "active-receptive": 0.5,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.75, "aspects": ["blessing", "nurturing"]},
-        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["authority", "leadership"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.75,
+          "aspects": [
+            "blessing",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.75,
+          "aspects": [
+            "authority",
+            "leadership"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "goddess:mother"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERA", "fidelity": 0.80, "note": "Queen of gods"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "goddess:mother"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERA",
+          "fidelity": 0.8,
+          "note": "Queen of gods"
+        }
+      ],
+      "domains": [
+        "motherhood",
+        "sovereignty"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great mother energy through blessing and nurturing",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "goddess:mother-lover",
       "@type": "Archetype",
       "name": "The Lover (Mother Aspect)",
       "parent": "goddess:mother",
-      "keywords": ["passion", "creativity", "union", "desire", "pleasure"],
+      "keywords": [
+        "passion",
+        "creativity",
+        "union",
+        "desire",
+        "pleasure"
+      ],
       "description": "The Mother's lover aspect. Sacred sexuality, creative passion, the generative power of union and desire.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
@@ -162,13 +392,54 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.60, "aspects": ["fertility", "creativity"]},
-        {"primordial": "primordial:lover", "weight": 0.80, "aspects": ["passion", "union", "desire"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.6,
+          "aspects": [
+            "fertility",
+            "creativity"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.8,
+          "aspects": [
+            "passion",
+            "union",
+            "desire"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "goddess:mother"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.75, "note": "Love goddess"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "goddess:mother"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.75,
+          "note": "Love goddess"
+        }
+      ],
+      "domains": [
+        "love",
+        "marriage",
+        "motherhood"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through passion and union",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "goddess:crone",
@@ -177,83 +448,223 @@
       "moonPhase": "Waning/Dark",
       "lifestage": "Elderhood",
       "season": "Autumn/Winter",
-      "keywords": ["wisdom", "endings", "transformation", "death", "magic"],
+      "keywords": [
+        "wisdom",
+        "endings",
+        "transformation",
+        "death",
+        "magic"
+      ],
       "description": "The wisdom-keeper who has passed through maiden and mother. Holds death-wisdom, magic, and the power of endings that enable new beginnings.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.65,
         "light-shadow": 0.65,
         "active-receptive": 0.55,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.70,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.7,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.70
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.95, "aspects": ["wisdom", "endings", "death-knowledge"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.95,
+          "aspects": [
+            "wisdom",
+            "endings",
+            "death-knowledge"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "goddess:mother", "notes": "Was once mother"},
-        {"type": "EVOLUTION", "target": "goddess:maiden", "notes": "Cycle renews"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HECATE", "fidelity": 0.85, "note": "Crone goddess"}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "goddess:mother",
+          "notes": "Was once mother"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "goddess:maiden",
+          "notes": "Cycle renews"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HECATE",
+          "fidelity": 0.85,
+          "note": "Crone goddess"
+        }
+      ],
+      "domains": [
+        "death",
+        "motherhood",
+        "preservation",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through wisdom and endings",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "goddess:crone-sorceress",
       "@type": "Archetype",
       "name": "The Sorceress (Crone Aspect)",
       "parent": "goddess:crone",
-      "keywords": ["magic", "transformation", "power", "spells", "otherworld"],
+      "keywords": [
+        "magic",
+        "transformation",
+        "power",
+        "spells",
+        "otherworld"
+      ],
       "description": "The Crone's magical power. Mistress of transformation, keeper of ancient magic, walker between worlds.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.55,
-        "light-shadow": 0.60,
+        "light-shadow": 0.6,
         "active-receptive": 0.45,
         "individual-collective": 0.45,
-        "ascent-descent": 0.60,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.75,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.70, "aspects": ["transformation", "otherworld"]},
-        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["magic", "power", "spells"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.7,
+          "aspects": [
+            "transformation",
+            "otherworld"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.8,
+          "aspects": [
+            "magic",
+            "power",
+            "spells"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "goddess:crone"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-CIRCE", "fidelity": 0.75, "note": "Witch/sorceress"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "goddess:crone"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-CIRCE",
+          "fidelity": 0.75,
+          "note": "Witch/sorceress"
+        }
+      ],
+      "domains": [
+        "preservation",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician",
+        "sage",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through magic and power",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "goddess:crone-destroyer",
       "@type": "Archetype",
       "name": "The Dark Mother (Crone Aspect)",
       "parent": "goddess:crone",
-      "keywords": ["destruction", "death", "endings", "necessity", "release"],
+      "keywords": [
+        "destruction",
+        "death",
+        "endings",
+        "necessity",
+        "release"
+      ],
       "description": "The Crone's destructive aspect. The necessary endings, death that enables rebirth, the dark mother who takes back what she gave.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.80,
+        "creation-destruction": 0.8,
         "light-shadow": 0.75,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
         "ascent-descent": 0.75,
-        "stasis-transformation": 0.70,
+        "stasis-transformation": 0.7,
         "voluntary-fated": 0.75
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.75, "aspects": ["death-wisdom", "endings"]},
-        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["destruction", "release"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.75,
+          "aspects": [
+            "death-wisdom",
+            "endings"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.8,
+          "aspects": [
+            "destruction",
+            "release"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "goddess:crone"},
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-KALI", "fidelity": 0.75, "note": "Dark mother"}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "goddess:crone"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-KALI",
+          "fidelity": 0.75,
+          "note": "Dark mother"
+        }
+      ],
+      "domains": [
+        "death",
+        "motherhood",
+        "rebirth"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody destroyer energy through destruction and release",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
-    "tripleAspects": ["goddess:maiden", "goddess:mother", "goddess:crone"],
+    "tripleAspects": [
+      "goddess:maiden",
+      "goddess:mother",
+      "goddess:crone"
+    ],
     "moonCorrespondence": {
       "waxing": "goddess:maiden",
       "full": "goddess:mother",
@@ -265,12 +676,20 @@
       "autumn_winter": "goddess:crone"
     },
     "subaspects": {
-      "maiden": ["goddess:maiden-enchantress", "goddess:maiden-amazon"],
-      "mother": ["goddess:mother-queen", "goddess:mother-lover"],
-      "crone": ["goddess:crone-sorceress", "goddess:crone-destroyer"]
+      "maiden": [
+        "goddess:maiden-enchantress",
+        "goddess:maiden-amazon"
+      ],
+      "mother": [
+        "goddess:mother-queen",
+        "goddess:mother-lover"
+      ],
+      "crone": [
+        "goddess:crone-sorceress",
+        "goddess:crone-destroyer"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

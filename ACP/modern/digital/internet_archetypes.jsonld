@@ -71,7 +71,25 @@
           "target": "digital:creator",
           "note": "Both produce content"
         }
-      ]
+      ],
+      "domains": [
+        "communication",
+        "love",
+        "prophecy"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "trickster"
+      ],
+      "coreFunction": "To embody lover energy through aspiration and desire",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:hacker",
@@ -134,7 +152,24 @@
           "target": "digital:moderator",
           "note": "Breaking vs enforcing rules"
         }
-      ]
+      ],
+      "domains": [
+        "boundaries"
+      ],
+      "narrativeRoles": [
+        "outcast",
+        "rebel",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through boundary-crossing and subversion",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "digital:troll",
@@ -197,7 +232,24 @@
           "target": "digital:curator",
           "note": "Destruction vs preservation"
         }
-      ]
+      ],
+      "domains": [
+        "chaos"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody shadow energy through provocation and transgression",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:creator",
@@ -260,7 +312,19 @@
           "target": "digital:influencer",
           "note": "Both produce content"
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through creation and worldbuilding",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "digital:curator",
@@ -323,7 +387,22 @@
           "target": "digital:troll",
           "note": "Preservation vs destruction"
         }
-      ]
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through preservation and archiving",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:lurker",
@@ -381,7 +460,20 @@
           "target": "digital:creator",
           "note": "Passive vs active engagement"
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through invisibility and hidden",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:moderator",
@@ -444,7 +536,25 @@
           "target": "digital:hacker",
           "note": "Enforcing vs breaking rules"
         }
-      ]
+      ],
+      "domains": [
+        "boundaries",
+        "protection"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through order and gatekeeping",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:whistleblower",
@@ -507,7 +617,21 @@
           "target": "digital:lurker",
           "note": "Speaking vs silence"
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "hero",
+        "outcast",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody rebel energy through courage and truth",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:ai_entity",
@@ -570,7 +694,20 @@
           "target": "digital:troll",
           "note": "Assistance vs chaos"
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "magician",
+        "seeker",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through intelligence and assistance",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "digital:viral_meme",
@@ -633,7 +770,19 @@
           "target": "digital:curator",
           "note": "Chaos vs organization"
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through contagion and mutation",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
   "systemRelationships": {

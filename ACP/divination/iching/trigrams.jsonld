@@ -8,7 +8,6 @@
   "subdomain": "iching",
   "cardinality": 8,
   "structuralNotes": "Each trigram is 3 lines (yin or yang). Pairs of trigrams form the 64 hexagrams. Arranged in Earlier Heaven and Later Heaven sequences.",
-
   "entries": [
     {
       "@id": "iching:qian",
@@ -19,7 +18,14 @@
       "attribute": "creative, strong, initiating",
       "family": "father",
       "element": "metal/sky",
-      "keywords": ["heaven", "creative", "strong", "initiating", "active", "firm"],
+      "keywords": [
+        "heaven",
+        "creative",
+        "strong",
+        "initiating",
+        "active",
+        "firm"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.15,
@@ -31,14 +37,50 @@
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.85, "aspects": ["creative-force"]},
-        {"primordial": "primordial:great_father", "weight": 0.8, "aspects": ["heaven", "initiating"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.85,
+          "aspects": [
+            "creative-force"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.8,
+          "aspects": [
+            "heaven",
+            "initiating"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:kun", "axis": "active-receptive"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:kun",
+          "axis": "active-receptive"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "creator"
+      ],
+      "coreFunction": "To embody creator energy through creative-force",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "iching:kun",
@@ -49,7 +91,14 @@
       "attribute": "receptive, yielding, devoted",
       "family": "mother",
       "element": "earth",
-      "keywords": ["earth", "receptive", "yielding", "nurturing", "devoted", "supportive"],
+      "keywords": [
+        "earth",
+        "receptive",
+        "yielding",
+        "nurturing",
+        "devoted",
+        "supportive"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.32,
         "creation-destruction": 0.28,
@@ -61,14 +110,46 @@
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.9, "aspects": ["earth", "nurturing"]},
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["devoted", "supporting"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.9,
+          "aspects": [
+            "earth",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "devoted",
+            "supporting"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:qian", "axis": "active-receptive"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-GAIA", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:qian",
+          "axis": "active-receptive"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-GAIA",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great_mother energy through earth and nurturing",
+      "symbolicCore": "The essential pattern of Kun (Earth)"
     },
     {
       "@id": "iching:zhen",
@@ -79,7 +160,14 @@
       "attribute": "arousing, shocking, movement",
       "family": "eldest son",
       "element": "wood",
-      "keywords": ["thunder", "arousing", "shock", "movement", "initiative", "spring"],
+      "keywords": [
+        "thunder",
+        "arousing",
+        "shock",
+        "movement",
+        "initiative",
+        "spring"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.45,
@@ -91,14 +179,53 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["initiative", "movement"]},
-        {"primordial": "primordial:rebel", "weight": 0.6, "aspects": ["shock", "awakening"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "initiative",
+            "movement"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.6,
+          "aspects": [
+            "shock",
+            "awakening"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:xun", "note": "Thunder and wind"},
-        {"type": "CULTURAL_ECHO", "target": "arch:NO-THOR", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.7}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:xun",
+          "note": "Thunder and wind"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-THOR",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:tower",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through initiative and movement",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:kan",
@@ -109,7 +236,14 @@
       "attribute": "abysmal, dangerous, flowing",
       "family": "middle son",
       "element": "water",
-      "keywords": ["water", "abyss", "danger", "depth", "flowing", "hidden"],
+      "keywords": [
+        "water",
+        "abyss",
+        "danger",
+        "depth",
+        "flowing",
+        "hidden"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.52,
@@ -121,14 +255,53 @@
         "voluntary-fated": 0.68
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.7, "aspects": ["depth", "hidden"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.6, "aspects": ["flowing", "passage"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.7,
+          "aspects": [
+            "depth",
+            "hidden"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.6,
+          "aspects": [
+            "flowing",
+            "passage"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:li", "axis": "light-shadow"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "astrology:scorpio", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:li",
+          "axis": "light-shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:scorpio",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody shadow energy through depth and hidden",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:gen",
@@ -139,7 +312,14 @@
       "attribute": "stillness, stopping, meditation",
       "family": "youngest son",
       "element": "earth",
-      "keywords": ["mountain", "stillness", "stopping", "meditation", "boundary", "contemplation"],
+      "keywords": [
+        "mountain",
+        "stillness",
+        "stopping",
+        "meditation",
+        "boundary",
+        "contemplation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.42,
@@ -151,13 +331,47 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["stillness", "boundary"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["meditation", "contemplation"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.75,
+          "aspects": [
+            "stillness",
+            "boundary"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.6,
+          "aspects": [
+            "meditation",
+            "contemplation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "iching:zhen", "note": "Stillness vs movement"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.8}
-      ]
+        {
+          "type": "TENSION",
+          "target": "iching:zhen",
+          "note": "Stillness vs movement"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through stillness and boundary",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:xun",
@@ -168,7 +382,14 @@
       "attribute": "gentle, penetrating, dispersing",
       "family": "eldest daughter",
       "element": "wood",
-      "keywords": ["wind", "wood", "gentle", "penetrating", "gradual", "influence"],
+      "keywords": [
+        "wind",
+        "wood",
+        "gentle",
+        "penetrating",
+        "gradual",
+        "influence"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.35,
@@ -180,13 +401,47 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["penetrating", "influence"]},
-        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["gentle", "gradual"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "penetrating",
+            "influence"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.55,
+          "aspects": [
+            "gentle",
+            "gradual"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:zhen", "note": "Wind follows thunder"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.65}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:zhen",
+          "note": "Wind follows thunder"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:high_priestess",
+          "fidelity": 0.65
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician"
+      ],
+      "coreFunction": "To embody magician energy through penetrating and influence",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:li",
@@ -197,7 +452,14 @@
       "attribute": "clinging, clarity, illumination",
       "family": "middle daughter",
       "element": "fire",
-      "keywords": ["fire", "clinging", "clarity", "illumination", "awareness", "beauty"],
+      "keywords": [
+        "fire",
+        "clinging",
+        "clarity",
+        "illumination",
+        "awareness",
+        "beauty"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.38,
@@ -209,14 +471,52 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.7, "aspects": ["clarity", "awareness"]},
-        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["clinging", "beauty"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.7,
+          "aspects": [
+            "clarity",
+            "awareness"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.55,
+          "aspects": [
+            "clinging",
+            "beauty"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:kan", "axis": "light-shadow"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:leo", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:kan",
+          "axis": "light-shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:leo",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through clarity and awareness",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:dui",
@@ -227,7 +527,14 @@
       "attribute": "joyous, open, pleasure",
       "family": "youngest daughter",
       "element": "metal",
-      "keywords": ["lake", "joy", "pleasure", "open", "communication", "exchange"],
+      "keywords": [
+        "lake",
+        "joy",
+        "pleasure",
+        "open",
+        "communication",
+        "exchange"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.28,
@@ -239,34 +546,117 @@
         "voluntary-fated": 0.32
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["joy", "pleasure"]},
-        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["playful", "exchange"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.7,
+          "aspects": [
+            "joy",
+            "pleasure"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.5,
+          "aspects": [
+            "playful",
+            "exchange"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:gen", "note": "Openness vs stillness"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.65},
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.6}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:gen",
+          "note": "Openness vs stillness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.6
+        }
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody divine_child energy through joy and pleasure",
+      "symbolicCore": "The essential pattern of Dui (Lake)"
     }
   ],
-
   "systemRelationships": {
-    "earlierHeavenSequence": ["qian", "dui", "li", "zhen", "xun", "kan", "gen", "kun"],
-    "laterHeavenSequence": ["li", "kun", "dui", "qian", "kan", "gen", "zhen", "xun"],
+    "earlierHeavenSequence": [
+      "qian",
+      "dui",
+      "li",
+      "zhen",
+      "xun",
+      "kan",
+      "gen",
+      "kun"
+    ],
+    "laterHeavenSequence": [
+      "li",
+      "kun",
+      "dui",
+      "qian",
+      "kan",
+      "gen",
+      "zhen",
+      "xun"
+    ],
     "polarPairs": [
-      {"pair": ["qian", "kun"], "axis": "heaven-earth", "note": "Primary polarity"},
-      {"pair": ["li", "kan"], "axis": "fire-water", "note": "Light and shadow"},
-      {"pair": ["zhen", "xun"], "axis": "thunder-wind", "note": "Movement and penetration"},
-      {"pair": ["gen", "dui"], "axis": "mountain-lake", "note": "Stillness and joy"}
+      {
+        "pair": [
+          "qian",
+          "kun"
+        ],
+        "axis": "heaven-earth",
+        "note": "Primary polarity"
+      },
+      {
+        "pair": [
+          "li",
+          "kan"
+        ],
+        "axis": "fire-water",
+        "note": "Light and shadow"
+      },
+      {
+        "pair": [
+          "zhen",
+          "xun"
+        ],
+        "axis": "thunder-wind",
+        "note": "Movement and penetration"
+      },
+      {
+        "pair": [
+          "gen",
+          "dui"
+        ],
+        "axis": "mountain-lake",
+        "note": "Stillness and joy"
+      }
     ],
     "familyStructure": {
       "father": "qian",
       "mother": "kun",
-      "sons": ["zhen", "kan", "gen"],
-      "daughters": ["xun", "li", "dui"]
+      "sons": [
+        "zhen",
+        "kan",
+        "gen"
+      ],
+      "daughters": [
+        "xun",
+        "li",
+        "dui"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

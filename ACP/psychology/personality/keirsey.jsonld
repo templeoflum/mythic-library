@@ -8,139 +8,363 @@
   "subdomain": "personality",
   "cardinality": 4,
   "structuralNotes": "Based on Keirsey's 1978 'Please Understand Me'. Maps to MBTI types in groups of four. Rooted in ancient temperament theory (Hippocrates, Plato).",
-
   "entries": [
     {
       "@id": "keirsey:guardian",
       "@type": "Archetype",
       "name": "Guardian (SJ)",
       "code": "SJ",
-      "mbtiTypes": ["ESTJ", "ISTJ", "ESFJ", "ISFJ"],
+      "mbtiTypes": [
+        "ESTJ",
+        "ISTJ",
+        "ESFJ",
+        "ISFJ"
+      ],
       "coreNeed": "Belonging and responsibility",
       "coreValue": "Security through duty",
-      "keywords": ["duty", "tradition", "security", "responsibility", "belonging"],
-      "talents": ["logistics", "supervision", "protection", "supporting"],
+      "keywords": [
+        "duty",
+        "tradition",
+        "security",
+        "responsibility",
+        "belonging"
+      ],
+      "talents": [
+        "logistics",
+        "supervision",
+        "protection",
+        "supporting"
+      ],
       "description": "The stabilizers who value tradition, security, and belonging. Responsible, hardworking, and loyal to institutions and families.",
       "spectralCoordinates": {
-        "order-chaos": 0.20,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.2,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
-        "active-receptive": 0.50,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.50,
+        "active-receptive": 0.5,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.25,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["tradition", "security"]},
-        {"primordial": "primordial:great-mother", "weight": 0.60, "aspects": ["belonging", "protection"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.85,
+          "aspects": [
+            "tradition",
+            "security"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.6,
+          "aspects": [
+            "belonging",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "keirsey:rational", "axis": "stasis-transformation", "note": "Concrete vs abstract"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:caregiver", "fidelity": 0.70, "note": "Protective care"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "keirsey:rational",
+          "axis": "stasis-transformation",
+          "note": "Concrete vs abstract"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:caregiver",
+          "fidelity": 0.7,
+          "note": "Protective care"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through tradition and security",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "keirsey:artisan",
       "@type": "Archetype",
       "name": "Artisan (SP)",
       "code": "SP",
-      "mbtiTypes": ["ESTP", "ISTP", "ESFP", "ISFP"],
+      "mbtiTypes": [
+        "ESTP",
+        "ISTP",
+        "ESFP",
+        "ISFP"
+      ],
       "coreNeed": "Freedom and action",
       "coreValue": "Impact through virtuosity",
-      "keywords": ["freedom", "action", "skill", "spontaneity", "excitement"],
-      "talents": ["tactics", "performing", "crafting", "operating"],
+      "keywords": [
+        "freedom",
+        "action",
+        "skill",
+        "spontaneity",
+        "excitement"
+      ],
+      "talents": [
+        "tactics",
+        "performing",
+        "crafting",
+        "operating"
+      ],
       "description": "The experiencers who value freedom, excitement, and skillful action. Adaptable, observant, and seek to make an impact.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.45,
-        "light-shadow": 0.40,
-        "active-receptive": 0.30,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.50,
+        "light-shadow": 0.4,
+        "active-receptive": 0.3,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["skill", "virtuosity"]},
-        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["freedom", "spontaneity"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.75,
+          "aspects": [
+            "skill",
+            "virtuosity"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.65,
+          "aspects": [
+            "freedom",
+            "spontaneity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "keirsey:idealist", "axis": "light-shadow", "note": "Concrete vs abstract"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:jester", "fidelity": 0.65, "note": "Present moment joy"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "keirsey:idealist",
+          "axis": "light-shadow",
+          "note": "Concrete vs abstract"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:jester",
+          "fidelity": 0.65,
+          "note": "Present moment joy"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "trickster"
+      ],
+      "coreFunction": "To embody creator energy through skill and virtuosity",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "keirsey:idealist",
       "@type": "Archetype",
       "name": "Idealist (NF)",
       "code": "NF",
-      "mbtiTypes": ["ENFJ", "INFJ", "ENFP", "INFP"],
+      "mbtiTypes": [
+        "ENFJ",
+        "INFJ",
+        "ENFP",
+        "INFP"
+      ],
       "coreNeed": "Identity and meaning",
       "coreValue": "Significance through unique identity",
-      "keywords": ["meaning", "identity", "growth", "authenticity", "potential"],
-      "talents": ["diplomacy", "mentoring", "advocating", "healing"],
+      "keywords": [
+        "meaning",
+        "identity",
+        "growth",
+        "authenticity",
+        "potential"
+      ],
+      "talents": [
+        "diplomacy",
+        "mentoring",
+        "advocating",
+        "healing"
+      ],
       "description": "The empaths who value personal growth, authenticity, and meaningful relationships. Seek to understand themselves and help others reach potential.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.35,
         "light-shadow": 0.45,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["meaning", "growth"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["authenticity", "potential"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "meaning",
+            "growth"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "authenticity",
+            "potential"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "keirsey:artisan", "axis": "stasis-transformation", "note": "Abstract vs concrete"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.65, "note": "Seeking meaning"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "keirsey:artisan",
+          "axis": "stasis-transformation",
+          "note": "Abstract vs concrete"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:sage",
+          "fidelity": 0.65,
+          "note": "Seeking meaning"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "magician"
+      ],
+      "coreFunction": "To embody healer energy through meaning and growth",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "keirsey:rational",
       "@type": "Archetype",
       "name": "Rational (NT)",
       "code": "NT",
-      "mbtiTypes": ["ENTJ", "INTJ", "ENTP", "INTP"],
+      "mbtiTypes": [
+        "ENTJ",
+        "INTJ",
+        "ENTP",
+        "INTP"
+      ],
       "coreNeed": "Competence and knowledge",
       "coreValue": "Mastery through understanding",
-      "keywords": ["competence", "knowledge", "logic", "strategy", "mastery"],
-      "talents": ["strategic planning", "engineering", "inventing", "coordinating"],
+      "keywords": [
+        "competence",
+        "knowledge",
+        "logic",
+        "strategy",
+        "mastery"
+      ],
+      "talents": [
+        "strategic planning",
+        "engineering",
+        "inventing",
+        "coordinating"
+      ],
       "description": "The strategists who value knowledge, competence, and logical consistency. Driven to understand systems and achieve mastery.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.45,
-        "light-shadow": 0.40,
-        "active-receptive": 0.40,
+        "light-shadow": 0.4,
+        "active-receptive": 0.4,
         "individual-collective": 0.35,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.60,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["knowledge", "competence"]},
-        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["strategy", "mastery"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.8,
+          "aspects": [
+            "knowledge",
+            "competence"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "strategy",
+            "mastery"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "keirsey:guardian", "axis": "stasis-transformation", "note": "Abstract vs concrete"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:magician", "fidelity": 0.75, "note": "Transformation through knowledge"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "keirsey:guardian",
+          "axis": "stasis-transformation",
+          "note": "Abstract vs concrete"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:magician",
+          "fidelity": 0.75,
+          "note": "Transformation through knowledge"
+        }
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody wise elder energy through knowledge and competence",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "dichotomies": {
       "concrete_abstract": {
-        "concrete": ["guardian", "artisan"],
-        "abstract": ["idealist", "rational"]
+        "concrete": [
+          "guardian",
+          "artisan"
+        ],
+        "abstract": [
+          "idealist",
+          "rational"
+        ]
       },
       "cooperative_utilitarian": {
-        "cooperative": ["guardian", "idealist"],
-        "utilitarian": ["artisan", "rational"]
+        "cooperative": [
+          "guardian",
+          "idealist"
+        ],
+        "utilitarian": [
+          "artisan",
+          "rational"
+        ]
       }
     },
     "historicalRoots": {
@@ -150,7 +374,6 @@
       "rational": "Phlegmatic (Hippocrates), Promethean (Plato)"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

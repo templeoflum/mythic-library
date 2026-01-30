@@ -8,7 +8,6 @@
   "subdomain": "gendered",
   "cardinality": 7,
   "structuralNotes": "Based on Bolen's 1984 'Goddesses in Everywoman'. Three categories: virgin goddesses (self-contained), vulnerable goddesses (relationship-oriented), and alchemical goddess (transformative).",
-
   "entries": [
     {
       "@id": "bolen:artemis",
@@ -16,26 +15,73 @@
       "name": "Artemis",
       "category": "Virgin Goddess",
       "greekGoddess": "Artemis",
-      "keywords": ["independence", "goal-focused", "sisterhood", "wilderness", "competence"],
+      "keywords": [
+        "independence",
+        "goal-focused",
+        "sisterhood",
+        "wilderness",
+        "competence"
+      ],
       "description": "The goddess of hunt and moon. Represents goal-focused consciousness, independence, sisterhood, and connection with wilderness. Competes successfully in the outer world.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
         "light-shadow": 0.35,
         "active-receptive": 0.25,
-        "individual-collective": 0.30,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.80, "aspects": ["independence", "self-belonging"]},
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["goal-focused", "competence"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.8,
+          "aspects": [
+            "independence",
+            "self-belonging"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "goal-focused",
+            "competence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARTEMIS", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "goddess:maiden-amazon", "fidelity": 0.85, "note": "Amazon aspect"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ARTEMIS",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:maiden-amazon",
+          "fidelity": 0.85,
+          "note": "Amazon aspect"
+        }
+      ],
+      "domains": [
+        "hunt"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "seeker",
+        "warrior"
+      ],
+      "coreFunction": "To embody maiden energy through independence and self-belonging",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "bolen:athena",
@@ -43,26 +89,74 @@
       "name": "Athena",
       "category": "Virgin Goddess",
       "greekGoddess": "Athena",
-      "keywords": ["strategy", "wisdom", "crafts", "father's-daughter", "pragmatism"],
+      "keywords": [
+        "strategy",
+        "wisdom",
+        "crafts",
+        "father's-daughter",
+        "pragmatism"
+      ],
       "description": "The goddess of wisdom and crafts. Represents strategic thinking, practical wisdom, and success in the patriarchal world. The father's daughter who thinks logically.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.35,
         "individual-collective": 0.45,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["independence", "self-sufficiency"]},
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["strategy", "wisdom"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "independence",
+            "self-sufficiency"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "strategy",
+            "wisdom"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ATHENA", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "COMPLEMENT", "target": "bolen:artemis", "note": "Fellow virgin goddess"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ATHENA",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:artemis",
+          "note": "Fellow virgin goddess"
+        }
+      ],
+      "domains": [
+        "crafts",
+        "fatherhood",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "mentor",
+        "sage",
+        "seeker"
+      ],
+      "coreFunction": "To embody wise elder energy through strategy and wisdom",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "bolen:hestia",
@@ -70,26 +164,70 @@
       "name": "Hestia",
       "category": "Virgin Goddess",
       "greekGoddess": "Hestia",
-      "keywords": ["focus", "interiority", "sacred-space", "centering", "solitude"],
+      "keywords": [
+        "focus",
+        "interiority",
+        "sacred-space",
+        "centering",
+        "solitude"
+      ],
       "description": "The goddess of hearth and temple. Represents focused consciousness, spiritual centering, and creating sacred space. The inward-turning contemplative.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.65,
         "individual-collective": 0.35,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["interiority", "self-containment"]},
-        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["centering", "contemplation"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.65,
+          "aspects": [
+            "interiority",
+            "self-containment"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.6,
+          "aspects": [
+            "centering",
+            "contemplation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HESTIA", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "COMPLEMENT", "target": "bolen:athena", "note": "Fellow virgin goddess"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HESTIA",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:athena",
+          "note": "Fellow virgin goddess"
+        }
+      ],
+      "domains": [
+        "home"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "sage"
+      ],
+      "coreFunction": "To embody maiden energy through interiority and self-containment",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "bolen:hera",
@@ -97,26 +235,73 @@
       "name": "Hera",
       "category": "Vulnerable Goddess",
       "greekGoddess": "Hera",
-      "keywords": ["commitment", "marriage", "partnership", "jealousy", "queen"],
+      "keywords": [
+        "commitment",
+        "marriage",
+        "partnership",
+        "jealousy",
+        "queen"
+      ],
       "description": "The goddess of marriage. Represents the drive for committed partnership and the archetype of wife. Can experience rage and jealousy when commitment is betrayed.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.45,
         "light-shadow": 0.45,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.65,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.60
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.70, "aspects": ["queen", "authority"]},
-        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["commitment", "partnership"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.7,
+          "aspects": [
+            "queen",
+            "authority"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.75,
+          "aspects": [
+            "commitment",
+            "partnership"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERA", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "goddess:mother-queen", "fidelity": 0.80, "note": "Queen archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERA",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother-queen",
+          "fidelity": 0.8,
+          "note": "Queen archetype"
+        }
+      ],
+      "domains": [
+        "marriage"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody lover energy through commitment and partnership",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "bolen:demeter",
@@ -124,26 +309,74 @@
       "name": "Demeter",
       "category": "Vulnerable Goddess",
       "greekGoddess": "Demeter",
-      "keywords": ["nurturing", "maternal", "generosity", "depression", "abundance"],
+      "keywords": [
+        "nurturing",
+        "maternal",
+        "generosity",
+        "depression",
+        "abundance"
+      ],
       "description": "The goddess of grain and motherhood. Represents the nurturing maternal instinct, generosity, and the drive to nurture others. Can experience depression when separated from children.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.25,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.65,
         "individual-collective": 0.75,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.60
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.95, "aspects": ["nurturing", "maternal"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["generosity", "care"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.95,
+          "aspects": [
+            "nurturing",
+            "maternal"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "generosity",
+            "care"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-DEMETER", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "goddess:mother", "fidelity": 0.90, "note": "Mother archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DEMETER",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother",
+          "fidelity": 0.9,
+          "note": "Mother archetype"
+        }
+      ],
+      "domains": [
+        "childhood",
+        "harvest",
+        "motherhood"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody great mother energy through nurturing and maternal",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "bolen:persephone",
@@ -151,26 +384,73 @@
       "name": "Persephone",
       "category": "Vulnerable Goddess",
       "greekGoddess": "Persephone",
-      "keywords": ["receptivity", "underworld", "mediumship", "youthfulness", "transformation"],
+      "keywords": [
+        "receptivity",
+        "underworld",
+        "mediumship",
+        "youthfulness",
+        "transformation"
+      ],
       "description": "The maiden and queen of underworld. Represents receptivity, connection to unconscious depths, and the capacity to be transformed by experience. Dual nature of Kore and Queen.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.60,
-        "active-receptive": 0.70,
-        "individual-collective": 0.50,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.6,
+        "active-receptive": 0.7,
+        "individual-collective": 0.5,
         "ascent-descent": 0.65,
-        "stasis-transformation": 0.70,
-        "voluntary-fated": 0.70
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["receptivity", "youthfulness"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["underworld", "mediumship"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "receptivity",
+            "youthfulness"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.65,
+          "aspects": [
+            "underworld",
+            "mediumship"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "COMPLEMENT", "target": "bolen:demeter", "note": "Mother-daughter pair"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:demeter",
+          "note": "Mother-daughter pair"
+        }
+      ],
+      "domains": [
+        "death",
+        "sovereignty",
+        "underworld"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "seeker",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody maiden energy through receptivity and youthfulness",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "bolen:aphrodite",
@@ -178,42 +458,108 @@
       "name": "Aphrodite",
       "category": "Alchemical Goddess",
       "greekGoddess": "Aphrodite",
-      "keywords": ["creativity", "love", "beauty", "sexuality", "transformation"],
+      "keywords": [
+        "creativity",
+        "love",
+        "beauty",
+        "sexuality",
+        "transformation"
+      ],
       "description": "The goddess of love and beauty. Represents the transformative power of love and creativity. The alchemical goddess who generates change through relationship and creative work.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.30,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.75,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.95, "aspects": ["love", "sexuality", "beauty"]},
-        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["creativity", "alchemy"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.95,
+          "aspects": [
+            "love",
+            "sexuality",
+            "beauty"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "creativity",
+            "alchemy"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.90, "note": "Direct correspondence"},
-        {"type": "CULTURAL_ECHO", "target": "goddess:mother-lover", "fidelity": 0.85, "note": "Lover archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.9,
+          "note": "Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother-lover",
+          "fidelity": 0.85,
+          "note": "Lover archetype"
+        }
+      ],
+      "domains": [
+        "love",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through love and sexuality",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
     "categories": {
-      "virgin": ["bolen:artemis", "bolen:athena", "bolen:hestia"],
-      "vulnerable": ["bolen:hera", "bolen:demeter", "bolen:persephone"],
-      "alchemical": ["bolen:aphrodite"]
+      "virgin": [
+        "bolen:artemis",
+        "bolen:athena",
+        "bolen:hestia"
+      ],
+      "vulnerable": [
+        "bolen:hera",
+        "bolen:demeter",
+        "bolen:persephone"
+      ],
+      "alchemical": [
+        "bolen:aphrodite"
+      ]
     },
     "consciousnessStyles": {
-      "focused": ["bolen:artemis", "bolen:athena", "bolen:hestia"],
-      "diffuse": ["bolen:hera", "bolen:demeter", "bolen:persephone"],
-      "transformative": ["bolen:aphrodite"]
+      "focused": [
+        "bolen:artemis",
+        "bolen:athena",
+        "bolen:hestia"
+      ],
+      "diffuse": [
+        "bolen:hera",
+        "bolen:demeter",
+        "bolen:persephone"
+      ],
+      "transformative": [
+        "bolen:aphrodite"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

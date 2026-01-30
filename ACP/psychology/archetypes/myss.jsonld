@@ -8,7 +8,6 @@
   "subdomain": "archetypes",
   "cardinality": 4,
   "structuralNotes": "Based on Myss's 2001 'Sacred Contracts'. Four universal archetypes present in everyone, plus personal archetypes. Each has light and shadow aspects.",
-
   "entries": [
     {
       "@id": "myss:child",
@@ -16,28 +15,87 @@
       "name": "The Child",
       "category": "Survival Archetype",
       "universalPresence": true,
-      "lightAttributes": ["innocence", "wonder", "playfulness", "trust", "new-beginnings"],
-      "shadowAttributes": ["dependency", "victimhood", "manipulation", "tantrums", "naivety"],
-      "keywords": ["innocence", "dependency", "wonder", "vulnerability", "beginnings"],
+      "lightAttributes": [
+        "innocence",
+        "wonder",
+        "playfulness",
+        "trust",
+        "new-beginnings"
+      ],
+      "shadowAttributes": [
+        "dependency",
+        "victimhood",
+        "manipulation",
+        "tantrums",
+        "naivety"
+      ],
+      "keywords": [
+        "innocence",
+        "dependency",
+        "wonder",
+        "vulnerability",
+        "beginnings"
+      ],
       "description": "The archetype of innocence, dependency, and new beginnings. Encompasses our original nature and the foundation of our emotional patterns. Can appear as Orphan, Wounded, Magical, Nature, or Eternal Child.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.40,
-        "active-receptive": 0.60,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
+        "active-receptive": 0.6,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.95, "aspects": ["innocence", "wonder", "beginnings"]},
-        {"primordial": "primordial:outcast", "weight": 0.50, "aspects": ["vulnerability", "dependency"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.95,
+          "aspects": [
+            "innocence",
+            "wonder",
+            "beginnings"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.5,
+          "aspects": [
+            "vulnerability",
+            "dependency"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:innocent", "fidelity": 0.80, "note": "Innocent archetype"},
-        {"type": "CULTURAL_ECHO", "target": "jungian:divine_child", "fidelity": 0.90, "note": "Jungian divine child"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:innocent",
+          "fidelity": 0.8,
+          "note": "Innocent archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:divine_child",
+          "fidelity": 0.9,
+          "note": "Jungian divine child"
+        }
+      ],
+      "domains": [
+        "childhood"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "outcast"
+      ],
+      "coreFunction": "To embody divine child energy through innocence and wonder",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "myss:victim",
@@ -45,28 +103,86 @@
       "name": "The Victim",
       "category": "Survival Archetype",
       "universalPresence": true,
-      "lightAttributes": ["self-protection", "boundaries", "empowerment", "recognition", "transformation"],
-      "shadowAttributes": ["blame", "helplessness", "martyrdom", "manipulation", "passivity"],
-      "keywords": ["victimization", "boundaries", "self-worth", "empowerment", "recognition"],
+      "lightAttributes": [
+        "self-protection",
+        "boundaries",
+        "empowerment",
+        "recognition",
+        "transformation"
+      ],
+      "shadowAttributes": [
+        "blame",
+        "helplessness",
+        "martyrdom",
+        "manipulation",
+        "passivity"
+      ],
+      "keywords": [
+        "victimization",
+        "boundaries",
+        "self-worth",
+        "empowerment",
+        "recognition"
+      ],
       "description": "The archetype that guards self-esteem and teaches us to recognize when we are being victimized or victimizing ourselves. Key to establishing boundaries and recognizing personal power.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.60,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.6,
         "active-receptive": 0.65,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.70
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["vulnerability", "suffering"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["recognition", "boundaries"]}
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.75,
+          "aspects": [
+            "vulnerability",
+            "suffering"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "recognition",
+            "boundaries"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:orphan", "fidelity": 0.70, "note": "Wounded awareness"},
-        {"type": "CULTURAL_ECHO", "target": "kwml:masochist", "fidelity": 0.60, "note": "Shadow warrior"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:orphan",
+          "fidelity": 0.7,
+          "note": "Wounded awareness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:masochist",
+          "fidelity": 0.6,
+          "note": "Shadow warrior"
+        }
+      ],
+      "domains": [
+        "boundaries"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "orphan",
+        "outcast"
+      ],
+      "coreFunction": "To embody outcast energy through vulnerability and suffering",
+      "symbolicCore": "The wanderer without home",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection, scapegoat dynamic",
+        "developmentalStage": "Alienation from collective, finding unique path",
+        "integrationTask": "Finding belonging while honoring difference",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "myss:prostitute",
@@ -74,27 +190,79 @@
       "name": "The Prostitute",
       "category": "Survival Archetype",
       "universalPresence": true,
-      "lightAttributes": ["faith", "integrity", "self-worth", "survival-wisdom", "resilience"],
-      "shadowAttributes": ["selling-out", "compromise", "seduction", "manipulation", "betrayal"],
-      "keywords": ["integrity", "faith", "survival", "selling-out", "self-worth"],
+      "lightAttributes": [
+        "faith",
+        "integrity",
+        "self-worth",
+        "survival-wisdom",
+        "resilience"
+      ],
+      "shadowAttributes": [
+        "selling-out",
+        "compromise",
+        "seduction",
+        "manipulation",
+        "betrayal"
+      ],
+      "keywords": [
+        "integrity",
+        "faith",
+        "survival",
+        "selling-out",
+        "self-worth"
+      ],
       "description": "The archetype that tests our faith and integrity by presenting situations where we might sell out our ethics or morals for security. Guardian of faith in ourselves.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
         "light-shadow": 0.55,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.45,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["testing", "temptation"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["survival", "negotiation"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.65,
+          "aspects": [
+            "testing",
+            "temptation"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "survival",
+            "negotiation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:temptation", "fidelity": 0.65, "note": "Test of integrity"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:temptation",
+          "fidelity": 0.65,
+          "note": "Test of integrity"
+        }
+      ],
+      "domains": [
+        "protection"
+      ],
+      "narrativeRoles": [
+        "shadow",
+        "trickster"
+      ],
+      "coreFunction": "To embody shadow energy through testing and temptation",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "myss:saboteur",
@@ -102,33 +270,96 @@
       "name": "The Saboteur",
       "category": "Survival Archetype",
       "universalPresence": true,
-      "lightAttributes": ["choice-awareness", "intuition", "timing", "self-knowledge", "protection"],
-      "shadowAttributes": ["self-destruction", "fear", "undermining", "procrastination", "disruption"],
-      "keywords": ["sabotage", "choice", "fear", "intuition", "self-destruction"],
+      "lightAttributes": [
+        "choice-awareness",
+        "intuition",
+        "timing",
+        "self-knowledge",
+        "protection"
+      ],
+      "shadowAttributes": [
+        "self-destruction",
+        "fear",
+        "undermining",
+        "procrastination",
+        "disruption"
+      ],
+      "keywords": [
+        "sabotage",
+        "choice",
+        "fear",
+        "intuition",
+        "self-destruction"
+      ],
       "description": "The archetype that highlights our fears and issues around choice, change, and self-empowerment. Can either protect us from destructive situations or undermine our own success.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.60,
-        "light-shadow": 0.60,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.6,
+        "light-shadow": 0.6,
         "active-receptive": 0.45,
         "individual-collective": 0.35,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["sabotage", "fear"]},
-        {"primordial": "primordial:trickster", "weight": 0.60, "aspects": ["choice", "disruption"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "sabotage",
+            "fear"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.6,
+          "aspects": [
+            "choice",
+            "disruption"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.75, "note": "Shadow self"},
-        {"type": "CULTURAL_ECHO", "target": "propp:false-hero", "fidelity": 0.50, "note": "Self-undermining"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.75,
+          "note": "Shadow self"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "propp:false-hero",
+          "fidelity": 0.5,
+          "note": "Self-undermining"
+        }
+      ],
+      "domains": [
+        "preservation",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow",
+        "trickster"
+      ],
+      "coreFunction": "To embody shadow energy through sabotage and fear",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
-    "survivalQuartet": ["myss:child", "myss:victim", "myss:prostitute", "myss:saboteur"],
+    "survivalQuartet": [
+      "myss:child",
+      "myss:victim",
+      "myss:prostitute",
+      "myss:saboteur"
+    ],
     "universalPresence": "All four archetypes are present in every person's sacred contract",
     "functionalRoles": {
       "emotional_foundation": "myss:child",
@@ -137,7 +368,6 @@
       "choice_guardian": "myss:saboteur"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

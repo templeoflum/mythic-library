@@ -69,7 +69,19 @@
           "target": "tarot:emperor",
           "fidelity": 0.7
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through combat and initiative",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "astrology:taurus",
@@ -131,7 +143,20 @@
           "target": "tarot:hierophant",
           "fidelity": 0.75
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "lover",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through stability and persistence",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "astrology:gemini",
@@ -193,7 +218,19 @@
           "target": "tarot:lovers",
           "fidelity": 0.75
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through adaptability and wit",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:cancer",
@@ -254,7 +291,12 @@
           "target": "tarot:moon",
           "fidelity": 0.75
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "healer"
+      ],
+      "coreFunction": "To embody great_mother energy through nurturing and protection",
+      "symbolicCore": "The essential pattern of Cancer"
     },
     {
       "@id": "astrology:leo",
@@ -321,7 +363,20 @@
           "target": "tarot:sun",
           "fidelity": 0.8
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through leadership and nobility",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "astrology:virgo",
@@ -383,7 +438,21 @@
           "target": "tarot:hermit",
           "fidelity": 0.8
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "innocent",
+        "seeker"
+      ],
+      "coreFunction": "To embody healer energy through service and health",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:libra",
@@ -445,7 +514,20 @@
           "target": "tarot:justice",
           "fidelity": 0.9
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "sovereign"
+      ],
+      "coreFunction": "To embody lover energy through partnership and harmony",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:scorpio",
@@ -507,7 +589,20 @@
           "target": "tarot:death",
           "fidelity": 0.9
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody destroyer energy through transformation and death-rebirth",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:sagittarius",
@@ -569,7 +664,19 @@
           "target": "tarot:wheel_of_fortune",
           "fidelity": 0.65
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through adventure and quest",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:capricorn",
@@ -636,7 +743,19 @@
           "target": "tarot:world",
           "fidelity": 0.65
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through authority and mastery",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:aquarius",
@@ -698,7 +817,20 @@
           "target": "tarot:star",
           "fidelity": 0.85
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "magician",
+        "outcast",
+        "rebel"
+      ],
+      "coreFunction": "To embody rebel energy through innovation and rebellion",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "astrology:pisces",
@@ -765,7 +897,20 @@
           "target": "tarot:hanged_man",
           "fidelity": 0.7
         }
-      ]
+      ],
+      "narrativeRoles": [
+        "healer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through transcendence and dissolution",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
   "systemRelationships": {

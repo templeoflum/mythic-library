@@ -8,7 +8,6 @@
   "subdomain": "ogham",
   "cardinality": 20,
   "structuralNotes": "Divided into four aicmi (families) of five letters each. Each letter corresponds to a tree, bird, color, and various other associations.",
-
   "entries": [
     {
       "@id": "ogham:beith",
@@ -17,25 +16,64 @@
       "letter": "B",
       "tree": "Birch",
       "aicme": "First Aicme",
-      "keywords": ["beginnings", "purification", "new-starts", "birth", "cleansing"],
+      "keywords": [
+        "beginnings",
+        "purification",
+        "new-starts",
+        "birth",
+        "cleansing"
+      ],
       "divinatoryMeaning": "New beginnings, cleansing, fresh starts. The pioneer tree that colonizes new ground.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.20,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.2,
         "light-shadow": 0.25,
         "active-receptive": 0.35,
         "individual-collective": 0.35,
         "ascent-descent": 0.35,
-        "stasis-transformation": 0.70,
+        "stasis-transformation": 0.7,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.80, "aspects": ["new-beginnings", "birth", "potential"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["purification", "cleansing"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.8,
+          "aspects": [
+            "new-beginnings",
+            "birth",
+            "potential"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "purification",
+            "cleansing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:berkano", "fidelity": 0.75, "note": "Birch letter in Elder Futhark"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:berkano",
+          "fidelity": 0.75,
+          "note": "Birch letter in Elder Futhark"
+        }
+      ],
+      "narrativeRoles": [
+        "healer",
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody divine child energy through new-beginnings and birth",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:luis",
@@ -44,25 +82,63 @@
       "letter": "L",
       "tree": "Rowan",
       "aicme": "First Aicme",
-      "keywords": ["protection", "discrimination", "vision", "quickening", "magic"],
+      "keywords": [
+        "protection",
+        "discrimination",
+        "vision",
+        "quickening",
+        "magic"
+      ],
       "divinatoryMeaning": "Protection from enchantment, clear sight, magical awakening. The tree that guards against negative magic.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
-        "active-receptive": 0.40,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.4,
         "individual-collective": 0.45,
-        "ascent-descent": 0.30,
+        "ascent-descent": 0.3,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["protection", "magic", "vision"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["defense", "guardian"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "protection",
+            "magic",
+            "vision"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "defense",
+            "guardian"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "ogham:beith", "note": "Protection follows new beginnings"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "ogham:beith",
+          "note": "Protection follows new beginnings"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "warrior"
+      ],
+      "coreFunction": "To embody magician energy through protection and magic",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:fearn",
@@ -71,25 +147,64 @@
       "letter": "F",
       "tree": "Alder",
       "aicme": "First Aicme",
-      "keywords": ["foundation", "protection", "oracles", "bridges", "defense"],
+      "keywords": [
+        "foundation",
+        "protection",
+        "oracles",
+        "bridges",
+        "defense"
+      ],
       "divinatoryMeaning": "Firm foundation, spiritual protection, bridging worlds. The wood that becomes stronger in water.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
+        "light-shadow": 0.4,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["foundation", "protection", "endurance"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["bridges", "between-worlds"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "foundation",
+            "protection",
+            "endurance"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.55,
+          "aspects": [
+            "bridges",
+            "between-worlds"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:algiz", "fidelity": 0.55, "note": "Protection aspect"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:algiz",
+          "fidelity": 0.55,
+          "note": "Protection aspect"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody preserver energy through foundation and protection",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:saille",
@@ -98,25 +213,64 @@
       "letter": "S",
       "tree": "Willow",
       "aicme": "First Aicme",
-      "keywords": ["intuition", "dreams", "feminine", "moon", "flexibility"],
+      "keywords": [
+        "intuition",
+        "dreams",
+        "feminine",
+        "moon",
+        "flexibility"
+      ],
       "divinatoryMeaning": "Intuition, lunar cycles, flexibility in adversity. The tree of poets and dreamers.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
         "light-shadow": 0.55,
         "active-receptive": 0.75,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["intuition", "feminine", "moon"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["dreams", "visions"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "intuition",
+            "feminine",
+            "moon"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "dreams",
+            "visions"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.65, "note": "Lunar associations"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:moon",
+          "fidelity": 0.65,
+          "note": "Lunar associations"
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through intuition and feminine",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:nuin",
@@ -125,25 +279,63 @@
       "letter": "N",
       "tree": "Ash",
       "aicme": "First Aicme",
-      "keywords": ["connection", "world-tree", "linking", "communication", "microcosm-macrocosm"],
+      "keywords": [
+        "connection",
+        "world-tree",
+        "linking",
+        "communication",
+        "microcosm-macrocosm"
+      ],
       "divinatoryMeaning": "Connection between inner and outer worlds, the World Tree axis. Links heaven, earth, and underworld.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
         "light-shadow": 0.45,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.65,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.70, "aspects": ["world-tree", "axis-mundi", "integration"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["linking-worlds", "communication"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.7,
+          "aspects": [
+            "world-tree",
+            "axis-mundi",
+            "integration"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.55,
+          "aspects": [
+            "linking-worlds",
+            "communication"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:NO-YGGDRASIL", "fidelity": 0.75, "note": "World Tree parallel"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-YGGDRASIL",
+          "fidelity": 0.75,
+          "note": "World Tree parallel"
+        }
+      ],
+      "narrativeRoles": [
+        "seeker",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody self energy through world-tree and axis-mundi",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:huathe",
@@ -152,25 +344,63 @@
       "letter": "H",
       "tree": "Hawthorn",
       "aicme": "Second Aicme",
-      "keywords": ["testing", "trial", "obstacles", "patience", "protection"],
+      "keywords": [
+        "testing",
+        "trial",
+        "obstacles",
+        "patience",
+        "protection"
+      ],
       "divinatoryMeaning": "Obstacles that test and strengthen, patience required, protection of boundaries.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.50,
+        "creation-destruction": 0.5,
         "light-shadow": 0.45,
         "active-receptive": 0.55,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.60
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["testing", "trial", "challenge"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["protection", "boundaries"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "testing",
+            "trial",
+            "challenge"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "protection",
+            "boundaries"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:thurisaz", "fidelity": 0.55, "note": "Thorn/protection parallel"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:thurisaz",
+          "fidelity": 0.55,
+          "note": "Thorn/protection parallel"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through testing and trial",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:duir",
@@ -179,25 +409,63 @@
       "letter": "D",
       "tree": "Oak",
       "aicme": "Second Aicme",
-      "keywords": ["strength", "endurance", "doorway", "protection", "nobility"],
+      "keywords": [
+        "strength",
+        "endurance",
+        "doorway",
+        "protection",
+        "nobility"
+      ],
       "divinatoryMeaning": "Strength, doorway to inner strength, endurance, royal power. The door (dorus) to wisdom.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
         "individual-collective": 0.55,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.30,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.3,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["strength", "nobility", "kingship"]},
-        {"primordial": "primordial:great-father", "weight": 0.60, "aspects": ["protection", "endurance"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "strength",
+            "nobility",
+            "kingship"
+          ]
+        },
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.6,
+          "aspects": [
+            "protection",
+            "endurance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.60, "note": "Oak sacred to Zeus/thunder gods"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.6,
+          "note": "Oak sacred to Zeus/thunder gods"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through strength and nobility",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:tinne",
@@ -206,25 +474,62 @@
       "letter": "T",
       "tree": "Holly",
       "aicme": "Second Aicme",
-      "keywords": ["balance", "challenge", "directed-energy", "spear", "action"],
+      "keywords": [
+        "balance",
+        "challenge",
+        "directed-energy",
+        "spear",
+        "action"
+      ],
       "divinatoryMeaning": "Directed energy, balance in action, warrior spirit tempered with wisdom.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.55,
         "light-shadow": 0.35,
         "active-receptive": 0.25,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["spear", "directed-energy", "action"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["challenge", "balance"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.8,
+          "aspects": [
+            "spear",
+            "directed-energy",
+            "action"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "challenge",
+            "balance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "ogham:duir", "note": "Holly King/Oak King duality"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "ogham:duir",
+          "note": "Holly King/Oak King duality"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through spear and directed-energy",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:coll",
@@ -233,25 +538,64 @@
       "letter": "C",
       "tree": "Hazel",
       "aicme": "Second Aicme",
-      "keywords": ["wisdom", "poetry", "inspiration", "knowledge", "dowsing"],
+      "keywords": [
+        "wisdom",
+        "poetry",
+        "inspiration",
+        "knowledge",
+        "dowsing"
+      ],
       "divinatoryMeaning": "Wisdom, poetic inspiration, intuitive knowledge. The Salmon of Wisdom ate the hazelnuts.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.85, "aspects": ["wisdom", "knowledge", "insight"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["inspiration", "dowsing"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.85,
+          "aspects": [
+            "wisdom",
+            "knowledge",
+            "insight"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "inspiration",
+            "dowsing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:kenaz", "fidelity": 0.55, "note": "Knowledge/illumination"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:kenaz",
+          "fidelity": 0.55,
+          "note": "Knowledge/illumination"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through wisdom and knowledge",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "ogham:quert",
@@ -260,25 +604,64 @@
       "letter": "Q",
       "tree": "Apple",
       "aicme": "Second Aicme",
-      "keywords": ["choice", "beauty", "immortality", "otherworld", "nourishment"],
+      "keywords": [
+        "choice",
+        "beauty",
+        "immortality",
+        "otherworld",
+        "nourishment"
+      ],
       "divinatoryMeaning": "Beauty, choice, connection to the Otherworld. Avalon - isle of apples.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.40,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["beauty", "choice", "desire"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["nourishment", "immortality"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "beauty",
+            "choice",
+            "desire"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "nourishment",
+            "immortality"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.55, "note": "Apple/beauty/choice connection"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.55,
+          "note": "Apple/beauty/choice connection"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through beauty and choice",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:muin",
@@ -287,25 +670,63 @@
       "letter": "M",
       "tree": "Vine/Bramble",
       "aicme": "Third Aicme",
-      "keywords": ["prophecy", "intoxication", "truth", "release", "harvest"],
+      "keywords": [
+        "prophecy",
+        "intoxication",
+        "truth",
+        "release",
+        "harvest"
+      ],
       "divinatoryMeaning": "Prophetic insight, releasing inhibitions to find truth, harvest of efforts.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
+        "light-shadow": 0.5,
         "active-receptive": 0.55,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.50,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["prophecy", "altered-states"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["intoxication", "release"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "prophecy",
+            "altered-states"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "intoxication",
+            "release"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-DIONYSUS", "fidelity": 0.70, "note": "Vine/wine/prophecy"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DIONYSUS",
+          "fidelity": 0.7,
+          "note": "Vine/wine/prophecy"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through prophecy and altered-states",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:gort",
@@ -314,25 +735,61 @@
       "letter": "G",
       "tree": "Ivy",
       "aicme": "Third Aicme",
-      "keywords": ["tenacity", "spiral", "transformation", "binding", "persistence"],
+      "keywords": [
+        "tenacity",
+        "spiral",
+        "transformation",
+        "binding",
+        "persistence"
+      ],
       "divinatoryMeaning": "Tenacity, spiraling growth, binding relationships, persistent transformation.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
         "light-shadow": 0.55,
-        "active-receptive": 0.60,
+        "active-receptive": 0.6,
         "individual-collective": 0.55,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["tenacity", "persistence"]},
-        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["binding", "connection"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.65,
+          "aspects": [
+            "tenacity",
+            "persistence"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.55,
+          "aspects": [
+            "binding",
+            "connection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "ogham:muin", "note": "Vine and Ivy often paired"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "ogham:muin",
+          "note": "Vine and Ivy often paired"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "lover"
+      ],
+      "coreFunction": "To embody preserver energy through tenacity and persistence",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:ngetal",
@@ -341,25 +798,63 @@
       "letter": "NG",
       "tree": "Reed/Broom",
       "aicme": "Third Aicme",
-      "keywords": ["direction", "health", "harmony", "direct-action", "unity"],
+      "keywords": [
+        "direction",
+        "health",
+        "harmony",
+        "direct-action",
+        "unity"
+      ],
       "divinatoryMeaning": "Direct action, health matters, finding direction, harmony through action.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.35,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["health", "harmony"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["direct-action", "aim"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.7,
+          "aspects": [
+            "health",
+            "harmony"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "direct-action",
+            "aim"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "astrology:sagittarius", "fidelity": 0.50, "note": "Arrow/direction"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sagittarius",
+          "fidelity": 0.5,
+          "note": "Arrow/direction"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "warrior"
+      ],
+      "coreFunction": "To embody healer energy through health and harmony",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:straif",
@@ -368,25 +863,63 @@
       "letter": "STR",
       "tree": "Blackthorn",
       "aicme": "Third Aicme",
-      "keywords": ["fate", "necessity", "strife", "no-choice", "discipline"],
+      "keywords": [
+        "fate",
+        "necessity",
+        "strife",
+        "no-choice",
+        "discipline"
+      ],
       "divinatoryMeaning": "Unavoidable fate, necessary strife, discipline through difficulty, no easy path.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.60,
+        "creation-destruction": 0.6,
         "light-shadow": 0.65,
         "active-receptive": 0.45,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.60,
-        "stasis-transformation": 0.60,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.85
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.75, "aspects": ["fate", "necessity", "harsh-teaching"]},
-        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["strife", "cutting-away"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.75,
+          "aspects": [
+            "fate",
+            "necessity",
+            "harsh-teaching"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.55,
+          "aspects": [
+            "strife",
+            "cutting-away"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:nauthiz", "fidelity": 0.70, "note": "Need/necessity parallel"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:nauthiz",
+          "fidelity": 0.7,
+          "note": "Need/necessity parallel"
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through fate and necessity",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:ruis",
@@ -395,25 +928,64 @@
       "letter": "R",
       "tree": "Elder",
       "aicme": "Third Aicme",
-      "keywords": ["endings", "transformation", "faery", "regeneration", "death-rebirth"],
+      "keywords": [
+        "endings",
+        "transformation",
+        "faery",
+        "regeneration",
+        "death-rebirth"
+      ],
       "divinatoryMeaning": "Endings that allow regeneration, faery connection, death-rebirth cycle.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.65,
-        "light-shadow": 0.60,
+        "light-shadow": 0.6,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
         "ascent-descent": 0.65,
         "stasis-transformation": 0.75,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.80, "aspects": ["endings", "transformation", "death-wisdom"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["faery", "otherworld"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.8,
+          "aspects": [
+            "endings",
+            "transformation",
+            "death-wisdom"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "faery",
+            "otherworld"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.65, "note": "Transformation through endings"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:death",
+          "fidelity": 0.65,
+          "note": "Transformation through endings"
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through endings and transformation",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:ailm",
@@ -422,25 +994,64 @@
       "letter": "A",
       "tree": "Silver Fir",
       "aicme": "Fourth Aicme",
-      "keywords": ["clarity", "foresight", "objectivity", "vision", "perspective"],
+      "keywords": [
+        "clarity",
+        "foresight",
+        "objectivity",
+        "vision",
+        "perspective"
+      ],
       "divinatoryMeaning": "Clear perspective, far-seeing, objectivity, taking the long view.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.20,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.2,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
         "ascent-descent": 0.25,
-        "stasis-transformation": 0.40,
+        "stasis-transformation": 0.4,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["clarity", "foresight", "perspective"]},
-        {"primordial": "primordial:healer", "weight": 0.50, "aspects": ["breath", "air"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "clarity",
+            "foresight",
+            "perspective"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.5,
+          "aspects": [
+            "breath",
+            "air"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:ansuz", "fidelity": 0.55, "note": "Vision/insight"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ansuz",
+          "fidelity": 0.55,
+          "note": "Vision/insight"
+        }
+      ],
+      "narrativeRoles": [
+        "healer",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through clarity and foresight",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:onn",
@@ -449,25 +1060,62 @@
       "letter": "O",
       "tree": "Gorse",
       "aicme": "Fourth Aicme",
-      "keywords": ["gathering", "attraction", "sweetness", "collection", "fertility"],
+      "keywords": [
+        "gathering",
+        "attraction",
+        "sweetness",
+        "collection",
+        "fertility"
+      ],
       "divinatoryMeaning": "Gathering resources, attracting what you need, sweetness of life, fertility.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.25,
         "light-shadow": 0.25,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["attraction", "sweetness"]},
-        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["fertility", "gathering"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.65,
+          "aspects": [
+            "attraction",
+            "sweetness"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.55,
+          "aspects": [
+            "fertility",
+            "gathering"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:fehu", "fidelity": 0.55, "note": "Wealth/gathering"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:fehu",
+          "fidelity": 0.55,
+          "note": "Wealth/gathering"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through attraction and sweetness",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:ur",
@@ -476,25 +1124,62 @@
       "letter": "U",
       "tree": "Heather",
       "aicme": "Fourth Aicme",
-      "keywords": ["passion", "romance", "dreams", "healing", "community"],
+      "keywords": [
+        "passion",
+        "romance",
+        "dreams",
+        "healing",
+        "community"
+      ],
       "divinatoryMeaning": "Passion and romance, healing dreams, community and generosity.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["passion", "romance"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["healing", "dreams"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.75,
+          "aspects": [
+            "passion",
+            "romance"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "healing",
+            "dreams"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "ogham:onn", "note": "Both golden flowering"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "ogham:onn",
+          "note": "Both golden flowering"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through passion and romance",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:eadhadh",
@@ -503,25 +1188,63 @@
       "letter": "E",
       "tree": "Aspen",
       "aicme": "Fourth Aicme",
-      "keywords": ["endurance", "courage", "overcoming", "shield", "ancestors"],
+      "keywords": [
+        "endurance",
+        "courage",
+        "overcoming",
+        "shield",
+        "ancestors"
+      ],
       "divinatoryMeaning": "Courage to endure, shield against negativity, ancestral support.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
+        "light-shadow": 0.5,
         "active-receptive": 0.45,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["endurance", "courage", "overcoming"]},
-        {"primordial": "primordial:ancestor", "weight": 0.60, "aspects": ["ancestral-support", "lineage"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "endurance",
+            "courage",
+            "overcoming"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.6,
+          "aspects": [
+            "ancestral-support",
+            "lineage"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:ehwaz", "fidelity": 0.50, "note": "Endurance"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ehwaz",
+          "fidelity": 0.5,
+          "note": "Endurance"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through endurance and courage",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ogham:ioho",
@@ -530,7 +1253,13 @@
       "letter": "I",
       "tree": "Yew",
       "aicme": "Fourth Aicme",
-      "keywords": ["death-rebirth", "immortality", "transformation", "ancestors", "eternity"],
+      "keywords": [
+        "death-rebirth",
+        "immortality",
+        "transformation",
+        "ancestors",
+        "eternity"
+      ],
       "divinatoryMeaning": "The death-rebirth mystery, immortality through transformation, connection to ancestors.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
@@ -538,33 +1267,102 @@
         "light-shadow": 0.65,
         "active-receptive": 0.55,
         "individual-collective": 0.65,
-        "ascent-descent": 0.70,
-        "stasis-transformation": 0.70,
-        "voluntary-fated": 0.70
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.80, "aspects": ["death-wisdom", "transformation"]},
-        {"primordial": "primordial:ancestor", "weight": 0.70, "aspects": ["immortality", "lineage"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.8,
+          "aspects": [
+            "death-wisdom",
+            "transformation"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.7,
+          "aspects": [
+            "immortality",
+            "lineage"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "rune:eihwaz", "fidelity": 0.85, "note": "Yew in Elder Futhark"},
-        {"type": "POLAR_OPPOSITE", "target": "ogham:beith", "axis": "creation-destruction", "note": "Death vs birth"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:eihwaz",
+          "fidelity": 0.85,
+          "note": "Yew in Elder Futhark"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "ogham:beith",
+          "axis": "creation-destruction",
+          "note": "Death vs birth"
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through death-wisdom and transformation",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "aicmi": {
-      "first": ["ogham:beith", "ogham:luis", "ogham:fearn", "ogham:saille", "ogham:nuin"],
-      "second": ["ogham:huathe", "ogham:duir", "ogham:tinne", "ogham:coll", "ogham:quert"],
-      "third": ["ogham:muin", "ogham:gort", "ogham:ngetal", "ogham:straif", "ogham:ruis"],
-      "fourth": ["ogham:ailm", "ogham:onn", "ogham:ur", "ogham:eadhadh", "ogham:ioho"]
+      "first": [
+        "ogham:beith",
+        "ogham:luis",
+        "ogham:fearn",
+        "ogham:saille",
+        "ogham:nuin"
+      ],
+      "second": [
+        "ogham:huathe",
+        "ogham:duir",
+        "ogham:tinne",
+        "ogham:coll",
+        "ogham:quert"
+      ],
+      "third": [
+        "ogham:muin",
+        "ogham:gort",
+        "ogham:ngetal",
+        "ogham:straif",
+        "ogham:ruis"
+      ],
+      "fourth": [
+        "ogham:ailm",
+        "ogham:onn",
+        "ogham:ur",
+        "ogham:eadhadh",
+        "ogham:ioho"
+      ]
     },
-    "birthDeathCycle": ["ogham:beith", "ogham:ioho"],
-    "protectorTrees": ["ogham:luis", "ogham:fearn", "ogham:duir"],
-    "otherworldTrees": ["ogham:quert", "ogham:ruis", "ogham:ioho"]
+    "birthDeathCycle": [
+      "ogham:beith",
+      "ogham:ioho"
+    ],
+    "protectorTrees": [
+      "ogham:luis",
+      "ogham:fearn",
+      "ogham:duir"
+    ],
+    "otherworldTrees": [
+      "ogham:quert",
+      "ogham:ruis",
+      "ogham:ioho"
+    ]
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

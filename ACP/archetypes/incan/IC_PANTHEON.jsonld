@@ -163,6 +163,38 @@
           "Lake Titicaca",
           "Tiwanaku"
         ]
+      },
+      "domains": [
+        "creation",
+        "prophecy",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "across",
+        "arts",
+        "before",
+        "civilization",
+        "conquistadors",
+        "cosmos",
+        "created",
+        "creation",
+        "creator",
+        "deity"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "mentor",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through world-maker and culture-bringer",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -292,6 +324,34 @@
           "Coricancha",
           "Machu Picchu"
         ]
+      },
+      "domains": [
+        "fatherhood"
+      ],
+      "keywords": [
+        "celebration",
+        "considered",
+        "coricancha",
+        "creator",
+        "cusco",
+        "deity",
+        "divine",
+        "dynasty",
+        "empire",
+        "father"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through divine-king and cosmic-ruler",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -388,6 +448,37 @@
         "sacredSites": [
           "Coricancha (silver chamber)"
         ]
+      },
+      "domains": [
+        "initiation",
+        "motherhood",
+        "sky",
+        "time"
+      ],
+      "keywords": [
+        "attacks",
+        "believed",
+        "calendar",
+        "celestial",
+        "cycles",
+        "eclipses",
+        "goddess",
+        "governed",
+        "great mother",
+        "inca"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody great mother energy through celestial-mother and time-keeper",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -519,6 +610,35 @@
           "terraced fields",
           "fertility figures"
         ]
+      },
+      "domains": [
+        "earth",
+        "motherhood"
+      ],
+      "keywords": [
+        "andean",
+        "animate",
+        "ayni",
+        "cause",
+        "central",
+        "disrespected",
+        "earth",
+        "earthquakes",
+        "embodying",
+        "ethics"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great mother energy through earth-mother and nurturer",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -627,6 +747,38 @@
           "lightning bolt"
         ],
         "animal": "serpent (rainbow)"
+      },
+      "domains": [
+        "harvest",
+        "sea",
+        "sky",
+        "water"
+      ],
+      "keywords": [
+        "after",
+        "agriculture",
+        "brings",
+        "celestial",
+        "creator",
+        "destroyer",
+        "drawing",
+        "envisioned",
+        "essential",
+        "garments"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through sky-warrior and storm-bringer",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -724,6 +876,35 @@
           "coca",
           "shells"
         ]
+      },
+      "domains": [
+        "fertility",
+        "motherhood",
+        "sea"
+      ],
+      "keywords": [
+        "abundance",
+        "bordered",
+        "coastal",
+        "cocha",
+        "complemented",
+        "empire",
+        "feminine",
+        "fertility",
+        "fish",
+        "fishermen"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through sea-mother and provider",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -846,6 +1027,36 @@
           "minerals"
         ],
         "animal": "serpent"
+      },
+      "domains": [
+        "death",
+        "earth",
+        "sovereignty"
+      ],
+      "keywords": [
+        "ancestor",
+        "ancestors",
+        "associated",
+        "chthonic",
+        "colonial",
+        "cosmic",
+        "dead",
+        "death",
+        "destroyer",
+        "devil"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through underworld-ruler and death-guide",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -947,6 +1158,38 @@
           "Pacaritambo"
         ],
         "color": "gold"
+      },
+      "domains": [
+        "earth",
+        "harvest",
+        "water"
+      ],
+      "keywords": [
+        "agriculture",
+        "alternate",
+        "cave",
+        "civilization",
+        "cusco",
+        "cápac",
+        "divine child",
+        "dynasty",
+        "earth",
+        "emerged"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through founder-king and civilization-bringer",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1043,6 +1286,36 @@
           "weaving",
           "textile arts"
         ]
+      },
+      "domains": [
+        "home",
+        "sovereignty"
+      ],
+      "keywords": [
+        "alongside",
+        "arts",
+        "civilizing",
+        "complementing",
+        "coya",
+        "daughter",
+        "domestic",
+        "emerged",
+        "feminine",
+        "first"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "magician",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great mother energy through queen-mother and teacher-of-women",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1137,6 +1410,34 @@
           "flowers",
           "Venus star"
         ]
+      },
+      "domains": [
+        "threshold"
+      ],
+      "keywords": [
+        "associated",
+        "beauty",
+        "chasca",
+        "dawn",
+        "evening",
+        "flowers",
+        "girls",
+        "goddess",
+        "light",
+        "liminal"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through dawn-maiden and virgin-protector",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1224,6 +1525,34 @@
         "sacredSites": [
           "Catequil oracle shrine"
         ]
+      },
+      "domains": [
+        "prophecy"
+      ],
+      "keywords": [
+        "associated",
+        "brother",
+        "catequil",
+        "deity",
+        "depicted",
+        "dual",
+        "famous",
+        "flash",
+        "lightning",
+        "magician"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "warrior"
+      ],
+      "coreFunction": "To embody magician energy through oracle and diviner",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1313,6 +1642,35 @@
           "wind",
           "desert"
         ]
+      },
+      "domains": [
+        "air",
+        "water"
+      ],
+      "keywords": [
+        "air",
+        "associated",
+        "coastal",
+        "created",
+        "creator",
+        "deity",
+        "first",
+        "humans",
+        "inti",
+        "kon"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "outcast",
+        "trickster"
+      ],
+      "coreFunction": "To embody creator energy through first-humanity-maker",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1422,6 +1780,36 @@
         "sacredSites": [
           "Pachacamac temple complex"
         ]
+      },
+      "domains": [
+        "creation",
+        "earth",
+        "prophecy"
+      ],
+      "keywords": [
+        "among",
+        "animator",
+        "bearing",
+        "central",
+        "coast",
+        "columbian",
+        "created",
+        "creation",
+        "creator",
+        "deity"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through world-animator and humanity-maker",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1525,6 +1913,34 @@
         "sacredSites": [
           "Major peaks: Ausangate, Salcantay, etc."
         ]
+      },
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "(mountain",
+        "ancestor",
+        "apu",
+        "apu (mountain spirits)",
+        "apus",
+        "beings",
+        "class",
+        "collective",
+        "communities",
+        "controllers"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through guardian and protector",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1611,6 +2027,33 @@
           "star patterns",
           "celestial llama"
         ]
+      },
+      "domains": [
+        "prophecy"
+      ],
+      "keywords": [
+        "agricultural",
+        "clusters",
+        "collective",
+        "coyllur",
+        "daughter",
+        "different",
+        "divination",
+        "goddess",
+        "inti",
+        "like"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician"
+      ],
+      "coreFunction": "To embody magician energy through celestial-knowledge and navigation",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1707,6 +2150,36 @@
         "sacredSites": [
           "Mount Pariacaca"
         ]
+      },
+      "domains": [
+        "fire",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "born",
+        "bringing",
+        "carhuincho",
+        "creator",
+        "defeated",
+        "deity",
+        "detail",
+        "dominated",
+        "eggs",
+        "falcon"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through monster-slayer and order-bringer",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1793,6 +2266,37 @@
           "volcano"
         ],
         "region": "Jungle lowlands (exile)"
+      },
+      "domains": [
+        "fire",
+        "order",
+        "sacrifice",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "after",
+        "associated",
+        "before",
+        "bringing",
+        "carhuincho",
+        "dangerous",
+        "defeat",
+        "defeated",
+        "deity",
+        "destroyer"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "outcast"
+      ],
+      "coreFunction": "To embody destroyer energy through fire-bringer and sacrifice-demander",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ]

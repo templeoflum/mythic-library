@@ -8,33 +8,83 @@
   "subdomain": "gendered",
   "cardinality": 8,
   "structuralNotes": "Based on Robert Moore and Douglas Gillette's 'King, Warrior, Magician, Lover' (1990). Each archetype has fullness form and two shadow poles.",
-
   "entries": [
     {
       "@id": "kwml:king",
       "@type": "Archetype",
       "name": "The King",
-      "keywords": ["sovereignty", "blessing", "order", "fertility", "centeredness"],
+      "keywords": [
+        "sovereignty",
+        "blessing",
+        "order",
+        "fertility",
+        "centeredness"
+      ],
       "description": "The energy of rightful authority and creative ordering. The King blesses, creates order, and ensures the fertility of the realm. Centered, calm, defines reality for others.",
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.35,
         "light-shadow": 0.25,
-        "active-receptive": 0.40,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.30,
-        "stasis-transformation": 0.30,
-        "voluntary-fated": 0.50
+        "active-receptive": 0.4,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.3,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.95, "aspects": ["blessing", "order", "centeredness"]},
-        {"primordial": "primordial:great-father", "weight": 0.70, "aspects": ["fertility", "authority"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.95,
+          "aspects": [
+            "blessing",
+            "order",
+            "centeredness"
+          ]
+        },
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.7,
+          "aspects": [
+            "fertility",
+            "authority"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:tyrant", "notes": "Active shadow"},
-        {"type": "SHADOW", "target": "kwml:weakling", "notes": "Passive shadow"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.75, "note": "King of gods"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:tyrant",
+          "notes": "Active shadow"
+        },
+        {
+          "type": "SHADOW",
+          "target": "kwml:weakling",
+          "notes": "Passive shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.75,
+          "note": "King of gods"
+        }
+      ],
+      "domains": [
+        "fertility",
+        "order",
+        "sovereignty"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through blessing and order",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "kwml:tyrant",
@@ -42,26 +92,72 @@
       "name": "The Tyrant (Shadow King - Active)",
       "shadowOf": "kwml:king",
       "shadowType": "active/inflated",
-      "keywords": ["exploitation", "cruelty", "narcissism", "destruction", "domination"],
+      "keywords": [
+        "exploitation",
+        "cruelty",
+        "narcissism",
+        "destruction",
+        "domination"
+      ],
       "description": "The King's active shadow. Exploits rather than blesses. Demands to be mirrored but cannot mirror others. Destroys rather than creates order.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.70,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.7,
         "light-shadow": 0.75,
         "active-receptive": 0.15,
         "individual-collective": 0.25,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.85, "aspects": ["tyranny", "exploitation"]},
-        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["cruelty", "domination"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.85,
+          "aspects": [
+            "tyranny",
+            "exploitation"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.7,
+          "aspects": [
+            "cruelty",
+            "domination"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:king", "notes": "Active shadow of King"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-CRONUS", "fidelity": 0.70, "note": "Devouring father"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:king",
+          "notes": "Active shadow of King"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-CRONUS",
+          "fidelity": 0.7,
+          "note": "Devouring father"
+        }
+      ],
+      "domains": [
+        "order",
+        "sovereignty"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "destroyer",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through tyranny and exploitation",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "kwml:weakling",
@@ -69,50 +165,132 @@
       "name": "The Weakling (Shadow King - Passive)",
       "shadowOf": "kwml:king",
       "shadowType": "passive/deflated",
-      "keywords": ["abdication", "impotence", "passivity", "lack", "withdrawal"],
+      "keywords": [
+        "abdication",
+        "impotence",
+        "passivity",
+        "lack",
+        "withdrawal"
+      ],
       "description": "The King's passive shadow. Abdicates responsibility, cannot establish order, lacks center. Paralyzed and ineffective.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.5,
         "light-shadow": 0.65,
-        "active-receptive": 0.80,
-        "individual-collective": 0.40,
+        "active-receptive": 0.8,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.75
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["abdication", "impotence"]},
-        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["withdrawal", "lack"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "abdication",
+            "impotence"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.55,
+          "aspects": [
+            "withdrawal",
+            "lack"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:king", "notes": "Passive shadow of King"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:king",
+          "notes": "Passive shadow of King"
+        }
+      ],
+      "domains": [
+        "order",
+        "sovereignty"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through abdication and impotence",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "kwml:warrior",
       "@type": "Archetype",
       "name": "The Warrior",
-      "keywords": ["aggression", "discipline", "courage", "boundaries", "destruction"],
+      "keywords": [
+        "aggression",
+        "discipline",
+        "courage",
+        "boundaries",
+        "destruction"
+      ],
       "description": "The energy of aggressive action in service of a transpersonal goal. Disciplined, focused, loyal, mindful, acts decisively. Destroys for the King's vision.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.60,
+        "creation-destruction": 0.6,
         "light-shadow": 0.35,
-        "active-receptive": 0.10,
+        "active-receptive": 0.1,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.95, "aspects": ["discipline", "courage", "loyalty"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.95,
+          "aspects": [
+            "discipline",
+            "courage",
+            "loyalty"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:sadist", "notes": "Active shadow"},
-        {"type": "SHADOW", "target": "kwml:masochist", "notes": "Passive shadow"},
-        {"type": "COMPLEMENT", "target": "kwml:king", "notes": "Serves the King's vision"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:sadist",
+          "notes": "Active shadow"
+        },
+        {
+          "type": "SHADOW",
+          "target": "kwml:masochist",
+          "notes": "Passive shadow"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "kwml:king",
+          "notes": "Serves the King's vision"
+        }
+      ],
+      "domains": [
+        "sovereignty"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through discipline and courage",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "kwml:sadist",
@@ -120,25 +298,66 @@
       "name": "The Sadist (Shadow Warrior - Active)",
       "shadowOf": "kwml:warrior",
       "shadowType": "active/inflated",
-      "keywords": ["cruelty", "rage", "violence", "destruction", "hatred"],
+      "keywords": [
+        "cruelty",
+        "rage",
+        "violence",
+        "destruction",
+        "hatred"
+      ],
       "description": "The Warrior's active shadow. Cruelty for its own sake, destruction without purpose, rage uncontained. Violence serves ego, not transpersonal goal.",
       "spectralCoordinates": {
-        "order-chaos": 0.70,
-        "creation-destruction": 0.90,
+        "order-chaos": 0.7,
+        "creation-destruction": 0.9,
         "light-shadow": 0.75,
         "active-receptive": 0.05,
         "individual-collective": 0.25,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.70,
-        "voluntary-fated": 0.20
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.2
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.85, "aspects": ["cruelty", "rage"]},
-        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["violence", "destruction"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.85,
+          "aspects": [
+            "cruelty",
+            "rage"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.8,
+          "aspects": [
+            "violence",
+            "destruction"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:warrior", "notes": "Active shadow of Warrior"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:warrior",
+          "notes": "Active shadow of Warrior"
+        }
+      ],
+      "domains": [
+        "destruction",
+        "war"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "destroyer",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through cruelty and rage",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "kwml:masochist",
@@ -146,91 +365,232 @@
       "name": "The Masochist (Shadow Warrior - Passive)",
       "shadowOf": "kwml:warrior",
       "shadowType": "passive/deflated",
-      "keywords": ["cowardice", "self-punishment", "victimhood", "collapse", "surrender"],
+      "keywords": [
+        "cowardice",
+        "self-punishment",
+        "victimhood",
+        "collapse",
+        "surrender"
+      ],
       "description": "The Warrior's passive shadow. Cannot stand up for self, accepts abuse, turns aggression inward. Cowardice masked as humility.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.55,
-        "light-shadow": 0.70,
+        "light-shadow": 0.7,
         "active-receptive": 0.85,
         "individual-collective": 0.35,
         "ascent-descent": 0.65,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.80
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.8
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["victimhood", "self-punishment"]},
-        {"primordial": "primordial:outcast", "weight": 0.60, "aspects": ["surrender", "collapse"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "victimhood",
+            "self-punishment"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.6,
+          "aspects": [
+            "surrender",
+            "collapse"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:warrior", "notes": "Passive shadow of Warrior"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:warrior",
+          "notes": "Passive shadow of Warrior"
+        }
+      ],
+      "domains": [
+        "war"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through victimhood and self-punishment",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "kwml:magician",
       "@type": "Archetype",
       "name": "The Magician",
-      "keywords": ["awareness", "knowledge", "transformation", "technology", "initiation"],
+      "keywords": [
+        "awareness",
+        "knowledge",
+        "transformation",
+        "technology",
+        "initiation"
+      ],
       "description": "The energy of initiation and transformation. Master of hidden knowledge, technology, sacred space. Contains and directs power for transformation.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
         "light-shadow": 0.45,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.75,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.95, "aspects": ["transformation", "knowledge", "initiation"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.95,
+          "aspects": [
+            "transformation",
+            "knowledge",
+            "initiation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:manipulator", "notes": "Active shadow"},
-        {"type": "SHADOW", "target": "kwml:innocent", "notes": "Passive shadow"},
-        {"type": "COMPLEMENT", "target": "kwml:king", "notes": "Advises the King"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:manipulator",
+          "notes": "Active shadow"
+        },
+        {
+          "type": "SHADOW",
+          "target": "kwml:innocent",
+          "notes": "Passive shadow"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "kwml:king",
+          "notes": "Advises the King"
+        }
+      ],
+      "domains": [
+        "initiation",
+        "transformation",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and knowledge",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "kwml:lover",
       "@type": "Archetype",
       "name": "The Lover",
-      "keywords": ["connection", "passion", "aliveness", "sensuality", "empathy"],
+      "keywords": [
+        "connection",
+        "passion",
+        "aliveness",
+        "sensuality",
+        "empathy"
+      ],
       "description": "The energy of play, connection, and aliveness. Deeply connected to all things through the senses. Passion, creativity, and compassion.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.30,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.95, "aspects": ["passion", "connection", "aliveness"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.95,
+          "aspects": [
+            "passion",
+            "connection",
+            "aliveness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "kwml:addicted-lover", "notes": "Active shadow"},
-        {"type": "SHADOW", "target": "kwml:impotent-lover", "notes": "Passive shadow"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "kwml:addicted-lover",
+          "notes": "Active shadow"
+        },
+        {
+          "type": "SHADOW",
+          "target": "kwml:impotent-lover",
+          "notes": "Passive shadow"
+        }
+      ],
+      "domains": [
+        "love"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through passion and connection",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
-    "quaternio": ["kwml:king", "kwml:warrior", "kwml:magician", "kwml:lover"],
+    "quaternio": [
+      "kwml:king",
+      "kwml:warrior",
+      "kwml:magician",
+      "kwml:lover"
+    ],
     "shadowPairs": {
-      "king": {"active": "kwml:tyrant", "passive": "kwml:weakling"},
-      "warrior": {"active": "kwml:sadist", "passive": "kwml:masochist"},
-      "magician": {"active": "kwml:manipulator", "passive": "kwml:innocent"},
-      "lover": {"active": "kwml:addicted-lover", "passive": "kwml:impotent-lover"}
+      "king": {
+        "active": "kwml:tyrant",
+        "passive": "kwml:weakling"
+      },
+      "warrior": {
+        "active": "kwml:sadist",
+        "passive": "kwml:masochist"
+      },
+      "magician": {
+        "active": "kwml:manipulator",
+        "passive": "kwml:innocent"
+      },
+      "lover": {
+        "active": "kwml:addicted-lover",
+        "passive": "kwml:impotent-lover"
+      }
     },
     "axes": {
-      "order": ["kwml:king", "kwml:warrior"],
-      "transformation": ["kwml:magician", "kwml:lover"]
+      "order": [
+        "kwml:king",
+        "kwml:warrior"
+      ],
+      "transformation": [
+        "kwml:magician",
+        "kwml:lover"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

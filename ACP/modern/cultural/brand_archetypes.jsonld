@@ -9,7 +9,6 @@
   "cardinality": 12,
   "source": "Carol Pearson and Margaret Mark, The Hero and the Outlaw",
   "structuralNotes": "Organized into four quadrants based on motivation: Stability, Independence, Mastery, Belonging.",
-
   "entries": [
     {
       "@id": "brand:innocent",
@@ -17,8 +16,18 @@
       "name": "The Innocent",
       "motivation": "Safety",
       "promise": "Life can be simple and good",
-      "examples": ["Coca-Cola", "Dove", "Nintendo"],
-      "keywords": ["simplicity", "optimism", "purity", "nostalgia", "trust"],
+      "examples": [
+        "Coca-Cola",
+        "Dove",
+        "Nintendo"
+      ],
+      "keywords": [
+        "simplicity",
+        "optimism",
+        "purity",
+        "nostalgia",
+        "trust"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.22,
@@ -30,15 +39,50 @@
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.85, "aspects": ["purity", "optimism"]},
-        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["safety", "simplicity"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.85,
+          "aspects": [
+            "purity",
+            "optimism"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.65,
+          "aspects": [
+            "safety",
+            "simplicity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:child", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.75},
-        {"type": "TENSION", "target": "brand:outlaw", "note": "Safety vs liberation"},
-        {"type": "COMPLEMENT", "target": "brand:caregiver", "note": "Both value safety"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:child",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.75
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:outlaw",
+          "note": "Safety vs liberation"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:caregiver",
+          "note": "Both value safety"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver"
+      ],
+      "coreFunction": "To embody divine_child energy through purity and optimism",
+      "symbolicCore": "The essential pattern of The Innocent"
     },
     {
       "@id": "brand:sage",
@@ -46,8 +90,18 @@
       "name": "The Sage",
       "motivation": "Understanding",
       "promise": "The truth will set you free",
-      "examples": ["Google", "BBC", "TED"],
-      "keywords": ["wisdom", "knowledge", "truth", "expertise", "intelligence"],
+      "examples": [
+        "Google",
+        "BBC",
+        "TED"
+      ],
+      "keywords": [
+        "wisdom",
+        "knowledge",
+        "truth",
+        "expertise",
+        "intelligence"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.42,
@@ -59,15 +113,50 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.9, "aspects": ["wisdom", "truth"]},
-        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["knowledge", "expertise"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.9,
+          "aspects": [
+            "wisdom",
+            "truth"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "knowledge",
+            "expertise"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.8},
-        {"type": "TENSION", "target": "brand:jester", "note": "Serious vs playful"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:wise_old_man",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:mentor",
+          "fidelity": 0.8
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:jester",
+          "note": "Serious vs playful"
+        }
+      ],
+      "narrativeRoles": [
+        "magician"
+      ],
+      "coreFunction": "To embody wise_elder energy through wisdom and truth",
+      "symbolicCore": "The essential pattern of The Sage"
     },
     {
       "@id": "brand:explorer",
@@ -75,8 +164,18 @@
       "name": "The Explorer",
       "motivation": "Freedom",
       "promise": "Don't fence me in",
-      "examples": ["Jeep", "REI", "Patagonia"],
-      "keywords": ["adventure", "freedom", "discovery", "independence", "authenticity"],
+      "examples": [
+        "Jeep",
+        "REI",
+        "Patagonia"
+      ],
+      "keywords": [
+        "adventure",
+        "freedom",
+        "discovery",
+        "independence",
+        "authenticity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.62,
         "creation-destruction": 0.42,
@@ -88,15 +187,58 @@
         "voluntary-fated": 0.22
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["adventure", "discovery"]},
-        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["freedom", "independence"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "adventure",
+            "discovery"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.65,
+          "aspects": [
+            "freedom",
+            "independence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "journey:call_to_adventure", "fidelity": 0.8},
-        {"type": "COMPLEMENT", "target": "brand:outlaw", "note": "Both value freedom"},
-        {"type": "TENSION", "target": "brand:ruler", "note": "Freedom vs control"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:call_to_adventure",
+          "fidelity": 0.8
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:outlaw",
+          "note": "Both value freedom"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:ruler",
+          "note": "Freedom vs control"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through adventure and discovery",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "brand:outlaw",
@@ -104,8 +246,18 @@
       "name": "The Outlaw",
       "motivation": "Liberation",
       "promise": "Rules are made to be broken",
-      "examples": ["Harley-Davidson", "Virgin", "Diesel"],
-      "keywords": ["rebellion", "disruption", "revolution", "liberation", "edge"],
+      "examples": [
+        "Harley-Davidson",
+        "Virgin",
+        "Diesel"
+      ],
+      "keywords": [
+        "rebellion",
+        "disruption",
+        "revolution",
+        "liberation",
+        "edge"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.78,
         "creation-destruction": 0.58,
@@ -117,15 +269,58 @@
         "voluntary-fated": 0.15
       },
       "instantiates": [
-        {"primordial": "primordial:rebel", "weight": 0.9, "aspects": ["rebellion", "liberation"]},
-        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["disruption", "edge"]}
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.9,
+          "aspects": [
+            "rebellion",
+            "liberation"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.65,
+          "aspects": [
+            "disruption",
+            "edge"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.65},
-        {"type": "POLAR_OPPOSITE", "target": "brand:ruler", "axis": "order-chaos"},
-        {"type": "TENSION", "target": "brand:innocent", "note": "Liberation vs safety"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:tower",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.65
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "brand:ruler",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:innocent",
+          "note": "Liberation vs safety"
+        }
+      ],
+      "narrativeRoles": [
+        "outcast",
+        "rebel",
+        "trickster"
+      ],
+      "coreFunction": "To embody rebel energy through rebellion and liberation",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "brand:magician",
@@ -133,8 +328,18 @@
       "name": "The Magician",
       "motivation": "Power",
       "promise": "Make dreams come true",
-      "examples": ["Apple", "Disney", "Dyson"],
-      "keywords": ["transformation", "vision", "innovation", "imagination", "experience"],
+      "examples": [
+        "Apple",
+        "Disney",
+        "Dyson"
+      ],
+      "keywords": [
+        "transformation",
+        "vision",
+        "innovation",
+        "imagination",
+        "experience"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.32,
@@ -146,15 +351,58 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.9, "aspects": ["transformation", "vision"]},
-        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["innovation", "imagination"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.9,
+          "aspects": [
+            "transformation",
+            "vision"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "innovation",
+            "imagination"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.65},
-        {"type": "COMPLEMENT", "target": "brand:creator", "note": "Both transform reality"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.7}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:magician",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:trickster",
+          "fidelity": 0.65
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:creator",
+          "note": "Both transform reality"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mercury",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and vision",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "brand:hero",
@@ -162,8 +410,18 @@
       "name": "The Hero",
       "motivation": "Mastery",
       "promise": "Where there's a will, there's a way",
-      "examples": ["Nike", "FedEx", "US Army"],
-      "keywords": ["courage", "achievement", "determination", "strength", "victory"],
+      "examples": [
+        "Nike",
+        "FedEx",
+        "US Army"
+      ],
+      "keywords": [
+        "courage",
+        "achievement",
+        "determination",
+        "strength",
+        "victory"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.42,
@@ -175,15 +433,57 @@
         "voluntary-fated": 0.32
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.9, "aspects": ["courage", "achievement"]},
-        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["strength", "determination"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.9,
+          "aspects": [
+            "courage",
+            "achievement"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.75,
+          "aspects": [
+            "strength",
+            "determination"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vogler:hero", "fidelity": 0.95},
-        {"type": "CULTURAL_ECHO", "target": "jungian:hero", "fidelity": 0.95},
-        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.85},
-        {"type": "COMPLEMENT", "target": "brand:ruler", "note": "Both seek mastery"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:hero",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:hero",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:chariot",
+          "fidelity": 0.85
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:ruler",
+          "note": "Both seek mastery"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through courage and achievement",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "brand:lover",
@@ -191,8 +491,18 @@
       "name": "The Lover",
       "motivation": "Intimacy",
       "promise": "I only have eyes for you",
-      "examples": ["Victoria's Secret", "Chanel", "Häagen-Dazs"],
-      "keywords": ["passion", "sensuality", "romance", "beauty", "desire"],
+      "examples": [
+        "Victoria's Secret",
+        "Chanel",
+        "Häagen-Dazs"
+      ],
+      "keywords": [
+        "passion",
+        "sensuality",
+        "romance",
+        "beauty",
+        "desire"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.28,
@@ -204,15 +514,58 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.9, "aspects": ["passion", "desire"]},
-        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["beauty", "romance"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.9,
+          "aspects": [
+            "passion",
+            "desire"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.55,
+          "aspects": [
+            "beauty",
+            "romance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "astrology:venus", "fidelity": 0.85},
-        {"type": "COMPLEMENT", "target": "brand:caregiver", "note": "Both value connection"},
-        {"type": "TENSION", "target": "brand:sage", "note": "Heart vs mind"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:venus",
+          "fidelity": 0.85
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:caregiver",
+          "note": "Both value connection"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:sage",
+          "note": "Heart vs mind"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "innocent",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through passion and desire",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "brand:jester",
@@ -220,8 +573,18 @@
       "name": "The Jester",
       "motivation": "Enjoyment",
       "promise": "If I can't dance, I don't want to be part of your revolution",
-      "examples": ["M&Ms", "Old Spice", "Dollar Shave Club"],
-      "keywords": ["humor", "fun", "irreverence", "joy", "mischief"],
+      "examples": [
+        "M&Ms",
+        "Old Spice",
+        "Dollar Shave Club"
+      ],
+      "keywords": [
+        "humor",
+        "fun",
+        "irreverence",
+        "joy",
+        "mischief"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.38,
@@ -233,15 +596,57 @@
         "voluntary-fated": 0.18
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["humor", "mischief"]},
-        {"primordial": "primordial:divine_child", "weight": 0.65, "aspects": ["fun", "joy"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.85,
+          "aspects": [
+            "humor",
+            "mischief"
+          ]
+        },
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.65,
+          "aspects": [
+            "fun",
+            "joy"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:trickster", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "vogler:trickster", "fidelity": 0.85},
-        {"type": "TENSION", "target": "brand:ruler", "note": "Levity vs authority"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:trickster",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:trickster",
+          "fidelity": 0.85
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:ruler",
+          "note": "Levity vs authority"
+        }
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through humor and mischief",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "brand:everyman",
@@ -249,8 +654,18 @@
       "name": "The Everyman",
       "motivation": "Belonging",
       "promise": "Everyone is created equal",
-      "examples": ["IKEA", "Target", "Budweiser"],
-      "keywords": ["belonging", "authenticity", "realism", "equality", "comfort"],
+      "examples": [
+        "IKEA",
+        "Target",
+        "Budweiser"
+      ],
+      "keywords": [
+        "belonging",
+        "authenticity",
+        "realism",
+        "equality",
+        "comfort"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.42,
@@ -262,15 +677,57 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["comfort", "realism"]},
-        {"primordial": "primordial:ancestor", "weight": 0.65, "aspects": ["belonging", "equality"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.75,
+          "aspects": [
+            "comfort",
+            "realism"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.65,
+          "aspects": [
+            "belonging",
+            "equality"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "spiral:green", "fidelity": 0.7},
-        {"type": "TENSION", "target": "brand:hero", "note": "Ordinary vs extraordinary"},
-        {"type": "TENSION", "target": "brand:ruler", "note": "Common vs elite"},
-        {"type": "COMPLEMENT", "target": "brand:caregiver", "note": "Both value community"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:green",
+          "fidelity": 0.7
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:hero",
+          "note": "Ordinary vs extraordinary"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:ruler",
+          "note": "Common vs elite"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:caregiver",
+          "note": "Both value community"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through comfort and realism",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "brand:caregiver",
@@ -278,8 +735,18 @@
       "name": "The Caregiver",
       "motivation": "Service",
       "promise": "Love your neighbor as yourself",
-      "examples": ["Johnson & Johnson", "UNICEF", "Volvo"],
-      "keywords": ["nurturing", "protection", "compassion", "service", "generosity"],
+      "examples": [
+        "Johnson & Johnson",
+        "UNICEF",
+        "Volvo"
+      ],
+      "keywords": [
+        "nurturing",
+        "protection",
+        "compassion",
+        "service",
+        "generosity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.32,
         "creation-destruction": 0.28,
@@ -291,15 +758,51 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "protection"]},
-        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["compassion", "service"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.85,
+          "aspects": [
+            "nurturing",
+            "protection"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.75,
+          "aspects": [
+            "compassion",
+            "service"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "jungian:great_mother", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "enneagram:type_2", "fidelity": 0.85},
-        {"type": "COMPLEMENT", "target": "brand:innocent", "note": "Both value safety"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:great_mother",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_2",
+          "fidelity": 0.85
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:innocent",
+          "note": "Both value safety"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer"
+      ],
+      "coreFunction": "To embody great_mother energy through nurturing and protection",
+      "symbolicCore": "The essential pattern of The Caregiver"
     },
     {
       "@id": "brand:ruler",
@@ -307,8 +810,18 @@
       "name": "The Ruler",
       "motivation": "Control",
       "promise": "Power isn't everything, it's the only thing",
-      "examples": ["Mercedes-Benz", "Rolex", "Microsoft"],
-      "keywords": ["power", "leadership", "status", "success", "control"],
+      "examples": [
+        "Mercedes-Benz",
+        "Rolex",
+        "Microsoft"
+      ],
+      "keywords": [
+        "power",
+        "leadership",
+        "status",
+        "success",
+        "control"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.42,
@@ -320,15 +833,57 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.9, "aspects": ["power", "leadership"]},
-        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["control", "status"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.9,
+          "aspects": [
+            "power",
+            "leadership"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.7,
+          "aspects": [
+            "control",
+            "status"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.75},
-        {"type": "POLAR_OPPOSITE", "target": "brand:outlaw", "axis": "order-chaos"},
-        {"type": "COMPLEMENT", "target": "brand:hero", "note": "Both seek mastery"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:blue",
+          "fidelity": 0.75
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "brand:outlaw",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:hero",
+          "note": "Both seek mastery"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through power and leadership",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "brand:creator",
@@ -336,8 +891,18 @@
       "name": "The Creator",
       "motivation": "Innovation",
       "promise": "If you can imagine it, it can be done",
-      "examples": ["Lego", "Adobe", "Crayola"],
-      "keywords": ["creativity", "imagination", "innovation", "self-expression", "vision"],
+      "examples": [
+        "Lego",
+        "Adobe",
+        "Crayola"
+      ],
+      "keywords": [
+        "creativity",
+        "imagination",
+        "innovation",
+        "self-expression",
+        "vision"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.12,
@@ -349,32 +914,106 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.9, "aspects": ["creativity", "vision"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["innovation", "imagination"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.9,
+          "aspects": [
+            "creativity",
+            "vision"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "innovation",
+            "imagination"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "enneagram:type_4", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "brand:magician", "note": "Both transform reality"},
-        {"type": "TENSION", "target": "brand:ruler", "note": "Innovation vs tradition"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_4",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:magician",
+          "note": "Both transform reality"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:ruler",
+          "note": "Innovation vs tradition"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through creativity and vision",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
     "quadrants": {
-      "stability": ["brand:caregiver", "brand:ruler", "brand:creator"],
-      "belonging": ["brand:everyman", "brand:jester", "brand:lover"],
-      "mastery": ["brand:hero", "brand:magician", "brand:outlaw"],
-      "independence": ["brand:innocent", "brand:sage", "brand:explorer"]
+      "stability": [
+        "brand:caregiver",
+        "brand:ruler",
+        "brand:creator"
+      ],
+      "belonging": [
+        "brand:everyman",
+        "brand:jester",
+        "brand:lover"
+      ],
+      "mastery": [
+        "brand:hero",
+        "brand:magician",
+        "brand:outlaw"
+      ],
+      "independence": [
+        "brand:innocent",
+        "brand:sage",
+        "brand:explorer"
+      ]
     },
     "polarPairs": [
-      {"pair": ["brand:ruler", "brand:outlaw"], "axis": "order-chaos"},
-      {"pair": ["brand:sage", "brand:jester"], "axis": "serious-playful"},
-      {"pair": ["brand:hero", "brand:everyman"], "axis": "extraordinary-ordinary"}
+      {
+        "pair": [
+          "brand:ruler",
+          "brand:outlaw"
+        ],
+        "axis": "order-chaos"
+      },
+      {
+        "pair": [
+          "brand:sage",
+          "brand:jester"
+        ],
+        "axis": "serious-playful"
+      },
+      {
+        "pair": [
+          "brand:hero",
+          "brand:everyman"
+        ],
+        "axis": "extraordinary-ordinary"
+      }
     ]
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

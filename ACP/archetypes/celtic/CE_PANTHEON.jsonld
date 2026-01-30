@@ -189,6 +189,37 @@
         ],
         "tradition": "Irish",
         "confidence": 0.9
+      },
+      "domains": [
+        "fatherhood",
+        "sovereignty"
+      ],
+      "keywords": [
+        "appetites",
+        "both",
+        "cauldron",
+        "chief",
+        "club",
+        "comic",
+        "controls",
+        "creator",
+        "dagda",
+        "danann"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "ruler",
+        "shapeshifter",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through all-father and tribe-father",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -334,6 +365,39 @@
         ],
         "tradition": "Irish (syncretized with Christian saint)",
         "confidence": 0.95
+      },
+      "domains": [
+        "fire",
+        "healing",
+        "poetry",
+        "preservation",
+        "transformation"
+      ],
+      "keywords": [
+        "arts",
+        "brigid",
+        "dagda",
+        "daughter",
+        "embodies",
+        "fire",
+        "fires",
+        "flame",
+        "goddess",
+        "great mother"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody healer energy through medicine and wells",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -477,6 +541,33 @@
           "Leiden (Lugdunum Batavorum)"
         ],
         "confidence": 0.95
+      },
+      "keywords": [
+        "balor",
+        "brute",
+        "champion",
+        "craftsmanship",
+        "danann",
+        "every",
+        "excellence",
+        "fomorian",
+        "force",
+        "grandfather"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "shapeshifter",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through champion and Balor-slayer",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -626,6 +717,40 @@
         ],
         "tradition": "Irish",
         "confidence": 0.9
+      },
+      "domains": [
+        "death",
+        "fate",
+        "prophecy",
+        "sovereignty",
+        "war"
+      ],
+      "keywords": [
+        "appears",
+        "battle",
+        "battlefields",
+        "between",
+        "both",
+        "choosing",
+        "crone",
+        "crow",
+        "dark",
+        "death"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "destroyer",
+        "hero",
+        "sage",
+        "warrior"
+      ],
+      "coreFunction": "To embody crone energy through fate-weaver and death-goddess",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -743,6 +868,34 @@
         "tradition": "Pan-Celtic",
         "confidence": 0.7,
         "notes": "Little direct mythology; reconstructed from tribe name and river names"
+      },
+      "domains": [
+        "creation",
+        "motherhood"
+      ],
+      "keywords": [
+        "ancestor",
+        "creation",
+        "creator",
+        "danann",
+        "danu",
+        "danube",
+        "direct",
+        "divine",
+        "flowing",
+        "goddess"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through ancestor-mother and divine-source",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -854,7 +1007,27 @@
         "tradition": "Gaulish",
         "confidence": 0.75,
         "notes": "Name appears once; iconography widespread"
-      }
+      },
+      "domains": [
+        "fertility"
+      ],
+      "keywords": [
+        "abundance",
+        "animals",
+        "antlers",
+        "cernunnos",
+        "cross",
+        "cycles",
+        "depicted",
+        "fertility",
+        "forests",
+        "gaulish"
+      ],
+      "narrativeRoles": [
+        "sovereign"
+      ],
+      "coreFunction": "To embody wild man energy through lord-of-beasts and untamed",
+      "symbolicCore": "The fertility that transforms through Cernunnos's essence"
     },
     {
       "@id": "arch:CE-MANANNÁN",
@@ -983,6 +1156,37 @@
         ],
         "tradition": "Irish (Manannán), Welsh (Manawydan)",
         "confidence": 0.9
+      },
+      "domains": [
+        "protection",
+        "sea"
+      ],
+      "keywords": [
+        "ablach",
+        "cloak",
+        "emain",
+        "enbarr",
+        "ferries",
+        "guardian",
+        "horse",
+        "illusion",
+        "island",
+        "itself"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "magician",
+        "shapeshifter",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through illusion and shape-shifter",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1109,6 +1313,39 @@
         ],
         "tradition": "Irish",
         "confidence": 0.85
+      },
+      "domains": [
+        "childhood",
+        "love",
+        "poetry",
+        "water"
+      ],
+      "keywords": [
+        "aengus",
+        "aengus óg",
+        "associated",
+        "birds",
+        "boann",
+        "born",
+        "childhood",
+        "conceived",
+        "dagda",
+        "divine child"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "hero",
+        "innocent",
+        "lover",
+        "trickster"
+      ],
+      "coreFunction": "To embody lover energy through romantic-love and beauty",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1227,6 +1464,38 @@
           "Lydney (as Nodens)"
         ],
         "confidence": 0.85
+      },
+      "domains": [
+        "healing",
+        "sacrifice",
+        "sovereignty",
+        "war"
+      ],
+      "keywords": [
+        "against",
+        "airgetlám",
+        "battle",
+        "because",
+        "blemish",
+        "bolg",
+        "celtic",
+        "danann",
+        "dian",
+        "first"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through divine-king and rightful-ruler",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1371,6 +1640,38 @@
         ],
         "tradition": "Irish",
         "confidence": 0.95
+      },
+      "domains": [
+        "crafts",
+        "death",
+        "protection",
+        "transformation",
+        "war"
+      ],
+      "keywords": [
+        "battle",
+        "becoming",
+        "bound",
+        "chulainn",
+        "crafts",
+        "culann",
+        "cú chulainn",
+        "death",
+        "deichtine",
+        "divine child"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through champion and defender",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1497,6 +1798,36 @@
         ],
         "tradition": "Welsh",
         "confidence": 0.9
+      },
+      "domains": [
+        "music",
+        "sovereignty"
+      ],
+      "keywords": [
+        "accused",
+        "appears",
+        "associated",
+        "birds",
+        "brings",
+        "cannot",
+        "carrying",
+        "caught",
+        "falsely",
+        "goddess"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "innocent",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody great mother energy through sovereignty and fertility",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1601,6 +1932,37 @@
         ],
         "tradition": "Welsh",
         "confidence": 0.85
+      },
+      "domains": [
+        "death",
+        "hunt",
+        "initiation",
+        "underworld"
+      ],
+      "keywords": [
+        "annwfn",
+        "arawn",
+        "associated",
+        "autumnal",
+        "death",
+        "exchanges",
+        "hounds",
+        "hunt",
+        "hunting",
+        "initiation"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody sovereign energy through underworld-king and realm-ruler",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1727,7 +2089,29 @@
         ],
         "tradition": "Irish",
         "confidence": 0.9
-      }
+      },
+      "domains": [
+        "chaos",
+        "sovereignty"
+      ],
+      "keywords": [
+        "balor",
+        "blight",
+        "chaos",
+        "destined",
+        "destroyer",
+        "destroys",
+        "destructive",
+        "drought",
+        "enormous",
+        "everything"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody monster energy through giant and chaos-bringer",
+      "symbolicCore": "The chaos that transforms through Balor's essence"
     }
   ],
   "systemRelationships": [

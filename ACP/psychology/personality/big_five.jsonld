@@ -8,145 +8,398 @@
   "subdomain": "personality",
   "cardinality": 5,
   "structuralNotes": "Based on Goldberg, Costa & McCrae's research. Trait-based model where each factor is a spectrum. Widely validated across cultures.",
-
   "entries": [
     {
       "@id": "ocean:openness",
       "@type": "Archetype",
       "name": "Openness to Experience",
       "acronymLetter": "O",
-      "highTraits": ["curious", "creative", "imaginative", "unconventional", "artistic"],
-      "lowTraits": ["practical", "conventional", "concrete", "traditional", "routine"],
-      "keywords": ["imagination", "creativity", "curiosity", "aesthetics", "ideas"],
+      "highTraits": [
+        "curious",
+        "creative",
+        "imaginative",
+        "unconventional",
+        "artistic"
+      ],
+      "lowTraits": [
+        "practical",
+        "conventional",
+        "concrete",
+        "traditional",
+        "routine"
+      ],
+      "keywords": [
+        "imagination",
+        "creativity",
+        "curiosity",
+        "aesthetics",
+        "ideas"
+      ],
       "description": "The dimension of intellectual curiosity, creativity, and preference for novelty. High openness embraces new experiences and abstract thinking.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.40,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
         "active-receptive": 0.45,
         "individual-collective": 0.35,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.70,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.7,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["creativity", "imagination"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["curiosity", "ideas"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.8,
+          "aspects": [
+            "creativity",
+            "imagination"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "curiosity",
+            "ideas"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:seeker", "fidelity": 0.70, "note": "Seeking new experience"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:seeker",
+          "fidelity": 0.7,
+          "note": "Seeking new experience"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through creativity and imagination",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ocean:conscientiousness",
       "@type": "Archetype",
       "name": "Conscientiousness",
       "acronymLetter": "C",
-      "highTraits": ["organized", "disciplined", "dependable", "achievement-oriented", "thorough"],
-      "lowTraits": ["spontaneous", "flexible", "careless", "unreliable", "disorganized"],
-      "keywords": ["order", "discipline", "duty", "achievement", "self-control"],
+      "highTraits": [
+        "organized",
+        "disciplined",
+        "dependable",
+        "achievement-oriented",
+        "thorough"
+      ],
+      "lowTraits": [
+        "spontaneous",
+        "flexible",
+        "careless",
+        "unreliable",
+        "disorganized"
+      ],
+      "keywords": [
+        "order",
+        "discipline",
+        "duty",
+        "achievement",
+        "self-control"
+      ],
       "description": "The dimension of organization, dependability, and goal-directed behavior. High conscientiousness is disciplined and achievement-focused.",
       "spectralCoordinates": {
-        "order-chaos": 0.20,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.2,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
-        "individual-collective": 0.50,
+        "active-receptive": 0.4,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.80, "aspects": ["order", "discipline"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["achievement", "self-control"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8,
+          "aspects": [
+            "order",
+            "discipline"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "achievement",
+            "self-control"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:ruler", "fidelity": 0.65, "note": "Order and control"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:ruler",
+          "fidelity": 0.65,
+          "note": "Order and control"
+        }
+      ],
+      "domains": [
+        "order"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody preserver energy through order and discipline",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "ocean:extraversion",
       "@type": "Archetype",
       "name": "Extraversion",
       "acronymLetter": "E",
-      "highTraits": ["outgoing", "energetic", "talkative", "assertive", "sociable"],
-      "lowTraits": ["reserved", "solitary", "quiet", "reflective", "independent"],
-      "keywords": ["sociability", "energy", "assertiveness", "enthusiasm", "activity"],
+      "highTraits": [
+        "outgoing",
+        "energetic",
+        "talkative",
+        "assertive",
+        "sociable"
+      ],
+      "lowTraits": [
+        "reserved",
+        "solitary",
+        "quiet",
+        "reflective",
+        "independent"
+      ],
+      "keywords": [
+        "sociability",
+        "energy",
+        "assertiveness",
+        "enthusiasm",
+        "activity"
+      ],
       "description": "The dimension of social energy, assertiveness, and positive emotions. High extraversion is energized by social interaction.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.25,
         "individual-collective": 0.65,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.40
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["sociability", "enthusiasm"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["assertiveness", "energy"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "sociability",
+            "enthusiasm"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "assertiveness",
+            "energy"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:lover", "fidelity": 0.60, "note": "Connection and energy"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:lover",
+          "fidelity": 0.6,
+          "note": "Connection and energy"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "hero",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through sociability and enthusiasm",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ocean:agreeableness",
       "@type": "Archetype",
       "name": "Agreeableness",
       "acronymLetter": "A",
-      "highTraits": ["trusting", "cooperative", "helpful", "empathetic", "kind"],
-      "lowTraits": ["skeptical", "competitive", "antagonistic", "detached", "challenging"],
-      "keywords": ["compassion", "cooperation", "trust", "altruism", "harmony"],
+      "highTraits": [
+        "trusting",
+        "cooperative",
+        "helpful",
+        "empathetic",
+        "kind"
+      ],
+      "lowTraits": [
+        "skeptical",
+        "competitive",
+        "antagonistic",
+        "detached",
+        "challenging"
+      ],
+      "keywords": [
+        "compassion",
+        "cooperation",
+        "trust",
+        "altruism",
+        "harmony"
+      ],
       "description": "The dimension of cooperation, trust, and concern for others. High agreeableness prioritizes social harmony and helping others.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.30,
-        "active-receptive": 0.60,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
+        "active-receptive": 0.6,
         "individual-collective": 0.75,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["compassion", "helping"]},
-        {"primordial": "primordial:great-mother", "weight": 0.60, "aspects": ["nurturing", "trust"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "compassion",
+            "helping"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.6,
+          "aspects": [
+            "nurturing",
+            "trust"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:caregiver", "fidelity": 0.80, "note": "Caring for others"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:caregiver",
+          "fidelity": 0.8,
+          "note": "Caring for others"
+        }
+      ],
+      "domains": [
+        "music",
+        "peace"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer"
+      ],
+      "coreFunction": "To embody healer energy through compassion and helping",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "ocean:neuroticism",
       "@type": "Archetype",
       "name": "Neuroticism",
       "acronymLetter": "N",
-      "highTraits": ["anxious", "emotional", "moody", "self-conscious", "vulnerable"],
-      "lowTraits": ["calm", "stable", "secure", "confident", "resilient"],
-      "keywords": ["anxiety", "emotionality", "vulnerability", "instability", "negativity"],
+      "highTraits": [
+        "anxious",
+        "emotional",
+        "moody",
+        "self-conscious",
+        "vulnerable"
+      ],
+      "lowTraits": [
+        "calm",
+        "stable",
+        "secure",
+        "confident",
+        "resilient"
+      ],
+      "keywords": [
+        "anxiety",
+        "emotionality",
+        "vulnerability",
+        "instability",
+        "negativity"
+      ],
       "description": "The dimension of emotional instability and negative affect. High neuroticism experiences more anxiety, mood swings, and stress.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.5,
         "light-shadow": 0.65,
-        "active-receptive": 0.60,
-        "individual-collective": 0.40,
+        "active-receptive": 0.6,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.70, "aspects": ["anxiety", "vulnerability"]},
-        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["instability", "self-consciousness"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.7,
+          "aspects": [
+            "anxiety",
+            "vulnerability"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.55,
+          "aspects": [
+            "instability",
+            "self-consciousness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:orphan", "fidelity": 0.60, "note": "Wounded awareness"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:orphan",
+          "fidelity": 0.6,
+          "note": "Wounded awareness"
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through anxiety and vulnerability",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "acronym": "OCEAN",
     "empiricalCorrelations": {
@@ -155,7 +408,6 @@
       "neuroticism_agreeableness": "Inversely correlated"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

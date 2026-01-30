@@ -4,7 +4,8 @@ A semantic framework for mapping archetypes across mythology, psychology, divina
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
 [![Archetypes](https://img.shields.io/badge/archetypes-938-green)]()
-[![Version](https://img.shields.io/badge/version-0.2.0-yellow)]()
+[![Completeness](https://img.shields.io/badge/completeness-68%25%20rich+-brightgreen)]()
+[![Version](https://img.shields.io/badge/version-0.2.1-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 ---
@@ -237,6 +238,24 @@ python -m http.server 8000
 node tools/validate.js
 ```
 
+### Run Enrichment Tools
+```bash
+# Audit completeness
+python scripts/audit_archetype_completeness.py
+
+# Generate enrichment queue
+python scripts/enrichment_queue.py
+
+# Auto-enrich from correspondences (dry run)
+python scripts/enrich_from_correspondences.py --dry-run
+
+# Apply enrichment changes
+python scripts/enrich_from_correspondences.py --apply
+
+# Validate enrichment quality
+python scripts/validate_enrichment.py
+```
+
 ## Query Examples
 
 ### Find Trickster Figures Across Systems
@@ -331,7 +350,7 @@ The system enforces coherence:
 - [x] 18 pantheons (Greek, Norse, Egyptian, Celtic, Hindu, Japanese, Chinese, Mesopotamian, African, Mesoamerican, Slavic, Polynesian, Native American, Finnish, Australian, Incan, Persian, Roman)
 - [x] Cross-pantheon relationship mapping
 
-### 0.2.0 ✅ Major Expansion (1,006 archetypes) — Current
+### 0.2.0 ✅ Major Expansion (938 archetypes)
 - [x] **Additional Pantheons**: Buddhist (27), Vodou Loa (18)
 - [x] **Alternate Zodiacs**: Chinese (12), Vedic Rashi (12), Nakshatra (27), Celtic Tree (13)
 - [x] **Sacred Calendars**: Mayan Tzolk'in (20), Aztec Tonalpohualli (20), Native American Totems (12)
@@ -340,11 +359,18 @@ The system enforces coherence:
 - [x] **Narrative Systems**: Propp's Roles (8), Seven Basic Plots (7), Commedia dell'Arte (10)
 - [x] **Gendered Systems**: KWML (8), Triple Goddess (9), Bolen's Goddesses (7), Bolen's Gods (8)
 
-### 0.3.0 — Remaining Systems (~200 archetypes)
-- [ ] Transactional Analysis ego states
-- [ ] Psychosynthesis subpersonalities
-- [ ] Additional Ogham variants
-- [ ] Expanded alchemical symbols
+### 0.2.1 ✅ Enrichment Phase 1 — Current
+- [x] **Completeness**: 22% complete (210), 46% rich (429), 30% partial (280), 2% stub (19)
+- [x] **Fields Added**: domains, keywords, narrativeRoles, coreFunction, symbolicCore, psychologicalMapping
+- [x] **Infrastructure**: Automated enrichment scripts (`scripts/enrich_*.py`)
+- [x] **Tarot Minor Arcana**: Fully enriched with Tier 3 fields (56 cards)
+- [x] **Mean Score**: 64% (up from 44%)
+
+### 0.3.0 — Enrichment Phase 2
+- [ ] culturalEchoes bidirectional links across all pantheons
+- [ ] Complete relationship graph (fix 878 missing bidirectional links)
+- [ ] Add aliases for cross-cultural recognition
+- [ ] Target: 80%+ entries at "rich" tier
 
 ### 1.0.0 — Production Release
 - [ ] Complete ~1,200 archetype database

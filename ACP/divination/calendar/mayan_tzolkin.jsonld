@@ -8,7 +8,6 @@
   "subdomain": "calendar",
   "cardinality": 20,
   "structuralNotes": "20 day signs × 13 numbers = 260-day cycle. Signs rotate continuously. Each has positive and negative aspects, ruling direction, and associated deities.",
-
   "entries": [
     {
       "@id": "tzolkin:imix",
@@ -19,25 +18,67 @@
       "color": "Red",
       "yukatekName": "Imix",
       "kicheName": "Imox",
-      "keywords": ["primordial", "earth-mother", "nurturing", "madness", "creativity"],
+      "keywords": [
+        "primordial",
+        "earth-mother",
+        "nurturing",
+        "madness",
+        "creativity"
+      ],
       "description": "The primordial dragon and earth mother. Source of all creation, nurturing but also chaotic. Represents the waters of creation from which all emerged.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
-        "creation-destruction": 0.20,
+        "creation-destruction": 0.2,
         "light-shadow": 0.45,
-        "active-receptive": 0.60,
-        "individual-collective": 0.60,
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
         "ascent-descent": 0.65,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["nurturing", "primordial"]},
-        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["source", "creativity"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.85,
+          "aspects": [
+            "nurturing",
+            "primordial"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "source",
+            "creativity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-ITZAMNA", "fidelity": 0.65, "note": "Primordial deity"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-ITZAMNA",
+          "fidelity": 0.65,
+          "note": "Primordial deity"
+        }
+      ],
+      "domains": [
+        "creation",
+        "earth",
+        "motherhood"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through nurturing and primordial",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tzolkin:ik",
@@ -48,25 +89,68 @@
       "color": "White",
       "yukatekName": "Ik'",
       "kicheName": "Iq'",
-      "keywords": ["breath", "spirit", "communication", "inspiration", "change"],
+      "keywords": [
+        "breath",
+        "spirit",
+        "communication",
+        "inspiration",
+        "change"
+      ],
       "description": "Divine breath and wind spirit. Carries messages between worlds, brings inspiration and change. Associated with Kukulkan and spiritual communication.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.45,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["spirit", "communication"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["change", "movement"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "spirit",
+            "communication"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "change",
+            "movement"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-KUKULKAN", "fidelity": 0.70, "note": "Wind deity"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-KUKULKAN",
+          "fidelity": 0.7,
+          "note": "Wind deity"
+        }
+      ],
+      "domains": [
+        "air",
+        "communication",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through spirit and communication",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:akbal",
@@ -77,25 +161,66 @@
       "color": "Black",
       "yukatekName": "Ak'b'al",
       "kicheName": "Aq'ab'al",
-      "keywords": ["darkness", "dreams", "introspection", "dawn", "temple"],
+      "keywords": [
+        "darkness",
+        "dreams",
+        "introspection",
+        "dawn",
+        "temple"
+      ],
       "description": "The house of night and dawn's threshold. Represents the dream world, inner temple, and the darkness before light. Place of vision quests.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
-        "light-shadow": 0.70,
+        "light-shadow": 0.7,
         "active-receptive": 0.65,
         "individual-collective": 0.35,
-        "ascent-descent": 0.60,
-        "stasis-transformation": 0.50,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.75, "aspects": ["darkness", "unconscious"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["dreams", "vision"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.75,
+          "aspects": [
+            "darkness",
+            "unconscious"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "dreams",
+            "vision"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:belly_of_whale", "fidelity": 0.65, "note": "Inner journey"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:belly_of_whale",
+          "fidelity": 0.65,
+          "note": "Inner journey"
+        }
+      ],
+      "domains": [
+        "threshold"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "magician",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through darkness and unconscious",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:kan",
@@ -106,25 +231,67 @@
       "color": "Yellow",
       "yukatekName": "K'an",
       "kicheName": "K'at",
-      "keywords": ["seed", "abundance", "potential", "net", "ripening"],
+      "keywords": [
+        "seed",
+        "abundance",
+        "potential",
+        "net",
+        "ripening"
+      ],
       "description": "The seed of potential and the net that gathers abundance. Represents latent power waiting to unfold, fertility, and the harvest of what has been planted.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.25,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.70, "aspects": ["potential", "seed"]},
-        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["fertility", "abundance"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.7,
+          "aspects": [
+            "potential",
+            "seed"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.65,
+          "aspects": [
+            "fertility",
+            "abundance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-YUMKAAX", "fidelity": 0.70, "note": "Maize god"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-YUMKAAX",
+          "fidelity": 0.7,
+          "note": "Maize god"
+        }
+      ],
+      "domains": [
+        "fertility",
+        "harvest"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody divine child energy through potential and seed",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:chicchan",
@@ -135,26 +302,74 @@
       "color": "Red",
       "yukatekName": "Chikchan",
       "kicheName": "Kan",
-      "keywords": ["serpent", "kundalini", "life-force", "transformation", "passion"],
+      "keywords": [
+        "serpent",
+        "kundalini",
+        "life-force",
+        "transformation",
+        "passion"
+      ],
       "description": "The celestial serpent carrying vital life force. Represents kundalini energy, transformation through shedding, and primal passion.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.40,
-        "individual-collective": 0.40,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.4,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.75,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["life-force", "kundalini"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["passion", "vitality"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "life-force",
+            "kundalini"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "passion",
+            "vitality"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "nakshatra:ashlesha", "fidelity": 0.65, "note": "Serpent energy"},
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-KUKULKAN", "fidelity": 0.75, "note": "Feathered serpent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:ashlesha",
+          "fidelity": 0.65,
+          "note": "Serpent energy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-KUKULKAN",
+          "fidelity": 0.75,
+          "note": "Feathered serpent"
+        }
+      ],
+      "domains": [
+        "love",
+        "sky",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "lover",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through life-force and kundalini",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:cimi",
@@ -165,25 +380,67 @@
       "color": "White",
       "yukatekName": "Kimi",
       "kicheName": "Kame",
-      "keywords": ["death", "transformation", "ancestors", "rebirth", "surrender"],
+      "keywords": [
+        "death",
+        "transformation",
+        "ancestors",
+        "rebirth",
+        "surrender"
+      ],
       "description": "The transformer through death. Lord of Xibalba, represents endings that enable new beginnings, ancestral connection, and ego death.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.75,
         "light-shadow": 0.65,
         "active-receptive": 0.55,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.70,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.7,
         "stasis-transformation": 0.85,
-        "voluntary-fated": 0.70
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["death", "endings"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.70, "aspects": ["transformation", "rebirth"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.8,
+          "aspects": [
+            "death",
+            "endings"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.7,
+          "aspects": [
+            "transformation",
+            "rebirth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.80, "note": "Death as transformation"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:death",
+          "fidelity": 0.8,
+          "note": "Death as transformation"
+        }
+      ],
+      "domains": [
+        "death",
+        "memory"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody destroyer energy through death and endings",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:manik",
@@ -194,25 +451,66 @@
       "color": "Black",
       "yukatekName": "Manik'",
       "kicheName": "Kej",
-      "keywords": ["deer", "pilgrimage", "healing", "tools", "leadership"],
+      "keywords": [
+        "deer",
+        "pilgrimage",
+        "healing",
+        "tools",
+        "leadership"
+      ],
       "description": "The deer of the forest and healing hand. Represents pilgrimage, spiritual tools, natural authority, and the power to heal.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["healing", "tools"]},
-        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["leadership", "authority"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "healing",
+            "tools"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.55,
+          "aspects": [
+            "leadership",
+            "authority"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "nakshatra:mrigashira", "fidelity": 0.70, "note": "Deer symbolism"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:mrigashira",
+          "fidelity": 0.7,
+          "note": "Deer symbolism"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody healer energy through healing and tools",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:lamat",
@@ -223,25 +521,67 @@
       "color": "Yellow",
       "yukatekName": "Lamat",
       "kicheName": "Q'anil",
-      "keywords": ["star", "venus", "fertility", "multiplication", "harmony"],
+      "keywords": [
+        "star",
+        "venus",
+        "fertility",
+        "multiplication",
+        "harmony"
+      ],
       "description": "The star and Venus energy. Represents abundance, multiplication, artistic harmony, and the ripening of seeds into fruit.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.25,
-        "light-shadow": 0.30,
-        "active-receptive": 0.50,
+        "light-shadow": 0.3,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["abundance", "harmony"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["venus", "fertility"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.75,
+          "aspects": [
+            "abundance",
+            "harmony"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "venus",
+            "fertility"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "astro:venus", "fidelity": 0.70, "note": "Venus association"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astro:venus",
+          "fidelity": 0.7,
+          "note": "Venus association"
+        }
+      ],
+      "domains": [
+        "fertility",
+        "music",
+        "peace"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody creator energy through abundance and harmony",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:muluc",
@@ -252,25 +592,67 @@
       "color": "Red",
       "yukatekName": "Muluk",
       "kicheName": "Toj",
-      "keywords": ["water", "moon", "offering", "purification", "emotions"],
+      "keywords": [
+        "water",
+        "moon",
+        "offering",
+        "purification",
+        "emotions"
+      ],
       "description": "Sacred water and moon energy. Represents emotional depth, offerings to spirit, purification, and the power of gratitude.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.35,
         "light-shadow": 0.45,
         "active-receptive": 0.65,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["water", "emotions"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["purification", "offering"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.7,
+          "aspects": [
+            "water",
+            "emotions"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "purification",
+            "offering"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "goddess:mother", "fidelity": 0.60, "note": "Lunar feminine"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother",
+          "fidelity": 0.6,
+          "note": "Lunar feminine"
+        }
+      ],
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody great mother energy through water and emotions",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:oc",
@@ -281,25 +663,68 @@
       "color": "White",
       "yukatekName": "Ok",
       "kicheName": "Tz'i'",
-      "keywords": ["dog", "loyalty", "guidance", "law", "underworld-guide"],
+      "keywords": [
+        "dog",
+        "loyalty",
+        "guidance",
+        "law",
+        "underworld-guide"
+      ],
       "description": "The faithful dog who guides through the underworld. Represents loyalty, divine law, justice, and the guide through darkness.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
-        "active-receptive": 0.50,
-        "individual-collective": 0.60,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
+        "individual-collective": 0.6,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.80, "aspects": ["guide", "underworld"]},
-        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["loyalty", "law"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.8,
+          "aspects": [
+            "guide",
+            "underworld"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "loyalty",
+            "law"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:EG-ANUBIS", "fidelity": 0.70, "note": "Underworld guide"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-ANUBIS",
+          "fidelity": 0.7,
+          "note": "Underworld guide"
+        }
+      ],
+      "domains": [
+        "death",
+        "justice",
+        "underworld"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through guide and underworld",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:chuen",
@@ -310,25 +735,67 @@
       "color": "Black",
       "yukatekName": "Chuwen",
       "kicheName": "B'atz'",
-      "keywords": ["monkey", "artistry", "weaving", "time", "creativity"],
+      "keywords": [
+        "monkey",
+        "artistry",
+        "weaving",
+        "time",
+        "creativity"
+      ],
       "description": "The divine artisan and weaver of time. Represents creativity, the arts, playfulness, and the thread of life being woven.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.40,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.4,
         "active-receptive": 0.35,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["artistry", "weaving"]},
-        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["playfulness", "mischief"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.8,
+          "aspects": [
+            "artistry",
+            "weaving"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.7,
+          "aspects": [
+            "playfulness",
+            "mischief"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-HANUMAN", "fidelity": 0.55, "note": "Monkey deity"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-HANUMAN",
+          "fidelity": 0.55,
+          "note": "Monkey deity"
+        }
+      ],
+      "domains": [
+        "crafts",
+        "time"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody creator energy through artistry and weaving",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:eb",
@@ -339,25 +806,67 @@
       "color": "Yellow",
       "yukatekName": "Eb'",
       "kicheName": "E",
-      "keywords": ["road", "destiny", "steps", "journey", "path"],
+      "keywords": [
+        "road",
+        "destiny",
+        "steps",
+        "journey",
+        "path"
+      ],
       "description": "The sacred road and life path. Represents destiny, the steps of one's journey, and the unfolding of personal fate.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
         "active-receptive": 0.45,
         "individual-collective": 0.45,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["journey", "path"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["road", "guidance"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "journey",
+            "path"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.55,
+          "aspects": [
+            "road",
+            "guidance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:road_of_trials", "fidelity": 0.75, "note": "Journey path"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:road_of_trials",
+          "fidelity": 0.75,
+          "note": "Journey path"
+        }
+      ],
+      "domains": [
+        "fate",
+        "travel"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "threshold-guardian",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through journey and path",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:ben",
@@ -368,25 +877,68 @@
       "color": "Red",
       "yukatekName": "B'en",
       "kicheName": "Aj",
-      "keywords": ["reed", "authority", "home", "family", "pillars"],
+      "keywords": [
+        "reed",
+        "authority",
+        "home",
+        "family",
+        "pillars"
+      ],
       "description": "The reed staff of authority and the pillar of the home. Represents family leadership, the axis mundi, and growth toward heaven.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.65,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:great-father", "weight": 0.75, "aspects": ["authority", "family"]},
-        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["home", "pillar"]}
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.75,
+          "aspects": [
+            "authority",
+            "family"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "home",
+            "pillar"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "celtic_tree:reed", "fidelity": 0.60, "note": "Reed symbolism"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:reed",
+          "fidelity": 0.6,
+          "note": "Reed symbolism"
+        }
+      ],
+      "domains": [
+        "family",
+        "home",
+        "sky"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through authority and family",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:ix",
@@ -397,25 +949,67 @@
       "color": "White",
       "yukatekName": "Ix",
       "kicheName": "I'x",
-      "keywords": ["jaguar", "shaman", "feminine-power", "magic", "earth"],
+      "keywords": [
+        "jaguar",
+        "shaman",
+        "feminine-power",
+        "magic",
+        "earth"
+      ],
       "description": "The jaguar shaman and earth goddess. Represents feminine mystical power, shamanic vision, and the guardian of sacred places.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
         "active-receptive": 0.55,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.60,
-        "stasis-transformation": 0.60,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["shaman", "magic"]},
-        {"primordial": "primordial:great-mother", "weight": 0.60, "aspects": ["earth", "feminine-power"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.85,
+          "aspects": [
+            "shaman",
+            "magic"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.6,
+          "aspects": [
+            "earth",
+            "feminine-power"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "goddess:crone-sorceress", "fidelity": 0.65, "note": "Shamanic feminine"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:crone-sorceress",
+          "fidelity": 0.65,
+          "note": "Shamanic feminine"
+        }
+      ],
+      "domains": [
+        "earth",
+        "protection"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through shaman and magic",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tzolkin:men",
@@ -426,12 +1020,18 @@
       "color": "Black",
       "yukatekName": "Men",
       "kicheName": "Tz'ikin",
-      "keywords": ["eagle", "vision", "freedom", "aspiration", "messenger"],
+      "keywords": [
+        "eagle",
+        "vision",
+        "freedom",
+        "aspiration",
+        "messenger"
+      ],
       "description": "The eagle soaring to heaven. Represents higher vision, spiritual aspiration, freedom, and messages from the divine.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
         "individual-collective": 0.35,
         "ascent-descent": 0.25,
@@ -439,12 +1039,47 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["aspiration", "freedom"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["vision", "messenger"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "aspiration",
+            "freedom"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "vision",
+            "messenger"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.55, "note": "Eagle of Zeus"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.55,
+          "note": "Eagle of Zeus"
+        }
+      ],
+      "domains": [
+        "sky"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through aspiration and freedom",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:cib",
@@ -455,25 +1090,65 @@
       "color": "Yellow",
       "yukatekName": "Kib'",
       "kicheName": "Ajmaq",
-      "keywords": ["vulture", "ancestors", "forgiveness", "karma", "wisdom"],
+      "keywords": [
+        "vulture",
+        "ancestors",
+        "forgiveness",
+        "karma",
+        "wisdom"
+      ],
       "description": "The vulture who sees all and cleanses. Represents ancestral wisdom, forgiveness, karmic balance, and the clearing of old debts.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.55,
         "light-shadow": 0.55,
         "active-receptive": 0.55,
         "individual-collective": 0.65,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:ancestor", "weight": 0.80, "aspects": ["ancestors", "wisdom"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["forgiveness", "cleansing"]}
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.8,
+          "aspects": [
+            "ancestors",
+            "wisdom"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "forgiveness",
+            "cleansing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:EG-NEKHBET", "fidelity": 0.55, "note": "Vulture deity"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-NEKHBET",
+          "fidelity": 0.55,
+          "note": "Vulture deity"
+        }
+      ],
+      "domains": [
+        "memory",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "healer"
+      ],
+      "coreFunction": "To embody ancestor energy through ancestors and wisdom",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:caban",
@@ -484,25 +1159,67 @@
       "color": "Red",
       "yukatekName": "Kab'an",
       "kicheName": "No'j",
-      "keywords": ["earth", "intelligence", "thought", "knowledge", "evolution"],
+      "keywords": [
+        "earth",
+        "intelligence",
+        "thought",
+        "knowledge",
+        "evolution"
+      ],
       "description": "Earth force and evolved thought. Represents intellect, earth wisdom, evolutionary knowledge, and the power of ideas.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["knowledge", "intelligence"]},
-        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["earth", "grounding"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "knowledge",
+            "intelligence"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.55,
+          "aspects": [
+            "earth",
+            "grounding"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.65, "note": "Wisdom seeker"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:sage",
+          "fidelity": 0.65,
+          "note": "Wisdom seeker"
+        }
+      ],
+      "domains": [
+        "earth",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through knowledge and intelligence",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:etznab",
@@ -513,25 +1230,66 @@
       "color": "White",
       "yukatekName": "Etz'nab'",
       "kicheName": "Tijax",
-      "keywords": ["flint", "truth", "sacrifice", "mirror", "clarity"],
+      "keywords": [
+        "flint",
+        "truth",
+        "sacrifice",
+        "mirror",
+        "clarity"
+      ],
       "description": "The obsidian mirror and flint knife of truth. Represents clarity, cutting through illusion, self-reflection, and necessary sacrifice.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.60,
+        "creation-destruction": 0.6,
         "light-shadow": 0.45,
         "active-receptive": 0.35,
         "individual-collective": 0.35,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["cutting", "sacrifice"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["mirror", "truth"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "cutting",
+            "sacrifice"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "mirror",
+            "truth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-TEZCATLIPOCA", "fidelity": 0.70, "note": "Smoking mirror"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TEZCATLIPOCA",
+          "fidelity": 0.7,
+          "note": "Smoking mirror"
+        }
+      ],
+      "domains": [
+        "sacrifice"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through cutting and sacrifice",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:cauac",
@@ -542,25 +1300,67 @@
       "color": "Black",
       "yukatekName": "Kawak",
       "kicheName": "Kawoq",
-      "keywords": ["storm", "healing", "community", "thunder", "transformation"],
+      "keywords": [
+        "storm",
+        "healing",
+        "community",
+        "thunder",
+        "transformation"
+      ],
       "description": "The thunder and storm that brings rain. Represents healing through crisis, community support, and the cleansing power of storms.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
         "creation-destruction": 0.55,
-        "light-shadow": 0.50,
+        "light-shadow": 0.5,
         "active-receptive": 0.45,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.70,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.7,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["storm", "crisis"]},
-        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["rain", "community-healing"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.7,
+          "aspects": [
+            "storm",
+            "crisis"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.65,
+          "aspects": [
+            "rain",
+            "community-healing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-CHAAK", "fidelity": 0.80, "note": "Rain deity"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-CHAAK",
+          "fidelity": 0.8,
+          "note": "Rain deity"
+        }
+      ],
+      "domains": [
+        "air",
+        "healing",
+        "water"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "healer"
+      ],
+      "coreFunction": "To embody destroyer energy through storm and crisis",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tzolkin:ahau",
@@ -571,42 +1371,132 @@
       "color": "Yellow",
       "yukatekName": "Ajaw",
       "kicheName": "Ajpu",
-      "keywords": ["sun", "lord", "enlightenment", "mastery", "completion"],
+      "keywords": [
+        "sun",
+        "lord",
+        "enlightenment",
+        "mastery",
+        "completion"
+      ],
       "description": "The sun lord and master of light. Represents enlightenment, spiritual mastery, completion, and the heroic twins who defeated death.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
-        "light-shadow": 0.20,
+        "light-shadow": 0.2,
         "active-receptive": 0.35,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.30,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.3,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.85, "aspects": ["mastery", "victory"]},
-        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["lord", "enlightenment"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.85,
+          "aspects": [
+            "mastery",
+            "victory"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.75,
+          "aspects": [
+            "lord",
+            "enlightenment"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:MA-KINICH-AHAU", "fidelity": 0.85, "note": "Sun lord"},
-        {"type": "EVOLUTION", "target": "tzolkin:imix", "note": "Cycle completes and restarts"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-KINICH-AHAU",
+          "fidelity": 0.85,
+          "note": "Sun lord"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "tzolkin:imix",
+          "note": "Cycle completes and restarts"
+        }
+      ],
+      "domains": [
+        "death"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through mastery and victory",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
     "directionalGroups": {
-      "east_red": ["imix", "chicchan", "muluc", "ben", "caban"],
-      "north_white": ["ik", "cimi", "oc", "ix", "etznab"],
-      "west_black": ["akbal", "manik", "chuen", "men", "cauac"],
-      "south_yellow": ["kan", "lamat", "eb", "cib", "ahau"]
+      "east_red": [
+        "imix",
+        "chicchan",
+        "muluc",
+        "ben",
+        "caban"
+      ],
+      "north_white": [
+        "ik",
+        "cimi",
+        "oc",
+        "ix",
+        "etznab"
+      ],
+      "west_black": [
+        "akbal",
+        "manik",
+        "chuen",
+        "men",
+        "cauac"
+      ],
+      "south_yellow": [
+        "kan",
+        "lamat",
+        "eb",
+        "cib",
+        "ahau"
+      ]
     },
     "polarities": {
-      "yang_active": ["ik", "chicchan", "cimi", "chuen", "men", "etznab", "ahau"],
-      "yin_receptive": ["imix", "akbal", "kan", "manik", "lamat", "muluc", "oc", "eb", "ben", "ix", "cib", "caban", "cauac"]
+      "yang_active": [
+        "ik",
+        "chicchan",
+        "cimi",
+        "chuen",
+        "men",
+        "etznab",
+        "ahau"
+      ],
+      "yin_receptive": [
+        "imix",
+        "akbal",
+        "kan",
+        "manik",
+        "lamat",
+        "muluc",
+        "oc",
+        "eb",
+        "ben",
+        "ix",
+        "cib",
+        "caban",
+        "cauac"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

@@ -18,7 +18,6 @@
     "Organized into nations (nanchon) with distinct temperaments",
     "Emphasis on reciprocal relationship between humans and spirits"
   ],
-
   "entries": [
     {
       "@id": "arch:VO-LEGBA",
@@ -28,29 +27,98 @@
       "belongsToSystem": "system:vodou",
       "description": "Guardian of the crossroads, opener of the gate between worlds. Must be saluted first in any ceremony. Old man with a cane and straw hat who speaks all languages.",
       "aliases": [
-        {"name": "Elegua", "system": "Santeria", "fidelity": 0.85},
-        {"name": "Eshu", "system": "Yoruba", "fidelity": 0.80}
+        {
+          "name": "Elegua",
+          "system": "Santeria",
+          "fidelity": 0.85
+        },
+        {
+          "name": "Eshu",
+          "system": "Yoruba",
+          "fidelity": 0.8
+        }
       ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.40,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.50,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.4,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.90, "aspects": ["gate-keeper", "between-worlds", "crossroads"]},
-        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["communicator", "translator", "boundary-crosser"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.9,
+          "aspects": [
+            "gate-keeper",
+            "between-worlds",
+            "crossroads"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.7,
+          "aspects": [
+            "communicator",
+            "translator",
+            "boundary-crosser"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.75, "notes": "Crossroads, messenger function"},
-        {"type": "CULTURAL_ECHO", "target": "arch:AFY-ESHU", "fidelity": 0.85, "notes": "Direct Yoruba origin"},
-        {"type": "POLAR_OPPOSITE", "target": "arch:VO-BARON-SAMEDI", "axis": "creation-destruction", "notes": "Entrance vs exit"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.75,
+          "notes": "Crossroads, messenger function"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AFY-ESHU",
+          "fidelity": 0.85,
+          "notes": "Direct Yoruba origin"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:VO-BARON-SAMEDI",
+          "axis": "creation-destruction",
+          "notes": "Entrance vs exit"
+        }
       ],
-      "syncreticCorrespondence": "St. Peter (holds keys), St. Lazarus"
+      "syncreticCorrespondence": "St. Peter (holds keys), St. Lazarus",
+      "domains": [
+        "initiation",
+        "protection"
+      ],
+      "keywords": [
+        "between",
+        "cane",
+        "ceremony",
+        "crossroads",
+        "first",
+        "gate",
+        "guardian",
+        "initiation",
+        "languages",
+        "legba"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "shapeshifter",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody psychopomp energy through gate-keeper and between-worlds",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-DAMBALLAH",
@@ -60,28 +128,92 @@
       "belongsToSystem": "system:vodou",
       "description": "The Great Serpent, primordial creator who arches across the sky as a rainbow. Father of all Loa. Associated with wisdom, purity, and the waters above.",
       "aliases": [
-        {"name": "Damballa", "system": "variant", "fidelity": 0.95},
-        {"name": "Dan", "system": "Fon/Dahomey", "fidelity": 0.85}
+        {
+          "name": "Damballa",
+          "system": "variant",
+          "fidelity": 0.95
+        },
+        {
+          "name": "Dan",
+          "system": "Fon/Dahomey",
+          "fidelity": 0.85
+        }
       ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.15,
         "light-shadow": 0.15,
-        "active-receptive": 0.60,
-        "individual-collective": 0.80,
-        "ascent-descent": 0.20,
-        "stasis-transformation": 0.30,
-        "voluntary-fated": 0.60
+        "active-receptive": 0.6,
+        "individual-collective": 0.8,
+        "ascent-descent": 0.2,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.85, "aspects": ["primordial-serpent", "sky-father", "cosmic-order"]},
-        {"primordial": "primordial:great-father", "weight": 0.75, "aspects": ["father-of-loa", "wisdom", "purity"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.85,
+          "aspects": [
+            "primordial-serpent",
+            "sky-father",
+            "cosmic-order"
+          ]
+        },
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.75,
+          "aspects": [
+            "father-of-loa",
+            "wisdom",
+            "purity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-AYIDA-WEDO", "notes": "Husband and wife, rainbow pair"},
-        {"type": "CULTURAL_ECHO", "target": "arch:AU-RAINBOW-SERPENT", "fidelity": 0.55, "notes": "Rainbow serpent archetype"}
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-AYIDA-WEDO",
+          "notes": "Husband and wife, rainbow pair"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-RAINBOW-SERPENT",
+          "fidelity": 0.55,
+          "notes": "Rainbow serpent archetype"
+        }
       ],
-      "syncreticCorrespondence": "St. Patrick, Moses"
+      "syncreticCorrespondence": "St. Patrick, Moses",
+      "domains": [
+        "creation",
+        "fatherhood",
+        "sky",
+        "wisdom"
+      ],
+      "keywords": [
+        "above",
+        "across",
+        "arches",
+        "associated",
+        "creation",
+        "creator",
+        "damballah",
+        "damballah wedo",
+        "father",
+        "fatherhood"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through primordial-serpent and sky-father",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-AYIDA-WEDO",
@@ -91,23 +223,70 @@
       "belongsToSystem": "system:vodou",
       "description": "The Rainbow Serpent, wife of Damballah. Represents wealth, fertility, and the rainbow. Mother of the Loa. Associated with fidelity and cosmic feminine principle.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.20,
-        "light-shadow": 0.20,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.2,
+        "light-shadow": 0.2,
         "active-receptive": 0.75,
-        "individual-collective": 0.80,
+        "individual-collective": 0.8,
         "ascent-descent": 0.25,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["cosmic-feminine", "fertility", "wealth"]},
-        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["rainbow", "abundance"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.85,
+          "aspects": [
+            "cosmic-feminine",
+            "fertility",
+            "wealth"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.65,
+          "aspects": [
+            "rainbow",
+            "abundance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-DAMBALLAH", "notes": "Divine pair"}
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-DAMBALLAH",
+          "notes": "Divine pair"
+        }
       ],
-      "syncreticCorrespondence": "Our Lady of the Immaculate Conception"
+      "syncreticCorrespondence": "Our Lady of the Immaculate Conception",
+      "domains": [
+        "fertility",
+        "motherhood"
+      ],
+      "keywords": [
+        "associated",
+        "ayida",
+        "ayida wedo",
+        "cosmic",
+        "creator",
+        "damballah",
+        "feminine",
+        "fertility",
+        "fidelity",
+        "great mother"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through cosmic-feminine and fertility",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-OGOU",
@@ -117,29 +296,98 @@
       "belongsToSystem": "system:vodou",
       "description": "The Warrior Loa, lord of iron, fire, war, and politics. Fierce protector of the people. Associated with revolution and the Haitian independence movement.",
       "aliases": [
-        {"name": "Ogun", "system": "Yoruba", "fidelity": 0.85},
-        {"name": "Ogum", "system": "Candomble", "fidelity": 0.85}
+        {
+          "name": "Ogun",
+          "system": "Yoruba",
+          "fidelity": 0.85
+        },
+        {
+          "name": "Ogum",
+          "system": "Candomble",
+          "fidelity": 0.85
+        }
       ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.65,
-        "light-shadow": 0.40,
-        "active-receptive": 0.10,
+        "light-shadow": 0.4,
+        "active-receptive": 0.1,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.95, "aspects": ["iron", "war", "fire", "protection"]},
-        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["blacksmith", "civilization-builder"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.95,
+          "aspects": [
+            "iron",
+            "war",
+            "fire",
+            "protection"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.55,
+          "aspects": [
+            "blacksmith",
+            "civilization-builder"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:AF-OGUN", "fidelity": 0.90, "notes": "Direct Yoruba origin"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARES", "fidelity": 0.60, "notes": "War god parallel"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HEPHAESTUS", "fidelity": 0.55, "notes": "Forge/iron parallel"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OGUN",
+          "fidelity": 0.9,
+          "notes": "Direct Yoruba origin"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ARES",
+          "fidelity": 0.6,
+          "notes": "War god parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HEPHAESTUS",
+          "fidelity": 0.55,
+          "notes": "Forge/iron parallel"
+        }
       ],
-      "syncreticCorrespondence": "St. James the Greater, St. George"
+      "syncreticCorrespondence": "St. James the Greater, St. George",
+      "domains": [
+        "dance",
+        "fire",
+        "war"
+      ],
+      "keywords": [
+        "associated",
+        "creator",
+        "dance",
+        "feray",
+        "fierce",
+        "fire",
+        "haitian",
+        "independence",
+        "iron",
+        "lord"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through iron and war",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-ERZULIE-FREDA",
@@ -149,25 +397,84 @@
       "belongsToSystem": "system:vodou",
       "description": "The Loa of love, beauty, luxury, and dreams. Flirtatious, demanding, and perpetually heartbroken. Embodies romantic love, femininity, and the longing for the unattainable.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.55,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.95, "aspects": ["romance", "beauty", "desire", "luxury"]},
-        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["feminine-ideal", "unattainable-beloved"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.95,
+          "aspects": [
+            "romance",
+            "beauty",
+            "desire",
+            "luxury"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.65,
+          "aspects": [
+            "feminine-ideal",
+            "unattainable-beloved"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "arch:VO-ERZULIE-DANTOR", "axis": "light-shadow", "notes": "Light vs dark feminine"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.70, "notes": "Love goddess parallel"},
-        {"type": "CULTURAL_ECHO", "target": "arch:AF-OSHUN", "fidelity": 0.75, "notes": "Yoruba river goddess of love"}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:VO-ERZULIE-DANTOR",
+          "axis": "light-shadow",
+          "notes": "Light vs dark feminine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.7,
+          "notes": "Love goddess parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSHUN",
+          "fidelity": 0.75,
+          "notes": "Yoruba river goddess of love"
+        }
       ],
-      "syncreticCorrespondence": "Our Lady of Sorrows, Mater Dolorosa"
+      "syncreticCorrespondence": "Our Lady of Sorrows, Mater Dolorosa",
+      "domains": [
+        "love"
+      ],
+      "keywords": [
+        "beauty",
+        "demanding",
+        "dreams",
+        "embodies",
+        "erzulie",
+        "erzulie freda",
+        "femininity",
+        "flirtatious",
+        "freda",
+        "heartbroken"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "innocent",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through romance and beauty",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-ERZULIE-DANTOR",
@@ -179,22 +486,77 @@
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.55,
-        "light-shadow": 0.60,
-        "active-receptive": 0.30,
+        "light-shadow": 0.6,
+        "active-receptive": 0.3,
         "individual-collective": 0.55,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["fierce-protector", "single-mother", "defender"]},
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["vengeance", "protection"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.85,
+          "aspects": [
+            "fierce-protector",
+            "single-mother",
+            "defender"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "vengeance",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "arch:VO-ERZULIE-FREDA", "axis": "light-shadow", "notes": "Dark vs light Erzulie"},
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-KALI", "fidelity": 0.55, "notes": "Fierce mother goddess"}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:VO-ERZULIE-FREDA",
+          "axis": "light-shadow",
+          "notes": "Dark vs light Erzulie"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-KALI",
+          "fidelity": 0.55,
+          "notes": "Fierce mother goddess"
+        }
       ],
-      "syncreticCorrespondence": "Our Lady of Czestochowa (Black Madonna)"
+      "syncreticCorrespondence": "Our Lady of Czestochowa (Black Madonna)",
+      "domains": [
+        "childhood",
+        "motherhood"
+      ],
+      "keywords": [
+        "archetype",
+        "black",
+        "childhood",
+        "children",
+        "dantor",
+        "erzulie",
+        "erzulie dantor",
+        "fierce",
+        "fiercely",
+        "great mother"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody great mother energy through fierce-protector and single-mother",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-BARON-SAMEDI",
@@ -204,25 +566,86 @@
       "belongsToSystem": "system:vodou",
       "description": "Lord of the Dead, master of the cemetery. Wears top hat, tails, and dark glasses. Obscene, humorous, and transgressive. Guardian of the transition between life and death.",
       "spectralCoordinates": {
-        "order-chaos": 0.70,
+        "order-chaos": 0.7,
         "creation-destruction": 0.65,
         "light-shadow": 0.75,
         "active-receptive": 0.35,
         "individual-collective": 0.55,
         "ascent-descent": 0.85,
-        "stasis-transformation": 0.70,
-        "voluntary-fated": 0.60
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["death-lord", "cemetery-guardian", "transition"]},
-        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["obscenity", "humor", "transgression"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.85,
+          "aspects": [
+            "death-lord",
+            "cemetery-guardian",
+            "transition"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "obscenity",
+            "humor",
+            "transgression"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-MAMAN-BRIGITTE", "notes": "Lord and Lady of the Dead"},
-        {"type": "POLAR_OPPOSITE", "target": "arch:VO-LEGBA", "axis": "creation-destruction", "notes": "Exit vs entrance"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HADES", "fidelity": 0.55, "notes": "Death lord parallel"}
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-MAMAN-BRIGITTE",
+          "notes": "Lord and Lady of the Dead"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:VO-LEGBA",
+          "axis": "creation-destruction",
+          "notes": "Exit vs entrance"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HADES",
+          "fidelity": 0.55,
+          "notes": "Death lord parallel"
+        }
       ],
-      "syncreticCorrespondence": "St. Martin de Porres"
+      "syncreticCorrespondence": "St. Martin de Porres",
+      "domains": [
+        "death",
+        "protection",
+        "threshold"
+      ],
+      "keywords": [
+        "baron",
+        "baron samedi",
+        "between",
+        "cemetery",
+        "dark",
+        "dead",
+        "death",
+        "glasses",
+        "guardian",
+        "humorous"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "shapeshifter",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody psychopomp energy through death-lord and cemetery-guardian",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-MAMAN-BRIGITTE",
@@ -233,23 +656,75 @@
       "description": "Wife of Baron Samedi, queen of the Ghede. Fierce, foul-mouthed, and protective. Guards the first female grave in every cemetery. Associated with justice for women.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
-        "creation-destruction": 0.60,
-        "light-shadow": 0.70,
+        "creation-destruction": 0.6,
+        "light-shadow": 0.7,
         "active-receptive": 0.35,
         "individual-collective": 0.55,
-        "ascent-descent": 0.80,
+        "ascent-descent": 0.8,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.85, "aspects": ["death-wisdom", "cemetery-queen"]},
-        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["justice", "protection-of-women"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.85,
+          "aspects": [
+            "death-wisdom",
+            "cemetery-queen"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.6,
+          "aspects": [
+            "justice",
+            "protection-of-women"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-BARON-SAMEDI", "notes": "Divine death couple"},
-        {"type": "CULTURAL_ECHO", "target": "arch:CE-BRIGID", "fidelity": 0.50, "notes": "Celtic Brigid connection"}
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-BARON-SAMEDI",
+          "notes": "Divine death couple"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.5,
+          "notes": "Celtic Brigid connection"
+        }
       ],
-      "syncreticCorrespondence": "St. Brigid of Ireland"
+      "syncreticCorrespondence": "St. Brigid of Ireland",
+      "domains": [
+        "justice",
+        "sovereignty"
+      ],
+      "keywords": [
+        "associated",
+        "baron",
+        "brigitte",
+        "cemetery",
+        "crone",
+        "every",
+        "female",
+        "fierce",
+        "first",
+        "foul"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage",
+        "warrior"
+      ],
+      "coreFunction": "To embody crone energy through death-wisdom and cemetery-queen",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-GHEDE-NIBO",
@@ -259,22 +734,69 @@
       "belongsToSystem": "system:vodou",
       "description": "Spirit of the dead who died young. Patron of those who died violently or before their time. Helps souls who cannot find their way to Ginen (ancestral realm).",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.55,
         "light-shadow": 0.65,
         "active-receptive": 0.45,
-        "individual-collective": 0.60,
+        "individual-collective": 0.6,
         "ascent-descent": 0.75,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.70
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.80, "aspects": ["guide-of-lost-souls", "young-dead"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["helping-transition", "healing-grief"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.8,
+          "aspects": [
+            "guide-of-lost-souls",
+            "young-dead"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "helping-transition",
+            "healing-grief"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-BARON-SAMEDI", "notes": "Part of Ghede family"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-BARON-SAMEDI",
+          "notes": "Part of Ghede family"
+        }
+      ],
+      "domains": [
+        "memory",
+        "time"
+      ],
+      "keywords": [
+        "ancestral",
+        "before",
+        "cannot",
+        "dead",
+        "died",
+        "find",
+        "ghede",
+        "ghede nibo",
+        "ginen",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through guide-of-lost-souls and young-dead",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:VO-AGWE",
@@ -285,24 +807,82 @@
       "description": "Sovereign of the seas, king of the ocean. Protector of sailors and fishermen. Commands ships and rules over all that lives in the water. Associated with the middle passage.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.50,
+        "creation-destruction": 0.5,
         "light-shadow": 0.45,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.65,
-        "ascent-descent": 0.60,
-        "stasis-transformation": 0.50,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["sea-king", "naval-commander"]},
-        {"primordial": "primordial:great-father", "weight": 0.60, "aspects": ["protector-of-sailors", "depth"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "sea-king",
+            "naval-commander"
+          ]
+        },
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.6,
+          "aspects": [
+            "protector-of-sailors",
+            "depth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-LA-SIRENE", "notes": "King and Queen of the sea"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-POSEIDON", "fidelity": 0.65, "notes": "Sea god parallel"},
-        {"type": "CULTURAL_ECHO", "target": "arch:AF-OLOKUN", "fidelity": 0.70, "notes": "Yoruba ocean deity"}
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-LA-SIRENE",
+          "notes": "King and Queen of the sea"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-POSEIDON",
+          "fidelity": 0.65,
+          "notes": "Sea god parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OLOKUN",
+          "fidelity": 0.7,
+          "notes": "Yoruba ocean deity"
+        }
       ],
-      "syncreticCorrespondence": "St. Ulrich"
+      "syncreticCorrespondence": "St. Ulrich",
+      "domains": [
+        "initiation",
+        "sea",
+        "sovereignty",
+        "water"
+      ],
+      "keywords": [
+        "agwe",
+        "associated",
+        "commands",
+        "fishermen",
+        "great father",
+        "initiation",
+        "king",
+        "lives",
+        "middle",
+        "ocean"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through sea-king and naval-commander",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:VO-LA-SIRENE",
@@ -312,24 +892,80 @@
       "belongsToSystem": "system:vodou",
       "description": "The Mermaid, queen of the ocean depths. Embodies the mysteries of the deep, music, and dreams. Those she takes beneath the water return with gifts of prophecy.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
         "light-shadow": 0.55,
-        "active-receptive": 0.70,
+        "active-receptive": 0.7,
         "individual-collective": 0.65,
-        "ascent-descent": 0.70,
+        "ascent-descent": 0.7,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["ocean-mother", "mystery"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["prophecy", "dreams", "music"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.7,
+          "aspects": [
+            "ocean-mother",
+            "mystery"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "prophecy",
+            "dreams",
+            "music"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-AGWE", "notes": "Royal sea couple"},
-        {"type": "CULTURAL_ECHO", "target": "arch:AF-YEMOJA", "fidelity": 0.70, "notes": "Yoruba ocean mother"}
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-AGWE",
+          "notes": "Royal sea couple"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-YEMOJA",
+          "fidelity": 0.7,
+          "notes": "Yoruba ocean mother"
+        }
       ],
-      "syncreticCorrespondence": "Our Lady Star of the Sea"
+      "syncreticCorrespondence": "Our Lady Star of the Sea",
+      "domains": [
+        "music",
+        "prophecy",
+        "sea",
+        "sovereignty",
+        "water"
+      ],
+      "keywords": [
+        "beneath",
+        "deep",
+        "depths",
+        "dreams",
+        "embodies",
+        "gifts",
+        "great mother",
+        "la sirene",
+        "magician",
+        "mermaid"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody great mother energy through ocean-mother and mystery",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:VO-SIMBI",
@@ -342,19 +978,69 @@
         "order-chaos": 0.55,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.45,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["sorcery", "herbalism", "secret-knowledge"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["serpent", "hidden-waters"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.85,
+          "aspects": [
+            "sorcery",
+            "herbalism",
+            "secret-knowledge"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "serpent",
+            "hidden-waters"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-DAMBALLAH", "notes": "Both serpent Loa"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-DAMBALLAH",
+          "notes": "Both serpent Loa"
+        }
+      ],
+      "domains": [
+        "protection",
+        "sea",
+        "water",
+        "wisdom"
+      ],
+      "keywords": [
+        "associated",
+        "fresh",
+        "guardian",
+        "herbalism",
+        "knowledge",
+        "magic",
+        "magician",
+        "marshes",
+        "ponds",
+        "protection"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody magician energy through sorcery and herbalism",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-LOKO",
@@ -364,22 +1050,71 @@
       "belongsToSystem": "system:vodou",
       "description": "Loa of vegetation, trees, and healing herbs. First houngan (priest). Associated with the center post of the temple (poteau mitan) and priestly authority.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
         "individual-collective": 0.65,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.85, "aspects": ["herbs", "medicine", "healing"]},
-        {"primordial": "primordial:wise-elder", "weight": 0.70, "aspects": ["priest", "tradition", "knowledge"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.85,
+          "aspects": [
+            "herbs",
+            "medicine",
+            "healing"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.7,
+          "aspects": [
+            "priest",
+            "tradition",
+            "knowledge"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-AYIZAN", "notes": "First priest and priestess pair"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-AYIZAN",
+          "notes": "First priest and priestess pair"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "keywords": [
+        "associated",
+        "atisou",
+        "authority",
+        "center",
+        "first",
+        "healer",
+        "healing",
+        "herbs",
+        "houngan",
+        "loko"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody healer energy through herbs and medicine",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:VO-AYIZAN",
@@ -391,20 +1126,69 @@
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
-        "active-receptive": 0.60,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.40,
+        "light-shadow": 0.3,
+        "active-receptive": 0.6,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["priestess", "initiation", "secrets"]},
-        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["tradition-keeper", "guardian"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.8,
+          "aspects": [
+            "priestess",
+            "initiation",
+            "secrets"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "tradition-keeper",
+            "guardian"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "arch:VO-LOKO", "notes": "First religious couple"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-LOKO",
+          "notes": "First religious couple"
+        }
+      ],
+      "domains": [
+        "commerce",
+        "protection"
+      ],
+      "keywords": [
+        "ayizan",
+        "center",
+        "commerce",
+        "first",
+        "guardian",
+        "initiates",
+        "loko",
+        "mambo",
+        "markets",
+        "patron"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "mentor",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody wise elder energy through priestess and initiation",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:VO-MARASA",
@@ -414,22 +1198,63 @@
       "belongsToSystem": "system:vodou",
       "description": "The Sacred Twins, divine children who embody duality and multiplicity. Fed before all other Loa at feasts. Represent mystery of twinship and cosmic balance.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
-        "active-receptive": 0.50,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:twin", "weight": 0.95, "aspects": ["duality", "balance", "mystery"]},
-        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["sacred-children", "innocence"]}
+        {
+          "primordial": "primordial:twin",
+          "weight": 0.95,
+          "aspects": [
+            "duality",
+            "balance",
+            "mystery"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.75,
+          "aspects": [
+            "sacred-children",
+            "innocence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:AF-IBEJI", "fidelity": 0.85, "notes": "Yoruba sacred twins"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-IBEJI",
+          "fidelity": 0.85,
+          "notes": "Yoruba sacred twins"
+        }
+      ],
+      "domains": [
+        "childhood"
+      ],
+      "keywords": [
+        "balance",
+        "before",
+        "childhood",
+        "children",
+        "cosmic",
+        "divine",
+        "divine child",
+        "duality",
+        "embody",
+        "feasts"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody twin energy through duality and balance",
+      "symbolicCore": "The childhood that transforms through Marasa's essence"
     },
     {
       "@id": "arch:VO-DANBALA-LA-FLAMBEAU",
@@ -442,19 +1267,64 @@
         "order-chaos": 0.55,
         "creation-destruction": 0.55,
         "light-shadow": 0.45,
-        "active-receptive": 0.30,
+        "active-receptive": 0.3,
         "individual-collective": 0.65,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["fire-serpent", "transformation"]},
-        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["lightning", "fierce-change"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "fire-serpent",
+            "transformation"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.55,
+          "aspects": [
+            "lightning",
+            "fierce-change"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "arch:VO-DAMBALLAH", "notes": "Hot Petro form of cool Rada Damballah"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "arch:VO-DAMBALLAH",
+          "notes": "Hot Petro form of cool Rada Damballah"
+        }
+      ],
+      "domains": [
+        "fire"
+      ],
+      "keywords": [
+        "aggressive",
+        "aspect",
+        "associated",
+        "cool",
+        "creator",
+        "damballah",
+        "danbala",
+        "danbala la flambeau",
+        "destroyer",
+        "energy"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer"
+      ],
+      "coreFunction": "To embody creator energy through fire-serpent and transformation",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:VO-EZILI-JE-ROUGE",
@@ -464,22 +1334,68 @@
       "belongsToSystem": "system:vodou",
       "description": "Erzulie Red-Eyes, the Petro aspect of Erzulie. Fierce, vengeful, and associated with jealousy and rage. Embodies feminine fury and the dangerous side of passion.",
       "spectralCoordinates": {
-        "order-chaos": 0.70,
-        "creation-destruction": 0.70,
-        "light-shadow": 0.70,
-        "active-receptive": 0.20,
-        "individual-collective": 0.40,
+        "order-chaos": 0.7,
+        "creation-destruction": 0.7,
+        "light-shadow": 0.7,
+        "active-receptive": 0.2,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.75,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["rage", "vengeance", "jealousy"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["scorned-love", "passion-turned-fury"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.75,
+          "aspects": [
+            "rage",
+            "vengeance",
+            "jealousy"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "scorned-love",
+            "passion-turned-fury"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "arch:VO-ERZULIE-FREDA", "notes": "Dark aspect of love goddess"}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "arch:VO-ERZULIE-FREDA",
+          "notes": "Dark aspect of love goddess"
+        }
+      ],
+      "domains": [
+        "love"
+      ],
+      "keywords": [
+        "aspect",
+        "associated",
+        "dangerous",
+        "destroyer",
+        "embodies",
+        "erzulie",
+        "eyes",
+        "ezili",
+        "ezili je rouge",
+        "feminine"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "lover"
+      ],
+      "coreFunction": "To embody destroyer energy through rage and vengeance",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:VO-TI-JEAN-PETRO",
@@ -490,33 +1406,112 @@
       "description": "Young, fierce Petro spirit associated with fire and magical power. One-legged trickster. Patron of magicians and sorcerers. Represents revolutionary energy.",
       "spectralCoordinates": {
         "order-chaos": 0.75,
-        "creation-destruction": 0.60,
+        "creation-destruction": 0.6,
         "light-shadow": 0.55,
-        "active-receptive": 0.20,
+        "active-receptive": 0.2,
         "individual-collective": 0.35,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.80,
-        "voluntary-fated": 0.20
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.8,
+        "voluntary-fated": 0.2
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["magical-cunning", "one-legged"]},
-        {"primordial": "primordial:rebel", "weight": 0.75, "aspects": ["revolution", "transformation", "fire"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "magical-cunning",
+            "one-legged"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.75,
+          "aspects": [
+            "revolution",
+            "transformation",
+            "fire"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:VO-LEGBA", "fidelity": 0.50, "notes": "Petro trickster parallel"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-LEGBA",
+          "fidelity": 0.5,
+          "notes": "Petro trickster parallel"
+        }
+      ],
+      "domains": [
+        "fire"
+      ],
+      "keywords": [
+        "associated",
+        "energy",
+        "fierce",
+        "fire",
+        "jean",
+        "legged",
+        "magical",
+        "magicians",
+        "patron",
+        "petro"
+      ],
+      "narrativeRoles": [
+        "outcast",
+        "rebel",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through magical-cunning and one-legged",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
-    "radaNanchon": ["arch:VO-LEGBA", "arch:VO-DAMBALLAH", "arch:VO-AYIDA-WEDO", "arch:VO-OGOU", "arch:VO-ERZULIE-FREDA", "arch:VO-AGWE", "arch:VO-LA-SIRENE", "arch:VO-LOKO", "arch:VO-AYIZAN"],
-    "petroNanchon": ["arch:VO-ERZULIE-DANTOR", "arch:VO-DANBALA-LA-FLAMBEAU", "arch:VO-EZILI-JE-ROUGE", "arch:VO-TI-JEAN-PETRO"],
-    "ghedeNanchon": ["arch:VO-BARON-SAMEDI", "arch:VO-MAMAN-BRIGITTE", "arch:VO-GHEDE-NIBO"],
-    "waterLoa": ["arch:VO-AGWE", "arch:VO-LA-SIRENE", "arch:VO-SIMBI"],
-    "serpentLoa": ["arch:VO-DAMBALLAH", "arch:VO-AYIDA-WEDO", "arch:VO-SIMBI", "arch:VO-DANBALA-LA-FLAMBEAU"],
-    "erzulieForms": ["arch:VO-ERZULIE-FREDA", "arch:VO-ERZULIE-DANTOR", "arch:VO-EZILI-JE-ROUGE"]
+    "radaNanchon": [
+      "arch:VO-LEGBA",
+      "arch:VO-DAMBALLAH",
+      "arch:VO-AYIDA-WEDO",
+      "arch:VO-OGOU",
+      "arch:VO-ERZULIE-FREDA",
+      "arch:VO-AGWE",
+      "arch:VO-LA-SIRENE",
+      "arch:VO-LOKO",
+      "arch:VO-AYIZAN"
+    ],
+    "petroNanchon": [
+      "arch:VO-ERZULIE-DANTOR",
+      "arch:VO-DANBALA-LA-FLAMBEAU",
+      "arch:VO-EZILI-JE-ROUGE",
+      "arch:VO-TI-JEAN-PETRO"
+    ],
+    "ghedeNanchon": [
+      "arch:VO-BARON-SAMEDI",
+      "arch:VO-MAMAN-BRIGITTE",
+      "arch:VO-GHEDE-NIBO"
+    ],
+    "waterLoa": [
+      "arch:VO-AGWE",
+      "arch:VO-LA-SIRENE",
+      "arch:VO-SIMBI"
+    ],
+    "serpentLoa": [
+      "arch:VO-DAMBALLAH",
+      "arch:VO-AYIDA-WEDO",
+      "arch:VO-SIMBI",
+      "arch:VO-DANBALA-LA-FLAMBEAU"
+    ],
+    "erzulieForms": [
+      "arch:VO-ERZULIE-FREDA",
+      "arch:VO-ERZULIE-DANTOR",
+      "arch:VO-EZILI-JE-ROUGE"
+    ]
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

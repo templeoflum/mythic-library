@@ -183,6 +183,33 @@
           "Pushkar (rare Brahma temple)"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "creation"
+      ],
+      "keywords": [
+        "beings",
+        "born",
+        "brahma",
+        "cosmic",
+        "created",
+        "creation",
+        "creator",
+        "devotional",
+        "done",
+        "emerging"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "sage"
+      ],
+      "coreFunction": "To embody creator energy through world-maker and Veda-revealer",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -372,6 +399,35 @@
           "Srirangam"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "order"
+      ],
+      "keywords": [
+        "armed",
+        "avatars",
+        "balance",
+        "blue",
+        "cosmic",
+        "cosmos",
+        "declines",
+        "descends",
+        "dharma",
+        "force"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "hero",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through cosmic-maintainer and dharma-protector",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -618,6 +674,38 @@
           "Chidambaram"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "creation",
+        "destruction",
+        "rebirth"
+      ],
+      "keywords": [
+        "ardhanarishvara",
+        "ascetic",
+        "both",
+        "creates",
+        "creation",
+        "creator",
+        "dances",
+        "destroyer",
+        "destroys",
+        "destruction"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "lover",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody destroyer energy through cosmic-dissolution and ego-death",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -765,6 +853,31 @@
           "Shakti Peethas throughout India"
         ],
         "confidence": 0.95
+      },
+      "keywords": [
+        "activates",
+        "animates",
+        "both",
+        "corpse",
+        "cosmic",
+        "creator",
+        "destroyer",
+        "divine",
+        "durga",
+        "energy"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer"
+      ],
+      "coreFunction": "To embody great mother energy through cosmic-mother and all-source",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -898,6 +1011,36 @@
           "Vaishno Devi"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "protection",
+        "war"
+      ],
+      "keywords": [
+        "adharma",
+        "combined",
+        "could",
+        "created",
+        "defeat",
+        "demon",
+        "dharma",
+        "durga",
+        "embodies",
+        "fierce"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through demon-slayer and dharma-protector",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1063,6 +1206,40 @@
           "Tarapith"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "dance",
+        "death",
+        "family",
+        "love",
+        "motherhood",
+        "time"
+      ],
+      "keywords": [
+        "arms",
+        "black",
+        "blood",
+        "crone",
+        "dance",
+        "dancing",
+        "death",
+        "demon",
+        "destroyer",
+        "destroys"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody destroyer energy through time-devourer and ego-slayer",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1208,6 +1385,36 @@
           "Kolhapur"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "fate",
+        "fertility",
+        "sea"
+      ],
+      "keywords": [
+        "abundance",
+        "accompanying",
+        "auspiciousness",
+        "avatars",
+        "beauty",
+        "both",
+        "churning",
+        "consort",
+        "cosmic",
+        "emerged"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody great mother energy through abundance-giver and nurturer",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1339,6 +1546,36 @@
           "Kashmir (Sharada Peeth)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "music",
+        "water",
+        "wisdom"
+      ],
+      "keywords": [
+        "articulate",
+        "arts",
+        "creativity",
+        "expression",
+        "flow",
+        "flowing",
+        "goddess",
+        "knowledge",
+        "learning",
+        "lotus"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "sage",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through knowledge-holder and word-power",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1488,6 +1725,38 @@
           "Kamakhya"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "fertility",
+        "love",
+        "marriage"
+      ],
+      "keywords": [
+        "aspects",
+        "austerity",
+        "back",
+        "counterpart",
+        "daughter",
+        "devoted",
+        "devotion",
+        "divine",
+        "draws",
+        "engagement"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "creator",
+        "innocent",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through Shiva's beloved and sacred-marriage",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1632,6 +1901,35 @@
           "Siddhivinayak"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "wisdom"
+      ],
+      "keywords": [
+        "after",
+        "beginnings",
+        "beheaded",
+        "divine child",
+        "elephant",
+        "ganesha",
+        "head",
+        "headed",
+        "invoked",
+        "obstacle"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "mentor",
+        "sage",
+        "trickster"
+      ],
+      "coreFunction": "To embody wise elder energy through wisdom and scribe-of-Mahabharata",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1855,6 +2153,38 @@
           "Puri"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "childhood",
+        "creation",
+        "sovereignty"
+      ],
+      "keywords": [
+        "attachment",
+        "avatar",
+        "beloved",
+        "bhagavad",
+        "child",
+        "childhood",
+        "complete",
+        "complex",
+        "cosmic",
+        "creation"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "hero",
+        "innocent",
+        "lover",
+        "mentor"
+      ],
+      "coreFunction": "To embody lover energy through Radha's beloved and gopi-enchanter",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2000,6 +2330,37 @@
           "Hampi"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "love",
+        "sovereignty"
+      ],
+      "keywords": [
+        "archetype",
+        "avatar",
+        "brother",
+        "conflicts",
+        "desire",
+        "dharma",
+        "duty",
+        "even",
+        "exiled",
+        "hanuman"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "lover",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through dharmic-warrior and exile-returner",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2127,6 +2488,35 @@
           "Widespread—most accessible deity"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "air",
+        "sea"
+      ],
+      "keywords": [
+        "across",
+        "air",
+        "bhakti",
+        "carried",
+        "devotee",
+        "devotion",
+        "dharma",
+        "dissolved",
+        "embodies",
+        "hanuman"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "lover",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through strength and courage",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2292,6 +2682,39 @@
           "few temples"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "air",
+        "fatherhood",
+        "sky",
+        "sovereignty",
+        "war"
+      ],
+      "keywords": [
+        "air",
+        "cosmic",
+        "demons",
+        "diminished",
+        "father",
+        "fatherhood",
+        "frequently",
+        "gave",
+        "gods",
+        "hero"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through storm-lord and dragon-slayer",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2422,6 +2845,39 @@
           "No temples (feared)"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "death",
+        "justice",
+        "sovereignty",
+        "underworld"
+      ],
+      "keywords": [
+        "based",
+        "became",
+        "black",
+        "buffalo",
+        "consequence",
+        "crone",
+        "dead",
+        "death",
+        "dharma",
+        "first"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "ruler",
+        "sage",
+        "sovereign",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through death-lord and afterlife-ruler",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -2561,7 +3017,29 @@
           "Every sacrificial altar"
         ],
         "confidence": 0.9
-      }
+      },
+      "domains": [
+        "communication",
+        "fire",
+        "sacrifice"
+      ],
+      "keywords": [
+        "agni",
+        "between",
+        "communication",
+        "cremation",
+        "deities",
+        "digestion",
+        "divine",
+        "every",
+        "fire",
+        "gods"
+      ],
+      "narrativeRoles": [
+        "caregiver"
+      ],
+      "coreFunction": "To embody messenger energy through divine-intermediary and sacrifice-carrier",
+      "symbolicCore": "The communication that transforms through Agni's essence"
     },
     {
       "@id": "arch:IN-SOMA",
@@ -2689,6 +3167,34 @@
           "Somnath (Gujarat)"
         ],
         "confidence": 0.85
+      },
+      "domains": [
+        "ecstasy",
+        "threshold"
+      ],
+      "keywords": [
+        "between",
+        "dedicated",
+        "deity",
+        "divine",
+        "drink",
+        "ecstasy",
+        "entire",
+        "fold",
+        "four",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer"
+      ],
+      "coreFunction": "To embody healer energy through elixir-of-immortality and plant-medicine",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -2830,6 +3336,36 @@
           "Coastal temples (as ocean lord)"
         ],
         "confidence": 0.85
+      },
+      "domains": [
+        "order",
+        "sky",
+        "sovereignty"
+      ],
+      "keywords": [
+        "ahura",
+        "cognate",
+        "cosmic",
+        "deeds",
+        "deity",
+        "diminished",
+        "earliest",
+        "ethical",
+        "eyes",
+        "greek"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through cosmic-king and law-upholder",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ],

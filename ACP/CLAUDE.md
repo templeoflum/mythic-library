@@ -4,8 +4,9 @@
 
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
-**Version**: 0.2.0 (Major Expansion)
+**Version**: 0.2.1 (Enrichment Phase 1)
 **Total Archetypes**: 938 entries with full spectral coordinates
+**Completeness**: 22% complete, 46% rich, 30% partial, 2% stub (mean score: 64%)
 **Target**: ~1,200 archetypes for v1.0 release
 
 ## Architecture (ORAS v2.0)
@@ -323,26 +324,29 @@ When adding cross-system correspondences:
 ### 0.1.0 ✅ Core Systems (315 archetypes)
 - Divination, Psychology, Modern systems + browser tools
 
-### 0.1.1 ✅ Cultural Pantheons (580 archetypes) — Current
+### 0.1.1 ✅ Cultural Pantheons (580 archetypes)
 - 17 pantheons with cross-system relationship mapping
 
-### 0.2.0 — Additional Pantheons (+70)
-Roman, Buddhist, Vodou Loa
+### 0.2.0 ✅ Major Expansion (938 archetypes)
+- Buddhist, Vodou pantheons added
+- All alternate zodiacs (Chinese, Vedic, Celtic, Mayan, Aztec)
+- Wu Xing, Ogham, Alchemical systems
+- Psychology frameworks (MBTI, Socionics, Big Five, Pearson)
+- Narrative systems (Propp, Seven Plots, Commedia)
+- Gendered systems (KWML, Triple Goddess, Bolen)
 
-### 0.3.0 — Alternate Zodiacs (+115)
-Chinese, Vedic, Nakṣatras, Celtic, Mayan, Aztec, Native American
+### 0.2.1 ✅ Enrichment Phase 1 (Current)
+- **Completeness**: 22% complete (210), 46% rich (429), 30% partial (280), 2% stub (19)
+- Added: domains, keywords, narrativeRoles, coreFunction, symbolicCore, psychologicalMapping
+- Automated enrichment infrastructure (scripts/enrich_*.py)
+- Tarot minor arcana fully enriched with Tier 3 fields
+- Mean completeness score: 64% (up from 44%)
 
-### 0.4.0 — Expanded Divination (+40)
-Wu Xing, Ogham, Alchemical
-
-### 0.5.0 — Psychology Frameworks (+80)
-MBTI, Socionics, Big Five, Carol Pearson, etc.
-
-### 0.6.0 — Narrative & Literary (+25)
-Propp, Seven Plots, Commedia dell'Arte
-
-### 0.7.0 — Gendered Systems (+35)
-KWML, Triple Goddess, Bolen, Caroline Myss
+### 0.3.0 — Enrichment Phase 2
+- Add culturalEchoes bidirectional links across all pantheons
+- Complete relationship graph with missing bidirectional links
+- Add aliases for cross-cultural recognition
+- Target: 80%+ entries at "rich" tier
 
 ### 1.0.0 — Production Release
 Complete database, REST/GraphQL API, 3D visualization

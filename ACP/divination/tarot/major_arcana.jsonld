@@ -8,40 +8,82 @@
   "subdomain": "tarot",
   "cardinality": 22,
   "structuralNotes": "The sequence 0-21 represents a developmental journey. Cards can be read as stages, forces, or situations.",
-
   "entries": [
     {
       "@id": "tarot:fool",
       "@type": "Archetype",
       "name": "The Fool",
       "number": 0,
-      "keywords": ["beginning", "innocence", "leap of faith", "potential", "spontaneity"],
+      "keywords": [
+        "beginning",
+        "innocence",
+        "leap of faith",
+        "potential",
+        "spontaneity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.65,
         "creation-destruction": 0.18,
         "light-shadow": 0.25,
         "active-receptive": 0.45,
         "individual-collective": 0.38,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.68,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["innocence", "pure-potential"]},
-        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["boundary-crossing", "spontaneity"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.8,
+          "aspects": [
+            "innocence",
+            "pure-potential"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.5,
+          "aspects": [
+            "boundary-crossing",
+            "spontaneity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "tarot:magician", "note": "First step of journey"},
-        {"type": "SYNTHESIS", "target": "tarot:world", "note": "End becomes new beginning - cyclical"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:uranus", "fidelity": 0.7}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "tarot:magician",
+          "note": "First step of journey"
+        },
+        {
+          "type": "SYNTHESIS",
+          "target": "tarot:world",
+          "note": "End becomes new beginning - cyclical"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:uranus",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody divine_child energy through innocence and pure-potential",
+      "symbolicCore": "The essential pattern of The Fool"
     },
     {
       "@id": "tarot:magician",
       "@type": "Archetype",
       "name": "The Magician",
       "number": 1,
-      "keywords": ["will", "manifestation", "skill", "action", "concentration"],
+      "keywords": [
+        "will",
+        "manifestation",
+        "skill",
+        "action",
+        "concentration"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.35,
@@ -50,24 +92,68 @@
         "individual-collective": 0.35,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.72,
-        "voluntary-fated": 0.20
+        "voluntary-fated": 0.2
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.9, "aspects": ["transformation", "will"]},
-        {"primordial": "primordial:creator", "weight": 0.5, "aspects": ["manifestation"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.9,
+          "aspects": [
+            "transformation",
+            "will"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.5,
+          "aspects": [
+            "manifestation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "tarot:high_priestess", "note": "Active/receptive pair"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.85}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:high_priestess",
+          "note": "Active/receptive pair"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mercury",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and will",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tarot:high_priestess",
       "@type": "Archetype",
       "name": "The High Priestess",
       "number": 2,
-      "keywords": ["intuition", "mystery", "subconscious", "inner knowledge", "receptivity"],
+      "keywords": [
+        "intuition",
+        "mystery",
+        "subconscious",
+        "inner knowledge",
+        "receptivity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.35,
@@ -79,21 +165,57 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["hidden-knowledge"]},
-        {"primordial": "primordial:maiden", "weight": 0.6, "aspects": ["mystery", "threshold"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.7,
+          "aspects": [
+            "hidden-knowledge"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.6,
+          "aspects": [
+            "mystery",
+            "threshold"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "tarot:magician", "note": "Receptive to Magician's active"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.85}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:magician",
+          "note": "Receptive to Magician's active"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:moon",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "innocent"
+      ],
+      "coreFunction": "To embody wise_elder energy through hidden-knowledge",
+      "symbolicCore": "The essential pattern of The High Priestess"
     },
     {
       "@id": "tarot:empress",
       "@type": "Archetype",
       "name": "The Empress",
       "number": 3,
-      "keywords": ["abundance", "fertility", "nature", "nurturing", "creation"],
+      "keywords": [
+        "abundance",
+        "fertility",
+        "nature",
+        "nurturing",
+        "creation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.15,
@@ -105,22 +227,63 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.9, "aspects": ["fertility", "nurturing"]},
-        {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["abundance", "generation"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.9,
+          "aspects": [
+            "fertility",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.6,
+          "aspects": [
+            "abundance",
+            "generation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "tarot:emperor", "note": "Mother/Father pair"},
-        {"type": "POLAR_OPPOSITE", "target": "tarot:death", "axis": "creation-destruction"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-DEMETER", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "astrology:venus", "fidelity": 0.8}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:emperor",
+          "note": "Mother/Father pair"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "tarot:death",
+          "axis": "creation-destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DEMETER",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:venus",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "creator"
+      ],
+      "coreFunction": "To embody great_mother energy through fertility and nurturing",
+      "symbolicCore": "The essential pattern of The Empress"
     },
     {
       "@id": "tarot:emperor",
       "@type": "Archetype",
       "name": "The Emperor",
       "number": 4,
-      "keywords": ["authority", "structure", "control", "father", "stability"],
+      "keywords": [
+        "authority",
+        "structure",
+        "control",
+        "father",
+        "stability"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.12,
         "creation-destruction": 0.38,
@@ -132,22 +295,70 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.9, "aspects": ["authority", "law"]},
-        {"primordial": "primordial:great_father", "weight": 0.8, "aspects": ["structure", "protection"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.9,
+          "aspects": [
+            "authority",
+            "law"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.8,
+          "aspects": [
+            "structure",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "tarot:empress", "note": "Father/Mother pair"},
-        {"type": "TENSION", "target": "tarot:tower", "note": "Structure vs destruction of structure"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:aries", "fidelity": 0.75}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:empress",
+          "note": "Father/Mother pair"
+        },
+        {
+          "type": "TENSION",
+          "target": "tarot:tower",
+          "note": "Structure vs destruction of structure"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:aries",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through authority and law",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tarot:hierophant",
       "@type": "Archetype",
       "name": "The Hierophant",
       "number": 5,
-      "keywords": ["tradition", "teaching", "institutions", "conformity", "spiritual authority"],
+      "keywords": [
+        "tradition",
+        "teaching",
+        "institutions",
+        "conformity",
+        "spiritual authority"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.18,
         "creation-destruction": 0.42,
@@ -159,47 +370,129 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.8, "aspects": ["teaching", "tradition"]},
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["institutions", "continuity"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.8,
+          "aspects": [
+            "teaching",
+            "tradition"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "institutions",
+            "continuity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "tarot:devil", "note": "Orthodoxy vs bondage"},
-        {"type": "POLAR_OPPOSITE", "target": "tarot:hermit", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:taurus", "fidelity": 0.75}
-      ]
+        {
+          "type": "TENSION",
+          "target": "tarot:devil",
+          "note": "Orthodoxy vs bondage"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "tarot:hermit",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:taurus",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody wise_elder energy through teaching and tradition",
+      "symbolicCore": "The essential pattern of The Hierophant"
     },
     {
       "@id": "tarot:lovers",
       "@type": "Archetype",
       "name": "The Lovers",
       "number": 6,
-      "keywords": ["choice", "union", "relationship", "values", "alignment"],
+      "keywords": [
+        "choice",
+        "union",
+        "relationship",
+        "values",
+        "alignment"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.28,
         "light-shadow": 0.38,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.42,
         "ascent-descent": 0.48,
         "stasis-transformation": 0.52,
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.9, "aspects": ["union", "choice"]},
-        {"primordial": "primordial:twin", "weight": 0.5, "aspects": ["duality", "relationship"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.9,
+          "aspects": [
+            "union",
+            "choice"
+          ]
+        },
+        {
+          "primordial": "primordial:twin",
+          "weight": 0.5,
+          "aspects": [
+            "duality",
+            "relationship"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "tarot:devil", "note": "Choice becomes bondage in shadow"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "astrology:gemini", "fidelity": 0.8}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "tarot:devil",
+          "note": "Choice becomes bondage in shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:gemini",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through union and choice",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tarot:chariot",
       "@type": "Archetype",
       "name": "The Chariot",
       "number": 7,
-      "keywords": ["willpower", "victory", "determination", "control", "direction"],
+      "keywords": [
+        "willpower",
+        "victory",
+        "determination",
+        "control",
+        "direction"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.42,
@@ -211,25 +504,69 @@
         "voluntary-fated": 0.32
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.85, "aspects": ["victory", "quest"]},
-        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["determination", "conquest"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.85,
+          "aspects": [
+            "victory",
+            "quest"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "determination",
+            "conquest"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "tarot:strength", "note": "External to internal mastery"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:cancer", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.75}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "tarot:strength",
+          "note": "External to internal mastery"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:cancer",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mars",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through victory and quest",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tarot:strength",
       "@type": "Archetype",
       "name": "Strength",
       "number": 8,
-      "keywords": ["courage", "patience", "compassion", "inner strength", "gentle control"],
+      "keywords": [
+        "courage",
+        "patience",
+        "compassion",
+        "inner strength",
+        "gentle control"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
         "individual-collective": 0.32,
         "ascent-descent": 0.42,
@@ -237,20 +574,60 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["inner-courage"]},
-        {"primordial": "primordial:healer", "weight": 0.5, "aspects": ["compassion", "patience"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "inner-courage"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.5,
+          "aspects": [
+            "compassion",
+            "patience"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "tarot:chariot", "note": "Inner vs outer strength"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:leo", "fidelity": 0.85}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:chariot",
+          "note": "Inner vs outer strength"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:leo",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "healer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through inner-courage",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:hermit",
       "@type": "Archetype",
       "name": "The Hermit",
       "number": 9,
-      "keywords": ["introspection", "solitude", "guidance", "wisdom", "soul-searching"],
+      "keywords": [
+        "introspection",
+        "solitude",
+        "guidance",
+        "wisdom",
+        "soul-searching"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.32,
         "creation-destruction": 0.42,
@@ -262,46 +639,122 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.9, "aspects": ["wisdom", "guidance"]},
-        {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["inner-light"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.9,
+          "aspects": [
+            "wisdom",
+            "guidance"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.4,
+          "aspects": [
+            "inner-light"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "tarot:hierophant", "axis": "individual-collective"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:virgo", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:saturn", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "tarot:hierophant",
+          "axis": "individual-collective"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:virgo",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:saturn",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "magician"
+      ],
+      "coreFunction": "To embody wise_elder energy through wisdom and guidance",
+      "symbolicCore": "The essential pattern of The Hermit"
     },
     {
       "@id": "tarot:wheel_of_fortune",
       "@type": "Archetype",
       "name": "Wheel of Fortune",
       "number": 10,
-      "keywords": ["cycles", "fate", "change", "luck", "karma"],
+      "keywords": [
+        "cycles",
+        "fate",
+        "change",
+        "luck",
+        "karma"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
         "active-receptive": 0.55,
         "individual-collective": 0.58,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.72,
         "voluntary-fated": 0.82
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.6, "aspects": ["fate", "cycles"]},
-        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["luck", "chance"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.6,
+          "aspects": [
+            "fate",
+            "cycles"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.5,
+          "aspects": [
+            "luck",
+            "chance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-MOIRAI", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:jupiter", "fidelity": 0.8}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-MOIRAI",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:jupiter",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "sage",
+        "trickster"
+      ],
+      "coreFunction": "To embody crone energy through fate and cycles",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:justice",
       "@type": "Archetype",
       "name": "Justice",
       "number": 11,
-      "keywords": ["fairness", "truth", "law", "cause and effect", "balance"],
+      "keywords": [
+        "fairness",
+        "truth",
+        "law",
+        "cause and effect",
+        "balance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.45,
@@ -313,21 +766,66 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["law", "judgment"]},
-        {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["balance", "order"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.7,
+          "aspects": [
+            "law",
+            "judgment"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.5,
+          "aspects": [
+            "balance",
+            "order"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:EG-MAAT", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-THEMIS", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "astrology:libra", "fidelity": 0.9}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-MAAT",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-THEMIS",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:libra",
+          "fidelity": 0.9
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through law and judgment",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:hanged_man",
       "@type": "Archetype",
       "name": "The Hanged Man",
       "number": 12,
-      "keywords": ["surrender", "new perspective", "suspension", "sacrifice", "letting go"],
+      "keywords": [
+        "surrender",
+        "new perspective",
+        "suspension",
+        "sacrifice",
+        "letting go"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.48,
@@ -339,21 +837,66 @@
         "voluntary-fated": 0.68
       },
       "instantiates": [
-        {"primordial": "primordial:outcast", "weight": 0.6, "aspects": ["sacrifice", "liminal"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.5, "aspects": ["threshold", "between-worlds"]}
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.6,
+          "aspects": [
+            "sacrifice",
+            "liminal"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.5,
+          "aspects": [
+            "threshold",
+            "between-worlds"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "tarot:death", "note": "Surrender precedes transformation"},
-        {"type": "CULTURAL_ECHO", "target": "arch:NO-ODIN", "fidelity": 0.85, "note": "Odin's self-sacrifice on Yggdrasil"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:neptune", "fidelity": 0.75}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "tarot:death",
+          "note": "Surrender precedes transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.85,
+          "note": "Odin's self-sacrifice on Yggdrasil"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:neptune",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "outcast",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody outcast energy through sacrifice and liminal",
+      "symbolicCore": "The wanderer without home",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection, scapegoat dynamic",
+        "developmentalStage": "Alienation from collective, finding unique path",
+        "integrationTask": "Finding belonging while honoring difference",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:death",
       "@type": "Archetype",
       "name": "Death",
       "number": 13,
-      "keywords": ["transformation", "endings", "change", "transition", "release"],
+      "keywords": [
+        "transformation",
+        "endings",
+        "change",
+        "transition",
+        "release"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.62,
         "creation-destruction": 0.88,
@@ -365,21 +908,66 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.8, "aspects": ["ending", "clearing"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["transition", "passage"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.8,
+          "aspects": [
+            "ending",
+            "clearing"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.7,
+          "aspects": [
+            "transition",
+            "passage"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "tarot:empress", "axis": "creation-destruction"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:scorpio", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-THANATOS", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "tarot:empress",
+          "axis": "creation-destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:scorpio",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-THANATOS",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody destroyer energy through ending and clearing",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:temperance",
       "@type": "Archetype",
       "name": "Temperance",
       "number": 14,
-      "keywords": ["balance", "moderation", "patience", "purpose", "alchemy"],
+      "keywords": [
+        "balance",
+        "moderation",
+        "patience",
+        "purpose",
+        "alchemy"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.32,
@@ -391,20 +979,61 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["integration", "balance"]},
-        {"primordial": "primordial:magician", "weight": 0.5, "aspects": ["alchemy", "transformation"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "integration",
+            "balance"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.5,
+          "aspects": [
+            "alchemy",
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "tarot:devil", "note": "Integration vs bondage"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:sagittarius", "fidelity": 0.8}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:devil",
+          "note": "Integration vs bondage"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sagittarius",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "magician"
+      ],
+      "coreFunction": "To embody healer energy through integration and balance",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:devil",
       "@type": "Archetype",
       "name": "The Devil",
       "number": 15,
-      "keywords": ["bondage", "materialism", "shadow", "addiction", "illusion"],
+      "keywords": [
+        "bondage",
+        "materialism",
+        "shadow",
+        "addiction",
+        "illusion"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.68,
         "creation-destruction": 0.58,
@@ -416,21 +1045,59 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:monster", "weight": 0.7, "aspects": ["shadow", "instinct"]},
-        {"primordial": "primordial:trickster", "weight": 0.6, "aspects": ["illusion", "temptation"], "note": "Shadow aspect"}
+        {
+          "primordial": "primordial:monster",
+          "weight": 0.7,
+          "aspects": [
+            "shadow",
+            "instinct"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.6,
+          "aspects": [
+            "illusion",
+            "temptation"
+          ],
+          "note": "Shadow aspect"
+        }
       ],
       "relationships": [
-        {"type": "SHADOW", "target": "tarot:lovers", "note": "Bondage as shadow of choice"},
-        {"type": "TENSION", "target": "tarot:hierophant", "note": "Materialism vs spirituality"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:capricorn", "fidelity": 0.75}
-      ]
+        {
+          "type": "SHADOW",
+          "target": "tarot:lovers",
+          "note": "Bondage as shadow of choice"
+        },
+        {
+          "type": "TENSION",
+          "target": "tarot:hierophant",
+          "note": "Materialism vs spirituality"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:capricorn",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody monster energy through shadow and instinct",
+      "symbolicCore": "The essential pattern of The Devil"
     },
     {
       "@id": "tarot:tower",
       "@type": "Archetype",
       "name": "The Tower",
       "number": 16,
-      "keywords": ["upheaval", "revelation", "sudden change", "destruction", "awakening"],
+      "keywords": [
+        "upheaval",
+        "revelation",
+        "sudden change",
+        "destruction",
+        "awakening"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.85,
         "creation-destruction": 0.92,
@@ -442,21 +1109,64 @@
         "voluntary-fated": 0.78
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.9, "aspects": ["sudden-change", "clearing"]},
-        {"primordial": "primordial:rebel", "weight": 0.6, "aspects": ["breaking-structures"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.9,
+          "aspects": [
+            "sudden-change",
+            "clearing"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.6,
+          "aspects": [
+            "breaking-structures"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "tarot:emperor", "note": "Destroys false structures"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:uranus", "fidelity": 0.75}
-      ]
+        {
+          "type": "TENSION",
+          "target": "tarot:emperor",
+          "note": "Destroys false structures"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mars",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:uranus",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "rebel"
+      ],
+      "coreFunction": "To embody destroyer energy through sudden-change and clearing",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "tarot:star",
       "@type": "Archetype",
       "name": "The Star",
       "number": 17,
-      "keywords": ["hope", "inspiration", "serenity", "renewal", "spirituality"],
+      "keywords": [
+        "hope",
+        "inspiration",
+        "serenity",
+        "renewal",
+        "spirituality"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.22,
@@ -468,21 +1178,66 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.7, "aspects": ["renewal", "hope"]},
-        {"primordial": "primordial:maiden", "weight": 0.6, "aspects": ["purity", "potential"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.7,
+          "aspects": [
+            "renewal",
+            "hope"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.6,
+          "aspects": [
+            "purity",
+            "potential"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "tarot:moon", "note": "Hope before unconscious depths"},
-        {"type": "TENSION", "target": "tarot:tower", "note": "Hope after destruction"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:aquarius", "fidelity": 0.85}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "tarot:moon",
+          "note": "Hope before unconscious depths"
+        },
+        {
+          "type": "TENSION",
+          "target": "tarot:tower",
+          "note": "Hope after destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:aquarius",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "innocent"
+      ],
+      "coreFunction": "To embody healer energy through renewal and hope",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:moon",
       "@type": "Archetype",
       "name": "The Moon",
       "number": 18,
-      "keywords": ["illusion", "fear", "subconscious", "intuition", "dreams"],
+      "keywords": [
+        "illusion",
+        "fear",
+        "subconscious",
+        "intuition",
+        "dreams"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.45,
@@ -494,21 +1249,58 @@
         "voluntary-fated": 0.68
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.6, "aspects": ["dark-mother", "unconscious"]},
-        {"primordial": "primordial:crone", "weight": 0.5, "aspects": ["hidden-knowledge", "shadow"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.6,
+          "aspects": [
+            "dark-mother",
+            "unconscious"
+          ]
+        },
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.5,
+          "aspects": [
+            "hidden-knowledge",
+            "shadow"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "tarot:sun", "axis": "light-shadow"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:pisces", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.9}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "tarot:sun",
+          "axis": "light-shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pisces",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:moon",
+          "fidelity": 0.9
+        }
+      ],
+      "narrativeRoles": [
+        "sage"
+      ],
+      "coreFunction": "To embody great_mother energy through dark-mother and unconscious",
+      "symbolicCore": "The essential pattern of The Moon"
     },
     {
       "@id": "tarot:sun",
       "@type": "Archetype",
       "name": "The Sun",
       "number": 19,
-      "keywords": ["joy", "success", "vitality", "clarity", "positivity"],
+      "keywords": [
+        "joy",
+        "success",
+        "vitality",
+        "clarity",
+        "positivity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.18,
@@ -520,21 +1312,58 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["joy", "vitality"]},
-        {"primordial": "primordial:hero", "weight": 0.6, "aspects": ["victory", "achievement"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.8,
+          "aspects": [
+            "joy",
+            "vitality"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.6,
+          "aspects": [
+            "victory",
+            "achievement"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "tarot:moon", "axis": "light-shadow"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:sun", "fidelity": 0.95},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-APOLLO", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "tarot:moon",
+          "axis": "light-shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sun",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-APOLLO",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "hero"
+      ],
+      "coreFunction": "To embody divine_child energy through joy and vitality",
+      "symbolicCore": "The essential pattern of The Sun"
     },
     {
       "@id": "tarot:judgement",
       "@type": "Archetype",
       "name": "Judgement",
       "number": 20,
-      "keywords": ["rebirth", "calling", "absolution", "inner calling", "reflection"],
+      "keywords": [
+        "rebirth",
+        "calling",
+        "absolution",
+        "inner calling",
+        "reflection"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.42,
@@ -546,20 +1375,60 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["resurrection", "calling"]},
-        {"primordial": "primordial:ancestor", "weight": 0.6, "aspects": ["collective-memory", "reckoning"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.7,
+          "aspects": [
+            "resurrection",
+            "calling"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.6,
+          "aspects": [
+            "collective-memory",
+            "reckoning"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "tarot:world", "note": "Resurrection precedes completion"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:pluto", "fidelity": 0.85}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "tarot:world",
+          "note": "Resurrection precedes completion"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pluto",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through resurrection and calling",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "tarot:world",
       "@type": "Archetype",
       "name": "The World",
       "number": 21,
-      "keywords": ["completion", "integration", "accomplishment", "wholeness", "fulfillment"],
+      "keywords": [
+        "completion",
+        "integration",
+        "accomplishment",
+        "wholeness",
+        "fulfillment"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.45,
@@ -571,33 +1440,143 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.9, "aspects": ["integration", "wholeness"]},
-        {"primordial": "primordial:creator", "weight": 0.5, "aspects": ["completion", "manifestation"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.9,
+          "aspects": [
+            "integration",
+            "wholeness"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.5,
+          "aspects": [
+            "completion",
+            "manifestation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "SYNTHESIS", "target": "tarot:fool", "note": "End becomes new beginning"},
-        {"type": "CULTURAL_ECHO", "target": "astrology:saturn", "fidelity": 0.75}
-      ]
+        {
+          "type": "SYNTHESIS",
+          "target": "tarot:fool",
+          "note": "End becomes new beginning"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:saturn",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through integration and wholeness",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
     "internalStructure": {
       "journeySequence": "0→21 represents developmental path from innocence through trials to integration",
       "polarPairs": [
-        {"cards": ["tarot:magician", "tarot:high_priestess"], "axis": "active-receptive", "note": "Will and intuition"},
-        {"cards": ["tarot:empress", "tarot:emperor"], "axis": "receptive-active parenting", "note": "Mother and father"},
-        {"cards": ["tarot:moon", "tarot:sun"], "axis": "light-shadow", "note": "Unconscious and conscious"},
-        {"cards": ["tarot:tower", "tarot:star"], "tension": "destruction-hope", "note": "Crisis and renewal"},
-        {"cards": ["tarot:hierophant", "tarot:hermit"], "axis": "individual-collective", "note": "Tradition and solitude"},
-        {"cards": ["tarot:lovers", "tarot:devil"], "shadow": true, "note": "Choice and bondage"},
-        {"cards": ["tarot:empress", "tarot:death"], "axis": "creation-destruction", "note": "Birth and ending"}
+        {
+          "cards": [
+            "tarot:magician",
+            "tarot:high_priestess"
+          ],
+          "axis": "active-receptive",
+          "note": "Will and intuition"
+        },
+        {
+          "cards": [
+            "tarot:empress",
+            "tarot:emperor"
+          ],
+          "axis": "receptive-active parenting",
+          "note": "Mother and father"
+        },
+        {
+          "cards": [
+            "tarot:moon",
+            "tarot:sun"
+          ],
+          "axis": "light-shadow",
+          "note": "Unconscious and conscious"
+        },
+        {
+          "cards": [
+            "tarot:tower",
+            "tarot:star"
+          ],
+          "tension": "destruction-hope",
+          "note": "Crisis and renewal"
+        },
+        {
+          "cards": [
+            "tarot:hierophant",
+            "tarot:hermit"
+          ],
+          "axis": "individual-collective",
+          "note": "Tradition and solitude"
+        },
+        {
+          "cards": [
+            "tarot:lovers",
+            "tarot:devil"
+          ],
+          "shadow": true,
+          "note": "Choice and bondage"
+        },
+        {
+          "cards": [
+            "tarot:empress",
+            "tarot:death"
+          ],
+          "axis": "creation-destruction",
+          "note": "Birth and ending"
+        }
       ],
       "triads": [
-        {"cards": ["tarot:empress", "tarot:high_priestess", "tarot:moon"], "theme": "Feminine mysteries"},
-        {"cards": ["tarot:emperor", "tarot:hierophant", "tarot:chariot"], "theme": "Masculine authority"},
-        {"cards": ["tarot:fool", "tarot:magician", "tarot:world"], "theme": "Journey's arc"},
-        {"cards": ["tarot:death", "tarot:tower", "tarot:judgement"], "theme": "Transformation crisis"}
+        {
+          "cards": [
+            "tarot:empress",
+            "tarot:high_priestess",
+            "tarot:moon"
+          ],
+          "theme": "Feminine mysteries"
+        },
+        {
+          "cards": [
+            "tarot:emperor",
+            "tarot:hierophant",
+            "tarot:chariot"
+          ],
+          "theme": "Masculine authority"
+        },
+        {
+          "cards": [
+            "tarot:fool",
+            "tarot:magician",
+            "tarot:world"
+          ],
+          "theme": "Journey's arc"
+        },
+        {
+          "cards": [
+            "tarot:death",
+            "tarot:tower",
+            "tarot:judgement"
+          ],
+          "theme": "Transformation crisis"
+        }
       ]
     },
     "externalCorrespondences": {
@@ -607,7 +1586,6 @@
       "herosJourney": "Sequence maps to Campbell's monomyth"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

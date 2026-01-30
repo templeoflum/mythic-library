@@ -8,7 +8,6 @@
   "subdomain": "personality",
   "cardinality": 16,
   "structuralNotes": "Based on Augusta's 1970s-80s work. 16 types organized by quadras (Alpha, Beta, Gamma, Delta) and clubs (Researchers, Socials, Pragmatists, Humanitarians).",
-
   "entries": [
     {
       "@id": "socionics:ile",
@@ -18,25 +17,63 @@
       "function": "Ne-Ti",
       "quadra": "Alpha",
       "club": "Researchers",
-      "keywords": ["ideas", "possibilities", "debate", "innovation", "scatter"],
+      "keywords": [
+        "ideas",
+        "possibilities",
+        "debate",
+        "innovation",
+        "scatter"
+      ],
       "description": "The intuitive-logical extrovert who generates endless possibilities. Sees potential in everything, debates ideas, but struggles with practical completion.",
       "spectralCoordinates": {
-        "order-chaos": 0.70,
+        "order-chaos": 0.7,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
-        "active-receptive": 0.30,
+        "active-receptive": 0.3,
         "individual-collective": 0.35,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.70,
-        "voluntary-fated": 0.30
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["possibilities", "scatter"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["innovation", "ideas"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.7,
+          "aspects": [
+            "possibilities",
+            "scatter"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "innovation",
+            "ideas"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:entp", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:entp",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through possibilities and scatter",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:sei",
@@ -46,25 +83,68 @@
       "function": "Si-Fe",
       "quadra": "Alpha",
       "club": "Socials",
-      "keywords": ["comfort", "harmony", "aesthetics", "nurturing", "pleasure"],
+      "keywords": [
+        "comfort",
+        "harmony",
+        "aesthetics",
+        "nurturing",
+        "pleasure"
+      ],
       "description": "The sensory-ethical introvert who creates comfort and harmony. Masters of physical pleasure and emotional atmospheres, deeply nurturing.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.30,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.65,
-        "individual-collective": 0.60,
+        "individual-collective": 0.6,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["comfort", "nurturing"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["pleasure", "aesthetics"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.75,
+          "aspects": [
+            "comfort",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "pleasure",
+            "aesthetics"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:isfp", "fidelity": 0.80, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:isfp",
+          "fidelity": 0.8,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "domains": [
+        "motherhood",
+        "music",
+        "peace"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody healer energy through comfort and nurturing",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:ese",
@@ -74,25 +154,63 @@
       "function": "Fe-Si",
       "quadra": "Alpha",
       "club": "Socials",
-      "keywords": ["enthusiasm", "emotions", "celebration", "hospitality", "energy"],
+      "keywords": [
+        "enthusiasm",
+        "emotions",
+        "celebration",
+        "hospitality",
+        "energy"
+      ],
       "description": "The ethical-sensory extrovert who radiates emotional energy. Creates celebrations, manages group moods, generous hospitality.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.30,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
-        "individual-collective": 0.70,
+        "individual-collective": 0.7,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["enthusiasm", "emotions"]},
-        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["hospitality", "nurturing"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.75,
+          "aspects": [
+            "enthusiasm",
+            "emotions"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.55,
+          "aspects": [
+            "hospitality",
+            "nurturing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:esfj", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:esfj",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through enthusiasm and emotions",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:lii",
@@ -102,25 +220,63 @@
       "function": "Ti-Ne",
       "quadra": "Alpha",
       "club": "Researchers",
-      "keywords": ["logic", "systems", "analysis", "principles", "detachment"],
+      "keywords": [
+        "logic",
+        "systems",
+        "analysis",
+        "principles",
+        "detachment"
+      ],
       "description": "The logical-intuitive introvert who builds pure logical systems. Seeks universal principles, analytical detachment, truth over feelings.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
-        "individual-collective": 0.30,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["logic", "principles"]},
-        {"primordial": "primordial:magician", "weight": 0.50, "aspects": ["systems", "analysis"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.8,
+          "aspects": [
+            "logic",
+            "principles"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.5,
+          "aspects": [
+            "systems",
+            "analysis"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:intp", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:intp",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through logic and principles",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:eie",
@@ -130,25 +286,63 @@
       "function": "Fe-Ni",
       "quadra": "Beta",
       "club": "Humanitarians",
-      "keywords": ["drama", "prophecy", "influence", "intensity", "vision"],
+      "keywords": [
+        "drama",
+        "prophecy",
+        "influence",
+        "intensity",
+        "vision"
+      ],
       "description": "The ethical-intuitive extrovert of dramatic vision. Sees historical trajectories, intense emotional influence, prophetic sensibilities.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.45,
         "light-shadow": 0.45,
         "active-receptive": 0.35,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["prophecy", "vision"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["drama", "intensity"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "prophecy",
+            "vision"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "drama",
+            "intensity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:enfj", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:enfj",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "lover",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through prophecy and vision",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:lsi",
@@ -158,25 +352,66 @@
       "function": "Ti-Se",
       "quadra": "Beta",
       "club": "Pragmatists",
-      "keywords": ["structure", "discipline", "order", "enforcement", "systems"],
+      "keywords": [
+        "structure",
+        "discipline",
+        "order",
+        "enforcement",
+        "systems"
+      ],
       "description": "The logical-sensory introvert who enforces structure. Creates and maintains ordered systems, disciplined approach, territorial.",
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.45,
-        "light-shadow": 0.40,
-        "active-receptive": 0.40,
-        "individual-collective": 0.50,
+        "light-shadow": 0.4,
+        "active-receptive": 0.4,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.30,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["order", "enforcement"]},
-        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["discipline", "structure"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.75,
+          "aspects": [
+            "order",
+            "enforcement"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.6,
+          "aspects": [
+            "discipline",
+            "structure"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:istj", "fidelity": 0.80, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:istj",
+          "fidelity": 0.8,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "domains": [
+        "order"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through order and enforcement",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "socionics:sle",
@@ -186,25 +421,63 @@
       "function": "Se-Ti",
       "quadra": "Beta",
       "club": "Pragmatists",
-      "keywords": ["power", "territory", "conquest", "force", "leadership"],
+      "keywords": [
+        "power",
+        "territory",
+        "conquest",
+        "force",
+        "leadership"
+      ],
       "description": "The sensory-logical extrovert of power and territory. Conquers through force of will, direct action, natural commander.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.60,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.6,
         "light-shadow": 0.45,
         "active-receptive": 0.15,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["power", "conquest"]},
-        {"primordial": "primordial:sovereign", "weight": 0.65, "aspects": ["leadership", "territory"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "power",
+            "conquest"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.65,
+          "aspects": [
+            "leadership",
+            "territory"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:estp", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:estp",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through power and conquest",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "socionics:iei",
@@ -214,25 +487,67 @@
       "function": "Ni-Fe",
       "quadra": "Beta",
       "club": "Humanitarians",
-      "keywords": ["dreams", "poetry", "timing", "moods", "mysticism"],
+      "keywords": [
+        "dreams",
+        "poetry",
+        "timing",
+        "moods",
+        "mysticism"
+      ],
       "description": "The intuitive-ethical introvert of dreams and timing. Poetic soul attuned to temporal flow, mystical insights, mood sensitivity.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.55,
-        "active-receptive": 0.70,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.60,
+        "active-receptive": 0.7,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["timing", "mysticism"]},
-        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["dreams", "poetry"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "timing",
+            "mysticism"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.6,
+          "aspects": [
+            "dreams",
+            "poetry"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:infp", "fidelity": 0.80, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:infp",
+          "fidelity": 0.8,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "domains": [
+        "poetry",
+        "time"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through timing and mysticism",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:lie",
@@ -242,25 +557,63 @@
       "function": "Te-Ni",
       "quadra": "Gamma",
       "club": "Pragmatists",
-      "keywords": ["efficiency", "profit", "enterprise", "timing", "business"],
+      "keywords": [
+        "efficiency",
+        "profit",
+        "enterprise",
+        "timing",
+        "business"
+      ],
       "description": "The logical-intuitive extrovert of efficiency and enterprise. Sees profitable opportunities, action-oriented businessman, strategic timing.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.45,
         "light-shadow": 0.35,
-        "active-receptive": 0.30,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.60,
+        "active-receptive": 0.3,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["enterprise", "action"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["timing", "profit"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "enterprise",
+            "action"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "timing",
+            "profit"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:entj", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:entj",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through enterprise and action",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:esi",
@@ -270,25 +623,63 @@
       "function": "Fi-Se",
       "quadra": "Gamma",
       "club": "Socials",
-      "keywords": ["loyalty", "morals", "relationships", "protection", "values"],
+      "keywords": [
+        "loyalty",
+        "morals",
+        "relationships",
+        "protection",
+        "values"
+      ],
       "description": "The ethical-sensory introvert of deep loyalty. Protector of close relationships, strong moral values, intense personal bonds.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
-        "active-receptive": 0.50,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["loyalty", "protection"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["relationships", "values"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.75,
+          "aspects": [
+            "loyalty",
+            "protection"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "relationships",
+            "values"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:isfj", "fidelity": 0.75, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:isfj",
+          "fidelity": 0.75,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "lover",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through loyalty and protection",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:see",
@@ -298,25 +689,63 @@
       "function": "Se-Fi",
       "quadra": "Gamma",
       "club": "Socials",
-      "keywords": ["influence", "status", "charisma", "ambition", "politics"],
+      "keywords": [
+        "influence",
+        "status",
+        "charisma",
+        "ambition",
+        "politics"
+      ],
       "description": "The sensory-ethical extrovert of influence and status. Political animal, charismatic ambition, reads and manipulates social hierarchies.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.25,
         "individual-collective": 0.55,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.70, "aspects": ["status", "influence"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["charisma", "ambition"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.7,
+          "aspects": [
+            "status",
+            "influence"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "charisma",
+            "ambition"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:esfp", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:esfp",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "lover",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through status and influence",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:ili",
@@ -326,25 +755,63 @@
       "function": "Ni-Te",
       "quadra": "Gamma",
       "club": "Researchers",
-      "keywords": ["trends", "skepticism", "forecasting", "criticism", "patterns"],
+      "keywords": [
+        "trends",
+        "skepticism",
+        "forecasting",
+        "criticism",
+        "patterns"
+      ],
       "description": "The intuitive-logical introvert who sees trends. Skeptical forecaster, pattern recognition, critical analysis of what will happen.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.5,
         "light-shadow": 0.55,
         "active-receptive": 0.65,
         "individual-collective": 0.35,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["trends", "forecasting"]},
-        {"primordial": "primordial:shadow", "weight": 0.50, "aspects": ["skepticism", "criticism"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "trends",
+            "forecasting"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.5,
+          "aspects": [
+            "skepticism",
+            "criticism"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:intj", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:intj",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "mentor",
+        "sage",
+        "shadow"
+      ],
+      "coreFunction": "To embody wise elder energy through trends and forecasting",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:lse",
@@ -354,25 +821,63 @@
       "function": "Te-Si",
       "quadra": "Delta",
       "club": "Pragmatists",
-      "keywords": ["responsibility", "duty", "work", "reliability", "standards"],
+      "keywords": [
+        "responsibility",
+        "duty",
+        "work",
+        "reliability",
+        "standards"
+      ],
       "description": "The logical-sensory extrovert of responsible duty. Reliable worker, maintains standards, takes responsibility for practical outcomes.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.35,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.80, "aspects": ["responsibility", "reliability"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["duty", "standards"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8,
+          "aspects": [
+            "responsibility",
+            "reliability"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "duty",
+            "standards"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:estj", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:estj",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody preserver energy through responsibility and reliability",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:eii",
@@ -382,25 +887,63 @@
       "function": "Fi-Ne",
       "quadra": "Delta",
       "club": "Humanitarians",
-      "keywords": ["empathy", "idealism", "humanity", "potential", "suffering"],
+      "keywords": [
+        "empathy",
+        "idealism",
+        "humanity",
+        "potential",
+        "suffering"
+      ],
       "description": "The ethical-intuitive introvert of deep empathy. Sees human potential, idealistic about humanity, feels others' suffering intensely.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.35,
         "light-shadow": 0.45,
         "active-receptive": 0.65,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["empathy", "humanity"]},
-        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["idealism", "potential"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "empathy",
+            "humanity"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.55,
+          "aspects": [
+            "idealism",
+            "potential"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:infj", "fidelity": 0.80, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:infj",
+          "fidelity": 0.8,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody healer energy through empathy and humanity",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:iee",
@@ -410,25 +953,63 @@
       "function": "Ne-Fi",
       "quadra": "Delta",
       "club": "Humanitarians",
-      "keywords": ["possibilities", "people", "enthusiasm", "connections", "potential"],
+      "keywords": [
+        "possibilities",
+        "people",
+        "enthusiasm",
+        "connections",
+        "potential"
+      ],
       "description": "The intuitive-ethical extrovert who sees possibilities in people. Enthusiastic connector, discovers hidden potential in everyone.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["potential", "people"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["possibilities", "enthusiasm"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.7,
+          "aspects": [
+            "potential",
+            "people"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "possibilities",
+            "enthusiasm"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:enfp", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:enfp",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "trickster"
+      ],
+      "coreFunction": "To embody healer energy through potential and people",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "socionics:sli",
@@ -438,43 +1019,118 @@
       "function": "Si-Te",
       "quadra": "Delta",
       "club": "Researchers",
-      "keywords": ["craft", "quality", "mastery", "independence", "simplicity"],
+      "keywords": [
+        "craft",
+        "quality",
+        "mastery",
+        "independence",
+        "simplicity"
+      ],
       "description": "The sensory-logical introvert of craftsmanship. Master of quality work, independent practitioner, values simplicity and competence.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
-        "individual-collective": 0.30,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.40,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.4,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["craft", "mastery"]},
-        {"primordial": "primordial:preserver", "weight": 0.55, "aspects": ["quality", "simplicity"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.8,
+          "aspects": [
+            "craft",
+            "mastery"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.55,
+          "aspects": [
+            "quality",
+            "simplicity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "mbti:istp", "fidelity": 0.85, "note": "MBTI equivalent"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:istp",
+          "fidelity": 0.85,
+          "note": "MBTI equivalent"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody creator energy through craft and mastery",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "quadras": {
-      "alpha": ["ile", "sei", "ese", "lii"],
-      "beta": ["eie", "lsi", "sle", "iei"],
-      "gamma": ["lie", "esi", "see", "ili"],
-      "delta": ["lse", "eii", "iee", "sli"]
+      "alpha": [
+        "ile",
+        "sei",
+        "ese",
+        "lii"
+      ],
+      "beta": [
+        "eie",
+        "lsi",
+        "sle",
+        "iei"
+      ],
+      "gamma": [
+        "lie",
+        "esi",
+        "see",
+        "ili"
+      ],
+      "delta": [
+        "lse",
+        "eii",
+        "iee",
+        "sli"
+      ]
     },
     "clubs": {
-      "researchers": ["ile", "lii", "ili", "sli"],
-      "socials": ["sei", "ese", "esi", "see"],
-      "pragmatists": ["lsi", "sle", "lie", "lse"],
-      "humanitarians": ["eie", "iei", "eii", "iee"]
+      "researchers": [
+        "ile",
+        "lii",
+        "ili",
+        "sli"
+      ],
+      "socials": [
+        "sei",
+        "ese",
+        "esi",
+        "see"
+      ],
+      "pragmatists": [
+        "lsi",
+        "sle",
+        "lie",
+        "lse"
+      ],
+      "humanitarians": [
+        "eie",
+        "iei",
+        "eii",
+        "iee"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

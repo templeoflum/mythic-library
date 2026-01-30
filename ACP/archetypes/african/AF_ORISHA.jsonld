@@ -151,6 +151,36 @@
         "direction": "Above/Beyond",
         "color": "White (purity)",
         "association": "Cannot be directly worshipped; honored through Orishas"
+      },
+      "domains": [
+        "creation",
+        "sacrifice"
+      ],
+      "keywords": [
+        "beyond",
+        "blessing",
+        "brought",
+        "creation",
+        "creator",
+        "delegated",
+        "devotees",
+        "direct",
+        "divine",
+        "does"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "seeker",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through source-of-all and cosmic-origin",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -283,6 +313,37 @@
         "day": "Sunday",
         "syncretism": "Our Lady of Mercy, Jesus Christ",
         "taboo": "Palm wine, red palm oil, alcohol"
+      },
+      "domains": [
+        "fatherhood",
+        "wisdom"
+      ],
+      "keywords": [
+        "became",
+        "bodies",
+        "calm",
+        "clay",
+        "cool",
+        "created",
+        "creating",
+        "creator",
+        "deformed",
+        "drunk"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "mentor",
+        "ruler",
+        "sage"
+      ],
+      "coreFunction": "To embody creator energy through humanity-shaper and form-giver",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -426,6 +487,39 @@
         "day": "Monday",
         "syncretism": "Holy Child of Atocha, Saint Anthony, Saint Michael",
         "offerings": "Rum, cigars, candy, toys, roosters"
+      },
+      "domains": [
+        "chaos",
+        "communication",
+        "sky",
+        "transformation"
+      ],
+      "keywords": [
+        "before",
+        "carries",
+        "change",
+        "chaos",
+        "communication",
+        "crossroads",
+        "divine",
+        "doorways",
+        "dynamic",
+        "embodies"
+      ],
+      "narrativeRoles": [
+        "herald",
+        "magician",
+        "shapeshifter",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through divine-chaos and boundary-crosser",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -540,6 +634,36 @@
         "day": "Tuesday",
         "syncretism": "Saint Peter, Saint James, Saint George",
         "offerings": "Rum, cigars, rooster, iron tools, palm oil"
+      },
+      "domains": [
+        "earth",
+        "war"
+      ],
+      "keywords": [
+        "action",
+        "blacksmiths",
+        "civilization",
+        "clears",
+        "creator",
+        "decisive",
+        "descend",
+        "destroyer",
+        "direct",
+        "earth"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through battle-lord and path-clearer",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -700,6 +824,40 @@
         "syncretism": "Saint Barbara (female saint - emphasizes androgyny)",
         "symbol": "Double-headed axe (oshe), bata drums, thunderstones",
         "offerings": "Rams, roosters, red apples, bananas, okra, amalá"
+      },
+      "domains": [
+        "dance",
+        "family",
+        "justice",
+        "love",
+        "sovereignty"
+      ],
+      "keywords": [
+        "accidentally",
+        "after",
+        "alafin",
+        "bata",
+        "creative",
+        "dance",
+        "destroyer",
+        "destructive",
+        "drums",
+        "ecstatic"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "lover",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through divine-king and justice-bringer",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -817,6 +975,39 @@
         "syncretism": "Our Lady of Candelaria, Saint Theresa",
         "symbol": "Iruke (horsetail fly-whisk), sword, copper crown",
         "taboo": "Lamb (rams sacred to Shango)"
+      },
+      "domains": [
+        "air",
+        "death",
+        "transformation",
+        "war"
+      ],
+      "keywords": [
+        "air",
+        "alongside",
+        "battle",
+        "breath",
+        "cemetery",
+        "change",
+        "crone",
+        "death",
+        "destroyer",
+        "dying"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "herald",
+        "hero",
+        "sage",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody destroyer energy through storm-bringer and death-guardian",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -934,6 +1125,42 @@
         "syncretism": "Our Lady of Regla, Stella Maris",
         "symbol": "Fans, shells, anchors, mermaids, fish",
         "offerings": "Watermelon, molasses, fish, duck"
+      },
+      "domains": [
+        "childhood",
+        "fertility",
+        "initiation",
+        "love",
+        "motherhood",
+        "protection",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "associated",
+        "became",
+        "childhood",
+        "children",
+        "crossing",
+        "depths",
+        "diaspora",
+        "domain",
+        "embodies",
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "magician"
+      ],
+      "coreFunction": "To embody great mother energy through ocean-mother and protector-of-children",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1073,6 +1300,41 @@
         "syncretism": "Our Lady of Charity (La Caridad del Cobre)",
         "symbol": "Mirror, fan, honey, peacock feathers, brass",
         "offerings": "Honey (tasted first to prove not poison), oranges, pumpkin, cinnamon, chamomile"
+      },
+      "domains": [
+        "childhood",
+        "fertility",
+        "love",
+        "sea",
+        "war",
+        "water"
+      ],
+      "keywords": [
+        "beauty",
+        "beloved",
+        "childhood",
+        "children",
+        "diplomat",
+        "embodies",
+        "failed",
+        "feminine",
+        "fertility",
+        "fierce"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "creator",
+        "lover",
+        "magician"
+      ],
+      "coreFunction": "To embody lover energy through beauty and sensuality",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1186,6 +1448,38 @@
         "syncretism": "Saint Francis of Assisi",
         "symbol": "Divining chain (opele), palm nuts (ikin), divining board (opon Ifá)",
         "taboo": "Only male priests (babalawos) can work directly with Orunmila"
+      },
+      "domains": [
+        "fate",
+        "prophecy",
+        "wisdom"
+      ],
+      "keywords": [
+        "babalawos",
+        "complex",
+        "created",
+        "destinies",
+        "destiny",
+        "devotees",
+        "divination",
+        "does",
+        "fate",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "magician",
+        "mentor",
+        "sage",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody wise elder energy through cosmic-wisdom and destiny-keeper",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1296,6 +1590,35 @@
         "syncretism": "Our Lady of Regla (shared with Yemoja)",
         "symbol": "Chains (broken), shells, ocean treasures, masks",
         "association": "Ancestor veneration, Middle Passage, ocean floor wealth"
+      },
+      "domains": [
+        "initiation",
+        "preservation",
+        "sea"
+      ],
+      "keywords": [
+        "ancestor",
+        "ancestors",
+        "both",
+        "cannot",
+        "crossing",
+        "deep",
+        "depths",
+        "diaspora",
+        "died",
+        "embodies"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "seeker"
+      ],
+      "coreFunction": "To embody ancestor energy through keeper-of-drowned-ancestors and Middle-Passage-guardian",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1405,6 +1728,37 @@
         "syncretism": "Saint Lazarus (the beggar with sores)",
         "symbol": "Crutch, broom (já), raffia covering, cowrie shells",
         "taboo": "Popcorn (associated with smallpox pustules as offerings)"
+      },
+      "domains": [
+        "healing",
+        "wisdom"
+      ],
+      "keywords": [
+        "ayé",
+        "babalú",
+        "babalú-ayé",
+        "beneath",
+        "both",
+        "brings",
+        "covered",
+        "crutch",
+        "cure",
+        "deeply"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "destroyer",
+        "healer",
+        "orphan",
+        "outcast"
+      ],
+      "coreFunction": "To embody healer energy through disease-curer and wound-healer",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1505,6 +1859,36 @@
         "syncretism": "Saint Catherine of Siena",
         "symbol": "Shield, sword, steering wheel (helm)",
         "association": "Marriage, faithful wives, domestic workers"
+      },
+      "domains": [
+        "love",
+        "marriage"
+      ],
+      "keywords": [
+        "betrayed",
+        "cutting",
+        "devotion",
+        "domesticity",
+        "embodies",
+        "exiled",
+        "great mother",
+        "jealous",
+        "lakes",
+        "love"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "lover",
+        "outcast"
+      ],
+      "coreFunction": "To embody lover energy through devoted-wife and tragic-love",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1611,6 +1995,37 @@
         "syncretism": "Saint Anne (grandmother of Jesus)",
         "symbol": "Ibiri (palm rib staff), no iron allowed",
         "taboo": "Iron in her worship"
+      },
+      "domains": [
+        "childhood",
+        "death",
+        "motherhood"
+      ],
+      "keywords": [
+        "ancestor",
+        "ancient",
+        "associated",
+        "because",
+        "between",
+        "boundary",
+        "buruku",
+        "childhood",
+        "children",
+        "clay"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through ancient-one and primordial-mother",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1702,6 +2117,35 @@
         "color": "Black and white",
         "symbol": "Snail shell, five-toed hen, sacred chain",
         "association": "Yoruba kingship, Ile-Ife, national identity"
+      },
+      "domains": [
+        "creation",
+        "earth"
+      ],
+      "keywords": [
+        "ancestor",
+        "asleep",
+        "city",
+        "complement",
+        "completed",
+        "creation",
+        "creator",
+        "descended",
+        "drunk",
+        "earth"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through earth-founder and nation-builder",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1798,6 +2242,37 @@
         "syncretism": "Saint Joseph, Saint Sylvester",
         "symbol": "Single bird on staff (osanyin), herbs, gourd",
         "taboo": "Secrets not to be shared with uninitiated"
+      },
+      "domains": [
+        "healing",
+        "threshold"
+      ],
+      "keywords": [
+        "accidents",
+        "armed",
+        "comes",
+        "communicating",
+        "deformity",
+        "every",
+        "eyed",
+        "forest",
+        "guards",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "magician",
+        "sage",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody healer energy through herbalist and medicine-master",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1891,6 +2366,37 @@
         "syncretism": "Saint Christopher (river-crosser)",
         "symbol": "Axe, volcanic stones",
         "offerings": "Rooster, red palm oil, dried fish"
+      },
+      "domains": [
+        "earth",
+        "fatherhood",
+        "fire"
+      ],
+      "keywords": [
+        "across",
+        "aganju",
+        "beneath",
+        "carries",
+        "cross",
+        "dangerous",
+        "destroyer",
+        "earth",
+        "father",
+        "fatherhood"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "sovereign",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody great father energy through father-of-Shango and primal-masculine",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -2007,6 +2513,35 @@
         "iconography": "Spider or man-spider hybrid",
         "culturalNote": "Akan tradition (Ghana), not Yoruba",
         "confidence": 0.85
+      },
+      "domains": [
+        "initiation",
+        "sky",
+        "wisdom"
+      ],
+      "keywords": [
+        "african",
+        "akan",
+        "american",
+        "anansi",
+        "become",
+        "capturing",
+        "caribbean",
+        "central",
+        "creatures",
+        "culture hero"
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through wit-over-strength and rule-breaker",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ]

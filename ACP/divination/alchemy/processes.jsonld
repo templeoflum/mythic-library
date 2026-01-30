@@ -8,7 +8,6 @@
   "subdomain": "alchemy",
   "cardinality": 15,
   "structuralNotes": "Primary stages (Nigredo, Albedo, Citrinitas, Rubedo) with intermediate processes and key substances. Maps to Jungian individuation.",
-
   "entries": [
     {
       "@id": "alchemy:nigredo",
@@ -16,28 +15,74 @@
       "name": "Nigredo (Blackening)",
       "latinName": "Nigredo",
       "stage": 1,
-      "keywords": ["dissolution", "darkness", "shadow", "putrefaction", "death"],
+      "keywords": [
+        "dissolution",
+        "darkness",
+        "shadow",
+        "putrefaction",
+        "death"
+      ],
       "description": "The first stage of the Work. Breakdown, decay, confrontation with shadow. The death that precedes rebirth.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
-        "creation-destruction": 0.80,
-        "light-shadow": 0.90,
+        "creation-destruction": 0.8,
+        "light-shadow": 0.9,
         "active-receptive": 0.55,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.85,
         "stasis-transformation": 0.75,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.90, "aspects": ["confrontation", "darkness", "unconscious"]},
-        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["dissolution", "putrefaction"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.9,
+          "aspects": [
+            "confrontation",
+            "darkness",
+            "unconscious"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.75,
+          "aspects": [
+            "dissolution",
+            "putrefaction"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "alchemy:albedo", "note": "Death precedes purification"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.80, "note": "Death/transformation"},
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:abyss", "fidelity": 0.75, "note": "Dark night of soul"}
+        {
+          "type": "EVOLUTION",
+          "target": "alchemy:albedo",
+          "note": "Death precedes purification"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:death",
+          "fidelity": 0.8,
+          "note": "Death/transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:abyss",
+          "fidelity": 0.75,
+          "note": "Dark night of soul"
+        }
       ],
-      "psychologicalMapping": "Shadow confrontation, depression, dissolution of ego structures"
+      "psychologicalMapping": "Shadow confrontation, depression, dissolution of ego structures",
+      "domains": [
+        "death",
+        "rebirth"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "destroyer",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through confrontation and darkness",
+      "symbolicCore": "The mirror that reveals what we hide"
     },
     {
       "@id": "alchemy:albedo",
@@ -45,28 +90,70 @@
       "name": "Albedo (Whitening)",
       "latinName": "Albedo",
       "stage": 2,
-      "keywords": ["purification", "dawn", "moon", "feminine", "reflection"],
+      "keywords": [
+        "purification",
+        "dawn",
+        "moon",
+        "feminine",
+        "reflection"
+      ],
       "description": "The second stage. Purification and washing. The emergence of lunar consciousness, anima/animus work.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
-        "active-receptive": 0.70,
-        "individual-collective": 0.50,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.7,
+        "individual-collective": 0.5,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.75, "aspects": ["purification", "lunar", "reflection"]},
-        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["washing", "cleansing"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.75,
+          "aspects": [
+            "purification",
+            "lunar",
+            "reflection"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.65,
+          "aspects": [
+            "washing",
+            "cleansing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "alchemy:citrinitas", "note": "Purification precedes illumination"},
-        {"type": "POLAR_OPPOSITE", "target": "alchemy:nigredo", "axis": "light-shadow", "note": "White vs black"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.70, "note": "Lunar consciousness"}
+        {
+          "type": "EVOLUTION",
+          "target": "alchemy:citrinitas",
+          "note": "Purification precedes illumination"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "alchemy:nigredo",
+          "axis": "light-shadow",
+          "note": "White vs black"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.7,
+          "note": "Lunar consciousness"
+        }
       ],
-      "psychologicalMapping": "Anima/animus integration, purification of projections"
+      "psychologicalMapping": "Anima/animus integration, purification of projections",
+      "narrativeRoles": [
+        "healer",
+        "innocent",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through purification and lunar",
+      "symbolicCore": "The unopened flower of potential"
     },
     {
       "@id": "alchemy:citrinitas",
@@ -74,27 +161,66 @@
       "name": "Citrinitas (Yellowing)",
       "latinName": "Citrinitas",
       "stage": 3,
-      "keywords": ["dawn", "awakening", "solar", "wisdom", "illumination"],
+      "keywords": [
+        "dawn",
+        "awakening",
+        "solar",
+        "wisdom",
+        "illumination"
+      ],
       "description": "The third stage. Solar dawn, intellectual illumination. Often merged with Rubedo in later alchemy.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.35,
-        "light-shadow": 0.20,
+        "light-shadow": 0.2,
         "active-receptive": 0.45,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.30,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.3,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["illumination", "wisdom"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["dawn", "awakening"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "illumination",
+            "wisdom"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "dawn",
+            "awakening"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "alchemy:rubedo", "note": "Illumination precedes completion"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.75, "note": "Solar illumination"}
+        {
+          "type": "EVOLUTION",
+          "target": "alchemy:rubedo",
+          "note": "Illumination precedes completion"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.75,
+          "note": "Solar illumination"
+        }
       ],
-      "psychologicalMapping": "Wisdom emerging, conscious understanding of the process"
+      "psychologicalMapping": "Wisdom emerging, conscious understanding of the process",
+      "domains": [
+        "fire"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through illumination and wisdom",
+      "symbolicCore": "The lamp of accumulated wisdom"
     },
     {
       "@id": "alchemy:rubedo",
@@ -102,28 +228,70 @@
       "name": "Rubedo (Reddening)",
       "latinName": "Rubedo",
       "stage": 4,
-      "keywords": ["completion", "gold", "integration", "wholeness", "philosopher-stone"],
+      "keywords": [
+        "completion",
+        "gold",
+        "integration",
+        "wholeness",
+        "philosopher-stone"
+      ],
       "description": "The final stage. The red of sunrise and sunset. Achievement of the Philosopher's Stone, integration of opposites.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.50,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.90, "aspects": ["wholeness", "integration", "completion"]},
-        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["gold", "achievement"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.9,
+          "aspects": [
+            "wholeness",
+            "integration",
+            "completion"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.6,
+          "aspects": [
+            "gold",
+            "achievement"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "alchemy:nigredo", "axis": "creation-destruction", "note": "Completion vs dissolution"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.80, "note": "Completion/wholeness"},
-        {"type": "CULTURAL_ECHO", "target": "calibration:origin", "fidelity": 0.85, "note": "Center/integration"}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "alchemy:nigredo",
+          "axis": "creation-destruction",
+          "note": "Completion vs dissolution"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:world",
+          "fidelity": 0.8,
+          "note": "Completion/wholeness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "calibration:origin",
+          "fidelity": 0.85,
+          "note": "Center/integration"
+        }
       ],
-      "psychologicalMapping": "Individuation complete, Self realized, opposites integrated"
+      "psychologicalMapping": "Individuation complete, Self realized, opposites integrated",
+      "narrativeRoles": [
+        "creator",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through wholeness and integration",
+      "symbolicCore": "The mandala of wholeness"
     },
     {
       "@id": "alchemy:calcination",
@@ -131,27 +299,66 @@
       "name": "Calcination",
       "latinName": "Calcinatio",
       "process": "fire",
-      "keywords": ["burning", "ego-death", "fire", "reduction", "destruction"],
+      "keywords": [
+        "burning",
+        "ego-death",
+        "fire",
+        "reduction",
+        "destruction"
+      ],
       "description": "Burning to white powder. Destruction of ego attachments and false identifications.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.85,
         "light-shadow": 0.55,
         "active-receptive": 0.25,
         "individual-collective": 0.35,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.80,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["burning", "reduction"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["fire", "purification"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.85,
+          "aspects": [
+            "burning",
+            "reduction"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "fire",
+            "purification"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "alchemy:nigredo", "note": "Part of blackening process"},
-        {"type": "CULTURAL_ECHO", "target": "element:fire", "fidelity": 0.80, "note": "Fire element"}
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:nigredo",
+          "note": "Part of blackening process"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire",
+          "fidelity": 0.8,
+          "note": "Fire element"
+        }
       ],
-      "psychologicalMapping": "Burning away ego attachments, confronting inflation"
+      "psychologicalMapping": "Burning away ego attachments, confronting inflation",
+      "domains": [
+        "destruction",
+        "fire"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "warrior"
+      ],
+      "coreFunction": "To embody destroyer energy through burning and reduction",
+      "symbolicCore": "The scythe of necessary endings"
     },
     {
       "@id": "alchemy:dissolution",
@@ -159,27 +366,67 @@
       "name": "Dissolution",
       "latinName": "Solutio",
       "process": "water",
-      "keywords": ["dissolving", "emotions", "water", "surrender", "letting-go"],
+      "keywords": [
+        "dissolving",
+        "emotions",
+        "water",
+        "surrender",
+        "letting-go"
+      ],
       "description": "Dissolving calcined matter in water. Letting go, emotional processing, surrender.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.60,
-        "light-shadow": 0.60,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.6,
+        "light-shadow": 0.6,
         "active-receptive": 0.75,
         "individual-collective": 0.55,
-        "ascent-descent": 0.60,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["water", "dissolving"]},
-        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["unconscious", "surrender"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.7,
+          "aspects": [
+            "water",
+            "dissolving"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.55,
+          "aspects": [
+            "unconscious",
+            "surrender"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "alchemy:calcination", "note": "Water follows fire"},
-        {"type": "CULTURAL_ECHO", "target": "element:water", "fidelity": 0.80, "note": "Water element"}
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:calcination",
+          "note": "Water follows fire"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:water",
+          "fidelity": 0.8,
+          "note": "Water element"
+        }
       ],
-      "psychologicalMapping": "Emotional release, dissolving rigid structures"
+      "psychologicalMapping": "Emotional release, dissolving rigid structures",
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "shadow"
+      ],
+      "coreFunction": "To embody great mother energy through water and dissolving",
+      "symbolicCore": "The nurturing vessel of life"
     },
     {
       "@id": "alchemy:separation",
@@ -187,26 +434,58 @@
       "name": "Separation",
       "latinName": "Separatio",
       "process": "air",
-      "keywords": ["discernment", "analysis", "sorting", "discrimination", "clarity"],
+      "keywords": [
+        "discernment",
+        "analysis",
+        "sorting",
+        "discrimination",
+        "clarity"
+      ],
       "description": "Separating the pure from the impure. Discernment, analysis, seeing clearly.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.5,
         "light-shadow": 0.35,
         "active-receptive": 0.35,
         "individual-collective": 0.35,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["discernment", "analysis"]},
-        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["cutting", "discrimination"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "discernment",
+            "analysis"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.55,
+          "aspects": [
+            "cutting",
+            "discrimination"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "element:air", "fidelity": 0.75, "note": "Air element"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:air",
+          "fidelity": 0.75,
+          "note": "Air element"
+        }
       ],
-      "psychologicalMapping": "Sorting wheat from chaff, discerning what to keep"
+      "psychologicalMapping": "Sorting wheat from chaff, discerning what to keep",
+      "narrativeRoles": [
+        "mentor",
+        "sage",
+        "warrior"
+      ],
+      "coreFunction": "To embody wise elder energy through discernment and analysis",
+      "symbolicCore": "The lamp of accumulated wisdom"
     },
     {
       "@id": "alchemy:conjunction",
@@ -214,27 +493,67 @@
       "name": "Conjunction",
       "latinName": "Coniunctio",
       "process": "earth",
-      "keywords": ["union", "marriage", "integration", "hieros-gamos", "combining"],
+      "keywords": [
+        "union",
+        "marriage",
+        "integration",
+        "hieros-gamos",
+        "combining"
+      ],
       "description": "The Sacred Marriage of opposites. Union of purified elements, integration.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
-        "active-receptive": 0.50,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.50,
+        "active-receptive": 0.5,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.80, "aspects": ["union", "marriage"]},
-        {"primordial": "primordial:self", "weight": 0.65, "aspects": ["integration", "wholeness"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.8,
+          "aspects": [
+            "union",
+            "marriage"
+          ]
+        },
+        {
+          "primordial": "primordial:self",
+          "weight": 0.65,
+          "aspects": [
+            "integration",
+            "wholeness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.75, "note": "Sacred union"},
-        {"type": "CULTURAL_ECHO", "target": "element:earth", "fidelity": 0.70, "note": "Earth element"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.75,
+          "note": "Sacred union"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:earth",
+          "fidelity": 0.7,
+          "note": "Earth element"
+        }
       ],
-      "psychologicalMapping": "Integration of opposites, inner marriage"
+      "psychologicalMapping": "Integration of opposites, inner marriage",
+      "domains": [
+        "marriage"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody lover energy through union and marriage",
+      "symbolicCore": "The rose of passionate connection"
     },
     {
       "@id": "alchemy:fermentation",
@@ -242,26 +561,61 @@
       "name": "Fermentation",
       "latinName": "Fermentatio",
       "process": "transformation",
-      "keywords": ["inspiration", "spirit", "quickening", "new-life", "decomposition"],
+      "keywords": [
+        "inspiration",
+        "spirit",
+        "quickening",
+        "new-life",
+        "decomposition"
+      ],
       "description": "New life arising from death. Spiritual inspiration, quickening of the soul.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
+        "light-shadow": 0.5,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.80,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["transformation", "quickening"]},
-        {"primordial": "primordial:divine-child", "weight": 0.65, "aspects": ["new-life", "rebirth"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "transformation",
+            "quickening"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.65,
+          "aspects": [
+            "new-life",
+            "rebirth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-DIONYSUS", "fidelity": 0.70, "note": "Wine/fermentation"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DIONYSUS",
+          "fidelity": 0.7,
+          "note": "Wine/fermentation"
+        }
       ],
-      "psychologicalMapping": "Inspiration, spiritual awakening, new consciousness"
+      "psychologicalMapping": "Inspiration, spiritual awakening, new consciousness",
+      "domains": [
+        "death"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and quickening",
+      "symbolicCore": "The wand of conscious transformation"
     },
     {
       "@id": "alchemy:distillation",
@@ -269,26 +623,57 @@
       "name": "Distillation",
       "latinName": "Distillatio",
       "process": "refinement",
-      "keywords": ["purification", "essence", "refinement", "sublimation", "concentration"],
+      "keywords": [
+        "purification",
+        "essence",
+        "refinement",
+        "sublimation",
+        "concentration"
+      ],
       "description": "Repeated distillation to purify. Extracting the essential, releasing the impure.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.45,
         "light-shadow": 0.25,
-        "active-receptive": 0.40,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.30,
-        "stasis-transformation": 0.60,
+        "active-receptive": 0.4,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.3,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["purification", "refinement"]},
-        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["essence", "wisdom"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.7,
+          "aspects": [
+            "purification",
+            "refinement"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.6,
+          "aspects": [
+            "essence",
+            "wisdom"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "alchemy:albedo", "note": "Part of whitening"}
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:albedo",
+          "note": "Part of whitening"
+        }
       ],
-      "psychologicalMapping": "Repeated refinement, concentrating essential nature"
+      "psychologicalMapping": "Repeated refinement, concentrating essential nature",
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "sage"
+      ],
+      "coreFunction": "To embody healer energy through purification and refinement",
+      "symbolicCore": "The caduceus of restoration"
     },
     {
       "@id": "alchemy:coagulation",
@@ -296,26 +681,57 @@
       "name": "Coagulation",
       "latinName": "Coagulatio",
       "process": "crystallization",
-      "keywords": ["embodiment", "manifestation", "crystallization", "incarnation", "stone"],
+      "keywords": [
+        "embodiment",
+        "manifestation",
+        "crystallization",
+        "incarnation",
+        "stone"
+      ],
       "description": "Final crystallization. The Stone is formed. Embodiment of the transformed self.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
-        "ascent-descent": 0.60,
-        "stasis-transformation": 0.40,
+        "ascent-descent": 0.6,
+        "stasis-transformation": 0.4,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["embodiment", "crystallization"]},
-        {"primordial": "primordial:self", "weight": 0.75, "aspects": ["stone", "manifestation"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "embodiment",
+            "crystallization"
+          ]
+        },
+        {
+          "primordial": "primordial:self",
+          "weight": 0.75,
+          "aspects": [
+            "stone",
+            "manifestation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "alchemy:rubedo", "note": "Final stage of reddening"}
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:rubedo",
+          "note": "Final stage of reddening"
+        }
       ],
-      "psychologicalMapping": "Embodying transformation, living the realized Self"
+      "psychologicalMapping": "Embodying transformation, living the realized Self",
+      "narrativeRoles": [
+        "caregiver",
+        "seeker",
+        "sovereign"
+      ],
+      "coreFunction": "To embody self energy through stone and manifestation",
+      "symbolicCore": "The mandala of wholeness"
     },
     {
       "@id": "alchemy:prima-materia",
@@ -323,27 +739,63 @@
       "name": "Prima Materia",
       "latinName": "Prima Materia",
       "substance": "beginning",
-      "keywords": ["chaos", "raw-material", "unconscious", "potential", "undifferentiated"],
+      "keywords": [
+        "chaos",
+        "raw-material",
+        "unconscious",
+        "potential",
+        "undifferentiated"
+      ],
       "description": "The First Matter. The raw, undifferentiated starting material of the Work.",
       "spectralCoordinates": {
         "order-chaos": 0.85,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.80,
-        "active-receptive": 0.60,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.70,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.8,
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.7,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.70
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["chaos", "unconscious", "undifferentiated"]},
-        {"primordial": "primordial:monster", "weight": 0.55, "aspects": ["raw", "untamed"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "chaos",
+            "unconscious",
+            "undifferentiated"
+          ]
+        },
+        {
+          "primordial": "primordial:monster",
+          "weight": 0.55,
+          "aspects": [
+            "raw",
+            "untamed"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "alchemy:philosophers-stone", "axis": "order-chaos", "note": "Chaos to order"},
-        {"type": "COMPLEMENT", "target": "alchemy:nigredo", "note": "Starting material for blackening"}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "alchemy:philosophers-stone",
+          "axis": "order-chaos",
+          "note": "Chaos to order"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:nigredo",
+          "note": "Starting material for blackening"
+        }
       ],
-      "psychologicalMapping": "The unconscious raw material of psyche before transformation"
+      "psychologicalMapping": "The unconscious raw material of psyche before transformation",
+      "narrativeRoles": [
+        "antagonist",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through chaos and unconscious",
+      "symbolicCore": "The mirror that reveals what we hide"
     },
     {
       "@id": "alchemy:philosophers-stone",
@@ -351,28 +803,69 @@
       "name": "Philosopher's Stone",
       "latinName": "Lapis Philosophorum",
       "substance": "end",
-      "keywords": ["perfection", "gold", "immortality", "completion", "elixir"],
+      "keywords": [
+        "perfection",
+        "gold",
+        "immortality",
+        "completion",
+        "elixir"
+      ],
       "description": "The goal of the Great Work. Transmutes lead to gold, confers immortality.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.50,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.50
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.95, "aspects": ["perfection", "wholeness", "integration"]},
-        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["elixir", "immortality"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.95,
+          "aspects": [
+            "perfection",
+            "wholeness",
+            "integration"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.65,
+          "aspects": [
+            "elixir",
+            "immortality"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "alchemy:prima-materia", "axis": "order-chaos", "note": "Order from chaos"},
-        {"type": "COMPLEMENT", "target": "alchemy:rubedo", "note": "Achieved at rubedo"},
-        {"type": "CULTURAL_ECHO", "target": "calibration:origin", "fidelity": 0.90, "note": "Perfect center"}
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "alchemy:prima-materia",
+          "axis": "order-chaos",
+          "note": "Order from chaos"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:rubedo",
+          "note": "Achieved at rubedo"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "calibration:origin",
+          "fidelity": 0.9,
+          "note": "Perfect center"
+        }
       ],
-      "psychologicalMapping": "The fully individuated Self"
+      "psychologicalMapping": "The fully individuated Self",
+      "narrativeRoles": [
+        "healer",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through perfection and wholeness",
+      "symbolicCore": "The mandala of wholeness"
     },
     {
       "@id": "alchemy:mercury",
@@ -380,27 +873,66 @@
       "name": "Mercurius (Philosophical Mercury)",
       "latinName": "Mercurius",
       "substance": "principle",
-      "keywords": ["spirit", "volatility", "messenger", "transformation", "quicksilver"],
+      "keywords": [
+        "spirit",
+        "volatility",
+        "messenger",
+        "transformation",
+        "quicksilver"
+      ],
       "description": "Philosophical Mercury. The volatile, transformative spirit. Both poison and cure.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.40,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.4,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.80,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["transformation", "volatility"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["messenger", "between-worlds"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.85,
+          "aspects": [
+            "transformation",
+            "volatility"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.65,
+          "aspects": [
+            "messenger",
+            "between-worlds"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.85, "note": "Mercury/Hermes"},
-        {"type": "COMPLEMENT", "target": "alchemy:sulphur", "note": "Mercury-Sulphur pair"}
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.85,
+          "note": "Mercury/Hermes"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:sulphur",
+          "note": "Mercury-Sulphur pair"
+        }
       ],
-      "psychologicalMapping": "The mercurial spirit of transformation, trickster consciousness"
+      "psychologicalMapping": "The mercurial spirit of transformation, trickster consciousness",
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "threshold-guardian",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through transformation and volatility",
+      "symbolicCore": "The mask that liberates through deception"
     },
     {
       "@id": "alchemy:sulphur",
@@ -408,34 +940,90 @@
       "name": "Sulphur (Philosophical Sulphur)",
       "latinName": "Sulphur",
       "substance": "principle",
-      "keywords": ["soul", "fire", "desire", "masculine", "combustibility"],
+      "keywords": [
+        "soul",
+        "fire",
+        "desire",
+        "masculine",
+        "combustibility"
+      ],
       "description": "Philosophical Sulphur. The fiery, active principle. Soul, desire, combustibility.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.55,
-        "light-shadow": 0.40,
-        "active-receptive": 0.20,
-        "individual-collective": 0.40,
+        "light-shadow": 0.4,
+        "active-receptive": 0.2,
+        "individual-collective": 0.4,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["fire", "action"]},
-        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["desire", "passion"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "fire",
+            "action"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "desire",
+            "passion"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "alchemy:mercury", "note": "Sulphur-Mercury pair"},
-        {"type": "CULTURAL_ECHO", "target": "element:fire", "fidelity": 0.75, "note": "Fire element"}
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:mercury",
+          "note": "Sulphur-Mercury pair"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire",
+          "fidelity": 0.75,
+          "note": "Fire element"
+        }
       ],
-      "psychologicalMapping": "Soul, passion, the active desiring principle"
+      "psychologicalMapping": "Soul, passion, the active desiring principle",
+      "domains": [
+        "love"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "lover",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through fire and action",
+      "symbolicCore": "The disciplined blade of focused will"
     }
   ],
-
   "systemRelationships": {
-    "majorStages": ["alchemy:nigredo", "alchemy:albedo", "alchemy:citrinitas", "alchemy:rubedo"],
-    "sevenProcesses": ["alchemy:calcination", "alchemy:dissolution", "alchemy:separation", "alchemy:conjunction", "alchemy:fermentation", "alchemy:distillation", "alchemy:coagulation"],
-    "substances": ["alchemy:prima-materia", "alchemy:philosophers-stone", "alchemy:mercury", "alchemy:sulphur"],
+    "majorStages": [
+      "alchemy:nigredo",
+      "alchemy:albedo",
+      "alchemy:citrinitas",
+      "alchemy:rubedo"
+    ],
+    "sevenProcesses": [
+      "alchemy:calcination",
+      "alchemy:dissolution",
+      "alchemy:separation",
+      "alchemy:conjunction",
+      "alchemy:fermentation",
+      "alchemy:distillation",
+      "alchemy:coagulation"
+    ],
+    "substances": [
+      "alchemy:prima-materia",
+      "alchemy:philosophers-stone",
+      "alchemy:mercury",
+      "alchemy:sulphur"
+    ],
     "elementalCorrespondence": {
       "fire": "alchemy:calcination",
       "water": "alchemy:dissolution",
@@ -443,7 +1031,6 @@
       "earth": "alchemy:conjunction"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

@@ -9,7 +9,6 @@
   "cardinality": 9,
   "source": "Pseudo-Dionysius, Christian/Jewish/Islamic angelology",
   "structuralNotes": "Three triads: highest (closest to divine), middle (cosmic governors), lowest (closest to humans).",
-
   "entries": [
     {
       "@id": "angel:seraphim",
@@ -17,7 +16,13 @@
       "name": "Seraphim",
       "triad": "highest",
       "function": "Love, fire, closest to divine",
-      "keywords": ["love", "fire", "worship", "purification", "divine-presence"],
+      "keywords": [
+        "love",
+        "fire",
+        "worship",
+        "purification",
+        "divine-presence"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.42,
@@ -29,15 +34,58 @@
         "voluntary-fated": 0.68
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["love", "devotion"]},
-        {"primordial": "primordial:destroyer", "weight": 0.6, "aspects": ["fire", "purification"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.85,
+          "aspects": [
+            "love",
+            "devotion"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.6,
+          "aspects": [
+            "fire",
+            "purification"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "astrology:sun", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "angel:cherubim", "note": "Love and Wisdom at divine throne"},
-        {"type": "TENSION", "target": "angel:angels", "note": "Highest vs lowest choir"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sun",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:cherubim",
+          "note": "Love and Wisdom at divine throne"
+        },
+        {
+          "type": "TENSION",
+          "target": "angel:angels",
+          "note": "Highest vs lowest choir"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "destroyer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through love and devotion",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "angel:cherubim",
@@ -45,7 +93,13 @@
       "name": "Cherubim",
       "triad": "highest",
       "function": "Wisdom, knowledge, guardians",
-      "keywords": ["wisdom", "knowledge", "guardianship", "gnosis", "light"],
+      "keywords": [
+        "wisdom",
+        "knowledge",
+        "guardianship",
+        "gnosis",
+        "light"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.38,
@@ -57,15 +111,51 @@
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "gnosis"]},
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["guardianship", "protection"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.85,
+          "aspects": [
+            "wisdom",
+            "gnosis"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "guardianship",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:chokmah", "fidelity": 0.8},
-        {"type": "COMPLEMENT", "target": "angel:seraphim", "note": "Wisdom and Love together"},
-        {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.75}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:high_priestess",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:chokmah",
+          "fidelity": 0.8
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:seraphim",
+          "note": "Wisdom and Love together"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:wise_old_man",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody wise_elder energy through wisdom and gnosis",
+      "symbolicCore": "The essential pattern of Cherubim"
     },
     {
       "@id": "angel:thrones",
@@ -73,7 +163,13 @@
       "name": "Thrones",
       "triad": "highest",
       "function": "Divine justice, humility",
-      "keywords": ["justice", "humility", "stability", "judgment", "throne"],
+      "keywords": [
+        "justice",
+        "humility",
+        "stability",
+        "judgment",
+        "throne"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
         "creation-destruction": 0.48,
@@ -85,14 +181,53 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["justice", "judgment"]},
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["stability", "humility"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "justice",
+            "judgment"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "stability",
+            "humility"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:binah", "fidelity": 0.75},
-        {"type": "COMPLEMENT", "target": "angel:dominions", "note": "Thrones support Dominions' rule"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:binah",
+          "fidelity": 0.75
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:dominions",
+          "note": "Thrones support Dominions' rule"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through justice and judgment",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "angel:dominions",
@@ -100,7 +235,13 @@
       "name": "Dominions",
       "triad": "middle",
       "function": "Leadership, regulation of duties",
-      "keywords": ["leadership", "regulation", "hierarchy", "command", "order"],
+      "keywords": [
+        "leadership",
+        "regulation",
+        "hierarchy",
+        "command",
+        "order"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.12,
         "creation-destruction": 0.42,
@@ -112,15 +253,57 @@
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["leadership", "command"]},
-        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["hierarchy", "order"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.85,
+          "aspects": [
+            "leadership",
+            "command"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.7,
+          "aspects": [
+            "hierarchy",
+            "order"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.75},
-        {"type": "COMPLEMENT", "target": "angel:thrones", "note": "Receive authority from Thrones"},
-        {"type": "TENSION", "target": "angel:virtues", "note": "Command vs action"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:blue",
+          "fidelity": 0.75
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:thrones",
+          "note": "Receive authority from Thrones"
+        },
+        {
+          "type": "TENSION",
+          "target": "angel:virtues",
+          "note": "Command vs action"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through leadership and command",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "angel:virtues",
@@ -128,7 +311,13 @@
       "name": "Virtues",
       "triad": "middle",
       "function": "Miracles, courage, grace",
-      "keywords": ["miracles", "courage", "grace", "blessing", "strength"],
+      "keywords": [
+        "miracles",
+        "courage",
+        "grace",
+        "blessing",
+        "strength"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.28,
@@ -140,14 +329,54 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["miracles", "grace"]},
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["courage", "strength"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "miracles",
+            "grace"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "courage",
+            "strength"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.75},
-        {"type": "COMPLEMENT", "target": "angel:powers", "note": "Grace complements defense"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:strength",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:star",
+          "fidelity": 0.75
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:powers",
+          "note": "Grace complements defense"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody healer energy through miracles and grace",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "angel:powers",
@@ -155,7 +384,13 @@
       "name": "Powers",
       "triad": "middle",
       "function": "Defense against evil, warriors",
-      "keywords": ["defense", "warfare", "protection", "vigilance", "combat"],
+      "keywords": [
+        "defense",
+        "warfare",
+        "protection",
+        "vigilance",
+        "combat"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.55,
@@ -167,15 +402,59 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["warfare", "combat"]},
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["defense", "protection"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "warfare",
+            "combat"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "defense",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.75},
-        {"type": "COMPLEMENT", "target": "angel:virtues", "note": "Defense complements grace"},
-        {"type": "TENSION", "target": "jungian:shadow", "note": "Combat against shadow forces"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:chariot",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mars",
+          "fidelity": 0.75
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:virtues",
+          "note": "Defense complements grace"
+        },
+        {
+          "type": "TENSION",
+          "target": "jungian:shadow",
+          "note": "Combat against shadow forces"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through warfare and combat",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "angel:principalities",
@@ -183,7 +462,13 @@
       "name": "Principalities",
       "triad": "lowest",
       "function": "Nations, groups, institutions",
-      "keywords": ["nations", "institutions", "guidance", "civilization", "governance"],
+      "keywords": [
+        "nations",
+        "institutions",
+        "guidance",
+        "civilization",
+        "governance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.42,
@@ -195,14 +480,52 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["governance", "nations"]},
-        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["civilization", "institutions"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.75,
+          "aspects": [
+            "governance",
+            "nations"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.7,
+          "aspects": [
+            "civilization",
+            "institutions"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "spiral:blue", "fidelity": 0.7},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "angel:archangels", "note": "Collective vs individual guidance"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:blue",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hierophant",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:archangels",
+          "note": "Collective vs individual guidance"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through governance and nations",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "angel:archangels",
@@ -210,7 +533,13 @@
       "name": "Archangels",
       "triad": "lowest",
       "function": "Important messages, major missions",
-      "keywords": ["messenger", "announcement", "mission", "revelation", "herald"],
+      "keywords": [
+        "messenger",
+        "announcement",
+        "mission",
+        "revelation",
+        "herald"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.42,
@@ -222,15 +551,58 @@
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["messenger", "herald"]},
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["mission", "revelation"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.85,
+          "aspects": [
+            "messenger",
+            "herald"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "mission",
+            "revelation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vogler:herald", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "journey:call_to_adventure", "fidelity": 0.75},
-        {"type": "COMPLEMENT", "target": "angel:angels", "note": "Major vs everyday guidance"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:herald",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:call_to_adventure",
+          "fidelity": 0.75
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:angels",
+          "note": "Major vs everyday guidance"
+        }
+      ],
+      "narrativeRoles": [
+        "herald",
+        "hero",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through messenger and herald",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "angel:angels",
@@ -238,7 +610,13 @@
       "name": "Angels",
       "triad": "lowest",
       "function": "Personal guardians, everyday guidance",
-      "keywords": ["guardian", "guidance", "protection", "presence", "assistance"],
+      "keywords": [
+        "guardian",
+        "guidance",
+        "protection",
+        "presence",
+        "assistance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.35,
@@ -250,36 +628,111 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["guardian", "assistance"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["guidance", "presence"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "guardian",
+            "assistance"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.65,
+          "aspects": [
+            "guidance",
+            "presence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.7},
-        {"type": "COMPLEMENT", "target": "angel:archangels", "note": "Everyday vs major guidance"},
-        {"type": "TENSION", "target": "angel:seraphim", "note": "Closest to humans vs closest to divine"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:temperance",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:mentor",
+          "fidelity": 0.7
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "angel:archangels",
+          "note": "Everyday vs major guidance"
+        },
+        {
+          "type": "TENSION",
+          "target": "angel:seraphim",
+          "note": "Closest to humans vs closest to divine"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody healer energy through guardian and assistance",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "triads": {
-      "highest": ["angel:seraphim", "angel:cherubim", "angel:thrones"],
-      "middle": ["angel:dominions", "angel:virtues", "angel:powers"],
-      "lowest": ["angel:principalities", "angel:archangels", "angel:angels"],
+      "highest": [
+        "angel:seraphim",
+        "angel:cherubim",
+        "angel:thrones"
+      ],
+      "middle": [
+        "angel:dominions",
+        "angel:virtues",
+        "angel:powers"
+      ],
+      "lowest": [
+        "angel:principalities",
+        "angel:archangels",
+        "angel:angels"
+      ],
       "note": "Hierarchy from divine source to human realm"
     },
     "functionalGroups": {
-      "contemplative": ["angel:seraphim", "angel:cherubim", "angel:thrones"],
-      "governing": ["angel:dominions", "angel:virtues", "angel:powers"],
-      "ministering": ["angel:principalities", "angel:archangels", "angel:angels"]
+      "contemplative": [
+        "angel:seraphim",
+        "angel:cherubim",
+        "angel:thrones"
+      ],
+      "governing": [
+        "angel:dominions",
+        "angel:virtues",
+        "angel:powers"
+      ],
+      "ministering": [
+        "angel:principalities",
+        "angel:archangels",
+        "angel:angels"
+      ]
     },
     "ascentPath": {
-      "fromHuman": ["angel:angels", "angel:archangels", "angel:principalities", "angel:powers", "angel:virtues", "angel:dominions", "angel:thrones", "angel:cherubim", "angel:seraphim"],
+      "fromHuman": [
+        "angel:angels",
+        "angel:archangels",
+        "angel:principalities",
+        "angel:powers",
+        "angel:virtues",
+        "angel:dominions",
+        "angel:thrones",
+        "angel:cherubim",
+        "angel:seraphim"
+      ],
       "note": "Ladder from humanity to divine presence"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

@@ -8,7 +8,6 @@
   "subdomain": "zodiac",
   "cardinality": 27,
   "structuralNotes": "27 divisions × 13°20' = 360°. Each nakshatra has a ruling deity, planet, animal symbol, and quality (deva/manushya/rakshasa). Grouped into triadic padas.",
-
   "entries": [
     {
       "@id": "nakshatra:ashwini",
@@ -20,25 +19,66 @@
       "rulingPlanet": "Ketu",
       "symbol": "Horse's head",
       "quality": "Deva (Light)",
-      "keywords": ["beginnings", "speed", "healing", "pioneering", "vitality"],
+      "keywords": [
+        "beginnings",
+        "speed",
+        "healing",
+        "pioneering",
+        "vitality"
+      ],
       "description": "The first nakshatra, ruled by the divine physician twins. Represents swift new beginnings, healing abilities, and pioneering spirit.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.25,
-        "light-shadow": 0.30,
-        "active-receptive": 0.20,
+        "light-shadow": 0.3,
+        "active-receptive": 0.2,
         "individual-collective": 0.35,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["divine-healing", "restoration"]},
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["pioneering", "swiftness"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "divine-healing",
+            "restoration"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "pioneering",
+            "swiftness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:aries", "fidelity": 0.70, "note": "First degrees of Aries"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:aries",
+          "fidelity": 0.7,
+          "note": "First degrees of Aries"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "hero"
+      ],
+      "coreFunction": "To embody healer energy through divine-healing and restoration",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:bharani",
@@ -50,25 +90,68 @@
       "rulingPlanet": "Venus",
       "symbol": "Yoni (female organ)",
       "quality": "Manushya (Human)",
-      "keywords": ["birth", "death", "restraint", "transformation", "fertility"],
+      "keywords": [
+        "birth",
+        "death",
+        "restraint",
+        "transformation",
+        "fertility"
+      ],
       "description": "Ruled by Yama, the god of death. Represents the womb, birth-death cycles, and the bearing of burdens through transformation.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.50,
+        "creation-destruction": 0.5,
         "light-shadow": 0.55,
         "active-receptive": 0.55,
         "individual-collective": 0.45,
-        "ascent-descent": 0.60,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.75,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.75, "aspects": ["birth", "fertility"]},
-        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["death", "endings"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.75,
+          "aspects": [
+            "birth",
+            "fertility"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.6,
+          "aspects": [
+            "death",
+            "endings"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-YAMA", "fidelity": 0.75, "note": "Ruled by Yama"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-YAMA",
+          "fidelity": 0.75,
+          "note": "Ruled by Yama"
+        }
+      ],
+      "domains": [
+        "creation",
+        "death",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer"
+      ],
+      "coreFunction": "To embody great mother energy through birth and fertility",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:krittika",
@@ -80,25 +163,62 @@
       "rulingPlanet": "Sun",
       "symbol": "Razor/flame",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["purification", "cutting", "fire", "nurturing", "criticism"],
+      "keywords": [
+        "purification",
+        "cutting",
+        "fire",
+        "nurturing",
+        "criticism"
+      ],
       "description": "The Pleiades, ruled by Agni. Sharp, purifying energy that cuts away impurities. Associated with foster-mothers of Kartikeya.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.55,
         "light-shadow": 0.35,
         "active-receptive": 0.25,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.40
+        "individual-collective": 0.4,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["purification", "cutting"]},
-        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["nurturing", "foster-care"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.7,
+          "aspects": [
+            "purification",
+            "cutting"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.55,
+          "aspects": [
+            "nurturing",
+            "foster-care"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-AGNI", "fidelity": 0.80, "note": "Ruled by Agni"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-AGNI",
+          "fidelity": 0.8,
+          "note": "Ruled by Agni"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "destroyer"
+      ],
+      "coreFunction": "To embody destroyer energy through purification and cutting",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:rohini",
@@ -110,25 +230,66 @@
       "rulingPlanet": "Moon",
       "symbol": "Ox cart/chariot",
       "quality": "Manushya (Human)",
-      "keywords": ["growth", "beauty", "fertility", "desire", "abundance"],
+      "keywords": [
+        "growth",
+        "beauty",
+        "fertility",
+        "desire",
+        "abundance"
+      ],
       "description": "The red star Aldebaran. Most fertile and beautiful nakshatra, associated with growth, sensuality, and material abundance.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.20,
-        "light-shadow": 0.30,
-        "active-receptive": 0.60,
-        "individual-collective": 0.50,
+        "creation-destruction": 0.2,
+        "light-shadow": 0.3,
+        "active-receptive": 0.6,
+        "individual-collective": 0.5,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["fertility", "growth"]},
-        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["beauty", "desire"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.8,
+          "aspects": [
+            "fertility",
+            "growth"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "beauty",
+            "desire"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-BRAHMA", "fidelity": 0.75, "note": "Ruled by Brahma"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-BRAHMA",
+          "fidelity": 0.75,
+          "note": "Ruled by Brahma"
+        }
+      ],
+      "domains": [
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody creator energy through fertility and growth",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:mrigashira",
@@ -140,25 +301,62 @@
       "rulingPlanet": "Mars",
       "symbol": "Deer's head",
       "quality": "Deva (Light)",
-      "keywords": ["searching", "curiosity", "gentleness", "quest", "wandering"],
+      "keywords": [
+        "searching",
+        "curiosity",
+        "gentleness",
+        "quest",
+        "wandering"
+      ],
       "description": "The deer's head, representing the eternal search for fulfillment. Gentle, curious energy always seeking something beyond.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
         "individual-collective": 0.35,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["seeking", "quest"]},
-        {"primordial": "primordial:divine-child", "weight": 0.55, "aspects": ["curiosity", "gentleness"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "seeking",
+            "quest"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.55,
+          "aspects": [
+            "curiosity",
+            "gentleness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:seeker", "fidelity": 0.70, "note": "Seeker archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:seeker",
+          "fidelity": 0.7,
+          "note": "Seeker archetype"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody hero energy through seeking and quest",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:ardra",
@@ -170,25 +368,67 @@
       "rulingPlanet": "Rahu",
       "symbol": "Teardrop/diamond",
       "quality": "Manushya (Human)",
-      "keywords": ["storms", "destruction", "renewal", "intensity", "effort"],
+      "keywords": [
+        "storms",
+        "destruction",
+        "renewal",
+        "intensity",
+        "effort"
+      ],
       "description": "The star of sorrow and storms, ruled by fierce Rudra. Represents necessary destruction that leads to renewal and growth.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
-        "creation-destruction": 0.70,
-        "light-shadow": 0.50,
-        "active-receptive": 0.30,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.50,
+        "creation-destruction": 0.7,
+        "light-shadow": 0.5,
+        "active-receptive": 0.3,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.75,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["storms", "destruction"]},
-        {"primordial": "primordial:healer", "weight": 0.50, "aspects": ["renewal", "clearing"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.8,
+          "aspects": [
+            "storms",
+            "destruction"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.5,
+          "aspects": [
+            "renewal",
+            "clearing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-SHIVA", "fidelity": 0.70, "note": "Rudra form of Shiva"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-SHIVA",
+          "fidelity": 0.7,
+          "note": "Rudra form of Shiva"
+        }
+      ],
+      "domains": [
+        "air",
+        "destruction",
+        "rebirth"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "healer"
+      ],
+      "coreFunction": "To embody destroyer energy through storms and destruction",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:punarvasu",
@@ -200,25 +440,69 @@
       "rulingPlanet": "Jupiter",
       "symbol": "Bow and quiver",
       "quality": "Deva (Light)",
-      "keywords": ["return", "renewal", "restoration", "abundance", "home"],
+      "keywords": [
+        "return",
+        "renewal",
+        "restoration",
+        "abundance",
+        "home"
+      ],
       "description": "Return of the light. Associated with restoration, coming home, and the infinite abundance of the divine mother Aditi.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.25,
-        "light-shadow": 0.30,
-        "active-receptive": 0.50,
+        "light-shadow": 0.3,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.50,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["abundance", "nurturing"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["restoration", "return"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.8,
+          "aspects": [
+            "abundance",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "restoration",
+            "return"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:return", "fidelity": 0.65, "note": "Return home"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:return",
+          "fidelity": 0.65,
+          "note": "Return home"
+        }
+      ],
+      "domains": [
+        "fertility",
+        "healing",
+        "home",
+        "motherhood"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody great mother energy through abundance and nurturing",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:pushya",
@@ -230,7 +514,13 @@
       "rulingPlanet": "Saturn",
       "symbol": "Flower/udder",
       "quality": "Deva (Light)",
-      "keywords": ["nourishment", "prosperity", "teaching", "devotion", "protection"],
+      "keywords": [
+        "nourishment",
+        "prosperity",
+        "teaching",
+        "devotion",
+        "protection"
+      ],
       "description": "The most auspicious nakshatra for spiritual activities. Represents nourishment, teaching, and the flower of spiritual devotion.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
@@ -240,15 +530,48 @@
         "individual-collective": 0.65,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["teaching", "guidance"]},
-        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["nourishment", "protection"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "teaching",
+            "guidance"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.7,
+          "aspects": [
+            "nourishment",
+            "protection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:cancer", "fidelity": 0.70, "note": "Cancer's nurturing nature"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:cancer",
+          "fidelity": 0.7,
+          "note": "Cancer's nurturing nature"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through teaching and guidance",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:ashlesha",
@@ -260,25 +583,63 @@
       "rulingPlanet": "Mercury",
       "symbol": "Coiled serpent",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["kundalini", "hypnosis", "embracing", "mysticism", "clinging"],
+      "keywords": [
+        "kundalini",
+        "hypnosis",
+        "embracing",
+        "mysticism",
+        "clinging"
+      ],
       "description": "The serpent's embrace. Deep mystical energy, kundalini awakening, and the power of psychological penetration.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.50,
+        "creation-destruction": 0.5,
         "light-shadow": 0.65,
         "active-receptive": 0.45,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.60,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["kundalini", "mysticism"]},
-        {"primordial": "primordial:shadow", "weight": 0.60, "aspects": ["hidden-depths", "manipulation"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "kundalini",
+            "mysticism"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.6,
+          "aspects": [
+            "hidden-depths",
+            "manipulation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "chakra:muladhara", "fidelity": 0.60, "note": "Serpent energy"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:muladhara",
+          "fidelity": 0.6,
+          "note": "Serpent energy"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shadow",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through kundalini and mysticism",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:magha",
@@ -290,25 +651,66 @@
       "rulingPlanet": "Ketu",
       "symbol": "Royal throne",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["ancestors", "royalty", "authority", "tradition", "legacy"],
+      "keywords": [
+        "ancestors",
+        "royalty",
+        "authority",
+        "tradition",
+        "legacy"
+      ],
       "description": "The royal star at Regulus. Represents ancestral power, royal authority, and the weight of tradition and lineage.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
         "active-receptive": 0.35,
-        "individual-collective": 0.70,
+        "individual-collective": 0.7,
         "ascent-descent": 0.35,
-        "stasis-transformation": 0.30,
-        "voluntary-fated": 0.70
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["royalty", "authority"]},
-        {"primordial": "primordial:ancestor", "weight": 0.80, "aspects": ["lineage", "tradition"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.85,
+          "aspects": [
+            "royalty",
+            "authority"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.8,
+          "aspects": [
+            "lineage",
+            "tradition"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.75, "note": "Royal authority"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:king",
+          "fidelity": 0.75,
+          "note": "Royal authority"
+        }
+      ],
+      "domains": [
+        "family",
+        "memory"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through royalty and authority",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "nakshatra:purva-phalguni",
@@ -320,25 +722,63 @@
       "rulingPlanet": "Venus",
       "symbol": "Front legs of bed/hammock",
       "quality": "Manushya (Human)",
-      "keywords": ["pleasure", "creativity", "romance", "relaxation", "enjoyment"],
+      "keywords": [
+        "pleasure",
+        "creativity",
+        "romance",
+        "relaxation",
+        "enjoyment"
+      ],
       "description": "The star of creative pleasure and romantic fulfillment. Associated with rest, enjoyment, and the fruits of prosperity.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.40
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["pleasure", "romance"]},
-        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["creativity", "enjoyment"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.85,
+          "aspects": [
+            "pleasure",
+            "romance"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.55,
+          "aspects": [
+            "creativity",
+            "enjoyment"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:leo", "fidelity": 0.65, "note": "Leo's creative expression"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:leo",
+          "fidelity": 0.65,
+          "note": "Leo's creative expression"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through pleasure and romance",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "nakshatra:uttara-phalguni",
@@ -350,25 +790,62 @@
       "rulingPlanet": "Sun",
       "symbol": "Back legs of bed",
       "quality": "Manushya (Human)",
-      "keywords": ["contracts", "partnership", "service", "friendship", "commitment"],
+      "keywords": [
+        "contracts",
+        "partnership",
+        "service",
+        "friendship",
+        "commitment"
+      ],
       "description": "The star of patronage and friendship. Represents committed partnerships, social contracts, and helpful service.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
-        "active-receptive": 0.50,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.40,
+        "light-shadow": 0.3,
+        "active-receptive": 0.5,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["partnership", "commitment"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["service", "help"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "partnership",
+            "commitment"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "service",
+            "help"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "nakshatra:purva-phalguni", "note": "Completes the bed pair"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "nakshatra:purva-phalguni",
+          "note": "Completes the bed pair"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through partnership and commitment",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:hasta",
@@ -380,25 +857,65 @@
       "rulingPlanet": "Moon",
       "symbol": "Hand/fist",
       "quality": "Deva (Light)",
-      "keywords": ["skill", "craftsmanship", "healing-hands", "dexterity", "control"],
+      "keywords": [
+        "skill",
+        "craftsmanship",
+        "healing-hands",
+        "dexterity",
+        "control"
+      ],
       "description": "The hand of skill. Represents manual dexterity, craftsmanship, healing touch, and the power to manifest through action.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.30,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["craftsmanship", "skill"]},
-        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["healing-hands", "touch"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.75,
+          "aspects": [
+            "craftsmanship",
+            "skill"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.65,
+          "aspects": [
+            "healing-hands",
+            "touch"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:virgo", "fidelity": 0.70, "note": "Virgo's skill"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:virgo",
+          "fidelity": 0.7,
+          "note": "Virgo's skill"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody creator energy through craftsmanship and skill",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:chitra",
@@ -410,25 +927,65 @@
       "rulingPlanet": "Mars",
       "symbol": "Bright jewel/pearl",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["beauty", "artistry", "brilliance", "architecture", "illusion"],
+      "keywords": [
+        "beauty",
+        "artistry",
+        "brilliance",
+        "architecture",
+        "illusion"
+      ],
       "description": "The bright star Spica. Represents artistic brilliance, divine architecture, and the creation of beautiful forms.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.25,
         "light-shadow": 0.35,
-        "active-receptive": 0.40,
+        "active-receptive": 0.4,
         "individual-collective": 0.35,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.85, "aspects": ["artistry", "architecture"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["brilliance", "illusion"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.85,
+          "aspects": [
+            "artistry",
+            "architecture"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "brilliance",
+            "illusion"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:creator", "fidelity": 0.75, "note": "Creative archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:creator",
+          "fidelity": 0.75,
+          "note": "Creative archetype"
+        }
+      ],
+      "domains": [
+        "creation"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through artistry and architecture",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "nakshatra:swati",
@@ -440,25 +997,65 @@
       "rulingPlanet": "Rahu",
       "symbol": "Young plant/coral",
       "quality": "Deva (Light)",
-      "keywords": ["independence", "flexibility", "movement", "scatter", "adaptability"],
+      "keywords": [
+        "independence",
+        "flexibility",
+        "movement",
+        "scatter",
+        "adaptability"
+      ],
       "description": "The self-going star. Represents independence, flexibility, and the ability to adapt like a young plant bending in wind.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
         "active-receptive": 0.45,
-        "individual-collective": 0.30,
+        "individual-collective": 0.3,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.30
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["independence", "freedom"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["adaptability", "movement"]}
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.65,
+          "aspects": [
+            "independence",
+            "freedom"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "adaptability",
+            "movement"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:libra", "fidelity": 0.60, "note": "Libra air element"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:libra",
+          "fidelity": 0.6,
+          "note": "Libra air element"
+        }
+      ],
+      "domains": [
+        "air"
+      ],
+      "narrativeRoles": [
+        "rebel",
+        "trickster"
+      ],
+      "coreFunction": "To embody rebel energy through independence and freedom",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:vishakha",
@@ -470,25 +1067,62 @@
       "rulingPlanet": "Jupiter",
       "symbol": "Triumphal arch/forked branch",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["determination", "ambition", "purpose", "conquest", "transformation"],
+      "keywords": [
+        "determination",
+        "ambition",
+        "purpose",
+        "conquest",
+        "transformation"
+      ],
       "description": "The star of purpose. Represents single-minded determination, the triumph that comes through focused ambition.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.50,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.5,
         "light-shadow": 0.45,
         "active-receptive": 0.25,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["determination", "conquest"]},
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["purpose", "ambition"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.75,
+          "aspects": [
+            "determination",
+            "conquest"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "purpose",
+            "ambition"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-INDRA", "fidelity": 0.70, "note": "Ruled by Indra"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-INDRA",
+          "fidelity": 0.7,
+          "note": "Ruled by Indra"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through determination and conquest",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:anuradha",
@@ -500,25 +1134,63 @@
       "rulingPlanet": "Saturn",
       "symbol": "Lotus flower",
       "quality": "Deva (Light)",
-      "keywords": ["devotion", "friendship", "success", "organization", "collaboration"],
+      "keywords": [
+        "devotion",
+        "friendship",
+        "success",
+        "organization",
+        "collaboration"
+      ],
       "description": "The star of success through devotion. Like a lotus rising from mud, represents triumph through friendship and dedication.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
-        "active-receptive": 0.50,
+        "light-shadow": 0.4,
+        "active-receptive": 0.5,
         "individual-collective": 0.65,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["devotion", "friendship"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["success", "collaboration"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "devotion",
+            "friendship"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "success",
+            "collaboration"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:scorpio", "fidelity": 0.65, "note": "Scorpio depths"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:scorpio",
+          "fidelity": 0.65,
+          "note": "Scorpio depths"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through devotion and friendship",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:jyeshtha",
@@ -530,25 +1202,63 @@
       "rulingPlanet": "Mercury",
       "symbol": "Earring/umbrella",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["seniority", "protection", "authority", "wealth", "responsibility"],
+      "keywords": [
+        "seniority",
+        "protection",
+        "authority",
+        "wealth",
+        "responsibility"
+      ],
       "description": "The eldest, the chief. Represents senior authority, protective power, and the responsibilities of leadership.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.45,
         "light-shadow": 0.45,
         "active-receptive": 0.35,
         "individual-collective": 0.55,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.40,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.4,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["authority", "seniority"]},
-        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["protection", "responsibility"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "authority",
+            "seniority"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.6,
+          "aspects": [
+            "protection",
+            "responsibility"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-INDRA", "fidelity": 0.75, "note": "Ruled by Indra"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-INDRA",
+          "fidelity": 0.75,
+          "note": "Ruled by Indra"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through authority and seniority",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:mula",
@@ -560,25 +1270,65 @@
       "rulingPlanet": "Ketu",
       "symbol": "Tied roots/lion's tail",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["roots", "foundation", "destruction", "investigation", "transformation"],
+      "keywords": [
+        "roots",
+        "foundation",
+        "destruction",
+        "investigation",
+        "transformation"
+      ],
       "description": "The root star at the galactic center. Represents getting to the root of things through necessary destruction and deep investigation.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.75,
-        "light-shadow": 0.60,
+        "light-shadow": 0.6,
         "active-receptive": 0.35,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.65,
-        "stasis-transformation": 0.80,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["uprooting", "destruction"]},
-        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["investigation", "roots"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.85,
+          "aspects": [
+            "uprooting",
+            "destruction"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "investigation",
+            "roots"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "alchemy:nigredo", "fidelity": 0.70, "note": "Dissolution phase"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:nigredo",
+          "fidelity": 0.7,
+          "note": "Dissolution phase"
+        }
+      ],
+      "domains": [
+        "destruction"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician"
+      ],
+      "coreFunction": "To embody destroyer energy through uprooting and destruction",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "nakshatra:purva-ashadha",
@@ -590,25 +1340,66 @@
       "rulingPlanet": "Venus",
       "symbol": "Elephant tusk/fan",
       "quality": "Manushya (Human)",
-      "keywords": ["invincibility", "purification", "victory", "rejuvenation", "pride"],
+      "keywords": [
+        "invincibility",
+        "purification",
+        "victory",
+        "rejuvenation",
+        "pride"
+      ],
       "description": "The invincible star. Represents the energy of early victory, purification through water, and unstoppable momentum.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.35,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["invincibility", "victory"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["purification", "rejuvenation"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.75,
+          "aspects": [
+            "invincibility",
+            "victory"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "purification",
+            "rejuvenation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "nakshatra:uttara-ashadha", "note": "Victory pair"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "nakshatra:uttara-ashadha",
+          "note": "Victory pair"
+        }
+      ],
+      "domains": [
+        "sea",
+        "water"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through invincibility and victory",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:uttara-ashadha",
@@ -620,25 +1411,62 @@
       "rulingPlanet": "Sun",
       "symbol": "Elephant tusk/small bed",
       "quality": "Manushya (Human)",
-      "keywords": ["final-victory", "leadership", "penetration", "permanence", "ethics"],
+      "keywords": [
+        "final-victory",
+        "leadership",
+        "penetration",
+        "permanence",
+        "ethics"
+      ],
       "description": "The later victory. Represents final, lasting victory that cannot be undone, achieved through righteous leadership.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
         "individual-collective": 0.55,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["leadership", "permanence"]},
-        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["final-victory", "ethics"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "leadership",
+            "permanence"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.65,
+          "aspects": [
+            "final-victory",
+            "ethics"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "nakshatra:purva-ashadha", "note": "Victory pair"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "nakshatra:purva-ashadha",
+          "note": "Victory pair"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through leadership and permanence",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:shravana",
@@ -650,25 +1478,67 @@
       "rulingPlanet": "Moon",
       "symbol": "Three footprints/ear",
       "quality": "Deva (Light)",
-      "keywords": ["listening", "learning", "connection", "media", "fame"],
+      "keywords": [
+        "listening",
+        "learning",
+        "connection",
+        "media",
+        "fame"
+      ],
       "description": "The star of listening. Represents the power of hearing truth, learning through connection, and the spread of knowledge.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.65,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["listening", "learning"]},
-        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["connection", "knowledge"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "listening",
+            "learning"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "connection",
+            "knowledge"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:IN-VISHNU", "fidelity": 0.75, "note": "Ruled by Vishnu"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-VISHNU",
+          "fidelity": 0.75,
+          "note": "Ruled by Vishnu"
+        }
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "mentor",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody wise elder energy through listening and learning",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:dhanishtha",
@@ -680,25 +1550,65 @@
       "rulingPlanet": "Mars",
       "symbol": "Drum/flute",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["rhythm", "wealth", "music", "abundance", "fame"],
+      "keywords": [
+        "rhythm",
+        "wealth",
+        "music",
+        "abundance",
+        "fame"
+      ],
       "description": "The star of symphony. Represents wealth, musical talent, and the rhythmic abundance that flows through right timing.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
-        "active-receptive": 0.40,
+        "light-shadow": 0.4,
+        "active-receptive": 0.4,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["music", "rhythm"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["abundance", "timing"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "music",
+            "rhythm"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "abundance",
+            "timing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:capricorn", "fidelity": 0.55, "note": "Capricorn-Aquarius"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:capricorn",
+          "fidelity": 0.55,
+          "note": "Capricorn-Aquarius"
+        }
+      ],
+      "domains": [
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through music and rhythm",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:shatabhisha",
@@ -710,25 +1620,66 @@
       "rulingPlanet": "Rahu",
       "symbol": "Empty circle/100 flowers",
       "quality": "Rakshasa (Demonic)",
-      "keywords": ["healing", "veiling", "secrecy", "philosophy", "isolation"],
+      "keywords": [
+        "healing",
+        "veiling",
+        "secrecy",
+        "philosophy",
+        "isolation"
+      ],
       "description": "The hundred healers. Represents mysterious healing abilities, philosophical depth, and the power of solitary practice.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
         "light-shadow": 0.55,
-        "active-receptive": 0.50,
-        "individual-collective": 0.30,
-        "ascent-descent": 0.50,
+        "active-receptive": 0.5,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["mysterious-healing", "restoration"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["veiling", "secrets"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "mysterious-healing",
+            "restoration"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "veiling",
+            "secrets"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "vedic:aquarius", "fidelity": 0.70, "note": "Aquarian healing"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:aquarius",
+          "fidelity": 0.7,
+          "note": "Aquarian healing"
+        }
+      ],
+      "domains": [
+        "healing"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "magician"
+      ],
+      "coreFunction": "To embody healer energy through mysterious-healing and restoration",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:purva-bhadrapada",
@@ -740,25 +1691,65 @@
       "rulingPlanet": "Jupiter",
       "symbol": "Front of funeral cot/sword",
       "quality": "Manushya (Human)",
-      "keywords": ["transformation", "austerity", "fire", "purification", "severity"],
+      "keywords": [
+        "transformation",
+        "austerity",
+        "fire",
+        "purification",
+        "severity"
+      ],
       "description": "The scorching star. Represents severe transformation through fire, the burning away of impurities, and austere practices.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.65,
         "light-shadow": 0.55,
         "active-receptive": 0.35,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.80,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["fire", "severity"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["transformation", "austerity"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.75,
+          "aspects": [
+            "fire",
+            "severity"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "transformation",
+            "austerity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "nakshatra:uttara-bhadrapada", "note": "Funeral cot pair"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "nakshatra:uttara-bhadrapada",
+          "note": "Funeral cot pair"
+        }
+      ],
+      "domains": [
+        "fire",
+        "transformation"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician"
+      ],
+      "coreFunction": "To embody destroyer energy through fire and severity",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:uttara-bhadrapada",
@@ -770,25 +1761,66 @@
       "rulingPlanet": "Saturn",
       "symbol": "Back of funeral cot/twins",
       "quality": "Manushya (Human)",
-      "keywords": ["depth", "kundalini", "withdrawal", "wisdom", "compassion"],
+      "keywords": [
+        "depth",
+        "kundalini",
+        "withdrawal",
+        "wisdom",
+        "compassion"
+      ],
       "description": "The warrior star. Represents deep wisdom gained through withdrawal, kundalini mastery, and compassionate depth.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
-        "active-receptive": 0.60,
+        "active-receptive": 0.6,
         "individual-collective": 0.55,
-        "ascent-descent": 0.60,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["depth", "wisdom"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["kundalini", "withdrawal"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "depth",
+            "wisdom"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "kundalini",
+            "withdrawal"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "nakshatra:purva-bhadrapada", "note": "Funeral cot pair"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "nakshatra:purva-bhadrapada",
+          "note": "Funeral cot pair"
+        }
+      ],
+      "domains": [
+        "war",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through depth and wisdom",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "nakshatra:revati",
@@ -800,48 +1832,157 @@
       "rulingPlanet": "Mercury",
       "symbol": "Fish/drum",
       "quality": "Deva (Light)",
-      "keywords": ["nourishment", "journey", "completion", "prosperity", "guidance"],
+      "keywords": [
+        "nourishment",
+        "journey",
+        "completion",
+        "prosperity",
+        "guidance"
+      ],
       "description": "The wealthy star. The final nakshatra, representing completion of the journey, safe passage, and abundant nourishment.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.55,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.75, "aspects": ["guidance", "safe-passage"]},
-        {"primordial": "primordial:great-mother", "weight": 0.65, "aspects": ["nourishment", "prosperity"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.75,
+          "aspects": [
+            "guidance",
+            "safe-passage"
+          ]
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.65,
+          "aspects": [
+            "nourishment",
+            "prosperity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "nakshatra:ashwini", "note": "Cycle completes and begins anew"},
-        {"type": "CULTURAL_ECHO", "target": "vedic:pisces", "fidelity": 0.70, "note": "Final degrees of Pisces"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "nakshatra:ashwini",
+          "note": "Cycle completes and begins anew"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vedic:pisces",
+          "fidelity": 0.7,
+          "note": "Final degrees of Pisces"
+        }
+      ],
+      "domains": [
+        "initiation",
+        "travel"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through guidance and safe-passage",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "qualityGroups": {
-      "deva": ["ashwini", "mrigashira", "punarvasu", "pushya", "hasta", "swati", "anuradha", "shravana", "revati"],
-      "manushya": ["bharani", "rohini", "purva-phalguni", "uttara-phalguni", "purva-ashadha", "uttara-ashadha", "purva-bhadrapada", "uttara-bhadrapada"],
-      "rakshasa": ["krittika", "ashlesha", "magha", "chitra", "vishakha", "jyeshtha", "mula", "dhanishtha", "shatabhisha"]
+      "deva": [
+        "ashwini",
+        "mrigashira",
+        "punarvasu",
+        "pushya",
+        "hasta",
+        "swati",
+        "anuradha",
+        "shravana",
+        "revati"
+      ],
+      "manushya": [
+        "bharani",
+        "rohini",
+        "purva-phalguni",
+        "uttara-phalguni",
+        "purva-ashadha",
+        "uttara-ashadha",
+        "purva-bhadrapada",
+        "uttara-bhadrapada"
+      ],
+      "rakshasa": [
+        "krittika",
+        "ashlesha",
+        "magha",
+        "chitra",
+        "vishakha",
+        "jyeshtha",
+        "mula",
+        "dhanishtha",
+        "shatabhisha"
+      ]
     },
     "planetaryRulers": {
-      "ketu": ["ashwini", "magha", "mula"],
-      "venus": ["bharani", "purva-phalguni", "purva-ashadha"],
-      "sun": ["krittika", "uttara-phalguni", "uttara-ashadha"],
-      "moon": ["rohini", "hasta", "shravana"],
-      "mars": ["mrigashira", "chitra", "dhanishtha"],
-      "rahu": ["ardra", "swati", "shatabhisha"],
-      "jupiter": ["punarvasu", "vishakha", "purva-bhadrapada"],
-      "saturn": ["pushya", "anuradha", "uttara-bhadrapada"],
-      "mercury": ["ashlesha", "jyeshtha", "revati"]
+      "ketu": [
+        "ashwini",
+        "magha",
+        "mula"
+      ],
+      "venus": [
+        "bharani",
+        "purva-phalguni",
+        "purva-ashadha"
+      ],
+      "sun": [
+        "krittika",
+        "uttara-phalguni",
+        "uttara-ashadha"
+      ],
+      "moon": [
+        "rohini",
+        "hasta",
+        "shravana"
+      ],
+      "mars": [
+        "mrigashira",
+        "chitra",
+        "dhanishtha"
+      ],
+      "rahu": [
+        "ardra",
+        "swati",
+        "shatabhisha"
+      ],
+      "jupiter": [
+        "punarvasu",
+        "vishakha",
+        "purva-bhadrapada"
+      ],
+      "saturn": [
+        "pushya",
+        "anuradha",
+        "uttara-bhadrapada"
+      ],
+      "mercury": [
+        "ashlesha",
+        "jyeshtha",
+        "revati"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

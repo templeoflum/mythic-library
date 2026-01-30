@@ -1,0 +1,817 @@
+{
+  "generated_at": "2026-01-29T23:02:53.626278",
+  "priority_order": [
+    {
+      "id": "arch:GR-PENELOPE",
+      "name": "Penelope",
+      "score": 76.66666666666666,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 4
+    },
+    {
+      "id": "jungian:child",
+      "name": "The Child",
+      "score": 54.166666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "jungian:anima",
+      "name": "The Anima",
+      "score": 57.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "jungian:animus",
+      "name": "The Animus",
+      "score": 57.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "jungian:self",
+      "name": "The Self",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "jungian:shadow",
+      "name": "The Shadow",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "jungian:persona",
+      "name": "The Persona",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "jungian:maiden",
+      "name": "The Maiden (Kore)",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "jungian:wise_old_man",
+      "name": "The Wise Old Man",
+      "score": 62.5,
+      "tier": "rich",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "jungian:great_mother",
+      "name": "The Great Mother",
+      "score": 62.5,
+      "tier": "rich",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "jungian:hero",
+      "name": "The Hero",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "jungian:trickster",
+      "name": "The Trickster",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "jungian:crone",
+      "name": "The Crone",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-SHAKYAMUNI",
+      "name": "Shakyamuni Buddha",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-AVALOKITESHVARA",
+      "name": "Avalokiteshvara",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-VAJRAPANI",
+      "name": "Vajrapani",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-SAMANTABHADRA",
+      "name": "Samantabhadra",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-HAYAGRIVA",
+      "name": "Hayagriva",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-PADMASAMBHAVA",
+      "name": "Padmasambhava",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-MILAREPA",
+      "name": "Milarepa",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-MARPA",
+      "name": "Marpa the Translator",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-NAROPA",
+      "name": "Naropa",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "arch:BU-AMITABHA",
+      "name": "Amitabha Buddha",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-AKSHOBHYA",
+      "name": "Akshobhya Buddha",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-VAIROCANA",
+      "name": "Vairocana Buddha",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-RATNASAMBHAVA",
+      "name": "Ratnasambhava Buddha",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-AMOGHASIDDHI",
+      "name": "Amoghasiddhi Buddha",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-MAITREYA",
+      "name": "Maitreya",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-MANJUSHRI",
+      "name": "Manjushri",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-KSITIGARBHA",
+      "name": "Ksitigarbha",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-GREEN-TARA",
+      "name": "Green Tara",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-WHITE-TARA",
+      "name": "White Tara",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-VAJRASATTVA",
+      "name": "Vajrasattva",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-MAHAKALA",
+      "name": "Mahakala",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-YAMANTAKA",
+      "name": "Yamantaka",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-VAJRAYOGINI",
+      "name": "Vajrayogini",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-PALDEN-LHAMO",
+      "name": "Palden Lhamo",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-VAISHRAVANA",
+      "name": "Vaishravana",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-YESHE-TSOGYAL",
+      "name": "Yeshe Tsogyal",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "arch:BU-MARA",
+      "name": "Mara",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "mbti:intj",
+      "name": "INTJ - The Architect",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:intp",
+      "name": "INTP - The Logician",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:entj",
+      "name": "ENTJ - The Commander",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:infp",
+      "name": "INFP - The Mediator",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:enfj",
+      "name": "ENFJ - The Protagonist",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:enfp",
+      "name": "ENFP - The Campaigner",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:istj",
+      "name": "ISTJ - The Logistician",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:isfj",
+      "name": "ISFJ - The Defender",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:esfj",
+      "name": "ESFJ - The Consul",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:istp",
+      "name": "ISTP - The Virtuoso",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:isfp",
+      "name": "ISFP - The Adventurer",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:estp",
+      "name": "ESTP - The Entrepreneur",
+      "score": 61.666666666666664,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 6
+    },
+    {
+      "id": "mbti:entp",
+      "name": "ENTP - The Debater",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "mbti:infj",
+      "name": "INFJ - The Advocate",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "mbti:estj",
+      "name": "ESTJ - The Executive",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "mbti:esfp",
+      "name": "ESFP - The Entertainer",
+      "score": 70.0,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 5
+    },
+    {
+      "id": "enneagram:type_2",
+      "name": "Type 2: The Helper",
+      "score": 47.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "enneagram:type_5",
+      "name": "Type 5: The Investigator",
+      "score": 47.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "enneagram:type_7",
+      "name": "Type 7: The Enthusiast",
+      "score": 47.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "enneagram:type_1",
+      "name": "Type 1: The Reformer",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "enneagram:type_3",
+      "name": "Type 3: The Achiever",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "enneagram:type_4",
+      "name": "Type 4: The Individualist",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "enneagram:type_6",
+      "name": "Type 6: The Loyalist",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "enneagram:type_8",
+      "name": "Type 8: The Challenger",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "enneagram:type_9",
+      "name": "Type 9: The Peacemaker",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "vogler:mentor",
+      "name": "The Mentor",
+      "score": 47.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "vogler:ally",
+      "name": "The Ally",
+      "score": 47.916666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "vogler:hero",
+      "name": "The Hero",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "vogler:threshold_guardian",
+      "name": "The Threshold Guardian",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "vogler:herald",
+      "name": "The Herald",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "vogler:shapeshifter",
+      "name": "The Shapeshifter",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "vogler:shadow",
+      "name": "The Shadow",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "vogler:trickster",
+      "name": "The Trickster",
+      "score": 51.666666666666664,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 7
+    },
+    {
+      "id": "arch:NO-FENRIR",
+      "name": "Fenrir",
+      "score": 72.91666666666666,
+      "tier": "rich",
+      "effort": "medium",
+      "missing": 5
+    },
+    {
+      "id": "arch:NO-JORMUNGANDR",
+      "name": "J\u00f6rmungandr",
+      "score": 72.91666666666666,
+      "tier": "rich",
+      "effort": "medium",
+      "missing": 5
+    },
+    {
+      "id": "arch:NO-HEL",
+      "name": "Hel",
+      "score": 76.66666666666666,
+      "tier": "rich",
+      "effort": "low",
+      "missing": 4
+    },
+    {
+      "id": "calibration:origin",
+      "name": "The Origin",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_active",
+      "name": "Pure Active",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_ascent",
+      "name": "Pure Ascent",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_chaos",
+      "name": "Pure Chaos",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_collective",
+      "name": "Pure Collective",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_creation",
+      "name": "Pure Creation",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_descent",
+      "name": "Pure Descent",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_destruction",
+      "name": "Pure Destruction",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_fated",
+      "name": "Pure Fated",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_individual",
+      "name": "Pure Individual",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_light",
+      "name": "Pure Light",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_order",
+      "name": "Pure Order",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_receptive",
+      "name": "Pure Receptive",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_shadow",
+      "name": "Pure Shadow",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_stasis",
+      "name": "Pure Stasis",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_transformation",
+      "name": "Pure Transformation",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "calibration:pole_voluntary",
+      "name": "Pure Voluntary",
+      "score": 20.0,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 13
+    },
+    {
+      "id": "iching:hex_16",
+      "name": "16. Yu (Enthusiasm)",
+      "score": 39.58333333333333,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 9
+    },
+    {
+      "id": "iching:hex_27",
+      "name": "27. Yi (Nourishment)",
+      "score": 39.58333333333333,
+      "tier": "stub",
+      "effort": "high",
+      "missing": 9
+    },
+    {
+      "id": "iching:hex_10",
+      "name": "10. Lu (Treading)",
+      "score": 43.33333333333333,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "iching:hex_17",
+      "name": "17. Sui (Following)",
+      "score": 43.33333333333333,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "iching:hex_18",
+      "name": "18. Gu (Decay)",
+      "score": 43.33333333333333,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "iching:hex_28",
+      "name": "28. Da Guo (Great Excess)",
+      "score": 43.33333333333333,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    },
+    {
+      "id": "iching:hex_38",
+      "name": "38. Kui (Opposition)",
+      "score": 43.33333333333333,
+      "tier": "partial",
+      "effort": "medium",
+      "missing": 8
+    }
+  ],
+  "by_field_count": {
+    "culturalEchoes": 728,
+    "storyFunctions": 728,
+    "elementalComposition": 728,
+    "aliases": 697,
+    "correspondences": 614,
+    "domains": 410,
+    "description": 313,
+    "psychologicalMapping": 110,
+    "narrativeRoles": 49,
+    "coreFunction": 35
+  }
+}

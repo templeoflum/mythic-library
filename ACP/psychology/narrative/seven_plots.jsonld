@@ -8,201 +8,562 @@
   "subdomain": "narrative",
   "cardinality": 7,
   "structuralNotes": "Based on Booker's 2004 'The Seven Basic Plots'. Each plot has characteristic arc, shadow elements, and resolution patterns.",
-
   "entries": [
     {
       "@id": "plot:overcoming-monster",
       "@type": "Archetype",
       "name": "Overcoming the Monster",
-      "keywords": ["hero", "monster", "battle", "victory", "rescue"],
+      "keywords": [
+        "hero",
+        "monster",
+        "battle",
+        "victory",
+        "rescue"
+      ],
       "description": "Hero sets out to defeat an antagonistic force (monster, villain) threatening the hero's homeland/people. Arc: Anticipation, Dream, Frustration, Nightmare, Miraculous Escape.",
-      "exampleStories": ["Beowulf", "Dracula", "Jaws", "Star Wars", "James Bond"],
+      "exampleStories": [
+        "Beowulf",
+        "Dracula",
+        "Jaws",
+        "Star Wars",
+        "James Bond"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.55,
         "light-shadow": 0.35,
-        "active-receptive": 0.20,
+        "active-receptive": 0.2,
         "individual-collective": 0.55,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.90, "aspects": ["battle", "victory", "rescue"]},
-        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["confrontation", "defeat-evil"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.9,
+          "aspects": [
+            "battle",
+            "victory",
+            "rescue"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.8,
+          "aspects": [
+            "confrontation",
+            "defeat-evil"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:ordeal", "fidelity": 0.75, "note": "Central confrontation"},
-        {"type": "CONTAINS", "target": "primordial:shadow", "note": "Monster as shadow"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:ordeal",
+          "fidelity": 0.75,
+          "note": "Central confrontation"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "primordial:shadow",
+          "note": "Monster as shadow"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through battle and victory",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "plot:rags-to-riches",
       "@type": "Archetype",
       "name": "Rags to Riches",
-      "keywords": ["transformation", "recognition", "rise", "worth", "vindication"],
+      "keywords": [
+        "transformation",
+        "recognition",
+        "rise",
+        "worth",
+        "vindication"
+      ],
       "description": "Poor/humble protagonist acquires wealth, power, or recognition, loses it, then regains it with maturity. True worth eventually recognized.",
-      "exampleStories": ["Cinderella", "Great Expectations", "David Copperfield", "Aladdin"],
+      "exampleStories": [
+        "Cinderella",
+        "Great Expectations",
+        "David Copperfield",
+        "Aladdin"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.30,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
         "active-receptive": 0.45,
         "individual-collective": 0.45,
-        "ascent-descent": 0.30,
-        "stasis-transformation": 0.70,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.3,
+        "stasis-transformation": 0.7,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["humble-origins", "hidden-potential"]},
-        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["transformation", "recognition"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.75,
+          "aspects": [
+            "humble-origins",
+            "hidden-potential"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.65,
+          "aspects": [
+            "transformation",
+            "recognition"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:return", "fidelity": 0.60, "note": "Vindication/recognition"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:return",
+          "fidelity": 0.6,
+          "note": "Vindication/recognition"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody divine child energy through humble-origins and hidden-potential",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "plot:quest",
       "@type": "Archetype",
       "name": "The Quest",
-      "keywords": ["journey", "goal", "companions", "obstacles", "achievement"],
+      "keywords": [
+        "journey",
+        "goal",
+        "companions",
+        "obstacles",
+        "achievement"
+      ],
       "description": "Hero and companions journey to find an important object or reach a vital location, facing obstacles and temptations along the way.",
-      "exampleStories": ["Lord of the Rings", "Odyssey", "Indiana Jones", "The Pilgrim's Progress"],
+      "exampleStories": [
+        "Lord of the Rings",
+        "Odyssey",
+        "Indiana Jones",
+        "The Pilgrim's Progress"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.45,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.25,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.90, "aspects": ["journey", "seeking", "endurance"]},
-        {"primordial": "primordial:magician", "weight": 0.50, "aspects": ["goal", "transformation"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.9,
+          "aspects": [
+            "journey",
+            "seeking",
+            "endurance"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.5,
+          "aspects": [
+            "goal",
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:road_of_trials", "fidelity": 0.85, "note": "Journey structure"},
-        {"type": "CULTURAL_ECHO", "target": "primordial:hero", "fidelity": 0.90, "note": "Core hero pattern"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:road_of_trials",
+          "fidelity": 0.85,
+          "note": "Journey structure"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "primordial:hero",
+          "fidelity": 0.9,
+          "note": "Core hero pattern"
+        }
+      ],
+      "domains": [
+        "travel"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "magician",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through journey and seeking",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "plot:voyage-return",
       "@type": "Archetype",
       "name": "Voyage and Return",
-      "keywords": ["otherworld", "adventure", "escape", "home", "wisdom"],
+      "keywords": [
+        "otherworld",
+        "adventure",
+        "escape",
+        "home",
+        "wisdom"
+      ],
       "description": "Hero travels to strange land, initially thrilling but grows threatening, escapes back to safety with lessons learned.",
-      "exampleStories": ["Alice in Wonderland", "Wizard of Oz", "Narnia", "Robinson Crusoe"],
+      "exampleStories": [
+        "Alice in Wonderland",
+        "Wizard of Oz",
+        "Narnia",
+        "Robinson Crusoe"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
-        "active-receptive": 0.40,
+        "light-shadow": 0.5,
+        "active-receptive": 0.4,
         "individual-collective": 0.35,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.50
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["journey", "learning"]},
-        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["wonder", "adventure"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "journey",
+            "learning"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.6,
+          "aspects": [
+            "wonder",
+            "adventure"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:crossing_threshold", "fidelity": 0.75, "note": "Otherworld transition"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:crossing_threshold",
+          "fidelity": 0.75,
+          "note": "Otherworld transition"
+        }
+      ],
+      "domains": [
+        "earth"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through journey and learning",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "plot:comedy",
       "@type": "Archetype",
       "name": "Comedy",
-      "keywords": ["confusion", "mistaken-identity", "resolution", "marriage", "harmony"],
+      "keywords": [
+        "confusion",
+        "mistaken-identity",
+        "resolution",
+        "marriage",
+        "harmony"
+      ],
       "description": "Light, amusing plot with happy ending. Complications from misunderstandings/deceptions resolve when truth emerges, ending in union/harmony.",
-      "exampleStories": ["Midsummer Night's Dream", "Much Ado About Nothing", "Pride and Prejudice", "Four Weddings"],
+      "exampleStories": [
+        "Midsummer Night's Dream",
+        "Much Ado About Nothing",
+        "Pride and Prejudice",
+        "Four Weddings"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["confusion", "mischief", "revelation"]},
-        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["union", "harmony"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.7,
+          "aspects": [
+            "confusion",
+            "mischief",
+            "revelation"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.75,
+          "aspects": [
+            "union",
+            "harmony"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "plot:tragedy", "axis": "creation-destruction", "note": "Happy vs unhappy ending"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "plot:tragedy",
+          "axis": "creation-destruction",
+          "note": "Happy vs unhappy ending"
+        }
+      ],
+      "domains": [
+        "marriage",
+        "music",
+        "peace"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody lover energy through union and harmony",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "plot:tragedy",
       "@type": "Archetype",
       "name": "Tragedy",
-      "keywords": ["flaw", "temptation", "downfall", "destruction", "recognition"],
+      "keywords": [
+        "flaw",
+        "temptation",
+        "downfall",
+        "destruction",
+        "recognition"
+      ],
       "description": "Protagonist with fatal flaw/temptation gradually falls from grace, leading to destruction. Recognition comes too late.",
-      "exampleStories": ["Macbeth", "Oedipus", "Anna Karenina", "Citizen Kane", "Breaking Bad"],
+      "exampleStories": [
+        "Macbeth",
+        "Oedipus",
+        "Anna Karenina",
+        "Citizen Kane",
+        "Breaking Bad"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.80,
-        "light-shadow": 0.70,
-        "active-receptive": 0.30,
+        "creation-destruction": 0.8,
+        "light-shadow": 0.7,
+        "active-receptive": 0.3,
         "individual-collective": 0.35,
         "ascent-descent": 0.75,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.70
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["flaw", "temptation", "downfall"]},
-        {"primordial": "primordial:outcast", "weight": 0.65, "aspects": ["destruction", "isolation"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "flaw",
+            "temptation",
+            "downfall"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.65,
+          "aspects": [
+            "destruction",
+            "isolation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "plot:comedy", "axis": "creation-destruction", "note": "Destruction vs harmony"},
-        {"type": "CONTAINS", "target": "primordial:destroyer", "note": "Self-destruction"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "plot:comedy",
+          "axis": "creation-destruction",
+          "note": "Destruction vs harmony"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "primordial:destroyer",
+          "note": "Self-destruction"
+        }
+      ],
+      "domains": [
+        "destruction"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through flaw and temptation",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "plot:rebirth",
       "@type": "Archetype",
       "name": "Rebirth",
-      "keywords": ["redemption", "transformation", "awakening", "rescue", "renewal"],
+      "keywords": [
+        "redemption",
+        "transformation",
+        "awakening",
+        "rescue",
+        "renewal"
+      ],
       "description": "Protagonist falls under dark power/curse, seems doomed, but through power of love/wisdom is redeemed and transformed.",
-      "exampleStories": ["A Christmas Carol", "Sleeping Beauty", "Snow White", "The Secret Garden", "Crime and Punishment"],
+      "exampleStories": [
+        "A Christmas Carol",
+        "Sleeping Beauty",
+        "Snow White",
+        "The Secret Garden",
+        "Crime and Punishment"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.90,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.9,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["redemption", "awakening"]},
-        {"primordial": "primordial:divine-child", "weight": 0.70, "aspects": ["rebirth", "renewal", "new-life"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.75,
+          "aspects": [
+            "redemption",
+            "awakening"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.7,
+          "aspects": [
+            "rebirth",
+            "renewal",
+            "new-life"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:resurrection", "fidelity": 0.85, "note": "Death-rebirth pattern"},
-        {"type": "CULTURAL_ECHO", "target": "alchemy:rubedo", "fidelity": 0.70, "note": "Transformation complete"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:resurrection",
+          "fidelity": 0.85,
+          "note": "Death-rebirth pattern"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:rubedo",
+          "fidelity": 0.7,
+          "note": "Transformation complete"
+        }
+      ],
+      "domains": [
+        "love",
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody healer energy through redemption and awakening",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "plotPolarities": {
-      "ascending": ["plot:rags-to-riches", "plot:comedy", "plot:rebirth"],
-      "descending": ["plot:tragedy"],
-      "journey": ["plot:quest", "plot:voyage-return", "plot:overcoming-monster"]
+      "ascending": [
+        "plot:rags-to-riches",
+        "plot:comedy",
+        "plot:rebirth"
+      ],
+      "descending": [
+        "plot:tragedy"
+      ],
+      "journey": [
+        "plot:quest",
+        "plot:voyage-return",
+        "plot:overcoming-monster"
+      ]
     },
     "endingTypes": {
-      "happy": ["plot:overcoming-monster", "plot:rags-to-riches", "plot:quest", "plot:voyage-return", "plot:comedy", "plot:rebirth"],
-      "tragic": ["plot:tragedy"]
+      "happy": [
+        "plot:overcoming-monster",
+        "plot:rags-to-riches",
+        "plot:quest",
+        "plot:voyage-return",
+        "plot:comedy",
+        "plot:rebirth"
+      ],
+      "tragic": [
+        "plot:tragedy"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

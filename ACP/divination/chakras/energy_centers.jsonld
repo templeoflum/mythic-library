@@ -8,7 +8,6 @@
   "subdomain": "chakras",
   "cardinality": 7,
   "structuralNotes": "Vertical arrangement from root to crown. Each associated with element, color, sound, and psychological function.",
-
   "entries": [
     {
       "@id": "chakra:muladhara",
@@ -19,7 +18,14 @@
       "element": "earth",
       "color": "red",
       "sound": "LAM",
-      "keywords": ["survival", "grounding", "security", "stability", "roots", "physical"],
+      "keywords": [
+        "survival",
+        "grounding",
+        "security",
+        "stability",
+        "roots",
+        "physical"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.42,
@@ -31,16 +37,62 @@
         "voluntary-fated": 0.75
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["survival", "stability"]},
-        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["roots", "grounding"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.85,
+          "aspects": [
+            "survival",
+            "stability"
+          ]
+        },
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.7,
+          "aspects": [
+            "roots",
+            "grounding"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "chakra:sahasrara", "axis": "earth-spirit"},
-        {"type": "EVOLUTION", "target": "chakra:svadhisthana", "note": "Kundalini ascent"},
-        {"type": "CULTURAL_ECHO", "target": "element:earth", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:malkuth", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "astrology:saturn", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "chakra:sahasrara",
+          "axis": "earth-spirit"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "chakra:svadhisthana",
+          "note": "Kundalini ascent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:earth",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:saturn",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through survival and stability",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "chakra:svadhisthana",
@@ -51,7 +103,14 @@
       "element": "water",
       "color": "orange",
       "sound": "VAM",
-      "keywords": ["creativity", "sexuality", "emotion", "pleasure", "flow", "desire"],
+      "keywords": [
+        "creativity",
+        "sexuality",
+        "emotion",
+        "pleasure",
+        "flow",
+        "desire"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.22,
@@ -63,16 +122,63 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["sexuality", "desire"]},
-        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["creativity", "flow"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.85,
+          "aspects": [
+            "sexuality",
+            "desire"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "creativity",
+            "flow"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "chakra:muladhara", "note": "Below"},
-        {"type": "EVOLUTION", "target": "chakra:manipura", "note": "Kundalini ascent"},
-        {"type": "CULTURAL_ECHO", "target": "element:water", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:yesod", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.7}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "chakra:muladhara",
+          "note": "Below"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "chakra:manipura",
+          "note": "Kundalini ascent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:water",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:yesod",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:moon",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "creator",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through sexuality and desire",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "chakra:manipura",
@@ -83,7 +189,14 @@
       "element": "fire",
       "color": "yellow",
       "sound": "RAM",
-      "keywords": ["will", "power", "confidence", "ego", "action", "transformation"],
+      "keywords": [
+        "will",
+        "power",
+        "confidence",
+        "ego",
+        "action",
+        "transformation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
@@ -95,16 +208,62 @@
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["will", "power"]},
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["action", "confidence"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.8,
+          "aspects": [
+            "will",
+            "power"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "action",
+            "confidence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "chakra:svadhisthana", "note": "Below"},
-        {"type": "EVOLUTION", "target": "chakra:anahata", "note": "Kundalini ascent"},
-        {"type": "CULTURAL_ECHO", "target": "element:fire", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mars", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:sun", "fidelity": 0.7}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "chakra:svadhisthana",
+          "note": "Below"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "chakra:anahata",
+          "note": "Kundalini ascent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mars",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sun",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through will and power",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chakra:anahata",
@@ -115,28 +274,83 @@
       "element": "air",
       "color": "green",
       "sound": "YAM",
-      "keywords": ["love", "compassion", "healing", "balance", "connection", "integration"],
+      "keywords": [
+        "love",
+        "compassion",
+        "healing",
+        "balance",
+        "connection",
+        "integration"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.32,
         "light-shadow": 0.35,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.55,
         "ascent-descent": 0.48,
         "stasis-transformation": 0.52,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["love", "connection"]},
-        {"primordial": "primordial:healer", "weight": 0.8, "aspects": ["compassion", "healing"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.85,
+          "aspects": [
+            "love",
+            "connection"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.8,
+          "aspects": [
+            "compassion",
+            "healing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "chakra:manipura", "note": "Below"},
-        {"type": "EVOLUTION", "target": "chakra:vishuddha", "note": "Kundalini ascent"},
-        {"type": "CULTURAL_ECHO", "target": "element:air", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:tiphareth", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:venus", "fidelity": 0.75}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "chakra:manipura",
+          "note": "Below"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "chakra:vishuddha",
+          "note": "Kundalini ascent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:air",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:tiphareth",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:venus",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through love and connection",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "chakra:vishuddha",
@@ -147,7 +361,14 @@
       "element": "ether",
       "color": "blue",
       "sound": "HAM",
-      "keywords": ["communication", "expression", "truth", "creativity", "voice", "purification"],
+      "keywords": [
+        "communication",
+        "expression",
+        "truth",
+        "creativity",
+        "voice",
+        "purification"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.28,
@@ -159,16 +380,63 @@
         "voluntary-fated": 0.32
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.8, "aspects": ["communication", "expression"]},
-        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["creativity", "voice"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.8,
+          "aspects": [
+            "communication",
+            "expression"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "creativity",
+            "voice"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "chakra:anahata", "note": "Below"},
-        {"type": "EVOLUTION", "target": "chakra:ajna", "note": "Kundalini ascent"},
-        {"type": "CULTURAL_ECHO", "target": "element:aether", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:mercury", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:hod", "fidelity": 0.7}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "chakra:anahata",
+          "note": "Below"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "chakra:ajna",
+          "note": "Kundalini ascent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:aether",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mercury",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:hod",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through communication and expression",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chakra:ajna",
@@ -179,7 +447,14 @@
       "element": "light",
       "color": "indigo",
       "sound": "OM",
-      "keywords": ["intuition", "vision", "wisdom", "insight", "perception", "imagination"],
+      "keywords": [
+        "intuition",
+        "vision",
+        "wisdom",
+        "insight",
+        "perception",
+        "imagination"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.38,
@@ -191,16 +466,56 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "insight"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["vision", "perception"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.85,
+          "aspects": [
+            "wisdom",
+            "insight"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.7,
+          "aspects": [
+            "vision",
+            "perception"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "chakra:vishuddha", "note": "Below"},
-        {"type": "EVOLUTION", "target": "chakra:sahasrara", "note": "Kundalini ascent"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "astrology:neptune", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:binah", "fidelity": 0.7}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "chakra:vishuddha",
+          "note": "Below"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "chakra:sahasrara",
+          "note": "Kundalini ascent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:high_priestess",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:neptune",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:binah",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody wise_elder energy through wisdom and insight",
+      "symbolicCore": "The essential pattern of Ajna (Third Eye)"
     },
     {
       "@id": "chakra:sahasrara",
@@ -211,33 +526,92 @@
       "element": "thought/consciousness",
       "color": "violet/white",
       "sound": "silence",
-      "keywords": ["transcendence", "enlightenment", "unity", "consciousness", "divine", "liberation"],
+      "keywords": [
+        "transcendence",
+        "enlightenment",
+        "unity",
+        "consciousness",
+        "divine",
+        "liberation"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.42,
         "light-shadow": 0.08,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.75,
         "ascent-descent": 0.05,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.9, "aspects": ["unity", "consciousness"]},
-        {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["enlightenment", "liberation"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.9,
+          "aspects": [
+            "unity",
+            "consciousness"
+          ]
+        },
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.7,
+          "aspects": [
+            "enlightenment",
+            "liberation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "chakra:muladhara", "axis": "earth-spirit"},
-        {"type": "DEVOLUTION", "target": "chakra:ajna", "note": "Below"},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:kether", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "astrology:uranus", "fidelity": 0.65}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "chakra:muladhara",
+          "axis": "earth-spirit"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "chakra:ajna",
+          "note": "Below"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:kether",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:world",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:uranus",
+          "fidelity": 0.65
+        }
+      ],
+      "narrativeRoles": [
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through unity and consciousness",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
-    "verticalPath": ["chakra:muladhara", "chakra:svadhisthana", "chakra:manipura", "chakra:anahata", "chakra:vishuddha", "chakra:ajna", "chakra:sahasrara"],
+    "verticalPath": [
+      "chakra:muladhara",
+      "chakra:svadhisthana",
+      "chakra:manipura",
+      "chakra:anahata",
+      "chakra:vishuddha",
+      "chakra:ajna",
+      "chakra:sahasrara"
+    ],
     "elementalCorrespondence": {
       "chakra:muladhara": "element:earth",
       "chakra:svadhisthana": "element:water",
@@ -246,13 +620,30 @@
       "chakra:vishuddha": "element:aether"
     },
     "polarPairs": [
-      {"pair": ["chakra:muladhara", "chakra:sahasrara"], "axis": "matter-spirit"},
-      {"pair": ["chakra:svadhisthana", "chakra:ajna"], "axis": "emotion-intuition"},
-      {"pair": ["chakra:manipura", "chakra:vishuddha"], "axis": "power-expression"}
+      {
+        "pair": [
+          "chakra:muladhara",
+          "chakra:sahasrara"
+        ],
+        "axis": "matter-spirit"
+      },
+      {
+        "pair": [
+          "chakra:svadhisthana",
+          "chakra:ajna"
+        ],
+        "axis": "emotion-intuition"
+      },
+      {
+        "pair": [
+          "chakra:manipura",
+          "chakra:vishuddha"
+        ],
+        "axis": "power-expression"
+      }
     ],
     "centerPoint": "chakra:anahata"
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

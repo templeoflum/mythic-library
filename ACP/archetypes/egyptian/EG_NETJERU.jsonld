@@ -251,6 +251,39 @@
           "Thebes (as Amun-Ra)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "creation",
+        "death",
+        "fire",
+        "order",
+        "sky",
+        "underworld"
+      ],
+      "keywords": [
+        "across",
+        "apophis",
+        "battling",
+        "cosmic",
+        "creation",
+        "creator",
+        "death",
+        "deity",
+        "eternally",
+        "fire"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through world-speaker and self-generated",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -471,7 +504,31 @@
           "Philae"
         ],
         "confidence": 0.95
-      }
+      },
+      "domains": [
+        "death",
+        "fertility",
+        "rebirth",
+        "underworld"
+      ],
+      "keywords": [
+        "afterlife",
+        "brother",
+        "dead",
+        "death",
+        "dismembered",
+        "dying",
+        "dying rising god",
+        "eternal",
+        "fertility",
+        "great father"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody dying rising god energy through death-rebirth and sacrifice",
+      "symbolicCore": "The death that transforms through Osiris's essence"
     },
     {
       "@id": "arch:EG-ISIS",
@@ -707,6 +764,38 @@
           "Rome (later)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "healing",
+        "motherhood",
+        "wisdom"
+      ],
+      "keywords": [
+        "beloved",
+        "conceived",
+        "goddess",
+        "great mother",
+        "healer",
+        "healing",
+        "heka",
+        "horus",
+        "isis",
+        "learn"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody great mother energy through divine-mother and protector",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -923,6 +1012,39 @@
           "Behdet"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "fatherhood",
+        "sky",
+        "sovereignty",
+        "war"
+      ],
+      "keywords": [
+        "avenged",
+        "battling",
+        "divine child",
+        "every",
+        "eyes",
+        "falcon",
+        "father",
+        "fatherhood",
+        "headed",
+        "hero"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through avenger and champion",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1167,6 +1289,38 @@
           "Oases"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "air",
+        "chaos",
+        "war"
+      ],
+      "keywords": [
+        "against",
+        "air",
+        "apophis",
+        "battled",
+        "brother",
+        "chaos",
+        "complex",
+        "dangerous",
+        "deity",
+        "desert"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "rebel",
+        "trickster",
+        "warrior"
+      ],
+      "coreFunction": "To embody destroyer energy through chaos-bringer and murderer",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1354,6 +1508,39 @@
           "Hermopolis Magna (Khemenu)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "justice",
+        "preservation",
+        "time",
+        "wisdom"
+      ],
+      "keywords": [
+        "between",
+        "cosmic",
+        "forces",
+        "hall",
+        "hearts",
+        "hieroglyphics",
+        "inventor",
+        "judgment",
+        "justice",
+        "keeper"
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage",
+        "shapeshifter",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody magician energy through secret-knowledge and heka-master",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1507,6 +1694,38 @@
           "throughout necropoli"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "death",
+        "justice",
+        "protection",
+        "threshold",
+        "underworld"
+      ],
+      "keywords": [
+        "anubis",
+        "between",
+        "dead",
+        "death",
+        "embalming",
+        "graves",
+        "guardian",
+        "guide",
+        "headed",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "herald",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through soul-guide and death-attendant",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1661,6 +1880,36 @@
           "Deir el-Medina"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "justice",
+        "music",
+        "order",
+        "peace"
+      ],
+      "keywords": [
+        "against",
+        "balance",
+        "cosmic",
+        "deceased",
+        "deity",
+        "feather",
+        "fundamental",
+        "goddess",
+        "gods",
+        "harmony"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through cosmic-order and balance-keeper",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1851,6 +2100,38 @@
           "Leontopolis"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "healing",
+        "music",
+        "protection",
+        "war"
+      ],
+      "keywords": [
+        "appeased",
+        "bloodlust",
+        "destroyed",
+        "destroyer",
+        "divine",
+        "fierce",
+        "goddess",
+        "headed",
+        "healer",
+        "healing"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "healer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through fierce-protector and battle-goddess",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2029,6 +2310,40 @@
           "Memphis"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "death",
+        "fertility",
+        "love",
+        "motherhood",
+        "music"
+      ],
+      "keywords": [
+        "afterlife",
+        "beauty",
+        "consort",
+        "creative",
+        "dead",
+        "death",
+        "embodies",
+        "feminine",
+        "fertility",
+        "figure"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "creator",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through love-goddess and beauty",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2177,6 +2492,34 @@
           "Memphis"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "creation"
+      ],
+      "keywords": [
+        "architects",
+        "associated",
+        "craftsmen",
+        "creation",
+        "creative",
+        "creator",
+        "divine",
+        "existence",
+        "language",
+        "magician"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "magician"
+      ],
+      "coreFunction": "To embody creator energy through world-speaker and thought-creator",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2335,6 +2678,36 @@
           "Memphis"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "death",
+        "threshold"
+      ],
+      "keywords": [
+        "aligned",
+        "aspects",
+        "associated",
+        "counterpart",
+        "crone",
+        "death",
+        "goddess",
+        "healer",
+        "isis",
+        "liminal"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "healer",
+        "sage",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody crone energy through mourner and death-attendant",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -2477,6 +2850,36 @@
           "None (anti-god, never worshipped)"
         ],
         "confidence": 0.95
+      },
+      "domains": [
+        "chaos",
+        "death",
+        "fire",
+        "order",
+        "underworld"
+      ],
+      "keywords": [
+        "antagonist",
+        "apophis",
+        "attacks",
+        "barque",
+        "chaos",
+        "cosmic",
+        "death",
+        "defeated",
+        "destroyer",
+        "each"
+      ],
+      "narrativeRoles": [
+        "destroyer"
+      ],
+      "coreFunction": "To embody destroyer energy through chaos-serpent and dissolution",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2630,6 +3033,40 @@
           "Heliopolis"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "air",
+        "death",
+        "earth",
+        "fatherhood",
+        "fertility",
+        "sky",
+        "underworld"
+      ],
+      "keywords": [
+        "air",
+        "body",
+        "causes",
+        "caves",
+        "consort",
+        "death",
+        "earth",
+        "earthquakes",
+        "father",
+        "fatherhood"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through earth-father and ancestor",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -2784,6 +3221,36 @@
           "Heliopolis"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "creation",
+        "earth",
+        "motherhood",
+        "sky"
+      ],
+      "keywords": [
+        "arches",
+        "birth",
+        "body",
+        "canopy",
+        "creation",
+        "dawn",
+        "each",
+        "earth",
+        "evening",
+        "gives"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ],
+      "coreFunction": "To embody great mother energy through cosmic-mother and sky-womb",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -2906,6 +3373,36 @@
           "Kom Ombo"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "fertility",
+        "war",
+        "water"
+      ],
+      "keywords": [
+        "associated",
+        "crocodile",
+        "dangerous",
+        "destroyer",
+        "embodies",
+        "fertility",
+        "fierce",
+        "force",
+        "giving",
+        "life"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through fierce-protector and primal-power",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -3048,6 +3545,39 @@
           "Bubastis"
         ],
         "confidence": 0.9
+      },
+      "domains": [
+        "dance",
+        "fertility",
+        "home",
+        "music",
+        "protection"
+      ],
+      "keywords": [
+        "against",
+        "associated",
+        "bastet",
+        "dance",
+        "depicted",
+        "disease",
+        "evil",
+        "fertility",
+        "fierce",
+        "gentle"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "warrior"
+      ],
+      "coreFunction": "To embody great mother energy through home-protector and nurturer",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     }
   ],

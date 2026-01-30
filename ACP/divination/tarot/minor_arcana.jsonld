@@ -8,14 +8,33 @@
   "subdomain": "tarot",
   "cardinality": 56,
   "structuralNotes": "Four suits (Wands, Cups, Swords, Pentacles) x 14 cards each. Suits = elements, Numbers = developmental stages, Courts = personality expressions.",
-
   "coordinateDerivation": {
     "method": "algorithmic-v1",
     "suitBaselines": {
-      "wands": {"element": "fire", "active-receptive": 0.2, "ascent-descent": 0.35, "note": "Active, ascending, creative will"},
-      "cups": {"element": "water", "active-receptive": 0.7, "ascent-descent": 0.6, "note": "Receptive, descending, emotional"},
-      "swords": {"element": "air", "active-receptive": 0.3, "ascent-descent": 0.25, "note": "Active intellect, ascending, mental"},
-      "pentacles": {"element": "earth", "active-receptive": 0.6, "ascent-descent": 0.75, "note": "Receptive, descending, material"}
+      "wands": {
+        "element": "fire",
+        "active-receptive": 0.2,
+        "ascent-descent": 0.35,
+        "note": "Active, ascending, creative will"
+      },
+      "cups": {
+        "element": "water",
+        "active-receptive": 0.7,
+        "ascent-descent": 0.6,
+        "note": "Receptive, descending, emotional"
+      },
+      "swords": {
+        "element": "air",
+        "active-receptive": 0.3,
+        "ascent-descent": 0.25,
+        "note": "Active intellect, ascending, mental"
+      },
+      "pentacles": {
+        "element": "earth",
+        "active-receptive": 0.6,
+        "ascent-descent": 0.75,
+        "note": "Receptive, descending, material"
+      }
     },
     "numberProgression": {
       "ace": "Pure potential - creation pole",
@@ -26,13 +45,24 @@
       "10": "Completion/culmination"
     },
     "courtRoles": {
-      "page": {"role": "student/messenger", "instantiates": "divine_child"},
-      "knight": {"role": "active pursuit", "instantiates": "hero/warrior"},
-      "queen": {"role": "receptive mastery", "instantiates": "great_mother/sovereign"},
-      "king": {"role": "active mastery", "instantiates": "great_father/sovereign"}
+      "page": {
+        "role": "student/messenger",
+        "instantiates": "divine_child"
+      },
+      "knight": {
+        "role": "active pursuit",
+        "instantiates": "hero/warrior"
+      },
+      "queen": {
+        "role": "receptive mastery",
+        "instantiates": "great_mother/sovereign"
+      },
+      "king": {
+        "role": "active mastery",
+        "instantiates": "great_father/sovereign"
+      }
     }
   },
-
   "suits": [
     {
       "@id": "tarot:wands",
@@ -55,7 +85,13 @@
           "@type": "Archetype",
           "name": "Ace of Wands",
           "number": 1,
-          "keywords": ["inspiration", "new enterprise", "creative spark", "potential", "birth of will"],
+          "keywords": [
+            "inspiration",
+            "new enterprise",
+            "creative spark",
+            "potential",
+            "birth of will"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.58,
             "creation-destruction": 0.12,
@@ -67,16 +103,73 @@
             "voluntary-fated": 0.25
           },
           "instantiates": [
-            {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["spark", "potential"]},
-            {"primordial": "primordial:divine_child", "weight": 0.5, "aspects": ["new-beginning"]}
-          ]
+            {
+              "primordial": "primordial:creator",
+              "weight": 0.7,
+              "aspects": [
+                "spark",
+                "potential"
+              ]
+            },
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.5,
+              "aspects": [
+                "new-beginning"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "beginnings",
+            "potential"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the pure potential of fire energy at its inception",
+          "symbolicCore": "The seed of fire awaiting manifestation",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "herald"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "pure potential and new beginnings",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_02",
           "@type": "Archetype",
           "name": "Two of Wands",
           "number": 2,
-          "keywords": ["planning", "decisions", "discovery", "future vision", "personal power"],
+          "keywords": [
+            "planning",
+            "decisions",
+            "discovery",
+            "future vision",
+            "personal power"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.48,
             "creation-destruction": 0.32,
@@ -88,35 +181,134 @@
             "voluntary-fated": 0.22
           },
           "instantiates": [
-            {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["planning", "vision"]}
-          ]
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.6,
+              "aspects": [
+                "planning",
+                "vision"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To navigate the choice between opposing fire expressions",
+          "symbolicCore": "The crossroads of fire where paths diverge",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "seeker",
+            "shapeshifter"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "duality, choice, and balance",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_03",
           "@type": "Archetype",
           "name": "Three of Wands",
           "number": 3,
-          "keywords": ["expansion", "foresight", "enterprise", "exploration", "leadership"],
+          "keywords": [
+            "expansion",
+            "foresight",
+            "enterprise",
+            "exploration",
+            "leadership"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.52,
             "creation-destruction": 0.28,
-            "light-shadow": 0.30,
-            "active-receptive": 0.20,
+            "light-shadow": 0.3,
+            "active-receptive": 0.2,
             "individual-collective": 0.42,
             "ascent-descent": 0.32,
             "stasis-transformation": 0.58,
             "voluntary-fated": 0.28
           },
           "instantiates": [
-            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["quest", "expansion"]}
-          ]
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.5,
+              "aspects": [
+                "quest",
+                "expansion"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To expand fire energy through growth and collaboration",
+          "symbolicCore": "The fruit of fire beginning to ripen",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "ally"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "expansion, growth, and collaboration",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_04",
           "@type": "Archetype",
           "name": "Four of Wands",
           "number": 4,
-          "keywords": ["celebration", "harmony", "homecoming", "community", "foundation"],
+          "keywords": [
+            "celebration",
+            "harmony",
+            "homecoming",
+            "community",
+            "foundation"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.35,
             "creation-destruction": 0.25,
@@ -128,35 +320,137 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["stability", "foundation"]}
-          ]
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.5,
+              "aspects": [
+                "stability",
+                "foundation"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To establish stable foundation in the realm of fire",
+          "symbolicCore": "The fortress of fire offering security",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "sovereign",
+            "guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "stability, foundation, and structure",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_05",
           "@type": "Archetype",
           "name": "Five of Wands",
           "number": 5,
-          "keywords": ["conflict", "competition", "tension", "diversity", "struggle"],
+          "keywords": [
+            "conflict",
+            "competition",
+            "tension",
+            "diversity",
+            "struggle"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.68,
             "creation-destruction": 0.52,
             "light-shadow": 0.42,
             "active-receptive": 0.15,
             "individual-collective": 0.32,
-            "ascent-descent": 0.40,
+            "ascent-descent": 0.4,
             "stasis-transformation": 0.62,
             "voluntary-fated": 0.28
           },
           "instantiates": [
-            {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["conflict", "competition"]}
-          ]
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.7,
+              "aspects": [
+                "conflict",
+                "competition"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "conflict",
+            "challenge"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To confront the challenges inherent in fire expression",
+          "symbolicCore": "The storm of fire that tests and purifies",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "warrior",
+            "shadow"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "conflict, challenge, and disruption",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_06",
           "@type": "Archetype",
           "name": "Six of Wands",
           "number": 6,
-          "keywords": ["victory", "recognition", "success", "acclaim", "progress"],
+          "keywords": [
+            "victory",
+            "recognition",
+            "success",
+            "acclaim",
+            "progress"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.32,
@@ -168,15 +462,65 @@
             "voluntary-fated": 0.32
           },
           "instantiates": [
-            {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["victory", "recognition"]}
-          ]
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.8,
+              "aspects": [
+                "victory",
+                "recognition"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To restore harmony and facilitate exchange in fire matters",
+          "symbolicCore": "The balance point where fire energy flows freely",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "healer",
+            "ally"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "harmony, healing, and exchange",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_07",
           "@type": "Archetype",
           "name": "Seven of Wands",
           "number": 7,
-          "keywords": ["challenge", "perseverance", "defense", "maintaining position", "courage"],
+          "keywords": [
+            "challenge",
+            "perseverance",
+            "defense",
+            "maintaining position",
+            "courage"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.55,
             "creation-destruction": 0.45,
@@ -188,15 +532,65 @@
             "voluntary-fated": 0.25
           },
           "instantiates": [
-            {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["defense", "perseverance"]}
-          ]
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.7,
+              "aspects": [
+                "defense",
+                "perseverance"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To assess progress and persevere through fire challenges",
+          "symbolicCore": "The threshold where fire mastery is tested",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "warrior",
+            "threshold-guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "assessment, challenge, and perseverance",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_08",
           "@type": "Archetype",
           "name": "Eight of Wands",
           "number": 8,
-          "keywords": ["speed", "movement", "swift action", "air travel", "progress"],
+          "keywords": [
+            "speed",
+            "movement",
+            "swift action",
+            "air travel",
+            "progress"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.58,
             "creation-destruction": 0.35,
@@ -208,16 +602,71 @@
             "voluntary-fated": 0.28
           },
           "instantiates": [
-            {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["speed", "movement"]},
-            {"primordial": "primordial:psychopomp", "weight": 0.4, "aspects": ["messenger"]}
-          ]
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.5,
+              "aspects": [
+                "speed",
+                "movement"
+              ]
+            },
+            {
+              "primordial": "primordial:psychopomp",
+              "weight": 0.4,
+              "aspects": [
+                "messenger"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To channel the momentum of fire toward completion",
+          "symbolicCore": "The swift current of fire gaining force",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "magician"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "movement, power, and momentum",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_09",
           "@type": "Archetype",
           "name": "Nine of Wands",
           "number": 9,
-          "keywords": ["resilience", "persistence", "last stand", "boundaries", "wounded warrior"],
+          "keywords": [
+            "resilience",
+            "persistence",
+            "last stand",
+            "boundaries",
+            "wounded warrior"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.48,
             "creation-destruction": 0.48,
@@ -229,16 +678,72 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["wounded", "persisting"]},
-            {"primordial": "primordial:hero", "weight": 0.4, "aspects": ["endurance"]}
-          ]
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.7,
+              "aspects": [
+                "wounded",
+                "persisting"
+              ]
+            },
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.4,
+              "aspects": [
+                "endurance"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To approach the culmination of fire mastery",
+          "symbolicCore": "The peak of fire journey before final transformation",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "sage",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "culmination, near-completion, and solitude",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_10",
           "@type": "Archetype",
           "name": "Ten of Wands",
           "number": 10,
-          "keywords": ["burden", "responsibility", "hard work", "accomplishment", "overwhelm"],
+          "keywords": [
+            "burden",
+            "responsibility",
+            "hard work",
+            "accomplishment",
+            "overwhelm"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.52,
@@ -250,15 +755,67 @@
             "voluntary-fated": 0.58
           },
           "instantiates": [
-            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["burden", "responsibility"]}
-          ]
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.5,
+              "aspects": [
+                "burden",
+                "responsibility"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "completion",
+            "culmination"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the full manifestation and completion of fire energy",
+          "symbolicCore": "The harvest of fire in its fullest expression",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "sovereign",
+            "destroyer"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Fire function expression",
+            "developmentalStage": "completion, fulfillment, and endings",
+            "integrationTask": "Balancing fire energy appropriately",
+            "cognitiveBias": "Over-identification with fire qualities"
+          }
         },
         {
           "@id": "tarot:wands_page",
           "@type": "Archetype",
           "name": "Page of Wands",
           "court": "page",
-          "keywords": ["exploration", "excitement", "freedom", "discovery", "enthusiasm"],
+          "keywords": [
+            "exploration",
+            "excitement",
+            "freedom",
+            "discovery",
+            "enthusiasm"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.62,
             "creation-destruction": 0.22,
@@ -270,37 +827,155 @@
             "voluntary-fated": 0.28
           },
           "instantiates": [
-            {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["enthusiasm", "discovery"]},
-            {"primordial": "primordial:trickster", "weight": 0.4, "aspects": ["playful"]}
-          ]
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.8,
+              "aspects": [
+                "enthusiasm",
+                "discovery"
+              ]
+            },
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.4,
+              "aspects": [
+                "playful"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "learning",
+            "messages"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the youthful, curious exploration of fire",
+          "symbolicCore": "The apprentice discovering the ways of fire",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "innocent",
+            "herald",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Puer/Puella, playful engagement with element",
+            "developmentalStage": "Beginning to develop elemental skills",
+            "integrationTask": "Learning without losing enthusiasm",
+            "cognitiveBias": "Identification with fire expression"
+          }
         },
         {
           "@id": "tarot:wands_knight",
           "@type": "Archetype",
           "name": "Knight of Wands",
           "court": "knight",
-          "keywords": ["adventure", "energy", "passion", "impulsiveness", "action"],
+          "keywords": [
+            "adventure",
+            "energy",
+            "passion",
+            "impulsiveness",
+            "action"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.68,
             "creation-destruction": 0.42,
             "light-shadow": 0.32,
-            "active-receptive": 0.10,
+            "active-receptive": 0.1,
             "individual-collective": 0.28,
             "ascent-descent": 0.32,
             "stasis-transformation": 0.72,
             "voluntary-fated": 0.18
           },
           "instantiates": [
-            {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["adventure", "quest"]},
-            {"primordial": "primordial:warrior", "weight": 0.6, "aspects": ["action", "passion"]}
-          ]
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.8,
+              "aspects": [
+                "adventure",
+                "quest"
+              ]
+            },
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.6,
+              "aspects": [
+                "action",
+                "passion"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "action",
+            "journey"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To pursue fire goals with passionate intensity",
+          "symbolicCore": "The warrior charging forth with fire energy",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "warrior",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Active animus, single-minded pursuit",
+            "developmentalStage": "Adolescent intensity and idealism",
+            "integrationTask": "Channeling passion without burning out",
+            "cognitiveBias": "Identification with fire expression"
+          }
         },
         {
           "@id": "tarot:wands_queen",
           "@type": "Archetype",
           "name": "Queen of Wands",
           "court": "queen",
-          "keywords": ["confidence", "determination", "warmth", "vibrancy", "courage"],
+          "keywords": [
+            "confidence",
+            "determination",
+            "warmth",
+            "vibrancy",
+            "courage"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.48,
             "creation-destruction": 0.28,
@@ -312,16 +987,75 @@
             "voluntary-fated": 0.32
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["confident-leadership"]},
-            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["warmth", "nurturing-fire"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.7,
+              "aspects": [
+                "confident-leadership"
+              ]
+            },
+            {
+              "primordial": "primordial:great_mother",
+              "weight": 0.5,
+              "aspects": [
+                "warmth",
+                "nurturing-fire"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "nurturing",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To nurture and embody mature fire wisdom receptively",
+          "symbolicCore": "The throne of fire power held with grace",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "sovereign",
+            "caregiver",
+            "sage"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive anima, receptive mastery",
+            "developmentalStage": "Mature integration of elemental qualities",
+            "integrationTask": "Nurturing without possessing",
+            "cognitiveBias": "Identification with fire expression"
+          }
         },
         {
           "@id": "tarot:wands_king",
           "@type": "Archetype",
           "name": "King of Wands",
           "court": "king",
-          "keywords": ["leadership", "vision", "entrepreneur", "honor", "bold action"],
+          "keywords": [
+            "leadership",
+            "vision",
+            "entrepreneur",
+            "honor",
+            "bold action"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.32,
@@ -333,9 +1067,62 @@
             "voluntary-fated": 0.25
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["leadership", "vision"]},
-            {"primordial": "primordial:great_father", "weight": 0.6, "aspects": ["authority"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.85,
+              "aspects": [
+                "leadership",
+                "vision"
+              ]
+            },
+            {
+              "primordial": "primordial:great_father",
+              "weight": 0.6,
+              "aspects": [
+                "authority"
+              ]
+            }
+          ],
+          "domains": [
+            "fire",
+            "creation",
+            "will",
+            "passion",
+            "authority",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-FIRE",
+            "suit": "tarot:wands"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:wands",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:fire",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To command and direct fire energy with mature authority",
+          "symbolicCore": "The crown of fire mastery earned through experience",
+          "narrativeRoles": [
+            "hero",
+            "creator",
+            "sovereign",
+            "mentor",
+            "ruler"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive senex, wise authority",
+            "developmentalStage": "Full mastery and responsibility",
+            "integrationTask": "Leading without dominating",
+            "cognitiveBias": "Identification with fire expression"
+          }
         }
       ]
     },
@@ -360,7 +1147,13 @@
           "@type": "Archetype",
           "name": "Ace of Cups",
           "number": 1,
-          "keywords": ["new love", "compassion", "creativity", "overwhelming emotion", "spiritual love"],
+          "keywords": [
+            "new love",
+            "compassion",
+            "creativity",
+            "overwhelming emotion",
+            "spiritual love"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.48,
             "creation-destruction": 0.15,
@@ -372,16 +1165,73 @@
             "voluntary-fated": 0.48
           },
           "instantiates": [
-            {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["emotional-birth"]},
-            {"primordial": "primordial:lover", "weight": 0.7, "aspects": ["new-love"]}
-          ]
+            {
+              "primordial": "primordial:creator",
+              "weight": 0.6,
+              "aspects": [
+                "emotional-birth"
+              ]
+            },
+            {
+              "primordial": "primordial:lover",
+              "weight": 0.7,
+              "aspects": [
+                "new-love"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "beginnings",
+            "potential"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the pure potential of water energy at its inception",
+          "symbolicCore": "The seed of water awaiting manifestation",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "herald",
+            "creator"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "pure potential and new beginnings",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_02",
           "@type": "Archetype",
           "name": "Two of Cups",
           "number": 2,
-          "keywords": ["partnership", "unity", "attraction", "connection", "mutual respect"],
+          "keywords": [
+            "partnership",
+            "unity",
+            "attraction",
+            "connection",
+            "mutual respect"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.28,
@@ -393,16 +1243,72 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:lover", "weight": 0.9, "aspects": ["partnership", "union"]},
-            {"primordial": "primordial:twin", "weight": 0.5, "aspects": ["duality"]}
-          ]
+            {
+              "primordial": "primordial:lover",
+              "weight": 0.9,
+              "aspects": [
+                "partnership",
+                "union"
+              ]
+            },
+            {
+              "primordial": "primordial:twin",
+              "weight": 0.5,
+              "aspects": [
+                "duality"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To navigate the choice between opposing water expressions",
+          "symbolicCore": "The crossroads of water where paths diverge",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "seeker",
+            "shapeshifter"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "duality, choice, and balance",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_03",
           "@type": "Archetype",
           "name": "Three of Cups",
           "number": 3,
-          "keywords": ["celebration", "friendship", "community", "creativity", "collaboration"],
+          "keywords": [
+            "celebration",
+            "friendship",
+            "community",
+            "creativity",
+            "collaboration"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.52,
             "creation-destruction": 0.25,
@@ -414,16 +1320,71 @@
             "voluntary-fated": 0.38
           },
           "instantiates": [
-            {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["friendship"]},
-            {"primordial": "primordial:divine_child", "weight": 0.4, "aspects": ["celebration"]}
-          ]
+            {
+              "primordial": "primordial:lover",
+              "weight": 0.6,
+              "aspects": [
+                "friendship"
+              ]
+            },
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.4,
+              "aspects": [
+                "celebration"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To expand water energy through growth and collaboration",
+          "symbolicCore": "The fruit of water beginning to ripen",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "ally",
+            "creator"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "expansion, growth, and collaboration",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_04",
           "@type": "Archetype",
           "name": "Four of Cups",
           "number": 4,
-          "keywords": ["contemplation", "apathy", "reevaluation", "discontent", "meditation"],
+          "keywords": [
+            "contemplation",
+            "apathy",
+            "reevaluation",
+            "discontent",
+            "meditation"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.45,
             "creation-destruction": 0.45,
@@ -435,16 +1396,71 @@
             "voluntary-fated": 0.58
           },
           "instantiates": [
-            {"primordial": "primordial:wise_elder", "weight": 0.4, "aspects": ["contemplation"]},
-            {"primordial": "primordial:outcast", "weight": 0.4, "aspects": ["withdrawal"]}
-          ]
+            {
+              "primordial": "primordial:wise_elder",
+              "weight": 0.4,
+              "aspects": [
+                "contemplation"
+              ]
+            },
+            {
+              "primordial": "primordial:outcast",
+              "weight": 0.4,
+              "aspects": [
+                "withdrawal"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To establish stable foundation in the realm of water",
+          "symbolicCore": "The fortress of water offering security",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "sovereign",
+            "guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "stability, foundation, and structure",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_05",
           "@type": "Archetype",
           "name": "Five of Cups",
           "number": 5,
-          "keywords": ["loss", "grief", "disappointment", "regret", "mourning"],
+          "keywords": [
+            "loss",
+            "grief",
+            "disappointment",
+            "regret",
+            "mourning"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.55,
             "creation-destruction": 0.65,
@@ -456,16 +1472,74 @@
             "voluntary-fated": 0.72
           },
           "instantiates": [
-            {"primordial": "primordial:crone", "weight": 0.5, "aspects": ["loss", "grief"]},
-            {"primordial": "primordial:shadow", "weight": 0.5, "aspects": ["mourning"]}
-          ]
+            {
+              "primordial": "primordial:crone",
+              "weight": 0.5,
+              "aspects": [
+                "loss",
+                "grief"
+              ]
+            },
+            {
+              "primordial": "primordial:shadow",
+              "weight": 0.5,
+              "aspects": [
+                "mourning"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "conflict",
+            "challenge"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To confront the challenges inherent in water expression",
+          "symbolicCore": "The storm of water that tests and purifies",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "warrior",
+            "shadow"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "conflict, challenge, and disruption",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_06",
           "@type": "Archetype",
           "name": "Six of Cups",
           "number": 6,
-          "keywords": ["nostalgia", "childhood", "innocence", "reunion", "memories"],
+          "keywords": [
+            "nostalgia",
+            "childhood",
+            "innocence",
+            "reunion",
+            "memories"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.28,
@@ -477,16 +1551,72 @@
             "voluntary-fated": 0.62
           },
           "instantiates": [
-            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["innocence", "nostalgia"]},
-            {"primordial": "primordial:ancestor", "weight": 0.5, "aspects": ["memories", "past"]}
-          ]
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.7,
+              "aspects": [
+                "innocence",
+                "nostalgia"
+              ]
+            },
+            {
+              "primordial": "primordial:ancestor",
+              "weight": 0.5,
+              "aspects": [
+                "memories",
+                "past"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To restore harmony and facilitate exchange in water matters",
+          "symbolicCore": "The balance point where water energy flows freely",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "ally"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "harmony, healing, and exchange",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_07",
           "@type": "Archetype",
           "name": "Seven of Cups",
           "number": 7,
-          "keywords": ["choices", "fantasy", "illusion", "wishful thinking", "imagination"],
+          "keywords": [
+            "choices",
+            "fantasy",
+            "illusion",
+            "wishful thinking",
+            "imagination"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.68,
             "creation-destruction": 0.38,
@@ -498,16 +1628,71 @@
             "voluntary-fated": 0.42
           },
           "instantiates": [
-            {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["illusion"]},
-            {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["imagination"]}
-          ]
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.5,
+              "aspects": [
+                "illusion"
+              ]
+            },
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.4,
+              "aspects": [
+                "imagination"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To assess progress and persevere through water challenges",
+          "symbolicCore": "The threshold where water mastery is tested",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "warrior",
+            "threshold-guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "assessment, challenge, and perseverance",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_08",
           "@type": "Archetype",
           "name": "Eight of Cups",
           "number": 8,
-          "keywords": ["walking away", "disillusionment", "leaving behind", "seeking truth", "journey"],
+          "keywords": [
+            "walking away",
+            "disillusionment",
+            "leaving behind",
+            "seeking truth",
+            "journey"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.52,
             "creation-destruction": 0.55,
@@ -519,16 +1704,72 @@
             "voluntary-fated": 0.48
           },
           "instantiates": [
-            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["quest", "leaving"]},
-            {"primordial": "primordial:outcast", "weight": 0.5, "aspects": ["walking-away"]}
-          ]
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.5,
+              "aspects": [
+                "quest",
+                "leaving"
+              ]
+            },
+            {
+              "primordial": "primordial:outcast",
+              "weight": 0.5,
+              "aspects": [
+                "walking-away"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To channel the momentum of water toward completion",
+          "symbolicCore": "The swift current of water gaining force",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "hero",
+            "magician"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "movement, power, and momentum",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_09",
           "@type": "Archetype",
           "name": "Nine of Cups",
           "number": 9,
-          "keywords": ["contentment", "satisfaction", "gratitude", "wish fulfilled", "pleasure"],
+          "keywords": [
+            "contentment",
+            "satisfaction",
+            "gratitude",
+            "wish fulfilled",
+            "pleasure"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.38,
             "creation-destruction": 0.28,
@@ -540,16 +1781,71 @@
             "voluntary-fated": 0.42
           },
           "instantiates": [
-            {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["satisfaction"]},
-            {"primordial": "primordial:self", "weight": 0.4, "aspects": ["contentment"]}
-          ]
+            {
+              "primordial": "primordial:lover",
+              "weight": 0.6,
+              "aspects": [
+                "satisfaction"
+              ]
+            },
+            {
+              "primordial": "primordial:self",
+              "weight": 0.4,
+              "aspects": [
+                "contentment"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To approach the culmination of water mastery",
+          "symbolicCore": "The peak of water journey before final transformation",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "sage",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "culmination, near-completion, and solitude",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_10",
           "@type": "Archetype",
           "name": "Ten of Cups",
           "number": 10,
-          "keywords": ["harmony", "family", "alignment", "happiness", "emotional fulfillment"],
+          "keywords": [
+            "harmony",
+            "family",
+            "alignment",
+            "happiness",
+            "emotional fulfillment"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.32,
             "creation-destruction": 0.22,
@@ -561,16 +1857,74 @@
             "voluntary-fated": 0.52
           },
           "instantiates": [
-            {"primordial": "primordial:self", "weight": 0.6, "aspects": ["harmony", "wholeness"]},
-            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["family"]}
-          ]
+            {
+              "primordial": "primordial:self",
+              "weight": 0.6,
+              "aspects": [
+                "harmony",
+                "wholeness"
+              ]
+            },
+            {
+              "primordial": "primordial:great_mother",
+              "weight": 0.5,
+              "aspects": [
+                "family"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "completion",
+            "culmination"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the full manifestation and completion of water energy",
+          "symbolicCore": "The harvest of water in its fullest expression",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "sovereign",
+            "destroyer"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Water function expression",
+            "developmentalStage": "completion, fulfillment, and endings",
+            "integrationTask": "Balancing water energy appropriately",
+            "cognitiveBias": "Over-identification with water qualities"
+          }
         },
         {
           "@id": "tarot:cups_page",
           "@type": "Archetype",
           "name": "Page of Cups",
           "court": "page",
-          "keywords": ["creative opportunity", "intuitive message", "curiosity", "dreamer", "sensitive"],
+          "keywords": [
+            "creative opportunity",
+            "intuitive message",
+            "curiosity",
+            "dreamer",
+            "sensitive"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.55,
             "creation-destruction": 0.22,
@@ -582,16 +1936,75 @@
             "voluntary-fated": 0.52
           },
           "instantiates": [
-            {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["dreamer", "sensitive"]},
-            {"primordial": "primordial:lover", "weight": 0.4, "aspects": ["romantic"]}
-          ]
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.8,
+              "aspects": [
+                "dreamer",
+                "sensitive"
+              ]
+            },
+            {
+              "primordial": "primordial:lover",
+              "weight": 0.4,
+              "aspects": [
+                "romantic"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "learning",
+            "messages"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the youthful, curious exploration of water",
+          "symbolicCore": "The apprentice discovering the ways of water",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "innocent",
+            "herald",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Puer/Puella, playful engagement with element",
+            "developmentalStage": "Beginning to develop elemental skills",
+            "integrationTask": "Learning without losing enthusiasm",
+            "cognitiveBias": "Identification with water expression"
+          }
         },
         {
           "@id": "tarot:cups_knight",
           "@type": "Archetype",
           "name": "Knight of Cups",
           "court": "knight",
-          "keywords": ["romance", "charm", "imagination", "following the heart", "idealist"],
+          "keywords": [
+            "romance",
+            "charm",
+            "imagination",
+            "following the heart",
+            "idealist"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.52,
             "creation-destruction": 0.32,
@@ -603,16 +2016,75 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:lover", "weight": 0.8, "aspects": ["romance", "pursuit"]},
-            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["quest-for-love"]}
-          ]
+            {
+              "primordial": "primordial:lover",
+              "weight": 0.8,
+              "aspects": [
+                "romance",
+                "pursuit"
+              ]
+            },
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.5,
+              "aspects": [
+                "quest-for-love"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "action",
+            "journey"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To pursue water goals with passionate intensity",
+          "symbolicCore": "The warrior charging forth with water energy",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "hero",
+            "warrior",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Active animus, single-minded pursuit",
+            "developmentalStage": "Adolescent intensity and idealism",
+            "integrationTask": "Channeling passion without burning out",
+            "cognitiveBias": "Identification with water expression"
+          }
         },
         {
           "@id": "tarot:cups_queen",
           "@type": "Archetype",
           "name": "Queen of Cups",
           "court": "queen",
-          "keywords": ["compassion", "calm", "intuitive", "nurturing", "emotional security"],
+          "keywords": [
+            "compassion",
+            "calm",
+            "intuitive",
+            "nurturing",
+            "emotional security"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.28,
@@ -624,16 +2096,75 @@
             "voluntary-fated": 0.55
           },
           "instantiates": [
-            {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "compassion"]},
-            {"primordial": "primordial:healer", "weight": 0.5, "aspects": ["emotional-healing"]}
-          ]
+            {
+              "primordial": "primordial:great_mother",
+              "weight": 0.85,
+              "aspects": [
+                "nurturing",
+                "compassion"
+              ]
+            },
+            {
+              "primordial": "primordial:healer",
+              "weight": 0.5,
+              "aspects": [
+                "emotional-healing"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "nurturing",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To nurture and embody mature water wisdom receptively",
+          "symbolicCore": "The throne of water power held with grace",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "sovereign",
+            "caregiver",
+            "sage"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive anima, receptive mastery",
+            "developmentalStage": "Mature integration of elemental qualities",
+            "integrationTask": "Nurturing without possessing",
+            "cognitiveBias": "Identification with water expression"
+          }
         },
         {
           "@id": "tarot:cups_king",
           "@type": "Archetype",
           "name": "King of Cups",
           "court": "king",
-          "keywords": ["emotional balance", "diplomacy", "compassion", "wisdom", "calm"],
+          "keywords": [
+            "emotional balance",
+            "diplomacy",
+            "compassion",
+            "wisdom",
+            "calm"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.35,
             "creation-destruction": 0.35,
@@ -645,9 +2176,62 @@
             "voluntary-fated": 0.48
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["emotional-mastery"]},
-            {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["wisdom", "balance"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.7,
+              "aspects": [
+                "emotional-mastery"
+              ]
+            },
+            {
+              "primordial": "primordial:wise_elder",
+              "weight": 0.6,
+              "aspects": [
+                "wisdom",
+                "balance"
+              ]
+            }
+          ],
+          "domains": [
+            "water",
+            "love",
+            "emotion",
+            "intuition",
+            "authority",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-WATER",
+            "suit": "tarot:cups"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:cups",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:water",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To command and direct water energy with mature authority",
+          "symbolicCore": "The crown of water mastery earned through experience",
+          "narrativeRoles": [
+            "lover",
+            "healer",
+            "sovereign",
+            "mentor",
+            "ruler"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive senex, wise authority",
+            "developmentalStage": "Full mastery and responsibility",
+            "integrationTask": "Leading without dominating",
+            "cognitiveBias": "Identification with water expression"
+          }
         }
       ]
     },
@@ -672,7 +2256,13 @@
           "@type": "Archetype",
           "name": "Ace of Swords",
           "number": 1,
-          "keywords": ["clarity", "breakthrough", "truth", "new idea", "mental force"],
+          "keywords": [
+            "clarity",
+            "breakthrough",
+            "truth",
+            "new idea",
+            "mental force"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.35,
             "creation-destruction": 0.25,
@@ -684,16 +2274,74 @@
             "voluntary-fated": 0.25
           },
           "instantiates": [
-            {"primordial": "primordial:creator", "weight": 0.5, "aspects": ["mental-birth"]},
-            {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["clarity", "truth"]}
-          ]
+            {
+              "primordial": "primordial:creator",
+              "weight": 0.5,
+              "aspects": [
+                "mental-birth"
+              ]
+            },
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.6,
+              "aspects": [
+                "clarity",
+                "truth"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "beginnings",
+            "potential"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the pure potential of air energy at its inception",
+          "symbolicCore": "The seed of air awaiting manifestation",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "herald",
+            "creator"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "pure potential and new beginnings",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_02",
           "@type": "Archetype",
           "name": "Two of Swords",
           "number": 2,
-          "keywords": ["stalemate", "difficult decision", "avoidance", "truce", "blocked emotions"],
+          "keywords": [
+            "stalemate",
+            "difficult decision",
+            "avoidance",
+            "truce",
+            "blocked emotions"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.48,
             "creation-destruction": 0.48,
@@ -705,16 +2353,71 @@
             "voluntary-fated": 0.55
           },
           "instantiates": [
-            {"primordial": "primordial:preserver", "weight": 0.4, "aspects": ["stalemate"]},
-            {"primordial": "primordial:shadow", "weight": 0.4, "aspects": ["avoidance"]}
-          ]
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.4,
+              "aspects": [
+                "stalemate"
+              ]
+            },
+            {
+              "primordial": "primordial:shadow",
+              "weight": 0.4,
+              "aspects": [
+                "avoidance"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To navigate the choice between opposing air expressions",
+          "symbolicCore": "The crossroads of air where paths diverge",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "seeker",
+            "shapeshifter"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "duality, choice, and balance",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_03",
           "@type": "Archetype",
           "name": "Three of Swords",
           "number": 3,
-          "keywords": ["heartbreak", "sorrow", "grief", "painful truth", "separation"],
+          "keywords": [
+            "heartbreak",
+            "sorrow",
+            "grief",
+            "painful truth",
+            "separation"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.55,
             "creation-destruction": 0.72,
@@ -726,16 +2429,71 @@
             "voluntary-fated": 0.72
           },
           "instantiates": [
-            {"primordial": "primordial:destroyer", "weight": 0.5, "aspects": ["painful-truth"]},
-            {"primordial": "primordial:crone", "weight": 0.4, "aspects": ["grief"]}
-          ]
+            {
+              "primordial": "primordial:destroyer",
+              "weight": 0.5,
+              "aspects": [
+                "painful-truth"
+              ]
+            },
+            {
+              "primordial": "primordial:crone",
+              "weight": 0.4,
+              "aspects": [
+                "grief"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To expand air energy through growth and collaboration",
+          "symbolicCore": "The fruit of air beginning to ripen",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "ally",
+            "creator"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "expansion, growth, and collaboration",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_04",
           "@type": "Archetype",
           "name": "Four of Swords",
           "number": 4,
-          "keywords": ["rest", "recovery", "contemplation", "meditation", "passive"],
+          "keywords": [
+            "rest",
+            "recovery",
+            "contemplation",
+            "meditation",
+            "passive"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.32,
             "creation-destruction": 0.42,
@@ -747,16 +2505,71 @@
             "voluntary-fated": 0.58
           },
           "instantiates": [
-            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["rest"]},
-            {"primordial": "primordial:healer", "weight": 0.5, "aspects": ["recovery"]}
-          ]
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.5,
+              "aspects": [
+                "rest"
+              ]
+            },
+            {
+              "primordial": "primordial:healer",
+              "weight": 0.5,
+              "aspects": [
+                "recovery"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To establish stable foundation in the realm of air",
+          "symbolicCore": "The fortress of air offering security",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "sovereign",
+            "guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "stability, foundation, and structure",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_05",
           "@type": "Archetype",
           "name": "Five of Swords",
           "number": 5,
-          "keywords": ["defeat", "conflict", "winning at all costs", "betrayal", "loss"],
+          "keywords": [
+            "defeat",
+            "conflict",
+            "winning at all costs",
+            "betrayal",
+            "loss"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.68,
             "creation-destruction": 0.72,
@@ -768,16 +2581,74 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:warrior", "weight": 0.6, "aspects": ["conflict", "defeat"]},
-            {"primordial": "primordial:trickster", "weight": 0.4, "aspects": ["betrayal"], "note": "shadow"}
-          ]
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.6,
+              "aspects": [
+                "conflict",
+                "defeat"
+              ]
+            },
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.4,
+              "aspects": [
+                "betrayal"
+              ],
+              "note": "shadow"
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "conflict",
+            "challenge"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To confront the challenges inherent in air expression",
+          "symbolicCore": "The storm of air that tests and purifies",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "shadow"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "conflict, challenge, and disruption",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_06",
           "@type": "Archetype",
           "name": "Six of Swords",
           "number": 6,
-          "keywords": ["transition", "change", "rite of passage", "releasing baggage", "moving on"],
+          "keywords": [
+            "transition",
+            "change",
+            "rite of passage",
+            "releasing baggage",
+            "moving on"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.45,
             "creation-destruction": 0.52,
@@ -789,16 +2660,72 @@
             "voluntary-fated": 0.55
           },
           "instantiates": [
-            {"primordial": "primordial:psychopomp", "weight": 0.7, "aspects": ["transition", "passage"]},
-            {"primordial": "primordial:hero", "weight": 0.4, "aspects": ["journey"]}
-          ]
+            {
+              "primordial": "primordial:psychopomp",
+              "weight": 0.7,
+              "aspects": [
+                "transition",
+                "passage"
+              ]
+            },
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.4,
+              "aspects": [
+                "journey"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To restore harmony and facilitate exchange in air matters",
+          "symbolicCore": "The balance point where air energy flows freely",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "healer",
+            "ally"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "harmony, healing, and exchange",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_07",
           "@type": "Archetype",
           "name": "Seven of Swords",
           "number": 7,
-          "keywords": ["deception", "trickery", "strategy", "stealth", "getting away with something"],
+          "keywords": [
+            "deception",
+            "trickery",
+            "strategy",
+            "stealth",
+            "getting away with something"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.72,
             "creation-destruction": 0.48,
@@ -810,15 +2737,64 @@
             "voluntary-fated": 0.18
           },
           "instantiates": [
-            {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["deception", "strategy"]}
-          ]
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.85,
+              "aspects": [
+                "deception",
+                "strategy"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To assess progress and persevere through air challenges",
+          "symbolicCore": "The threshold where air mastery is tested",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "threshold-guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "assessment, challenge, and perseverance",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_08",
           "@type": "Archetype",
           "name": "Eight of Swords",
           "number": 8,
-          "keywords": ["imprisonment", "restriction", "self-imposed limitation", "victim mentality", "trapped"],
+          "keywords": [
+            "imprisonment",
+            "restriction",
+            "self-imposed limitation",
+            "victim mentality",
+            "trapped"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.55,
             "creation-destruction": 0.55,
@@ -830,16 +2806,72 @@
             "voluntary-fated": 0.78
           },
           "instantiates": [
-            {"primordial": "primordial:outcast", "weight": 0.6, "aspects": ["imprisoned", "trapped"]},
-            {"primordial": "primordial:shadow", "weight": 0.5, "aspects": ["self-limitation"]}
-          ]
+            {
+              "primordial": "primordial:outcast",
+              "weight": 0.6,
+              "aspects": [
+                "imprisoned",
+                "trapped"
+              ]
+            },
+            {
+              "primordial": "primordial:shadow",
+              "weight": 0.5,
+              "aspects": [
+                "self-limitation"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To channel the momentum of air toward completion",
+          "symbolicCore": "The swift current of air gaining force",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "hero",
+            "magician"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "movement, power, and momentum",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_09",
           "@type": "Archetype",
           "name": "Nine of Swords",
           "number": 9,
-          "keywords": ["anxiety", "worry", "fear", "nightmares", "despair"],
+          "keywords": [
+            "anxiety",
+            "worry",
+            "fear",
+            "nightmares",
+            "despair"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.58,
             "creation-destruction": 0.58,
@@ -851,16 +2883,71 @@
             "voluntary-fated": 0.72
           },
           "instantiates": [
-            {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["anxiety", "fear"]},
-            {"primordial": "primordial:monster", "weight": 0.4, "aspects": ["nightmares"]}
-          ]
+            {
+              "primordial": "primordial:shadow",
+              "weight": 0.8,
+              "aspects": [
+                "anxiety",
+                "fear"
+              ]
+            },
+            {
+              "primordial": "primordial:monster",
+              "weight": 0.4,
+              "aspects": [
+                "nightmares"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To approach the culmination of air mastery",
+          "symbolicCore": "The peak of air journey before final transformation",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "culmination, near-completion, and solitude",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_10",
           "@type": "Archetype",
           "name": "Ten of Swords",
           "number": 10,
-          "keywords": ["painful ending", "rock bottom", "betrayal", "loss", "crisis"],
+          "keywords": [
+            "painful ending",
+            "rock bottom",
+            "betrayal",
+            "loss",
+            "crisis"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.65,
             "creation-destruction": 0.88,
@@ -872,16 +2959,74 @@
             "voluntary-fated": 0.85
           },
           "instantiates": [
-            {"primordial": "primordial:destroyer", "weight": 0.8, "aspects": ["ending", "crisis"]},
-            {"primordial": "primordial:psychopomp", "weight": 0.4, "aspects": ["death-rebirth"]}
-          ]
+            {
+              "primordial": "primordial:destroyer",
+              "weight": 0.8,
+              "aspects": [
+                "ending",
+                "crisis"
+              ]
+            },
+            {
+              "primordial": "primordial:psychopomp",
+              "weight": 0.4,
+              "aspects": [
+                "death-rebirth"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "completion",
+            "culmination"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the full manifestation and completion of air energy",
+          "symbolicCore": "The harvest of air in its fullest expression",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "sovereign",
+            "destroyer"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Air function expression",
+            "developmentalStage": "completion, fulfillment, and endings",
+            "integrationTask": "Balancing air energy appropriately",
+            "cognitiveBias": "Over-identification with air qualities"
+          }
         },
         {
           "@id": "tarot:swords_page",
           "@type": "Archetype",
           "name": "Page of Swords",
           "court": "page",
-          "keywords": ["curiosity", "restless", "mental energy", "new ideas", "vigilance"],
+          "keywords": [
+            "curiosity",
+            "restless",
+            "mental energy",
+            "new ideas",
+            "vigilance"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.58,
             "creation-destruction": 0.35,
@@ -893,16 +3038,74 @@
             "voluntary-fated": 0.28
           },
           "instantiates": [
-            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["curiosity"]},
-            {"primordial": "primordial:trickster", "weight": 0.4, "aspects": ["clever"]}
-          ]
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.7,
+              "aspects": [
+                "curiosity"
+              ]
+            },
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.4,
+              "aspects": [
+                "clever"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "learning",
+            "messages"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the youthful, curious exploration of air",
+          "symbolicCore": "The apprentice discovering the ways of air",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "innocent",
+            "herald",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Puer/Puella, playful engagement with element",
+            "developmentalStage": "Beginning to develop elemental skills",
+            "integrationTask": "Learning without losing enthusiasm",
+            "cognitiveBias": "Identification with air expression"
+          }
         },
         {
           "@id": "tarot:swords_knight",
           "@type": "Archetype",
           "name": "Knight of Swords",
           "court": "knight",
-          "keywords": ["ambition", "action-oriented", "fast-thinking", "driven", "assertive"],
+          "keywords": [
+            "ambition",
+            "action-oriented",
+            "fast-thinking",
+            "driven",
+            "assertive"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.58,
             "creation-destruction": 0.52,
@@ -914,16 +3117,74 @@
             "voluntary-fated": 0.18
           },
           "instantiates": [
-            {"primordial": "primordial:warrior", "weight": 0.8, "aspects": ["driven", "assertive"]},
-            {"primordial": "primordial:hero", "weight": 0.5, "aspects": ["action"]}
-          ]
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.8,
+              "aspects": [
+                "driven",
+                "assertive"
+              ]
+            },
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.5,
+              "aspects": [
+                "action"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "action",
+            "journey"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To pursue air goals with passionate intensity",
+          "symbolicCore": "The warrior charging forth with air energy",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "hero",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Active animus, single-minded pursuit",
+            "developmentalStage": "Adolescent intensity and idealism",
+            "integrationTask": "Channeling passion without burning out",
+            "cognitiveBias": "Identification with air expression"
+          }
         },
         {
           "@id": "tarot:swords_queen",
           "@type": "Archetype",
           "name": "Queen of Swords",
           "court": "queen",
-          "keywords": ["independence", "perception", "clear boundaries", "direct communication", "unbiased"],
+          "keywords": [
+            "independence",
+            "perception",
+            "clear boundaries",
+            "direct communication",
+            "unbiased"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.32,
             "creation-destruction": 0.45,
@@ -935,16 +3196,73 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["clear-judgment"]},
-            {"primordial": "primordial:wise_elder", "weight": 0.5, "aspects": ["perception"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.7,
+              "aspects": [
+                "clear-judgment"
+              ]
+            },
+            {
+              "primordial": "primordial:wise_elder",
+              "weight": 0.5,
+              "aspects": [
+                "perception"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "nurturing",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To nurture and embody mature air wisdom receptively",
+          "symbolicCore": "The throne of air power held with grace",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "sovereign",
+            "caregiver"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive anima, receptive mastery",
+            "developmentalStage": "Mature integration of elemental qualities",
+            "integrationTask": "Nurturing without possessing",
+            "cognitiveBias": "Identification with air expression"
+          }
         },
         {
           "@id": "tarot:swords_king",
           "@type": "Archetype",
           "name": "King of Swords",
           "court": "king",
-          "keywords": ["intellectual power", "authority", "truth", "clear thinking", "ethical"],
+          "keywords": [
+            "intellectual power",
+            "authority",
+            "truth",
+            "clear thinking",
+            "ethical"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.22,
             "creation-destruction": 0.42,
@@ -956,9 +3274,62 @@
             "voluntary-fated": 0.32
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["authority", "judgment"]},
-            {"primordial": "primordial:great_father", "weight": 0.5, "aspects": ["law"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.85,
+              "aspects": [
+                "authority",
+                "judgment"
+              ]
+            },
+            {
+              "primordial": "primordial:great_father",
+              "weight": 0.5,
+              "aspects": [
+                "law"
+              ]
+            }
+          ],
+          "domains": [
+            "air",
+            "truth",
+            "conflict",
+            "intellect",
+            "authority",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-AIR",
+            "suit": "tarot:swords"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:swords",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:air",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To command and direct air energy with mature authority",
+          "symbolicCore": "The crown of air mastery earned through experience",
+          "narrativeRoles": [
+            "warrior",
+            "sage",
+            "sovereign",
+            "mentor",
+            "ruler"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive senex, wise authority",
+            "developmentalStage": "Full mastery and responsibility",
+            "integrationTask": "Leading without dominating",
+            "cognitiveBias": "Identification with air expression"
+          }
         }
       ]
     },
@@ -983,7 +3354,13 @@
           "@type": "Archetype",
           "name": "Ace of Pentacles",
           "number": 1,
-          "keywords": ["new financial opportunity", "manifestation", "abundance", "prosperity", "new venture"],
+          "keywords": [
+            "new financial opportunity",
+            "manifestation",
+            "abundance",
+            "prosperity",
+            "new venture"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.35,
             "creation-destruction": 0.12,
@@ -995,16 +3372,73 @@
             "voluntary-fated": 0.42
           },
           "instantiates": [
-            {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["material-birth"]},
-            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["abundance"]}
-          ]
+            {
+              "primordial": "primordial:creator",
+              "weight": 0.6,
+              "aspects": [
+                "material-birth"
+              ]
+            },
+            {
+              "primordial": "primordial:great_mother",
+              "weight": 0.5,
+              "aspects": [
+                "abundance"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "beginnings",
+            "potential"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the pure potential of earth energy at its inception",
+          "symbolicCore": "The seed of earth awaiting manifestation",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "herald",
+            "creator"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "pure potential and new beginnings",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_02",
           "@type": "Archetype",
           "name": "Two of Pentacles",
           "number": 2,
-          "keywords": ["balance", "adaptability", "time management", "prioritization", "juggling"],
+          "keywords": [
+            "balance",
+            "adaptability",
+            "time management",
+            "prioritization",
+            "juggling"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.55,
             "creation-destruction": 0.45,
@@ -1016,16 +3450,72 @@
             "voluntary-fated": 0.38
           },
           "instantiates": [
-            {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["adaptability", "juggling"]},
-            {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["balance"]}
-          ]
+            {
+              "primordial": "primordial:trickster",
+              "weight": 0.5,
+              "aspects": [
+                "adaptability",
+                "juggling"
+              ]
+            },
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.4,
+              "aspects": [
+                "balance"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To navigate the choice between opposing earth expressions",
+          "symbolicCore": "The crossroads of earth where paths diverge",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "seeker",
+            "shapeshifter"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "duality, choice, and balance",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_03",
           "@type": "Archetype",
           "name": "Three of Pentacles",
           "number": 3,
-          "keywords": ["teamwork", "collaboration", "learning", "implementation", "craftsmanship"],
+          "keywords": [
+            "teamwork",
+            "collaboration",
+            "learning",
+            "implementation",
+            "craftsmanship"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.32,
             "creation-destruction": 0.28,
@@ -1037,16 +3527,71 @@
             "voluntary-fated": 0.38
           },
           "instantiates": [
-            {"primordial": "primordial:creator", "weight": 0.5, "aspects": ["craftsmanship"]},
-            {"primordial": "primordial:magician", "weight": 0.5, "aspects": ["skill"]}
-          ]
+            {
+              "primordial": "primordial:creator",
+              "weight": 0.5,
+              "aspects": [
+                "craftsmanship"
+              ]
+            },
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.5,
+              "aspects": [
+                "skill"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To expand earth energy through growth and collaboration",
+          "symbolicCore": "The fruit of earth beginning to ripen",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "ally",
+            "creator"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "expansion, growth, and collaboration",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_04",
           "@type": "Archetype",
           "name": "Four of Pentacles",
           "number": 4,
-          "keywords": ["security", "control", "conservation", "frugality", "possessiveness"],
+          "keywords": [
+            "security",
+            "control",
+            "conservation",
+            "frugality",
+            "possessiveness"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.18,
             "creation-destruction": 0.42,
@@ -1058,15 +3603,64 @@
             "voluntary-fated": 0.52
           },
           "instantiates": [
-            {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["security", "holding"]}
-          ]
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.8,
+              "aspects": [
+                "security",
+                "holding"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To establish stable foundation in the realm of earth",
+          "symbolicCore": "The fortress of earth offering security",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "stability, foundation, and structure",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_05",
           "@type": "Archetype",
           "name": "Five of Pentacles",
           "number": 5,
-          "keywords": ["hardship", "loss", "isolation", "worry", "poverty"],
+          "keywords": [
+            "hardship",
+            "loss",
+            "isolation",
+            "worry",
+            "poverty"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.58,
             "creation-destruction": 0.68,
@@ -1078,16 +3672,74 @@
             "voluntary-fated": 0.75
           },
           "instantiates": [
-            {"primordial": "primordial:outcast", "weight": 0.8, "aspects": ["hardship", "isolation"]},
-            {"primordial": "primordial:shadow", "weight": 0.4, "aspects": ["poverty"]}
-          ]
+            {
+              "primordial": "primordial:outcast",
+              "weight": 0.8,
+              "aspects": [
+                "hardship",
+                "isolation"
+              ]
+            },
+            {
+              "primordial": "primordial:shadow",
+              "weight": 0.4,
+              "aspects": [
+                "poverty"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "conflict",
+            "challenge"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To confront the challenges inherent in earth expression",
+          "symbolicCore": "The storm of earth that tests and purifies",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "warrior",
+            "shadow"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "conflict, challenge, and disruption",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_06",
           "@type": "Archetype",
           "name": "Six of Pentacles",
           "number": 6,
-          "keywords": ["generosity", "charity", "giving", "receiving", "sharing wealth"],
+          "keywords": [
+            "generosity",
+            "charity",
+            "giving",
+            "receiving",
+            "sharing wealth"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.38,
             "creation-destruction": 0.32,
@@ -1099,16 +3751,71 @@
             "voluntary-fated": 0.45
           },
           "instantiates": [
-            {"primordial": "primordial:great_mother", "weight": 0.5, "aspects": ["giving"]},
-            {"primordial": "primordial:sovereign", "weight": 0.4, "aspects": ["distribution"]}
-          ]
+            {
+              "primordial": "primordial:great_mother",
+              "weight": 0.5,
+              "aspects": [
+                "giving"
+              ]
+            },
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.4,
+              "aspects": [
+                "distribution"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To restore harmony and facilitate exchange in earth matters",
+          "symbolicCore": "The balance point where earth energy flows freely",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "healer",
+            "ally"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "harmony, healing, and exchange",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_07",
           "@type": "Archetype",
           "name": "Seven of Pentacles",
           "number": 7,
-          "keywords": ["patience", "long-term view", "perseverance", "investment", "reward"],
+          "keywords": [
+            "patience",
+            "long-term view",
+            "perseverance",
+            "investment",
+            "reward"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.38,
             "creation-destruction": 0.42,
@@ -1120,16 +3827,71 @@
             "voluntary-fated": 0.55
           },
           "instantiates": [
-            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["patience"]},
-            {"primordial": "primordial:wise_elder", "weight": 0.4, "aspects": ["long-term-view"]}
-          ]
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.5,
+              "aspects": [
+                "patience"
+              ]
+            },
+            {
+              "primordial": "primordial:wise_elder",
+              "weight": 0.4,
+              "aspects": [
+                "long-term-view"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To assess progress and persevere through earth challenges",
+          "symbolicCore": "The threshold where earth mastery is tested",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "warrior",
+            "threshold-guardian"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "assessment, challenge, and perseverance",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_08",
           "@type": "Archetype",
           "name": "Eight of Pentacles",
           "number": 8,
-          "keywords": ["apprenticeship", "skill development", "diligence", "craftsmanship", "dedication"],
+          "keywords": [
+            "apprenticeship",
+            "skill development",
+            "diligence",
+            "craftsmanship",
+            "dedication"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.28,
             "creation-destruction": 0.32,
@@ -1141,16 +3903,72 @@
             "voluntary-fated": 0.35
           },
           "instantiates": [
-            {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["skill", "craft"]},
-            {"primordial": "primordial:hero", "weight": 0.4, "aspects": ["dedication"]}
-          ]
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.6,
+              "aspects": [
+                "skill",
+                "craft"
+              ]
+            },
+            {
+              "primordial": "primordial:hero",
+              "weight": 0.4,
+              "aspects": [
+                "dedication"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To channel the momentum of earth toward completion",
+          "symbolicCore": "The swift current of earth gaining force",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "hero",
+            "magician"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "movement, power, and momentum",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_09",
           "@type": "Archetype",
           "name": "Nine of Pentacles",
           "number": 9,
-          "keywords": ["abundance", "luxury", "self-sufficiency", "financial independence", "reward"],
+          "keywords": [
+            "abundance",
+            "luxury",
+            "self-sufficiency",
+            "financial independence",
+            "reward"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.32,
             "creation-destruction": 0.28,
@@ -1162,16 +3980,71 @@
             "voluntary-fated": 0.42
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.5, "aspects": ["independence"]},
-            {"primordial": "primordial:self", "weight": 0.5, "aspects": ["self-sufficiency"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.5,
+              "aspects": [
+                "independence"
+              ]
+            },
+            {
+              "primordial": "primordial:self",
+              "weight": 0.5,
+              "aspects": [
+                "self-sufficiency"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To approach the culmination of earth mastery",
+          "symbolicCore": "The peak of earth journey before final transformation",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "sage",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "culmination, near-completion, and solitude",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_10",
           "@type": "Archetype",
           "name": "Ten of Pentacles",
           "number": 10,
-          "keywords": ["wealth", "inheritance", "family", "establishment", "legacy"],
+          "keywords": [
+            "wealth",
+            "inheritance",
+            "family",
+            "establishment",
+            "legacy"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.22,
             "creation-destruction": 0.32,
@@ -1183,16 +4056,73 @@
             "voluntary-fated": 0.68
           },
           "instantiates": [
-            {"primordial": "primordial:ancestor", "weight": 0.8, "aspects": ["legacy", "inheritance"]},
-            {"primordial": "primordial:preserver", "weight": 0.5, "aspects": ["establishment"]}
-          ]
+            {
+              "primordial": "primordial:ancestor",
+              "weight": 0.8,
+              "aspects": [
+                "legacy",
+                "inheritance"
+              ]
+            },
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.5,
+              "aspects": [
+                "establishment"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "completion",
+            "culmination"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the full manifestation and completion of earth energy",
+          "symbolicCore": "The harvest of earth in its fullest expression",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "destroyer"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Earth function expression",
+            "developmentalStage": "completion, fulfillment, and endings",
+            "integrationTask": "Balancing earth energy appropriately",
+            "cognitiveBias": "Over-identification with earth qualities"
+          }
         },
         {
           "@id": "tarot:pentacles_page",
           "@type": "Archetype",
           "name": "Page of Pentacles",
           "court": "page",
-          "keywords": ["manifestation", "financial opportunity", "skill development", "ambition", "student"],
+          "keywords": [
+            "manifestation",
+            "financial opportunity",
+            "skill development",
+            "ambition",
+            "student"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.42,
             "creation-destruction": 0.25,
@@ -1204,16 +4134,75 @@
             "voluntary-fated": 0.38
           },
           "instantiates": [
-            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["student", "ambition"]},
-            {"primordial": "primordial:magician", "weight": 0.4, "aspects": ["skill-development"]}
-          ]
+            {
+              "primordial": "primordial:divine_child",
+              "weight": 0.7,
+              "aspects": [
+                "student",
+                "ambition"
+              ]
+            },
+            {
+              "primordial": "primordial:magician",
+              "weight": 0.4,
+              "aspects": [
+                "skill-development"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "learning",
+            "messages"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To embody the youthful, curious exploration of earth",
+          "symbolicCore": "The apprentice discovering the ways of earth",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "innocent",
+            "herald",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Puer/Puella, playful engagement with element",
+            "developmentalStage": "Beginning to develop elemental skills",
+            "integrationTask": "Learning without losing enthusiasm",
+            "cognitiveBias": "Identification with earth expression"
+          }
         },
         {
           "@id": "tarot:pentacles_knight",
           "@type": "Archetype",
           "name": "Knight of Pentacles",
           "court": "knight",
-          "keywords": ["routine", "conservatism", "methodical", "responsibility", "efficiency"],
+          "keywords": [
+            "routine",
+            "conservatism",
+            "methodical",
+            "responsibility",
+            "efficiency"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.22,
             "creation-destruction": 0.42,
@@ -1225,16 +4214,75 @@
             "voluntary-fated": 0.42
           },
           "instantiates": [
-            {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["methodical", "routine"]},
-            {"primordial": "primordial:warrior", "weight": 0.5, "aspects": ["responsibility"]}
-          ]
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.6,
+              "aspects": [
+                "methodical",
+                "routine"
+              ]
+            },
+            {
+              "primordial": "primordial:warrior",
+              "weight": 0.5,
+              "aspects": [
+                "responsibility"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "action",
+            "journey"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To pursue earth goals with passionate intensity",
+          "symbolicCore": "The warrior charging forth with earth energy",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "hero",
+            "warrior",
+            "seeker"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Active animus, single-minded pursuit",
+            "developmentalStage": "Adolescent intensity and idealism",
+            "integrationTask": "Channeling passion without burning out",
+            "cognitiveBias": "Identification with earth expression"
+          }
         },
         {
           "@id": "tarot:pentacles_queen",
           "@type": "Archetype",
           "name": "Queen of Pentacles",
           "court": "queen",
-          "keywords": ["nurturing", "practical", "providing", "homebody", "security"],
+          "keywords": [
+            "nurturing",
+            "practical",
+            "providing",
+            "homebody",
+            "security"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.32,
             "creation-destruction": 0.28,
@@ -1246,16 +4294,73 @@
             "voluntary-fated": 0.52
           },
           "instantiates": [
-            {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["nurturing", "providing"]},
-            {"primordial": "primordial:preserver", "weight": 0.4, "aspects": ["security"]}
-          ]
+            {
+              "primordial": "primordial:great_mother",
+              "weight": 0.85,
+              "aspects": [
+                "nurturing",
+                "providing"
+              ]
+            },
+            {
+              "primordial": "primordial:preserver",
+              "weight": 0.4,
+              "aspects": [
+                "security"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "nurturing",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To nurture and embody mature earth wisdom receptively",
+          "symbolicCore": "The throne of earth power held with grace",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "sage"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive anima, receptive mastery",
+            "developmentalStage": "Mature integration of elemental qualities",
+            "integrationTask": "Nurturing without possessing",
+            "cognitiveBias": "Identification with earth expression"
+          }
         },
         {
           "@id": "tarot:pentacles_king",
           "@type": "Archetype",
           "name": "King of Pentacles",
           "court": "king",
-          "keywords": ["wealth", "business", "leadership", "security", "discipline"],
+          "keywords": [
+            "wealth",
+            "business",
+            "leadership",
+            "security",
+            "discipline"
+          ],
           "spectralCoordinates": {
             "order-chaos": 0.22,
             "creation-destruction": 0.35,
@@ -1267,20 +4372,88 @@
             "voluntary-fated": 0.45
           },
           "instantiates": [
-            {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["wealth", "business"]},
-            {"primordial": "primordial:great_father", "weight": 0.5, "aspects": ["discipline", "security"]}
-          ]
+            {
+              "primordial": "primordial:sovereign",
+              "weight": 0.85,
+              "aspects": [
+                "wealth",
+                "business"
+              ]
+            },
+            {
+              "primordial": "primordial:great_father",
+              "weight": 0.5,
+              "aspects": [
+                "discipline",
+                "security"
+              ]
+            }
+          ],
+          "domains": [
+            "earth",
+            "wealth",
+            "crafts",
+            "material",
+            "authority",
+            "mastery"
+          ],
+          "correspondences": {
+            "element": "EL-EARTH",
+            "suit": "tarot:pentacles"
+          },
+          "relationships": [
+            {
+              "type": "CONTAINED_BY",
+              "target": "tarot:pentacles",
+              "note": "Part of suit"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "element:earth",
+              "fidelity": 0.8,
+              "note": "Elemental correspondence"
+            }
+          ],
+          "coreFunction": "To command and direct earth energy with mature authority",
+          "symbolicCore": "The crown of earth mastery earned through experience",
+          "narrativeRoles": [
+            "sovereign",
+            "caregiver",
+            "mentor",
+            "ruler"
+          ],
+          "psychologicalMapping": {
+            "jungianStructure": "Positive senex, wise authority",
+            "developmentalStage": "Full mastery and responsibility",
+            "integrationTask": "Leading without dominating",
+            "cognitiveBias": "Identification with earth expression"
+          }
         }
       ]
     }
   ],
-
   "systemRelationships": {
     "suitCorrespondences": {
-      "wands-fire": {"planet": "sun/mars", "direction": "south", "season": "summer"},
-      "cups-water": {"planet": "moon/venus", "direction": "west", "season": "autumn"},
-      "swords-air": {"planet": "mercury/saturn", "direction": "east", "season": "spring"},
-      "pentacles-earth": {"planet": "venus/saturn", "direction": "north", "season": "winter"}
+      "wands-fire": {
+        "planet": "sun/mars",
+        "direction": "south",
+        "season": "summer"
+      },
+      "cups-water": {
+        "planet": "moon/venus",
+        "direction": "west",
+        "season": "autumn"
+      },
+      "swords-air": {
+        "planet": "mercury/saturn",
+        "direction": "east",
+        "season": "spring"
+      },
+      "pentacles-earth": {
+        "planet": "venus/saturn",
+        "direction": "north",
+        "season": "winter"
+      }
     },
     "courtProgression": {
       "page": "Learning/receiving the element's energy",
@@ -1301,7 +4474,6 @@
       "10": "Completion, end of cycle"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1-suit-number-matrix",

@@ -8,7 +8,6 @@
   "subdomain": "theatrical",
   "cardinality": 10,
   "structuralNotes": "Characters divided into masters (vecchi), servants (zanni), and lovers (innamorati). Each has signature mask, costume, and behavioral patterns.",
-
   "entries": [
     {
       "@id": "commedia:arlecchino",
@@ -17,26 +16,71 @@
       "category": "Zanni (Servant)",
       "origin": "Bergamo",
       "mask": "Black half-mask with bump",
-      "keywords": ["acrobatic", "mischievous", "hungry", "clever", "foolish"],
+      "keywords": [
+        "acrobatic",
+        "mischievous",
+        "hungry",
+        "clever",
+        "foolish"
+      ],
       "description": "The most famous zanni, a clever but simple servant always hungry and in love. Acrobatic and mischievous, wearing the famous diamond-patterned costume.",
       "spectralCoordinates": {
-        "order-chaos": 0.70,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
+        "order-chaos": 0.7,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
         "active-receptive": 0.25,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.90, "aspects": ["mischief", "cleverness"]},
-        {"primordial": "primordial:divine-child", "weight": 0.55, "aspects": ["foolishness", "innocence"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.9,
+          "aspects": [
+            "mischief",
+            "cleverness"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.55,
+          "aspects": [
+            "foolishness",
+            "innocence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.70, "note": "Fool archetype"},
-        {"type": "COMPLEMENT", "target": "commedia:brighella", "note": "First and second zanni"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.7,
+          "note": "Fool archetype"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:brighella",
+          "note": "First and second zanni"
+        }
+      ],
+      "domains": [
+        "love"
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through mischief and cleverness",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "commedia:brighella",
@@ -45,26 +89,68 @@
       "category": "Zanni (Servant)",
       "origin": "Bergamo",
       "mask": "Olive/dark half-mask",
-      "keywords": ["cunning", "scheming", "musician", "villain", "opportunist"],
+      "keywords": [
+        "cunning",
+        "scheming",
+        "musician",
+        "villain",
+        "opportunist"
+      ],
       "description": "The first zanni, more cunning and villainous than Arlecchino. A schemer who often plays guitar and takes any opportunity for personal gain.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.50,
+        "creation-destruction": 0.5,
         "light-shadow": 0.55,
         "active-receptive": 0.35,
         "individual-collective": 0.35,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["scheming", "cunning"]},
-        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["villainy", "opportunism"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "scheming",
+            "cunning"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.55,
+          "aspects": [
+            "villainy",
+            "opportunism"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "commedia:arlecchino", "note": "First and second zanni"},
-        {"type": "CULTURAL_ECHO", "target": "propp:villain", "fidelity": 0.55, "note": "Antagonist role"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:arlecchino",
+          "note": "First and second zanni"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "propp:villain",
+          "fidelity": 0.55,
+          "note": "Antagonist role"
+        }
+      ],
+      "narrativeRoles": [
+        "shadow",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through scheming and cunning",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "commedia:pantalone",
@@ -73,26 +159,70 @@
       "category": "Vecchi (Master)",
       "origin": "Venice",
       "mask": "Brown with hooked nose, pointed beard",
-      "keywords": ["merchant", "miserly", "lecherous", "wealthy", "foolish"],
+      "keywords": [
+        "merchant",
+        "miserly",
+        "lecherous",
+        "wealthy",
+        "foolish"
+      ],
       "description": "The wealthy Venetian merchant, miserly with money but lecherous with young women. Often the blocking father who opposes young lovers.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
-        "active-receptive": 0.40,
-        "individual-collective": 0.40,
+        "active-receptive": 0.4,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["authority", "blocking"]},
-        {"primordial": "primordial:shadow", "weight": 0.60, "aspects": ["greed", "lechery"]}
+        {
+          "primordial": "primordial:great-father",
+          "weight": 0.65,
+          "aspects": [
+            "authority",
+            "blocking"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.6,
+          "aspects": [
+            "greed",
+            "lechery"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "commedia:dottore", "note": "Fellow vecchi"},
-        {"type": "ANTAGONIST", "target": "commedia:innamorato", "note": "Blocks young love"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:dottore",
+          "note": "Fellow vecchi"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "commedia:innamorato",
+          "note": "Blocks young love"
+        }
+      ],
+      "domains": [
+        "commerce",
+        "fatherhood"
+      ],
+      "narrativeRoles": [
+        "shadow",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great father energy through authority and blocking",
+      "symbolicCore": "The staff of authority and judgment",
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "commedia:dottore",
@@ -101,26 +231,70 @@
       "category": "Vecchi (Master)",
       "origin": "Bologna",
       "mask": "Black covering only forehead and nose",
-      "keywords": ["pedantic", "doctor", "learned", "windbag", "foolish"],
+      "keywords": [
+        "pedantic",
+        "doctor",
+        "learned",
+        "windbag",
+        "foolish"
+      ],
       "description": "The pompous doctor from Bologna, spouting Latin and pseudo-learning. A pedantic windbag whose knowledge is often useless or wrong.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.50,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.5,
         "active-receptive": 0.45,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["learning", "pedantry"]},
-        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["foolishness", "pretension"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.6,
+          "aspects": [
+            "learning",
+            "pedantry"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.55,
+          "aspects": [
+            "foolishness",
+            "pretension"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "commedia:pantalone", "note": "Fellow vecchi"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.45, "note": "Shadow sage"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:pantalone",
+          "note": "Fellow vecchi"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:sage",
+          "fidelity": 0.45,
+          "note": "Shadow sage"
+        }
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "sage",
+        "shadow"
+      ],
+      "coreFunction": "To embody wise elder energy through learning and pedantry",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "commedia:capitano",
@@ -129,25 +303,66 @@
       "category": "Vecchi (Master)",
       "origin": "Spain/Italy",
       "mask": "Long nose, often with flesh tones",
-      "keywords": ["braggart", "coward", "soldier", "boastful", "vain"],
+      "keywords": [
+        "braggart",
+        "coward",
+        "soldier",
+        "boastful",
+        "vain"
+      ],
       "description": "The boastful captain who claims great military exploits but is actually a coward. Vain and ridiculous, deflated when confronted with real danger.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.50,
+        "creation-destruction": 0.5,
         "light-shadow": 0.55,
         "active-receptive": 0.35,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.40
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.50, "aspects": ["soldier", "bravado"]},
-        {"primordial": "primordial:shadow", "weight": 0.70, "aspects": ["cowardice", "pretension"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.5,
+          "aspects": [
+            "soldier",
+            "bravado"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.7,
+          "aspects": [
+            "cowardice",
+            "pretension"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "kwml:sadist", "fidelity": 0.40, "note": "Shadow warrior"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:sadist",
+          "fidelity": 0.4,
+          "note": "Shadow warrior"
+        }
+      ],
+      "domains": [
+        "war"
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow",
+        "warrior"
+      ],
+      "coreFunction": "To embody shadow energy through cowardice and pretension",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "commedia:colombina",
@@ -156,26 +371,68 @@
       "category": "Zanni (Servant)",
       "origin": "Venice",
       "mask": "Usually unmasked",
-      "keywords": ["clever", "witty", "practical", "flirtatious", "resourceful"],
+      "keywords": [
+        "clever",
+        "witty",
+        "practical",
+        "flirtatious",
+        "resourceful"
+      ],
       "description": "The clever maidservant, often the only sensible person on stage. Witty and practical, she manipulates situations to help the lovers.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
+        "order-chaos": 0.5,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
         "active-receptive": 0.45,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.50,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["cleverness", "manipulation"]},
-        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["wit", "resourcefulness"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.7,
+          "aspects": [
+            "cleverness",
+            "manipulation"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.55,
+          "aspects": [
+            "wit",
+            "resourcefulness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "commedia:arlecchino", "note": "Romantic pair"},
-        {"type": "CULTURAL_ECHO", "target": "propp:helper", "fidelity": 0.70, "note": "Aids the heroes"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:arlecchino",
+          "note": "Romantic pair"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "propp:helper",
+          "fidelity": 0.7,
+          "note": "Aids the heroes"
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through cleverness and manipulation",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "commedia:innamorato",
@@ -184,26 +441,67 @@
       "category": "Innamorati (Lover)",
       "origin": "Various",
       "mask": "Unmasked",
-      "keywords": ["romantic", "passionate", "dramatic", "noble", "lovesick"],
+      "keywords": [
+        "romantic",
+        "passionate",
+        "dramatic",
+        "noble",
+        "lovesick"
+      ],
       "description": "The young male lover, unmasked to show sincere emotion. Noble, passionate, and dramatically lovesick, often at the mercy of blocking parents.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.90, "aspects": ["passion", "romance"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["nobility", "pursuit"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.9,
+          "aspects": [
+            "passion",
+            "romance"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "nobility",
+            "pursuit"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "commedia:innamorata", "note": "Romantic pair"},
-        {"type": "ANTAGONIST", "target": "commedia:pantalone", "note": "Opposed by fathers"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:innamorata",
+          "note": "Romantic pair"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "commedia:pantalone",
+          "note": "Opposed by fathers"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "hero",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through passion and romance",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "commedia:innamorata",
@@ -212,26 +510,69 @@
       "category": "Innamorati (Lover)",
       "origin": "Various",
       "mask": "Unmasked",
-      "keywords": ["beautiful", "virtuous", "passionate", "eloquent", "constant"],
+      "keywords": [
+        "beautiful",
+        "virtuous",
+        "passionate",
+        "eloquent",
+        "constant"
+      ],
       "description": "The young female lover, unmasked for sincere emotion. Beautiful, virtuous, and eloquently passionate, faithful despite obstacles.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
-        "creation-destruction": 0.30,
-        "light-shadow": 0.30,
+        "creation-destruction": 0.3,
+        "light-shadow": 0.3,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.90, "aspects": ["passion", "constancy"]},
-        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["beauty", "virtue"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.9,
+          "aspects": [
+            "passion",
+            "constancy"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "beauty",
+            "virtue"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "commedia:innamorato", "note": "Romantic pair"},
-        {"type": "CULTURAL_ECHO", "target": "propp:princess", "fidelity": 0.65, "note": "Object of quest"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:innamorato",
+          "note": "Romantic pair"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "propp:princess",
+          "fidelity": 0.65,
+          "note": "Object of quest"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "innocent",
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody lover energy through passion and constancy",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "commedia:pulcinella",
@@ -240,26 +581,68 @@
       "category": "Zanni (Servant)",
       "origin": "Naples",
       "mask": "Black with hooked nose, hunchback",
-      "keywords": ["crude", "violent", "gluttonous", "cunning", "anarchic"],
+      "keywords": [
+        "crude",
+        "violent",
+        "gluttonous",
+        "cunning",
+        "anarchic"
+      ],
       "description": "The Neapolitan servant with black mask and hunchback. Crude, violent, and gluttonous, embodying anarchic impulses and survival instincts.",
       "spectralCoordinates": {
         "order-chaos": 0.75,
         "creation-destruction": 0.55,
-        "light-shadow": 0.60,
-        "active-receptive": 0.30,
+        "light-shadow": 0.6,
+        "active-receptive": 0.3,
         "individual-collective": 0.35,
         "ascent-descent": 0.65,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["anarchy", "survival"]},
-        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["violence", "crude-instinct"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.85,
+          "aspects": [
+            "anarchy",
+            "survival"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.65,
+          "aspects": [
+            "violence",
+            "crude-instinct"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "commedia:arlecchino", "fidelity": 0.60, "note": "Fellow zanni"},
-        {"type": "EVOLUTION", "target": "modern:punch", "note": "Became Punch in England"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:arlecchino",
+          "fidelity": 0.6,
+          "note": "Fellow zanni"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "modern:punch",
+          "note": "Became Punch in England"
+        }
+      ],
+      "narrativeRoles": [
+        "shadow",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through anarchy and survival",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "commedia:pierrot",
@@ -268,43 +651,114 @@
       "category": "Zanni (Servant)",
       "origin": "France/Italy",
       "mask": "White-face (no mask), sad",
-      "keywords": ["melancholy", "naive", "poetic", "vulnerable", "moonstruck"],
+      "keywords": [
+        "melancholy",
+        "naive",
+        "poetic",
+        "vulnerable",
+        "moonstruck"
+      ],
       "description": "The sad white-faced servant, naive and melancholy. A moonstruck romantic often rejected in love, representing vulnerable innocence.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.35,
-        "light-shadow": 0.50,
+        "light-shadow": 0.5,
         "active-receptive": 0.65,
         "individual-collective": 0.45,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["innocence", "vulnerability"]},
-        {"primordial": "primordial:outcast", "weight": 0.60, "aspects": ["melancholy", "rejection"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.75,
+          "aspects": [
+            "innocence",
+            "vulnerability"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.6,
+          "aspects": [
+            "melancholy",
+            "rejection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "pearson:orphan", "fidelity": 0.65, "note": "Wounded innocence"},
-        {"type": "POLAR_OPPOSITE", "target": "commedia:arlecchino", "axis": "active-receptive", "note": "Active vs passive fool"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:orphan",
+          "fidelity": 0.65,
+          "note": "Wounded innocence"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "commedia:arlecchino",
+          "axis": "active-receptive",
+          "note": "Active vs passive fool"
+        }
+      ],
+      "domains": [
+        "love"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "outcast"
+      ],
+      "coreFunction": "To embody divine child energy through innocence and vulnerability",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "categories": {
-      "zanni": ["arlecchino", "brighella", "colombina", "pulcinella", "pierrot"],
-      "vecchi": ["pantalone", "dottore", "capitano"],
-      "innamorati": ["innamorato", "innamorata"]
+      "zanni": [
+        "arlecchino",
+        "brighella",
+        "colombina",
+        "pulcinella",
+        "pierrot"
+      ],
+      "vecchi": [
+        "pantalone",
+        "dottore",
+        "capitano"
+      ],
+      "innamorati": [
+        "innamorato",
+        "innamorata"
+      ]
     },
     "dramaticRoles": {
-      "blocking_characters": ["pantalone", "dottore", "capitano"],
-      "tricksters_helpers": ["arlecchino", "brighella", "colombina"],
-      "lovers": ["innamorato", "innamorata"],
-      "anarchic_elements": ["pulcinella", "pierrot"]
+      "blocking_characters": [
+        "pantalone",
+        "dottore",
+        "capitano"
+      ],
+      "tricksters_helpers": [
+        "arlecchino",
+        "brighella",
+        "colombina"
+      ],
+      "lovers": [
+        "innamorato",
+        "innamorata"
+      ],
+      "anarchic_elements": [
+        "pulcinella",
+        "pierrot"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

@@ -8,7 +8,6 @@
   "subdomain": "personality",
   "cardinality": 4,
   "structuralNotes": "Based on Marston's 1928 'Emotions of Normal People'. Two axes: pace (fast/slow) and priority (task/people). Focus is on observable behavior, not personality.",
-
   "entries": [
     {
       "@id": "disc:dominance",
@@ -17,28 +16,82 @@
       "code": "D",
       "pace": "Fast",
       "priority": "Task",
-      "keywords": ["direct", "decisive", "competitive", "demanding", "results-oriented"],
-      "strengths": ["leadership", "problem-solving", "quick decisions", "driving results"],
-      "challenges": ["impatience", "insensitivity", "poor listening", "controlling"],
+      "keywords": [
+        "direct",
+        "decisive",
+        "competitive",
+        "demanding",
+        "results-oriented"
+      ],
+      "strengths": [
+        "leadership",
+        "problem-solving",
+        "quick decisions",
+        "driving results"
+      ],
+      "challenges": [
+        "impatience",
+        "insensitivity",
+        "poor listening",
+        "controlling"
+      ],
       "description": "Direct and results-oriented. Accepts challenges, takes charge, and focuses on bottom-line results. Values competence and action.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.40,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.4,
         "active-receptive": 0.15,
         "individual-collective": 0.35,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["competition", "directness"]},
-        {"primordial": "primordial:sovereign", "weight": 0.70, "aspects": ["leadership", "control"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.8,
+          "aspects": [
+            "competition",
+            "directness"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.7,
+          "aspects": [
+            "leadership",
+            "control"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "disc:steadiness", "axis": "active-receptive", "note": "Opposite quadrant"},
-        {"type": "CULTURAL_ECHO", "target": "kwml:warrior", "fidelity": 0.70, "note": "Active force"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "disc:steadiness",
+          "axis": "active-receptive",
+          "note": "Opposite quadrant"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:warrior",
+          "fidelity": 0.7,
+          "note": "Active force"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through competition and directness",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "disc:influence",
@@ -47,28 +100,81 @@
       "code": "I",
       "pace": "Fast",
       "priority": "People",
-      "keywords": ["enthusiastic", "persuasive", "optimistic", "collaborative", "expressive"],
-      "strengths": ["motivation", "persuasion", "enthusiasm", "networking"],
-      "challenges": ["disorganization", "impulsiveness", "lack of follow-through", "over-talking"],
+      "keywords": [
+        "enthusiastic",
+        "persuasive",
+        "optimistic",
+        "collaborative",
+        "expressive"
+      ],
+      "strengths": [
+        "motivation",
+        "persuasion",
+        "enthusiasm",
+        "networking"
+      ],
+      "challenges": [
+        "disorganization",
+        "impulsiveness",
+        "lack of follow-through",
+        "over-talking"
+      ],
       "description": "Enthusiastic and collaborative. Influences through relationships and optimism. Values recognition and group interaction.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.35,
-        "light-shadow": 0.30,
-        "active-receptive": 0.30,
-        "individual-collective": 0.70,
+        "light-shadow": 0.3,
+        "active-receptive": 0.3,
+        "individual-collective": 0.7,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.80, "aspects": ["enthusiasm", "connection"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["persuasion", "optimism"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.8,
+          "aspects": [
+            "enthusiasm",
+            "connection"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "persuasion",
+            "optimism"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "disc:conscientiousness", "axis": "individual-collective", "note": "Opposite quadrant"},
-        {"type": "CULTURAL_ECHO", "target": "kwml:lover", "fidelity": 0.70, "note": "Connection energy"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "disc:conscientiousness",
+          "axis": "individual-collective",
+          "note": "Opposite quadrant"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:lover",
+          "fidelity": 0.7,
+          "note": "Connection energy"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "trickster"
+      ],
+      "coreFunction": "To embody lover energy through enthusiasm and connection",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "disc:steadiness",
@@ -77,28 +183,81 @@
       "code": "S",
       "pace": "Slow",
       "priority": "People",
-      "keywords": ["supportive", "patient", "reliable", "team-oriented", "sincere"],
-      "strengths": ["support", "reliability", "patience", "team player"],
-      "challenges": ["resistance to change", "passive-aggressive", "difficulty saying no", "holding grudges"],
+      "keywords": [
+        "supportive",
+        "patient",
+        "reliable",
+        "team-oriented",
+        "sincere"
+      ],
+      "strengths": [
+        "support",
+        "reliability",
+        "patience",
+        "team player"
+      ],
+      "challenges": [
+        "resistance to change",
+        "passive-aggressive",
+        "difficulty saying no",
+        "holding grudges"
+      ],
       "description": "Supportive and stable. Values cooperation, security, and sincere appreciation. Patient and reliable team member.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.35,
         "light-shadow": 0.35,
         "active-receptive": 0.65,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.30,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.3,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["support", "patience"]},
-        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["reliability", "stability"]}
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.75,
+          "aspects": [
+            "support",
+            "patience"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "reliability",
+            "stability"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "disc:dominance", "axis": "active-receptive", "note": "Opposite quadrant"},
-        {"type": "CULTURAL_ECHO", "target": "pearson:caregiver", "fidelity": 0.75, "note": "Supportive care"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "disc:dominance",
+          "axis": "active-receptive",
+          "note": "Opposite quadrant"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:caregiver",
+          "fidelity": 0.75,
+          "note": "Supportive care"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody healer energy through support and patience",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "disc:conscientiousness",
@@ -107,42 +266,117 @@
       "code": "C",
       "pace": "Slow",
       "priority": "Task",
-      "keywords": ["analytical", "systematic", "accurate", "quality-focused", "reserved"],
-      "strengths": ["accuracy", "analysis", "quality", "expertise"],
-      "challenges": ["over-analysis", "criticism", "isolation", "perfectionism"],
+      "keywords": [
+        "analytical",
+        "systematic",
+        "accurate",
+        "quality-focused",
+        "reserved"
+      ],
+      "strengths": [
+        "accuracy",
+        "analysis",
+        "quality",
+        "expertise"
+      ],
+      "challenges": [
+        "over-analysis",
+        "criticism",
+        "isolation",
+        "perfectionism"
+      ],
       "description": "Analytical and quality-focused. Values accuracy, expertise, and competency. Systematic approach with high standards.",
       "spectralCoordinates": {
-        "order-chaos": 0.20,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.2,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
         "active-receptive": 0.55,
-        "individual-collective": 0.30,
+        "individual-collective": 0.3,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["analysis", "accuracy"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["expertise", "systems"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "analysis",
+            "accuracy"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "expertise",
+            "systems"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "disc:influence", "axis": "individual-collective", "note": "Opposite quadrant"},
-        {"type": "CULTURAL_ECHO", "target": "kwml:magician", "fidelity": 0.65, "note": "Knowledge mastery"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "disc:influence",
+          "axis": "individual-collective",
+          "note": "Opposite quadrant"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:magician",
+          "fidelity": 0.65,
+          "note": "Knowledge mastery"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through analysis and accuracy",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "axes": {
-      "pace": {"fast": ["dominance", "influence"], "slow": ["steadiness", "conscientiousness"]},
-      "priority": {"task": ["dominance", "conscientiousness"], "people": ["influence", "steadiness"]}
+      "pace": {
+        "fast": [
+          "dominance",
+          "influence"
+        ],
+        "slow": [
+          "steadiness",
+          "conscientiousness"
+        ]
+      },
+      "priority": {
+        "task": [
+          "dominance",
+          "conscientiousness"
+        ],
+        "people": [
+          "influence",
+          "steadiness"
+        ]
+      }
     },
     "quadrantOpposites": [
-      ["dominance", "steadiness"],
-      ["influence", "conscientiousness"]
+      [
+        "dominance",
+        "steadiness"
+      ],
+      [
+        "influence",
+        "conscientiousness"
+      ]
     ]
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

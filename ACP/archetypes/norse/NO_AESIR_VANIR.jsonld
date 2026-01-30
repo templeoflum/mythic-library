@@ -138,14 +138,14 @@
       "coreFunction": "To seek wisdom at any cost, to prepare for doom while knowing it cannot be averted",
       "symbolicCore": "The one-eyed god who sees more than those with two - wisdom through sacrifice",
       "domains": [
-        "wisdom",
-        "war",
         "death",
-        "poetry",
-        "magic",
-        "runes",
         "fury",
-        "hanging"
+        "hanging",
+        "magic",
+        "poetry",
+        "runes",
+        "war",
+        "wisdom"
       ],
       "temporalOrientation": "future",
       "temporalNotes": "Obsessed with Ragnarök; all his actions prepare for the end he cannot prevent",
@@ -256,7 +256,19 @@
         ]
       },
       "ritualFunction": "Invoked for wisdom, victory, poetry, runic magic, communication with the dead",
-      "poeticInvocation": "Allfather, Gallows-Lord, Raven-God, One-Eyed Wanderer who traded flesh for wisdom"
+      "poeticInvocation": "Allfather, Gallows-Lord, Raven-God, One-Eyed Wanderer who traded flesh for wisdom",
+      "keywords": [
+        "allfather",
+        "death",
+        "doom",
+        "fury",
+        "gain",
+        "hanging",
+        "hung",
+        "knowledge",
+        "knows",
+        "magic"
+      ]
     },
     {
       "@id": "arch:NO-THOR",
@@ -336,13 +348,14 @@
       "coreFunction": "To defend cosmic order against chaos through direct, honest strength",
       "symbolicCore": "The hammer that hallows and destroys - protective violence",
       "domains": [
-        "thunder",
+        "chaos",
+        "fertility (through rain)",
         "lightning",
+        "oak trees",
+        "protection",
         "storms",
         "strength",
-        "protection",
-        "oak trees",
-        "fertility (through rain)"
+        "thunder"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Heroic ego, masculine strength",
@@ -422,7 +435,24 @@
           "storm-grey"
         ]
       },
-      "poeticInvocation": "Thunderer, Defender of Midgard, Mjölnir-wielder, Bane of Giants"
+      "poeticInvocation": "Thunderer, Defender of Midgard, Mjölnir-wielder, Bane of Giants",
+      "keywords": [
+        "against",
+        "chaos",
+        "cosmic",
+        "cunning",
+        "defender",
+        "direct",
+        "father",
+        "fertility (through rain)",
+        "giants",
+        "great father"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ]
     },
     {
       "@id": "arch:NO-FREYJA",
@@ -512,14 +542,14 @@
       "coreFunction": "To embody sovereign feminine power - love, magic, war, and death",
       "symbolicCore": "The falcon cloak that allows flight between worlds - feminine magic unrestricted",
       "domains": [
-        "love",
         "beauty",
-        "fertility",
-        "war",
+        "cats",
         "death",
-        "seiðr magic",
+        "fertility",
         "gold",
-        "cats"
+        "love",
+        "seiðr magic",
+        "war"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Integrated anima, feminine power undivided",
@@ -584,7 +614,26 @@
           "green"
         ]
       },
-      "poeticInvocation": "Vanadís, Lady of the Slain, Wearer of Brísingamen, Mistress of Seiðr"
+      "poeticInvocation": "Vanadís, Lady of the Slain, Wearer of Brísingamen, Mistress of Seiðr",
+      "keywords": [
+        "authority",
+        "battle",
+        "beauty",
+        "cats",
+        "claims",
+        "death",
+        "embodies",
+        "erotic",
+        "feminine",
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "magician",
+        "shapeshifter",
+        "sovereign"
+      ]
     },
     {
       "@id": "arch:NO-LOKI",
@@ -675,13 +724,14 @@
       "coreFunction": "To test and ultimately break cosmic order through chaos and transformation",
       "symbolicCore": "Fire that warms and destroys - chaos that creates and unmakes",
       "domains": [
-        "fire",
-        "trickery",
-        "shape-shifting",
-        "lies",
         "chaos",
+        "destruction",
+        "family",
+        "fire",
+        "lies",
         "mischief",
-        "destruction"
+        "shape-shifting",
+        "trickery"
       ],
       "temporalOrientation": "liminal",
       "temporalNotes": "Exists in threshold moments; his binding is the pause before Ragnarök",
@@ -777,7 +827,26 @@
           "black"
         ]
       },
-      "poeticInvocation": "Sky-treader, Shape-shifter, Sly-One, Father of Monsters, Bringer of Ragnarök"
+      "poeticInvocation": "Sky-treader, Shape-shifter, Sly-One, Father of Monsters, Bringer of Ragnarök",
+      "keywords": [
+        "blood",
+        "breaks",
+        "brother",
+        "chaos",
+        "cosmic",
+        "destroyer",
+        "destruction",
+        "eventually",
+        "family",
+        "father"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "outcast",
+        "rebel",
+        "shapeshifter",
+        "trickster"
+      ]
     },
     {
       "@id": "arch:NO-FRIGG",
@@ -845,11 +914,14 @@
       "coreFunction": "To hold space for fate's unfolding; to grieve what wisdom cannot prevent",
       "symbolicCore": "The spindle that spins fate - knowledge that must remain unspoken",
       "domains": [
-        "marriage",
-        "motherhood",
+        "clouds/sky",
         "domestic arts",
         "fate-knowledge",
-        "clouds/sky"
+        "home",
+        "marriage",
+        "motherhood",
+        "sovereignty",
+        "wisdom"
       ],
       "relationships": [
         {
@@ -899,7 +971,32 @@
           "sky blue"
         ]
       },
-      "poeticInvocation": "Asgard's Queen, Mother of Baldur, She who knows but does not speak"
+      "poeticInvocation": "Asgard's Queen, Mother of Baldur, She who knows but does not speak",
+      "keywords": [
+        "asgard",
+        "baldur",
+        "cannot",
+        "changed",
+        "clouds/sky",
+        "crone",
+        "domestic",
+        "domestic arts",
+        "fate-knowledge",
+        "fates"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:NO-FREYR",
@@ -967,12 +1064,14 @@
       "coreFunction": "To bring abundance and sacrifice for love, accepting the cost",
       "symbolicCore": "The sword given away for love - fertility through sacrifice",
       "domains": [
+        "elves",
         "fertility",
-        "prosperity",
+        "love",
         "peace",
-        "sunshine",
+        "prosperity",
         "rain",
-        "elves"
+        "sacrifice",
+        "sunshine"
       ],
       "relationships": [
         {
@@ -1021,7 +1120,31 @@
           "green"
         ]
       },
-      "poeticInvocation": "Lord of Alfheim, Bringer of Peace, He who gave his sword for love"
+      "poeticInvocation": "Lord of Alfheim, Bringer of Peace, He who gave his sword for love",
+      "keywords": [
+        "alfheim",
+        "creator",
+        "elves",
+        "embodies",
+        "fertility",
+        "freyr",
+        "gave",
+        "lord",
+        "love",
+        "lover"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "creator",
+        "lover",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:NO-TYR",
@@ -1090,12 +1213,13 @@
       "coreFunction": "To uphold cosmic law through sacrifice; honor above self-preservation",
       "symbolicCore": "The hand given to bind chaos - justice requires sacrifice",
       "domains": [
-        "war",
-        "justice",
-        "oaths",
-        "law",
         "honor",
-        "sacrifice"
+        "justice",
+        "law",
+        "oaths",
+        "order",
+        "sacrifice",
+        "war"
       ],
       "relationships": [
         {
@@ -1139,7 +1263,30 @@
           "white"
         ]
       },
-      "poeticInvocation": "One-Handed God, Fenrir's Bane, Keeper of Oaths, Lord of Just Battle"
+      "poeticInvocation": "One-Handed God, Fenrir's Bane, Keeper of Oaths, Lord of Just Battle",
+      "keywords": [
+        "bind",
+        "cosmic",
+        "cost",
+        "fenrir",
+        "hand",
+        "hero",
+        "honor",
+        "justice",
+        "knowing",
+        "law"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:NO-BALDUR",
@@ -1194,11 +1341,12 @@
       "coreFunction": "To embody the light that must be lost before renewal is possible",
       "symbolicCore": "The shining god who dies - light must descend into darkness before returning",
       "domains": [
-        "light",
         "beauty",
-        "purity",
+        "death",
+        "death and rebirth",
         "joy",
-        "death and rebirth"
+        "light",
+        "purity"
       ],
       "temporalOrientation": "cyclical",
       "temporalNotes": "His death triggers Ragnarök; his return follows it - the pivot of cosmic cycles",
@@ -1260,7 +1408,30 @@
           "light blue"
         ]
       },
-      "poeticInvocation": "The Shining One, Beloved of All, He who will return after the world's renewal"
+      "poeticInvocation": "The Shining One, Beloved of All, He who will return after the world's renewal",
+      "keywords": [
+        "after",
+        "baldur",
+        "beauty",
+        "beginning",
+        "breaks",
+        "death",
+        "death and rebirth",
+        "divine child",
+        "failed",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "healer",
+        "hero",
+        "innocent"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:NO-HEIMDALL",
@@ -1309,11 +1480,12 @@
       "coreFunction": "To watch and wait at the threshold; to announce the end when it comes",
       "symbolicCore": "The horn that will sound doom - vigilance that cannot prevent what comes",
       "domains": [
-        "vigilance",
         "boundaries",
         "dawn",
+        "protection",
+        "social order",
         "threshold",
-        "social order"
+        "vigilance"
       ],
       "relationships": [
         {
@@ -1353,7 +1525,30 @@
           "rainbow (Bifröst)"
         ]
       },
-      "poeticInvocation": "Whitest of the Aesir, Guardian of Bifröst, He who will sound the last horn"
+      "poeticInvocation": "Whitest of the Aesir, Guardian of Bifröst, He who will sound the last horn",
+      "keywords": [
+        "announce",
+        "bird",
+        "blow",
+        "born",
+        "boundaries",
+        "dawn",
+        "eternal",
+        "gjallarhorn",
+        "gods",
+        "guardian"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign",
+        "warrior"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:NO-HEL",
@@ -1395,9 +1590,11 @@
       "symbolicCore": "Half-living, half-corpse - death is part of life",
       "domains": [
         "death",
-        "underworld",
         "disease",
-        "old age"
+        "old age",
+        "sovereignty",
+        "time",
+        "underworld"
       ],
       "relationships": [
         {
@@ -1445,7 +1642,30 @@
           "half-white/half-black"
         ]
       },
-      "poeticInvocation": "Half-Born, Keeper of the Dead, Queen of the Cold Realm"
+      "poeticInvocation": "Half-Born, Keeper of the Dead, Queen of the Cold Realm",
+      "keywords": [
+        "corpse",
+        "crone",
+        "daughter",
+        "dead",
+        "death",
+        "disease",
+        "evil",
+        "face",
+        "good",
+        "half"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:NO-FENRIR",
@@ -1488,8 +1708,8 @@
       "domains": [
         "chaos",
         "destruction",
-        "hunger",
-        "doom"
+        "doom",
+        "hunger"
       ],
       "relationships": [
         {
@@ -1534,7 +1754,22 @@
           "blood red"
         ]
       },
-      "poeticInvocation": "Bane of Odin, Bound Wolf, He who will swallow the sun"
+      "poeticInvocation": "Bane of Odin, Bound Wolf, He who will swallow the sun",
+      "keywords": [
+        "bound",
+        "cannot",
+        "chaos",
+        "contained",
+        "destroyed",
+        "destroyer",
+        "destruction",
+        "doom",
+        "embodies",
+        "fenrir"
+      ],
+      "narrativeRoles": [
+        "destroyer"
+      ]
     },
     {
       "@id": "arch:NO-JORMUNGANDR",
@@ -1574,10 +1809,12 @@
       "coreFunction": "To embody the boundary that holds the world together - until it doesn't",
       "symbolicCore": "The ouroboros that, when it releases its tail, ends the world",
       "domains": [
-        "oceans",
         "boundaries",
-        "poison",
-        "cosmic containment"
+        "childhood",
+        "cosmic containment",
+        "destruction",
+        "oceans",
+        "poison"
       ],
       "relationships": [
         {
@@ -1622,7 +1859,22 @@
           "poison green"
         ]
       },
-      "poeticInvocation": "World-Girdler, Midgard's Bane, Serpent of the Encircling Sea"
+      "poeticInvocation": "World-Girdler, Midgard's Bane, Serpent of the Encircling Sea",
+      "keywords": [
+        "begins",
+        "biting",
+        "boundaries",
+        "child",
+        "childhood",
+        "cosmic containment",
+        "destined",
+        "destroyer",
+        "destruction",
+        "encircles"
+      ],
+      "narrativeRoles": [
+        "destroyer"
+      ]
     }
   ]
 }

@@ -204,6 +204,41 @@
         "symbol": "Feathered serpent, conch shell (wind jewel), Venus",
         "calendar": "Ce Acatl (1 Reed)",
         "association": "Wind, learning, arts, morning star, priesthood"
+      },
+      "domains": [
+        "air",
+        "earth",
+        "marriage",
+        "sacrifice",
+        "sky",
+        "sovereignty"
+      ],
+      "keywords": [
+        "acatl",
+        "air",
+        "arts",
+        "before",
+        "civilization",
+        "creator",
+        "deities",
+        "disgrace",
+        "earth",
+        "exile"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "magician",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody creator energy through civilization-bringer and humanity-creator",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -324,6 +359,36 @@
         "symbol": "Smoking obsidian mirror, jaguar, missing foot (replaced by mirror)",
         "calendar": "Various (changeable)",
         "association": "Night, sorcery, jaguars, rulers, warriors, fate"
+      },
+      "domains": [
+        "fate"
+      ],
+      "keywords": [
+        "balance",
+        "both",
+        "brought",
+        "cosmic",
+        "dark",
+        "deception",
+        "deity",
+        "destiny",
+        "destroyer",
+        "down"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "magician",
+        "ruler",
+        "shapeshifter",
+        "sovereign"
+      ],
+      "coreFunction": "To embody magician energy through sorcerer and fate-revealer",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -431,6 +496,39 @@
         "symbol": "Hummingbird, eagle, fire serpent (xiuhcoatl)",
         "temple": "Templo Mayor (Tenochtitlan)",
         "association": "Sun, war, Aztec destiny, human sacrifice"
+      },
+      "domains": [
+        "family",
+        "motherhood",
+        "sacrifice",
+        "travel"
+      ],
+      "keywords": [
+        "armed",
+        "aztec",
+        "aztlan",
+        "blood",
+        "born",
+        "coatlicue",
+        "continue",
+        "cosmic",
+        "defend",
+        "divine child"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through divine-warrior and sun-defender",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -531,6 +629,38 @@
         "symbol": "Goggle eyes, jaguar fangs, jade, water jars",
         "temple": "Templo Mayor (shared with Huitzilopochtli)",
         "paradise": "Tlalocan"
+      },
+      "domains": [
+        "childhood",
+        "harvest",
+        "sea",
+        "sky",
+        "water"
+      ],
+      "keywords": [
+        "ancient",
+        "aztecs",
+        "bringing",
+        "childhood",
+        "children",
+        "controls",
+        "creator",
+        "crops",
+        "destroyer",
+        "diseases"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through rain-giver and crop-grower",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -622,6 +752,37 @@
         "color": "Blue, jade green",
         "symbol": "Jade skirt, water lilies, flowing streams",
         "association": "Rivers, lakes, childbirth, baptism, the Fourth Sun"
+      },
+      "domains": [
+        "motherhood",
+        "sea",
+        "water"
+      ],
+      "keywords": [
+        "aspects",
+        "bathing",
+        "chalchiuhtlicue",
+        "despite",
+        "destroyed",
+        "destroyer",
+        "destructive",
+        "flood",
+        "flowing",
+        "fourth"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "healer"
+      ],
+      "coreFunction": "To embody great mother energy through water-mother and birth-protector",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -725,6 +886,36 @@
         "color": "Black, earth tones",
         "symbol": "Serpent skirt, skull necklace, clawed hands/feet",
         "association": "Earth, life, death, motherhood, fertility"
+      },
+      "domains": [
+        "earth",
+        "motherhood"
+      ],
+      "keywords": [
+        "ball",
+        "both",
+        "coatlicue",
+        "coyolxauhqui",
+        "crone",
+        "dead",
+        "destroyer",
+        "earth",
+        "feathers",
+        "gives"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody great mother energy through earth-mother and life-death-unity",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -820,6 +1011,37 @@
         "color": "Yellow, gold (bells)",
         "symbol": "Golden bells, moon disc, dismembered body",
         "association": "Moon, stars, night, defeated rebellion"
+      },
+      "domains": [
+        "fertility",
+        "motherhood"
+      ],
+      "keywords": [
+        "became",
+        "brothers",
+        "centzon",
+        "circling",
+        "coatlicue",
+        "coyolxauhqui",
+        "daughter",
+        "destroyer",
+        "dismembered",
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "hero",
+        "outcast",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody rebel energy through matricide-leader and failed-rebellion",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -923,6 +1145,40 @@
         "color": "Black, white (bone)",
         "symbol": "Skeleton, owl, bat, spider, bones",
         "association": "Death, underworld, ancestors, Día de los Muertos"
+      },
+      "domains": [
+        "death",
+        "fertility",
+        "sacrifice",
+        "travel",
+        "underworld",
+        "war"
+      ],
+      "keywords": [
+        "after",
+        "battle",
+        "bones",
+        "childbirth",
+        "create",
+        "dead",
+        "death",
+        "deaths",
+        "destroyer",
+        "drowning"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through underworld-king and death-lord",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1021,6 +1277,36 @@
         "symbol": "Skeleton, bones, marigolds (modern)",
         "festival": "Día de los Muertos",
         "association": "Death, ancestors, festival of the dead"
+      },
+      "domains": [
+        "protection",
+        "sovereignty"
+      ],
+      "keywords": [
+        "ancient",
+        "bones",
+        "crone",
+        "dead",
+        "died",
+        "ensures",
+        "evolved",
+        "festivals",
+        "great mother",
+        "guardian"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "destroyer",
+        "sage",
+        "sovereign"
+      ],
+      "coreFunction": "To embody crone energy through death-queen and bone-guardian",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1120,6 +1406,37 @@
         "symbol": "Flayed skin, golden ornaments, spring vegetation",
         "festival": "Tlacaxipehualiztli (flaying of men)",
         "association": "Spring, goldsmiths, renewal, painful transformation"
+      },
+      "domains": [
+        "death",
+        "earth",
+        "rebirth",
+        "transformation"
+      ],
+      "keywords": [
+        "become",
+        "creator",
+        "days",
+        "death",
+        "destroyer",
+        "dying",
+        "earth",
+        "flayed",
+        "growth",
+        "healer"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "destroyer",
+        "healer"
+      ],
+      "coreFunction": "To embody destroyer energy through flayer and skin-shedder",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1217,6 +1534,37 @@
         "symbol": "Tongue out (blood-thirst), eagle, sunstone",
         "calendar": "4 Ollin (4 Movement - destined destruction by earthquakes)",
         "association": "Sun, current cosmic era, sacrifice, warriors"
+      },
+      "domains": [
+        "family",
+        "fire",
+        "sacrifice"
+      ],
+      "keywords": [
+        "blood",
+        "cosmic",
+        "created",
+        "current",
+        "destroyer",
+        "establishing",
+        "family",
+        "fifth",
+        "fire",
+        "gods"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "seeker",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through cosmic-ruler and era-lord",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1321,6 +1669,37 @@
         "symbol": "Diseased skin transformed to solar radiance",
         "location": "Teotihuacan (place where gods were made)",
         "association": "Self-sacrifice, humility, cosmic transformation"
+      },
+      "domains": [
+        "fire",
+        "sacrifice"
+      ],
+      "keywords": [
+        "become",
+        "comes",
+        "courage",
+        "covered",
+        "demonstrating",
+        "disease",
+        "fifth",
+        "fire",
+        "hero",
+        "hesitated"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "orphan",
+        "outcast",
+        "seeker",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through self-sacrificer and humble-one",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1415,6 +1794,36 @@
         "color": "Black (filth), white (purification)",
         "symbol": "Nose ornament, spindle, broom (sweeping away sin)",
         "association": "Confession, sexuality, purification, childbirth, cotton"
+      },
+      "domains": [
+        "fertility",
+        "love"
+      ],
+      "keywords": [
+        "assists",
+        "associated",
+        "both",
+        "childbirth",
+        "cleanses",
+        "confess",
+        "cotton",
+        "could",
+        "desire",
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "caregiver",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody healer energy through sin-eater and purifier",
+      "symbolicCore": "The caduceus of restoration",
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
       }
     },
     {
@@ -1514,6 +1923,37 @@
         "color": "Multi-colored (flowers)",
         "symbol": "Flowers, quetzal feathers, weaving implements",
         "association": "Love, beauty, flowers, weaving, pleasure, arts"
+      },
+      "domains": [
+        "childhood",
+        "love"
+      ],
+      "keywords": [
+        "abducted",
+        "accounts",
+        "artistic",
+        "artists",
+        "arts",
+        "beautiful",
+        "beauty",
+        "childhood",
+        "creativity",
+        "creator"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "creator",
+        "innocent",
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody lover energy through beauty and pleasure",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1615,6 +2055,40 @@
         "symbol": "Ballgame equipment, sun, moon",
         "text": "Popol Vuh",
         "association": "Ballgame, death and rebirth, sun and moon, Maya cosmology"
+      },
+      "domains": [
+        "death",
+        "fatherhood",
+        "rebirth",
+        "sacrifice",
+        "underworld"
+      ],
+      "keywords": [
+        "ascending",
+        "avenged",
+        "ballgame",
+        "become",
+        "central",
+        "cleverness",
+        "cosmic",
+        "death",
+        "defeating",
+        "descending"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "shapeshifter",
+        "trickster",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through death-conquerors and avengers",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1714,6 +2188,39 @@
         "color": "Blue, white",
         "symbol": "Aged figure, writing implements, celestial imagery",
         "association": "Creation, writing, calendar, healing, wisdom"
+      },
+      "domains": [
+        "creation",
+        "fatherhood",
+        "healing",
+        "sky",
+        "wisdom"
+      ],
+      "keywords": [
+        "aged",
+        "bacabs",
+        "calendar",
+        "chel",
+        "consort",
+        "creation",
+        "creator",
+        "depicted",
+        "divine",
+        "father"
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody creator energy through sky-lord and world-maker",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     },
     {
@@ -1821,6 +2328,39 @@
         "color": "White, red (old aspect)",
         "symbol": "Moon, rabbit, weaving implements, serpent headdress (old)",
         "association": "Moon, weaving, medicine, childbirth, floods"
+      },
+      "domains": [
+        "destruction",
+        "fertility",
+        "healing",
+        "love"
+      ],
+      "keywords": [
+        "aspects",
+        "both",
+        "chak",
+        "chel",
+        "complex",
+        "crone",
+        "destruction",
+        "dual",
+        "fearsome",
+        "fertility"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer",
+        "innocent",
+        "sage"
+      ],
+      "coreFunction": "To embody great mother energy through moon-mother and childbirth-helper",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
       }
     }
   ]

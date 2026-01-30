@@ -8,7 +8,6 @@
   "subdomain": "iching",
   "cardinality": 64,
   "structuralNotes": "Each hexagram is two trigrams stacked (lower/upper). Represents a situation, not a static archetype. Changing lines indicate transformation to another hexagram.",
-
   "entries": [
     {
       "@id": "iching:hex_01",
@@ -16,7 +15,13 @@
       "name": "1. Qian (The Creative)",
       "upper": "iching:qian",
       "lower": "iching:qian",
-      "keywords": ["creative power", "heaven", "strong action", "initiative", "leadership"],
+      "keywords": [
+        "creative power",
+        "heaven",
+        "strong action",
+        "initiative",
+        "leadership"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
         "creation-destruction": 0.15,
@@ -28,14 +33,51 @@
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.9, "aspects": ["creative-force", "initiation"]},
-        {"primordial": "primordial:great_father", "weight": 0.8, "aspects": ["heaven", "leadership"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.9,
+          "aspects": [
+            "creative-force",
+            "initiation"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.8,
+          "aspects": [
+            "heaven",
+            "leadership"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_02", "axis": "creative-receptive"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_02",
+          "axis": "creative-receptive"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:magician",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "creator"
+      ],
+      "coreFunction": "To embody creator energy through creative-force and initiation",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "iching:hex_02",
@@ -43,7 +85,13 @@
       "name": "2. Kun (The Receptive)",
       "upper": "iching:kun",
       "lower": "iching:kun",
-      "keywords": ["receptive", "earth", "yielding", "nurturing", "devotion"],
+      "keywords": [
+        "receptive",
+        "earth",
+        "yielding",
+        "nurturing",
+        "devotion"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.32,
         "creation-destruction": 0.28,
@@ -55,13 +103,41 @@
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.9, "aspects": ["earth", "nurturing"]},
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["devoted", "supporting"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.9,
+          "aspects": [
+            "earth",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "devoted",
+            "supporting"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_01", "axis": "creative-receptive"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.85}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_01",
+          "axis": "creative-receptive"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody great_mother energy through earth and nurturing",
+      "symbolicCore": "The essential pattern of 2. Kun (The Receptive)"
     },
     {
       "@id": "iching:hex_03",
@@ -69,24 +145,60 @@
       "name": "3. Zhun (Difficulty at Beginning)",
       "upper": "iching:kan",
       "lower": "iching:zhen",
-      "keywords": ["difficult beginning", "sprouting", "chaos", "birth pangs", "perseverance"],
+      "keywords": [
+        "difficult beginning",
+        "sprouting",
+        "chaos",
+        "birth pangs",
+        "perseverance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.65,
         "creation-destruction": 0.35,
         "light-shadow": 0.55,
         "active-receptive": 0.38,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.72,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["perseverance", "struggle"]},
-        {"primordial": "primordial:divine_child", "weight": 0.6, "aspects": ["birth", "beginning"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "perseverance",
+            "struggle"
+          ]
+        },
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.6,
+          "aspects": [
+            "birth",
+            "beginning"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "iching:hex_04", "note": "Difficulty leads to learning"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "iching:hex_04",
+          "note": "Difficulty leads to learning"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through perseverance and struggle",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_04",
@@ -94,24 +206,53 @@
       "name": "4. Meng (Youthful Folly)",
       "upper": "iching:gen",
       "lower": "iching:kan",
-      "keywords": ["inexperience", "learning", "naivety", "education", "immaturity"],
+      "keywords": [
+        "inexperience",
+        "learning",
+        "naivety",
+        "education",
+        "immaturity"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.45,
         "light-shadow": 0.58,
         "active-receptive": 0.62,
         "individual-collective": 0.35,
-        "ascent-descent": 0.60,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["inexperience", "learning"]},
-        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["folly", "mistakes"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.8,
+          "aspects": [
+            "inexperience",
+            "learning"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.5,
+          "aspects": [
+            "folly",
+            "mistakes"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody divine_child energy through inexperience and learning",
+      "symbolicCore": "The essential pattern of 4. Meng (Youthful Folly)"
     },
     {
       "@id": "iching:hex_05",
@@ -119,24 +260,60 @@
       "name": "5. Xu (Waiting)",
       "upper": "iching:kan",
       "lower": "iching:qian",
-      "keywords": ["waiting", "patience", "nourishment", "timing", "trust"],
+      "keywords": [
+        "waiting",
+        "patience",
+        "nourishment",
+        "timing",
+        "trust"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.38,
         "light-shadow": 0.48,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.40,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["patience", "endurance"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["timing", "trust"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "patience",
+            "endurance"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.6,
+          "aspects": [
+            "timing",
+            "trust"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "iching:hex_06", "note": "Waiting vs conflict"}
-      ]
+        {
+          "type": "TENSION",
+          "target": "iching:hex_06",
+          "note": "Waiting vs conflict"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through patience and endurance",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_06",
@@ -144,7 +321,13 @@
       "name": "6. Song (Conflict)",
       "upper": "iching:qian",
       "lower": "iching:kan",
-      "keywords": ["conflict", "dispute", "litigation", "opposition", "caution"],
+      "keywords": [
+        "conflict",
+        "dispute",
+        "litigation",
+        "opposition",
+        "caution"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.55,
@@ -156,12 +339,43 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["conflict", "opposition"]},
-        {"primordial": "primordial:rebel", "weight": 0.5, "aspects": ["dispute", "resistance"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "conflict",
+            "opposition"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.5,
+          "aspects": [
+            "dispute",
+            "resistance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "iching:hex_05", "note": "Conflict vs waiting"}
-      ]
+        {
+          "type": "TENSION",
+          "target": "iching:hex_05",
+          "note": "Conflict vs waiting"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through conflict and opposition",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_07",
@@ -169,7 +383,13 @@
       "name": "7. Shi (The Army)",
       "upper": "iching:kun",
       "lower": "iching:kan",
-      "keywords": ["discipline", "army", "organization", "leadership", "collective action"],
+      "keywords": [
+        "discipline",
+        "army",
+        "organization",
+        "leadership",
+        "collective action"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.52,
@@ -181,12 +401,43 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["discipline", "army"]},
-        {"primordial": "primordial:sovereign", "weight": 0.6, "aspects": ["leadership", "organization"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "discipline",
+            "army"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.6,
+          "aspects": [
+            "leadership",
+            "organization"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.7}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:chariot",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through discipline and army",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "iching:hex_08",
@@ -194,7 +445,13 @@
       "name": "8. Bi (Holding Together)",
       "upper": "iching:kan",
       "lower": "iching:kun",
-      "keywords": ["union", "alliance", "support", "belonging", "cooperation"],
+      "keywords": [
+        "union",
+        "alliance",
+        "support",
+        "belonging",
+        "cooperation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.35,
@@ -206,12 +463,38 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["belonging", "union"]},
-        {"primordial": "primordial:great_mother", "weight": 0.6, "aspects": ["support", "nurturing"]}
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.7,
+          "aspects": [
+            "belonging",
+            "union"
+          ]
+        },
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.6,
+          "aspects": [
+            "support",
+            "nurturing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.65}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.65
+        }
+      ],
+      "coreFunction": "To embody ancestor energy through belonging and union",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_09",
@@ -219,7 +502,12 @@
       "name": "9. Xiao Chu (Small Taming)",
       "upper": "iching:xun",
       "lower": "iching:qian",
-      "keywords": ["restraint", "gentle influence", "patience", "small accumulation"],
+      "keywords": [
+        "restraint",
+        "gentle influence",
+        "patience",
+        "small accumulation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.32,
@@ -231,12 +519,41 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["gentle influence"]},
-        {"primordial": "primordial:preserver", "weight": 0.55, "aspects": ["restraint", "accumulation"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "gentle influence"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.55,
+          "aspects": [
+            "restraint",
+            "accumulation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_26", "note": "Small vs great taming"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_26",
+          "note": "Small vs great taming"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "magician"
+      ],
+      "coreFunction": "To embody magician energy through gentle influence",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_10",
@@ -244,7 +561,13 @@
       "name": "10. Lu (Treading)",
       "upper": "iching:qian",
       "lower": "iching:dui",
-      "keywords": ["conduct", "careful progress", "propriety", "caution", "stepping carefully"],
+      "keywords": [
+        "conduct",
+        "careful progress",
+        "propriety",
+        "caution",
+        "stepping carefully"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.35,
@@ -256,10 +579,35 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.6, "aspects": ["courage", "conduct"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.55, "aspects": ["propriety", "caution"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.6,
+          "aspects": [
+            "courage",
+            "conduct"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.55,
+          "aspects": [
+            "propriety",
+            "caution"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "hero"
+      ],
+      "coreFunction": "To embody hero energy through courage and conduct",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_11",
@@ -267,25 +615,65 @@
       "name": "11. Tai (Peace)",
       "upper": "iching:kun",
       "lower": "iching:qian",
-      "keywords": ["peace", "harmony", "prosperity", "balance", "flourishing"],
+      "keywords": [
+        "peace",
+        "harmony",
+        "prosperity",
+        "balance",
+        "flourishing"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.25,
         "light-shadow": 0.32,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.62,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.75, "aspects": ["harmony", "balance"]},
-        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["peace", "prosperity"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.75,
+          "aspects": [
+            "harmony",
+            "balance"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.65,
+          "aspects": [
+            "peace",
+            "prosperity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_12", "axis": "peace-stagnation"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_12",
+          "axis": "peace-stagnation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:world",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through harmony and balance",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_12",
@@ -293,7 +681,13 @@
       "name": "12. Pi (Standstill)",
       "upper": "iching:qian",
       "lower": "iching:kun",
-      "keywords": ["stagnation", "standstill", "decline", "obstruction", "withdrawal"],
+      "keywords": [
+        "stagnation",
+        "standstill",
+        "decline",
+        "obstruction",
+        "withdrawal"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.55,
@@ -305,12 +699,42 @@
         "voluntary-fated": 0.65
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.6, "aspects": ["stagnation", "obstruction"]},
-        {"primordial": "primordial:crone", "weight": 0.5, "aspects": ["decline", "withdrawal"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.6,
+          "aspects": [
+            "stagnation",
+            "obstruction"
+          ]
+        },
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.5,
+          "aspects": [
+            "decline",
+            "withdrawal"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_11", "axis": "peace-stagnation"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_11",
+          "axis": "peace-stagnation"
+        }
+      ],
+      "narrativeRoles": [
+        "sage",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through stagnation and obstruction",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_13",
@@ -318,7 +742,12 @@
       "name": "13. Tong Ren (Fellowship)",
       "upper": "iching:qian",
       "lower": "iching:li",
-      "keywords": ["fellowship", "community", "harmony with others", "shared purpose"],
+      "keywords": [
+        "fellowship",
+        "community",
+        "harmony with others",
+        "shared purpose"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.28,
@@ -330,12 +759,41 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:ancestor", "weight": 0.7, "aspects": ["community", "fellowship"]},
-        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["harmony", "connection"]}
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.7,
+          "aspects": [
+            "community",
+            "fellowship"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.55,
+          "aspects": [
+            "harmony",
+            "connection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:three_of_cups", "fidelity": 0.7}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:three_of_cups",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "lover"
+      ],
+      "coreFunction": "To embody ancestor energy through community and fellowship",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_14",
@@ -343,7 +801,12 @@
       "name": "14. Da You (Great Possession)",
       "upper": "iching:li",
       "lower": "iching:qian",
-      "keywords": ["abundance", "great possession", "supreme success", "wealth"],
+      "keywords": [
+        "abundance",
+        "great possession",
+        "supreme success",
+        "wealth"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.22,
@@ -355,12 +818,42 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["wealth", "success"]},
-        {"primordial": "primordial:creator", "weight": 0.6, "aspects": ["abundance"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "wealth",
+            "success"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.6,
+          "aspects": [
+            "abundance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:nine_of_pentacles", "fidelity": 0.7}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:nine_of_pentacles",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through wealth and success",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_15",
@@ -368,9 +861,15 @@
       "name": "15. Qian (Modesty)",
       "upper": "iching:kun",
       "lower": "iching:gen",
-      "keywords": ["modesty", "humility", "temperance", "balance", "quiet accomplishment"],
+      "keywords": [
+        "modesty",
+        "humility",
+        "temperance",
+        "balance",
+        "quiet accomplishment"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.38,
         "light-shadow": 0.42,
         "active-receptive": 0.72,
@@ -380,12 +879,35 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.75, "aspects": ["humility", "modesty"]},
-        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["temperance", "balance"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.75,
+          "aspects": [
+            "humility",
+            "modesty"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "temperance",
+            "balance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.75}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:temperance",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver"
+      ],
+      "coreFunction": "To embody wise_elder energy through humility and modesty",
+      "symbolicCore": "The essential pattern of 15. Qian (Modesty)"
     },
     {
       "@id": "iching:hex_16",
@@ -393,7 +915,13 @@
       "name": "16. Yu (Enthusiasm)",
       "upper": "iching:zhen",
       "lower": "iching:kun",
-      "keywords": ["enthusiasm", "joy", "movement", "inspiration", "devotion"],
+      "keywords": [
+        "enthusiasm",
+        "joy",
+        "movement",
+        "inspiration",
+        "devotion"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.32,
@@ -405,10 +933,29 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.75, "aspects": ["enthusiasm", "joy"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["inspiration", "movement"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.75,
+          "aspects": [
+            "enthusiasm",
+            "joy"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "inspiration",
+            "movement"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "hero"
+      ],
+      "coreFunction": "To embody divine_child energy through enthusiasm and joy",
+      "symbolicCore": "The essential pattern of 16. Yu (Enthusiasm)"
     },
     {
       "@id": "iching:hex_17",
@@ -416,7 +963,13 @@
       "name": "17. Sui (Following)",
       "upper": "iching:dui",
       "lower": "iching:zhen",
-      "keywords": ["following", "adaptability", "service", "flexibility", "responsiveness"],
+      "keywords": [
+        "following",
+        "adaptability",
+        "service",
+        "flexibility",
+        "responsiveness"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.38,
@@ -428,10 +981,35 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.6, "aspects": ["adaptability", "flexibility"]},
-        {"primordial": "primordial:preserver", "weight": 0.55, "aspects": ["service"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.6,
+          "aspects": [
+            "adaptability",
+            "flexibility"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.55,
+          "aspects": [
+            "service"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "caregiver",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through adaptability and flexibility",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_18",
@@ -439,7 +1017,12 @@
       "name": "18. Gu (Decay)",
       "upper": "iching:gen",
       "lower": "iching:xun",
-      "keywords": ["decay", "corruption", "repair", "work on what is spoiled"],
+      "keywords": [
+        "decay",
+        "corruption",
+        "repair",
+        "work on what is spoiled"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.62,
@@ -451,10 +1034,36 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.6, "aspects": ["decay", "breakdown"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["repair", "restoration"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.6,
+          "aspects": [
+            "decay",
+            "breakdown"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "repair",
+            "restoration"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "destroyer",
+        "healer"
+      ],
+      "coreFunction": "To embody destroyer energy through decay and breakdown",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_19",
@@ -462,7 +1071,12 @@
       "name": "19. Lin (Approach)",
       "upper": "iching:kun",
       "lower": "iching:dui",
-      "keywords": ["approach", "advance", "becoming great", "oversight"],
+      "keywords": [
+        "approach",
+        "advance",
+        "becoming great",
+        "oversight"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.28,
@@ -474,12 +1088,40 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.65, "aspects": ["oversight", "approach"]},
-        {"primordial": "primordial:great_mother", "weight": 0.55, "aspects": ["nurturing growth"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.65,
+          "aspects": [
+            "oversight",
+            "approach"
+          ]
+        },
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.55,
+          "aspects": [
+            "nurturing growth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_20", "note": "Approach vs contemplation"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_20",
+          "note": "Approach vs contemplation"
+        }
+      ],
+      "narrativeRoles": [
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through oversight and approach",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_20",
@@ -487,7 +1129,12 @@
       "name": "20. Guan (Contemplation)",
       "upper": "iching:xun",
       "lower": "iching:kun",
-      "keywords": ["contemplation", "viewing", "observation", "perspective"],
+      "keywords": [
+        "contemplation",
+        "viewing",
+        "observation",
+        "perspective"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.38,
@@ -499,13 +1146,39 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.75, "aspects": ["contemplation", "observation"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.5, "aspects": ["perspective"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.75,
+          "aspects": [
+            "contemplation",
+            "observation"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.5,
+          "aspects": [
+            "perspective"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_19", "note": "Contemplation vs approach"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.75}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_19",
+          "note": "Contemplation vs approach"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody wise_elder energy through contemplation and observation",
+      "symbolicCore": "The essential pattern of 20. Guan (Contemplation)"
     },
     {
       "@id": "iching:hex_21",
@@ -513,7 +1186,12 @@
       "name": "21. Shi He (Biting Through)",
       "upper": "iching:li",
       "lower": "iching:zhen",
-      "keywords": ["decisive action", "justice", "cutting through", "obstacles"],
+      "keywords": [
+        "decisive action",
+        "justice",
+        "cutting through",
+        "obstacles"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.55,
@@ -525,12 +1203,42 @@
         "voluntary-fated": 0.32
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.7, "aspects": ["decisive action", "cutting through"]},
-        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["justice"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "decisive action",
+            "cutting through"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.55,
+          "aspects": [
+            "justice"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:justice", "fidelity": 0.7}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through decisive action and cutting through",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_22",
@@ -538,7 +1246,13 @@
       "name": "22. Bi (Grace)",
       "upper": "iching:gen",
       "lower": "iching:li",
-      "keywords": ["grace", "beauty", "adornment", "form", "elegance"],
+      "keywords": [
+        "grace",
+        "beauty",
+        "adornment",
+        "form",
+        "elegance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.32,
@@ -550,12 +1264,43 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.7, "aspects": ["beauty", "grace"]},
-        {"primordial": "primordial:maiden", "weight": 0.6, "aspects": ["elegance", "form"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "beauty",
+            "grace"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.6,
+          "aspects": [
+            "elegance",
+            "form"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.65}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.65
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "innocent",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through beauty and grace",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_23",
@@ -563,7 +1308,12 @@
       "name": "23. Bo (Splitting Apart)",
       "upper": "iching:gen",
       "lower": "iching:kun",
-      "keywords": ["splitting apart", "deterioration", "stripping away", "letting go"],
+      "keywords": [
+        "splitting apart",
+        "deterioration",
+        "stripping away",
+        "letting go"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.72,
@@ -575,13 +1325,46 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["splitting", "deterioration"]},
-        {"primordial": "primordial:crone", "weight": 0.6, "aspects": ["letting go"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.75,
+          "aspects": [
+            "splitting",
+            "deterioration"
+          ]
+        },
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.6,
+          "aspects": [
+            "letting go"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "iching:hex_24", "note": "Splitting leads to return"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.65}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "iching:hex_24",
+          "note": "Splitting leads to return"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:tower",
+          "fidelity": 0.65
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody destroyer energy through splitting and deterioration",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_24",
@@ -589,7 +1372,13 @@
       "name": "24. Fu (Return)",
       "upper": "iching:kun",
       "lower": "iching:zhen",
-      "keywords": ["return", "renewal", "turning point", "recovery", "solstice"],
+      "keywords": [
+        "return",
+        "renewal",
+        "turning point",
+        "recovery",
+        "solstice"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.28,
@@ -601,13 +1390,39 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.75, "aspects": ["renewal", "return"]},
-        {"primordial": "primordial:healer", "weight": 0.6, "aspects": ["recovery"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.75,
+          "aspects": [
+            "renewal",
+            "return"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "recovery"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "iching:hex_23", "note": "Return after splitting"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.7}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "iching:hex_23",
+          "note": "Return after splitting"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:judgement",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "healer"
+      ],
+      "coreFunction": "To embody divine_child energy through renewal and return",
+      "symbolicCore": "The essential pattern of 24. Fu (Return)"
     },
     {
       "@id": "iching:hex_25",
@@ -615,7 +1430,12 @@
       "name": "25. Wu Wang (Innocence)",
       "upper": "iching:qian",
       "lower": "iching:zhen",
-      "keywords": ["innocence", "unexpected", "natural", "spontaneous"],
+      "keywords": [
+        "innocence",
+        "unexpected",
+        "natural",
+        "spontaneous"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.28,
@@ -627,12 +1447,35 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.85, "aspects": ["innocence", "natural"]},
-        {"primordial": "primordial:trickster", "weight": 0.5, "aspects": ["unexpected", "spontaneous"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.85,
+          "aspects": [
+            "innocence",
+            "natural"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.5,
+          "aspects": [
+            "unexpected",
+            "spontaneous"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody divine_child energy through innocence and natural",
+      "symbolicCore": "The essential pattern of 25. Wu Wang (Innocence)"
     },
     {
       "@id": "iching:hex_26",
@@ -640,7 +1483,12 @@
       "name": "26. Da Chu (Great Taming)",
       "upper": "iching:gen",
       "lower": "iching:qian",
-      "keywords": ["great accumulation", "restraint", "potential", "holding firm"],
+      "keywords": [
+        "great accumulation",
+        "restraint",
+        "potential",
+        "holding firm"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.35,
@@ -652,12 +1500,41 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["accumulation", "holding"]},
-        {"primordial": "primordial:great_father", "weight": 0.6, "aspects": ["restraint"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8,
+          "aspects": [
+            "accumulation",
+            "holding"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.6,
+          "aspects": [
+            "restraint"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_09", "note": "Great vs small taming"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_09",
+          "note": "Great vs small taming"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through accumulation and holding",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_27",
@@ -665,7 +1542,12 @@
       "name": "27. Yi (Nourishment)",
       "upper": "iching:gen",
       "lower": "iching:zhen",
-      "keywords": ["nourishment", "sustenance", "providing", "care"],
+      "keywords": [
+        "nourishment",
+        "sustenance",
+        "providing",
+        "care"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.28,
@@ -677,10 +1559,29 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.75, "aspects": ["nourishment", "care"]},
-        {"primordial": "primordial:healer", "weight": 0.6, "aspects": ["sustenance", "providing"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.75,
+          "aspects": [
+            "nourishment",
+            "care"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "sustenance",
+            "providing"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "healer"
+      ],
+      "coreFunction": "To embody great_mother energy through nourishment and care",
+      "symbolicCore": "The essential pattern of 27. Yi (Nourishment)"
     },
     {
       "@id": "iching:hex_28",
@@ -688,7 +1589,12 @@
       "name": "28. Da Guo (Great Excess)",
       "upper": "iching:dui",
       "lower": "iching:xun",
-      "keywords": ["excess", "critical mass", "extraordinary times", "bending under pressure"],
+      "keywords": [
+        "excess",
+        "critical mass",
+        "extraordinary times",
+        "bending under pressure"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.62,
         "creation-destruction": 0.55,
@@ -700,10 +1606,35 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["excess", "extraordinary"]},
-        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["critical mass"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.65,
+          "aspects": [
+            "excess",
+            "extraordinary"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.55,
+          "aspects": [
+            "critical mass"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "destroyer",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through excess and extraordinary",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_29",
@@ -711,7 +1642,12 @@
       "name": "29. Kan (The Abysmal)",
       "upper": "iching:kan",
       "lower": "iching:kan",
-      "keywords": ["danger", "depth", "the abyss", "perseverance through difficulty"],
+      "keywords": [
+        "danger",
+        "depth",
+        "the abyss",
+        "perseverance through difficulty"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.52,
@@ -723,13 +1659,48 @@
         "voluntary-fated": 0.68
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.8, "aspects": ["depth", "danger"]},
-        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["abyss", "passage"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.8,
+          "aspects": [
+            "depth",
+            "danger"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.65,
+          "aspects": [
+            "abyss",
+            "passage"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_30", "axis": "water-fire"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_30",
+          "axis": "water-fire"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody shadow energy through depth and danger",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_30",
@@ -737,7 +1708,13 @@
       "name": "30. Li (The Clinging)",
       "upper": "iching:li",
       "lower": "iching:li",
-      "keywords": ["clarity", "fire", "illumination", "awareness", "dependence"],
+      "keywords": [
+        "clarity",
+        "fire",
+        "illumination",
+        "awareness",
+        "dependence"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.38,
@@ -749,13 +1726,47 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.75, "aspects": ["clarity", "awareness"]},
-        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["clinging", "dependence"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.75,
+          "aspects": [
+            "clarity",
+            "awareness"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.55,
+          "aspects": [
+            "clinging",
+            "dependence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_29", "axis": "fire-water"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.8}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_29",
+          "axis": "fire-water"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through clarity and awareness",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_31",
@@ -763,7 +1774,13 @@
       "name": "31. Xian (Influence)",
       "upper": "iching:dui",
       "lower": "iching:gen",
-      "keywords": ["influence", "attraction", "courtship", "stimulation", "mutual response"],
+      "keywords": [
+        "influence",
+        "attraction",
+        "courtship",
+        "stimulation",
+        "mutual response"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.28,
@@ -775,13 +1792,47 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.8, "aspects": ["attraction", "courtship"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["influence"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.8,
+          "aspects": [
+            "attraction",
+            "courtship"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "influence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_32", "note": "Attraction leads to duration"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:lovers", "fidelity": 0.8}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_32",
+          "note": "Attraction leads to duration"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "magician"
+      ],
+      "coreFunction": "To embody lover energy through attraction and courtship",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_32",
@@ -789,11 +1840,17 @@
       "name": "32. Heng (Duration)",
       "upper": "iching:zhen",
       "lower": "iching:xun",
-      "keywords": ["duration", "perseverance", "constancy", "continuity", "marriage"],
+      "keywords": [
+        "duration",
+        "perseverance",
+        "constancy",
+        "continuity",
+        "marriage"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.38,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.45,
         "individual-collective": 0.52,
         "ascent-descent": 0.48,
@@ -801,12 +1858,43 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["duration", "constancy"]},
-        {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["marriage", "commitment"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.85,
+          "aspects": [
+            "duration",
+            "constancy"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "marriage",
+            "commitment"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_31", "note": "Duration follows attraction"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_31",
+          "note": "Duration follows attraction"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "lover",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through duration and constancy",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "iching:hex_33",
@@ -814,7 +1902,12 @@
       "name": "33. Dun (Retreat)",
       "upper": "iching:qian",
       "lower": "iching:gen",
-      "keywords": ["retreat", "withdrawal", "yielding", "strategic withdrawal"],
+      "keywords": [
+        "retreat",
+        "withdrawal",
+        "yielding",
+        "strategic withdrawal"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.45,
@@ -826,12 +1919,31 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["strategic withdrawal"]},
-        {"primordial": "primordial:hermit", "weight": 0.6, "aspects": ["retreat", "solitude"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.7,
+          "aspects": [
+            "strategic withdrawal"
+          ]
+        },
+        {
+          "primordial": "primordial:hermit",
+          "weight": 0.6,
+          "aspects": [
+            "retreat",
+            "solitude"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "iching:hex_34", "note": "Retreat vs power"}
-      ]
+        {
+          "type": "TENSION",
+          "target": "iching:hex_34",
+          "note": "Retreat vs power"
+        }
+      ],
+      "coreFunction": "To embody wise_elder energy through strategic withdrawal",
+      "symbolicCore": "The essential pattern of 33. Dun (Retreat)"
     },
     {
       "@id": "iching:hex_34",
@@ -839,7 +1951,12 @@
       "name": "34. Da Zhuang (Great Power)",
       "upper": "iching:zhen",
       "lower": "iching:qian",
-      "keywords": ["great power", "strength", "vigor", "momentum"],
+      "keywords": [
+        "great power",
+        "strength",
+        "vigor",
+        "momentum"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.42,
@@ -851,13 +1968,47 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["power", "strength"]},
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["vigor", "momentum"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "power",
+            "strength"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "vigor",
+            "momentum"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "TENSION", "target": "iching:hex_33", "note": "Power vs retreat"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.8}
-      ]
+        {
+          "type": "TENSION",
+          "target": "iching:hex_33",
+          "note": "Power vs retreat"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:strength",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through power and strength",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "iching:hex_35",
@@ -865,9 +2016,14 @@
       "name": "35. Jin (Progress)",
       "upper": "iching:li",
       "lower": "iching:kun",
-      "keywords": ["progress", "advancement", "promotion", "dawning"],
+      "keywords": [
+        "progress",
+        "advancement",
+        "promotion",
+        "dawning"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.40,
+        "order-chaos": 0.4,
         "creation-destruction": 0.28,
         "light-shadow": 0.28,
         "active-receptive": 0.52,
@@ -877,12 +2033,43 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["advancement", "progress"]},
-        {"primordial": "primordial:self", "weight": 0.55, "aspects": ["dawning", "clarity"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "advancement",
+            "progress"
+          ]
+        },
+        {
+          "primordial": "primordial:self",
+          "weight": 0.55,
+          "aspects": [
+            "dawning",
+            "clarity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_36", "axis": "light-darkness"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_36",
+          "axis": "light-darkness"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "seeker",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through advancement and progress",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_36",
@@ -890,7 +2077,12 @@
       "name": "36. Ming Yi (Darkening)",
       "upper": "iching:kun",
       "lower": "iching:li",
-      "keywords": ["darkening", "wounded light", "adversity", "hidden brightness"],
+      "keywords": [
+        "darkening",
+        "wounded light",
+        "adversity",
+        "hidden brightness"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.55,
@@ -902,12 +2094,43 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.75, "aspects": ["darkening", "hidden"]},
-        {"primordial": "primordial:outcast", "weight": 0.6, "aspects": ["wounded", "adversity"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.75,
+          "aspects": [
+            "darkening",
+            "hidden"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.6,
+          "aspects": [
+            "wounded",
+            "adversity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_35", "axis": "light-darkness"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_35",
+          "axis": "light-darkness"
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through darkening and hidden",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_37",
@@ -915,7 +2138,13 @@
       "name": "37. Jia Ren (Family)",
       "upper": "iching:xun",
       "lower": "iching:li",
-      "keywords": ["family", "clan", "domestic order", "tradition", "roles"],
+      "keywords": [
+        "family",
+        "clan",
+        "domestic order",
+        "tradition",
+        "roles"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.32,
@@ -927,12 +2156,38 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:ancestor", "weight": 0.8, "aspects": ["family", "tradition"]},
-        {"primordial": "primordial:great_mother", "weight": 0.65, "aspects": ["domestic", "nurturing"]}
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.8,
+          "aspects": [
+            "family",
+            "tradition"
+          ]
+        },
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.65,
+          "aspects": [
+            "domestic",
+            "nurturing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:ten_of_pentacles", "fidelity": 0.75}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:ten_of_pentacles",
+          "fidelity": 0.75
+        }
+      ],
+      "coreFunction": "To embody ancestor energy through family and tradition",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_38",
@@ -940,7 +2195,12 @@
       "name": "38. Kui (Opposition)",
       "upper": "iching:li",
       "lower": "iching:dui",
-      "keywords": ["opposition", "estrangement", "difference", "contrast"],
+      "keywords": [
+        "opposition",
+        "estrangement",
+        "difference",
+        "contrast"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.48,
@@ -952,10 +2212,35 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["opposition", "difference"]},
-        {"primordial": "primordial:twin", "weight": 0.55, "aspects": ["contrast", "otherness"]}
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.65,
+          "aspects": [
+            "opposition",
+            "difference"
+          ]
+        },
+        {
+          "primordial": "primordial:twin",
+          "weight": 0.55,
+          "aspects": [
+            "contrast",
+            "otherness"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "rebel"
+      ],
+      "coreFunction": "To embody rebel energy through opposition and difference",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_39",
@@ -963,7 +2248,12 @@
       "name": "39. Jian (Obstruction)",
       "upper": "iching:kan",
       "lower": "iching:gen",
-      "keywords": ["obstruction", "hardship", "obstacles", "limping"],
+      "keywords": [
+        "obstruction",
+        "hardship",
+        "obstacles",
+        "limping"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.55,
@@ -975,12 +2265,41 @@
         "voluntary-fated": 0.72
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["obstruction", "difficulty"]},
-        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["hardship"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.65,
+          "aspects": [
+            "obstruction",
+            "difficulty"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.55,
+          "aspects": [
+            "hardship"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "iching:hex_40", "note": "Obstruction leads to deliverance"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "iching:hex_40",
+          "note": "Obstruction leads to deliverance"
+        }
+      ],
+      "narrativeRoles": [
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through obstruction and difficulty",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_40",
@@ -988,7 +2307,12 @@
       "name": "40. Xie (Deliverance)",
       "upper": "iching:zhen",
       "lower": "iching:kan",
-      "keywords": ["deliverance", "release", "liberation", "resolution"],
+      "keywords": [
+        "deliverance",
+        "release",
+        "liberation",
+        "resolution"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.42,
@@ -1000,12 +2324,43 @@
         "voluntary-fated": 0.38
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["liberation", "release"]},
-        {"primordial": "primordial:rebel", "weight": 0.6, "aspects": ["deliverance", "breakthrough"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "liberation",
+            "release"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.6,
+          "aspects": [
+            "deliverance",
+            "breakthrough"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "iching:hex_39", "note": "Deliverance from obstruction"}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "iching:hex_39",
+          "note": "Deliverance from obstruction"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through liberation and release",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_41",
@@ -1013,7 +2368,12 @@
       "name": "41. Sun (Decrease)",
       "upper": "iching:gen",
       "lower": "iching:dui",
-      "keywords": ["decrease", "reduction", "simplification", "sacrifice"],
+      "keywords": [
+        "decrease",
+        "reduction",
+        "simplification",
+        "sacrifice"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.58,
@@ -1025,12 +2385,41 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 0.7, "aspects": ["decrease", "letting go"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.55, "aspects": ["simplification"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 0.7,
+          "aspects": [
+            "decrease",
+            "letting go"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.55,
+          "aspects": [
+            "simplification"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_42", "axis": "decrease-increase"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_42",
+          "axis": "decrease-increase"
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through decrease and letting go",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_42",
@@ -1038,7 +2427,12 @@
       "name": "42. Yi (Increase)",
       "upper": "iching:xun",
       "lower": "iching:zhen",
-      "keywords": ["increase", "benefit", "growth", "expansion"],
+      "keywords": [
+        "increase",
+        "benefit",
+        "growth",
+        "expansion"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.22,
@@ -1050,12 +2444,42 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.7, "aspects": ["growth", "increase"]},
-        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["benefit", "expansion"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "growth",
+            "increase"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.55,
+          "aspects": [
+            "benefit",
+            "expansion"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_41", "axis": "increase-decrease"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_41",
+          "axis": "increase-decrease"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "sovereign"
+      ],
+      "coreFunction": "To embody creator energy through growth and increase",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_43",
@@ -1063,7 +2487,12 @@
       "name": "43. Guai (Breakthrough)",
       "upper": "iching:dui",
       "lower": "iching:qian",
-      "keywords": ["breakthrough", "resoluteness", "decision", "displacing"],
+      "keywords": [
+        "breakthrough",
+        "resoluteness",
+        "decision",
+        "displacing"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.48,
@@ -1075,12 +2504,42 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.8, "aspects": ["breakthrough", "resolution"]},
-        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["decision", "action"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.8,
+          "aspects": [
+            "breakthrough",
+            "resolution"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.65,
+          "aspects": [
+            "decision",
+            "action"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_44", "note": "Breakthrough and meeting"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_44",
+          "note": "Breakthrough and meeting"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through breakthrough and resolution",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_44",
@@ -1088,7 +2547,12 @@
       "name": "44. Gou (Coming to Meet)",
       "upper": "iching:qian",
       "lower": "iching:xun",
-      "keywords": ["encounter", "coming to meet", "temptation", "influence"],
+      "keywords": [
+        "encounter",
+        "coming to meet",
+        "temptation",
+        "influence"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.38,
@@ -1100,12 +2564,42 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.6, "aspects": ["encounter", "meeting"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["temptation", "seduction"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.6,
+          "aspects": [
+            "encounter",
+            "meeting"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "temptation",
+            "seduction"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_43", "note": "Meeting after breakthrough"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_43",
+          "note": "Meeting after breakthrough"
+        }
+      ],
+      "narrativeRoles": [
+        "lover",
+        "trickster"
+      ],
+      "coreFunction": "To embody lover energy through encounter and meeting",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_45",
@@ -1113,7 +2607,12 @@
       "name": "45. Cui (Gathering)",
       "upper": "iching:dui",
       "lower": "iching:kun",
-      "keywords": ["gathering", "congregation", "assembly", "bringing together"],
+      "keywords": [
+        "gathering",
+        "congregation",
+        "assembly",
+        "bringing together"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.32,
@@ -1125,12 +2624,40 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:ancestor", "weight": 0.75, "aspects": ["gathering", "assembly"]},
-        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["bringing together"]}
+        {
+          "primordial": "primordial:ancestor",
+          "weight": 0.75,
+          "aspects": [
+            "gathering",
+            "assembly"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.55,
+          "aspects": [
+            "bringing together"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_46", "note": "Gathering before rising"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_46",
+          "note": "Gathering before rising"
+        }
+      ],
+      "narrativeRoles": [
+        "sovereign"
+      ],
+      "coreFunction": "To embody ancestor energy through gathering and assembly",
+      "symbolicCore": "The root that connects to source",
+      "psychologicalMapping": {
+        "jungianStructure": "Collective unconscious inheritance",
+        "developmentalStage": "Late life connection to lineage and legacy",
+        "integrationTask": "Honoring past while living present",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_46",
@@ -1138,7 +2665,12 @@
       "name": "46. Sheng (Pushing Upward)",
       "upper": "iching:kun",
       "lower": "iching:xun",
-      "keywords": ["pushing upward", "ascending", "growth", "effort"],
+      "keywords": [
+        "pushing upward",
+        "ascending",
+        "growth",
+        "effort"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.42,
         "creation-destruction": 0.28,
@@ -1150,12 +2682,42 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.7, "aspects": ["ascending", "effort"]},
-        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["growth"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "ascending",
+            "effort"
+          ]
+        },
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.55,
+          "aspects": [
+            "growth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_45", "note": "Rising from gathering"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_45",
+          "note": "Rising from gathering"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through ascending and effort",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_47",
@@ -1163,7 +2725,12 @@
       "name": "47. Kun (Oppression)",
       "upper": "iching:dui",
       "lower": "iching:kan",
-      "keywords": ["oppression", "exhaustion", "adversity", "confinement"],
+      "keywords": [
+        "oppression",
+        "exhaustion",
+        "adversity",
+        "confinement"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.58,
@@ -1175,12 +2742,43 @@
         "voluntary-fated": 0.75
       },
       "instantiates": [
-        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["oppression", "confinement"]},
-        {"primordial": "primordial:shadow", "weight": 0.6, "aspects": ["exhaustion", "adversity"]}
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.75,
+          "aspects": [
+            "oppression",
+            "confinement"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.6,
+          "aspects": [
+            "exhaustion",
+            "adversity"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "iching:hex_48", "note": "Oppression seeks the well"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "iching:hex_48",
+          "note": "Oppression seeks the well"
+        }
+      ],
+      "narrativeRoles": [
+        "orphan",
+        "outcast",
+        "shadow"
+      ],
+      "coreFunction": "To embody outcast energy through oppression and confinement",
+      "symbolicCore": "The wanderer without home",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection, scapegoat dynamic",
+        "developmentalStage": "Alienation from collective, finding unique path",
+        "integrationTask": "Finding belonging while honoring difference",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_48",
@@ -1188,7 +2786,12 @@
       "name": "48. Jing (The Well)",
       "upper": "iching:kan",
       "lower": "iching:xun",
-      "keywords": ["the well", "source", "nourishment", "inexhaustible"],
+      "keywords": [
+        "the well",
+        "source",
+        "nourishment",
+        "inexhaustible"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.32,
@@ -1200,12 +2803,34 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.7, "aspects": ["source", "nourishment"]},
-        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["inexhaustible"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.7,
+          "aspects": [
+            "source",
+            "nourishment"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.65,
+          "aspects": [
+            "inexhaustible"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "iching:hex_47", "note": "Well relieves oppression"}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "iching:hex_47",
+          "note": "Well relieves oppression"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver"
+      ],
+      "coreFunction": "To embody great_mother energy through source and nourishment",
+      "symbolicCore": "The essential pattern of 48. Jing (The Well)"
     },
     {
       "@id": "iching:hex_49",
@@ -1213,7 +2838,12 @@
       "name": "49. Ge (Revolution)",
       "upper": "iching:dui",
       "lower": "iching:li",
-      "keywords": ["revolution", "transformation", "radical change", "molting"],
+      "keywords": [
+        "revolution",
+        "transformation",
+        "radical change",
+        "molting"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.62,
@@ -1225,14 +2855,52 @@
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:rebel", "weight": 0.9, "aspects": ["revolution", "change"]},
-        {"primordial": "primordial:destroyer", "weight": 0.7, "aspects": ["transformation"]}
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.9,
+          "aspects": [
+            "revolution",
+            "change"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.7,
+          "aspects": [
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_50", "note": "Revolution and the cauldron"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.75}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_50",
+          "note": "Revolution and the cauldron"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:tower",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:death",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "outcast",
+        "rebel"
+      ],
+      "coreFunction": "To embody rebel energy through revolution and change",
+      "symbolicCore": "The fire that burns down the old",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "iching:hex_50",
@@ -1240,7 +2908,12 @@
       "name": "50. Ding (The Cauldron)",
       "upper": "iching:li",
       "lower": "iching:xun",
-      "keywords": ["the cauldron", "transformation", "nourishment", "sacrifice"],
+      "keywords": [
+        "the cauldron",
+        "transformation",
+        "nourishment",
+        "sacrifice"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.35,
@@ -1252,12 +2925,41 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["transformation", "alchemy"]},
-        {"primordial": "primordial:great_mother", "weight": 0.6, "aspects": ["nourishment"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "transformation",
+            "alchemy"
+          ]
+        },
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.6,
+          "aspects": [
+            "nourishment"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_49", "note": "Cauldron follows revolution"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_49",
+          "note": "Cauldron follows revolution"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and alchemy",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_51",
@@ -1265,7 +2967,12 @@
       "name": "51. Zhen (Shock)",
       "upper": "iching:zhen",
       "lower": "iching:zhen",
-      "keywords": ["shock", "thunder", "arousing", "awakening"],
+      "keywords": [
+        "shock",
+        "thunder",
+        "arousing",
+        "awakening"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.72,
         "creation-destruction": 0.45,
@@ -1277,13 +2984,48 @@
         "voluntary-fated": 0.28
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["arousing", "initiative"]},
-        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["shock", "awakening"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "arousing",
+            "initiative"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.65,
+          "aspects": [
+            "shock",
+            "awakening"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_52", "axis": "movement-stillness"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:tower", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_52",
+          "axis": "movement-stillness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:tower",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through arousing and initiative",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_52",
@@ -1291,7 +3033,12 @@
       "name": "52. Gen (Keeping Still)",
       "upper": "iching:gen",
       "lower": "iching:gen",
-      "keywords": ["stillness", "meditation", "stopping", "rest"],
+      "keywords": [
+        "stillness",
+        "meditation",
+        "stopping",
+        "rest"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.22,
         "creation-destruction": 0.42,
@@ -1303,13 +3050,47 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.8, "aspects": ["stillness", "stopping"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.7, "aspects": ["meditation", "contemplation"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8,
+          "aspects": [
+            "stillness",
+            "stopping"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.7,
+          "aspects": [
+            "meditation",
+            "contemplation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_51", "axis": "stillness-movement"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.85}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_51",
+          "axis": "stillness-movement"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.85
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through stillness and stopping",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_53",
@@ -1317,11 +3098,16 @@
       "name": "53. Jian (Development)",
       "upper": "iching:xun",
       "lower": "iching:gen",
-      "keywords": ["gradual progress", "development", "infiltration", "patience"],
+      "keywords": [
+        "gradual progress",
+        "development",
+        "infiltration",
+        "patience"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.32,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.58,
         "individual-collective": 0.48,
         "ascent-descent": 0.48,
@@ -1329,12 +3115,41 @@
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.6, "aspects": ["gradual influence"]},
-        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["patience", "development"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "gradual influence"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "patience",
+            "development"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_54", "note": "Gradual vs sudden union"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_54",
+          "note": "Gradual vs sudden union"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "magician"
+      ],
+      "coreFunction": "To embody magician energy through gradual influence",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_54",
@@ -1342,7 +3157,12 @@
       "name": "54. Gui Mei (Marrying Maiden)",
       "upper": "iching:zhen",
       "lower": "iching:dui",
-      "keywords": ["marrying maiden", "subordinate position", "affection", "propriety"],
+      "keywords": [
+        "marrying maiden",
+        "subordinate position",
+        "affection",
+        "propriety"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.35,
@@ -1354,12 +3174,43 @@
         "voluntary-fated": 0.62
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.8, "aspects": ["youth", "subordinate"]},
-        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["affection", "union"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.8,
+          "aspects": [
+            "youth",
+            "subordinate"
+          ]
+        },
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.65,
+          "aspects": [
+            "affection",
+            "union"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_53", "note": "Sudden vs gradual union"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_53",
+          "note": "Sudden vs gradual union"
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "lover",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through youth and subordinate",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_55",
@@ -1367,7 +3218,12 @@
       "name": "55. Feng (Abundance)",
       "upper": "iching:zhen",
       "lower": "iching:li",
-      "keywords": ["abundance", "fullness", "zenith", "greatness"],
+      "keywords": [
+        "abundance",
+        "fullness",
+        "zenith",
+        "greatness"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.28,
@@ -1379,12 +3235,43 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.8, "aspects": ["abundance", "greatness"]},
-        {"primordial": "primordial:self", "weight": 0.6, "aspects": ["fullness", "zenith"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "abundance",
+            "greatness"
+          ]
+        },
+        {
+          "primordial": "primordial:self",
+          "weight": 0.6,
+          "aspects": [
+            "fullness",
+            "zenith"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_56", "note": "Abundance vs wandering"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_56",
+          "note": "Abundance vs wandering"
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "seeker",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through abundance and greatness",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_56",
@@ -1392,7 +3279,12 @@
       "name": "56. Lu (The Wanderer)",
       "upper": "iching:li",
       "lower": "iching:gen",
-      "keywords": ["wandering", "travel", "stranger", "transience"],
+      "keywords": [
+        "wandering",
+        "travel",
+        "stranger",
+        "transience"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.42,
@@ -1404,13 +3296,48 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:outcast", "weight": 0.7, "aspects": ["stranger", "wandering"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["journey", "travel"]}
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.7,
+          "aspects": [
+            "stranger",
+            "wandering"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "journey",
+            "travel"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "iching:hex_55", "note": "Wandering vs abundance"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.65}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:hex_55",
+          "note": "Wandering vs abundance"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.65
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "orphan",
+        "outcast"
+      ],
+      "coreFunction": "To embody outcast energy through stranger and wandering",
+      "symbolicCore": "The wanderer without home",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection, scapegoat dynamic",
+        "developmentalStage": "Alienation from collective, finding unique path",
+        "integrationTask": "Finding belonging while honoring difference",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_57",
@@ -1418,7 +3345,12 @@
       "name": "57. Xun (The Gentle)",
       "upper": "iching:xun",
       "lower": "iching:xun",
-      "keywords": ["gentle penetration", "wind", "gradual influence", "flexibility"],
+      "keywords": [
+        "gentle penetration",
+        "wind",
+        "gradual influence",
+        "flexibility"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.35,
@@ -1430,12 +3362,43 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.7, "aspects": ["penetrating", "influence"]},
-        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["gentle", "gradual"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "penetrating",
+            "influence"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.55,
+          "aspects": [
+            "gentle",
+            "gradual"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_58", "axis": "gentle-joyous"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_58",
+          "axis": "gentle-joyous"
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through penetrating and influence",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_58",
@@ -1443,7 +3406,13 @@
       "name": "58. Dui (The Joyous)",
       "upper": "iching:dui",
       "lower": "iching:dui",
-      "keywords": ["joy", "lake", "pleasure", "openness", "communication"],
+      "keywords": [
+        "joy",
+        "lake",
+        "pleasure",
+        "openness",
+        "communication"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.28,
@@ -1455,13 +3424,40 @@
         "voluntary-fated": 0.32
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.8, "aspects": ["joy", "pleasure"]},
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["playful", "exchange"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.8,
+          "aspects": [
+            "joy",
+            "pleasure"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "playful",
+            "exchange"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_57", "axis": "joyous-gentle"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_57",
+          "axis": "joyous-gentle"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody divine_child energy through joy and pleasure",
+      "symbolicCore": "The essential pattern of 58. Dui (The Joyous)"
     },
     {
       "@id": "iching:hex_59",
@@ -1469,7 +3465,12 @@
       "name": "59. Huan (Dispersion)",
       "upper": "iching:xun",
       "lower": "iching:kan",
-      "keywords": ["dispersion", "dissolution", "scattering", "overcoming barriers"],
+      "keywords": [
+        "dispersion",
+        "dissolution",
+        "scattering",
+        "overcoming barriers"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.58,
         "creation-destruction": 0.48,
@@ -1481,10 +3482,36 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["dissolution", "passage"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["dispersion", "overcoming"]}
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.65,
+          "aspects": [
+            "dissolution",
+            "passage"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "dispersion",
+            "overcoming"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "magician",
+        "threshold-guardian"
+      ],
+      "coreFunction": "To embody psychopomp energy through dissolution and passage",
+      "symbolicCore": "The key to threshold passages",
+      "psychologicalMapping": {
+        "jungianStructure": "Guide function between conscious and unconscious",
+        "developmentalStage": "Major life transitions and transformations",
+        "integrationTask": "Facilitating passage while honoring process",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_60",
@@ -1492,7 +3519,12 @@
       "name": "60. Jie (Limitation)",
       "upper": "iching:kan",
       "lower": "iching:dui",
-      "keywords": ["limitation", "moderation", "articulating", "boundaries"],
+      "keywords": [
+        "limitation",
+        "moderation",
+        "articulating",
+        "boundaries"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.32,
         "creation-destruction": 0.45,
@@ -1504,10 +3536,36 @@
         "voluntary-fated": 0.58
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.7, "aspects": ["limitation", "boundaries"]},
-        {"primordial": "primordial:great_father", "weight": 0.55, "aspects": ["moderation", "structure"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.7,
+          "aspects": [
+            "limitation",
+            "boundaries"
+          ]
+        },
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.55,
+          "aspects": [
+            "moderation",
+            "structure"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign"
+      ],
+      "coreFunction": "To embody preserver energy through limitation and boundaries",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_61",
@@ -1515,7 +3573,12 @@
       "name": "61. Zhong Fu (Inner Truth)",
       "upper": "iching:xun",
       "lower": "iching:dui",
-      "keywords": ["inner truth", "sincerity", "confidence", "trust"],
+      "keywords": [
+        "inner truth",
+        "sincerity",
+        "confidence",
+        "trust"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.32,
@@ -1527,12 +3590,41 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.8, "aspects": ["truth", "sincerity"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.6, "aspects": ["confidence", "trust"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.8,
+          "aspects": [
+            "truth",
+            "sincerity"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.6,
+          "aspects": [
+            "confidence",
+            "trust"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.7}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:high_priestess",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through truth and sincerity",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_62",
@@ -1540,7 +3632,12 @@
       "name": "62. Xiao Guo (Small Excess)",
       "upper": "iching:zhen",
       "lower": "iching:gen",
-      "keywords": ["small exceeding", "attention to detail", "small matters", "humility"],
+      "keywords": [
+        "small exceeding",
+        "attention to detail",
+        "small matters",
+        "humility"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.42,
@@ -1552,10 +3649,35 @@
         "voluntary-fated": 0.48
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["small matters", "detail"]},
-        {"primordial": "primordial:wise_elder", "weight": 0.5, "aspects": ["humility", "caution"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.55,
+          "aspects": [
+            "small matters",
+            "detail"
+          ]
+        },
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 0.5,
+          "aspects": [
+            "humility",
+            "caution"
+          ]
+        }
       ],
-      "relationships": []
+      "relationships": [],
+      "narrativeRoles": [
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through small matters and detail",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_63",
@@ -1563,25 +3685,64 @@
       "name": "63. Ji Ji (After Completion)",
       "upper": "iching:kan",
       "lower": "iching:li",
-      "keywords": ["completion", "success", "transition", "vigilance"],
+      "keywords": [
+        "completion",
+        "success",
+        "transition",
+        "vigilance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.42,
         "light-shadow": 0.45,
-        "active-receptive": 0.50,
+        "active-receptive": 0.5,
         "individual-collective": 0.52,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 0.7, "aspects": ["completion", "balance"]},
-        {"primordial": "primordial:preserver", "weight": 0.6, "aspects": ["vigilance", "maintenance"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 0.7,
+          "aspects": [
+            "completion",
+            "balance"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "vigilance",
+            "maintenance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_64", "axis": "completion-incompletion"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.75}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_64",
+          "axis": "completion-incompletion"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:world",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through completion and balance",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "iching:hex_64",
@@ -1589,7 +3750,12 @@
       "name": "64. Wei Ji (Before Completion)",
       "upper": "iching:li",
       "lower": "iching:kan",
-      "keywords": ["incompletion", "transition", "potential", "almost there"],
+      "keywords": [
+        "incompletion",
+        "transition",
+        "potential",
+        "almost there"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.52,
         "creation-destruction": 0.38,
@@ -1601,27 +3767,83 @@
         "voluntary-fated": 0.52
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 0.65, "aspects": ["potential", "becoming"]},
-        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["striving", "transition"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 0.65,
+          "aspects": [
+            "potential",
+            "becoming"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.55,
+          "aspects": [
+            "striving",
+            "transition"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "iching:hex_63", "axis": "incompletion-completion"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.7}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "iching:hex_63",
+          "axis": "incompletion-completion"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero"
+      ],
+      "coreFunction": "To embody divine_child energy through potential and becoming",
+      "symbolicCore": "The essential pattern of 64. Wei Ji (Before Completion)"
     }
   ],
-
   "systemRelationships": {
     "polarPairs": [
-      {"pair": ["iching:hex_01", "iching:hex_02"], "axis": "creative-receptive", "note": "Primary polarity"},
-      {"pair": ["iching:hex_11", "iching:hex_12"], "axis": "peace-stagnation"},
-      {"pair": ["iching:hex_29", "iching:hex_30"], "axis": "water-fire"},
-      {"pair": ["iching:hex_51", "iching:hex_52"], "axis": "movement-stillness"},
-      {"pair": ["iching:hex_63", "iching:hex_64"], "axis": "completion-incompletion"}
+      {
+        "pair": [
+          "iching:hex_01",
+          "iching:hex_02"
+        ],
+        "axis": "creative-receptive",
+        "note": "Primary polarity"
+      },
+      {
+        "pair": [
+          "iching:hex_11",
+          "iching:hex_12"
+        ],
+        "axis": "peace-stagnation"
+      },
+      {
+        "pair": [
+          "iching:hex_29",
+          "iching:hex_30"
+        ],
+        "axis": "water-fire"
+      },
+      {
+        "pair": [
+          "iching:hex_51",
+          "iching:hex_52"
+        ],
+        "axis": "movement-stillness"
+      },
+      {
+        "pair": [
+          "iching:hex_63",
+          "iching:hex_64"
+        ],
+        "axis": "completion-incompletion"
+      }
     ],
     "derivationMethod": "Each hexagram's coordinates derived from upper/lower trigram average plus semantic adjustment based on traditional meaning"
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",

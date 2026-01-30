@@ -93,12 +93,14 @@
       "coreFunction": "To maintain cosmic order, dispense justice, and embody sovereign authority",
       "symbolicCore": "The thunderbolt that maintains order through power",
       "domains": [
-        "sky",
-        "thunder",
-        "justice",
+        "fatherhood",
         "hospitality",
+        "justice",
         "kingship",
-        "oaths"
+        "oaths",
+        "order",
+        "sky",
+        "thunder"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Father complex, collective superego",
@@ -194,7 +196,45 @@
       },
       "ritualFunction": "Invoked for justice, oaths, protection of guests, kingship",
       "dreamForm": "Lightning, eagles, storms, authoritative male figure",
-      "poeticInvocation": "Cloud-gatherer, father of gods and men, wielder of the aegis"
+      "poeticInvocation": "Cloud-gatherer, father of gods and men, wielder of the aegis",
+      "keywords": [
+        "cosmic",
+        "desires",
+        "father",
+        "fatherhood",
+        "gods",
+        "great father",
+        "hospitality",
+        "justice",
+        "king",
+        "kingship"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-EMPEROR",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-JUSTICE",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ]
     },
     {
       "@id": "arch:GR-HERA",
@@ -247,11 +287,12 @@
       "coreFunction": "To sanctify and protect marriage, embody queenly dignity",
       "symbolicCore": "The sacred bond that must be honored",
       "domains": [
-        "marriage",
-        "women",
         "childbirth",
         "family",
-        "fidelity"
+        "fidelity",
+        "marriage",
+        "sovereignty",
+        "women"
       ],
       "relationships": [
         {
@@ -299,7 +340,31 @@
           "white"
         ]
       },
-      "poeticInvocation": "Ox-eyed queen, protector of the marriage bed, enthroned beside the Thunderer"
+      "poeticInvocation": "Ox-eyed queen, protector of the marriage bed, enthroned beside the Thunderer",
+      "keywords": [
+        "aspects",
+        "childbirth",
+        "committed",
+        "dignified",
+        "embodies",
+        "family",
+        "fidelity",
+        "goddess",
+        "gods",
+        "great mother"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "ruler",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-POSEIDON",
@@ -351,11 +416,11 @@
       "coreFunction": "To embody emotional depth, instinctual power, and the untameable",
       "symbolicCore": "The ocean that cannot be ruled, only navigated",
       "domains": [
-        "sea",
         "earthquakes",
         "horses",
-        "storms",
-        "navigation"
+        "navigation",
+        "sea",
+        "storms"
       ],
       "relationships": [
         {
@@ -395,7 +460,43 @@
           "sea green"
         ]
       },
-      "poeticInvocation": "Earth-shaker, lord of the wine-dark sea, tamer of horses"
+      "poeticInvocation": "Earth-shaker, lord of the wine-dark sea, tamer of horses",
+      "keywords": [
+        "beneath",
+        "civilization",
+        "earthquakes",
+        "emotional",
+        "forces",
+        "great father",
+        "horses",
+        "instinctual",
+        "navigation",
+        "poseidon"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-MOON",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Father complex, authority and order",
+        "developmentalStage": "Adolescent relationship with rules and structure",
+        "integrationTask": "Balancing authority with compassion and flexibility",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:GR-ATHENA",
@@ -457,12 +558,12 @@
       "coreFunction": "To embody wisdom applied through strategy, craft, and civilization",
       "symbolicCore": "The owl's gaze that sees in darkness - wisdom penetrating confusion",
       "domains": [
-        "wisdom",
-        "strategy",
-        "crafts",
         "civilization",
+        "crafts",
+        "heroes",
         "just warfare",
-        "heroes"
+        "strategy",
+        "wisdom"
       ],
       "relationships": [
         {
@@ -500,8 +601,7 @@
       ],
       "correspondences": {
         "tarot": [
-          "TAMA-JUSTICE",
-          "TAMA-HIGH-PRIESTESS"
+          "TAMA-JUSTICE"
         ],
         "planet": "7P-MERCURY",
         "element": "EL-AIR",
@@ -519,7 +619,46 @@
           "blue"
         ]
       },
-      "poeticInvocation": "Grey-eyed daughter of Zeus, aegis-bearer, unwearied protector of heroes and cities"
+      "poeticInvocation": "Grey-eyed daughter of Zeus, aegis-bearer, unwearied protector of heroes and cities",
+      "keywords": [
+        "armored",
+        "athena",
+        "born",
+        "civilization",
+        "completion",
+        "crafts",
+        "feminine",
+        "fully",
+        "goddess",
+        "head"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-JUSTICE",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "mentor",
+        "sage",
+        "seeker"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-APOLLO",
@@ -579,13 +718,13 @@
       "coreFunction": "To illuminate, purify, heal, and reveal truth through clarity",
       "symbolicCore": "The sun that reveals all things in clear light",
       "domains": [
-        "light",
-        "prophecy",
-        "music",
-        "poetry",
-        "healing",
-        "plague",
         "archery",
+        "healing",
+        "light",
+        "music",
+        "plague",
+        "poetry",
+        "prophecy",
         "truth"
       ],
       "relationships": [
@@ -615,8 +754,8 @@
       ],
       "correspondences": {
         "tarot": [
-          "TAMA-SUN",
-          "TAMA-CHARIOT"
+          "TAMA-CHARIOT",
+          "TAMA-SUN"
         ],
         "planet": "7P-SUN",
         "element": "EL-FIRE",
@@ -637,7 +776,57 @@
           "yellow"
         ]
       },
-      "poeticInvocation": "Far-shooter, Phoebus of the silver bow, lord of Delphi, healer and destroyer"
+      "poeticInvocation": "Far-shooter, Phoebus of the silver bow, lord of Delphi, healer and destroyer",
+      "keywords": [
+        "apollo",
+        "archery",
+        "artemis",
+        "beauty",
+        "clarity",
+        "classical",
+        "harmony",
+        "healer",
+        "healing",
+        "ideal"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-CHARIOT",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-SUN",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "healer",
+        "mentor",
+        "sage"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Compensatory function, restoration of balance",
+        "developmentalStage": "Recovery from crisis or wounding",
+        "integrationTask": "Transforming wounds into sources of healing",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:GR-ARTEMIS",
@@ -690,12 +879,13 @@
       "coreFunction": "To protect wildness, independence, and the liminal boundary of nature",
       "symbolicCore": "The moon that illuminates the wild - fierce independence",
       "domains": [
-        "hunt",
-        "wilderness",
-        "moon",
+        "boundaries",
         "childbirth",
-        "young women",
-        "boundaries"
+        "fertility",
+        "hunt",
+        "moon",
+        "wilderness",
+        "young women"
       ],
       "relationships": [
         {
@@ -720,8 +910,8 @@
       ],
       "correspondences": {
         "tarot": [
-          "TAMA-MOON",
-          "TAMA-STRENGTH"
+          "TAMA-STRENGTH",
+          "TAMA-MOON"
         ],
         "planet": "7P-MOON",
         "element": "EL-WATER",
@@ -741,7 +931,57 @@
           "green"
         ]
       },
-      "poeticInvocation": "Lady of the wild places, silver-shafted huntress, torch-bearer of the moon"
+      "poeticInvocation": "Lady of the wild places, silver-shafted huntress, torch-bearer of the moon",
+      "keywords": [
+        "artemis",
+        "between",
+        "boundaries",
+        "boundary",
+        "childbirth",
+        "civilization",
+        "embodies",
+        "feminine",
+        "fertility",
+        "goddess"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-STRENGTH",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-MOON",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "seeker",
+        "warrior"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-HERMES",
@@ -872,14 +1112,14 @@
       "coreFunction": "To cross boundaries, carry messages, and guide through transitions",
       "symbolicCore": "The crossroads where all paths meet and diverge",
       "domains": [
-        "messages",
         "boundaries",
-        "thieves",
         "commerce",
-        "travelers",
-        "souls",
+        "cunning",
         "language",
-        "cunning"
+        "messages",
+        "souls",
+        "thieves",
+        "travelers"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Animus aspect, mercurial function",
@@ -968,8 +1208,8 @@
       },
       "correspondences": {
         "tarot": [
-          "TAMA-MAGICIAN",
-          "TAMA-FOOL"
+          "TAMA-FOOL",
+          "TAMA-MAGICIAN"
         ],
         "planet": "7P-MERCURY",
         "element": "EL-AIR",
@@ -997,7 +1237,45 @@
       },
       "ritualFunction": "Invoked at crossroads, for travel, commerce, communication, transitions, magic",
       "dreamForm": "Swift-moving figure, winged sandals, crossroads, keys, unexpected messages",
-      "poeticInvocation": "Luck-bringer, slayer of Argus, guide of souls to the house of Hades, friend to mortals"
+      "poeticInvocation": "Luck-bringer, slayer of Argus, guide of souls to the house of Hades, friend to mortals",
+      "keywords": [
+        "boundaries",
+        "commerce",
+        "crosser",
+        "cunning",
+        "divine child",
+        "gods",
+        "greek",
+        "guide",
+        "hermes",
+        "language"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-FOOL",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-MAGICIAN",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ]
     },
     {
       "@id": "arch:GR-DIONYSUS",
@@ -1057,13 +1335,14 @@
       "coreFunction": "To dissolve ego boundaries through ecstasy and reveal the divine within chaos",
       "symbolicCore": "The vine that dies and is reborn - dissolution as liberation",
       "domains": [
-        "wine",
+        "boundaries",
         "ecstasy",
-        "theatre",
-        "madness",
         "fertility",
+        "liberation",
+        "madness",
         "rebirth",
-        "liberation"
+        "theatre",
+        "wine"
       ],
       "relationships": [
         {
@@ -1119,7 +1398,69 @@
           "gold"
         ]
       },
-      "poeticInvocation": "Twice-born, ivy-crowned, loosener of limbs, he who comes"
+      "poeticInvocation": "Twice-born, ivy-crowned, loosener of limbs, he who comes",
+      "keywords": [
+        "between",
+        "born",
+        "boundaries",
+        "civilized",
+        "dionysus",
+        "dissolves",
+        "divine",
+        "divine child",
+        "ecstasy",
+        "fertility"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-FOOL",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-HANGED-MAN",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-TOWER",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent",
+        "outcast",
+        "rebel"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection onto established order",
+        "developmentalStage": "Adolescent differentiation from parents/culture",
+        "integrationTask": "Channeling rebellion into creative transformation",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-HADES",
@@ -1180,10 +1521,11 @@
       "symbolicCore": "The wealth beneath the earth - depth holds treasure",
       "domains": [
         "death",
-        "underworld",
-        "hidden wealth",
         "depth",
-        "the unconscious"
+        "hidden wealth",
+        "sovereignty",
+        "the unconscious",
+        "underworld"
       ],
       "relationships": [
         {
@@ -1228,7 +1570,57 @@
           "dark purple"
         ]
       },
-      "poeticInvocation": "The Unseen One, host of many, wealthy one, receiver of all"
+      "poeticInvocation": "The Unseen One, host of many, wealthy one, receiver of all",
+      "keywords": [
+        "beneath",
+        "dead",
+        "death",
+        "depth",
+        "hades",
+        "hidden",
+        "hidden wealth",
+        "interiority",
+        "king",
+        "lord"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-DEATH",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-DEVIL",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "ruler",
+        "shadow",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-HESTIA",
@@ -1276,10 +1668,12 @@
       "coreFunction": "To BE the center - the still point around which all moves",
       "symbolicCore": "The flame that never goes out - sacred presence",
       "domains": [
+        "center",
+        "fire",
         "hearth",
         "home",
         "sacred fire",
-        "center",
+        "sacrifice",
         "stability",
         "virginity"
       ],
@@ -1321,7 +1715,45 @@
           "orange flame"
         ]
       },
-      "poeticInvocation": "First and last, center of the home, keeper of the undying flame"
+      "poeticInvocation": "First and last, center of the home, keeper of the undying flame",
+      "keywords": [
+        "appears",
+        "around",
+        "because",
+        "center",
+        "every",
+        "fire",
+        "first",
+        "goddess",
+        "hearth",
+        "hestia"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-HIGH-PRIESTESS",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "innocent",
+        "seeker",
+        "sovereign"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-APHRODITE",
@@ -1379,11 +1811,12 @@
       "coreFunction": "To awaken desire, draw together, and embody beauty",
       "symbolicCore": "The foam-born force that nothing can resist",
       "domains": [
-        "love",
         "beauty",
         "desire",
+        "love",
         "pleasure",
         "procreation",
+        "sea",
         "the sea"
       ],
       "relationships": [
@@ -1445,7 +1878,55 @@
       ],
       "hasEpithet": [
         "arch:GR-APHRODITE-ANADYOMENE"
-      ]
+      ],
+      "keywords": [
+        "aphrodite",
+        "beauty",
+        "born",
+        "desire",
+        "draws",
+        "embodies",
+        "foam",
+        "force",
+        "goddess",
+        "itself"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-EMPRESS",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-LOVERS",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-APHRODITE-URANIA",
@@ -1465,10 +1946,12 @@
       },
       "spectralShiftNote": "Shifts toward light, ascent, and order compared to base Aphrodite",
       "domains": [
-        "spiritual love",
-        "philosophical eros",
         "heavenly beauty",
-        "same-sex love (Platonic context)"
+        "love",
+        "philosophical eros",
+        "same-sex love (Platonic context)",
+        "sky",
+        "spiritual love"
       ],
       "cultCenters": [
         "Athens (philosophical circles)"
@@ -1481,7 +1964,21 @@
           "strength": 0.85,
           "notes": "Heavenly vs earthly love"
         }
-      ]
+      ],
+      "keywords": [
+        "aphrodite",
+        "aphrodite urania",
+        "ascending",
+        "aspect",
+        "beauty",
+        "celestial",
+        "divine",
+        "eros",
+        "good",
+        "heavenly"
+      ],
+      "coreFunction": "To embody the essence of Aphrodite Urania: heavenly aphrodite - the celestial, spiritual aspect of love",
+      "symbolicCore": "The heavenly beauty that transforms through Aphrodite Urania's essence"
     },
     {
       "@id": "arch:GR-APHRODITE-PANDEMOS",
@@ -1501,10 +1998,11 @@
       },
       "spectralShiftNote": "Shifts toward earth, chaos, and transformation compared to base Aphrodite",
       "domains": [
-        "physical love",
-        "sexuality",
+        "common people's worship",
         "fertility",
-        "common people's worship"
+        "love",
+        "physical love",
+        "sexuality"
       ],
       "cultCenters": [
         "Athens (civic cult)",
@@ -1517,7 +2015,21 @@
           "axis": "axis:ascent-descent",
           "strength": 0.85
         }
-      ]
+      ],
+      "keywords": [
+        "accessible",
+        "aphrodite",
+        "aphrodite pandemos",
+        "bodily",
+        "common",
+        "common people's worship",
+        "desire",
+        "earthly",
+        "embodied",
+        "fertility"
+      ],
+      "coreFunction": "To embody the essence of Aphrodite Pandemos: common aphrodite - goddess of physical, earthly love",
+      "symbolicCore": "The common people's worship that transforms through Aphrodite Pandemos's essence"
     },
     {
       "@id": "arch:GR-APHRODITE-ANADYOMENE",
@@ -1574,11 +2086,12 @@
       "coreFunction": "To embody raw aggression and the chaos of violence",
       "symbolicCore": "The blood-rage that knows no restraint",
       "domains": [
-        "war",
-        "violence",
         "bloodlust",
+        "chaos",
+        "civil order (Roman)",
         "courage",
-        "civil order (Roman)"
+        "violence",
+        "war"
       ],
       "relationships": [
         {
@@ -1602,8 +2115,8 @@
       ],
       "correspondences": {
         "tarot": [
-          "TAMA-TOWER",
-          "TAMA-CHARIOT"
+          "TAMA-CHARIOT",
+          "TAMA-TOWER"
         ],
         "planet": "7P-MARS",
         "element": "EL-FIRE",
@@ -1620,7 +2133,55 @@
           "blood red"
         ]
       },
-      "poeticInvocation": "Man-slayer, sacker of cities, blood-stained curse of mortals"
+      "poeticInvocation": "Man-slayer, sacker of cities, blood-stained curse of mortals",
+      "keywords": [
+        "ares",
+        "athena",
+        "battle",
+        "bloodlust",
+        "brutality",
+        "chaos",
+        "civil order (Roman)",
+        "courage",
+        "disliked",
+        "embodies"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-CHARIOT",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-TOWER",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-HEPHAESTUS",
@@ -1660,12 +2221,14 @@
       "coreFunction": "To transform raw material into beauty through skill and fire",
       "symbolicCore": "The wound that becomes the gift - creation through suffering",
       "domains": [
-        "forge",
         "crafts",
+        "creation",
         "fire",
-        "volcanoes",
+        "forge",
         "metalwork",
-        "sculpture"
+        "sculpture",
+        "transformation",
+        "volcanoes"
       ],
       "relationships": [
         {
@@ -1704,7 +2267,54 @@
           "black"
         ]
       },
-      "poeticInvocation": "Illustrious craftsman, limping god of fire, maker of wonders"
+      "poeticInvocation": "Illustrious craftsman, limping god of fire, maker of wonders",
+      "keywords": [
+        "beautiful",
+        "cast",
+        "crafts",
+        "craftsmanship",
+        "creation",
+        "creator",
+        "fire",
+        "forge",
+        "hephaestus",
+        "lame"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-MAGICIAN",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-STRENGTH",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "creator"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "arch:GR-PERSEPHONE",
@@ -1758,12 +2368,14 @@
       "coreFunction": "To embody the transformative journey through darkness and return",
       "symbolicCore": "She who descends and rises - death is not the end",
       "domains": [
-        "spring",
-        "underworld",
-        "rebirth",
         "cycles",
+        "death",
         "innocence",
-        "transformation"
+        "rebirth",
+        "sovereignty",
+        "spring",
+        "transformation",
+        "underworld"
       ],
       "relationships": [
         {
@@ -1808,7 +2420,57 @@
           "spring green"
         ]
       },
-      "poeticInvocation": "Dread queen, spring-bringer, she who walks between worlds"
+      "poeticInvocation": "Dread queen, spring-bringer, she who walks between worlds",
+      "keywords": [
+        "crone",
+        "cycle",
+        "cycles",
+        "death",
+        "descends",
+        "embodying",
+        "goddess",
+        "innocence",
+        "journey",
+        "maiden"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-HIGH-PRIESTESS",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        },
+        {
+          "target": "tarot:TAMA-DEATH",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "innocent",
+        "sage",
+        "seeker"
+      ],
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "arch:GR-DEMETER",
@@ -1861,12 +2523,14 @@
       "coreFunction": "To nourish, grow, and protect the cycles of life through seasons",
       "symbolicCore": "The grain that dies and returns - mother-love that moves worlds",
       "domains": [
-        "harvest",
         "agriculture",
+        "childhood",
+        "earth",
         "fertility",
-        "seasons",
+        "harvest",
         "motherhood",
-        "mysteries"
+        "mysteries",
+        "seasons"
       ],
       "temporalOrientation": "cyclical",
       "temporalNotes": "Embodies the seasonal cycle; her grief creates winter, her joy creates spring",
@@ -1934,7 +2598,37 @@
         ]
       },
       "ritualFunction": "Eleusinian Mysteries - initiation into death and rebirth",
-      "poeticInvocation": "Bringer of seasons, lady of the golden grain, mother of the mysteries"
+      "poeticInvocation": "Bringer of seasons, lady of the golden grain, mother of the mysteries",
+      "keywords": [
+        "agriculture",
+        "brings",
+        "child",
+        "childhood",
+        "demeter",
+        "earth",
+        "embodies",
+        "fertility",
+        "fierce",
+        "goddess"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-EMPRESS",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator"
+      ]
     },
     {
       "@id": "arch:GR-PROMETHEUS",
@@ -1997,12 +2691,12 @@
       "coreFunction": "To transgress divine limits for human benefit, bearing the cost",
       "symbolicCore": "Fire stolen from heaven - the price of progress",
       "domains": [
+        "civilization",
+        "craft",
         "fire",
         "forethought",
-        "craft",
         "rebellion",
-        "sacrifice",
-        "civilization"
+        "sacrifice"
       ],
       "temporalOrientation": "future",
       "temporalNotes": "His name means 'forethought' - he sees and acts for what will be",
@@ -2047,8 +2741,7 @@
       ],
       "correspondences": {
         "tarot": [
-          "TAMA-HANGED-MAN",
-          "TAMA-TOWER"
+          "TAMA-HANGED-MAN"
         ],
         "planet": "7P-URANUS",
         "element": "EL-FIRE",
@@ -2062,7 +2755,39 @@
           "gold"
         ]
       },
-      "poeticInvocation": "Forethought, fire-thief, friend of mortals, bound yet unbroken"
+      "poeticInvocation": "Forethought, fire-thief, friend of mortals, bound yet unbroken",
+      "keywords": [
+        "authority",
+        "benefactor",
+        "chained",
+        "civilization",
+        "craft",
+        "creator",
+        "defiance",
+        "divine",
+        "embodies",
+        "eternity"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:TAMA-HANGED-MAN",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "archetypal function"
+          ],
+          "provenance": {
+            "type": "SYNC",
+            "confidence": 0.65,
+            "note": "Golden Dawn / Jungian tarot-archetype mapping"
+          }
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "orphan",
+        "outcast",
+        "rebel"
+      ]
     },
     {
       "@id": "arch:GR-CRONUS",
@@ -2124,11 +2849,14 @@
       "coreFunction": "To embody time that devours its children; the old order that must fall",
       "symbolicCore": "The sickle that cuts and consumes - time takes all",
       "domains": [
-        "time",
         "agriculture",
+        "childhood",
+        "fatherhood",
         "kingship",
+        "order",
         "prophecy-fear",
-        "the Golden Age"
+        "the Golden Age",
+        "time"
       ],
       "temporalOrientation": "past",
       "temporalNotes": "Represents what-was; the age before the current order; nostalgia and dread",
@@ -2194,7 +2922,24 @@
           "lead"
         ]
       },
-      "poeticInvocation": "Child-devourer, sickle-bearer, king of the Golden Age now fallen"
+      "poeticInvocation": "Child-devourer, sickle-bearer, king of the Golden Age now fallen",
+      "keywords": [
+        "agriculture",
+        "before",
+        "castrated",
+        "childhood",
+        "children",
+        "consumes",
+        "cronus",
+        "destroyer",
+        "devoured",
+        "embodies"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "ruler",
+        "sovereign"
+      ]
     },
     {
       "@id": "arch:GR-HERACLES",
@@ -2258,12 +3003,14 @@
       "coreFunction": "To overcome impossible trials through strength and endurance, achieving transformation",
       "symbolicCore": "The club and lion-skin - raw power civilized through labor",
       "domains": [
+        "apotheosis",
+        "death",
+        "endurance",
         "heroism",
-        "strength",
         "labors",
         "monster-slaying",
-        "endurance",
-        "apotheosis"
+        "strength",
+        "underworld"
       ],
       "temporalOrientation": "present",
       "temporalNotes": "The Hero exists in the eternal now of action; each labor is present-tense struggle",
@@ -2343,7 +3090,19 @@
           "lion-tawny"
         ]
       },
-      "poeticInvocation": "Lion-hearted, laborer, son of Zeus, he who endured and ascended"
+      "poeticInvocation": "Lion-hearted, laborer, son of Zeus, he who endured and ascended",
+      "keywords": [
+        "alcmene",
+        "apotheosis",
+        "archetype",
+        "death",
+        "deified",
+        "descended",
+        "divine child",
+        "endurance",
+        "eventually",
+        "greatest"
+      ]
     },
     {
       "@id": "arch:GR-ODYSSEUS",
@@ -2402,11 +3161,13 @@
       "symbolicCore": "The long way home - every detour is necessary",
       "domains": [
         "cunning",
+        "eloquence",
+        "home",
         "journey",
         "return",
+        "sovereignty",
         "survival",
-        "eloquence",
-        "home"
+        "travel"
       ],
       "temporalOrientation": "future",
       "temporalNotes": "Always oriented toward return; every action serves the future homecoming",
@@ -2483,7 +3244,19 @@
           "grey"
         ]
       },
-      "poeticInvocation": "Much-wandering, sacker of Troy, man of many devices, long-suffering returner"
+      "poeticInvocation": "Much-wandering, sacker of Troy, man of many devices, long-suffering returner",
+      "keywords": [
+        "archetypal",
+        "brute",
+        "cunning",
+        "eloquence",
+        "famed",
+        "hero",
+        "home",
+        "ithaca",
+        "journey",
+        "king"
+      ]
     },
     {
       "@id": "arch:GR-PENELOPE",
@@ -2530,12 +3303,13 @@
       "coreFunction": "To hold the center through patient cunning while awaiting return",
       "symbolicCore": "The shroud woven by day, unwoven by night - resistance as patience",
       "domains": [
-        "fidelity",
-        "weaving",
         "cunning",
-        "patience",
+        "fidelity",
         "home-keeping",
-        "resistance"
+        "patience",
+        "resistance",
+        "sovereignty",
+        "weaving"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Integrated anima, mature feminine wisdom",
@@ -2581,7 +3355,25 @@
           "grey"
         ]
       },
-      "poeticInvocation": "Daughter of Icarius, circumspect Penelope, weaver of shrouds and schemes"
+      "poeticInvocation": "Daughter of Icarius, circumspect Penelope, weaver of shrouds and schemes",
+      "keywords": [
+        "active",
+        "cunning",
+        "embodies",
+        "equal",
+        "faithful",
+        "fending",
+        "fidelity",
+        "home-keeping",
+        "husband",
+        "ithaca"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover",
+        "sovereign",
+        "trickster"
+      ]
     }
   ]
 }

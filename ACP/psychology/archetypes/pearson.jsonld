@@ -8,7 +8,6 @@
   "subdomain": "archetypes",
   "cardinality": 12,
   "structuralNotes": "Based on Pearson's 'Awakening the Heroes Within' (1991). Three groups of four: Preparation (Ego), Journey (Soul), Return (Self).",
-
   "entries": [
     {
       "@id": "pearson:innocent",
@@ -17,25 +16,60 @@
       "stage": "Preparation (Ego)",
       "coreDesire": "To live in paradise",
       "coreFear": "Doing something wrong that will provoke punishment",
-      "keywords": ["optimism", "faith", "trust", "simplicity", "purity"],
+      "keywords": [
+        "optimism",
+        "faith",
+        "trust",
+        "simplicity",
+        "purity"
+      ],
       "description": "Maintains faith and optimism. Seeks safety and wants to be happy. The eternal optimist who trusts in goodness.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
         "creation-destruction": 0.25,
-        "light-shadow": 0.20,
-        "active-receptive": 0.60,
-        "individual-collective": 0.50,
+        "light-shadow": 0.2,
+        "active-receptive": 0.6,
+        "individual-collective": 0.5,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:divine-child", "weight": 0.85, "aspects": ["innocence", "trust", "optimism"]}
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.85,
+          "aspects": [
+            "innocence",
+            "trust",
+            "optimism"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "pearson:destroyer", "axis": "creation-destruction"},
-        {"type": "CULTURAL_ECHO", "target": "enneagram:type_7", "fidelity": 0.55, "note": "Optimism/avoidance"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "pearson:destroyer",
+          "axis": "creation-destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_7",
+          "fidelity": 0.55,
+          "note": "Optimism/avoidance"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "innocent"
+      ],
+      "coreFunction": "To embody divine child energy through innocence and trust",
+      "symbolicCore": "The dawn of possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as potential, original wholeness",
+        "developmentalStage": "Beginning of individuation journey",
+        "integrationTask": "Nurturing inner potential while facing reality",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:orphan",
@@ -44,25 +78,62 @@
       "stage": "Preparation (Ego)",
       "coreDesire": "To connect with others",
       "coreFear": "Being left out or standing out from the crowd",
-      "keywords": ["realism", "empathy", "belonging", "solidarity", "wounds"],
+      "keywords": [
+        "realism",
+        "empathy",
+        "belonging",
+        "solidarity",
+        "wounds"
+      ],
       "description": "Learns to survive, cope, and find belonging. The wounded one who seeks connection through shared pain.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
-        "light-shadow": 0.50,
-        "active-receptive": 0.60,
-        "individual-collective": 0.70,
+        "light-shadow": 0.5,
+        "active-receptive": 0.6,
+        "individual-collective": 0.7,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["wounds", "abandonment"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["empathy", "belonging"]}
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.75,
+          "aspects": [
+            "wounds",
+            "abandonment"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "empathy",
+            "belonging"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "pearson:warrior", "note": "Ego develops strength"}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "pearson:warrior",
+          "note": "Ego develops strength"
+        }
+      ],
+      "narrativeRoles": [
+        "healer",
+        "orphan",
+        "outcast"
+      ],
+      "coreFunction": "To embody outcast energy through wounds and abandonment",
+      "symbolicCore": "The wanderer without home",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow projection, scapegoat dynamic",
+        "developmentalStage": "Alienation from collective, finding unique path",
+        "integrationTask": "Finding belonging while honoring difference",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "pearson:warrior",
@@ -71,7 +142,13 @@
       "stage": "Preparation (Ego)",
       "coreDesire": "To prove one's worth through courageous action",
       "coreFear": "Weakness, vulnerability",
-      "keywords": ["courage", "discipline", "competence", "mastery", "boundaries"],
+      "keywords": [
+        "courage",
+        "discipline",
+        "competence",
+        "mastery",
+        "boundaries"
+      ],
       "description": "Develops discipline, courage, and skill. Fights for what matters and establishes clear boundaries.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
@@ -81,14 +158,42 @@
         "individual-collective": 0.35,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.90, "aspects": ["courage", "discipline", "mastery"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.9,
+          "aspects": [
+            "courage",
+            "discipline",
+            "mastery"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "kwml:warrior", "fidelity": 0.85, "note": "Moore's warrior"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:warrior",
+          "fidelity": 0.85,
+          "note": "Moore's warrior"
+        }
+      ],
+      "domains": [
+        "boundaries"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through courage and discipline",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:caregiver",
@@ -97,25 +202,68 @@
       "stage": "Preparation (Ego)",
       "coreDesire": "To protect and care for others",
       "coreFear": "Selfishness, ingratitude",
-      "keywords": ["compassion", "generosity", "nurturing", "sacrifice", "protection"],
+      "keywords": [
+        "compassion",
+        "generosity",
+        "nurturing",
+        "sacrifice",
+        "protection"
+      ],
       "description": "Provides care and protection for others. The nurturing parent who gives of themselves.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
+        "order-chaos": 0.3,
         "creation-destruction": 0.25,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.65,
         "individual-collective": 0.75,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.35,
-        "voluntary-fated": 0.50
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["nurturing", "protection", "sacrifice"]},
-        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["compassion", "care"]}
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.85,
+          "aspects": [
+            "nurturing",
+            "protection",
+            "sacrifice"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.65,
+          "aspects": [
+            "compassion",
+            "care"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "enneagram:type_2", "fidelity": 0.80, "note": "Helper archetype"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_2",
+          "fidelity": 0.8,
+          "note": "Helper archetype"
+        }
+      ],
+      "domains": [
+        "motherhood",
+        "protection"
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody great mother energy through nurturing and protection",
+      "symbolicCore": "The nurturing vessel of life",
+      "psychologicalMapping": {
+        "jungianStructure": "Mother complex, nurturing instinct",
+        "developmentalStage": "Early childhood attachment and security",
+        "integrationTask": "Balancing nurturing with allowing autonomy",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:seeker",
@@ -124,25 +272,64 @@
       "stage": "Journey (Soul)",
       "coreDesire": "To find a better life",
       "coreFear": "Conformity, inner emptiness",
-      "keywords": ["autonomy", "ambition", "identity", "exploration", "freedom"],
+      "keywords": [
+        "autonomy",
+        "ambition",
+        "identity",
+        "exploration",
+        "freedom"
+      ],
       "description": "Searches for unique identity and authentic self. The explorer who journeys to find truth.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.40,
-        "active-receptive": 0.30,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.4,
+        "active-receptive": 0.3,
         "individual-collective": 0.25,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.65,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["journey", "seeking", "exploration"]},
-        {"primordial": "primordial:rebel", "weight": 0.55, "aspects": ["autonomy", "freedom"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "journey",
+            "seeking",
+            "exploration"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.55,
+          "aspects": [
+            "autonomy",
+            "freedom"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "heros_journey:departure", "fidelity": 0.75, "note": "Journey begins"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "heros_journey:departure",
+          "fidelity": 0.75,
+          "note": "Journey begins"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through journey and seeking",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "pearson:destroyer",
@@ -151,25 +338,62 @@
       "stage": "Journey (Soul)",
       "coreDesire": "Metamorphosis, death-rebirth",
       "coreFear": "Annihilation, loss of control",
-      "keywords": ["letting-go", "metamorphosis", "revolution", "endings", "release"],
+      "keywords": [
+        "letting-go",
+        "metamorphosis",
+        "revolution",
+        "endings",
+        "release"
+      ],
       "description": "Allows death of the old self to make way for the new. Facilitates necessary endings.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.80,
-        "light-shadow": 0.60,
+        "order-chaos": 0.6,
+        "creation-destruction": 0.8,
+        "light-shadow": 0.6,
         "active-receptive": 0.35,
-        "individual-collective": 0.40,
+        "individual-collective": 0.4,
         "ascent-descent": 0.65,
         "stasis-transformation": 0.85,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["endings", "metamorphosis", "release"]}
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.85,
+          "aspects": [
+            "endings",
+            "metamorphosis",
+            "release"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "pearson:innocent", "axis": "creation-destruction"},
-        {"type": "CULTURAL_ECHO", "target": "alchemy:nigredo", "fidelity": 0.75, "note": "Dissolution phase"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "pearson:innocent",
+          "axis": "creation-destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:nigredo",
+          "fidelity": 0.75,
+          "note": "Dissolution phase"
+        }
+      ],
+      "domains": [
+        "death"
+      ],
+      "narrativeRoles": [
+        "destroyer"
+      ],
+      "coreFunction": "To embody destroyer energy through endings and metamorphosis",
+      "symbolicCore": "The scythe of necessary endings",
+      "psychologicalMapping": {
+        "jungianStructure": "Thanatos, necessary endings for renewal",
+        "developmentalStage": "Letting go of outworn forms",
+        "integrationTask": "Accepting loss as precondition for growth",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:lover",
@@ -178,24 +402,58 @@
       "stage": "Journey (Soul)",
       "coreDesire": "Intimacy and experience",
       "coreFear": "Loss of love, not being loved",
-      "keywords": ["passion", "commitment", "bliss", "following-heart", "connection"],
+      "keywords": [
+        "passion",
+        "commitment",
+        "bliss",
+        "following-heart",
+        "connection"
+      ],
       "description": "Follows the heart's desire, commits to what is loved. Experience of bliss and passion.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
         "stasis-transformation": 0.55,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.90, "aspects": ["passion", "commitment", "connection"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.9,
+          "aspects": [
+            "passion",
+            "commitment",
+            "connection"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "kwml:lover", "fidelity": 0.85, "note": "Moore's lover"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:lover",
+          "fidelity": 0.85,
+          "note": "Moore's lover"
+        }
+      ],
+      "domains": [
+        "love"
+      ],
+      "narrativeRoles": [
+        "ally",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through passion and commitment",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:creator",
@@ -204,24 +462,53 @@
       "stage": "Journey (Soul)",
       "coreDesire": "To create something of enduring value",
       "coreFear": "Mediocrity, being unoriginal",
-      "keywords": ["creativity", "imagination", "vision", "authenticity", "expression"],
+      "keywords": [
+        "creativity",
+        "imagination",
+        "vision",
+        "authenticity",
+        "expression"
+      ],
       "description": "Creates something new that expresses unique vision. The artist who births new realities.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
         "creation-destruction": 0.15,
-        "light-shadow": 0.30,
-        "active-receptive": 0.30,
+        "light-shadow": 0.3,
+        "active-receptive": 0.3,
         "individual-collective": 0.35,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.30
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.95, "aspects": ["creativity", "vision", "expression"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.95,
+          "aspects": [
+            "creativity",
+            "vision",
+            "expression"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "pearson:destroyer", "axis": "creation-destruction"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "pearson:destroyer",
+          "axis": "creation-destruction"
+        }
+      ],
+      "narrativeRoles": [
+        "creator"
+      ],
+      "coreFunction": "To embody creator energy through creativity and vision",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:ruler",
@@ -230,24 +517,58 @@
       "stage": "Return (Self)",
       "coreDesire": "Control, order",
       "coreFear": "Chaos, being overthrown",
-      "keywords": ["responsibility", "control", "order", "power", "leadership"],
+      "keywords": [
+        "responsibility",
+        "control",
+        "order",
+        "power",
+        "leadership"
+      ],
       "description": "Takes responsibility for life and creates order. The sovereign who rules their own kingdom.",
       "spectralCoordinates": {
         "order-chaos": 0.15,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
-        "active-receptive": 0.30,
-        "individual-collective": 0.60,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.3,
+        "individual-collective": 0.6,
         "ascent-descent": 0.35,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.90, "aspects": ["control", "order", "leadership"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.9,
+          "aspects": [
+            "control",
+            "order",
+            "leadership"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.85, "note": "Moore's king"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:king",
+          "fidelity": 0.85,
+          "note": "Moore's king"
+        }
+      ],
+      "domains": [
+        "order"
+      ],
+      "narrativeRoles": [
+        "ruler",
+        "sovereign"
+      ],
+      "coreFunction": "To embody sovereign energy through control and order",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:magician",
@@ -256,10 +577,16 @@
       "stage": "Return (Self)",
       "coreDesire": "Transformation of reality",
       "coreFear": "Unintended negative consequences",
-      "keywords": ["transformation", "vision", "healing", "power", "manifestation"],
+      "keywords": [
+        "transformation",
+        "vision",
+        "healing",
+        "power",
+        "manifestation"
+      ],
       "description": "Transforms reality through vision and will. Understands and works with fundamental laws.",
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.45,
         "light-shadow": 0.45,
         "active-receptive": 0.35,
@@ -269,11 +596,36 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.95, "aspects": ["transformation", "vision", "healing"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.95,
+          "aspects": [
+            "transformation",
+            "vision",
+            "healing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "kwml:magician", "fidelity": 0.90, "note": "Moore's magician"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:magician",
+          "fidelity": 0.9,
+          "note": "Moore's magician"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter"
+      ],
+      "coreFunction": "To embody magician energy through transformation and vision",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:sage",
@@ -282,24 +634,58 @@
       "stage": "Return (Self)",
       "coreDesire": "To understand the world",
       "coreFear": "Being duped, ignorance",
-      "keywords": ["wisdom", "truth", "knowledge", "discernment", "understanding"],
+      "keywords": [
+        "wisdom",
+        "truth",
+        "knowledge",
+        "discernment",
+        "understanding"
+      ],
       "description": "Seeks truth and understanding. The wise one who sees through illusion to deeper reality.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
-        "active-receptive": 0.60,
-        "individual-collective": 0.50,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.6,
+        "individual-collective": 0.5,
         "ascent-descent": 0.35,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.95, "aspects": ["wisdom", "truth", "understanding"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.95,
+          "aspects": [
+            "wisdom",
+            "truth",
+            "understanding"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "enneagram:type_5", "fidelity": 0.75, "note": "Investigator"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_5",
+          "fidelity": 0.75,
+          "note": "Investigator"
+        }
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through wisdom and truth",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "pearson:jester",
@@ -308,33 +694,86 @@
       "stage": "Return (Self)",
       "coreDesire": "To live in the moment with full enjoyment",
       "coreFear": "Being boring or bored",
-      "keywords": ["joy", "humor", "lightness", "play", "present-moment"],
+      "keywords": [
+        "joy",
+        "humor",
+        "lightness",
+        "play",
+        "present-moment"
+      ],
       "description": "Lives in joy and the present moment. Teaches through humor and play, revealing truth through laughter.",
       "spectralCoordinates": {
-        "order-chaos": 0.70,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
+        "order-chaos": 0.7,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
         "active-receptive": 0.35,
-        "individual-collective": 0.50,
+        "individual-collective": 0.5,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["humor", "play", "disruption"]},
-        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["joy", "lightness"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.8,
+          "aspects": [
+            "humor",
+            "play",
+            "disruption"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.6,
+          "aspects": [
+            "joy",
+            "lightness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.80, "note": "Tarot Fool"}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.8,
+          "note": "Tarot Fool"
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through humor and play",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "stages": {
-      "preparation": ["pearson:innocent", "pearson:orphan", "pearson:warrior", "pearson:caregiver"],
-      "journey": ["pearson:seeker", "pearson:destroyer", "pearson:lover", "pearson:creator"],
-      "return": ["pearson:ruler", "pearson:magician", "pearson:sage", "pearson:jester"]
+      "preparation": [
+        "pearson:innocent",
+        "pearson:orphan",
+        "pearson:warrior",
+        "pearson:caregiver"
+      ],
+      "journey": [
+        "pearson:seeker",
+        "pearson:destroyer",
+        "pearson:lover",
+        "pearson:creator"
+      ],
+      "return": [
+        "pearson:ruler",
+        "pearson:magician",
+        "pearson:sage",
+        "pearson:jester"
+      ]
     },
     "developmentalArc": {
       "ego": "preparation",
@@ -342,7 +781,6 @@
       "self": "return"
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

@@ -8,7 +8,6 @@
   "subdomain": "zodiac",
   "cardinality": 12,
   "structuralNotes": "12-year cycle based on Jupiter's orbit. Each sign associated with Wu Xing element, yin/yang polarity, and fixed/mutable quality.",
-
   "entries": [
     {
       "@id": "chinese:rat",
@@ -18,27 +17,73 @@
       "position": 1,
       "element": "Water",
       "polarity": "Yang",
-      "keywords": ["clever", "quick-witted", "resourceful", "versatile", "ambitious"],
+      "keywords": [
+        "clever",
+        "quick-witted",
+        "resourceful",
+        "versatile",
+        "ambitious"
+      ],
       "personality": "Quick-witted, resourceful, and ambitious. First to arrive at the Jade Emperor's race through cleverness.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.45,
-        "active-receptive": 0.30,
+        "active-receptive": 0.3,
         "individual-collective": 0.35,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.30
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.3
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["cleverness", "cunning", "resourcefulness"]},
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["quick-thinking", "adaptability"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.75,
+          "aspects": [
+            "cleverness",
+            "cunning",
+            "resourcefulness"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "quick-thinking",
+            "adaptability"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:dragon", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:monkey", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:horse", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:dragon",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:monkey",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:horse",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through cleverness and cunning",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:ox",
@@ -48,27 +93,73 @@
       "position": 2,
       "element": "Earth",
       "polarity": "Yin",
-      "keywords": ["diligent", "dependable", "strong", "determined", "patient"],
+      "keywords": [
+        "diligent",
+        "dependable",
+        "strong",
+        "determined",
+        "patient"
+      ],
       "personality": "Diligent, dependable, and strong. Came second despite being strongest, tricked by clever Rat.",
       "spectralCoordinates": {
-        "order-chaos": 0.20,
+        "order-chaos": 0.2,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.55,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.60,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.6,
         "stasis-transformation": 0.25,
-        "voluntary-fated": 0.60
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.80, "aspects": ["diligence", "patience", "stability"]},
-        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["strength", "determination"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.8,
+          "aspects": [
+            "diligence",
+            "patience",
+            "stability"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.6,
+          "aspects": [
+            "strength",
+            "determination"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:snake", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:rooster", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:goat", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:snake",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:rooster",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:goat",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody preserver energy through diligence and patience",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:tiger",
@@ -78,27 +169,73 @@
       "position": 3,
       "element": "Wood",
       "polarity": "Yang",
-      "keywords": ["brave", "competitive", "confident", "unpredictable", "powerful"],
+      "keywords": [
+        "brave",
+        "competitive",
+        "confident",
+        "unpredictable",
+        "powerful"
+      ],
       "personality": "Brave, competitive, and confident. Natural leader with magnetic personality but can be reckless.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.55,
         "light-shadow": 0.35,
         "active-receptive": 0.15,
-        "individual-collective": 0.30,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.60,
+        "individual-collective": 0.3,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["bravery", "power", "competition"]},
-        {"primordial": "primordial:rebel", "weight": 0.60, "aspects": ["unpredictability", "independence"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.85,
+          "aspects": [
+            "bravery",
+            "power",
+            "competition"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.6,
+          "aspects": [
+            "unpredictability",
+            "independence"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:horse", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:dog", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:monkey", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:horse",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:dog",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:monkey",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through bravery and power",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "chinese:rabbit",
@@ -108,27 +245,72 @@
       "position": 4,
       "element": "Wood",
       "polarity": "Yin",
-      "keywords": ["quiet", "elegant", "kind", "responsible", "sensitive"],
+      "keywords": [
+        "quiet",
+        "elegant",
+        "kind",
+        "responsible",
+        "sensitive"
+      ],
       "personality": "Quiet, elegant, and kind. Gentle nature but surprisingly strong survival instincts.",
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.30,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
-        "active-receptive": 0.70,
+        "active-receptive": 0.7,
         "individual-collective": 0.45,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["elegance", "sensitivity"]},
-        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["kindness", "gentleness"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.7,
+          "aspects": [
+            "elegance",
+            "sensitivity"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.55,
+          "aspects": [
+            "kindness",
+            "gentleness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:goat", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:pig", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:rooster", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:goat",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:pig",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:rooster",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "healer",
+        "innocent",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through elegance and sensitivity",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:dragon",
@@ -138,27 +320,74 @@
       "position": 5,
       "element": "Earth",
       "polarity": "Yang",
-      "keywords": ["confident", "intelligent", "enthusiastic", "ambitious", "lucky"],
+      "keywords": [
+        "confident",
+        "intelligent",
+        "enthusiastic",
+        "ambitious",
+        "lucky"
+      ],
       "personality": "Confident, intelligent, and enthusiastic. The only mythical animal; considered most auspicious.",
       "spectralCoordinates": {
         "order-chaos": 0.55,
-        "creation-destruction": 0.40,
+        "creation-destruction": 0.4,
         "light-shadow": 0.25,
-        "active-receptive": 0.20,
+        "active-receptive": 0.2,
         "individual-collective": 0.55,
         "ascent-descent": 0.25,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.40
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["power", "authority", "ambition"]},
-        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["confidence", "achievement"]}
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.8,
+          "aspects": [
+            "power",
+            "authority",
+            "ambition"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.7,
+          "aspects": [
+            "confidence",
+            "achievement"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:rat", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:monkey", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:dog", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:rat",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:monkey",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:dog",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "ruler",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody sovereign energy through power and authority",
+      "symbolicCore": "The crown of rightful authority",
+      "psychologicalMapping": {
+        "jungianStructure": "Self as central organizing principle",
+        "developmentalStage": "Mature leadership and responsibility",
+        "integrationTask": "Ruling with justice while remaining humble",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:snake",
@@ -168,27 +397,72 @@
       "position": 6,
       "element": "Fire",
       "polarity": "Yin",
-      "keywords": ["enigmatic", "intelligent", "wise", "intuitive", "graceful"],
+      "keywords": [
+        "enigmatic",
+        "intelligent",
+        "wise",
+        "intuitive",
+        "graceful"
+      ],
       "personality": "Enigmatic, intelligent, and wise. Deep thinker with powerful intuition.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.45,
         "light-shadow": 0.55,
-        "active-receptive": 0.60,
+        "active-receptive": 0.6,
         "individual-collective": 0.35,
         "ascent-descent": 0.55,
         "stasis-transformation": 0.55,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["wisdom", "intuition"]},
-        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["mystery", "transformation"]}
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.75,
+          "aspects": [
+            "wisdom",
+            "intuition"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.65,
+          "aspects": [
+            "mystery",
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:ox", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:rooster", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:pig", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:ox",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:rooster",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:pig",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "magician",
+        "mentor",
+        "sage"
+      ],
+      "coreFunction": "To embody wise elder energy through wisdom and intuition",
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "psychologicalMapping": {
+        "jungianStructure": "Senex, accumulated wisdom and meaning",
+        "developmentalStage": "Late life integration and legacy",
+        "integrationTask": "Transmitting wisdom while releasing attachment",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:horse",
@@ -198,27 +472,73 @@
       "position": 7,
       "element": "Fire",
       "polarity": "Yang",
-      "keywords": ["animated", "active", "energetic", "independent", "free-spirited"],
+      "keywords": [
+        "animated",
+        "active",
+        "energetic",
+        "independent",
+        "free-spirited"
+      ],
       "personality": "Animated, active, and energetic. Loves freedom and adventure above all.",
       "spectralCoordinates": {
-        "order-chaos": 0.60,
+        "order-chaos": 0.6,
         "creation-destruction": 0.45,
-        "light-shadow": 0.30,
+        "light-shadow": 0.3,
         "active-receptive": 0.15,
         "individual-collective": 0.25,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.65,
-        "voluntary-fated": 0.20
+        "voluntary-fated": 0.2
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["adventure", "energy", "freedom"]},
-        {"primordial": "primordial:rebel", "weight": 0.60, "aspects": ["independence", "restlessness"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.75,
+          "aspects": [
+            "adventure",
+            "energy",
+            "freedom"
+          ]
+        },
+        {
+          "primordial": "primordial:rebel",
+          "weight": 0.6,
+          "aspects": [
+            "independence",
+            "restlessness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:tiger", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:dog", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:rat", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:tiger",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:dog",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:rat",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "hero",
+        "rebel",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through adventure and energy",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:goat",
@@ -228,27 +548,71 @@
       "position": 8,
       "element": "Earth",
       "polarity": "Yin",
-      "keywords": ["calm", "gentle", "sympathetic", "creative", "artistic"],
+      "keywords": [
+        "calm",
+        "gentle",
+        "sympathetic",
+        "creative",
+        "artistic"
+      ],
       "personality": "Calm, gentle, and sympathetic. Highly creative with strong aesthetic sense.",
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.35,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.75,
         "individual-collective": 0.55,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.45,
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["creativity", "artistry"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["gentleness", "sympathy"]}
+        {
+          "primordial": "primordial:creator",
+          "weight": 0.7,
+          "aspects": [
+            "creativity",
+            "artistry"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "gentleness",
+            "sympathy"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:rabbit", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:pig", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:ox", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:rabbit",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:pig",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:ox",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "creator",
+        "healer"
+      ],
+      "coreFunction": "To embody creator energy through creativity and artistry",
+      "symbolicCore": "The seed of infinite possibility",
+      "psychologicalMapping": {
+        "jungianStructure": "Transcendent function, synthesis of opposites",
+        "developmentalStage": "Generative adult creativity",
+        "integrationTask": "Creating sustainably without exhaustion",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:monkey",
@@ -258,28 +622,79 @@
       "position": 9,
       "element": "Metal",
       "polarity": "Yang",
-      "keywords": ["sharp", "smart", "curious", "mischievous", "playful"],
+      "keywords": [
+        "sharp",
+        "smart",
+        "curious",
+        "mischievous",
+        "playful"
+      ],
       "personality": "Sharp, smart, and curious. Quick learner with mischievous sense of humor.",
       "spectralCoordinates": {
         "order-chaos": 0.65,
         "creation-destruction": 0.45,
-        "light-shadow": 0.40,
+        "light-shadow": 0.4,
         "active-receptive": 0.25,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.70,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.7,
         "voluntary-fated": 0.25
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["mischief", "cleverness", "play"]},
-        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["curiosity", "playfulness"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.85,
+          "aspects": [
+            "mischief",
+            "cleverness",
+            "play"
+          ]
+        },
+        {
+          "primordial": "primordial:divine-child",
+          "weight": 0.6,
+          "aspects": [
+            "curiosity",
+            "playfulness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:rat", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:dragon", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:tiger", "note": "Clash"},
-        {"type": "CULTURAL_ECHO", "target": "arch:CN-SUN-WUKONG", "fidelity": 0.80, "note": "Monkey King archetype"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:rat",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:dragon",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:tiger",
+          "note": "Clash"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-SUN-WUKONG",
+          "fidelity": 0.8,
+          "note": "Monkey King archetype"
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through mischief and cleverness",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "chinese:rooster",
@@ -289,27 +704,71 @@
       "position": 10,
       "element": "Metal",
       "polarity": "Yin",
-      "keywords": ["observant", "hardworking", "courageous", "confident", "honest"],
+      "keywords": [
+        "observant",
+        "hardworking",
+        "courageous",
+        "confident",
+        "honest"
+      ],
       "personality": "Observant, hardworking, and courageous. Practical and honest to a fault.",
       "spectralCoordinates": {
         "order-chaos": 0.25,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
-        "active-receptive": 0.30,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.3,
         "individual-collective": 0.45,
-        "ascent-descent": 0.40,
+        "ascent-descent": 0.4,
         "stasis-transformation": 0.45,
-        "voluntary-fated": 0.40
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["courage", "vigilance"]},
-        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["diligence", "honesty"]}
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.65,
+          "aspects": [
+            "courage",
+            "vigilance"
+          ]
+        },
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.6,
+          "aspects": [
+            "diligence",
+            "honesty"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:ox", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:snake", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:rabbit", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:ox",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:snake",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:rabbit",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "warrior"
+      ],
+      "coreFunction": "To embody warrior energy through courage and vigilance",
+      "symbolicCore": "The disciplined blade of focused will",
+      "psychologicalMapping": {
+        "jungianStructure": "Active masculine, disciplined will",
+        "developmentalStage": "Establishing boundaries and competence",
+        "integrationTask": "Channeling aggression into service",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:dog",
@@ -319,27 +778,72 @@
       "position": 11,
       "element": "Earth",
       "polarity": "Yang",
-      "keywords": ["loyal", "honest", "amiable", "kind", "cautious"],
+      "keywords": [
+        "loyal",
+        "honest",
+        "amiable",
+        "kind",
+        "cautious"
+      ],
       "personality": "Loyal, honest, and amiable. Devoted friend with strong sense of justice.",
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
         "light-shadow": 0.35,
         "active-receptive": 0.45,
         "individual-collective": 0.65,
-        "ascent-descent": 0.50,
+        "ascent-descent": 0.5,
         "stasis-transformation": 0.35,
         "voluntary-fated": 0.45
       },
       "instantiates": [
-        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["loyalty", "devotion"]},
-        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["protection", "justice"]}
+        {
+          "primordial": "primordial:preserver",
+          "weight": 0.75,
+          "aspects": [
+            "loyalty",
+            "devotion"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.6,
+          "aspects": [
+            "protection",
+            "justice"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:tiger", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:horse", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:dragon", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:tiger",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:horse",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:dragon",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "caregiver",
+        "sovereign",
+        "warrior"
+      ],
+      "coreFunction": "To embody preserver energy through loyalty and devotion",
+      "symbolicCore": "The shield of continuity",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego maintenance, stability function",
+        "developmentalStage": "Middle adult consolidation",
+        "integrationTask": "Preserving what matters while allowing change",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "chinese:pig",
@@ -349,46 +853,122 @@
       "position": 12,
       "element": "Water",
       "polarity": "Yin",
-      "keywords": ["compassionate", "generous", "diligent", "peaceful", "honest"],
+      "keywords": [
+        "compassionate",
+        "generous",
+        "diligent",
+        "peaceful",
+        "honest"
+      ],
       "personality": "Compassionate, generous, and diligent. Peaceful nature that enjoys life's pleasures.",
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.30,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.3,
         "light-shadow": 0.35,
         "active-receptive": 0.65,
         "individual-collective": 0.55,
         "ascent-descent": 0.55,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.50
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["generosity", "pleasure"]},
-        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["compassion", "peace"]}
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.7,
+          "aspects": [
+            "generosity",
+            "pleasure"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.6,
+          "aspects": [
+            "compassion",
+            "peace"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "chinese:rabbit", "note": "Highly compatible"},
-        {"type": "COMPLEMENT", "target": "chinese:goat", "note": "Highly compatible"},
-        {"type": "ANTAGONIST", "target": "chinese:snake", "note": "Clash"}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:rabbit",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "chinese:goat",
+          "note": "Highly compatible"
+        },
+        {
+          "type": "ANTAGONIST",
+          "target": "chinese:snake",
+          "note": "Clash"
+        }
+      ],
+      "narrativeRoles": [
+        "ally",
+        "healer",
+        "lover"
+      ],
+      "coreFunction": "To embody lover energy through generosity and pleasure",
+      "symbolicCore": "The rose of passionate connection",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima/Animus integration through relationship",
+        "developmentalStage": "Young adult intimacy and connection",
+        "integrationTask": "Balancing desire with genuine connection",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     }
   ],
-
   "systemRelationships": {
     "trinities": {
-      "first": ["chinese:rat", "chinese:dragon", "chinese:monkey"],
-      "second": ["chinese:ox", "chinese:snake", "chinese:rooster"],
-      "third": ["chinese:tiger", "chinese:horse", "chinese:dog"],
-      "fourth": ["chinese:rabbit", "chinese:goat", "chinese:pig"]
+      "first": [
+        "chinese:rat",
+        "chinese:dragon",
+        "chinese:monkey"
+      ],
+      "second": [
+        "chinese:ox",
+        "chinese:snake",
+        "chinese:rooster"
+      ],
+      "third": [
+        "chinese:tiger",
+        "chinese:horse",
+        "chinese:dog"
+      ],
+      "fourth": [
+        "chinese:rabbit",
+        "chinese:goat",
+        "chinese:pig"
+      ]
     },
     "wuxingGroups": {
-      "water": ["chinese:rat", "chinese:pig"],
-      "earth": ["chinese:ox", "chinese:dragon", "chinese:goat", "chinese:dog"],
-      "wood": ["chinese:tiger", "chinese:rabbit"],
-      "fire": ["chinese:snake", "chinese:horse"],
-      "metal": ["chinese:monkey", "chinese:rooster"]
+      "water": [
+        "chinese:rat",
+        "chinese:pig"
+      ],
+      "earth": [
+        "chinese:ox",
+        "chinese:dragon",
+        "chinese:goat",
+        "chinese:dog"
+      ],
+      "wood": [
+        "chinese:tiger",
+        "chinese:rabbit"
+      ],
+      "fire": [
+        "chinese:snake",
+        "chinese:horse"
+      ],
+      "metal": [
+        "chinese:monkey",
+        "chinese:rooster"
+      ]
     }
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "manual-expert",

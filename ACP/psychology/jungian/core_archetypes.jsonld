@@ -8,67 +8,155 @@
   "subdomain": "jungian",
   "cardinality": 12,
   "source": "Jung's collected works, particularly Archetypes and the Collective Unconscious",
-
   "entries": [
     {
       "@id": "jungian:self",
       "@type": "Archetype",
       "name": "The Self",
       "description": "The totality of the psyche, the organizing center",
-      "keywords": ["wholeness", "integration", "center", "totality", "individuation"],
+      "keywords": [
+        "wholeness",
+        "integration",
+        "center",
+        "totality",
+        "individuation"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.50,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.50
+        "order-chaos": 0.5,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.5
       },
       "instantiates": [
-        {"primordial": "primordial:self", "weight": 1.0, "aspects": ["wholeness", "totality"]}
+        {
+          "primordial": "primordial:self",
+          "weight": 1.0,
+          "aspects": [
+            "wholeness",
+            "totality"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINS", "target": "jungian:shadow", "note": "Shadow is part of the Self"},
-        {"type": "CONTAINS", "target": "jungian:anima", "note": "Anima/Animus are aspects of Self"},
-        {"type": "CONTAINS", "target": "jungian:animus"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "kabbalah:tiphareth", "fidelity": 0.8}
-      ]
+        {
+          "type": "CONTAINS",
+          "target": "jungian:shadow",
+          "note": "Shadow is part of the Self"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "jungian:anima",
+          "note": "Anima/Animus are aspects of Self"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "jungian:animus"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:world",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:tiphareth",
+          "fidelity": 0.8
+        }
+      ],
+      "narrativeRoles": [
+        "seeker"
+      ],
+      "coreFunction": "To embody self energy through wholeness and totality",
+      "symbolicCore": "The mandala of wholeness",
+      "psychologicalMapping": {
+        "jungianStructure": "Central archetype of wholeness and integration",
+        "developmentalStage": "Individuation goal, second half of life",
+        "integrationTask": "Achieving conscious relationship with unconscious",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "jungian:shadow",
       "@type": "Archetype",
       "name": "The Shadow",
       "description": "The repressed, denied aspects of the personality",
-      "keywords": ["repression", "darkness", "hidden", "denied", "unconscious"],
+      "keywords": [
+        "repression",
+        "darkness",
+        "hidden",
+        "denied",
+        "unconscious"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.60,
-        "creation-destruction": 0.60,
-        "light-shadow": 0.90,
-        "active-receptive": 0.50,
-        "individual-collective": 0.50,
-        "ascent-descent": 0.70,
-        "stasis-transformation": 0.50,
-        "voluntary-fated": 0.70
+        "order-chaos": 0.6,
+        "creation-destruction": 0.6,
+        "light-shadow": 0.9,
+        "active-receptive": 0.5,
+        "individual-collective": 0.5,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.5,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:shadow", "weight": 1.0, "aspects": ["repression", "hidden"]}
+        {
+          "primordial": "primordial:shadow",
+          "weight": 1.0,
+          "aspects": [
+            "repression",
+            "hidden"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CONTAINED_BY", "target": "jungian:self"},
-        {"type": "POLAR_OPPOSITE", "target": "jungian:persona", "axis": "hidden-shown"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:moon", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.75}
-      ]
+        {
+          "type": "CONTAINED_BY",
+          "target": "jungian:self"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "jungian:persona",
+          "axis": "hidden-shown"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:moon",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:devil",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "antagonist",
+        "shadow"
+      ],
+      "coreFunction": "To embody shadow energy through repression and hidden",
+      "symbolicCore": "The mirror that reveals what we hide",
+      "psychologicalMapping": {
+        "jungianStructure": "Repressed unconscious, rejected aspects of self",
+        "developmentalStage": "Mid-life confrontation with denied potential",
+        "integrationTask": "Acknowledging and integrating rejected qualities",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "jungian:anima",
       "@type": "Archetype",
       "name": "The Anima",
       "description": "The feminine aspect in men's unconscious",
-      "keywords": ["feminine", "soul", "receptivity", "relatedness", "eros"],
+      "keywords": [
+        "feminine",
+        "soul",
+        "receptivity",
+        "relatedness",
+        "eros"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.48,
         "creation-destruction": 0.35,
@@ -80,21 +168,58 @@
         "voluntary-fated": 0.55
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 0.7, "aspects": ["feminine", "nurturing"]},
-        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["soul", "relatedness"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 0.7,
+          "aspects": [
+            "feminine",
+            "nurturing"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.65,
+          "aspects": [
+            "soul",
+            "relatedness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "jungian:animus", "note": "Paired contrasexual archetypes"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:high_priestess", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.75}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "jungian:animus",
+          "note": "Paired contrasexual archetypes"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:high_priestess",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.75
+        }
+      ],
+      "narrativeRoles": [
+        "innocent"
+      ],
+      "coreFunction": "To embody great_mother energy through feminine and nurturing",
+      "symbolicCore": "The essential pattern of The Anima"
     },
     {
       "@id": "jungian:animus",
       "@type": "Archetype",
       "name": "The Animus",
       "description": "The masculine aspect in women's unconscious",
-      "keywords": ["masculine", "spirit", "logos", "assertion", "meaning"],
+      "keywords": [
+        "masculine",
+        "spirit",
+        "logos",
+        "assertion",
+        "meaning"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.38,
         "creation-destruction": 0.42,
@@ -106,21 +231,58 @@
         "voluntary-fated": 0.42
       },
       "instantiates": [
-        {"primordial": "primordial:great_father", "weight": 0.7, "aspects": ["masculine", "spirit"]},
-        {"primordial": "primordial:hero", "weight": 0.6, "aspects": ["assertion", "logos"]}
+        {
+          "primordial": "primordial:great_father",
+          "weight": 0.7,
+          "aspects": [
+            "masculine",
+            "spirit"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.6,
+          "aspects": [
+            "assertion",
+            "logos"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "COMPLEMENT", "target": "jungian:anima", "note": "Paired contrasexual archetypes"},
-        {"type": "CULTURAL_ECHO", "target": "tarot:emperor", "fidelity": 0.75},
-        {"type": "CULTURAL_ECHO", "target": "tarot:magician", "fidelity": 0.7}
-      ]
+        {
+          "type": "COMPLEMENT",
+          "target": "jungian:anima",
+          "note": "Paired contrasexual archetypes"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:magician",
+          "fidelity": 0.7
+        }
+      ],
+      "narrativeRoles": [
+        "hero"
+      ],
+      "coreFunction": "To embody great_father energy through masculine and spirit",
+      "symbolicCore": "The essential pattern of The Animus"
     },
     {
       "@id": "jungian:persona",
       "@type": "Archetype",
       "name": "The Persona",
       "description": "The social mask, the face shown to the world",
-      "keywords": ["mask", "social", "adaptation", "role", "appearance"],
+      "keywords": [
+        "mask",
+        "social",
+        "adaptation",
+        "role",
+        "appearance"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.28,
         "creation-destruction": 0.38,
@@ -132,190 +294,447 @@
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["adaptation", "role"]}
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.55,
+          "aspects": [
+            "adaptation",
+            "role"
+          ]
+        }
       ],
       "note": "Persona is a functional complex rather than a primordial archetype",
       "relationships": [
-        {"type": "POLAR_OPPOSITE", "target": "jungian:shadow", "axis": "shown-hidden"},
-        {"type": "TENSION", "target": "jungian:self", "note": "Persona can eclipse Self"}
-      ]
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "jungian:shadow",
+          "axis": "shown-hidden"
+        },
+        {
+          "type": "TENSION",
+          "target": "jungian:self",
+          "note": "Persona can eclipse Self"
+        }
+      ],
+      "narrativeRoles": [
+        "magician"
+      ],
+      "coreFunction": "To embody magician energy through adaptation and role",
+      "symbolicCore": "The wand of conscious transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Transformative function, conscious will",
+        "developmentalStage": "Mastery and skill development",
+        "integrationTask": "Using power responsibly and transparently",
+        "cognitiveBias": "Projection of shadow elements"
+      }
     },
     {
       "@id": "jungian:wise_old_man",
       "@type": "Archetype",
       "name": "The Wise Old Man",
       "description": "The archetype of meaning and wisdom",
-      "keywords": ["wisdom", "meaning", "guidance", "knowledge", "spirit"],
+      "keywords": [
+        "wisdom",
+        "meaning",
+        "guidance",
+        "knowledge",
+        "spirit"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.30,
-        "creation-destruction": 0.40,
-        "light-shadow": 0.30,
-        "active-receptive": 0.60,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.30,
-        "voluntary-fated": 0.60
+        "order-chaos": 0.3,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.3,
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:wise_elder", "weight": 1.0, "aspects": ["wisdom", "meaning", "guidance"]}
+        {
+          "primordial": "primordial:wise_elder",
+          "weight": 1.0,
+          "aspects": [
+            "wisdom",
+            "meaning",
+            "guidance"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:hermit", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.85}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hermit",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:mentor",
+          "fidelity": 0.85
+        }
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "coreFunction": "To embody wise_elder energy through wisdom and meaning",
+      "symbolicCore": "The wisdom that transforms through The Wise Old Man's essence"
     },
     {
       "@id": "jungian:great_mother",
       "@type": "Archetype",
       "name": "The Great Mother",
       "description": "The nurturing and devouring feminine principle",
-      "keywords": ["nurturing", "devouring", "fertility", "nature", "containment"],
+      "keywords": [
+        "nurturing",
+        "devouring",
+        "fertility",
+        "nature",
+        "containment"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.35,
-        "creation-destruction": 0.20,
-        "light-shadow": 0.40,
-        "active-receptive": 0.70,
-        "individual-collective": 0.70,
-        "ascent-descent": 0.70,
-        "stasis-transformation": 0.40,
-        "voluntary-fated": 0.60
+        "creation-destruction": 0.2,
+        "light-shadow": 0.4,
+        "active-receptive": 0.7,
+        "individual-collective": 0.7,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.4,
+        "voluntary-fated": 0.6
       },
       "instantiates": [
-        {"primordial": "primordial:great_mother", "weight": 1.0, "aspects": ["nurturing", "devouring", "fertility"]}
+        {
+          "primordial": "primordial:great_mother",
+          "weight": 1.0,
+          "aspects": [
+            "nurturing",
+            "devouring",
+            "fertility"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:empress", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "iching:kun", "fidelity": 0.85}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:kun",
+          "fidelity": 0.85
+        }
+      ],
+      "domains": [
+        "motherhood"
+      ],
+      "coreFunction": "To embody great_mother energy through nurturing and devouring",
+      "symbolicCore": "The motherhood that transforms through The Great Mother's essence"
     },
     {
       "@id": "jungian:hero",
       "@type": "Archetype",
       "name": "The Hero",
       "description": "The ego's journey toward individuation",
-      "keywords": ["courage", "quest", "transformation", "ego", "victory"],
+      "keywords": [
+        "courage",
+        "quest",
+        "transformation",
+        "ego",
+        "victory"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.40,
-        "creation-destruction": 0.40,
+        "order-chaos": 0.4,
+        "creation-destruction": 0.4,
         "light-shadow": 0.25,
         "active-receptive": 0.15,
-        "individual-collective": 0.20,
-        "ascent-descent": 0.40,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.40
+        "individual-collective": 0.2,
+        "ascent-descent": 0.4,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.4
       },
       "instantiates": [
-        {"primordial": "primordial:hero", "weight": 1.0, "aspects": ["courage", "quest", "transformation"]}
+        {
+          "primordial": "primordial:hero",
+          "weight": 1.0,
+          "aspects": [
+            "courage",
+            "quest",
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:chariot", "fidelity": 0.85},
-        {"type": "CULTURAL_ECHO", "target": "vogler:hero", "fidelity": 0.95}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:chariot",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:hero",
+          "fidelity": 0.95
+        }
+      ],
+      "domains": [
+        "travel"
+      ],
+      "narrativeRoles": [
+        "hero",
+        "warrior"
+      ],
+      "coreFunction": "To embody hero energy through courage and quest",
+      "symbolicCore": "The sword of self-determination",
+      "psychologicalMapping": {
+        "jungianStructure": "Ego ideal, active self-assertion",
+        "developmentalStage": "Adolescent individuation, proving oneself",
+        "integrationTask": "Balancing courage with humility and wisdom",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "jungian:child",
       "@type": "Archetype",
       "name": "The Child",
       "description": "The archetype of new beginnings and wholeness",
-      "keywords": ["innocence", "potential", "new beginning", "wholeness", "future"],
+      "keywords": [
+        "innocence",
+        "potential",
+        "new beginning",
+        "wholeness",
+        "future"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.15,
-        "light-shadow": 0.20,
-        "active-receptive": 0.50,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.70
+        "light-shadow": 0.2,
+        "active-receptive": 0.5,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:divine_child", "weight": 1.0, "aspects": ["innocence", "potential", "wholeness"]}
+        {
+          "primordial": "primordial:divine_child",
+          "weight": 1.0,
+          "aspects": [
+            "innocence",
+            "potential",
+            "wholeness"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.8},
-        {"type": "CULTURAL_ECHO", "target": "tarot:sun", "fidelity": 0.75}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:fool",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.75
+        }
+      ],
+      "coreFunction": "To embody divine_child energy through innocence and potential",
+      "symbolicCore": "The essential pattern of The Child"
     },
     {
       "@id": "jungian:trickster",
       "@type": "Archetype",
       "name": "The Trickster",
       "description": "The disruptor of order, the shadow's messenger",
-      "keywords": ["disruption", "chaos", "boundary-crossing", "humor", "transformation"],
+      "keywords": [
+        "disruption",
+        "chaos",
+        "boundary-crossing",
+        "humor",
+        "transformation"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.75,
-        "creation-destruction": 0.50,
-        "light-shadow": 0.50,
-        "active-receptive": 0.30,
-        "individual-collective": 0.40,
-        "ascent-descent": 0.50,
-        "stasis-transformation": 0.80,
+        "creation-destruction": 0.5,
+        "light-shadow": 0.5,
+        "active-receptive": 0.3,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.5,
+        "stasis-transformation": 0.8,
         "voluntary-fated": 0.15
       },
       "instantiates": [
-        {"primordial": "primordial:trickster", "weight": 1.0, "aspects": ["disruption", "boundary-crossing"]}
+        {
+          "primordial": "primordial:trickster",
+          "weight": 1.0,
+          "aspects": [
+            "disruption",
+            "boundary-crossing"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.9},
-        {"type": "CULTURAL_ECHO", "target": "vogler:trickster", "fidelity": 0.95}
-      ]
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:trickster",
+          "fidelity": 0.95
+        }
+      ],
+      "domains": [
+        "communication",
+        "order"
+      ],
+      "narrativeRoles": [
+        "shapeshifter",
+        "trickster"
+      ],
+      "coreFunction": "To embody trickster energy through disruption and boundary-crossing",
+      "symbolicCore": "The mask that liberates through deception",
+      "psychologicalMapping": {
+        "jungianStructure": "Shadow aspect that disrupts ego rigidity",
+        "developmentalStage": "Any transition point requiring flexibility",
+        "integrationTask": "Accepting uncertainty and embracing creative chaos",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "jungian:maiden",
       "@type": "Archetype",
       "name": "The Maiden (Kore)",
       "description": "The feminine potential before commitment",
-      "keywords": ["potential", "youth", "purity", "spring", "possibility"],
+      "keywords": [
+        "potential",
+        "youth",
+        "purity",
+        "spring",
+        "possibility"
+      ],
       "spectralCoordinates": {
         "order-chaos": 0.45,
         "creation-destruction": 0.25,
         "light-shadow": 0.25,
-        "active-receptive": 0.50,
-        "individual-collective": 0.30,
+        "active-receptive": 0.5,
+        "individual-collective": 0.3,
         "ascent-descent": 0.45,
-        "stasis-transformation": 0.50,
+        "stasis-transformation": 0.5,
         "voluntary-fated": 0.35
       },
       "instantiates": [
-        {"primordial": "primordial:maiden", "weight": 1.0, "aspects": ["potential", "purity", "youth"]}
+        {
+          "primordial": "primordial:maiden",
+          "weight": 1.0,
+          "aspects": [
+            "potential",
+            "purity",
+            "youth"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "EVOLUTION", "target": "jungian:great_mother", "note": "Maiden transforms to Mother"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.9}
-      ]
+        {
+          "type": "EVOLUTION",
+          "target": "jungian:great_mother",
+          "note": "Maiden transforms to Mother"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.9
+        }
+      ],
+      "narrativeRoles": [
+        "innocent",
+        "seeker"
+      ],
+      "coreFunction": "To embody maiden energy through potential and purity",
+      "symbolicCore": "The unopened flower of potential",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in puella form, innocence and potential",
+        "developmentalStage": "Pre-adult openness to experience",
+        "integrationTask": "Maintaining wonder while gaining experience",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     },
     {
       "@id": "jungian:crone",
       "@type": "Archetype",
       "name": "The Crone",
       "description": "The wisdom of endings and transitions",
-      "keywords": ["wisdom", "endings", "transition", "death", "transformation"],
+      "keywords": [
+        "wisdom",
+        "endings",
+        "transition",
+        "death",
+        "transformation"
+      ],
       "spectralCoordinates": {
-        "order-chaos": 0.50,
+        "order-chaos": 0.5,
         "creation-destruction": 0.65,
         "light-shadow": 0.65,
-        "active-receptive": 0.60,
-        "individual-collective": 0.60,
-        "ascent-descent": 0.70,
-        "stasis-transformation": 0.60,
-        "voluntary-fated": 0.70
+        "active-receptive": 0.6,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.7,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.7
       },
       "instantiates": [
-        {"primordial": "primordial:crone", "weight": 1.0, "aspects": ["wisdom", "endings", "transformation"]}
+        {
+          "primordial": "primordial:crone",
+          "weight": 1.0,
+          "aspects": [
+            "wisdom",
+            "endings",
+            "transformation"
+          ]
+        }
       ],
       "relationships": [
-        {"type": "DEVOLUTION", "target": "jungian:great_mother", "note": "Mother transforms to Crone"},
-        {"type": "CULTURAL_ECHO", "target": "arch:GR-HECATE", "fidelity": 0.85}
-      ]
+        {
+          "type": "DEVOLUTION",
+          "target": "jungian:great_mother",
+          "note": "Mother transforms to Crone"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-HECATE",
+          "fidelity": 0.85
+        }
+      ],
+      "domains": [
+        "wisdom"
+      ],
+      "narrativeRoles": [
+        "destroyer",
+        "sage"
+      ],
+      "coreFunction": "To embody crone energy through wisdom and endings",
+      "symbolicCore": "The cauldron of transformation",
+      "psychologicalMapping": {
+        "jungianStructure": "Anima in senex form, wisdom through experience",
+        "developmentalStage": "Post-generative acceptance and insight",
+        "integrationTask": "Sharing hard-won wisdom without bitterness",
+        "cognitiveBias": "Confirmation bias toward archetypal pattern"
+      }
     }
   ],
-
   "systemRelationships": {
-    "tripleGoddess": ["jungian:maiden", "jungian:great_mother", "jungian:crone"],
-    "contrasexualPair": ["jungian:anima", "jungian:animus"],
-    "lightShadowDyad": ["jungian:persona", "jungian:shadow"]
+    "tripleGoddess": [
+      "jungian:maiden",
+      "jungian:great_mother",
+      "jungian:crone"
+    ],
+    "contrasexualPair": [
+      "jungian:anima",
+      "jungian:animus"
+    ],
+    "lightShadowDyad": [
+      "jungian:persona",
+      "jungian:shadow"
+    ]
   },
-
   "validationStatus": {
     "coordinatesAssigned": true,
     "derivationMethod": "algorithmic-v1",
