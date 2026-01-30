@@ -1,25 +1,37 @@
 // Mythic System Explorer — Atlas View
-// SVG map with node selection, hover tooltips, drawer integration, and workshop support
+// Three-pane layout: Node Info | Canvas | Traversals
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
 
   var canvas = window.MiroGlyph.canvas;
   var enrichment = window.MiroGlyph.enrichment;
-  var nodeDrawer = window.MiroGlyph.nodeDrawer;
   var nodes = window.MiroGlyph.nodes;
-  var nav = window.MiroGlyph.nav;
   var paths = window.MiroGlyph.paths;
+  var storage = window.MiroGlyph.storage;
   var tabRouter = window.MiroGlyph.tabRouter;
 
   var tooltip = null;
+  var currentNodeId = null;
   var initialized = false;
+
+  // =========================================================================
+  // Initialization
+  // =========================================================================
 
   function init() {
     canvas.init();
     enrichment.load();
     setupCanvasEvents();
+    setupTraversalControls();
     createTooltip();
+
+    // Initialize paths with stored data
+    var storedData = storage.load();
+    paths.init(storedData, function() {
+      saveToStorage();
+    });
+
     initialized = true;
   }
 
@@ -28,7 +40,6 @@
     if (paths && paths.redraw) {
       paths.redraw();
     }
-    showPickerIfWorkshopOpen();
   }
 
   function deactivate() {
@@ -39,22 +50,18 @@
     if (!params) return;
 
     var subview = params.subview;
-    if (!subview) {
-      // No sub-route: close drawer if open
-      if (nodeDrawer && nodeDrawer.isOpen()) {
-        nodeDrawer.close();
+    if (subview) {
+      // Check if the subview is a node ID
+      var nodeData = nodes.getNode(subview);
+      if (nodeData) {
+        updateNodePanel(subview);
       }
-      return;
-    }
-
-    // Check if the subview is a node ID (like D3, R1, E6, or the Nontion symbol)
-    var nodeData = nodes.getNode(subview);
-    if (nodeData) {
-      openNodeDrawer(subview);
     }
   }
 
-  // --- Canvas Events ---
+  // =========================================================================
+  // Canvas Events
+  // =========================================================================
 
   function setupCanvasEvents() {
     var svgCanvas = document.getElementById('canvas');
@@ -64,17 +71,11 @@
       var nodeId = canvas.getNodeFromEvent(e);
       if (!nodeId) return;
 
-      // If workshop is open, add node to workshop sequence
-      if (isWorkshopOpen()) {
-        if (paths) {
-          paths.handleNodeClick(nodeId);
-        }
-        return;
+      // Always: add to sequence AND show in node panel
+      if (paths) {
+        paths.handleNodeClick(nodeId);
       }
-
-      // Otherwise open the node drawer
-      openNodeDrawer(nodeId);
-      nav.toNode(nodeId);
+      updateNodePanel(nodeId);
     });
 
     svgCanvas.addEventListener('mouseover', function(e) {
@@ -101,18 +102,233 @@
     });
   }
 
-  // --- Node Drawer Integration ---
+  // =========================================================================
+  // Traversal Controls (Right Panel)
+  // =========================================================================
 
-  function openNodeDrawer(nodeId) {
-    if (canvas.selectNode) {
-      canvas.selectNode(nodeId);
+  function setupTraversalControls() {
+    // Undo button
+    var undoBtn = document.getElementById('btn-undo');
+    if (undoBtn) {
+      undoBtn.addEventListener('click', function() {
+        if (paths) paths.undo();
+      });
     }
-    if (nodeDrawer) {
-      nodeDrawer.open(nodeId);
+
+    // Clear button
+    var clearBtn = document.getElementById('btn-clear');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        if (paths) paths.clearSequence();
+      });
+    }
+
+    // Save button
+    var saveBtn = document.getElementById('btn-save');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', function() {
+        if (paths) paths.showSaveModal();
+      });
+    }
+
+    // Add group button
+    var addGroupBtn = document.getElementById('btn-add-group');
+    if (addGroupBtn) {
+      addGroupBtn.addEventListener('click', function() {
+        if (paths) paths.showGroupModal();
+      });
+    }
+
+    // Save path form
+    var saveForm = document.getElementById('form-save-path');
+    if (saveForm) {
+      saveForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('path-name').value;
+        var color = document.getElementById('path-color').value;
+        var desc = document.getElementById('path-description').value;
+        var group = document.getElementById('path-group').value;
+
+        if (paths) {
+          paths.saveTraversal(name, color, desc, group);
+          paths.hideSaveModal();
+          saveToStorage();
+        }
+      });
+    }
+
+    var cancelSaveBtn = document.getElementById('btn-cancel-save');
+    if (cancelSaveBtn) {
+      cancelSaveBtn.addEventListener('click', function() {
+        if (paths) paths.hideSaveModal();
+      });
+    }
+
+    // Group form
+    var groupForm = document.getElementById('form-group');
+    if (groupForm) {
+      groupForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('group-name').value;
+        if (paths) {
+          paths.saveGroup(name);
+          paths.hideGroupModal();
+          saveToStorage();
+        }
+      });
+    }
+
+    var cancelGroupBtn = document.getElementById('btn-cancel-group');
+    if (cancelGroupBtn) {
+      cancelGroupBtn.addEventListener('click', function() {
+        if (paths) paths.hideGroupModal();
+      });
+    }
+
+    // Color preset clicks
+    var colorPresets = document.getElementById('color-presets');
+    if (colorPresets) {
+      colorPresets.addEventListener('click', function(e) {
+        var btn = e.target.closest('.color-preset');
+        if (btn && btn.dataset.color) {
+          var colorInput = document.getElementById('path-color');
+          if (colorInput) colorInput.value = btn.dataset.color;
+
+          // Update selected state
+          colorPresets.querySelectorAll('.color-preset').forEach(function(b) {
+            b.classList.toggle('selected', b === btn);
+          });
+        }
+      });
     }
   }
 
-  // --- Tooltip ---
+  function saveToStorage() {
+    if (!paths) return;
+    storage.save({
+      paths: paths.getTraversals(),
+      groups: paths.getGroups()
+    });
+  }
+
+  // =========================================================================
+  // Node Panel (Left Panel)
+  // =========================================================================
+
+  function updateNodePanel(nodeId) {
+    currentNodeId = nodeId;
+    var panelBody = document.getElementById('node-panel-body');
+    if (!panelBody) return;
+
+    var node = nodes.getNode(nodeId);
+    if (!node) {
+      panelBody.innerHTML = '<div class="node-panel-empty"><p>Node not found</p></div>';
+      return;
+    }
+
+    var isNontion = nodeId === '\u2205';
+    var arcColor = isNontion ? 'var(--color-nontion)' :
+      (node.arc ? 'var(--color-' + node.arc.primary.toLowerCase() + ')' : 'var(--color-text)');
+
+    var html = '<div class="node-info">';
+
+    // Header
+    html += '<div class="node-info-header">';
+    html += '<div class="node-info-id" style="color:' + arcColor + '">' + escapeHtml(nodeId) + '</div>';
+
+    if (isNontion) {
+      html += '<div class="node-info-title">' + escapeHtml(node.displayName || 'Nontion') + '</div>';
+      html += '<div class="node-info-role">' + escapeHtml(node.role || '') + '</div>';
+    } else {
+      html += '<div class="node-info-title">' + escapeHtml(node.title || '') + '</div>';
+      html += '<div class="node-info-role">' + escapeHtml(node.role || '') + '</div>';
+
+      // Tones
+      if (node.tone && node.tone.length > 0) {
+        html += '<div class="node-info-tones">';
+        for (var i = 0; i < node.tone.length; i++) {
+          html += '<span class="node-tone-tag">' + escapeHtml(node.tone[i]) + '</span>';
+        }
+        html += '</div>';
+      }
+    }
+    html += '</div>';
+
+    // Arc & Condition Info
+    if (!isNontion && node.arc && node.condition) {
+      html += '<div class="node-info-section">';
+      html += '<div class="node-info-section-title">Arc</div>';
+      html += '<div style="color:' + arcColor + ';font-weight:600">';
+      html += escapeHtml(node.arc.primary) + ' <span style="color:var(--color-text-muted);font-weight:400">(' + escapeHtml(node.arc.secondary) + ')</span>';
+      html += '</div>';
+      html += '</div>';
+
+      html += '<div class="node-info-section">';
+      html += '<div class="node-info-section-title">Condition</div>';
+      html += '<div>' + escapeHtml(node.condition.primary) + ' <span style="color:var(--color-text-muted)">(' + escapeHtml(node.condition.secondary) + ')</span></div>';
+      html += '</div>';
+    }
+
+    // Polarity (opposite condition in same arc)
+    if (!isNontion && node.condition) {
+      var polarityMap = { 1: 6, 2: 5, 3: 4, 4: 3, 5: 2, 6: 1 };
+      var polarCondition = polarityMap[node.condition.code];
+      if (polarCondition) {
+        var polarNodeId = node.arc.code + polarCondition;
+        var polarNode = nodes.getNode(polarNodeId);
+        if (polarNode) {
+          html += '<div class="node-info-section">';
+          html += '<div class="node-info-section-title">Polarity</div>';
+          html += '<div class="node-polarity">';
+          html += '<div class="node-polarity-card" data-node-id="' + polarNodeId + '">';
+          html += '<div class="node-polarity-id" style="color:' + arcColor + '">' + polarNodeId + '</div>';
+          html += '<div class="node-polarity-title">' + escapeHtml(polarNode.title || '') + '</div>';
+          html += '</div>';
+          html += '</div>';
+          html += '</div>';
+        }
+      }
+    }
+
+    // Condition Siblings (same condition, different arcs)
+    if (!isNontion && node.condition) {
+      var arcs = ['D', 'R', 'E'];
+      var condition = node.condition.code;
+
+      html += '<div class="node-info-section">';
+      html += '<div class="node-info-section-title">Condition ' + condition + ' Across Arcs</div>';
+      html += '<div class="node-siblings">';
+      for (var a = 0; a < arcs.length; a++) {
+        var sibId = arcs[a] + condition;
+        var sibColor = 'var(--color-' + (arcs[a] === 'D' ? 'descent' : arcs[a] === 'R' ? 'resonance' : 'emergence') + ')';
+        var isCurrent = sibId === nodeId;
+        html += '<div class="node-sibling-chip' + (isCurrent ? ' current' : '') + '" ';
+        html += 'style="' + (isCurrent ? '' : 'border:1px solid ' + sibColor + ';color:' + sibColor) + '" ';
+        html += 'data-node-id="' + sibId + '">' + sibId + '</div>';
+      }
+      html += '</div>';
+      html += '</div>';
+    }
+
+    html += '</div>';
+    panelBody.innerHTML = html;
+
+    // Wire click events for navigation
+    panelBody.querySelectorAll('[data-node-id]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var targetId = el.getAttribute('data-node-id');
+        if (targetId && targetId !== currentNodeId) {
+          // Add to sequence and update panel
+          if (paths) paths.handleNodeClick(targetId);
+          updateNodePanel(targetId);
+        }
+      });
+    });
+  }
+
+  // =========================================================================
+  // Tooltip
+  // =========================================================================
 
   function createTooltip() {
     if (tooltip) return;
@@ -173,22 +389,9 @@
     }
   }
 
-  // --- Workshop Integration ---
-
-  function isWorkshopOpen() {
-    var panel = document.getElementById('workshop-panel');
-    return panel && !panel.classList.contains('workshop-closed');
-  }
-
-  function showPickerIfWorkshopOpen() {
-    // When atlas is active, the canvas serves as the picker, so hide the node picker grid
-    var picker = document.getElementById('workshop-node-picker');
-    if (picker && isWorkshopOpen()) {
-      picker.hidden = true;
-    }
-  }
-
-  // --- Utility ---
+  // =========================================================================
+  // Utility
+  // =========================================================================
 
   function escapeHtml(str) {
     if (!str) return '';
@@ -198,6 +401,10 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
+
+  // =========================================================================
+  // Register View
+  // =========================================================================
 
   tabRouter.register('atlas', {
     init: init,

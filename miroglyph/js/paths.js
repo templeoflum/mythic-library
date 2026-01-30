@@ -115,7 +115,7 @@
 
   // Update sequence display
   function updateSequenceDisplay() {
-    const container = document.getElementById('workshop-sequence');
+    const container = document.getElementById('current-sequence');
     if (!container) return;
 
     if (currentSequence.length === 0) {
@@ -134,9 +134,9 @@
 
   // Update button states
   function updateButtons() {
-    const undoBtn = document.getElementById('ws-btn-undo');
-    const clearBtn = document.getElementById('ws-btn-clear');
-    const saveBtn = document.getElementById('ws-btn-save');
+    const undoBtn = document.getElementById('btn-undo');
+    const clearBtn = document.getElementById('btn-clear');
+    const saveBtn = document.getElementById('btn-save');
 
     if (undoBtn) undoBtn.disabled = currentSequence.length === 0;
     if (clearBtn) clearBtn.disabled = currentSequence.length === 0;
@@ -403,7 +403,7 @@
   }
 
   function renderGroups() {
-    const container = document.getElementById('ws-groups-list');
+    const container = document.getElementById('groups-list');
     if (!container) return;
 
     if (groups.length === 0) {
@@ -480,7 +480,7 @@
   }
 
   function renderUngrouped() {
-    const container = document.getElementById('ws-paths-list');
+    const container = document.getElementById('paths-list');
     if (!container) return;
 
     const ungrouped = traversals.filter(t => !t.group_id);
@@ -606,7 +606,7 @@
   }
 
   function updateStats() {
-    const el = document.getElementById('ws-stat-paths');
+    const el = document.getElementById('stat-paths');
     if (el) el.textContent = traversals.filter(t => !t.group_id).length;
   }
 

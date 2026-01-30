@@ -1,10 +1,9 @@
 // Mythic System Explorer — Main Application Controller
-// Boot sequence: loadAll → globalSearch → workshop → tabRouter
+// Boot sequence: loadAll → globalSearch → tabRouter
 
 (function() {
   var dataLoader = window.MiroGlyph.dataLoader;
   var globalSearch = window.MiroGlyph.globalSearch;
-  var workshop = window.MiroGlyph.workshop;
   var tabRouter = window.MiroGlyph.tabRouter;
   var storage = window.MiroGlyph.storage;
   var paths = window.MiroGlyph.paths;
@@ -118,15 +117,10 @@
         globalSearch.init();
       }
 
-      // 3. Initialize workshop (depends on paths + storage)
-      if (workshop) {
-        workshop.init();
-      }
-
-      // 4. Set up import/export in gear menu
+      // 3. Set up import/export in gear menu
       setupImportExport();
 
-      // 5. Initialize tab router (activates the default view based on URL hash)
+      // 4. Initialize tab router (activates the default view based on URL hash)
       tabRouter.init();
 
       console.log('Mythic System Explorer initialized');
