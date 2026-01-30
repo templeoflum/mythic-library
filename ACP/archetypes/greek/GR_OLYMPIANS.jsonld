@@ -51,7 +51,11 @@
           "system": "Hindu",
           "fidelity": 0.6,
           "aspect": "thunderer aspect"
-        }
+        },
+        "Jupiter (Roman)",
+        "Jove",
+        "Zeus Pater",
+        "Dias (Modern Greek)"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.2,
@@ -94,13 +98,13 @@
       "symbolicCore": "The thunderbolt that maintains order through power",
       "domains": [
         "fatherhood",
-        "hospitality",
+        "hearth",
         "justice",
-        "kingship",
+        "law",
         "oaths",
         "order",
         "sky",
-        "thunder"
+        "sovereignty"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Father complex, collective superego",
@@ -186,6 +190,99 @@
           "target": "arch:IN-INDRA",
           "fidelity": 0.6,
           "notes": "Shared Indo-European thunder god origins"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-DAGDA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-NUADA",
+          "fidelity": 0.4
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:GR-POSEIDON"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-VISHNU",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:illapa",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ANU",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ENLIL",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-MARDUK",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:ahura-mazda",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-JUPITER",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:jupiter",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:men",
+          "fidelity": 0.55,
+          "note": "Reverse of: Eagle of Zeus"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:qian",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:duir",
+          "fidelity": 0.6,
+          "note": "Reverse of: Oak sacred to Zeus/thunder gods"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:emperor",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:zeus",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:king",
+          "fidelity": 0.75,
+          "note": "Reverse of: King of gods"
         }
       ],
       "developmentalArc": {
@@ -233,6 +330,73 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-JUPITER",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "sky",
+            "thunder",
+            "sovereignty",
+            "king-of-gods"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NO-THOR",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "thunder",
+            "storm",
+            "strength"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-INDRA",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "thunder",
+            "storm",
+            "king-of-gods",
+            "warrior"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:SL-PERUN",
+          "fidelity": 0.8,
+          "sharedAspects": [
+            "thunder",
+            "storm",
+            "sky"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "sky-father",
+            "sovereignty"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:emperor",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ]
     },
@@ -254,7 +418,9 @@
           "system": "Norse",
           "fidelity": 0.5,
           "aspect": "queen of gods"
-        }
+        },
+        "Juno (Roman)",
+        "Queen of Heaven"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -318,6 +484,38 @@
           "target": "arch:GR-APHRODITE",
           "domain": "marital love vs erotic love",
           "notes": "Committed vs passionate aspects of love"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-ISIS",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-PARVATI",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-FRIGG",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-JUNO",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hera",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother-queen",
+          "fidelity": 0.8,
+          "note": "Reverse of: Queen of gods"
         }
       ],
       "correspondences": {
@@ -364,7 +562,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "astrology:capricorn",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:hierophant",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:GR-POSEIDON",
@@ -384,7 +600,9 @@
           "system": "Norse",
           "fidelity": 0.4,
           "aspect": "sea god"
-        }
+        },
+        "Neptune (Roman)",
+        "Earth-Shaker"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.6,
@@ -416,11 +634,13 @@
       "coreFunction": "To embody emotional depth, instinctual power, and the untameable",
       "symbolicCore": "The ocean that cannot be ruled, only navigated",
       "domains": [
+        "dreams",
         "earthquakes",
         "horses",
         "navigation",
         "sea",
-        "storms"
+        "storms",
+        "strength"
       ],
       "relationships": [
         {
@@ -441,6 +661,47 @@
           "target": "arch:GR-HADES",
           "dynamic": "three brothers, three realms",
           "strength": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-MANANNÁN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-VARUNA",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:pachacamac",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-NEPTUNE",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-AGWE",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:neptune",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pisces",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:poseidon",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -485,6 +746,32 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-NEPTUNE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "sea",
+            "storms",
+            "horses"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:PL-NAMAKA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:poseidon",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -516,7 +803,10 @@
           "system": "Egyptian",
           "fidelity": 0.4,
           "aspect": "weaving, warfare"
-        }
+        },
+        "Minerva (Roman)",
+        "Pallas Athena",
+        "Athene"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.05,
@@ -561,8 +851,10 @@
         "civilization",
         "crafts",
         "heroes",
+        "intellect",
         "just warfare",
         "strategy",
+        "war",
         "wisdom"
       ],
       "relationships": [
@@ -597,6 +889,64 @@
           "target": "arch:GR-ARTEMIS",
           "domain": "virgin goddesses",
           "notes": "Intellectual independence vs wild independence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-MANJUSHRI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-SEKHMET",
+          "fidelity": 0.5
+        },
+        {
+          "type": "MIRRORS",
+          "target": "arch:GR-HESTIA"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:GR-HEPHAESTUS"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:GR-PROMETHEUS"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-DURGA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-SARASWATI",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:mama-ocllo",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-INANNA",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:athena",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -644,6 +994,42 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "wisdom",
+            "crafts",
+            "strategy"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "crafts",
+            "wisdom",
+            "fire"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-RAMA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:mithra",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -684,7 +1070,9 @@
           "system": "Norse",
           "fidelity": 0.5,
           "aspect": "radiant god killed"
-        }
+        },
+        "Phoebus",
+        "Phoebus Apollo"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.15,
@@ -719,13 +1107,13 @@
       "symbolicCore": "The sun that reveals all things in clear light",
       "domains": [
         "archery",
+        "beauty",
         "healing",
-        "light",
+        "intellect",
         "music",
+        "peace",
         "plague",
-        "poetry",
-        "prophecy",
-        "truth"
+        "poetry"
       ],
       "relationships": [
         {
@@ -750,6 +1138,66 @@
         {
           "type": "CONTAINS",
           "target": "primordial:healer"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-LUGH",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-AENGUS",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-RA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-HORUS",
+          "fidelity": 0.55
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:GR-HERMES"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-KRISHNA",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-SHAMASH",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-BALDUR",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sun",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:leo",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:sun",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:apollo",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -813,6 +1261,42 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:EG-RA",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "sun",
+            "light",
+            "kingship"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:JP-AMATERASU",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "sun",
+            "light",
+            "sovereignty"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:SL-KHORS",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-SAULE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -846,7 +1330,10 @@
           "system": "Greek",
           "fidelity": 0.5,
           "aspect": "moon goddess conflation"
-        }
+        },
+        "Diana (Roman)",
+        "Phoebe",
+        "Cynthia"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.4,
@@ -884,6 +1371,7 @@
         "fertility",
         "hunt",
         "moon",
+        "threshold",
         "wilderness",
         "young women"
       ],
@@ -906,6 +1394,34 @@
           "axis": "axis:individual-collective",
           "strength": 0.8,
           "notes": "Independence vs union/connection"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-BASTET",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:moon",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:artemis",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:maiden",
+          "fidelity": 0.8,
+          "note": "Reverse of: Virgin huntress"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:maiden-amazon",
+          "fidelity": 0.85,
+          "note": "Reverse of: Warrior maiden"
         }
       ],
       "correspondences": {
@@ -968,6 +1484,22 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "goddess:maiden-amazon",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:wands_09",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -1013,7 +1545,9 @@
           "system": "Yoruba",
           "fidelity": 0.7,
           "aspect": "crossroads, messenger, trickster"
-        }
+        },
+        "Mercury (Roman)",
+        "Psychopompos"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.55,
@@ -1114,11 +1648,11 @@
       "domains": [
         "boundaries",
         "commerce",
-        "cunning",
-        "language",
-        "messages",
-        "souls",
+        "communication",
+        "messenger",
+        "spirits",
         "thieves",
+        "threshold",
         "travelers"
       ],
       "psychologicalMapping": {
@@ -1185,6 +1719,134 @@
           "target": "arch:AFY-ESHU",
           "fidelity": 0.75,
           "notes": "Crossroads, messenger, divine trickster"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ANANSI",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-KSITIGARBHA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-MANANNÁN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-THOTH",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-ANUBIS",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-GANESHA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ENKI",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-LOKI",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-HEIMDALL",
+          "fidelity": 0.3
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:sraosha",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-MERCURY",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-LEGBA",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:mercury",
+          "fidelity": 0.85,
+          "note": "Reverse of: Mercury/Hermes"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mercury",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:gemini",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:magician",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hermes",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:trickster",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:herald",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:trickster",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:entp",
+          "fidelity": 0.7,
+          "note": "Reverse of: Trickster archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:hacker",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:speedster",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:archangels",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -1274,6 +1936,62 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-MERCURY",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "messenger",
+            "commerce",
+            "travel",
+            "trickster"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NO-LOKI",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "trickster",
+            "shapeshifter"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:EG-THOTH",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "messenger",
+            "wisdom",
+            "magic"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:AF-ESHU",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "messenger",
+            "trickster",
+            "crossroads"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "astrology:mercury",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:magician",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ]
     },
@@ -1300,7 +2018,10 @@
           "system": "Egyptian",
           "fidelity": 0.5,
           "aspect": "dying-rising god"
-        }
+        },
+        "Bacchus (Roman)",
+        "Bromios",
+        "Twice-Born"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.8,
@@ -1342,7 +2063,7 @@
         "madness",
         "rebirth",
         "theatre",
-        "wine"
+        "wilderness"
       ],
       "relationships": [
         {
@@ -1370,6 +2091,60 @@
           "target": "arch:IN-SHIVA",
           "fidelity": 0.6,
           "notes": "Ecstatic, dancing, transformative masculine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-CERNUNNOS",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-OSIRIS",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-KRISHNA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-SOMA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-DUMUZI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-FREYR",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:fermentation",
+          "fidelity": 0.7,
+          "note": "Reverse of: Wine/fermentation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:muin",
+          "fidelity": 0.7,
+          "note": "Reverse of: Vine/wine/prophecy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:vine",
+          "fidelity": 0.65,
+          "note": "Reverse of: Wine god"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:dionysus",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -1447,6 +2222,31 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:IN-SOMA",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "intoxication",
+            "ecstasy"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "bolen:dionysus",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:viral_meme",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -1485,7 +2285,11 @@
           "system": "Egyptian",
           "fidelity": 0.5,
           "aspect": "lord of dead"
-        }
+        },
+        "Pluto (Roman)",
+        "Plouton",
+        "Aidoneus",
+        "The Unseen One"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
@@ -1524,8 +2328,10 @@
         "depth",
         "hidden wealth",
         "sovereignty",
+        "spirits",
         "the unconscious",
-        "underworld"
+        "underworld",
+        "wealth"
       ],
       "relationships": [
         {
@@ -1546,6 +2352,67 @@
           "target": "arch:GR-POSEIDON",
           "dynamic": "brothers of the three realms",
           "strength": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-ARAWN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-OSIRIS",
+          "fidelity": 0.6
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:GR-DEMETER",
+          "axis": "axis:ascent-descent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-YAMA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:supay",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-NERGAL",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-HEL",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-PLUTO",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-BARON-SAMEDI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pluto",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:scorpio",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hades",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -1607,6 +2474,44 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-PLUTO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "underworld",
+            "death",
+            "wealth"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:EG-OSIRIS",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "underworld",
+            "death",
+            "rebirth"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NO-HEL",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "underworld",
+            "death"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:ME-ERESHKIGAL",
+          "fidelity": 0.8,
+          "sharedAspects": [
+            "underworld",
+            "death"
+          ],
+          "provenance": "SCHOL"
         }
       ],
       "narrativeRoles": [
@@ -1634,7 +2539,8 @@
           "name": "Vesta",
           "system": "Roman",
           "fidelity": 0.9
-        }
+        },
+        "Vesta (Roman)"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.05,
@@ -1701,6 +2607,21 @@
           "type": "TRANSCENDS",
           "target": "primordial:great-mother",
           "notes": "Beyond mother into pure center"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.5
+        },
+        {
+          "type": "MIRRORS",
+          "target": "arch:GR-PENELOPE"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hestia",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -1785,7 +2706,10 @@
           "system": "Egyptian",
           "fidelity": 0.5,
           "aspect": "love, beauty"
-        }
+        },
+        "Venus (Roman)",
+        "Cyprian",
+        "Cytherea"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.5,
@@ -1812,11 +2736,11 @@
       "symbolicCore": "The foam-born force that nothing can resist",
       "domains": [
         "beauty",
-        "desire",
         "love",
         "pleasure",
         "procreation",
         "sea",
+        "strength",
         "the sea"
       ],
       "relationships": [
@@ -1843,6 +2767,74 @@
           "type": "SHADOW",
           "target": "primordial:seductress-destroyer",
           "activation": "When desire becomes manipulation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-HATHOR",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-LAKSHMI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-INANNA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-FREYJA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:anahita",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-VENUS",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-ERZULIE-FREDA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:venus",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:taurus",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:quert",
+          "fidelity": 0.55,
+          "note": "Reverse of: Apple/beauty/choice connection"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:lovers",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:aphrodite",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother-lover",
+          "fidelity": 0.75,
+          "note": "Reverse of: Love goddess"
         }
       ],
       "correspondences": {
@@ -1915,6 +2907,52 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-VENUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "love",
+            "beauty",
+            "desire"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:EG-HATHOR",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "love",
+            "beauty",
+            "music"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-LAKSHMI",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "beauty",
+            "fortune",
+            "prosperity"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "goddess:mother-lover",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "plot:comedy",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -1946,12 +2984,14 @@
       },
       "spectralShiftNote": "Shifts toward light, ascent, and order compared to base Aphrodite",
       "domains": [
+        "beauty",
         "heavenly beauty",
         "love",
         "philosophical eros",
-        "same-sex love (Platonic context)",
+        "same-sex love (platonic context)",
         "sky",
-        "spiritual love"
+        "spiritual love",
+        "stars"
       ],
       "cultCenters": [
         "Athens (philosophical circles)"
@@ -1978,7 +3018,35 @@
         "heavenly"
       ],
       "coreFunction": "To embody the essence of Aphrodite Urania: heavenly aphrodite - the celestial, spiritual aspect of love",
-      "symbolicCore": "The heavenly beauty that transforms through Aphrodite Urania's essence"
+      "symbolicCore": "The heavenly beauty that transforms through Aphrodite Urania's essence",
+      "culturalEchoes": [
+        {
+          "target": "chakra:ajna",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-NUT",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "instantiates": [
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.85
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.4
+        }
+      ]
     },
     {
       "@id": "arch:GR-APHRODITE-PANDEMOS",
@@ -1999,6 +3067,7 @@
       "spectralShiftNote": "Shifts toward earth, chaos, and transformation compared to base Aphrodite",
       "domains": [
         "common people's worship",
+        "earth",
         "fertility",
         "love",
         "physical love",
@@ -2029,7 +3098,35 @@
         "fertility"
       ],
       "coreFunction": "To embody the essence of Aphrodite Pandemos: common aphrodite - goddess of physical, earthly love",
-      "symbolicCore": "The common people's worship that transforms through Aphrodite Pandemos's essence"
+      "symbolicCore": "The common people's worship that transforms through Aphrodite Pandemos's essence",
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_02",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:cuetzpalin",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "instantiates": [
+        {
+          "primordial": "primordial:lover",
+          "weight": 0.9
+        },
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.5
+        }
+      ]
     },
     {
       "@id": "arch:GR-APHRODITE-ANADYOMENE",
@@ -2039,7 +3136,19 @@
       "meaning": "She who rises from the sea",
       "description": "Aphrodite as she first emerged from the foam - the primal moment of beauty arising from chaos. Iconographic form captured in Apelles' famous painting.",
       "ritualContext": "Invoked for new beginnings, emergence, birth of beauty from chaos",
-      "artisticTradition": "Classical statuary and painting tradition beginning with Apelles"
+      "artisticTradition": "Classical statuary and painting tradition beginning with Apelles",
+      "instantiates": [
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.5
+        }
+      ],
+      "domains": [
+        "beauty",
+        "chaos",
+        "mythology",
+        "olympian"
+      ]
     },
     {
       "@id": "arch:GR-ARES",
@@ -2060,7 +3169,9 @@
           "system": "Norse",
           "fidelity": 0.4,
           "aspect": "war god only"
-        }
+        },
+        "Mars (Roman)",
+        "Enyalios"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.8,
@@ -2088,7 +3199,7 @@
       "domains": [
         "bloodlust",
         "chaos",
-        "civil order (Roman)",
+        "civil order (roman)",
         "courage",
         "violence",
         "war"
@@ -2111,6 +3222,52 @@
           "type": "SHADOW",
           "target": "primordial:sadist",
           "activation": "Always - Ares IS the shadow of warfare"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-HORUS",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-SET",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-NERGAL",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-TYR",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-MARS",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-OGOU",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mars",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:aries",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:ares",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -2170,6 +3327,62 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:RO-MARS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "war",
+            "violence",
+            "battle"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NO-TYR",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "war",
+            "courage",
+            "battle"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:CE-MORRIGAN",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "war",
+            "battle",
+            "death"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:EG-SEKHMET",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "war",
+            "destruction",
+            "fierce"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:EG-SET",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-CHIYOU",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -2195,7 +3408,9 @@
           "name": "Vulcan",
           "system": "Roman",
           "fidelity": 0.85
-        }
+        },
+        "Vulcan (Roman)",
+        "The Lame God"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.25,
@@ -2221,14 +3436,14 @@
       "coreFunction": "To transform raw material into beauty through skill and fire",
       "symbolicCore": "The wound that becomes the gift - creation through suffering",
       "domains": [
+        "beauty",
         "crafts",
         "creation",
         "fire",
-        "forge",
-        "metalwork",
+        "hearth",
         "sculpture",
-        "transformation",
-        "volcanoes"
+        "smithing",
+        "transformation"
       ],
       "relationships": [
         {
@@ -2247,6 +3462,27 @@
           "target": "arch:GR-ARES",
           "dynamic": "husband cuckolded by lover",
           "notes": "Aphrodite's affair with Ares"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-PTAH",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-AGNI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-OGOU",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hephaestus",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
         }
       ],
       "correspondences": {
@@ -2304,6 +3540,32 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:AF-OGUN",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "iron",
+            "war",
+            "crafts"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:JP-OKUNINUSHI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-ILMARINEN",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -2368,14 +3630,14 @@
       "coreFunction": "To embody the transformative journey through darkness and return",
       "symbolicCore": "She who descends and rises - death is not the end",
       "domains": [
+        "childhood",
         "cycles",
         "death",
-        "innocence",
         "rebirth",
         "sovereignty",
         "spring",
         "transformation",
-        "underworld"
+        "travel"
       ],
       "relationships": [
         {
@@ -2401,6 +3663,48 @@
           "target": "arch:ME-INANNA",
           "fidelity": 0.7,
           "notes": "Descent to underworld and return"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-NEPHTHYS",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ERESHKIGAL",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-HEL",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:virgo",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:high_priestess",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:persephone",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:maiden",
+          "fidelity": 0.75,
+          "note": "Reverse of: Kore aspect"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:maiden",
+          "fidelity": 0.9
         }
       ],
       "correspondences": {
@@ -2457,6 +3761,22 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "nakshatra:bharani",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:ME-DUMUZI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -2490,7 +3810,9 @@
           "system": "Hindu",
           "fidelity": 0.4,
           "aspect": "earth mother"
-        }
+        },
+        "Ceres (Roman)",
+        "Grain Mother"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.3,
@@ -2528,9 +3850,9 @@
         "earth",
         "fertility",
         "harvest",
+        "love",
         "motherhood",
-        "mysteries",
-        "seasons"
+        "mysteries"
       ],
       "temporalOrientation": "cyclical",
       "temporalNotes": "Embodies the seasonal cycle; her grief creates winter, her joy creates spring",
@@ -2571,6 +3893,33 @@
           "target": "arch:ME-INANNA",
           "fidelity": 0.5,
           "notes": "Descent narrative through daughter"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-RHIANNON",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-ISIS",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:empress",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:demeter",
+          "fidelity": 0.9,
+          "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:mother",
+          "fidelity": 0.85,
+          "note": "Reverse of: Earth mother"
         }
       ],
       "correspondences": {
@@ -2623,6 +3972,41 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "arch:EG-ISIS",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "mother",
+            "magic",
+            "fertility"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-PARVATI",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "mother",
+            "fertility"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "totem:woodpecker",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LOKO",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -2695,8 +4079,10 @@
         "craft",
         "fire",
         "forethought",
+        "hearth",
         "rebellion",
-        "sacrifice"
+        "sacrifice",
+        "sovereignty"
       ],
       "temporalOrientation": "future",
       "temporalNotes": "His name means 'forethought' - he sees and acts for what will be",
@@ -2737,6 +4123,36 @@
           "target": "arch:SYNCRETIC-LUCIFER",
           "fidelity": 0.6,
           "notes": "Light-bringer who defies highest power"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-AGNI",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ENKI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-LOKI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:uranus",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:aquarius",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:whistleblower",
+          "fidelity": 0.8
         }
       ],
       "correspondences": {
@@ -2780,6 +4196,22 @@
             "confidence": 0.65,
             "note": "Golden Dawn / Jungian tarot-archetype mapping"
           }
+        },
+        {
+          "target": "astrology:sagittarius",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-AMOGHASIDDHI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
         }
       ],
       "narrativeRoles": [
@@ -2852,11 +4284,11 @@
         "agriculture",
         "childhood",
         "fatherhood",
-        "kingship",
+        "law",
         "order",
+        "prophecy",
         "prophecy-fear",
-        "the Golden Age",
-        "time"
+        "sovereignty"
       ],
       "temporalOrientation": "past",
       "temporalNotes": "Represents what-was; the age before the current order; nostalgia and dread",
@@ -2897,6 +4329,27 @@
           "target": "primordial:ancestor",
           "strength": 0.6,
           "notes": "The old gods who ruled before"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-SATURN",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:saturn",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:capricorn",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kwml:tyrant",
+          "fidelity": 0.7,
+          "note": "Reverse of: Devouring father"
         }
       ],
       "correspondences": {
@@ -2939,6 +4392,16 @@
         "destroyer",
         "ruler",
         "sovereign"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "astrology:saturn",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -3004,9 +4467,9 @@
       "symbolicCore": "The club and lion-skin - raw power civilized through labor",
       "domains": [
         "apotheosis",
+        "courage",
         "death",
         "endurance",
-        "heroism",
         "labors",
         "monster-slaying",
         "strength",
@@ -3067,6 +4530,30 @@
           "target": "arch:ME-GILGAMESH",
           "fidelity": 0.7,
           "notes": "Laboring heroes, descent to underworld"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-CU-CHULAINN",
+          "fidelity": 0.75
+        },
+        {
+          "type": "MIRRORS",
+          "target": "arch:GR-ODYSSEUS"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-THOR",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:verethraghna",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:RO-HERCULES",
+          "fidelity": 0.85
         }
       ],
       "correspondences": {
@@ -3102,6 +4589,24 @@
         "endurance",
         "eventually",
         "greatest"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-GILGAMESH",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:hero",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -3160,14 +4665,14 @@
       "coreFunction": "To survive through wit, navigate the unknown, and return transformed",
       "symbolicCore": "The long way home - every detour is necessary",
       "domains": [
-        "cunning",
         "eloquence",
         "home",
-        "journey",
         "return",
         "sovereignty",
+        "strength",
         "survival",
-        "travel"
+        "travel",
+        "trickster"
       ],
       "temporalOrientation": "future",
       "temporalNotes": "Always oriented toward return; every action serves the future homecoming",
@@ -3225,6 +4730,16 @@
           "target": "arch:GR-HERACLES",
           "domain": "heroism",
           "notes": "Cunning vs strength - two paths to heroism"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-RAMA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-GILGAMESH",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -3256,6 +4771,24 @@
         "ithaca",
         "journey",
         "king"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:vishakha",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -3303,12 +4836,12 @@
       "coreFunction": "To hold the center through patient cunning while awaiting return",
       "symbolicCore": "The shroud woven by day, unwoven by night - resistance as patience",
       "domains": [
-        "cunning",
         "fidelity",
         "home-keeping",
         "patience",
         "resistance",
         "sovereignty",
+        "trickster",
         "weaving"
       ],
       "psychologicalMapping": {
@@ -3373,6 +4906,24 @@
         "lover",
         "sovereign",
         "trickster"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-PARVATI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-BASTET",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     }
   ]

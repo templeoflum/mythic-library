@@ -169,7 +169,10 @@
         "creation",
         "death",
         "fire",
-        "sky"
+        "hearth",
+        "sky",
+        "stars",
+        "trickster"
       ],
       "keywords": [
         "across",
@@ -196,7 +199,44 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-ANANSI",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "trickster",
+            "storyteller",
+            "cunning"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "trickster",
+            "culture-hero"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:CN-SUN-WUKONG",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-RAVEN",
@@ -304,8 +344,11 @@
       },
       "domains": [
         "creation",
+        "intellect",
         "preservation",
         "sky",
+        "sun",
+        "trickster",
         "wisdom"
       ],
       "keywords": [
@@ -333,7 +376,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:monkey",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-IKTOMI",
@@ -429,7 +490,9 @@
         "association": "Stories, language, dreams, trickery, Lakota traditions"
       },
       "domains": [
+        "communication",
         "creation",
+        "trickster",
         "wisdom"
       ],
       "keywords": [
@@ -457,7 +520,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-ESHU",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LEGBA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-THUNDERBIRD",
@@ -562,6 +643,7 @@
         "air",
         "preservation",
         "sky",
+        "thunder",
         "war",
         "water"
       ],
@@ -591,7 +673,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-INDRA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-HORUS",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-UNDERWATER-PANTHER",
@@ -690,6 +790,9 @@
         "healing",
         "sea",
         "sky",
+        "stars",
+        "strength",
+        "war",
         "water"
       ],
       "keywords": [
@@ -708,7 +811,25 @@
         "magician"
       ],
       "coreFunction": "To embody monster energy through water-beast and chaos-power",
-      "symbolicCore": "The healing that transforms through Underwater Panther's essence"
+      "symbolicCore": "The healing that transforms through Underwater Panther's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-VELES",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-VELNIAS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-WHITE-BUFFALO-WOMAN",
@@ -802,6 +923,7 @@
         "association": "Lakota, sacred pipe, ceremony, prophecy"
       },
       "domains": [
+        "beauty",
         "earth",
         "preservation",
         "sky"
@@ -832,7 +954,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-VAINAMOINEN",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-SAULE",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-CHANGING-WOMAN",
@@ -947,11 +1087,14 @@
         "association": "Navajo, earth, seasons, womanhood, harmony"
       },
       "domains": [
+        "beauty",
+        "childhood",
         "earth",
         "initiation",
         "motherhood",
         "music",
-        "peace"
+        "peace",
+        "sun"
       ],
       "keywords": [
         "aging",
@@ -979,7 +1122,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-CHALCHIUHTLICUE",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-MAZU",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-SPIDER-WOMAN",
@@ -1076,6 +1237,8 @@
       },
       "domains": [
         "creation",
+        "intellect",
+        "strength",
         "wisdom"
       ],
       "keywords": [
@@ -1103,7 +1266,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-LONO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:sli",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-HERO-TWINS-NAVAJO",
@@ -1211,6 +1392,8 @@
       "domains": [
         "fatherhood",
         "sea",
+        "sun",
+        "thunder",
         "water"
       ],
       "keywords": [
@@ -1237,7 +1420,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:krittika",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROZHICH",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-SUN-FATHER",
@@ -1343,7 +1544,10 @@
         "association": "Sun, life, fatherhood, testing, Southwest traditions"
       },
       "domains": [
-        "fatherhood"
+        "fatherhood",
+        "strength",
+        "sun",
+        "truth"
       ],
       "keywords": [
         "accepting",
@@ -1369,7 +1573,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-UKKO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-HORUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-KOKOPELLI",
@@ -1463,10 +1685,13 @@
         "association": "Fertility, music, trade, spring, Southwest rock art"
       },
       "domains": [
+        "agriculture",
         "commerce",
         "fertility",
         "harvest",
-        "music"
+        "hearth",
+        "music",
+        "strength"
       ],
       "keywords": [
         "agriculture",
@@ -1493,7 +1718,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:netzach",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:iee",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-SEDNA",
@@ -1621,7 +1864,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-NANA-BURUKU",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-MICTECACIHUATL",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-SELU",
@@ -1745,7 +2006,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-IX-CHEL",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:ili",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NA-GLOOSCAP",
@@ -1865,7 +2144,30 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:strength",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:separation",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "animals",
+        "indigenous-america",
+        "mythology"
+      ]
     }
   ]
 }

@@ -80,7 +80,11 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "domains": [
+        "developmental",
+        "psychology"
+      ]
     },
     {
       "@id": "spiral:purple",
@@ -153,7 +157,29 @@
         "developmentalStage": "Late life connection to lineage and legacy",
         "integrationTask": "Honoring past while living present",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "enneagram:type_6",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_48",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "psychology"
+      ]
     },
     {
       "@id": "spiral:red",
@@ -237,7 +263,30 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_05",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:tiger",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "psychology",
+        "strength"
+      ]
     },
     {
       "@id": "spiral:blue",
@@ -306,6 +355,26 @@
           "type": "CULTURAL_ECHO",
           "target": "enneagram:type_1",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:ruler",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:team_leader",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:dominions",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:principalities",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -320,7 +389,31 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:hierophant",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-HEIMDALL",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "law",
+        "order",
+        "psychology"
+      ]
     },
     {
       "@id": "spiral:orange",
@@ -399,7 +492,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_02",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_3",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "psychology"
+      ]
     },
     {
       "@id": "spiral:green",
@@ -468,6 +583,11 @@
           "type": "CULTURAL_ECHO",
           "target": "enneagram:type_2",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:everyman",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -483,7 +603,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "holland:social",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_2",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "psychology"
+      ]
     },
     {
       "@id": "spiral:yellow",
@@ -559,7 +701,29 @@
         "shapeshifter"
       ],
       "coreFunction": "To embody wise_elder energy through knowledge and integration",
-      "symbolicCore": "The essential pattern of Yellow (Integral)"
+      "symbolicCore": "The essential pattern of Yellow (Integral)",
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-LU-DONGBIN",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-FREYJA",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "psychology"
+      ]
     },
     {
       "@id": "spiral:turquoise",
@@ -640,7 +804,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-YESHE-TSOGYAL",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "developmental",
+        "psychology"
+      ]
     }
   ],
   "systemRelationships": {

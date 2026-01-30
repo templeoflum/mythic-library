@@ -61,10 +61,17 @@
           "target": "vedic:aries",
           "fidelity": 0.7,
           "note": "First degrees of Aries"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "nakshatra:revati",
+          "note": "Reverse of: Cycle completes and begins anew"
         }
       ],
       "domains": [
-        "healing"
+        "divination",
+        "healing",
+        "zodiac"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -78,7 +85,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_page",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:wands_03",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:bharani",
@@ -151,7 +176,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_06",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:krittika",
@@ -218,7 +261,29 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-HERO-TWINS-NAVAJO",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:tinne",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:rohini",
@@ -275,7 +340,9 @@
         }
       ],
       "domains": [
-        "fertility"
+        "beauty",
+        "fertility",
+        "wealth"
       ],
       "narrativeRoles": [
         "ally",
@@ -289,7 +356,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:EG-HATHOR",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:ingwaz",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:mrigashira",
@@ -343,6 +428,18 @@
           "target": "pearson:seeker",
           "fidelity": 0.7,
           "note": "Seeker archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:manik",
+          "fidelity": 0.7,
+          "note": "Reverse of: Deer symbolism"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:deer",
+          "fidelity": 0.7,
+          "note": "Reverse of: Deer symbolism"
         }
       ],
       "narrativeRoles": [
@@ -356,7 +453,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:otter",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_38",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:ardra",
@@ -428,7 +547,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-OYA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:calcination",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:punarvasu",
@@ -488,7 +625,9 @@
         "fertility",
         "healing",
         "home",
-        "motherhood"
+        "motherhood",
+        "sun",
+        "wealth"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -502,7 +641,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:lamat",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:xochitl",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:pushya",
@@ -571,7 +728,30 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:mother-queen",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-AYIZAN",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "sacrifice",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:ashlesha",
@@ -625,6 +805,12 @@
           "target": "chakra:muladhara",
           "fidelity": 0.6,
           "note": "Serpent energy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:chicchan",
+          "fidelity": 0.65,
+          "note": "Reverse of: Serpent energy"
         }
       ],
       "narrativeRoles": [
@@ -639,7 +825,30 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-TLAZOLTEOTL",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:crone-sorceress",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "strength",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:magha",
@@ -696,8 +905,11 @@
         }
       ],
       "domains": [
+        "ancestors",
         "family",
-        "memory"
+        "memory",
+        "sovereignty",
+        "strength"
       ],
       "narrativeRoles": [
         "ruler",
@@ -710,7 +922,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:father",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "spiral:blue",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:purva-phalguni",
@@ -764,6 +994,11 @@
           "target": "vedic:leo",
           "fidelity": 0.65,
           "note": "Leo's creative expression"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "nakshatra:uttara-phalguni",
+          "note": "Reverse of: Completes the bed pair"
         }
       ],
       "narrativeRoles": [
@@ -778,7 +1013,31 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:lover",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:deer",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "creation",
+        "divination",
+        "wealth",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:uttara-phalguni",
@@ -845,7 +1104,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:mother-queen",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LOKO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:hasta",
@@ -902,7 +1183,9 @@
         }
       ],
       "domains": [
-        "healing"
+        "crafts",
+        "healing",
+        "strength"
       ],
       "narrativeRoles": [
         "creator",
@@ -915,7 +1198,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:strength",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SIMARGL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:chitra",
@@ -972,7 +1273,10 @@
         }
       ],
       "domains": [
-        "creation"
+        "beauty",
+        "creation",
+        "divination",
+        "zodiac"
       ],
       "narrativeRoles": [
         "creator",
@@ -985,7 +1289,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:maiden-enchantress",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:maiden",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:swati",
@@ -1042,7 +1364,10 @@
         }
       ],
       "domains": [
-        "air"
+        "air",
+        "childhood",
+        "divination",
+        "zodiac"
       ],
       "narrativeRoles": [
         "rebel",
@@ -1055,7 +1380,25 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:cups_knight",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:otter",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:vishakha",
@@ -1122,7 +1465,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ODYSSEUS",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:raidho",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:anuradha",
@@ -1190,7 +1555,30 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:ur",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:helper",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "sacrifice",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:jyeshtha",
@@ -1258,7 +1646,31 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:lse",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "commedia:dottore",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "sovereignty",
+        "strength",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:mula",
@@ -1315,7 +1727,9 @@
         }
       ],
       "domains": [
-        "destruction"
+        "destruction",
+        "divination",
+        "zodiac"
       ],
       "narrativeRoles": [
         "destroyer",
@@ -1328,7 +1742,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:destroyer",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:eihwaz",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:purva-ashadha",
@@ -1384,8 +1816,10 @@
         }
       ],
       "domains": [
+        "divination",
         "sea",
-        "water"
+        "water",
+        "zodiac"
       ],
       "narrativeRoles": [
         "healer",
@@ -1399,7 +1833,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-LU-DONGBIN",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:ngetal",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:uttara-ashadha",
@@ -1466,7 +1918,30 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ben",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:algiz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "justice",
+        "zodiac"
+      ]
     },
     {
       "@id": "nakshatra:shravana",
@@ -1523,6 +1998,8 @@
         }
       ],
       "domains": [
+        "strength",
+        "truth",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -1538,7 +2015,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:princess",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:sage",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:dhanishtha",
@@ -1595,7 +2090,9 @@
         }
       ],
       "domains": [
-        "fertility"
+        "fertility",
+        "music",
+        "wealth"
       ],
       "narrativeRoles": [
         "creator",
@@ -1608,7 +2105,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:manik",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:gebo",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:shatabhisha",
@@ -1665,7 +2180,10 @@
         }
       ],
       "domains": [
-        "healing"
+        "divination",
+        "healing",
+        "strength",
+        "zodiac"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -1679,7 +2197,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "plot:voyage-return",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:ix",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:purva-bhadrapada",
@@ -1736,6 +2272,7 @@
       ],
       "domains": [
         "fire",
+        "hearth",
         "transformation"
       ],
       "narrativeRoles": [
@@ -1749,7 +2286,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-XIPE-TOTEC",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AF-OYA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:uttara-bhadrapada",
@@ -1805,8 +2360,10 @@
         }
       ],
       "domains": [
+        "divination",
         "war",
-        "wisdom"
+        "wisdom",
+        "zodiac"
       ],
       "narrativeRoles": [
         "magician",
@@ -1820,7 +2377,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:gort",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:malinalli",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "nakshatra:revati",
@@ -1882,8 +2457,10 @@
         }
       ],
       "domains": [
+        "divination",
         "initiation",
-        "travel"
+        "travel",
+        "zodiac"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -1897,7 +2474,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "commedia:innamorata",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:quert",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

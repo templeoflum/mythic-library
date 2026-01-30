@@ -77,6 +77,117 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:sagittarius",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:calcination",
+          "fidelity": 0.8,
+          "note": "Reverse of: Fire element"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:sulphur",
+          "fidelity": 0.75,
+          "note": "Reverse of: Fire element"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:manipura",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "element:aether"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "wuxing:fire",
+          "fidelity": 0.85,
+          "note": "Reverse of: Direct fire parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_ace",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_02",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_03",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_04",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_05",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_06",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_07",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_08",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_09",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_10",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_page",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_knight",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_queen",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wands_king",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
         }
       ],
       "narrativeRoles": [
@@ -91,7 +202,31 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_08",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_knight",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "elements",
+        "fire",
+        "hearth"
+      ]
     },
     {
       "@id": "element:water",
@@ -161,13 +296,142 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:pisces",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:dissolution",
+          "fidelity": 0.8,
+          "note": "Reverse of: Water element"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:svadhisthana",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "element:aether"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "wuxing:water",
+          "fidelity": 0.8,
+          "note": "Reverse of: Direct water parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_ace",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_02",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_03",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_04",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_05",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_06",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_07",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_08",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_09",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_10",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_page",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_knight",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_queen",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:cups_king",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
         }
       ],
       "narrativeRoles": [
         "healer"
       ],
       "coreFunction": "To manifest the archetypal pattern of the great_mother",
-      "symbolicCore": "The essential pattern of Water"
+      "symbolicCore": "The essential pattern of Water",
+      "culturalEchoes": [
+        {
+          "target": "rashi:meena",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "elements",
+        "sea",
+        "water"
+      ]
     },
     {
       "@id": "element:air",
@@ -237,6 +501,117 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:aquarius",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:separation",
+          "fidelity": 0.75,
+          "note": "Reverse of: Air element"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:anahata",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "element:aether"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "wuxing:wood",
+          "fidelity": 0.5,
+          "note": "Reverse of: Spring/expansion parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "wuxing:metal",
+          "fidelity": 0.45,
+          "note": "Reverse of: Autumn/breath parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_ace",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_02",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_03",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_04",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_05",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_06",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_07",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_08",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_09",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_10",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_page",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_knight",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_queen",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:swords_king",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
         }
       ],
       "narrativeRoles": [
@@ -250,7 +625,30 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:men",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:red_hawk",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "air",
+        "divination",
+        "elements"
+      ]
     },
     {
       "@id": "element:earth",
@@ -320,6 +718,116 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:capricorn",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:conjunction",
+          "fidelity": 0.7,
+          "note": "Reverse of: Earth element"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:muladhara",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "element:aether"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "wuxing:earth",
+          "fidelity": 0.85,
+          "note": "Reverse of: Direct earth parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_ace",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_02",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_03",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_04",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_05",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_06",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_07",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_08",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_09",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_10",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_page",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_knight",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_queen",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:pentacles_king",
+          "fidelity": 0.8,
+          "note": "Reverse of: Elemental correspondence"
         }
       ],
       "narrativeRoles": [
@@ -333,7 +841,30 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_15",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "earth",
+        "elements"
+      ]
     },
     {
       "@id": "element:aether",
@@ -389,6 +920,11 @@
           "type": "CULTURAL_ECHO",
           "target": "calibration:origin",
           "note": "Both represent center"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:vishuddha",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -401,7 +937,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:self",
+          "fidelity": 1.0,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:mannaz",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "elements"
+      ]
     }
   ],
   "systemRelationships": {

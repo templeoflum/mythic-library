@@ -184,6 +184,16 @@
           "target": "primordial:tyrant",
           "activation": "When solar authority becomes scorching judgment; when aging sun-god fears usurpation",
           "strength": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:inti",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-SHAMASH",
+          "fidelity": 0.75
         }
       ],
       "contextualVariants": [
@@ -256,9 +266,11 @@
         "creation",
         "death",
         "fire",
+        "law",
+        "moon",
         "order",
         "sky",
-        "underworld"
+        "sun"
       ],
       "keywords": [
         "across",
@@ -284,7 +296,35 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APOLLO",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "sun",
+            "light",
+            "kingship"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "astrology:sun",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-OSIRIS",
@@ -293,7 +333,8 @@
       "aliases": [
         "Usir",
         "Wesir",
-        "Onnophris"
+        "Onnophris",
+        "Lord of the Underworld"
       ],
       "epithets": [
         "Lord of the Underworld",
@@ -436,6 +477,39 @@
           "target": "Lord of the Duat (afterlife)",
           "trigger": "Death by Set's betrayal; dismemberment and resurrection by Isis",
           "direction": "forward"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:EG-ANUBIS"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:EG-MAAT"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-VISHNU",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-YAMA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:manco-capac",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-DUMUZI",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:rashnu",
+          "fidelity": 0.65
         }
       ],
       "contextualVariants": [
@@ -508,6 +582,7 @@
       "domains": [
         "death",
         "fertility",
+        "law",
         "rebirth",
         "underworld"
       ],
@@ -528,7 +603,35 @@
         "sovereign"
       ],
       "coreFunction": "To embody dying rising god energy through death-rebirth and sacrifice",
-      "symbolicCore": "The death that transforms through Osiris's essence"
+      "symbolicCore": "The death that transforms through Osiris's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HADES",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "underworld",
+            "death",
+            "rebirth"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-SEDNA",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-ISIS",
@@ -537,7 +640,8 @@
       "aliases": [
         "Aset",
         "Eset",
-        "Iset"
+        "Iset",
+        "Great of Magic"
       ],
       "epithets": [
         "Great of Magic",
@@ -680,6 +784,10 @@
           "target": "primordial:sorceress",
           "activation": "When magical cunning becomes manipulation; when maternal devotion becomes possessive control",
           "strength": 0.55
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:EG-NEPHTHYS"
         }
       ],
       "contextualVariants": [
@@ -767,6 +875,7 @@
       },
       "domains": [
         "healing",
+        "magic",
         "motherhood",
         "wisdom"
       ],
@@ -796,7 +905,35 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-DEMETER",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "mother",
+            "magic",
+            "fertility"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "rune:fehu",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-HIIAKA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-HORUS",
@@ -806,7 +943,8 @@
         "Heru",
         "Hor",
         "Haroeris",
-        "Harpocrates"
+        "Harpocrates",
+        "The Distant One"
       ],
       "epithets": [
         "The Distant One",
@@ -1015,8 +1153,10 @@
       },
       "domains": [
         "fatherhood",
+        "moon",
         "sky",
         "sovereignty",
+        "sun",
         "war"
       ],
       "keywords": [
@@ -1045,7 +1185,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-UKKO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-PERKUNAS",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-SET",
@@ -1212,6 +1370,11 @@
           "target": "primordial:destroyer",
           "activation": "When protective storm power becomes fratricidal chaos",
           "strength": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-NERGAL",
+          "fidelity": 0.5
         }
       ],
       "contextualVariants": [
@@ -1321,7 +1484,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:troll",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-THOTH",
@@ -1329,7 +1510,8 @@
       "name": "Thoth",
       "aliases": [
         "Djehuty",
-        "Tehuti"
+        "Tehuti",
+        "Hermes Trismegistus (syncretic)"
       ],
       "epithets": [
         "Lord of Divine Words",
@@ -1462,6 +1644,31 @@
             "magic",
             "writing"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-PADMASAMBHAVA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-SARASWATI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-GANESHA",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ENKI",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-SIN",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -1511,6 +1718,8 @@
       },
       "domains": [
         "justice",
+        "magic",
+        "moon",
         "preservation",
         "time",
         "wisdom"
@@ -1541,7 +1750,35 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "messenger",
+            "wisdom",
+            "magic"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:SL-SIMARGL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:fearn",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-ANUBIS",
@@ -1550,7 +1787,8 @@
       "aliases": [
         "Anpu",
         "Inpu",
-        "Inpw"
+        "Inpw",
+        "Lord of the Sacred Land"
       ],
       "epithets": [
         "Lord of the Sacred Land",
@@ -1657,6 +1895,17 @@
             "underworld-ferryman",
             "transition"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:sraosha",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:oc",
+          "fidelity": 0.7,
+          "note": "Reverse of: Underworld guide"
         }
       ],
       "correspondences": {
@@ -1697,8 +1946,10 @@
       },
       "domains": [
         "death",
+        "initiation",
         "justice",
         "protection",
+        "spirits",
         "threshold",
         "underworld"
       ],
@@ -1726,7 +1977,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-ARAWN",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AF-BABALU-AYE",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-MAAT",
@@ -1840,6 +2109,26 @@
             "justice",
             "balance"
           ]
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:EG-APOPHIS",
+          "axis": "order-chaos"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:asha-vahishta",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:rashnu",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.9
         }
       ],
       "correspondences": {
@@ -1882,10 +2171,13 @@
         "confidence": 0.95
       },
       "domains": [
+        "death",
         "justice",
+        "law",
         "music",
         "order",
-        "peace"
+        "peace",
+        "truth"
       ],
       "keywords": [
         "against",
@@ -1910,7 +2202,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-AKSHOBHYA",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:justice",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-SEKHMET",
@@ -1918,7 +2228,9 @@
       "name": "Sekhmet",
       "aliases": [
         "Sakhmet",
-        "Sachmis"
+        "Sachmis",
+        "The Powerful One",
+        "Eye of Ra"
       ],
       "epithets": [
         "The Powerful One",
@@ -2035,6 +2347,20 @@
             "bloodlust",
             "disease-cure"
           ]
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "arch:EG-HATHOR"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-DURGA",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-INANNA",
+          "fidelity": 0.45
         }
       ],
       "contextualVariants": [
@@ -2105,6 +2431,8 @@
         "healing",
         "music",
         "protection",
+        "strength",
+        "sun",
         "war"
       ],
       "keywords": [
@@ -2132,7 +2460,35 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "war",
+            "destruction",
+            "fierce"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:AF-SHANGO",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:ares",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-HATHOR",
@@ -2140,7 +2496,8 @@
       "name": "Hathor",
       "aliases": [
         "Het-Heru",
-        "Het-Hert"
+        "Het-Hert",
+        "Lady of the West"
       ],
       "epithets": [
         "Mistress of the West",
@@ -2312,11 +2669,14 @@
         "confidence": 0.95
       },
       "domains": [
+        "beauty",
+        "creation",
         "death",
         "fertility",
         "love",
         "motherhood",
-        "music"
+        "music",
+        "strength"
       ],
       "keywords": [
         "afterlife",
@@ -2344,7 +2704,35 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "love",
+            "beauty",
+            "music"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "nakshatra:rohini",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "astrology:venus",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-PTAH",
@@ -2455,6 +2843,15 @@
             "wisdom-creator",
             "craftsman"
           ]
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:EG-SEKHMET"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-BRAHMA",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -2494,7 +2891,10 @@
         "confidence": 0.95
       },
       "domains": [
-        "creation"
+        "communication",
+        "creation",
+        "intellect",
+        "strength"
       ],
       "keywords": [
         "architects",
@@ -2520,7 +2920,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-LONO",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-NUWA",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-NEPHTHYS",
@@ -2636,6 +3054,11 @@
             "death-maiden",
             "transition"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ERESHKIGAL",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -2681,6 +3104,8 @@
       },
       "domains": [
         "death",
+        "magic",
+        "moon",
         "threshold"
       ],
       "keywords": [
@@ -2708,7 +3133,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-KANALOA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kabbalah:yesod",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-APOPHIS",
@@ -2855,7 +3298,10 @@
         "chaos",
         "death",
         "fire",
+        "law",
+        "moon",
         "order",
+        "sun",
         "underworld"
       ],
       "keywords": [
@@ -2880,7 +3326,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-BALOR",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:angra-mainyu",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-GEB",
@@ -3067,7 +3531,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "wuxing:earth",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-NUT",
@@ -3226,7 +3708,8 @@
         "creation",
         "earth",
         "motherhood",
-        "sky"
+        "sky",
+        "sun"
       ],
       "keywords": [
         "arches",
@@ -3251,7 +3734,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE-URANIA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chakra:ajna",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-SOBEK",
@@ -3376,6 +3877,7 @@
       },
       "domains": [
         "fertility",
+        "strength",
         "war",
         "water"
       ],
@@ -3403,7 +3905,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "commedia:brighella",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:ocelotl",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:EG-BASTET",
@@ -3551,7 +4071,8 @@
         "fertility",
         "home",
         "music",
-        "protection"
+        "protection",
+        "spirits"
       ],
       "keywords": [
         "against",
@@ -3578,7 +4099,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_22",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-PARVATI",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": [

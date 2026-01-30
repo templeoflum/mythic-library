@@ -147,6 +147,38 @@
           "target": "mesopotamian:anu",
           "fidelity": 0.55,
           "notes": "Supreme sky god"
+        },
+        {
+          "type": "SHADOW",
+          "target": "persian:angra-mainyu"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "persian:mithra"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "persian:khshathra-vairya"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "persian:spenta-armaiti"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "persian:haurvatat"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "persian:ameretat"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "persian:saoshyant"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "persian:zurvan"
         }
       ],
       "contextualVariants": [
@@ -197,7 +229,9 @@
       "domains": [
         "chaos",
         "creation",
+        "law",
         "order",
+        "truth",
         "war",
         "wisdom"
       ],
@@ -227,7 +261,17 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "incan:viracocha",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:angra-mainyu",
@@ -319,6 +363,10 @@
           "type": "SHADOW",
           "target": "persian:ahura-mazda",
           "notes": "Projected shadow of light"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "persian:zurvan"
         }
       ],
       "contextualVariants": [
@@ -368,7 +416,9 @@
       },
       "domains": [
         "creation",
-        "death"
+        "death",
+        "mythology",
+        "zoroastrian"
       ],
       "keywords": [
         "(ahriman)",
@@ -393,7 +443,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NO-FENRIR",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-APOPHIS",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:mithra",
@@ -466,6 +534,18 @@
           "type": "COMPLEMENT",
           "target": "persian:rashnu",
           "notes": "Co-judge at Chinvat Bridge"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "persian:anahita"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "persian:sraosha"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "persian:verethraghna"
         }
       ],
       "contextualVariants": [
@@ -541,7 +621,30 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_king",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "spirits",
+        "sun",
+        "truth"
+      ]
     },
     {
       "@id": "persian:anahita",
@@ -623,6 +726,10 @@
           "type": "MIRRORS",
           "target": "persian:spenta-armaiti",
           "notes": "Feminine divine principles"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "persian:haurvatat"
         }
       ],
       "contextualVariants": [
@@ -674,6 +781,7 @@
         "celestialBody": "Venus (as Nahid)"
       },
       "domains": [
+        "earth",
         "fertility",
         "water",
         "wisdom"
@@ -703,7 +811,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-RATNASAMBHAVA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:pushya",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:vohu-manah",
@@ -794,7 +920,10 @@
         "color": "white"
       },
       "domains": [
-        "protection"
+        "animals",
+        "intellect",
+        "protection",
+        "truth"
       ],
       "keywords": [
         "amesha",
@@ -820,7 +949,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-VISHNU",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:asha-vahishta",
@@ -918,8 +1065,11 @@
       },
       "domains": [
         "fire",
+        "hearth",
+        "law",
         "order",
-        "protection"
+        "protection",
+        "truth"
       ],
       "keywords": [
         "aligns",
@@ -945,7 +1095,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "incan:inti",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:viracocha",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:khshathra-vairya",
@@ -1028,9 +1196,11 @@
         "month": "Shahrevar (6th month)"
       },
       "domains": [
+        "justice",
         "protection",
         "sky",
-        "sovereignty"
+        "sovereignty",
+        "strength"
       ],
       "keywords": [
         "ahura",
@@ -1056,7 +1226,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:inti",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:spenta-armaiti",
@@ -1149,7 +1337,8 @@
       "domains": [
         "earth",
         "motherhood",
-        "protection"
+        "protection",
+        "sacrifice"
       ],
       "keywords": [
         "ahura",
@@ -1174,7 +1363,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_queen",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:caregiver",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:haurvatat",
@@ -1279,7 +1486,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-LAKSHMI",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:mama-ocllo",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:ameretat",
@@ -1358,7 +1583,10 @@
         "month": "Amurdad/Mordad (5th month)"
       },
       "domains": [
-        "protection"
+        "justice",
+        "mythology",
+        "protection",
+        "zoroastrian"
       ],
       "keywords": [
         "ameretat",
@@ -1384,7 +1612,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-LAKSHMI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:mama-ocllo",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:sraosha",
@@ -1477,7 +1723,9 @@
       },
       "domains": [
         "death",
-        "justice"
+        "justice",
+        "moon",
+        "spirits"
       ],
       "keywords": [
         "after",
@@ -1504,7 +1752,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-VISHNU",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-SARASWATI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:rashnu",
@@ -1567,6 +1833,10 @@
           "target": "arch:EG-OSIRIS",
           "fidelity": 0.65,
           "notes": "Judge of the dead"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "persian:daena"
         }
       ],
       "shadowDynamics": {
@@ -1589,7 +1859,9 @@
       },
       "domains": [
         "death",
-        "justice"
+        "justice",
+        "spirits",
+        "truth"
       ],
       "keywords": [
         "absolute",
@@ -1615,7 +1887,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-NUADA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "wuxing:metal",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:verethraghna",
@@ -1724,6 +2014,7 @@
       "domains": [
         "air",
         "childhood",
+        "strength",
         "war"
       ],
       "keywords": [
@@ -1750,7 +2041,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kwml:warrior",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:warrior",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:tishtrya",
@@ -1857,7 +2166,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:ansuz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:ahau",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "mythology",
+        "zoroastrian"
+      ]
     },
     {
       "@id": "persian:daena",
@@ -1958,7 +2289,9 @@
         "place": "Chinvat Bridge"
       },
       "domains": [
-        "death"
+        "beauty",
+        "death",
+        "justice"
       ],
       "keywords": [
         "accumulated",
@@ -1984,7 +2317,25 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:lii",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-XIWANGMU",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:fravashi",
@@ -2103,7 +2454,25 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:apollo",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_09",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:saoshyant",
@@ -2221,7 +2590,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-MANJUSHRI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-AGNI",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "persian:zurvan",

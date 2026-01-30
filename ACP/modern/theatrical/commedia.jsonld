@@ -63,10 +63,28 @@
           "type": "COMPLEMENT",
           "target": "commedia:brighella",
           "note": "First and second zanni"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "commedia:colombina",
+          "note": "Reverse of: Romantic pair"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:pulcinella",
+          "fidelity": 0.6,
+          "note": "Reverse of: Fellow zanni"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "commedia:pierrot",
+          "axis": "active-receptive",
+          "note": "Reverse of: Active vs passive fool"
         }
       ],
       "domains": [
-        "love"
+        "love",
+        "trickster"
       ],
       "narrativeRoles": [
         "innocent",
@@ -80,7 +98,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "keirsey:artisan",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "commedia:brighella",
@@ -150,7 +186,28 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-MANANNÁN",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:ocelotl",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "trickster"
+      ]
     },
     {
       "@id": "commedia:pantalone",
@@ -208,6 +265,7 @@
         }
       ],
       "domains": [
+        "childhood",
         "commerce",
         "fatherhood"
       ],
@@ -222,7 +280,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-DOMOVOI",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-TAPIO",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "commedia:dottore",
@@ -294,7 +370,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_63",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:jyeshtha",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "commedia:capitano",
@@ -362,7 +456,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_06",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:false-hero",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "commedia:colombina",
@@ -432,7 +544,28 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:lover",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:gebo",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "trickster"
+      ]
     },
     {
       "@id": "commedia:innamorato",
@@ -501,7 +634,28 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:tiphareth",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chakra:anahata",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "childhood"
+      ]
     },
     {
       "@id": "commedia:innamorata",
@@ -572,7 +726,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:revati",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:quert",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "beauty",
+        "childhood"
+      ]
     },
     {
       "@id": "commedia:pulcinella",
@@ -642,7 +818,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-SOBEK",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "commedia:pierrot",
@@ -702,6 +896,7 @@
         }
       ],
       "domains": [
+        "childhood",
         "love"
       ],
       "narrativeRoles": [
@@ -716,7 +911,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:high_priestess",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:muluc",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

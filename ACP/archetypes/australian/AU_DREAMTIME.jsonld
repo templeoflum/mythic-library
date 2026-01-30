@@ -120,6 +120,11 @@
           "target": "arch:IN-NAGA",
           "fidelity": 0.55,
           "notes": "Sacred serpent, water, fertility"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-DAMBALLAH",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -145,6 +150,7 @@
       "domains": [
         "fertility",
         "justice",
+        "law",
         "sea",
         "water"
       ],
@@ -172,7 +178,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-TLALOC",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:shatabhisha",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-BAIAME",
@@ -273,7 +297,9 @@
         "fatherhood",
         "initiation",
         "justice",
-        "sky"
+        "law",
+        "sky",
+        "stars"
       ],
       "keywords": [
         "associated",
@@ -299,7 +325,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-ITZAMNA",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-SEVEN-SISTERS",
@@ -388,7 +432,9 @@
         "association": "Women, stars, escape, sacred sites, pan-Australian"
       },
       "domains": [
+        "ancestors",
         "earth",
+        "hunt",
         "memory",
         "sky",
         "travel"
@@ -418,7 +464,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-ERZULIE-FREDA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-HINA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-WANDJINA",
@@ -508,7 +572,9 @@
       },
       "domains": [
         "air",
+        "ancestors",
         "memory",
+        "strength",
         "time",
         "water"
       ],
@@ -535,7 +601,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-TLALOC",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-VAINAMOINEN",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-MIMI-SPIRITS",
@@ -626,7 +710,8 @@
       "domains": [
         "air",
         "earth",
-        "hunt"
+        "hunt",
+        "spirits"
       ],
       "keywords": [
         "air",
@@ -652,7 +737,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-LESHY",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-CERNUNNOS",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-YOWIE",
@@ -744,7 +847,9 @@
         "boundaries",
         "childhood",
         "memory",
-        "travel"
+        "protection",
+        "travel",
+        "wilderness"
       ],
       "keywords": [
         "aboriginal",
@@ -762,7 +867,25 @@
         "outcast"
       ],
       "coreFunction": "To embody monster energy through wild-man and bush-danger",
-      "symbolicCore": "The boundaries that transforms through Yowie's essence"
+      "symbolicCore": "The boundaries that transforms through Yowie's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-LOUHI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-POSEIDON",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-TIDDALIK",
@@ -848,6 +971,7 @@
         "association": "Water, community, humor, balance, teaching story"
       },
       "domains": [
+        "animals",
         "dance",
         "earth",
         "sea",
@@ -870,7 +994,25 @@
         "trickster"
       ],
       "coreFunction": "To embody monster energy through water-hoarder and drought-causer",
-      "symbolicCore": "The dance that transforms through Tiddalik's essence"
+      "symbolicCore": "The dance that transforms through Tiddalik's essence",
+      "culturalEchoes": [
+        {
+          "target": "bolen:poseidon",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:ix",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:AU-BUNYIP",
@@ -949,6 +1091,7 @@
         "association": "Water safety, danger, mystery, pan-Australian"
       },
       "domains": [
+        "animals",
         "home",
         "memory",
         "sea",
@@ -967,7 +1110,25 @@
         "drownings"
       ],
       "coreFunction": "To embody monster energy through water-beast and danger",
-      "symbolicCore": "The home that transforms through Bunyip's essence"
+      "symbolicCore": "The home that transforms through Bunyip's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-VELNIAS",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:shadow",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

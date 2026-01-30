@@ -166,6 +166,7 @@
       },
       "domains": [
         "creation",
+        "order",
         "prophecy",
         "sea",
         "water"
@@ -195,7 +196,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:asha-vahishta",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:inti",
@@ -279,6 +298,27 @@
           "type": "CONTAINS",
           "target": "incan:manco-capac",
           "notes": "Father of first Inca"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:pachamama"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "incan:supay",
+          "axis": "ascent-descent"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:chasca"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "incan:kon"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "incan:coyllur"
         }
       ],
       "contextualVariants": [
@@ -326,7 +366,10 @@
         ]
       },
       "domains": [
-        "fatherhood"
+        "andean",
+        "fatherhood",
+        "mythology",
+        "sun"
       ],
       "keywords": [
         "celebration",
@@ -352,7 +395,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:asha-vahishta",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:mama-quilla",
@@ -423,6 +484,30 @@
           "type": "MIRRORS",
           "target": "incan:pachamama",
           "notes": "Celestial feminine mirroring earthly feminine"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "incan:viracocha"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "incan:mama-ocllo"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:chasca"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "incan:kon"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "incan:coyllur"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:coyllur"
         }
       ],
       "shadowDynamics": {
@@ -451,8 +536,10 @@
       },
       "domains": [
         "initiation",
+        "moon",
         "motherhood",
         "sky",
+        "stars",
         "time"
       ],
       "keywords": [
@@ -479,7 +566,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-CHANG-E",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "mbti:infj",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:pachamama",
@@ -556,6 +661,31 @@
           "type": "TENSION",
           "target": "incan:mama-cocha",
           "notes": "Land and sea in productive tension"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "incan:mama-quilla"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:mama-cocha"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:supay"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "incan:pachacamac"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "incan:apu"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:spenta-armaiti",
+          "fidelity": 0.6
         }
       ],
       "contextualVariants": [
@@ -612,8 +742,10 @@
         ]
       },
       "domains": [
+        "andean",
         "earth",
-        "motherhood"
+        "motherhood",
+        "mythology"
       ],
       "keywords": [
         "andean",
@@ -639,7 +771,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_08",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LA-SIRENE",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:illapa",
@@ -723,6 +873,18 @@
           "type": "COMPLEMENT",
           "target": "incan:mama-cocha",
           "notes": "Drawing from celestial waters"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "incan:mama-cocha"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "incan:catequil"
+        },
+        {
+          "type": "MIRRORS",
+          "target": "incan:pariacaca"
         }
       ],
       "shadowDynamics": {
@@ -749,9 +911,12 @@
         "animal": "serpent (rainbow)"
       },
       "domains": [
+        "agriculture",
         "harvest",
         "sea",
         "sky",
+        "stars",
+        "thunder",
         "water"
       ],
       "keywords": [
@@ -779,7 +944,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:dragon",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:cuauhtli",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:mama-cocha",
@@ -848,6 +1031,10 @@
           "type": "MIRRORS",
           "target": "incan:illapa",
           "notes": "Waters below mirroring waters above"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "incan:illapa"
         }
       ],
       "shadowDynamics": {
@@ -880,7 +1067,8 @@
       "domains": [
         "fertility",
         "motherhood",
-        "sea"
+        "sea",
+        "wealth"
       ],
       "keywords": [
         "abundance",
@@ -905,7 +1093,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-LA-SIRENE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:supay",
@@ -1029,9 +1235,11 @@
         "animal": "serpent"
       },
       "domains": [
+        "ancestors",
         "death",
         "earth",
-        "sovereignty"
+        "sovereignty",
+        "strength"
       ],
       "keywords": [
         "ancestor",
@@ -1057,7 +1265,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:crone-destroyer",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:miquiztli",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:manco-capac",
@@ -1160,6 +1386,7 @@
         "color": "gold"
       },
       "domains": [
+        "agriculture",
         "earth",
         "harvest",
         "water"
@@ -1190,7 +1417,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:mama-ocllo",
@@ -1289,7 +1534,9 @@
       },
       "domains": [
         "home",
-        "sovereignty"
+        "moon",
+        "sovereignty",
+        "strength"
       ],
       "keywords": [
         "alongside",
@@ -1316,7 +1563,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:haurvatat",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-LAKSHMI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:chasca",
@@ -1412,6 +1677,9 @@
         ]
       },
       "domains": [
+        "beauty",
+        "childhood",
+        "sun",
         "threshold"
       ],
       "keywords": [
@@ -1438,7 +1706,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:temperance",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:hazel",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:catequil",
@@ -1527,7 +1813,9 @@
         ]
       },
       "domains": [
-        "prophecy"
+        "prophecy",
+        "thunder",
+        "wilderness"
       ],
       "keywords": [
         "associated",
@@ -1553,7 +1841,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-STRIBOG",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:kon",
@@ -1645,6 +1951,7 @@
       },
       "domains": [
         "air",
+        "strength",
         "water"
       ],
       "keywords": [
@@ -1671,7 +1978,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-STRIBOG",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_44",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:pachacamac",
@@ -1810,7 +2135,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:reed",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-AGWE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:apu",
@@ -1916,6 +2259,8 @@
       },
       "domains": [
         "sea",
+        "spirits",
+        "strength",
         "water"
       ],
       "keywords": [
@@ -1941,7 +2286,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:hierophant",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:magha",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:coyllur",
@@ -2029,7 +2392,10 @@
         ]
       },
       "domains": [
-        "prophecy"
+        "andean",
+        "mythology",
+        "prophecy",
+        "stars"
       ],
       "keywords": [
         "agricultural",
@@ -2054,7 +2420,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-CHANG-E",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-NUT",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:pariacaca",
@@ -2126,6 +2510,10 @@
           "target": "arch:NO-THOR",
           "fidelity": 0.55,
           "notes": "Storm hero defeating chaos"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "incan:huallallo-carhuincho"
         }
       ],
       "shadowDynamics": {
@@ -2153,6 +2541,7 @@
       },
       "domains": [
         "fire",
+        "hearth",
         "sea",
         "water"
       ],
@@ -2180,7 +2569,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:animus",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:dragon",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "incan:huallallo-carhuincho",
@@ -2269,6 +2676,8 @@
       },
       "domains": [
         "fire",
+        "hearth",
+        "law",
         "order",
         "sacrifice",
         "sea",
@@ -2297,7 +2706,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:calcination",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:thurisaz",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

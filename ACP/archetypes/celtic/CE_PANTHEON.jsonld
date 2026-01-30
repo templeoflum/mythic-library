@@ -55,7 +55,9 @@
       "name": "The Dagda",
       "aliases": [
         "Eochaid Ollathair (All-Father)",
-        "Ruad Rofhessa (Lord of Great Knowledge)"
+        "Ruad Rofhessa (Lord of Great Knowledge)",
+        "The Good God",
+        "Eochaid Ollathair"
       ],
       "epithets": [
         "The Good God",
@@ -191,7 +193,9 @@
         "confidence": 0.9
       },
       "domains": [
+        "celtic",
         "fatherhood",
+        "mythology",
         "sovereignty"
       ],
       "keywords": [
@@ -220,7 +224,35 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "father-god",
+            "wisdom",
+            "magic"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "ogham:ngetal",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:acatl",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-BRIGID",
@@ -229,7 +261,10 @@
       "aliases": [
         "Brigit",
         "Bríg",
-        "Bride (Scottish)"
+        "Bride (Scottish)",
+        "Brighid",
+        "Bride",
+        "Saint Brigid (Christian sync)"
       ],
       "epithets": [
         "The Exalted One",
@@ -345,6 +380,17 @@
           "target": "Saint Brigid (Christian syncretism)",
           "trigger": "Cultural transformation from pagan goddess to Christian saint; Imbolc continuity",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-MAMAN-BRIGITTE",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:rowan",
+          "fidelity": 0.65,
+          "note": "Reverse of: Brigid association"
         }
       ],
       "correspondences": {
@@ -369,6 +415,7 @@
       "domains": [
         "fire",
         "healing",
+        "hearth",
         "poetry",
         "preservation",
         "transformation"
@@ -398,7 +445,35 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ATHENA",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "crafts",
+            "wisdom",
+            "fire"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-GANESHA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:citrinitas",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-LUGH",
@@ -518,6 +593,11 @@
           "target": "Samildánach (master of all arts) and king",
           "trigger": "Proving mastery of every craft to gain admission; leading the Tuatha Dé Danann against the Fomorians",
           "direction": "forward"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:CE-BALOR",
+          "axis": "order-chaos"
         }
       ],
       "correspondences": {
@@ -568,7 +648,30 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-MARDUK",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:paragon",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "crafts",
+        "strength",
+        "sun"
+      ]
     },
     {
       "@id": "arch:CE-MORRIGAN",
@@ -577,7 +680,9 @@
       "aliases": [
         "Mórrígan",
         "Morrígu",
-        "Great Queen"
+        "Great Queen",
+        "Phantom Queen",
+        "The Great Queen"
       ],
       "epithets": [
         "Phantom Queen",
@@ -751,7 +856,35 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "war",
+            "battle",
+            "death"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:MA-COYOLXAUHQUI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-TEZCATLIPOCA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-DANU",
@@ -871,7 +1004,8 @@
       },
       "domains": [
         "creation",
-        "motherhood"
+        "motherhood",
+        "water"
       ],
       "keywords": [
         "ancestor",
@@ -896,7 +1030,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:demeter",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:mother",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-CERNUNNOS",
@@ -1009,7 +1161,10 @@
         "notes": "Name appears once; iconography widespread"
       },
       "domains": [
-        "fertility"
+        "animals",
+        "fertility",
+        "wealth",
+        "wilderness"
       ],
       "keywords": [
         "abundance",
@@ -1027,7 +1182,25 @@
         "sovereign"
       ],
       "coreFunction": "To embody wild man energy through lord-of-beasts and untamed",
-      "symbolicCore": "The fertility that transforms through Cernunnos's essence"
+      "symbolicCore": "The fertility that transforms through Cernunnos's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-LESHY",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:poseidon",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-MANANNÁN",
@@ -1158,8 +1331,11 @@
         "confidence": 0.9
       },
       "domains": [
+        "magic",
         "protection",
-        "sea"
+        "sea",
+        "spirits",
+        "trickster"
       ],
       "keywords": [
         "ablach",
@@ -1187,7 +1363,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:cuetzpalin",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:pentacles_02",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-AENGUS",
@@ -1316,7 +1510,9 @@
       },
       "domains": [
         "childhood",
+        "dreams",
         "love",
+        "magic",
         "poetry",
         "water"
       ],
@@ -1346,7 +1542,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:maiden",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:chitra",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-NUADA",
@@ -1496,7 +1710,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:dispatcher",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:uttara-ashadha",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-CU-CHULAINN",
@@ -1672,7 +1904,17 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HERACLES",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-RHIANNON",
@@ -1800,6 +2042,7 @@
         "confidence": 0.9
       },
       "domains": [
+        "dreams",
         "music",
         "sovereignty"
       ],
@@ -1828,7 +2071,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:eb",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:malinalli",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-ARAWN",
@@ -1937,7 +2198,10 @@
         "death",
         "hunt",
         "initiation",
-        "underworld"
+        "law",
+        "spirits",
+        "underworld",
+        "wilderness"
       ],
       "keywords": [
         "annwfn",
@@ -1963,7 +2227,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-BUNYIP",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-ANUBIS",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CE-BALOR",
@@ -2091,7 +2373,9 @@
         "confidence": 0.9
       },
       "domains": [
+        "celtic",
         "chaos",
+        "mythology",
         "sovereignty"
       ],
       "keywords": [
@@ -2111,7 +2395,17 @@
         "sovereign"
       ],
       "coreFunction": "To embody monster energy through giant and chaos-bringer",
-      "symbolicCore": "The chaos that transforms through Balor's essence"
+      "symbolicCore": "The chaos that transforms through Balor's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:EG-APOPHIS",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": [

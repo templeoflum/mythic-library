@@ -4,9 +4,10 @@
 
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
-**Version**: 0.2.1 (Enrichment Phase 1)
+**Version**: 0.2.2 (Enrichment Phase 2)
 **Total Archetypes**: 938 entries with full spectral coordinates
-**Completeness**: 22% complete, 46% rich, 30% partial, 2% stub (mean score: 64%)
+**Completeness**: 29% complete, 64% rich, 5% partial, 2% stub (mean score: 76%)
+**Cultural Echoes**: 1,840 cross-system links, 3,541 total relationships
 **Target**: ~1,200 archetypes for v1.0 release
 
 ## Architecture (ORAS v2.0)
@@ -335,18 +336,25 @@ When adding cross-system correspondences:
 - Narrative systems (Propp, Seven Plots, Commedia)
 - Gendered systems (KWML, Triple Goddess, Bolen)
 
-### 0.2.1 ✅ Enrichment Phase 1 (Current)
+### 0.2.1 ✅ Enrichment Phase 1
 - **Completeness**: 22% complete (210), 46% rich (429), 30% partial (280), 2% stub (19)
 - Added: domains, keywords, narrativeRoles, coreFunction, symbolicCore, psychologicalMapping
 - Automated enrichment infrastructure (scripts/enrich_*.py)
 - Tarot minor arcana fully enriched with Tier 3 fields
 - Mean completeness score: 64% (up from 44%)
 
-### 0.3.0 — Enrichment Phase 2
-- Add culturalEchoes bidirectional links across all pantheons
-- Complete relationship graph with missing bidirectional links
-- Add aliases for cross-cultural recognition
-- Target: 80%+ entries at "rich" tier
+### 0.2.2 ✅ Enrichment Phase 2 (Current)
+- **Completeness**: 29% complete (273), 64% rich (597), 5% partial (51), 2% stub (17)
+- **culturalEchoes**: 1,840 cross-system links (98% → 5% missing)
+- **Bidirectional relationships**: 951 reverse links added
+- **Domain vocabulary**: 1,680 domains added, expanded controlled vocabulary
+- **93% entries at "rich" tier** (target was 80%)
+- Mean completeness score: 76% (up from 64%)
+
+### 0.3.0 — Final Enrichment
+- Add aliases for remaining 697 entries
+- Add correspondences for remaining 614 entries
+- Fix remaining 59 bidirectional relationship gaps
 
 ### 1.0.0 — Production Release
 Complete database, REST/GraphQL API, 3D visualization

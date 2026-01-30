@@ -68,6 +68,16 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:emperor",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:jupiter",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:chokmah",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -80,7 +90,29 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:chokmah",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:viracocha",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "i-ching"
+      ]
     },
     {
       "@id": "iching:kun",
@@ -142,6 +174,16 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:empress",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:binah",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:great_mother",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -149,7 +191,30 @@
         "sovereign"
       ],
       "coreFunction": "To embody great_mother energy through earth and nurturing",
-      "symbolicCore": "The essential pattern of Kun (Earth)"
+      "symbolicCore": "The essential pattern of Kun (Earth)",
+      "culturalEchoes": [
+        {
+          "target": "astrology:cancer",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "jungian:great_mother",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "earth",
+        "i-ching"
+      ]
     },
     {
       "@id": "iching:zhen",
@@ -211,6 +276,16 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:tower",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mars",
+          "fidelity": 0.75
+        },
+        {
+          "type": "TENSION",
+          "target": "iching:gen",
+          "note": "Reverse of: Stillness vs movement"
         }
       ],
       "narrativeRoles": [
@@ -225,7 +300,30 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:speedster",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "i-ching",
+        "thunder"
+      ]
     },
     {
       "@id": "iching:kan",
@@ -287,6 +385,21 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:scorpio",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:moon",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:neptune",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:laguz",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -301,7 +414,31 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ocean:neuroticism",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kabbalah:yesod",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "i-ching",
+        "sea",
+        "water"
+      ]
     },
     {
       "@id": "iching:gen",
@@ -358,6 +495,16 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hermit",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:saturn",
+          "fidelity": 0.75
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "iching:dui",
+          "note": "Reverse of: Openness vs stillness"
         }
       ],
       "narrativeRoles": [
@@ -371,7 +518,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:swords_04",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:isa",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "i-ching"
+      ]
     },
     {
       "@id": "iching:xun",
@@ -428,6 +597,11 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:high_priestess",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mercury",
+          "fidelity": 0.65
         }
       ],
       "narrativeRoles": [
@@ -441,7 +615,30 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NO-FREYJA",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:ehwaz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "air",
+        "divination",
+        "i-ching"
+      ]
     },
     {
       "@id": "iching:li",
@@ -503,6 +700,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:leo",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sun",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -516,7 +718,31 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:citrinitas",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:wands_queen",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "fire",
+        "hearth",
+        "i-ching"
+      ]
     },
     {
       "@id": "iching:dui",
@@ -578,13 +804,40 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:lovers",
           "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:venus",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "trickster"
       ],
       "coreFunction": "To embody divine_child energy through joy and pleasure",
-      "symbolicCore": "The essential pattern of Dui (Lake)"
+      "symbolicCore": "The essential pattern of Dui (Lake)",
+      "culturalEchoes": [
+        {
+          "target": "kwml:lover",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "plot:comedy",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "i-ching"
+      ]
     }
   ],
   "systemRelationships": {

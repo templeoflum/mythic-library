@@ -70,10 +70,24 @@
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.75,
           "note": "Kore aspect"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "goddess:maiden-enchantress"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "goddess:maiden-amazon"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "goddess:crone"
         }
       ],
       "domains": [
-        "childhood"
+        "childhood",
+        "gender-archetypes",
+        "psychology"
       ],
       "narrativeRoles": [
         "innocent",
@@ -86,7 +100,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:maiden",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:chitra",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:maiden-enchantress",
@@ -136,8 +168,11 @@
         }
       ],
       "domains": [
+        "beauty",
         "childhood",
-        "love"
+        "love",
+        "magic",
+        "strength"
       ],
       "narrativeRoles": [
         "innocent",
@@ -151,7 +186,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:otter",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:chuen",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:maiden-amazon",
@@ -204,10 +257,18 @@
           "target": "arch:GR-ARTEMIS",
           "fidelity": 0.85,
           "note": "Warrior maiden"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:artemis",
+          "fidelity": 0.85,
+          "note": "Reverse of: Amazon aspect"
         }
       ],
       "domains": [
         "boundaries",
+        "gender-archetypes",
+        "psychology",
         "war"
       ],
       "narrativeRoles": [
@@ -223,7 +284,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ARTEMIS",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:wands_07",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:mother",
@@ -277,11 +356,32 @@
           "target": "arch:GR-DEMETER",
           "fidelity": 0.85,
           "note": "Earth mother"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:muluc",
+          "fidelity": 0.6,
+          "note": "Reverse of: Lunar feminine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:demeter",
+          "fidelity": 0.9,
+          "note": "Reverse of: Mother archetype"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "goddess:mother-queen"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "goddess:mother-lover"
         }
       ],
       "domains": [
         "fertility",
-        "motherhood"
+        "motherhood",
+        "wealth"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -294,7 +394,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-DANU",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:caregiver",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:mother-queen",
@@ -347,10 +465,18 @@
           "target": "arch:GR-HERA",
           "fidelity": 0.8,
           "note": "Queen of gods"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hera",
+          "fidelity": 0.8,
+          "note": "Reverse of: Queen archetype"
         }
       ],
       "domains": [
+        "gender-archetypes",
         "motherhood",
+        "psychology",
         "sovereignty"
       ],
       "narrativeRoles": [
@@ -366,7 +492,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:pushya",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LOKO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:mother-lover",
@@ -420,12 +564,20 @@
           "target": "arch:GR-APHRODITE",
           "fidelity": 0.75,
           "note": "Love goddess"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:aphrodite",
+          "fidelity": 0.85,
+          "note": "Reverse of: Lover archetype"
         }
       ],
       "domains": [
+        "creation",
         "love",
         "marriage",
-        "motherhood"
+        "motherhood",
+        "strength"
       ],
       "narrativeRoles": [
         "ally",
@@ -439,7 +591,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:quert",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:lover",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:crone",
@@ -493,12 +663,28 @@
           "target": "arch:GR-HECATE",
           "fidelity": 0.85,
           "note": "Crone goddess"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:elder",
+          "fidelity": 0.8,
+          "note": "Reverse of: Crone archetype"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "goddess:crone-sorceress"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "goddess:crone-destroyer"
         }
       ],
       "domains": [
         "death",
+        "magic",
         "motherhood",
         "preservation",
+        "strength",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -512,7 +698,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:crone",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:elder",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:crone-sorceress",
@@ -566,10 +770,24 @@
           "target": "arch:GR-CIRCE",
           "fidelity": 0.75,
           "note": "Witch/sorceress"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:ix",
+          "fidelity": 0.65,
+          "note": "Reverse of: Shamanic feminine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:willow",
+          "fidelity": 0.6,
+          "note": "Reverse of: Moon magic"
         }
       ],
       "domains": [
+        "magic",
         "preservation",
+        "strength",
         "transformation"
       ],
       "narrativeRoles": [
@@ -585,7 +803,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:snake",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:chicchan",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "goddess:crone-destroyer",
@@ -656,7 +892,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:miquiztli",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:cimi",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

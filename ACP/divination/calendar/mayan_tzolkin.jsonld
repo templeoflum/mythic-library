@@ -60,6 +60,17 @@
           "target": "arch:MA-ITZAMNA",
           "fidelity": 0.65,
           "note": "Primordial deity"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:cipactli",
+          "fidelity": 0.9,
+          "note": "Reverse of: Same archetype"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "tzolkin:ahau",
+          "note": "Reverse of: Cycle completes and restarts"
         }
       ],
       "domains": [
@@ -78,7 +89,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_54",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_24",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:ik",
@@ -131,6 +160,12 @@
           "target": "arch:MA-KUKULKAN",
           "fidelity": 0.7,
           "note": "Wind deity"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:ehecatl",
+          "fidelity": 0.9,
+          "note": "Reverse of: Same archetype"
         }
       ],
       "domains": [
@@ -150,7 +185,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:mithuna",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "spiral:yellow",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:akbal",
@@ -203,9 +256,17 @@
           "target": "heros_journey:belly_of_whale",
           "fidelity": 0.65,
           "note": "Inner journey"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:calli",
+          "fidelity": 0.85,
+          "note": "Reverse of: House/Night parallel"
         }
       ],
       "domains": [
+        "moon",
+        "sun",
         "threshold"
       ],
       "narrativeRoles": [
@@ -220,7 +281,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_04",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:snake",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:kan",
@@ -273,11 +352,19 @@
           "target": "arch:MA-YUMKAAX",
           "fidelity": 0.7,
           "note": "Maize god"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:cuetzpalin",
+          "fidelity": 0.8,
+          "note": "Reverse of: Lizard/Seed parallel"
         }
       ],
       "domains": [
         "fertility",
-        "harvest"
+        "harvest",
+        "strength",
+        "wealth"
       ],
       "narrativeRoles": [
         "creator",
@@ -291,7 +378,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_35",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_31",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:chicchan",
@@ -350,11 +455,19 @@
           "target": "arch:MA-KUKULKAN",
           "fidelity": 0.75,
           "note": "Feathered serpent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:coatl",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same serpent archetype"
         }
       ],
       "domains": [
         "love",
         "sky",
+        "stars",
+        "strength",
         "transformation"
       ],
       "narrativeRoles": [
@@ -369,7 +482,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:crone-sorceress",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_06",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:cimi",
@@ -422,9 +553,16 @@
           "target": "tarot:death",
           "fidelity": 0.8,
           "note": "Death as transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:miquiztli",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same death archetype"
         }
       ],
       "domains": [
+        "ancestors",
         "death",
         "memory"
       ],
@@ -440,7 +578,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:elder",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:ruis",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:manik",
@@ -493,10 +649,20 @@
           "target": "nakshatra:mrigashira",
           "fidelity": 0.7,
           "note": "Deer symbolism"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:mazatl",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same deer archetype"
         }
       ],
       "domains": [
-        "healing"
+        "healing",
+        "sovereignty",
+        "strength",
+        "travel",
+        "wilderness"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -510,7 +676,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:helper",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:rowan",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:lamat",
@@ -563,12 +747,19 @@
           "target": "astro:venus",
           "fidelity": 0.7,
           "note": "Venus association"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:tochtli",
+          "fidelity": 0.85,
+          "note": "Reverse of: Rabbit/Star parallel"
         }
       ],
       "domains": [
         "fertility",
         "music",
-        "peace"
+        "peace",
+        "wealth"
       ],
       "narrativeRoles": [
         "creator",
@@ -581,7 +772,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:punarvasu",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_61",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:muluc",
@@ -634,10 +843,18 @@
           "target": "goddess:mother",
           "fidelity": 0.6,
           "note": "Lunar feminine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:atl",
+          "fidelity": 0.9,
+          "note": "Reverse of: Same water archetype"
         }
       ],
       "domains": [
+        "moon",
         "sea",
+        "strength",
         "water"
       ],
       "narrativeRoles": [
@@ -652,7 +869,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:eii",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:goat",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:oc",
@@ -705,11 +940,18 @@
           "target": "arch:EG-ANUBIS",
           "fidelity": 0.7,
           "note": "Underworld guide"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:itzcuintli",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same dog archetype"
         }
       ],
       "domains": [
         "death",
         "justice",
+        "law",
         "underworld"
       ],
       "narrativeRoles": [
@@ -724,7 +966,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:eadhadh",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:hera",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:chuen",
@@ -777,10 +1037,18 @@
           "target": "arch:IN-HANUMAN",
           "fidelity": 0.55,
           "note": "Monkey deity"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:ozomatli",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same monkey archetype"
         }
       ],
       "domains": [
+        "calendar",
         "crafts",
+        "divination",
         "time"
       ],
       "narrativeRoles": [
@@ -795,7 +1063,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:otter",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:maiden-enchantress",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:eb",
@@ -848,9 +1134,17 @@
           "target": "heros_journey:road_of_trials",
           "fidelity": 0.75,
           "note": "Journey path"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:malinalli",
+          "fidelity": 0.85,
+          "note": "Reverse of: Road/Grass parallel"
         }
       ],
       "domains": [
+        "calendar",
+        "divination",
         "fate",
         "travel"
       ],
@@ -866,7 +1160,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-RHIANNON",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "commedia:innamorato",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:ben",
@@ -919,12 +1231,19 @@
           "target": "celtic_tree:reed",
           "fidelity": 0.6,
           "note": "Reed symbolism"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:acatl",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same reed archetype"
         }
       ],
       "domains": [
         "family",
         "home",
-        "sky"
+        "sky",
+        "sovereignty"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -938,7 +1257,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:snow_goose",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:dispatcher",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:ix",
@@ -991,11 +1328,18 @@
           "target": "goddess:crone-sorceress",
           "fidelity": 0.65,
           "note": "Shamanic feminine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:ocelotl",
+          "fidelity": 0.9,
+          "note": "Reverse of: Same jaguar archetype"
         }
       ],
       "domains": [
         "earth",
-        "protection"
+        "protection",
+        "strength"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -1009,7 +1353,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:ivy",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:snake",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:men",
@@ -1062,9 +1424,18 @@
           "target": "arch:GR-ZEUS",
           "fidelity": 0.55,
           "note": "Eagle of Zeus"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:cuauhtli",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same eagle archetype"
         }
       ],
       "domains": [
+        "calendar",
+        "communication",
+        "divination",
         "sky"
       ],
       "narrativeRoles": [
@@ -1079,7 +1450,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "element:air",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:red_hawk",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:cib",
@@ -1132,9 +1521,16 @@
           "target": "arch:EG-NEKHBET",
           "fidelity": 0.55,
           "note": "Vulture deity"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:cozcacuauhtli",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same vulture archetype"
         }
       ],
       "domains": [
+        "ancestors",
         "memory",
         "wisdom"
       ],
@@ -1148,7 +1544,25 @@
         "developmentalStage": "Late life connection to lineage and legacy",
         "integrationTask": "Honoring past while living present",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:orphan",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:uttara-bhadrapada",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:caban",
@@ -1201,10 +1615,18 @@
           "target": "pearson:sage",
           "fidelity": 0.65,
           "note": "Wisdom seeker"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:ollin",
+          "fidelity": 0.85,
+          "note": "Reverse of: Earth/Movement parallel"
         }
       ],
       "domains": [
         "earth",
+        "intellect",
+        "strength",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -1219,7 +1641,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:ash",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:conjunction",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:etznab",
@@ -1272,10 +1712,19 @@
           "target": "arch:MA-TEZCATLIPOCA",
           "fidelity": 0.7,
           "note": "Smoking mirror"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:tecpatl",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same flint archetype"
         }
       ],
       "domains": [
-        "sacrifice"
+        "calendar",
+        "divination",
+        "sacrifice",
+        "truth"
       ],
       "narrativeRoles": [
         "hero",
@@ -1289,7 +1738,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-HERO-TWINS-NAVAJO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:holly",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:cauac",
@@ -1342,11 +1809,19 @@
           "target": "arch:MA-CHAAK",
           "fidelity": 0.8,
           "note": "Rain deity"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:quiahuitl",
+          "fidelity": 0.95,
+          "note": "Reverse of: Same rain archetype"
         }
       ],
       "domains": [
         "air",
         "healing",
+        "strength",
+        "thunder",
         "water"
       ],
       "narrativeRoles": [
@@ -1360,7 +1835,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:dionysus",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_59",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "tzolkin:ahau",
@@ -1418,10 +1911,19 @@
           "type": "EVOLUTION",
           "target": "tzolkin:imix",
           "note": "Cycle completes and restarts"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:xochitl",
+          "fidelity": 0.8,
+          "note": "Reverse of: Completion parallel"
         }
       ],
       "domains": [
-        "death"
+        "calendar",
+        "death",
+        "divination",
+        "sun"
       ],
       "narrativeRoles": [
         "hero",
@@ -1436,7 +1938,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:apollo",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:citrinitas",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

@@ -66,10 +66,44 @@
           "target": "arch:GR-ZEUS",
           "fidelity": 0.75,
           "note": "King of gods"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:oak",
+          "fidelity": 0.75,
+          "note": "Reverse of: King archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:magha",
+          "fidelity": 0.75,
+          "note": "Reverse of: Royal authority"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:ruler",
+          "fidelity": 0.85,
+          "note": "Reverse of: Moore's king"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:zeus",
+          "fidelity": 0.9,
+          "note": "Reverse of: King archetype"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "kwml:warrior"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "kwml:magician"
         }
       ],
       "domains": [
+        "creation",
         "fertility",
+        "law",
         "order",
         "sovereignty"
       ],
@@ -84,7 +118,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-AKSHOBHYA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "angel:dominions",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:tyrant",
@@ -142,6 +194,7 @@
         }
       ],
       "domains": [
+        "law",
         "order",
         "sovereignty"
       ],
@@ -157,7 +210,17 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "superhero:dark_knight",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:weakling",
@@ -209,6 +272,7 @@
         }
       ],
       "domains": [
+        "law",
         "order",
         "sovereignty"
       ],
@@ -224,7 +288,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_47",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_39",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:warrior",
@@ -274,9 +356,29 @@
           "type": "COMPLEMENT",
           "target": "kwml:king",
           "notes": "Serves the King's vision"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:warrior",
+          "fidelity": 0.85,
+          "note": "Reverse of: Moore's warrior"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:ares",
+          "fidelity": 0.85,
+          "note": "Reverse of: Warrior archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "disc:dominance",
+          "fidelity": 0.7,
+          "note": "Reverse of: Active force"
         }
       ],
       "domains": [
+        "gender-archetypes",
+        "psychology",
         "sovereignty"
       ],
       "narrativeRoles": [
@@ -290,7 +392,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-KU",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:warrior",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:sadist",
@@ -339,10 +459,18 @@
           "type": "SHADOW",
           "target": "kwml:warrior",
           "notes": "Active shadow of Warrior"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:capitano",
+          "fidelity": 0.4,
+          "note": "Reverse of: Shadow warrior"
         }
       ],
       "domains": [
         "destruction",
+        "gender-archetypes",
+        "psychology",
         "war"
       ],
       "narrativeRoles": [
@@ -357,7 +485,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:EG-SET",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:masochist",
@@ -406,9 +552,17 @@
           "type": "SHADOW",
           "target": "kwml:warrior",
           "notes": "Passive shadow of Warrior"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "myss:victim",
+          "fidelity": 0.6,
+          "note": "Reverse of: Shadow warrior"
         }
       ],
       "domains": [
+        "gender-archetypes",
+        "psychology",
         "war"
       ],
       "narrativeRoles": [
@@ -423,7 +577,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:swords_08",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:cups_05",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:magician",
@@ -473,10 +645,23 @@
           "type": "COMPLEMENT",
           "target": "kwml:king",
           "notes": "Advises the King"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:magician",
+          "fidelity": 0.9,
+          "note": "Reverse of: Moore's magician"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "disc:conscientiousness",
+          "fidelity": 0.65,
+          "note": "Reverse of: Knowledge mastery"
         }
       ],
       "domains": [
         "initiation",
+        "strength",
         "transformation",
         "wisdom"
       ],
@@ -491,7 +676,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:magician",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-NAROPA",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "kwml:lover",
@@ -536,10 +739,30 @@
           "type": "SHADOW",
           "target": "kwml:impotent-lover",
           "notes": "Passive shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:lover",
+          "fidelity": 0.85,
+          "note": "Reverse of: Moore's lover"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:dionysus",
+          "fidelity": 0.75,
+          "note": "Reverse of: Ecstatic lover"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "disc:influence",
+          "fidelity": 0.7,
+          "note": "Reverse of: Connection energy"
         }
       ],
       "domains": [
-        "love"
+        "gender-archetypes",
+        "love",
+        "psychology"
       ],
       "narrativeRoles": [
         "ally",
@@ -552,7 +775,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:tochtli",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_58",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

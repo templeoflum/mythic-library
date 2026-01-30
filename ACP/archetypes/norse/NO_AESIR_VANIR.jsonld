@@ -68,7 +68,10 @@
           "system": "Greek",
           "fidelity": 0.5,
           "aspect": "traveler, wisdom, psychopomp"
-        }
+        },
+        "Wotan (Germanic)",
+        "Woden (Anglo-Saxon)",
+        "Allfather"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.62,
@@ -139,13 +142,13 @@
       "symbolicCore": "The one-eyed god who sees more than those with two - wisdom through sacrifice",
       "domains": [
         "death",
+        "fate",
         "fury",
         "hanging",
         "magic",
         "poetry",
         "runes",
-        "war",
-        "wisdom"
+        "travel"
       ],
       "temporalOrientation": "future",
       "temporalNotes": "Obsessed with Ragnarök; all his actions prepare for the end he cannot prevent",
@@ -228,6 +231,64 @@
           "target": "All-Father and wisdom-seeker",
           "trigger": "Self-sacrifice on Yggdrasil; eye-sacrifice at Mímir's well",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-DAGDA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-LUGH",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-ARAWN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-THOTH",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-SHIVA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ENLIL",
+          "fidelity": 0.45
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:NO-HEL",
+          "axis": "axis:ascent-descent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:mercury",
+          "fidelity": 0.6,
+          "note": "Reverse of: Mercury-Wotan connection"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ansuz",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:hanged_man",
+          "fidelity": 0.85,
+          "note": "Reverse of: Odin's self-sacrifice on Yggdrasil"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:raven",
+          "fidelity": 0.55,
+          "note": "Reverse of: Raven wisdom"
         }
       ],
       "correspondences": {
@@ -268,6 +329,52 @@
         "knowledge",
         "knows",
         "magic"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "sky-father",
+            "sovereignty"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:RO-JUPITER",
+          "fidelity": 0.55,
+          "sharedAspects": [
+            "sky-father",
+            "king-of-gods"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:CE-DAGDA",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "father-god",
+            "wisdom",
+            "magic"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "vogler:herald",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AF-ESHU",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -300,7 +407,10 @@
           "system": "Hindu",
           "fidelity": 0.6,
           "aspect": "thunderer, giant-slayer"
-        }
+        },
+        "Donar (Germanic)",
+        "Thunor (Anglo-Saxon)",
+        "Thunderer"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.07,
@@ -349,13 +459,13 @@
       "symbolicCore": "The hammer that hallows and destroys - protective violence",
       "domains": [
         "chaos",
+        "fatherhood",
         "fertility (through rain)",
-        "lightning",
+        "law",
         "oak trees",
+        "order",
         "protection",
-        "storms",
-        "strength",
-        "thunder"
+        "storms"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Heroic ego, masculine strength",
@@ -410,6 +520,40 @@
           "target": "primordial:berserker",
           "activation": "When protective rage becomes indiscriminate violence; when strength substitutes for wisdom",
           "strength": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:illapa",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:pariacaca",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-MARDUK",
+          "fidelity": 0.5
+        },
+        {
+          "type": "MIRRORS",
+          "target": "arch:NO-TYR"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:verethraghna",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:zhen",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:thurisaz",
+          "fidelity": 0.7
         }
       ],
       "correspondences": {
@@ -452,6 +596,34 @@
         "hero",
         "sovereign",
         "warrior"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "thunder",
+            "storm",
+            "strength"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-RAMA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:ME-ENLIL",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -548,8 +720,8 @@
         "fertility",
         "gold",
         "love",
-        "seiðr magic",
-        "war"
+        "magic",
+        "seiðr magic"
       ],
       "psychologicalMapping": {
         "jungianStructure": "Integrated anima, feminine power undivided",
@@ -633,6 +805,24 @@
         "magician",
         "shapeshifter",
         "sovereign"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "tarot:cups_knight",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_57",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -660,7 +850,9 @@
           "system": "Greek",
           "fidelity": 0.4,
           "aspect": "fire-bringer, bound punished"
-        }
+        },
+        "The Trickster",
+        "Sky-Treader"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.85,
@@ -727,11 +919,11 @@
         "chaos",
         "destruction",
         "family",
+        "fatherhood",
         "fire",
+        "law",
         "lies",
-        "mischief",
-        "shape-shifting",
-        "trickery"
+        "order"
       ],
       "temporalOrientation": "liminal",
       "temporalNotes": "Exists in threshold moments; his binding is the pause before Ragnarök",
@@ -804,6 +996,43 @@
           "target": "Bound world-ender leading Naglfar at Ragnarök",
           "trigger": "Causing Baldur's death; binding and punishment by the Aesir",
           "direction": "devolution"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ANANSI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-SET",
+          "fidelity": 0.6
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:NO-TYR",
+          "axis": "axis:order-chaos"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "arch:NO-HEIMDALL",
+          "axis": "axis:order-chaos"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:NO-HEL"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:NO-FENRIR"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:NO-JORMUNGANDR"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:angra-mainyu",
+          "fidelity": 0.45
         }
       ],
       "correspondences": {
@@ -846,6 +1075,42 @@
         "rebel",
         "shapeshifter",
         "trickster"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "trickster",
+            "shapeshifter"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:AF-ANANSI",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "trickster",
+            "shapeshifter"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:VO-TI-JEAN-PETRO",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:hacker",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -996,7 +1261,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:wise_old_man",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-AYIZAN",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NO-FREYR",
@@ -1067,11 +1350,11 @@
         "elves",
         "fertility",
         "love",
+        "magic",
         "peace",
-        "prosperity",
-        "rain",
         "sacrifice",
-        "sunshine"
+        "sunshine",
+        "water"
       ],
       "relationships": [
         {
@@ -1097,6 +1380,11 @@
           "target": "arch:GR-DIONYSUS",
           "fidelity": 0.4,
           "notes": "Fertility god, phallus symbolism"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ingwaz",
+          "fidelity": 0.9
         }
       ],
       "correspondences": {
@@ -1144,7 +1432,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_11",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:wunjo",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NO-TYR",
@@ -1170,7 +1476,9 @@
           "system": "Greek",
           "fidelity": 0.4,
           "aspect": "sky-father etymology (Dyeus)"
-        }
+        },
+        "Tiw (Anglo-Saxon)",
+        "Ziu (Germanic)"
       ],
       "spectralCoordinates": {
         "order-chaos": 0.1,
@@ -1247,6 +1555,16 @@
           "target": "arch:GR-ARES",
           "fidelity": 0.4,
           "notes": "War god, but Tyr is more honorable and ordered"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-NUADA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:tiwaz",
+          "fidelity": 0.95
         }
       ],
       "correspondences": {
@@ -1286,7 +1604,35 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "war",
+            "courage",
+            "battle"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "persian:mithra",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:RO-MINERVA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NO-BALDUR",
@@ -1345,8 +1691,8 @@
         "death",
         "death and rebirth",
         "joy",
-        "light",
-        "purity"
+        "purity",
+        "sun"
       ],
       "temporalOrientation": "cyclical",
       "temporalNotes": "His death triggers Ragnarök; his return follows it - the pivot of cosmic cycles",
@@ -1388,6 +1734,10 @@
           "target": "Returned ruler of the post-Ragnarök world",
           "trigger": "Death by mistletoe; passage through Hel; rebirth after world-renewal",
           "direction": "forward"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:NO-HEL"
         }
       ],
       "correspondences": {
@@ -1431,7 +1781,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "angel:cherubim",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-APOLLO",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NO-HEIMDALL",
@@ -1482,6 +1850,7 @@
       "domains": [
         "boundaries",
         "dawn",
+        "dreams",
         "protection",
         "social order",
         "threshold",
@@ -1548,7 +1917,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "angel:dominions",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-AKSHOBHYA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:NO-HEL",
@@ -1665,7 +2052,18 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HADES",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "underworld",
+            "death"
+          ],
+          "provenance": "SCHOL"
+        }
+      ]
     },
     {
       "@id": "arch:NO-FENRIR",
@@ -1708,7 +2106,7 @@
       "domains": [
         "chaos",
         "destruction",
-        "doom",
+        "fate",
         "hunger"
       ],
       "relationships": [
@@ -1739,6 +2137,11 @@
             "arch:NO-HEL"
           ],
           "strength": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BALOR",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -1769,6 +2172,16 @@
       ],
       "narrativeRoles": [
         "destroyer"
+      ],
+      "culturalEchoes": [
+        {
+          "target": "persian:angra-mainyu",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
       ]
     },
     {
@@ -1844,6 +2257,16 @@
           "target": "primordial:monster",
           "fidelity": 0.8,
           "notes": "World-serpent archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-APOPHIS",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-TIAMAT",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {

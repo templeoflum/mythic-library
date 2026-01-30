@@ -58,10 +58,17 @@
           "target": "ogham:beth",
           "fidelity": 0.95,
           "note": "Same tree"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "celtic_tree:elder",
+          "note": "Reverse of: Cycle completes"
         }
       ],
       "domains": [
-        "creation"
+        "creation",
+        "divination",
+        "zodiac"
       ],
       "narrativeRoles": [
         "healer",
@@ -75,7 +82,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "wuxing:wood",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:beith",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:rowan",
@@ -135,7 +160,10 @@
         }
       ],
       "domains": [
-        "protection"
+        "divination",
+        "magic",
+        "protection",
+        "zodiac"
       ],
       "narrativeRoles": [
         "healer",
@@ -149,7 +177,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:manik",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:temperance",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:ash",
@@ -209,7 +255,10 @@
         }
       ],
       "domains": [
-        "sea"
+        "divination",
+        "sea",
+        "strength",
+        "zodiac"
       ],
       "narrativeRoles": [
         "herald",
@@ -223,7 +272,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:conjunction",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:world",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:alder",
@@ -288,7 +355,30 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-TAPIO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:fearn",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "strength",
+        "zodiac"
+      ]
     },
     {
       "@id": "celtic_tree:willow",
@@ -348,6 +438,9 @@
         }
       ],
       "domains": [
+        "dreams",
+        "magic",
+        "moon",
         "sea",
         "water"
       ],
@@ -363,7 +456,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:anima",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:saille",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:hawthorn",
@@ -417,7 +528,10 @@
         }
       ],
       "domains": [
-        "threshold"
+        "divination",
+        "magic",
+        "threshold",
+        "zodiac"
       ],
       "narrativeRoles": [
         "innocent",
@@ -430,7 +544,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_62",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:mannaz",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:oak",
@@ -487,10 +619,18 @@
           "target": "kwml:king",
           "fidelity": 0.75,
           "note": "King archetype"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "celtic_tree:holly",
+          "axis": "creation-destruction",
+          "note": "Reverse of: Oak vs Holly King"
         }
       ],
       "domains": [
-        "sovereignty"
+        "sovereignty",
+        "strength",
+        "wilderness"
       ],
       "narrativeRoles": [
         "ruler",
@@ -503,7 +643,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-VAISHRAVANA",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:duir",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:holly",
@@ -563,7 +721,9 @@
         }
       ],
       "domains": [
+        "law",
         "sovereignty",
+        "strength",
         "war"
       ],
       "narrativeRoles": [
@@ -578,7 +738,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:tinne",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-HERO-TWINS-NAVAJO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:hazel",
@@ -638,8 +816,10 @@
         }
       ],
       "domains": [
+        "divination",
         "poetry",
-        "wisdom"
+        "wisdom",
+        "zodiac"
       ],
       "narrativeRoles": [
         "creator",
@@ -653,7 +833,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:helper",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:temperance",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:vine",
@@ -714,7 +912,9 @@
       ],
       "domains": [
         "harvest",
-        "prophecy"
+        "prophecy",
+        "truth",
+        "wine"
       ],
       "narrativeRoles": [
         "magician",
@@ -728,7 +928,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_59",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:muin",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:ivy",
@@ -782,7 +1000,10 @@
         }
       ],
       "domains": [
-        "rebirth"
+        "divination",
+        "rebirth",
+        "strength",
+        "zodiac"
       ],
       "narrativeRoles": [
         "hero",
@@ -795,7 +1016,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ix",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-TLAZOLTEOTL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:reed",
@@ -846,9 +1085,16 @@
           "target": "ogham:ngetal",
           "fidelity": 0.95,
           "note": "Same tree"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:ben",
+          "fidelity": 0.6,
+          "note": "Reverse of: Reed symbolism"
         }
       ],
       "domains": [
+        "ancestors",
         "communication",
         "time"
       ],
@@ -863,7 +1109,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "incan:pachacamac",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-NAMAKA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "celtic_tree:elder",
@@ -943,7 +1207,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:ruis",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:crone",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

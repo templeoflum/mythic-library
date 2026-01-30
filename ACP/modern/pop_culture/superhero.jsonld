@@ -75,6 +75,26 @@
           "type": "COMPLEMENT",
           "target": "superhero:team_leader",
           "note": "Both inspire others"
+        },
+        {
+          "type": "TENSION",
+          "target": "superhero:outsider",
+          "note": "Reverse of: Accepted vs rejected hero"
+        },
+        {
+          "type": "TENSION",
+          "target": "superhero:trickster_hero",
+          "note": "Reverse of: Levity vs gravity"
+        },
+        {
+          "type": "TENSION",
+          "target": "superhero:antihero",
+          "note": "Reverse of: Dark vs light heroism"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "superhero:legacy_hero",
+          "note": "Reverse of: May become ideal hero"
         }
       ],
       "narrativeRoles": [
@@ -90,7 +110,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-LUGH",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-SUN-FATHER",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:dark_knight",
@@ -155,7 +193,8 @@
         }
       ],
       "domains": [
-        "fire"
+        "fire",
+        "hearth"
       ],
       "narrativeRoles": [
         "antagonist",
@@ -170,7 +209,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:ocelotl",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:false-hero",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:outsider",
@@ -232,6 +289,11 @@
           "type": "COMPLEMENT",
           "target": "superhero:antihero",
           "note": "Both operate outside norms"
+        },
+        {
+          "type": "TENSION",
+          "target": "superhero:cosmic_being",
+          "note": "Reverse of: Isolation at both extremes"
         }
       ],
       "narrativeRoles": [
@@ -245,7 +307,25 @@
         "developmentalStage": "Alienation from collective, finding unique path",
         "integrationTask": "Finding belonging while honoring difference",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:swords_03",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:ashlesha",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:trickster_hero",
@@ -307,6 +387,11 @@
           "type": "TENSION",
           "target": "superhero:paragon",
           "note": "Levity vs gravity"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "superhero:speedster",
+          "note": "Reverse of: Both quick-witted"
         }
       ],
       "narrativeRoles": [
@@ -322,7 +407,28 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "mbti:entp",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:monkey",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "trickster"
+      ]
     },
     {
       "@id": "superhero:cosmic_being",
@@ -384,6 +490,11 @@
           "type": "TENSION",
           "target": "superhero:outsider",
           "note": "Isolation at both extremes"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:ai_entity",
+          "fidelity": 0.6
         }
       ],
       "narrativeRoles": [
@@ -397,7 +508,20 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:judgement",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "strength"
+      ]
     },
     {
       "@id": "superhero:tech_genius",
@@ -476,7 +600,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:creator",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "spiral:orange",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:warrior_woman",
@@ -541,6 +683,9 @@
         }
       ],
       "domains": [
+        "air",
+        "strength",
+        "thunder",
         "war"
       ],
       "narrativeRoles": [
@@ -555,7 +700,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:tinne",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:krittika",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:speedster",
@@ -630,7 +793,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_51",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:zhen",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:team_leader",
@@ -692,6 +873,11 @@
           "type": "TENSION",
           "target": "superhero:antihero",
           "note": "Duty vs personal code"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "superhero:warrior_woman",
+          "note": "Reverse of: Often leads teams"
         }
       ],
       "narrativeRoles": [
@@ -707,7 +893,28 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:zeus",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:acatl",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "intellect"
+      ]
     },
     {
       "@id": "superhero:antihero",
@@ -769,6 +976,21 @@
           "type": "TENSION",
           "target": "superhero:paragon",
           "note": "Dark vs light heroism"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "superhero:outsider",
+          "note": "Reverse of: Both operate outside norms"
+        },
+        {
+          "type": "TENSION",
+          "target": "superhero:warrior_woman",
+          "note": "Reverse of: Compassion vs vengeance"
+        },
+        {
+          "type": "TENSION",
+          "target": "superhero:team_leader",
+          "note": "Reverse of: Duty vs personal code"
         }
       ],
       "narrativeRoles": [
@@ -784,7 +1006,25 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:swords_05",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:ares",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:mentor_hero",
@@ -846,13 +1086,36 @@
           "type": "COMPLEMENT",
           "target": "superhero:legacy_hero",
           "note": "Mentor-student pair"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "superhero:tech_genius",
+          "note": "Reverse of: Both value knowledge"
         }
       ],
       "narrativeRoles": [
         "magician"
       ],
       "coreFunction": "To embody wise_elder energy through wisdom and guidance",
-      "symbolicCore": "The essential pattern of The Mentor Hero"
+      "symbolicCore": "The essential pattern of The Mentor Hero",
+      "culturalEchoes": [
+        {
+          "target": "vogler:mentor",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rashi:tula",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "superhero:legacy_hero",
@@ -921,7 +1184,25 @@
         "warrior"
       ],
       "coreFunction": "To embody divine_child energy through potential and youth",
-      "symbolicCore": "The essential pattern of The Legacy Hero"
+      "symbolicCore": "The essential pattern of The Legacy Hero",
+      "culturalEchoes": [
+        {
+          "target": "plot:rags-to-riches",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:salmon",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

@@ -157,6 +157,18 @@
           "target": "Morning Star (Venus) after self-immolation",
           "trigger": "Tricked by Tezcatlipoca into drunkenness and shame; self-exile and self-sacrifice on funeral pyre",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:ehecatl",
+          "fidelity": 0.85,
+          "note": "Reverse of: Wind aspect"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:acatl",
+          "fidelity": 0.7,
+          "note": "Reverse of: 1 Reed birthdate"
         }
       ],
       "shadowDynamics": {
@@ -239,7 +251,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-TANE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-ILMARINEN",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-TEZCATLIPOCA",
@@ -250,7 +280,8 @@
         "Titlacauan",
         "Ipalnemoani",
         "Night Wind",
-        "Yaotl (Enemy)"
+        "Yaotl (Enemy)",
+        "Lord of the Night"
       ],
       "domain": [
         "Night",
@@ -338,6 +369,18 @@
           "target": "primordial:deceiver",
           "activation": "When the Smoking Mirror reflects only destruction; when testing becomes torment",
           "strength": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:ocelotl",
+          "fidelity": 0.7,
+          "note": "Reverse of: Jaguar association"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:etznab",
+          "fidelity": 0.7,
+          "note": "Reverse of: Smoking mirror"
         }
       ],
       "shadowDynamics": {
@@ -361,7 +404,11 @@
         "association": "Night, sorcery, jaguars, rulers, warriors, fate"
       },
       "domains": [
-        "fate"
+        "fate",
+        "magic",
+        "moon",
+        "trickster",
+        "wilderness"
       ],
       "keywords": [
         "balance",
@@ -389,7 +436,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-MORRIGAN",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-HUITZILOPOCHTLI",
@@ -501,7 +566,9 @@
         "family",
         "motherhood",
         "sacrifice",
-        "travel"
+        "sun",
+        "travel",
+        "war"
       ],
       "keywords": [
         "armed",
@@ -529,7 +596,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:verethraghna",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-INDRA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-TLALOC",
@@ -608,6 +693,12 @@
           "target": "arch:ME-ENLIL",
           "fidelity": 0.55,
           "notes": "Storm, floods, agriculture"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:quiahuitl",
+          "fidelity": 0.8,
+          "note": "Reverse of: Rain deity"
         }
       ],
       "shadowDynamics": {
@@ -631,10 +722,12 @@
         "paradise": "Tlalocan"
       },
       "domains": [
+        "agriculture",
         "childhood",
         "harvest",
         "sea",
         "sky",
+        "thunder",
         "water"
       ],
       "keywords": [
@@ -661,7 +754,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-WANDJINA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:huathe",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-CHALCHIUHTLICUE",
@@ -756,6 +867,8 @@
       "domains": [
         "motherhood",
         "sea",
+        "strength",
+        "sun",
         "water"
       ],
       "keywords": [
@@ -783,7 +896,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-MIELIKKI",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:sli",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-COATLICUE",
@@ -888,8 +1019,11 @@
         "association": "Earth, life, death, motherhood, fertility"
       },
       "domains": [
+        "death",
         "earth",
-        "motherhood"
+        "moon",
+        "motherhood",
+        "stars"
       ],
       "keywords": [
         "ball",
@@ -916,7 +1050,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-NANA-BURUKU",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:hades",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-COYOLXAUHQUI",
@@ -1014,7 +1166,10 @@
       },
       "domains": [
         "fertility",
-        "motherhood"
+        "moon",
+        "motherhood",
+        "stars",
+        "sun"
       ],
       "keywords": [
         "became",
@@ -1042,7 +1197,25 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-MORRIGAN",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:ashlesha",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-MICTLANTECUHTLI",
@@ -1125,6 +1298,12 @@
           "target": "arch:CN-YANLUO",
           "fidelity": 0.6,
           "notes": "Underworld ruler, judgment"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:miquiztli",
+          "fidelity": 0.85,
+          "note": "Reverse of: Death lord"
         }
       ],
       "shadowDynamics": {
@@ -1149,7 +1328,9 @@
       "domains": [
         "death",
         "fertility",
+        "law",
         "sacrifice",
+        "spirits",
         "travel",
         "underworld",
         "war"
@@ -1179,7 +1360,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-TUONI",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-TUONETAR",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-MICTECACIHUATL",
@@ -1279,8 +1478,10 @@
         "association": "Death, ancestors, festival of the dead"
       },
       "domains": [
+        "death",
         "protection",
-        "sovereignty"
+        "sovereignty",
+        "spirits"
       ],
       "keywords": [
         "ancient",
@@ -1307,7 +1508,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-TUONETAR",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-TUONI",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-XIPE-TOTEC",
@@ -1437,7 +1656,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:snake",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:purva-bhadrapada",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-TONATIUH",
@@ -1538,7 +1775,9 @@
       "domains": [
         "family",
         "fire",
-        "sacrifice"
+        "hearth",
+        "sacrifice",
+        "sun"
       ],
       "keywords": [
         "blood",
@@ -1565,7 +1804,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-WANDJINA",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-THUNDERBIRD",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-NANAHUATZIN",
@@ -1671,8 +1928,11 @@
         "association": "Self-sacrifice, humility, cosmic transformation"
       },
       "domains": [
+        "courage",
         "fire",
-        "sacrifice"
+        "hearth",
+        "sacrifice",
+        "sun"
       ],
       "keywords": [
         "become",
@@ -1700,7 +1960,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-MILAREPA",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:magician",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-TLAZOLTEOTL",
@@ -1796,8 +2074,10 @@
         "association": "Confession, sexuality, purification, childbirth, cotton"
       },
       "domains": [
+        "aztec-maya",
         "fertility",
-        "love"
+        "love",
+        "mythology"
       ],
       "keywords": [
         "assists",
@@ -1824,7 +2104,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-SIMBI",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:raven",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-XOCHIQUETZAL",
@@ -1903,6 +2201,12 @@
           "target": "arch:IN-LAKSHMI",
           "fidelity": 0.5,
           "notes": "Beauty, grace, auspiciousness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tonalpohualli:xochitl",
+          "fidelity": 0.85,
+          "note": "Reverse of: Flower goddess"
         }
       ],
       "shadowDynamics": {
@@ -1925,6 +2229,7 @@
         "association": "Love, beauty, flowers, weaving, pleasure, arts"
       },
       "domains": [
+        "beauty",
         "childhood",
         "love"
       ],
@@ -1954,7 +2259,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_22",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:coll",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-HERO-TWINS",
@@ -2059,8 +2382,10 @@
       "domains": [
         "death",
         "fatherhood",
+        "moon",
         "rebirth",
         "sacrifice",
+        "sun",
         "underworld"
       ],
       "keywords": [
@@ -2089,7 +2414,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:magician",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_40",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-ITZAMNA",
@@ -2168,6 +2511,12 @@
           "target": "arch:IN-BRAHMA",
           "fidelity": 0.5,
           "notes": "Creator, cosmic knowledge"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:imix",
+          "fidelity": 0.65,
+          "note": "Reverse of: Primordial deity"
         }
       ],
       "shadowDynamics": {
@@ -2221,7 +2570,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:MA-IX-CHEL",
@@ -2330,10 +2697,13 @@
         "association": "Moon, weaving, medicine, childbirth, floods"
       },
       "domains": [
+        "childhood",
         "destruction",
         "fertility",
         "healing",
-        "love"
+        "love",
+        "moon",
+        "wilderness"
       ],
       "keywords": [
         "aspects",
@@ -2361,7 +2731,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:snake",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:huathe",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

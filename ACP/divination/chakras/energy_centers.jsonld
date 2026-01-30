@@ -79,6 +79,17 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:saturn",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:ashlesha",
+          "fidelity": 0.6,
+          "note": "Reverse of: Serpent energy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:beige",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -92,7 +103,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "element:earth",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination"
+      ]
     },
     {
       "@id": "chakra:svadhisthana",
@@ -164,6 +197,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:moon",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:purple",
+          "fidelity": 0.65
         }
       ],
       "narrativeRoles": [
@@ -178,7 +216,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE-PANDEMOS",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:pentacles_page",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination"
+      ]
     },
     {
       "@id": "chakra:manipura",
@@ -250,6 +310,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:sun",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:red",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -263,7 +328,30 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:uruz",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:magician",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination",
+        "sun"
+      ]
     },
     {
       "@id": "chakra:anahata",
@@ -335,6 +423,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:venus",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:green",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -350,7 +443,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:gebo",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:mother-lover",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination"
+      ]
     },
     {
       "@id": "chakra:vishuddha",
@@ -436,7 +551,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_queen",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:maiden-enchantress",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination"
+      ]
     },
     {
       "@id": "chakra:ajna",
@@ -508,6 +645,11 @@
           "type": "CULTURAL_ECHO",
           "target": "kabbalah:binah",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:yellow",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -515,7 +657,29 @@
         "threshold-guardian"
       ],
       "coreFunction": "To embody wise_elder energy through wisdom and insight",
-      "symbolicCore": "The essential pattern of Ajna (Third Eye)"
+      "symbolicCore": "The essential pattern of Ajna (Third Eye)",
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE-URANIA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:ailm",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination"
+      ]
     },
     {
       "@id": "chakra:sahasrara",
@@ -587,6 +751,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:uranus",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:turquoise",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -599,7 +768,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-SHAKYAMUNI",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-APHRODITE-URANIA",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chakras",
+        "divination"
+      ]
     }
   ],
   "systemRelationships": {

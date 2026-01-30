@@ -106,6 +106,7 @@
       ],
       "domains": [
         "justice",
+        "law",
         "love",
         "protection",
         "sovereignty"
@@ -133,7 +134,45 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "sky",
+            "thunder",
+            "sovereignty",
+            "king-of-gods"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.55,
+          "sharedAspects": [
+            "sky-father",
+            "king-of-gods"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:asha-vahishta",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-JUNO",
@@ -223,7 +262,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kwml:king",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:emperor",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-NEPTUNE",
@@ -268,6 +325,8 @@
         }
       ],
       "domains": [
+        "mythology",
+        "roman",
         "sea",
         "water"
       ],
@@ -294,7 +353,35 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-POSEIDON",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "sea",
+            "storms",
+            "horses"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:VO-AGWE",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:alder",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-MINERVA",
@@ -353,6 +440,7 @@
       "domains": [
         "commerce",
         "crafts",
+        "war",
         "wisdom"
       ],
       "keywords": [
@@ -368,7 +456,35 @@
         "goddess"
       ],
       "coreFunction": "To embody sage energy through wisdom and strategy",
-      "symbolicCore": "The commerce that transforms through Minerva's essence"
+      "symbolicCore": "The commerce that transforms through Minerva's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ATHENA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "wisdom",
+            "crafts",
+            "strategy"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "persian:mithra",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-PLUTO",
@@ -423,7 +539,8 @@
         "death",
         "earth",
         "initiation",
-        "underworld"
+        "underworld",
+        "wealth"
       ],
       "keywords": [
         "conception",
@@ -438,7 +555,27 @@
         "inspiring"
       ],
       "coreFunction": "To embody underworld lord energy through ruler of the dead and guardian of underworld",
-      "symbolicCore": "The death that transforms through Pluto's essence"
+      "symbolicCore": "The death that transforms through Pluto's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HADES",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "underworld",
+            "death",
+            "wealth"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "chakra:muladhara",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-VENUS",
@@ -500,6 +637,8 @@
         }
       ],
       "domains": [
+        "ancestors",
+        "beauty",
         "fertility",
         "love",
         "memory",
@@ -530,7 +669,35 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "love",
+            "beauty",
+            "desire"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "rune:wunjo",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kabbalah:chesed",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-MARS",
@@ -597,6 +764,7 @@
         }
       ],
       "domains": [
+        "agriculture",
         "boundaries",
         "fatherhood",
         "harvest",
@@ -626,7 +794,35 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "war",
+            "violence",
+            "battle"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-DURGA",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-VAJRAPANI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-MERCURY",
@@ -683,7 +879,9 @@
       ],
       "domains": [
         "commerce",
-        "communication"
+        "communication",
+        "mythology",
+        "roman"
       ],
       "keywords": [
         "centers",
@@ -701,7 +899,36 @@
         "trickster"
       ],
       "coreFunction": "To embody messenger energy through commerce and trade",
-      "symbolicCore": "The commerce that transforms through Mercury's essence"
+      "symbolicCore": "The commerce that transforms through Mercury's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "messenger",
+            "commerce",
+            "travel",
+            "trickster"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:IN-KRISHNA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "holland:enterprising",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-SATURN",
@@ -755,6 +982,7 @@
         }
       ],
       "domains": [
+        "agriculture",
         "fatherhood",
         "harvest",
         "peace",
@@ -784,7 +1012,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "keirsey:guardian",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-VARUNA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:RO-HERCULES",
@@ -841,7 +1087,9 @@
       ],
       "domains": [
         "commerce",
-        "madness"
+        "courage",
+        "madness",
+        "strength"
       ],
       "keywords": [
         "cacus",
@@ -866,7 +1114,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-MARDUK",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:verethraghna",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

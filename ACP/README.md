@@ -4,8 +4,8 @@ A semantic framework for mapping archetypes across mythology, psychology, divina
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
 [![Archetypes](https://img.shields.io/badge/archetypes-938-green)]()
-[![Completeness](https://img.shields.io/badge/completeness-68%25%20rich+-brightgreen)]()
-[![Version](https://img.shields.io/badge/version-0.2.1-yellow)]()
+[![Completeness](https://img.shields.io/badge/completeness-93%25%20rich+-brightgreen)]()
+[![Version](https://img.shields.io/badge/version-0.2.2-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 ---
@@ -359,18 +359,26 @@ The system enforces coherence:
 - [x] **Narrative Systems**: Propp's Roles (8), Seven Basic Plots (7), Commedia dell'Arte (10)
 - [x] **Gendered Systems**: KWML (8), Triple Goddess (9), Bolen's Goddesses (7), Bolen's Gods (8)
 
-### 0.2.1 ✅ Enrichment Phase 1 — Current
+### 0.2.1 ✅ Enrichment Phase 1
 - [x] **Completeness**: 22% complete (210), 46% rich (429), 30% partial (280), 2% stub (19)
 - [x] **Fields Added**: domains, keywords, narrativeRoles, coreFunction, symbolicCore, psychologicalMapping
 - [x] **Infrastructure**: Automated enrichment scripts (`scripts/enrich_*.py`)
 - [x] **Tarot Minor Arcana**: Fully enriched with Tier 3 fields (56 cards)
 - [x] **Mean Score**: 64% (up from 44%)
 
-### 0.3.0 — Enrichment Phase 2
-- [ ] culturalEchoes bidirectional links across all pantheons
-- [ ] Complete relationship graph (fix 878 missing bidirectional links)
-- [ ] Add aliases for cross-cultural recognition
-- [ ] Target: 80%+ entries at "rich" tier
+### 0.2.2 ✅ Enrichment Phase 2 — Current
+- [x] **culturalEchoes**: 1,840 cross-system links (98% → 5% missing)
+- [x] **Bidirectional relationships**: 951 reverse links added (934 → 59 missing)
+- [x] **Domain vocabulary**: 1,680 domains added, 70 normalized
+- [x] **Completeness**: 29% complete (273), 64% rich (597), 5% partial (51), 2% stub (17)
+- [x] **Target achieved**: 93% entries at "rich" tier or above (target was 80%)
+- [x] **Mean Score**: 76% (up from 64%)
+
+### 0.3.0 — Final Enrichment
+- [ ] Add aliases for remaining entries (697 missing)
+- [ ] Add correspondences for remaining entries (614 missing)
+- [ ] Fix remaining 59 bidirectional relationship gaps
+- [ ] Reduce stubs to zero
 
 ### 1.0.0 — Production Release
 - [ ] Complete ~1,200 archetype database

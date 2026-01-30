@@ -82,7 +82,25 @@
         "caregiver"
       ],
       "coreFunction": "To embody divine_child energy through purity and optimism",
-      "symbolicCore": "The essential pattern of The Innocent"
+      "symbolicCore": "The essential pattern of The Innocent",
+      "culturalEchoes": [
+        {
+          "target": "pearson:innocent",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:pushya",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:sage",
@@ -150,13 +168,41 @@
           "type": "TENSION",
           "target": "brand:jester",
           "note": "Serious vs playful"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:lover",
+          "note": "Reverse of: Heart vs mind"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:curator",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
         "magician"
       ],
       "coreFunction": "To embody wise_elder energy through wisdom and truth",
-      "symbolicCore": "The essential pattern of The Sage"
+      "symbolicCore": "The essential pattern of The Sage",
+      "culturalEchoes": [
+        {
+          "target": "pearson:sage",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:mentor",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:explorer",
@@ -238,7 +284,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:seeker",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:horse",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:outlaw",
@@ -306,6 +370,16 @@
           "type": "TENSION",
           "target": "brand:innocent",
           "note": "Liberation vs safety"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:explorer",
+          "note": "Reverse of: Both value freedom"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:antihero",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -320,7 +394,25 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:hacker",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-TI-JEAN-PETRO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:magician",
@@ -388,6 +480,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:mercury",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:tech_genius",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -402,7 +499,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:magician",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "astrology:mercury",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:hero",
@@ -470,6 +585,11 @@
           "type": "COMPLEMENT",
           "target": "brand:ruler",
           "note": "Both seek mastery"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:everyman",
+          "note": "Reverse of: Ordinary vs extraordinary"
         }
       ],
       "narrativeRoles": [
@@ -483,7 +603,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:hero",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:chariot",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:lover",
@@ -551,6 +689,11 @@
           "type": "TENSION",
           "target": "brand:sage",
           "note": "Heart vs mind"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:influencer",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -565,7 +708,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:purva-phalguni",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:cups_02",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:jester",
@@ -633,6 +794,16 @@
           "type": "TENSION",
           "target": "brand:ruler",
           "note": "Levity vs authority"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:sage",
+          "note": "Reverse of: Serious vs playful"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:viral_meme",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -646,7 +817,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "mbti:entp",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:everyman",
@@ -727,7 +916,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "enneagram:type_6",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_48",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:caregiver",
@@ -795,6 +1002,16 @@
           "type": "COMPLEMENT",
           "target": "brand:innocent",
           "note": "Both value safety"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:lover",
+          "note": "Reverse of: Both value connection"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "brand:everyman",
+          "note": "Reverse of: Both value community"
         }
       ],
       "narrativeRoles": [
@@ -802,7 +1019,25 @@
         "healer"
       ],
       "coreFunction": "To embody great_mother energy through nurturing and protection",
-      "symbolicCore": "The essential pattern of The Caregiver"
+      "symbolicCore": "The essential pattern of The Caregiver",
+      "culturalEchoes": [
+        {
+          "target": "totem:woodpecker",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-DANU",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:ruler",
@@ -870,6 +1105,26 @@
           "type": "COMPLEMENT",
           "target": "brand:hero",
           "note": "Both seek mastery"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:explorer",
+          "note": "Reverse of: Freedom vs control"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:jester",
+          "note": "Reverse of: Levity vs authority"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:everyman",
+          "note": "Reverse of: Common vs elite"
+        },
+        {
+          "type": "TENSION",
+          "target": "brand:creator",
+          "note": "Reverse of: Innovation vs tradition"
         }
       ],
       "narrativeRoles": [
@@ -883,7 +1138,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:ruler",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:emperor",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "brand:creator",
@@ -951,6 +1224,11 @@
           "type": "TENSION",
           "target": "brand:ruler",
           "note": "Innovation vs tradition"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:creator",
+          "fidelity": 0.9
         }
       ],
       "narrativeRoles": [
@@ -964,7 +1242,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:creator",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:creator",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

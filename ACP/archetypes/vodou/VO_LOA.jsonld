@@ -86,12 +86,19 @@
           "target": "arch:VO-BARON-SAMEDI",
           "axis": "creation-destruction",
           "notes": "Entrance vs exit"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-TI-JEAN-PETRO",
+          "fidelity": 0.5
         }
       ],
       "syncreticCorrespondence": "St. Peter (holds keys), St. Lazarus",
       "domains": [
         "initiation",
-        "protection"
+        "mythology",
+        "protection",
+        "vodou"
       ],
       "keywords": [
         "between",
@@ -118,7 +125,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:hermes",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:raven",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-DAMBALLAH",
@@ -180,6 +205,14 @@
           "target": "arch:AU-RAINBOW-SERPENT",
           "fidelity": 0.55,
           "notes": "Rainbow serpent archetype"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-SIMBI"
+        },
+        {
+          "type": "SHADOW",
+          "target": "arch:VO-DANBALA-LA-FLAMBEAU"
         }
       ],
       "syncreticCorrespondence": "St. Patrick, Moses",
@@ -213,7 +246,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-WHITE-TARA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-AMITABHA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-AYIDA-WEDO",
@@ -261,7 +312,8 @@
       "syncreticCorrespondence": "Our Lady of the Immaculate Conception",
       "domains": [
         "fertility",
-        "motherhood"
+        "motherhood",
+        "wealth"
       ],
       "keywords": [
         "associated",
@@ -286,7 +338,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-WHITE-TARA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-AMITABHA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-OGOU",
@@ -361,6 +431,7 @@
       "domains": [
         "dance",
         "fire",
+        "hearth",
         "war"
       ],
       "keywords": [
@@ -387,7 +458,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-TU",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:ares",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-ERZULIE-FREDA",
@@ -444,10 +533,16 @@
           "target": "arch:AF-OSHUN",
           "fidelity": 0.75,
           "notes": "Yoruba river goddess of love"
+        },
+        {
+          "type": "SHADOW",
+          "target": "arch:VO-EZILI-JE-ROUGE"
         }
       ],
       "syncreticCorrespondence": "Our Lady of Sorrows, Mater Dolorosa",
       "domains": [
+        "beauty",
+        "dreams",
         "love"
       ],
       "keywords": [
@@ -474,7 +569,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-XOCHIQUETZAL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:deer",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-ERZULIE-DANTOR",
@@ -529,7 +642,9 @@
       "syncreticCorrespondence": "Our Lady of Czestochowa (Black Madonna)",
       "domains": [
         "childhood",
-        "motherhood"
+        "motherhood",
+        "mythology",
+        "vodou"
       ],
       "keywords": [
         "archetype",
@@ -556,7 +671,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-LOUHI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-SHAKTI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-BARON-SAMEDI",
@@ -612,11 +745,16 @@
           "target": "arch:GR-HADES",
           "fidelity": 0.55,
           "notes": "Death lord parallel"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:VO-GHEDE-NIBO"
         }
       ],
       "syncreticCorrespondence": "St. Martin de Porres",
       "domains": [
         "death",
+        "initiation",
         "protection",
         "threshold"
       ],
@@ -645,7 +783,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-UNDERWATER-PANTHER",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-BABA-YAGA",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-MAMAN-BRIGITTE",
@@ -698,7 +854,9 @@
       "syncreticCorrespondence": "St. Brigid of Ireland",
       "domains": [
         "justice",
-        "sovereignty"
+        "mythology",
+        "sovereignty",
+        "vodou"
       ],
       "keywords": [
         "associated",
@@ -724,7 +882,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-BABA-YAGA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-UNDERWATER-PANTHER",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-GHEDE-NIBO",
@@ -769,7 +945,11 @@
         }
       ],
       "domains": [
+        "ancestors",
+        "childhood",
+        "death",
         "memory",
+        "spirits",
         "time"
       ],
       "keywords": [
@@ -796,7 +976,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:crone",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "jungian:crone",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-AGWE",
@@ -855,6 +1053,7 @@
       "syncreticCorrespondence": "St. Ulrich",
       "domains": [
         "initiation",
+        "law",
         "sea",
         "sovereignty",
         "water"
@@ -882,7 +1081,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:nuin",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:RO-NEPTUNE",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-LA-SIRENE",
@@ -935,6 +1152,7 @@
       ],
       "syncreticCorrespondence": "Our Lady Star of the Sea",
       "domains": [
+        "dreams",
         "music",
         "prophecy",
         "sea",
@@ -965,7 +1183,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:mama-cocha",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-SIMBI",
@@ -1011,6 +1247,7 @@
         }
       ],
       "domains": [
+        "magic",
         "protection",
         "sea",
         "water",
@@ -1040,7 +1277,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:raven",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-TLAZOLTEOTL",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-LOKO",
@@ -1087,7 +1342,10 @@
         }
       ],
       "domains": [
-        "healing"
+        "healing",
+        "mythology",
+        "sovereignty",
+        "vodou"
       ],
       "keywords": [
         "associated",
@@ -1114,7 +1372,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:woodpecker",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:mother-queen",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-AYIZAN",
@@ -1161,7 +1437,9 @@
       ],
       "domains": [
         "commerce",
-        "protection"
+        "mythology",
+        "protection",
+        "vodou"
       ],
       "keywords": [
         "ayizan",
@@ -1188,7 +1466,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:mentor",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:mother-queen",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-MARASA",
@@ -1235,7 +1531,9 @@
         }
       ],
       "domains": [
-        "childhood"
+        "childhood",
+        "mythology",
+        "vodou"
       ],
       "keywords": [
         "balance",
@@ -1254,7 +1552,25 @@
         "innocent"
       ],
       "coreFunction": "To embody twin energy through duality and balance",
-      "symbolicCore": "The childhood that transforms through Marasa's essence"
+      "symbolicCore": "The childhood that transforms through Marasa's essence",
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:ash",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:world",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-DANBALA-LA-FLAMBEAU",
@@ -1299,7 +1615,9 @@
         }
       ],
       "domains": [
-        "fire"
+        "fire",
+        "hearth",
+        "thunder"
       ],
       "keywords": [
         "aggressive",
@@ -1324,7 +1642,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-SHAKTI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-PADMASAMBHAVA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-EZILI-JE-ROUGE",
@@ -1370,7 +1706,9 @@
         }
       ],
       "domains": [
-        "love"
+        "love",
+        "mythology",
+        "vodou"
       ],
       "keywords": [
         "aspect",
@@ -1395,7 +1733,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-HAYAGRIVA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:VO-TI-JEAN-PETRO",
@@ -1442,7 +1798,11 @@
         }
       ],
       "domains": [
-        "fire"
+        "childhood",
+        "fire",
+        "hearth",
+        "strength",
+        "trickster"
       ],
       "keywords": [
         "associated",
@@ -1469,7 +1829,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:hacker",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:outlaw",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

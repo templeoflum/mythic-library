@@ -171,6 +171,7 @@
         "love",
         "motherhood",
         "sky",
+        "stars",
         "water"
       ],
       "keywords": [
@@ -198,7 +199,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-JADE-EMPEROR",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-PAPA",
@@ -305,8 +324,10 @@
       "domains": [
         "childhood",
         "earth",
+        "hearth",
         "love",
-        "motherhood"
+        "motherhood",
+        "wilderness"
       ],
       "keywords": [
         "beloved",
@@ -332,7 +353,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-AKKA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-MOKOSH",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-TANE",
@@ -444,6 +483,7 @@
         "association": "Forests, birds, light, human creation, beauty"
       },
       "domains": [
+        "beauty",
         "earth",
         "fatherhood",
         "motherhood"
@@ -473,7 +513,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-QUETZALCOATL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:kenaz",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-TU",
@@ -588,6 +646,8 @@
       },
       "domains": [
         "air",
+        "animals",
+        "courage",
         "war"
       ],
       "keywords": [
@@ -615,7 +675,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:sle",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:warrior",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-TANGAROA",
@@ -733,8 +811,10 @@
         "association": "Ocean, fishing, navigation, sea creatures"
       },
       "domains": [
+        "animals",
         "chaos",
         "creation",
+        "law",
         "order",
         "sea"
       ],
@@ -762,7 +842,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ix",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-CERNUNNOS",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-RONGO",
@@ -864,14 +962,14 @@
         "association": "Agriculture, peace, games, harvest, rain"
       },
       "domains": [
+        "agriculture",
         "fertility",
         "harvest",
         "hunt",
         "motherhood",
         "music",
         "peace",
-        "time",
-        "war"
+        "time"
       ],
       "keywords": [
         "agriculture",
@@ -897,7 +995,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-LADA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-SPIDER-WOMAN",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-MAUI",
@@ -1035,8 +1151,11 @@
       "domains": [
         "death",
         "fire",
+        "hearth",
         "initiation",
         "sea",
+        "sun",
+        "trickster",
         "underworld"
       ],
       "keywords": [
@@ -1065,7 +1184,34 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-COYOTE",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "trickster",
+            "culture-hero"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-RAVEN",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-PELE",
@@ -1180,9 +1326,13 @@
         "taboo": "Taking lava rocks (invites her wrath)"
       },
       "domains": [
+        "creation",
         "earth",
         "fire",
-        "home"
+        "hearth",
+        "home",
+        "strength",
+        "thunder"
       ],
       "keywords": [
         "creates",
@@ -1209,7 +1359,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-SUN-WUKONG",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-NEZHA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-HIIAKA",
@@ -1313,6 +1481,9 @@
       },
       "domains": [
         "healing",
+        "magic",
+        "sacrifice",
+        "strength",
         "travel"
       ],
       "keywords": [
@@ -1341,7 +1512,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:rowan",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-BENZAITEN",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-HINA",
@@ -1444,8 +1633,13 @@
         "association": "Moon, women's work, tides, fertility cycles"
       },
       "domains": [
+        "crafts",
+        "creation",
         "dance",
-        "motherhood"
+        "earth",
+        "moon",
+        "motherhood",
+        "wilderness"
       ],
       "keywords": [
         "arts",
@@ -1472,7 +1666,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "incan:chasca",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:daena",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-HINE-NUI-TE-PO",
@@ -1615,7 +1827,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-MICTECACIHUATL",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-MICTLANTECUHTLI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-TAWHIRIMATEA",
@@ -1720,7 +1950,9 @@
         "air",
         "childhood",
         "fatherhood",
+        "justice",
         "sky",
+        "strength",
         "war"
       ],
       "keywords": [
@@ -1748,7 +1980,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-RAIJIN",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:thurisaz",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-KANE",
@@ -1847,7 +2097,9 @@
       },
       "domains": [
         "sea",
-        "water"
+        "strength",
+        "water",
+        "wilderness"
       ],
       "keywords": [
         "ambiguous",
@@ -1874,7 +2126,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-DAZHBOG",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-FUXI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-KU",
@@ -1973,6 +2243,7 @@
       },
       "domains": [
         "earth",
+        "magic",
         "war"
       ],
       "keywords": [
@@ -2000,7 +2271,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:sle",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:warrior",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-LONO",
@@ -2098,6 +2387,7 @@
         "association": "Peace, harvest, games, rain, Captain Cook"
       },
       "domains": [
+        "agriculture",
         "harvest",
         "peace",
         "war"
@@ -2127,7 +2417,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-SPIDER-WOMAN",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_22",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-KANALOA",
@@ -2226,10 +2534,14 @@
         "association": "Ocean, healing, navigation, underworld, sorcery"
       },
       "domains": [
+        "animals",
         "death",
+        "law",
+        "magic",
         "sea",
         "underworld",
-        "water"
+        "water",
+        "wilderness"
       ],
       "keywords": [
         "associations",
@@ -2256,7 +2568,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ix",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_04",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:PL-NAMAKA",
@@ -2351,6 +2681,7 @@
       },
       "domains": [
         "fire",
+        "hearth",
         "home",
         "sea",
         "war",
@@ -2380,7 +2711,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:poseidon",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "element:aether",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

@@ -64,13 +64,108 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:uranus",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_04",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_25",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_56",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_64",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:dui",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:kether",
+          "fidelity": 0.7,
+          "note": "Reverse of: Before manifestation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:jester",
+          "fidelity": 0.8,
+          "note": "Reverse of: Tarot Fool"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_7",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:child",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:trickster",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:explorer",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:jester",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:arlecchino",
+          "fidelity": 0.7,
+          "note": "Reverse of: Fool archetype"
         }
       ],
       "narrativeRoles": [
         "trickster"
       ],
       "coreFunction": "To embody divine_child energy through innocence and pure-potential",
-      "symbolicCore": "The essential pattern of The Fool"
+      "symbolicCore": "The essential pattern of The Fool",
+      "culturalEchoes": [
+        {
+          "target": "jungian:child",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:legacy_hero",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:magician",
@@ -126,6 +221,56 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:mercury",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_01",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:chokmah",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:hod",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ansuz",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:kenaz",
+          "fidelity": 0.7
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "tarot:fool",
+          "note": "Reverse of: First step of journey"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:orange",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:animus",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:magician",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:tech_genius",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -140,7 +285,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:magician",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:ME-INANNA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:high_priestess",
@@ -196,13 +363,75 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:moon",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:ajna",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_61",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:xun",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:binah",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:perthro",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:purple",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:anima",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:cherubim",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
         "innocent"
       ],
       "coreFunction": "To embody wise_elder energy through hidden-knowledge",
-      "symbolicCore": "The essential pattern of The High Priestess"
+      "symbolicCore": "The essential pattern of The High Priestess",
+      "culturalEchoes": [
+        {
+          "target": "jungian:anima",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "commedia:pierrot",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:empress",
@@ -264,13 +493,90 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:venus",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_02",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_22",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:kun",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:netzach",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:berkano",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ingwaz",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_2",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:anima",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:great_mother",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:caregiver",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:creator",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "creator"
       ],
       "coreFunction": "To embody great_mother energy through fertility and nurturing",
-      "symbolicCore": "The essential pattern of The Empress"
+      "symbolicCore": "The essential pattern of The Empress",
+      "culturalEchoes": [
+        {
+          "target": "jungian:great_mother",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:berkano",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:emperor",
@@ -332,6 +638,41 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:aries",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_01",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:qian",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:chesed",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:animus",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:ruler",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:team_leader",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:dominions",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -345,7 +686,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:ruler",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:hierophant",
@@ -402,6 +765,21 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:taurus",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:blue",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_6",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:principalities",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -409,7 +787,29 @@
         "sovereign"
       ],
       "coreFunction": "To embody wise_elder energy through teaching and tradition",
-      "symbolicCore": "The essential pattern of The Hierophant"
+      "symbolicCore": "The essential pattern of The Hierophant",
+      "culturalEchoes": [
+        {
+          "target": "spiral:blue",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-HEIMDALL",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:lovers",
@@ -466,6 +866,42 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:gemini",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:conjunction",
+          "fidelity": 0.75,
+          "note": "Reverse of: Sacred union"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_08",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_31",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:dui",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:gebo",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:lover",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:seraphim",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -479,7 +915,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:lover",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-FREYJA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:chariot",
@@ -536,6 +994,56 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:mars",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_07",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:raidho",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:ehwaz",
+          "fidelity": 0.65
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:strength",
+          "note": "Reverse of: Inner vs outer strength"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:red",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_3",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:hero",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:hero",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:hero",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:powers",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -549,7 +1057,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:hero",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:hero",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:strength",
@@ -600,6 +1130,41 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:leo",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_34",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:geburah",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:uruz",
+          "fidelity": 0.75
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "tarot:chariot",
+          "note": "Reverse of: External to internal mastery"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_8",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:warrior_woman",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:virtues",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -614,7 +1179,30 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-HIIAKA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-GLOOSCAP",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "strength",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:hermit",
@@ -670,13 +1258,80 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:saturn",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_20",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_52",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:gen",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:yellow",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_5",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:wise_old_man",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:mentor",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:sage",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:curator",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "magician"
       ],
       "coreFunction": "To embody wise_elder energy through wisdom and guidance",
-      "symbolicCore": "The essential pattern of The Hermit"
+      "symbolicCore": "The essential pattern of The Hermit",
+      "culturalEchoes": [
+        {
+          "target": "enneagram:type_5",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "disc:conscientiousness",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:wheel_of_fortune",
@@ -728,6 +1383,26 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:jupiter",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:sagittarius",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:jera",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:perthro",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:herald",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -741,7 +1416,30 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:ME-DUMUZI",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "fate",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:justice",
@@ -798,6 +1496,46 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:libra",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_21",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:geburah",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:tiwaz",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:blue",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_1",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:threshold_guardian",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:moderator",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:thrones",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -812,7 +1550,30 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:duir",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:father",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "justice",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:hanged_man",
@@ -870,6 +1631,26 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:neptune",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pisces",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:isa",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:eihwaz",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_4",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -883,7 +1664,29 @@
         "developmentalStage": "Alienation from collective, finding unique path",
         "integrationTask": "Finding belonging while honoring difference",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "myss:victim",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:persephone",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:death",
@@ -940,6 +1743,44 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:GR-THANATOS",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:nigredo",
+          "fidelity": 0.8,
+          "note": "Reverse of: Death/transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:pluto",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:cimi",
+          "fidelity": 0.8,
+          "note": "Reverse of: Death as transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_49",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:ruis",
+          "fidelity": 0.65,
+          "note": "Reverse of: Transformation through endings"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:eihwaz",
+          "fidelity": 0.85
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "tarot:hanged_man",
+          "note": "Reverse of: Surrender precedes transformation"
         }
       ],
       "narrativeRoles": [
@@ -954,7 +1795,30 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:destroyer",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:mula",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "death",
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:temperance",
@@ -1006,6 +1870,21 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:sagittarius",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_15",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "enneagram:type_9",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:angels",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -1020,7 +1899,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:rowan",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:hazel",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:devil",
@@ -1078,13 +1979,55 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:capricorn",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:nauthiz",
+          "fidelity": 0.6
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "tarot:temperance",
+          "note": "Reverse of: Integration vs bondage"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:shadow",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
         "trickster"
       ],
       "coreFunction": "To embody monster energy through shadow and instinct",
-      "symbolicCore": "The essential pattern of The Devil"
+      "symbolicCore": "The essential pattern of The Devil",
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-MARA",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:shadow",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:tower",
@@ -1140,6 +2083,46 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:uranus",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_23",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_49",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_51",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:zhen",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:thurisaz",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:hagalaz",
+          "fidelity": 0.85
+        },
+        {
+          "type": "TENSION",
+          "target": "tarot:star",
+          "note": "Reverse of: Hope after destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:outlaw",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -1153,7 +2136,21 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:hagalaz",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:star",
@@ -1210,6 +2207,21 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:aquarius",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:kenaz",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:green",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:virtues",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -1224,7 +2236,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:xochitl",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:citrinitas",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:moon",
@@ -1281,13 +2315,92 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:moon",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:albedo",
+          "fidelity": 0.7,
+          "note": "Reverse of: Lunar consciousness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:neptune",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:cancer",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_29",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:kan",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:yesod",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:laguz",
+          "fidelity": 0.8
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "tarot:star",
+          "note": "Reverse of: Hope before unconscious depths"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:shadow",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:shapeshifter",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:dark_knight",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "sage"
       ],
       "coreFunction": "To embody great_mother energy through dark-mother and unconscious",
-      "symbolicCore": "The essential pattern of The Moon"
+      "symbolicCore": "The essential pattern of The Moon",
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:yesod",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "moon",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:sun",
@@ -1344,13 +2457,97 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:GR-APOLLO",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:citrinitas",
+          "fidelity": 0.75,
+          "note": "Reverse of: Solar illumination"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:leo",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_30",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_58",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:li",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:tiphareth",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:wunjo",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:sowilo",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:dagaz",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:child",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:innocent",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:paragon",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
         "hero"
       ],
       "coreFunction": "To embody divine_child energy through joy and vitality",
-      "symbolicCore": "The essential pattern of The Sun"
+      "symbolicCore": "The essential pattern of The Sun",
+      "culturalEchoes": [
+        {
+          "target": "rune:sowilo",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-DAZHBOG",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "sun",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:judgement",
@@ -1402,6 +2599,21 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:pluto",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_24",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:dagaz",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:whistleblower",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -1415,7 +2627,29 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:eie",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "angel:archangels",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     },
     {
       "@id": "tarot:world",
@@ -1467,6 +2701,62 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:saturn",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "alchemy:rubedo",
+          "fidelity": 0.8,
+          "note": "Reverse of: Completion/wholeness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:capricorn",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:sahasrara",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_11",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:hex_63",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rune:mannaz",
+          "fidelity": 0.7
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "tarot:judgement",
+          "note": "Reverse of: Resurrection precedes completion"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:turquoise",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:self",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:cosmic_being",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -1480,7 +2770,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:ash",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:mannaz",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "tarot"
+      ]
     }
   ],
   "systemRelationships": {

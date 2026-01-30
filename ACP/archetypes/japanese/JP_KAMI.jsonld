@@ -195,7 +195,8 @@
         "childhood",
         "creation",
         "death",
-        "sea"
+        "sea",
+        "sky"
       ],
       "keywords": [
         "after",
@@ -222,7 +223,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-FUXI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-KANE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-IZANAMI",
@@ -364,6 +383,7 @@
         "death",
         "destruction",
         "fire",
+        "hearth",
         "sovereignty",
         "transformation",
         "underworld"
@@ -393,7 +413,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:persephone",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:hades",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-AMATERASU",
@@ -402,7 +440,9 @@
       "aliases": [
         "Amaterasu-Ō-Mi-Kami",
         "Ōhirume-no-Muchi",
-        "Tensho Daijin"
+        "Tensho Daijin",
+        "Amaterasu-Omikami",
+        "Great Divinity Illuminating Heaven"
       ],
       "domain": [
         "Sun",
@@ -541,7 +581,8 @@
         "fire",
         "healing",
         "sky",
-        "sovereignty"
+        "sovereignty",
+        "sun"
       ],
       "keywords": [
         "amaterasu",
@@ -568,7 +609,35 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APOLLO",
+          "fidelity": 0.7,
+          "sharedAspects": [
+            "sun",
+            "light",
+            "sovereignty"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-TSUKUYOMI",
@@ -576,7 +645,9 @@
       "name": "Tsukuyomi-no-Mikoto",
       "aliases": [
         "Tsukiyomi",
-        "Tsukuyomi-no-Kami"
+        "Tsukuyomi-no-Kami",
+        "Moon Reader",
+        "Moon God"
       ],
       "domain": [
         "Moon",
@@ -670,7 +741,9 @@
         "association": "Lunar calendar, night, tides"
       },
       "domains": [
-        "sovereignty"
+        "moon",
+        "sovereignty",
+        "sun"
       ],
       "keywords": [
         "after",
@@ -696,7 +769,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "commedia:dottore",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:eadhadh",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-SUSANOO",
@@ -705,7 +796,9 @@
       "aliases": [
         "Susano'o",
         "Takehaya-Susanoo-no-Mikoto",
-        "Gozu Tennō"
+        "Gozu Tennō",
+        "Susano-o",
+        "The Impetuous Male"
       ],
       "domain": [
         "Storms",
@@ -854,6 +947,7 @@
         "sea",
         "sky",
         "sovereignty",
+        "thunder",
         "transformation"
       ],
       "keywords": [
@@ -882,7 +976,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-TI-JEAN-PETRO",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-UZUME",
@@ -989,7 +1101,11 @@
       },
       "domains": [
         "dance",
-        "ecstasy"
+        "earth",
+        "ecstasy",
+        "sky",
+        "strength",
+        "sun"
       ],
       "keywords": [
         "amaterasu",
@@ -1017,7 +1133,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "mbti:esfp",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "mbti:enfp",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-SARUTAHIKO",
@@ -1116,6 +1250,7 @@
       "domains": [
         "earth",
         "sky",
+        "threshold",
         "war"
       ],
       "keywords": [
@@ -1143,7 +1278,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "holland:realistic",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:alder",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-OKUNINUSHI",
@@ -1279,6 +1432,7 @@
       },
       "domains": [
         "earth",
+        "sky",
         "sovereignty"
       ],
       "keywords": [
@@ -1307,7 +1461,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:hephaestus",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-SPIDER-WOMAN",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-NINIGI",
@@ -1405,7 +1577,8 @@
       "domains": [
         "death",
         "earth",
-        "sky"
+        "sky",
+        "sovereignty"
       ],
       "keywords": [
         "amaterasu",
@@ -1432,7 +1605,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-VAINAMOINEN",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-LONO",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-KONOHANASAKUYA",
@@ -1532,6 +1723,7 @@
         "festival": "Hanami (cherry blossom viewing)"
       },
       "domains": [
+        "beauty",
         "childhood",
         "creation",
         "fire"
@@ -1562,7 +1754,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_17",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "plot:rebirth",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-INARI",
@@ -1686,10 +1896,13 @@
         "color": "Red (torii), white (fox)"
       },
       "domains": [
+        "agriculture",
         "commerce",
         "communication",
         "fertility",
-        "harvest"
+        "harvest",
+        "messenger",
+        "wealth"
       ],
       "keywords": [
         "agriculture",
@@ -1716,7 +1929,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_page",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:lover",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-HACHIMAN",
@@ -1819,6 +2050,7 @@
       },
       "domains": [
         "family",
+        "justice",
         "protection",
         "war"
       ],
@@ -1847,7 +2079,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-GUAN-YU",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-BENZAITEN",
@@ -1943,6 +2193,7 @@
         "association": "Seven Lucky Gods, music, learning, wealth"
       },
       "domains": [
+        "creation",
         "music",
         "sea",
         "water"
@@ -1972,7 +2223,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_31",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:temperance",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-RAIJIN",
@@ -2077,7 +2346,9 @@
         "association": "Thunder, lightning, rice fertility, temple protection"
       },
       "domains": [
-        "air"
+        "air",
+        "strength",
+        "thunder"
       ],
       "keywords": [
         "air",
@@ -2103,7 +2374,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-TAWHIRIMATEA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-FUJIN",
@@ -2201,7 +2490,9 @@
         "association": "Weather, breath, freedom, unpredictability"
       },
       "domains": [
-        "air"
+        "air",
+        "strength",
+        "wilderness"
       ],
       "keywords": [
         "air",
@@ -2228,7 +2519,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NO-ODIN",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-STRIBOG",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:JP-JIZO",
@@ -2303,6 +2612,11 @@
           "target": "arch:IN-YAMA",
           "fidelity": 0.4,
           "notes": "Connection to death realms (but compassionate rather than judging)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-KSITIGARBHA",
+          "fidelity": 0.95
         }
       ],
       "shadowDynamics": {
@@ -2325,6 +2639,7 @@
       },
       "domains": [
         "childhood",
+        "death",
         "underworld"
       ],
       "keywords": [
@@ -2456,6 +2771,7 @@
         "death",
         "justice",
         "sovereignty",
+        "spirits",
         "underworld"
       ],
       "keywords": [
@@ -2483,7 +2799,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-YANLUO",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-MICTLANTECUHTLI",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

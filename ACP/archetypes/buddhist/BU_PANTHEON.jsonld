@@ -72,6 +72,10 @@
           "type": "CONTAINS",
           "target": "primordial:healer",
           "notes": "Healer of suffering"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "arch:BU-MAITREYA"
         }
       ],
       "keywords": [
@@ -98,7 +102,29 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "angel:cherubim",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chakra:sahasrara",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-AMITABHA",
@@ -147,12 +173,17 @@
           "target": "arch:JP-AMIDA",
           "fidelity": 0.95,
           "notes": "Japanese Pure Land form"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:BU-VAIROCANA"
         }
       ],
       "domains": [
         "earth",
         "rebirth",
-        "sovereignty"
+        "sovereignty",
+        "sun"
       ],
       "keywords": [
         "acceptance",
@@ -177,7 +208,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-AYIDA-WEDO",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-DAMBALLAH",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-AKSHOBHYA",
@@ -220,6 +269,10 @@
           "type": "COMPLEMENT",
           "target": "arch:BU-VAJRASATTVA",
           "notes": "Vajrasattva as his bodhisattva emanation"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:BU-VAIROCANA"
         }
       ],
       "domains": [
@@ -253,7 +306,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NO-HEIMDALL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:king",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-VAIROCANA",
@@ -316,6 +387,7 @@
       ],
       "domains": [
         "earth",
+        "truth",
         "wisdom"
       ],
       "keywords": [
@@ -341,7 +413,25 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:nuin",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:orphan",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-RATNASAMBHAVA",
@@ -385,11 +475,16 @@
           "target": "arch:IN-KUBERA",
           "fidelity": 0.5,
           "notes": "Wealth and abundance aspects"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:BU-VAIROCANA"
         }
       ],
       "domains": [
         "earth",
         "fertility",
+        "wealth",
         "wisdom"
       ],
       "keywords": [
@@ -415,7 +510,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:anahita",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ocean:agreeableness",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-AMOGHASIDDHI",
@@ -458,10 +571,16 @@
           "type": "COMPLEMENT",
           "target": "arch:BU-GREEN-TARA",
           "notes": "Tara as his consort in some traditions"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:BU-VAIROCANA"
         }
       ],
       "domains": [
+        "buddhist",
         "earth",
+        "mythology",
         "wisdom"
       ],
       "keywords": [
@@ -488,7 +607,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_06",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:wands_king",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-MAITREYA",
@@ -536,9 +673,15 @@
           "target": "arch:CN-BUDAI",
           "fidelity": 0.65,
           "notes": "Chinese Laughing Buddha form"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-SHAKYAMUNI"
         }
       ],
       "domains": [
+        "buddhist",
+        "mythology",
         "sky",
         "time"
       ],
@@ -567,7 +710,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE-URANIA",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "angel:seraphim",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-AVALOKITESHVARA",
@@ -622,6 +783,26 @@
           "type": "COMPLEMENT",
           "target": "arch:BU-AMITABHA",
           "notes": "Emanates from Amitabha's crown"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-MANJUSHRI"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-VAJRAPANI"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-GREEN-TARA"
+        },
+        {
+          "type": "SHADOW",
+          "target": "arch:BU-MAHAKALA"
+        },
+        {
+          "type": "SHADOW",
+          "target": "arch:BU-HAYAGRIVA"
         }
       ],
       "keywords": [
@@ -648,7 +829,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:anahita",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ocean:agreeableness",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-MANJUSHRI",
@@ -697,9 +900,24 @@
           "target": "arch:GR-ATHENA",
           "fidelity": 0.55,
           "notes": "Wisdom warriors"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-VAJRAPANI"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-SAMANTABHADRA"
+        },
+        {
+          "type": "SHADOW",
+          "target": "arch:BU-YAMANTAKA"
         }
       ],
       "domains": [
+        "buddhist",
+        "intellect",
+        "mythology",
         "wisdom"
       ],
       "keywords": [
@@ -726,7 +944,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ahau",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-LUGH",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-VAJRAPANI",
@@ -806,7 +1042,30 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-TU",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:warrior",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology",
+        "strength"
+      ]
     },
     {
       "@id": "arch:BU-SAMANTABHADRA",
@@ -875,7 +1134,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "mbti:enfj",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_13",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-KSITIGARBHA",
@@ -1006,9 +1287,15 @@
           "type": "COMPLEMENT",
           "target": "arch:BU-AVALOKITESHVARA",
           "notes": "Born from his compassion"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-AMOGHASIDDHI"
         }
       ],
       "domains": [
+        "buddhist",
+        "mythology",
         "protection"
       ],
       "keywords": [
@@ -1035,7 +1322,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "astrology:sagittarius",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "disc:influence",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-WHITE-TARA",
@@ -1084,7 +1389,8 @@
       ],
       "domains": [
         "healing",
-        "motherhood"
+        "motherhood",
+        "peace"
       ],
       "keywords": [
         "associated",
@@ -1110,7 +1416,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-AYIDA-WEDO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-DAMBALLAH",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-VAJRASATTVA",
@@ -1156,6 +1480,8 @@
         }
       ],
       "domains": [
+        "buddhist",
+        "mythology",
         "wisdom"
       ],
       "keywords": [
@@ -1182,7 +1508,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:citrinitas",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-MAHAKALA",
@@ -1233,6 +1577,8 @@
         }
       ],
       "domains": [
+        "buddhist",
+        "mythology",
         "wisdom"
       ],
       "keywords": [
@@ -1259,7 +1605,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-EZILI-JE-ROUGE",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-KALI",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-YAMANTAKA",
@@ -1308,7 +1672,9 @@
         }
       ],
       "domains": [
+        "buddhist",
         "death",
+        "mythology",
         "wisdom"
       ],
       "keywords": [
@@ -1334,7 +1700,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-EZILI-JE-ROUGE",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-PELE",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-HAYAGRIVA",
@@ -1408,7 +1792,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-EZILI-JE-ROUGE",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-PELE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-VAJRAYOGINI",
@@ -1455,7 +1861,9 @@
         }
       ],
       "domains": [
+        "buddhist",
         "love",
+        "mythology",
         "transformation"
       ],
       "keywords": [
@@ -1482,7 +1890,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:mercury",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-HERMES",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-PALDEN-LHAMO",
@@ -1528,7 +1954,9 @@
         }
       ],
       "domains": [
+        "buddhist",
         "family",
+        "mythology",
         "sea"
       ],
       "keywords": [
@@ -1556,7 +1984,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-ERZULIE-DANTOR",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-LOUHI",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-VAISHRAVANA",
@@ -1604,7 +2050,9 @@
       "domains": [
         "fate",
         "protection",
-        "sovereignty"
+        "sky",
+        "sovereignty",
+        "wealth"
       ],
       "keywords": [
         "bestower",
@@ -1630,7 +2078,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:oak",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lse",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-PADMASAMBHAVA",
@@ -1674,6 +2140,10 @@
           "target": "arch:EG-THOTH",
           "fidelity": 0.5,
           "notes": "Magical wisdom figures"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-YESHE-TSOGYAL"
         }
       ],
       "keywords": [
@@ -1701,7 +2171,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "astrology:sagittarius",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "disc:influence",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-YESHE-TSOGYAL",
@@ -1775,7 +2267,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_46",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_50",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:BU-MILAREPA",
@@ -1819,6 +2329,14 @@
           "source": "sorcerer",
           "target": "arch:BU-MILAREPA",
           "notes": "From black magic to enlightenment"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "arch:BU-MILAREPA"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-MARPA"
         }
       ],
       "keywords": [
@@ -1845,7 +2363,29 @@
         "developmentalStage": "Alienation from collective, finding unique path",
         "integrationTask": "Finding belonging while honoring difference",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:mercury",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:magician",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-MARPA",
@@ -1888,6 +2428,10 @@
           "type": "COMPLEMENT",
           "target": "arch:BU-MILAREPA",
           "notes": "Teacher and student"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:BU-NAROPA"
         }
       ],
       "keywords": [
@@ -1914,7 +2458,29 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:ngetal",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:ehwaz",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-NAROPA",
@@ -1983,7 +2549,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kwml:magician",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:magician",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "buddhist",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:BU-MARA",
@@ -2035,8 +2623,10 @@
         }
       ],
       "domains": [
+        "buddhist",
         "death",
-        "love"
+        "love",
+        "mythology"
       ],
       "keywords": [
         "bodhi",
@@ -2062,7 +2652,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:devil",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:shadow",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

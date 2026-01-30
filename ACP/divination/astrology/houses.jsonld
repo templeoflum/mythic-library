@@ -8,22 +8,156 @@
   "subdomain": "astrology",
   "cardinality": 12,
   "structuralNotes": "Houses are contexts/domains, not archetypes themselves. They modify how archetypes express. Natural ruler is the sign with same number.",
-
   "entries": [
-    {"@id": "astrology:house_1", "@type": "ContextStub", "name": "First House", "domain": "Self, identity, appearance", "naturalSign": "astrology:aries", "status": "placeholder"},
-    {"@id": "astrology:house_2", "@type": "ContextStub", "name": "Second House", "domain": "Resources, values, possessions", "naturalSign": "astrology:taurus", "status": "placeholder"},
-    {"@id": "astrology:house_3", "@type": "ContextStub", "name": "Third House", "domain": "Communication, siblings, local travel", "naturalSign": "astrology:gemini", "status": "placeholder"},
-    {"@id": "astrology:house_4", "@type": "ContextStub", "name": "Fourth House", "domain": "Home, family, roots, mother", "naturalSign": "astrology:cancer", "status": "placeholder"},
-    {"@id": "astrology:house_5", "@type": "ContextStub", "name": "Fifth House", "domain": "Creativity, children, romance, play", "naturalSign": "astrology:leo", "status": "placeholder"},
-    {"@id": "astrology:house_6", "@type": "ContextStub", "name": "Sixth House", "domain": "Health, service, daily work", "naturalSign": "astrology:virgo", "status": "placeholder"},
-    {"@id": "astrology:house_7", "@type": "ContextStub", "name": "Seventh House", "domain": "Partnership, marriage, open enemies", "naturalSign": "astrology:libra", "status": "placeholder"},
-    {"@id": "astrology:house_8", "@type": "ContextStub", "name": "Eighth House", "domain": "Death, transformation, shared resources", "naturalSign": "astrology:scorpio", "status": "placeholder"},
-    {"@id": "astrology:house_9", "@type": "ContextStub", "name": "Ninth House", "domain": "Philosophy, higher learning, long travel", "naturalSign": "astrology:sagittarius", "status": "placeholder"},
-    {"@id": "astrology:house_10", "@type": "ContextStub", "name": "Tenth House", "domain": "Career, public life, father", "naturalSign": "astrology:capricorn", "status": "placeholder"},
-    {"@id": "astrology:house_11", "@type": "ContextStub", "name": "Eleventh House", "domain": "Friends, groups, hopes, wishes", "naturalSign": "astrology:aquarius", "status": "placeholder"},
-    {"@id": "astrology:house_12", "@type": "ContextStub", "name": "Twelfth House", "domain": "Unconscious, hidden, isolation, transcendence", "naturalSign": "astrology:pisces", "status": "placeholder"}
+    {
+      "@id": "astrology:house_1",
+      "@type": "ContextStub",
+      "name": "First House",
+      "domain": "Self, identity, appearance",
+      "naturalSign": "astrology:aries",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_2",
+      "@type": "ContextStub",
+      "name": "Second House",
+      "domain": "Resources, values, possessions",
+      "naturalSign": "astrology:taurus",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_3",
+      "@type": "ContextStub",
+      "name": "Third House",
+      "domain": "Communication, siblings, local travel",
+      "naturalSign": "astrology:gemini",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_4",
+      "@type": "ContextStub",
+      "name": "Fourth House",
+      "domain": "Home, family, roots, mother",
+      "naturalSign": "astrology:cancer",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_5",
+      "@type": "ContextStub",
+      "name": "Fifth House",
+      "domain": "Creativity, children, romance, play",
+      "naturalSign": "astrology:leo",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_6",
+      "@type": "ContextStub",
+      "name": "Sixth House",
+      "domain": "Health, service, daily work",
+      "naturalSign": "astrology:virgo",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_7",
+      "@type": "ContextStub",
+      "name": "Seventh House",
+      "domain": "Partnership, marriage, open enemies",
+      "naturalSign": "astrology:libra",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_8",
+      "@type": "ContextStub",
+      "name": "Eighth House",
+      "domain": "Death, transformation, shared resources",
+      "naturalSign": "astrology:scorpio",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_9",
+      "@type": "ContextStub",
+      "name": "Ninth House",
+      "domain": "Philosophy, higher learning, long travel",
+      "naturalSign": "astrology:sagittarius",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_10",
+      "@type": "ContextStub",
+      "name": "Tenth House",
+      "domain": "Career, public life, father",
+      "naturalSign": "astrology:capricorn",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_11",
+      "@type": "ContextStub",
+      "name": "Eleventh House",
+      "domain": "Friends, groups, hopes, wishes",
+      "naturalSign": "astrology:aquarius",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    },
+    {
+      "@id": "astrology:house_12",
+      "@type": "ContextStub",
+      "name": "Twelfth House",
+      "domain": "Unconscious, hidden, isolation, transcendence",
+      "naturalSign": "astrology:pisces",
+      "status": "placeholder",
+      "domains": [
+        "astrology",
+        "divination"
+      ]
+    }
   ],
-
   "note": "Houses don't have spectral coordinates - they are contexts that modify archetypal expression, not archetypes themselves.",
-  "validationStatus": {"complete": true, "coordinatesAssigned": "N/A", "note": "Houses are contexts, not archetypes - no spectral coordinates needed"}
+  "validationStatus": {
+    "complete": true,
+    "coordinatesAssigned": "N/A",
+    "note": "Houses are contexts, not archetypes - no spectral coordinates needed"
+  }
 }

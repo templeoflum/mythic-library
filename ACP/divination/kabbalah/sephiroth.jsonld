@@ -78,6 +78,11 @@
           "type": "CULTURAL_ECHO",
           "target": "chakra:sahasrara",
           "fidelity": 0.85
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "kabbalah:tiphareth",
+          "note": "Reverse of: Reflects crown below"
         }
       ],
       "narrativeRoles": [
@@ -91,7 +96,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE-URANIA",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:star",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:chokmah",
@@ -159,10 +186,43 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:qian",
           "fidelity": 0.8
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "kabbalah:kether",
+          "note": "Reverse of: First emanation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:cherubim",
+          "fidelity": 0.8
         }
       ],
       "coreFunction": "To embody great_father energy through father and active force",
-      "symbolicCore": "The essential pattern of Chokmah (Wisdom)"
+      "symbolicCore": "The essential pattern of Chokmah (Wisdom)",
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_01",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:qian",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah",
+        "wisdom"
+      ]
     },
     {
       "@id": "kabbalah:binah",
@@ -232,6 +292,21 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:kun",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:ajna",
+          "fidelity": 0.7
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "kabbalah:kether",
+          "note": "Reverse of: First emanation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:thrones",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -239,7 +314,30 @@
         "sage"
       ],
       "coreFunction": "To embody great_mother energy through mother and form",
-      "symbolicCore": "The essential pattern of Binah (Understanding)"
+      "symbolicCore": "The essential pattern of Binah (Understanding)",
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-CHANG-E",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:mama-quilla",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah",
+        "wisdom"
+      ]
     },
     {
       "@id": "kabbalah:chesed",
@@ -314,7 +412,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "astrology:jupiter",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:RO-VENUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:geburah",
@@ -393,7 +513,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:tecpatl",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:holly",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:tiphareth",
@@ -458,6 +600,11 @@
           "type": "CULTURAL_ECHO",
           "target": "chakra:anahata",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:self",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -472,7 +619,30 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:manik",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:helper",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "beauty",
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:netzach",
@@ -545,7 +715,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-KOKOPELLI",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:cups_knight",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:hod",
@@ -605,6 +797,11 @@
           "type": "CULTURAL_ECHO",
           "target": "astrology:mercury",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:vishuddha",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -619,7 +816,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ODYSSEUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:ngetal",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:yesod",
@@ -699,7 +918,29 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:moon",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     },
     {
       "@id": "kabbalah:malkuth",
@@ -764,6 +1005,11 @@
           "type": "CULTURAL_ECHO",
           "target": "chakra:muladhara",
           "fidelity": 0.8
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "kabbalah:yesod",
+          "note": "Reverse of: Channels to manifestation"
         }
       ],
       "narrativeRoles": [
@@ -778,7 +1024,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:EG-GEB",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "astrology:cancer",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "kabbalah"
+      ]
     }
   ],
   "systemRelationships": {

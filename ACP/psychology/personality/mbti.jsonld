@@ -69,6 +69,12 @@
           "target": "enneagram:type_5",
           "fidelity": 0.7,
           "note": "Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:ili",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -83,7 +89,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-HUANGDI",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-SHENNONG",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:intp",
@@ -139,6 +167,12 @@
           "target": "mbti:esfj",
           "axis": "individual-collective",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:lii",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -153,7 +187,30 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_56",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_5",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology",
+        "truth"
+      ]
     },
     {
       "@id": "mbti:entj",
@@ -209,6 +266,12 @@
           "target": "mbti:isfp",
           "axis": "active-receptive",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:lie",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -223,7 +286,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-MARDUK",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:IN-DURGA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:entp",
@@ -285,10 +370,19 @@
           "target": "arch:GR-HERMES",
           "fidelity": 0.7,
           "note": "Trickster archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:ile",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "domains": [
-        "love"
+        "love",
+        "personality-types",
+        "psychology",
+        "speed"
       ],
       "narrativeRoles": [
         "rebel",
@@ -302,7 +396,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:monkey",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "mbti:infj",
@@ -358,9 +470,18 @@
           "target": "mbti:estp",
           "axis": "light-shadow",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:eii",
+          "fidelity": 0.8,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "domains": [
+        "hearth",
+        "personality-types",
+        "psychology",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -375,7 +496,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:donor",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:anuradha",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "mbti:infp",
@@ -436,6 +575,12 @@
           "target": "enneagram:type_4",
           "fidelity": 0.7,
           "note": "Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:iei",
+          "fidelity": 0.8,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -450,7 +595,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_62",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "myss:child",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:enfj",
@@ -506,6 +673,12 @@
           "target": "mbti:istp",
           "axis": "individual-collective",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:eie",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -520,7 +693,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-SAMANTABHADRA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_13",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:enfp",
@@ -582,6 +777,12 @@
           "target": "enneagram:type_7",
           "fidelity": 0.75,
           "note": "Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:iee",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -596,7 +797,29 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-UZUME",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:jester",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:istj",
@@ -658,6 +881,12 @@
           "target": "enneagram:type_1",
           "fidelity": 0.65,
           "note": "Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:lsi",
+          "fidelity": 0.8,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -672,7 +901,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:ox",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:curator",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:isfj",
@@ -734,6 +985,12 @@
           "target": "enneagram:type_2",
           "fidelity": 0.7,
           "note": "Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:esi",
+          "fidelity": 0.75,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -748,7 +1005,29 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:curator",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_9",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:estj",
@@ -804,10 +1083,19 @@
           "target": "mbti:infp",
           "axis": "individual-collective",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:lse",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "domains": [
-        "order"
+        "law",
+        "order",
+        "personality-types",
+        "psychology"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -821,7 +1109,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:ruler",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:ruler",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "mbti:esfj",
@@ -877,6 +1183,12 @@
           "target": "mbti:intp",
           "axis": "individual-collective",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:ese",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -891,7 +1203,29 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_37",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:caregiver",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:istp",
@@ -947,6 +1281,12 @@
           "target": "mbti:enfj",
           "axis": "individual-collective",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:sli",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -961,7 +1301,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "commedia:brighella",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:swati",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:isfp",
@@ -1016,6 +1378,12 @@
           "target": "mbti:entj",
           "axis": "active-receptive",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:sei",
+          "fidelity": 0.8,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -1029,7 +1397,30 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_62",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:lover",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "beauty",
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:estp",
@@ -1085,6 +1476,12 @@
           "target": "mbti:infj",
           "axis": "light-shadow",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:sle",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "narrativeRoles": [
@@ -1099,7 +1496,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:tiger",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_8",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "personality-types",
+        "psychology"
+      ]
     },
     {
       "@id": "mbti:esfp",
@@ -1155,10 +1574,18 @@
           "target": "mbti:intj",
           "axis": "active-receptive",
           "note": "Shadow type"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "socionics:see",
+          "fidelity": 0.85,
+          "note": "Reverse of: MBTI equivalent"
         }
       ],
       "domains": [
-        "love"
+        "love",
+        "personality-types",
+        "psychology"
       ],
       "narrativeRoles": [
         "hero",
@@ -1172,7 +1599,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-UZUME",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:jester",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

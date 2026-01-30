@@ -62,6 +62,12 @@
           "target": "heros_journey:shadow",
           "fidelity": 0.8,
           "note": "Campbell's shadow"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:brighella",
+          "fidelity": 0.55,
+          "note": "Reverse of: Antagonist role"
         }
       ],
       "narrativeRoles": [
@@ -76,7 +82,30 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-NERGAL",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:sadist",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology",
+        "war"
+      ]
     },
     {
       "@id": "propp:donor",
@@ -132,6 +161,11 @@
           "target": "heros_journey:mentor",
           "fidelity": 0.75,
           "note": "Campbell's mentor"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "propp:helper",
+          "note": "Reverse of: Often provided by donor"
         }
       ],
       "narrativeRoles": [
@@ -146,7 +180,29 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "mbti:infj",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:quert",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "propp:helper",
@@ -200,6 +256,12 @@
           "type": "COMPLEMENT",
           "target": "propp:donor",
           "note": "Often provided by donor"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:colombina",
+          "fidelity": 0.7,
+          "note": "Reverse of: Aids the heroes"
         }
       ],
       "narrativeRoles": [
@@ -214,7 +276,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:manik",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:gebo",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "propp:princess",
@@ -269,6 +353,12 @@
           "type": "COMPLEMENT",
           "target": "propp:father",
           "note": "Daughter relationship"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:innamorata",
+          "fidelity": 0.65,
+          "note": "Reverse of: Object of quest"
         }
       ],
       "narrativeRoles": [
@@ -283,7 +373,29 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:sage",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:shravana",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "propp:dispatcher",
@@ -351,7 +463,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ben",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:acatl",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "propp:hero",
@@ -409,6 +543,31 @@
           "target": "primordial:hero",
           "fidelity": 0.95,
           "note": "Direct mapping"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "propp:donor",
+          "note": "Reverse of: Provides necessary aid"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "propp:helper",
+          "note": "Reverse of: Primary alliance"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "propp:dispatcher",
+          "note": "Reverse of: Initiates quest"
+        },
+        {
+          "type": "SHADOW",
+          "target": "propp:false-hero",
+          "note": "Reverse of: Dark reflection"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "propp:father",
+          "note": "Reverse of: Rewards and recognizes"
         }
       ],
       "narrativeRoles": [
@@ -422,7 +581,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:raidho",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "propp:false-hero",
@@ -476,6 +657,12 @@
           "type": "SHADOW",
           "target": "propp:hero",
           "note": "Dark reflection"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "myss:saboteur",
+          "fidelity": 0.5,
+          "note": "Reverse of: Self-undermining"
         }
       ],
       "narrativeRoles": [
@@ -490,7 +677,29 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "commedia:brighella",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:ocelotl",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "propp:father",
@@ -548,7 +757,9 @@
       ],
       "domains": [
         "fatherhood",
-        "marriage"
+        "marriage",
+        "narrative",
+        "psychology"
       ],
       "narrativeRoles": [
         "ruler",
@@ -561,7 +772,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:oak",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:moderator",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

@@ -57,7 +57,9 @@
       "aliases": [
         "Pitamaha",
         "Vidhi",
-        "Svayambhu"
+        "Svayambhu",
+        "The Creator",
+        "Prajapati"
       ],
       "epithets": [
         "The Creator",
@@ -158,6 +160,12 @@
             "creation-through-word",
             "cosmic-architect"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:rohini",
+          "fidelity": 0.75,
+          "note": "Reverse of: Ruled by Brahma"
         }
       ],
       "correspondences": {
@@ -185,7 +193,9 @@
         "confidence": 0.9
       },
       "domains": [
-        "creation"
+        "creation",
+        "mythology",
+        "vedic"
       ],
       "keywords": [
         "beings",
@@ -210,7 +220,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:chesed",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-QUETZALCOATL",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-VISHNU",
@@ -220,7 +248,8 @@
         "Narayana",
         "Hari",
         "Madhava",
-        "Kesava"
+        "Kesava",
+        "The Preserver"
       ],
       "epithets": [
         "The Preserver",
@@ -353,6 +382,17 @@
           "target": "Sequential avatar incarnations (Matsya through Kalki)",
           "trigger": "Each avatar descends when dharma is threatened; progressive revelation of divine purpose",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-SHAKYAMUNI",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:shravana",
+          "fidelity": 0.75,
+          "note": "Reverse of: Ruled by Vishnu"
         }
       ],
       "contextualVariants": [
@@ -401,7 +441,10 @@
         "confidence": 0.95
       },
       "domains": [
-        "order"
+        "law",
+        "order",
+        "preservation",
+        "strength"
       ],
       "keywords": [
         "armed",
@@ -428,7 +471,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:sraosha",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-ATHENA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-SHIVA",
@@ -439,7 +500,8 @@
         "Maheshvara",
         "Rudra",
         "Nataraja",
-        "Shankara"
+        "Shankara",
+        "The Destroyer"
       ],
       "epithets": [
         "The Destroyer",
@@ -591,6 +653,21 @@
           "target": "primordial:destroyer",
           "activation": "When ascetic detachment becomes world-annihilation; Tandava dance of dissolution",
           "strength": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-MAHAKALA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:IN-KALI"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:ardra",
+          "fidelity": 0.7,
+          "note": "Reverse of: Rudra form of Shiva"
         }
       ],
       "contextualVariants": [
@@ -706,7 +783,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-VAJRAYOGINI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:mercury",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-SHAKTI",
@@ -824,6 +919,11 @@
             "goddess-supreme",
             "multiple-aspects"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-DANU",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -878,7 +978,30 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-LEGBA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-MARPA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "mythology",
+        "strength",
+        "vedic"
+      ]
     },
     {
       "@id": "arch:IN-DURGA",
@@ -987,6 +1110,23 @@
             "war",
             "fierce-protection"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-PALDEN-LHAMO",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-SHAKTI"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "arch:IN-KALI"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-PARVATI"
         }
       ],
       "correspondences": {
@@ -1013,6 +1153,7 @@
         "confidence": 0.95
       },
       "domains": [
+        "justice",
         "protection",
         "war"
       ],
@@ -1041,7 +1182,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kwml:warrior",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:verethraghna",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-KALI",
@@ -1166,6 +1325,34 @@
             "death",
             "underworld"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-VAJRAYOGINI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-SHAKTI"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "arch:IN-DURGA"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-PARVATI"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:VO-ERZULIE-DANTOR",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:crone-destroyer",
+          "fidelity": 0.75,
+          "note": "Reverse of: Dark mother"
         }
       ],
       "correspondences": {
@@ -1240,7 +1427,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-MAHAKALA",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-YAMANTAKA",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-LAKSHMI",
@@ -1249,7 +1454,8 @@
       "aliases": [
         "Shri",
         "Mahalakshmi",
-        "Kamala"
+        "Kamala",
+        "Goddess of Fortune"
       ],
       "epithets": [
         "Goddess of Wealth",
@@ -1359,6 +1565,10 @@
             "storehouse",
             "abundance"
           ]
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-SHAKTI"
         }
       ],
       "correspondences": {
@@ -1387,9 +1597,11 @@
         "confidence": 0.95
       },
       "domains": [
+        "beauty",
         "fate",
         "fertility",
-        "sea"
+        "sea",
+        "wealth"
       ],
       "keywords": [
         "abundance",
@@ -1415,7 +1627,35 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-APHRODITE",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "beauty",
+            "fortune",
+            "prosperity"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "persian:haurvatat",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:mama-ocllo",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-SARASWATI",
@@ -1424,7 +1664,9 @@
       "aliases": [
         "Vak",
         "Bharati",
-        "Sharada"
+        "Sharada",
+        "Goddess of Learning",
+        "Vani"
       ],
       "epithets": [
         "Goddess of Knowledge",
@@ -1524,6 +1766,20 @@
             "writing",
             "speech"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BRIGID",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-SHAKTI"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:anahita",
+          "fidelity": 0.7
         }
       ],
       "correspondences": {
@@ -1548,8 +1804,10 @@
         "confidence": 0.95
       },
       "domains": [
+        "communication",
         "music",
         "water",
+        "wilderness",
         "wisdom"
       ],
       "keywords": [
@@ -1576,7 +1834,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:sraosha",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "persian:haurvatat",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-PARVATI",
@@ -1701,6 +1977,10 @@
           "target": "Parvati (patient ascetic who wins Shiva through tapas)",
           "trigger": "Reincarnation after Sati's death; transformation from passionate devotion to disciplined power",
           "direction": "forward"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-SHAKTI"
         }
       ],
       "correspondences": {
@@ -1729,7 +2009,8 @@
       "domains": [
         "fertility",
         "love",
-        "marriage"
+        "marriage",
+        "sacrifice"
       ],
       "keywords": [
         "aspects",
@@ -1757,7 +2038,34 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-DEMETER",
+          "fidelity": 0.6,
+          "sharedAspects": [
+            "mother",
+            "fertility"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:EG-BASTET",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_22",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-GANESHA",
@@ -1766,7 +2074,8 @@
       "aliases": [
         "Ganapati",
         "Vinayaka",
-        "Vighnaharta"
+        "Vighnaharta",
+        "Elephant-Headed God"
       ],
       "epithets": [
         "Remover of Obstacles",
@@ -1903,6 +2212,8 @@
         "confidence": 0.95
       },
       "domains": [
+        "mythology",
+        "vedic",
         "wisdom"
       ],
       "keywords": [
@@ -1930,7 +2241,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:ngetal",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:ally",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-KRISHNA",
@@ -2069,6 +2398,10 @@
             "divine-play",
             "paradox"
           ]
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-VISHNU"
         }
       ],
       "contextualVariants": [
@@ -2157,6 +2490,7 @@
       "domains": [
         "childhood",
         "creation",
+        "sacrifice",
         "sovereignty"
       ],
       "keywords": [
@@ -2185,7 +2519,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-MERCURY",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-RAMA",
@@ -2302,6 +2654,10 @@
           "target": "Maryada Purushottam (ideal man who embodies dharma)",
           "trigger": "Exile, Sita's abduction, war with Ravana; trials that forge ideal kingship",
           "direction": "forward"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:IN-VISHNU"
         }
       ],
       "correspondences": {
@@ -2332,6 +2688,7 @@
         "confidence": 0.95
       },
       "domains": [
+        "justice",
         "love",
         "sovereignty"
       ],
@@ -2361,7 +2718,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-SHAMASH",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-ATHENA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-HANUMAN",
@@ -2465,6 +2840,12 @@
             "supernatural-power",
             "devotion-to-master"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:chuen",
+          "fidelity": 0.55,
+          "note": "Reverse of: Monkey deity"
         }
       ],
       "correspondences": {
@@ -2491,7 +2872,9 @@
       },
       "domains": [
         "air",
-        "sea"
+        "sacrifice",
+        "sea",
+        "strength"
       ],
       "keywords": [
         "across",
@@ -2517,7 +2900,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "superhero:team_leader",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-NUADA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-INDRA",
@@ -2526,7 +2927,9 @@
       "aliases": [
         "Shakra",
         "Vajrapani",
-        "Purandara"
+        "Purandara",
+        "King of the Devas",
+        "Lord of Heaven"
       ],
       "epithets": [
         "King of the Gods",
@@ -2642,6 +3045,41 @@
           "target": "primordial:tyrant",
           "activation": "When divine kingship becomes arrogant excess; fear of displacement by mortals",
           "strength": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-VAJRAPANI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:IN-AGNI"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:IN-SOMA"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:khshathra-vairya",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:tishtrya",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:vishakha",
+          "fidelity": 0.7,
+          "note": "Reverse of: Ruled by Indra"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:jyeshtha",
+          "fidelity": 0.75,
+          "note": "Reverse of: Ruled by Indra"
         }
       ],
       "contextualVariants": [
@@ -2688,6 +3126,7 @@
         "fatherhood",
         "sky",
         "sovereignty",
+        "thunder",
         "war"
       ],
       "keywords": [
@@ -2715,7 +3154,36 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.75,
+          "sharedAspects": [
+            "thunder",
+            "storm",
+            "king-of-gods",
+            "warrior"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:NA-THUNDERBIRD",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:cuauhtli",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-YAMA",
@@ -2821,6 +3289,12 @@
           "sharedAspects": [
             "underworld-ruler"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:bharani",
+          "fidelity": 0.75,
+          "note": "Reverse of: Ruled by Yama"
         }
       ],
       "correspondences": {
@@ -2849,7 +3323,9 @@
       "domains": [
         "death",
         "justice",
+        "law",
         "sovereignty",
+        "spirits",
         "underworld"
       ],
       "keywords": [
@@ -2878,7 +3354,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-YANLUO",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-EMMA",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-AGNI",
@@ -2991,6 +3485,16 @@
             "fire-bringer",
             "civilization-enabler"
           ]
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:IN-VARUNA"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:krittika",
+          "fidelity": 0.8,
+          "note": "Reverse of: Ruled by Agni"
         }
       ],
       "correspondences": {
@@ -3021,7 +3525,10 @@
       "domains": [
         "communication",
         "fire",
-        "sacrifice"
+        "hearth",
+        "messenger",
+        "sacrifice",
+        "strength"
       ],
       "keywords": [
         "agni",
@@ -3039,7 +3546,25 @@
         "caregiver"
       ],
       "coreFunction": "To embody messenger energy through divine-intermediary and sacrifice-carrier",
-      "symbolicCore": "The communication that transforms through Agni's essence"
+      "symbolicCore": "The communication that transforms through Agni's essence",
+      "culturalEchoes": [
+        {
+          "target": "persian:saoshyant",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-MANJUSHRI",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-SOMA",
@@ -3144,6 +3669,11 @@
             "ecstasy",
             "divine-intoxication"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:ameretat",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -3170,6 +3700,7 @@
       },
       "domains": [
         "ecstasy",
+        "moon",
         "threshold"
       ],
       "keywords": [
@@ -3195,7 +3726,34 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-DIONYSUS",
+          "fidelity": 0.65,
+          "sharedAspects": [
+            "intoxication",
+            "ecstasy"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:BU-YESHE-TSOGYAL",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_46",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:IN-VARUNA",
@@ -3338,9 +3896,12 @@
         "confidence": 0.85
       },
       "domains": [
+        "law",
+        "moon",
         "order",
         "sky",
-        "sovereignty"
+        "sovereignty",
+        "truth"
       ],
       "keywords": [
         "ahura",
@@ -3366,7 +3927,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-SATURN",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "spiral:blue",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": [

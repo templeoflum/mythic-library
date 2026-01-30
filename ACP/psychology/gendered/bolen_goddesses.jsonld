@@ -63,10 +63,17 @@
           "target": "goddess:maiden-amazon",
           "fidelity": 0.85,
           "note": "Amazon aspect"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:athena",
+          "note": "Reverse of: Fellow virgin goddess"
         }
       ],
       "domains": [
-        "hunt"
+        "hunt",
+        "moon",
+        "wilderness"
       ],
       "narrativeRoles": [
         "hero",
@@ -81,7 +88,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "disc:dominance",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:athena",
@@ -136,6 +161,11 @@
           "type": "COMPLEMENT",
           "target": "bolen:artemis",
           "note": "Fellow virgin goddess"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:hestia",
+          "note": "Reverse of: Fellow virgin goddess"
         }
       ],
       "domains": [
@@ -156,7 +186,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:algiz",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:hestia",
@@ -214,7 +262,10 @@
         }
       ],
       "domains": [
-        "home"
+        "gender-archetypes",
+        "hearth",
+        "home",
+        "psychology"
       ],
       "narrativeRoles": [
         "innocent",
@@ -227,7 +278,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:sli",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-MIELIKKI",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:hera",
@@ -286,7 +355,9 @@
         }
       ],
       "domains": [
-        "marriage"
+        "gender-archetypes",
+        "marriage",
+        "psychology"
       ],
       "narrativeRoles": [
         "ally",
@@ -301,7 +372,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:oc",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:esi",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:demeter",
@@ -357,6 +446,11 @@
           "target": "goddess:mother",
           "fidelity": 0.9,
           "note": "Mother archetype"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:persephone",
+          "note": "Reverse of: Mother-daughter pair"
         }
       ],
       "domains": [
@@ -376,7 +470,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-DANU",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:woodpecker",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:persephone",
@@ -435,8 +547,10 @@
       ],
       "domains": [
         "death",
+        "dreams",
         "sovereignty",
-        "underworld"
+        "underworld",
+        "wilderness"
       ],
       "narrativeRoles": [
         "innocent",
@@ -450,7 +564,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:aphrodite",
@@ -510,7 +642,10 @@
         }
       ],
       "domains": [
+        "beauty",
+        "creation",
         "love",
+        "strength",
         "transformation"
       ],
       "narrativeRoles": [
@@ -525,7 +660,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_57",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:xun",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

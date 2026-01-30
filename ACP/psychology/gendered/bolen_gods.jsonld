@@ -63,10 +63,18 @@
           "target": "kwml:king",
           "fidelity": 0.9,
           "note": "King archetype"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:poseidon",
+          "note": "Reverse of: Brother realms"
         }
       ],
       "domains": [
-        "sovereignty"
+        "gender-archetypes",
+        "psychology",
+        "sovereignty",
+        "strength"
       ],
       "narrativeRoles": [
         "ruler",
@@ -79,7 +87,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "superhero:team_leader",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:ruler",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:poseidon",
@@ -134,9 +160,16 @@
           "type": "COMPLEMENT",
           "target": "bolen:zeus",
           "note": "Brother realms"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "bolen:hades",
+          "note": "Reverse of: Brother realms"
         }
       ],
       "domains": [
+        "gender-archetypes",
+        "psychology",
         "sea"
       ],
       "narrativeRoles": [
@@ -151,7 +184,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-LESHY",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-CERNUNNOS",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:hades",
@@ -210,7 +261,9 @@
       ],
       "domains": [
         "death",
-        "underworld"
+        "dreams",
+        "underworld",
+        "wealth"
       ],
       "narrativeRoles": [
         "herald",
@@ -224,7 +277,25 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-COATLICUE",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:apollo",
@@ -283,7 +354,10 @@
         }
       ],
       "domains": [
-        "order"
+        "intellect",
+        "law",
+        "order",
+        "sun"
       ],
       "narrativeRoles": [
         "hero",
@@ -297,7 +371,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:algiz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:hermes",
@@ -357,7 +449,9 @@
       ],
       "domains": [
         "boundaries",
-        "communication"
+        "communication",
+        "messenger",
+        "trickster"
       ],
       "narrativeRoles": [
         "herald",
@@ -372,7 +466,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_40",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LEGBA",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:ares",
@@ -431,7 +543,9 @@
         }
       ],
       "domains": [
+        "gender-archetypes",
         "love",
+        "psychology",
         "war"
       ],
       "narrativeRoles": [
@@ -446,7 +560,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-OGOU",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:sle",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:hephaestus",
@@ -505,8 +637,10 @@
         }
       ],
       "domains": [
+        "beauty",
         "crafts",
-        "creation"
+        "creation",
+        "fire"
       ],
       "narrativeRoles": [
         "creator",
@@ -519,7 +653,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-OKUNINUSHI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:brown_bear",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "bolen:dionysus",
@@ -587,7 +739,8 @@
         "boundaries",
         "ecstasy",
         "love",
-        "marriage"
+        "marriage",
+        "wine"
       ],
       "narrativeRoles": [
         "ally",
@@ -601,7 +754,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:fermentation",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_59",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

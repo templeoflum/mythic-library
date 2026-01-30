@@ -154,7 +154,11 @@
         "air",
         "earth",
         "family",
-        "sky"
+        "moon",
+        "sky",
+        "stars",
+        "sun",
+        "thunder"
       ],
       "keywords": [
         "air",
@@ -181,7 +185,17 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HEPHAESTUS",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-NUWA",
@@ -323,7 +337,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-RONGO",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-LADA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-FUXI",
@@ -431,7 +463,8 @@
       },
       "domains": [
         "earth",
-        "hunt"
+        "hunt",
+        "wilderness"
       ],
       "keywords": [
         "animal",
@@ -459,7 +492,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-KANE",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-SHENNONG",
@@ -566,6 +617,7 @@
         "association": "Traditional Chinese Medicine, agriculture, markets"
       },
       "domains": [
+        "agriculture",
         "fatherhood",
         "harvest",
         "healing"
@@ -596,7 +648,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_08",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:strength",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-HUANGDI",
@@ -740,7 +810,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-QUETZALCOATL",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-CHIYOU",
@@ -848,7 +936,9 @@
       },
       "domains": [
         "air",
-        "war"
+        "strength",
+        "war",
+        "wilderness"
       ],
       "keywords": [
         "against",
@@ -876,7 +966,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:thurisaz",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-ARES",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-JADE-EMPEROR",
@@ -993,9 +1101,13 @@
         "festival": "Birthday on 9th day of first lunar month"
       },
       "domains": [
+        "agriculture",
+        "death",
+        "law",
         "order",
         "sky",
-        "sovereignty"
+        "sovereignty",
+        "stars"
       ],
       "keywords": [
         "achieved",
@@ -1021,7 +1133,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-UKKO",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-XIWANGMU",
@@ -1177,7 +1307,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "persian:daena",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-HINA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-SUN-WUKONG",
@@ -1278,6 +1426,17 @@
           "target": "Victorious Fighting Buddha",
           "trigger": "Journey to the West pilgrimage; 81 trials transform rebellion into discipline",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-HANUMAN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chinese:monkey",
+          "fidelity": 0.8,
+          "note": "Reverse of: Monkey King archetype"
         }
       ],
       "shadowDynamics": {
@@ -1326,8 +1485,10 @@
       },
       "domains": [
         "chaos",
+        "magic",
         "sky",
         "sovereignty",
+        "sun",
         "transformation",
         "travel",
         "war"
@@ -1358,7 +1519,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-PELE",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-GUANYIN",
@@ -1446,6 +1625,11 @@
           "target": "arch:EG-ISIS",
           "fidelity": 0.45,
           "notes": "Universal mother, hearer of prayers"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-AVALOKITESHVARA",
+          "fidelity": 0.9
         }
       ],
       "shadowDynamics": {
@@ -1493,7 +1677,11 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "domains": [
+        "chinese",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:CN-ERLANG-SHEN",
@@ -1599,6 +1787,9 @@
       "domains": [
         "motherhood",
         "sky",
+        "stars",
+        "sun",
+        "truth",
         "war"
       ],
       "keywords": [
@@ -1625,7 +1816,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:ME-ENLIL",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-NEZHA",
@@ -1760,6 +1969,7 @@
         "air",
         "fertility",
         "fire",
+        "hearth",
         "rebirth",
         "sovereignty",
         "time",
@@ -1791,7 +2001,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:whistleblower",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:sulphur",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-ZHONGLI-QUAN",
@@ -1882,7 +2110,10 @@
         "association": "Taoist alchemy, Eight Immortals, military arts"
       },
       "domains": [
-        "death"
+        "agriculture",
+        "chinese",
+        "death",
+        "mythology"
       ],
       "keywords": [
         "achieved",
@@ -1910,7 +2141,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:luis",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:distillation",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-LU-DONGBIN",
@@ -2019,6 +2268,7 @@
       },
       "domains": [
         "poetry",
+        "strength",
         "war"
       ],
       "keywords": [
@@ -2047,7 +2297,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:purva-ashadha",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "spiral:yellow",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-MAZU",
@@ -2179,7 +2447,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-OSHUN",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-HIIAKA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-GUAN-YU",
@@ -2274,9 +2560,11 @@
         "association": "Police, soldiers, merchants, triads, brotherhood"
       },
       "domains": [
+        "commerce",
         "death",
         "protection",
-        "war"
+        "war",
+        "wealth"
       ],
       "keywords": [
         "after",
@@ -2302,7 +2590,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-HACHIMAN",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-CHANG-E",
@@ -2426,7 +2732,30 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:binah",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:mama-quilla",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "chinese",
+        "moon",
+        "mythology"
+      ]
     },
     {
       "@id": "arch:CN-HOU-YI",
@@ -2526,7 +2855,9 @@
       },
       "domains": [
         "destruction",
-        "earth"
+        "earth",
+        "moon",
+        "sky"
       ],
       "keywords": [
         "alone",
@@ -2552,7 +2883,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "angel:powers",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:holly",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:CN-YANLUO",
@@ -2655,6 +3004,7 @@
         "death",
         "fate",
         "sovereignty",
+        "spirits",
         "underworld"
       ],
       "keywords": [
@@ -2682,7 +3032,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:JP-EMMA",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-MICTECACIHUATL",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

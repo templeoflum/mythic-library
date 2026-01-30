@@ -65,6 +65,26 @@
           "type": "CULTURAL_ECHO",
           "target": "kabbalah:tiphareth",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:turquoise",
+          "fidelity": 0.8
+        },
+        {
+          "type": "TENSION",
+          "target": "jungian:persona",
+          "note": "Reverse of: Persona can eclipse Self"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:ai_entity",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:cosmic_being",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -77,7 +97,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "element:aether",
+          "fidelity": 1.0,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:mannaz",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:shadow",
@@ -130,6 +172,52 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:devil",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "myss:saboteur",
+          "fidelity": 0.75,
+          "note": "Reverse of: Shadow self"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:shadow",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:outlaw",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:troll",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:lurker",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:dark_knight",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:outsider",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:antihero",
+          "fidelity": 0.75
+        },
+        {
+          "type": "TENSION",
+          "target": "angel:powers",
+          "note": "Reverse of: Combat against shadow forces"
         }
       ],
       "narrativeRoles": [
@@ -143,7 +231,29 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:shadow",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AU-BUNYIP",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:anima",
@@ -200,13 +310,52 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:empress",
           "fidelity": 0.75
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "jungian:self",
+          "note": "Reverse of: Anima/Animus are aspects of Self"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:shapeshifter",
+          "fidelity": 0.7,
+          "note": "Reverse of: Often represents contrasexual"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:warrior_woman",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "innocent"
       ],
       "coreFunction": "To embody great_mother energy through feminine and nurturing",
-      "symbolicCore": "The essential pattern of The Anima"
+      "symbolicCore": "The essential pattern of The Anima",
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:willow",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:saille",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "dreams",
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:animus",
@@ -263,13 +412,45 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:magician",
           "fidelity": 0.7
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "jungian:self"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "vogler:shapeshifter",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "hero"
       ],
       "coreFunction": "To embody great_father energy through masculine and spirit",
-      "symbolicCore": "The essential pattern of The Animus"
+      "symbolicCore": "The essential pattern of The Animus",
+      "culturalEchoes": [
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:pariacaca",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "dreams",
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:persona",
@@ -326,7 +507,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_04",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:uttara-phalguni",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:wise_old_man",
@@ -371,13 +574,48 @@
           "type": "CULTURAL_ECHO",
           "target": "vogler:mentor",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:sage",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:mentor_hero",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:cherubim",
+          "fidelity": 0.75
         }
       ],
       "domains": [
+        "jungian",
+        "psychology",
         "wisdom"
       ],
       "coreFunction": "To embody wise_elder energy through wisdom and meaning",
-      "symbolicCore": "The wisdom that transforms through The Wise Old Man's essence"
+      "symbolicCore": "The wisdom that transforms through The Wise Old Man's essence",
+      "culturalEchoes": [
+        {
+          "target": "vogler:mentor",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:sage",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "jungian:great_mother",
@@ -422,13 +660,48 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:kun",
           "fidelity": 0.85
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "jungian:maiden",
+          "note": "Reverse of: Maiden transforms to Mother"
+        },
+        {
+          "type": "EVOLUTION",
+          "target": "jungian:crone",
+          "note": "Reverse of: Mother transforms to Crone"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:caregiver",
+          "fidelity": 0.85
         }
       ],
       "domains": [
-        "motherhood"
+        "jungian",
+        "motherhood",
+        "psychology"
       ],
       "coreFunction": "To embody great_mother energy through nurturing and devouring",
-      "symbolicCore": "The motherhood that transforms through The Great Mother's essence"
+      "symbolicCore": "The motherhood that transforms through The Great Mother's essence",
+      "culturalEchoes": [
+        {
+          "target": "tarot:empress",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:pentacles_queen",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "jungian:hero",
@@ -473,9 +746,21 @@
           "type": "CULTURAL_ECHO",
           "target": "vogler:hero",
           "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:hero",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:paragon",
+          "fidelity": 0.9
         }
       ],
       "domains": [
+        "jungian",
+        "psychology",
         "travel"
       ],
       "narrativeRoles": [
@@ -489,7 +774,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:hero",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:chariot",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "jungian:child",
@@ -534,10 +837,43 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:sun",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:innocent",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:legacy_hero",
+          "fidelity": 0.8
         }
       ],
       "coreFunction": "To embody divine_child energy through innocence and potential",
-      "symbolicCore": "The essential pattern of The Child"
+      "symbolicCore": "The essential pattern of The Child",
+      "culturalEchoes": [
+        {
+          "target": "tarot:fool",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:legacy_hero",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "childhood",
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:trickster",
@@ -581,11 +917,39 @@
           "type": "CULTURAL_ECHO",
           "target": "vogler:trickster",
           "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:magician",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:jester",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:hacker",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:viral_meme",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.85
         }
       ],
       "domains": [
         "communication",
-        "order"
+        "law",
+        "messenger",
+        "order",
+        "trickster"
       ],
       "narrativeRoles": [
         "shapeshifter",
@@ -598,7 +962,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:trickster",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:hacker",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "jungian:maiden",
@@ -656,7 +1038,29 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:maiden",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CE-AENGUS",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "jungian",
+        "psychology"
+      ]
     },
     {
       "@id": "jungian:crone",
@@ -704,6 +1108,8 @@
         }
       ],
       "domains": [
+        "jungian",
+        "psychology",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -717,7 +1123,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:crone",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:elder",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

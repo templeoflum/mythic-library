@@ -63,6 +63,32 @@
           "type": "COMPLEMENT",
           "target": "vogler:mentor",
           "note": "Hero learns from mentor"
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:threshold_guardian",
+          "note": "Reverse of: Guardian tests hero"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "vogler:shadow",
+          "axis": "light-shadow",
+          "note": "Reverse of: Hero's dark mirror"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "vogler:ally",
+          "note": "Reverse of: Ally supports hero"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:hero",
+          "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:paragon",
+          "fidelity": 0.9
         }
       ],
       "narrativeRoles": [
@@ -76,7 +102,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:hero",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:hero",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "vogler:mentor",
@@ -138,13 +186,50 @@
           "type": "COMPLEMENT",
           "target": "vogler:hero",
           "note": "Mentor guides hero"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:sage",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:mentor_hero",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:angels",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
         "magician"
       ],
       "coreFunction": "To embody wise_elder energy through wisdom and guidance",
-      "symbolicCore": "The essential pattern of The Mentor"
+      "symbolicCore": "The essential pattern of The Mentor",
+      "culturalEchoes": [
+        {
+          "target": "jungian:wise_old_man",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:mentor_hero",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "vogler:threshold_guardian",
@@ -201,6 +286,16 @@
           "type": "TENSION",
           "target": "vogler:hero",
           "note": "Guardian tests hero"
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:trickster",
+          "note": "Reverse of: Trickster circumvents guardians"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:moderator",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -215,7 +310,31 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:jyeshtha",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:alder",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "protection",
+        "psychology",
+        "threshold"
+      ]
     },
     {
       "@id": "vogler:herald",
@@ -272,6 +391,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:influencer",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:archangels",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -286,7 +415,30 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-ENKIDU",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-JARILO",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "messenger",
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "vogler:shapeshifter",
@@ -363,7 +515,29 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "alchemy:mercury",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-VAJRAYOGINI",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "vogler:shadow",
@@ -414,6 +588,11 @@
           "target": "vogler:hero",
           "axis": "light-shadow",
           "note": "Hero's dark mirror"
+        },
+        {
+          "type": "TENSION",
+          "target": "vogler:hero",
+          "note": "Reverse of: Hero confronts shadow"
         }
       ],
       "narrativeRoles": [
@@ -427,7 +606,29 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:shadow",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AU-BUNYIP",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "vogler:ally",
@@ -491,7 +692,29 @@
         "lover"
       ],
       "coreFunction": "To embody twin energy through companion and mirror",
-      "symbolicCore": "The essential pattern of The Ally"
+      "symbolicCore": "The essential pattern of The Ally",
+      "culturalEchoes": [
+        {
+          "target": "rune:gebo",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:manik",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology"
+      ]
     },
     {
       "@id": "vogler:trickster",
@@ -546,6 +769,16 @@
           "type": "TENSION",
           "target": "vogler:threshold_guardian",
           "note": "Trickster circumvents guardians"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:jester",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:trickster_hero",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -559,7 +792,30 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "jungian:trickster",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:hacker",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "narrative",
+        "psychology",
+        "trickster"
+      ]
     }
   ],
   "systemRelationships": {

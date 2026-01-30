@@ -7,6 +7,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-01-29
+
+### Added - ACP Enrichment Phase 2
+
+**Infrastructure Scripts:**
+- `scripts/enrich_phase2_echoes.py` - Cultural echoes, aliases, bidirectional relationships
+- `scripts/enrich_phase2_domains.py` - Domain vocabulary expansion and auto-assignment
+
+**Cultural Echo Network:**
+- 68 known cultural equivalents mapped (Zeus↔Jupiter↔Thor↔Indra, etc.)
+- 1,772 spectral proximity echoes generated (distance < 0.12)
+- 951 bidirectional relationship links added
+- Cross-pantheon relationship graph now connected
+
+**Domain Enrichment:**
+- 1,680 domains added across 814 entries
+- 70 domains normalized to controlled vocabulary
+- System-specific domain defaults applied
+
+**Field Enrichment Results:**
+| Field | Before | After | Improved |
+|-------|--------|-------|----------|
+| culturalEchoes | 923 (98.4%) | 43 (4.6%) | +880 |
+| domains | 410 (43.7%) | 62 (6.6%) | +348 |
+| bidirectional | 934 missing | 59 missing | +875 |
+
+**Completeness Tier Changes:**
+| Tier | Before | After | Change |
+|------|--------|-------|--------|
+| Complete (80%+) | 210 (22.4%) | 273 (29.1%) | +63 |
+| Rich (60-79%) | 429 (45.7%) | 597 (63.6%) | +168 |
+| Partial (40-59%) | 280 (29.9%) | 51 (5.4%) | -229 |
+| Stub (<40%) | 19 (2.0%) | 17 (1.8%) | -2 |
+
+**92.7% of entries now at "rich" tier or above** (target: 80%)
+
+**Mean completeness score:** 64% → 76%+
+
+### Changed
+- Relationship total increased from 2,590 to 3,541
+- Known deity equivalents across 10+ pantheons mapped
+- Domain vocabulary expanded with 60+ canonical terms
+
 ## [0.2.1] - 2026-01-29
 
 ### Added - ACP Enrichment Phase 1

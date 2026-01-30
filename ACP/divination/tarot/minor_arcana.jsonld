@@ -120,12 +120,12 @@
             }
           ],
           "domains": [
-            "fire",
-            "creation",
-            "will",
-            "passion",
             "beginnings",
-            "potential"
+            "creation",
+            "fire",
+            "love",
+            "potential",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -156,7 +156,25 @@
             "developmentalStage": "pure potential and new beginnings",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "pearson:creator",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "brand:creator",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_02",
@@ -191,10 +209,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -226,7 +244,25 @@
             "developmentalStage": "duality, choice, and balance",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "spiral:orange",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "digital:influencer",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_03",
@@ -261,10 +297,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -295,7 +331,25 @@
             "developmentalStage": "expansion, growth, and collaboration",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "nakshatra:ashwini",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "chakra:vishuddha",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_04",
@@ -330,10 +384,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -365,7 +419,25 @@
             "developmentalStage": "stability, foundation, and structure",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "kabbalah:chesed",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "rune:wunjo",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_05",
@@ -400,12 +472,12 @@
             }
           ],
           "domains": [
-            "fire",
+            "challenge",
             "creation",
-            "will",
-            "passion",
-            "conflict",
-            "challenge"
+            "fire",
+            "love",
+            "war",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -437,7 +509,25 @@
             "developmentalStage": "conflict, challenge, and disruption",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "chinese:tiger",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:AF-ANANSI",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_06",
@@ -472,10 +562,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -492,6 +582,11 @@
               "target": "element:fire",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:sowilo",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To restore harmony and facilitate exchange in fire matters",
@@ -507,7 +602,25 @@
             "developmentalStage": "harmony, healing, and exchange",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "incan:pariacaca",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "chinese:dragon",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_07",
@@ -542,10 +655,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -562,6 +675,11 @@
               "target": "element:fire",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:algiz",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To assess progress and persevere through fire challenges",
@@ -577,7 +695,25 @@
             "developmentalStage": "assessment, challenge, and perseverance",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "chinese:tiger",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "enneagram:type_8",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_08",
@@ -619,10 +755,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -653,7 +789,25 @@
             "developmentalStage": "movement, power, and momentum",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "iching:hex_34",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "nakshatra:ashwini",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_09",
@@ -695,10 +849,10 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion"
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -730,7 +884,25 @@
             "developmentalStage": "culmination, near-completion, and solitude",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "bolen:artemis",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "goddess:maiden-amazon",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_10",
@@ -765,12 +937,12 @@
             }
           ],
           "domains": [
-            "fire",
-            "creation",
-            "will",
-            "passion",
             "completion",
-            "culmination"
+            "creation",
+            "culmination",
+            "fire",
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -802,7 +974,25 @@
             "developmentalStage": "completion, fulfillment, and endings",
             "integrationTask": "Balancing fire energy appropriately",
             "cognitiveBias": "Over-identification with fire qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "commedia:pantalone",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:JP-SARUTAHIKO",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_page",
@@ -844,12 +1034,12 @@
             }
           ],
           "domains": [
-            "fire",
+            "communication",
             "creation",
-            "will",
-            "passion",
+            "fire",
             "learning",
-            "messages"
+            "love",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -882,7 +1072,25 @@
             "developmentalStage": "Beginning to develop elemental skills",
             "integrationTask": "Learning without losing enthusiasm",
             "cognitiveBias": "Identification with fire expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "nakshatra:ashwini",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "pearson:creator",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_knight",
@@ -925,12 +1133,12 @@
             }
           ],
           "domains": [
-            "fire",
-            "creation",
-            "will",
-            "passion",
             "action",
-            "journey"
+            "creation",
+            "fire",
+            "love",
+            "travel",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -962,7 +1170,25 @@
             "developmentalStage": "Adolescent intensity and idealism",
             "integrationTask": "Channeling passion without burning out",
             "cognitiveBias": "Identification with fire expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "chinese:horse",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_51",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_queen",
@@ -1004,12 +1230,12 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion",
-            "nurturing",
-            "mastery"
+            "fire",
+            "love",
+            "mastery",
+            "motherhood",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -1042,7 +1268,25 @@
             "developmentalStage": "Mature integration of elemental qualities",
             "integrationTask": "Nurturing without possessing",
             "cognitiveBias": "Identification with fire expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "chakra:vishuddha",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_10",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:wands_king",
@@ -1084,12 +1328,12 @@
             }
           ],
           "domains": [
-            "fire",
             "creation",
-            "will",
-            "passion",
-            "authority",
-            "mastery"
+            "fire",
+            "love",
+            "mastery",
+            "sovereignty",
+            "will"
           ],
           "correspondences": {
             "element": "EL-FIRE",
@@ -1122,7 +1366,25 @@
             "developmentalStage": "Full mastery and responsibility",
             "integrationTask": "Leading without dominating",
             "cognitiveBias": "Identification with fire expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:BU-AMOGHASIDDHI",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "enneagram:type_3",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         }
       ]
     },
@@ -1218,7 +1480,25 @@
             "developmentalStage": "pure potential and new beginnings",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rune:berkano",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "rune:ingwaz",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_02",
@@ -1280,6 +1560,16 @@
               "target": "element:water",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:gebo",
+              "fidelity": 0.7
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:ehwaz",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To navigate the choice between opposing water expressions",
@@ -1295,7 +1585,25 @@
             "developmentalStage": "duality, choice, and balance",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "iching:hex_31",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_27",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_03",
@@ -1371,7 +1679,25 @@
             "developmentalStage": "expansion, growth, and collaboration",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "spiral:green",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_58",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_04",
@@ -1447,7 +1773,25 @@
             "developmentalStage": "stability, foundation, and structure",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "digital:lurker",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_04",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_05",
@@ -1489,12 +1833,12 @@
             }
           ],
           "domains": [
-            "water",
-            "love",
+            "challenge",
             "emotion",
             "intuition",
-            "conflict",
-            "challenge"
+            "love",
+            "war",
+            "water"
           ],
           "correspondences": {
             "element": "EL-WATER",
@@ -1526,7 +1870,25 @@
             "developmentalStage": "conflict, challenge, and disruption",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:MA-COATLICUE",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "bolen:hades",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_06",
@@ -1603,7 +1965,25 @@
             "developmentalStage": "harmony, healing, and exchange",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "socionics:sei",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "chinese:pig",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_07",
@@ -1679,7 +2059,25 @@
             "developmentalStage": "assessment, challenge, and perseverance",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "mbti:isfp",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "mbti:infp",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_08",
@@ -1756,7 +2154,25 @@
             "developmentalStage": "movement, power, and momentum",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "myss:saboteur",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "totem:snake",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_09",
@@ -1832,7 +2248,25 @@
             "developmentalStage": "culmination, near-completion, and solitude",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "iching:hex_22",
+              "fidelity": 0.97,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:SL-LADA",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_10",
@@ -1896,6 +2330,11 @@
               "target": "element:water",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:wunjo",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To embody the full manifestation and completion of water energy",
@@ -1911,7 +2350,25 @@
             "developmentalStage": "completion, fulfillment, and endings",
             "integrationTask": "Balancing water energy appropriately",
             "cognitiveBias": "Over-identification with water qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "pearson:caregiver",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "mbti:esfj",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_page",
@@ -1953,12 +2410,12 @@
             }
           ],
           "domains": [
-            "water",
-            "love",
+            "communication",
             "emotion",
             "intuition",
             "learning",
-            "messages"
+            "love",
+            "water"
           ],
           "correspondences": {
             "element": "EL-WATER",
@@ -1991,7 +2448,25 @@
             "developmentalStage": "Beginning to develop elemental skills",
             "integrationTask": "Learning without losing enthusiasm",
             "cognitiveBias": "Identification with water expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "myss:child",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_31",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_knight",
@@ -2033,12 +2508,12 @@
             }
           ],
           "domains": [
-            "water",
-            "love",
+            "action",
             "emotion",
             "intuition",
-            "action",
-            "journey"
+            "love",
+            "travel",
+            "water"
           ],
           "correspondences": {
             "element": "EL-WATER",
@@ -2071,7 +2546,25 @@
             "developmentalStage": "Adolescent intensity and idealism",
             "integrationTask": "Channeling passion without burning out",
             "cognitiveBias": "Identification with water expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:NO-FREYJA",
+              "fidelity": 0.97,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "nakshatra:mrigashira",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_queen",
@@ -2113,12 +2606,12 @@
             }
           ],
           "domains": [
-            "water",
-            "love",
             "emotion",
             "intuition",
-            "nurturing",
-            "mastery"
+            "love",
+            "mastery",
+            "motherhood",
+            "water"
           ],
           "correspondences": {
             "element": "EL-WATER",
@@ -2151,7 +2644,25 @@
             "developmentalStage": "Mature integration of elemental qualities",
             "integrationTask": "Nurturing without possessing",
             "cognitiveBias": "Identification with water expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "chinese:goat",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "rashi:karka",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:cups_king",
@@ -2193,12 +2704,12 @@
             }
           ],
           "domains": [
-            "water",
-            "love",
             "emotion",
             "intuition",
-            "authority",
-            "mastery"
+            "love",
+            "mastery",
+            "sovereignty",
+            "water"
           ],
           "correspondences": {
             "element": "EL-WATER",
@@ -2231,7 +2742,25 @@
             "developmentalStage": "Full mastery and responsibility",
             "integrationTask": "Leading without dominating",
             "cognitiveBias": "Identification with water expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "ogham:fearn",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "socionics:esi",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         }
       ]
     },
@@ -2292,11 +2821,11 @@
           ],
           "domains": [
             "air",
-            "truth",
-            "conflict",
-            "intellect",
             "beginnings",
-            "potential"
+            "intellect",
+            "potential",
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2328,7 +2857,25 @@
             "developmentalStage": "pure potential and new beginnings",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rune:sowilo",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "enneagram:type_3",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_02",
@@ -2370,9 +2917,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2404,7 +2951,25 @@
             "developmentalStage": "duality, choice, and balance",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "iching:hex_33",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_05",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_03",
@@ -2446,9 +3011,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2480,7 +3045,25 @@
             "developmentalStage": "expansion, growth, and collaboration",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "superhero:outsider",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:MA-COYOLXAUHQUI",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_04",
@@ -2522,9 +3105,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2541,6 +3124,11 @@
               "target": "element:air",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:isa",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To establish stable foundation in the realm of air",
@@ -2556,7 +3144,25 @@
             "developmentalStage": "stability, foundation, and structure",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "iching:hex_52",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:gen",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_05",
@@ -2600,11 +3206,10 @@
           ],
           "domains": [
             "air",
-            "truth",
-            "conflict",
+            "challenge",
             "intellect",
-            "conflict",
-            "challenge"
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2635,7 +3240,25 @@
             "developmentalStage": "conflict, challenge, and disruption",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "superhero:antihero",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:EG-SET",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_06",
@@ -2678,9 +3301,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2712,7 +3335,25 @@
             "developmentalStage": "harmony, healing, and exchange",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "tonalpohualli:coatl",
+              "fidelity": 0.96,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "celtic_tree:ivy",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_07",
@@ -2748,9 +3389,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2781,7 +3422,25 @@
             "developmentalStage": "assessment, challenge, and perseverance",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:AF-ANANSI",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "digital:hacker",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_08",
@@ -2824,9 +3483,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2858,7 +3517,25 @@
             "developmentalStage": "movement, power, and momentum",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "kwml:masochist",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "kwml:weakling",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_09",
@@ -2901,9 +3578,9 @@
           ],
           "domains": [
             "air",
+            "intellect",
             "truth",
-            "conflict",
-            "intellect"
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -2934,7 +3611,25 @@
             "developmentalStage": "culmination, near-completion, and solitude",
             "integrationTask": "Balancing air energy appropriately",
             "cognitiveBias": "Over-identification with air qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:MA-COATLICUE",
+              "fidelity": 0.9,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "bolen:hades",
+              "fidelity": 0.89,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_10",
@@ -2977,11 +3672,11 @@
           ],
           "domains": [
             "air",
-            "truth",
-            "conflict",
-            "intellect",
             "completion",
-            "culmination"
+            "culmination",
+            "intellect",
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -3055,11 +3750,11 @@
           ],
           "domains": [
             "air",
-            "truth",
-            "conflict",
+            "communication",
             "intellect",
             "learning",
-            "messages"
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -3092,7 +3787,25 @@
             "developmentalStage": "Beginning to develop elemental skills",
             "integrationTask": "Learning without losing enthusiasm",
             "cognitiveBias": "Identification with air expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "totem:red_hawk",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "digital:influencer",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_knight",
@@ -3134,12 +3847,12 @@
             }
           ],
           "domains": [
-            "air",
-            "truth",
-            "conflict",
-            "intellect",
             "action",
-            "journey"
+            "air",
+            "intellect",
+            "travel",
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -3171,7 +3884,25 @@
             "developmentalStage": "Adolescent intensity and idealism",
             "integrationTask": "Channeling passion without burning out",
             "cognitiveBias": "Identification with air expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rashi:mesha",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "chinese:horse",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_queen",
@@ -3213,11 +3944,11 @@
           ],
           "domains": [
             "air",
-            "truth",
-            "conflict",
             "intellect",
-            "nurturing",
-            "mastery"
+            "mastery",
+            "motherhood",
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -3249,7 +3980,25 @@
             "developmentalStage": "Mature integration of elemental qualities",
             "integrationTask": "Nurturing without possessing",
             "cognitiveBias": "Identification with air expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "alchemy:separation",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "bolen:athena",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:swords_king",
@@ -3292,11 +4041,11 @@
           ],
           "domains": [
             "air",
-            "truth",
-            "conflict",
             "intellect",
-            "authority",
-            "mastery"
+            "mastery",
+            "sovereignty",
+            "truth",
+            "war"
           ],
           "correspondences": {
             "element": "EL-AIR",
@@ -3329,7 +4078,25 @@
             "developmentalStage": "Full mastery and responsibility",
             "integrationTask": "Leading without dominating",
             "cognitiveBias": "Identification with air expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "persian:mithra",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "persian:khshathra-vairya",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         }
       ]
     },
@@ -3410,6 +4177,11 @@
               "target": "element:earth",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:fehu",
+              "fidelity": 0.8
             }
           ],
           "coreFunction": "To embody the pure potential of earth energy at its inception",
@@ -3425,7 +4197,25 @@
             "developmentalStage": "pure potential and new beginnings",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rune:fehu",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "tzolkin:kan",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_02",
@@ -3502,7 +4292,25 @@
             "developmentalStage": "duality, choice, and balance",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "tonalpohualli:cuetzpalin",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:CE-MANANNÁN",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_03",
@@ -3578,7 +4386,25 @@
             "developmentalStage": "expansion, growth, and collaboration",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:NO-FREYR",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "totem:beaver",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_04",
@@ -3647,7 +4473,25 @@
             "developmentalStage": "stability, foundation, and structure",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "iching:hex_52",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:gen",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_05",
@@ -3689,12 +4533,12 @@
             }
           ],
           "domains": [
-            "earth",
-            "wealth",
+            "challenge",
             "crafts",
+            "earth",
             "material",
-            "conflict",
-            "challenge"
+            "war",
+            "wealth"
           ],
           "correspondences": {
             "element": "EL-EARTH",
@@ -3711,6 +4555,11 @@
               "target": "element:earth",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:nauthiz",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To confront the challenges inherent in earth expression",
@@ -3726,7 +4575,25 @@
             "developmentalStage": "conflict, challenge, and disruption",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:MA-COATLICUE",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:SL-MORANA",
+              "fidelity": 0.9,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_06",
@@ -3802,7 +4669,25 @@
             "developmentalStage": "harmony, healing, and exchange",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "enneagram:type_2",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "ocean:agreeableness",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_07",
@@ -3863,6 +4748,11 @@
               "target": "element:earth",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:jera",
+              "fidelity": 0.75
             }
           ],
           "coreFunction": "To assess progress and persevere through earth challenges",
@@ -3878,7 +4768,25 @@
             "developmentalStage": "assessment, challenge, and perseverance",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:FI-MIELIKKI",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "totem:brown_bear",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_08",
@@ -3955,7 +4863,25 @@
             "developmentalStage": "movement, power, and momentum",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rune:fehu",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:CN-SHENNONG",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_09",
@@ -4031,7 +4957,25 @@
             "developmentalStage": "culmination, near-completion, and solitude",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "arch:PL-RONGO",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:PL-LONO",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_10",
@@ -4095,6 +5039,11 @@
               "target": "element:earth",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "rune:othala",
+              "fidelity": 0.85
             }
           ],
           "coreFunction": "To embody the full manifestation and completion of earth energy",
@@ -4109,7 +5058,25 @@
             "developmentalStage": "completion, fulfillment, and endings",
             "integrationTask": "Balancing earth energy appropriately",
             "cognitiveBias": "Over-identification with earth qualities"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rune:othala",
+              "fidelity": 0.93,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "iching:hex_37",
+              "fidelity": 0.89,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_page",
@@ -4151,12 +5118,12 @@
             }
           ],
           "domains": [
-            "earth",
-            "wealth",
+            "communication",
             "crafts",
-            "material",
+            "earth",
             "learning",
-            "messages"
+            "material",
+            "wealth"
           ],
           "correspondences": {
             "element": "EL-EARTH",
@@ -4189,7 +5156,25 @@
             "developmentalStage": "Beginning to develop elemental skills",
             "integrationTask": "Learning without losing enthusiasm",
             "cognitiveBias": "Identification with earth expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "rune:fehu",
+              "fidelity": 0.95,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "arch:JP-INARI",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_knight",
@@ -4231,12 +5216,12 @@
             }
           ],
           "domains": [
-            "earth",
-            "wealth",
-            "crafts",
-            "material",
             "action",
-            "journey"
+            "crafts",
+            "earth",
+            "material",
+            "travel",
+            "wealth"
           ],
           "correspondences": {
             "element": "EL-EARTH",
@@ -4269,7 +5254,25 @@
             "developmentalStage": "Adolescent intensity and idealism",
             "integrationTask": "Channeling passion without burning out",
             "cognitiveBias": "Identification with earth expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "holland:realistic",
+              "fidelity": 0.92,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "ocean:conscientiousness",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_queen",
@@ -4311,12 +5314,12 @@
             }
           ],
           "domains": [
-            "earth",
-            "wealth",
             "crafts",
+            "earth",
+            "mastery",
             "material",
-            "nurturing",
-            "mastery"
+            "motherhood",
+            "wealth"
           ],
           "correspondences": {
             "element": "EL-EARTH",
@@ -4347,7 +5350,25 @@
             "developmentalStage": "Mature integration of elemental qualities",
             "integrationTask": "Nurturing without possessing",
             "cognitiveBias": "Identification with earth expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "jungian:great_mother",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "socionics:sei",
+              "fidelity": 0.94,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         },
         {
           "@id": "tarot:pentacles_king",
@@ -4390,12 +5411,12 @@
             }
           ],
           "domains": [
-            "earth",
-            "wealth",
             "crafts",
+            "earth",
+            "mastery",
             "material",
-            "authority",
-            "mastery"
+            "sovereignty",
+            "wealth"
           ],
           "correspondences": {
             "element": "EL-EARTH",
@@ -4427,7 +5448,25 @@
             "developmentalStage": "Full mastery and responsibility",
             "integrationTask": "Leading without dominating",
             "cognitiveBias": "Identification with earth expression"
-          }
+          },
+          "culturalEchoes": [
+            {
+              "target": "chinese:dog",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            },
+            {
+              "target": "totem:beaver",
+              "fidelity": 0.91,
+              "sharedAspects": [
+                "spectral proximity"
+              ],
+              "provenance": "ORIG"
+            }
+          ]
         }
       ]
     }

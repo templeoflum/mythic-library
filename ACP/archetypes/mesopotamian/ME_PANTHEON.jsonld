@@ -210,7 +210,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "angel:cherubim",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "angel:thrones",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-ENLIL",
@@ -373,6 +391,8 @@
         "air",
         "earth",
         "fertility",
+        "order",
+        "strength",
         "water"
       ],
       "keywords": [
@@ -400,7 +420,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rune:tiwaz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-ENKI",
@@ -408,7 +446,9 @@
       "name": "Enki",
       "aliases": [
         "Ea (Akkadian)",
-        "Nudimmud"
+        "Nudimmud",
+        "Ea",
+        "Lord of the Abzu"
       ],
       "epithets": [
         "Lord of the Earth/Waters",
@@ -539,6 +579,11 @@
             "humanity's helper",
             "defies higher gods"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-BRAHMA",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -582,7 +627,10 @@
       "domains": [
         "crafts",
         "creation",
+        "magic",
         "preservation",
+        "strength",
+        "trickster",
         "wisdom"
       ],
       "keywords": [
@@ -611,7 +659,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_08",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:fehu",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-INANNA",
@@ -779,6 +845,26 @@
           "target": "Returned goddess carrying death-knowledge",
           "trigger": "Descent through seven gates; death on the hook; resurrection by Enki's creatures",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-DEMETER",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-SHAKTI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-LAKSHMI",
+          "fidelity": 0.4
         }
       ],
       "contextualVariants": [
@@ -860,6 +946,8 @@
         "death",
         "fertility",
         "love",
+        "strength",
+        "trickster",
         "underworld",
         "war"
       ],
@@ -889,7 +977,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:explorer",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:seeker",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-MARDUK",
@@ -897,7 +1003,9 @@
       "name": "Marduk",
       "aliases": [
         "Bel (Lord)",
-        "Asarluhi"
+        "Asarluhi",
+        "Bel",
+        "Lord of Babylon"
       ],
       "epithets": [
         "King of the Gods",
@@ -1021,6 +1129,11 @@
             "storm",
             "champion"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-INDRA",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -1064,7 +1177,10 @@
         "confidence": 0.95
       },
       "domains": [
-        "chaos"
+        "ancient-near-east",
+        "chaos",
+        "childhood",
+        "mythology"
       ],
       "keywords": [
         "absorbs",
@@ -1092,7 +1208,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-LUGH",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "mbti:entj",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-TIAMAT",
@@ -1205,6 +1339,10 @@
             "world-serpent",
             "chaos"
           ]
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "arch:ME-APSU"
         }
       ],
       "contextualVariants": [
@@ -1286,7 +1424,17 @@
         "destroyer"
       ],
       "coreFunction": "To embody monster energy through chaos-dragon and world-threat",
-      "symbolicCore": "The chaos that transforms through Tiamat's essence"
+      "symbolicCore": "The chaos that transforms through Tiamat's essence",
+      "culturalEchoes": [
+        {
+          "target": "alchemy:prima-materia",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-ERESHKIGAL",
@@ -1294,7 +1442,8 @@
       "name": "Ereshkigal",
       "aliases": [
         "Allatu (Akkadian)",
-        "Irkalla (metonym for realm)"
+        "Irkalla (metonym for realm)",
+        "Queen of the Great Below"
       ],
       "epithets": [
         "Queen of the Underworld",
@@ -1398,6 +1547,16 @@
             "shadow-sister",
             "underworld-association"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-KALI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-YAMA",
+          "fidelity": 0.55
         }
       ],
       "contextualVariants": [
@@ -1482,7 +1641,26 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HADES",
+          "fidelity": 0.8,
+          "sharedAspects": [
+            "underworld",
+            "death"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:FI-TUONI",
+          "fidelity": 0.88,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-DUMUZI",
@@ -1661,7 +1839,25 @@
         "lover"
       ],
       "coreFunction": "To embody dying rising god energy through vegetation-death-rebirth and seasonal-cycle",
-      "symbolicCore": "The death that transforms through Dumuzi's essence"
+      "symbolicCore": "The death that transforms through Dumuzi's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-PERSEPHONE",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:wheel_of_fortune",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-NERGAL",
@@ -1804,6 +2000,7 @@
         "love",
         "marriage",
         "sovereignty",
+        "sun",
         "underworld",
         "war"
       ],
@@ -1832,7 +2029,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:villain",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "superhero:antihero",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-SHAMASH",
@@ -1975,7 +2190,11 @@
       "domains": [
         "death",
         "justice",
+        "law",
+        "moon",
         "sky",
+        "sun",
+        "truth",
         "underworld"
       ],
       "keywords": [
@@ -2003,7 +2222,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:IN-RAMA",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:tiwaz",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-SIN",
@@ -2134,6 +2371,8 @@
       },
       "domains": [
         "fatherhood",
+        "law",
+        "moon",
         "time",
         "wisdom"
       ],
@@ -2161,7 +2400,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:calli",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_60",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-GILGAMESH",
@@ -2354,6 +2611,7 @@
         "death",
         "sovereignty",
         "travel",
+        "wilderness",
         "wisdom"
       ],
       "keywords": [
@@ -2380,7 +2638,25 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HERACLES",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:hero",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:ME-ENKIDU",
@@ -2568,7 +2844,30 @@
         "outcast"
       ],
       "coreFunction": "To embody wild man energy through nature-child and uncivilized",
-      "symbolicCore": "The essential pattern of Enkidu"
+      "symbolicCore": "The essential pattern of Enkidu",
+      "culturalEchoes": [
+        {
+          "target": "vogler:herald",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_28",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "animals",
+        "childhood",
+        "wilderness"
+      ]
     },
     {
       "@id": "arch:ME-APSU",
@@ -2684,7 +2983,10 @@
         "confidence": 0.85
       },
       "domains": [
+        "crafts",
+        "creation",
         "earth",
+        "law",
         "order",
         "sea",
         "water"

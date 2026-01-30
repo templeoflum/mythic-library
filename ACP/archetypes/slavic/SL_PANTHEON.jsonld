@@ -63,7 +63,8 @@
       "aliases": [
         "Perkūnas (Baltic)",
         "Perkunas",
-        "The Thunderer"
+        "The Thunderer",
+        "Thunderer"
       ],
       "domain": [
         "Thunder",
@@ -163,7 +164,10 @@
         "sacred": "Oak groves, hilltops"
       },
       "domains": [
-        "sky"
+        "sky",
+        "stars",
+        "thunder",
+        "wilderness"
       ],
       "keywords": [
         "against",
@@ -191,7 +195,35 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-ZEUS",
+          "fidelity": 0.8,
+          "sharedAspects": [
+            "thunder",
+            "storm",
+            "sky"
+          ],
+          "provenance": "SCHOL"
+        },
+        {
+          "target": "arch:FI-PERKUNAS",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-HORUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-VELES",
@@ -200,7 +232,8 @@
       "aliases": [
         "Volos",
         "Weles",
-        "The Hairy One"
+        "The Hairy One",
+        "Lord of the Underworld"
       ],
       "domain": [
         "Underworld",
@@ -310,9 +343,12 @@
         "sacred": "Lowlands, forests, waters"
       },
       "domains": [
+        "commerce",
         "death",
         "home",
-        "underworld"
+        "magic",
+        "underworld",
+        "wealth"
       ],
       "keywords": [
         "balance",
@@ -340,7 +376,25 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-VELNIAS",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-UNDERWATER-PANTHER",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-MOKOSH",
@@ -473,7 +527,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:FI-AKKA",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-PAPA",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-DAZHBOG",
@@ -576,7 +648,10 @@
       "domains": [
         "fertility",
         "fire",
-        "sky"
+        "hearth",
+        "sky",
+        "sun",
+        "wealth"
       ],
       "keywords": [
         "abundance",
@@ -602,7 +677,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:PL-KANE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-SAULE",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-KHORS",
@@ -686,7 +779,10 @@
         "association": "Winter sun, light itself, cosmic order"
       },
       "domains": [
-        "creation"
+        "creation",
+        "hearth",
+        "strength",
+        "sun"
       ],
       "keywords": [
         "body",
@@ -711,7 +807,25 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:ailm",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-SAULE",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-STRIBOG",
@@ -798,7 +912,8 @@
       "domains": [
         "air",
         "dance",
-        "earth"
+        "earth",
+        "wealth"
       ],
       "keywords": [
         "across",
@@ -823,7 +938,25 @@
         "developmentalStage": "Adolescent relationship with rules and structure",
         "integrationTask": "Balancing authority with compassion and flexibility",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "incan:kon",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "plot:quest",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-SVAROG",
@@ -924,7 +1057,10 @@
         "crafts",
         "fatherhood",
         "fire",
-        "sky"
+        "hearth",
+        "sky",
+        "smithing",
+        "sun"
       ],
       "keywords": [
         "bright",
@@ -951,7 +1087,25 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-ITZAMNA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-SVAROZHICH",
@@ -1045,7 +1199,9 @@
         "association": "Hearth fire, domestic warmth, hospitality"
       },
       "domains": [
+        "earth",
         "fire",
+        "hearth",
         "home",
         "war"
       ],
@@ -1074,7 +1230,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-HERO-TWINS-NAVAJO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-SIMARGL",
@@ -1162,7 +1336,9 @@
         "association": "Vegetation, seeds, harvest, guardian"
       },
       "domains": [
-        "harvest"
+        "harvest",
+        "mythology",
+        "slavic"
       ],
       "keywords": [
         "bird",
@@ -1180,7 +1356,25 @@
         "healer"
       ],
       "coreFunction": "To embody guardian energy through seed-protector and harvest-guardian",
-      "symbolicCore": "The harvest that transforms through Simargl's essence"
+      "symbolicCore": "The harvest that transforms through Simargl's essence",
+      "culturalEchoes": [
+        {
+          "target": "arch:EG-THOTH",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:PL-HIIAKA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-JARILO",
@@ -1286,6 +1480,7 @@
         "death",
         "fertility",
         "marriage",
+        "strength",
         "underworld",
         "war"
       ],
@@ -1315,7 +1510,25 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:herald",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "plot:quest",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-MORANA",
@@ -1425,7 +1638,9 @@
       },
       "domains": [
         "death",
-        "rebirth"
+        "mythology",
+        "rebirth",
+        "slavic"
       ],
       "keywords": [
         "allows",
@@ -1451,7 +1666,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:AF-BABALU-AYE",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-LADA",
@@ -1546,6 +1779,7 @@
         "association": "Love, marriage, spring, beauty"
       },
       "domains": [
+        "beauty",
         "love",
         "marriage",
         "music",
@@ -1576,7 +1810,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_22",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:cups_09",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-DOMOVOI",
@@ -1694,7 +1946,25 @@
         "developmentalStage": "Late life connection to lineage and legacy",
         "integrationTask": "Honoring past while living present",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "commedia:pantalone",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:FI-TAPIO",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-BABA-YAGA",
@@ -1797,7 +2067,9 @@
         "association": "Initiation, death-rebirth, witchcraft, forest, thresholds"
       },
       "domains": [
-        "threshold"
+        "death",
+        "threshold",
+        "wilderness"
       ],
       "keywords": [
         "baba",
@@ -1825,7 +2097,25 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-MAMAN-BRIGITTE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:pachacamac",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "arch:SL-LESHY",
@@ -1932,7 +2222,30 @@
         "trickster"
       ],
       "coreFunction": "To embody guardian energy through forest-protector and wildlife-lord",
-      "symbolicCore": "The essential pattern of Leshy"
+      "symbolicCore": "The essential pattern of Leshy",
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-CERNUNNOS",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AU-MIMI-SPIRITS",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "animals",
+        "law",
+        "wilderness"
+      ]
     },
     {
       "@id": "arch:SL-RUSALKA",
@@ -2021,9 +2334,12 @@
         "association": "Drowned women, fertility, seduction, vengeance"
       },
       "domains": [
+        "beauty",
+        "childhood",
         "fate",
         "fertility",
         "sea",
+        "spirits",
         "threshold",
         "water"
       ],
@@ -2053,7 +2369,25 @@
         "developmentalStage": "Pre-adult openness to experience",
         "integrationTask": "Maintaining wonder while gaining experience",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:cozcacuauhtli",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-GHEDE-NIBO",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ]
 }

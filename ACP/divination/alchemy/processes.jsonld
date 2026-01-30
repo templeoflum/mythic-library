@@ -69,11 +69,47 @@
           "target": "heros_journey:abyss",
           "fidelity": 0.75,
           "note": "Dark night of soul"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "alchemy:albedo",
+          "axis": "light-shadow",
+          "note": "Reverse of: White vs black"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "alchemy:rubedo",
+          "axis": "creation-destruction",
+          "note": "Reverse of: Completion vs dissolution"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:calcination",
+          "note": "Reverse of: Part of blackening process"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:prima-materia",
+          "note": "Reverse of: Starting material for blackening"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:mula",
+          "fidelity": 0.7,
+          "note": "Reverse of: Dissolution phase"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:destroyer",
+          "fidelity": 0.75,
+          "note": "Reverse of: Dissolution phase"
         }
       ],
       "psychologicalMapping": "Shadow confrontation, depression, dissolution of ego structures",
       "domains": [
+        "alchemy",
         "death",
+        "divination",
         "rebirth"
       ],
       "narrativeRoles": [
@@ -82,7 +118,25 @@
         "shadow"
       ],
       "coreFunction": "To embody shadow energy through confrontation and darkness",
-      "symbolicCore": "The mirror that reveals what we hide"
+      "symbolicCore": "The mirror that reveals what we hide",
+      "culturalEchoes": [
+        {
+          "target": "goddess:crone-destroyer",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "astrology:scorpio",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:albedo",
@@ -144,6 +198,16 @@
           "target": "tarot:moon",
           "fidelity": 0.7,
           "note": "Lunar consciousness"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "alchemy:nigredo",
+          "note": "Reverse of: Death precedes purification"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:distillation",
+          "note": "Reverse of: Part of whitening"
         }
       ],
       "psychologicalMapping": "Anima/animus integration, purification of projections",
@@ -153,7 +217,30 @@
         "seeker"
       ],
       "coreFunction": "To embody maiden energy through purification and lunar",
-      "symbolicCore": "The unopened flower of potential"
+      "symbolicCore": "The unopened flower of potential",
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:shravana",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:princess",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination",
+        "moon"
+      ]
     },
     {
       "@id": "alchemy:citrinitas",
@@ -208,11 +295,19 @@
           "target": "tarot:sun",
           "fidelity": 0.75,
           "note": "Solar illumination"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "alchemy:albedo",
+          "note": "Reverse of: Purification precedes illumination"
         }
       ],
       "psychologicalMapping": "Wisdom emerging, conscious understanding of the process",
       "domains": [
-        "fire"
+        "alchemy",
+        "divination",
+        "fire",
+        "sun"
       ],
       "narrativeRoles": [
         "healer",
@@ -220,7 +315,25 @@
         "sage"
       ],
       "coreFunction": "To embody wise elder energy through illumination and wisdom",
-      "symbolicCore": "The lamp of accumulated wisdom"
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "culturalEchoes": [
+        {
+          "target": "tzolkin:ahau",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:algiz",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:rubedo",
@@ -283,6 +396,27 @@
           "target": "calibration:origin",
           "fidelity": 0.85,
           "note": "Center/integration"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "alchemy:citrinitas",
+          "note": "Reverse of: Illumination precedes completion"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:coagulation",
+          "note": "Reverse of: Final stage of reddening"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:philosophers-stone",
+          "note": "Reverse of: Achieved at rubedo"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "plot:rebirth",
+          "fidelity": 0.7,
+          "note": "Reverse of: Transformation complete"
         }
       ],
       "psychologicalMapping": "Individuation complete, Self realized, opposites integrated",
@@ -291,7 +425,29 @@
         "seeker"
       ],
       "coreFunction": "To embody self energy through wholeness and integration",
-      "symbolicCore": "The mandala of wholeness"
+      "symbolicCore": "The mandala of wholeness",
+      "culturalEchoes": [
+        {
+          "target": "element:aether",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "jungian:self",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination"
+      ]
     },
     {
       "@id": "alchemy:calcination",
@@ -346,11 +502,18 @@
           "target": "element:fire",
           "fidelity": 0.8,
           "note": "Fire element"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "alchemy:dissolution",
+          "note": "Reverse of: Water follows fire"
         }
       ],
       "psychologicalMapping": "Burning away ego attachments, confronting inflation",
       "domains": [
+        "alchemy",
         "destruction",
+        "divination",
         "fire"
       ],
       "narrativeRoles": [
@@ -358,7 +521,25 @@
         "warrior"
       ],
       "coreFunction": "To embody destroyer energy through burning and reduction",
-      "symbolicCore": "The scythe of necessary endings"
+      "symbolicCore": "The scythe of necessary endings",
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:ardra",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "incan:huallallo-carhuincho",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:dissolution",
@@ -417,6 +598,8 @@
       ],
       "psychologicalMapping": "Emotional release, dissolving rigid structures",
       "domains": [
+        "alchemy",
+        "divination",
         "sea",
         "water"
       ],
@@ -426,7 +609,25 @@
         "shadow"
       ],
       "coreFunction": "To embody great mother energy through water and dissolving",
-      "symbolicCore": "The nurturing vessel of life"
+      "symbolicCore": "The nurturing vessel of life",
+      "culturalEchoes": [
+        {
+          "target": "bolen:persephone",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:separation",
@@ -485,7 +686,29 @@
         "warrior"
       ],
       "coreFunction": "To embody wise elder energy through discernment and analysis",
-      "symbolicCore": "The lamp of accumulated wisdom"
+      "symbolicCore": "The lamp of accumulated wisdom",
+      "culturalEchoes": [
+        {
+          "target": "arch:NA-HERO-TWINS-NAVAJO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:SL-SVAROZHICH",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination"
+      ]
     },
     {
       "@id": "alchemy:conjunction",
@@ -545,6 +768,8 @@
       ],
       "psychologicalMapping": "Integration of opposites, inner marriage",
       "domains": [
+        "alchemy",
+        "divination",
         "marriage"
       ],
       "narrativeRoles": [
@@ -553,7 +778,25 @@
         "seeker"
       ],
       "coreFunction": "To embody lover energy through union and marriage",
-      "symbolicCore": "The rose of passionate connection"
+      "symbolicCore": "The rose of passionate connection",
+      "culturalEchoes": [
+        {
+          "target": "celtic_tree:ash",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:nuin",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:fermentation",
@@ -607,7 +850,9 @@
       ],
       "psychologicalMapping": "Inspiration, spiritual awakening, new consciousness",
       "domains": [
-        "death"
+        "alchemy",
+        "death",
+        "divination"
       ],
       "narrativeRoles": [
         "innocent",
@@ -615,7 +860,25 @@
         "shapeshifter"
       ],
       "coreFunction": "To embody magician energy through transformation and quickening",
-      "symbolicCore": "The wand of conscious transformation"
+      "symbolicCore": "The wand of conscious transformation",
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_59",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "bolen:dionysus",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:distillation",
@@ -673,7 +936,29 @@
         "sage"
       ],
       "coreFunction": "To embody healer energy through purification and refinement",
-      "symbolicCore": "The caduceus of restoration"
+      "symbolicCore": "The caduceus of restoration",
+      "culturalEchoes": [
+        {
+          "target": "ogham:luis",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:ahau",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination"
+      ]
     },
     {
       "@id": "alchemy:coagulation",
@@ -731,7 +1016,29 @@
         "sovereign"
       ],
       "coreFunction": "To embody self energy through stone and manifestation",
-      "symbolicCore": "The mandala of wholeness"
+      "symbolicCore": "The mandala of wholeness",
+      "culturalEchoes": [
+        {
+          "target": "ogham:fearn",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:esi",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination"
+      ]
     },
     {
       "@id": "alchemy:prima-materia",
@@ -795,7 +1102,29 @@
         "shadow"
       ],
       "coreFunction": "To embody shadow energy through chaos and unconscious",
-      "symbolicCore": "The mirror that reveals what we hide"
+      "symbolicCore": "The mirror that reveals what we hide",
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-TIAMAT",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:moon",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination"
+      ]
     },
     {
       "@id": "alchemy:philosophers-stone",
@@ -865,7 +1194,29 @@
         "seeker"
       ],
       "coreFunction": "To embody self energy through perfection and wholeness",
-      "symbolicCore": "The mandala of wholeness"
+      "symbolicCore": "The mandala of wholeness",
+      "culturalEchoes": [
+        {
+          "target": "element:aether",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "jungian:self",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "alchemy",
+        "divination"
+      ]
     },
     {
       "@id": "alchemy:mercury",
@@ -924,6 +1275,8 @@
       ],
       "psychologicalMapping": "The mercurial spirit of transformation, trickster consciousness",
       "domains": [
+        "alchemy",
+        "divination",
         "healing"
       ],
       "narrativeRoles": [
@@ -932,7 +1285,25 @@
         "trickster"
       ],
       "coreFunction": "To embody trickster energy through transformation and volatility",
-      "symbolicCore": "The mask that liberates through deception"
+      "symbolicCore": "The mask that liberates through deception",
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-VAJRAYOGINI",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-NAROPA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "alchemy:sulphur",
@@ -991,6 +1362,8 @@
       ],
       "psychologicalMapping": "Soul, passion, the active desiring principle",
       "domains": [
+        "alchemy",
+        "divination",
         "love"
       ],
       "narrativeRoles": [
@@ -999,7 +1372,25 @@
         "warrior"
       ],
       "coreFunction": "To embody warrior energy through fire and action",
-      "symbolicCore": "The disciplined blade of focused will"
+      "symbolicCore": "The disciplined blade of focused will",
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_21",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AF-SHANGO",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     }
   ],
   "systemRelationships": {

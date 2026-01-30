@@ -66,6 +66,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:justice",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:blue",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:istj",
+          "fidelity": 0.65,
+          "note": "Reverse of: Common correlation"
         }
       ],
       "narrativeRoles": [
@@ -79,7 +90,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:ruler",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:rooster",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_2",
@@ -138,6 +171,28 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:empress",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:caregiver",
+          "fidelity": 0.8,
+          "note": "Reverse of: Helper archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:green",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:isfj",
+          "fidelity": 0.7,
+          "note": "Reverse of: Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:caregiver",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -145,7 +200,29 @@
         "healer"
       ],
       "coreFunction": "To embody great_mother energy through nurturing and giving",
-      "symbolicCore": "The essential pattern of Type 2: The Helper"
+      "symbolicCore": "The essential pattern of Type 2: The Helper",
+      "culturalEchoes": [
+        {
+          "target": "holland:social",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ocean:agreeableness",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_3",
@@ -204,6 +281,11 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:chariot",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:orange",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -218,7 +300,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "spiral:orange",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:hero",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_4",
@@ -277,6 +381,27 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hanged_man",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:infp",
+          "fidelity": 0.7,
+          "note": "Reverse of: Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:creator",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "digital:creator",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:outsider",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -291,7 +416,29 @@
         "developmentalStage": "Alienation from collective, finding unique path",
         "integrationTask": "Finding belonging while honoring difference",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:shatabhisha",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "mbti:isfp",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_5",
@@ -350,13 +497,57 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hermit",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:sage",
+          "fidelity": 0.75,
+          "note": "Reverse of: Investigator"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:yellow",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:intj",
+          "fidelity": 0.7,
+          "note": "Reverse of: Common correlation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:tech_genius",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
         "magician"
       ],
       "coreFunction": "To embody wise_elder energy through knowledge and understanding",
-      "symbolicCore": "The essential pattern of Type 5: The Investigator"
+      "symbolicCore": "The essential pattern of Type 5: The Investigator",
+      "culturalEchoes": [
+        {
+          "target": "tarot:hermit",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:AF-YEMOJA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_6",
@@ -429,7 +620,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "bolen:hera",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:everyman",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_7",
@@ -488,13 +701,47 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:fool",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "pearson:innocent",
+          "fidelity": 0.55,
+          "note": "Reverse of: Optimism/avoidance"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "mbti:enfp",
+          "fidelity": 0.75,
+          "note": "Reverse of: Common correlation"
         }
       ],
       "narrativeRoles": [
         "trickster"
       ],
       "coreFunction": "To embody divine_child energy through enthusiasm and joy",
-      "symbolicCore": "The essential pattern of Type 7: The Enthusiast"
+      "symbolicCore": "The essential pattern of Type 7: The Enthusiast",
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_page",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:JP-UZUME",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_8",
@@ -553,6 +800,11 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:strength",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "spiral:red",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -568,7 +820,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "astrology:mars",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:tiger",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     },
     {
       "@id": "enneagram:type_9",
@@ -641,7 +915,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "disc:steadiness",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:sei",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "enneagram",
+        "psychology"
+      ]
     }
   ],
   "systemRelationships": {

@@ -68,6 +68,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:emperor",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:mesha",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent with sidereal offset"
         }
       ],
       "narrativeRoles": [
@@ -81,7 +92,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:horse",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_knight",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:taurus",
@@ -142,6 +175,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hierophant",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:earth",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:vrishabha",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -156,7 +200,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:vrishabha",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_15",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:gemini",
@@ -217,6 +283,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:lovers",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:air",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:mithuna",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -230,7 +307,29 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:seeker",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:explorer",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:cancer",
@@ -290,13 +389,46 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:moon",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:water",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:karka",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
         "healer"
       ],
       "coreFunction": "To embody great_mother energy through nurturing and protection",
-      "symbolicCore": "The essential pattern of Cancer"
+      "symbolicCore": "The essential pattern of Cancer",
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:malkuth",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_02",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:leo",
@@ -362,6 +494,22 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:sun",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:li",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:simha",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -376,7 +524,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:simha",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_ace",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:virgo",
@@ -437,6 +607,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hermit",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:earth",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:kanya",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -452,7 +633,29 @@
         "developmentalStage": "Recovery from crisis or wounding",
         "integrationTask": "Transforming wounds into sources of healing",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:kanya",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:coagulation",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:libra",
@@ -513,6 +716,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:justice",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:air",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:tula",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -527,7 +741,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:tula",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:anuradha",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:scorpio",
@@ -588,6 +824,22 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:death",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:water",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:kan",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:vrishchika",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -602,7 +854,29 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:vrishchika",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:mula",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:sagittarius",
@@ -663,6 +937,23 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:wheel_of_fortune",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:ngetal",
+          "fidelity": 0.5,
+          "note": "Reverse of: Arrow/direction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:dhanu",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -676,7 +967,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-PROMETHEUS",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:BU-PADMASAMBHAVA",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:capricorn",
@@ -742,6 +1055,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:world",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:earth",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:makara",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -755,7 +1079,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:GR-HERA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lsi",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:aquarius",
@@ -816,6 +1162,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:star",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:air",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:kumbha",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -830,7 +1187,29 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:viral_meme",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-PROMETHEUS",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:pisces",
@@ -896,6 +1275,17 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hanged_man",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:water",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "rashi:meena",
+          "fidelity": 0.9,
+          "note": "Reverse of: Western equivalent"
         }
       ],
       "narrativeRoles": [
@@ -910,7 +1300,29 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:meena",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "element:water",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     }
   ],
   "systemRelationships": {

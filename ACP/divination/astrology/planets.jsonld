@@ -75,6 +75,21 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:li",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:manipura",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:tiphareth",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:seraphim",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -89,7 +104,30 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:SL-DAZHBOG",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:NA-SUN-FATHER",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination",
+        "sun"
+      ]
     },
     {
       "@id": "astrology:moon",
@@ -162,13 +200,52 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:kan",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:svadhisthana",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:yesod",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:saille",
+          "fidelity": 0.65,
+          "note": "Reverse of: Lunar associations"
         }
       ],
       "narrativeRoles": [
         "shadow"
       ],
       "coreFunction": "To embody great_mother energy through nurturing and cycles",
-      "symbolicCore": "The essential pattern of Moon"
+      "symbolicCore": "The essential pattern of Moon",
+      "culturalEchoes": [
+        {
+          "target": "wuxing:water",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "rune:laguz",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination",
+        "moon"
+      ]
     },
     {
       "@id": "astrology:mercury",
@@ -237,6 +314,26 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:xun",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:vishuddha",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:hod",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:magician",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "superhero:speedster",
+          "fidelity": 0.8
         }
       ],
       "narrativeRoles": [
@@ -251,7 +348,29 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:mithuna",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:magician",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:venus",
@@ -321,6 +440,21 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:dui",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:anahata",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:netzach",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "brand:lover",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -335,7 +469,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:cups_02",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_27",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:mars",
@@ -409,6 +565,21 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:zhen",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:manipura",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:geburah",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "angel:powers",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -422,7 +593,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "chinese:tiger",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_8",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:jupiter",
@@ -490,6 +683,11 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:qian",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:chesed",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -503,7 +701,29 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kabbalah:chesed",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "angel:virtues",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:saturn",
@@ -577,6 +797,21 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:gen",
           "fidelity": 0.75
+        },
+        {
+          "type": "TENSION",
+          "target": "astrology:uranus",
+          "note": "Reverse of: Innovation vs tradition"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:muladhara",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:binah",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -584,7 +819,29 @@
         "sage"
       ],
       "coreFunction": "To embody great_father energy through authority and structure",
-      "symbolicCore": "The essential pattern of Saturn"
+      "symbolicCore": "The essential pattern of Saturn",
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-SATURN",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "enneagram:type_6",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:uranus",
@@ -651,6 +908,11 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:sahasrara",
+          "fidelity": 0.65
         }
       ],
       "narrativeRoles": [
@@ -665,7 +927,29 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_49",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "vogler:trickster",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:neptune",
@@ -738,6 +1022,16 @@
           "type": "CULTURAL_ECHO",
           "target": "iching:kan",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chakra:ajna",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "kabbalah:chokmah",
+          "fidelity": 0.6
         }
       ],
       "narrativeRoles": [
@@ -752,7 +1046,29 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "rashi:meena",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "element:water",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     },
     {
       "@id": "astrology:pluto",
@@ -833,7 +1149,29 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tonalpohualli:miquiztli",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:crone-destroyer",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "astrology",
+        "divination"
+      ]
     }
   ],
   "systemRelationships": {

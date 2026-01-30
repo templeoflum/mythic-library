@@ -56,6 +56,12 @@
           "target": "enneagram:type_7",
           "fidelity": 0.55,
           "note": "Optimism/avoidance"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "myss:child",
+          "fidelity": 0.8,
+          "note": "Reverse of: Innocent archetype"
         }
       ],
       "narrativeRoles": [
@@ -69,7 +75,30 @@
         "developmentalStage": "Beginning of individuation journey",
         "integrationTask": "Nurturing inner potential while facing reality",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:innocent",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:MA-XOCHIQUETZAL",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "archetypal",
+        "protection",
+        "psychology"
+      ]
     },
     {
       "@id": "pearson:orphan",
@@ -119,6 +148,24 @@
           "type": "EVOLUTION",
           "target": "pearson:warrior",
           "note": "Ego develops strength"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "myss:victim",
+          "fidelity": 0.7,
+          "note": "Reverse of: Wounded awareness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ocean:neuroticism",
+          "fidelity": 0.6,
+          "note": "Reverse of: Wounded awareness"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:pierrot",
+          "fidelity": 0.65,
+          "note": "Reverse of: Wounded innocence"
         }
       ],
       "narrativeRoles": [
@@ -133,7 +180,29 @@
         "developmentalStage": "Alienation from collective, finding unique path",
         "integrationTask": "Finding belonging while honoring difference",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "totem:wolf",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tzolkin:cib",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "archetypal",
+        "psychology"
+      ]
     },
     {
       "@id": "pearson:warrior",
@@ -177,10 +246,18 @@
           "target": "kwml:warrior",
           "fidelity": 0.85,
           "note": "Moore's warrior"
+        },
+        {
+          "type": "DEVOLUTION",
+          "target": "pearson:orphan",
+          "note": "Reverse of: Ego develops strength"
         }
       ],
       "domains": [
-        "boundaries"
+        "archetypal",
+        "boundaries",
+        "courage",
+        "psychology"
       ],
       "narrativeRoles": [
         "hero",
@@ -193,7 +270,25 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "disc:dominance",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "kwml:warrior",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "pearson:caregiver",
@@ -245,11 +340,31 @@
           "target": "enneagram:type_2",
           "fidelity": 0.8,
           "note": "Helper archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ocean:agreeableness",
+          "fidelity": 0.8,
+          "note": "Reverse of: Caring for others"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "disc:steadiness",
+          "fidelity": 0.75,
+          "note": "Reverse of: Supportive care"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "keirsey:guardian",
+          "fidelity": 0.7,
+          "note": "Reverse of: Protective care"
         }
       ],
       "domains": [
+        "archetypal",
         "motherhood",
-        "protection"
+        "protection",
+        "psychology"
       ],
       "narrativeRoles": [
         "caregiver",
@@ -263,7 +378,25 @@
         "developmentalStage": "Early childhood attachment and security",
         "integrationTask": "Balancing nurturing with allowing autonomy",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CE-DANU",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "goddess:mother",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "pearson:seeker",
@@ -315,6 +448,18 @@
           "target": "heros_journey:departure",
           "fidelity": 0.75,
           "note": "Journey begins"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:mrigashira",
+          "fidelity": 0.7,
+          "note": "Reverse of: Seeker archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ocean:openness",
+          "fidelity": 0.7,
+          "note": "Reverse of: Seeking new experience"
         }
       ],
       "narrativeRoles": [
@@ -329,7 +474,30 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:explorer",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "digital:influencer",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "archetypal",
+        "psychology",
+        "truth"
+      ]
     },
     {
       "@id": "pearson:destroyer",
@@ -378,10 +546,17 @@
           "target": "alchemy:nigredo",
           "fidelity": 0.75,
           "note": "Dissolution phase"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "pearson:creator",
+          "axis": "creation-destruction"
         }
       ],
       "domains": [
-        "death"
+        "archetypal",
+        "death",
+        "psychology"
       ],
       "narrativeRoles": [
         "destroyer"
@@ -393,7 +568,25 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:mula",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:purva-bhadrapada",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "pearson:lover",
@@ -437,10 +630,18 @@
           "target": "kwml:lover",
           "fidelity": 0.85,
           "note": "Moore's lover"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ocean:extraversion",
+          "fidelity": 0.6,
+          "note": "Reverse of: Connection and energy"
         }
       ],
       "domains": [
-        "love"
+        "archetypal",
+        "love",
+        "psychology"
       ],
       "narrativeRoles": [
         "ally",
@@ -453,7 +654,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "goddess:mother-lover",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "totem:deer",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "pearson:creator",
@@ -496,6 +715,18 @@
           "type": "POLAR_OPPOSITE",
           "target": "pearson:destroyer",
           "axis": "creation-destruction"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "nakshatra:chitra",
+          "fidelity": 0.75,
+          "note": "Reverse of: Creative archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hephaestus",
+          "fidelity": 0.8,
+          "note": "Reverse of: Creator archetype"
         }
       ],
       "narrativeRoles": [
@@ -508,7 +739,29 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "digital:creator",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:creator",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "archetypal",
+        "psychology"
+      ]
     },
     {
       "@id": "pearson:ruler",
@@ -552,10 +805,19 @@
           "target": "kwml:king",
           "fidelity": 0.85,
           "note": "Moore's king"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ocean:conscientiousness",
+          "fidelity": 0.65,
+          "note": "Reverse of: Order and control"
         }
       ],
       "domains": [
-        "order"
+        "archetypal",
+        "law",
+        "order",
+        "psychology"
       ],
       "narrativeRoles": [
         "ruler",
@@ -568,7 +830,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:ruler",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "celtic_tree:oak",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "pearson:magician",
@@ -612,6 +892,12 @@
           "target": "kwml:magician",
           "fidelity": 0.9,
           "note": "Moore's magician"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "keirsey:rational",
+          "fidelity": 0.75,
+          "note": "Reverse of: Transformation through knowledge"
         }
       ],
       "narrativeRoles": [
@@ -625,7 +911,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "kwml:magician",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "astrology:mercury",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "archetypal",
+        "psychology"
+      ]
     },
     {
       "@id": "pearson:sage",
@@ -669,9 +977,36 @@
           "target": "enneagram:type_5",
           "fidelity": 0.75,
           "note": "Investigator"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:caban",
+          "fidelity": 0.65,
+          "note": "Reverse of: Wisdom seeker"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:hazel",
+          "fidelity": 0.75,
+          "note": "Reverse of: Wisdom archetype"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "keirsey:idealist",
+          "fidelity": 0.65,
+          "note": "Reverse of: Seeking meaning"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "commedia:dottore",
+          "fidelity": 0.45,
+          "note": "Reverse of: Shadow sage"
         }
       ],
       "domains": [
+        "archetypal",
+        "psychology",
+        "truth",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -685,7 +1020,25 @@
         "developmentalStage": "Late life integration and legacy",
         "integrationTask": "Transmitting wisdom while releasing attachment",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:sage",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:coll",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "pearson:jester",
@@ -737,6 +1090,18 @@
           "target": "tarot:fool",
           "fidelity": 0.8,
           "note": "Tarot Fool"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "bolen:hermes",
+          "fidelity": 0.65,
+          "note": "Reverse of: Trickster energy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "keirsey:artisan",
+          "fidelity": 0.65,
+          "note": "Reverse of: Present moment joy"
         }
       ],
       "narrativeRoles": [
@@ -751,7 +1116,30 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "mbti:esfp",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tonalpohualli:ozomatli",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "archetypal",
+        "psychology",
+        "truth"
+      ]
     }
   ],
   "systemRelationships": {

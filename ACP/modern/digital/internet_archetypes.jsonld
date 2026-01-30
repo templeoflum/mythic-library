@@ -70,11 +70,22 @@
           "type": "COMPLEMENT",
           "target": "digital:creator",
           "note": "Both produce content"
+        },
+        {
+          "type": "POLAR_OPPOSITE",
+          "target": "digital:lurker",
+          "axis": "active-receptive"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:viral_meme",
+          "note": "Reverse of: Both spread ideas"
         }
       ],
       "domains": [
         "communication",
         "love",
+        "messenger",
         "prophecy"
       ],
       "narrativeRoles": [
@@ -89,7 +100,25 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "pearson:seeker",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chinese:rat",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "digital:hacker",
@@ -151,10 +180,18 @@
           "type": "TENSION",
           "target": "digital:moderator",
           "note": "Breaking vs enforcing rules"
+        },
+        {
+          "type": "SHADOW",
+          "target": "digital:troll",
+          "note": "Reverse of: Dark side of boundary-crossing"
         }
       ],
       "domains": [
-        "boundaries"
+        "boundaries",
+        "internet",
+        "modern",
+        "trickster"
       ],
       "narrativeRoles": [
         "outcast",
@@ -169,7 +206,25 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:VO-TI-JEAN-PETRO",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "brand:outlaw",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "digital:troll",
@@ -231,10 +286,18 @@
           "type": "TENSION",
           "target": "digital:curator",
           "note": "Destruction vs preservation"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:ai_entity",
+          "note": "Reverse of: Assistance vs chaos"
         }
       ],
       "domains": [
-        "chaos"
+        "chaos",
+        "internet",
+        "modern",
+        "trickster"
       ],
       "narrativeRoles": [
         "antagonist",
@@ -249,7 +312,25 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:EG-SET",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-EZILI-JE-ROUGE",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "digital:creator",
@@ -311,6 +392,11 @@
           "type": "COMPLEMENT",
           "target": "digital:influencer",
           "note": "Both produce content"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:lurker",
+          "note": "Reverse of: Passive vs active engagement"
         }
       ],
       "narrativeRoles": [
@@ -324,7 +410,29 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "brand:creator",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:creator",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "internet",
+        "modern"
+      ]
     },
     {
       "@id": "digital:curator",
@@ -386,9 +494,21 @@
           "type": "TENSION",
           "target": "digital:troll",
           "note": "Preservation vs destruction"
+        },
+        {
+          "type": "COMPLEMENT",
+          "target": "digital:ai_entity",
+          "note": "Reverse of: Both organize knowledge"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:viral_meme",
+          "note": "Reverse of: Chaos vs organization"
         }
       ],
       "domains": [
+        "internet",
+        "modern",
         "wisdom"
       ],
       "narrativeRoles": [
@@ -402,7 +522,25 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "holland:conventional",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "keirsey:guardian",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "digital:lurker",
@@ -459,6 +597,16 @@
           "type": "TENSION",
           "target": "digital:creator",
           "note": "Passive vs active engagement"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:influencer",
+          "note": "Reverse of: Visibility vs invisibility"
+        },
+        {
+          "type": "TENSION",
+          "target": "digital:whistleblower",
+          "note": "Reverse of: Speaking vs silence"
         }
       ],
       "narrativeRoles": [
@@ -473,7 +621,29 @@
         "developmentalStage": "Mid-life confrontation with denied potential",
         "integrationTask": "Acknowledging and integrating rejected qualities",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:cups_04",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_08",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "internet",
+        "modern"
+      ]
     },
     {
       "@id": "digital:moderator",
@@ -539,6 +709,8 @@
       ],
       "domains": [
         "boundaries",
+        "internet",
+        "modern",
         "protection"
       ],
       "narrativeRoles": [
@@ -554,7 +726,25 @@
         "developmentalStage": "Mature leadership and responsibility",
         "integrationTask": "Ruling with justice while remaining humble",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "propp:father",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "socionics:lse",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ]
     },
     {
       "@id": "digital:whistleblower",
@@ -631,7 +821,30 @@
         "developmentalStage": "Adolescent differentiation from parents/culture",
         "integrationTask": "Channeling rebellion into creative transformation",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_21",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:CN-NEZHA",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "internet",
+        "modern",
+        "truth"
+      ]
     },
     {
       "@id": "digital:ai_entity",
@@ -707,7 +920,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "keirsey:idealist",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "alchemy:rubedo",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "internet",
+        "modern"
+      ]
     },
     {
       "@id": "digital:viral_meme",
@@ -782,7 +1017,29 @@
         "developmentalStage": "Any transition point requiring flexibility",
         "integrationTask": "Accepting uncertainty and embracing creative chaos",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "astrology:aquarius",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:GR-DIONYSUS",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "internet",
+        "modern"
+      ]
     }
   ],
   "systemRelationships": {

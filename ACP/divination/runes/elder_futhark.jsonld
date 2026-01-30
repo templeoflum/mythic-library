@@ -56,6 +56,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:pentacles_ace",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:onn",
+          "fidelity": 0.55,
+          "note": "Reverse of: Wealth/gathering"
         }
       ],
       "narrativeRoles": [
@@ -69,7 +75,29 @@
         "developmentalStage": "Generative adult creativity",
         "integrationTask": "Creating sustainably without exhaustion",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_page",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:EG-ISIS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:uruz",
@@ -130,7 +158,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:wands_07",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chakra:manipura",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:thurisaz",
@@ -185,6 +235,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:tower",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:huathe",
+          "fidelity": 0.55,
+          "note": "Reverse of: Thorn/protection parallel"
         }
       ],
       "narrativeRoles": [
@@ -197,7 +253,29 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-CHIYOU",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-EZILI-JE-ROUGE",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:ansuz",
@@ -251,6 +329,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:magician",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:ailm",
+          "fidelity": 0.55,
+          "note": "Reverse of: Vision/insight"
         }
       ],
       "narrativeRoles": [
@@ -264,7 +348,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:CN-LU-DONGBIN",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_55",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:raidho",
@@ -328,7 +434,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "socionics:lie",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "propp:hero",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:kenaz",
@@ -383,6 +511,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:magician",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:coll",
+          "fidelity": 0.55,
+          "note": "Reverse of: Knowledge/illumination"
         }
       ],
       "narrativeRoles": [
@@ -397,7 +531,29 @@
         "developmentalStage": "Mastery and skill development",
         "integrationTask": "Using power responsibly and transparently",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "ogham:beith",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "wuxing:wood",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:gebo",
@@ -465,7 +621,29 @@
         "developmentalStage": "Young adult intimacy and connection",
         "integrationTask": "Balancing desire with genuine connection",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "vogler:ally",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "chakra:anahata",
+          "fidelity": 0.97,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:wunjo",
@@ -526,7 +704,29 @@
         "lover"
       ],
       "coreFunction": "To embody divine_child energy through joy and hope",
-      "symbolicCore": "The essential pattern of Wunjo"
+      "symbolicCore": "The essential pattern of Wunjo",
+      "culturalEchoes": [
+        {
+          "target": "arch:RO-VENUS",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:onn",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:hagalaz",
@@ -588,7 +788,29 @@
         "developmentalStage": "Letting go of outworn forms",
         "integrationTask": "Accepting loss as precondition for growth",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:tower",
+          "fidelity": 0.9,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:death",
+          "fidelity": 0.89,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:nauthiz",
@@ -643,6 +865,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:devil",
           "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:straif",
+          "fidelity": 0.7,
+          "note": "Reverse of: Need/necessity parallel"
         }
       ],
       "narrativeRoles": [
@@ -656,7 +884,29 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_47",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_39",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:isa",
@@ -725,7 +975,29 @@
         "developmentalStage": "Middle adult consolidation",
         "integrationTask": "Preserving what matters while allowing change",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:swords_04",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:hex_52",
+          "fidelity": 0.91,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:jera",
@@ -786,7 +1058,29 @@
         "caregiver"
       ],
       "coreFunction": "To embody great_mother energy through harvest and cycle",
-      "symbolicCore": "The essential pattern of Jera"
+      "symbolicCore": "The essential pattern of Jera",
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_19",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:revati",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:eihwaz",
@@ -840,6 +1134,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:hanged_man",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:ioho",
+          "fidelity": 0.85,
+          "note": "Reverse of: Yew in Elder Futhark"
         }
       ],
       "narrativeRoles": [
@@ -854,7 +1154,29 @@
         "developmentalStage": "Major life transitions and transformations",
         "integrationTask": "Facilitating passage while honoring process",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:MA-XIPE-TOTEC",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:purva-bhadrapada",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:perthro",
@@ -923,7 +1245,29 @@
         "developmentalStage": "Post-generative acceptance and insight",
         "integrationTask": "Sharing hard-won wisdom without bitterness",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "myss:victim",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ocean:neuroticism",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:algiz",
@@ -973,6 +1317,12 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:wands_07",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:fearn",
+          "fidelity": 0.55,
+          "note": "Reverse of: Protection aspect"
         }
       ],
       "narrativeRoles": [
@@ -986,7 +1336,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_09",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "ogham:luis",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:sowilo",
@@ -1055,7 +1427,29 @@
         "developmentalStage": "Adolescent individuation, proving oneself",
         "integrationTask": "Balancing courage with humility and wisdom",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:sun",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:swords_ace",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:tiwaz",
@@ -1124,7 +1518,29 @@
         "developmentalStage": "Establishing boundaries and competence",
         "integrationTask": "Channeling aggression into service",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "arch:ME-ENLIL",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "pearson:ruler",
+          "fidelity": 0.94,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:berkano",
@@ -1174,13 +1590,41 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:empress",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:beith",
+          "fidelity": 0.75,
+          "note": "Reverse of: Birch letter in Elder Futhark"
         }
       ],
       "narrativeRoles": [
         "innocent"
       ],
       "coreFunction": "To embody great_mother energy through birth and fertility",
-      "symbolicCore": "The essential pattern of Berkano"
+      "symbolicCore": "The essential pattern of Berkano",
+      "culturalEchoes": [
+        {
+          "target": "tarot:cups_ace",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "tarot:empress",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:ehwaz",
@@ -1235,13 +1679,41 @@
           "type": "CULTURAL_ECHO",
           "target": "tarot:chariot",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "ogham:eadhadh",
+          "fidelity": 0.5,
+          "note": "Reverse of: Endurance"
         }
       ],
       "narrativeRoles": [
         "hero"
       ],
       "coreFunction": "To embody twin energy through partnership and trust",
-      "symbolicCore": "The essential pattern of Ehwaz"
+      "symbolicCore": "The essential pattern of Ehwaz",
+      "culturalEchoes": [
+        {
+          "target": "arch:BU-MARPA",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "commedia:colombina",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:mannaz",
@@ -1303,7 +1775,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "element:aether",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "jungian:self",
+          "fidelity": 0.98,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:laguz",
@@ -1364,7 +1858,29 @@
         "threshold-guardian"
       ],
       "coreFunction": "To embody great_mother energy through flow and emotion",
-      "symbolicCore": "The essential pattern of Laguz"
+      "symbolicCore": "The essential pattern of Laguz",
+      "culturalEchoes": [
+        {
+          "target": "wuxing:water",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "arch:VO-LA-SIRENE",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:ingwaz",
@@ -1425,7 +1941,29 @@
         "creator"
       ],
       "coreFunction": "To embody divine_child energy through potential and gestation",
-      "symbolicCore": "The essential pattern of Ingwaz"
+      "symbolicCore": "The essential pattern of Ingwaz",
+      "culturalEchoes": [
+        {
+          "target": "nakshatra:rohini",
+          "fidelity": 0.96,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "nakshatra:revati",
+          "fidelity": 0.95,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:dagaz",
@@ -1492,7 +2030,29 @@
         "developmentalStage": "Individuation goal, second half of life",
         "integrationTask": "Achieving conscious relationship with unconscious",
         "cognitiveBias": "Projection of shadow elements"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "iching:hex_30",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "iching:li",
+          "fidelity": 0.92,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     },
     {
       "@id": "rune:othala",
@@ -1554,7 +2114,29 @@
         "developmentalStage": "Late life connection to lineage and legacy",
         "integrationTask": "Honoring past while living present",
         "cognitiveBias": "Confirmation bias toward archetypal pattern"
-      }
+      },
+      "culturalEchoes": [
+        {
+          "target": "tarot:pentacles_10",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        },
+        {
+          "target": "spiral:purple",
+          "fidelity": 0.93,
+          "sharedAspects": [
+            "spectral proximity"
+          ],
+          "provenance": "ORIG"
+        }
+      ],
+      "domains": [
+        "divination",
+        "runes"
+      ]
     }
   ],
   "systemRelationships": {
