@@ -1,0 +1,214 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:holland",
+  "@type": "PsychologicalSystem",
+  "name": "Holland Codes (RIASEC)",
+  "description": "John Holland's theory of vocational choice identifying six personality types that correspond to work environments. People seek environments matching their type.",
+  "domain": "psychology",
+  "subdomain": "personality",
+  "cardinality": 6,
+  "structuralNotes": "Based on Holland's 1959 theory. Types arranged in hexagonal model where adjacent types are more similar. Used in career counseling worldwide.",
+
+  "entries": [
+    {
+      "@id": "holland:realistic",
+      "@type": "Archetype",
+      "name": "Realistic (The Doer)",
+      "code": "R",
+      "keywords": ["practical", "mechanical", "physical", "hands-on", "tools"],
+      "preferredActivities": ["building", "repairing", "physical work", "outdoor activities", "machinery"],
+      "careers": ["mechanic", "engineer", "farmer", "carpenter", "electrician"],
+      "description": "Prefers physical, hands-on activities involving tools, machines, or nature. Values practical things that can be seen and touched.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.30,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["building", "hands-on"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["physical", "practical"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "holland:investigative", "note": "Adjacent in hexagon"},
+        {"type": "COMPLEMENT", "target": "holland:conventional", "note": "Adjacent in hexagon"},
+        {"type": "POLAR_OPPOSITE", "target": "holland:social", "axis": "active-receptive", "note": "Opposite in hexagon"}
+      ]
+    },
+    {
+      "@id": "holland:investigative",
+      "@type": "Archetype",
+      "name": "Investigative (The Thinker)",
+      "code": "I",
+      "keywords": ["analytical", "intellectual", "scientific", "curious", "precise"],
+      "preferredActivities": ["research", "analysis", "problem-solving", "reading", "exploring ideas"],
+      "careers": ["scientist", "researcher", "mathematician", "physician", "programmer"],
+      "description": "Prefers working with ideas, theories, and information. Enjoys research, analysis, and solving abstract problems.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["analysis", "knowledge"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["curiosity", "problem-solving"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "holland:realistic", "note": "Adjacent in hexagon"},
+        {"type": "COMPLEMENT", "target": "holland:artistic", "note": "Adjacent in hexagon"},
+        {"type": "POLAR_OPPOSITE", "target": "holland:enterprising", "axis": "active-receptive", "note": "Opposite in hexagon"}
+      ]
+    },
+    {
+      "@id": "holland:artistic",
+      "@type": "Archetype",
+      "name": "Artistic (The Creator)",
+      "code": "A",
+      "keywords": ["creative", "expressive", "original", "intuitive", "nonconforming"],
+      "preferredActivities": ["creating art", "writing", "designing", "performing", "composing"],
+      "careers": ["artist", "writer", "musician", "designer", "actor"],
+      "description": "Prefers creative, unstructured activities allowing self-expression. Values originality, imagination, and aesthetic experiences.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.90, "aspects": ["creativity", "expression"]},
+        {"primordial": "primordial:trickster", "weight": 0.50, "aspects": ["nonconforming", "originality"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "holland:investigative", "note": "Adjacent in hexagon"},
+        {"type": "COMPLEMENT", "target": "holland:social", "note": "Adjacent in hexagon"},
+        {"type": "POLAR_OPPOSITE", "target": "holland:conventional", "axis": "order-chaos", "note": "Opposite in hexagon"}
+      ]
+    },
+    {
+      "@id": "holland:social",
+      "@type": "Archetype",
+      "name": "Social (The Helper)",
+      "code": "S",
+      "keywords": ["helping", "cooperative", "teaching", "nurturing", "interpersonal"],
+      "preferredActivities": ["helping others", "teaching", "counseling", "healing", "community work"],
+      "careers": ["teacher", "counselor", "nurse", "social worker", "therapist"],
+      "description": "Prefers activities involving helping, teaching, and developing others. Values service, cooperation, and interpersonal relationships.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.85, "aspects": ["helping", "nurturing"]},
+        {"primordial": "primordial:great-mother", "weight": 0.65, "aspects": ["teaching", "care"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "holland:artistic", "note": "Adjacent in hexagon"},
+        {"type": "COMPLEMENT", "target": "holland:enterprising", "note": "Adjacent in hexagon"},
+        {"type": "POLAR_OPPOSITE", "target": "holland:realistic", "axis": "individual-collective", "note": "Opposite in hexagon"}
+      ]
+    },
+    {
+      "@id": "holland:enterprising",
+      "@type": "Archetype",
+      "name": "Enterprising (The Persuader)",
+      "code": "E",
+      "keywords": ["leadership", "persuasion", "ambition", "influence", "competition"],
+      "preferredActivities": ["leading", "selling", "persuading", "managing", "competing"],
+      "careers": ["manager", "salesperson", "lawyer", "entrepreneur", "politician"],
+      "description": "Prefers activities involving leading, persuading, and managing. Values achievement, status, and economic gain.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.40,
+        "active-receptive": 0.25,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["leadership", "influence"]},
+        {"primordial": "primordial:hero", "weight": 0.60, "aspects": ["ambition", "competition"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "holland:social", "note": "Adjacent in hexagon"},
+        {"type": "COMPLEMENT", "target": "holland:conventional", "note": "Adjacent in hexagon"},
+        {"type": "POLAR_OPPOSITE", "target": "holland:investigative", "axis": "active-receptive", "note": "Opposite in hexagon"}
+      ]
+    },
+    {
+      "@id": "holland:conventional",
+      "@type": "Archetype",
+      "name": "Conventional (The Organizer)",
+      "code": "C",
+      "keywords": ["organizing", "systematic", "detail-oriented", "structured", "efficient"],
+      "preferredActivities": ["organizing data", "following procedures", "record-keeping", "scheduling", "processing"],
+      "careers": ["accountant", "administrator", "banker", "secretary", "clerk"],
+      "description": "Prefers structured, orderly activities following set procedures. Values accuracy, stability, and efficient organization.",
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.85, "aspects": ["order", "stability"]},
+        {"primordial": "primordial:sovereign", "weight": 0.50, "aspects": ["organizing", "structure"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "holland:enterprising", "note": "Adjacent in hexagon"},
+        {"type": "COMPLEMENT", "target": "holland:realistic", "note": "Adjacent in hexagon"},
+        {"type": "POLAR_OPPOSITE", "target": "holland:artistic", "axis": "order-chaos", "note": "Opposite in hexagon"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "hexagonalModel": {
+      "description": "Types arranged in hexagon - adjacent types are more similar, opposite types are most different",
+      "adjacencies": [
+        ["realistic", "investigative"],
+        ["investigative", "artistic"],
+        ["artistic", "social"],
+        ["social", "enterprising"],
+        ["enterprising", "conventional"],
+        ["conventional", "realistic"]
+      ],
+      "opposites": [
+        ["realistic", "social"],
+        ["investigative", "enterprising"],
+        ["artistic", "conventional"]
+      ]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "divination:native_american_totems",
+  "@type": "DivinationSystem",
+  "name": "Native American Medicine Wheel Totems",
+  "description": "The 12 birth totems of the Native American medicine wheel, based on pan-tribal synthesis. Each animal totem carries specific medicine, lessons, and spiritual gifts.",
+  "domain": "divination",
+  "subdomain": "totems",
+  "cardinality": 12,
+  "structuralNotes": "Based on Sun Bear's medicine wheel synthesis. 12 animal totems correspond to moon cycles and seasons. Each has elemental, directional, and plant associations.",
+
+  "entries": [
+    {
+      "@id": "totem:snow_goose",
+      "@type": "Archetype",
+      "name": "Snow Goose",
+      "dates": "December 22 - January 19",
+      "moonCycle": "Earth Renewal Moon",
+      "direction": "North",
+      "element": "Earth",
+      "season": "Winter",
+      "keywords": ["tradition", "ambition", "determination", "community", "goals"],
+      "description": "The snow goose brings the medicine of tradition and ambitious goals. Represents determination, community bonds, and the drive to achieve despite harsh conditions.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["tradition", "community"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["determination", "ambition"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:capricorn", "fidelity": 0.70, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:otter",
+      "@type": "Archetype",
+      "name": "Otter",
+      "dates": "January 20 - February 18",
+      "moonCycle": "Rest and Cleansing Moon",
+      "direction": "North",
+      "element": "Air",
+      "season": "Winter",
+      "keywords": ["playfulness", "curiosity", "independence", "unconventional", "nurturing"],
+      "description": "The otter brings medicine of playful curiosity and unconventional thinking. Represents independent spirit, nurturing through play, and creative problem-solving.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["playfulness", "curiosity"]},
+        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["independence", "joy"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:aquarius", "fidelity": 0.65, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:wolf",
+      "@type": "Archetype",
+      "name": "Wolf",
+      "dates": "February 19 - March 20",
+      "moonCycle": "Big Winds Moon",
+      "direction": "North",
+      "element": "Water",
+      "season": "Winter/Spring",
+      "keywords": ["intuition", "teacher", "pathfinder", "loyalty", "compassion"],
+      "description": "The wolf brings medicine of intuition and teaching. Represents the pathfinder who guides others, deep loyalty, and compassionate leadership.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.50,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["teacher", "pathfinder"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.60, "aspects": ["intuition", "guidance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:pisces", "fidelity": 0.60, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:red_hawk",
+      "@type": "Archetype",
+      "name": "Red Hawk",
+      "dates": "March 21 - April 19",
+      "moonCycle": "Budding Trees Moon",
+      "direction": "East",
+      "element": "Fire",
+      "season": "Spring",
+      "keywords": ["vision", "leadership", "courage", "messenger", "initiative"],
+      "description": "The red hawk brings medicine of far-seeing vision and bold leadership. Represents the messenger between worlds, courage to act, and initiating force.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.25,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.80, "aspects": ["courage", "initiative"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["vision", "messenger"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:aries", "fidelity": 0.75, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:beaver",
+      "@type": "Archetype",
+      "name": "Beaver",
+      "dates": "April 20 - May 20",
+      "moonCycle": "Frogs Return Moon",
+      "direction": "East",
+      "element": "Earth",
+      "season": "Spring",
+      "keywords": ["builder", "persistence", "security", "resourcefulness", "home"],
+      "description": "The beaver brings medicine of industrious building and persistent effort. Represents creating security through work, resourcefulness, and the sacred home.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["builder", "resourcefulness"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["security", "home"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:taurus", "fidelity": 0.75, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:deer",
+      "@type": "Archetype",
+      "name": "Deer",
+      "dates": "May 21 - June 20",
+      "moonCycle": "Cornplanting Moon",
+      "direction": "East",
+      "element": "Air",
+      "season": "Spring/Summer",
+      "keywords": ["gentleness", "sensitivity", "grace", "alertness", "communication"],
+      "description": "The deer brings medicine of gentle sensitivity and graceful movement. Represents alert awareness, the power of gentleness, and heartfelt communication.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["gentleness", "grace"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["sensitivity", "communication"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:gemini", "fidelity": 0.60, "note": "Same season"},
+        {"type": "CULTURAL_ECHO", "target": "nakshatra:mrigashira", "fidelity": 0.70, "note": "Deer symbolism"}
+      ]
+    },
+    {
+      "@id": "totem:woodpecker",
+      "@type": "Archetype",
+      "name": "Woodpecker (Flicker)",
+      "dates": "June 21 - July 22",
+      "moonCycle": "Strong Sun Moon",
+      "direction": "South",
+      "element": "Water",
+      "season": "Summer",
+      "keywords": ["nurturing", "rhythm", "devotion", "protection", "heartbeat"],
+      "description": "The woodpecker brings medicine of nurturing rhythm and protective devotion. Represents the heartbeat of the earth, family protection, and persistent care.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.60,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["nurturing", "protection"]},
+        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["devotion", "rhythm"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:cancer", "fidelity": 0.75, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:salmon",
+      "@type": "Archetype",
+      "name": "Salmon (Sturgeon)",
+      "dates": "July 23 - August 22",
+      "moonCycle": "Ripe Berries Moon",
+      "direction": "South",
+      "element": "Fire",
+      "season": "Summer",
+      "keywords": ["determination", "wisdom", "creativity", "pride", "return"],
+      "description": "The salmon brings medicine of determined return and deep wisdom. Represents creative pride, the drive to return home, and knowledge gained through struggle.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["determination", "return"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["wisdom", "creativity"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:leo", "fidelity": 0.65, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:brown_bear",
+      "@type": "Archetype",
+      "name": "Brown Bear",
+      "dates": "August 23 - September 22",
+      "moonCycle": "Harvest Moon",
+      "direction": "South",
+      "element": "Earth",
+      "season": "Summer/Autumn",
+      "keywords": ["introspection", "healing", "strength", "dreams", "harvest"],
+      "description": "The brown bear brings medicine of introspective healing and quiet strength. Represents dream work, harvesting wisdom, and the power of going within.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.50,
+        "active-receptive": 0.60,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["healing", "introspection"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["dreams", "strength"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:virgo", "fidelity": 0.60, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:raven",
+      "@type": "Archetype",
+      "name": "Raven (Crow)",
+      "dates": "September 23 - October 22",
+      "moonCycle": "Ducks Fly Moon",
+      "direction": "West",
+      "element": "Air",
+      "season": "Autumn",
+      "keywords": ["magic", "balance", "justice", "shape-shifting", "diplomacy"],
+      "description": "The raven brings medicine of transformative magic and balanced justice. Represents diplomatic wisdom, shape-shifting ability, and seeing both sides.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["magic", "shape-shifting"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["balance", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:libra", "fidelity": 0.60, "note": "Same season"},
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-ODIN", "fidelity": 0.55, "note": "Raven wisdom"}
+      ]
+    },
+    {
+      "@id": "totem:snake",
+      "@type": "Archetype",
+      "name": "Snake",
+      "dates": "October 23 - November 21",
+      "moonCycle": "Freeze Up Moon",
+      "direction": "West",
+      "element": "Water",
+      "season": "Autumn",
+      "keywords": ["transformation", "sexuality", "secrets", "death-rebirth", "power"],
+      "description": "The snake brings medicine of deep transformation and hidden power. Represents shedding old skins, sexual energy, and the secrets of death-rebirth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.60,
+        "active-receptive": 0.45,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["transformation", "secrets"]},
+        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["death-rebirth", "shedding"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:scorpio", "fidelity": 0.75, "note": "Same season"}
+      ]
+    },
+    {
+      "@id": "totem:elk",
+      "@type": "Archetype",
+      "name": "Elk (Owl)",
+      "dates": "November 22 - December 21",
+      "moonCycle": "Long Snows Moon",
+      "direction": "West",
+      "element": "Fire",
+      "season": "Autumn/Winter",
+      "keywords": ["stamina", "truth", "wisdom", "endurance", "seeking"],
+      "description": "The elk brings medicine of stamina and truth-seeking. Represents the endurance to pursue wisdom, strength through winter, and the seeker's path.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["seeking", "endurance"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.65, "aspects": ["truth", "wisdom"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "zodiac:sagittarius", "fidelity": 0.65, "note": "Same season"},
+        {"type": "EVOLUTION", "target": "totem:snow_goose", "note": "Wheel continues"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "directionalGroups": {
+      "north": ["snow_goose", "otter", "wolf"],
+      "east": ["red_hawk", "beaver", "deer"],
+      "south": ["woodpecker", "salmon", "brown_bear"],
+      "west": ["raven", "snake", "elk"]
+    },
+    "elementalGroups": {
+      "earth": ["snow_goose", "beaver", "brown_bear"],
+      "air": ["otter", "deer", "raven"],
+      "water": ["wolf", "woodpecker", "snake"],
+      "fire": ["red_hawk", "salmon", "elk"]
+    },
+    "seasonalPowers": {
+      "cleansing_winter": ["snow_goose", "otter", "wolf"],
+      "growth_spring": ["red_hawk", "beaver", "deer"],
+      "ripening_summer": ["woodpecker", "salmon", "brown_bear"],
+      "harvest_autumn": ["raven", "snake", "elk"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

@@ -12,7 +12,7 @@ An empirical corpus of 132 public domain mythological texts across 32 traditions
 |-----------|-------|
 | Source texts | 132 across 32 traditions (822 MB raw corpus) |
 | Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 149 motifs |
-| ACP archetypes | 539 across 18 traditions, 24 primordials, 8D coordinates |
+| ACP archetypes | 1,006 across 60+ systems, 22 primordials, 8D coordinates |
 | Validation | 10 tests across 5 tiers (A/B/C/D/E), all core tiers PASS |
 | Explorer | Browser-based Miroglyph with Atlas, Codex, and Chronicle views |
 
@@ -61,7 +61,7 @@ mythic-library/
 │   └── mythic_patterns.db              # SQLite: 4K segments, 173 entities, 149 motifs
 ├── ACP/                                # Archetypal Context Protocol (subtree)
 │   ├── schema/                         # Axes, primordials, relationships ontology
-│   └── archetypes/                     # 539 archetypes across 18 traditions (JSON-LD)
+│   └── archetypes/                     # 1,006 archetypes across 60+ systems (JSON-LD)
 ├── integration/                        # ACP <-> Library bridge
 │   ├── acp_loader.py                   # Load archetypes, coordinates, relationships
 │   ├── library_loader.py               # Query pattern database
@@ -117,7 +117,7 @@ python -m validation.v2_run --full
 
 Or open `miroglyph/index.html` locally. Three views:
 
-- **Atlas**: 2D spectral projection of all 539 archetypes with axis-pair selection, zoom, and tooltip
+- **Atlas**: 2D spectral projection of all 1,006 archetypes with axis-pair selection, zoom, and tooltip
 - **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
 - **Chronicle**: Narrative tracing across traditions with relationship visualization
 
@@ -161,30 +161,68 @@ Weights are empirically derived from per-axis correlation with narrative co-occu
 
 ### ACP Coverage
 
-539 archetypes across 18 traditions:
+1,006 archetypes across 60+ systems in four domains:
 
+**Mythological Pantheons (354 entries)**
 | Tradition | Archetypes | Relationship Types |
 |-----------|------------|-------------------|
-| Greek | 23 | POLAR_OPPOSITE, SHADOW, EVOLUTION, COMPLEMENT |
-| Norse | 15+ | POLAR_OPPOSITE, SHADOW, EVOLUTION |
-| Egyptian | 17 | SHADOW, EVOLUTION, COMPLEMENT, SYNTHESIS |
-| Hindu | 15 | SHADOW, EVOLUTION, COMPLEMENT |
-| Chinese | 19+ | EVOLUTION, CULTURAL_ECHO |
-| Japanese | 17 | EVOLUTION, CULTURAL_ECHO |
-| Celtic | 13 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
-| Slavic | 16 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
-| African (Yoruba) | 16 | SHADOW, EVOLUTION, COMPLEMENT |
-| Mesoamerican | 17 | SHADOW, EVOLUTION |
-| Polynesian | 17 | SHADOW, EVOLUTION |
-| Native American | 14 | SHADOW, EVOLUTION |
-| Mesopotamian | 13 | EVOLUTION, COMPLEMENT |
-| Finnish | 14 | EVOLUTION, POLAR_OPPOSITE |
-| Incan | 17 | POLAR_OPPOSITE |
-| Persian | 18 | SHADOW, EVOLUTION |
-| Roman | 13 | CULTURAL_ECHO |
-| Australian | 8 | — |
-| Divination systems | ~100 | Zodiac, I Ching, Tarot, Kabbalah, Chakras |
-| Modern | ~30 | Digital archetypes, Jungian, Hero's Journey |
+| Greek | 24 | POLAR_OPPOSITE, SHADOW, EVOLUTION, COMPLEMENT |
+| Buddhist | 27 | CULTURAL_ECHO, EVOLUTION |
+| Chinese | 20 | EVOLUTION, CULTURAL_ECHO |
+| Hindu | 19 | SHADOW, EVOLUTION, COMPLEMENT |
+| Persian | 19 | SHADOW, EVOLUTION |
+| African (Orisha) | 18 | SHADOW, EVOLUTION, COMPLEMENT |
+| Egyptian | 18 | SHADOW, EVOLUTION, COMPLEMENT, SYNTHESIS |
+| Incan | 18 | POLAR_OPPOSITE |
+| Japanese | 18 | EVOLUTION, CULTURAL_ECHO |
+| Mesoamerican | 18 | SHADOW, EVOLUTION |
+| Polynesian | 18 | SHADOW, EVOLUTION |
+| Vodou (Loa) | 18 | CULTURAL_ECHO |
+| Slavic | 17 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
+| Finnish | 15 | EVOLUTION, POLAR_OPPOSITE |
+| Mesopotamian | 15 | EVOLUTION, COMPLEMENT |
+| Native American | 15 | SHADOW, EVOLUTION |
+| Celtic | 14 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
+| Norse | 13 | POLAR_OPPOSITE, SHADOW, EVOLUTION |
+| Roman | 11 | CULTURAL_ECHO |
+| Australian | 9 | — |
+
+**Divination Systems (401 entries)**
+| System | Archetypes |
+|--------|------------|
+| I Ching (Hexagrams + Trigrams) | 74 |
+| Tarot (Major + Minor Arcana) | 84 |
+| Alternate Zodiacs (Chinese, Vedic, Nakshatra, Celtic) | 64 |
+| Sacred Calendars (Mayan, Aztec) | 40 |
+| Native American Totems | 12 |
+| Elder Futhark Runes | 25 |
+| Ogham Tree Alphabet | 20 |
+| Alchemical Processes | 15 |
+| Astrology (Zodiac, Planets, Houses) | 37 |
+| Kabbalah Sephiroth | 11 |
+| Chakras | 8 |
+| Elements (Western + Wu Xing) | 11 |
+
+**Psychology Systems (194 entries)**
+| System | Archetypes |
+|--------|------------|
+| Personality (MBTI, Socionics, Big Five, Holland, DISC, Keirsey) | 67 |
+| Narrative (Hero's Journey, Vogler, Propp, Seven Plots) | 43 |
+| Jungian Core Archetypes | 13 |
+| Carol Pearson Archetypes | 12 |
+| Enneagram Types | 10 |
+| Spiral Dynamics | 9 |
+| Gendered (KWML, Triple Goddess, Bolen) | 32 |
+| Caroline Myss Survival Archetypes | 4 |
+
+**Modern Systems (57 entries)**
+| System | Archetypes |
+|--------|------------|
+| Brand Archetypes | 13 |
+| Superhero Archetypes | 13 |
+| Digital/Internet Archetypes | 11 |
+| Angelic Hierarchy | 10 |
+| Commedia dell'Arte | 10 |
 
 ## Source Corpus
 

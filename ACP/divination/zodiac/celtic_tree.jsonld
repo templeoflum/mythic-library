@@ -1,0 +1,400 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "divination:celtic_tree",
+  "@type": "DivinationSystem",
+  "name": "Celtic Tree Calendar",
+  "description": "The Celtic Ogham tree calendar associating 13 lunar months with sacred trees. Each tree carries its own wisdom, magical properties, and archetypal qualities.",
+  "domain": "divination",
+  "subdomain": "zodiac",
+  "cardinality": 13,
+  "structuralNotes": "Based on Robert Graves' reconstruction in 'The White Goddess' (1948). 13 lunar months plus one intercalary day. Trees correspond to Ogham letters.",
+
+  "entries": [
+    {
+      "@id": "celtic_tree:birch",
+      "@type": "Archetype",
+      "name": "Birch (Beth)",
+      "oghamLetter": "B",
+      "dates": "December 24 - January 20",
+      "lunarMonth": 1,
+      "keywords": ["beginnings", "purification", "renewal", "youth", "cleansing"],
+      "description": "The first tree of the Celtic year, symbolizing new beginnings, purification, and driving out the old. Associated with birth and the fresh start.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.30,
+        "active-receptive": 0.40,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["beginnings", "youth"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["purification", "cleansing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:beth", "fidelity": 0.95, "note": "Same tree"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:rowan",
+      "@type": "Archetype",
+      "name": "Rowan (Luis)",
+      "oghamLetter": "L",
+      "dates": "January 21 - February 17",
+      "lunarMonth": 2,
+      "keywords": ["protection", "vision", "quickening", "magic", "threshold"],
+      "description": "Tree of quickening life and protection against enchantment. Associated with the goddess Brigid and the awakening of vision.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["protection", "vision"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["quickening", "awakening"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:luis", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "arch:CE-BRIGID", "fidelity": 0.65, "note": "Brigid association"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:ash",
+      "@type": "Archetype",
+      "name": "Ash (Nion)",
+      "oghamLetter": "N",
+      "dates": "February 18 - March 17",
+      "lunarMonth": 3,
+      "keywords": ["connection", "world-tree", "linking", "balance", "sea"],
+      "description": "The world-tree connecting all realms. Associated with sea power, balance between inner and outer worlds, and sacred links.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.70, "aspects": ["connection", "linking-realms"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["world-tree", "balance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:nion", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-YGGDRASIL", "fidelity": 0.70, "note": "World-tree archetype"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:alder",
+      "@type": "Archetype",
+      "name": "Alder (Fearn)",
+      "oghamLetter": "F",
+      "dates": "March 18 - April 14",
+      "lunarMonth": 4,
+      "keywords": ["foundation", "shield", "oracle", "strength", "protection"],
+      "description": "Tree of foundation and oracular power. Associated with Bran the Blessed, shielding, and the strength of foundations.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["shield", "protection"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["oracle", "foundation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:fearn", "fidelity": 0.95, "note": "Same tree"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:willow",
+      "@type": "Archetype",
+      "name": "Willow (Saille)",
+      "oghamLetter": "S",
+      "dates": "April 15 - May 12",
+      "lunarMonth": 5,
+      "keywords": ["moon", "intuition", "dreams", "enchantment", "flexibility"],
+      "description": "Moon tree of enchantment and intuition. Associated with the goddess, night visions, and the flexibility of water.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.55,
+        "active-receptive": 0.70,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["enchantment", "moon-magic"]},
+        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["intuition", "dreams"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:saille", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "goddess:crone-sorceress", "fidelity": 0.60, "note": "Moon magic"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:hawthorn",
+      "@type": "Archetype",
+      "name": "Hawthorn (Huath)",
+      "oghamLetter": "H",
+      "dates": "May 13 - June 9",
+      "lunarMonth": 6,
+      "keywords": ["cleansing", "chastity", "protection", "threshold", "fairy"],
+      "description": "Tree of cleansing and fairy magic. Guards the threshold between worlds, associated with Beltane and sacred abstinence.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.50,
+        "active-receptive": 0.50,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["chastity", "purity"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["threshold", "fairy-realm"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:huath", "fidelity": 0.95, "note": "Same tree"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:oak",
+      "@type": "Archetype",
+      "name": "Oak (Duir)",
+      "oghamLetter": "D",
+      "dates": "June 10 - July 7",
+      "lunarMonth": 7,
+      "keywords": ["strength", "doorway", "king", "endurance", "midsummer"],
+      "description": "King of the forest at midsummer. Sacred to the Druids, represents strength, doors between worlds, and royal authority.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["king", "strength"]},
+        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["endurance", "protection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:duir", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.75, "note": "King archetype"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:holly",
+      "@type": "Archetype",
+      "name": "Holly (Tinne)",
+      "oghamLetter": "T",
+      "dates": "July 8 - August 4",
+      "lunarMonth": 8,
+      "keywords": ["warrior", "challenge", "protection", "combat", "holly-king"],
+      "description": "Tree of the warrior and the holly king who rules the waning year. Associated with challenges, combat readiness, and masculine force.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.40,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["combat", "challenge"]},
+        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["holly-king", "waning-year"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:tinne", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "POLAR_OPPOSITE", "target": "celtic_tree:oak", "axis": "creation-destruction", "note": "Oak vs Holly King"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:hazel",
+      "@type": "Archetype",
+      "name": "Hazel (Coll)",
+      "oghamLetter": "C",
+      "dates": "August 5 - September 1",
+      "lunarMonth": 9,
+      "keywords": ["wisdom", "inspiration", "poetry", "salmon", "knowledge"],
+      "description": "Tree of wisdom and poetic inspiration. The salmon gained all knowledge by eating hazelnuts from the sacred well.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.85, "aspects": ["wisdom", "knowledge"]},
+        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["poetry", "inspiration"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:coll", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.75, "note": "Wisdom archetype"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:vine",
+      "@type": "Archetype",
+      "name": "Vine (Muin)",
+      "oghamLetter": "M",
+      "dates": "September 2 - September 29",
+      "lunarMonth": 10,
+      "keywords": ["prophecy", "harvest", "intoxication", "release", "truth"],
+      "description": "Tree of prophecy and the autumn equinox. Associated with wine, harvest celebration, and the release of inhibition that reveals truth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["prophecy", "truth-telling"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["intoxication", "release"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:muin", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-DIONYSUS", "fidelity": 0.65, "note": "Wine god"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:ivy",
+      "@type": "Archetype",
+      "name": "Ivy (Gort)",
+      "oghamLetter": "G",
+      "dates": "September 30 - October 27",
+      "lunarMonth": 11,
+      "keywords": ["spiral", "search", "persistence", "binding", "resurrection"],
+      "description": "Tree of the labyrinth and resurrection. Spiraling ever inward, represents the search for self and the binding power of commitment.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.55,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["search", "persistence"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["spiral", "binding"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:gort", "fidelity": 0.95, "note": "Same tree"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:reed",
+      "@type": "Archetype",
+      "name": "Reed (Ngetal)",
+      "oghamLetter": "Ng",
+      "dates": "October 28 - November 24",
+      "lunarMonth": 12,
+      "keywords": ["action", "direct", "threshold", "samhain", "ancestors"],
+      "description": "Tree of direct action and the Samhain season. Associated with arrows, direct communication with ancestors, and focused will.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.55,
+        "active-receptive": 0.30,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["action", "direction"]},
+        {"primordial": "primordial:ancestor", "weight": 0.65, "aspects": ["samhain", "communication"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:ngetal", "fidelity": 0.95, "note": "Same tree"}
+      ]
+    },
+    {
+      "@id": "celtic_tree:elder",
+      "@type": "Archetype",
+      "name": "Elder (Ruis)",
+      "oghamLetter": "R",
+      "dates": "November 25 - December 22",
+      "lunarMonth": 13,
+      "keywords": ["endings", "crone", "regeneration", "judgement", "fairy-tree"],
+      "description": "Tree of endings and regeneration. The crone's tree, associated with the elder mother, judgement, and the death that precedes rebirth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.60,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.85, "aspects": ["endings", "wisdom"]},
+        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["death", "regeneration"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "ogham:ruis", "fidelity": 0.95, "note": "Same tree"},
+        {"type": "CULTURAL_ECHO", "target": "goddess:crone", "fidelity": 0.80, "note": "Crone archetype"},
+        {"type": "EVOLUTION", "target": "celtic_tree:birch", "note": "Cycle completes"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "seasonalGroups": {
+      "winter": ["birch", "rowan"],
+      "spring": ["ash", "alder", "willow", "hawthorn"],
+      "summer": ["oak", "holly", "hazel"],
+      "autumn": ["vine", "ivy", "reed", "elder"]
+    },
+    "festivalsAssociated": {
+      "yule": "birch",
+      "imbolc": "rowan",
+      "ostara": "alder",
+      "beltane": "hawthorn",
+      "litha": "oak",
+      "lughnasadh": "holly",
+      "mabon": "vine",
+      "samhain": "reed"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

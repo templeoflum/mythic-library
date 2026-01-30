@@ -4,8 +4,8 @@
 
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
-**Version**: 0.1.1 (Early Development)
-**Total Archetypes**: 580 entries with full spectral coordinates
+**Version**: 0.2.0 (Major Expansion)
+**Total Archetypes**: 1,006 entries with full spectral coordinates
 **Target**: ~1,200 archetypes for v1.0 release
 
 ## Architecture (ORAS v2.0)
@@ -30,64 +30,102 @@ ACP/
 │   ├── geodesics/             # Transformation paths
 │   └── primordial_matrix.jsonld
 │
-├── divination/                # Domain: Divination Systems (218 entries)
+├── divination/                # Domain: Divination Systems (401 entries)
 │   ├── tarot/
-│   │   ├── major_arcana.jsonld    # 22 entries - COMPLETE
-│   │   └── minor_arcana.jsonld    # 56 entries - COMPLETE
+│   │   ├── major_arcana.jsonld    # 23 entries - COMPLETE
+│   │   └── minor_arcana.jsonld    # 61 entries - COMPLETE
 │   ├── iching/
-│   │   ├── trigrams.jsonld        # 8 entries - COMPLETE
-│   │   └── hexagrams.jsonld       # 64 entries - COMPLETE
+│   │   ├── trigrams.jsonld        # 9 entries - COMPLETE
+│   │   └── hexagrams.jsonld       # 65 entries - COMPLETE
 │   ├── astrology/
-│   │   ├── zodiac.jsonld          # 12 entries - COMPLETE
-│   │   └── planets.jsonld         # 10 entries - COMPLETE
+│   │   ├── zodiac.jsonld          # 13 entries - COMPLETE
+│   │   ├── planets.jsonld         # 11 entries - COMPLETE
+│   │   └── houses.jsonld          # 13 entries - COMPLETE
 │   ├── runes/
-│   │   └── elder_futhark.jsonld   # 24 entries - COMPLETE
+│   │   └── elder_futhark.jsonld   # 25 entries - COMPLETE
 │   ├── kabbalah/
-│   │   └── sephiroth.jsonld       # 10 entries - COMPLETE
+│   │   └── sephiroth.jsonld       # 11 entries - COMPLETE
 │   ├── chakras/
-│   │   └── energy_centers.jsonld  # 7 entries - COMPLETE
-│   └── elements/
-│       └── classical_western.jsonld # 5 entries - COMPLETE
+│   │   └── energy_centers.jsonld  # 8 entries - COMPLETE
+│   ├── elements/
+│   │   ├── classical_western.jsonld # 6 entries - COMPLETE
+│   │   └── wu_xing.jsonld         # 5 entries - NEW
+│   ├── zodiac/
+│   │   ├── chinese_zodiac.jsonld  # 12 entries - NEW
+│   │   ├── vedic_rashi.jsonld     # 12 entries - NEW
+│   │   ├── nakshatra.jsonld       # 27 entries - NEW
+│   │   └── celtic_tree.jsonld     # 13 entries - NEW
+│   ├── calendar/
+│   │   ├── mayan_tzolkin.jsonld   # 20 entries - NEW
+│   │   └── aztec_tonalpohualli.jsonld # 20 entries - NEW
+│   ├── totems/
+│   │   └── native_american.jsonld # 12 entries - NEW
+│   ├── ogham/
+│   │   └── feda.jsonld            # 20 entries - NEW
+│   └── alchemy/
+│       └── processes.jsonld       # 15 entries - NEW
 │
-├── psychology/                # Domain: Psychology Systems (55 entries)
+├── psychology/                # Domain: Psychology Systems (194 entries)
 │   ├── jungian/
-│   │   └── core_archetypes.jsonld # 12 entries - COMPLETE
+│   │   └── core_archetypes.jsonld # 13 entries - COMPLETE
 │   ├── enneagram/
-│   │   └── types.jsonld           # 9 entries - COMPLETE
+│   │   └── types.jsonld           # 10 entries - COMPLETE
 │   ├── narrative/
-│   │   ├── heros_journey.jsonld   # 18 entries - COMPLETE
-│   │   └── vogler_archetypes.jsonld # 8 entries - COMPLETE
-│   └── developmental/
-│       └── spiral_dynamics.jsonld # 8 entries - COMPLETE
+│   │   ├── heros_journey.jsonld   # 19 entries - COMPLETE
+│   │   ├── vogler_archetypes.jsonld # 9 entries - COMPLETE
+│   │   ├── propp_roles.jsonld     # 8 entries - NEW
+│   │   └── seven_plots.jsonld     # 7 entries - NEW
+│   ├── developmental/
+│   │   └── spiral_dynamics.jsonld # 9 entries - COMPLETE
+│   ├── personality/
+│   │   ├── mbti.jsonld            # 16 entries - NEW
+│   │   ├── socionics.jsonld       # 16 entries - NEW
+│   │   ├── big_five.jsonld        # 5 entries - NEW
+│   │   ├── holland.jsonld         # 6 entries - NEW
+│   │   ├── disc.jsonld            # 4 entries - NEW
+│   │   └── keirsey.jsonld         # 4 entries - NEW
+│   ├── archetypes/
+│   │   ├── pearson.jsonld         # 12 entries - NEW
+│   │   └── myss.jsonld            # 4 entries - NEW
+│   └── gendered/
+│       ├── kwml.jsonld            # 8 entries - NEW
+│       ├── triple_goddess.jsonld  # 9 entries - NEW
+│       ├── bolen_goddesses.jsonld # 7 entries - NEW
+│       └── bolen_gods.jsonld      # 8 entries - NEW
 │
-├── modern/                    # Domain: Modern Systems (43 entries)
+├── modern/                    # Domain: Modern Systems (57 entries)
 │   ├── cultural/
-│   │   └── brand_archetypes.jsonld    # 12 entries - COMPLETE
+│   │   └── brand_archetypes.jsonld    # 13 entries - COMPLETE
 │   ├── digital/
-│   │   └── internet_archetypes.jsonld # 10 entries - COMPLETE
+│   │   └── internet_archetypes.jsonld # 11 entries - COMPLETE
 │   ├── pop_culture/
-│   │   └── superhero.jsonld           # 12 entries - COMPLETE
-│   └── spiritual/
-│       └── angels.jsonld              # 9 entries - COMPLETE
+│   │   └── superhero.jsonld           # 13 entries - COMPLETE
+│   ├── spiritual/
+│   │   └── angels.jsonld              # 10 entries - COMPLETE
+│   └── theatrical/
+│       └── commedia.jsonld            # 10 entries - NEW
 │
-├── archetypes/                # Domain: Mythological (265 entries) - COMPLETE
-│   ├── greek/                 # 22 entries
-│   ├── norse/                 # 12 entries
-│   ├── egyptian/              # 17 entries
-│   ├── celtic/                # 13 entries
-│   ├── hindu/                 # 15 entries
-│   ├── japanese/              # 17 entries
-│   ├── chinese/               # 19 entries
-│   ├── mesopotamian/          # 13 entries
-│   ├── african/               # 16 entries
-│   ├── mesoamerican/          # 17 entries
-│   ├── slavic/                # 16 entries
-│   ├── polynesian/            # 17 entries
-│   ├── native_american/       # 14 entries
-│   ├── finnish/               # 14 entries
-│   ├── australian/            # 8 entries
-│   ├── incan/                 # 17 entries
-│   └── persian/               # 18 entries
+├── archetypes/                # Domain: Mythological (354 entries) - COMPLETE
+│   ├── greek/                 # 24 entries
+│   ├── norse/                 # 13 entries
+│   ├── egyptian/              # 18 entries
+│   ├── celtic/                # 14 entries
+│   ├── hindu/                 # 19 entries
+│   ├── japanese/              # 18 entries
+│   ├── chinese/               # 20 entries
+│   ├── mesopotamian/          # 15 entries
+│   ├── african/               # 18 entries
+│   ├── mesoamerican/          # 18 entries
+│   ├── slavic/                # 17 entries
+│   ├── polynesian/            # 18 entries
+│   ├── native_american/       # 15 entries
+│   ├── finnish/               # 15 entries
+│   ├── australian/            # 9 entries
+│   ├── incan/                 # 18 entries
+│   ├── persian/               # 19 entries
+│   ├── roman/                 # 11 entries
+│   ├── buddhist/              # 27 entries - NEW
+│   └── vodou/                 # 18 entries - NEW
 │
 ├── tools/                     # Validation & Exploration
 │   ├── validate.js            # Node.js validation script

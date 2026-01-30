@@ -1,0 +1,462 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "mbti:types",
+  "@type": "PsychologicalSystem",
+  "name": "Myers-Briggs Type Indicator (MBTI)",
+  "description": "16 personality types based on Jungian cognitive functions. Categorizes preferences across four dichotomies: Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling, Judging/Perceiving.",
+  "domain": "psychology",
+  "subdomain": "personality",
+  "cardinality": 16,
+  "structuralNotes": "Four dichotomies create 16 types. Each type has a dominant, auxiliary, tertiary, and inferior function stack.",
+
+  "entries": [
+    {
+      "@id": "mbti:intj",
+      "@type": "Archetype",
+      "name": "INTJ - The Architect",
+      "code": "INTJ",
+      "functionStack": ["Ni", "Te", "Fi", "Se"],
+      "keywords": ["strategic", "independent", "determined", "visionary", "analytical"],
+      "description": "Strategic visionaries who see patterns and possibilities. Driven to implement their vision with systematic planning.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.20,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["vision", "strategy", "transformation"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.65, "aspects": ["analysis", "foresight"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:esfp", "axis": "active-receptive", "note": "Shadow type"},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_5", "fidelity": 0.70, "note": "Common correlation"}
+      ]
+    },
+    {
+      "@id": "mbti:intp",
+      "@type": "Archetype",
+      "name": "INTP - The Logician",
+      "code": "INTP",
+      "functionStack": ["Ti", "Ne", "Si", "Fe"],
+      "keywords": ["logical", "inventive", "abstract", "independent", "analytical"],
+      "description": "Logical theorists who seek to understand underlying principles. Value intellectual exploration and truth-seeking.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.15,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.85, "aspects": ["logic", "analysis", "theory"]},
+        {"primordial": "primordial:trickster", "weight": 0.50, "aspects": ["inventiveness", "exploration"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:esfj", "axis": "individual-collective", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:entj",
+      "@type": "Archetype",
+      "name": "ENTJ - The Commander",
+      "code": "ENTJ",
+      "functionStack": ["Te", "Ni", "Se", "Fi"],
+      "keywords": ["decisive", "ambitious", "strategic", "efficient", "leader"],
+      "description": "Natural leaders who see inefficiency and implement solutions. Driven to organize people and systems toward goals.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.30,
+        "active-receptive": 0.10,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["leadership", "command", "organization"]},
+        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["ambition", "decisiveness"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:isfp", "axis": "active-receptive", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:entp",
+      "@type": "Archetype",
+      "name": "ENTP - The Debater",
+      "code": "ENTP",
+      "functionStack": ["Ne", "Ti", "Fe", "Si"],
+      "keywords": ["innovative", "strategic", "enterprising", "outspoken", "argumentative"],
+      "description": "Quick-witted idea generators who love intellectual challenge. See possibilities everywhere and debate for sport.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["wit", "debate", "innovation"]},
+        {"primordial": "primordial:rebel", "weight": 0.60, "aspects": ["challenge", "questioning"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:isfj", "axis": "order-chaos", "note": "Shadow type"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.70, "note": "Trickster archetype"}
+      ]
+    },
+    {
+      "@id": "mbti:infj",
+      "@type": "Archetype",
+      "name": "INFJ - The Advocate",
+      "code": "INFJ",
+      "functionStack": ["Ni", "Fe", "Ti", "Se"],
+      "keywords": ["insightful", "principled", "compassionate", "private", "idealistic"],
+      "description": "Visionary idealists driven to help others realize their potential. Deep insight combined with warmth for others.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.45,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["compassion", "insight", "guidance"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["vision", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:estp", "axis": "light-shadow", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:infp",
+      "@type": "Archetype",
+      "name": "INFP - The Mediator",
+      "code": "INFP",
+      "functionStack": ["Fi", "Ne", "Si", "Te"],
+      "keywords": ["idealistic", "empathetic", "creative", "reserved", "values-driven"],
+      "description": "Imaginative idealists guided by their core values. Seek to understand themselves and help others do the same.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.45,
+        "active-receptive": 0.65,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["empathy", "understanding"]},
+        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["creativity", "idealism"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:estj", "axis": "individual-collective", "note": "Shadow type"},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_4", "fidelity": 0.70, "note": "Common correlation"}
+      ]
+    },
+    {
+      "@id": "mbti:enfj",
+      "@type": "Archetype",
+      "name": "ENFJ - The Protagonist",
+      "code": "ENFJ",
+      "functionStack": ["Fe", "Ni", "Se", "Ti"],
+      "keywords": ["charismatic", "empathetic", "organized", "diplomatic", "inspiring"],
+      "description": "Charismatic leaders who inspire others toward growth. Natural teachers and mentors who see potential in everyone.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.25,
+        "active-receptive": 0.35,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["empathy", "inspiration", "teaching"]},
+        {"primordial": "primordial:sovereign", "weight": 0.60, "aspects": ["leadership", "diplomacy"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:istp", "axis": "individual-collective", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:enfp",
+      "@type": "Archetype",
+      "name": "ENFP - The Campaigner",
+      "code": "ENFP",
+      "functionStack": ["Ne", "Fi", "Te", "Si"],
+      "keywords": ["enthusiastic", "creative", "sociable", "free-spirited", "optimistic"],
+      "description": "Enthusiastic explorers of ideas and possibilities. See life as full of meaning and connections to be discovered.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.25,
+        "active-receptive": 0.30,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["enthusiasm", "optimism", "wonder"]},
+        {"primordial": "primordial:trickster", "weight": 0.60, "aspects": ["creativity", "exploration"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:istj", "axis": "order-chaos", "note": "Shadow type"},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_7", "fidelity": 0.75, "note": "Common correlation"}
+      ]
+    },
+    {
+      "@id": "mbti:istj",
+      "@type": "Archetype",
+      "name": "ISTJ - The Logistician",
+      "code": "ISTJ",
+      "functionStack": ["Si", "Te", "Fi", "Ne"],
+      "keywords": ["responsible", "thorough", "dependable", "traditional", "practical"],
+      "description": "Reliable traditionalists who value duty and responsibility. Systematic approach to life with strong work ethic.",
+      "spectralCoordinates": {
+        "order-chaos": 0.10,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.20,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.90, "aspects": ["tradition", "duty", "reliability"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["discipline", "responsibility"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:enfp", "axis": "order-chaos", "note": "Shadow type"},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_1", "fidelity": 0.65, "note": "Common correlation"}
+      ]
+    },
+    {
+      "@id": "mbti:isfj",
+      "@type": "Archetype",
+      "name": "ISFJ - The Defender",
+      "code": "ISFJ",
+      "functionStack": ["Si", "Fe", "Ti", "Ne"],
+      "keywords": ["supportive", "reliable", "patient", "observant", "loyal"],
+      "description": "Caring protectors who remember details about those they care for. Quietly supportive with strong sense of duty.",
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.40,
+        "active-receptive": 0.70,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.25,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["nurturing", "protection", "care"]},
+        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["loyalty", "tradition"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:entp", "axis": "order-chaos", "note": "Shadow type"},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_2", "fidelity": 0.70, "note": "Common correlation"}
+      ]
+    },
+    {
+      "@id": "mbti:estj",
+      "@type": "Archetype",
+      "name": "ESTJ - The Executive",
+      "code": "ESTJ",
+      "functionStack": ["Te", "Si", "Ne", "Fi"],
+      "keywords": ["organized", "logical", "assertive", "practical", "traditional"],
+      "description": "Efficient organizers who implement systems and enforce standards. Value order, tradition, and clear hierarchies.",
+      "spectralCoordinates": {
+        "order-chaos": 0.10,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.20,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["organization", "authority", "standards"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["tradition", "order"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:infp", "axis": "individual-collective", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:esfj",
+      "@type": "Archetype",
+      "name": "ESFJ - The Consul",
+      "code": "ESFJ",
+      "functionStack": ["Fe", "Si", "Ne", "Ti"],
+      "keywords": ["caring", "sociable", "traditional", "loyal", "harmonious"],
+      "description": "Warm-hearted harmonizers who value community and tradition. Create welcoming environments for others to thrive.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.80,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["caring", "community", "harmony"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["support", "nurturing"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:intp", "axis": "individual-collective", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:istp",
+      "@type": "Archetype",
+      "name": "ISTP - The Virtuoso",
+      "code": "ISTP",
+      "functionStack": ["Ti", "Se", "Ni", "Fe"],
+      "keywords": ["practical", "observant", "analytical", "reserved", "hands-on"],
+      "description": "Practical problem-solvers who master tools and systems. Value efficiency and direct experience over theory.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.20,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["mastery", "skill", "analysis"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["action", "practicality"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:enfj", "axis": "individual-collective", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:isfp",
+      "@type": "Archetype",
+      "name": "ISFP - The Adventurer",
+      "code": "ISFP",
+      "functionStack": ["Fi", "Se", "Ni", "Te"],
+      "keywords": ["artistic", "sensitive", "helpful", "flexible", "spontaneous"],
+      "description": "Gentle artists who live in the moment. Express themselves through action and aesthetic sensibility.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.45,
+        "active-receptive": 0.60,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["artistry", "aesthetics"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["sensitivity", "compassion"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:entj", "axis": "active-receptive", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:estp",
+      "@type": "Archetype",
+      "name": "ESTP - The Entrepreneur",
+      "code": "ESTP",
+      "functionStack": ["Se", "Ti", "Fe", "Ni"],
+      "keywords": ["energetic", "perceptive", "direct", "pragmatic", "bold"],
+      "description": "Action-oriented realists who thrive in the moment. Excel at reading situations and taking decisive action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.20
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["action", "boldness", "pragmatism"]},
+        {"primordial": "primordial:trickster", "weight": 0.60, "aspects": ["opportunism", "adaptability"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:infj", "axis": "light-shadow", "note": "Shadow type"}
+      ]
+    },
+    {
+      "@id": "mbti:esfp",
+      "@type": "Archetype",
+      "name": "ESFP - The Entertainer",
+      "code": "ESFP",
+      "functionStack": ["Se", "Fi", "Te", "Ni"],
+      "keywords": ["spontaneous", "energetic", "friendly", "playful", "warm"],
+      "description": "Spontaneous entertainers who love life and share joy with others. Natural performers who bring energy to every situation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.25,
+        "active-receptive": 0.25,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.80, "aspects": ["joy", "playfulness", "spontaneity"]},
+        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["warmth", "connection"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "mbti:intj", "axis": "active-receptive", "note": "Shadow type"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "temperaments": {
+      "analysts": ["mbti:intj", "mbti:intp", "mbti:entj", "mbti:entp"],
+      "diplomats": ["mbti:infj", "mbti:infp", "mbti:enfj", "mbti:enfp"],
+      "sentinels": ["mbti:istj", "mbti:isfj", "mbti:estj", "mbti:esfj"],
+      "explorers": ["mbti:istp", "mbti:isfp", "mbti:estp", "mbti:esfp"]
+    },
+    "functions": {
+      "dominantNi": ["mbti:intj", "mbti:infj"],
+      "dominantNe": ["mbti:entp", "mbti:enfp"],
+      "dominantSi": ["mbti:istj", "mbti:isfj"],
+      "dominantSe": ["mbti:estp", "mbti:esfp"],
+      "dominantTi": ["mbti:intp", "mbti:istp"],
+      "dominantTe": ["mbti:entj", "mbti:estj"],
+      "dominantFi": ["mbti:infp", "mbti:isfp"],
+      "dominantFe": ["mbti:enfj", "mbti:esfj"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

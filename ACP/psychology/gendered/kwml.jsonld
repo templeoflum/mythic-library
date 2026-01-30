@@ -1,0 +1,240 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:kwml",
+  "@type": "PsychologicalSystem",
+  "name": "King, Warrior, Magician, Lover (KWML)",
+  "description": "Moore and Gillette's model of mature masculine archetypes and their shadow forms. Each archetype has bipolar shadow: active (inflated) and passive (deflated).",
+  "domain": "psychology",
+  "subdomain": "gendered",
+  "cardinality": 8,
+  "structuralNotes": "Based on Robert Moore and Douglas Gillette's 'King, Warrior, Magician, Lover' (1990). Each archetype has fullness form and two shadow poles.",
+
+  "entries": [
+    {
+      "@id": "kwml:king",
+      "@type": "Archetype",
+      "name": "The King",
+      "keywords": ["sovereignty", "blessing", "order", "fertility", "centeredness"],
+      "description": "The energy of rightful authority and creative ordering. The King blesses, creates order, and ensures the fertility of the realm. Centered, calm, defines reality for others.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.25,
+        "active-receptive": 0.40,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.95, "aspects": ["blessing", "order", "centeredness"]},
+        {"primordial": "primordial:great-father", "weight": 0.70, "aspects": ["fertility", "authority"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:tyrant", "notes": "Active shadow"},
+        {"type": "SHADOW", "target": "kwml:weakling", "notes": "Passive shadow"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.75, "note": "King of gods"}
+      ]
+    },
+    {
+      "@id": "kwml:tyrant",
+      "@type": "Archetype",
+      "name": "The Tyrant (Shadow King - Active)",
+      "shadowOf": "kwml:king",
+      "shadowType": "active/inflated",
+      "keywords": ["exploitation", "cruelty", "narcissism", "destruction", "domination"],
+      "description": "The King's active shadow. Exploits rather than blesses. Demands to be mirrored but cannot mirror others. Destroys rather than creates order.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.70,
+        "light-shadow": 0.75,
+        "active-receptive": 0.15,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.85, "aspects": ["tyranny", "exploitation"]},
+        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["cruelty", "domination"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:king", "notes": "Active shadow of King"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-CRONUS", "fidelity": 0.70, "note": "Devouring father"}
+      ]
+    },
+    {
+      "@id": "kwml:weakling",
+      "@type": "Archetype",
+      "name": "The Weakling (Shadow King - Passive)",
+      "shadowOf": "kwml:king",
+      "shadowType": "passive/deflated",
+      "keywords": ["abdication", "impotence", "passivity", "lack", "withdrawal"],
+      "description": "The King's passive shadow. Abdicates responsibility, cannot establish order, lacks center. Paralyzed and ineffective.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.65,
+        "active-receptive": 0.80,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["abdication", "impotence"]},
+        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["withdrawal", "lack"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:king", "notes": "Passive shadow of King"}
+      ]
+    },
+    {
+      "@id": "kwml:warrior",
+      "@type": "Archetype",
+      "name": "The Warrior",
+      "keywords": ["aggression", "discipline", "courage", "boundaries", "destruction"],
+      "description": "The energy of aggressive action in service of a transpersonal goal. Disciplined, focused, loyal, mindful, acts decisively. Destroys for the King's vision.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.35,
+        "active-receptive": 0.10,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.95, "aspects": ["discipline", "courage", "loyalty"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:sadist", "notes": "Active shadow"},
+        {"type": "SHADOW", "target": "kwml:masochist", "notes": "Passive shadow"},
+        {"type": "COMPLEMENT", "target": "kwml:king", "notes": "Serves the King's vision"}
+      ]
+    },
+    {
+      "@id": "kwml:sadist",
+      "@type": "Archetype",
+      "name": "The Sadist (Shadow Warrior - Active)",
+      "shadowOf": "kwml:warrior",
+      "shadowType": "active/inflated",
+      "keywords": ["cruelty", "rage", "violence", "destruction", "hatred"],
+      "description": "The Warrior's active shadow. Cruelty for its own sake, destruction without purpose, rage uncontained. Violence serves ego, not transpersonal goal.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.90,
+        "light-shadow": 0.75,
+        "active-receptive": 0.05,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.20
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.85, "aspects": ["cruelty", "rage"]},
+        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["violence", "destruction"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:warrior", "notes": "Active shadow of Warrior"}
+      ]
+    },
+    {
+      "@id": "kwml:masochist",
+      "@type": "Archetype",
+      "name": "The Masochist (Shadow Warrior - Passive)",
+      "shadowOf": "kwml:warrior",
+      "shadowType": "passive/deflated",
+      "keywords": ["cowardice", "self-punishment", "victimhood", "collapse", "surrender"],
+      "description": "The Warrior's passive shadow. Cannot stand up for self, accepts abuse, turns aggression inward. Cowardice masked as humility.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.70,
+        "active-receptive": 0.85,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.80
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["victimhood", "self-punishment"]},
+        {"primordial": "primordial:outcast", "weight": 0.60, "aspects": ["surrender", "collapse"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:warrior", "notes": "Passive shadow of Warrior"}
+      ]
+    },
+    {
+      "@id": "kwml:magician",
+      "@type": "Archetype",
+      "name": "The Magician",
+      "keywords": ["awareness", "knowledge", "transformation", "technology", "initiation"],
+      "description": "The energy of initiation and transformation. Master of hidden knowledge, technology, sacred space. Contains and directs power for transformation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.95, "aspects": ["transformation", "knowledge", "initiation"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:manipulator", "notes": "Active shadow"},
+        {"type": "SHADOW", "target": "kwml:innocent", "notes": "Passive shadow"},
+        {"type": "COMPLEMENT", "target": "kwml:king", "notes": "Advises the King"}
+      ]
+    },
+    {
+      "@id": "kwml:lover",
+      "@type": "Archetype",
+      "name": "The Lover",
+      "keywords": ["connection", "passion", "aliveness", "sensuality", "empathy"],
+      "description": "The energy of play, connection, and aliveness. Deeply connected to all things through the senses. Passion, creativity, and compassion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.95, "aspects": ["passion", "connection", "aliveness"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "kwml:addicted-lover", "notes": "Active shadow"},
+        {"type": "SHADOW", "target": "kwml:impotent-lover", "notes": "Passive shadow"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "quaternio": ["kwml:king", "kwml:warrior", "kwml:magician", "kwml:lover"],
+    "shadowPairs": {
+      "king": {"active": "kwml:tyrant", "passive": "kwml:weakling"},
+      "warrior": {"active": "kwml:sadist", "passive": "kwml:masochist"},
+      "magician": {"active": "kwml:manipulator", "passive": "kwml:innocent"},
+      "lover": {"active": "kwml:addicted-lover", "passive": "kwml:impotent-lover"}
+    },
+    "axes": {
+      "order": ["kwml:king", "kwml:warrior"],
+      "transformation": ["kwml:magician", "kwml:lover"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

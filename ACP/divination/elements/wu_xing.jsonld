@@ -1,0 +1,226 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "elements:wu_xing",
+  "@type": "SymbolicSystem",
+  "name": "Wu Xing (Five Phases)",
+  "description": "The Chinese system of five elemental phases that generate and control each other in cycles. Fundamental to Chinese medicine, feng shui, astrology, and philosophy.",
+  "domain": "divination",
+  "subdomain": "elements",
+  "cardinality": 5,
+  "structuralNotes": "Not static elements but dynamic phases in constant transformation. Two cycles: generative (sheng) and controlling (ke/ko).",
+
+  "entries": [
+    {
+      "@id": "wuxing:wood",
+      "@type": "Archetype",
+      "name": "Wood (Mu)",
+      "chineseCharacter": "木",
+      "keywords": ["growth", "spring", "expansion", "birth", "vision"],
+      "qualities": {
+        "direction": "East",
+        "season": "Spring",
+        "planet": "Jupiter",
+        "color": "Green/Blue-green",
+        "emotion": "Anger",
+        "organ": "Liver/Gallbladder",
+        "taste": "Sour"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.30,
+        "active-receptive": 0.30,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["growth", "expansion", "new-beginnings"]},
+        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["spring", "birth", "potential"]}
+      ],
+      "relationships": [
+        {"type": "GENERATES", "target": "wuxing:fire", "note": "Wood feeds Fire (sheng cycle)"},
+        {"type": "CONTROLS", "target": "wuxing:earth", "note": "Wood controls Earth (ke cycle)"},
+        {"type": "CONTROLLED_BY", "target": "wuxing:metal", "note": "Metal cuts Wood"},
+        {"type": "GENERATED_BY", "target": "wuxing:water", "note": "Water nourishes Wood"},
+        {"type": "CULTURAL_ECHO", "target": "element:air", "fidelity": 0.50, "note": "Spring/expansion parallel"}
+      ]
+    },
+    {
+      "@id": "wuxing:fire",
+      "@type": "Archetype",
+      "name": "Fire (Huo)",
+      "chineseCharacter": "火",
+      "keywords": ["transformation", "summer", "passion", "joy", "illumination"],
+      "qualities": {
+        "direction": "South",
+        "season": "Summer",
+        "planet": "Mars",
+        "color": "Red",
+        "emotion": "Joy",
+        "organ": "Heart/Small Intestine",
+        "taste": "Bitter"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.20,
+        "active-receptive": 0.15,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["transformation", "illumination"]},
+        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["joy", "passion", "connection"]}
+      ],
+      "relationships": [
+        {"type": "GENERATES", "target": "wuxing:earth", "note": "Fire creates Earth/ash (sheng cycle)"},
+        {"type": "CONTROLS", "target": "wuxing:metal", "note": "Fire melts Metal (ke cycle)"},
+        {"type": "CONTROLLED_BY", "target": "wuxing:water", "note": "Water extinguishes Fire"},
+        {"type": "GENERATED_BY", "target": "wuxing:wood", "note": "Wood feeds Fire"},
+        {"type": "CULTURAL_ECHO", "target": "element:fire", "fidelity": 0.85, "note": "Direct fire parallel"}
+      ]
+    },
+    {
+      "@id": "wuxing:earth",
+      "@type": "Archetype",
+      "name": "Earth (Tu)",
+      "chineseCharacter": "土",
+      "keywords": ["stability", "center", "nourishment", "grounding", "transition"],
+      "qualities": {
+        "direction": "Center",
+        "season": "Late Summer/Transitions",
+        "planet": "Saturn",
+        "color": "Yellow/Brown",
+        "emotion": "Pensiveness/Worry",
+        "organ": "Spleen/Stomach",
+        "taste": "Sweet"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.45,
+        "active-receptive": 0.65,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["nourishment", "stability", "support"]},
+        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["grounding", "center"]}
+      ],
+      "relationships": [
+        {"type": "GENERATES", "target": "wuxing:metal", "note": "Earth produces Metal (sheng cycle)"},
+        {"type": "CONTROLS", "target": "wuxing:water", "note": "Earth dams Water (ke cycle)"},
+        {"type": "CONTROLLED_BY", "target": "wuxing:wood", "note": "Wood's roots break Earth"},
+        {"type": "GENERATED_BY", "target": "wuxing:fire", "note": "Fire creates ash/Earth"},
+        {"type": "CULTURAL_ECHO", "target": "element:earth", "fidelity": 0.85, "note": "Direct earth parallel"}
+      ]
+    },
+    {
+      "@id": "wuxing:metal",
+      "@type": "Archetype",
+      "name": "Metal (Jin)",
+      "chineseCharacter": "金",
+      "keywords": ["contraction", "autumn", "refinement", "precision", "letting-go"],
+      "qualities": {
+        "direction": "West",
+        "season": "Autumn",
+        "planet": "Venus",
+        "color": "White/Gold",
+        "emotion": "Grief/Sadness",
+        "organ": "Lung/Large Intestine",
+        "taste": "Pungent/Spicy"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["precision", "cutting", "refinement"]},
+        {"primordial": "primordial:crone", "weight": 0.55, "aspects": ["autumn", "letting-go", "grief"]}
+      ],
+      "relationships": [
+        {"type": "GENERATES", "target": "wuxing:water", "note": "Metal condenses Water (sheng cycle)"},
+        {"type": "CONTROLS", "target": "wuxing:wood", "note": "Metal cuts Wood (ke cycle)"},
+        {"type": "CONTROLLED_BY", "target": "wuxing:fire", "note": "Fire melts Metal"},
+        {"type": "GENERATED_BY", "target": "wuxing:earth", "note": "Earth produces Metal/ore"},
+        {"type": "CULTURAL_ECHO", "target": "element:air", "fidelity": 0.45, "note": "Autumn/breath parallel"}
+      ]
+    },
+    {
+      "@id": "wuxing:water",
+      "@type": "Archetype",
+      "name": "Water (Shui)",
+      "chineseCharacter": "水",
+      "keywords": ["stillness", "winter", "wisdom", "fear", "potential"],
+      "qualities": {
+        "direction": "North",
+        "season": "Winter",
+        "planet": "Mercury",
+        "color": "Black/Blue",
+        "emotion": "Fear",
+        "organ": "Kidney/Bladder",
+        "taste": "Salty"
+      },
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.60,
+        "active-receptive": 0.75,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.70, "aspects": ["wisdom", "depth", "stillness"]},
+        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["fear", "hidden-depths", "unconscious"]}
+      ],
+      "relationships": [
+        {"type": "GENERATES", "target": "wuxing:wood", "note": "Water nourishes Wood (sheng cycle)"},
+        {"type": "CONTROLS", "target": "wuxing:fire", "note": "Water extinguishes Fire (ke cycle)"},
+        {"type": "CONTROLLED_BY", "target": "wuxing:earth", "note": "Earth dams Water"},
+        {"type": "GENERATED_BY", "target": "wuxing:metal", "note": "Metal condenses Water"},
+        {"type": "CULTURAL_ECHO", "target": "element:water", "fidelity": 0.80, "note": "Direct water parallel"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "shengCycle": {
+      "description": "Generative/nourishing cycle",
+      "sequence": ["wuxing:wood", "wuxing:fire", "wuxing:earth", "wuxing:metal", "wuxing:water"],
+      "note": "Each element generates/feeds the next"
+    },
+    "keCycle": {
+      "description": "Controlling/overcoming cycle",
+      "sequence": ["wuxing:wood", "wuxing:earth", "wuxing:water", "wuxing:fire", "wuxing:metal"],
+      "note": "Each element controls/checks the next in this sequence"
+    },
+    "organPairs": {
+      "wood": "Liver-Gallbladder",
+      "fire": "Heart-Small Intestine",
+      "earth": "Spleen-Stomach",
+      "metal": "Lung-Large Intestine",
+      "water": "Kidney-Bladder"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

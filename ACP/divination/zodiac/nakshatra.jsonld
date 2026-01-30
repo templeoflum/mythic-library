@@ -1,0 +1,851 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "divination:nakshatra",
+  "@type": "DivinationSystem",
+  "name": "Vedic Nakshatras (Lunar Mansions)",
+  "description": "The 27 lunar mansions of Vedic astrology, each spanning 13°20' of the zodiac. Nakshatras represent the Moon's daily journey and provide deeper psychological nuance than sun signs.",
+  "domain": "divination",
+  "subdomain": "zodiac",
+  "cardinality": 27,
+  "structuralNotes": "27 divisions × 13°20' = 360°. Each nakshatra has a ruling deity, planet, animal symbol, and quality (deva/manushya/rakshasa). Grouped into triadic padas.",
+
+  "entries": [
+    {
+      "@id": "nakshatra:ashwini",
+      "@type": "Archetype",
+      "name": "Ashwini",
+      "devanagari": "अश्विनी",
+      "spansDegrees": "0°00' - 13°20' Aries",
+      "rulingDeity": "Ashwini Kumaras (Divine Horsemen)",
+      "rulingPlanet": "Ketu",
+      "symbol": "Horse's head",
+      "quality": "Deva (Light)",
+      "keywords": ["beginnings", "speed", "healing", "pioneering", "vitality"],
+      "description": "The first nakshatra, ruled by the divine physician twins. Represents swift new beginnings, healing abilities, and pioneering spirit.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.30,
+        "active-receptive": 0.20,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["divine-healing", "restoration"]},
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["pioneering", "swiftness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:aries", "fidelity": 0.70, "note": "First degrees of Aries"}
+      ]
+    },
+    {
+      "@id": "nakshatra:bharani",
+      "@type": "Archetype",
+      "name": "Bharani",
+      "devanagari": "भरणी",
+      "spansDegrees": "13°20' - 26°40' Aries",
+      "rulingDeity": "Yama (Lord of Death)",
+      "rulingPlanet": "Venus",
+      "symbol": "Yoni (female organ)",
+      "quality": "Manushya (Human)",
+      "keywords": ["birth", "death", "restraint", "transformation", "fertility"],
+      "description": "Ruled by Yama, the god of death. Represents the womb, birth-death cycles, and the bearing of burdens through transformation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.55,
+        "active-receptive": 0.55,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.75, "aspects": ["birth", "fertility"]},
+        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["death", "endings"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-YAMA", "fidelity": 0.75, "note": "Ruled by Yama"}
+      ]
+    },
+    {
+      "@id": "nakshatra:krittika",
+      "@type": "Archetype",
+      "name": "Krittika",
+      "devanagari": "कृत्तिका",
+      "spansDegrees": "26°40' Aries - 10°00' Taurus",
+      "rulingDeity": "Agni (Fire God)",
+      "rulingPlanet": "Sun",
+      "symbol": "Razor/flame",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["purification", "cutting", "fire", "nurturing", "criticism"],
+      "description": "The Pleiades, ruled by Agni. Sharp, purifying energy that cuts away impurities. Associated with foster-mothers of Kartikeya.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.35,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["purification", "cutting"]},
+        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["nurturing", "foster-care"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-AGNI", "fidelity": 0.80, "note": "Ruled by Agni"}
+      ]
+    },
+    {
+      "@id": "nakshatra:rohini",
+      "@type": "Archetype",
+      "name": "Rohini",
+      "devanagari": "रोहिणी",
+      "spansDegrees": "10°00' - 23°20' Taurus",
+      "rulingDeity": "Brahma (Creator)",
+      "rulingPlanet": "Moon",
+      "symbol": "Ox cart/chariot",
+      "quality": "Manushya (Human)",
+      "keywords": ["growth", "beauty", "fertility", "desire", "abundance"],
+      "description": "The red star Aldebaran. Most fertile and beautiful nakshatra, associated with growth, sensuality, and material abundance.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.30,
+        "active-receptive": 0.60,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["fertility", "growth"]},
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["beauty", "desire"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-BRAHMA", "fidelity": 0.75, "note": "Ruled by Brahma"}
+      ]
+    },
+    {
+      "@id": "nakshatra:mrigashira",
+      "@type": "Archetype",
+      "name": "Mrigashira",
+      "devanagari": "मृगशिरा",
+      "spansDegrees": "23°20' Taurus - 6°40' Gemini",
+      "rulingDeity": "Soma (Moon God)",
+      "rulingPlanet": "Mars",
+      "symbol": "Deer's head",
+      "quality": "Deva (Light)",
+      "keywords": ["searching", "curiosity", "gentleness", "quest", "wandering"],
+      "description": "The deer's head, representing the eternal search for fulfillment. Gentle, curious energy always seeking something beyond.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["seeking", "quest"]},
+        {"primordial": "primordial:divine-child", "weight": 0.55, "aspects": ["curiosity", "gentleness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:seeker", "fidelity": 0.70, "note": "Seeker archetype"}
+      ]
+    },
+    {
+      "@id": "nakshatra:ardra",
+      "@type": "Archetype",
+      "name": "Ardra",
+      "devanagari": "आर्द्रा",
+      "spansDegrees": "6°40' - 20°00' Gemini",
+      "rulingDeity": "Rudra (Storm God)",
+      "rulingPlanet": "Rahu",
+      "symbol": "Teardrop/diamond",
+      "quality": "Manushya (Human)",
+      "keywords": ["storms", "destruction", "renewal", "intensity", "effort"],
+      "description": "The star of sorrow and storms, ruled by fierce Rudra. Represents necessary destruction that leads to renewal and growth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.70,
+        "light-shadow": 0.50,
+        "active-receptive": 0.30,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["storms", "destruction"]},
+        {"primordial": "primordial:healer", "weight": 0.50, "aspects": ["renewal", "clearing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-SHIVA", "fidelity": 0.70, "note": "Rudra form of Shiva"}
+      ]
+    },
+    {
+      "@id": "nakshatra:punarvasu",
+      "@type": "Archetype",
+      "name": "Punarvasu",
+      "devanagari": "पुनर्वसु",
+      "spansDegrees": "20°00' Gemini - 3°20' Cancer",
+      "rulingDeity": "Aditi (Mother of Gods)",
+      "rulingPlanet": "Jupiter",
+      "symbol": "Bow and quiver",
+      "quality": "Deva (Light)",
+      "keywords": ["return", "renewal", "restoration", "abundance", "home"],
+      "description": "Return of the light. Associated with restoration, coming home, and the infinite abundance of the divine mother Aditi.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.30,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["abundance", "nurturing"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["restoration", "return"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:return", "fidelity": 0.65, "note": "Return home"}
+      ]
+    },
+    {
+      "@id": "nakshatra:pushya",
+      "@type": "Archetype",
+      "name": "Pushya",
+      "devanagari": "पुष्य",
+      "spansDegrees": "3°20' - 16°40' Cancer",
+      "rulingDeity": "Brihaspati (Jupiter/Priest)",
+      "rulingPlanet": "Saturn",
+      "symbol": "Flower/udder",
+      "quality": "Deva (Light)",
+      "keywords": ["nourishment", "prosperity", "teaching", "devotion", "protection"],
+      "description": "The most auspicious nakshatra for spiritual activities. Represents nourishment, teaching, and the flower of spiritual devotion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.25,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["teaching", "guidance"]},
+        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["nourishment", "protection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:cancer", "fidelity": 0.70, "note": "Cancer's nurturing nature"}
+      ]
+    },
+    {
+      "@id": "nakshatra:ashlesha",
+      "@type": "Archetype",
+      "name": "Ashlesha",
+      "devanagari": "आश्लेषा",
+      "spansDegrees": "16°40' - 30°00' Cancer",
+      "rulingDeity": "Nagas (Serpent Deities)",
+      "rulingPlanet": "Mercury",
+      "symbol": "Coiled serpent",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["kundalini", "hypnosis", "embracing", "mysticism", "clinging"],
+      "description": "The serpent's embrace. Deep mystical energy, kundalini awakening, and the power of psychological penetration.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.65,
+        "active-receptive": 0.45,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["kundalini", "mysticism"]},
+        {"primordial": "primordial:shadow", "weight": 0.60, "aspects": ["hidden-depths", "manipulation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "chakra:muladhara", "fidelity": 0.60, "note": "Serpent energy"}
+      ]
+    },
+    {
+      "@id": "nakshatra:magha",
+      "@type": "Archetype",
+      "name": "Magha",
+      "devanagari": "मघा",
+      "spansDegrees": "0°00' - 13°20' Leo",
+      "rulingDeity": "Pitris (Ancestors)",
+      "rulingPlanet": "Ketu",
+      "symbol": "Royal throne",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["ancestors", "royalty", "authority", "tradition", "legacy"],
+      "description": "The royal star at Regulus. Represents ancestral power, royal authority, and the weight of tradition and lineage.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.35,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["royalty", "authority"]},
+        {"primordial": "primordial:ancestor", "weight": 0.80, "aspects": ["lineage", "tradition"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.75, "note": "Royal authority"}
+      ]
+    },
+    {
+      "@id": "nakshatra:purva-phalguni",
+      "@type": "Archetype",
+      "name": "Purva Phalguni",
+      "devanagari": "पूर्व फाल्गुनी",
+      "spansDegrees": "13°20' - 26°40' Leo",
+      "rulingDeity": "Bhaga (God of Fortune)",
+      "rulingPlanet": "Venus",
+      "symbol": "Front legs of bed/hammock",
+      "quality": "Manushya (Human)",
+      "keywords": ["pleasure", "creativity", "romance", "relaxation", "enjoyment"],
+      "description": "The star of creative pleasure and romantic fulfillment. Associated with rest, enjoyment, and the fruits of prosperity.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.85, "aspects": ["pleasure", "romance"]},
+        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["creativity", "enjoyment"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:leo", "fidelity": 0.65, "note": "Leo's creative expression"}
+      ]
+    },
+    {
+      "@id": "nakshatra:uttara-phalguni",
+      "@type": "Archetype",
+      "name": "Uttara Phalguni",
+      "devanagari": "उत्तर फाल्गुनी",
+      "spansDegrees": "26°40' Leo - 10°00' Virgo",
+      "rulingDeity": "Aryaman (God of Contracts)",
+      "rulingPlanet": "Sun",
+      "symbol": "Back legs of bed",
+      "quality": "Manushya (Human)",
+      "keywords": ["contracts", "partnership", "service", "friendship", "commitment"],
+      "description": "The star of patronage and friendship. Represents committed partnerships, social contracts, and helpful service.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.50,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["partnership", "commitment"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["service", "help"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "nakshatra:purva-phalguni", "note": "Completes the bed pair"}
+      ]
+    },
+    {
+      "@id": "nakshatra:hasta",
+      "@type": "Archetype",
+      "name": "Hasta",
+      "devanagari": "हस्त",
+      "spansDegrees": "10°00' - 23°20' Virgo",
+      "rulingDeity": "Savitar (Sun God)",
+      "rulingPlanet": "Moon",
+      "symbol": "Hand/fist",
+      "quality": "Deva (Light)",
+      "keywords": ["skill", "craftsmanship", "healing-hands", "dexterity", "control"],
+      "description": "The hand of skill. Represents manual dexterity, craftsmanship, healing touch, and the power to manifest through action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["craftsmanship", "skill"]},
+        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["healing-hands", "touch"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:virgo", "fidelity": 0.70, "note": "Virgo's skill"}
+      ]
+    },
+    {
+      "@id": "nakshatra:chitra",
+      "@type": "Archetype",
+      "name": "Chitra",
+      "devanagari": "चित्रा",
+      "spansDegrees": "23°20' Virgo - 6°40' Libra",
+      "rulingDeity": "Vishvakarma (Divine Architect)",
+      "rulingPlanet": "Mars",
+      "symbol": "Bright jewel/pearl",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["beauty", "artistry", "brilliance", "architecture", "illusion"],
+      "description": "The bright star Spica. Represents artistic brilliance, divine architecture, and the creation of beautiful forms.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.85, "aspects": ["artistry", "architecture"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["brilliance", "illusion"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:creator", "fidelity": 0.75, "note": "Creative archetype"}
+      ]
+    },
+    {
+      "@id": "nakshatra:swati",
+      "@type": "Archetype",
+      "name": "Swati",
+      "devanagari": "स्वाति",
+      "spansDegrees": "6°40' - 20°00' Libra",
+      "rulingDeity": "Vayu (Wind God)",
+      "rulingPlanet": "Rahu",
+      "symbol": "Young plant/coral",
+      "quality": "Deva (Light)",
+      "keywords": ["independence", "flexibility", "movement", "scatter", "adaptability"],
+      "description": "The self-going star. Represents independence, flexibility, and the ability to adapt like a young plant bending in wind.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.65, "aspects": ["independence", "freedom"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["adaptability", "movement"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:libra", "fidelity": 0.60, "note": "Libra air element"}
+      ]
+    },
+    {
+      "@id": "nakshatra:vishakha",
+      "@type": "Archetype",
+      "name": "Vishakha",
+      "devanagari": "विशाखा",
+      "spansDegrees": "20°00' Libra - 3°20' Scorpio",
+      "rulingDeity": "Indra-Agni (King & Fire)",
+      "rulingPlanet": "Jupiter",
+      "symbol": "Triumphal arch/forked branch",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["determination", "ambition", "purpose", "conquest", "transformation"],
+      "description": "The star of purpose. Represents single-minded determination, the triumph that comes through focused ambition.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["determination", "conquest"]},
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["purpose", "ambition"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-INDRA", "fidelity": 0.70, "note": "Ruled by Indra"}
+      ]
+    },
+    {
+      "@id": "nakshatra:anuradha",
+      "@type": "Archetype",
+      "name": "Anuradha",
+      "devanagari": "अनुराधा",
+      "spansDegrees": "3°20' - 16°40' Scorpio",
+      "rulingDeity": "Mitra (God of Friendship)",
+      "rulingPlanet": "Saturn",
+      "symbol": "Lotus flower",
+      "quality": "Deva (Light)",
+      "keywords": ["devotion", "friendship", "success", "organization", "collaboration"],
+      "description": "The star of success through devotion. Like a lotus rising from mud, represents triumph through friendship and dedication.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["devotion", "friendship"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["success", "collaboration"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:scorpio", "fidelity": 0.65, "note": "Scorpio depths"}
+      ]
+    },
+    {
+      "@id": "nakshatra:jyeshtha",
+      "@type": "Archetype",
+      "name": "Jyeshtha",
+      "devanagari": "ज्येष्ठा",
+      "spansDegrees": "16°40' - 30°00' Scorpio",
+      "rulingDeity": "Indra (King of Gods)",
+      "rulingPlanet": "Mercury",
+      "symbol": "Earring/umbrella",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["seniority", "protection", "authority", "wealth", "responsibility"],
+      "description": "The eldest, the chief. Represents senior authority, protective power, and the responsibilities of leadership.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["authority", "seniority"]},
+        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["protection", "responsibility"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-INDRA", "fidelity": 0.75, "note": "Ruled by Indra"}
+      ]
+    },
+    {
+      "@id": "nakshatra:mula",
+      "@type": "Archetype",
+      "name": "Mula",
+      "devanagari": "मूल",
+      "spansDegrees": "0°00' - 13°20' Sagittarius",
+      "rulingDeity": "Nirriti (Goddess of Destruction)",
+      "rulingPlanet": "Ketu",
+      "symbol": "Tied roots/lion's tail",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["roots", "foundation", "destruction", "investigation", "transformation"],
+      "description": "The root star at the galactic center. Represents getting to the root of things through necessary destruction and deep investigation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.75,
+        "light-shadow": 0.60,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["uprooting", "destruction"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["investigation", "roots"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "alchemy:nigredo", "fidelity": 0.70, "note": "Dissolution phase"}
+      ]
+    },
+    {
+      "@id": "nakshatra:purva-ashadha",
+      "@type": "Archetype",
+      "name": "Purva Ashadha",
+      "devanagari": "पूर्वाषाढा",
+      "spansDegrees": "13°20' - 26°40' Sagittarius",
+      "rulingDeity": "Apas (Water Goddess)",
+      "rulingPlanet": "Venus",
+      "symbol": "Elephant tusk/fan",
+      "quality": "Manushya (Human)",
+      "keywords": ["invincibility", "purification", "victory", "rejuvenation", "pride"],
+      "description": "The invincible star. Represents the energy of early victory, purification through water, and unstoppable momentum.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["invincibility", "victory"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["purification", "rejuvenation"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "nakshatra:uttara-ashadha", "note": "Victory pair"}
+      ]
+    },
+    {
+      "@id": "nakshatra:uttara-ashadha",
+      "@type": "Archetype",
+      "name": "Uttara Ashadha",
+      "devanagari": "उत्तराषाढा",
+      "spansDegrees": "26°40' Sagittarius - 10°00' Capricorn",
+      "rulingDeity": "Vishvadevas (Universal Gods)",
+      "rulingPlanet": "Sun",
+      "symbol": "Elephant tusk/small bed",
+      "quality": "Manushya (Human)",
+      "keywords": ["final-victory", "leadership", "penetration", "permanence", "ethics"],
+      "description": "The later victory. Represents final, lasting victory that cannot be undone, achieved through righteous leadership.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["leadership", "permanence"]},
+        {"primordial": "primordial:warrior", "weight": 0.65, "aspects": ["final-victory", "ethics"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "nakshatra:purva-ashadha", "note": "Victory pair"}
+      ]
+    },
+    {
+      "@id": "nakshatra:shravana",
+      "@type": "Archetype",
+      "name": "Shravana",
+      "devanagari": "श्रवण",
+      "spansDegrees": "10°00' - 23°20' Capricorn",
+      "rulingDeity": "Vishnu (Preserver)",
+      "rulingPlanet": "Moon",
+      "symbol": "Three footprints/ear",
+      "quality": "Deva (Light)",
+      "keywords": ["listening", "learning", "connection", "media", "fame"],
+      "description": "The star of listening. Represents the power of hearing truth, learning through connection, and the spread of knowledge.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.65,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["listening", "learning"]},
+        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["connection", "knowledge"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-VISHNU", "fidelity": 0.75, "note": "Ruled by Vishnu"}
+      ]
+    },
+    {
+      "@id": "nakshatra:dhanishtha",
+      "@type": "Archetype",
+      "name": "Dhanishtha",
+      "devanagari": "धनिष्ठा",
+      "spansDegrees": "23°20' Capricorn - 6°40' Aquarius",
+      "rulingDeity": "Vasus (Eight Elemental Gods)",
+      "rulingPlanet": "Mars",
+      "symbol": "Drum/flute",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["rhythm", "wealth", "music", "abundance", "fame"],
+      "description": "The star of symphony. Represents wealth, musical talent, and the rhythmic abundance that flows through right timing.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.40,
+        "active-receptive": 0.40,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["music", "rhythm"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["abundance", "timing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:capricorn", "fidelity": 0.55, "note": "Capricorn-Aquarius"}
+      ]
+    },
+    {
+      "@id": "nakshatra:shatabhisha",
+      "@type": "Archetype",
+      "name": "Shatabhisha",
+      "devanagari": "शतभिषा",
+      "spansDegrees": "6°40' - 20°00' Aquarius",
+      "rulingDeity": "Varuna (God of Cosmic Waters)",
+      "rulingPlanet": "Rahu",
+      "symbol": "Empty circle/100 flowers",
+      "quality": "Rakshasa (Demonic)",
+      "keywords": ["healing", "veiling", "secrecy", "philosophy", "isolation"],
+      "description": "The hundred healers. Represents mysterious healing abilities, philosophical depth, and the power of solitary practice.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.50,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["mysterious-healing", "restoration"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["veiling", "secrets"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "vedic:aquarius", "fidelity": 0.70, "note": "Aquarian healing"}
+      ]
+    },
+    {
+      "@id": "nakshatra:purva-bhadrapada",
+      "@type": "Archetype",
+      "name": "Purva Bhadrapada",
+      "devanagari": "पूर्वभाद्रपदा",
+      "spansDegrees": "20°00' Aquarius - 3°20' Pisces",
+      "rulingDeity": "Aja Ekapada (One-Footed Goat)",
+      "rulingPlanet": "Jupiter",
+      "symbol": "Front of funeral cot/sword",
+      "quality": "Manushya (Human)",
+      "keywords": ["transformation", "austerity", "fire", "purification", "severity"],
+      "description": "The scorching star. Represents severe transformation through fire, the burning away of impurities, and austere practices.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.55,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["fire", "severity"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["transformation", "austerity"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "nakshatra:uttara-bhadrapada", "note": "Funeral cot pair"}
+      ]
+    },
+    {
+      "@id": "nakshatra:uttara-bhadrapada",
+      "@type": "Archetype",
+      "name": "Uttara Bhadrapada",
+      "devanagari": "उत्तरभाद्रपदा",
+      "spansDegrees": "3°20' - 16°40' Pisces",
+      "rulingDeity": "Ahirbudhnya (Serpent of the Deep)",
+      "rulingPlanet": "Saturn",
+      "symbol": "Back of funeral cot/twins",
+      "quality": "Manushya (Human)",
+      "keywords": ["depth", "kundalini", "withdrawal", "wisdom", "compassion"],
+      "description": "The warrior star. Represents deep wisdom gained through withdrawal, kundalini mastery, and compassionate depth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.60,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["depth", "wisdom"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["kundalini", "withdrawal"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "nakshatra:purva-bhadrapada", "note": "Funeral cot pair"}
+      ]
+    },
+    {
+      "@id": "nakshatra:revati",
+      "@type": "Archetype",
+      "name": "Revati",
+      "devanagari": "रेवती",
+      "spansDegrees": "16°40' - 30°00' Pisces",
+      "rulingDeity": "Pushan (Nourisher/Guide)",
+      "rulingPlanet": "Mercury",
+      "symbol": "Fish/drum",
+      "quality": "Deva (Light)",
+      "keywords": ["nourishment", "journey", "completion", "prosperity", "guidance"],
+      "description": "The wealthy star. The final nakshatra, representing completion of the journey, safe passage, and abundant nourishment.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.75, "aspects": ["guidance", "safe-passage"]},
+        {"primordial": "primordial:great-mother", "weight": 0.65, "aspects": ["nourishment", "prosperity"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "nakshatra:ashwini", "note": "Cycle completes and begins anew"},
+        {"type": "CULTURAL_ECHO", "target": "vedic:pisces", "fidelity": 0.70, "note": "Final degrees of Pisces"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "qualityGroups": {
+      "deva": ["ashwini", "mrigashira", "punarvasu", "pushya", "hasta", "swati", "anuradha", "shravana", "revati"],
+      "manushya": ["bharani", "rohini", "purva-phalguni", "uttara-phalguni", "purva-ashadha", "uttara-ashadha", "purva-bhadrapada", "uttara-bhadrapada"],
+      "rakshasa": ["krittika", "ashlesha", "magha", "chitra", "vishakha", "jyeshtha", "mula", "dhanishtha", "shatabhisha"]
+    },
+    "planetaryRulers": {
+      "ketu": ["ashwini", "magha", "mula"],
+      "venus": ["bharani", "purva-phalguni", "purva-ashadha"],
+      "sun": ["krittika", "uttara-phalguni", "uttara-ashadha"],
+      "moon": ["rohini", "hasta", "shravana"],
+      "mars": ["mrigashira", "chitra", "dhanishtha"],
+      "rahu": ["ardra", "swati", "shatabhisha"],
+      "jupiter": ["punarvasu", "vishakha", "purva-bhadrapada"],
+      "saturn": ["pushya", "anuradha", "uttara-bhadrapada"],
+      "mercury": ["ashlesha", "jyeshtha", "revati"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

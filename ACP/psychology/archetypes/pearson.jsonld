@@ -1,0 +1,352 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:pearson",
+  "@type": "PsychologicalSystem",
+  "name": "Carol Pearson's Twelve Archetypes",
+  "description": "Carol Pearson's model of 12 archetypes that guide the hero's journey of self-development. Organized into three stages of ego, soul, and Self development.",
+  "domain": "psychology",
+  "subdomain": "archetypes",
+  "cardinality": 12,
+  "structuralNotes": "Based on Pearson's 'Awakening the Heroes Within' (1991). Three groups of four: Preparation (Ego), Journey (Soul), Return (Self).",
+
+  "entries": [
+    {
+      "@id": "pearson:innocent",
+      "@type": "Archetype",
+      "name": "The Innocent",
+      "stage": "Preparation (Ego)",
+      "coreDesire": "To live in paradise",
+      "coreFear": "Doing something wrong that will provoke punishment",
+      "keywords": ["optimism", "faith", "trust", "simplicity", "purity"],
+      "description": "Maintains faith and optimism. Seeks safety and wants to be happy. The eternal optimist who trusts in goodness.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.20,
+        "active-receptive": 0.60,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.85, "aspects": ["innocence", "trust", "optimism"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "pearson:destroyer", "axis": "creation-destruction"},
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_7", "fidelity": 0.55, "note": "Optimism/avoidance"}
+      ]
+    },
+    {
+      "@id": "pearson:orphan",
+      "@type": "Archetype",
+      "name": "The Orphan (Everyman)",
+      "stage": "Preparation (Ego)",
+      "coreDesire": "To connect with others",
+      "coreFear": "Being left out or standing out from the crowd",
+      "keywords": ["realism", "empathy", "belonging", "solidarity", "wounds"],
+      "description": "Learns to survive, cope, and find belonging. The wounded one who seeks connection through shared pain.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.60,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["wounds", "abandonment"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["empathy", "belonging"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "pearson:warrior", "note": "Ego develops strength"}
+      ]
+    },
+    {
+      "@id": "pearson:warrior",
+      "@type": "Archetype",
+      "name": "The Warrior",
+      "stage": "Preparation (Ego)",
+      "coreDesire": "To prove one's worth through courageous action",
+      "coreFear": "Weakness, vulnerability",
+      "keywords": ["courage", "discipline", "competence", "mastery", "boundaries"],
+      "description": "Develops discipline, courage, and skill. Fights for what matters and establishes clear boundaries.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.90, "aspects": ["courage", "discipline", "mastery"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "kwml:warrior", "fidelity": 0.85, "note": "Moore's warrior"}
+      ]
+    },
+    {
+      "@id": "pearson:caregiver",
+      "@type": "Archetype",
+      "name": "The Caregiver",
+      "stage": "Preparation (Ego)",
+      "coreDesire": "To protect and care for others",
+      "coreFear": "Selfishness, ingratitude",
+      "keywords": ["compassion", "generosity", "nurturing", "sacrifice", "protection"],
+      "description": "Provides care and protection for others. The nurturing parent who gives of themselves.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.30,
+        "active-receptive": 0.65,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["nurturing", "protection", "sacrifice"]},
+        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["compassion", "care"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_2", "fidelity": 0.80, "note": "Helper archetype"}
+      ]
+    },
+    {
+      "@id": "pearson:seeker",
+      "@type": "Archetype",
+      "name": "The Seeker (Explorer)",
+      "stage": "Journey (Soul)",
+      "coreDesire": "To find a better life",
+      "coreFear": "Conformity, inner emptiness",
+      "keywords": ["autonomy", "ambition", "identity", "exploration", "freedom"],
+      "description": "Searches for unique identity and authentic self. The explorer who journeys to find truth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.30,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["journey", "seeking", "exploration"]},
+        {"primordial": "primordial:rebel", "weight": 0.55, "aspects": ["autonomy", "freedom"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:departure", "fidelity": 0.75, "note": "Journey begins"}
+      ]
+    },
+    {
+      "@id": "pearson:destroyer",
+      "@type": "Archetype",
+      "name": "The Destroyer",
+      "stage": "Journey (Soul)",
+      "coreDesire": "Metamorphosis, death-rebirth",
+      "coreFear": "Annihilation, loss of control",
+      "keywords": ["letting-go", "metamorphosis", "revolution", "endings", "release"],
+      "description": "Allows death of the old self to make way for the new. Facilitates necessary endings.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.80,
+        "light-shadow": 0.60,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.85,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["endings", "metamorphosis", "release"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "pearson:innocent", "axis": "creation-destruction"},
+        {"type": "CULTURAL_ECHO", "target": "alchemy:nigredo", "fidelity": 0.75, "note": "Dissolution phase"}
+      ]
+    },
+    {
+      "@id": "pearson:lover",
+      "@type": "Archetype",
+      "name": "The Lover",
+      "stage": "Journey (Soul)",
+      "coreDesire": "Intimacy and experience",
+      "coreFear": "Loss of love, not being loved",
+      "keywords": ["passion", "commitment", "bliss", "following-heart", "connection"],
+      "description": "Follows the heart's desire, commits to what is loved. Experience of bliss and passion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.90, "aspects": ["passion", "commitment", "connection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "kwml:lover", "fidelity": 0.85, "note": "Moore's lover"}
+      ]
+    },
+    {
+      "@id": "pearson:creator",
+      "@type": "Archetype",
+      "name": "The Creator",
+      "stage": "Journey (Soul)",
+      "coreDesire": "To create something of enduring value",
+      "coreFear": "Mediocrity, being unoriginal",
+      "keywords": ["creativity", "imagination", "vision", "authenticity", "expression"],
+      "description": "Creates something new that expresses unique vision. The artist who births new realities.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.30,
+        "active-receptive": 0.30,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.95, "aspects": ["creativity", "vision", "expression"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "pearson:destroyer", "axis": "creation-destruction"}
+      ]
+    },
+    {
+      "@id": "pearson:ruler",
+      "@type": "Archetype",
+      "name": "The Ruler",
+      "stage": "Return (Self)",
+      "coreDesire": "Control, order",
+      "coreFear": "Chaos, being overthrown",
+      "keywords": ["responsibility", "control", "order", "power", "leadership"],
+      "description": "Takes responsibility for life and creates order. The sovereign who rules their own kingdom.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.30,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.90, "aspects": ["control", "order", "leadership"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.85, "note": "Moore's king"}
+      ]
+    },
+    {
+      "@id": "pearson:magician",
+      "@type": "Archetype",
+      "name": "The Magician",
+      "stage": "Return (Self)",
+      "coreDesire": "Transformation of reality",
+      "coreFear": "Unintended negative consequences",
+      "keywords": ["transformation", "vision", "healing", "power", "manifestation"],
+      "description": "Transforms reality through vision and will. Understands and works with fundamental laws.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.95, "aspects": ["transformation", "vision", "healing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "kwml:magician", "fidelity": 0.90, "note": "Moore's magician"}
+      ]
+    },
+    {
+      "@id": "pearson:sage",
+      "@type": "Archetype",
+      "name": "The Sage",
+      "stage": "Return (Self)",
+      "coreDesire": "To understand the world",
+      "coreFear": "Being duped, ignorance",
+      "keywords": ["wisdom", "truth", "knowledge", "discernment", "understanding"],
+      "description": "Seeks truth and understanding. The wise one who sees through illusion to deeper reality.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.60,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.95, "aspects": ["wisdom", "truth", "understanding"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "enneagram:type_5", "fidelity": 0.75, "note": "Investigator"}
+      ]
+    },
+    {
+      "@id": "pearson:jester",
+      "@type": "Archetype",
+      "name": "The Jester (Fool)",
+      "stage": "Return (Self)",
+      "coreDesire": "To live in the moment with full enjoyment",
+      "coreFear": "Being boring or bored",
+      "keywords": ["joy", "humor", "lightness", "play", "present-moment"],
+      "description": "Lives in joy and the present moment. Teaches through humor and play, revealing truth through laughter.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["humor", "play", "disruption"]},
+        {"primordial": "primordial:divine-child", "weight": 0.60, "aspects": ["joy", "lightness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.80, "note": "Tarot Fool"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "stages": {
+      "preparation": ["pearson:innocent", "pearson:orphan", "pearson:warrior", "pearson:caregiver"],
+      "journey": ["pearson:seeker", "pearson:destroyer", "pearson:lover", "pearson:creator"],
+      "return": ["pearson:ruler", "pearson:magician", "pearson:sage", "pearson:jester"]
+    },
+    "developmentalArc": {
+      "ego": "preparation",
+      "soul": "journey",
+      "self": "return"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

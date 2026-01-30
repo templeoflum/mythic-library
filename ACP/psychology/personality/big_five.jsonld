@@ -1,0 +1,165 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:big_five",
+  "@type": "PsychologicalSystem",
+  "name": "Big Five (OCEAN) Personality Factors",
+  "description": "The five broad dimensions of personality established through factor analysis: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+  "domain": "psychology",
+  "subdomain": "personality",
+  "cardinality": 5,
+  "structuralNotes": "Based on Goldberg, Costa & McCrae's research. Trait-based model where each factor is a spectrum. Widely validated across cultures.",
+
+  "entries": [
+    {
+      "@id": "ocean:openness",
+      "@type": "Archetype",
+      "name": "Openness to Experience",
+      "acronymLetter": "O",
+      "highTraits": ["curious", "creative", "imaginative", "unconventional", "artistic"],
+      "lowTraits": ["practical", "conventional", "concrete", "traditional", "routine"],
+      "keywords": ["imagination", "creativity", "curiosity", "aesthetics", "ideas"],
+      "description": "The dimension of intellectual curiosity, creativity, and preference for novelty. High openness embraces new experiences and abstract thinking.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["creativity", "imagination"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["curiosity", "ideas"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:seeker", "fidelity": 0.70, "note": "Seeking new experience"}
+      ]
+    },
+    {
+      "@id": "ocean:conscientiousness",
+      "@type": "Archetype",
+      "name": "Conscientiousness",
+      "acronymLetter": "C",
+      "highTraits": ["organized", "disciplined", "dependable", "achievement-oriented", "thorough"],
+      "lowTraits": ["spontaneous", "flexible", "careless", "unreliable", "disorganized"],
+      "keywords": ["order", "discipline", "duty", "achievement", "self-control"],
+      "description": "The dimension of organization, dependability, and goal-directed behavior. High conscientiousness is disciplined and achievement-focused.",
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.80, "aspects": ["order", "discipline"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["achievement", "self-control"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:ruler", "fidelity": 0.65, "note": "Order and control"}
+      ]
+    },
+    {
+      "@id": "ocean:extraversion",
+      "@type": "Archetype",
+      "name": "Extraversion",
+      "acronymLetter": "E",
+      "highTraits": ["outgoing", "energetic", "talkative", "assertive", "sociable"],
+      "lowTraits": ["reserved", "solitary", "quiet", "reflective", "independent"],
+      "keywords": ["sociability", "energy", "assertiveness", "enthusiasm", "activity"],
+      "description": "The dimension of social energy, assertiveness, and positive emotions. High extraversion is energized by social interaction.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.25,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["sociability", "enthusiasm"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["assertiveness", "energy"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:lover", "fidelity": 0.60, "note": "Connection and energy"}
+      ]
+    },
+    {
+      "@id": "ocean:agreeableness",
+      "@type": "Archetype",
+      "name": "Agreeableness",
+      "acronymLetter": "A",
+      "highTraits": ["trusting", "cooperative", "helpful", "empathetic", "kind"],
+      "lowTraits": ["skeptical", "competitive", "antagonistic", "detached", "challenging"],
+      "keywords": ["compassion", "cooperation", "trust", "altruism", "harmony"],
+      "description": "The dimension of cooperation, trust, and concern for others. High agreeableness prioritizes social harmony and helping others.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.30,
+        "active-receptive": 0.60,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["compassion", "helping"]},
+        {"primordial": "primordial:great-mother", "weight": 0.60, "aspects": ["nurturing", "trust"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:caregiver", "fidelity": 0.80, "note": "Caring for others"}
+      ]
+    },
+    {
+      "@id": "ocean:neuroticism",
+      "@type": "Archetype",
+      "name": "Neuroticism",
+      "acronymLetter": "N",
+      "highTraits": ["anxious", "emotional", "moody", "self-conscious", "vulnerable"],
+      "lowTraits": ["calm", "stable", "secure", "confident", "resilient"],
+      "keywords": ["anxiety", "emotionality", "vulnerability", "instability", "negativity"],
+      "description": "The dimension of emotional instability and negative affect. High neuroticism experiences more anxiety, mood swings, and stress.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.65,
+        "active-receptive": 0.60,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.70, "aspects": ["anxiety", "vulnerability"]},
+        {"primordial": "primordial:outcast", "weight": 0.55, "aspects": ["instability", "self-consciousness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:orphan", "fidelity": 0.60, "note": "Wounded awareness"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "acronym": "OCEAN",
+    "empiricalCorrelations": {
+      "conscientiousness_agreeableness": "Both predict pro-social behavior",
+      "openness_extraversion": "Both associated with positive affect",
+      "neuroticism_agreeableness": "Inversely correlated"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

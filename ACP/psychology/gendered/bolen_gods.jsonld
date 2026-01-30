@@ -1,0 +1,256 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:bolen_gods",
+  "@type": "PsychologicalSystem",
+  "name": "Bolen's Gods in Everyman",
+  "description": "Jean Shinoda Bolen's archetypal framework of eight Greek gods representing patterns in men's psyches. Each god type has characteristic motivations, strengths, and shadow elements.",
+  "domain": "psychology",
+  "subdomain": "gendered",
+  "cardinality": 8,
+  "structuralNotes": "Based on Bolen's 1989 'Gods in Everyman'. Three categories: father gods (Zeus, Poseidon, Hades), sons (Apollo, Hermes, Ares, Hephaestus, Dionysus).",
+
+  "entries": [
+    {
+      "@id": "bolen:zeus",
+      "@type": "Archetype",
+      "name": "Zeus",
+      "category": "Father God (Sky)",
+      "greekGod": "Zeus",
+      "keywords": ["authority", "power", "realm", "alliances", "dominion"],
+      "description": "The king of gods. Represents the drive for power, authority, and strategic alliances. The executive archetype who builds kingdoms and takes command.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.30,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.95, "aspects": ["authority", "power"]},
+        {"primordial": "primordial:great-father", "weight": 0.75, "aspects": ["dominion", "alliances"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:king", "fidelity": 0.90, "note": "King archetype"}
+      ]
+    },
+    {
+      "@id": "bolen:poseidon",
+      "@type": "Archetype",
+      "name": "Poseidon",
+      "category": "Father God (Sea)",
+      "greekGod": "Poseidon",
+      "keywords": ["emotion", "instinct", "depth", "storms", "realm"],
+      "description": "The god of the sea. Represents the realm of feeling and instinct, emotional depth, and tempestuous passions. The powerful undercurrent of the emotional life.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.50,
+        "active-receptive": 0.45,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-father", "weight": 0.70, "aspects": ["realm", "power"]},
+        {"primordial": "primordial:shadow", "weight": 0.60, "aspects": ["storms", "instinct"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-POSEIDON", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "COMPLEMENT", "target": "bolen:zeus", "note": "Brother realms"}
+      ]
+    },
+    {
+      "@id": "bolen:hades",
+      "@type": "Archetype",
+      "name": "Hades",
+      "category": "Father God (Underworld)",
+      "greekGod": "Hades",
+      "keywords": ["unconscious", "wealth", "depth", "introversion", "riches"],
+      "description": "The god of the underworld. Represents the realm of the unconscious, hidden wealth, and the riches found in psychological depth. The introverted soul-searcher.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.70,
+        "active-receptive": 0.65,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["realm", "wealth"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.70, "aspects": ["underworld", "depth"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HADES", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "COMPLEMENT", "target": "bolen:poseidon", "note": "Brother realms"}
+      ]
+    },
+    {
+      "@id": "bolen:apollo",
+      "@type": "Archetype",
+      "name": "Apollo",
+      "category": "Son (Favored)",
+      "greekGod": "Apollo",
+      "keywords": ["clarity", "order", "achievement", "light", "distance"],
+      "description": "The god of sun and reason. Represents clear thinking, goals, order, and achievement. The achiever who values clarity but may lack emotional depth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.25,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["achievement", "goals"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["clarity", "order"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-APOLLO", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "POLAR_OPPOSITE", "target": "bolen:dionysus", "axis": "order-chaos", "note": "Apollonian vs Dionysian"}
+      ]
+    },
+    {
+      "@id": "bolen:hermes",
+      "@type": "Archetype",
+      "name": "Hermes",
+      "category": "Son (Messenger)",
+      "greekGod": "Hermes",
+      "keywords": ["communication", "trickster", "guide", "boundaries", "invention"],
+      "description": "The messenger god. Represents communication, crossing boundaries, and the trickster spirit. The guide who moves between worlds and facilitates transitions.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["boundaries", "invention"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.75, "aspects": ["guide", "messenger"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "pearson:jester", "fidelity": 0.65, "note": "Trickster energy"}
+      ]
+    },
+    {
+      "@id": "bolen:ares",
+      "@type": "Archetype",
+      "name": "Ares",
+      "category": "Son (Rejected)",
+      "greekGod": "Ares",
+      "keywords": ["warrior", "intensity", "physicality", "reactivity", "passion"],
+      "description": "The god of war. Represents the embodied warrior, physical intensity, and reactive passion. Often rejected or devalued, connected to body and action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.50,
+        "active-receptive": 0.15,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.90, "aspects": ["combat", "intensity"]},
+        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["passion", "physicality"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARES", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:warrior", "fidelity": 0.85, "note": "Warrior archetype"}
+      ]
+    },
+    {
+      "@id": "bolen:hephaestus",
+      "@type": "Archetype",
+      "name": "Hephaestus",
+      "category": "Son (Rejected)",
+      "greekGod": "Hephaestus",
+      "keywords": ["craft", "creation", "wounds", "work", "introversion"],
+      "description": "The god of forge. Represents the wounded craftsman who creates beauty through work. The introverted creator whose rejection becomes the source of his art.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.50,
+        "active-receptive": 0.55,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.90, "aspects": ["craft", "creation"]},
+        {"primordial": "primordial:outcast", "weight": 0.65, "aspects": ["wounds", "rejection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HEPHAESTUS", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "pearson:creator", "fidelity": 0.80, "note": "Creator archetype"}
+      ]
+    },
+    {
+      "@id": "bolen:dionysus",
+      "@type": "Archetype",
+      "name": "Dionysus",
+      "category": "Son (Ecstatic)",
+      "greekGod": "Dionysus",
+      "keywords": ["ecstasy", "mysticism", "passion", "surrender", "intensity"],
+      "description": "The god of wine and ecstasy. Represents mystical union, surrender to experience, and transformative passion. The ecstatic who dissolves boundaries.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.55,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.80, "aspects": ["ecstasy", "passion"]},
+        {"primordial": "primordial:trickster", "weight": 0.60, "aspects": ["dissolution", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-DIONYSUS", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "POLAR_OPPOSITE", "target": "bolen:apollo", "axis": "order-chaos", "note": "Dionysian vs Apollonian"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:lover", "fidelity": 0.75, "note": "Ecstatic lover"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "categories": {
+      "father_gods": ["bolen:zeus", "bolen:poseidon", "bolen:hades"],
+      "sons": ["bolen:apollo", "bolen:hermes", "bolen:ares", "bolen:hephaestus", "bolen:dionysus"]
+    },
+    "fatherSonDynamics": {
+      "favored": ["bolen:apollo"],
+      "messenger": ["bolen:hermes"],
+      "rejected": ["bolen:ares", "bolen:hephaestus"],
+      "ecstatic": ["bolen:dionysus"]
+    },
+    "realms": {
+      "sky": "bolen:zeus",
+      "sea": "bolen:poseidon",
+      "underworld": "bolen:hades"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

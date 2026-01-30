@@ -1,0 +1,147 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:myss",
+  "@type": "PsychologicalSystem",
+  "name": "Caroline Myss Sacred Contract Archetypes",
+  "description": "The four survival archetypes present in every person according to Caroline Myss's Sacred Contracts model. These archetypes represent universal patterns of survival and self-discovery.",
+  "domain": "psychology",
+  "subdomain": "archetypes",
+  "cardinality": 4,
+  "structuralNotes": "Based on Myss's 2001 'Sacred Contracts'. Four universal archetypes present in everyone, plus personal archetypes. Each has light and shadow aspects.",
+
+  "entries": [
+    {
+      "@id": "myss:child",
+      "@type": "Archetype",
+      "name": "The Child",
+      "category": "Survival Archetype",
+      "universalPresence": true,
+      "lightAttributes": ["innocence", "wonder", "playfulness", "trust", "new-beginnings"],
+      "shadowAttributes": ["dependency", "victimhood", "manipulation", "tantrums", "naivety"],
+      "keywords": ["innocence", "dependency", "wonder", "vulnerability", "beginnings"],
+      "description": "The archetype of innocence, dependency, and new beginnings. Encompasses our original nature and the foundation of our emotional patterns. Can appear as Orphan, Wounded, Magical, Nature, or Eternal Child.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.40,
+        "active-receptive": 0.60,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.95, "aspects": ["innocence", "wonder", "beginnings"]},
+        {"primordial": "primordial:outcast", "weight": 0.50, "aspects": ["vulnerability", "dependency"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:innocent", "fidelity": 0.80, "note": "Innocent archetype"},
+        {"type": "CULTURAL_ECHO", "target": "jungian:divine_child", "fidelity": 0.90, "note": "Jungian divine child"}
+      ]
+    },
+    {
+      "@id": "myss:victim",
+      "@type": "Archetype",
+      "name": "The Victim",
+      "category": "Survival Archetype",
+      "universalPresence": true,
+      "lightAttributes": ["self-protection", "boundaries", "empowerment", "recognition", "transformation"],
+      "shadowAttributes": ["blame", "helplessness", "martyrdom", "manipulation", "passivity"],
+      "keywords": ["victimization", "boundaries", "self-worth", "empowerment", "recognition"],
+      "description": "The archetype that guards self-esteem and teaches us to recognize when we are being victimized or victimizing ourselves. Key to establishing boundaries and recognizing personal power.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.60,
+        "active-receptive": 0.65,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.75, "aspects": ["vulnerability", "suffering"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["recognition", "boundaries"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:orphan", "fidelity": 0.70, "note": "Wounded awareness"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:masochist", "fidelity": 0.60, "note": "Shadow warrior"}
+      ]
+    },
+    {
+      "@id": "myss:prostitute",
+      "@type": "Archetype",
+      "name": "The Prostitute",
+      "category": "Survival Archetype",
+      "universalPresence": true,
+      "lightAttributes": ["faith", "integrity", "self-worth", "survival-wisdom", "resilience"],
+      "shadowAttributes": ["selling-out", "compromise", "seduction", "manipulation", "betrayal"],
+      "keywords": ["integrity", "faith", "survival", "selling-out", "self-worth"],
+      "description": "The archetype that tests our faith and integrity by presenting situations where we might sell out our ethics or morals for security. Guardian of faith in ourselves.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.55,
+        "active-receptive": 0.50,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["testing", "temptation"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["survival", "negotiation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:temptation", "fidelity": 0.65, "note": "Test of integrity"}
+      ]
+    },
+    {
+      "@id": "myss:saboteur",
+      "@type": "Archetype",
+      "name": "The Saboteur",
+      "category": "Survival Archetype",
+      "universalPresence": true,
+      "lightAttributes": ["choice-awareness", "intuition", "timing", "self-knowledge", "protection"],
+      "shadowAttributes": ["self-destruction", "fear", "undermining", "procrastination", "disruption"],
+      "keywords": ["sabotage", "choice", "fear", "intuition", "self-destruction"],
+      "description": "The archetype that highlights our fears and issues around choice, change, and self-empowerment. Can either protect us from destructive situations or undermine our own success.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.60,
+        "active-receptive": 0.45,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.80, "aspects": ["sabotage", "fear"]},
+        {"primordial": "primordial:trickster", "weight": 0.60, "aspects": ["choice", "disruption"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "jungian:shadow", "fidelity": 0.75, "note": "Shadow self"},
+        {"type": "CULTURAL_ECHO", "target": "propp:false-hero", "fidelity": 0.50, "note": "Self-undermining"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "survivalQuartet": ["myss:child", "myss:victim", "myss:prostitute", "myss:saboteur"],
+    "universalPresence": "All four archetypes are present in every person's sacred contract",
+    "functionalRoles": {
+      "emotional_foundation": "myss:child",
+      "boundary_guardian": "myss:victim",
+      "integrity_tester": "myss:prostitute",
+      "choice_guardian": "myss:saboteur"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

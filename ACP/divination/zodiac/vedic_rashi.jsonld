@@ -1,0 +1,371 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "zodiac:vedic_rashi",
+  "@type": "SymbolicSystem",
+  "name": "Vedic Rashi (Jyotish Zodiac Signs)",
+  "description": "The 12 zodiac signs of Vedic astrology (Jyotish). Uses sidereal zodiac rather than tropical, with approximately 24-degree offset from Western signs.",
+  "domain": "divination",
+  "subdomain": "zodiac",
+  "cardinality": 12,
+  "structuralNotes": "Sidereal zodiac aligned with actual constellations. Each rashi has ruling planet, element, modality, and associated nakshatra divisions.",
+
+  "entries": [
+    {
+      "@id": "rashi:mesha",
+      "@type": "Archetype",
+      "name": "Mesha (Aries)",
+      "sanskritName": "मेष",
+      "westernEquivalent": "Aries",
+      "rulingPlanet": "Mars (Mangala)",
+      "element": "Fire",
+      "modality": "Movable (Chara)",
+      "keywords": ["courage", "initiative", "leadership", "pioneering", "independence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.30,
+        "active-receptive": 0.15,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["courage", "initiative"]},
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["pioneering", "leadership"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:aries", "fidelity": 0.90, "note": "Western equivalent with sidereal offset"}
+      ]
+    },
+    {
+      "@id": "rashi:vrishabha",
+      "@type": "Archetype",
+      "name": "Vrishabha (Taurus)",
+      "sanskritName": "वृषभ",
+      "westernEquivalent": "Taurus",
+      "rulingPlanet": "Venus (Shukra)",
+      "element": "Earth",
+      "modality": "Fixed (Sthira)",
+      "keywords": ["stability", "sensuality", "wealth", "endurance", "pleasure"],
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.70,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.20,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.80, "aspects": ["stability", "endurance"]},
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["sensuality", "pleasure"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:taurus", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:mithuna",
+      "@type": "Archetype",
+      "name": "Mithuna (Gemini)",
+      "sanskritName": "मिथुन",
+      "westernEquivalent": "Gemini",
+      "rulingPlanet": "Mercury (Budha)",
+      "element": "Air",
+      "modality": "Dual (Dwiswabhava)",
+      "keywords": ["communication", "intellect", "duality", "adaptability", "curiosity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["communication", "adaptability"]},
+        {"primordial": "primordial:twin", "weight": 0.75, "aspects": ["duality", "mirroring"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:gemini", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:karka",
+      "@type": "Archetype",
+      "name": "Karka (Cancer)",
+      "sanskritName": "कर्क",
+      "westernEquivalent": "Cancer",
+      "rulingPlanet": "Moon (Chandra)",
+      "element": "Water",
+      "modality": "Movable (Chara)",
+      "keywords": ["nurturing", "emotion", "home", "intuition", "protection"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.50,
+        "active-receptive": 0.80,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["nurturing", "protection"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["emotion", "intuition"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:cancer", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:simha",
+      "@type": "Archetype",
+      "name": "Simha (Leo)",
+      "sanskritName": "सिंह",
+      "westernEquivalent": "Leo",
+      "rulingPlanet": "Sun (Surya)",
+      "element": "Fire",
+      "modality": "Fixed (Sthira)",
+      "keywords": ["royalty", "creativity", "pride", "generosity", "leadership"],
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.20,
+        "active-receptive": 0.20,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.85, "aspects": ["royalty", "leadership"]},
+        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["creativity", "expression"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:leo", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:kanya",
+      "@type": "Archetype",
+      "name": "Kanya (Virgo)",
+      "sanskritName": "कन्या",
+      "westernEquivalent": "Virgo",
+      "rulingPlanet": "Mercury (Budha)",
+      "element": "Earth",
+      "modality": "Dual (Dwiswabhava)",
+      "keywords": ["analysis", "service", "healing", "discernment", "purity"],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.55,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["service", "healing"]},
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["purity", "discernment"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:virgo", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:tula",
+      "@type": "Archetype",
+      "name": "Tula (Libra)",
+      "sanskritName": "तुला",
+      "westernEquivalent": "Libra",
+      "rulingPlanet": "Venus (Shukra)",
+      "element": "Air",
+      "modality": "Movable (Chara)",
+      "keywords": ["balance", "harmony", "partnership", "justice", "beauty"],
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["partnership", "harmony"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.55, "aspects": ["justice", "balance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:libra", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:vrishchika",
+      "@type": "Archetype",
+      "name": "Vrishchika (Scorpio)",
+      "sanskritName": "वृश्चिक",
+      "westernEquivalent": "Scorpio",
+      "rulingPlanet": "Mars (Mangala), Ketu",
+      "element": "Water",
+      "modality": "Fixed (Sthira)",
+      "keywords": ["intensity", "transformation", "mystery", "power", "depth"],
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.70,
+        "active-receptive": 0.40,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["transformation", "power"]},
+        {"primordial": "primordial:shadow", "weight": 0.70, "aspects": ["depth", "mystery"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:scorpio", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:dhanu",
+      "@type": "Archetype",
+      "name": "Dhanu (Sagittarius)",
+      "sanskritName": "धनु",
+      "westernEquivalent": "Sagittarius",
+      "rulingPlanet": "Jupiter (Guru)",
+      "element": "Fire",
+      "modality": "Dual (Dwiswabhava)",
+      "keywords": ["wisdom", "expansion", "philosophy", "adventure", "truth"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.25,
+        "active-receptive": 0.30,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["wisdom", "philosophy"]},
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["adventure", "expansion"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:sagittarius", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:makara",
+      "@type": "Archetype",
+      "name": "Makara (Capricorn)",
+      "sanskritName": "मकर",
+      "westernEquivalent": "Capricorn",
+      "rulingPlanet": "Saturn (Shani)",
+      "element": "Earth",
+      "modality": "Movable (Chara)",
+      "keywords": ["ambition", "discipline", "structure", "authority", "achievement"],
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["authority", "structure"]},
+        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["discipline", "ambition"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:capricorn", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:kumbha",
+      "@type": "Archetype",
+      "name": "Kumbha (Aquarius)",
+      "sanskritName": "कुम्भ",
+      "westernEquivalent": "Aquarius",
+      "rulingPlanet": "Saturn (Shani), Rahu",
+      "element": "Air",
+      "modality": "Fixed (Sthira)",
+      "keywords": ["innovation", "humanity", "detachment", "idealism", "originality"],
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:rebel", "weight": 0.75, "aspects": ["innovation", "originality"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.55, "aspects": ["humanity", "idealism"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:aquarius", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    },
+    {
+      "@id": "rashi:meena",
+      "@type": "Archetype",
+      "name": "Meena (Pisces)",
+      "sanskritName": "मीन",
+      "westernEquivalent": "Pisces",
+      "rulingPlanet": "Jupiter (Guru), Ketu",
+      "element": "Water",
+      "modality": "Dual (Dwiswabhava)",
+      "keywords": ["spirituality", "compassion", "dissolution", "dreams", "transcendence"],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.80,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["compassion", "spirituality"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.60, "aspects": ["dissolution", "transcendence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:pisces", "fidelity": 0.90, "note": "Western equivalent"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "modalityGroups": {
+      "chara": ["rashi:mesha", "rashi:karka", "rashi:tula", "rashi:makara"],
+      "sthira": ["rashi:vrishabha", "rashi:simha", "rashi:vrishchika", "rashi:kumbha"],
+      "dwiswabhava": ["rashi:mithuna", "rashi:kanya", "rashi:dhanu", "rashi:meena"]
+    },
+    "elementGroups": {
+      "fire": ["rashi:mesha", "rashi:simha", "rashi:dhanu"],
+      "earth": ["rashi:vrishabha", "rashi:kanya", "rashi:makara"],
+      "air": ["rashi:mithuna", "rashi:tula", "rashi:kumbha"],
+      "water": ["rashi:karka", "rashi:vrishchika", "rashi:meena"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

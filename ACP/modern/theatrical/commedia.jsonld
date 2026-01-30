@@ -1,0 +1,314 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "modern:commedia",
+  "@type": "NarrativeSystem",
+  "name": "Commedia dell'Arte Stock Characters",
+  "description": "The traditional masked characters of Italian improvisational theater, dating from 16th century. These stock characters represent archetypal social roles and human foibles.",
+  "domain": "modern",
+  "subdomain": "theatrical",
+  "cardinality": 10,
+  "structuralNotes": "Characters divided into masters (vecchi), servants (zanni), and lovers (innamorati). Each has signature mask, costume, and behavioral patterns.",
+
+  "entries": [
+    {
+      "@id": "commedia:arlecchino",
+      "@type": "Archetype",
+      "name": "Arlecchino (Harlequin)",
+      "category": "Zanni (Servant)",
+      "origin": "Bergamo",
+      "mask": "Black half-mask with bump",
+      "keywords": ["acrobatic", "mischievous", "hungry", "clever", "foolish"],
+      "description": "The most famous zanni, a clever but simple servant always hungry and in love. Acrobatic and mischievous, wearing the famous diamond-patterned costume.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.90, "aspects": ["mischief", "cleverness"]},
+        {"primordial": "primordial:divine-child", "weight": 0.55, "aspects": ["foolishness", "innocence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.70, "note": "Fool archetype"},
+        {"type": "COMPLEMENT", "target": "commedia:brighella", "note": "First and second zanni"}
+      ]
+    },
+    {
+      "@id": "commedia:brighella",
+      "@type": "Archetype",
+      "name": "Brighella",
+      "category": "Zanni (Servant)",
+      "origin": "Bergamo",
+      "mask": "Olive/dark half-mask",
+      "keywords": ["cunning", "scheming", "musician", "villain", "opportunist"],
+      "description": "The first zanni, more cunning and villainous than Arlecchino. A schemer who often plays guitar and takes any opportunity for personal gain.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.55,
+        "active-receptive": 0.35,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["scheming", "cunning"]},
+        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["villainy", "opportunism"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "commedia:arlecchino", "note": "First and second zanni"},
+        {"type": "CULTURAL_ECHO", "target": "propp:villain", "fidelity": 0.55, "note": "Antagonist role"}
+      ]
+    },
+    {
+      "@id": "commedia:pantalone",
+      "@type": "Archetype",
+      "name": "Pantalone",
+      "category": "Vecchi (Master)",
+      "origin": "Venice",
+      "mask": "Brown with hooked nose, pointed beard",
+      "keywords": ["merchant", "miserly", "lecherous", "wealthy", "foolish"],
+      "description": "The wealthy Venetian merchant, miserly with money but lecherous with young women. Often the blocking father who opposes young lovers.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.40,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["authority", "blocking"]},
+        {"primordial": "primordial:shadow", "weight": 0.60, "aspects": ["greed", "lechery"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "commedia:dottore", "note": "Fellow vecchi"},
+        {"type": "ANTAGONIST", "target": "commedia:innamorato", "note": "Blocks young love"}
+      ]
+    },
+    {
+      "@id": "commedia:dottore",
+      "@type": "Archetype",
+      "name": "Il Dottore",
+      "category": "Vecchi (Master)",
+      "origin": "Bologna",
+      "mask": "Black covering only forehead and nose",
+      "keywords": ["pedantic", "doctor", "learned", "windbag", "foolish"],
+      "description": "The pompous doctor from Bologna, spouting Latin and pseudo-learning. A pedantic windbag whose knowledge is often useless or wrong.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.50,
+        "active-receptive": 0.45,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["learning", "pedantry"]},
+        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["foolishness", "pretension"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "commedia:pantalone", "note": "Fellow vecchi"},
+        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.45, "note": "Shadow sage"}
+      ]
+    },
+    {
+      "@id": "commedia:capitano",
+      "@type": "Archetype",
+      "name": "Il Capitano",
+      "category": "Vecchi (Master)",
+      "origin": "Spain/Italy",
+      "mask": "Long nose, often with flesh tones",
+      "keywords": ["braggart", "coward", "soldier", "boastful", "vain"],
+      "description": "The boastful captain who claims great military exploits but is actually a coward. Vain and ridiculous, deflated when confronted with real danger.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.55,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.50, "aspects": ["soldier", "bravado"]},
+        {"primordial": "primordial:shadow", "weight": 0.70, "aspects": ["cowardice", "pretension"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "kwml:sadist", "fidelity": 0.40, "note": "Shadow warrior"}
+      ]
+    },
+    {
+      "@id": "commedia:colombina",
+      "@type": "Archetype",
+      "name": "Colombina",
+      "category": "Zanni (Servant)",
+      "origin": "Venice",
+      "mask": "Usually unmasked",
+      "keywords": ["clever", "witty", "practical", "flirtatious", "resourceful"],
+      "description": "The clever maidservant, often the only sensible person on stage. Witty and practical, she manipulates situations to help the lovers.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["cleverness", "manipulation"]},
+        {"primordial": "primordial:maiden", "weight": 0.55, "aspects": ["wit", "resourcefulness"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "commedia:arlecchino", "note": "Romantic pair"},
+        {"type": "CULTURAL_ECHO", "target": "propp:helper", "fidelity": 0.70, "note": "Aids the heroes"}
+      ]
+    },
+    {
+      "@id": "commedia:innamorato",
+      "@type": "Archetype",
+      "name": "Innamorato (Male Lover)",
+      "category": "Innamorati (Lover)",
+      "origin": "Various",
+      "mask": "Unmasked",
+      "keywords": ["romantic", "passionate", "dramatic", "noble", "lovesick"],
+      "description": "The young male lover, unmasked to show sincere emotion. Noble, passionate, and dramatically lovesick, often at the mercy of blocking parents.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.90, "aspects": ["passion", "romance"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["nobility", "pursuit"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "commedia:innamorata", "note": "Romantic pair"},
+        {"type": "ANTAGONIST", "target": "commedia:pantalone", "note": "Opposed by fathers"}
+      ]
+    },
+    {
+      "@id": "commedia:innamorata",
+      "@type": "Archetype",
+      "name": "Innamorata (Female Lover)",
+      "category": "Innamorati (Lover)",
+      "origin": "Various",
+      "mask": "Unmasked",
+      "keywords": ["beautiful", "virtuous", "passionate", "eloquent", "constant"],
+      "description": "The young female lover, unmasked for sincere emotion. Beautiful, virtuous, and eloquently passionate, faithful despite obstacles.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.30,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.90, "aspects": ["passion", "constancy"]},
+        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["beauty", "virtue"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "commedia:innamorato", "note": "Romantic pair"},
+        {"type": "CULTURAL_ECHO", "target": "propp:princess", "fidelity": 0.65, "note": "Object of quest"}
+      ]
+    },
+    {
+      "@id": "commedia:pulcinella",
+      "@type": "Archetype",
+      "name": "Pulcinella",
+      "category": "Zanni (Servant)",
+      "origin": "Naples",
+      "mask": "Black with hooked nose, hunchback",
+      "keywords": ["crude", "violent", "gluttonous", "cunning", "anarchic"],
+      "description": "The Neapolitan servant with black mask and hunchback. Crude, violent, and gluttonous, embodying anarchic impulses and survival instincts.",
+      "spectralCoordinates": {
+        "order-chaos": 0.75,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.60,
+        "active-receptive": 0.30,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.85, "aspects": ["anarchy", "survival"]},
+        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["violence", "crude-instinct"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "commedia:arlecchino", "fidelity": 0.60, "note": "Fellow zanni"},
+        {"type": "EVOLUTION", "target": "modern:punch", "note": "Became Punch in England"}
+      ]
+    },
+    {
+      "@id": "commedia:pierrot",
+      "@type": "Archetype",
+      "name": "Pierrot (Pedrolino)",
+      "category": "Zanni (Servant)",
+      "origin": "France/Italy",
+      "mask": "White-face (no mask), sad",
+      "keywords": ["melancholy", "naive", "poetic", "vulnerable", "moonstruck"],
+      "description": "The sad white-faced servant, naive and melancholy. A moonstruck romantic often rejected in love, representing vulnerable innocence.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.50,
+        "active-receptive": 0.65,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["innocence", "vulnerability"]},
+        {"primordial": "primordial:outcast", "weight": 0.60, "aspects": ["melancholy", "rejection"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:orphan", "fidelity": 0.65, "note": "Wounded innocence"},
+        {"type": "POLAR_OPPOSITE", "target": "commedia:arlecchino", "axis": "active-receptive", "note": "Active vs passive fool"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "categories": {
+      "zanni": ["arlecchino", "brighella", "colombina", "pulcinella", "pierrot"],
+      "vecchi": ["pantalone", "dottore", "capitano"],
+      "innamorati": ["innamorato", "innamorata"]
+    },
+    "dramaticRoles": {
+      "blocking_characters": ["pantalone", "dottore", "capitano"],
+      "tricksters_helpers": ["arlecchino", "brighella", "colombina"],
+      "lovers": ["innamorato", "innamorata"],
+      "anarchic_elements": ["pulcinella", "pierrot"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

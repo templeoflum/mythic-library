@@ -3,8 +3,8 @@
 A semantic framework for mapping archetypes across mythology, psychology, divination, and culture using an 8-dimensional coordinate system.
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
-[![Archetypes](https://img.shields.io/badge/archetypes-580-green)]()
-[![Version](https://img.shields.io/badge/version-0.1.1-yellow)]()
+[![Archetypes](https://img.shields.io/badge/archetypes-1006-green)]()
+[![Version](https://img.shields.io/badge/version-0.2.0-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 ---
@@ -58,59 +58,89 @@ Cultural figures instantiate these with weights:
 
 ## Current Coverage
 
-ACP currently includes **580 fully-mapped archetypes** across four domains:
+ACP currently includes **1,006 fully-mapped archetypes** across four domains:
 
-### Divination Systems (218 entries)
-| System | Entries |
-|--------|---------|
-| Tarot Major Arcana | 22 |
-| Tarot Minor Arcana | 56 |
-| I Ching Trigrams | 8 |
-| I Ching Hexagrams | 64 |
-| Zodiac Signs | 12 |
-| Planets | 10 |
-| Sephiroth | 10 |
-| Chakras | 7 |
-| Elder Futhark Runes | 24 |
-| Classical Elements | 5 |
-
-### Psychology Systems (55 entries)
-| System | Entries |
-|--------|---------|
-| Jungian Core Archetypes | 12 |
-| Enneagram Types | 9 |
-| Hero's Journey Stages | 18 |
-| Vogler Character Archetypes | 8 |
-| Spiral Dynamics | 8 |
-
-### Modern Systems (43 entries)
-| System | Entries |
-|--------|---------|
-| Brand Archetypes | 12 |
-| Digital/Internet Archetypes | 10 |
-| Superhero Archetypes | 12 |
-| Angelic Hierarchy | 9 |
-
-### Mythological Pantheons (265 entries)
+### Mythological Pantheons (354 entries)
 | Pantheon | Entries |
 |----------|---------|
-| Greek (Olympians) | 22 |
-| Norse (Aesir/Vanir) | 12 |
-| Egyptian (Netjeru) | 17 |
-| Celtic | 13 |
-| Hindu | 15 |
-| Japanese (Kami) | 17 |
-| Chinese | 19 |
-| Mesopotamian | 13 |
-| African (Orisha) | 16 |
-| Mesoamerican | 17 |
-| Slavic | 16 |
-| Polynesian | 17 |
-| Native American | 14 |
-| Finnish (Kalevala) | 14 |
-| Australian (Dreamtime) | 8 |
-| Incan/Andean | 17 |
-| Persian/Zoroastrian | 18 |
+| Greek (Olympians) | 24 |
+| Chinese | 20 |
+| Hindu | 19 |
+| Persian/Zoroastrian | 19 |
+| African (Orisha) | 18 |
+| Egyptian (Netjeru) | 18 |
+| Incan/Andean | 18 |
+| Japanese (Kami) | 18 |
+| Mesoamerican | 18 |
+| Polynesian | 18 |
+| Slavic | 17 |
+| Finnish (Kalevala) | 15 |
+| Mesopotamian | 15 |
+| Native American | 15 |
+| Celtic | 14 |
+| Norse (Aesir/Vanir) | 13 |
+| Roman | 11 |
+| Australian (Dreamtime) | 9 |
+| **Buddhist** | 27 |
+| **Vodou (Loa)** | 18 |
+
+### Divination Systems (401 entries)
+| System | Entries |
+|--------|---------|
+| I Ching Hexagrams | 65 |
+| Tarot Minor Arcana | 61 |
+| **Nakshatra (Lunar Mansions)** | 27 |
+| Elder Futhark Runes | 25 |
+| Tarot Major Arcana | 23 |
+| **Ogham Tree Alphabet** | 20 |
+| **Mayan Tzolk'in** | 20 |
+| **Aztec Tonalpohualli** | 20 |
+| **Alchemical Processes** | 15 |
+| Astrology Houses | 13 |
+| **Celtic Tree Calendar** | 13 |
+| Zodiac Signs | 13 |
+| **Chinese Zodiac** | 12 |
+| **Vedic Rashi** | 12 |
+| **Native American Totems** | 12 |
+| Planets | 11 |
+| Kabbalah Sephiroth | 11 |
+| I Ching Trigrams | 9 |
+| Chakras | 8 |
+| Classical Elements | 6 |
+| **Wu Xing (Chinese Elements)** | 5 |
+
+### Psychology Systems (194 entries)
+| System | Entries |
+|--------|---------|
+| Hero's Journey Stages | 19 |
+| **MBTI Types** | 16 |
+| **Socionics Types** | 16 |
+| Jungian Core Archetypes | 13 |
+| **Carol Pearson Archetypes** | 12 |
+| **Commedia dell'Arte** | 10 |
+| Enneagram Types | 10 |
+| Spiral Dynamics | 9 |
+| Vogler Character Archetypes | 9 |
+| **Triple Goddess** | 9 |
+| **KWML (Moore/Gillette)** | 8 |
+| **Propp's Folktale Roles** | 8 |
+| **Bolen's Gods** | 8 |
+| **Seven Basic Plots** | 7 |
+| **Bolen's Goddesses** | 7 |
+| **Holland Codes (RIASEC)** | 6 |
+| **Big Five (OCEAN)** | 5 |
+| **Keirsey Temperaments** | 4 |
+| **DISC Styles** | 4 |
+| **Caroline Myss Survival** | 4 |
+
+### Modern Systems (57 entries)
+| System | Entries |
+|--------|---------|
+| Brand Archetypes | 13 |
+| Superhero Archetypes | 13 |
+| Digital/Internet Archetypes | 11 |
+| Angelic Hierarchy | 10 |
+| **Commedia dell'Arte** | 10 |
 
 ## Project Structure
 
@@ -127,44 +157,57 @@ ACP/
 │   ├── poles/              # 16 axis extremes
 │   └── primordial_matrix.jsonld
 │
-├── archetypes/             # Cultural pantheons (v1.1 COMPLETE)
-│   ├── greek/              # Olympians (22)
-│   ├── norse/              # Aesir, Vanir (12)
-│   ├── egyptian/           # Netjeru (17)
-│   ├── hindu/              # Trimurti, Devas (15)
-│   ├── celtic/             # Tuatha Dé Danann (13)
-│   ├── japanese/           # Kami (17)
-│   ├── chinese/            # Chinese pantheon (19)
-│   ├── african/            # Orisha (16)
-│   ├── mesopotamian/       # Sumerian/Babylonian (13)
-│   ├── polynesian/         # Pacific deities (17)
-│   ├── mesoamerican/       # Aztec/Maya (17)
-│   ├── slavic/             # Slavic pantheon (16)
-│   ├── native_american/    # Indigenous traditions (14)
-│   ├── finnish/            # Kalevala (14)
-│   ├── australian/         # Dreamtime (8)
-│   ├── incan/              # Andean deities (17)
-│   └── persian/            # Zoroastrian (18)
+├── archetypes/             # Cultural pantheons (v2.0 COMPLETE)
+│   ├── greek/              # Olympians (24)
+│   ├── norse/              # Aesir, Vanir (13)
+│   ├── egyptian/           # Netjeru (18)
+│   ├── hindu/              # Trimurti, Devas (19)
+│   ├── celtic/             # Tuatha Dé Danann (14)
+│   ├── japanese/           # Kami (18)
+│   ├── chinese/            # Chinese pantheon (20)
+│   ├── african/            # Orisha (18)
+│   ├── mesopotamian/       # Sumerian/Babylonian (15)
+│   ├── polynesian/         # Pacific deities (18)
+│   ├── mesoamerican/       # Aztec/Maya (18)
+│   ├── slavic/             # Slavic pantheon (17)
+│   ├── native_american/    # Indigenous traditions (15)
+│   ├── finnish/            # Kalevala (15)
+│   ├── australian/         # Dreamtime (9)
+│   ├── incan/              # Andean deities (18)
+│   ├── persian/            # Zoroastrian (19)
+│   ├── roman/              # Roman pantheon (11)
+│   ├── buddhist/           # Buddhist figures (27) — NEW
+│   └── vodou/              # Vodou Loa (18) — NEW
 │
-├── divination/             # Symbolic systems (v1.0 COMPLETE)
+├── divination/             # Symbolic systems (v2.0 COMPLETE)
 │   ├── tarot/              # Major & Minor Arcana
-│   ├── astrology/          # Zodiac, Planets
+│   ├── astrology/          # Zodiac, Planets, Houses
 │   ├── iching/             # Trigrams, Hexagrams
 │   ├── runes/              # Elder Futhark
 │   ├── kabbalah/           # Sephiroth
-│   └── chakras/            # Energy centers
+│   ├── chakras/            # Energy centers
+│   ├── elements/           # Western & Wu Xing — NEW
+│   ├── zodiac/             # Chinese, Vedic, Nakshatra, Celtic — NEW
+│   ├── calendar/           # Mayan, Aztec — NEW
+│   ├── totems/             # Native American — NEW
+│   ├── ogham/              # Tree alphabet — NEW
+│   └── alchemy/            # Alchemical processes — NEW
 │
-├── psychology/             # Psychological frameworks (v1.0 COMPLETE)
+├── psychology/             # Psychological frameworks (v2.0 COMPLETE)
 │   ├── jungian/            # Core archetypes
 │   ├── enneagram/          # 9 types
-│   ├── narrative/          # Hero's Journey, Vogler
-│   └── developmental/      # Spiral Dynamics
+│   ├── narrative/          # Hero's Journey, Vogler, Propp, Plots — NEW
+│   ├── developmental/      # Spiral Dynamics
+│   ├── personality/        # MBTI, Socionics, Big Five, etc. — NEW
+│   ├── archetypes/         # Pearson, Myss — NEW
+│   └── gendered/           # KWML, Triple Goddess, Bolen — NEW
 │
-├── modern/                 # Contemporary patterns (v1.0 COMPLETE)
+├── modern/                 # Contemporary patterns (v2.0 COMPLETE)
 │   ├── cultural/           # Brand archetypes
 │   ├── digital/            # Internet archetypes
 │   ├── pop_culture/        # Superhero archetypes
-│   └── spiritual/          # Angelic hierarchy
+│   ├── spiritual/          # Angelic hierarchy
+│   └── theatrical/         # Commedia dell'Arte — NEW
 │
 ├── legacy/                 # Archived planning docs
 │
@@ -284,31 +327,24 @@ The system enforces coherence:
 - [x] Modern: Brand, Digital, Superhero, Angels
 - [x] Interactive browser explorer & validation tooling
 
-### 0.1.1 ✅ Cultural Pantheons (580 archetypes) — Current
-- [x] 17 pantheons (Greek, Norse, Egyptian, Celtic, Hindu, Japanese, Chinese, Mesopotamian, African, Mesoamerican, Slavic, Polynesian, Native American, Finnish, Australian, Incan, Persian)
+### 0.1.1 ✅ Cultural Pantheons (661 archetypes)
+- [x] 18 pantheons (Greek, Norse, Egyptian, Celtic, Hindu, Japanese, Chinese, Mesopotamian, African, Mesoamerican, Slavic, Polynesian, Native American, Finnish, Australian, Incan, Persian, Roman)
 - [x] Cross-pantheon relationship mapping
 
-### 0.2.0 — Additional Pantheons (~70 archetypes)
-- [ ] Roman (Dii Consentes) — ~20 entries
-- [ ] Buddhist (Buddhas, Bodhisattvas, Wrathful Deities) — ~30 entries
-- [ ] Vodou (Rada, Petro, Ghede Loa) — ~19 entries
+### 0.2.0 ✅ Major Expansion (1,006 archetypes) — Current
+- [x] **Additional Pantheons**: Buddhist (27), Vodou Loa (18)
+- [x] **Alternate Zodiacs**: Chinese (12), Vedic Rashi (12), Nakshatra (27), Celtic Tree (13)
+- [x] **Sacred Calendars**: Mayan Tzolk'in (20), Aztec Tonalpohualli (20), Native American Totems (12)
+- [x] **Expanded Divination**: Wu Xing (5), Ogham (20), Alchemy (15)
+- [x] **Psychology Frameworks**: MBTI (16), Socionics (16), Big Five (5), Holland (6), DISC (4), Keirsey (4), Pearson (12), Myss (4)
+- [x] **Narrative Systems**: Propp's Roles (8), Seven Basic Plots (7), Commedia dell'Arte (10)
+- [x] **Gendered Systems**: KWML (8), Triple Goddess (9), Bolen's Goddesses (7), Bolen's Gods (8)
 
-### 0.3.0 — Alternate Zodiacs & Calendars (~115 archetypes)
-- [ ] Chinese Zodiac, Vedic Rāśis, Nakṣatras, Celtic Tree Zodiac
-- [ ] Mayan Tzolk'in, Aztec Tōnalpōhualli, Native American Totems
-
-### 0.4.0 — Expanded Divination (~40 archetypes)
-- [ ] Chinese Wu Xing, Ogham Tree Alphabet, Alchemical Archetypes
-
-### 0.5.0 — Psychology Frameworks (~80 archetypes)
-- [ ] MBTI, Socionics, Keirsey, Four Temperaments, DISC, Big Five
-- [ ] Holland Codes, Transactional Analysis, Carol Pearson, Psychosynthesis
-
-### 0.6.0 — Narrative & Literary (~25 archetypes)
-- [ ] Propp's Roles, Seven Basic Plots, Commedia dell'Arte
-
-### 0.7.0 — Gendered Archetype Systems (~35 archetypes)
-- [ ] KWML, Triple Goddess, Bolen's Gods/Goddesses, Caroline Myss
+### 0.3.0 — Remaining Systems (~200 archetypes)
+- [ ] Transactional Analysis ego states
+- [ ] Psychosynthesis subpersonalities
+- [ ] Additional Ogham variants
+- [ ] Expanded alchemical symbols
 
 ### 1.0.0 — Production Release
 - [ ] Complete ~1,200 archetype database

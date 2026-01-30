@@ -1,0 +1,574 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "ogham:feda",
+  "@type": "SymbolicSystem",
+  "name": "Ogham Feda (Celtic Tree Alphabet)",
+  "description": "The ancient Celtic tree alphabet of 20 characters (feda), each associated with a tree and its symbolic wisdom. Used for divination, magic, and inscription.",
+  "domain": "divination",
+  "subdomain": "ogham",
+  "cardinality": 20,
+  "structuralNotes": "Divided into four aicmi (families) of five letters each. Each letter corresponds to a tree, bird, color, and various other associations.",
+
+  "entries": [
+    {
+      "@id": "ogham:beith",
+      "@type": "Archetype",
+      "name": "Beith (Birch)",
+      "letter": "B",
+      "tree": "Birch",
+      "aicme": "First Aicme",
+      "keywords": ["beginnings", "purification", "new-starts", "birth", "cleansing"],
+      "divinatoryMeaning": "New beginnings, cleansing, fresh starts. The pioneer tree that colonizes new ground.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.25,
+        "active-receptive": 0.35,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.80, "aspects": ["new-beginnings", "birth", "potential"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["purification", "cleansing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:berkano", "fidelity": 0.75, "note": "Birch letter in Elder Futhark"}
+      ]
+    },
+    {
+      "@id": "ogham:luis",
+      "@type": "Archetype",
+      "name": "Luis (Rowan)",
+      "letter": "L",
+      "tree": "Rowan",
+      "aicme": "First Aicme",
+      "keywords": ["protection", "discrimination", "vision", "quickening", "magic"],
+      "divinatoryMeaning": "Protection from enchantment, clear sight, magical awakening. The tree that guards against negative magic.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.40,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["protection", "magic", "vision"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["defense", "guardian"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "ogham:beith", "note": "Protection follows new beginnings"}
+      ]
+    },
+    {
+      "@id": "ogham:fearn",
+      "@type": "Archetype",
+      "name": "Fearn (Alder)",
+      "letter": "F",
+      "tree": "Alder",
+      "aicme": "First Aicme",
+      "keywords": ["foundation", "protection", "oracles", "bridges", "defense"],
+      "divinatoryMeaning": "Firm foundation, spiritual protection, bridging worlds. The wood that becomes stronger in water.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["foundation", "protection", "endurance"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["bridges", "between-worlds"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:algiz", "fidelity": 0.55, "note": "Protection aspect"}
+      ]
+    },
+    {
+      "@id": "ogham:saille",
+      "@type": "Archetype",
+      "name": "Saille (Willow)",
+      "letter": "S",
+      "tree": "Willow",
+      "aicme": "First Aicme",
+      "keywords": ["intuition", "dreams", "feminine", "moon", "flexibility"],
+      "divinatoryMeaning": "Intuition, lunar cycles, flexibility in adversity. The tree of poets and dreamers.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.75,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["intuition", "feminine", "moon"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["dreams", "visions"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:moon", "fidelity": 0.65, "note": "Lunar associations"}
+      ]
+    },
+    {
+      "@id": "ogham:nuin",
+      "@type": "Archetype",
+      "name": "Nuin (Ash)",
+      "letter": "N",
+      "tree": "Ash",
+      "aicme": "First Aicme",
+      "keywords": ["connection", "world-tree", "linking", "communication", "microcosm-macrocosm"],
+      "divinatoryMeaning": "Connection between inner and outer worlds, the World Tree axis. Links heaven, earth, and underworld.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.70, "aspects": ["world-tree", "axis-mundi", "integration"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["linking-worlds", "communication"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:NO-YGGDRASIL", "fidelity": 0.75, "note": "World Tree parallel"}
+      ]
+    },
+    {
+      "@id": "ogham:huathe",
+      "@type": "Archetype",
+      "name": "Huathe (Hawthorn)",
+      "letter": "H",
+      "tree": "Hawthorn",
+      "aicme": "Second Aicme",
+      "keywords": ["testing", "trial", "obstacles", "patience", "protection"],
+      "divinatoryMeaning": "Obstacles that test and strengthen, patience required, protection of boundaries.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.55,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["testing", "trial", "challenge"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["protection", "boundaries"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:thurisaz", "fidelity": 0.55, "note": "Thorn/protection parallel"}
+      ]
+    },
+    {
+      "@id": "ogham:duir",
+      "@type": "Archetype",
+      "name": "Duir (Oak)",
+      "letter": "D",
+      "tree": "Oak",
+      "aicme": "Second Aicme",
+      "keywords": ["strength", "endurance", "doorway", "protection", "nobility"],
+      "divinatoryMeaning": "Strength, doorway to inner strength, endurance, royal power. The door (dorus) to wisdom.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["strength", "nobility", "kingship"]},
+        {"primordial": "primordial:great-father", "weight": 0.60, "aspects": ["protection", "endurance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.60, "note": "Oak sacred to Zeus/thunder gods"}
+      ]
+    },
+    {
+      "@id": "ogham:tinne",
+      "@type": "Archetype",
+      "name": "Tinne (Holly)",
+      "letter": "T",
+      "tree": "Holly",
+      "aicme": "Second Aicme",
+      "keywords": ["balance", "challenge", "directed-energy", "spear", "action"],
+      "divinatoryMeaning": "Directed energy, balance in action, warrior spirit tempered with wisdom.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.35,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["spear", "directed-energy", "action"]},
+        {"primordial": "primordial:hero", "weight": 0.55, "aspects": ["challenge", "balance"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "ogham:duir", "note": "Holly King/Oak King duality"}
+      ]
+    },
+    {
+      "@id": "ogham:coll",
+      "@type": "Archetype",
+      "name": "Coll (Hazel)",
+      "letter": "C",
+      "tree": "Hazel",
+      "aicme": "Second Aicme",
+      "keywords": ["wisdom", "poetry", "inspiration", "knowledge", "dowsing"],
+      "divinatoryMeaning": "Wisdom, poetic inspiration, intuitive knowledge. The Salmon of Wisdom ate the hazelnuts.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.85, "aspects": ["wisdom", "knowledge", "insight"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["inspiration", "dowsing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:kenaz", "fidelity": 0.55, "note": "Knowledge/illumination"}
+      ]
+    },
+    {
+      "@id": "ogham:quert",
+      "@type": "Archetype",
+      "name": "Quert (Apple)",
+      "letter": "Q",
+      "tree": "Apple",
+      "aicme": "Second Aicme",
+      "keywords": ["choice", "beauty", "immortality", "otherworld", "nourishment"],
+      "divinatoryMeaning": "Beauty, choice, connection to the Otherworld. Avalon - isle of apples.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["beauty", "choice", "desire"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["nourishment", "immortality"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.55, "note": "Apple/beauty/choice connection"}
+      ]
+    },
+    {
+      "@id": "ogham:muin",
+      "@type": "Archetype",
+      "name": "Muin (Vine)",
+      "letter": "M",
+      "tree": "Vine/Bramble",
+      "aicme": "Third Aicme",
+      "keywords": ["prophecy", "intoxication", "truth", "release", "harvest"],
+      "divinatoryMeaning": "Prophetic insight, releasing inhibitions to find truth, harvest of efforts.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["prophecy", "altered-states"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["intoxication", "release"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-DIONYSUS", "fidelity": 0.70, "note": "Vine/wine/prophecy"}
+      ]
+    },
+    {
+      "@id": "ogham:gort",
+      "@type": "Archetype",
+      "name": "Gort (Ivy)",
+      "letter": "G",
+      "tree": "Ivy",
+      "aicme": "Third Aicme",
+      "keywords": ["tenacity", "spiral", "transformation", "binding", "persistence"],
+      "divinatoryMeaning": "Tenacity, spiraling growth, binding relationships, persistent transformation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.60,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["tenacity", "persistence"]},
+        {"primordial": "primordial:lover", "weight": 0.55, "aspects": ["binding", "connection"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "ogham:muin", "note": "Vine and Ivy often paired"}
+      ]
+    },
+    {
+      "@id": "ogham:ngetal",
+      "@type": "Archetype",
+      "name": "Ngetal (Reed)",
+      "letter": "NG",
+      "tree": "Reed/Broom",
+      "aicme": "Third Aicme",
+      "keywords": ["direction", "health", "harmony", "direct-action", "unity"],
+      "divinatoryMeaning": "Direct action, health matters, finding direction, harmony through action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["health", "harmony"]},
+        {"primordial": "primordial:warrior", "weight": 0.55, "aspects": ["direct-action", "aim"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astrology:sagittarius", "fidelity": 0.50, "note": "Arrow/direction"}
+      ]
+    },
+    {
+      "@id": "ogham:straif",
+      "@type": "Archetype",
+      "name": "Straif (Blackthorn)",
+      "letter": "STR",
+      "tree": "Blackthorn",
+      "aicme": "Third Aicme",
+      "keywords": ["fate", "necessity", "strife", "no-choice", "discipline"],
+      "divinatoryMeaning": "Unavoidable fate, necessary strife, discipline through difficulty, no easy path.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.65,
+        "active-receptive": 0.45,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.85
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.75, "aspects": ["fate", "necessity", "harsh-teaching"]},
+        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["strife", "cutting-away"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:nauthiz", "fidelity": 0.70, "note": "Need/necessity parallel"}
+      ]
+    },
+    {
+      "@id": "ogham:ruis",
+      "@type": "Archetype",
+      "name": "Ruis (Elder)",
+      "letter": "R",
+      "tree": "Elder",
+      "aicme": "Third Aicme",
+      "keywords": ["endings", "transformation", "faery", "regeneration", "death-rebirth"],
+      "divinatoryMeaning": "Endings that allow regeneration, faery connection, death-rebirth cycle.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.60,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.80, "aspects": ["endings", "transformation", "death-wisdom"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["faery", "otherworld"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.65, "note": "Transformation through endings"}
+      ]
+    },
+    {
+      "@id": "ogham:ailm",
+      "@type": "Archetype",
+      "name": "Ailm (Silver Fir/Pine)",
+      "letter": "A",
+      "tree": "Silver Fir",
+      "aicme": "Fourth Aicme",
+      "keywords": ["clarity", "foresight", "objectivity", "vision", "perspective"],
+      "divinatoryMeaning": "Clear perspective, far-seeing, objectivity, taking the long view.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.20,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["clarity", "foresight", "perspective"]},
+        {"primordial": "primordial:healer", "weight": 0.50, "aspects": ["breath", "air"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:ansuz", "fidelity": 0.55, "note": "Vision/insight"}
+      ]
+    },
+    {
+      "@id": "ogham:onn",
+      "@type": "Archetype",
+      "name": "Onn (Gorse/Furze)",
+      "letter": "O",
+      "tree": "Gorse",
+      "aicme": "Fourth Aicme",
+      "keywords": ["gathering", "attraction", "sweetness", "collection", "fertility"],
+      "divinatoryMeaning": "Gathering resources, attracting what you need, sweetness of life, fertility.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.25,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["attraction", "sweetness"]},
+        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["fertility", "gathering"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:fehu", "fidelity": 0.55, "note": "Wealth/gathering"}
+      ]
+    },
+    {
+      "@id": "ogham:ur",
+      "@type": "Archetype",
+      "name": "Ur (Heather)",
+      "letter": "U",
+      "tree": "Heather",
+      "aicme": "Fourth Aicme",
+      "keywords": ["passion", "romance", "dreams", "healing", "community"],
+      "divinatoryMeaning": "Passion and romance, healing dreams, community and generosity.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["passion", "romance"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["healing", "dreams"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "ogham:onn", "note": "Both golden flowering"}
+      ]
+    },
+    {
+      "@id": "ogham:eadhadh",
+      "@type": "Archetype",
+      "name": "Eadhadh (White Poplar/Aspen)",
+      "letter": "E",
+      "tree": "Aspen",
+      "aicme": "Fourth Aicme",
+      "keywords": ["endurance", "courage", "overcoming", "shield", "ancestors"],
+      "divinatoryMeaning": "Courage to endure, shield against negativity, ancestral support.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.45,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["endurance", "courage", "overcoming"]},
+        {"primordial": "primordial:ancestor", "weight": 0.60, "aspects": ["ancestral-support", "lineage"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:ehwaz", "fidelity": 0.50, "note": "Endurance"}
+      ]
+    },
+    {
+      "@id": "ogham:ioho",
+      "@type": "Archetype",
+      "name": "Ioho (Yew)",
+      "letter": "I",
+      "tree": "Yew",
+      "aicme": "Fourth Aicme",
+      "keywords": ["death-rebirth", "immortality", "transformation", "ancestors", "eternity"],
+      "divinatoryMeaning": "The death-rebirth mystery, immortality through transformation, connection to ancestors.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.65,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.80, "aspects": ["death-wisdom", "transformation"]},
+        {"primordial": "primordial:ancestor", "weight": 0.70, "aspects": ["immortality", "lineage"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "rune:eihwaz", "fidelity": 0.85, "note": "Yew in Elder Futhark"},
+        {"type": "POLAR_OPPOSITE", "target": "ogham:beith", "axis": "creation-destruction", "note": "Death vs birth"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "aicmi": {
+      "first": ["ogham:beith", "ogham:luis", "ogham:fearn", "ogham:saille", "ogham:nuin"],
+      "second": ["ogham:huathe", "ogham:duir", "ogham:tinne", "ogham:coll", "ogham:quert"],
+      "third": ["ogham:muin", "ogham:gort", "ogham:ngetal", "ogham:straif", "ogham:ruis"],
+      "fourth": ["ogham:ailm", "ogham:onn", "ogham:ur", "ogham:eadhadh", "ogham:ioho"]
+    },
+    "birthDeathCycle": ["ogham:beith", "ogham:ioho"],
+    "protectorTrees": ["ogham:luis", "ogham:fearn", "ogham:duir"],
+    "otherworldTrees": ["ogham:quert", "ogham:ruis", "ogham:ioho"]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

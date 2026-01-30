@@ -1,0 +1,223 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:bolen_goddesses",
+  "@type": "PsychologicalSystem",
+  "name": "Bolen's Goddesses in Everywoman",
+  "description": "Jean Shinoda Bolen's archetypal framework of seven Greek goddesses representing patterns in women's psyches. Each goddess type has characteristic motivations, behaviors, and life patterns.",
+  "domain": "psychology",
+  "subdomain": "gendered",
+  "cardinality": 7,
+  "structuralNotes": "Based on Bolen's 1984 'Goddesses in Everywoman'. Three categories: virgin goddesses (self-contained), vulnerable goddesses (relationship-oriented), and alchemical goddess (transformative).",
+
+  "entries": [
+    {
+      "@id": "bolen:artemis",
+      "@type": "Archetype",
+      "name": "Artemis",
+      "category": "Virgin Goddess",
+      "greekGoddess": "Artemis",
+      "keywords": ["independence", "goal-focused", "sisterhood", "wilderness", "competence"],
+      "description": "The goddess of hunt and moon. Represents goal-focused consciousness, independence, sisterhood, and connection with wilderness. Competes successfully in the outer world.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.25,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.80, "aspects": ["independence", "self-belonging"]},
+        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["goal-focused", "competence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARTEMIS", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "goddess:maiden-amazon", "fidelity": 0.85, "note": "Amazon aspect"}
+      ]
+    },
+    {
+      "@id": "bolen:athena",
+      "@type": "Archetype",
+      "name": "Athena",
+      "category": "Virgin Goddess",
+      "greekGoddess": "Athena",
+      "keywords": ["strategy", "wisdom", "crafts", "father's-daughter", "pragmatism"],
+      "description": "The goddess of wisdom and crafts. Represents strategic thinking, practical wisdom, and success in the patriarchal world. The father's daughter who thinks logically.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["independence", "self-sufficiency"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["strategy", "wisdom"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ATHENA", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "COMPLEMENT", "target": "bolen:artemis", "note": "Fellow virgin goddess"}
+      ]
+    },
+    {
+      "@id": "bolen:hestia",
+      "@type": "Archetype",
+      "name": "Hestia",
+      "category": "Virgin Goddess",
+      "greekGoddess": "Hestia",
+      "keywords": ["focus", "interiority", "sacred-space", "centering", "solitude"],
+      "description": "The goddess of hearth and temple. Represents focused consciousness, spiritual centering, and creating sacred space. The inward-turning contemplative.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.40,
+        "active-receptive": 0.65,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["interiority", "self-containment"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["centering", "contemplation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HESTIA", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "COMPLEMENT", "target": "bolen:athena", "note": "Fellow virgin goddess"}
+      ]
+    },
+    {
+      "@id": "bolen:hera",
+      "@type": "Archetype",
+      "name": "Hera",
+      "category": "Vulnerable Goddess",
+      "greekGoddess": "Hera",
+      "keywords": ["commitment", "marriage", "partnership", "jealousy", "queen"],
+      "description": "The goddess of marriage. Represents the drive for committed partnership and the archetype of wife. Can experience rage and jealousy when commitment is betrayed.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.70, "aspects": ["queen", "authority"]},
+        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["commitment", "partnership"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERA", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "goddess:mother-queen", "fidelity": 0.80, "note": "Queen archetype"}
+      ]
+    },
+    {
+      "@id": "bolen:demeter",
+      "@type": "Archetype",
+      "name": "Demeter",
+      "category": "Vulnerable Goddess",
+      "greekGoddess": "Demeter",
+      "keywords": ["nurturing", "maternal", "generosity", "depression", "abundance"],
+      "description": "The goddess of grain and motherhood. Represents the nurturing maternal instinct, generosity, and the drive to nurture others. Can experience depression when separated from children.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.40,
+        "active-receptive": 0.65,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.95, "aspects": ["nurturing", "maternal"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["generosity", "care"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-DEMETER", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "goddess:mother", "fidelity": 0.90, "note": "Mother archetype"}
+      ]
+    },
+    {
+      "@id": "bolen:persephone",
+      "@type": "Archetype",
+      "name": "Persephone",
+      "category": "Vulnerable Goddess",
+      "greekGoddess": "Persephone",
+      "keywords": ["receptivity", "underworld", "mediumship", "youthfulness", "transformation"],
+      "description": "The maiden and queen of underworld. Represents receptivity, connection to unconscious depths, and the capacity to be transformed by experience. Dual nature of Kore and Queen.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.60,
+        "active-receptive": 0.70,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.70, "aspects": ["receptivity", "youthfulness"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.65, "aspects": ["underworld", "mediumship"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-PERSEPHONE", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "COMPLEMENT", "target": "bolen:demeter", "note": "Mother-daughter pair"}
+      ]
+    },
+    {
+      "@id": "bolen:aphrodite",
+      "@type": "Archetype",
+      "name": "Aphrodite",
+      "category": "Alchemical Goddess",
+      "greekGoddess": "Aphrodite",
+      "keywords": ["creativity", "love", "beauty", "sexuality", "transformation"],
+      "description": "The goddess of love and beauty. Represents the transformative power of love and creativity. The alchemical goddess who generates change through relationship and creative work.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.95, "aspects": ["love", "sexuality", "beauty"]},
+        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["creativity", "alchemy"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.90, "note": "Direct correspondence"},
+        {"type": "CULTURAL_ECHO", "target": "goddess:mother-lover", "fidelity": 0.85, "note": "Lover archetype"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "categories": {
+      "virgin": ["bolen:artemis", "bolen:athena", "bolen:hestia"],
+      "vulnerable": ["bolen:hera", "bolen:demeter", "bolen:persephone"],
+      "alchemical": ["bolen:aphrodite"]
+    },
+    "consciousnessStyles": {
+      "focused": ["bolen:artemis", "bolen:athena", "bolen:hestia"],
+      "diffuse": ["bolen:hera", "bolen:demeter", "bolen:persephone"],
+      "transformative": ["bolen:aphrodite"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

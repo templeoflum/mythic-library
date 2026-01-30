@@ -1,0 +1,733 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "system:buddhist",
+  "@type": "System",
+  "systemCode": "BU",
+  "name": "Buddhist Pantheon",
+  "description": "Enlightened beings, bodhisattvas, protector deities, and wrathful manifestations from Mahayana and Vajrayana Buddhist traditions.",
+  "culturalContext": "Buddhist traditions across Tibet, China, Japan, Southeast Asia, ~500 BCE - present",
+  "primarySources": [
+    "Pali Canon",
+    "Mahayana Sutras",
+    "Tibetan Buddhist texts",
+    "Tantric traditions"
+  ],
+  "characteristics": [
+    "Emphasis on enlightenment and liberation from suffering",
+    "Wrathful forms as compassionate manifestations",
+    "Bodhisattvas who delay nirvana to help all beings",
+    "Integration of local deities into Buddhist cosmology"
+  ],
+
+  "entries": [
+    {
+      "@id": "arch:BU-SHAKYAMUNI",
+      "@type": "Archetype",
+      "name": "Shakyamuni Buddha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The historical Buddha, Siddhartha Gautama, who achieved enlightenment under the Bodhi tree. The awakened teacher who founded Buddhism and revealed the path to liberation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.10,
+        "active-receptive": 0.55,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.20,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.90, "aspects": ["teacher", "enlightened-one", "wisdom-holder"]},
+        {"primordial": "primordial:self", "weight": 0.85, "aspects": ["awakening", "integration", "transcendence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-VISHNU", "fidelity": 0.40, "notes": "Buddha as avatar in Hindu tradition"},
+        {"type": "COMPLEMENT", "target": "arch:BU-MAITREYA", "notes": "Past Buddha to Future Buddha"},
+        {"type": "CONTAINS", "target": "primordial:healer", "notes": "Healer of suffering"}
+      ]
+    },
+    {
+      "@id": "arch:BU-AMITABHA",
+      "@type": "Archetype",
+      "name": "Amitabha Buddha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "Buddha of Infinite Light, ruler of the Western Pure Land (Sukhavati). Embodies compassionate acceptance and the promise of rebirth in a realm conducive to enlightenment.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.05,
+        "active-receptive": 0.70,
+        "individual-collective": 0.85,
+        "ascent-descent": 0.15,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.80, "aspects": ["refuge", "salvation", "infinite-light"]},
+        {"primordial": "primordial:great-father", "weight": 0.65, "aspects": ["welcoming", "compassionate-reception"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-AVALOKITESHVARA", "notes": "Avalokiteshvara emanates from Amitabha"},
+        {"type": "CULTURAL_ECHO", "target": "arch:JP-AMIDA", "fidelity": 0.95, "notes": "Japanese Pure Land form"}
+      ]
+    },
+    {
+      "@id": "arch:BU-AKSHOBHYA",
+      "@type": "Archetype",
+      "name": "Akshobhya Buddha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Immovable Buddha, lord of the Eastern Pure Land. Represents mirror-like wisdom that transforms anger into clarity. Associated with the vajra and the element of water.",
+      "spectralCoordinates": {
+        "order-chaos": 0.15,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.20,
+        "active-receptive": 0.45,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["immovable", "steadfast", "unshakeable"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.70, "aspects": ["mirror-wisdom", "clarity"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-VAJRASATTVA", "notes": "Vajrasattva as his bodhisattva emanation"}
+      ]
+    },
+    {
+      "@id": "arch:BU-VAIROCANA",
+      "@type": "Archetype",
+      "name": "Vairocana Buddha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Cosmic Buddha, embodiment of the Dharmakaya (truth body). Represents the dharmadhatu wisdom - the all-pervading awareness that is the ground of all reality.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.50,
+        "active-receptive": 0.50,
+        "individual-collective": 0.90,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:self", "weight": 0.95, "aspects": ["cosmic-consciousness", "all-pervading", "dharmadhatu"]},
+        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["source-of-all"]}
+      ],
+      "relationships": [
+        {"type": "CONTAINS", "target": "arch:BU-AMITABHA"},
+        {"type": "CONTAINS", "target": "arch:BU-AKSHOBHYA"},
+        {"type": "CONTAINS", "target": "arch:BU-RATNASAMBHAVA"},
+        {"type": "CONTAINS", "target": "arch:BU-AMOGHASIDDHI"},
+        {"type": "CULTURAL_ECHO", "target": "calibration:origin", "fidelity": 0.90, "notes": "Both represent cosmic center"}
+      ]
+    },
+    {
+      "@id": "arch:BU-RATNASAMBHAVA",
+      "@type": "Archetype",
+      "name": "Ratnasambhava Buddha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Jewel-Born Buddha, lord of the Southern Pure Land. Represents the wisdom of equality that transforms pride into generosity. Associated with abundance and enrichment.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.25,
+        "active-receptive": 0.55,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["generosity", "abundance", "enrichment"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["equality-wisdom", "removing-poverty"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-KUBERA", "fidelity": 0.50, "notes": "Wealth and abundance aspects"}
+      ]
+    },
+    {
+      "@id": "arch:BU-AMOGHASIDDHI",
+      "@type": "Archetype",
+      "name": "Amoghasiddhi Buddha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Buddha of Unfailing Accomplishment, lord of the Northern Pure Land. Represents all-accomplishing wisdom that transforms jealousy into skillful action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.25,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["accomplishment", "fearlessness", "action"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["skillful-means", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-GREEN-TARA", "notes": "Tara as his consort in some traditions"}
+      ]
+    },
+    {
+      "@id": "arch:BU-MAITREYA",
+      "@type": "Archetype",
+      "name": "Maitreya",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Future Buddha, currently residing in Tushita heaven awaiting the time to descend and renew the dharma. Embodies loving-kindness and the promise of future enlightenment.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.15,
+        "active-receptive": 0.50,
+        "individual-collective": 0.80,
+        "ascent-descent": 0.20,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["future-potential", "coming-savior"]},
+        {"primordial": "primordial:lover", "weight": 0.70, "aspects": ["loving-kindness", "metta"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "target": "arch:BU-SHAKYAMUNI", "notes": "Will succeed Shakyamuni as next Buddha"},
+        {"type": "CULTURAL_ECHO", "target": "arch:CN-BUDAI", "fidelity": 0.65, "notes": "Chinese Laughing Buddha form"}
+      ]
+    },
+    {
+      "@id": "arch:BU-AVALOKITESHVARA",
+      "@type": "Archetype",
+      "name": "Avalokiteshvara",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Bodhisattva of Compassion, who hears the cries of all beings. Takes many forms to help those in need. Source of the Om Mani Padme Hum mantra.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.20,
+        "active-receptive": 0.60,
+        "individual-collective": 0.90,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.90, "aspects": ["compassion", "mercy", "rescue"]},
+        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["nurturing-all-beings", "universal-love"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:CN-GUANYIN", "fidelity": 0.90, "notes": "Chinese feminine form"},
+        {"type": "CULTURAL_ECHO", "target": "arch:JP-KANNON", "fidelity": 0.90, "notes": "Japanese form"},
+        {"type": "COMPLEMENT", "target": "arch:BU-AMITABHA", "notes": "Emanates from Amitabha's crown"}
+      ]
+    },
+    {
+      "@id": "arch:BU-MANJUSHRI",
+      "@type": "Archetype",
+      "name": "Manjushri",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Bodhisattva of Wisdom, wielding the flaming sword that cuts through ignorance. Represents transcendent wisdom (prajna) and the clarity of enlightened mind.",
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.10,
+        "active-receptive": 0.30,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.95, "aspects": ["prajna", "discernment", "cutting-through"]},
+        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["sword-of-wisdom", "conquering-ignorance"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-AVALOKITESHVARA", "notes": "Wisdom and Compassion pair"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ATHENA", "fidelity": 0.55, "notes": "Wisdom warriors"}
+      ]
+    },
+    {
+      "@id": "arch:BU-VAJRAPANI",
+      "@type": "Archetype",
+      "name": "Vajrapani",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Bodhisattva of Power, wielder of the vajra (thunderbolt/diamond). Protector of Buddha and dharma. Represents the power of all buddhas.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.35,
+        "active-receptive": 0.15,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["protector", "power", "vajra-holder"]},
+        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["wrathful-compassion", "obstacle-destroyer"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-AVALOKITESHVARA", "notes": "Part of the Three Protectors"},
+        {"type": "COMPLEMENT", "target": "arch:BU-MANJUSHRI", "notes": "Part of the Three Protectors"},
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-INDRA", "fidelity": 0.60, "notes": "Thunder/vajra wielder"}
+      ]
+    },
+    {
+      "@id": "arch:BU-SAMANTABHADRA",
+      "@type": "Archetype",
+      "name": "Samantabhadra",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Bodhisattva of Universal Worthy, associated with practice and meditation. Rides a white elephant. Represents the actualization of enlightened activity.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.15,
+        "active-receptive": 0.40,
+        "individual-collective": 0.80,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["practice", "aspiration", "vows"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["universal-good", "maintaining-dharma"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-MANJUSHRI", "notes": "Wisdom and Practice pair"}
+      ]
+    },
+    {
+      "@id": "arch:BU-KSITIGARBHA",
+      "@type": "Archetype",
+      "name": "Ksitigarbha",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Bodhisattva of the Earth Store, who vowed to help all beings in the hell realms. Guardian of children and travelers. Known for the vow to liberate all beings from hell.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.45,
+        "individual-collective": 0.85,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["hell-liberator", "guide-of-dead"]},
+        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["rescuer", "protector-of-children"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:JP-JIZO", "fidelity": 0.95, "notes": "Japanese form"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.50, "notes": "Psychopomp function"}
+      ]
+    },
+    {
+      "@id": "arch:BU-GREEN-TARA",
+      "@type": "Archetype",
+      "name": "Green Tara",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Swift Liberator, female bodhisattva born from Avalokiteshvara's tear. Grants protection from the eight fears. Known for rapid response to prayers.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.25,
+        "active-receptive": 0.40,
+        "individual-collective": 0.75,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.85, "aspects": ["swift-rescue", "protection", "liberation"]},
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["active-feminine", "independent-action"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "arch:BU-WHITE-TARA", "axis": "active-receptive", "notes": "Active vs peaceful"},
+        {"type": "COMPLEMENT", "target": "arch:BU-AVALOKITESHVARA", "notes": "Born from his compassion"}
+      ]
+    },
+    {
+      "@id": "arch:BU-WHITE-TARA",
+      "@type": "Archetype",
+      "name": "White Tara",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Mother of All Buddhas, embodiment of longevity, healing, and serenity. Has seven eyes to see all suffering. Associated with long life practices.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.10,
+        "active-receptive": 0.70,
+        "individual-collective": 0.80,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["longevity", "healing", "nurturing"]},
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["health", "protection", "serenity"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "arch:BU-GREEN-TARA", "axis": "active-receptive", "notes": "Peaceful vs active"}
+      ]
+    },
+    {
+      "@id": "arch:BU-VAJRASATTVA",
+      "@type": "Archetype",
+      "name": "Vajrasattva",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Diamond Being, embodiment of primordial purity. Central to purification practices. Holds vajra and bell, representing skillful means and wisdom.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.15,
+        "active-receptive": 0.50,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.85, "aspects": ["purification", "cleansing", "restoration"]},
+        {"primordial": "primordial:self", "weight": 0.70, "aspects": ["primordial-purity", "diamond-nature"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-AKSHOBHYA", "notes": "Emanation of Akshobhya family"}
+      ]
+    },
+    {
+      "@id": "arch:BU-MAHAKALA",
+      "@type": "Archetype",
+      "name": "Mahakala",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Great Black One, wrathful protector of dharma. Fierce manifestation of compassionate wisdom. Destroys obstacles and negative forces through terrifying appearance.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.75,
+        "light-shadow": 0.70,
+        "active-receptive": 0.10,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["wrathful-compassion", "obstacle-destroyer"]},
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["protector", "dharma-guardian"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "arch:BU-AVALOKITESHVARA", "notes": "Wrathful form of compassion"},
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-SHIVA", "fidelity": 0.60, "notes": "Hindu origin of form"}
+      ]
+    },
+    {
+      "@id": "arch:BU-YAMANTAKA",
+      "@type": "Archetype",
+      "name": "Yamantaka",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Destroyer of Death, wrathful form of Manjushri. Buffalo-headed protector who conquered Yama (death). Represents wisdom that transcends mortality.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.80,
+        "light-shadow": 0.65,
+        "active-receptive": 0.10,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.85,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.90, "aspects": ["death-conqueror", "fear-destroyer"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.60, "aspects": ["wisdom-beyond-death"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "arch:BU-MANJUSHRI", "notes": "Wrathful form of wisdom"},
+        {"type": "ANTAGONIST", "target": "arch:IN-YAMA", "notes": "Conquered death itself"}
+      ]
+    },
+    {
+      "@id": "arch:BU-HAYAGRIVA",
+      "@type": "Archetype",
+      "name": "Hayagriva",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Horse-Necked One, wrathful form with a horse head emerging from his crown. Powerful destroyer of obstacles and protector against negative forces.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.70,
+        "light-shadow": 0.60,
+        "active-receptive": 0.15,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["protector", "fierce-guardian"]},
+        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["obstacle-remover", "demon-subduer"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "arch:BU-AVALOKITESHVARA", "notes": "Wrathful aspect"},
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-HAYAGRIVA", "fidelity": 0.70, "notes": "Hindu avatar connection"}
+      ]
+    },
+    {
+      "@id": "arch:BU-VAJRAYOGINI",
+      "@type": "Archetype",
+      "name": "Vajrayogini",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Diamond Female Yogi, semi-wrathful dakini representing the transformation of desire into enlightenment. Key deity in highest yoga tantra practices.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.50,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.85,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["transformation", "tantra", "transmutation"]},
+        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["passion-as-path", "desire-wisdom"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-KALI", "fidelity": 0.55, "notes": "Fierce feminine transformation"}
+      ]
+    },
+    {
+      "@id": "arch:BU-PALDEN-LHAMO",
+      "@type": "Archetype",
+      "name": "Palden Lhamo",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Glorious Goddess, chief female protector of Tibet. Rides a mule across a sea of blood. Fierce dharma protector who made vows to guard the dharma.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.70,
+        "light-shadow": 0.65,
+        "active-receptive": 0.20,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.75, "aspects": ["fierce-feminine", "death-wisdom"]},
+        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["dharma-protector", "guardian"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-DURGA", "fidelity": 0.55, "notes": "Fierce goddess parallel"}
+      ]
+    },
+    {
+      "@id": "arch:BU-VAISHRAVANA",
+      "@type": "Archetype",
+      "name": "Vaishravana",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The King of the North, Guardian of Wealth and one of the Four Heavenly Kings. Protector and bestower of fortune. Rides a snow lion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["guardian-king", "wealth-bestower"]},
+        {"primordial": "primordial:preserver", "weight": 0.65, "aspects": ["protector", "maintainer"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-KUBERA", "fidelity": 0.80, "notes": "Wealth deity parallel"}
+      ]
+    },
+    {
+      "@id": "arch:BU-PADMASAMBHAVA",
+      "@type": "Archetype",
+      "name": "Padmasambhava",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Lotus-Born, legendary tantric master who brought Buddhism to Tibet. Known as Guru Rinpoche. Considered a second Buddha who manifests in eight forms.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.30,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.90, "aspects": ["tantric-master", "subduer-of-demons"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["guru", "teacher", "lineage-founder"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:EG-THOTH", "fidelity": 0.50, "notes": "Magical wisdom figures"}
+      ]
+    },
+    {
+      "@id": "arch:BU-YESHE-TSOGYAL",
+      "@type": "Archetype",
+      "name": "Yeshe Tsogyal",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Princess of Wisdom Lake, chief consort of Padmasambhava and mother of Tibetan Buddhism. Achieved enlightenment and preserved the terma teachings.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["wisdom-keeper", "teaching-preserver"]},
+        {"primordial": "primordial:magician", "weight": 0.70, "aspects": ["dakini", "tantric-accomplishment"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-PADMASAMBHAVA", "notes": "Consort and teaching partner"}
+      ]
+    },
+    {
+      "@id": "arch:BU-MILAREPA",
+      "@type": "Archetype",
+      "name": "Milarepa",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "Tibet's most beloved yogi-poet, who transformed from a sorcerer-murderer to an enlightened saint. Embodies the possibility of complete redemption through practice.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.90,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:outcast", "weight": 0.70, "aspects": ["hermit", "cave-dweller", "redeemed-sinner"]},
+        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["through-suffering", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "EVOLUTION", "source": "sorcerer", "target": "arch:BU-MILAREPA", "notes": "From black magic to enlightenment"}
+      ]
+    },
+    {
+      "@id": "arch:BU-MARPA",
+      "@type": "Archetype",
+      "name": "Marpa the Translator",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Translator, who brought tantric teachings from India to Tibet. Teacher of Milarepa. Known for his fierce teaching methods and householder lifestyle.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.40,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["guru", "lineage-holder", "translator"]},
+        {"primordial": "primordial:great-father", "weight": 0.60, "aspects": ["fierce-teacher", "demanding-master"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-MILAREPA", "notes": "Teacher and student"}
+      ]
+    },
+    {
+      "@id": "arch:BU-NAROPA",
+      "@type": "Archetype",
+      "name": "Naropa",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Indian mahasiddha who systematized the Six Yogas. Former abbot who abandoned academia for direct realization under Tilopa. Teacher of Marpa.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.45,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["tantric-adept", "six-yogas"]},
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["trials", "ordeals", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:BU-MARPA", "notes": "Naropa taught Marpa"}
+      ]
+    },
+    {
+      "@id": "arch:BU-MARA",
+      "@type": "Archetype",
+      "name": "Mara",
+      "systemCode": "BU",
+      "belongsToSystem": "system:buddhist",
+      "description": "The Lord of Desire and Death, who tempted Buddha under the Bodhi tree. Personification of the hindrances to enlightenment: desire, death, defilements, and doubt.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.75,
+        "active-receptive": 0.25,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.90, "aspects": ["temptation", "hindrance", "illusion"]},
+        {"primordial": "primordial:trickster", "weight": 0.65, "aspects": ["deception", "seduction"]}
+      ],
+      "relationships": [
+        {"type": "ANTAGONIST", "target": "arch:BU-SHAKYAMUNI", "notes": "Tempted Buddha at enlightenment"},
+        {"type": "CULTURAL_ECHO", "target": "primordial:shadow", "fidelity": 0.85, "notes": "Personified obstacle"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "dhyaniBuddhas": ["arch:BU-VAIROCANA", "arch:BU-AKSHOBHYA", "arch:BU-RATNASAMBHAVA", "arch:BU-AMITABHA", "arch:BU-AMOGHASIDDHI"],
+    "greatBodhisattvas": ["arch:BU-AVALOKITESHVARA", "arch:BU-MANJUSHRI", "arch:BU-VAJRAPANI", "arch:BU-SAMANTABHADRA", "arch:BU-KSITIGARBHA", "arch:BU-MAITREYA"],
+    "wrathfulDeities": ["arch:BU-MAHAKALA", "arch:BU-YAMANTAKA", "arch:BU-HAYAGRIVA", "arch:BU-PALDEN-LHAMO"],
+    "taras": ["arch:BU-GREEN-TARA", "arch:BU-WHITE-TARA"],
+    "kaguyuLineage": ["arch:BU-NAROPA", "arch:BU-MARPA", "arch:BU-MILAREPA"]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

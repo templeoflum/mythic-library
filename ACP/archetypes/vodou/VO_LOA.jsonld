@@ -1,0 +1,526 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "system:vodou",
+  "@type": "System",
+  "systemCode": "VO",
+  "name": "Vodou Loa",
+  "description": "The spirits (Loa/Lwa) of Haitian Vodou and related Afro-Caribbean traditions. Divided into nations (nanchon) including Rada (cool), Petro (hot), and Ghede (death).",
+  "culturalContext": "Haiti, New Orleans, broader African diaspora, ~1700 CE - present",
+  "primarySources": [
+    "Haitian oral tradition",
+    "Maya Deren's Divine Horsemen",
+    "Wade Davis ethnographies",
+    "Karen McCarthy Brown's Mama Lola"
+  ],
+  "characteristics": [
+    "Spirits who ride (possess) devotees during ceremonies",
+    "Syncretized with Catholic saints during colonial period",
+    "Organized into nations (nanchon) with distinct temperaments",
+    "Emphasis on reciprocal relationship between humans and spirits"
+  ],
+
+  "entries": [
+    {
+      "@id": "arch:VO-LEGBA",
+      "@type": "Archetype",
+      "name": "Papa Legba",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Guardian of the crossroads, opener of the gate between worlds. Must be saluted first in any ceremony. Old man with a cane and straw hat who speaks all languages.",
+      "aliases": [
+        {"name": "Elegua", "system": "Santeria", "fidelity": 0.85},
+        {"name": "Eshu", "system": "Yoruba", "fidelity": 0.80}
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.50,
+        "active-receptive": 0.40,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.90, "aspects": ["gate-keeper", "between-worlds", "crossroads"]},
+        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["communicator", "translator", "boundary-crosser"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HERMES", "fidelity": 0.75, "notes": "Crossroads, messenger function"},
+        {"type": "CULTURAL_ECHO", "target": "arch:AFY-ESHU", "fidelity": 0.85, "notes": "Direct Yoruba origin"},
+        {"type": "POLAR_OPPOSITE", "target": "arch:VO-BARON-SAMEDI", "axis": "creation-destruction", "notes": "Entrance vs exit"}
+      ],
+      "syncreticCorrespondence": "St. Peter (holds keys), St. Lazarus"
+    },
+    {
+      "@id": "arch:VO-DAMBALLAH",
+      "@type": "Archetype",
+      "name": "Damballah Wedo",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Great Serpent, primordial creator who arches across the sky as a rainbow. Father of all Loa. Associated with wisdom, purity, and the waters above.",
+      "aliases": [
+        {"name": "Damballa", "system": "variant", "fidelity": 0.95},
+        {"name": "Dan", "system": "Fon/Dahomey", "fidelity": 0.85}
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.15,
+        "light-shadow": 0.15,
+        "active-receptive": 0.60,
+        "individual-collective": 0.80,
+        "ascent-descent": 0.20,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.85, "aspects": ["primordial-serpent", "sky-father", "cosmic-order"]},
+        {"primordial": "primordial:great-father", "weight": 0.75, "aspects": ["father-of-loa", "wisdom", "purity"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-AYIDA-WEDO", "notes": "Husband and wife, rainbow pair"},
+        {"type": "CULTURAL_ECHO", "target": "arch:AU-RAINBOW-SERPENT", "fidelity": 0.55, "notes": "Rainbow serpent archetype"}
+      ],
+      "syncreticCorrespondence": "St. Patrick, Moses"
+    },
+    {
+      "@id": "arch:VO-AYIDA-WEDO",
+      "@type": "Archetype",
+      "name": "Ayida Wedo",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Rainbow Serpent, wife of Damballah. Represents wealth, fertility, and the rainbow. Mother of the Loa. Associated with fidelity and cosmic feminine principle.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.20,
+        "active-receptive": 0.75,
+        "individual-collective": 0.80,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["cosmic-feminine", "fertility", "wealth"]},
+        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["rainbow", "abundance"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-DAMBALLAH", "notes": "Divine pair"}
+      ],
+      "syncreticCorrespondence": "Our Lady of the Immaculate Conception"
+    },
+    {
+      "@id": "arch:VO-OGOU",
+      "@type": "Archetype",
+      "name": "Ogou Feray",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Warrior Loa, lord of iron, fire, war, and politics. Fierce protector of the people. Associated with revolution and the Haitian independence movement.",
+      "aliases": [
+        {"name": "Ogun", "system": "Yoruba", "fidelity": 0.85},
+        {"name": "Ogum", "system": "Candomble", "fidelity": 0.85}
+      ],
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.40,
+        "active-receptive": 0.10,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.95, "aspects": ["iron", "war", "fire", "protection"]},
+        {"primordial": "primordial:creator", "weight": 0.55, "aspects": ["blacksmith", "civilization-builder"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:AF-OGUN", "fidelity": 0.90, "notes": "Direct Yoruba origin"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ARES", "fidelity": 0.60, "notes": "War god parallel"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HEPHAESTUS", "fidelity": 0.55, "notes": "Forge/iron parallel"}
+      ],
+      "syncreticCorrespondence": "St. James the Greater, St. George"
+    },
+    {
+      "@id": "arch:VO-ERZULIE-FREDA",
+      "@type": "Archetype",
+      "name": "Erzulie Freda",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Loa of love, beauty, luxury, and dreams. Flirtatious, demanding, and perpetually heartbroken. Embodies romantic love, femininity, and the longing for the unattainable.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.55,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.95, "aspects": ["romance", "beauty", "desire", "luxury"]},
+        {"primordial": "primordial:maiden", "weight": 0.65, "aspects": ["feminine-ideal", "unattainable-beloved"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "arch:VO-ERZULIE-DANTOR", "axis": "light-shadow", "notes": "Light vs dark feminine"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-APHRODITE", "fidelity": 0.70, "notes": "Love goddess parallel"},
+        {"type": "CULTURAL_ECHO", "target": "arch:AF-OSHUN", "fidelity": 0.75, "notes": "Yoruba river goddess of love"}
+      ],
+      "syncreticCorrespondence": "Our Lady of Sorrows, Mater Dolorosa"
+    },
+    {
+      "@id": "arch:VO-ERZULIE-DANTOR",
+      "@type": "Archetype",
+      "name": "Erzulie Dantor",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The fierce Black Madonna, protector of women and children. Single mother archetype. Fiercely independent, jealous, and vengeful when her children are threatened.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.60,
+        "active-receptive": 0.30,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["fierce-protector", "single-mother", "defender"]},
+        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["vengeance", "protection"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "arch:VO-ERZULIE-FREDA", "axis": "light-shadow", "notes": "Dark vs light Erzulie"},
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-KALI", "fidelity": 0.55, "notes": "Fierce mother goddess"}
+      ],
+      "syncreticCorrespondence": "Our Lady of Czestochowa (Black Madonna)"
+    },
+    {
+      "@id": "arch:VO-BARON-SAMEDI",
+      "@type": "Archetype",
+      "name": "Baron Samedi",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Lord of the Dead, master of the cemetery. Wears top hat, tails, and dark glasses. Obscene, humorous, and transgressive. Guardian of the transition between life and death.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.75,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.85,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["death-lord", "cemetery-guardian", "transition"]},
+        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["obscenity", "humor", "transgression"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-MAMAN-BRIGITTE", "notes": "Lord and Lady of the Dead"},
+        {"type": "POLAR_OPPOSITE", "target": "arch:VO-LEGBA", "axis": "creation-destruction", "notes": "Exit vs entrance"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-HADES", "fidelity": 0.55, "notes": "Death lord parallel"}
+      ],
+      "syncreticCorrespondence": "St. Martin de Porres"
+    },
+    {
+      "@id": "arch:VO-MAMAN-BRIGITTE",
+      "@type": "Archetype",
+      "name": "Maman Brigitte",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Wife of Baron Samedi, queen of the Ghede. Fierce, foul-mouthed, and protective. Guards the first female grave in every cemetery. Associated with justice for women.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.70,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.80,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:crone", "weight": 0.85, "aspects": ["death-wisdom", "cemetery-queen"]},
+        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["justice", "protection-of-women"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-BARON-SAMEDI", "notes": "Divine death couple"},
+        {"type": "CULTURAL_ECHO", "target": "arch:CE-BRIGID", "fidelity": 0.50, "notes": "Celtic Brigid connection"}
+      ],
+      "syncreticCorrespondence": "St. Brigid of Ireland"
+    },
+    {
+      "@id": "arch:VO-GHEDE-NIBO",
+      "@type": "Archetype",
+      "name": "Ghede Nibo",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Spirit of the dead who died young. Patron of those who died violently or before their time. Helps souls who cannot find their way to Ginen (ancestral realm).",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.65,
+        "active-receptive": 0.45,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.80, "aspects": ["guide-of-lost-souls", "young-dead"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["helping-transition", "healing-grief"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-BARON-SAMEDI", "notes": "Part of Ghede family"}
+      ]
+    },
+    {
+      "@id": "arch:VO-AGWE",
+      "@type": "Archetype",
+      "name": "Agwe",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Sovereign of the seas, king of the ocean. Protector of sailors and fishermen. Commands ships and rules over all that lives in the water. Associated with the middle passage.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["sea-king", "naval-commander"]},
+        {"primordial": "primordial:great-father", "weight": 0.60, "aspects": ["protector-of-sailors", "depth"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-LA-SIRENE", "notes": "King and Queen of the sea"},
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-POSEIDON", "fidelity": 0.65, "notes": "Sea god parallel"},
+        {"type": "CULTURAL_ECHO", "target": "arch:AF-OLOKUN", "fidelity": 0.70, "notes": "Yoruba ocean deity"}
+      ],
+      "syncreticCorrespondence": "St. Ulrich"
+    },
+    {
+      "@id": "arch:VO-LA-SIRENE",
+      "@type": "Archetype",
+      "name": "La Sirene",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Mermaid, queen of the ocean depths. Embodies the mysteries of the deep, music, and dreams. Those she takes beneath the water return with gifts of prophecy.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.70,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["ocean-mother", "mystery"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["prophecy", "dreams", "music"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-AGWE", "notes": "Royal sea couple"},
+        {"type": "CULTURAL_ECHO", "target": "arch:AF-YEMOJA", "fidelity": 0.70, "notes": "Yoruba ocean mother"}
+      ],
+      "syncreticCorrespondence": "Our Lady Star of the Sea"
+    },
+    {
+      "@id": "arch:VO-SIMBI",
+      "@type": "Archetype",
+      "name": "Simbi",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Serpent Loa of fresh water, rain, and magic. Guardian of springs, ponds, and marshes. Associated with sorcery, herbalism, and secret knowledge.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.50,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["sorcery", "herbalism", "secret-knowledge"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["serpent", "hidden-waters"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-DAMBALLAH", "notes": "Both serpent Loa"}
+      ]
+    },
+    {
+      "@id": "arch:VO-LOKO",
+      "@type": "Archetype",
+      "name": "Loko Atisou",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Loa of vegetation, trees, and healing herbs. First houngan (priest). Associated with the center post of the temple (poteau mitan) and priestly authority.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.85, "aspects": ["herbs", "medicine", "healing"]},
+        {"primordial": "primordial:wise-elder", "weight": 0.70, "aspects": ["priest", "tradition", "knowledge"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-AYIZAN", "notes": "First priest and priestess pair"}
+      ]
+    },
+    {
+      "@id": "arch:VO-AYIZAN",
+      "@type": "Archetype",
+      "name": "Ayizan",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "First mambo (priestess), wife of Loko. Protector of markets, commerce, and the sacred center post. Patron of initiates and guardian of religious secrets.",
+      "spectralCoordinates": {
+        "order-chaos": 0.25,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.60,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["priestess", "initiation", "secrets"]},
+        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["tradition-keeper", "guardian"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "arch:VO-LOKO", "notes": "First religious couple"}
+      ]
+    },
+    {
+      "@id": "arch:VO-MARASA",
+      "@type": "Archetype",
+      "name": "Marasa",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Sacred Twins, divine children who embody duality and multiplicity. Fed before all other Loa at feasts. Represent mystery of twinship and cosmic balance.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:twin", "weight": 0.95, "aspects": ["duality", "balance", "mystery"]},
+        {"primordial": "primordial:divine-child", "weight": 0.75, "aspects": ["sacred-children", "innocence"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:AF-IBEJI", "fidelity": 0.85, "notes": "Yoruba sacred twins"}
+      ]
+    },
+    {
+      "@id": "arch:VO-DANBALA-LA-FLAMBEAU",
+      "@type": "Archetype",
+      "name": "Danbala La Flambeau",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "The Petro aspect of Damballah, fiercer and more aggressive. Associated with fire and lightning rather than cool waters. Represents the hot, transformative serpent energy.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.45,
+        "active-receptive": 0.30,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["fire-serpent", "transformation"]},
+        {"primordial": "primordial:destroyer", "weight": 0.55, "aspects": ["lightning", "fierce-change"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "arch:VO-DAMBALLAH", "notes": "Hot Petro form of cool Rada Damballah"}
+      ]
+    },
+    {
+      "@id": "arch:VO-EZILI-JE-ROUGE",
+      "@type": "Archetype",
+      "name": "Ezili Je Rouge",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Erzulie Red-Eyes, the Petro aspect of Erzulie. Fierce, vengeful, and associated with jealousy and rage. Embodies feminine fury and the dangerous side of passion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.70,
+        "light-shadow": 0.70,
+        "active-receptive": 0.20,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.75, "aspects": ["rage", "vengeance", "jealousy"]},
+        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["scorned-love", "passion-turned-fury"]}
+      ],
+      "relationships": [
+        {"type": "SHADOW", "target": "arch:VO-ERZULIE-FREDA", "notes": "Dark aspect of love goddess"}
+      ]
+    },
+    {
+      "@id": "arch:VO-TI-JEAN-PETRO",
+      "@type": "Archetype",
+      "name": "Ti Jean Petro",
+      "systemCode": "VO",
+      "belongsToSystem": "system:vodou",
+      "description": "Young, fierce Petro spirit associated with fire and magical power. One-legged trickster. Patron of magicians and sorcerers. Represents revolutionary energy.",
+      "spectralCoordinates": {
+        "order-chaos": 0.75,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.55,
+        "active-receptive": 0.20,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.20
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.80, "aspects": ["magical-cunning", "one-legged"]},
+        {"primordial": "primordial:rebel", "weight": 0.75, "aspects": ["revolution", "transformation", "fire"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:VO-LEGBA", "fidelity": 0.50, "notes": "Petro trickster parallel"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "radaNanchon": ["arch:VO-LEGBA", "arch:VO-DAMBALLAH", "arch:VO-AYIDA-WEDO", "arch:VO-OGOU", "arch:VO-ERZULIE-FREDA", "arch:VO-AGWE", "arch:VO-LA-SIRENE", "arch:VO-LOKO", "arch:VO-AYIZAN"],
+    "petroNanchon": ["arch:VO-ERZULIE-DANTOR", "arch:VO-DANBALA-LA-FLAMBEAU", "arch:VO-EZILI-JE-ROUGE", "arch:VO-TI-JEAN-PETRO"],
+    "ghedeNanchon": ["arch:VO-BARON-SAMEDI", "arch:VO-MAMAN-BRIGITTE", "arch:VO-GHEDE-NIBO"],
+    "waterLoa": ["arch:VO-AGWE", "arch:VO-LA-SIRENE", "arch:VO-SIMBI"],
+    "serpentLoa": ["arch:VO-DAMBALLAH", "arch:VO-AYIDA-WEDO", "arch:VO-SIMBI", "arch:VO-DANBALA-LA-FLAMBEAU"],
+    "erzulieForms": ["arch:VO-ERZULIE-FREDA", "arch:VO-ERZULIE-DANTOR", "arch:VO-EZILI-JE-ROUGE"]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

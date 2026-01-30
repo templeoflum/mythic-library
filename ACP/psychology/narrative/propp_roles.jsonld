@@ -1,0 +1,252 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "narrative:propp",
+  "@type": "NarrativeSystem",
+  "name": "Propp's Morphology of the Folktale",
+  "description": "The 8 character roles identified by Vladimir Propp in his structural analysis of Russian folktales. These dramatis personae fulfill specific narrative functions.",
+  "domain": "psychology",
+  "subdomain": "narrative",
+  "cardinality": 8,
+  "structuralNotes": "Based on Propp's 1928 'Morphology of the Folktale'. Characters defined by function, not psychology. Multiple roles can be held by single character.",
+
+  "entries": [
+    {
+      "@id": "propp:villain",
+      "@type": "Archetype",
+      "name": "The Villain",
+      "russianTerm": "Вредитель (Vreditel)",
+      "narrativeFunction": "Causes harm, fights the hero, pursues",
+      "keywords": ["antagonist", "obstacle", "harm", "pursuit", "conflict"],
+      "description": "Causes the initial misfortune, struggles with the hero, and must be defeated. Creates the conflict that drives the narrative.",
+      "spectralCoordinates": {
+        "order-chaos": 0.70,
+        "creation-destruction": 0.80,
+        "light-shadow": 0.80,
+        "active-receptive": 0.20,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.25
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.85, "aspects": ["antagonism", "obstacle"]},
+        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["harm", "conflict"]}
+      ],
+      "relationships": [
+        {"type": "ANTAGONIST", "target": "propp:hero", "note": "Primary conflict"},
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:shadow", "fidelity": 0.80, "note": "Campbell's shadow"}
+      ]
+    },
+    {
+      "@id": "propp:donor",
+      "@type": "Archetype",
+      "name": "The Donor (Provider)",
+      "russianTerm": "Даритель (Daritel)",
+      "narrativeFunction": "Prepares hero, provides magical agent",
+      "keywords": ["gift", "test", "preparation", "magic", "helper"],
+      "description": "Tests, interrogates, or attacks the hero before providing them with a magical agent or helper. Often appears as elderly figure or animal.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.45,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["testing", "providing", "wisdom"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["magic", "transformation"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "propp:hero", "note": "Provides necessary aid"},
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:mentor", "fidelity": 0.75, "note": "Campbell's mentor"}
+      ]
+    },
+    {
+      "@id": "propp:helper",
+      "@type": "Archetype",
+      "name": "The Helper",
+      "russianTerm": "Помощник (Pomoshchnik)",
+      "narrativeFunction": "Aids the hero in solving tasks",
+      "keywords": ["aid", "assistance", "magic", "rescue", "support"],
+      "description": "Assists the hero in their quest, often a magical creature or object obtained from the donor. Resolves difficult tasks.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["aid", "support"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["magic", "problem-solving"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "propp:hero", "note": "Primary alliance"},
+        {"type": "COMPLEMENT", "target": "propp:donor", "note": "Often provided by donor"}
+      ]
+    },
+    {
+      "@id": "propp:princess",
+      "@type": "Archetype",
+      "name": "The Princess (Sought-for Person)",
+      "russianTerm": "Царевна (Tsarevna)",
+      "narrativeFunction": "Object of quest, recognizes/rewards hero",
+      "keywords": ["prize", "recognition", "marriage", "goal", "reward"],
+      "description": "The person sought for by the hero. Assigns difficult tasks, recognizes the true hero, exposes the false hero, and marries the hero at tale's end.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.65,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:maiden", "weight": 0.75, "aspects": ["goal", "prize", "recognition"]},
+        {"primordial": "primordial:lover", "weight": 0.65, "aspects": ["union", "reward"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "propp:hero", "note": "Object of quest"},
+        {"type": "COMPLEMENT", "target": "propp:father", "note": "Daughter relationship"}
+      ]
+    },
+    {
+      "@id": "propp:dispatcher",
+      "@type": "Archetype",
+      "name": "The Dispatcher",
+      "russianTerm": "Отправитель (Otpravitel)",
+      "narrativeFunction": "Sends hero on quest",
+      "keywords": ["sending", "commission", "quest", "call", "command"],
+      "description": "Makes the lack known and sends the hero off. Issues the call to adventure or assigns the mission.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.70, "aspects": ["command", "authority"]},
+        {"primordial": "primordial:great-father", "weight": 0.55, "aspects": ["sending-forth", "commission"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "propp:hero", "note": "Initiates quest"},
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:call", "fidelity": 0.70, "note": "Call to adventure source"}
+      ]
+    },
+    {
+      "@id": "propp:hero",
+      "@type": "Archetype",
+      "name": "The Hero",
+      "russianTerm": "Герой (Geroy)",
+      "narrativeFunction": "Seeks, departs, reacts to donor, weds princess",
+      "keywords": ["protagonist", "seeker", "quest", "victory", "transformation"],
+      "description": "Departs on a quest, reacts to the donor, weds the princess. Can be either 'seeker-hero' or 'victim-hero' based on narrative type.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.25,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.95, "aspects": ["quest", "transformation", "victory"]}
+      ],
+      "relationships": [
+        {"type": "ANTAGONIST", "target": "propp:villain", "note": "Primary conflict"},
+        {"type": "ANTAGONIST", "target": "propp:false-hero", "note": "Identity conflict"},
+        {"type": "COMPLEMENT", "target": "propp:princess", "note": "Quest goal"},
+        {"type": "CULTURAL_ECHO", "target": "primordial:hero", "fidelity": 0.95, "note": "Direct mapping"}
+      ]
+    },
+    {
+      "@id": "propp:false-hero",
+      "@type": "Archetype",
+      "name": "The False Hero",
+      "russianTerm": "Ложный герой (Lozhny geroy)",
+      "narrativeFunction": "Claims hero's achievements, exposed and punished",
+      "keywords": ["impostor", "usurper", "deception", "false-claims", "exposure"],
+      "description": "Takes credit for the hero's actions, makes unfounded claims to the princess. Must be exposed and punished for narrative completion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.70,
+        "active-receptive": 0.30,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.75, "aspects": ["impostor", "dark-mirror"]},
+        {"primordial": "primordial:trickster", "weight": 0.60, "aspects": ["deception", "false-claims"]}
+      ],
+      "relationships": [
+        {"type": "ANTAGONIST", "target": "propp:hero", "note": "Claims hero's place"},
+        {"type": "SHADOW", "target": "propp:hero", "note": "Dark reflection"}
+      ]
+    },
+    {
+      "@id": "propp:father",
+      "@type": "Archetype",
+      "name": "The Father (King)",
+      "russianTerm": "Царь-Отец (Tsar-Otets)",
+      "narrativeFunction": "Assigns tasks, punishes false hero, rewards true hero",
+      "keywords": ["authority", "judgment", "reward", "punishment", "recognition"],
+      "description": "Often the father of the princess. Assigns difficult tasks, identifies the true hero, punishes the false hero, and authorizes the marriage.",
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-father", "weight": 0.80, "aspects": ["authority", "judgment"]},
+        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["rule", "recognition"]}
+      ],
+      "relationships": [
+        {"type": "COMPLEMENT", "target": "propp:princess", "note": "Father-daughter"},
+        {"type": "COMPLEMENT", "target": "propp:hero", "note": "Rewards and recognizes"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "alliances": {
+      "heroic": ["propp:hero", "propp:donor", "propp:helper"],
+      "authority": ["propp:dispatcher", "propp:father", "propp:princess"],
+      "antagonistic": ["propp:villain", "propp:false-hero"]
+    },
+    "narrativeFunctions": {
+      "initiation": ["propp:dispatcher"],
+      "quest": ["propp:hero", "propp:donor", "propp:helper"],
+      "conflict": ["propp:villain"],
+      "resolution": ["propp:princess", "propp:father", "propp:false-hero"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

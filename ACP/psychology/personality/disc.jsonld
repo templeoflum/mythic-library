@@ -1,0 +1,152 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "psychology:disc",
+  "@type": "PsychologicalSystem",
+  "name": "DISC Behavioral Styles",
+  "description": "William Marston's four behavioral styles based on perception of environment (favorable/hostile) and response (active/passive). Widely used in workplace assessment.",
+  "domain": "psychology",
+  "subdomain": "personality",
+  "cardinality": 4,
+  "structuralNotes": "Based on Marston's 1928 'Emotions of Normal People'. Two axes: pace (fast/slow) and priority (task/people). Focus is on observable behavior, not personality.",
+
+  "entries": [
+    {
+      "@id": "disc:dominance",
+      "@type": "Archetype",
+      "name": "Dominance (D)",
+      "code": "D",
+      "pace": "Fast",
+      "priority": "Task",
+      "keywords": ["direct", "decisive", "competitive", "demanding", "results-oriented"],
+      "strengths": ["leadership", "problem-solving", "quick decisions", "driving results"],
+      "challenges": ["impatience", "insensitivity", "poor listening", "controlling"],
+      "description": "Direct and results-oriented. Accepts challenges, takes charge, and focuses on bottom-line results. Values competence and action.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.40,
+        "active-receptive": 0.15,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["competition", "directness"]},
+        {"primordial": "primordial:sovereign", "weight": 0.70, "aspects": ["leadership", "control"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "disc:steadiness", "axis": "active-receptive", "note": "Opposite quadrant"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:warrior", "fidelity": 0.70, "note": "Active force"}
+      ]
+    },
+    {
+      "@id": "disc:influence",
+      "@type": "Archetype",
+      "name": "Influence (I)",
+      "code": "I",
+      "pace": "Fast",
+      "priority": "People",
+      "keywords": ["enthusiastic", "persuasive", "optimistic", "collaborative", "expressive"],
+      "strengths": ["motivation", "persuasion", "enthusiasm", "networking"],
+      "challenges": ["disorganization", "impulsiveness", "lack of follow-through", "over-talking"],
+      "description": "Enthusiastic and collaborative. Influences through relationships and optimism. Values recognition and group interaction.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.30,
+        "active-receptive": 0.30,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:lover", "weight": 0.80, "aspects": ["enthusiasm", "connection"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["persuasion", "optimism"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "disc:conscientiousness", "axis": "individual-collective", "note": "Opposite quadrant"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:lover", "fidelity": 0.70, "note": "Connection energy"}
+      ]
+    },
+    {
+      "@id": "disc:steadiness",
+      "@type": "Archetype",
+      "name": "Steadiness (S)",
+      "code": "S",
+      "pace": "Slow",
+      "priority": "People",
+      "keywords": ["supportive", "patient", "reliable", "team-oriented", "sincere"],
+      "strengths": ["support", "reliability", "patience", "team player"],
+      "challenges": ["resistance to change", "passive-aggressive", "difficulty saying no", "holding grudges"],
+      "description": "Supportive and stable. Values cooperation, security, and sincere appreciation. Patient and reliable team member.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.65,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.30,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.75, "aspects": ["support", "patience"]},
+        {"primordial": "primordial:preserver", "weight": 0.70, "aspects": ["reliability", "stability"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "disc:dominance", "axis": "active-receptive", "note": "Opposite quadrant"},
+        {"type": "CULTURAL_ECHO", "target": "pearson:caregiver", "fidelity": 0.75, "note": "Supportive care"}
+      ]
+    },
+    {
+      "@id": "disc:conscientiousness",
+      "@type": "Archetype",
+      "name": "Conscientiousness (C)",
+      "code": "C",
+      "pace": "Slow",
+      "priority": "Task",
+      "keywords": ["analytical", "systematic", "accurate", "quality-focused", "reserved"],
+      "strengths": ["accuracy", "analysis", "quality", "expertise"],
+      "challenges": ["over-analysis", "criticism", "isolation", "perfectionism"],
+      "description": "Analytical and quality-focused. Values accuracy, expertise, and competency. Systematic approach with high standards.",
+      "spectralCoordinates": {
+        "order-chaos": 0.20,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.45,
+        "active-receptive": 0.55,
+        "individual-collective": 0.30,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.40,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["analysis", "accuracy"]},
+        {"primordial": "primordial:magician", "weight": 0.55, "aspects": ["expertise", "systems"]}
+      ],
+      "relationships": [
+        {"type": "POLAR_OPPOSITE", "target": "disc:influence", "axis": "individual-collective", "note": "Opposite quadrant"},
+        {"type": "CULTURAL_ECHO", "target": "kwml:magician", "fidelity": 0.65, "note": "Knowledge mastery"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "axes": {
+      "pace": {"fast": ["dominance", "influence"], "slow": ["steadiness", "conscientiousness"]},
+      "priority": {"task": ["dominance", "conscientiousness"], "people": ["influence", "steadiness"]}
+    },
+    "quadrantOpposites": [
+      ["dominance", "steadiness"],
+      ["influence", "conscientiousness"]
+    ]
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

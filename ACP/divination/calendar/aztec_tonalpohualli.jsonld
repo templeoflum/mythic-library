@@ -1,0 +1,585 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "divination:aztec_tonalpohualli",
+  "@type": "DivinationSystem",
+  "name": "Aztec Tonalpohualli Day Signs",
+  "description": "The 20 day signs of the 260-day Aztec sacred calendar. Each sign carries specific destiny, character, and divine association central to Aztec cosmology.",
+  "domain": "divination",
+  "subdomain": "calendar",
+  "cardinality": 20,
+  "structuralNotes": "20 day signs × 13 numbers = 260-day cycle. Parallel to Mayan Tzolk'in with Aztec cultural adaptations. Each sign has patron deity and trecena associations.",
+
+  "entries": [
+    {
+      "@id": "tonalpohualli:cipactli",
+      "@type": "Archetype",
+      "name": "Cipactli (Crocodile)",
+      "dayNumber": 1,
+      "direction": "East",
+      "patronDeity": "Tonacatecuhtli",
+      "keywords": ["origin", "earth-monster", "beginnings", "abundance", "primordial"],
+      "description": "The primordial earth crocodile from whose body the world was created. Represents origins, initiating energy, and the foundation of existence.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.45,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.80, "aspects": ["origin", "earth-body"]},
+        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["beginnings", "foundation"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:imix", "fidelity": 0.90, "note": "Same archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:ehecatl",
+      "@type": "Archetype",
+      "name": "Ehecatl (Wind)",
+      "dayNumber": 2,
+      "direction": "North",
+      "patronDeity": "Quetzalcoatl-Ehecatl",
+      "keywords": ["wind", "breath", "change", "indecision", "messenger"],
+      "description": "Wind aspect of Quetzalcoatl. Represents change, communication between worlds, but also inconsistency and the sweeping away of what exists.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["change", "unpredictability"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["breath", "spirit"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:ik", "fidelity": 0.90, "note": "Same archetype"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-QUETZALCOATL", "fidelity": 0.85, "note": "Wind aspect"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:calli",
+      "@type": "Archetype",
+      "name": "Calli (House)",
+      "dayNumber": 3,
+      "direction": "West",
+      "patronDeity": "Tepeyollotl",
+      "keywords": ["house", "hearth", "interior", "protection", "enclosure"],
+      "description": "The sacred house and inner refuge. Represents domestic stability, protection, but also restriction and the darkness of enclosed spaces.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.55,
+        "active-receptive": 0.65,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.35,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:preserver", "weight": 0.75, "aspects": ["protection", "enclosure"]},
+        {"primordial": "primordial:shadow", "weight": 0.55, "aspects": ["interior", "darkness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:akbal", "fidelity": 0.85, "note": "House/Night parallel"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:cuetzpalin",
+      "@type": "Archetype",
+      "name": "Cuetzpalin (Lizard)",
+      "dayNumber": 4,
+      "direction": "South",
+      "patronDeity": "Huehuecoyotl",
+      "keywords": ["lizard", "survival", "regeneration", "cunning", "sexuality"],
+      "description": "The clever lizard of survival and regeneration. Represents adaptive cunning, sensuality, and the ability to regenerate after loss.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.45,
+        "active-receptive": 0.40,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["cunning", "survival"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["regeneration"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:kan", "fidelity": 0.80, "note": "Lizard/Seed parallel"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:coatl",
+      "@type": "Archetype",
+      "name": "Coatl (Serpent)",
+      "dayNumber": 5,
+      "direction": "East",
+      "patronDeity": "Chalchiuhtlicue",
+      "keywords": ["serpent", "wisdom", "life-force", "sexuality", "transformation"],
+      "description": "The sacred serpent of wisdom and transformation. Represents vital energy, sexual power, and the deep knowledge of earth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.45,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.80, "aspects": ["wisdom", "transformation"]},
+        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["sexuality", "life-force"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:chicchan", "fidelity": 0.95, "note": "Same serpent archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:miquiztli",
+      "@type": "Archetype",
+      "name": "Miquiztli (Death)",
+      "dayNumber": 6,
+      "direction": "North",
+      "patronDeity": "Tecciztecatl/Mictlantecuhtli",
+      "keywords": ["death", "moon", "ancestors", "transformation", "endings"],
+      "description": "The skull of death and transformation. Represents necessary endings, ancestral connection, and the moon's transformative power.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.80,
+        "light-shadow": 0.70,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.85,
+        "voluntary-fated": 0.75
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.85, "aspects": ["death", "endings"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.70, "aspects": ["ancestors", "transition"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:cimi", "fidelity": 0.95, "note": "Same death archetype"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-MICTLANTECUHTLI", "fidelity": 0.85, "note": "Death lord"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:mazatl",
+      "@type": "Archetype",
+      "name": "Mazatl (Deer)",
+      "dayNumber": 7,
+      "direction": "West",
+      "patronDeity": "Tlaloc",
+      "keywords": ["deer", "hunting", "duality", "right-hand", "grace"],
+      "description": "The deer of the hunt and divine duality. Represents the hunted and hunter, grace under pressure, and spiritual pursuit.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.65, "aspects": ["pursuit", "grace"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["spirituality"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:manik", "fidelity": 0.95, "note": "Same deer archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:tochtli",
+      "@type": "Archetype",
+      "name": "Tochtli (Rabbit)",
+      "dayNumber": 8,
+      "direction": "South",
+      "patronDeity": "Mayahuel",
+      "keywords": ["rabbit", "fertility", "moon", "pulque", "abundance"],
+      "description": "The rabbit of fertility and the moon. Associated with pulque, abundance, and the 400 rabbit gods of intoxication.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.40,
+        "active-receptive": 0.55,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["abundance", "excess"]},
+        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["fertility", "multiplication"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:lamat", "fidelity": 0.85, "note": "Rabbit/Star parallel"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:atl",
+      "@type": "Archetype",
+      "name": "Atl (Water)",
+      "dayNumber": 9,
+      "direction": "East",
+      "patronDeity": "Xiuhtecuhtli",
+      "keywords": ["water", "purification", "instability", "emotions", "flow"],
+      "description": "Sacred water of life and purification. Represents emotional depth, cleansing, but also instability and the destructive power of flood.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.65,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["water", "emotions"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["purification", "flow"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:muluc", "fidelity": 0.90, "note": "Same water archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:itzcuintli",
+      "@type": "Archetype",
+      "name": "Itzcuintli (Dog)",
+      "dayNumber": 10,
+      "direction": "North",
+      "patronDeity": "Mictlantecuhtli",
+      "keywords": ["dog", "guide", "loyalty", "underworld", "faithfulness"],
+      "description": "The loyal dog who guides souls to Mictlan. Represents faithfulness, underworld journey, and unconditional love.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.50,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.85, "aspects": ["guide", "underworld"]},
+        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["loyalty", "faithfulness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:oc", "fidelity": 0.95, "note": "Same dog archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:ozomatli",
+      "@type": "Archetype",
+      "name": "Ozomatli (Monkey)",
+      "dayNumber": 11,
+      "direction": "West",
+      "patronDeity": "Xochipilli",
+      "keywords": ["monkey", "arts", "dance", "mischief", "creativity"],
+      "description": "The playful monkey of arts and dance. Represents creativity, artistic expression, joyful mischief, and the pleasure of craft.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.35,
+        "active-receptive": 0.35,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.30
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["arts", "creativity"]},
+        {"primordial": "primordial:trickster", "weight": 0.75, "aspects": ["mischief", "play"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:chuen", "fidelity": 0.95, "note": "Same monkey archetype"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-XOCHIPILLI", "fidelity": 0.80, "note": "Flower prince"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:malinalli",
+      "@type": "Archetype",
+      "name": "Malinalli (Grass/Twist)",
+      "dayNumber": 12,
+      "direction": "South",
+      "patronDeity": "Patecatl",
+      "keywords": ["grass", "tenacity", "resurrection", "flexibility", "endurance"],
+      "description": "The twisted grass that endures. Represents resilience, the ability to rise after being trampled, and the journey of life.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["endurance", "journey"]},
+        {"primordial": "primordial:healer", "weight": 0.55, "aspects": ["resurrection", "resilience"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:eb", "fidelity": 0.85, "note": "Road/Grass parallel"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:acatl",
+      "@type": "Archetype",
+      "name": "Acatl (Reed)",
+      "dayNumber": 13,
+      "direction": "East",
+      "patronDeity": "Tezcatlipoca/Itzlacoliuhqui",
+      "keywords": ["reed", "authority", "justice", "arrow", "direction"],
+      "description": "The reed arrow of authority and justice. Represents decisive leadership, righteous direction, and the birth date of Quetzalcoatl.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.35,
+        "active-receptive": 0.30,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:sovereign", "weight": 0.80, "aspects": ["authority", "justice"]},
+        {"primordial": "primordial:warrior", "weight": 0.60, "aspects": ["arrow", "direction"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:ben", "fidelity": 0.95, "note": "Same reed archetype"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-QUETZALCOATL", "fidelity": 0.70, "note": "1 Reed birthdate"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:ocelotl",
+      "@type": "Archetype",
+      "name": "Ocelotl (Jaguar)",
+      "dayNumber": 14,
+      "direction": "North",
+      "patronDeity": "Tlazolteotl",
+      "keywords": ["jaguar", "warrior", "night", "shadow", "power"],
+      "description": "The jaguar warrior of night and power. Represents fierce strength, shadow work, and the warrior's path through darkness.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.60,
+        "active-receptive": 0.30,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.85, "aspects": ["power", "combat"]},
+        {"primordial": "primordial:shadow", "weight": 0.65, "aspects": ["night", "darkness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:ix", "fidelity": 0.90, "note": "Same jaguar archetype"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-TEZCATLIPOCA", "fidelity": 0.70, "note": "Jaguar association"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:cuauhtli",
+      "@type": "Archetype",
+      "name": "Cuauhtli (Eagle)",
+      "dayNumber": 15,
+      "direction": "West",
+      "patronDeity": "Xipe Totec",
+      "keywords": ["eagle", "sun", "warrior", "vision", "ascent"],
+      "description": "The solar eagle warrior. Represents the sun's journey, warrior vision, spiritual ascent, and the eagle knight's path.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.30,
+        "active-receptive": 0.25,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.80, "aspects": ["combat", "sun-warrior"]},
+        {"primordial": "primordial:hero", "weight": 0.70, "aspects": ["ascent", "vision"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:men", "fidelity": 0.95, "note": "Same eagle archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:cozcacuauhtli",
+      "@type": "Archetype",
+      "name": "Cozcacuauhtli (Vulture)",
+      "dayNumber": 16,
+      "direction": "South",
+      "patronDeity": "Itzpapalotl",
+      "keywords": ["vulture", "wisdom", "longevity", "purification", "old-age"],
+      "description": "The wise vulture of longevity. Represents accumulated wisdom, purification of decay, and the dignity of old age.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.55,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.80, "aspects": ["wisdom", "longevity"]},
+        {"primordial": "primordial:crone", "weight": 0.60, "aspects": ["old-age", "purification"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:cib", "fidelity": 0.95, "note": "Same vulture archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:ollin",
+      "@type": "Archetype",
+      "name": "Ollin (Movement/Earthquake)",
+      "dayNumber": 17,
+      "direction": "East",
+      "patronDeity": "Xolotl",
+      "keywords": ["movement", "earthquake", "fifth-sun", "change", "evolution"],
+      "description": "The glyph of movement and the Fifth Sun. Represents cosmic change, evolutionary transformation, and the current world age.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.35,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.80,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.65, "aspects": ["earthquake", "change"]},
+        {"primordial": "primordial:creator", "weight": 0.60, "aspects": ["fifth-sun", "evolution"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:caban", "fidelity": 0.85, "note": "Earth/Movement parallel"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:tecpatl",
+      "@type": "Archetype",
+      "name": "Tecpatl (Flint Knife)",
+      "dayNumber": 18,
+      "direction": "North",
+      "patronDeity": "Chalchiuhtotolin/Tezcatlipoca",
+      "keywords": ["flint", "sacrifice", "truth", "hardness", "cutting"],
+      "description": "The flint knife of sacrifice and truth. Represents necessary sacrifice, cutting through illusion, and the hardness needed for transformation.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.65,
+        "light-shadow": 0.45,
+        "active-receptive": 0.30,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.75, "aspects": ["cutting", "sacrifice"]},
+        {"primordial": "primordial:destroyer", "weight": 0.65, "aspects": ["truth", "hardness"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:etznab", "fidelity": 0.95, "note": "Same flint archetype"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:quiahuitl",
+      "@type": "Archetype",
+      "name": "Quiahuitl (Rain)",
+      "dayNumber": 19,
+      "direction": "West",
+      "patronDeity": "Tonatiuh/Chantico",
+      "keywords": ["rain", "fertility", "purification", "storm", "blessing"],
+      "description": "The rain that brings life and destruction. Represents blessing and danger together, the storm that fertilizes and floods.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.45,
+        "active-receptive": 0.50,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.70, "aspects": ["fertility", "blessing"]},
+        {"primordial": "primordial:destroyer", "weight": 0.60, "aspects": ["storm", "flood"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:cauac", "fidelity": 0.95, "note": "Same rain archetype"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-TLALOC", "fidelity": 0.80, "note": "Rain deity"}
+      ]
+    },
+    {
+      "@id": "tonalpohualli:xochitl",
+      "@type": "Archetype",
+      "name": "Xochitl (Flower)",
+      "dayNumber": 20,
+      "direction": "South",
+      "patronDeity": "Xochiquetzal",
+      "keywords": ["flower", "beauty", "pleasure", "art", "completion"],
+      "description": "The flower of beauty and completion. Represents artistic perfection, pleasure, the soul's blossoming, and the completion of cycles.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.25,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["art", "beauty"]},
+        {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["pleasure", "blossoming"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tzolkin:ahau", "fidelity": 0.80, "note": "Completion parallel"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-XOCHIQUETZAL", "fidelity": 0.85, "note": "Flower goddess"},
+        {"type": "EVOLUTION", "target": "tonalpohualli:cipactli", "note": "Cycle completes"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "directionalGroups": {
+      "east": ["cipactli", "coatl", "atl", "acatl", "ollin"],
+      "north": ["ehecatl", "miquiztli", "itzcuintli", "ocelotl", "tecpatl"],
+      "west": ["calli", "mazatl", "ozomatli", "cuauhtli", "quiahuitl"],
+      "south": ["cuetzpalin", "tochtli", "malinalli", "cozcacuauhtli", "xochitl"]
+    },
+    "trecenas": {
+      "1_cipactli": "Beginnings trecena",
+      "1_ocelotl": "Warrior trecena",
+      "1_mazatl": "Deer trecena",
+      "1_xochitl": "Flower trecena",
+      "1_acatl": "Authority trecena"
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}

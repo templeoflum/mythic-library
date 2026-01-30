@@ -1,0 +1,616 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "divination:mayan_tzolkin",
+  "@type": "DivinationSystem",
+  "name": "Mayan Tzolk'in Day Signs",
+  "description": "The 20 day signs (nawales) of the 260-day Mayan sacred calendar. Each sign carries unique energy, destiny patterns, and spiritual significance.",
+  "domain": "divination",
+  "subdomain": "calendar",
+  "cardinality": 20,
+  "structuralNotes": "20 day signs × 13 numbers = 260-day cycle. Signs rotate continuously. Each has positive and negative aspects, ruling direction, and associated deities.",
+
+  "entries": [
+    {
+      "@id": "tzolkin:imix",
+      "@type": "Archetype",
+      "name": "Imix (Crocodile/Dragon)",
+      "dayNumber": 1,
+      "direction": "East",
+      "color": "Red",
+      "yukatekName": "Imix",
+      "kicheName": "Imox",
+      "keywords": ["primordial", "earth-mother", "nurturing", "madness", "creativity"],
+      "description": "The primordial dragon and earth mother. Source of all creation, nurturing but also chaotic. Represents the waters of creation from which all emerged.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.20,
+        "light-shadow": 0.45,
+        "active-receptive": 0.60,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.60
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["nurturing", "primordial"]},
+        {"primordial": "primordial:creator", "weight": 0.70, "aspects": ["source", "creativity"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-ITZAMNA", "fidelity": 0.65, "note": "Primordial deity"}
+      ]
+    },
+    {
+      "@id": "tzolkin:ik",
+      "@type": "Archetype",
+      "name": "Ik (Wind/Breath)",
+      "dayNumber": 2,
+      "direction": "North",
+      "color": "White",
+      "yukatekName": "Ik'",
+      "kicheName": "Iq'",
+      "keywords": ["breath", "spirit", "communication", "inspiration", "change"],
+      "description": "Divine breath and wind spirit. Carries messages between worlds, brings inspiration and change. Associated with Kukulkan and spiritual communication.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.35,
+        "stasis-transformation": 0.65,
+        "voluntary-fated": 0.40
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["spirit", "communication"]},
+        {"primordial": "primordial:trickster", "weight": 0.55, "aspects": ["change", "movement"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-KUKULKAN", "fidelity": 0.70, "note": "Wind deity"}
+      ]
+    },
+    {
+      "@id": "tzolkin:akbal",
+      "@type": "Archetype",
+      "name": "Akbal (Night/House)",
+      "dayNumber": 3,
+      "direction": "West",
+      "color": "Black",
+      "yukatekName": "Ak'b'al",
+      "kicheName": "Aq'ab'al",
+      "keywords": ["darkness", "dreams", "introspection", "dawn", "temple"],
+      "description": "The house of night and dawn's threshold. Represents the dream world, inner temple, and the darkness before light. Place of vision quests.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.70,
+        "active-receptive": 0.65,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:shadow", "weight": 0.75, "aspects": ["darkness", "unconscious"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["dreams", "vision"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:belly_of_whale", "fidelity": 0.65, "note": "Inner journey"}
+      ]
+    },
+    {
+      "@id": "tzolkin:kan",
+      "@type": "Archetype",
+      "name": "Kan (Seed/Lizard)",
+      "dayNumber": 4,
+      "direction": "South",
+      "color": "Yellow",
+      "yukatekName": "K'an",
+      "kicheName": "K'at",
+      "keywords": ["seed", "abundance", "potential", "net", "ripening"],
+      "description": "The seed of potential and the net that gathers abundance. Represents latent power waiting to unfold, fertility, and the harvest of what has been planted.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.35,
+        "active-receptive": 0.55,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:divine-child", "weight": 0.70, "aspects": ["potential", "seed"]},
+        {"primordial": "primordial:creator", "weight": 0.65, "aspects": ["fertility", "abundance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-YUMKAAX", "fidelity": 0.70, "note": "Maize god"}
+      ]
+    },
+    {
+      "@id": "tzolkin:chicchan",
+      "@type": "Archetype",
+      "name": "Chicchan (Serpent)",
+      "dayNumber": 5,
+      "direction": "East",
+      "color": "Red",
+      "yukatekName": "Chikchan",
+      "kicheName": "Kan",
+      "keywords": ["serpent", "kundalini", "life-force", "transformation", "passion"],
+      "description": "The celestial serpent carrying vital life force. Represents kundalini energy, transformation through shedding, and primal passion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.55,
+        "creation-destruction": 0.50,
+        "light-shadow": 0.50,
+        "active-receptive": 0.40,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.75,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.75, "aspects": ["life-force", "kundalini"]},
+        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["passion", "vitality"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "nakshatra:ashlesha", "fidelity": 0.65, "note": "Serpent energy"},
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-KUKULKAN", "fidelity": 0.75, "note": "Feathered serpent"}
+      ]
+    },
+    {
+      "@id": "tzolkin:cimi",
+      "@type": "Archetype",
+      "name": "Cimi (Death/Transformer)",
+      "dayNumber": 6,
+      "direction": "North",
+      "color": "White",
+      "yukatekName": "Kimi",
+      "kicheName": "Kame",
+      "keywords": ["death", "transformation", "ancestors", "rebirth", "surrender"],
+      "description": "The transformer through death. Lord of Xibalba, represents endings that enable new beginnings, ancestral connection, and ego death.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.75,
+        "light-shadow": 0.65,
+        "active-receptive": 0.55,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.70,
+        "stasis-transformation": 0.85,
+        "voluntary-fated": 0.70
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.80, "aspects": ["death", "endings"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.70, "aspects": ["transformation", "rebirth"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.80, "note": "Death as transformation"}
+      ]
+    },
+    {
+      "@id": "tzolkin:manik",
+      "@type": "Archetype",
+      "name": "Manik (Deer/Hand)",
+      "dayNumber": 7,
+      "direction": "West",
+      "color": "Black",
+      "yukatekName": "Manik'",
+      "kicheName": "Kej",
+      "keywords": ["deer", "pilgrimage", "healing", "tools", "leadership"],
+      "description": "The deer of the forest and healing hand. Represents pilgrimage, spiritual tools, natural authority, and the power to heal.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.45,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:healer", "weight": 0.80, "aspects": ["healing", "tools"]},
+        {"primordial": "primordial:sovereign", "weight": 0.55, "aspects": ["leadership", "authority"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "nakshatra:mrigashira", "fidelity": 0.70, "note": "Deer symbolism"}
+      ]
+    },
+    {
+      "@id": "tzolkin:lamat",
+      "@type": "Archetype",
+      "name": "Lamat (Star/Rabbit)",
+      "dayNumber": 8,
+      "direction": "South",
+      "color": "Yellow",
+      "yukatekName": "Lamat",
+      "kicheName": "Q'anil",
+      "keywords": ["star", "venus", "fertility", "multiplication", "harmony"],
+      "description": "The star and Venus energy. Represents abundance, multiplication, artistic harmony, and the ripening of seeds into fruit.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.25,
+        "light-shadow": 0.30,
+        "active-receptive": 0.50,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.75, "aspects": ["abundance", "harmony"]},
+        {"primordial": "primordial:lover", "weight": 0.60, "aspects": ["venus", "fertility"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "astro:venus", "fidelity": 0.70, "note": "Venus association"}
+      ]
+    },
+    {
+      "@id": "tzolkin:muluc",
+      "@type": "Archetype",
+      "name": "Muluc (Water/Moon)",
+      "dayNumber": 9,
+      "direction": "East",
+      "color": "Red",
+      "yukatekName": "Muluk",
+      "kicheName": "Toj",
+      "keywords": ["water", "moon", "offering", "purification", "emotions"],
+      "description": "Sacred water and moon energy. Represents emotional depth, offerings to spirit, purification, and the power of gratitude.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.45,
+        "active-receptive": 0.65,
+        "individual-collective": 0.55,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-mother", "weight": 0.70, "aspects": ["water", "emotions"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["purification", "offering"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "goddess:mother", "fidelity": 0.60, "note": "Lunar feminine"}
+      ]
+    },
+    {
+      "@id": "tzolkin:oc",
+      "@type": "Archetype",
+      "name": "Oc (Dog)",
+      "dayNumber": 10,
+      "direction": "North",
+      "color": "White",
+      "yukatekName": "Ok",
+      "kicheName": "Tz'i'",
+      "keywords": ["dog", "loyalty", "guidance", "law", "underworld-guide"],
+      "description": "The faithful dog who guides through the underworld. Represents loyalty, divine law, justice, and the guide through darkness.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.50,
+        "active-receptive": 0.50,
+        "individual-collective": 0.60,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:psychopomp", "weight": 0.80, "aspects": ["guide", "underworld"]},
+        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["loyalty", "law"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:EG-ANUBIS", "fidelity": 0.70, "note": "Underworld guide"}
+      ]
+    },
+    {
+      "@id": "tzolkin:chuen",
+      "@type": "Archetype",
+      "name": "Chuen (Monkey)",
+      "dayNumber": 11,
+      "direction": "West",
+      "color": "Black",
+      "yukatekName": "Chuwen",
+      "kicheName": "B'atz'",
+      "keywords": ["monkey", "artistry", "weaving", "time", "creativity"],
+      "description": "The divine artisan and weaver of time. Represents creativity, the arts, playfulness, and the thread of life being woven.",
+      "spectralCoordinates": {
+        "order-chaos": 0.60,
+        "creation-destruction": 0.30,
+        "light-shadow": 0.40,
+        "active-receptive": 0.35,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:creator", "weight": 0.80, "aspects": ["artistry", "weaving"]},
+        {"primordial": "primordial:trickster", "weight": 0.70, "aspects": ["playfulness", "mischief"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:IN-HANUMAN", "fidelity": 0.55, "note": "Monkey deity"}
+      ]
+    },
+    {
+      "@id": "tzolkin:eb",
+      "@type": "Archetype",
+      "name": "Eb (Road/Grass)",
+      "dayNumber": 12,
+      "direction": "South",
+      "color": "Yellow",
+      "yukatekName": "Eb'",
+      "kicheName": "E",
+      "keywords": ["road", "destiny", "steps", "journey", "path"],
+      "description": "The sacred road and life path. Represents destiny, the steps of one's journey, and the unfolding of personal fate.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.45,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["journey", "path"]},
+        {"primordial": "primordial:psychopomp", "weight": 0.55, "aspects": ["road", "guidance"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "heros_journey:road_of_trials", "fidelity": 0.75, "note": "Journey path"}
+      ]
+    },
+    {
+      "@id": "tzolkin:ben",
+      "@type": "Archetype",
+      "name": "Ben (Reed/Staff)",
+      "dayNumber": 13,
+      "direction": "East",
+      "color": "Red",
+      "yukatekName": "B'en",
+      "kicheName": "Aj",
+      "keywords": ["reed", "authority", "home", "family", "pillars"],
+      "description": "The reed staff of authority and the pillar of the home. Represents family leadership, the axis mundi, and growth toward heaven.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.35,
+        "active-receptive": 0.40,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.40,
+        "stasis-transformation": 0.45,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:great-father", "weight": 0.75, "aspects": ["authority", "family"]},
+        {"primordial": "primordial:preserver", "weight": 0.60, "aspects": ["home", "pillar"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "celtic_tree:reed", "fidelity": 0.60, "note": "Reed symbolism"}
+      ]
+    },
+    {
+      "@id": "tzolkin:ix",
+      "@type": "Archetype",
+      "name": "Ix (Jaguar)",
+      "dayNumber": 14,
+      "direction": "North",
+      "color": "White",
+      "yukatekName": "Ix",
+      "kicheName": "I'x",
+      "keywords": ["jaguar", "shaman", "feminine-power", "magic", "earth"],
+      "description": "The jaguar shaman and earth goddess. Represents feminine mystical power, shamanic vision, and the guardian of sacred places.",
+      "spectralCoordinates": {
+        "order-chaos": 0.50,
+        "creation-destruction": 0.45,
+        "light-shadow": 0.55,
+        "active-receptive": 0.55,
+        "individual-collective": 0.40,
+        "ascent-descent": 0.60,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:magician", "weight": 0.85, "aspects": ["shaman", "magic"]},
+        {"primordial": "primordial:great-mother", "weight": 0.60, "aspects": ["earth", "feminine-power"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "goddess:crone-sorceress", "fidelity": 0.65, "note": "Shamanic feminine"}
+      ]
+    },
+    {
+      "@id": "tzolkin:men",
+      "@type": "Archetype",
+      "name": "Men (Eagle)",
+      "dayNumber": 15,
+      "direction": "West",
+      "color": "Black",
+      "yukatekName": "Men",
+      "kicheName": "Tz'ikin",
+      "keywords": ["eagle", "vision", "freedom", "aspiration", "messenger"],
+      "description": "The eagle soaring to heaven. Represents higher vision, spiritual aspiration, freedom, and messages from the divine.",
+      "spectralCoordinates": {
+        "order-chaos": 0.45,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.30,
+        "active-receptive": 0.35,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.75, "aspects": ["aspiration", "freedom"]},
+        {"primordial": "primordial:magician", "weight": 0.60, "aspects": ["vision", "messenger"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:GR-ZEUS", "fidelity": 0.55, "note": "Eagle of Zeus"}
+      ]
+    },
+    {
+      "@id": "tzolkin:cib",
+      "@type": "Archetype",
+      "name": "Cib (Vulture/Owl)",
+      "dayNumber": 16,
+      "direction": "South",
+      "color": "Yellow",
+      "yukatekName": "Kib'",
+      "kicheName": "Ajmaq",
+      "keywords": ["vulture", "ancestors", "forgiveness", "karma", "wisdom"],
+      "description": "The vulture who sees all and cleanses. Represents ancestral wisdom, forgiveness, karmic balance, and the clearing of old debts.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.55,
+        "active-receptive": 0.55,
+        "individual-collective": 0.65,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.50,
+        "voluntary-fated": 0.65
+      },
+      "instantiates": [
+        {"primordial": "primordial:ancestor", "weight": 0.80, "aspects": ["ancestors", "wisdom"]},
+        {"primordial": "primordial:healer", "weight": 0.60, "aspects": ["forgiveness", "cleansing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:EG-NEKHBET", "fidelity": 0.55, "note": "Vulture deity"}
+      ]
+    },
+    {
+      "@id": "tzolkin:caban",
+      "@type": "Archetype",
+      "name": "Caban (Earth/Earthquake)",
+      "dayNumber": 17,
+      "direction": "East",
+      "color": "Red",
+      "yukatekName": "Kab'an",
+      "kicheName": "No'j",
+      "keywords": ["earth", "intelligence", "thought", "knowledge", "evolution"],
+      "description": "Earth force and evolved thought. Represents intellect, earth wisdom, evolutionary knowledge, and the power of ideas.",
+      "spectralCoordinates": {
+        "order-chaos": 0.40,
+        "creation-destruction": 0.40,
+        "light-shadow": 0.40,
+        "active-receptive": 0.50,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.50
+      },
+      "instantiates": [
+        {"primordial": "primordial:wise-elder", "weight": 0.75, "aspects": ["knowledge", "intelligence"]},
+        {"primordial": "primordial:great-mother", "weight": 0.55, "aspects": ["earth", "grounding"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "pearson:sage", "fidelity": 0.65, "note": "Wisdom seeker"}
+      ]
+    },
+    {
+      "@id": "tzolkin:etznab",
+      "@type": "Archetype",
+      "name": "Etznab (Flint/Mirror)",
+      "dayNumber": 18,
+      "direction": "North",
+      "color": "White",
+      "yukatekName": "Etz'nab'",
+      "kicheName": "Tijax",
+      "keywords": ["flint", "truth", "sacrifice", "mirror", "clarity"],
+      "description": "The obsidian mirror and flint knife of truth. Represents clarity, cutting through illusion, self-reflection, and necessary sacrifice.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.60,
+        "light-shadow": 0.45,
+        "active-receptive": 0.35,
+        "individual-collective": 0.35,
+        "ascent-descent": 0.45,
+        "stasis-transformation": 0.60,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:warrior", "weight": 0.70, "aspects": ["cutting", "sacrifice"]},
+        {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["mirror", "truth"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-TEZCATLIPOCA", "fidelity": 0.70, "note": "Smoking mirror"}
+      ]
+    },
+    {
+      "@id": "tzolkin:cauac",
+      "@type": "Archetype",
+      "name": "Cauac (Storm/Rain)",
+      "dayNumber": 19,
+      "direction": "West",
+      "color": "Black",
+      "yukatekName": "Kawak",
+      "kicheName": "Kawoq",
+      "keywords": ["storm", "healing", "community", "thunder", "transformation"],
+      "description": "The thunder and storm that brings rain. Represents healing through crisis, community support, and the cleansing power of storms.",
+      "spectralCoordinates": {
+        "order-chaos": 0.65,
+        "creation-destruction": 0.55,
+        "light-shadow": 0.50,
+        "active-receptive": 0.45,
+        "individual-collective": 0.70,
+        "ascent-descent": 0.50,
+        "stasis-transformation": 0.70,
+        "voluntary-fated": 0.55
+      },
+      "instantiates": [
+        {"primordial": "primordial:destroyer", "weight": 0.70, "aspects": ["storm", "crisis"]},
+        {"primordial": "primordial:healer", "weight": 0.65, "aspects": ["rain", "community-healing"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-CHAAK", "fidelity": 0.80, "note": "Rain deity"}
+      ]
+    },
+    {
+      "@id": "tzolkin:ahau",
+      "@type": "Archetype",
+      "name": "Ahau (Sun/Lord)",
+      "dayNumber": 20,
+      "direction": "South",
+      "color": "Yellow",
+      "yukatekName": "Ajaw",
+      "kicheName": "Ajpu",
+      "keywords": ["sun", "lord", "enlightenment", "mastery", "completion"],
+      "description": "The sun lord and master of light. Represents enlightenment, spiritual mastery, completion, and the heroic twins who defeated death.",
+      "spectralCoordinates": {
+        "order-chaos": 0.30,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.20,
+        "active-receptive": 0.35,
+        "individual-collective": 0.50,
+        "ascent-descent": 0.30,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.45
+      },
+      "instantiates": [
+        {"primordial": "primordial:hero", "weight": 0.85, "aspects": ["mastery", "victory"]},
+        {"primordial": "primordial:sovereign", "weight": 0.75, "aspects": ["lord", "enlightenment"]}
+      ],
+      "relationships": [
+        {"type": "CULTURAL_ECHO", "target": "arch:MA-KINICH-AHAU", "fidelity": 0.85, "note": "Sun lord"},
+        {"type": "EVOLUTION", "target": "tzolkin:imix", "note": "Cycle completes and restarts"}
+      ]
+    }
+  ],
+
+  "systemRelationships": {
+    "directionalGroups": {
+      "east_red": ["imix", "chicchan", "muluc", "ben", "caban"],
+      "north_white": ["ik", "cimi", "oc", "ix", "etznab"],
+      "west_black": ["akbal", "manik", "chuen", "men", "cauac"],
+      "south_yellow": ["kan", "lamat", "eb", "cib", "ahau"]
+    },
+    "polarities": {
+      "yang_active": ["ik", "chicchan", "cimi", "chuen", "men", "etznab", "ahau"],
+      "yin_receptive": ["imix", "akbal", "kan", "manik", "lamat", "muluc", "oc", "eb", "ben", "ix", "cib", "caban", "cauac"]
+    }
+  },
+
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "manual-expert",
+    "relationshipsValidated": true,
+    "createdAt": "2026-01-29"
+  }
+}
