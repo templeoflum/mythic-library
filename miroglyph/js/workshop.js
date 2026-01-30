@@ -160,7 +160,8 @@
     if (!panelEl) return;
     isOpen = true;
     panelEl.classList.remove('workshop-closed');
-    if (overlayEl) overlayEl.hidden = false;
+    // Don't show overlay - we want users to be able to click on canvas nodes
+    // if (overlayEl) overlayEl.hidden = false;
 
     // Show/hide node picker based on current view
     updateNodePicker();
