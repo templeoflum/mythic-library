@@ -17,6 +17,20 @@ PROJECT_ROOT = Path(__file__).parent.parent
 MIROGLYPH_DIR = PROJECT_ROOT / "miroglyph"
 
 
+class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    """HTTP handler that disables caching for development."""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory=str(MIROGLYPH_DIR), **kwargs)
+
+    def end_headers(self):
+        # Disable caching for development
+        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        super().end_headers()
+
+
 def main():
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8080
 
@@ -28,10 +42,7 @@ def main():
     print(f"Open http://localhost:{port}")
     print("Press Ctrl+C to stop\n")
 
-    handler = lambda *args, **kw: http.server.SimpleHTTPRequestHandler(
-        *args, directory=str(MIROGLYPH_DIR), **kw
-    )
-    server = http.server.HTTPServer(("", port), handler)
+    server = http.server.HTTPServer(("", port), NoCacheHandler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
