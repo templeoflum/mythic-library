@@ -36,8 +36,8 @@ Miroglyph supports two valid spatial configurations that can be toggled via the 
 | View | Purpose |
 |------|---------|
 | **Atlas** | Three-pane layout: Node Info (left) + Canvas with 19-node topology (center) + Traversal logging (right). Create and save paths, organize into groups. |
-| **Codex** | Browse and search archetypes and entities with 8D coordinate bars, primordial weights, relationships, and nearest Miroglyph nodes. Sub-tabs for Archetypes/Entities. |
-| **Chronicle** | Patterns and Validation. Patterns sub-tab shows 18 cross-cultural patterns with mini-map. Validation sub-tab shows tier results and audit cases. |
+| **Codex** | Browse catalog items. Sub-tabs: **Archetypes** (951 with 8D coordinates, primordials, relationships), **Entities** (173 mapped from Library), **Motifs** (149 Thompson Index codes with pattern cross-refs). |
+| **Chronicle** | Analysis views. Sub-tabs: **Patterns** (18 cross-cultural patterns with mini-map), **Validation** (tier results with insights and audit cases). |
 
 ## Architecture
 
@@ -78,7 +78,7 @@ miroglyph/
     ├── node-drawer.js      # Side drawer with node details
     ├── detail-sheet.js     # Inline detail views for archetypes/entities
     ├── view-atlas.js       # Atlas view controller (canvas + traversals)
-    ├── view-codex.js       # Codex view controller (archetypes/entities)
+    ├── view-codex.js       # Codex view controller (archetypes/entities/motifs)
     ├── mini-map.js         # Compact node map for Chronicle
     ├── view-chronicle.js   # Chronicle view controller (patterns/validation)
     └── app.js              # Main controller (boot sequence)

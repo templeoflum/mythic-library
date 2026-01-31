@@ -180,7 +180,7 @@ miroglyph/
 │   ├── canvas.js           # SVG rendering (centrifugal layout)
 │   ├── paths.js            # Traversal creation & management
 │   ├── view-atlas.js       # Atlas view controller
-│   ├── view-codex.js       # Codex view controller
+│   ├── view-codex.js       # Codex view controller (archetypes/entities/motifs)
 │   ├── view-chronicle.js   # Chronicle view controller
 │   └── app.js              # Main controller (boot sequence)
 └── data/                   # Pre-exported JSON data files
@@ -188,8 +188,8 @@ miroglyph/
 
 ### Three Views
 - **Atlas**: Three-pane layout (Node Info | Canvas | Traversals) for path building
-- **Codex**: Card grid for browsing archetypes and entities with detail views
-- **Chronicle**: Patterns (with mini-map) and validation results
+- **Codex**: Catalog browsing with sub-tabs: Archetypes (951) | Entities (173) | Motifs (149)
+- **Chronicle**: Analysis with sub-tabs: Patterns (18 with mini-map) | Validation (tiers + insights)
 
 ### Core Features
 1. **Display** - 19 points in centrifugal concentric layout
