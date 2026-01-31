@@ -113,6 +113,11 @@ Entity Tracing follows the full chain: a library entity (e.g., Zeus) maps to an 
 
 ## Troubleshooting
 
+### Tab switching stays on Atlas (known bug)
+Sometimes clicking Codex or Chronicle tabs doesn't switch views - the page stays on Atlas.
+- **Fix:** Hard refresh with `Ctrl+Shift+R` (Windows/Linux) or `Cmd+Shift+R` (Mac)
+- This appears to be a browser caching issue with CSS/JS state
+
 ### Layout looks wrong / CSS not applying
 1. Hard refresh: `Ctrl+Shift+R` (Windows/Linux) or `Cmd+Shift+R` (Mac)
 2. Or use incognito/private window
