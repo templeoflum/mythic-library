@@ -3,7 +3,7 @@
 A semantic framework for mapping archetypes across mythology, psychology, divination, and culture using an 8-dimensional coordinate system.
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
-[![Archetypes](https://img.shields.io/badge/archetypes-951-green)]()
+[![Archetypes](https://img.shields.io/badge/archetypes-996-green)]()
 [![Completeness](https://img.shields.io/badge/completeness-95%25%20rich+-brightgreen)]()
 [![Version](https://img.shields.io/badge/version-0.3.0-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
@@ -59,7 +59,7 @@ Cultural figures instantiate these with weights:
 
 ## Current Coverage
 
-ACP currently includes **951 fully-mapped archetypes** across four domains:
+ACP currently includes **996 fully-mapped archetypes** across four domains:
 
 **Enrichment Status (v0.3.0):**
 - 88% Complete (838 entries at 80%+ completeness)
@@ -68,12 +68,12 @@ ACP currently includes **951 fully-mapped archetypes** across four domains:
 - 3,574 total relationships
 - 1,840 cultural echo cross-links
 
-### Mythological Pantheons (354 entries)
+### Mythological Pantheons (399 entries)
 | Pantheon | Entries |
 |----------|---------|
-| Greek (Olympians) | 24 |
+| Greek (Olympians) | 66 |
 | Chinese | 20 |
-| Hindu | 19 |
+| Hindu | 20 |
 | Persian/Zoroastrian | 19 |
 | African (Orisha) | 18 |
 | Egyptian (Netjeru) | 18 |
@@ -82,11 +82,11 @@ ACP currently includes **951 fully-mapped archetypes** across four domains:
 | Mesoamerican | 18 |
 | Polynesian | 18 |
 | Slavic | 17 |
-| Finnish (Kalevala) | 15 |
+| Finnish (Kalevala) | 16 |
 | Mesopotamian | 15 |
 | Native American | 15 |
 | Celtic | 14 |
-| Norse (Aesir/Vanir) | 13 |
+| Norse (Aesir/Vanir) | 14 |
 | Roman | 11 |
 | Australian (Dreamtime) | 9 |
 | **Buddhist** | 27 |
@@ -166,10 +166,10 @@ ACP/
 │   └── primordial_matrix.jsonld
 │
 ├── archetypes/             # Cultural pantheons (v2.0 COMPLETE)
-│   ├── greek/              # Olympians (24)
-│   ├── norse/              # Aesir, Vanir (13)
+│   ├── greek/              # Olympians + heroes, creatures, primordials (66)
+│   ├── norse/              # Aesir, Vanir, monsters (14)
 │   ├── egyptian/           # Netjeru (18)
-│   ├── hindu/              # Trimurti, Devas (19)
+│   ├── hindu/              # Trimurti, Devas, asuras (20)
 │   ├── celtic/             # Tuatha Dé Danann (14)
 │   ├── japanese/           # Kami (18)
 │   ├── chinese/            # Chinese pantheon (20)
@@ -179,7 +179,7 @@ ACP/
 │   ├── mesoamerican/       # Aztec/Maya (18)
 │   ├── slavic/             # Slavic pantheon (17)
 │   ├── native_american/    # Indigenous traditions (15)
-│   ├── finnish/            # Kalevala (15)
+│   ├── finnish/            # Kalevala heroes & spirits (16)
 │   ├── australian/         # Dreamtime (9)
 │   ├── incan/              # Andean deities (18)
 │   ├── persian/            # Zoroastrian (19)
@@ -390,7 +390,7 @@ The system enforces coherence:
 ### 0.4.0 — Polish & API
 - [ ] Expand domain vocabulary (1,274 unknown domain warnings)
 - [ ] Add missing primordials (storyteller, culture-hero, guardian, etc.)
-- [ ] Fix remaining orphan relationship targets (369)
+- [ ] Fix remaining orphan relationship targets (109)
 
 ### 1.0.0 — Production Release
 - [ ] Complete ~1,200 archetype database

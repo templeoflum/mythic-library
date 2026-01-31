@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added - Database Completion & UI Improvements
+
+**ACP Archetype Expansion (996 total, +45):**
+- 42 new Greek archetypes: Achilles, Gaia, Eros, Hecate, Charon, Orpheus, Eurydice, Medusa, Cerberus, Minotaur, Cyclops, Titans, Centaur, Pan, Helios, Selene, Eos, Thanatos, Typhon, Moirai, Sirens, Nymphs, and more
+- Ravana (Hindu demon king)
+- Kullervo (Finnish tragic hero)
+- Grendel (Norse/Germanic monster)
+- Greek pantheon now complete with 66 entries
+
+**Entity Mapping Improvements:**
+- Mapped entities increased from 150 to 159
+- Remaining 14 unmapped are places/concepts (not character archetypes)
+
+**Broken Reference Fixes:**
+- Relationship reference errors reduced from 426 to 109 (74% reduction)
+- Removed invalid arch:GR-MARY reference from Chinese pantheon
+
+**Miroglyph UI Enhancements:**
+- Breadcrumb trail navigation (tracks last 5 items viewed)
+- "Surprise Me" random discovery buttons in each view
+- Interactive mini-map with hover tooltips and click navigation
+- Fidelity badges on entity cards (green/yellow/red indicators)
+- Related sections in detail views (entities, patterns, archetypes)
+- Enhanced hover/focus states for accessibility
+- New `js/utils.js` module with shared utility functions
+
 ### Fixed - Miroglyph Explorer
 - **Tab switching:** Fixed CSS specificity issue where Atlas view's `display: grid !important` was overriding the hidden state
 - **Traversal duplication:** Fixed duplicate event handlers causing nodes to be added twice, paths to save twice, and groups to create twice

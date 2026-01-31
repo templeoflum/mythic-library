@@ -12,7 +12,7 @@ An empirical corpus of 132 public domain mythological texts across 32 traditions
 |-----------|-------|
 | Source texts | 132 across 32 traditions (822 MB raw corpus) |
 | Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 149 motifs |
-| ACP archetypes | 951 across 60+ systems, 22 primordials, 8D coordinates (95% rich+) |
+| ACP archetypes | 996 across 60+ systems, 22 primordials, 8D coordinates (95% rich+) |
 | Validation | 10 tests across 5 tiers (A/B/C/D/E), core tiers PASS/PARTIAL |
 | Explorer | Browser-based Miroglyph with Atlas, Codex, and Chronicle views |
 
@@ -61,11 +61,11 @@ mythic-library/
 │   └── mythic_patterns.db              # SQLite: 4K segments, 173 entities, 149 motifs
 ├── ACP/                                # Archetypal Context Protocol (subtree)
 │   ├── schema/                         # Axes, primordials, relationships ontology
-│   └── archetypes/                     # 951 archetypes across 60+ systems (JSON-LD)
+│   └── archetypes/                     # 996 archetypes across 60+ systems (JSON-LD)
 ├── integration/                        # ACP <-> Library bridge
 │   ├── acp_loader.py                   # Load archetypes, coordinates, relationships
 │   ├── library_loader.py               # Query pattern database
-│   └── entity_mapper.py               # Map 148/173 library entities to ACP archetypes
+│   └── entity_mapper.py               # Map 159/173 library entities to ACP archetypes
 ├── validation/
 │   ├── v2_run.py                       # v2 orchestrator: 6 tests, verdict, report
 │   ├── v2_tests/                       # Test suite
@@ -117,7 +117,7 @@ python -m validation.v2_run --full
 
 Or open `miroglyph/index.html` locally. Three views:
 
-- **Atlas**: 2D spectral projection of all 951 archetypes with axis-pair selection, zoom, and tooltip
+- **Atlas**: 2D spectral projection of all 996 archetypes with axis-pair selection, zoom, and tooltip
 - **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
 - **Chronicle**: Narrative tracing across traditions with relationship visualization
 
@@ -161,15 +161,15 @@ Weights are empirically derived from per-axis correlation with narrative co-occu
 
 ### ACP Coverage
 
-951 archetypes across 60+ systems in four domains (95% at "rich" tier or above):
+996 archetypes across 60+ systems in four domains (95% at "rich" tier or above):
 
-**Mythological Pantheons (354 entries)**
+**Mythological Pantheons (399 entries)**
 | Tradition | Archetypes | Relationship Types |
 |-----------|------------|-------------------|
-| Greek | 24 | POLAR_OPPOSITE, SHADOW, EVOLUTION, COMPLEMENT |
+| Greek | 66 | POLAR_OPPOSITE, SHADOW, EVOLUTION, COMPLEMENT |
 | Buddhist | 27 | CULTURAL_ECHO, EVOLUTION |
 | Chinese | 20 | EVOLUTION, CULTURAL_ECHO |
-| Hindu | 19 | SHADOW, EVOLUTION, COMPLEMENT |
+| Hindu | 20 | SHADOW, EVOLUTION, COMPLEMENT |
 | Persian | 19 | SHADOW, EVOLUTION |
 | African (Orisha) | 18 | SHADOW, EVOLUTION, COMPLEMENT |
 | Egyptian | 18 | SHADOW, EVOLUTION, COMPLEMENT, SYNTHESIS |
@@ -179,11 +179,11 @@ Weights are empirically derived from per-axis correlation with narrative co-occu
 | Polynesian | 18 | SHADOW, EVOLUTION |
 | Vodou (Loa) | 18 | CULTURAL_ECHO |
 | Slavic | 17 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
-| Finnish | 15 | EVOLUTION, POLAR_OPPOSITE |
+| Finnish | 16 | EVOLUTION, POLAR_OPPOSITE |
 | Mesopotamian | 15 | EVOLUTION, COMPLEMENT |
 | Native American | 15 | SHADOW, EVOLUTION |
 | Celtic | 14 | SHADOW, EVOLUTION, POLAR_OPPOSITE |
-| Norse | 13 | POLAR_OPPOSITE, SHADOW, EVOLUTION |
+| Norse | 14 | POLAR_OPPOSITE, SHADOW, EVOLUTION |
 | Roman | 11 | CULTURAL_ECHO |
 | Australian | 9 | — |
 

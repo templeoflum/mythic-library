@@ -171,7 +171,7 @@ miroglyph/
 │   ├── view-codex.css      # Codex view (card grid + details)
 │   └── view-chronicle.css  # Chronicle view (patterns + validation)
 ├── js/
-│   ├── utils.js            # Shared utility functions (NEW)
+│   ├── utils.js            # Shared utilities (ensureArray, getFidelityClass)
 │   ├── nodes.js            # 19-node definitions (arcs, conditions)
 │   ├── storage.js          # LocalStorage + JSON import/export
 │   ├── data-loader.js      # JSON fetching with cache + indices
@@ -192,7 +192,7 @@ miroglyph/
 
 ### Three Views
 - **Atlas**: Three-pane layout (Node Info | Canvas | Traversals) for path building
-- **Codex**: Catalog browsing with sub-tabs: Archetypes (951) | Entities (173) | Motifs (149)
+- **Codex**: Catalog browsing with sub-tabs: Archetypes (996) | Entities (159 mapped, 14 unmapped) | Motifs (149)
 - **Chronicle**: Analysis with sub-tabs: Patterns (18 with mini-map) | Validation (tiers + insights)
 
 ### Core Features
@@ -204,13 +204,14 @@ miroglyph/
 
 ### Navigation & Discovery Features
 - **Breadcrumb Trail** - Tracks last 5 items viewed; clickable to revisit
-- **"Surprise Me" Buttons** - Random discovery in each view
+- **"Surprise Me" Buttons** - Random discovery in each view (node, archetype, entity, pattern)
 - **Cross-Referencing** - Every detail view links to related items:
   - Pattern → Entities, Motifs
   - Motif → Patterns, Entities
   - Entity → Archetype, Patterns, Related Entities
   - Archetype → Source Entities, Related Archetypes
 - **Mini-Map Interactivity** - Click nodes to navigate, hover for tooltips
+- **Fidelity Badges** - Green/yellow/red indicators for mapping quality
 
 ### Data Visualization
 - **Fidelity Badges** - Green/Yellow/Red indicators for mapping quality

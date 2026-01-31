@@ -2,8 +2,8 @@
 
 ## Problem Statement
 
-Current state (pre-enrichment):
-- 951 archetypes, now 95% at "rich" tier or above after v0.3.0 enrichment
+Current state:
+- 996 archetypes, 95% at "rich" tier or above after v0.3.0 enrichment
 - Cross-system links exist in correspondences.jsonld but aren't bidirectional
 - `correspondences` fields use strings ("Jupiter") not @id refs ("astrology:jupiter")
 - Relationships are sparse - most entries have 0-2 relationships
@@ -260,4 +260,4 @@ If A ↔ B (CULTURAL_ECHO, 0.8) and B ↔ C (CULTURAL_ECHO, 0.8), then A ↔ C s
 
 See `archetypes/greek/GR_OLYMPIANS.jsonld` → Zeus entry for current best example.
 
-Target: All 951 entries match this completeness level.
+Target: All 996 entries match this completeness level.

@@ -4,10 +4,11 @@
 
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
-**Version**: 0.3.0 (Enrichment Phase 3 Complete)
-**Total Archetypes**: 951 entries with full spectral coordinates
+**Version**: 0.3.2 (Database Completion Phase)
+**Total Archetypes**: 996 entries with full spectral coordinates
 **Completeness**: 88% complete, 7% rich, 3% partial, 2% stub (mean score: 84.5%)
 **Cultural Echoes**: 1,840 cross-system links, 3,574 total relationships
+**Broken References**: 109 remaining (down from 426)
 **Target**: ~1,200 archetypes for v1.0 release
 
 ## Architecture (ORAS v2.0)
@@ -107,12 +108,12 @@ ACP/
 │   └── theatrical/
 │       └── commedia.jsonld            # 10 entries - NEW
 │
-├── archetypes/                # Domain: Mythological (354 entries) - COMPLETE
-│   ├── greek/                 # 24 entries
-│   ├── norse/                 # 13 entries
+├── archetypes/                # Domain: Mythological (399 entries) - COMPLETE
+│   ├── greek/                 # 66 entries
+│   ├── norse/                 # 14 entries
 │   ├── egyptian/              # 18 entries
 │   ├── celtic/                # 14 entries
-│   ├── hindu/                 # 19 entries
+│   ├── hindu/                 # 20 entries
 │   ├── japanese/              # 18 entries
 │   ├── chinese/               # 20 entries
 │   ├── mesopotamian/          # 15 entries
@@ -121,7 +122,7 @@ ACP/
 │   ├── slavic/                # 17 entries
 │   ├── polynesian/            # 18 entries
 │   ├── native_american/       # 15 entries
-│   ├── finnish/               # 15 entries
+│   ├── finnish/               # 16 entries
 │   ├── australian/            # 9 entries
 │   ├── incan/                 # 18 entries
 │   ├── persian/               # 19 entries
