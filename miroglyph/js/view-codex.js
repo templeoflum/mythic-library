@@ -1,5 +1,5 @@
 // Mythic System Explorer — Codex View
-// Card grid with sub-tabs (archetypes/entities), filtering, lazy loading, and detail views
+// Card grid with sub-tabs (archetypes/entities/motifs), filtering, lazy loading, and detail views
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
@@ -27,7 +27,8 @@
     nearestNode: '',
     type: '',
     tradition: '',
-    mapped: ''
+    mapped: '',
+    category: ''
   };
   var detailItem = null;  // null = grid view, otherwise { kind, id }
   var filteredData = [];
@@ -95,6 +96,7 @@
     html += '<div class="codex-sub-tabs">';
     html += '<button class="codex-sub-tab' + (subTab === 'archetypes' ? ' active' : '') + '" data-sub="archetypes">Archetypes</button>';
     html += '<button class="codex-sub-tab' + (subTab === 'entities' ? ' active' : '') + '" data-sub="entities">Entities</button>';
+    html += '<button class="codex-sub-tab' + (subTab === 'motifs' ? ' active' : '') + '" data-sub="motifs">Motifs</button>';
     html += '</div>';
 
     // Search
@@ -104,8 +106,10 @@
     // Dropdowns depend on sub-tab
     if (subTab === 'archetypes') {
       html += buildArchetypeFilters();
-    } else {
+    } else if (subTab === 'entities') {
       html += buildEntityFilters();
+    } else if (subTab === 'motifs') {
+      html += buildMotifFilters();
     }
 
     // Count
@@ -210,6 +214,62 @@
     return html;
   }
 
+  function buildMotifFilters() {
+    var patData = dataLoader.get('patterns');
+    var motifs = patData && patData.motifs ? patData.motifs : {};
+    var html = '';
+
+    // Collect unique categories
+    var categories = {};
+    for (var code in motifs) {
+      var cat = motifs[code].category || '?';
+      categories[cat] = (categories[cat] || 0) + 1;
+    }
+
+    // Thompson Motif Index category names
+    var catNames = {
+      'A': 'Mythological',
+      'B': 'Animals',
+      'C': 'Tabu',
+      'D': 'Magic',
+      'E': 'The Dead',
+      'F': 'Marvels',
+      'G': 'Ogres',
+      'H': 'Tests',
+      'J': 'Wisdom',
+      'K': 'Deceptions',
+      'L': 'Reversal of Fortune',
+      'M': 'Ordaining the Future',
+      'N': 'Chance',
+      'P': 'Society',
+      'Q': 'Rewards & Punishments',
+      'R': 'Captives & Fugitives',
+      'S': 'Cruelty',
+      'T': 'Sex',
+      'U': 'Nature of Life',
+      'V': 'Religion',
+      'W': 'Traits of Character',
+      'X': 'Humor',
+      'Z': 'Miscellaneous'
+    };
+
+    // Category dropdown
+    html += '<select class="filter-select" id="codex-filter-category">';
+    html += '<option value="">All Categories</option>';
+    var catKeys = Object.keys(categories).sort();
+    for (var c = 0; c < catKeys.length; c++) {
+      var cat = catKeys[c];
+      var catName = catNames[cat] || cat;
+      var selected = filters.category === cat ? ' selected' : '';
+      html += '<option value="' + escapeAttr(cat) + '"' + selected + '>' +
+        escapeHtml(cat + ': ' + catName) + ' (' + categories[cat] + ')' +
+      '</option>';
+    }
+    html += '</select>';
+
+    return html;
+  }
+
   // --- Filter Events ---
 
   function wireFilterEvents() {
@@ -244,6 +304,7 @@
     wireDropdown('codex-filter-type', 'type');
     wireDropdown('codex-filter-tradition', 'tradition');
     wireDropdown('codex-filter-mapped', 'mapped');
+    wireDropdown('codex-filter-category', 'category');
   }
 
   function wireDropdown(elementId, filterKey) {
@@ -268,6 +329,7 @@
     filters.type = '';
     filters.tradition = '';
     filters.mapped = '';
+    filters.category = '';
 
     detailItem = null;
     buildFilterBar();
@@ -289,7 +351,7 @@
     renderedCount = 0;
 
     if (countEl) {
-      var totalLabel = subTab === 'archetypes' ? 'archetypes' : 'entities';
+      var totalLabel = subTab === 'archetypes' ? 'archetypes' : (subTab === 'entities' ? 'entities' : 'motifs');
       var totalCount = getTotalCount();
       countEl.textContent = filteredData.length + ' of ' + totalCount + ' ' + totalLabel;
     }
@@ -310,8 +372,12 @@
   function filterData() {
     if (subTab === 'archetypes') {
       return filterArchetypes();
+    } else if (subTab === 'entities') {
+      return filterEntities();
+    } else if (subTab === 'motifs') {
+      return filterMotifs();
     }
-    return filterEntities();
+    return [];
   }
 
   function filterArchetypes() {
@@ -376,13 +442,69 @@
     });
   }
 
+  function filterMotifs() {
+    var patData = dataLoader.get('patterns');
+    if (!patData || !patData.motifs) return [];
+
+    var motifs = patData.motifs;
+    var patterns = patData.patterns || [];
+    var query = filters.search.toLowerCase();
+    var category = filters.category;
+
+    // Build reverse index: motif code -> pattern names
+    var motifToPatterns = {};
+    for (var p = 0; p < patterns.length; p++) {
+      var pat = patterns[p];
+      var codes = pat.motif_codes || [];
+      for (var c = 0; c < codes.length; c++) {
+        if (!motifToPatterns[codes[c]]) motifToPatterns[codes[c]] = [];
+        motifToPatterns[codes[c]].push(pat.name);
+      }
+    }
+
+    // Convert to array and filter
+    var result = [];
+    for (var code in motifs) {
+      var m = motifs[code];
+      var motifObj = {
+        code: code,
+        label: m.label || '',
+        category: m.category || '?',
+        patterns: motifToPatterns[code] || []
+      };
+
+      // Category filter
+      if (category && motifObj.category !== category) continue;
+
+      // Search filter
+      if (query) {
+        var searchable = (code + ' ' + motifObj.label).toLowerCase();
+        if (searchable.indexOf(query) === -1) continue;
+      }
+
+      result.push(motifObj);
+    }
+
+    // Sort by code
+    result.sort(function(a, b) {
+      return a.code.localeCompare(b.code, undefined, { numeric: true });
+    });
+
+    return result;
+  }
+
   function getTotalCount() {
     if (subTab === 'archetypes') {
       var archData = dataLoader.get('archetypes');
       return archData && archData.archetypes ? archData.archetypes.length : 0;
+    } else if (subTab === 'entities') {
+      var entData = dataLoader.get('entities');
+      return entData && entData.entities ? entData.entities.length : 0;
+    } else if (subTab === 'motifs') {
+      var patData = dataLoader.get('patterns');
+      return patData && patData.motifs ? Object.keys(patData.motifs).length : 0;
     }
-    var entData = dataLoader.get('entities');
-    return entData && entData.entities ? entData.entities.length : 0;
+    return 0;
   }
 
   // --- Batch Rendering ---
@@ -395,8 +517,10 @@
       var wrapper = document.createElement('div');
       if (subTab === 'archetypes') {
         wrapper.innerHTML = cardRenderer.renderArchetypeCard(filteredData[i]);
-      } else {
+      } else if (subTab === 'entities') {
         wrapper.innerHTML = cardRenderer.renderEntityCard(filteredData[i]);
+      } else if (subTab === 'motifs') {
+        wrapper.innerHTML = renderMotifCard(filteredData[i]);
       }
       // Unwrap the single child element
       if (wrapper.firstElementChild) {
@@ -430,6 +554,66 @@
       sentinel.style.gridColumn = '1 / -1';
       cardGrid.appendChild(sentinel);
     }
+  }
+
+  // --- Motif Card Rendering ---
+
+  var MOTIF_CATEGORIES = {
+    'A': 'Mythological',
+    'B': 'Animals',
+    'C': 'Tabu',
+    'D': 'Magic',
+    'E': 'The Dead',
+    'F': 'Marvels',
+    'G': 'Ogres',
+    'H': 'Tests',
+    'J': 'Wisdom',
+    'K': 'Deceptions',
+    'L': 'Reversal',
+    'M': 'Future',
+    'N': 'Chance',
+    'P': 'Society',
+    'Q': 'Rewards',
+    'R': 'Captives',
+    'S': 'Cruelty',
+    'T': 'Sex',
+    'U': 'Life',
+    'V': 'Religion',
+    'W': 'Character',
+    'X': 'Humor',
+    'Z': 'Misc'
+  };
+
+  function renderMotifCard(motif) {
+    var catName = MOTIF_CATEGORIES[motif.category] || motif.category;
+    var patternCount = motif.patterns.length;
+
+    var html = '<div class="codex-card motif-card" data-motif-code="' + escapeAttr(motif.code) + '">';
+
+    // Header: code + category badge
+    html += '<div class="codex-card-header">';
+    html += '<span class="codex-card-title">' + escapeHtml(motif.code) + '</span>';
+    html += '<span class="badge" style="background:rgba(245,158,11,0.2);color:#fbbf24;font-size:0.65rem">' +
+      escapeHtml(catName) + '</span>';
+    html += '</div>';
+
+    // Label/description
+    if (motif.label) {
+      html += '<div class="codex-card-desc">' + escapeHtml(motif.label) + '</div>';
+    }
+
+    // Pattern count
+    html += '<div class="codex-card-meta" style="margin-top:auto;padding-top:8px">';
+    if (patternCount > 0) {
+      html += '<span style="color:var(--color-text-muted);font-size:0.75rem">' +
+        patternCount + ' pattern' + (patternCount !== 1 ? 's' : '') + '</span>';
+    } else {
+      html += '<span style="color:var(--color-text-muted);font-size:0.75rem;opacity:0.5">No patterns</span>';
+    }
+    html += '</div>';
+
+    html += '</div>';
+    return html;
   }
 
   // --- Intersection Observer ---
