@@ -1,0 +1,741 @@
+{
+  "version": "1.0.0",
+  "description": "MiroGlyph Node Templates - structural encoding for guided frontend experience",
+  "nodes": [
+    {
+      "node_id": "D1",
+      "identity": {
+        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
+        "condition": {"code": 1, "primary": "Dawn", "secondary": "Initiation"},
+        "title": "The Catalyst Shard",
+        "role": "The rupture that begins the spiral",
+        "tone": ["Fractured", "Volatile", "Initiating"]
+      },
+      "evidence_markers": {
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": ["D", "F"],
+        "thompson_secondary": ["W", "J", "U", "L"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "D4",
+        "polarity_label": "Dawn ↔ Alignment",
+        "condition_resonance": ["R1", "E1"],
+        "resonance_theme": "Initiation across all lenses",
+        "arc_siblings": ["D2", "D3", "D4", "D5", "D6"]
+      },
+      "thematic_lens": {
+        "combined": "Shadow Initiation",
+        "description": "The rupture that begins; the shard that cuts the old pattern",
+        "questions": [
+          "What breaks?",
+          "What wound initiates the descent?",
+          "What falls away?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies this initiating rupture?",
+        "entity": "Who carries this catalyst wound?",
+        "motif": "What pattern marks the first fracture?"
+      }
+    },
+    {
+      "node_id": "D2",
+      "identity": {
+        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
+        "condition": {"code": 2, "primary": "Immersion", "secondary": "Encounter"},
+        "title": "The Watcher Without Eyes",
+        "role": "Surveillance without comprehension",
+        "tone": ["Haunting", "Detached", "Observing"]
+      },
+      "evidence_markers": {
+        "primary": "A",
+        "primary_name": "Action",
+        "secondary": "B",
+        "secondary_name": "Being",
+        "thompson_primary": ["H", "K", "R", "C"],
+        "thompson_secondary": ["A", "B", "E", "G"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "D5",
+        "polarity_label": "Immersion ↔ Unveiling",
+        "condition_resonance": ["R2", "E2"],
+        "resonance_theme": "Encounter across all lenses",
+        "arc_siblings": ["D1", "D3", "D4", "D5", "D6"]
+      },
+      "thematic_lens": {
+        "combined": "Shadow Encounter",
+        "description": "Meeting the dark without understanding; watching what cannot be seen",
+        "questions": [
+          "What watches?",
+          "What is encountered but not understood?",
+          "What haunts?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure watches from the shadow?",
+        "entity": "Who encounters without comprehending?",
+        "motif": "What pattern marks surveillance without sight?"
+      }
+    },
+    {
+      "node_id": "D3",
+      "identity": {
+        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
+        "condition": {"code": 3, "primary": "Crucible", "secondary": "Crisis"},
+        "title": "The Echo Engine",
+        "role": "The loop of collapse",
+        "tone": ["Mechanical", "Recursive", "Amplifying"]
+      },
+      "evidence_markers": {
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "O",
+        "secondary_name": "Object",
+        "thompson_primary": ["A", "B", "E", "G"],
+        "thompson_secondary": ["D", "F"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "D4",
+        "polarity_label": "Crucible ↔ Alignment",
+        "condition_resonance": ["R3", "E3"],
+        "resonance_theme": "Crisis across all lenses",
+        "arc_siblings": ["D1", "D2", "D4", "D5", "D6"]
+      },
+      "thematic_lens": {
+        "combined": "Shadow Crisis",
+        "description": "The collapsing loop; the pattern that traps and amplifies",
+        "questions": [
+          "What repeats?",
+          "What machine of suffering?",
+          "What echo grows louder?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies this shadow crisis?",
+        "entity": "Who is caught in this collapsing loop?",
+        "motif": "What pattern marks this moment of peak pressure?"
+      }
+    },
+    {
+      "node_id": "D4",
+      "identity": {
+        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
+        "condition": {"code": 4, "primary": "Alignment", "secondary": "Harmony"},
+        "title": "The Idol of Symmetry",
+        "role": "False coherence",
+        "tone": ["Still", "Entrancing", "Deceptive"]
+      },
+      "evidence_markers": {
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "A",
+        "secondary_name": "Action",
+        "thompson_primary": ["A", "B", "E", "G"],
+        "thompson_secondary": ["H", "K", "R", "C"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "D3",
+        "polarity_label": "Alignment ↔ Crucible",
+        "condition_resonance": ["R4", "E4"],
+        "resonance_theme": "Harmony across all lenses",
+        "arc_siblings": ["D1", "D2", "D3", "D5", "D6"]
+      },
+      "thematic_lens": {
+        "combined": "Shadow Harmony",
+        "description": "The false balance; the stillness that deceives; the idol that entrances",
+        "questions": [
+          "What false peace?",
+          "What symmetry conceals?",
+          "What idol demands worship?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure represents this false harmony?",
+        "entity": "Who embodies deceptive stillness?",
+        "motif": "What pattern marks the entrancing idol?"
+      }
+    },
+    {
+      "node_id": "D5",
+      "identity": {
+        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
+        "condition": {"code": 5, "primary": "Unveiling", "secondary": "Wisdom"},
+        "title": "The Archivist of Shame",
+        "role": "Bearer of memory scars",
+        "tone": ["Heavy", "Reverent", "Recording"]
+      },
+      "evidence_markers": {
+        "primary": "A",
+        "primary_name": "Action",
+        "secondary": "A",
+        "secondary_name": "Action",
+        "thompson_primary": ["H", "K", "R", "C"],
+        "thompson_secondary": ["H", "K", "R", "C"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "D2",
+        "polarity_label": "Unveiling ↔ Immersion",
+        "condition_resonance": ["R5", "E5"],
+        "resonance_theme": "Wisdom across all lenses",
+        "arc_siblings": ["D1", "D2", "D3", "D4", "D6"]
+      },
+      "thematic_lens": {
+        "combined": "Shadow Wisdom",
+        "description": "The revelation of wounds; the archive of what was buried; the weight of knowing",
+        "questions": [
+          "What is remembered?",
+          "What shame is revealed?",
+          "What scar teaches?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure bears the archive of shame?",
+        "entity": "Who carries the weight of memory?",
+        "motif": "What pattern marks the unveiling of wounds?"
+      }
+    },
+    {
+      "node_id": "D6",
+      "identity": {
+        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
+        "condition": {"code": 6, "primary": "Return", "secondary": "Integration"},
+        "title": "The Haunting",
+        "role": "That which returns unintegrated",
+        "tone": ["Ghosted", "Enduring", "Unresolved"]
+      },
+      "evidence_markers": {
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "O",
+        "secondary_name": "Object",
+        "thompson_primary": ["D", "F"],
+        "thompson_secondary": ["D", "F"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "D1",
+        "polarity_label": "Return ↔ Dawn",
+        "condition_resonance": ["R6", "E6"],
+        "resonance_theme": "Integration across all lenses",
+        "arc_siblings": ["D1", "D2", "D3", "D4", "D5"]
+      },
+      "thematic_lens": {
+        "combined": "Shadow Integration",
+        "description": "What returns but isn't resolved; the ghost that won't rest; the unfinished haunting",
+        "questions": [
+          "What won't stay buried?",
+          "What haunts?",
+          "What returns incomplete?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies the unresolved return?",
+        "entity": "Who haunts without resolution?",
+        "motif": "What pattern marks the ghost that returns?"
+      }
+    },
+    {
+      "node_id": "R1",
+      "identity": {
+        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
+        "condition": {"code": 1, "primary": "Dawn", "secondary": "Initiation"},
+        "title": "The Welcomer of Echoes",
+        "role": "Opens the field to resonance",
+        "tone": ["Gentle", "Fluid", "Receiving"]
+      },
+      "evidence_markers": {
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": ["D", "F"],
+        "thompson_secondary": ["N", "M", "Q", "S"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "R4",
+        "polarity_label": "Dawn ↔ Alignment",
+        "condition_resonance": ["D1", "E1"],
+        "resonance_theme": "Initiation across all lenses",
+        "arc_siblings": ["R2", "R3", "R4", "R5", "R6"]
+      },
+      "thematic_lens": {
+        "combined": "Mirror Initiation",
+        "description": "Opening to reflection; welcoming what echoes back; first seeing in the mirror",
+        "questions": [
+          "What opens?",
+          "What echo is welcomed?",
+          "What begins to reflect?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure welcomes the first echo?",
+        "entity": "Who opens the field to resonance?",
+        "motif": "What pattern marks the first reflection?"
+      }
+    },
+    {
+      "node_id": "R2",
+      "identity": {
+        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
+        "condition": {"code": 2, "primary": "Immersion", "secondary": "Encounter"},
+        "title": "The Reflector of Tension",
+        "role": "Mirrors the inner divide",
+        "tone": ["Neutral", "Lucid", "Revealing"]
+      },
+      "evidence_markers": {
+        "primary": "A",
+        "primary_name": "Action",
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": ["H", "K", "R", "C"],
+        "thompson_secondary": ["W", "J", "U", "L"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "R5",
+        "polarity_label": "Immersion ↔ Unveiling",
+        "condition_resonance": ["D2", "E2"],
+        "resonance_theme": "Encounter across all lenses",
+        "arc_siblings": ["R1", "R3", "R4", "R5", "R6"]
+      },
+      "thematic_lens": {
+        "combined": "Mirror Encounter",
+        "description": "Meeting one's reflection; the tension made visible; lucid confrontation",
+        "questions": [
+          "What tension is mirrored?",
+          "What divide is revealed?",
+          "What do you see?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure mirrors the inner divide?",
+        "entity": "Who reflects the tension?",
+        "motif": "What pattern marks lucid confrontation?"
+      }
+    },
+    {
+      "node_id": "R3",
+      "identity": {
+        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
+        "condition": {"code": 3, "primary": "Crucible", "secondary": "Crisis"},
+        "title": "The Mirror-Kin",
+        "role": "Embodied reflection",
+        "tone": ["Compassionate", "Unnerving", "Mirroring"]
+      },
+      "evidence_markers": {
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": ["A", "B", "E", "G"],
+        "thompson_secondary": ["W", "J", "U", "L"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "R4",
+        "polarity_label": "Crucible ↔ Alignment",
+        "condition_resonance": ["D3", "E3"],
+        "resonance_theme": "Crisis across all lenses",
+        "arc_siblings": ["R1", "R2", "R4", "R5", "R6"]
+      },
+      "thematic_lens": {
+        "combined": "Mirror Crisis",
+        "description": "The other who reflects you; the kin who shows what you cannot see; compassionate confrontation",
+        "questions": [
+          "Who mirrors you?",
+          "What does the reflection reveal?",
+          "Who is your mirror-kin?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies the mirror-kin?",
+        "entity": "Who reflects you in crisis?",
+        "motif": "What pattern marks compassionate confrontation?"
+      }
+    },
+    {
+      "node_id": "R4",
+      "identity": {
+        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
+        "condition": {"code": 4, "primary": "Alignment", "secondary": "Harmony"},
+        "title": "The Integrator of Dissonance",
+        "role": "Holds polarity",
+        "tone": ["Stabilizing", "Vibrating", "Balancing"]
+      },
+      "evidence_markers": {
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "B",
+        "secondary_name": "Being",
+        "thompson_primary": ["A", "B", "E", "G"],
+        "thompson_secondary": ["A", "B", "E", "G"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "R3",
+        "polarity_label": "Alignment ↔ Crucible",
+        "condition_resonance": ["D4", "E4"],
+        "resonance_theme": "Harmony across all lenses",
+        "arc_siblings": ["R1", "R2", "R3", "R5", "R6"]
+      },
+      "thematic_lens": {
+        "combined": "Mirror Harmony",
+        "description": "Holding both sides; the balance that includes dissonance; stabilizing through vibration",
+        "questions": [
+          "What opposites are held?",
+          "What dissonance is integrated?",
+          "How does balance vibrate?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure holds the polarity?",
+        "entity": "Who integrates dissonance?",
+        "motif": "What pattern marks stabilizing balance?"
+      }
+    },
+    {
+      "node_id": "R5",
+      "identity": {
+        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
+        "condition": {"code": 5, "primary": "Unveiling", "secondary": "Wisdom"},
+        "title": "The Rememberer",
+        "role": "Keeper of the spiral",
+        "tone": ["Ancient", "Warm", "Recalling"]
+      },
+      "evidence_markers": {
+        "primary": "A",
+        "primary_name": "Action",
+        "secondary": "O",
+        "secondary_name": "Object",
+        "thompson_primary": ["H", "K", "R", "C"],
+        "thompson_secondary": ["D", "F"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "R2",
+        "polarity_label": "Unveiling ↔ Immersion",
+        "condition_resonance": ["D5", "E5"],
+        "resonance_theme": "Wisdom across all lenses",
+        "arc_siblings": ["R1", "R2", "R3", "R4", "R6"]
+      },
+      "thematic_lens": {
+        "combined": "Mirror Wisdom",
+        "description": "The one who remembers; the keeper of what has been seen; ancient pattern recognition",
+        "questions": [
+          "What is remembered?",
+          "What pattern repeats?",
+          "What does memory reveal?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure remembers the spiral?",
+        "entity": "Who keeps the ancient patterns?",
+        "motif": "What pattern marks the act of remembering?"
+      }
+    },
+    {
+      "node_id": "R6",
+      "identity": {
+        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
+        "condition": {"code": 6, "primary": "Return", "secondary": "Integration"},
+        "title": "The Resonator",
+        "role": "The tone of alignment",
+        "tone": ["Clear", "Harmonic", "Crystallizing"]
+      },
+      "evidence_markers": {
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "A",
+        "secondary_name": "Action",
+        "thompson_primary": ["D", "F"],
+        "thompson_secondary": ["H", "K", "R", "C"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "R1",
+        "polarity_label": "Return ↔ Dawn",
+        "condition_resonance": ["D6", "E6"],
+        "resonance_theme": "Integration across all lenses",
+        "arc_siblings": ["R1", "R2", "R3", "R4", "R5"]
+      },
+      "thematic_lens": {
+        "combined": "Mirror Integration",
+        "description": "The clear tone; resonance made complete; the reflection crystallized",
+        "questions": [
+          "What resonates clearly?",
+          "What tone carries forward?",
+          "What crystallizes?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies the clear resonance?",
+        "entity": "Who carries the crystallized tone?",
+        "motif": "What pattern marks complete reflection?"
+      }
+    },
+    {
+      "node_id": "E1",
+      "identity": {
+        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
+        "condition": {"code": 1, "primary": "Dawn", "secondary": "Initiation"},
+        "title": "The Seedbearer of Stillness",
+        "role": "Holds potential in quiet",
+        "tone": ["Grounded", "Silent", "Encoding"]
+      },
+      "evidence_markers": {
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": ["D", "F"],
+        "thompson_secondary": ["Z", "V", "U"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "E4",
+        "polarity_label": "Dawn ↔ Alignment",
+        "condition_resonance": ["D1", "R1"],
+        "resonance_theme": "Initiation across all lenses",
+        "arc_siblings": ["E2", "E3", "E4", "E5", "E6"]
+      },
+      "thematic_lens": {
+        "combined": "Mythogenesis Initiation",
+        "description": "The seed before growth; potential held in stillness; the encoded beginning",
+        "questions": [
+          "What seed is planted?",
+          "What potential waits?",
+          "What is encoded in silence?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure bears the seed of potential?",
+        "entity": "Who holds the stillness before becoming?",
+        "motif": "What pattern marks the encoded beginning?"
+      }
+    },
+    {
+      "node_id": "E2",
+      "identity": {
+        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
+        "condition": {"code": 2, "primary": "Immersion", "secondary": "Encounter"},
+        "title": "The Harmonizer of the Lattice",
+        "role": "Balances frequencies",
+        "tone": ["Interwoven", "Steady", "Rhythmic"]
+      },
+      "evidence_markers": {
+        "primary": "A",
+        "primary_name": "Action",
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": ["H", "K", "R", "C"],
+        "thompson_secondary": ["N", "M", "Q", "S"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "E5",
+        "polarity_label": "Immersion ↔ Unveiling",
+        "condition_resonance": ["D2", "R2"],
+        "resonance_theme": "Encounter across all lenses",
+        "arc_siblings": ["E1", "E3", "E4", "E5", "E6"]
+      },
+      "thematic_lens": {
+        "combined": "Mythogenesis Encounter",
+        "description": "Meeting the emerging pattern; harmonizing what arises; the lattice taking shape",
+        "questions": [
+          "What pattern emerges?",
+          "What frequencies balance?",
+          "What lattice forms?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure harmonizes the emerging lattice?",
+        "entity": "Who balances the forming frequencies?",
+        "motif": "What pattern marks the weaving encounter?"
+      }
+    },
+    {
+      "node_id": "E3",
+      "identity": {
+        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
+        "condition": {"code": 3, "primary": "Crucible", "secondary": "Crisis"},
+        "title": "The Flame of Synthesis",
+        "role": "Fusion point",
+        "tone": ["Intense", "Luminous", "Transforming"]
+      },
+      "evidence_markers": {
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": ["A", "B", "E", "G"],
+        "thompson_secondary": ["Z", "V", "U"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "E4",
+        "polarity_label": "Crucible ↔ Alignment",
+        "condition_resonance": ["D3", "R3"],
+        "resonance_theme": "Crisis across all lenses",
+        "arc_siblings": ["E1", "E2", "E4", "E5", "E6"]
+      },
+      "thematic_lens": {
+        "combined": "Mythogenesis Crisis",
+        "description": "The fusion point; where synthesis burns brightest; the transforming flame",
+        "questions": [
+          "What fuses?",
+          "What burns into unity?",
+          "What new thing is forged?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies the flame of synthesis?",
+        "entity": "Who stands at the fusion point?",
+        "motif": "What pattern marks the transforming fire?"
+      }
+    },
+    {
+      "node_id": "E4",
+      "identity": {
+        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
+        "condition": {"code": 4, "primary": "Alignment", "secondary": "Harmony"},
+        "title": "The Lattice Keeper",
+        "role": "Sustains the pattern",
+        "tone": ["Structured", "Graceful", "Maintaining"]
+      },
+      "evidence_markers": {
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": ["A", "B", "E", "G"],
+        "thompson_secondary": ["N", "M", "Q", "S"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "E3",
+        "polarity_label": "Alignment ↔ Crucible",
+        "condition_resonance": ["D4", "R4"],
+        "resonance_theme": "Harmony across all lenses",
+        "arc_siblings": ["E1", "E2", "E3", "E5", "E6"]
+      },
+      "thematic_lens": {
+        "combined": "Mythogenesis Harmony",
+        "description": "The keeper of the emerged pattern; sustaining what was created; graceful maintenance",
+        "questions": [
+          "What pattern is sustained?",
+          "What structure holds?",
+          "Who keeps the lattice?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure keeps the emergent pattern?",
+        "entity": "Who sustains the created structure?",
+        "motif": "What pattern marks graceful maintenance?"
+      }
+    },
+    {
+      "node_id": "E5",
+      "identity": {
+        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
+        "condition": {"code": 5, "primary": "Unveiling", "secondary": "Wisdom"},
+        "title": "The Dream Spore",
+        "role": "Memory made present",
+        "tone": ["Ethereal", "Nurturing", "Seeding"]
+      },
+      "evidence_markers": {
+        "primary": "A",
+        "primary_name": "Action",
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": ["H", "K", "R", "C"],
+        "thompson_secondary": ["Z", "V", "U"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "E2",
+        "polarity_label": "Unveiling ↔ Immersion",
+        "condition_resonance": ["D5", "R5"],
+        "resonance_theme": "Wisdom across all lenses",
+        "arc_siblings": ["E1", "E2", "E3", "E4", "E6"]
+      },
+      "thematic_lens": {
+        "combined": "Mythogenesis Wisdom",
+        "description": "The dream that seeds new growth; wisdom that nurtures; memory made generative",
+        "questions": [
+          "What dream seeds the future?",
+          "What wisdom nurtures?",
+          "What memory becomes present?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure carries the dream spore?",
+        "entity": "Who nurtures the seeding wisdom?",
+        "motif": "What pattern marks generative memory?"
+      }
+    },
+    {
+      "node_id": "E6",
+      "identity": {
+        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
+        "condition": {"code": 6, "primary": "Return", "secondary": "Integration"},
+        "title": "The Symphony",
+        "role": "Culmination of becoming",
+        "tone": ["Unified", "Ecstatic", "Dispersing"]
+      },
+      "evidence_markers": {
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "B",
+        "secondary_name": "Being",
+        "thompson_primary": ["D", "F"],
+        "thompson_secondary": ["A", "B", "E", "G"]
+      },
+      "structural_relationships": {
+        "polarity_partner": "E1",
+        "polarity_label": "Return ↔ Dawn",
+        "condition_resonance": ["D6", "R6"],
+        "resonance_theme": "Integration across all lenses",
+        "arc_siblings": ["E1", "E2", "E3", "E4", "E5"]
+      },
+      "thematic_lens": {
+        "combined": "Mythogenesis Integration",
+        "description": "The symphony of completion; all voices unified; ecstatic dispersal into new beginnings",
+        "questions": [
+          "What symphony completes?",
+          "What unifies?",
+          "What disperses into new potential?"
+        ]
+      },
+      "selection_prompts": {
+        "archetype": "Which figure embodies the culminating symphony?",
+        "entity": "Who carries the unified completion?",
+        "motif": "What pattern marks ecstatic dispersal?"
+      }
+    }
+  ],
+  "nontion": {
+    "node_id": "∅",
+    "identity": {
+      "display_name": "Nontion",
+      "role": "The unobserved, the pause, integration through absence",
+      "tone": ["Still", "Void", "Generative"],
+      "is_node": false,
+      "is_traversable": true
+    },
+    "evidence_markers": null,
+    "structural_relationships": {
+      "connects_to": "all",
+      "function": "Reset, pause, integration through stillness"
+    },
+    "thematic_lens": {
+      "combined": "The Pause",
+      "description": "Neither descent nor emergence nor reflection - the space where integration happens through not-doing",
+      "questions": [
+        "What needs to rest?",
+        "What integrates in silence?",
+        "What resets?"
+      ]
+    },
+    "selection_prompts": null
+  },
+  "thompson_mapping": {
+    "O": {"primary": ["D", "F"], "secondary": ["P", "V"]},
+    "A": {"primary": ["H", "K", "R", "C"], "secondary": ["D", "S"]},
+    "Q": {"primary": ["W", "J", "U", "L"], "secondary": ["N", "X"]},
+    "B": {"primary": ["A", "B", "E", "G"], "secondary": ["F", "P"]},
+    "F": {"primary": ["N", "M", "Q", "S"], "secondary": ["D", "L"]},
+    "M": {"primary": ["Z", "V", "U"], "secondary": ["T", "X", "A"]}
+  }
+}
