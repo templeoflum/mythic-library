@@ -602,13 +602,23 @@
       html += '<div class="codex-card-desc">' + escapeHtml(motif.label) + '</div>';
     }
 
-    // Pattern count
-    html += '<div class="codex-card-meta" style="margin-top:auto;padding-top:8px">';
+    // Patterns that use this motif
+    html += '<div class="motif-patterns">';
     if (patternCount > 0) {
-      html += '<span style="color:var(--color-text-muted);font-size:0.75rem">' +
-        patternCount + ' pattern' + (patternCount !== 1 ? 's' : '') + '</span>';
+      html += '<div class="motif-patterns-label">Appears in:</div>';
+      html += '<div class="motif-pattern-tags">';
+      var displayPatterns = motif.patterns.slice(0, 5);
+      for (var p = 0; p < displayPatterns.length; p++) {
+        var patName = cardRenderer.formatPatternName(displayPatterns[p]);
+        html += '<span class="motif-pattern-tag" data-pattern="' + escapeAttr(displayPatterns[p]) + '">' +
+          escapeHtml(patName) + '</span>';
+      }
+      if (patternCount > 5) {
+        html += '<span class="motif-pattern-tag more">+' + (patternCount - 5) + ' more</span>';
+      }
+      html += '</div>';
     } else {
-      html += '<span style="color:var(--color-text-muted);font-size:0.75rem;opacity:0.5">No patterns</span>';
+      html += '<div class="motif-patterns-label" style="opacity:0.5">Not used in any patterns</div>';
     }
     html += '</div>';
 
@@ -644,6 +654,14 @@
 
   function setupCardClicks(cardGrid) {
     cardGrid.addEventListener('click', function(e) {
+      // Pattern tag click -> navigate to Chronicle patterns
+      var patternTag = e.target.closest('.motif-pattern-tag');
+      if (patternTag && patternTag.dataset.pattern && !patternTag.classList.contains('more')) {
+        e.stopPropagation();
+        nav.toPattern(patternTag.dataset.pattern);
+        return;
+      }
+
       var archCard = e.target.closest('.arch-card');
       if (archCard && archCard.dataset.id) {
         nav.toArchetype(archCard.dataset.id);
@@ -653,6 +671,13 @@
       var entityCard = e.target.closest('.entity-card');
       if (entityCard && entityCard.dataset.name) {
         nav.toEntity(entityCard.dataset.name);
+        return;
+      }
+
+      // Motif card click -> could show detail in future
+      var motifCard = e.target.closest('.motif-card');
+      if (motifCard && motifCard.dataset.motifCode) {
+        // For now, just highlight - could expand to full detail view later
         return;
       }
     });
