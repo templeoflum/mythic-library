@@ -163,13 +163,15 @@ The tool is built with vanilla JavaScript + SVG rendering:
 
 ```
 miroglyph/
-├── index.html              # Main HTML with three-view layout
+├── index.html              # Explorer: three-view layout for free-form exploration
+├── journey.html            # Journey Mapper: guided traversal experience
 ├── css/
 │   ├── styles.css          # Base styles, CSS variables, semantic colors
 │   ├── tabs.css            # Tab navigation and shared components
 │   ├── view-atlas.css      # Atlas view (three-pane layout)
 │   ├── view-codex.css      # Codex view (card grid + details)
-│   └── view-chronicle.css  # Chronicle view (patterns + validation)
+│   ├── view-chronicle.css  # Chronicle view (patterns + validation)
+│   └── journey.css         # Journey Mapper styles
 ├── js/
 │   ├── utils.js            # Shared utilities (ensureArray, getFidelityClass)
 │   ├── nodes.js            # 19-node definitions (arcs, conditions)
@@ -186,14 +188,65 @@ miroglyph/
 │   ├── view-atlas.js       # Atlas view controller
 │   ├── view-codex.js       # Codex view controller (archetypes/entities/motifs)
 │   ├── view-chronicle.js   # Chronicle view controller
-│   └── app.js              # Main controller (boot sequence + breadcrumbs)
+│   ├── app.js              # Main controller (boot sequence + breadcrumbs)
+│   ├── journey-app.js      # Journey Mapper boot sequence and routing
+│   ├── journey-state.js    # Journey state management and persistence
+│   ├── journey-ui.js       # Journey UI rendering and interactions
+│   └── journey-filters.js  # Motif filtering by evidence markers
 └── data/                   # Pre-exported JSON data files
+    └── node_templates.json # Node templates with evidence markers and prompts
 ```
 
-### Three Views
+### Two Applications
+
+| App | URL | Purpose |
+|-----|-----|---------|
+| **Explorer** | `index.html` | Free-form exploration of nodes, archetypes, entities, and patterns |
+| **Journey Mapper** | `journey.html` | Guided traversal experience with step-by-step selections |
+
+### Explorer Views
 - **Atlas**: Three-pane layout (Node Info | Canvas | Traversals) for path building
 - **Codex**: Catalog browsing with sub-tabs: Archetypes (996) | Entities (159 mapped, 14 unmapped) | Motifs (149)
 - **Chronicle**: Analysis with sub-tabs: Patterns (18 with mini-map) | Validation (tiers + insights)
+
+### Journey Mapper
+
+A guided experience that walks users through a MiroGlyph traversal, presenting contextually filtered choices at each node based on the structural template system.
+
+**Features:**
+- **Predefined Traversals**: 8 starter paths including "Shadow Spiral", "Mirror Journey", "Crisis Triangle"
+- **Step-by-Step Selection**: At each node, choose an archetype, entity, and motif
+- **Evidence-Based Filtering**: Motifs filtered by Thompson category based on node evidence markers
+- **Nontion Pauses**: Special pause screens for the center point with reflection prompts
+- **Journey Persistence**: Save journeys to LocalStorage, export as JSON
+- **Surprise Me**: Random selections for serendipitous discovery
+
+**Flow:**
+1. Start Screen → Choose "Surprise Me" or select a predefined path
+2. Node Screen → Select archetype → entity → motif → optional note
+3. Nontion Screen → Pause and reflect (no selections required)
+4. Complete Screen → Review journey, save, or export
+
+**Journey State Schema:**
+```json
+{
+  "journey_id": "uuid",
+  "name": "My Shadow Spiral",
+  "traversal": ["D3", "R2", "∅", "E5", "E6"],
+  "current_index": 0,
+  "nodes": [
+    {
+      "node_id": "D3",
+      "archetype": { "id": "arch:GR-SISYPHUS", "name": "Sisyphus" },
+      "entity": { "name": "Prometheus", "tradition": "greek" },
+      "motif": { "code": "E501", "name": "The Wild Hunt" },
+      "note": "User reflection..."
+    }
+  ],
+  "created_date": "ISO timestamp",
+  "completed": false
+}
+```
 
 ### Core Features
 1. **Display** - 19 points in centrifugal concentric layout
@@ -307,6 +360,7 @@ Primary is locked by condition; secondary varies by arc. This makes polarity and
 
 ## Testing Considerations
 
+### Explorer
 - Can user create traversal by clicking node sequence?
 - Does export/import work without data loss?
 - Can traversals pass through Nontion?
@@ -314,6 +368,17 @@ Primary is locked by condition; secondary varies by arc. This makes polarity and
 - What if user creates a circuit (returns to start)?
 - Do visibility toggles work correctly for multiple traversals?
 - Does edit preserve the original sequence while changing name/color?
+
+### Journey Mapper
+- Does "Surprise Me" load a random predefined traversal?
+- Can user select archetype → entity → motif at each node?
+- Are motifs filtered correctly by evidence markers?
+- Does Nontion show pause screen without selection steps?
+- Does "Skip Step" work for each selection?
+- Can user navigate back to previous nodes?
+- Does journey save to LocalStorage correctly?
+- Does JSON export produce valid file?
+- Do saved journeys appear on start screen?
 
 ---
 

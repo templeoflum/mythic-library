@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey Mapper - MiroGlyph</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/journey.css">
+</head>
+<body>
+  <div class="journey-app">
+    <!-- Header -->
+    <header class="journey-header">
+      <h1 class="journey-logo">Journey Mapper</h1>
+      <div class="journey-nav-link">
+        <a href="index.html" class="nav-link">Explorer</a>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="journey-main" class="journey-main">
+      <!-- Start Screen -->
+      <div id="screen-start" class="journey-screen">
+        <div class="start-content">
+          <h2 class="start-title">Begin Your Journey</h2>
+          <p class="start-subtitle">Navigate the mythic topology through guided traversal</p>
+
+          <div class="start-actions">
+            <button id="btn-surprise" class="btn btn-primary btn-large btn-surprise">
+              Surprise Me
+            </button>
+            <button id="btn-choose" class="btn btn-secondary btn-large">
+              Choose Path
+            </button>
+          </div>
+
+          <div id="saved-journeys" class="saved-journeys" hidden>
+            <h3 class="section-title">Saved Journeys</h3>
+            <div id="saved-list" class="saved-list">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Node Screen -->
+      <div id="screen-node" class="journey-screen" hidden>
+        <!-- Progress Bar -->
+        <div class="journey-progress">
+          <div id="progress-nodes" class="progress-nodes">
+            <!-- Node chips rendered here -->
+          </div>
+        </div>
+
+        <!-- Node Info -->
+        <div id="node-info" class="node-info-card">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Selection Steps -->
+        <div id="selection-area" class="selection-area">
+          <!-- Step content rendered here -->
+        </div>
+
+        <!-- Navigation -->
+        <div class="journey-nav">
+          <button id="btn-prev-node" class="btn btn-secondary">Previous Node</button>
+          <button id="btn-skip-step" class="btn btn-secondary">Skip Step</button>
+          <button id="btn-next-step" class="btn btn-primary">Continue</button>
+        </div>
+      </div>
+
+      <!-- Nontion Pause Screen -->
+      <div id="screen-nontion" class="journey-screen" hidden>
+        <div class="nontion-content">
+          <div class="nontion-symbol">&#8709;</div>
+          <h2 class="nontion-title">Nontion</h2>
+          <p class="nontion-subtitle">The Pause</p>
+          <p class="nontion-description">
+            Neither descent nor emergence nor reflection -
+            the space where integration happens through not-doing.
+          </p>
+
+          <div class="nontion-questions">
+            <p>What needs to rest?</p>
+            <p>What integrates in silence?</p>
+            <p>What resets?</p>
+          </div>
+
+          <div class="nontion-note">
+            <label for="nontion-note-input">Reflection (optional)</label>
+            <textarea id="nontion-note-input" rows="3" placeholder="What does this pause mean in your journey?"></textarea>
+          </div>
+
+          <button id="btn-continue-nontion" class="btn btn-primary btn-large">
+            Continue Journey
+          </button>
+        </div>
+      </div>
+
+      <!-- Complete Screen -->
+      <div id="screen-complete" class="journey-screen" hidden>
+        <div class="complete-content">
+          <h2 class="complete-title">Journey Complete</h2>
+          <div id="complete-traversal" class="complete-traversal">
+            <!-- Traversal path rendered here -->
+          </div>
+
+          <div id="complete-summary" class="complete-summary">
+            <!-- Summary of all selections -->
+          </div>
+
+          <div class="complete-actions">
+            <button id="btn-save-journey" class="btn btn-primary">Save Journey</button>
+            <button id="btn-export-journey" class="btn btn-secondary">Export JSON</button>
+            <button id="btn-new-journey" class="btn btn-secondary">Start New Journey</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Choose Path Modal -->
+      <div id="modal-choose" class="modal" hidden>
+        <div class="modal-content">
+          <h2>Choose a Path</h2>
+          <div id="traversal-options" class="traversal-options">
+            <!-- Populated dynamically -->
+          </div>
+          <div class="form-actions">
+            <button id="btn-cancel-choose" class="btn btn-secondary">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Save Journey Modal -->
+      <div id="modal-save" class="modal" hidden>
+        <div class="modal-content">
+          <h2>Save Journey</h2>
+          <form id="form-save-journey">
+            <div class="form-group">
+              <label for="journey-name">Name *</label>
+              <input type="text" id="journey-name" required placeholder="e.g., Shadow Spiral">
+            </div>
+            <div class="form-group">
+              <label for="journey-description">Description</label>
+              <textarea id="journey-description" rows="2" placeholder="Optional..."></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="button" id="btn-cancel-save" class="btn btn-secondary">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts: Infrastructure -->
+  <script src="js/utils.js"></script>
+  <script src="js/nodes.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/data-loader.js"></script>
+
+  <!-- Scripts: Journey -->
+  <script src="js/journey-filters.js"></script>
+  <script src="js/journey-state.js"></script>
+  <script src="js/journey-ui.js"></script>
+  <script src="js/journey-app.js"></script>
+</body>
+</html>
