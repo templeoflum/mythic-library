@@ -591,7 +591,14 @@
     html += '<span class="tier-card-name">' + escapeHtml(tier.label || tier.id) + '</span>';
     html += '<span class="validation-verdict ' + vClass + '" style="font-size:0.65rem;padding:1px 6px">' + escapeHtml(tier.verdict || '') + '</span>';
     html += '</div>';
-    html += '<div class="tier-card-score">' + passCount + '/' + tests.length + ' passed</div>';
+    // Only show score if there are actual tests, otherwise show insight count or description
+    if (tests.length > 0) {
+      html += '<div class="tier-card-score">' + passCount + '/' + tests.length + ' passed</div>';
+    } else if (tier.insights && tier.insights.length > 0) {
+      html += '<div class="tier-card-score">' + tier.insights.length + ' insights</div>';
+    } else {
+      html += '<div class="tier-card-score">' + escapeHtml(tier.description || '') + '</div>';
+    }
     html += '</div>';
 
     return html;
@@ -625,16 +632,36 @@
       if (!expandedTiers[tier.id]) continue;
 
       html += '<div class="tier-tests">';
-      html += '<div class="pattern-detail-section-title">' + escapeHtml(tier.label || tier.id) + ' Tests</div>';
-
       var tests = tier.tests || [];
-      if (tests.length === 0) {
+      var insights = tier.insights || [];
+
+      if (tests.length > 0) {
+        html += '<div class="pattern-detail-section-title">' + escapeHtml(tier.label || tier.id) + ' Tests</div>';
+        for (var i = 0; i < tests.length; i++) {
+          html += renderTierTest(tier.id, tests[i], i);
+        }
+      }
+
+      if (insights.length > 0) {
+        html += '<div class="pattern-detail-section-title" style="margin-top:8px">' + escapeHtml(tier.label || tier.id) + ' Insights</div>';
+        for (var j = 0; j < insights.length; j++) {
+          var insight = insights[j];
+          var isConfirmed = insight.indexOf('CONFIRMED') === 0;
+          var badgeStyle = isConfirmed
+            ? 'background:rgba(16,185,129,0.2);color:#34d399'
+            : 'background:rgba(59,130,246,0.2);color:#60a5fa';
+          var badgeText = isConfirmed ? 'CONFIRMED' : 'INSIGHT';
+          html += '<div class="tier-test" style="padding:6px 0">';
+          html += '<span class="badge" style="' + badgeStyle + ';font-size:0.65rem;margin-right:8px">' + badgeText + '</span>';
+          html += '<span style="font-size:0.8rem">' + escapeHtml(insight.replace(/^(CONFIRMED|INSIGHT): ?/, '')) + '</span>';
+          html += '</div>';
+        }
+      }
+
+      if (tests.length === 0 && insights.length === 0) {
         html += '<div class="empty-state" style="font-size:0.8rem">No automated tests for this tier.</div>';
       }
 
-      for (var i = 0; i < tests.length; i++) {
-        html += renderTierTest(tier.id, tests[i], i);
-      }
       html += '</div>';
     }
 
