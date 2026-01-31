@@ -12,7 +12,7 @@ An empirical corpus of 132 public domain mythological texts across 32 traditions
 |-----------|-------|
 | Source texts | 132 across 32 traditions (822 MB raw corpus) |
 | Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 149 motifs |
-| ACP archetypes | 996 across 60+ systems, 22 primordials, 8D coordinates (95% rich+) |
+| ACP archetypes | 997 across 60+ systems, 22 primordials, 8D coordinates (95% rich+) |
 | Validation | 10 tests across 5 tiers (A/B/C/D/E), core tiers PASS/PARTIAL |
 | Explorer | Browser-based Miroglyph with Atlas, Codex, and Chronicle views |
 
@@ -61,7 +61,7 @@ mythic-library/
 │   └── mythic_patterns.db              # SQLite: 4K segments, 173 entities, 149 motifs
 ├── ACP/                                # Archetypal Context Protocol (subtree)
 │   ├── schema/                         # Axes, primordials, relationships ontology
-│   └── archetypes/                     # 996 archetypes across 60+ systems (JSON-LD)
+│   └── archetypes/                     # 997 archetypes across 60+ systems (JSON-LD)
 ├── integration/                        # ACP <-> Library bridge
 │   ├── acp_loader.py                   # Load archetypes, coordinates, relationships
 │   ├── library_loader.py               # Query pattern database
@@ -117,7 +117,7 @@ python -m validation.v2_run --full
 
 Or open `miroglyph/index.html` locally. Three views:
 
-- **Atlas**: 2D spectral projection of all 996 archetypes with axis-pair selection, zoom, and tooltip
+- **Atlas**: 2D spectral projection of all 997 archetypes with axis-pair selection, zoom, and tooltip
 - **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
 - **Chronicle**: Narrative tracing across traditions with relationship visualization
 
@@ -161,7 +161,7 @@ Weights are empirically derived from per-axis correlation with narrative co-occu
 
 ### ACP Coverage
 
-996 archetypes across 60+ systems in four domains (95% at "rich" tier or above):
+997 archetypes across 60+ systems in four domains (95% at "rich" tier or above):
 
 **Mythological Pantheons (399 entries)**
 | Tradition | Archetypes | Relationship Types |

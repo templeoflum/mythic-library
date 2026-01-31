@@ -5,7 +5,7 @@
 The **Archetypal Context Protocol** is a relational symbolic framework for cataloging, generating, and interpreting archetypes across cultures, systems, and media. It uses **JSON-LD** for semantic web compatibility and enables multi-dimensional querying through spectral positioning and typed relationships.
 
 **Version**: 0.3.2 (Database Completion Phase)
-**Total Archetypes**: 996 entries with full spectral coordinates
+**Total Archetypes**: 997 entries with full spectral coordinates
 **Completeness**: 88% complete, 7% rich, 3% partial, 2% stub (mean score: 84.5%)
 **Cultural Echoes**: 1,840 cross-system links, 3,574 total relationships
 **Broken References**: 109 remaining (down from 426)
@@ -115,7 +115,7 @@ ACP/
 │   ├── celtic/                # 14 entries
 │   ├── hindu/                 # 20 entries
 │   ├── japanese/              # 18 entries
-│   ├── chinese/               # 20 entries
+│   ├── chinese/               # 21 entries
 │   ├── mesopotamian/          # 15 entries
 │   ├── african/               # 18 entries
 │   ├── mesoamerican/          # 18 entries

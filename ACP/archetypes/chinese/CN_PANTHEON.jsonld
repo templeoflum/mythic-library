@@ -55,9 +55,10 @@
       "name": "Journey to the West",
       "description": "Sun Wukong's rebellion, punishment, redemption through pilgrimage with Xuanzang",
       "archetypes": [
-        "arch:CN-SUN-WUKONG"
+        "arch:CN-SUN-WUKONG",
+        "arch:CN-DOU-ZHANSHENG-FO"
       ],
-      "pattern": "Trickster-rebel transformed through discipline and compassion"
+      "pattern": "Trickster-rebel transformed through discipline and compassion into enlightened Buddha"
     }
   ],
   "entries": [
@@ -1400,9 +1401,9 @@
       "relationships": [
         {
           "type": "rel:EVOLUTION",
-          "target": "arch:CN-SUN-WUKONG",
-          "description": "Transforms from rebel to protector through journey",
-          "context": "Journey to the West arc"
+          "target": "arch:CN-DOU-ZHANSHENG-FO",
+          "description": "Transforms from rebel Monkey King to enlightened Victorious Fighting Buddha",
+          "context": "Journey to the West - 81 trials transform rebellion into discipline"
         },
         {
           "type": "rel:TENSION",
@@ -1426,24 +1427,6 @@
           "target": "arch:IN-HANUMAN",
           "fidelity": 0.75,
           "notes": "Monkey hero, devoted protector, immense power"
-        },
-        {
-          "type": "EVOLUTION",
-          "source": "Stone-born Monkey King (rebel against heaven)",
-          "target": "Victorious Fighting Buddha",
-          "trigger": "Journey to the West pilgrimage; 81 trials transform rebellion into discipline",
-          "direction": "forward"
-        },
-        {
-          "type": "CULTURAL_ECHO",
-          "target": "arch:IN-HANUMAN",
-          "fidelity": 0.6
-        },
-        {
-          "type": "CULTURAL_ECHO",
-          "target": "chinese:monkey",
-          "fidelity": 0.8,
-          "note": "Reverse of: Monkey King archetype"
         }
       ],
       "shadowDynamics": {
@@ -1545,6 +1528,102 @@
           "provenance": "ORIG"
         }
       ]
+    },
+    {
+      "@id": "arch:CN-DOU-ZHANSHENG-FO",
+      "@type": "Archetype",
+      "name": "Victorious Fighting Buddha",
+      "aliases": [
+        "Dòu Zhànshèng Fó",
+        "斗战胜佛",
+        "Buddha Victorious in Strife"
+      ],
+      "domain": [
+        "Enlightenment",
+        "Redemption",
+        "Martial Wisdom",
+        "Transformation",
+        "Protection"
+      ],
+      "description": "The enlightened form of Sun Wukong, attained at the completion of Journey to the West. After protecting Xuanzang through 81 trials and tribulations, the rebellious Monkey King achieved Buddhahood, transforming from chaos-agent into enlightened protector. This archetype represents the culmination of the trickster-to-sage journey - raw power refined through discipline and compassion.",
+      "spectralCoordinates": {
+        "order-chaos": 0.35,
+        "creation-destruction": 0.4,
+        "light-shadow": 0.2,
+        "active-receptive": 0.4,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.25,
+        "stasis-transformation": 0.3,
+        "voluntary-fated": 0.3
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.85,
+          "aspects": [
+            "enlightened-master",
+            "transformed-trickster"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.8,
+          "aspects": [
+            "redeemed-rebel",
+            "perfected-protector"
+          ]
+        },
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "martial-buddha",
+            "dharma-defender"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "rel:DEVOLUTION",
+          "target": "arch:CN-SUN-WUKONG",
+          "description": "Origin form before enlightenment through Journey to the West"
+        },
+        {
+          "type": "rel:CULTURAL_ECHO",
+          "target": "arch:BU-BODHISATTVA",
+          "fidelity": 0.7,
+          "notes": "Achieved enlightenment but remains to help others"
+        },
+        {
+          "type": "rel:COMPLEMENT",
+          "target": "arch:CN-GUANYIN",
+          "description": "Fellow enlightened being; Guanyin guided his transformation"
+        }
+      ],
+      "domains": [
+        "enlightenment",
+        "transformation",
+        "wisdom",
+        "war",
+        "protection"
+      ],
+      "keywords": [
+        "buddha",
+        "enlightenment",
+        "redemption",
+        "transformation",
+        "monkey",
+        "martial",
+        "journey",
+        "discipline"
+      ],
+      "narrativeRoles": [
+        "sage",
+        "mentor",
+        "hero"
+      ],
+      "coreFunction": "To embody the completion of the trickster-to-sage transformation",
+      "symbolicCore": "Chaos refined into enlightened power through discipline and compassion"
     },
     {
       "@id": "arch:CN-GUANYIN",

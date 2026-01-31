@@ -9,12 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added - Database Completion & UI Improvements
 
-**ACP Archetype Expansion (996 total, +45):**
+**ACP Archetype Expansion (997 total, +46):**
 - 42 new Greek archetypes: Achilles, Gaia, Eros, Hecate, Charon, Orpheus, Eurydice, Medusa, Cerberus, Minotaur, Cyclops, Titans, Centaur, Pan, Helios, Selene, Eos, Thanatos, Typhon, Moirai, Sirens, Nymphs, and more
+- Victorious Fighting Buddha (Chinese - Sun Wukong's enlightened form)
 - Ravana (Hindu demon king)
 - Kullervo (Finnish tragic hero)
 - Grendel (Norse/Germanic monster)
 - Greek pantheon now complete with 66 entries
+- Chinese pantheon now 21 entries
 
 **Entity Mapping Improvements:**
 - Mapped entities increased from 150 to 159

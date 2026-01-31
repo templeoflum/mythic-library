@@ -3,7 +3,7 @@
 A semantic framework for mapping archetypes across mythology, psychology, divination, and culture using an 8-dimensional coordinate system.
 
 [![JSON-LD](https://img.shields.io/badge/format-JSON--LD-blue)](https://json-ld.org/)
-[![Archetypes](https://img.shields.io/badge/archetypes-996-green)]()
+[![Archetypes](https://img.shields.io/badge/archetypes-997-green)]()
 [![Completeness](https://img.shields.io/badge/completeness-95%25%20rich+-brightgreen)]()
 [![Version](https://img.shields.io/badge/version-0.3.0-yellow)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
@@ -59,7 +59,7 @@ Cultural figures instantiate these with weights:
 
 ## Current Coverage
 
-ACP currently includes **996 fully-mapped archetypes** across four domains:
+ACP currently includes **997 fully-mapped archetypes** across four domains:
 
 **Enrichment Status (v0.3.0):**
 - 88% Complete (838 entries at 80%+ completeness)
@@ -72,7 +72,7 @@ ACP currently includes **996 fully-mapped archetypes** across four domains:
 | Pantheon | Entries |
 |----------|---------|
 | Greek (Olympians) | 66 |
-| Chinese | 20 |
+| Chinese | 21 |
 | Hindu | 20 |
 | Persian/Zoroastrian | 19 |
 | African (Orisha) | 18 |
@@ -172,7 +172,7 @@ ACP/
 │   ├── hindu/              # Trimurti, Devas, asuras (20)
 │   ├── celtic/             # Tuatha Dé Danann (14)
 │   ├── japanese/           # Kami (18)
-│   ├── chinese/            # Chinese pantheon (20)
+│   ├── chinese/            # Chinese pantheon (21)
 │   ├── african/            # Orisha (18)
 │   ├── mesopotamian/       # Sumerian/Babylonian (15)
 │   ├── polynesian/         # Pacific deities (18)
