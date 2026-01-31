@@ -319,6 +319,29 @@ See [`docs/gap_analysis_v3.md`](docs/gap_analysis_v3.md) for remaining gaps.
 | [`outputs/audits/human_audit_results.json`](outputs/audits/human_audit_results.json) | Audit results summary: scoring, per-category breakdown |
 | [`ACP/CLAUDE.md`](ACP/CLAUDE.md) | ACP protocol overview and design rationale |
 
+## Future Ideas
+
+Features under consideration for future development:
+
+### Generative Archetype Trails
+Click an archetype to get suggested pairs based on spectral proximity, shared primordials, or relationship types. Build a trail of connected archetypes, and at the end, synthesize a new **emergent archetype** that blends the trail's characteristics:
+- Interpolated spectral coordinates from the trail
+- Combined primordial weights
+- Inherited domains and narrative roles
+- Auto-generated description summarizing the synthesis
+
+User-created archetypes would be stored in a personal database, separate from the canonical ACP catalog, allowing for:
+- Custom mythology building
+- Character generation for worldbuilding
+- Personal symbolic exploration
+- Shareable archetype collections
+
+### Other Ideas
+- **Path Templates**: Pre-built traversal patterns (Hero's Journey, Descent-Return, etc.) that can be applied to any starting archetype
+- **Archetype Blending**: Select 2-3 archetypes and generate a weighted blend with visualization of where it falls in spectral space
+- **Narrative Generator**: Given a traversal path, generate story beats or scene prompts for each node
+- **Community Catalog**: Shared repository of user-created archetypes with voting/curation
+
 ## Contributing
 
 To add a text:
