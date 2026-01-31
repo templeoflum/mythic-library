@@ -143,13 +143,17 @@
       html += '</div>';
     }
 
-    // Source entities
+    // Source entities - clickable with count
     var entitiesByArch = dataLoader ? dataLoader.getIndex('entitiesByArchetype') : {};
     var sourceEntities = entitiesByArch[a.id] || [];
     if (sourceEntities.length > 0) {
       html += '<div class="detail-section">';
-      html += '<div class="detail-section-title">Source Entities (' + sourceEntities.length + ')</div>';
-      html += '<div class="source-entities">';
+      html += '<div class="detail-section-title">';
+      html += 'Source Entities ';
+      html += '<span class="badge" style="font-size:0.6rem">' + sourceEntities.length + '</span>';
+      html += '</div>';
+      html += '<div class="source-entities" style="max-height:200px;overflow-y:auto">';
+      // Show ALL source entities, scrollable
       for (var se = 0; se < sourceEntities.length; se++) {
         var eName = sourceEntities[se].name;
         html += '<span class="source-entity-tag" data-action="toEntity" data-name="' +
@@ -161,7 +165,76 @@
       html += '</div>';
     }
 
+    // Related Archetypes (from relationships + nearby by spectral distance)
+    html += renderRelatedArchetypes(a, dataLoader);
+
     html += '</div>'; // end detail-sheet
+    return html;
+  }
+
+  // --- Related Archetypes ---
+  function renderRelatedArchetypes(archetype, dataLoader) {
+    if (!dataLoader) return '';
+
+    var related = [];
+    var seen = {};
+    seen[archetype.id] = true;
+
+    // From explicit relationships
+    if (archetype.relationships && archetype.relationships.length > 0) {
+      for (var i = 0; i < archetype.relationships.length && related.length < 12; i++) {
+        var rel = archetype.relationships[i];
+        if (!seen[rel.target]) {
+          var archById = dataLoader.getIndex('archetypeById');
+          var targetArch = archById[rel.target];
+          var displayName = targetArch ? targetArch.name : rel.target;
+          related.push({
+            id: rel.target,
+            name: displayName,
+            reason: rel.type ? rel.type.replace(/_/g, ' ') : 'Related'
+          });
+          seen[rel.target] = true;
+        }
+      }
+    }
+
+    // From same node (if we have nearest nodes)
+    if (archetype.nearest_nodes && archetype.nearest_nodes.length > 0) {
+      var primaryNode = archetype.nearest_nodes[0].node_id;
+      var archsByNode = dataLoader.getIndex('archetypesByNode');
+      var sameNode = archsByNode[primaryNode] || [];
+
+      for (var j = 0; j < sameNode.length && related.length < 16; j++) {
+        var arch = sameNode[j];
+        var archId = arch.archetype_id || arch.id;
+        if (!seen[archId]) {
+          var archById = dataLoader.getIndex('archetypeById');
+          var archData = archById[archId];
+          if (archData) {
+            related.push({
+              id: archId,
+              name: archData.name,
+              reason: 'Same node (' + primaryNode + ')'
+            });
+            seen[archId] = true;
+          }
+        }
+      }
+    }
+
+    if (related.length === 0) return '';
+
+    var html = '<div class="related-section">';
+    html += '<div class="related-section-title">Related Archetypes <span class="badge" style="font-size:0.6rem">' + related.length + '</span></div>';
+    html += '<div class="related-items">';
+    for (var r = 0; r < related.length; r++) {
+      html += '<span class="related-item" data-action="toArchetype" data-id="' + escapeAttr(related[r].id) + '" title="' + escapeAttr(related[r].reason) + '">';
+      html += escapeHtml(related[r].name);
+      html += '</span>';
+    }
+    html += '</div>';
+    html += '</div>';
+
     return html;
   }
 
@@ -194,13 +267,43 @@
     html += '</div>';
     html += '</div>';
 
-    // Summary line
+    // Summary line with more data
     var mentions = e.total_mentions || 0;
     var texts = e.text_count || 0;
     var traditions = e.tradition_count || 0;
     html += '<div class="detail-desc">' +
       mentions + ' mentions across ' + texts + ' texts, ' + traditions + ' traditions' +
     '</div>';
+
+    // Mapping data badges (fidelity, distance, method)
+    if (e.mapping) {
+      html += '<div class="entity-mapping-badges" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--spacing-lg)">';
+
+      // Fidelity badge
+      if (e.mapping.fidelity != null) {
+        var fidelityClass = e.mapping.fidelity >= 0.8 ? 'fidelity-high' :
+                            (e.mapping.fidelity >= 0.5 ? 'fidelity-medium' : 'fidelity-low');
+        html += '<span class="fidelity-badge ' + fidelityClass + '">';
+        html += 'Fidelity: ' + e.mapping.fidelity.toFixed(2);
+        html += '</span>';
+      }
+
+      // Distance badge
+      if (e.mapping.distance != null) {
+        html += '<span class="distance-badge">';
+        html += 'ACP Distance: ' + e.mapping.distance.toFixed(4);
+        html += '</span>';
+      }
+
+      // Method badge
+      if (e.mapping.method) {
+        html += '<span class="badge" style="background:rgba(99,102,241,0.2);color:#818cf8">';
+        html += 'Method: ' + escapeHtml(e.mapping.method);
+        html += '</span>';
+      }
+
+      html += '</div>';
+    }
 
     // Connection Chain
     html += renderConnectionChain(e, dataLoader, nodesModule);
@@ -230,7 +333,97 @@
       html += '</div>';
     }
 
+    // Related Entities section (share same archetype or similar node)
+    html += renderRelatedEntities(e, dataLoader);
+
+    // Related Patterns section (patterns featuring this entity)
+    html += renderRelatedPatterns(e, dataLoader);
+
     html += '</div>'; // end detail-sheet
+    return html;
+  }
+
+  // --- Related Entities ---
+  function renderRelatedEntities(entity, dataLoader) {
+    if (!dataLoader) return '';
+
+    var related = [];
+    var seen = {};
+    seen[entity.name] = true;
+
+    // Find entities sharing the same archetype
+    if (entity.mapping && entity.mapping.archetype_id) {
+      var entitiesByArch = dataLoader.getIndex('entitiesByArchetype');
+      var sameArch = entitiesByArch[entity.mapping.archetype_id] || [];
+      for (var i = 0; i < sameArch.length && related.length < 8; i++) {
+        if (!seen[sameArch[i].name]) {
+          related.push({ name: sameArch[i].name, reason: 'Same archetype' });
+          seen[sameArch[i].name] = true;
+        }
+      }
+    }
+
+    // Find entities sharing the same node
+    var nodeId = resolveNearestNodeId(entity);
+    if (nodeId) {
+      var entitiesByNode = dataLoader.getIndex('entitiesByNode');
+      var sameNode = entitiesByNode[nodeId] || [];
+      for (var j = 0; j < sameNode.length && related.length < 12; j++) {
+        if (!seen[sameNode[j].name]) {
+          related.push({ name: sameNode[j].name, reason: 'Same node' });
+          seen[sameNode[j].name] = true;
+        }
+      }
+    }
+
+    if (related.length === 0) return '';
+
+    var html = '<div class="related-section">';
+    html += '<div class="related-section-title">Related Entities <span class="badge" style="font-size:0.6rem">' + related.length + '</span></div>';
+    html += '<div class="related-items">';
+    for (var r = 0; r < related.length; r++) {
+      html += '<span class="related-item" data-action="toEntity" data-name="' + escapeAttr(related[r].name) + '" title="' + escapeAttr(related[r].reason) + '">';
+      html += escapeHtml(related[r].name);
+      html += '</span>';
+    }
+    html += '</div>';
+    html += '</div>';
+
+    return html;
+  }
+
+  // --- Related Patterns ---
+  function renderRelatedPatterns(entity, dataLoader) {
+    if (!dataLoader) return '';
+
+    var patData = dataLoader.get('patterns');
+    if (!patData || !patData.patterns) return '';
+
+    var patterns = patData.patterns;
+    var related = [];
+
+    for (var i = 0; i < patterns.length; i++) {
+      var pat = patterns[i];
+      var entities = pat.related_entities || [];
+      if (entities.indexOf(entity.name) !== -1) {
+        related.push(pat.name);
+      }
+    }
+
+    if (related.length === 0) return '';
+
+    var html = '<div class="related-section">';
+    html += '<div class="related-section-title">Related Patterns <span class="badge" style="font-size:0.6rem">' + related.length + '</span></div>';
+    html += '<div class="related-items">';
+    for (var r = 0; r < related.length; r++) {
+      var fmtName = related[r].replace(/_/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+      html += '<span class="related-item" data-action="toPattern" data-name="' + escapeAttr(related[r]) + '">';
+      html += escapeHtml(fmtName);
+      html += '</span>';
+    }
+    html += '</div>';
+    html += '</div>';
+
     return html;
   }
 

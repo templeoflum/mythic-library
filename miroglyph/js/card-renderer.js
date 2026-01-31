@@ -65,7 +65,7 @@
       borderColor = getArcColor(a.nearest_nodes[0].node_id);
     }
 
-    var html = '<div class="arch-card" data-id="' + escapeAttr(a.id) + '"';
+    var html = '<div class="arch-card" data-id="' + escapeAttr(a.id) + '" tabindex="0"';
     if (borderColor) {
       html += ' style="border-left-color:' + borderColor + '"';
     }
@@ -129,7 +129,7 @@
       borderColor = getArcColor(nearestNodeId);
     }
 
-    var html = '<div class="entity-card" data-name="' + escapeAttr(e.name) + '"';
+    var html = '<div class="entity-card" data-name="' + escapeAttr(e.name) + '" tabindex="0"';
     if (borderColor) {
       html += ' style="border-left-color:' + borderColor + '"';
     }
@@ -157,7 +157,7 @@
     // Sparkline
     html += renderSparkline(e.coordinates);
 
-    // Mapping info
+    // Mapping info with fidelity and distance badges
     html += '<div class="entity-card-mapping">';
     if (e.mapping && e.mapping.archetype_name) {
       html += '<span class="entity-card-mapping-label">' +
@@ -165,6 +165,12 @@
       '</span>';
       if (e.mapping.score != null) {
         html += ' <span class="badge badge-system">' + e.mapping.score.toFixed(2) + '</span>';
+      }
+      // Fidelity badge
+      if (e.mapping.fidelity != null) {
+        var fidelityClass = getFidelityClass(e.mapping.fidelity);
+        html += ' <span class="fidelity-badge ' + fidelityClass + '" title="Mapping Fidelity">' +
+          e.mapping.fidelity.toFixed(2) + '</span>';
       }
     } else if (e.mapping && e.mapping.archetype_id) {
       html += '<span class="entity-card-mapping-label">' +
@@ -175,6 +181,13 @@
     }
     html += '</div>';
 
+    // Distance badge (if available)
+    if (e.mapping && e.mapping.distance != null) {
+      html += '<div class="entity-card-distance" style="margin-top:4px">';
+      html += '<span class="distance-badge" title="ACP Distance">d=' + e.mapping.distance.toFixed(3) + '</span>';
+      html += '</div>';
+    }
+
     // Nearest node badge
     if (nearestNodeId) {
       html += '<div class="arch-card-nodes">' + renderNodeBadge(nearestNodeId) + '</div>';
@@ -182,6 +195,14 @@
 
     html += '</div>';
     return html;
+  }
+
+  // Helper function for fidelity class
+  function getFidelityClass(fidelity) {
+    if (fidelity == null) return '';
+    if (fidelity >= 0.8) return 'fidelity-high';
+    if (fidelity >= 0.5) return 'fidelity-medium';
+    return 'fidelity-low';
   }
 
   // --- Format Pattern Name ---

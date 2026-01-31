@@ -112,12 +112,30 @@
       html += buildMotifFilters();
     }
 
+    // Surprise Me button
+    html += '<button class="btn btn-small btn-surprise" id="codex-surprise" title="Random discovery">';
+    html += '\u2728 Surprise Me';
+    html += '</button>';
+
     // Count
     html += '<span id="codex-count" class="result-count" style="margin-left:auto;white-space:nowrap"></span>';
 
     html += '</div>';
     filterBarEl.innerHTML = html;
     countEl = filterBarEl.querySelector('#codex-count');
+
+    // Wire up surprise button
+    var surpriseBtn = filterBarEl.querySelector('#codex-surprise');
+    if (surpriseBtn) {
+      surpriseBtn.addEventListener('click', function() {
+        var nav = window.MiroGlyph.nav;
+        if (nav && nav.surpriseMe) {
+          if (subTab === 'archetypes') nav.surpriseMe('archetype');
+          else if (subTab === 'entities') nav.surpriseMe('entity');
+          else if (subTab === 'motifs') nav.surpriseMe('motif');
+        }
+      });
+    }
   }
 
   function buildArchetypeFilters() {
@@ -587,8 +605,11 @@
   function renderMotifCard(motif) {
     var catName = MOTIF_CATEGORIES[motif.category] || motif.category;
     var patternCount = motif.patterns.length;
+    // Get entities that have this motif
+    var entitiesWithMotif = findEntitiesWithMotif(motif.code);
+    var entityCount = entitiesWithMotif.length;
 
-    var html = '<div class="codex-card motif-card" data-motif-code="' + escapeAttr(motif.code) + '">';
+    var html = '<div class="codex-card motif-card" data-motif-code="' + escapeAttr(motif.code) + '" tabindex="0">';
 
     // Header: code + category badge
     html += '<div class="codex-card-header">';
@@ -602,19 +623,24 @@
       html += '<div class="codex-card-desc">' + escapeHtml(motif.label) + '</div>';
     }
 
-    // Patterns that use this motif
+    // Stats row
+    html += '<div class="motif-stats" style="display:flex;gap:12px;font-size:0.7rem;color:var(--color-text-muted);margin-bottom:8px">';
+    html += '<span>' + patternCount + ' patterns</span>';
+    if (entityCount > 0) {
+      html += '<span class="clickable-count motif-entity-count" data-motif-code="' + escapeAttr(motif.code) + '">' + entityCount + ' entities</span>';
+    }
+    html += '</div>';
+
+    // Patterns that use this motif - show ALL, scrollable
     html += '<div class="motif-patterns">';
     if (patternCount > 0) {
       html += '<div class="motif-patterns-label">Appears in:</div>';
-      html += '<div class="motif-pattern-tags">';
-      var displayPatterns = motif.patterns.slice(0, 5);
-      for (var p = 0; p < displayPatterns.length; p++) {
-        var patName = cardRenderer.formatPatternName(displayPatterns[p]);
-        html += '<span class="motif-pattern-tag" data-pattern="' + escapeAttr(displayPatterns[p]) + '">' +
+      html += '<div class="motif-pattern-tags" style="max-height:80px;overflow-y:auto">';
+      // Show ALL patterns, not truncated
+      for (var p = 0; p < motif.patterns.length; p++) {
+        var patName = cardRenderer.formatPatternName(motif.patterns[p]);
+        html += '<span class="motif-pattern-tag" data-pattern="' + escapeAttr(motif.patterns[p]) + '">' +
           escapeHtml(patName) + '</span>';
-      }
-      if (patternCount > 5) {
-        html += '<span class="motif-pattern-tag more">+' + (patternCount - 5) + ' more</span>';
       }
       html += '</div>';
     } else {
@@ -622,8 +648,41 @@
     }
     html += '</div>';
 
+    // Entities with this motif preview (first 3)
+    if (entityCount > 0) {
+      html += '<div class="motif-entities" style="margin-top:8px;padding-top:8px;border-top:1px solid var(--color-border)">';
+      html += '<div class="motif-patterns-label">Entities:</div>';
+      html += '<div class="motif-entity-tags" style="display:flex;flex-wrap:wrap;gap:4px">';
+      var displayCount = Math.min(3, entityCount);
+      for (var e = 0; e < displayCount; e++) {
+        html += '<span class="motif-entity-tag" data-entity="' + escapeAttr(entitiesWithMotif[e]) + '" style="font-size:0.7rem;padding:2px 6px;background:var(--color-bg);color:var(--color-library);border-radius:4px;cursor:pointer">' +
+          escapeHtml(entitiesWithMotif[e]) + '</span>';
+      }
+      if (entityCount > 3) {
+        html += '<span class="motif-entity-tag more" style="font-size:0.7rem;padding:2px 6px;color:var(--color-text-muted)">+' + (entityCount - 3) + ' more</span>';
+      }
+      html += '</div>';
+      html += '</div>';
+    }
+
     html += '</div>';
     return html;
+  }
+
+  // Find entities that have a specific motif code
+  function findEntitiesWithMotif(motifCode) {
+    var entData = dataLoader.get('entities');
+    if (!entData || !entData.entities) return [];
+
+    var result = [];
+    for (var i = 0; i < entData.entities.length; i++) {
+      var ent = entData.entities[i];
+      // Check if entity has motifs and if this code is in them
+      if (ent.motif_codes && ent.motif_codes.indexOf(motifCode) !== -1) {
+        result.push(ent.name);
+      }
+    }
+    return result;
   }
 
   // --- Intersection Observer ---
@@ -659,6 +718,24 @@
       if (patternTag && patternTag.dataset.pattern && !patternTag.classList.contains('more')) {
         e.stopPropagation();
         nav.toPattern(patternTag.dataset.pattern);
+        return;
+      }
+
+      // Motif entity tag click -> navigate to entity detail
+      var motifEntityTag = e.target.closest('.motif-entity-tag');
+      if (motifEntityTag && motifEntityTag.dataset.entity && !motifEntityTag.classList.contains('more')) {
+        e.stopPropagation();
+        nav.toEntity(motifEntityTag.dataset.entity);
+        return;
+      }
+
+      // Motif entity count click -> filter entities view by motif
+      var entityCount = e.target.closest('.motif-entity-count');
+      if (entityCount && entityCount.dataset.motifCode) {
+        e.stopPropagation();
+        // Switch to entities tab and could filter by motif in future
+        // For now, switch to entities sub-tab
+        switchSubTab('entities');
         return;
       }
 
@@ -755,6 +832,11 @@
 
     if (action === 'toNode' && target.dataset.nodeId) {
       nav.toNode(target.dataset.nodeId);
+      return;
+    }
+
+    if (action === 'toPattern' && target.dataset.name) {
+      nav.toPattern(target.dataset.name);
       return;
     }
   }

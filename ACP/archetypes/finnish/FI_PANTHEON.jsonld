@@ -2102,6 +2102,67 @@
           "provenance": "ORIG"
         }
       ]
+    },
+    {
+      "@id": "arch:FI-KULLERVO",
+      "@type": "Archetype",
+      "name": "Kullervo",
+      "systemCode": "FI",
+      "belongsToSystem": "system:finnish",
+      "description": "Tragic hero of the Kalevala. Born into slavery after his family is destroyed, he unwittingly commits incest with his lost sister, leading both to suicide. The archetype of the doomed hero, fate-cursed from birth.",
+      "spectralCoordinates": {
+        "order-chaos": 0.6,
+        "creation-destruction": 0.75,
+        "light-shadow": 0.7,
+        "active-receptive": 0.35,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.65,
+        "stasis-transformation": 0.8,
+        "voluntary-fated": 0.9
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.8,
+          "aspects": [
+            "tragic",
+            "doomed"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.75,
+          "aspects": [
+            "orphan",
+            "slave"
+          ]
+        },
+        {
+          "primordial": "primordial:destroyer",
+          "weight": 0.6,
+          "aspects": [
+            "self-destruction",
+            "vengeance"
+          ]
+        }
+      ],
+      "coreFunction": "To embody the tragedy of fate and the hero destroyed by circumstances beyond control",
+      "symbolicCore": "The sword that speaks - destiny demanding death",
+      "domains": [
+        "tragedy",
+        "fate",
+        "vengeance",
+        "incest",
+        "suicide"
+      ],
+      "keywords": [
+        "kalevala",
+        "tragic",
+        "doomed",
+        "orphan",
+        "vengeance",
+        "finnish"
+      ]
     }
   ]
 }

@@ -172,6 +172,21 @@
   padding: 1px 5px;
   border-radius: 3px;
   font-family: monospace;
+  transition: all 0.15s ease;
+}
+
+.motif-tag-clickable {
+  cursor: pointer;
+}
+
+.motif-tag-clickable:hover {
+  background: rgba(245, 158, 11, 0.35);
+  transform: translateY(-1px);
+}
+
+.motif-more {
+  background: transparent;
+  color: var(--color-text-muted);
 }
 
 /* Pattern Detail (inline expanded) */

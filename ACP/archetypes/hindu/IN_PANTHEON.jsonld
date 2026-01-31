@@ -3968,6 +3968,67 @@
           "provenance": "ORIG"
         }
       ]
+    },
+    {
+      "@id": "arch:IN-RAVANA",
+      "@type": "Archetype",
+      "name": "Ravana",
+      "systemCode": "IN",
+      "belongsToSystem": "system:hindu",
+      "description": "Ten-headed demon king of Lanka, supreme devotee of Shiva, and the great antagonist of the Ramayana. His abduction of Sita led to his downfall. Represents knowledge and power corrupted by ego and desire.",
+      "spectralCoordinates": {
+        "order-chaos": 0.6,
+        "creation-destruction": 0.7,
+        "light-shadow": 0.75,
+        "active-receptive": 0.2,
+        "individual-collective": 0.25,
+        "ascent-descent": 0.55,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.4
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:tyrant",
+          "weight": 0.85,
+          "aspects": [
+            "demon-king",
+            "oppressor"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "learned",
+            "powerful"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.65,
+          "aspects": [
+            "ego-driven",
+            "fallen"
+          ]
+        }
+      ],
+      "coreFunction": "To embody great power and knowledge corrupted by ego",
+      "symbolicCore": "Ten heads - vast intelligence without wisdom",
+      "domains": [
+        "demons",
+        "power",
+        "knowledge",
+        "desire",
+        "ego"
+      ],
+      "keywords": [
+        "rakshasa",
+        "demon-king",
+        "lanka",
+        "sita",
+        "ramayana",
+        "ten-headed"
+      ]
     }
   ],
   "systemRelationships": [

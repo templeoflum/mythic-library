@@ -27,6 +27,7 @@
     enrichment.load();
     setupCanvasEvents();
     setupTraversalControls();
+    setupSurpriseButton();
     createTooltip();
 
     // Initialize paths with stored data
@@ -36,6 +37,18 @@
     });
 
     initialized = true;
+  }
+
+  function setupSurpriseButton() {
+    var surpriseBtn = document.getElementById('atlas-surprise');
+    if (surpriseBtn) {
+      surpriseBtn.addEventListener('click', function() {
+        var nav = window.MiroGlyph.nav;
+        if (nav && nav.surpriseMe) {
+          nav.surpriseMe('node');
+        }
+      });
+    }
   }
 
   function activate() {

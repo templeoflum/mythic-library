@@ -165,24 +165,28 @@ The tool is built with vanilla JavaScript + SVG rendering:
 miroglyph/
 ├── index.html              # Main HTML with three-view layout
 ├── css/
-│   ├── styles.css          # Base styles and CSS variables
+│   ├── styles.css          # Base styles, CSS variables, semantic colors
 │   ├── tabs.css            # Tab navigation and shared components
 │   ├── view-atlas.css      # Atlas view (three-pane layout)
 │   ├── view-codex.css      # Codex view (card grid + details)
 │   └── view-chronicle.css  # Chronicle view (patterns + validation)
 ├── js/
+│   ├── utils.js            # Shared utility functions (NEW)
 │   ├── nodes.js            # 19-node definitions (arcs, conditions)
 │   ├── storage.js          # LocalStorage + JSON import/export
-│   ├── data-loader.js      # JSON fetching with cache
-│   ├── nav.js              # Cross-navigation utilities
+│   ├── data-loader.js      # JSON fetching with cache + indices
+│   ├── nav.js              # Cross-navigation + breadcrumbs + discovery
 │   ├── tab-router.js       # View switching
 │   ├── global-search.js    # Omni-search
 │   ├── canvas.js           # SVG rendering (centrifugal layout)
 │   ├── paths.js            # Traversal creation & management
+│   ├── card-renderer.js    # Shared card rendering with fidelity badges
+│   ├── detail-sheet.js     # Detail views with Related sections
+│   ├── mini-map.js         # Interactive mini-map with tooltips
 │   ├── view-atlas.js       # Atlas view controller
 │   ├── view-codex.js       # Codex view controller (archetypes/entities/motifs)
 │   ├── view-chronicle.js   # Chronicle view controller
-│   └── app.js              # Main controller (boot sequence)
+│   └── app.js              # Main controller (boot sequence + breadcrumbs)
 └── data/                   # Pre-exported JSON data files
 ```
 
@@ -197,6 +201,26 @@ miroglyph/
 3. **Visibility Toggles** - Show/hide individual traversals to compare
 4. **Edit** - Modify name, color, description after creation
 5. **Persistence** - Auto-save to LocalStorage, JSON export/import
+
+### Navigation & Discovery Features
+- **Breadcrumb Trail** - Tracks last 5 items viewed; clickable to revisit
+- **"Surprise Me" Buttons** - Random discovery in each view
+- **Cross-Referencing** - Every detail view links to related items:
+  - Pattern → Entities, Motifs
+  - Motif → Patterns, Entities
+  - Entity → Archetype, Patterns, Related Entities
+  - Archetype → Source Entities, Related Archetypes
+- **Mini-Map Interactivity** - Click nodes to navigate, hover for tooltips
+
+### Data Visualization
+- **Fidelity Badges** - Green/Yellow/Red indicators for mapping quality
+- **Distance Badges** - ACP distance shown on entity cards
+- **Semantic Colors** - Success (#22c55e), Warning (#eab308), Error (#ef4444), Info (#3b82f6)
+
+### Accessibility
+- **Keyboard Navigation** - All cards have tabindex, focus indicators
+- **Focus Visible** - 2px primary outline on all interactive elements
+- **Enhanced Hover States** - 3px lift with shadow on hover
 
 ### Usage Flow
 1. Click nodes to build a traversal sequence

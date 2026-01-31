@@ -2193,6 +2193,67 @@
       "aliases": [
         "The Jörmungandr"
       ]
+    },
+    {
+      "@id": "arch:NO-GRENDEL",
+      "@type": "Archetype",
+      "name": "Grendel",
+      "systemCode": "NO",
+      "belongsToSystem": "system:norse",
+      "description": "Monster of the Beowulf epic, descendant of Cain. Haunts Heorot hall for twelve years, devouring warriors until slain by Beowulf. Represents the outsider, the chaos that threatens civilization from the marshes.",
+      "spectralCoordinates": {
+        "order-chaos": 0.85,
+        "creation-destruction": 0.8,
+        "light-shadow": 0.85,
+        "active-receptive": 0.25,
+        "individual-collective": 0.2,
+        "ascent-descent": 0.75,
+        "stasis-transformation": 0.55,
+        "voluntary-fated": 0.7
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:monster",
+          "weight": 0.95,
+          "aspects": [
+            "man-eater",
+            "night-terror"
+          ]
+        },
+        {
+          "primordial": "primordial:outcast",
+          "weight": 0.8,
+          "aspects": [
+            "exile",
+            "cain-kin"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.7,
+          "aspects": [
+            "rejected",
+            "envious"
+          ]
+        }
+      ],
+      "coreFunction": "To embody the chaos and envy that threatens civilized order from outside",
+      "symbolicCore": "The arm torn off - violence ending violence",
+      "domains": [
+        "chaos",
+        "darkness",
+        "envy",
+        "exile",
+        "night"
+      ],
+      "keywords": [
+        "beowulf",
+        "monster",
+        "heorot",
+        "cain",
+        "marsh",
+        "night-stalker"
+      ]
     }
   ]
 }

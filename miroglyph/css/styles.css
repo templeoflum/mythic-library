@@ -17,6 +17,12 @@
   --color-primary: #6366f1;
   --color-primary-hover: #818cf8;
 
+  /* Semantic Colors */
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -863,4 +869,222 @@ body {
   stroke-width: 1;
   stroke-dasharray: 4, 4;
   opacity: 0.3;
+}
+
+/* ==========================================================================
+   Focus & Hover Enhancements
+   ========================================================================== */
+
+/* Focus indicators for keyboard navigation */
+.arch-card:focus-visible,
+.entity-card:focus-visible,
+.pattern-card:focus-visible,
+.motif-card:focus-visible,
+.tier-card:focus-visible,
+.audit-case:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Make cards focusable */
+.arch-card,
+.entity-card,
+.pattern-card,
+.motif-card,
+.tier-card {
+  position: relative;
+}
+
+/* Enhanced hover states for cards */
+.arch-card:hover,
+.entity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  border-color: var(--color-primary);
+}
+
+.pattern-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.motif-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  border-color: var(--color-primary);
+}
+
+/* Clickable tags with better hover feedback */
+.pattern-entity-tag,
+.source-entity-tag,
+.motif-pattern-tag:not(.more) {
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pattern-entity-tag:hover,
+.source-entity-tag:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Fidelity indicator badges */
+.fidelity-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.fidelity-badge.fidelity-high {
+  background: rgba(34, 197, 94, 0.2);
+  color: var(--color-success);
+}
+
+.fidelity-badge.fidelity-medium {
+  background: rgba(234, 179, 8, 0.2);
+  color: var(--color-warning);
+}
+
+.fidelity-badge.fidelity-low {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--color-error);
+}
+
+/* Distance badge */
+.distance-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  font-family: monospace;
+  background: rgba(6, 182, 212, 0.15);
+  color: #22d3ee;
+}
+
+/* Clickable counts */
+.clickable-count {
+  cursor: pointer;
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+.clickable-count:hover {
+  color: var(--color-primary);
+  text-decoration-style: solid;
+}
+
+/* Breadcrumb trail */
+.breadcrumb-trail {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.75rem;
+  overflow-x: auto;
+}
+
+.breadcrumb-trail:empty {
+  display: none;
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  background: var(--color-bg);
+  border-radius: 4px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.breadcrumb-item:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+}
+
+/* Surprise Me button */
+.btn-surprise {
+  background: linear-gradient(135deg, var(--color-descent), var(--color-resonance), var(--color-emergence));
+  background-size: 200% 200%;
+  color: white;
+  border: none;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.btn-surprise:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Related sections */
+.related-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.related-section-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.related-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.related-item {
+  padding: 4px 10px;
+  background: var(--color-bg);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.related-item:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-1px);
 }

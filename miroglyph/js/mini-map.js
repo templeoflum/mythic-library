@@ -1,5 +1,5 @@
 // Mythic System Explorer — Mini Map
-// Compact read-only SVG node map for the Chronicle patterns sidebar
+// Compact interactive SVG node map for the Chronicle patterns sidebar
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
@@ -11,7 +11,10 @@
 
   var svgEl = null;
   var nodesGroup = null;
+  var tooltipEl = null;
   var positions = {};
+  var onNodeClickCallback = null;
+  var onNodeHoverCallback = null;
 
   var NS = 'http://www.w3.org/2000/svg';
   var ASSUMED_WIDTH = 280;
@@ -24,9 +27,14 @@
     var opts = options || {};
     var width = opts.width || ASSUMED_WIDTH;
     var height = opts.height || ASSUMED_WIDTH;
+    onNodeClickCallback = opts.onNodeClick || null;
+    onNodeHoverCallback = opts.onNodeHover || null;
 
     // Clear previous content
     containerEl.innerHTML = '';
+
+    // Create container for positioning
+    containerEl.style.position = 'relative';
 
     // Create SVG element
     svgEl = document.createElementNS(NS, 'svg');
@@ -35,6 +43,12 @@
     svgEl.setAttribute('height', '100%');
     svgEl.classList.add('mini-map-svg');
     containerEl.appendChild(svgEl);
+
+    // Create tooltip element
+    tooltipEl = document.createElement('div');
+    tooltipEl.className = 'minimap-tooltip';
+    tooltipEl.style.cssText = 'position:absolute;display:none;background:var(--color-surface-3);color:var(--color-text);padding:4px 8px;border-radius:4px;font-size:0.7rem;pointer-events:none;z-index:10;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.3);border:1px solid var(--color-border)';
+    containerEl.appendChild(tooltipEl);
 
     // Calculate layout parameters
     var cx = width / 2;
@@ -53,6 +67,9 @@
     svgEl.appendChild(nodesGroup);
 
     drawAllNodes();
+
+    // Add event delegation for interactivity
+    wireNodeEvents(containerEl);
   }
 
   function drawRingGuides(cx, cy, innerR, spacing) {
@@ -85,9 +102,15 @@
     var pos = positions[nodeId];
     if (!pos) return;
 
+    // Look up node title
+    var nodeData = nodes.getNode ? nodes.getNode(nodeId) : null;
+    var nodeTitle = nodeData ? nodeData.title : '';
+
     var g = document.createElementNS(NS, 'g');
     g.classList.add('minimap-node');
     g.setAttribute('data-node-id', nodeId);
+    g.setAttribute('data-node-title', nodeTitle);
+    g.style.cursor = 'pointer';
 
     // Circle
     var circle = document.createElementNS(NS, 'circle');
@@ -99,6 +122,7 @@
     circle.setAttribute('stroke-width', '1');
     circle.setAttribute('fill-opacity', '0.35');
     circle.setAttribute('stroke-opacity', '0.7');
+    circle.style.transition = 'all 0.15s ease';
     g.appendChild(circle);
 
     // Label (ID text only)
@@ -113,6 +137,83 @@
     g.appendChild(label);
 
     nodesGroup.appendChild(g);
+  }
+
+  function wireNodeEvents(containerEl) {
+    // Mouse events for hover tooltip and click
+    nodesGroup.addEventListener('mouseenter', function(e) {
+      var nodeGroup = e.target.closest('.minimap-node');
+      if (!nodeGroup) return;
+
+      var nodeId = nodeGroup.getAttribute('data-node-id');
+      var nodeTitle = nodeGroup.getAttribute('data-node-title');
+
+      // Show tooltip
+      if (tooltipEl && nodeTitle) {
+        tooltipEl.textContent = nodeId + ': ' + nodeTitle;
+        tooltipEl.style.display = 'block';
+      } else if (tooltipEl) {
+        tooltipEl.textContent = nodeId;
+        tooltipEl.style.display = 'block';
+      }
+
+      // Highlight effect
+      var circle = nodeGroup.querySelector('circle');
+      if (circle) {
+        circle.setAttribute('stroke-width', '2');
+        circle.setAttribute('fill-opacity', '0.6');
+      }
+
+      if (onNodeHoverCallback) {
+        onNodeHoverCallback(nodeId, true);
+      }
+    }, true);
+
+    nodesGroup.addEventListener('mouseleave', function(e) {
+      var nodeGroup = e.target.closest('.minimap-node');
+      if (!nodeGroup) return;
+
+      // Hide tooltip
+      if (tooltipEl) {
+        tooltipEl.style.display = 'none';
+      }
+
+      // Remove highlight (restore based on current state)
+      var circle = nodeGroup.querySelector('circle');
+      if (circle) {
+        circle.setAttribute('stroke-width', '1');
+        circle.setAttribute('fill-opacity', '0.35');
+      }
+
+      if (onNodeHoverCallback) {
+        onNodeHoverCallback(nodeGroup.getAttribute('data-node-id'), false);
+      }
+    }, true);
+
+    nodesGroup.addEventListener('mousemove', function(e) {
+      if (tooltipEl && tooltipEl.style.display !== 'none') {
+        var rect = containerEl.getBoundingClientRect();
+        tooltipEl.style.left = (e.clientX - rect.left + 10) + 'px';
+        tooltipEl.style.top = (e.clientY - rect.top - 20) + 'px';
+      }
+    });
+
+    nodesGroup.addEventListener('click', function(e) {
+      var nodeGroup = e.target.closest('.minimap-node');
+      if (!nodeGroup) return;
+
+      var nodeId = nodeGroup.getAttribute('data-node-id');
+
+      if (onNodeClickCallback) {
+        onNodeClickCallback(nodeId);
+      } else {
+        // Default behavior: navigate to Atlas view for this node
+        var nav = window.MiroGlyph.nav;
+        if (nav && nav.toNode) {
+          nav.toNode(nodeId);
+        }
+      }
+    });
   }
 
   // Shared helper: set opacity on a minimap node group
@@ -180,9 +281,57 @@
     }
   }
 
+  // Get current positions for external use (e.g., drawing pattern paths)
+  function getPositions() {
+    return positions;
+  }
+
+  // Draw a traversal path on the mini-map
+  function drawPath(nodeIds, color, strokeWidth) {
+    if (!svgEl || !nodeIds || nodeIds.length < 2) return null;
+
+    var pathGroup = document.createElementNS(NS, 'g');
+    pathGroup.classList.add('minimap-path');
+
+    var pathData = '';
+    for (var i = 0; i < nodeIds.length; i++) {
+      var pos = positions[nodeIds[i]];
+      if (!pos) continue;
+      pathData += (i === 0 ? 'M' : 'L') + pos.x + ',' + pos.y;
+    }
+
+    if (pathData) {
+      var path = document.createElementNS(NS, 'path');
+      path.setAttribute('d', pathData);
+      path.setAttribute('stroke', color || '#fbbf24');
+      path.setAttribute('stroke-width', strokeWidth || 2);
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke-linecap', 'round');
+      path.setAttribute('stroke-linejoin', 'round');
+      path.setAttribute('opacity', '0.7');
+      pathGroup.appendChild(path);
+    }
+
+    // Insert before nodes so paths appear behind
+    svgEl.insertBefore(pathGroup, nodesGroup);
+    return pathGroup;
+  }
+
+  // Clear all drawn paths
+  function clearPaths() {
+    if (!svgEl) return;
+    var paths = svgEl.querySelectorAll('.minimap-path');
+    for (var i = 0; i < paths.length; i++) {
+      paths[i].remove();
+    }
+  }
+
   window.MiroGlyph.miniMap = {
     render: render,
     highlightArc: highlightArc,
-    highlightNodes: highlightNodes
+    highlightNodes: highlightNodes,
+    getPositions: getPositions,
+    drawPath: drawPath,
+    clearPaths: clearPaths
   };
 })();

@@ -44,6 +44,65 @@
     }
   }
 
+  // Set up breadcrumb trail
+  function setupBreadcrumbs() {
+    var nav = window.MiroGlyph.nav;
+    var trailEl = document.getElementById('breadcrumb-trail');
+    if (!trailEl || !nav) return;
+
+    function renderBreadcrumbs(crumbs) {
+      if (!crumbs || crumbs.length === 0) {
+        trailEl.innerHTML = '';
+        return;
+      }
+
+      var html = '<span style="color:var(--color-text-muted);font-size:0.7rem;margin-right:8px">Trail:</span>';
+      for (var i = 0; i < crumbs.length; i++) {
+        if (i > 0) {
+          html += '<span class="breadcrumb-separator">&rarr;</span>';
+        }
+        var iconMap = {
+          node: '\u25CE',      // ◎
+          archetype: '\u2606', // ☆
+          entity: '\u2302',    // ⌂
+          pattern: '\u2261'    // ≡
+        };
+        var icon = iconMap[crumbs[i].type] || '';
+        html += '<span class="breadcrumb-item" data-idx="' + i + '" title="' + crumbs[i].type + '">';
+        html += icon + ' ' + escapeHtml(crumbs[i].name);
+        html += '</span>';
+      }
+
+      trailEl.innerHTML = html;
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    // Listen for breadcrumb updates
+    window.addEventListener('breadcrumbsUpdated', function(e) {
+      renderBreadcrumbs(e.detail.breadcrumbs);
+    });
+
+    // Handle breadcrumb clicks
+    trailEl.addEventListener('click', function(e) {
+      var item = e.target.closest('.breadcrumb-item');
+      if (!item) return;
+
+      var idx = parseInt(item.dataset.idx, 10);
+      var crumbs = nav.getBreadcrumbs();
+      if (crumbs[idx]) {
+        nav.toBreadcrumb(crumbs[idx]);
+      }
+    });
+  }
+
   // Set up import/export handlers (gear menu)
   function setupImportExport() {
     var exportBtn = document.getElementById('btn-export');
@@ -119,6 +178,9 @@
 
       // 3. Set up import/export in gear menu
       setupImportExport();
+
+      // 3.5. Set up breadcrumb trail
+      setupBreadcrumbs();
 
       // 4. Initialize tab router (activates the default view based on URL hash)
       tabRouter.init();

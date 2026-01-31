@@ -71,6 +71,7 @@
     html += '<button class="btn btn-small arc-filter-btn" data-arc="D" style="border-color:' + ARC_COLORS.D + ';color:' + ARC_COLORS.D + '">D</button>';
     html += '<button class="btn btn-small arc-filter-btn" data-arc="R" style="border-color:' + ARC_COLORS.R + ';color:' + ARC_COLORS.R + '">R</button>';
     html += '<button class="btn btn-small arc-filter-btn" data-arc="E" style="border-color:' + ARC_COLORS.E + ';color:' + ARC_COLORS.E + '">E</button>';
+    html += '<button class="btn btn-small btn-surprise" id="chronicle-surprise" title="Random pattern">\u2728</button>';
     html += '</div>';
 
     html += '</div>'; // filter-bar
@@ -127,6 +128,15 @@
         return;
       }
 
+      // Surprise Me button
+      var surpriseBtn = e.target.closest('#chronicle-surprise');
+      if (surpriseBtn) {
+        if (nav && nav.surpriseMe) {
+          nav.surpriseMe('pattern');
+        }
+        return;
+      }
+
       // Pattern card click
       var patternCard = e.target.closest('.pattern-card');
       if (patternCard) {
@@ -150,6 +160,29 @@
         var entityName = entityTag.getAttribute('data-entity');
         if (entityName && nav) {
           nav.toEntity(entityName);
+        }
+        return;
+      }
+
+      // Motif tag click - navigate to Codex Motifs sub-tab with filter
+      var motifTag = e.target.closest('.motif-tag-clickable');
+      if (motifTag) {
+        var motifCode = motifTag.getAttribute('data-motif-code');
+        if (motifCode) {
+          // Navigate to codex and switch to motifs tab with search for this code
+          window.location.hash = 'codex';
+          setTimeout(function() {
+            var viewCodex = window.MiroGlyph.viewCodex;
+            if (viewCodex && viewCodex.switchSubTab) {
+              viewCodex.switchSubTab('motifs');
+              // Set the search filter to find this motif
+              var searchInput = document.querySelector('#codex-search');
+              if (searchInput) {
+                searchInput.value = motifCode;
+                searchInput.dispatchEvent(new Event('input'));
+              }
+            }
+          }, 100);
         }
         return;
       }
@@ -299,16 +332,16 @@
     html += '<span><span class="pattern-card-stat-value">' + (p.tradition_count || 0) + '</span> traditions</span>';
     html += '</div>';
 
-    // Motif tags (first 6 only)
+    // Motif tags - show first 8 with "more" indicator, full list in detail view
     var motifs = p.motif_codes || [];
     if (motifs.length > 0) {
       html += '<div class="pattern-card-motifs">';
-      var limit = Math.min(6, motifs.length);
+      var limit = Math.min(8, motifs.length);
       for (var m = 0; m < limit; m++) {
         html += '<span class="motif-tag">' + escapeHtml(motifs[m]) + '</span>';
       }
-      if (motifs.length > 6) {
-        html += '<span class="motif-tag">+' + (motifs.length - 6) + '</span>';
+      if (motifs.length > 8) {
+        html += '<span class="motif-tag motif-more">+' + (motifs.length - 8) + ' more</span>';
       }
       html += '</div>';
     }
@@ -403,17 +436,18 @@
     html += renderDetailStat((p.related_entities || []).length, 'Entities');
     html += '</div>';
 
-    // Motif Codes section
+    // Motif Codes section - now clickable and navigable
     var motifCodes = p.motif_codes || [];
     if (motifCodes.length > 0) {
       html += '<div class="pattern-detail-section">';
-      html += '<div class="pattern-detail-section-title">Motif Codes</div>';
-      html += '<div class="pattern-card-motifs">';
+      html += '<div class="pattern-detail-section-title">Motif Codes (' + motifCodes.length + ')</div>';
+      html += '<div class="pattern-card-motifs" style="max-height:200px;overflow-y:auto">';
+      // Show ALL motifs, not truncated
       for (var i = 0; i < motifCodes.length; i++) {
         var code = motifCodes[i];
         var motifInfo = motifs[code];
         var label = motifInfo ? motifInfo.label : '';
-        html += '<span class="motif-tag" title="' + escapeAttr(code) + '">';
+        html += '<span class="motif-tag motif-tag-clickable" data-motif-code="' + escapeAttr(code) + '" title="Click to view in Codex">';
         html += '<strong>' + escapeHtml(code) + '</strong>';
         if (label) {
           html += ' ' + escapeHtml(label);
@@ -424,12 +458,13 @@
       html += '</div>';
     }
 
-    // Traditions section
+    // Traditions section - show ALL, use flex-wrap
     var traditions = p.traditions || [];
     if (traditions.length > 0) {
       html += '<div class="pattern-detail-section">';
-      html += '<div class="pattern-detail-section-title">Traditions</div>';
-      html += '<div class="pattern-tradition-tags">';
+      html += '<div class="pattern-detail-section-title">Traditions (' + traditions.length + ')</div>';
+      html += '<div class="pattern-tradition-tags" style="max-height:150px;overflow-y:auto">';
+      // Show ALL traditions, not truncated
       for (var t = 0; t < traditions.length; t++) {
         html += '<span class="motif-tag">' + escapeHtml(traditions[t]) + '</span>';
       }
@@ -437,12 +472,13 @@
       html += '</div>';
     }
 
-    // Related Entities section
+    // Related Entities section - show ALL entities, scrollable
     var entities = p.related_entities || [];
     if (entities.length > 0) {
       html += '<div class="pattern-detail-section">';
-      html += '<div class="pattern-detail-section-title">Related Entities</div>';
-      html += '<div class="pattern-entity-tags">';
+      html += '<div class="pattern-detail-section-title">Related Entities (' + entities.length + ')</div>';
+      html += '<div class="pattern-entity-tags" style="max-height:200px;overflow-y:auto">';
+      // Show ALL entities, not truncated
       for (var e = 0; e < entities.length; e++) {
         html += '<span class="pattern-entity-tag" data-entity="' + escapeAttr(entities[e]) + '">';
         html += escapeHtml(entities[e]);

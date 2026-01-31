@@ -1624,12 +1624,6 @@
         },
         {
           "type": "rel:CULTURAL_ECHO",
-          "target": "arch:GR-MARY",
-          "fidelity": 0.5,
-          "notes": "Compassionate mother figure, intercessor"
-        },
-        {
-          "type": "rel:CULTURAL_ECHO",
           "target": "arch:EG-ISIS",
           "fidelity": 0.45,
           "notes": "Universal mother, hearer of prayers"
