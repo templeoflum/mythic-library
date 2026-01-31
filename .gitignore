@@ -15,3 +15,6 @@ outputs/
 
 # Claude
 .claude/
+
+# Personal traversal exports (users create their own)
+miroglyph/traversals/
