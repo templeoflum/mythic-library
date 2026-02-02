@@ -33,12 +33,9 @@ OUTPUT_DIR = PROJECT_ROOT / "miroglyph" / "data"
 OUTPUTS = PROJECT_ROOT / "outputs"
 
 
-def export_archetypes_catalog(acp: ACPLoader, affinities: dict):
+def export_archetypes_catalog(acp: ACPLoader):
     """Export consolidated archetype catalog."""
     print("[1/4] Exporting archetypes catalog...")
-
-    # Build archetype-to-node rankings from affinities
-    arch_rankings = affinities.get("archetype_rankings", {})
 
     # Collect primordial metadata
     primordial_list = []
@@ -108,15 +105,6 @@ def export_archetypes_catalog(acp: ACPLoader, affinities: dict):
                 entry["strength"] = rel["strength"]
             rels.append(entry)
 
-        # Nearest nodes from affinity data
-        nearest_nodes = []
-        arch_rank = arch_rankings.get(arch_id, {})
-        for tn in arch_rank.get("top_nodes", [])[:3]:
-            nearest_nodes.append({
-                "node_id": tn["node_id"],
-                "affinity": tn["affinity"],
-            })
-
         archetypes.append({
             "id": arch_id,
             "name": arch.get("name", arch_id),
@@ -126,7 +114,6 @@ def export_archetypes_catalog(acp: ACPLoader, affinities: dict):
             "primordials": prims,
             "domains": arch.get("domains", []),
             "relationships": rels,
-            "nearest_nodes": nearest_nodes,
         })
 
     catalog = {
@@ -146,17 +133,9 @@ def export_archetypes_catalog(acp: ACPLoader, affinities: dict):
 
 
 def export_entities_catalog(acp: ACPLoader, library: LibraryLoader,
-                            mapper: EntityMapper, node_profiles: dict,
-                            affinities: dict):
-    """Export entity catalog with ACP mappings and node assignments."""
+                            mapper: EntityMapper):
+    """Export entity catalog with ACP mappings."""
     print("[2/4] Exporting entities catalog...")
-
-    # Load node centroids for distance calculation
-    node_centroids = {}
-    for nid, profile in node_profiles.get("node_profiles", {}).items():
-        node_centroids[nid] = np.array(profile["mean_coordinates"])
-
-    sigma = affinities.get("sigma", 0.174)
 
     all_entities = library.get_all_entities()
     entities = []
@@ -187,29 +166,11 @@ def export_entities_catalog(acp: ACPLoader, library: LibraryLoader,
             coords = acp.get_coordinates(mapping.acp_archetype_id)
             if coords is not None:
                 entry["coordinates"] = [round(float(c), 4) for c in coords]
-
-                # Compute nearest nodes
-                node_dists = []
-                for nid, centroid in node_centroids.items():
-                    dist = float(np.linalg.norm(coords - centroid))
-                    aff = float(np.exp(-dist ** 2 / (2 * sigma ** 2)))
-                    node_dists.append({
-                        "node_id": nid,
-                        "affinity": round(aff, 4),
-                        "distance": round(dist, 4),
-                    })
-                node_dists.sort(key=lambda x: -x["affinity"])
-                entry["nearest_node"] = node_dists[0] if node_dists else None
-                entry["top_nodes"] = node_dists[:5]
             else:
                 entry["coordinates"] = None
-                entry["nearest_node"] = None
-                entry["top_nodes"] = []
         else:
             entry["mapping"] = None
             entry["coordinates"] = None
-            entry["nearest_node"] = None
-            entry["top_nodes"] = []
 
         entities.append(entry)
 
@@ -540,23 +501,10 @@ def main():
     print(f"  Library: {library.summary()['entities']} entities")
 
     # Load pre-computed data
-    node_profiles_path = OUTPUTS / "miroglyph" / "node_profiles.json"
-    affinities_path = OUTPUTS / "miroglyph" / "archetype_affinities.json"
-
-    node_profiles = {}
-    if node_profiles_path.exists():
-        with open(node_profiles_path, "r", encoding="utf-8") as f:
-            node_profiles = json.load(f)
-
-    affinities = {}
-    if affinities_path.exists():
-        with open(affinities_path, "r", encoding="utf-8") as f:
-            affinities = json.load(f)
-
     # Export all catalogs
     print()
-    export_archetypes_catalog(acp, affinities)
-    export_entities_catalog(acp, library, mapper, node_profiles, affinities)
+    export_archetypes_catalog(acp)
+    export_entities_catalog(acp, library, mapper)
     export_patterns_catalog(library)
     export_validation_summary()
 
