@@ -748,6 +748,33 @@
   font-style: italic;
 }
 
+/* Evidence Marker Context (single marker step) */
+.evidence-marker-context {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.evidence-marker-context.primary {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.evidence-marker-context.secondary {
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.evidence-marker-selecting {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
 /* Motif Section Headers */
 .motif-section-header {
   font-size: 0.75rem;

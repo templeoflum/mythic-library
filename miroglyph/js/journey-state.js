@@ -19,7 +19,8 @@
   ];
 
   // Selection steps for each node
-  var SELECTION_STEPS = ['archetype', 'entity', 'motif', 'note'];
+  // Two motif steps: one for primary evidence marker, one for secondary
+  var SELECTION_STEPS = ['archetype', 'entity', 'primary_motif', 'secondary_motif', 'note'];
 
   // Current journey state
   var currentJourney = null;
@@ -44,7 +45,8 @@
           node_id: nodeId,
           archetype: null,
           entity: null,
-          motif: null,
+          primary_motif: null,
+          secondary_motif: null,
           note: ''
         };
       }),
@@ -111,8 +113,10 @@
       node.archetype = value;
     } else if (stepName === 'entity') {
       node.entity = value;
-    } else if (stepName === 'motif') {
-      node.motif = value;
+    } else if (stepName === 'primary_motif') {
+      node.primary_motif = value;
+    } else if (stepName === 'secondary_motif') {
+      node.secondary_motif = value;
     } else if (stepName === 'note') {
       node.note = value || '';
     }

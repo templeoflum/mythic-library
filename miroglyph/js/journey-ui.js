@@ -238,12 +238,30 @@
     var currentSelection = state.getSelection(stepName);
 
     var stepNumber = state.SELECTION_STEPS.indexOf(stepName) + 1;
-    var stepLabel = stepName.charAt(0).toUpperCase() + stepName.slice(1);
+    var stepLabel = stepName.charAt(0).toUpperCase() + stepName.slice(1).replace('_', ' ');
+
+    // Get appropriate prompt
+    var prompt = prompts[stepName];
+    if (stepName === 'primary_motif' || stepName === 'secondary_motif') {
+      prompt = prompts.motif || 'Choose a motif for this evidence marker';
+    }
+
+    // Format step title
+    var stepTitle = 'Choose ';
+    if (stepName === 'note') {
+      stepTitle = 'Add a Note (Optional)';
+    } else if (stepName === 'primary_motif') {
+      stepTitle = 'Choose Primary Motif';
+    } else if (stepName === 'secondary_motif') {
+      stepTitle = 'Choose Secondary Motif';
+    } else {
+      stepTitle += 'an ' + stepLabel;
+    }
 
     var html = '<div class="selection-step">' +
       '<div class="step-header">' +
-        '<div class="step-number">Step ' + stepNumber + ': Choose ' + (stepName === 'note' ? 'to Add a Note' : 'an ' + stepLabel) + '</div>' +
-        '<div class="step-prompt">' + utils.escapeHtml(prompts[stepName] || 'Make your selection') + '</div>' +
+        '<div class="step-number">Step ' + stepNumber + ': ' + stepTitle + '</div>' +
+        '<div class="step-prompt">' + utils.escapeHtml(prompt || 'Make your selection') + '</div>' +
       '</div>';
 
     // Current selection display
@@ -256,8 +274,10 @@
       html += renderArchetypeStep(nodeId, template);
     } else if (stepName === 'entity') {
       html += renderEntityStep(nodeId, template);
-    } else if (stepName === 'motif') {
-      html += renderMotifStep(nodeId, template);
+    } else if (stepName === 'primary_motif') {
+      html += renderMotifStep(nodeId, template, 'primary');
+    } else if (stepName === 'secondary_motif') {
+      html += renderMotifStep(nodeId, template, 'secondary');
     } else if (stepName === 'note') {
       html += renderNoteStep();
     }
@@ -280,8 +300,8 @@
     } else if (stepName === 'entity' && selection) {
       label = 'Entity';
       value = selection.name || 'Selected';
-    } else if (stepName === 'motif' && selection) {
-      label = 'Motif';
+    } else if ((stepName === 'primary_motif' || stepName === 'secondary_motif') && selection) {
+      label = stepName === 'primary_motif' ? 'Primary Motif' : 'Secondary Motif';
       value = selection.code + ' - ' + selection.label;
     }
 
@@ -375,53 +395,31 @@
     }).join('');
   }
 
-  function renderMotifStep(nodeId, template) {
+  function renderMotifStep(nodeId, template, markerType) {
     var html = '';
-
-    // Evidence markers info - display as context, not as filter options
     var markers = template.evidence_markers;
-    if (markers) {
-      html += '<div class="evidence-markers-info">' +
-        '<div class="evidence-markers-label">Evidence Markers for this node:</div>' +
-        '<div class="evidence-markers-tags">' +
-          '<span class="evidence-marker-tag primary">' + markers.primary_name + '</span>' +
-          '<span class="evidence-marker-plus">+</span>' +
-          '<span class="evidence-marker-tag secondary">' + markers.secondary_name + '</span>' +
-        '</div>' +
-        '<div class="evidence-markers-hint">Motifs are filtered to Thompson categories that align with these markers</div>' +
-      '</div>';
-    }
+    var markerName = markerType === 'primary' ? markers.primary_name : markers.secondary_name;
+    var markerClass = markerType === 'primary' ? 'primary' : 'secondary';
 
-    html += '<div class="selection-search">' +
-      '<input type="text" class="selection-search-input" id="motif-search" placeholder="Search motifs by code or name...">' +
+    // Show which marker we're selecting for
+    html += '<div class="evidence-marker-context ' + markerClass + '">' +
+      '<div class="evidence-marker-selecting">Select a motif for:</div>' +
+      '<span class="evidence-marker-tag ' + markerClass + '">' + markerName + '</span>' +
     '</div>';
 
-    // Get filtered motifs
-    var filtered = filters.getFilteredMotifs(template, patternsData);
-    displayedMotifs = filtered.all;
+    html += '<div class="selection-search">' +
+      '<input type="text" class="selection-search-input" id="motif-search" placeholder="Search ' + markerName.toLowerCase() + ' motifs...">' +
+    '</div>';
 
-    // Group by marker type for clearer presentation
-    var primaryCount = filtered.primary.length;
-    var secondaryCount = filtered.secondary.length;
+    // Get filtered motifs - only show the ones for this marker type
+    var filtered = filters.getFilteredMotifs(template, patternsData);
+    displayedMotifs = markerType === 'primary' ? filtered.primary : filtered.secondary;
 
     html += '<div class="motif-list" id="motif-list">';
+    html += renderMotifItems(displayedMotifs.slice(0, 15));
 
-    // Show primary marker motifs first with section header
-    if (primaryCount > 0) {
-      html += '<div class="motif-section-header">' + markers.primary_name + ' Motifs (' + primaryCount + ')</div>';
-      html += renderMotifItems(filtered.primary.slice(0, 10));
-    }
-
-    // Then secondary marker motifs
-    if (secondaryCount > 0) {
-      html += '<div class="motif-section-header">' + markers.secondary_name + ' Motifs (' + secondaryCount + ')</div>';
-      html += renderMotifItems(filtered.secondary.slice(0, 10));
-    }
-
-    var totalShown = Math.min(primaryCount, 10) + Math.min(secondaryCount, 10);
-    var totalAvailable = primaryCount + secondaryCount;
-    if (totalAvailable > totalShown) {
-      html += '<div class="show-more"><button class="show-more-btn" id="show-more-motifs">Show all (' + totalAvailable + ' total)</button></div>';
+    if (displayedMotifs.length > 15) {
+      html += '<div class="show-more"><button class="show-more-btn" id="show-more-motifs">Show all (' + displayedMotifs.length + ' total)</button></div>';
     }
     html += '</div>';
 
@@ -466,8 +464,8 @@
       bindArchetypeEvents();
     } else if (stepName === 'entity') {
       bindEntityEvents();
-    } else if (stepName === 'motif') {
-      bindMotifEvents();
+    } else if (stepName === 'primary_motif' || stepName === 'secondary_motif') {
+      bindMotifEvents(stepName);
     } else if (stepName === 'note') {
       bindNoteEvents();
     }
@@ -523,7 +521,7 @@
     bindCardClicks(grid, 'entity');
   }
 
-  function bindMotifEvents() {
+  function bindMotifEvents(stepName) {
     var searchInput = document.getElementById('motif-search');
     var list = document.getElementById('motif-list');
 
@@ -534,7 +532,7 @@
         var filtered = filters.searchMotifs(displayedMotifs, query);
 
         list.innerHTML = renderMotifItems(filtered.slice(0, 30));
-        bindMotifClicks();
+        bindMotifClicks(stepName);
       }, 200));
     }
 
@@ -542,31 +540,15 @@
     var showMore = document.getElementById('show-more-motifs');
     if (showMore) {
       showMore.addEventListener('click', function() {
-        var nodeId = state.getCurrentNodeId();
-        var template = getNodeTemplate(nodeId);
-        var markers = template.evidence_markers;
-        var filtered = filters.getFilteredMotifs(template, patternsData);
-
-        // Show all motifs grouped by marker type
-        var html = '';
-        if (filtered.primary.length > 0) {
-          html += '<div class="motif-section-header">' + markers.primary_name + ' Motifs (' + filtered.primary.length + ')</div>';
-          html += renderMotifItems(filtered.primary);
-        }
-        if (filtered.secondary.length > 0) {
-          html += '<div class="motif-section-header">' + markers.secondary_name + ' Motifs (' + filtered.secondary.length + ')</div>';
-          html += renderMotifItems(filtered.secondary);
-        }
-
-        list.innerHTML = html;
-        bindMotifClicks();
+        list.innerHTML = renderMotifItems(displayedMotifs);
+        bindMotifClicks(stepName);
       });
     }
 
-    bindMotifClicks();
+    bindMotifClicks(stepName);
   }
 
-  function bindMotifClicks() {
+  function bindMotifClicks(stepName) {
     var list = document.getElementById('motif-list');
     if (!list) return;
 
@@ -585,7 +567,7 @@
       }
 
       if (motif) {
-        state.setSelection('motif', motif);
+        state.setSelection(stepName, motif);
         list.querySelectorAll('.motif-item').forEach(function(i) {
           i.classList.remove('selected');
         });
@@ -736,9 +718,13 @@
         selectionsHtml += '<div class="summary-selection"><strong>Entity:</strong> ' +
           utils.escapeHtml(node.entity.name) + '</div>';
       }
-      if (node.motif) {
-        selectionsHtml += '<div class="summary-selection"><strong>Motif:</strong> ' +
-          node.motif.code + ' - ' + utils.escapeHtml(node.motif.label) + '</div>';
+      if (node.primary_motif) {
+        selectionsHtml += '<div class="summary-selection"><strong>Primary Motif:</strong> ' +
+          node.primary_motif.code + ' - ' + utils.escapeHtml(node.primary_motif.label) + '</div>';
+      }
+      if (node.secondary_motif) {
+        selectionsHtml += '<div class="summary-selection"><strong>Secondary Motif:</strong> ' +
+          node.secondary_motif.code + ' - ' + utils.escapeHtml(node.secondary_motif.label) + '</div>';
       }
 
       var noteHtml = node.note ?
