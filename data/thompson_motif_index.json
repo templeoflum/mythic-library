@@ -2,7 +2,7 @@
   "_metadata": {
     "description": "Thompson Motif-Index of Folk-Literature (selected entries)",
     "source": "Compiled from Stith Thompson (1955-58), public domain classification",
-    "total_entries": 342,
+    "total_entries": 579,
     "categories": [
       "A",
       "B",
@@ -973,6 +973,182 @@
         "spirit leaves body"
       ]
     },
+    "E20": {
+      "label": "Resuscitation by prayer",
+      "parent": "E0",
+      "category": "E",
+      "keywords": [
+        "prayed back",
+        "invoked",
+        "called back",
+        "petition"
+      ]
+    },
+    "E40": {
+      "label": "Resuscitation by tears",
+      "parent": "E0",
+      "category": "E",
+      "keywords": [
+        "wept back",
+        "tears revive",
+        "mourning restores"
+      ]
+    },
+    "E60": {
+      "label": "Resuscitation by kiss",
+      "parent": "E0",
+      "category": "E",
+      "keywords": [
+        "kiss of life",
+        "true love's kiss",
+        "awakened by kiss"
+      ]
+    },
+    "E210": {
+      "label": "Dead spouse's return",
+      "parent": "E200",
+      "category": "E",
+      "keywords": [
+        "dead wife returns",
+        "dead husband returns",
+        "spouse ghost"
+      ]
+    },
+    "E220": {
+      "label": "Dead relative's return",
+      "parent": "E200",
+      "category": "E",
+      "keywords": [
+        "dead parent returns",
+        "dead child returns",
+        "ancestor visits"
+      ]
+    },
+    "E240": {
+      "label": "Ghost asks for proper burial",
+      "parent": "E200",
+      "category": "E",
+      "keywords": [
+        "unburied ghost",
+        "needs funeral rites",
+        "proper burial"
+      ]
+    },
+    "E310": {
+      "label": "Dead mother returns to care for children",
+      "parent": "E300",
+      "category": "E",
+      "keywords": [
+        "mother ghost",
+        "cares for children",
+        "protective spirit"
+      ]
+    },
+    "E320": {
+      "label": "Dead father returns to advise son",
+      "parent": "E300",
+      "category": "E",
+      "keywords": [
+        "father ghost",
+        "gives advice",
+        "warns son"
+      ]
+    },
+    "E410": {
+      "label": "Ghosts that haunt",
+      "parent": "E400",
+      "category": "E",
+      "keywords": [
+        "haunted",
+        "poltergeist",
+        "restless spirit",
+        "vengeful ghost"
+      ]
+    },
+    "E420": {
+      "label": "Appearance of ghosts",
+      "parent": "E400",
+      "category": "E",
+      "keywords": [
+        "white shroud",
+        "pale",
+        "translucent",
+        "skeletal"
+      ]
+    },
+    "E500": {
+      "label": "The Wild Hunt",
+      "parent": "E400",
+      "category": "E",
+      "keywords": [
+        "wild hunt",
+        "host of dead",
+        "ghostly riders",
+        "odin's hunt"
+      ]
+    },
+    "E600": {
+      "label": "Reincarnation",
+      "parent": null,
+      "category": "E",
+      "keywords": [
+        "reincarnation",
+        "rebirth",
+        "transmigration",
+        "metempsychosis"
+      ]
+    },
+    "E610": {
+      "label": "Reincarnation as animal",
+      "parent": "E600",
+      "category": "E",
+      "keywords": [
+        "born as animal",
+        "became animal",
+        "animal rebirth"
+      ]
+    },
+    "E620": {
+      "label": "Reincarnation as human",
+      "parent": "E600",
+      "category": "E",
+      "keywords": [
+        "born again",
+        "new life",
+        "human rebirth"
+      ]
+    },
+    "E710": {
+      "label": "External soul",
+      "parent": "E700",
+      "category": "E",
+      "keywords": [
+        "soul outside body",
+        "heart hidden",
+        "life force stored"
+      ]
+    },
+    "E720": {
+      "label": "Soul journeys",
+      "parent": "E700",
+      "category": "E",
+      "keywords": [
+        "soul travels",
+        "astral travel",
+        "spirit journey"
+      ]
+    },
+    "E730": {
+      "label": "Soul weighed",
+      "parent": "E700",
+      "category": "E",
+      "keywords": [
+        "judgment",
+        "scales",
+        "heart weighed",
+        "afterlife trial"
+      ]
+    },
     "F0": {
       "label": "Journey to otherworld",
       "parent": null,
@@ -1120,6 +1296,152 @@
         "omen"
       ]
     },
+    "F20": {
+      "label": "Journey to earthly paradise",
+      "parent": "F0",
+      "category": "F",
+      "keywords": [
+        "eden",
+        "paradise",
+        "blessed isles",
+        "avalon"
+      ]
+    },
+    "F30": {
+      "label": "Journey to underwater world",
+      "parent": "F0",
+      "category": "F",
+      "keywords": [
+        "underwater",
+        "sea kingdom",
+        "lake palace",
+        "beneath waves"
+      ]
+    },
+    "F50": {
+      "label": "Time passes differently in otherworld",
+      "parent": "F0",
+      "category": "F",
+      "keywords": [
+        "time stands still",
+        "years pass",
+        "rip van winkle"
+      ]
+    },
+    "F210": {
+      "label": "Fairyland under earth",
+      "parent": "F200",
+      "category": "F",
+      "keywords": [
+        "hollow hill",
+        "under mound",
+        "sidhe dwelling"
+      ]
+    },
+    "F220": {
+      "label": "Fairyland under water",
+      "parent": "F200",
+      "category": "F",
+      "keywords": [
+        "lake fairy",
+        "water sprite",
+        "underwater palace"
+      ]
+    },
+    "F250": {
+      "label": "Fairy abducts human",
+      "parent": "F200",
+      "category": "F",
+      "keywords": [
+        "changeling",
+        "stolen away",
+        "taken by fairies"
+      ]
+    },
+    "F310": {
+      "label": "Fairy lover",
+      "parent": "F300",
+      "category": "F",
+      "keywords": [
+        "fairy mistress",
+        "supernatural beloved",
+        "immortal lover"
+      ]
+    },
+    "F320": {
+      "label": "Fairy taboo broken",
+      "parent": "F300",
+      "category": "F",
+      "keywords": [
+        "broke promise",
+        "violated condition",
+        "fairy leaves"
+      ]
+    },
+    "F400": {
+      "label": "Spirits and demons",
+      "parent": null,
+      "category": "F",
+      "keywords": [
+        "spirit",
+        "demon",
+        "djinn",
+        "elemental"
+      ]
+    },
+    "F510": {
+      "label": "Giant",
+      "parent": "F500",
+      "category": "F",
+      "keywords": [
+        "giant",
+        "titan",
+        "colossus",
+        "huge person"
+      ]
+    },
+    "F520": {
+      "label": "Dwarf",
+      "parent": "F500",
+      "category": "F",
+      "keywords": [
+        "dwarf",
+        "little person",
+        "gnome",
+        "earth-dweller"
+      ]
+    },
+    "F710": {
+      "label": "Extraordinary building",
+      "parent": "F700",
+      "category": "F",
+      "keywords": [
+        "palace",
+        "castle",
+        "tower",
+        "enchanted building"
+      ]
+    },
+    "F720": {
+      "label": "Submarine world",
+      "parent": "F700",
+      "category": "F",
+      "keywords": [
+        "underwater kingdom",
+        "sea realm",
+        "atlantis"
+      ]
+    },
+    "F800": {
+      "label": "Extraordinary rocks and mountains",
+      "parent": "F700",
+      "category": "F",
+      "keywords": [
+        "glass mountain",
+        "magic rock",
+        "singing stones"
+      ]
+    },
     "G100": {
       "label": "Giant ogre",
       "parent": null,
@@ -1162,6 +1484,196 @@
         "defeated",
         "overcome",
         "tricked"
+      ]
+    },
+    "G10": {
+      "label": "Cannibalism",
+      "parent": null,
+      "category": "G",
+      "keywords": [
+        "cannibal",
+        "eats humans",
+        "man-eater",
+        "devours"
+      ]
+    },
+    "G11": {
+      "label": "Cannibal demon",
+      "parent": "G10",
+      "category": "G",
+      "keywords": [
+        "demon eater",
+        "flesh eating spirit",
+        "rakshasa"
+      ]
+    },
+    "G20": {
+      "label": "Ghouls and grave dwellers",
+      "parent": null,
+      "category": "G",
+      "keywords": [
+        "ghoul",
+        "grave",
+        "corpse eater",
+        "cemetery dweller"
+      ]
+    },
+    "G110": {
+      "label": "Giant as ogre",
+      "parent": "G100",
+      "category": "G",
+      "keywords": [
+        "man-eating giant",
+        "cyclops",
+        "one-eyed giant"
+      ]
+    },
+    "G120": {
+      "label": "Giant ogre's strength",
+      "parent": "G100",
+      "category": "G",
+      "keywords": [
+        "enormous strength",
+        "hurls boulders",
+        "uproots trees"
+      ]
+    },
+    "G210": {
+      "label": "Witch in animal form",
+      "parent": "G200",
+      "category": "G",
+      "keywords": [
+        "witch as cat",
+        "witch as bird",
+        "shape-shifting witch"
+      ]
+    },
+    "G220": {
+      "label": "Witch's familiar",
+      "parent": "G200",
+      "category": "G",
+      "keywords": [
+        "familiar",
+        "witch's servant",
+        "black cat",
+        "imp"
+      ]
+    },
+    "G230": {
+      "label": "Witch's powers",
+      "parent": "G200",
+      "category": "G",
+      "keywords": [
+        "evil eye",
+        "curse",
+        "blight",
+        "hex"
+      ]
+    },
+    "G250": {
+      "label": "Witch defeated",
+      "parent": "G200",
+      "category": "G",
+      "keywords": [
+        "burned",
+        "drowned",
+        "destroyed",
+        "witch killed"
+      ]
+    },
+    "G302": {
+      "label": "Fire-breathing dragon",
+      "parent": "G300",
+      "category": "G",
+      "keywords": [
+        "fire breath",
+        "burns",
+        "flame",
+        "scorches"
+      ]
+    },
+    "G303": {
+      "label": "Many-headed dragon",
+      "parent": "G300",
+      "category": "G",
+      "keywords": [
+        "hydra",
+        "multiple heads",
+        "grows back",
+        "regenerates"
+      ]
+    },
+    "G304": {
+      "label": "Dragon guards treasure",
+      "parent": "G300",
+      "category": "G",
+      "keywords": [
+        "guards gold",
+        "treasure hoard",
+        "sleeps on gold"
+      ]
+    },
+    "G310": {
+      "label": "Sea monster",
+      "parent": null,
+      "category": "G",
+      "keywords": [
+        "leviathan",
+        "kraken",
+        "sea serpent",
+        "water monster"
+      ]
+    },
+    "G350": {
+      "label": "Demon",
+      "parent": null,
+      "category": "G",
+      "keywords": [
+        "demon",
+        "devil",
+        "evil spirit",
+        "fiend"
+      ]
+    },
+    "G400": {
+      "label": "Person falls into ogre's power",
+      "parent": null,
+      "category": "G",
+      "keywords": [
+        "captured by ogre",
+        "prisoner",
+        "in monster's lair"
+      ]
+    },
+    "G510": {
+      "label": "Ogre killed through own stupidity",
+      "parent": "G500",
+      "category": "G",
+      "keywords": [
+        "tricked",
+        "fooled",
+        "outsmarted",
+        "ogre's stupidity"
+      ]
+    },
+    "G520": {
+      "label": "Ogre deceived into self-injury",
+      "parent": "G500",
+      "category": "G",
+      "keywords": [
+        "blinds self",
+        "hurts self",
+        "tricked into harm"
+      ]
+    },
+    "G530": {
+      "label": "Help from ogre's wife/daughter",
+      "parent": "G500",
+      "category": "G",
+      "keywords": [
+        "ogre's daughter helps",
+        "secret ally",
+        "betrays father"
       ]
     },
     "H0": {
@@ -1261,6 +1773,148 @@
         "marriage quest"
       ]
     },
+    "H10": {
+      "label": "Recognition through common knowledge",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "recognized",
+        "identified",
+        "knew them by"
+      ]
+    },
+    "H30": {
+      "label": "Recognition by token",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "ring recognized",
+        "birthmark",
+        "token",
+        "proof"
+      ]
+    },
+    "H50": {
+      "label": "Recognition by physical sign",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "scar",
+        "mark",
+        "wound",
+        "physical proof"
+      ]
+    },
+    "H100": {
+      "label": "Riddles",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "riddle",
+        "puzzle",
+        "sphinx",
+        "answer or die"
+      ]
+    },
+    "H110": {
+      "label": "Riddle solved",
+      "parent": "H100",
+      "category": "H",
+      "keywords": [
+        "answered riddle",
+        "solved puzzle",
+        "defeated sphinx"
+      ]
+    },
+    "H200": {
+      "label": "Identity tests",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "prove identity",
+        "slipper fits",
+        "true heir"
+      ]
+    },
+    "H310": {
+      "label": "Suitor tests",
+      "parent": "H300",
+      "category": "H",
+      "keywords": [
+        "win bride test",
+        "prove worthiness",
+        "compete for hand"
+      ]
+    },
+    "H400": {
+      "label": "Chastity tests",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "chastity test",
+        "fidelity test",
+        "purity proven"
+      ]
+    },
+    "H500": {
+      "label": "Test of cleverness",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "clever test",
+        "wit test",
+        "outsmart"
+      ]
+    },
+    "H600": {
+      "label": "Symbolic interpretation tests",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "interpret dream",
+        "explain sign",
+        "read omen"
+      ]
+    },
+    "H1000": {
+      "label": "Ordeals",
+      "parent": "H0",
+      "category": "H",
+      "keywords": [
+        "ordeal",
+        "trial by fire",
+        "trial by combat"
+      ]
+    },
+    "H1100": {
+      "label": "Tasks requiring great labor",
+      "parent": "H900",
+      "category": "H",
+      "keywords": [
+        "herculean labor",
+        "impossible task",
+        "great feat"
+      ]
+    },
+    "H1110": {
+      "label": "Cleaning Augean stables",
+      "parent": "H1100",
+      "category": "H",
+      "keywords": [
+        "clean stables",
+        "enormous mess",
+        "impossible cleaning"
+      ]
+    },
+    "H1400": {
+      "label": "Quest for dangerous object",
+      "parent": "H1200",
+      "category": "H",
+      "keywords": [
+        "fetch dangerous thing",
+        "retrieve from monster"
+      ]
+    },
     "K0": {
       "label": "Deceptions",
       "parent": null,
@@ -1351,6 +2005,136 @@
         "outwitted"
       ]
     },
+    "K110": {
+      "label": "Bargain to sell soul",
+      "parent": "K100",
+      "category": "K",
+      "keywords": [
+        "sold soul",
+        "devil's deal",
+        "faustian bargain"
+      ]
+    },
+    "K130": {
+      "label": "Bargain with supernatural being cheated",
+      "parent": "K100",
+      "category": "K",
+      "keywords": [
+        "cheated devil",
+        "outwitted demon",
+        "tricked god"
+      ]
+    },
+    "K210": {
+      "label": "Devil (god, etc.) deceived by disguise",
+      "parent": "K200",
+      "category": "K",
+      "keywords": [
+        "fooled devil",
+        "god deceived",
+        "disguised from supernatural"
+      ]
+    },
+    "K230": {
+      "label": "Woman disguised as man",
+      "parent": "K200",
+      "category": "K",
+      "keywords": [
+        "cross-dressing",
+        "woman in armor",
+        "hidden gender"
+      ]
+    },
+    "K240": {
+      "label": "Man disguised as woman",
+      "parent": "K200",
+      "category": "K",
+      "keywords": [
+        "disguised as female",
+        "achilles type",
+        "hidden gender"
+      ]
+    },
+    "K310": {
+      "label": "Theft of fire",
+      "parent": "K300",
+      "category": "K",
+      "keywords": [
+        "stole fire",
+        "prometheus",
+        "fire theft"
+      ]
+    },
+    "K330": {
+      "label": "Theft of treasure",
+      "parent": "K300",
+      "category": "K",
+      "keywords": [
+        "stole gold",
+        "treasure theft",
+        "took hoard"
+      ]
+    },
+    "K400": {
+      "label": "Murder by deception",
+      "parent": "K0",
+      "category": "K",
+      "keywords": [
+        "lured to death",
+        "treacherous murder",
+        "deceived and killed"
+      ]
+    },
+    "K510": {
+      "label": "Escape by substitution",
+      "parent": "K500",
+      "category": "K",
+      "keywords": [
+        "substitute victim",
+        "another dies",
+        "switched places"
+      ]
+    },
+    "K520": {
+      "label": "Death feigned to escape",
+      "parent": "K500",
+      "category": "K",
+      "keywords": [
+        "played dead",
+        "feigned death",
+        "fake death escape"
+      ]
+    },
+    "K600": {
+      "label": "Deception by testing",
+      "parent": "K0",
+      "category": "K",
+      "keywords": [
+        "false test",
+        "rigged test",
+        "tricked in trial"
+      ]
+    },
+    "K810": {
+      "label": "Killed while asleep",
+      "parent": "K800",
+      "category": "K",
+      "keywords": [
+        "killed sleeping",
+        "murder in bed",
+        "treacherous attack"
+      ]
+    },
+    "K910": {
+      "label": "Murder by drowning",
+      "parent": "K800",
+      "category": "K",
+      "keywords": [
+        "drowned",
+        "pushed in water",
+        "lured to water"
+      ]
+    },
     "L0": {
       "label": "Reversal of fortune",
       "parent": null,
@@ -1372,6 +2156,182 @@
         "youngest daughter",
         "despised",
         "ugly duckling"
+      ]
+    },
+    "L101": {
+      "label": "Youngest son succeeds",
+      "parent": "L100",
+      "category": "L",
+      "keywords": [
+        "third son",
+        "brothers failed",
+        "youngest triumphs"
+      ]
+    },
+    "L102": {
+      "label": "Youngest daughter succeeds",
+      "parent": "L100",
+      "category": "L",
+      "keywords": [
+        "third daughter",
+        "sisters failed",
+        "cinderella type"
+      ]
+    },
+    "L110": {
+      "label": "Stupid hero succeeds",
+      "parent": "L100",
+      "category": "L",
+      "keywords": [
+        "simpleton",
+        "fool succeeds",
+        "clever fool",
+        "lucky fool"
+      ]
+    },
+    "L111": {
+      "label": "Small hero succeeds",
+      "parent": "L100",
+      "category": "L",
+      "keywords": [
+        "small",
+        "weak",
+        "underestimated",
+        "david and goliath"
+      ]
+    },
+    "L112": {
+      "label": "Poor hero succeeds",
+      "parent": "L100",
+      "category": "L",
+      "keywords": [
+        "poor",
+        "beggar",
+        "rags to riches",
+        "peasant"
+      ]
+    },
+    "L113": {
+      "label": "Orphan hero succeeds",
+      "parent": "L100",
+      "category": "L",
+      "keywords": [
+        "orphan",
+        "abandoned child",
+        "foundling",
+        "no family"
+      ]
+    },
+    "L140": {
+      "label": "Unpromising heroine",
+      "parent": "L0",
+      "category": "L",
+      "keywords": [
+        "ash girl",
+        "ugly girl",
+        "mistreated daughter",
+        "scullery maid"
+      ]
+    },
+    "L160": {
+      "label": "Success of the lowly",
+      "parent": "L0",
+      "category": "L",
+      "keywords": [
+        "slave becomes king",
+        "servant rises",
+        "low becomes high"
+      ]
+    },
+    "L200": {
+      "label": "Modesty rewarded",
+      "parent": "L0",
+      "category": "L",
+      "keywords": [
+        "humble",
+        "modest",
+        "meek",
+        "unassuming"
+      ]
+    },
+    "L210": {
+      "label": "Modest request best",
+      "parent": "L200",
+      "category": "L",
+      "keywords": [
+        "asks for little",
+        "simple wish",
+        "modest choice"
+      ]
+    },
+    "L220": {
+      "label": "Modest choice best",
+      "parent": "L200",
+      "category": "L",
+      "keywords": [
+        "chooses least",
+        "plain gift",
+        "simple object"
+      ]
+    },
+    "L300": {
+      "label": "Triumph of the weak",
+      "parent": "L0",
+      "category": "L",
+      "keywords": [
+        "weak overcomes strong",
+        "small beats large",
+        "underdog wins"
+      ]
+    },
+    "L310": {
+      "label": "Weak overcomes strong through cleverness",
+      "parent": "L300",
+      "category": "L",
+      "keywords": [
+        "outwits",
+        "tricks strong opponent",
+        "brain over brawn"
+      ]
+    },
+    "L400": {
+      "label": "Pride brought low",
+      "parent": "L0",
+      "category": "L",
+      "keywords": [
+        "pride falls",
+        "arrogant humbled",
+        "mighty fallen"
+      ]
+    },
+    "L410": {
+      "label": "Proud king humbled",
+      "parent": "L400",
+      "category": "L",
+      "keywords": [
+        "king overthrown",
+        "tyrant falls",
+        "mighty humbled"
+      ]
+    },
+    "L420": {
+      "label": "Overweening pride punished",
+      "parent": "L400",
+      "category": "L",
+      "keywords": [
+        "hubris punished",
+        "nemesis",
+        "pride precedes fall"
+      ]
+    },
+    "L500": {
+      "label": "Fortune changed by fortune's wheel",
+      "parent": "L0",
+      "category": "L",
+      "keywords": [
+        "wheel of fortune",
+        "fate turns",
+        "fortune changes"
       ]
     },
     "M300": {
@@ -1407,6 +2367,193 @@
         "prophecy fulfilled"
       ]
     },
+    "M0": {
+      "label": "Ordaining the future",
+      "parent": null,
+      "category": "M",
+      "keywords": [
+        "fate",
+        "destiny",
+        "future",
+        "predetermined"
+      ]
+    },
+    "M100": {
+      "label": "Vows and oaths",
+      "parent": "M0",
+      "category": "M",
+      "keywords": [
+        "vow",
+        "oath",
+        "swear",
+        "promise",
+        "pledge"
+      ]
+    },
+    "M101": {
+      "label": "Irrevocable oath",
+      "parent": "M100",
+      "category": "M",
+      "keywords": [
+        "cannot break",
+        "bound by oath",
+        "sacred oath"
+      ]
+    },
+    "M110": {
+      "label": "Oath broken",
+      "parent": "M100",
+      "category": "M",
+      "keywords": [
+        "forsworn",
+        "broke promise",
+        "violated oath"
+      ]
+    },
+    "M200": {
+      "label": "Bargains and promises",
+      "parent": "M0",
+      "category": "M",
+      "keywords": [
+        "bargain",
+        "promise",
+        "deal",
+        "agreement",
+        "compact"
+      ]
+    },
+    "M201": {
+      "label": "Bargain with devil",
+      "parent": "M200",
+      "category": "M",
+      "keywords": [
+        "devil's bargain",
+        "sold soul",
+        "faustian"
+      ]
+    },
+    "M210": {
+      "label": "Bargain with god or supernatural being",
+      "parent": "M200",
+      "category": "M",
+      "keywords": [
+        "divine bargain",
+        "god's promise",
+        "covenant"
+      ]
+    },
+    "M211": {
+      "label": "Person promises child to supernatural being",
+      "parent": "M200",
+      "category": "M",
+      "keywords": [
+        "promised child",
+        "rumpelstiltskin",
+        "first born"
+      ]
+    },
+    "M220": {
+      "label": "Rash promise",
+      "parent": "M200",
+      "category": "M",
+      "keywords": [
+        "hasty promise",
+        "regretted oath",
+        "thoughtless vow"
+      ]
+    },
+    "M301": {
+      "label": "Prophet foretells future",
+      "parent": "M300",
+      "category": "M",
+      "keywords": [
+        "seer",
+        "prophet",
+        "reveals future",
+        "vision"
+      ]
+    },
+    "M310": {
+      "label": "Prophecy of death",
+      "parent": "M300",
+      "category": "M",
+      "keywords": [
+        "death foretold",
+        "will die",
+        "fatal prophecy"
+      ]
+    },
+    "M311": {
+      "label": "Prophecy: death at certain time",
+      "parent": "M310",
+      "category": "M",
+      "keywords": [
+        "death at age",
+        "die on day",
+        "time of death"
+      ]
+    },
+    "M312": {
+      "label": "Prophecy: death by certain person",
+      "parent": "M310",
+      "category": "M",
+      "keywords": [
+        "killed by son",
+        "slain by heir",
+        "parricide"
+      ]
+    },
+    "M341": {
+      "label": "Prophecy: hero's future",
+      "parent": "M300",
+      "category": "M",
+      "keywords": [
+        "destined for greatness",
+        "future glory",
+        "will become"
+      ]
+    },
+    "M350": {
+      "label": "Prophecy: downfall of kingdom",
+      "parent": "M300",
+      "category": "M",
+      "keywords": [
+        "kingdom fall",
+        "city destroyed",
+        "empire ends"
+      ]
+    },
+    "M400": {
+      "label": "Curses",
+      "parent": "M0",
+      "category": "M",
+      "keywords": [
+        "curse",
+        "malediction",
+        "doom",
+        "blight"
+      ]
+    },
+    "M410": {
+      "label": "Dying curse",
+      "parent": "M400",
+      "category": "M",
+      "keywords": [
+        "curses with last breath",
+        "death curse",
+        "dying words"
+      ]
+    },
+    "M411": {
+      "label": "Curse by parent",
+      "parent": "M400",
+      "category": "M",
+      "keywords": [
+        "father's curse",
+        "mother's curse",
+        "parental curse"
+      ]
+    },
     "N0": {
       "label": "Wagers and gambling",
       "parent": null,
@@ -1428,6 +2575,184 @@
         "fortune",
         "chance",
         "fate"
+      ]
+    },
+    "N110": {
+      "label": "Luck personified",
+      "parent": "N100",
+      "category": "N",
+      "keywords": [
+        "fortune goddess",
+        "tyche",
+        "fortuna",
+        "luck spirit"
+      ]
+    },
+    "N111": {
+      "label": "Good luck gained",
+      "parent": "N100",
+      "category": "N",
+      "keywords": [
+        "lucky",
+        "blessed",
+        "fortunate",
+        "good fortune"
+      ]
+    },
+    "N120": {
+      "label": "Determination of luck or fate",
+      "parent": "N100",
+      "category": "N",
+      "keywords": [
+        "lots cast",
+        "divination",
+        "sortilege",
+        "drawing lots"
+      ]
+    },
+    "N130": {
+      "label": "Changing of luck",
+      "parent": "N100",
+      "category": "N",
+      "keywords": [
+        "luck changes",
+        "fortune turns",
+        "reversal"
+      ]
+    },
+    "N200": {
+      "label": "Lucky accidents",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "accident",
+        "coincidence",
+        "by chance",
+        "fortunate event"
+      ]
+    },
+    "N210": {
+      "label": "Lucky accident leads to fortune",
+      "parent": "N200",
+      "category": "N",
+      "keywords": [
+        "stumbles on treasure",
+        "finds by chance",
+        "accidental discovery"
+      ]
+    },
+    "N250": {
+      "label": "Persistent bad luck",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "cursed",
+        "unlucky",
+        "bad fortune",
+        "ill-fated"
+      ]
+    },
+    "N300": {
+      "label": "Unlucky accidents",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "misfortune",
+        "accident",
+        "mishap",
+        "disaster"
+      ]
+    },
+    "N340": {
+      "label": "Hasty killing through misunderstanding",
+      "parent": "N300",
+      "category": "N",
+      "keywords": [
+        "killed by mistake",
+        "tragic misunderstanding",
+        "wrong person killed"
+      ]
+    },
+    "N350": {
+      "label": "Accidental death",
+      "parent": "N300",
+      "category": "N",
+      "keywords": [
+        "died by accident",
+        "killed accidentally",
+        "fate"
+      ]
+    },
+    "N400": {
+      "label": "Lucky numbers",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "three",
+        "seven",
+        "lucky number",
+        "sacred number"
+      ]
+    },
+    "N500": {
+      "label": "Treasure trove",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "treasure found",
+        "hidden gold",
+        "buried treasure"
+      ]
+    },
+    "N510": {
+      "label": "Where treasure is found",
+      "parent": "N500",
+      "category": "N",
+      "keywords": [
+        "cave",
+        "buried",
+        "underwater",
+        "secret place"
+      ]
+    },
+    "N530": {
+      "label": "Discovery of treasure",
+      "parent": "N500",
+      "category": "N",
+      "keywords": [
+        "found treasure",
+        "stumbles on",
+        "discovers hoard"
+      ]
+    },
+    "N600": {
+      "label": "Lucky escapes",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "narrow escape",
+        "miraculous survival",
+        "cheated death"
+      ]
+    },
+    "N700": {
+      "label": "Fateful meeting",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "fated to meet",
+        "chance encounter",
+        "destined meeting"
+      ]
+    },
+    "N800": {
+      "label": "Helpful chance events",
+      "parent": "N0",
+      "category": "N",
+      "keywords": [
+        "help arrives",
+        "timely aid",
+        "saved by chance"
       ]
     },
     "Q200": {
@@ -1475,6 +2800,229 @@
         "looked back"
       ]
     },
+    "Q0": {
+      "label": "Rewards and punishments",
+      "parent": null,
+      "category": "Q",
+      "keywords": [
+        "justice",
+        "karma",
+        "reward",
+        "punishment",
+        "judgment"
+      ]
+    },
+    "Q10": {
+      "label": "Deeds rewarded",
+      "parent": "Q0",
+      "category": "Q",
+      "keywords": [
+        "rewarded",
+        "blessed",
+        "granted wish",
+        "given"
+      ]
+    },
+    "Q20": {
+      "label": "Piety rewarded",
+      "parent": "Q10",
+      "category": "Q",
+      "keywords": [
+        "faithful",
+        "devoted",
+        "pious",
+        "religious devotion"
+      ]
+    },
+    "Q40": {
+      "label": "Kindness rewarded",
+      "parent": "Q10",
+      "category": "Q",
+      "keywords": [
+        "kind",
+        "gentle",
+        "compassionate",
+        "helped"
+      ]
+    },
+    "Q41": {
+      "label": "Politeness rewarded",
+      "parent": "Q40",
+      "category": "Q",
+      "keywords": [
+        "polite",
+        "courteous",
+        "respectful",
+        "mannered"
+      ]
+    },
+    "Q45": {
+      "label": "Hospitality rewarded",
+      "parent": "Q40",
+      "category": "Q",
+      "keywords": [
+        "welcomed stranger",
+        "gave food",
+        "sheltered",
+        "hosted"
+      ]
+    },
+    "Q50": {
+      "label": "Honesty rewarded",
+      "parent": "Q10",
+      "category": "Q",
+      "keywords": [
+        "honest",
+        "truthful",
+        "returned",
+        "did not steal"
+      ]
+    },
+    "Q60": {
+      "label": "Modesty rewarded",
+      "parent": "Q10",
+      "category": "Q",
+      "keywords": [
+        "modest",
+        "humble",
+        "unassuming",
+        "simple"
+      ]
+    },
+    "Q100": {
+      "label": "Nature of rewards",
+      "parent": "Q0",
+      "category": "Q",
+      "keywords": [
+        "reward type",
+        "gift",
+        "blessing",
+        "boon"
+      ]
+    },
+    "Q110": {
+      "label": "Material rewards",
+      "parent": "Q100",
+      "category": "Q",
+      "keywords": [
+        "gold",
+        "treasure",
+        "wealth",
+        "riches"
+      ]
+    },
+    "Q111": {
+      "label": "Riches as reward",
+      "parent": "Q110",
+      "category": "Q",
+      "keywords": [
+        "became wealthy",
+        "given gold",
+        "rich"
+      ]
+    },
+    "Q112": {
+      "label": "Kingdom as reward",
+      "parent": "Q110",
+      "category": "Q",
+      "keywords": [
+        "became king",
+        "given kingdom",
+        "rules"
+      ]
+    },
+    "Q150": {
+      "label": "Immortality as reward",
+      "parent": "Q100",
+      "category": "Q",
+      "keywords": [
+        "immortal",
+        "eternal life",
+        "deified",
+        "apotheosis"
+      ]
+    },
+    "Q210": {
+      "label": "Murder punished",
+      "parent": "Q200",
+      "category": "Q",
+      "keywords": [
+        "murderer punished",
+        "killer cursed",
+        "blood guilt"
+      ]
+    },
+    "Q250": {
+      "label": "Disrespect punished",
+      "parent": "Q200",
+      "category": "Q",
+      "keywords": [
+        "insult gods",
+        "blasphemy",
+        "sacrilege"
+      ]
+    },
+    "Q270": {
+      "label": "Cruelty punished",
+      "parent": "Q200",
+      "category": "Q",
+      "keywords": [
+        "cruel punished",
+        "tyrant falls",
+        "oppressor"
+      ]
+    },
+    "Q280": {
+      "label": "Unkindness punished",
+      "parent": "Q200",
+      "category": "Q",
+      "keywords": [
+        "refused help",
+        "denied stranger",
+        "inhospitable"
+      ]
+    },
+    "Q300": {
+      "label": "Nature of punishments",
+      "parent": "Q0",
+      "category": "Q",
+      "keywords": [
+        "punishment type",
+        "penalty",
+        "consequence"
+      ]
+    },
+    "Q400": {
+      "label": "Death as punishment",
+      "parent": "Q300",
+      "category": "Q",
+      "keywords": [
+        "killed",
+        "executed",
+        "slain",
+        "death penalty"
+      ]
+    },
+    "Q500": {
+      "label": "Tedious punishments",
+      "parent": "Q300",
+      "category": "Q",
+      "keywords": [
+        "eternal labor",
+        "endless task",
+        "sisyphean"
+      ]
+    },
+    "Q550": {
+      "label": "Miraculous punishments",
+      "parent": "Q300",
+      "category": "Q",
+      "keywords": [
+        "turned to stone",
+        "struck by lightning",
+        "divine punishment"
+      ]
+    },
     "R0": {
       "label": "Captivity",
       "parent": null,
@@ -1507,6 +3055,192 @@
         "fled",
         "pursuit",
         "chase"
+      ]
+    },
+    "R10": {
+      "label": "Abduction",
+      "parent": "R0",
+      "category": "R",
+      "keywords": [
+        "abducted",
+        "carried off",
+        "stolen",
+        "kidnapped"
+      ]
+    },
+    "R11": {
+      "label": "Abduction by monster",
+      "parent": "R10",
+      "category": "R",
+      "keywords": [
+        "dragon takes",
+        "monster carries",
+        "seized by beast"
+      ]
+    },
+    "R12": {
+      "label": "Abduction by supernatural being",
+      "parent": "R10",
+      "category": "R",
+      "keywords": [
+        "taken by fairy",
+        "god abducts",
+        "spirit steals"
+      ]
+    },
+    "R13": {
+      "label": "Abduction to underworld",
+      "parent": "R10",
+      "category": "R",
+      "keywords": [
+        "taken to hell",
+        "underworld captive",
+        "persephone type"
+      ]
+    },
+    "R50": {
+      "label": "Prisoner put in pit or well",
+      "parent": "R0",
+      "category": "R",
+      "keywords": [
+        "thrown in pit",
+        "dungeon",
+        "oubliette",
+        "well"
+      ]
+    },
+    "R110": {
+      "label": "Rescue of captive",
+      "parent": "R100",
+      "category": "R",
+      "keywords": [
+        "freed prisoner",
+        "rescued captive",
+        "delivered"
+      ]
+    },
+    "R111": {
+      "label": "Princess rescued from dragon",
+      "parent": "R110",
+      "category": "R",
+      "keywords": [
+        "maiden freed",
+        "dragon slain",
+        "princess saved"
+      ]
+    },
+    "R130": {
+      "label": "Rescue by animal",
+      "parent": "R100",
+      "category": "R",
+      "keywords": [
+        "animal helper",
+        "beast rescues",
+        "grateful animal"
+      ]
+    },
+    "R150": {
+      "label": "Rescue from prison or dungeon",
+      "parent": "R100",
+      "category": "R",
+      "keywords": [
+        "prison break",
+        "freed from cell",
+        "escaped dungeon"
+      ]
+    },
+    "R160": {
+      "label": "Rescue from underworld",
+      "parent": "R100",
+      "category": "R",
+      "keywords": [
+        "brought back from dead",
+        "orpheus type",
+        "harrowing"
+      ]
+    },
+    "R210": {
+      "label": "Flight from home",
+      "parent": "R200",
+      "category": "R",
+      "keywords": [
+        "fled home",
+        "ran away",
+        "left family"
+      ]
+    },
+    "R220": {
+      "label": "Obstacles to flight",
+      "parent": "R200",
+      "category": "R",
+      "keywords": [
+        "barrier",
+        "blocked",
+        "can't escape",
+        "trapped"
+      ]
+    },
+    "R230": {
+      "label": "Obstacles magically overcome",
+      "parent": "R220",
+      "category": "R",
+      "keywords": [
+        "magic escape",
+        "obstacle flight",
+        "threw objects"
+      ]
+    },
+    "R260": {
+      "label": "Pursuit",
+      "parent": "R200",
+      "category": "R",
+      "keywords": [
+        "chased",
+        "hunted",
+        "pursued",
+        "followed"
+      ]
+    },
+    "R270": {
+      "label": "Pursuit by transformed witch",
+      "parent": "R260",
+      "category": "R",
+      "keywords": [
+        "witch chases",
+        "shape-shifting pursuer",
+        "transformed hunter"
+      ]
+    },
+    "R300": {
+      "label": "Refuge",
+      "parent": "R0",
+      "category": "R",
+      "keywords": [
+        "sanctuary",
+        "safe place",
+        "shelter",
+        "haven"
+      ]
+    },
+    "R310": {
+      "label": "Refuge in church",
+      "parent": "R300",
+      "category": "R",
+      "keywords": [
+        "sanctuary",
+        "temple",
+        "sacred refuge",
+        "altar"
+      ]
+    },
+    "R320": {
+      "label": "Refuge in tree",
+      "parent": "R300",
+      "category": "R",
+      "keywords": [
+        "climbed tree",
+        "hid in branches",
+        "world tree"
       ]
     },
     "S0": {
@@ -1551,6 +3285,178 @@
         "rescued",
         "nursed by animal",
         "raised by"
+      ]
+    },
+    "S10": {
+      "label": "Cruel parent",
+      "parent": "S0",
+      "category": "S",
+      "keywords": [
+        "cruel father",
+        "cruel mother",
+        "abusive parent"
+      ]
+    },
+    "S11": {
+      "label": "Cruel father",
+      "parent": "S10",
+      "category": "S",
+      "keywords": [
+        "harsh father",
+        "father torments",
+        "paternal cruelty"
+      ]
+    },
+    "S12": {
+      "label": "Cruel mother",
+      "parent": "S10",
+      "category": "S",
+      "keywords": [
+        "harsh mother",
+        "mother torments",
+        "maternal cruelty"
+      ]
+    },
+    "S20": {
+      "label": "Cruel stepparent",
+      "parent": "S0",
+      "category": "S",
+      "keywords": [
+        "stepmother",
+        "stepfather",
+        "step-parent cruelty"
+      ]
+    },
+    "S31": {
+      "label": "Cruel stepmother",
+      "parent": "S20",
+      "category": "S",
+      "keywords": [
+        "wicked stepmother",
+        "evil stepmother",
+        "cinderella type"
+      ]
+    },
+    "S50": {
+      "label": "Cruel stepsisters",
+      "parent": "S0",
+      "category": "S",
+      "keywords": [
+        "jealous sisters",
+        "cruel siblings",
+        "stepsisters torment"
+      ]
+    },
+    "S110": {
+      "label": "Murder of spouse",
+      "parent": "S100",
+      "category": "S",
+      "keywords": [
+        "killed wife",
+        "killed husband",
+        "spouse murder"
+      ]
+    },
+    "S111": {
+      "label": "Murder of wife",
+      "parent": "S110",
+      "category": "S",
+      "keywords": [
+        "wife killed",
+        "uxoricide",
+        "murdered bride"
+      ]
+    },
+    "S130": {
+      "label": "Casting out of wife",
+      "parent": "S100",
+      "category": "S",
+      "keywords": [
+        "wife banished",
+        "cast out",
+        "repudiated"
+      ]
+    },
+    "S140": {
+      "label": "Cruel abandonment",
+      "parent": "S100",
+      "category": "S",
+      "keywords": [
+        "left to die",
+        "deserted",
+        "stranded"
+      ]
+    },
+    "S200": {
+      "label": "Children cruel to parent",
+      "parent": "S0",
+      "category": "S",
+      "keywords": [
+        "ungrateful child",
+        "cruel son",
+        "cruel daughter"
+      ]
+    },
+    "S301": {
+      "label": "Children abandoned in forest",
+      "parent": "S300",
+      "category": "S",
+      "keywords": [
+        "lost in woods",
+        "hansel and gretel",
+        "forest exposure"
+      ]
+    },
+    "S302": {
+      "label": "Child cast adrift",
+      "parent": "S300",
+      "category": "S",
+      "keywords": [
+        "set adrift",
+        "basket on river",
+        "moses type"
+      ]
+    },
+    "S320": {
+      "label": "Child exposed in mountain",
+      "parent": "S300",
+      "category": "S",
+      "keywords": [
+        "mountain exposure",
+        "oedipus type",
+        "left on hillside"
+      ]
+    },
+    "S400": {
+      "label": "Cruel persecutions",
+      "parent": "S0",
+      "category": "S",
+      "keywords": [
+        "tormented",
+        "persecution",
+        "hounded",
+        "oppressed"
+      ]
+    },
+    "S410": {
+      "label": "Persecuted innocent",
+      "parent": "S400",
+      "category": "S",
+      "keywords": [
+        "wrongly accused",
+        "innocent suffers",
+        "false charges"
+      ]
+    },
+    "S450": {
+      "label": "Cruel oppression",
+      "parent": "S400",
+      "category": "S",
+      "keywords": [
+        "slavery",
+        "bondage",
+        "tyrant",
+        "oppressor"
       ]
     },
     "T0": {
@@ -1620,6 +3526,191 @@
         "chimera"
       ]
     },
+    "T10": {
+      "label": "Falling in love",
+      "parent": "T0",
+      "category": "T",
+      "keywords": [
+        "fell in love",
+        "smitten",
+        "love at first sight"
+      ]
+    },
+    "T11": {
+      "label": "Love through sight of picture",
+      "parent": "T10",
+      "category": "T",
+      "keywords": [
+        "saw picture",
+        "portrait love",
+        "fell for image"
+      ]
+    },
+    "T15": {
+      "label": "Love at first sight",
+      "parent": "T10",
+      "category": "T",
+      "keywords": [
+        "first glance",
+        "instant love",
+        "eyes met"
+      ]
+    },
+    "T20": {
+      "label": "Magic love",
+      "parent": "T0",
+      "category": "T",
+      "keywords": [
+        "love potion",
+        "enchanted love",
+        "spelled to love"
+      ]
+    },
+    "T30": {
+      "label": "Lovesickness",
+      "parent": "T0",
+      "category": "T",
+      "keywords": [
+        "pining",
+        "heartbreak",
+        "wasting away",
+        "lovesick"
+      ]
+    },
+    "T50": {
+      "label": "Wooing",
+      "parent": "T0",
+      "category": "T",
+      "keywords": [
+        "courtship",
+        "pursuit",
+        "winning love",
+        "suitor"
+      ]
+    },
+    "T60": {
+      "label": "Supernatural or unusual suitor",
+      "parent": "T50",
+      "category": "T",
+      "keywords": [
+        "god suitor",
+        "beast suitor",
+        "supernatural lover"
+      ]
+    },
+    "T110": {
+      "label": "Extraordinary marriage",
+      "parent": "T100",
+      "category": "T",
+      "keywords": [
+        "marriage to animal",
+        "fairy marriage",
+        "divine union"
+      ]
+    },
+    "T120": {
+      "label": "Unequal marriage",
+      "parent": "T100",
+      "category": "T",
+      "keywords": [
+        "mortal and god",
+        "rich and poor",
+        "high and low"
+      ]
+    },
+    "T200": {
+      "label": "Married life",
+      "parent": "T0",
+      "category": "T",
+      "keywords": [
+        "married life",
+        "husband and wife",
+        "domestic"
+      ]
+    },
+    "T210": {
+      "label": "Faithful wife",
+      "parent": "T200",
+      "category": "T",
+      "keywords": [
+        "faithful",
+        "loyal wife",
+        "penelope type",
+        "waited"
+      ]
+    },
+    "T230": {
+      "label": "Faithless wife",
+      "parent": "T200",
+      "category": "T",
+      "keywords": [
+        "adultery",
+        "unfaithful",
+        "betraying spouse"
+      ]
+    },
+    "T300": {
+      "label": "Chastity and celibacy",
+      "parent": "T0",
+      "category": "T",
+      "keywords": [
+        "virgin",
+        "chaste",
+        "celibate",
+        "pure"
+      ]
+    },
+    "T520": {
+      "label": "Conception from eating",
+      "parent": "T500",
+      "category": "T",
+      "keywords": [
+        "ate fruit",
+        "swallowed seed",
+        "food conception"
+      ]
+    },
+    "T560": {
+      "label": "Unusual manner of birth",
+      "parent": "T500",
+      "category": "T",
+      "keywords": [
+        "born differently",
+        "emerged from",
+        "unusual birth"
+      ]
+    },
+    "T580": {
+      "label": "Child with remarkable birth growth",
+      "parent": "T500",
+      "category": "T",
+      "keywords": [
+        "rapid growth",
+        "born adult",
+        "quick maturity"
+      ]
+    },
+    "T600": {
+      "label": "Care of children",
+      "parent": null,
+      "category": "T",
+      "keywords": [
+        "child care",
+        "nurturing",
+        "raising child",
+        "foster"
+      ]
+    },
+    "T610": {
+      "label": "Child raised by animals",
+      "parent": "T600",
+      "category": "T",
+      "keywords": [
+        "wolf raised",
+        "animal foster",
+        "feral child"
+      ]
+    },
     "V200": {
       "label": "Sacred places",
       "parent": null,
@@ -1663,6 +3754,192 @@
         "hecatomb",
         "bull",
         "lamb"
+      ]
+    },
+    "V0": {
+      "label": "Religion and religious services",
+      "parent": null,
+      "category": "V",
+      "keywords": [
+        "religion",
+        "worship",
+        "faith",
+        "devotion"
+      ]
+    },
+    "V10": {
+      "label": "Religious sacrifices",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "sacrifice",
+        "offering",
+        "oblation",
+        "libation"
+      ]
+    },
+    "V50": {
+      "label": "Prayer",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "prayer",
+        "invocation",
+        "supplication",
+        "entreaty"
+      ]
+    },
+    "V51": {
+      "label": "Prayer answered",
+      "parent": "V50",
+      "category": "V",
+      "keywords": [
+        "prayer granted",
+        "god responds",
+        "wish fulfilled"
+      ]
+    },
+    "V60": {
+      "label": "Fasting and abstinence",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "fasting",
+        "abstain",
+        "renounce",
+        "ascetic"
+      ]
+    },
+    "V70": {
+      "label": "Pilgrimage",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "pilgrimage",
+        "holy journey",
+        "sacred travel",
+        "pilgrim"
+      ]
+    },
+    "V100": {
+      "label": "Sacred persons",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "priest",
+        "shaman",
+        "prophet",
+        "holy person"
+      ]
+    },
+    "V110": {
+      "label": "Priests",
+      "parent": "V100",
+      "category": "V",
+      "keywords": [
+        "priest",
+        "priestess",
+        "oracle",
+        "druid"
+      ]
+    },
+    "V120": {
+      "label": "Saints",
+      "parent": "V100",
+      "category": "V",
+      "keywords": [
+        "saint",
+        "holy one",
+        "blessed",
+        "sanctified"
+      ]
+    },
+    "V210": {
+      "label": "Sacred trees",
+      "parent": "V200",
+      "category": "V",
+      "keywords": [
+        "sacred tree",
+        "world tree",
+        "yggdrasil",
+        "holy grove"
+      ]
+    },
+    "V220": {
+      "label": "Sacred waters",
+      "parent": "V200",
+      "category": "V",
+      "keywords": [
+        "sacred well",
+        "holy spring",
+        "magic water",
+        "river god"
+      ]
+    },
+    "V230": {
+      "label": "Sacred mountains",
+      "parent": "V200",
+      "category": "V",
+      "keywords": [
+        "holy mountain",
+        "mount olympus",
+        "sacred peak",
+        "world mountain"
+      ]
+    },
+    "V250": {
+      "label": "Temples",
+      "parent": "V200",
+      "category": "V",
+      "keywords": [
+        "temple",
+        "sanctuary",
+        "shrine",
+        "altar"
+      ]
+    },
+    "V330": {
+      "label": "Conversion",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "converted",
+        "baptized",
+        "changed faith",
+        "born again"
+      ]
+    },
+    "V400": {
+      "label": "Charity",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "charity",
+        "alms",
+        "generosity",
+        "giving"
+      ]
+    },
+    "V500": {
+      "label": "Saints' lives and miracles",
+      "parent": "V0",
+      "category": "V",
+      "keywords": [
+        "miracle",
+        "wonder",
+        "saintly deed",
+        "holy power"
+      ]
+    },
+    "V510": {
+      "label": "Visions",
+      "parent": "V500",
+      "category": "V",
+      "keywords": [
+        "vision",
+        "revelation",
+        "divine sight",
+        "apparition"
       ]
     },
     "B0": {
@@ -3764,6 +6041,196 @@
         "mischief",
         "shape-shifter",
         "boundary crosser"
+      ]
+    },
+    "Z0": {
+      "label": "Formulas",
+      "parent": null,
+      "category": "Z",
+      "keywords": [
+        "formula",
+        "pattern",
+        "structure",
+        "form"
+      ]
+    },
+    "Z10": {
+      "label": "Beginning formulas",
+      "parent": "Z0",
+      "category": "Z",
+      "keywords": [
+        "once upon a time",
+        "long ago",
+        "in the beginning"
+      ]
+    },
+    "Z11": {
+      "label": "Ending formulas",
+      "parent": "Z0",
+      "category": "Z",
+      "keywords": [
+        "they lived happily",
+        "the end",
+        "and so it was"
+      ]
+    },
+    "Z30": {
+      "label": "Chains",
+      "parent": "Z0",
+      "category": "Z",
+      "keywords": [
+        "chain tale",
+        "cumulative",
+        "repeated pattern"
+      ]
+    },
+    "Z31": {
+      "label": "Cumulative tales",
+      "parent": "Z30",
+      "category": "Z",
+      "keywords": [
+        "adds on",
+        "builds up",
+        "house that jack built"
+      ]
+    },
+    "Z40": {
+      "label": "Symbolic numbers",
+      "parent": "Z0",
+      "category": "Z",
+      "keywords": [
+        "sacred number",
+        "three",
+        "seven",
+        "twelve",
+        "symbolic"
+      ]
+    },
+    "Z71": {
+      "label": "Formulistic number: three",
+      "parent": "Z40",
+      "category": "Z",
+      "keywords": [
+        "three",
+        "triad",
+        "third time",
+        "three wishes"
+      ]
+    },
+    "Z72": {
+      "label": "Formulistic number: seven",
+      "parent": "Z40",
+      "category": "Z",
+      "keywords": [
+        "seven",
+        "heptad",
+        "seven days",
+        "seven years"
+      ]
+    },
+    "Z100": {
+      "label": "Symbolism",
+      "parent": null,
+      "category": "Z",
+      "keywords": [
+        "symbol",
+        "metaphor",
+        "allegory",
+        "represents"
+      ]
+    },
+    "Z110": {
+      "label": "Personification",
+      "parent": "Z100",
+      "category": "Z",
+      "keywords": [
+        "personified",
+        "death as person",
+        "time as figure"
+      ]
+    },
+    "Z111": {
+      "label": "Death personified",
+      "parent": "Z110",
+      "category": "Z",
+      "keywords": [
+        "death figure",
+        "grim reaper",
+        "death comes"
+      ]
+    },
+    "Z120": {
+      "label": "Colors as symbols",
+      "parent": "Z100",
+      "category": "Z",
+      "keywords": [
+        "red",
+        "white",
+        "black",
+        "color symbolism"
+      ]
+    },
+    "Z130": {
+      "label": "Animals as symbols",
+      "parent": "Z100",
+      "category": "Z",
+      "keywords": [
+        "symbolic animal",
+        "lion courage",
+        "fox cunning"
+      ]
+    },
+    "Z140": {
+      "label": "Natural phenomena as symbols",
+      "parent": "Z100",
+      "category": "Z",
+      "keywords": [
+        "storm anger",
+        "sun glory",
+        "moon mystery"
+      ]
+    },
+    "Z150": {
+      "label": "Time symbols",
+      "parent": "Z100",
+      "category": "Z",
+      "keywords": [
+        "dawn new beginning",
+        "night death",
+        "seasons cycle"
+      ]
+    },
+    "Z220": {
+      "label": "Hero recognition signs",
+      "parent": "Z200",
+      "category": "Z",
+      "keywords": [
+        "birthmark",
+        "token",
+        "proof of identity",
+        "recognized"
+      ]
+    },
+    "Z250": {
+      "label": "Hero patterns",
+      "parent": "Z200",
+      "category": "Z",
+      "keywords": [
+        "hero birth",
+        "hero childhood",
+        "hero death",
+        "pattern"
+      ]
+    },
+    "Z320": {
+      "label": "Culture hero",
+      "parent": null,
+      "category": "Z",
+      "keywords": [
+        "culture hero",
+        "brings fire",
+        "teaches",
+        "civilization bringer"
       ]
     }
   }
