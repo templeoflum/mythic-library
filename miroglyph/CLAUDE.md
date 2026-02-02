@@ -315,19 +315,27 @@ A guided experience that walks users through a MiroGlyph traversal, presenting c
 | `miroglyph_v4_philosophy.md` | Principles, vision, and values |
 | `README.md` | Quick start and overview |
 
-## Evidence Marker System (Optional)
+## Evidence Marker System
 
-An optional extension for symbolic depth. Each node gets a (Primary, Secondary) marker pair.
+Each node has two predetermined evidence markers (Primary + Secondary) that define its symbolic character and determine which Thompson Motif Index categories are structurally appropriate.
 
-**Categories:**
-- O: Object (concrete things)
-- A: Action (verbs, movements)
-- Q: Quality (attributes, states)
-- B: Being (entities, characters)
-- F: Force (energies, pressures)
-- M: MetaSymbol (recursive patterns)
+**Evidence Marker Types:**
+| Code | Name | Description | Primary Thompson Categories |
+|------|------|-------------|----------------------------|
+| O | Object | Concrete things | D (Magic), F (Marvels) |
+| A | Action | Verbs, movements | H (Tests), K (Deceptions), R (Captives), C (Tabu) |
+| Q | Quality | Attributes, states | W (Traits), J (Wise/Foolish), U (Nature of Life), L (Reversal) |
+| B | Being | Entities, characters | A (Mythological), B (Animals), E (The Dead), G (Ogres) |
+| F | Force | Energies, pressures | N (Chance/Fate), M (Ordaining Future), Q (Rewards), S (Cruelty) |
+| M | MetaSymbol | Recursive patterns | Z (Miscellaneous), V (Religion), U (Nature of Life) |
 
-Primary is locked by condition; secondary varies by arc. This makes polarity and resonance visually evident.
+**How it works:**
+1. Each node template defines a primary and secondary marker (e.g., D3 has Being + Object)
+2. These markers map to specific Thompson Motif Index categories
+3. In Journey Mapper, motifs are filtered to only show those matching the node's markers
+4. Motifs are grouped by which marker type they align with (primary or secondary)
+
+Primary marker is determined by condition; secondary varies by arc. This creates structural relationships where polarity pairs and condition resonance become visible through shared evidence markers.
 
 ## Success Criteria
 

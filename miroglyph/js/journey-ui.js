@@ -378,13 +378,17 @@
   function renderMotifStep(nodeId, template) {
     var html = '';
 
-    // Evidence markers info
+    // Evidence markers info - display as context, not as filter options
     var markers = template.evidence_markers;
     if (markers) {
-      html += '<div class="filter-tags">' +
-        '<span class="filter-tag active" data-filter="all">All</span>' +
-        '<span class="filter-tag" data-filter="primary">' + markers.primary_name + ' (Primary)</span>' +
-        '<span class="filter-tag" data-filter="secondary">' + markers.secondary_name + ' (Secondary)</span>' +
+      html += '<div class="evidence-markers-info">' +
+        '<div class="evidence-markers-label">Evidence Markers for this node:</div>' +
+        '<div class="evidence-markers-tags">' +
+          '<span class="evidence-marker-tag primary">' + markers.primary_name + '</span>' +
+          '<span class="evidence-marker-plus">+</span>' +
+          '<span class="evidence-marker-tag secondary">' + markers.secondary_name + '</span>' +
+        '</div>' +
+        '<div class="evidence-markers-hint">Motifs are filtered to Thompson categories that align with these markers</div>' +
       '</div>';
     }
 
@@ -396,10 +400,28 @@
     var filtered = filters.getFilteredMotifs(template, patternsData);
     displayedMotifs = filtered.all;
 
+    // Group by marker type for clearer presentation
+    var primaryCount = filtered.primary.length;
+    var secondaryCount = filtered.secondary.length;
+
     html += '<div class="motif-list" id="motif-list">';
-    html += renderMotifItems(displayedMotifs.slice(0, 20));
-    if (displayedMotifs.length > 20) {
-      html += '<div class="show-more"><button class="show-more-btn" id="show-more-motifs">Show more (' + (displayedMotifs.length - 20) + ' remaining)</button></div>';
+
+    // Show primary marker motifs first with section header
+    if (primaryCount > 0) {
+      html += '<div class="motif-section-header">' + markers.primary_name + ' Motifs (' + primaryCount + ')</div>';
+      html += renderMotifItems(filtered.primary.slice(0, 10));
+    }
+
+    // Then secondary marker motifs
+    if (secondaryCount > 0) {
+      html += '<div class="motif-section-header">' + markers.secondary_name + ' Motifs (' + secondaryCount + ')</div>';
+      html += renderMotifItems(filtered.secondary.slice(0, 10));
+    }
+
+    var totalShown = Math.min(primaryCount, 10) + Math.min(secondaryCount, 10);
+    var totalAvailable = primaryCount + secondaryCount;
+    if (totalAvailable > totalShown) {
+      html += '<div class="show-more"><button class="show-more-btn" id="show-more-motifs">Show all (' + totalAvailable + ' total)</button></div>';
     }
     html += '</div>';
 
@@ -504,34 +526,6 @@
   function bindMotifEvents() {
     var searchInput = document.getElementById('motif-search');
     var list = document.getElementById('motif-list');
-    var filterTags = document.querySelectorAll('.filter-tag');
-
-    // Filter tags
-    filterTags.forEach(function(tag) {
-      tag.addEventListener('click', function() {
-        filterTags.forEach(function(t) { t.classList.remove('active'); });
-        tag.classList.add('active');
-
-        var filter = tag.getAttribute('data-filter');
-        var nodeId = state.getCurrentNodeId();
-        var template = getNodeTemplate(nodeId);
-        var filtered = filters.getFilteredMotifs(template, patternsData);
-
-        if (filter === 'primary') {
-          displayedMotifs = filtered.primary;
-        } else if (filter === 'secondary') {
-          displayedMotifs = filtered.secondary;
-        } else {
-          displayedMotifs = filtered.all;
-        }
-
-        list.innerHTML = renderMotifItems(displayedMotifs.slice(0, 20));
-        if (displayedMotifs.length > 20) {
-          list.innerHTML += '<div class="show-more"><button class="show-more-btn" id="show-more-motifs">Show more (' + (displayedMotifs.length - 20) + ' remaining)</button></div>';
-        }
-        bindMotifClicks();
-      });
-    });
 
     // Search
     if (searchInput) {
@@ -548,7 +542,23 @@
     var showMore = document.getElementById('show-more-motifs');
     if (showMore) {
       showMore.addEventListener('click', function() {
-        list.innerHTML = renderMotifItems(displayedMotifs);
+        var nodeId = state.getCurrentNodeId();
+        var template = getNodeTemplate(nodeId);
+        var markers = template.evidence_markers;
+        var filtered = filters.getFilteredMotifs(template, patternsData);
+
+        // Show all motifs grouped by marker type
+        var html = '';
+        if (filtered.primary.length > 0) {
+          html += '<div class="motif-section-header">' + markers.primary_name + ' Motifs (' + filtered.primary.length + ')</div>';
+          html += renderMotifItems(filtered.primary);
+        }
+        if (filtered.secondary.length > 0) {
+          html += '<div class="motif-section-header">' + markers.secondary_name + ' Motifs (' + filtered.secondary.length + ')</div>';
+          html += renderMotifItems(filtered.secondary);
+        }
+
+        list.innerHTML = html;
         bindMotifClicks();
       });
     }

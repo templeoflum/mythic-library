@@ -28,10 +28,22 @@ A guided experience that walks users through a MiroGlyph traversal, presenting c
 **Features:**
 - **Predefined Traversals**: 8 starter paths including "Shadow Spiral", "Mirror Journey", "Crisis Triangle"
 - **Step-by-Step Selection**: At each node, choose an archetype, entity, and motif
-- **Evidence-Based Filtering**: Motifs are filtered by Thompson category based on the node's evidence markers
+- **Evidence-Based Filtering**: Each node has two predetermined evidence markers (e.g., Being + Object). Motifs are filtered to Thompson categories that align with these markers and displayed in grouped sections.
 - **Nontion Pauses**: Special pause screens for the center point with reflection prompts
 - **Journey Persistence**: Save journeys to LocalStorage, export as JSON
 - **Surprise Me**: Random selections for serendipitous discovery
+
+**Evidence Marker System:**
+Each of the 18 nodes has a primary and secondary evidence marker that determines which Thompson Motif Index categories are structurally appropriate:
+
+| Marker | Name | Primary Thompson Categories |
+|--------|------|----------------------------|
+| O | Object | D (Magic), F (Marvels) |
+| A | Action | H (Tests), K (Deceptions), R (Captives), C (Tabu) |
+| Q | Quality | W (Traits), J (Wise/Foolish), U (Nature of Life), L (Reversal) |
+| B | Being | A (Mythological), B (Animals), E (The Dead), G (Ogres) |
+| F | Force | N (Chance/Fate), M (Ordaining Future), Q (Rewards), S (Cruelty) |
+| M | MetaSymbol | Z (Miscellaneous), V (Religion), U (Nature of Life) |
 
 **Flow:**
 1. Start Screen → Choose "Surprise Me" or select a predefined path
