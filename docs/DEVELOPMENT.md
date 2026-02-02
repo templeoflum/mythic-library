@@ -1344,4 +1344,162 @@ Implemented toggle between two valid spatial configurations:
 
 ---
 
-*Last updated: January 2026 (Phase 13 — Arc Lens Insight + Miroglyph Dual Orientation)*
+## Phase 14: Journey Mapper & Evidence Marker System
+
+### Evidence Marker Architecture
+
+Designed and implemented a structural encoding system for the 18 nodes:
+
+**Evidence Marker Types (6):**
+| Code | Name | Description |
+|------|------|-------------|
+| O | Object | Concrete things, artifacts |
+| A | Action | Verbs, movements, processes |
+| Q | Quality | Attributes, states, traits |
+| B | Being | Entities, characters, creatures |
+| F | Force | Energies, pressures, cosmic mechanisms |
+| M | MetaSymbol | Recursive patterns, symbolism |
+
+**Design Constraints:**
+1. **Primary markers** follow condition pattern: O, A, B, O, A, B
+   - Polarity partners (1↔4, 2↔5, 3↔6) share the same primary
+2. **Secondary markers** shift by arc with thematic alignment:
+   - D (Shadow) → Q (Quality): Shadow work is qualitative
+   - R (Mirror) → F (Force): Reflection involves force/tension
+   - E (Mythogenesis) → M (MetaSymbol): Myth-making is meta-symbolic
+3. **9 unique pairs**, each appearing exactly twice across 18 nodes
+4. **No pair repeats at the same condition**
+
+**Complete Node Evidence Marker Map:**
+```
+D1: O+Q   D2: A+F   D3: B+M   D4: O+F   D5: A+M   D6: B+Q
+R1: O+F   R2: A+M   R3: B+Q   R4: O+M   R5: A+Q   R6: B+F
+E1: O+M   E2: A+Q   E3: B+F   E4: O+Q   E5: A+F   E6: B+M
+```
+
+**Cross-Arc Threads:**
+```
+O+Q: D1 ↔ E4    A+F: D2 ↔ E5    B+M: D3 ↔ E6
+O+F: D4 ↔ R1    A+M: D5 ↔ R2    B+Q: D6 ↔ R3
+O+M: R4 ↔ E1    A+Q: R5 ↔ E2    B+F: R6 ↔ E3
+```
+
+### Node Templates
+
+Created comprehensive templates in `data/node_templates.json`:
+- Evocative names (e.g., D3 "The Echo Engine", R4 "The Reflective Artifact")
+- Guiding questions for each selection gate
+- Arc-condition thematic descriptions
+- Evidence marker → Thompson category filtering logic
+
+### Journey Mapper Application
+
+Built `journey.html` as a guided traversal experience:
+
+**Features:**
+- 8 predefined traversals (Shadow Spiral, Mirror Journey, Crisis Triangle, etc.)
+- Step-by-step selection: archetype → entity → motif → note
+- Evidence-based motif filtering using node markers
+- Nontion pause screens with reflection prompts
+- Journey persistence to LocalStorage
+- JSON export for sharing
+
+**Architecture:**
+```
+js/
+├── journey-app.js      # Boot sequence, hash routing
+├── journey-state.js    # State management, persistence
+├── journey-ui.js       # UI rendering, interactions
+└── journey-filters.js  # Motif filtering by evidence markers
+```
+
+---
+
+## Phase 15: Thompson Motif Index Expansion
+
+### Problem
+
+The Thompson Motif Index was severely incomplete:
+- Only 149 entries (0.3% of full 50,000+ index)
+- Missing 7 entire categories (B, C, J, P, U, W, X)
+- Remaining categories underrepresented (some with only 2-4 entries)
+
+### Solution
+
+Expanded the curated index in `scripts/motif/build_motif_index.py`:
+
+**Categories Added:**
+| Category | Name | Count | Focus |
+|----------|------|-------|-------|
+| B | Animals | 32 | Mythical animals, beast fables |
+| C | Tabu | 30 | Prohibitions, forbidden acts |
+| J | Wise and Foolish | 38 | Wisdom, cleverness, fools |
+| P | Society | 32 | Royalty, customs, social order |
+| U | Nature of Life | 15 | Truth, mortality, paradox |
+| W | Traits of Character | 27 | Virtues, vices, personality |
+| X | Humor | 19 | Jokes, absurdity, comic situations |
+
+**Categories Balanced:**
+| Category | Before | After |
+|----------|--------|-------|
+| E (The Dead) | 10 | 27 |
+| F (Marvels) | 13 | 27 |
+| G (Ogres) | 4 | 22 |
+| H (Tests) | 9 | 23 |
+| K (Deceptions) | 8 | 21 |
+| L (Reversal) | 2 | 19 |
+| M (Ordaining Future) | 3 | 21 |
+| N (Chance/Fate) | 2 | 19 |
+| Q (Rewards) | 4 | 25 |
+| R (Captives) | 3 | 21 |
+| S (Cruelty) | 4 | 21 |
+| T (Sex/Marriage) | 6 | 24 |
+| V (Religion) | 4 | 21 |
+| Z (Miscellaneous) | 4 | 22 |
+
+**Final Results:**
+- **Total motifs**: 149 → 579 (289% increase)
+- **Categories**: 16 → 23 (all Thompson categories represented)
+- **Distribution**: All categories have 15-54 entries for robust filtering
+
+### Evidence Marker → Thompson Category Mapping
+
+Created systematic mapping for Journey Mapper filtering:
+
+```
+O (Object)    → D (Magic), F (Marvels) | P, V
+A (Action)    → H (Tests), K (Deceptions), R (Captives), C (Tabu) | D, S
+Q (Quality)   → W (Traits), J (Wise/Foolish), U (Nature of Life), L (Reversal) | N, X
+B (Being)     → A (Mythological), B (Animals), E (The Dead), G (Ogres) | F, P
+F (Force)     → N (Chance/Fate), M (Ordaining Future), Q (Rewards), S (Cruelty) | D, L
+M (MetaSymbol)→ Z (Miscellaneous), V (Religion), U (Nature of Life) | T, X, A
+```
+
+---
+
+## Updated Metrics
+
+| Metric | Phase 13 | Phase 15 |
+|--------|----------|----------|
+| Thompson motifs | 149 | 579 |
+| Thompson categories | 16 | 23 |
+| Evidence markers | — | 6 types |
+| Node templates | — | 18 complete |
+| Predefined traversals | — | 8 paths |
+| Journey features | — | Full guided experience |
+
+---
+
+## Lessons Learned
+
+1. **Structural constraints create meaning**: The evidence marker system's constraints (polarity sharing, arc alignment, unique pairs) emerged from iterating on what creates coherent cross-arc threads.
+
+2. **Thematic alignment matters**: Arbitrary secondary patterns felt wrong; the D→Q, R→F, E→M alignment gives each arc its character.
+
+3. **Comprehensive reference > curated selection**: Initially thought 149 motifs was "enough" but missing categories created filtering dead zones.
+
+4. **Balance enables filtering**: Uneven category sizes (some had 4, others had 54) made evidence-based filtering unreliable.
+
+---
+
+*Last updated: February 2026 (Phase 15 — Thompson Index Expansion + Journey Mapper)*

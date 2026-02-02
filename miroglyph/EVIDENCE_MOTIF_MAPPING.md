@@ -288,7 +288,7 @@ M (MetaSymbol)→  Z, V, U        | T, X, A
 
 1. **At each node**, retrieve the (Primary, Secondary) evidence markers
 2. **Map to Thompson categories** using this document
-3. **Filter the 149 motifs** in the database by their Thompson code prefix
+3. **Filter the 579 motifs** in the database by their Thompson code prefix
 4. **Weight results** by:
    - Primary marker matches = highest weight
    - Secondary marker matches = medium weight
@@ -321,6 +321,40 @@ This mapping should satisfy:
 2. Every evidence marker has at least 2 primary Thompson categories
 3. The mapping reflects the semantic essence of each category
 4. The mapping enables meaningful filtering at all 18 nodes
+
+---
+
+## Thompson Index Coverage
+
+The Mythic Library contains 579 curated Thompson motifs across all 23 categories:
+
+| Category | Count | Primary Evidence Marker |
+|----------|-------|------------------------|
+| A (Mythological) | 54 | B (Being) |
+| B (Animals) | 32 | B (Being) |
+| C (Tabu) | 30 | A (Action) |
+| D (Magic) | 19 | O (Object) / A (Action) |
+| E (The Dead) | 27 | B (Being) |
+| F (Marvels) | 27 | O (Object) / B (Being) |
+| G (Ogres) | 22 | B (Being) |
+| H (Tests) | 23 | A (Action) |
+| J (Wise/Foolish) | 38 | Q (Quality) |
+| K (Deceptions) | 21 | A (Action) |
+| L (Reversal) | 19 | Q (Quality) |
+| M (Ordaining Future) | 21 | F (Force) |
+| N (Chance/Fate) | 19 | F (Force) |
+| P (Society) | 32 | O (Object) / B (Being) |
+| Q (Rewards) | 25 | F (Force) |
+| R (Captives) | 21 | A (Action) |
+| S (Cruelty) | 21 | F (Force) |
+| T (Sex/Marriage) | 24 | M (MetaSymbol) |
+| U (Nature of Life) | 15 | Q (Quality) / M (MetaSymbol) |
+| V (Religion) | 21 | M (MetaSymbol) / O (Object) |
+| W (Traits) | 27 | Q (Quality) |
+| X (Humor) | 19 | Q (Quality) / M (MetaSymbol) |
+| Z (Miscellaneous) | 22 | M (MetaSymbol) |
+
+All categories have 15+ entries for robust filtering at every node.
 
 ---
 

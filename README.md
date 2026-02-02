@@ -11,10 +11,10 @@ An empirical corpus of 132 public domain mythological texts across 32 traditions
 | Component | Scale |
 |-----------|-------|
 | Source texts | 132 across 32 traditions (822 MB raw corpus) |
-| Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 149 motifs |
+| Pattern database | 4,000 segments, 173 entities, 28,104 mentions, 579 motifs |
 | ACP archetypes | 997 across 60+ systems, 22 primordials, 8D coordinates (95% rich+) |
 | Validation | 10 tests across 5 tiers (A/B/C/D/E), core tiers PASS/PARTIAL |
-| Explorer | Browser-based Miroglyph with Atlas, Codex, and Chronicle views |
+| Explorer | Browser-based Miroglyph: Atlas, Codex, Chronicle views + Journey Mapper |
 
 ## Validation Results
 
@@ -80,10 +80,11 @@ mythic-library/
 │   ├── add_shadow_evolution.py         # Shadow/Evolution relationship expansion
 │   └── run.py                          # v1 validation (archived)
 ├── miroglyph/                          # Browser-based explorer
-│   ├── index.html                      # Main entry point
-│   ├── js/                             # Atlas, Codex, Chronicle views + workshop
+│   ├── index.html                      # Explorer: Atlas, Codex, Chronicle views
+│   ├── journey.html                    # Journey Mapper: guided traversal experience
+│   ├── js/                             # View controllers + journey modules
 │   ├── css/                            # View-specific stylesheets
-│   └── data/                           # Pre-exported JSON catalogs
+│   └── data/                           # Pre-exported JSON catalogs + node templates
 ├── scripts/
 │   ├── audit_reviewer.py              # CLI human audit reviewer
 │   ├── audit_reviewer.html            # Browser human audit reviewer
@@ -115,11 +116,18 @@ python -m validation.v2_run --full
 
 **Live version: [templeoflum.github.io/mythic-library](https://templeoflum.github.io/mythic-library/)**
 
-Or open `miroglyph/index.html` locally. Three views:
+Or open `miroglyph/index.html` locally. Two apps:
 
+**Explorer** (`index.html`) - Free-form exploration:
 - **Atlas**: 2D spectral projection of all 997 archetypes with axis-pair selection, zoom, and tooltip
 - **Codex**: Searchable catalog of archetypes, entities, and patterns with filter/sort
 - **Chronicle**: Narrative tracing across traditions with relationship visualization
+
+**Journey Mapper** (`journey.html`) - Guided traversal experience:
+- Step-by-step selection of archetype → entity → motif at each node
+- Evidence-based motif filtering using node markers
+- 8 predefined traversals or custom paths
+- Journey persistence and JSON export
 
 ### Review Audit Cases
 
@@ -245,7 +253,7 @@ SQLite at `data/mythic_patterns.db`:
 | `segments` | 4,000 | Structural units with full text |
 | `entities` | 173 | Canonical entity records (hero, deity, creature, place, concept) |
 | `entity_mentions` | 28,104 | Entity occurrences per segment |
-| `motifs` | 149 | Thompson Motif Index reference |
+| `motifs` | 579 | Thompson Motif Index (all 23 categories) |
 | `motif_tags` | 55,539 | Motif assignments with confidence |
 | `patterns` | 18 | Cross-cultural pattern definitions |
 | `segments_fts` | — | Full-text search index |

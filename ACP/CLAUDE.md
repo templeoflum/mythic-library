@@ -11,6 +11,12 @@ The **Archetypal Context Protocol** is a relational symbolic framework for catal
 **Broken References**: 109 remaining (down from 426)
 **Target**: ~1,200 archetypes for v1.0 release
 
+**Integration with Mythic Library:**
+- 159 library entities mapped to ACP archetypes
+- 579 Thompson motifs with evidence marker classification
+- Journey Mapper uses ACP coordinates for archetype affinity scoring
+- Evidence markers bridge ACP archetypes to Thompson motif categories
+
 ## Architecture (ORAS v2.0)
 
 The project uses the **Optimal Relational Archetype Schema (ORAS)** - a graph-based structure where archetypes are nodes and relationships are first-class citizens.

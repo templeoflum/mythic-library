@@ -7,6 +7,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added - Journey Mapper & Thompson Index Expansion
+
+**Journey Mapper (journey.html):**
+- New guided traversal experience for step-by-step mythic journeys
+- 8 predefined traversals: Shadow Spiral, Mirror Journey, Crisis Triangle, etc.
+- Step-by-step selection: archetype → entity → motif → note at each node
+- Evidence-based motif filtering using node evidence markers
+- Nontion pause screens with reflection prompts
+- Journey persistence to LocalStorage with JSON export
+- "Surprise Me" random selection for serendipitous discovery
+
+**Evidence Marker System:**
+- 18 node templates with predetermined evidence markers (Primary + Secondary)
+- 6 marker types: Object (O), Action (A), Quality (Q), Being (B), Force (F), MetaSymbol (M)
+- Primary markers by condition: O, A, B, O, A, B (polarity partners share same primary)
+- Secondary markers by arc with thematic alignment:
+  - D (Shadow) → Q (Quality): Shadow work is qualitative
+  - R (Mirror) → F (Force): Reflection involves force/tension
+  - E (Mythogenesis) → M (MetaSymbol): Myth-making is meta-symbolic
+- 9 unique evidence pairs, each appearing exactly twice across 18 nodes
+- Cross-arc structural threads connecting nodes with same pair
+
+**Thompson Motif Index Expansion:**
+- Total motifs: 149 → 579 (289% increase)
+- Categories: 16 → 23 (all Thompson categories now represented)
+- New categories added: B (Animals), C (Tabu), J (Wise/Foolish), P (Society), U (Nature of Life), W (Traits), X (Humor)
+- All categories balanced to 15-54 entries for robust filtering
+- Evidence marker → Thompson category mapping for contextual filtering
+
+**Node Templates:**
+- Complete templates for all 18 nodes in `data/node_templates.json`
+- Evocative names (e.g., D3 "The Echo Engine", R4 "The Reflective Artifact")
+- Guiding questions for each selection gate (archetype, entity, motif)
+- Arc-condition thematic descriptions
+- Evidence marker assignments with filtering logic
+
 ### Added - Database Completion & UI Improvements
 
 **ACP Archetype Expansion (997 total, +46):**

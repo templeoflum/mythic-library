@@ -81,7 +81,7 @@ Miroglyph supports two valid spatial configurations that can be toggled via the 
 | View | Purpose |
 |------|---------|
 | **Atlas** | Three-pane layout: Node Info (left) + Canvas with 19-node topology (center) + Traversal logging (right). Create and save paths, organize into groups. |
-| **Codex** | Browse catalog items. Sub-tabs: **Archetypes** (997 with 8D coordinates, primordials, relationships), **Entities** (159 mapped from Library, 14 unmapped places/concepts), **Motifs** (149 Thompson Index codes with pattern cross-refs). |
+| **Codex** | Browse catalog items. Sub-tabs: **Archetypes** (997 with 8D coordinates, primordials, relationships), **Entities** (159 mapped from Library, 14 unmapped places/concepts), **Motifs** (579 Thompson Index codes across all 23 categories). |
 | **Chronicle** | Analysis views. Sub-tabs: **Patterns** (18 cross-cultural patterns with mini-map), **Validation** (tier results with insights and audit cases). |
 
 ## Architecture
@@ -147,7 +147,7 @@ python scripts/export_explorer_data.py
 
 This script uses `UnifiedLoader`, `ACPLoader`, and `LibraryLoader` to consolidate data from:
 - ACP JSON-LD files (997 archetypes across 22 primordials)
-- SQLite mythic patterns database (173 entities, 4000 segments, 149 motifs)
+- SQLite mythic patterns database (173 entities, 4000 segments, 579 motifs)
 - Pre-computed outputs (node profiles, archetype affinities, validation results)
 
 ## Three-System Connection
@@ -158,8 +158,8 @@ Mythic Library          ACP                      Miroglyph
 ─────────────          ──────────────           ──────────────
 173 entities    →→→    997 archetypes    →→→    19 nodes
 4000 segments          8D coordinates           3 arcs × 6 conditions
-149 motifs             22 primordials           Traversal paths
-18 patterns            Relationships            Narrative topology
+579 motifs             22 primordials           Traversal paths
+18 patterns            Relationships            Evidence markers
 ```
 
 Entity Tracing follows the full chain: a library entity (e.g., Zeus) maps to an ACP archetype (arch:GR-ZEUS) via name matching, which maps to a Miroglyph node (E5) via Gaussian affinity scoring on 8D coordinates.

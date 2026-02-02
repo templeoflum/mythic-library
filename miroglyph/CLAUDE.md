@@ -206,7 +206,7 @@ miroglyph/
 
 ### Explorer Views
 - **Atlas**: Three-pane layout (Node Info | Canvas | Traversals) for path building
-- **Codex**: Catalog browsing with sub-tabs: Archetypes (996) | Entities (159 mapped, 14 unmapped) | Motifs (149)
+- **Codex**: Catalog browsing with sub-tabs: Archetypes (997) | Entities (159 mapped, 14 unmapped) | Motifs (579)
 - **Chronicle**: Analysis with sub-tabs: Patterns (18 with mini-map) | Validation (tiers + insights)
 
 ### Journey Mapper
@@ -373,6 +373,38 @@ Each arc begins (condition 1) with its thematically resonant secondary:
 | E6 | B | M | B+M | D3 |
 
 This creates 9 unique pairs, each appearing exactly twice across the 18 nodes, forming structural threads that connect nodes across arcs.
+
+## Thompson Motif Index
+
+The Thompson Motif Index serves as the motif vocabulary for Journey Mapper filtering. The library contains 579 curated entries across all 23 Thompson categories:
+
+| Category | Name | Count | Evidence Markers |
+|----------|------|-------|------------------|
+| A | Mythological Motifs | 54 | B (Being) |
+| B | Animals | 32 | B (Being) |
+| C | Tabu | 30 | A (Action) |
+| D | Magic | 19 | O (Object), A (Action) |
+| E | The Dead | 27 | B (Being) |
+| F | Marvels | 27 | O (Object), B (Being) |
+| G | Ogres | 22 | B (Being) |
+| H | Tests | 23 | A (Action) |
+| J | Wise and Foolish | 38 | Q (Quality) |
+| K | Deceptions | 21 | A (Action) |
+| L | Reversal of Fortune | 19 | Q (Quality) |
+| M | Ordaining the Future | 21 | F (Force) |
+| N | Chance and Fate | 19 | F (Force) |
+| P | Society | 32 | O (Object), B (Being) |
+| Q | Rewards and Punishments | 25 | F (Force) |
+| R | Captives and Fugitives | 21 | A (Action) |
+| S | Unnatural Cruelty | 21 | F (Force) |
+| T | Sex / Marriage | 24 | M (MetaSymbol) |
+| U | Nature of Life | 15 | Q (Quality), M (MetaSymbol) |
+| V | Religion | 21 | M (MetaSymbol), O (Object) |
+| W | Traits of Character | 27 | Q (Quality) |
+| X | Humor | 19 | Q (Quality), M (MetaSymbol) |
+| Z | Miscellaneous | 22 | M (MetaSymbol) |
+
+Source: `scripts/motif/build_motif_index.py` → `data/thompson_motif_index.json`
 
 ## Success Criteria
 
