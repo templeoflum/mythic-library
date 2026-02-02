@@ -141,10 +141,10 @@ Not emptiness as void, but emptiness as fertile ground.
 
 ### Polarity Pairs
 
-Within each arc, conditions form **polarity relationships**:
-- **1 ↔ 6**: Beginning ↔ Ending (Dawn ↔ Return)
-- **2 ↔ 5**: Engagement ↔ Revelation (Immersion ↔ Unveiling)
-- **3 ↔ 4**: Crisis ↔ Resolution (Crucible ↔ Alignment)
+Within each arc, conditions form **polarity relationships** (geometric opposites):
+- **1 ↔ 4**: Dawn ↔ Alignment (Beginning ↔ Balance)
+- **2 ↔ 5**: Immersion ↔ Unveiling (Engagement ↔ Revelation)
+- **3 ↔ 6**: Crucible ↔ Return (Crisis ↔ Integration)
 
 These create natural narrative arcs: D1 → ... → D6 is a journey from rupture to haunting.
 

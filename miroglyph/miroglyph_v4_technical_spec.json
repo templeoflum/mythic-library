@@ -432,42 +432,74 @@
     },
 
     "evidence_marker_system": {
-      "description": "Optional extension for symbolic depth",
-      "enabled": false,
+      "description": "Structural encoding system creating unique pairs across all 18 nodes",
+      "enabled": true,
       "categories": {
-        "O": "Object - concrete things, artifacts",
-        "A": "Action - verbs, movements, processes",
-        "Q": "Quality - attributes, states, characteristics",
-        "B": "Being - entities, characters, presences",
-        "F": "Force - energies, pressures, dynamics",
-        "M": "MetaSymbol - recursive, self-referential patterns"
+        "primary": {
+          "O": "Object - concrete things, artifacts",
+          "A": "Action - verbs, movements, processes",
+          "B": "Being - entities, characters, presences"
+        },
+        "secondary": {
+          "Q": "Quality - attributes, states, characteristics",
+          "F": "Force - energies, pressures, dynamics",
+          "M": "MetaSymbol - recursive, self-referential patterns"
+        }
       },
       "primary_by_condition": {
         "1": "O",
         "2": "A",
         "3": "B",
-        "4": "B",
+        "4": "O",
         "5": "A",
-        "6": "O"
+        "6": "B"
+      },
+      "secondary_by_arc": {
+        "D": ["Q", "F", "M", "F", "M", "Q"],
+        "R": ["F", "M", "Q", "M", "Q", "F"],
+        "E": ["M", "Q", "F", "Q", "F", "M"]
       },
       "secondary_by_node": {
         "D1": "Q", "R1": "F", "E1": "M",
-        "D2": "B", "R2": "Q", "E2": "F",
-        "D3": "O", "R3": "Q", "E3": "M",
-        "D4": "A", "R4": "B", "E4": "F",
-        "D5": "A", "R5": "O", "E5": "M",
-        "D6": "O", "R6": "A", "E6": "B"
+        "D2": "F", "R2": "M", "E2": "Q",
+        "D3": "M", "R3": "Q", "E3": "F",
+        "D4": "F", "R4": "M", "E4": "Q",
+        "D5": "M", "R5": "Q", "E5": "F",
+        "D6": "Q", "R6": "F", "E6": "M"
       },
-      "usage": "Each node has (Primary, Secondary) pair revealing structural relationships"
+      "complete_pairs": {
+        "D1": "O+Q", "D2": "A+F", "D3": "B+M", "D4": "O+F", "D5": "A+M", "D6": "B+Q",
+        "R1": "O+F", "R2": "A+M", "R3": "B+Q", "R4": "O+M", "R5": "A+Q", "R6": "B+F",
+        "E1": "O+M", "E2": "A+Q", "E3": "B+F", "E4": "O+Q", "E5": "A+F", "E6": "B+M"
+      },
+      "pair_threads": {
+        "description": "Each unique pair appears exactly twice, creating cross-arc structural threads",
+        "O+Q": ["D1", "E4"],
+        "A+F": ["D2", "E5"],
+        "B+M": ["D3", "E6"],
+        "O+F": ["D4", "R1"],
+        "A+M": ["D5", "R2"],
+        "B+Q": ["D6", "R3"],
+        "O+M": ["R4", "E1"],
+        "A+Q": ["R5", "E2"],
+        "B+F": ["R6", "E3"]
+      },
+      "arc_secondary_alignment": {
+        "description": "Each arc begins with its thematically aligned secondary at condition 1",
+        "D": {"home_secondary": "Q", "rationale": "Shadow work is qualitative - examining traits, attributes, states of being"},
+        "R": {"home_secondary": "F", "rationale": "Reflection involves force - vibrational pressure, energy of recognition, dynamic tension"},
+        "E": {"home_secondary": "M", "rationale": "Mythogenesis is meta-symbolic - recursive patterns, symbols generating symbols"}
+      },
+      "usage": "Each node has (Primary, Secondary) pair. 9 unique pairs appear twice each, never at the same condition. Primaries reflect polarity (partners share primary). Secondaries shift across arcs with thematic alignment."
     },
 
     "structural_relationships": {
       "polarity_pairs": {
-        "description": "Opposite conditions within same arc",
+        "description": "Opposite conditions within same arc (geometric opposites across hexagon)",
         "pairs": [
           {"condition_pair": [1, 4], "label": "Dawn ↔ Alignment", "arcs": ["D", "R", "E"]},
-          {"condition_pair": [2, 6], "label": "Immersion ↔ Return", "arcs": ["D", "R", "E"]},
-          {"condition_pair": [3, 5], "label": "Crucible ↔ Unveiling", "arcs": ["D", "R", "E"]}
+          {"condition_pair": [2, 5], "label": "Immersion ↔ Unveiling", "arcs": ["D", "R", "E"]},
+          {"condition_pair": [3, 6], "label": "Crucible ↔ Return", "arcs": ["D", "R", "E"]}
         ]
       },
       "condition_resonance": {

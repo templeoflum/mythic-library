@@ -91,7 +91,7 @@ The same topology, nested recursively. This honors how transformation actually w
 
 **Relationships should be provable, not just conceptual.**
 
-If D1 and D6 are polarity pairs, *how do you know?*  
+If D1 and D4 are polarity pairs, *how do you know?*  
 If D3, R3, E3 resonate, *what proves it?*
 
 The motif system creates **visible evidence**:

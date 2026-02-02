@@ -5,26 +5,55 @@
     {
       "node_id": "D1",
       "identity": {
-        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
-        "condition": {"code": 1, "primary": "Dawn", "secondary": "Initiation"},
+        "arc": {
+          "code": "D",
+          "primary": "Descent",
+          "secondary": "Shadow"
+        },
+        "condition": {
+          "code": 1,
+          "primary": "Dawn",
+          "secondary": "Initiation"
+        },
         "title": "The Catalyst Shard",
         "role": "The rupture that begins the spiral",
-        "tone": ["Fractured", "Volatile", "Initiating"]
+        "tone": [
+          "Fractured",
+          "Volatile",
+          "Initiating"
+        ]
       },
       "evidence_markers": {
         "primary": "O",
         "primary_name": "Object",
         "secondary": "Q",
         "secondary_name": "Quality",
-        "thompson_primary": ["D", "F"],
-        "thompson_secondary": ["W", "J", "U", "L"]
+        "thompson_primary": [
+          "D",
+          "F"
+        ],
+        "thompson_secondary": [
+          "W",
+          "J",
+          "U",
+          "L"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "D4",
         "polarity_label": "Dawn ↔ Alignment",
-        "condition_resonance": ["R1", "E1"],
+        "condition_resonance": [
+          "R1",
+          "E1"
+        ],
         "resonance_theme": "Initiation across all lenses",
-        "arc_siblings": ["D2", "D3", "D4", "D5", "D6"]
+        "arc_siblings": [
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "D6"
+        ]
       },
       "thematic_lens": {
         "combined": "Shadow Initiation",
@@ -44,26 +73,57 @@
     {
       "node_id": "D2",
       "identity": {
-        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
-        "condition": {"code": 2, "primary": "Immersion", "secondary": "Encounter"},
+        "arc": {
+          "code": "D",
+          "primary": "Descent",
+          "secondary": "Shadow"
+        },
+        "condition": {
+          "code": 2,
+          "primary": "Immersion",
+          "secondary": "Encounter"
+        },
         "title": "The Watcher Without Eyes",
         "role": "Surveillance without comprehension",
-        "tone": ["Haunting", "Detached", "Observing"]
+        "tone": [
+          "Haunting",
+          "Detached",
+          "Observing"
+        ]
       },
       "evidence_markers": {
         "primary": "A",
         "primary_name": "Action",
-        "secondary": "B",
-        "secondary_name": "Being",
-        "thompson_primary": ["H", "K", "R", "C"],
-        "thompson_secondary": ["A", "B", "E", "G"]
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": [
+          "H",
+          "K",
+          "R",
+          "C"
+        ],
+        "thompson_secondary": [
+          "N",
+          "M",
+          "Q",
+          "S"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "D5",
         "polarity_label": "Immersion ↔ Unveiling",
-        "condition_resonance": ["R2", "E2"],
+        "condition_resonance": [
+          "R2",
+          "E2"
+        ],
         "resonance_theme": "Encounter across all lenses",
-        "arc_siblings": ["D1", "D3", "D4", "D5", "D6"]
+        "arc_siblings": [
+          "D1",
+          "D3",
+          "D4",
+          "D5",
+          "D6"
+        ]
       },
       "thematic_lens": {
         "combined": "Shadow Encounter",
@@ -83,26 +143,56 @@
     {
       "node_id": "D3",
       "identity": {
-        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
-        "condition": {"code": 3, "primary": "Crucible", "secondary": "Crisis"},
+        "arc": {
+          "code": "D",
+          "primary": "Descent",
+          "secondary": "Shadow"
+        },
+        "condition": {
+          "code": 3,
+          "primary": "Crucible",
+          "secondary": "Crisis"
+        },
         "title": "The Echo Engine",
         "role": "The loop of collapse",
-        "tone": ["Mechanical", "Recursive", "Amplifying"]
+        "tone": [
+          "Mechanical",
+          "Recursive",
+          "Amplifying"
+        ]
       },
       "evidence_markers": {
         "primary": "B",
         "primary_name": "Being",
-        "secondary": "O",
-        "secondary_name": "Object",
-        "thompson_primary": ["A", "B", "E", "G"],
-        "thompson_secondary": ["D", "F"]
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": [
+          "A",
+          "B",
+          "E",
+          "G"
+        ],
+        "thompson_secondary": [
+          "Z",
+          "V",
+          "U"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "D4",
-        "polarity_label": "Crucible ↔ Alignment",
-        "condition_resonance": ["R3", "E3"],
+        "polarity_partner": "D6",
+        "polarity_label": "Crucible ↔ Return",
+        "condition_resonance": [
+          "R3",
+          "E3"
+        ],
         "resonance_theme": "Crisis across all lenses",
-        "arc_siblings": ["D1", "D2", "D4", "D5", "D6"]
+        "arc_siblings": [
+          "D1",
+          "D2",
+          "D4",
+          "D5",
+          "D6"
+        ]
       },
       "thematic_lens": {
         "combined": "Shadow Crisis",
@@ -122,26 +212,55 @@
     {
       "node_id": "D4",
       "identity": {
-        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
-        "condition": {"code": 4, "primary": "Alignment", "secondary": "Harmony"},
+        "arc": {
+          "code": "D",
+          "primary": "Descent",
+          "secondary": "Shadow"
+        },
+        "condition": {
+          "code": 4,
+          "primary": "Alignment",
+          "secondary": "Harmony"
+        },
         "title": "The Idol of Symmetry",
         "role": "False coherence",
-        "tone": ["Still", "Entrancing", "Deceptive"]
+        "tone": [
+          "Still",
+          "Entrancing",
+          "Deceptive"
+        ]
       },
       "evidence_markers": {
-        "primary": "B",
-        "primary_name": "Being",
-        "secondary": "A",
-        "secondary_name": "Action",
-        "thompson_primary": ["A", "B", "E", "G"],
-        "thompson_secondary": ["H", "K", "R", "C"]
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": [
+          "D",
+          "F"
+        ],
+        "thompson_secondary": [
+          "N",
+          "M",
+          "Q",
+          "S"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "D3",
-        "polarity_label": "Alignment ↔ Crucible",
-        "condition_resonance": ["R4", "E4"],
+        "polarity_partner": "D1",
+        "polarity_label": "Alignment ↔ Dawn",
+        "condition_resonance": [
+          "R4",
+          "E4"
+        ],
         "resonance_theme": "Harmony across all lenses",
-        "arc_siblings": ["D1", "D2", "D3", "D5", "D6"]
+        "arc_siblings": [
+          "D1",
+          "D2",
+          "D3",
+          "D5",
+          "D6"
+        ]
       },
       "thematic_lens": {
         "combined": "Shadow Harmony",
@@ -161,26 +280,56 @@
     {
       "node_id": "D5",
       "identity": {
-        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
-        "condition": {"code": 5, "primary": "Unveiling", "secondary": "Wisdom"},
+        "arc": {
+          "code": "D",
+          "primary": "Descent",
+          "secondary": "Shadow"
+        },
+        "condition": {
+          "code": 5,
+          "primary": "Unveiling",
+          "secondary": "Wisdom"
+        },
         "title": "The Archivist of Shame",
         "role": "Bearer of memory scars",
-        "tone": ["Heavy", "Reverent", "Recording"]
+        "tone": [
+          "Heavy",
+          "Reverent",
+          "Recording"
+        ]
       },
       "evidence_markers": {
         "primary": "A",
         "primary_name": "Action",
-        "secondary": "A",
-        "secondary_name": "Action",
-        "thompson_primary": ["H", "K", "R", "C"],
-        "thompson_secondary": ["H", "K", "R", "C"]
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": [
+          "H",
+          "K",
+          "R",
+          "C"
+        ],
+        "thompson_secondary": [
+          "Z",
+          "V",
+          "U"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "D2",
         "polarity_label": "Unveiling ↔ Immersion",
-        "condition_resonance": ["R5", "E5"],
+        "condition_resonance": [
+          "R5",
+          "E5"
+        ],
         "resonance_theme": "Wisdom across all lenses",
-        "arc_siblings": ["D1", "D2", "D3", "D4", "D6"]
+        "arc_siblings": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D6"
+        ]
       },
       "thematic_lens": {
         "combined": "Shadow Wisdom",
@@ -200,26 +349,57 @@
     {
       "node_id": "D6",
       "identity": {
-        "arc": {"code": "D", "primary": "Descent", "secondary": "Shadow"},
-        "condition": {"code": 6, "primary": "Return", "secondary": "Integration"},
+        "arc": {
+          "code": "D",
+          "primary": "Descent",
+          "secondary": "Shadow"
+        },
+        "condition": {
+          "code": 6,
+          "primary": "Return",
+          "secondary": "Integration"
+        },
         "title": "The Haunting",
         "role": "That which returns unintegrated",
-        "tone": ["Ghosted", "Enduring", "Unresolved"]
+        "tone": [
+          "Ghosted",
+          "Enduring",
+          "Unresolved"
+        ]
       },
       "evidence_markers": {
-        "primary": "O",
-        "primary_name": "Object",
-        "secondary": "O",
-        "secondary_name": "Object",
-        "thompson_primary": ["D", "F"],
-        "thompson_secondary": ["D", "F"]
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": [
+          "A",
+          "B",
+          "E",
+          "G"
+        ],
+        "thompson_secondary": [
+          "W",
+          "J",
+          "U",
+          "L"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "D1",
-        "polarity_label": "Return ↔ Dawn",
-        "condition_resonance": ["R6", "E6"],
+        "polarity_partner": "D3",
+        "polarity_label": "Return ↔ Crucible",
+        "condition_resonance": [
+          "R6",
+          "E6"
+        ],
         "resonance_theme": "Integration across all lenses",
-        "arc_siblings": ["D1", "D2", "D3", "D4", "D5"]
+        "arc_siblings": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ]
       },
       "thematic_lens": {
         "combined": "Shadow Integration",
@@ -239,26 +419,55 @@
     {
       "node_id": "R1",
       "identity": {
-        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
-        "condition": {"code": 1, "primary": "Dawn", "secondary": "Initiation"},
+        "arc": {
+          "code": "R",
+          "primary": "Resonance",
+          "secondary": "Mirror"
+        },
+        "condition": {
+          "code": 1,
+          "primary": "Dawn",
+          "secondary": "Initiation"
+        },
         "title": "The Welcomer of Echoes",
         "role": "Opens the field to resonance",
-        "tone": ["Gentle", "Fluid", "Receiving"]
+        "tone": [
+          "Gentle",
+          "Fluid",
+          "Receiving"
+        ]
       },
       "evidence_markers": {
         "primary": "O",
         "primary_name": "Object",
         "secondary": "F",
         "secondary_name": "Force",
-        "thompson_primary": ["D", "F"],
-        "thompson_secondary": ["N", "M", "Q", "S"]
+        "thompson_primary": [
+          "D",
+          "F"
+        ],
+        "thompson_secondary": [
+          "N",
+          "M",
+          "Q",
+          "S"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "R4",
         "polarity_label": "Dawn ↔ Alignment",
-        "condition_resonance": ["D1", "E1"],
+        "condition_resonance": [
+          "D1",
+          "E1"
+        ],
         "resonance_theme": "Initiation across all lenses",
-        "arc_siblings": ["R2", "R3", "R4", "R5", "R6"]
+        "arc_siblings": [
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mirror Initiation",
@@ -278,26 +487,56 @@
     {
       "node_id": "R2",
       "identity": {
-        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
-        "condition": {"code": 2, "primary": "Immersion", "secondary": "Encounter"},
+        "arc": {
+          "code": "R",
+          "primary": "Resonance",
+          "secondary": "Mirror"
+        },
+        "condition": {
+          "code": 2,
+          "primary": "Immersion",
+          "secondary": "Encounter"
+        },
         "title": "The Reflector of Tension",
         "role": "Mirrors the inner divide",
-        "tone": ["Neutral", "Lucid", "Revealing"]
+        "tone": [
+          "Neutral",
+          "Lucid",
+          "Revealing"
+        ]
       },
       "evidence_markers": {
         "primary": "A",
         "primary_name": "Action",
-        "secondary": "Q",
-        "secondary_name": "Quality",
-        "thompson_primary": ["H", "K", "R", "C"],
-        "thompson_secondary": ["W", "J", "U", "L"]
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": [
+          "H",
+          "K",
+          "R",
+          "C"
+        ],
+        "thompson_secondary": [
+          "Z",
+          "V",
+          "U"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "R5",
         "polarity_label": "Immersion ↔ Unveiling",
-        "condition_resonance": ["D2", "E2"],
+        "condition_resonance": [
+          "D2",
+          "E2"
+        ],
         "resonance_theme": "Encounter across all lenses",
-        "arc_siblings": ["R1", "R3", "R4", "R5", "R6"]
+        "arc_siblings": [
+          "R1",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mirror Encounter",
@@ -317,26 +556,57 @@
     {
       "node_id": "R3",
       "identity": {
-        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
-        "condition": {"code": 3, "primary": "Crucible", "secondary": "Crisis"},
+        "arc": {
+          "code": "R",
+          "primary": "Resonance",
+          "secondary": "Mirror"
+        },
+        "condition": {
+          "code": 3,
+          "primary": "Crucible",
+          "secondary": "Crisis"
+        },
         "title": "The Mirror-Kin",
         "role": "Embodied reflection",
-        "tone": ["Compassionate", "Unnerving", "Mirroring"]
+        "tone": [
+          "Compassionate",
+          "Unnerving",
+          "Mirroring"
+        ]
       },
       "evidence_markers": {
         "primary": "B",
         "primary_name": "Being",
         "secondary": "Q",
         "secondary_name": "Quality",
-        "thompson_primary": ["A", "B", "E", "G"],
-        "thompson_secondary": ["W", "J", "U", "L"]
+        "thompson_primary": [
+          "A",
+          "B",
+          "E",
+          "G"
+        ],
+        "thompson_secondary": [
+          "W",
+          "J",
+          "U",
+          "L"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "R4",
-        "polarity_label": "Crucible ↔ Alignment",
-        "condition_resonance": ["D3", "E3"],
+        "polarity_partner": "R6",
+        "polarity_label": "Crucible ↔ Return",
+        "condition_resonance": [
+          "D3",
+          "E3"
+        ],
         "resonance_theme": "Crisis across all lenses",
-        "arc_siblings": ["R1", "R2", "R4", "R5", "R6"]
+        "arc_siblings": [
+          "R1",
+          "R2",
+          "R4",
+          "R5",
+          "R6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mirror Crisis",
@@ -356,26 +626,54 @@
     {
       "node_id": "R4",
       "identity": {
-        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
-        "condition": {"code": 4, "primary": "Alignment", "secondary": "Harmony"},
+        "arc": {
+          "code": "R",
+          "primary": "Resonance",
+          "secondary": "Mirror"
+        },
+        "condition": {
+          "code": 4,
+          "primary": "Alignment",
+          "secondary": "Harmony"
+        },
         "title": "The Integrator of Dissonance",
         "role": "Holds polarity",
-        "tone": ["Stabilizing", "Vibrating", "Balancing"]
+        "tone": [
+          "Stabilizing",
+          "Vibrating",
+          "Balancing"
+        ]
       },
       "evidence_markers": {
-        "primary": "B",
-        "primary_name": "Being",
-        "secondary": "B",
-        "secondary_name": "Being",
-        "thompson_primary": ["A", "B", "E", "G"],
-        "thompson_secondary": ["A", "B", "E", "G"]
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": [
+          "D",
+          "F"
+        ],
+        "thompson_secondary": [
+          "Z",
+          "V",
+          "U"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "R3",
-        "polarity_label": "Alignment ↔ Crucible",
-        "condition_resonance": ["D4", "E4"],
+        "polarity_partner": "R1",
+        "polarity_label": "Alignment ↔ Dawn",
+        "condition_resonance": [
+          "D4",
+          "E4"
+        ],
         "resonance_theme": "Harmony across all lenses",
-        "arc_siblings": ["R1", "R2", "R3", "R5", "R6"]
+        "arc_siblings": [
+          "R1",
+          "R2",
+          "R3",
+          "R5",
+          "R6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mirror Harmony",
@@ -395,26 +693,57 @@
     {
       "node_id": "R5",
       "identity": {
-        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
-        "condition": {"code": 5, "primary": "Unveiling", "secondary": "Wisdom"},
+        "arc": {
+          "code": "R",
+          "primary": "Resonance",
+          "secondary": "Mirror"
+        },
+        "condition": {
+          "code": 5,
+          "primary": "Unveiling",
+          "secondary": "Wisdom"
+        },
         "title": "The Rememberer",
         "role": "Keeper of the spiral",
-        "tone": ["Ancient", "Warm", "Recalling"]
+        "tone": [
+          "Ancient",
+          "Warm",
+          "Recalling"
+        ]
       },
       "evidence_markers": {
         "primary": "A",
         "primary_name": "Action",
-        "secondary": "O",
-        "secondary_name": "Object",
-        "thompson_primary": ["H", "K", "R", "C"],
-        "thompson_secondary": ["D", "F"]
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": [
+          "H",
+          "K",
+          "R",
+          "C"
+        ],
+        "thompson_secondary": [
+          "W",
+          "J",
+          "U",
+          "L"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "R2",
         "polarity_label": "Unveiling ↔ Immersion",
-        "condition_resonance": ["D5", "E5"],
+        "condition_resonance": [
+          "D5",
+          "E5"
+        ],
         "resonance_theme": "Wisdom across all lenses",
-        "arc_siblings": ["R1", "R2", "R3", "R4", "R6"]
+        "arc_siblings": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mirror Wisdom",
@@ -434,26 +763,57 @@
     {
       "node_id": "R6",
       "identity": {
-        "arc": {"code": "R", "primary": "Resonance", "secondary": "Mirror"},
-        "condition": {"code": 6, "primary": "Return", "secondary": "Integration"},
+        "arc": {
+          "code": "R",
+          "primary": "Resonance",
+          "secondary": "Mirror"
+        },
+        "condition": {
+          "code": 6,
+          "primary": "Return",
+          "secondary": "Integration"
+        },
         "title": "The Resonator",
         "role": "The tone of alignment",
-        "tone": ["Clear", "Harmonic", "Crystallizing"]
+        "tone": [
+          "Clear",
+          "Harmonic",
+          "Crystallizing"
+        ]
       },
       "evidence_markers": {
-        "primary": "O",
-        "primary_name": "Object",
-        "secondary": "A",
-        "secondary_name": "Action",
-        "thompson_primary": ["D", "F"],
-        "thompson_secondary": ["H", "K", "R", "C"]
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": [
+          "A",
+          "B",
+          "E",
+          "G"
+        ],
+        "thompson_secondary": [
+          "N",
+          "M",
+          "Q",
+          "S"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "R1",
-        "polarity_label": "Return ↔ Dawn",
-        "condition_resonance": ["D6", "E6"],
+        "polarity_partner": "R3",
+        "polarity_label": "Return ↔ Crucible",
+        "condition_resonance": [
+          "D6",
+          "E6"
+        ],
         "resonance_theme": "Integration across all lenses",
-        "arc_siblings": ["R1", "R2", "R3", "R4", "R5"]
+        "arc_siblings": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ]
       },
       "thematic_lens": {
         "combined": "Mirror Integration",
@@ -473,26 +833,54 @@
     {
       "node_id": "E1",
       "identity": {
-        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
-        "condition": {"code": 1, "primary": "Dawn", "secondary": "Initiation"},
+        "arc": {
+          "code": "E",
+          "primary": "Emergence",
+          "secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 1,
+          "primary": "Dawn",
+          "secondary": "Initiation"
+        },
         "title": "The Seedbearer of Stillness",
         "role": "Holds potential in quiet",
-        "tone": ["Grounded", "Silent", "Encoding"]
+        "tone": [
+          "Grounded",
+          "Silent",
+          "Encoding"
+        ]
       },
       "evidence_markers": {
         "primary": "O",
         "primary_name": "Object",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
-        "thompson_primary": ["D", "F"],
-        "thompson_secondary": ["Z", "V", "U"]
+        "thompson_primary": [
+          "D",
+          "F"
+        ],
+        "thompson_secondary": [
+          "Z",
+          "V",
+          "U"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "E4",
         "polarity_label": "Dawn ↔ Alignment",
-        "condition_resonance": ["D1", "R1"],
+        "condition_resonance": [
+          "D1",
+          "R1"
+        ],
         "resonance_theme": "Initiation across all lenses",
-        "arc_siblings": ["E2", "E3", "E4", "E5", "E6"]
+        "arc_siblings": [
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mythogenesis Initiation",
@@ -512,26 +900,57 @@
     {
       "node_id": "E2",
       "identity": {
-        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
-        "condition": {"code": 2, "primary": "Immersion", "secondary": "Encounter"},
+        "arc": {
+          "code": "E",
+          "primary": "Emergence",
+          "secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 2,
+          "primary": "Immersion",
+          "secondary": "Encounter"
+        },
         "title": "The Harmonizer of the Lattice",
         "role": "Balances frequencies",
-        "tone": ["Interwoven", "Steady", "Rhythmic"]
+        "tone": [
+          "Interwoven",
+          "Steady",
+          "Rhythmic"
+        ]
       },
       "evidence_markers": {
         "primary": "A",
         "primary_name": "Action",
-        "secondary": "F",
-        "secondary_name": "Force",
-        "thompson_primary": ["H", "K", "R", "C"],
-        "thompson_secondary": ["N", "M", "Q", "S"]
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": [
+          "H",
+          "K",
+          "R",
+          "C"
+        ],
+        "thompson_secondary": [
+          "W",
+          "J",
+          "U",
+          "L"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "E5",
         "polarity_label": "Immersion ↔ Unveiling",
-        "condition_resonance": ["D2", "R2"],
+        "condition_resonance": [
+          "D2",
+          "R2"
+        ],
         "resonance_theme": "Encounter across all lenses",
-        "arc_siblings": ["E1", "E3", "E4", "E5", "E6"]
+        "arc_siblings": [
+          "E1",
+          "E3",
+          "E4",
+          "E5",
+          "E6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mythogenesis Encounter",
@@ -551,26 +970,57 @@
     {
       "node_id": "E3",
       "identity": {
-        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
-        "condition": {"code": 3, "primary": "Crucible", "secondary": "Crisis"},
+        "arc": {
+          "code": "E",
+          "primary": "Emergence",
+          "secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 3,
+          "primary": "Crucible",
+          "secondary": "Crisis"
+        },
         "title": "The Flame of Synthesis",
         "role": "Fusion point",
-        "tone": ["Intense", "Luminous", "Transforming"]
+        "tone": [
+          "Intense",
+          "Luminous",
+          "Transforming"
+        ]
       },
       "evidence_markers": {
         "primary": "B",
         "primary_name": "Being",
-        "secondary": "M",
-        "secondary_name": "MetaSymbol",
-        "thompson_primary": ["A", "B", "E", "G"],
-        "thompson_secondary": ["Z", "V", "U"]
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": [
+          "A",
+          "B",
+          "E",
+          "G"
+        ],
+        "thompson_secondary": [
+          "N",
+          "M",
+          "Q",
+          "S"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "E4",
-        "polarity_label": "Crucible ↔ Alignment",
-        "condition_resonance": ["D3", "R3"],
+        "polarity_partner": "E6",
+        "polarity_label": "Crucible ↔ Return",
+        "condition_resonance": [
+          "D3",
+          "R3"
+        ],
         "resonance_theme": "Crisis across all lenses",
-        "arc_siblings": ["E1", "E2", "E4", "E5", "E6"]
+        "arc_siblings": [
+          "E1",
+          "E2",
+          "E4",
+          "E5",
+          "E6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mythogenesis Crisis",
@@ -590,26 +1040,55 @@
     {
       "node_id": "E4",
       "identity": {
-        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
-        "condition": {"code": 4, "primary": "Alignment", "secondary": "Harmony"},
+        "arc": {
+          "code": "E",
+          "primary": "Emergence",
+          "secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 4,
+          "primary": "Alignment",
+          "secondary": "Harmony"
+        },
         "title": "The Lattice Keeper",
         "role": "Sustains the pattern",
-        "tone": ["Structured", "Graceful", "Maintaining"]
+        "tone": [
+          "Structured",
+          "Graceful",
+          "Maintaining"
+        ]
       },
       "evidence_markers": {
-        "primary": "B",
-        "primary_name": "Being",
-        "secondary": "F",
-        "secondary_name": "Force",
-        "thompson_primary": ["A", "B", "E", "G"],
-        "thompson_secondary": ["N", "M", "Q", "S"]
+        "primary": "O",
+        "primary_name": "Object",
+        "secondary": "Q",
+        "secondary_name": "Quality",
+        "thompson_primary": [
+          "D",
+          "F"
+        ],
+        "thompson_secondary": [
+          "W",
+          "J",
+          "U",
+          "L"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "E3",
-        "polarity_label": "Alignment ↔ Crucible",
-        "condition_resonance": ["D4", "R4"],
+        "polarity_partner": "E1",
+        "polarity_label": "Alignment ↔ Dawn",
+        "condition_resonance": [
+          "D4",
+          "R4"
+        ],
         "resonance_theme": "Harmony across all lenses",
-        "arc_siblings": ["E1", "E2", "E3", "E5", "E6"]
+        "arc_siblings": [
+          "E1",
+          "E2",
+          "E3",
+          "E5",
+          "E6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mythogenesis Harmony",
@@ -629,26 +1108,57 @@
     {
       "node_id": "E5",
       "identity": {
-        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
-        "condition": {"code": 5, "primary": "Unveiling", "secondary": "Wisdom"},
+        "arc": {
+          "code": "E",
+          "primary": "Emergence",
+          "secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 5,
+          "primary": "Unveiling",
+          "secondary": "Wisdom"
+        },
         "title": "The Dream Spore",
         "role": "Memory made present",
-        "tone": ["Ethereal", "Nurturing", "Seeding"]
+        "tone": [
+          "Ethereal",
+          "Nurturing",
+          "Seeding"
+        ]
       },
       "evidence_markers": {
         "primary": "A",
         "primary_name": "Action",
-        "secondary": "M",
-        "secondary_name": "MetaSymbol",
-        "thompson_primary": ["H", "K", "R", "C"],
-        "thompson_secondary": ["Z", "V", "U"]
+        "secondary": "F",
+        "secondary_name": "Force",
+        "thompson_primary": [
+          "H",
+          "K",
+          "R",
+          "C"
+        ],
+        "thompson_secondary": [
+          "N",
+          "M",
+          "Q",
+          "S"
+        ]
       },
       "structural_relationships": {
         "polarity_partner": "E2",
         "polarity_label": "Unveiling ↔ Immersion",
-        "condition_resonance": ["D5", "R5"],
+        "condition_resonance": [
+          "D5",
+          "R5"
+        ],
         "resonance_theme": "Wisdom across all lenses",
-        "arc_siblings": ["E1", "E2", "E3", "E4", "E6"]
+        "arc_siblings": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E6"
+        ]
       },
       "thematic_lens": {
         "combined": "Mythogenesis Wisdom",
@@ -668,26 +1178,56 @@
     {
       "node_id": "E6",
       "identity": {
-        "arc": {"code": "E", "primary": "Emergence", "secondary": "Mythogenesis"},
-        "condition": {"code": 6, "primary": "Return", "secondary": "Integration"},
+        "arc": {
+          "code": "E",
+          "primary": "Emergence",
+          "secondary": "Mythogenesis"
+        },
+        "condition": {
+          "code": 6,
+          "primary": "Return",
+          "secondary": "Integration"
+        },
         "title": "The Symphony",
         "role": "Culmination of becoming",
-        "tone": ["Unified", "Ecstatic", "Dispersing"]
+        "tone": [
+          "Unified",
+          "Ecstatic",
+          "Dispersing"
+        ]
       },
       "evidence_markers": {
-        "primary": "O",
-        "primary_name": "Object",
-        "secondary": "B",
-        "secondary_name": "Being",
-        "thompson_primary": ["D", "F"],
-        "thompson_secondary": ["A", "B", "E", "G"]
+        "primary": "B",
+        "primary_name": "Being",
+        "secondary": "M",
+        "secondary_name": "MetaSymbol",
+        "thompson_primary": [
+          "A",
+          "B",
+          "E",
+          "G"
+        ],
+        "thompson_secondary": [
+          "Z",
+          "V",
+          "U"
+        ]
       },
       "structural_relationships": {
-        "polarity_partner": "E1",
-        "polarity_label": "Return ↔ Dawn",
-        "condition_resonance": ["D6", "R6"],
+        "polarity_partner": "E3",
+        "polarity_label": "Return ↔ Crucible",
+        "condition_resonance": [
+          "D6",
+          "R6"
+        ],
         "resonance_theme": "Integration across all lenses",
-        "arc_siblings": ["E1", "E2", "E3", "E4", "E5"]
+        "arc_siblings": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
       },
       "thematic_lens": {
         "combined": "Mythogenesis Integration",
@@ -710,7 +1250,11 @@
     "identity": {
       "display_name": "Nontion",
       "role": "The unobserved, the pause, integration through absence",
-      "tone": ["Still", "Void", "Generative"],
+      "tone": [
+        "Still",
+        "Void",
+        "Generative"
+      ],
       "is_node": false,
       "is_traversable": true
     },
@@ -731,11 +1275,75 @@
     "selection_prompts": null
   },
   "thompson_mapping": {
-    "O": {"primary": ["D", "F"], "secondary": ["P", "V"]},
-    "A": {"primary": ["H", "K", "R", "C"], "secondary": ["D", "S"]},
-    "Q": {"primary": ["W", "J", "U", "L"], "secondary": ["N", "X"]},
-    "B": {"primary": ["A", "B", "E", "G"], "secondary": ["F", "P"]},
-    "F": {"primary": ["N", "M", "Q", "S"], "secondary": ["D", "L"]},
-    "M": {"primary": ["Z", "V", "U"], "secondary": ["T", "X", "A"]}
+    "O": {
+      "primary": [
+        "D",
+        "F"
+      ],
+      "secondary": [
+        "P",
+        "V"
+      ]
+    },
+    "A": {
+      "primary": [
+        "H",
+        "K",
+        "R",
+        "C"
+      ],
+      "secondary": [
+        "D",
+        "S"
+      ]
+    },
+    "B": {
+      "primary": [
+        "A",
+        "B",
+        "E",
+        "G"
+      ],
+      "secondary": [
+        "F",
+        "P"
+      ]
+    },
+    "Q": {
+      "primary": [
+        "W",
+        "J",
+        "U",
+        "L"
+      ],
+      "secondary": [
+        "N",
+        "X"
+      ]
+    },
+    "F": {
+      "primary": [
+        "N",
+        "M",
+        "Q",
+        "S"
+      ],
+      "secondary": [
+        "D",
+        "L"
+      ]
+    },
+    "M": {
+      "primary": [
+        "Z",
+        "V",
+        "U"
+      ],
+      "secondary": [
+        "T",
+        "X",
+        "A"
+      ]
+    }
   }
 }

@@ -287,7 +287,7 @@
 
     // Polarity (opposite condition in same arc)
     if (!isNontion && node.condition) {
-      var polarityMap = { 1: 6, 2: 5, 3: 4, 4: 3, 5: 2, 6: 1 };
+      var polarityMap = { 1: 4, 2: 5, 3: 6, 4: 1, 5: 2, 6: 3 };
       var polarCondition = polarityMap[node.condition.code];
       if (polarCondition) {
         var polarNodeId = node.arc.code + polarCondition;

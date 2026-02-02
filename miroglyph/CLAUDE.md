@@ -90,7 +90,7 @@ Both configurations are mythologically valid lenses:
 **What stays fixed:**
 - Resonance (R) is always the middle ring - the threshold, the mirror
 - Nontion (∅) is always the center - the pause, the reset
-- Polarity pairs (1↔6, 2↔5, 3↔4) work identically in both
+- Polarity pairs (1↔4, 2↔5, 3↔6) work identically in both
 - Condition resonance (D1/R1/E1) works identically in both
 
 **Toggle:** Settings menu (gear icon) → "Orientation: Standard/Inverted"
@@ -148,9 +148,9 @@ Same topology applies at any zoom level: beat, scene, chapter, book
 ## Structural Relationships
 
 ### Polarity Pairs (within same arc)
-- 1 ↔ 6: Dawn ↔ Return
+- 1 ↔ 4: Dawn ↔ Alignment
 - 2 ↔ 5: Immersion ↔ Unveiling
-- 3 ↔ 4: Crucible ↔ Alignment
+- 3 ↔ 6: Crucible ↔ Return
 
 ### Condition Resonance (same condition across arcs)
 - D1, R1, E1 = Initiation across all lenses
@@ -330,12 +330,49 @@ Each node has two predetermined evidence markers (Primary + Secondary) that defi
 | M | MetaSymbol | Recursive patterns | Z (Miscellaneous), V (Religion), U (Nature of Life) |
 
 **How it works:**
-1. Each node template defines a primary and secondary marker (e.g., D3 has Being + Object)
+1. Each node template defines a primary and secondary marker (e.g., D3 has Being + MetaSymbol)
 2. These markers map to specific Thompson Motif Index categories
 3. In Journey Mapper, motifs are filtered to only show those matching the node's markers
 4. Motifs are grouped by which marker type they align with (primary or secondary)
 
-Primary marker is determined by condition; secondary varies by arc. This creates structural relationships where polarity pairs and condition resonance become visible through shared evidence markers.
+**Primary Markers (by condition):**
+Conditions 1-6 follow pattern: O, A, B, O, A, B
+- This means polarity partners (1↔4, 2↔5, 3↔6) share the same primary marker
+
+**Secondary Markers (by arc, shifted pattern):**
+- D arc: Q, F, M, F, M, Q
+- R arc: F, M, Q, M, Q, F
+- E arc: M, Q, F, Q, F, M
+
+**Arc-Secondary Thematic Alignment:**
+Each arc begins (condition 1) with its thematically resonant secondary:
+- **D (Shadow) → Q (Quality)**: Shadow work is *qualitative* - examining traits, attributes, states
+- **R (Mirror) → F (Force)**: Reflection involves *force* - vibrational pressure, dynamic tension
+- **E (Mythogenesis) → M (MetaSymbol)**: Myth-making is *meta-symbolic* - recursive patterns
+
+**Complete Node Evidence Marker Map:**
+| Node | Primary | Secondary | Pair | Shared With |
+|------|---------|-----------|------|-------------|
+| D1 | O | Q | O+Q | E4 |
+| D2 | A | F | A+F | E5 |
+| D3 | B | M | B+M | E6 |
+| D4 | O | F | O+F | R1 |
+| D5 | A | M | A+M | R2 |
+| D6 | B | Q | B+Q | R3 |
+| R1 | O | F | O+F | D4 |
+| R2 | A | M | A+M | D5 |
+| R3 | B | Q | B+Q | D6 |
+| R4 | O | M | O+M | E1 |
+| R5 | A | Q | A+Q | E2 |
+| R6 | B | F | B+F | E3 |
+| E1 | O | M | O+M | R4 |
+| E2 | A | Q | A+Q | R5 |
+| E3 | B | F | B+F | R6 |
+| E4 | O | Q | O+Q | D1 |
+| E5 | A | F | A+F | D2 |
+| E6 | B | M | B+M | D3 |
+
+This creates 9 unique pairs, each appearing exactly twice across the 18 nodes, forming structural threads that connect nodes across arcs.
 
 ## Success Criteria
 

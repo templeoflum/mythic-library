@@ -179,7 +179,19 @@ M (MetaSymbol)→  Z, V, U        | T, X, A
 
 ## Node Evidence Marker Assignments
 
-From `miroglyph_v4_technical_spec.json`:
+### Design Principles
+
+1. **Primary markers reflect polarity**: Conditions 1-6 use pattern O, A, B, O, A, B. Polarity partners (1↔4, 2↔5, 3↔6) share the same primary.
+
+2. **Secondary markers create unique pairs**: Each arc shifts its secondary pattern so that:
+   - No pair repeats at the same condition
+   - Each arc has 6 unique pairs
+   - 9 total unique pairs, each appearing exactly twice across all 18 nodes
+
+3. **Arc-secondary thematic alignment**: Each arc starts with its aligned secondary:
+   - **D (Shadow) → Q (Quality)**: Shadow work is qualitative - examining traits and states
+   - **R (Mirror) → F (Force)**: Reflection involves force - vibrational pressure and dynamic tension
+   - **E (Mythogenesis) → M (MetaSymbol)**: Myth-making is meta-symbolic - recursive patterns
 
 ### Primary by Condition
 | Condition | Primary | Rationale |
@@ -187,31 +199,51 @@ From `miroglyph_v4_technical_spec.json`:
 | 1 (Dawn) | O | Initiation involves threshold objects, first things |
 | 2 (Immersion) | A | Encounter is active engagement, doing |
 | 3 (Crucible) | B | Crisis centers on beings under pressure |
-| 4 (Alignment) | B | Harmony requires beings in relationship |
-| 5 (Unveiling) | A | Revelation is an act of seeing/showing |
-| 6 (Return) | O | Integration carries objects/gifts back |
+| 4 (Alignment) | O | Balance involves objects/anchors (polarity with 1) |
+| 5 (Unveiling) | A | Revelation is an act of seeing/showing (polarity with 2) |
+| 6 (Return) | B | Integration involves beings transformed (polarity with 3) |
 
-### Secondary by Node
-| Node | Secondary | (Primary, Secondary) |
-|------|-----------|----------------------|
-| D1 | Q | (O, Q) |
-| D2 | B | (A, B) |
-| D3 | O | (B, O) |
-| D4 | A | (B, A) |
-| D5 | A | (A, A) |
-| D6 | O | (O, O) |
-| R1 | F | (O, F) |
-| R2 | Q | (A, Q) |
-| R3 | Q | (B, Q) |
-| R4 | B | (B, B) |
-| R5 | O | (A, O) |
-| R6 | A | (O, A) |
-| E1 | M | (O, M) |
-| E2 | F | (A, F) |
-| E3 | M | (B, M) |
-| E4 | F | (B, F) |
-| E5 | M | (A, M) |
-| E6 | B | (O, B) |
+### Secondary by Arc (shifted pattern)
+| Arc | Cond 1 | Cond 2 | Cond 3 | Cond 4 | Cond 5 | Cond 6 |
+|-----|--------|--------|--------|--------|--------|--------|
+| D | Q | F | M | F | M | Q |
+| R | F | M | Q | M | Q | F |
+| E | M | Q | F | Q | F | M |
+
+### Complete Node Pairs
+| Node | Primary | Secondary | Pair | Thread Partner |
+|------|---------|-----------|------|----------------|
+| D1 | O | Q | O+Q | E4 |
+| D2 | A | F | A+F | E5 |
+| D3 | B | M | B+M | E6 |
+| D4 | O | F | O+F | R1 |
+| D5 | A | M | A+M | R2 |
+| D6 | B | Q | B+Q | R3 |
+| R1 | O | F | O+F | D4 |
+| R2 | A | M | A+M | D5 |
+| R3 | B | Q | B+Q | D6 |
+| R4 | O | M | O+M | E1 |
+| R5 | A | Q | A+Q | E2 |
+| R6 | B | F | B+F | E3 |
+| E1 | O | M | O+M | R4 |
+| E2 | A | Q | A+Q | R5 |
+| E3 | B | F | B+F | R6 |
+| E4 | O | Q | O+Q | D1 |
+| E5 | A | F | A+F | D2 |
+| E6 | B | M | B+M | D3 |
+
+### Pair Threads (cross-arc connections)
+| Pair | Nodes | Conditions |
+|------|-------|------------|
+| O+Q | D1 ↔ E4 | 1 ↔ 4 |
+| A+F | D2 ↔ E5 | 2 ↔ 5 |
+| B+M | D3 ↔ E6 | 3 ↔ 6 |
+| O+F | D4 ↔ R1 | 4 ↔ 1 |
+| A+M | D5 ↔ R2 | 5 ↔ 2 |
+| B+Q | D6 ↔ R3 | 6 ↔ 3 |
+| O+M | R4 ↔ E1 | 4 ↔ 1 |
+| A+Q | R5 ↔ E2 | 5 ↔ 2 |
+| B+F | R6 ↔ E3 | 6 ↔ 3 |
 
 ---
 
@@ -219,9 +251,10 @@ From `miroglyph_v4_technical_spec.json`:
 
 **D3 "The Echo Engine"**
 - Primary: B (Being)
-- Secondary: O (Object)
+- Secondary: M (MetaSymbol)
 - Arc: Descent/Shadow
 - Condition: Crucible/Crisis
+- Thread Partner: E6 (shares B+M pair)
 
 **Motif Filter Logic:**
 
@@ -231,9 +264,10 @@ From `miroglyph_v4_technical_spec.json`:
    - Thompson E: The Dead, ghosts, spirits in liminal states
    - Thompson G: Monsters, ogres as shadow figures
 
-2. **Secondary O motifs** (available options):
-   - Thompson D: Magic objects that trap or transform
-   - Thompson F: Marvels, otherworld objects
+2. **Secondary M motifs** (available options):
+   - Thompson Z: Symbolism, recursive patterns, formulas
+   - Thompson V: Religious symbolism, cosmological patterns
+   - Thompson U: Paradox, meta-existence, nature of life
 
 3. **Arc lens (Descent)** adds thematic filter:
    - Prefer motifs with shadow/fragmentation themes
@@ -242,9 +276,9 @@ From `miroglyph_v4_technical_spec.json`:
 4. **Condition lens (Crucible)** adds pressure context:
    - Prefer motifs involving crisis, transformation pressure
    - G (Ogres) as forces of destruction
-   - E (Dead) as death-rebirth threshold
+   - Z (Formulas/chains) as recursive collapse patterns
 
-**Result:** At D3, the system would surface motifs from E, G, A, B (primary) and D, F (secondary), with E and G weighted highest given the Descent/Crucible intersection.
+**Result:** At D3, the system would surface motifs from E, G, A, B (primary) and Z, V, U (secondary), with E and G weighted highest given the Descent/Crucible intersection, and Z emphasized for the recursive "Echo Engine" quality.
 
 ---
 
