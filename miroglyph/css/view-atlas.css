@@ -850,37 +850,42 @@
   }
 }
 
-/* --- Tablets Portrait / Large Phones (≤ 768px) — Vertical Stack --- */
+/* --- Tablets Portrait / Large Phones (≤ 768px) — Scrollable Vertical Stack --- */
 @media (max-width: 768px) {
   #view-atlas.view-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
+    height: 100%;
   }
 
   .atlas-node-panel {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: unset;
+    grid-row: unset;
     width: 100%;
-    max-height: 200px;
     border-right: none;
     border-bottom: 1px solid var(--color-border);
+    flex-shrink: 0;
+    overflow: visible;
   }
 
   .atlas-canvas-area {
-    grid-column: 1;
-    grid-row: 2;
-    min-height: 50vh;
+    grid-column: unset;
+    grid-row: unset;
+    height: 65vh;
+    min-height: 65vh;
+    flex-shrink: 0;
   }
 
   .atlas-traversal-panel {
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: unset;
+    grid-row: unset;
     width: 100%;
-    max-height: 280px;
     border-left: none;
     border-top: 1px solid var(--color-border);
+    flex-shrink: 0;
+    overflow: visible;
   }
 
   .atlas-legend {
@@ -909,11 +914,8 @@
 /* --- Phones (≤ 480px) --- */
 @media (max-width: 480px) {
   .atlas-canvas-area {
-    min-height: 40vh;
-  }
-
-  .atlas-node-panel {
-    max-height: 160px;
+    height: 55vh;
+    min-height: 55vh;
   }
 
   .node-info-id {

@@ -557,13 +557,20 @@
 @media (max-width: 768px) {
   .patterns-layout {
     flex-direction: column;
+    overflow-y: auto;
   }
 
   .patterns-map-sidebar {
     width: 100%;
-    max-height: 280px;
+    height: 280px;
+    min-height: 280px;
+    flex-shrink: 0;
     border-right: none;
     border-bottom: 1px solid var(--color-border);
+  }
+
+  .patterns-content {
+    flex-shrink: 0;
   }
 
   .pattern-grid {
@@ -606,7 +613,8 @@
   }
 
   .patterns-map-sidebar {
-    max-height: 200px;
+    height: 220px;
+    min-height: 220px;
   }
 
   .patterns-content {
