@@ -391,17 +391,18 @@
   function renderMotifSlotList(list, motifs, position) {
     var selectedCodes = getSelectedMotifCodes(position);
 
-    list.innerHTML = motifs.map(function(m) {
+    list.innerHTML =
+    '<div class="motif-item motif-item-surprise" data-position="' + position + '">' +
+      '<span class="motif-code">\u2728</span>' +
+      '<span class="motif-name">Surprise Me</span>' +
+    '</div>' +
+    motifs.map(function(m) {
       var disabled = selectedCodes[m.code] ? ' motif-item-disabled' : '';
       return '<div class="motif-item' + disabled + '" data-code="' + m.code + '" data-position="' + position + '">' +
         '<span class="motif-code">' + m.code + '</span>' +
         '<span class="motif-name">' + utils.escapeHtml(m.label) + '</span>' +
       '</div>';
-    }).join('') +
-    '<div class="motif-item motif-item-surprise" data-position="' + position + '">' +
-      '<span class="motif-code">\u2728</span>' +
-      '<span class="motif-name">Surprise Me</span>' +
-    '</div>';
+    }).join('');
 
     list.onclick = function(e) {
       var item = e.target.closest('.motif-item');
