@@ -860,9 +860,20 @@
     height: 100%;
   }
 
+  .atlas-canvas-area {
+    grid-column: unset;
+    grid-row: unset;
+    order: -1;
+    height: 65vh;
+    min-height: 65vh;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
   .atlas-node-panel {
     grid-column: unset;
     grid-row: unset;
+    order: 0;
     width: 100%;
     border-right: none;
     border-bottom: 1px solid var(--color-border);
@@ -870,20 +881,13 @@
     overflow: visible;
   }
 
-  .atlas-canvas-area {
-    grid-column: unset;
-    grid-row: unset;
-    height: 65vh;
-    min-height: 65vh;
-    flex-shrink: 0;
-  }
-
   .atlas-traversal-panel {
     grid-column: unset;
     grid-row: unset;
+    order: 1;
     width: 100%;
     border-left: none;
-    border-top: 1px solid var(--color-border);
+    border-top: none;
     flex-shrink: 0;
     overflow: visible;
   }
