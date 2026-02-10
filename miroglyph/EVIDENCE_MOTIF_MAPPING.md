@@ -282,9 +282,81 @@ M (MetaSymbol)→  Z, V, U        | T, X, A
 
 ---
 
+## Positional Slot System (Network Configuration Model)
+
+In addition to evidence markers, each node has **positional slot references** that support the Journey Mapper's network configuration model. Instead of filtering motifs per-node, users select 6 motifs for positional slots (any motif can fill any slot), and the system distributes them across nodes via mapping tables.
+
+### Positional Slots
+
+| Slot | Type | Description |
+|------|------|-------------|
+| 1P | Primary | Primary motif position 1 |
+| 2P | Primary | Primary motif position 2 |
+| 3P | Primary | Primary motif position 3 |
+| 1S | Secondary | Secondary motif position 1 |
+| 2S | Secondary | Secondary motif position 2 |
+| 3S | Secondary | Secondary motif position 3 |
+
+### Primary Position Mapping (by condition)
+
+| Condition | Position | Rationale |
+|-----------|----------|-----------|
+| 1 (Dawn) | 1P | First primary position |
+| 2 (Immersion) | 2P | Second primary position |
+| 3 (Crucible) | 3P | Third primary position |
+| 4 (Alignment) | 1P | Polarity partner of condition 1 |
+| 5 (Unveiling) | 2P | Polarity partner of condition 2 |
+| 6 (Return) | 3P | Polarity partner of condition 3 |
+
+### Secondary Position Mapping (by arc, rotated)
+
+| Arc | Cond 1 | Cond 2 | Cond 3 | Cond 4 | Cond 5 | Cond 6 |
+|-----|--------|--------|--------|--------|--------|--------|
+| D | 1S | 2S | 3S | 2S | 3S | 1S |
+| R | 2S | 3S | 1S | 3S | 1S | 2S |
+| E | 3S | 1S | 2S | 1S | 2S | 3S |
+
+### Resulting Motif Pairs Per Node
+
+Each node gets one primary + one secondary motif from its positional slots:
+
+```
+     1P  2P  3P  1S  2S  3S
+D1:  1P          1S              → 1P + 1S
+D2:      2P          2S          → 2P + 2S
+D3:          3P          3S      → 3P + 3S
+D4:  1P              2S          → 1P + 2S
+D5:      2P              3S      → 2P + 3S
+D6:          3P  1S              → 3P + 1S
+R1:  1P              2S          → 1P + 2S
+R2:      2P              3S      → 2P + 3S
+R3:          3P  1S              → 3P + 1S
+R4:  1P                  3S      → 1P + 3S
+R5:      2P  1S                  → 2P + 1S
+R6:          3P      2S          → 3P + 2S
+E1:  1P                  3S      → 1P + 3S
+E2:      2P  1S                  → 2P + 1S
+E3:          3P      2S          → 3P + 2S
+E4:  1P          1S              → 1P + 1S
+E5:      2P          2S          → 2P + 2S
+E6:          3P          3S      → 3P + 3S
+```
+
+9 unique pairs, each appearing exactly twice. This creates structural threads connecting nodes across arcs (e.g., D1 and E4 share pair 1P+1S).
+
+### Entity Distribution (by polarity pair)
+
+| Entity Slot | Conditions | Nodes |
+|-------------|------------|-------|
+| pair_14 | 1 & 4 | D1, D4, R1, R4, E1, E4 (6 nodes) |
+| pair_25 | 2 & 5 | D2, D5, R2, R5, E2, E5 (6 nodes) |
+| pair_36 | 3 & 6 | D3, D6, R3, R6, E3, E6 (6 nodes) |
+
+---
+
 ## Implementation Notes
 
-### For Frontend Experience
+### For Explorer (Evidence-Based Filtering)
 
 1. **At each node**, retrieve the (Primary, Secondary) evidence markers
 2. **Map to Thompson categories** using this document
@@ -294,6 +366,13 @@ M (MetaSymbol)→  Z, V, U        | T, X, A
    - Secondary marker matches = medium weight
    - Arc thematic alignment = modifier
    - Condition thematic alignment = modifier
+
+### For Journey Mapper (Positional Slot Distribution)
+
+1. **User selects 6 motifs** for positional slots (1P, 2P, 3P, 1S, 2S, 3S) — any motif in any slot
+2. **System distributes motifs** to all 18 nodes using the mapping tables above
+3. **Node content is derived** via `getNodeContents(nodeId, config)` — no per-node selection needed
+4. **Each node displays** its assigned primary + secondary motif pair based on its positional slots
 
 ### Motif Code Structure
 

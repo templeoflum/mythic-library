@@ -24,19 +24,22 @@
       <div id="screen-start" class="journey-screen">
         <div class="start-content">
           <h2 class="start-title">Begin Your Journey</h2>
-          <p class="start-subtitle">Navigate the mythic topology through guided traversal</p>
+          <p class="start-subtitle">Configure a mythic network, then traverse it</p>
 
           <div class="start-actions">
-            <button id="btn-surprise" class="btn btn-primary btn-large btn-surprise">
-              Surprise Me
+            <button id="btn-new-network" class="btn btn-primary btn-large">
+              New Network
             </button>
-            <button id="btn-choose" class="btn btn-secondary btn-large">
-              Choose Path
+            <button id="btn-load-network" class="btn btn-secondary btn-large">
+              Load Network
+            </button>
+            <button id="btn-surprise" class="btn btn-secondary btn-large btn-surprise">
+              Surprise Me
             </button>
           </div>
 
-          <div id="saved-journeys" class="saved-journeys" hidden>
-            <h3 class="section-title">Saved Journeys</h3>
+          <div id="saved-networks" class="saved-journeys" hidden>
+            <h3 class="section-title">Saved Networks</h3>
             <div id="saved-list" class="saved-list">
               <!-- Populated dynamically -->
             </div>
@@ -44,8 +47,73 @@
         </div>
       </div>
 
-      <!-- Node Screen -->
-      <div id="screen-node" class="journey-screen" hidden>
+      <!-- Config Screen (4-step wizard) -->
+      <div id="screen-config" class="journey-screen" hidden>
+        <!-- Step Indicator -->
+        <div class="config-stepper">
+          <div class="config-step-indicator" data-step="1">
+            <span class="step-circle">1</span>
+            <span class="step-label">Archetypes</span>
+          </div>
+          <div class="config-step-line"></div>
+          <div class="config-step-indicator" data-step="2">
+            <span class="step-circle">2</span>
+            <span class="step-label">Motifs</span>
+          </div>
+          <div class="config-step-line"></div>
+          <div class="config-step-indicator" data-step="3">
+            <span class="step-circle">3</span>
+            <span class="step-label">Entities</span>
+          </div>
+          <div class="config-step-line"></div>
+          <div class="config-step-indicator" data-step="4">
+            <span class="step-circle">4</span>
+            <span class="step-label">Review</span>
+          </div>
+        </div>
+
+        <!-- Config Content Area -->
+        <div id="config-content" class="config-content">
+          <!-- Populated dynamically per step -->
+        </div>
+
+        <!-- Config Navigation -->
+        <div class="journey-nav">
+          <button id="btn-config-back" class="btn btn-secondary">Back</button>
+          <button id="btn-config-next" class="btn btn-primary">Next</button>
+        </div>
+      </div>
+
+      <!-- Network Screen (18-node overview) -->
+      <div id="screen-network" class="journey-screen" hidden>
+        <div class="network-header">
+          <h2 id="network-title" class="network-title">Mythic Network</h2>
+          <p class="network-subtitle">18-node overview — click any node for details</p>
+        </div>
+
+        <div id="network-grid" class="network-grid">
+          <!-- 3×6 grid populated dynamically -->
+        </div>
+
+        <div class="network-actions">
+          <h3 class="section-title">Traversals</h3>
+          <div class="network-traversal-actions">
+            <button id="btn-choose-traversal" class="btn btn-primary">Choose Traversal</button>
+            <button id="btn-surprise-traversal" class="btn btn-secondary btn-surprise">Surprise Me</button>
+          </div>
+          <div id="network-traversals" class="network-traversals">
+            <!-- Saved traversals for this network -->
+          </div>
+        </div>
+
+        <div class="network-bottom-actions">
+          <button id="btn-save-network" class="btn btn-secondary">Save Network</button>
+          <button id="btn-new-network-from-network" class="btn btn-secondary">New Network</button>
+        </div>
+      </div>
+
+      <!-- Traversal Screen (per node in path) -->
+      <div id="screen-traversal" class="journey-screen" hidden>
         <!-- Progress Bar -->
         <div class="journey-progress">
           <div id="progress-nodes" class="progress-nodes">
@@ -53,26 +121,32 @@
           </div>
         </div>
 
-        <!-- Node Info -->
-        <div id="node-info" class="node-info-card">
+        <!-- Node Content (read-only) -->
+        <div id="traversal-content" class="traversal-content">
           <!-- Populated dynamically -->
         </div>
 
-        <!-- Selection Steps -->
-        <div id="selection-area" class="selection-area">
-          <!-- Step content rendered here -->
+        <!-- Note -->
+        <div class="traversal-note">
+          <label for="traversal-note-input">Note (optional)</label>
+          <textarea id="traversal-note-input" rows="3" placeholder="What does this node mean in your journey?"></textarea>
         </div>
 
         <!-- Navigation -->
         <div class="journey-nav">
-          <button id="btn-prev-node" class="btn btn-secondary">Previous Node</button>
-          <button id="btn-skip-step" class="btn btn-secondary">Skip Step</button>
-          <button id="btn-next-step" class="btn btn-primary">Continue</button>
+          <button id="btn-traversal-prev" class="btn btn-secondary">Previous</button>
+          <button id="btn-traversal-next" class="btn btn-primary">Next</button>
         </div>
       </div>
 
       <!-- Nontion Pause Screen -->
       <div id="screen-nontion" class="journey-screen" hidden>
+        <div class="journey-progress">
+          <div id="nontion-progress-nodes" class="progress-nodes">
+            <!-- Node chips rendered here -->
+          </div>
+        </div>
+
         <div class="nontion-content">
           <div class="nontion-symbol">&#8709;</div>
           <h2 class="nontion-title">Nontion</h2>
@@ -108,48 +182,57 @@
           </div>
 
           <div id="complete-summary" class="complete-summary">
-            <!-- Summary of all selections -->
+            <!-- Summary of all nodes -->
           </div>
 
           <div class="complete-actions">
-            <button id="btn-save-journey" class="btn btn-primary">Save Journey</button>
-            <button id="btn-export-journey" class="btn btn-secondary">Export JSON</button>
-            <button id="btn-new-journey" class="btn btn-secondary">Start New Journey</button>
+            <button id="btn-save-complete" class="btn btn-primary">Save</button>
+            <button id="btn-export-complete" class="btn btn-secondary">Export JSON</button>
+            <button id="btn-new-traversal" class="btn btn-secondary">New Traversal</button>
+            <button id="btn-new-network-complete" class="btn btn-secondary">New Network</button>
           </div>
         </div>
       </div>
 
-      <!-- Choose Path Modal -->
-      <div id="modal-choose" class="modal" hidden>
+      <!-- Choose Traversal Modal -->
+      <div id="modal-traversal" class="modal" hidden>
         <div class="modal-content">
-          <h2>Choose a Path</h2>
+          <h2>Choose a Traversal</h2>
           <div id="traversal-options" class="traversal-options">
             <!-- Populated dynamically -->
           </div>
           <div class="form-actions">
-            <button id="btn-cancel-choose" class="btn btn-secondary">Cancel</button>
+            <button id="btn-cancel-traversal" class="btn btn-secondary">Cancel</button>
           </div>
         </div>
       </div>
 
-      <!-- Save Journey Modal -->
+      <!-- Save Network Modal -->
       <div id="modal-save" class="modal" hidden>
         <div class="modal-content">
-          <h2>Save Journey</h2>
-          <form id="form-save-journey">
+          <h2>Save Network</h2>
+          <form id="form-save-network">
             <div class="form-group">
-              <label for="journey-name">Name *</label>
-              <input type="text" id="journey-name" required placeholder="e.g., Shadow Spiral">
-            </div>
-            <div class="form-group">
-              <label for="journey-description">Description</label>
-              <textarea id="journey-description" rows="2" placeholder="Optional..."></textarea>
+              <label for="network-name">Name *</label>
+              <input type="text" id="network-name-input" required placeholder="e.g., Mythic Network Alpha">
             </div>
             <div class="form-actions">
               <button type="button" id="btn-cancel-save" class="btn btn-secondary">Cancel</button>
               <button type="submit" class="btn btn-primary">Save</button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <!-- Node Detail Modal -->
+      <div id="modal-node-detail" class="modal" hidden>
+        <div class="modal-content modal-content-wide">
+          <div id="node-detail-content">
+            <!-- Populated dynamically -->
+          </div>
+          <div class="form-actions">
+            <button id="btn-close-node-detail" class="btn btn-secondary">Close</button>
+          </div>
         </div>
       </div>
     </main>

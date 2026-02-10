@@ -19,37 +19,29 @@ python scripts/serve_miroglyph.py
 | App | URL | Purpose |
 |-----|-----|---------|
 | **Explorer** | `index.html` | Free-form exploration of nodes, archetypes, entities, and patterns |
-| **Journey Mapper** | `journey.html` | Guided traversal experience with step-by-step selections |
+| **Journey Mapper** | `journey.html` | Network configuration + guided traversal experience |
 
 ### Journey Mapper
 
-A guided experience that walks users through a MiroGlyph traversal, presenting contextually filtered choices at each node based on the structural template system.
+A network configuration model that separates **network setup** (11 selections that populate all 18 nodes) from **traversal** (walking a path through the pre-populated network). The same configured network can be traversed multiple times via different paths, each producing different meaning from the same symbolic vocabulary.
 
 **Features:**
+- **4-Step Config Wizard**: Select 2 archetypes → 6 motifs (positional slots) → 3 entities (polarity pairs) → review
+- **Positional Motif Distribution**: 6 motif slots (1P, 2P, 3P, 1S, 2S, 3S) create 9 unique pairs, each appearing exactly twice across 18 nodes
+- **Entity Polarity Pairs**: 3 entities map to polarity pairs (1↔4, 2↔5, 3↔6), giving each entity 6 nodes
+- **18-Node Network Grid**: 3×6 overview (arcs × conditions) with all node contents derived from configuration
 - **Predefined Traversals**: 8 starter paths including "Shadow Spiral", "Mirror Journey", "Crisis Triangle"
-- **Step-by-Step Selection**: At each node, choose an archetype, entity, and motif
-- **Evidence-Based Filtering**: Each node has two predetermined evidence markers (e.g., Being + Object). Motifs are filtered to Thompson categories that align with these markers and displayed in grouped sections.
 - **Nontion Pauses**: Special pause screens for the center point with reflection prompts
-- **Journey Persistence**: Save journeys to LocalStorage, export as JSON
-- **Surprise Me**: Random selections for serendipitous discovery
-
-**Evidence Marker System:**
-Each of the 18 nodes has a primary and secondary evidence marker that determines which Thompson Motif Index categories are structurally appropriate:
-
-| Marker | Name | Primary Thompson Categories |
-|--------|------|----------------------------|
-| O | Object | D (Magic), F (Marvels) |
-| A | Action | H (Tests), K (Deceptions), R (Captives), C (Tabu) |
-| Q | Quality | W (Traits), J (Wise/Foolish), U (Nature of Life), L (Reversal) |
-| B | Being | A (Mythological), B (Animals), E (The Dead), G (Ogres) |
-| F | Force | N (Chance/Fate), M (Ordaining Future), Q (Rewards), S (Cruelty) |
-| M | MetaSymbol | Z (Miscellaneous), V (Religion), U (Nature of Life) |
+- **Network Persistence**: Save networks to LocalStorage, export as JSON
+- **Surprise Me**: Random config + random traversal for serendipitous discovery
 
 **Flow:**
-1. Start Screen → Choose "Surprise Me" or select a predefined path
-2. Node Screen → Select archetype → entity → motif → optional note
-3. Nontion Screen → Pause and reflect (no selections required)
-4. Complete Screen → Review journey, save, or export
+1. Start Screen → New Network / Load Network / Surprise Me
+2. Config Wizard → Archetypes → Motifs → Entities → Review (18-node grid)
+3. Network Screen → 3×6 overview grid, choose or randomize traversal
+4. Traversal Screen → Read-only node content with optional notes
+5. Nontion Screen → Pause and reflect
+6. Complete Screen → Summary, save, export, new traversal
 
 ## Dual Orientation System
 
@@ -132,9 +124,9 @@ miroglyph/
     ├── view-chronicle.js   # Chronicle view controller (patterns/validation)
     ├── app.js              # Main controller (boot sequence)
     ├── journey-app.js      # Journey Mapper boot sequence and routing
-    ├── journey-state.js    # Journey state management and persistence
-    ├── journey-ui.js       # Journey UI rendering and interactions
-    └── journey-filters.js  # Motif filtering by evidence markers
+    ├── journey-state.js    # Network/traversal state management and persistence
+    ├── journey-ui.js       # Journey UI rendering (config wizard, network grid, traversal)
+    └── journey-filters.js  # Search/filter functions for archetypes, entities, motifs
 ```
 
 ## Data Pipeline

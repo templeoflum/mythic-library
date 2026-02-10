@@ -190,11 +190,11 @@ miroglyph/
 │   ├── view-chronicle.js   # Chronicle view controller
 │   ├── app.js              # Main controller (boot sequence + breadcrumbs)
 │   ├── journey-app.js      # Journey Mapper boot sequence and routing
-│   ├── journey-state.js    # Journey state management and persistence
-│   ├── journey-ui.js       # Journey UI rendering and interactions
-│   └── journey-filters.js  # Motif filtering by evidence markers
+│   ├── journey-state.js    # Network/traversal state management and persistence
+│   ├── journey-ui.js       # Journey UI rendering (config wizard, network grid, traversal)
+│   └── journey-filters.js  # Search/filter functions for archetypes, entities, motifs
 └── data/                   # Pre-exported JSON data files
-    └── node_templates.json # Node templates with evidence markers and prompts
+    └── node_templates.json # Node templates with evidence markers, positional slots, and prompts
 ```
 
 ### Two Applications
@@ -202,7 +202,7 @@ miroglyph/
 | App | URL | Purpose |
 |-----|-----|---------|
 | **Explorer** | `index.html` | Free-form exploration of nodes, archetypes, entities, and patterns |
-| **Journey Mapper** | `journey.html` | Guided traversal experience with step-by-step selections |
+| **Journey Mapper** | `journey.html` | Network configuration + guided traversal experience |
 
 ### Explorer Views
 - **Atlas**: Three-pane layout (Node Info | Canvas | Traversals) for path building
@@ -211,42 +211,73 @@ miroglyph/
 
 ### Journey Mapper
 
-A guided experience that walks users through a MiroGlyph traversal, presenting contextually filtered choices at each node based on the structural template system.
+A network configuration model that separates **network setup** (11 selections that populate all 18 nodes) from **traversal** (walking a path through the pre-populated network). The same configured network can be traversed multiple times via different paths.
+
+**Network Configuration (11 selections):**
+- 2 Archetypes (primary + secondary) — define the network's tension
+- 6 Motifs (3 primary positions + 3 secondary positions) — distributed across nodes via positional mapping
+- 3 Entities (one per polarity pair: 1↔4, 2↔5, 3↔6) — 6 nodes each
 
 **Features:**
-- **Predefined Traversals**: 8 starter paths including "Shadow Spiral", "Mirror Journey", "Crisis Triangle"
-- **Step-by-Step Selection**: At each node, choose an archetype, entity, and motif
-- **Evidence-Based Filtering**: Motifs filtered by Thompson category based on node evidence markers
+- **4-Step Config Wizard**: Archetypes → Motifs → Entities → Review
+- **Positional Motif Distribution**: 6 motif slots (1P, 2P, 3P, 1S, 2S, 3S) create 9 unique pairs, each appearing exactly twice across 18 nodes
+- **Predefined Traversals**: 8 paths including "Shadow Spiral", "Mirror Journey", "Crisis Triangle"
 - **Nontion Pauses**: Special pause screens for the center point with reflection prompts
-- **Journey Persistence**: Save journeys to LocalStorage, export as JSON
-- **Surprise Me**: Random selections for serendipitous discovery
+- **Network Persistence**: Save networks to LocalStorage (`miroglyph_networks`), export as JSON
+- **Surprise Me**: Random config + random traversal for serendipitous discovery
 
 **Flow:**
-1. Start Screen → Choose "Surprise Me" or select a predefined path
-2. Node Screen → Select archetype → entity → motif → optional note
-3. Nontion Screen → Pause and reflect (no selections required)
-4. Complete Screen → Review journey, save, or export
+1. Start Screen → New Network / Load Network / Surprise Me
+2. Config Step 1 → Select 2 archetypes (primary + secondary)
+3. Config Step 2 → Select 6 motifs (3 primary positions + 3 secondary positions)
+4. Config Step 3 → Select 3 entities (one per polarity pair)
+5. Config Step 4 → Review 18-node grid with all assignments
+6. Network Screen → 3×6 overview grid, click nodes for details, choose traversal
+7. Traversal Screen → Read-only node display with optional notes, prev/next navigation
+8. Complete Screen → Summary with all nodes and notes, save/export
 
-**Journey State Schema:**
+**Network State Schema:**
 ```json
 {
-  "journey_id": "uuid",
-  "name": "My Shadow Spiral",
-  "traversal": ["D3", "R2", "∅", "E5", "E6"],
-  "current_index": 0,
-  "nodes": [
+  "network_id": "uuid",
+  "name": "My Mythic Network",
+  "configuration": {
+    "primary_archetype": { "id": "arch:GR-ZEUS", "name": "Zeus" },
+    "secondary_archetype": { "id": "arch:NO-LOKI", "name": "Loki" },
+    "motifs": {
+      "1P": { "code": "A0", "label": "Creator" },
+      "2P": { "code": "H300", "label": "Tests of valor" },
+      "3P": { "code": "E700", "label": "The soul" },
+      "1S": { "code": "Z210", "label": "Hero cycle" },
+      "2S": { "code": "N100", "label": "Nature of luck" },
+      "3S": { "code": "D700", "label": "Disenchantment" }
+    },
+    "entities": {
+      "pair_14": { "name": "Zeus", "type": "deity" },
+      "pair_25": { "name": "Odin", "type": "deity" },
+      "pair_36": { "name": "Isis", "type": "deity" }
+    }
+  },
+  "traversals": [
     {
-      "node_id": "D3",
-      "archetype": { "id": "arch:GR-SISYPHUS", "name": "Sisyphus" },
-      "entity": { "name": "Prometheus", "tradition": "greek" },
-      "motif": { "code": "E501", "name": "The Wild Hunt" },
-      "note": "User reflection..."
+      "traversal_id": "uuid",
+      "name": "Shadow Spiral",
+      "sequence": ["D1", "D3", "∅", "R3", "E3"],
+      "notes": { "D1": "reflection..." },
+      "completed": true
     }
   ],
-  "created_date": "ISO timestamp",
-  "completed": false
+  "created_date": "ISO"
 }
 ```
+
+**Derived Node Contents:**
+Node content is computed from configuration, not stored per-node. The `getNodeContents(nodeId, config)` function uses mapping tables to derive each node's archetypes, motif pair, and entity from the 11 configuration selections.
+
+**Positional Mapping Tables:**
+- Primary motif: condition → position (`1→1P, 2→2P, 3→3P, 4→1P, 5→2P, 6→3P`)
+- Secondary motif: arc+condition → position (rotated per arc for unique pairs)
+- Entity: condition → polarity pair (`1,4→pair_14, 2,5→pair_25, 3,6→pair_36`)
 
 ### Core Features
 1. **Display** - 19 points in centrifugal concentric layout
@@ -332,8 +363,8 @@ Each node has two predetermined evidence markers (Primary + Secondary) that defi
 **How it works:**
 1. Each node template defines a primary and secondary marker (e.g., D3 has Being + MetaSymbol)
 2. These markers map to specific Thompson Motif Index categories
-3. In Journey Mapper, motifs are filtered to only show those matching the node's markers
-4. Motifs are grouped by which marker type they align with (primary or secondary)
+3. Each node also has positional slot references (primary_position and secondary_position) for the network configuration model
+4. In Journey Mapper, motifs are freely chosen for 6 positional slots (1P, 2P, 3P, 1S, 2S, 3S) and distributed across nodes via mapping tables — any motif can fill any slot
 
 **Primary Markers (by condition):**
 Conditions 1-6 follow pattern: O, A, B, O, A, B
@@ -447,15 +478,21 @@ Source: `scripts/motif/build_motif_index.py` → `data/thompson_motif_index.json
 - Does edit preserve the original sequence while changing name/color?
 
 ### Journey Mapper
-- Does "Surprise Me" load a random predefined traversal?
-- Can user select archetype → entity → motif at each node?
-- Are motifs filtered correctly by evidence markers?
-- Does Nontion show pause screen without selection steps?
-- Does "Skip Step" work for each selection?
-- Can user navigate back to previous nodes?
-- Does journey save to LocalStorage correctly?
-- Does JSON export produce valid file?
-- Do saved journeys appear on start screen?
+- Does "New Network" start the 4-step config wizard?
+- Can user select 2 archetypes in step 1?
+- Can user select 6 motifs (3 primary + 3 secondary positions) in step 2?
+- Can user select 3 entities (one per polarity pair) in step 3?
+- Does step 4 review show all 18 nodes with correct assignments?
+- Does the network screen show a 3×6 grid with correct node contents?
+- Do motif pairs match the positional mapping tables?
+- Do entity assignments match polarity pairs (1↔4, 2↔5, 3↔6)?
+- Can user choose and start a traversal from the network screen?
+- Does traversal screen show read-only node content with note textarea?
+- Does Nontion show pause screen with reflection prompts?
+- Does "Surprise Me" auto-configure and start a random traversal?
+- Can user save network to LocalStorage and reload it?
+- Does JSON export produce valid file with network config + traversals?
+- Can user start a new traversal on the same network?
 
 ---
 

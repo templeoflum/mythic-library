@@ -28,6 +28,8 @@
         "primary_name": "Object",
         "secondary": "Q",
         "secondary_name": "Quality",
+        "primary_position": "1P",
+        "secondary_position": "1S",
         "thompson_primary": [
           "D",
           "F"
@@ -96,6 +98,8 @@
         "primary_name": "Action",
         "secondary": "F",
         "secondary_name": "Force",
+        "primary_position": "2P",
+        "secondary_position": "2S",
         "thompson_primary": [
           "H",
           "K",
@@ -166,6 +170,8 @@
         "primary_name": "Being",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
+        "primary_position": "3P",
+        "secondary_position": "3S",
         "thompson_primary": [
           "A",
           "B",
@@ -235,6 +241,8 @@
         "primary_name": "Object",
         "secondary": "F",
         "secondary_name": "Force",
+        "primary_position": "1P",
+        "secondary_position": "2S",
         "thompson_primary": [
           "D",
           "F"
@@ -303,6 +311,8 @@
         "primary_name": "Action",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
+        "primary_position": "2P",
+        "secondary_position": "3S",
         "thompson_primary": [
           "H",
           "K",
@@ -372,6 +382,8 @@
         "primary_name": "Being",
         "secondary": "Q",
         "secondary_name": "Quality",
+        "primary_position": "3P",
+        "secondary_position": "1S",
         "thompson_primary": [
           "A",
           "B",
@@ -442,6 +454,8 @@
         "primary_name": "Object",
         "secondary": "F",
         "secondary_name": "Force",
+        "primary_position": "1P",
+        "secondary_position": "2S",
         "thompson_primary": [
           "D",
           "F"
@@ -510,6 +524,8 @@
         "primary_name": "Action",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
+        "primary_position": "2P",
+        "secondary_position": "3S",
         "thompson_primary": [
           "H",
           "K",
@@ -579,6 +595,8 @@
         "primary_name": "Being",
         "secondary": "Q",
         "secondary_name": "Quality",
+        "primary_position": "3P",
+        "secondary_position": "1S",
         "thompson_primary": [
           "A",
           "B",
@@ -649,6 +667,8 @@
         "primary_name": "Object",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
+        "primary_position": "1P",
+        "secondary_position": "3S",
         "thompson_primary": [
           "D",
           "F"
@@ -716,6 +736,8 @@
         "primary_name": "Action",
         "secondary": "Q",
         "secondary_name": "Quality",
+        "primary_position": "2P",
+        "secondary_position": "1S",
         "thompson_primary": [
           "H",
           "K",
@@ -786,6 +808,8 @@
         "primary_name": "Being",
         "secondary": "F",
         "secondary_name": "Force",
+        "primary_position": "3P",
+        "secondary_position": "2S",
         "thompson_primary": [
           "A",
           "B",
@@ -856,6 +880,8 @@
         "primary_name": "Object",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
+        "primary_position": "1P",
+        "secondary_position": "3S",
         "thompson_primary": [
           "D",
           "F"
@@ -923,6 +949,8 @@
         "primary_name": "Action",
         "secondary": "Q",
         "secondary_name": "Quality",
+        "primary_position": "2P",
+        "secondary_position": "1S",
         "thompson_primary": [
           "H",
           "K",
@@ -993,6 +1021,8 @@
         "primary_name": "Being",
         "secondary": "F",
         "secondary_name": "Force",
+        "primary_position": "3P",
+        "secondary_position": "2S",
         "thompson_primary": [
           "A",
           "B",
@@ -1063,6 +1093,8 @@
         "primary_name": "Object",
         "secondary": "Q",
         "secondary_name": "Quality",
+        "primary_position": "1P",
+        "secondary_position": "1S",
         "thompson_primary": [
           "D",
           "F"
@@ -1131,6 +1163,8 @@
         "primary_name": "Action",
         "secondary": "F",
         "secondary_name": "Force",
+        "primary_position": "2P",
+        "secondary_position": "2S",
         "thompson_primary": [
           "H",
           "K",
@@ -1201,6 +1235,8 @@
         "primary_name": "Being",
         "secondary": "M",
         "secondary_name": "MetaSymbol",
+        "primary_position": "3P",
+        "secondary_position": "3S",
         "thompson_primary": [
           "A",
           "B",

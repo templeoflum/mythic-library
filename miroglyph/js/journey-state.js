@@ -1,12 +1,35 @@
-// Journey Mapper - State Management
-// Handles journey state, traversal progression, and LocalStorage persistence
+// Journey Mapper - State Management (Network Configuration Model)
+// Handles network configuration, traversal state, and LocalStorage persistence
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
 
-  var JOURNEYS_STORAGE_KEY = 'miroglyph_journeys';
+  var NETWORKS_STORAGE_KEY = 'miroglyph_networks';
 
-  // Predefined traversals for "Surprise Me"
+  // ========== Mapping Tables ==========
+
+  // Primary motif position: determined by condition number
+  var PRIMARY_MAP = { 1: '1P', 2: '2P', 3: '3P', 4: '1P', 5: '2P', 6: '3P' };
+
+  // Secondary motif position: determined by arc + condition
+  var SECONDARY_MAP = {
+    D: { 1: '1S', 2: '2S', 3: '3S', 4: '2S', 5: '3S', 6: '1S' },
+    R: { 1: '2S', 2: '3S', 3: '1S', 4: '3S', 5: '1S', 6: '2S' },
+    E: { 1: '3S', 2: '1S', 3: '2S', 4: '1S', 5: '2S', 6: '3S' }
+  };
+
+  // Entity assignment: by polarity pair (conditions 1&4, 2&5, 3&6)
+  var ENTITY_MAP = { 1: 'pair_14', 2: 'pair_25', 3: 'pair_36',
+                     4: 'pair_14', 5: 'pair_25', 6: 'pair_36' };
+
+  // All 18 node IDs
+  var ALL_NODE_IDS = [
+    'D1', 'D2', 'D3', 'D4', 'D5', 'D6',
+    'R1', 'R2', 'R3', 'R4', 'R5', 'R6',
+    'E1', 'E2', 'E3', 'E4', 'E5', 'E6'
+  ];
+
+  // Predefined traversals
   var STARTER_TRAVERSALS = [
     { name: 'Descent Circuit', sequence: ['D1', 'D2', 'D3', 'D4', 'D5', 'D6'] },
     { name: 'Shadow Spiral', sequence: ['D1', 'D3', '∅', 'R3', 'E3'] },
@@ -18,344 +41,411 @@
     { name: 'Resonance Weave', sequence: ['R1', 'R2', 'R3', 'R4', 'R5', 'R6'] }
   ];
 
-  // Selection steps for each node
-  // Two motif steps: one for primary evidence marker, one for secondary
-  var SELECTION_STEPS = ['archetype', 'entity', 'primary_motif', 'secondary_motif', 'note'];
+  // Current state
+  var currentNetwork = null;
+  var currentTraversalIndex = -1;  // index into currentNetwork.traversals
+  var currentNodeIndex = 0;        // position within current traversal sequence
 
-  // Current journey state
-  var currentJourney = null;
+  // Config wizard state (temporary, before network is created)
+  var configState = {
+    step: 1,
+    primary_archetype: null,
+    secondary_archetype: null,
+    motifs: { '1P': null, '2P': null, '3P': null, '1S': null, '2S': null, '3S': null },
+    entities: { pair_14: null, pair_25: null, pair_36: null }
+  };
+
+  // ========== Node Content Derivation ==========
 
   /**
-   * Create a new journey with the given traversal
-   * @param {Array} sequence - Array of node IDs
-   * @param {string} name - Optional name for the journey
-   * @returns {Object} - New journey state
+   * Compute node contents from network configuration
+   * @param {string} nodeId - e.g. 'D1', 'R4', 'E6'
+   * @param {Object} config - network configuration object
+   * @returns {Object} - { primary_archetype, secondary_archetype, primary_motif, secondary_motif, entity }
    */
-  function createJourney(sequence, name) {
+  function getNodeContents(nodeId, config) {
+    if (!config || nodeId === '∅') return null;
+
+    var arc = nodeId.charAt(0);
+    var condition = parseInt(nodeId.charAt(1), 10);
+
+    return {
+      primary_archetype: config.primary_archetype,
+      secondary_archetype: config.secondary_archetype,
+      primary_motif: config.motifs[PRIMARY_MAP[condition]],
+      secondary_motif: config.motifs[SECONDARY_MAP[arc][condition]],
+      entity: config.entities[ENTITY_MAP[condition]]
+    };
+  }
+
+  /**
+   * Get the motif position labels for a node
+   */
+  function getNodePositions(nodeId) {
+    if (nodeId === '∅') return null;
+    var arc = nodeId.charAt(0);
+    var condition = parseInt(nodeId.charAt(1), 10);
+    return {
+      primary: PRIMARY_MAP[condition],
+      secondary: SECONDARY_MAP[arc][condition]
+    };
+  }
+
+  // ========== Config Wizard ==========
+
+  function getConfigState() {
+    return configState;
+  }
+
+  function setConfigStep(step) {
+    configState.step = step;
+  }
+
+  function getConfigStep() {
+    return configState.step;
+  }
+
+  function setConfigArchetype(which, archetype) {
+    if (which === 'primary') {
+      configState.primary_archetype = archetype;
+    } else {
+      configState.secondary_archetype = archetype;
+    }
+  }
+
+  function setConfigMotif(position, motif) {
+    configState.motifs[position] = motif;
+  }
+
+  function setConfigEntity(pair, entity) {
+    configState.entities[pair] = entity;
+  }
+
+  function isConfigComplete() {
+    if (!configState.primary_archetype || !configState.secondary_archetype) return false;
+    var slots = ['1P', '2P', '3P', '1S', '2S', '3S'];
+    for (var i = 0; i < slots.length; i++) {
+      if (!configState.motifs[slots[i]]) return false;
+    }
+    if (!configState.entities.pair_14 || !configState.entities.pair_25 || !configState.entities.pair_36) return false;
+    return true;
+  }
+
+  function isConfigStepComplete(step) {
+    if (step === 1) {
+      return !!configState.primary_archetype && !!configState.secondary_archetype;
+    } else if (step === 2) {
+      var slots = ['1P', '2P', '3P', '1S', '2S', '3S'];
+      for (var i = 0; i < slots.length; i++) {
+        if (!configState.motifs[slots[i]]) return false;
+      }
+      return true;
+    } else if (step === 3) {
+      return !!configState.entities.pair_14 && !!configState.entities.pair_25 && !!configState.entities.pair_36;
+    } else if (step === 4) {
+      return isConfigComplete();
+    }
+    return false;
+  }
+
+  function resetConfigState() {
+    configState = {
+      step: 1,
+      primary_archetype: null,
+      secondary_archetype: null,
+      motifs: { '1P': null, '2P': null, '3P': null, '1S': null, '2S': null, '3S': null },
+      entities: { pair_14: null, pair_25: null, pair_36: null }
+    };
+  }
+
+  // ========== Network CRUD ==========
+
+  /**
+   * Create a network from the current config state
+   * @param {string} name - Optional network name
+   * @returns {Object} - The new network
+   */
+  function createNetwork(name) {
     var utils = window.MiroGlyph.utils;
 
-    currentJourney = {
-      journey_id: utils.uuid(),
-      name: name || 'Unnamed Journey',
-      traversal: sequence,
-      current_index: 0,
-      current_step: 0, // 0=archetype, 1=entity, 2=motif, 3=note
-      nodes: sequence.map(function(nodeId) {
-        return {
-          node_id: nodeId,
-          archetype: null,
-          entity: null,
-          primary_motif: null,
-          secondary_motif: null,
-          note: ''
-        };
-      }),
+    currentNetwork = {
+      network_id: utils.uuid(),
+      name: name || 'Mythic Network',
+      configuration: {
+        primary_archetype: configState.primary_archetype,
+        secondary_archetype: configState.secondary_archetype,
+        motifs: JSON.parse(JSON.stringify(configState.motifs)),
+        entities: JSON.parse(JSON.stringify(configState.entities))
+      },
+      traversals: [],
+      created_date: new Date().toISOString()
+    };
+
+    currentTraversalIndex = -1;
+    currentNodeIndex = 0;
+
+    return currentNetwork;
+  }
+
+  function getNetwork() {
+    return currentNetwork;
+  }
+
+  function getConfiguration() {
+    return currentNetwork ? currentNetwork.configuration : null;
+  }
+
+  // ========== Traversal Management ==========
+
+  /**
+   * Add a traversal to the current network
+   * @param {string} name
+   * @param {Array} sequence - Array of node IDs
+   * @returns {Object} - The new traversal
+   */
+  function addTraversal(name, sequence) {
+    if (!currentNetwork) return null;
+    var utils = window.MiroGlyph.utils;
+
+    var traversal = {
+      traversal_id: utils.uuid(),
+      name: name || 'Unnamed Traversal',
+      sequence: sequence,
+      notes: {},
       created_date: new Date().toISOString(),
       completed: false
     };
 
-    return currentJourney;
+    currentNetwork.traversals.push(traversal);
+    return traversal;
   }
 
   /**
-   * Get the current journey state
-   * @returns {Object|null}
+   * Start a traversal (set it as current)
+   * @param {number} traversalIdx - Index in network.traversals array
    */
-  function getJourney() {
-    return currentJourney;
+  function startTraversal(traversalIdx) {
+    if (!currentNetwork || traversalIdx < 0 || traversalIdx >= currentNetwork.traversals.length) return false;
+    currentTraversalIndex = traversalIdx;
+    currentNodeIndex = 0;
+    currentNetwork.traversals[traversalIdx].completed = false;
+    return true;
   }
 
-  /**
-   * Get the current node being edited
-   * @returns {Object|null}
-   */
-  function getCurrentNode() {
-    if (!currentJourney) return null;
-    return currentJourney.nodes[currentJourney.current_index] || null;
+  function getCurrentTraversal() {
+    if (!currentNetwork || currentTraversalIndex < 0) return null;
+    return currentNetwork.traversals[currentTraversalIndex] || null;
   }
 
-  /**
-   * Get the current node ID
-   * @returns {string|null}
-   */
   function getCurrentNodeId() {
-    if (!currentJourney) return null;
-    return currentJourney.traversal[currentJourney.current_index] || null;
+    var traversal = getCurrentTraversal();
+    if (!traversal) return null;
+    return traversal.sequence[currentNodeIndex] || null;
   }
 
-  /**
-   * Get current step name
-   * @returns {string}
-   */
-  function getCurrentStepName() {
-    if (!currentJourney) return SELECTION_STEPS[0];
-    return SELECTION_STEPS[currentJourney.current_step] || SELECTION_STEPS[0];
+  function getCurrentNodeIndex() {
+    return currentNodeIndex;
   }
 
-  /**
-   * Check if current node is Nontion
-   * @returns {boolean}
-   */
   function isCurrentNodeNontion() {
     return getCurrentNodeId() === '∅';
   }
 
   /**
-   * Set selection for current step
-   * @param {string} stepName - 'archetype', 'entity', 'motif', or 'note'
-   * @param {*} value - The selection value
-   */
-  function setSelection(stepName, value) {
-    var node = getCurrentNode();
-    if (!node) return;
-
-    if (stepName === 'archetype') {
-      node.archetype = value;
-    } else if (stepName === 'entity') {
-      node.entity = value;
-    } else if (stepName === 'primary_motif') {
-      node.primary_motif = value;
-    } else if (stepName === 'secondary_motif') {
-      node.secondary_motif = value;
-    } else if (stepName === 'note') {
-      node.note = value || '';
-    }
-  }
-
-  /**
-   * Get selection for current step
-   * @param {string} stepName
-   * @returns {*}
-   */
-  function getSelection(stepName) {
-    var node = getCurrentNode();
-    if (!node) return null;
-    return node[stepName];
-  }
-
-  /**
-   * Advance to next step
-   * @returns {Object} - { moved: boolean, newStep: string, nodeComplete: boolean, journeyComplete: boolean }
-   */
-  function nextStep() {
-    if (!currentJourney) return { moved: false };
-
-    var nextStepIndex = currentJourney.current_step + 1;
-
-    if (nextStepIndex >= SELECTION_STEPS.length) {
-      // Node complete, move to next node
-      return nextNode();
-    }
-
-    currentJourney.current_step = nextStepIndex;
-    return {
-      moved: true,
-      newStep: SELECTION_STEPS[nextStepIndex],
-      nodeComplete: false,
-      journeyComplete: false
-    };
-  }
-
-  /**
-   * Go back to previous step
-   * @returns {Object}
-   */
-  function prevStep() {
-    if (!currentJourney) return { moved: false };
-
-    if (currentJourney.current_step > 0) {
-      currentJourney.current_step--;
-      return {
-        moved: true,
-        newStep: SELECTION_STEPS[currentJourney.current_step],
-        nodeComplete: false
-      };
-    }
-
-    // At first step of current node, go to previous node
-    return prevNode();
-  }
-
-  /**
-   * Advance to next node
-   * @returns {Object}
+   * Navigate to next node in traversal
+   * @returns {Object} - { moved, journeyComplete }
    */
   function nextNode() {
-    if (!currentJourney) return { moved: false };
+    var traversal = getCurrentTraversal();
+    if (!traversal) return { moved: false };
 
-    var nextIndex = currentJourney.current_index + 1;
-
-    if (nextIndex >= currentJourney.traversal.length) {
-      // Journey complete
-      currentJourney.completed = true;
-      return {
-        moved: true,
-        nodeComplete: true,
-        journeyComplete: true
-      };
+    var nextIndex = currentNodeIndex + 1;
+    if (nextIndex >= traversal.sequence.length) {
+      traversal.completed = true;
+      return { moved: true, journeyComplete: true };
     }
 
-    currentJourney.current_index = nextIndex;
-    currentJourney.current_step = 0;
-
-    return {
-      moved: true,
-      newStep: SELECTION_STEPS[0],
-      nodeComplete: true,
-      journeyComplete: false
-    };
+    currentNodeIndex = nextIndex;
+    return { moved: true, journeyComplete: false };
   }
 
   /**
-   * Go back to previous node
-   * @returns {Object}
+   * Navigate to previous node in traversal
+   * @returns {Object} - { moved }
    */
   function prevNode() {
-    if (!currentJourney || currentJourney.current_index === 0) {
-      return { moved: false };
+    if (currentNodeIndex === 0) return { moved: false };
+    currentNodeIndex--;
+    return { moved: true };
+  }
+
+  /**
+   * Jump to a specific node index
+   */
+  function goToNode(index) {
+    var traversal = getCurrentTraversal();
+    if (!traversal || index < 0 || index >= traversal.sequence.length) return false;
+    currentNodeIndex = index;
+    return true;
+  }
+
+  /**
+   * Set note for current node in current traversal
+   */
+  function setNote(nodeId, text) {
+    var traversal = getCurrentTraversal();
+    if (!traversal) return;
+    traversal.notes[nodeId] = text || '';
+  }
+
+  /**
+   * Get note for a node in current traversal
+   */
+  function getNote(nodeId) {
+    var traversal = getCurrentTraversal();
+    if (!traversal) return '';
+    return traversal.notes[nodeId] || '';
+  }
+
+  /**
+   * Complete the current traversal
+   */
+  function completeTraversal() {
+    var traversal = getCurrentTraversal();
+    if (traversal) {
+      traversal.completed = true;
     }
+  }
 
-    currentJourney.current_index--;
-    currentJourney.current_step = SELECTION_STEPS.length - 1; // Go to last step of previous node
-
+  /**
+   * Get traversal progress info
+   */
+  function getProgress() {
+    var traversal = getCurrentTraversal();
+    if (!traversal) return { currentIndex: 0, total: 0, percentage: 0 };
     return {
-      moved: true,
-      newStep: SELECTION_STEPS[currentJourney.current_step],
-      nodeComplete: false
+      currentIndex: currentNodeIndex,
+      total: traversal.sequence.length,
+      percentage: Math.round((currentNodeIndex / traversal.sequence.length) * 100)
     };
   }
 
-  /**
-   * Complete Nontion node (no selections, just optional note)
-   * @param {string} note - Optional note
-   * @returns {Object}
-   */
-  function completeNontion(note) {
-    var node = getCurrentNode();
-    if (node) {
-      node.note = note || '';
-    }
-    return nextNode();
+  // ========== Starter Traversals ==========
+
+  function getStarterTraversals() {
+    return STARTER_TRAVERSALS.slice();
   }
 
-  /**
-   * Get a random traversal from starter set
-   * @returns {Object} - { name, sequence }
-   */
   function getRandomTraversal() {
     var index = Math.floor(Math.random() * STARTER_TRAVERSALS.length);
     return STARTER_TRAVERSALS[index];
   }
 
-  /**
-   * Get all starter traversals
-   * @returns {Array}
-   */
-  function getStarterTraversals() {
-    return STARTER_TRAVERSALS.slice();
-  }
-
-  // ========== LocalStorage Persistence ==========
+  // ========== Persistence ==========
 
   /**
-   * Load saved journeys from LocalStorage
-   * @returns {Object} - { version, journeys: [] }
+   * Load saved networks from LocalStorage
    */
-  function loadSavedJourneys() {
+  function loadSavedNetworks() {
     try {
-      var data = localStorage.getItem(JOURNEYS_STORAGE_KEY);
+      var data = localStorage.getItem(NETWORKS_STORAGE_KEY);
       if (data) {
         var parsed = JSON.parse(data);
         return {
-          version: parsed.version || '1.0.0',
-          journeys: parsed.journeys || []
+          version: parsed.version || '2.0.0',
+          networks: parsed.networks || []
         };
       }
     } catch (e) {
-      console.error('Failed to load journeys:', e);
+      console.error('Failed to load networks:', e);
     }
-    return { version: '1.0.0', journeys: [] };
+    return { version: '2.0.0', networks: [] };
   }
 
   /**
-   * Save journeys to LocalStorage
-   * @param {Array} journeys - Array of journey objects
+   * Save networks to LocalStorage
    */
-  function saveJourneys(journeys) {
+  function saveNetworks(networks) {
     try {
       var data = {
-        version: '1.0.0',
+        version: '2.0.0',
         lastModified: new Date().toISOString(),
-        journeys: journeys
+        networks: networks
       };
-      localStorage.setItem(JOURNEYS_STORAGE_KEY, JSON.stringify(data));
+      localStorage.setItem(NETWORKS_STORAGE_KEY, JSON.stringify(data));
       return true;
     } catch (e) {
-      console.error('Failed to save journeys:', e);
+      console.error('Failed to save networks:', e);
       return false;
     }
   }
 
   /**
-   * Save current journey to LocalStorage
-   * @param {string} name - Journey name
-   * @param {string} description - Optional description
-   * @returns {boolean}
+   * Save current network to LocalStorage
    */
-  function saveCurrentJourney(name, description) {
-    if (!currentJourney) return false;
+  function saveCurrentNetwork(name) {
+    if (!currentNetwork) return false;
+    if (name) currentNetwork.name = name;
+    currentNetwork.saved_date = new Date().toISOString();
 
-    currentJourney.name = name || currentJourney.name;
-    currentJourney.description = description || '';
-    currentJourney.saved_date = new Date().toISOString();
+    var saved = loadSavedNetworks();
+    // Update existing or add new
+    var existingIndex = -1;
+    for (var i = 0; i < saved.networks.length; i++) {
+      if (saved.networks[i].network_id === currentNetwork.network_id) {
+        existingIndex = i;
+        break;
+      }
+    }
 
-    var saved = loadSavedJourneys();
-    saved.journeys.push(JSON.parse(JSON.stringify(currentJourney)));
-    return saveJourneys(saved.journeys);
+    var copy = JSON.parse(JSON.stringify(currentNetwork));
+    if (existingIndex >= 0) {
+      saved.networks[existingIndex] = copy;
+    } else {
+      saved.networks.push(copy);
+    }
+    return saveNetworks(saved.networks);
   }
 
   /**
-   * Delete a saved journey
-   * @param {string} journeyId - Journey ID to delete
-   * @returns {boolean}
+   * Delete a saved network
    */
-  function deleteSavedJourney(journeyId) {
-    var saved = loadSavedJourneys();
-    saved.journeys = saved.journeys.filter(function(j) {
-      return j.journey_id !== journeyId;
+  function deleteSavedNetwork(networkId) {
+    var saved = loadSavedNetworks();
+    saved.networks = saved.networks.filter(function(n) {
+      return n.network_id !== networkId;
     });
-    return saveJourneys(saved.journeys);
+    return saveNetworks(saved.networks);
   }
 
   /**
-   * Resume a saved journey
-   * @param {string} journeyId - Journey ID to resume
-   * @returns {Object|null}
+   * Load a saved network
    */
-  function resumeJourney(journeyId) {
-    var saved = loadSavedJourneys();
-    var journey = saved.journeys.find(function(j) {
-      return j.journey_id === journeyId;
+  function loadNetwork(networkId) {
+    var saved = loadSavedNetworks();
+    var network = saved.networks.find(function(n) {
+      return n.network_id === networkId;
     });
-
-    if (journey) {
-      currentJourney = JSON.parse(JSON.stringify(journey));
-      return currentJourney;
+    if (network) {
+      currentNetwork = JSON.parse(JSON.stringify(network));
+      currentTraversalIndex = -1;
+      currentNodeIndex = 0;
+      return currentNetwork;
     }
     return null;
   }
 
   /**
-   * Export current journey as JSON
+   * Export current network as JSON file
    */
-  function exportJourneyJSON() {
-    if (!currentJourney) return;
+  function exportNetworkJSON() {
+    if (!currentNetwork) return;
 
     var exportData = {
       miroglyph_version: '4.0.0',
-      type: 'journey',
+      type: 'network',
       exported_at: new Date().toISOString(),
-      journey: currentJourney
+      network: currentNetwork
     };
 
     var blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
@@ -363,8 +453,8 @@
 
     var a = document.createElement('a');
     a.href = url;
-    var safeName = (currentJourney.name || 'journey').replace(/[^a-z0-9]/gi, '_').toLowerCase();
-    a.download = 'miroglyph_journey_' + safeName + '.json';
+    var safeName = (currentNetwork.name || 'network').replace(/[^a-z0-9]/gi, '_').toLowerCase();
+    a.download = 'miroglyph_network_' + safeName + '.json';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -372,50 +462,139 @@
   }
 
   /**
-   * Clear current journey
+   * Clear current network
    */
-  function clearJourney() {
-    currentJourney = null;
+  function clearNetwork() {
+    currentNetwork = null;
+    currentTraversalIndex = -1;
+    currentNodeIndex = 0;
   }
+
+  // ========== Surprise Me (full random config) ==========
 
   /**
-   * Get journey progress info
-   * @returns {Object} - { currentIndex, total, percentage }
+   * Generate a random network configuration
+   * @param {Object} deps - { archetypes, entities, patterns }
+   * @returns {Object} - config state ready to create network
    */
-  function getProgress() {
-    if (!currentJourney) return { currentIndex: 0, total: 0, percentage: 0 };
+  function generateRandomConfig(deps) {
+    var archetypes = deps.archetypes && deps.archetypes.archetypes ? deps.archetypes.archetypes : [];
+    var entities = deps.entities && deps.entities.entities ? deps.entities.entities : [];
+    var allMotifs = deps.patterns && deps.patterns.motifs ? deps.patterns.motifs : {};
 
-    return {
-      currentIndex: currentJourney.current_index,
-      total: currentJourney.traversal.length,
-      percentage: Math.round((currentJourney.current_index / currentJourney.traversal.length) * 100)
-    };
+    var motifArray = Object.keys(allMotifs).map(function(code) {
+      var m = allMotifs[code];
+      return { code: code, label: m.label, category: m.category || code.charAt(0) };
+    });
+
+    function pickRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    // Pick 2 different archetypes
+    var arch1 = pickRandom(archetypes);
+    var arch2 = pickRandom(archetypes);
+    while (arch2 && arch1 && arch2.id === arch1.id && archetypes.length > 1) {
+      arch2 = pickRandom(archetypes);
+    }
+
+    // Pick 6 different motifs
+    var usedMotifs = {};
+    var motifSlots = ['1P', '2P', '3P', '1S', '2S', '3S'];
+    var motifConfig = {};
+    for (var i = 0; i < motifSlots.length; i++) {
+      var m = pickRandom(motifArray);
+      var attempts = 0;
+      while (usedMotifs[m.code] && attempts < 50) {
+        m = pickRandom(motifArray);
+        attempts++;
+      }
+      usedMotifs[m.code] = true;
+      motifConfig[motifSlots[i]] = m;
+    }
+
+    // Pick 3 different entities
+    var usedEntities = {};
+    var entityPairs = ['pair_14', 'pair_25', 'pair_36'];
+    var entityConfig = {};
+    for (var j = 0; j < entityPairs.length; j++) {
+      var e = pickRandom(entities);
+      var eAttempts = 0;
+      while (e && usedEntities[e.name] && eAttempts < 50) {
+        e = pickRandom(entities);
+        eAttempts++;
+      }
+      if (e) usedEntities[e.name] = true;
+      entityConfig[entityPairs[j]] = e;
+    }
+
+    // Set config state
+    configState.primary_archetype = arch1;
+    configState.secondary_archetype = arch2;
+    configState.motifs = motifConfig;
+    configState.entities = entityConfig;
+    configState.step = 4;
+
+    return configState;
   }
 
-  // Export
+  // ========== Export ==========
+
   window.MiroGlyph.journeyState = {
-    createJourney: createJourney,
-    getJourney: getJourney,
-    getCurrentNode: getCurrentNode,
+    // Mapping tables
+    PRIMARY_MAP: PRIMARY_MAP,
+    SECONDARY_MAP: SECONDARY_MAP,
+    ENTITY_MAP: ENTITY_MAP,
+    ALL_NODE_IDS: ALL_NODE_IDS,
+
+    // Node content derivation
+    getNodeContents: getNodeContents,
+    getNodePositions: getNodePositions,
+
+    // Config wizard
+    getConfigState: getConfigState,
+    setConfigStep: setConfigStep,
+    getConfigStep: getConfigStep,
+    setConfigArchetype: setConfigArchetype,
+    setConfigMotif: setConfigMotif,
+    setConfigEntity: setConfigEntity,
+    isConfigComplete: isConfigComplete,
+    isConfigStepComplete: isConfigStepComplete,
+    resetConfigState: resetConfigState,
+
+    // Network CRUD
+    createNetwork: createNetwork,
+    getNetwork: getNetwork,
+    getConfiguration: getConfiguration,
+    clearNetwork: clearNetwork,
+
+    // Traversal management
+    addTraversal: addTraversal,
+    startTraversal: startTraversal,
+    getCurrentTraversal: getCurrentTraversal,
     getCurrentNodeId: getCurrentNodeId,
-    getCurrentStepName: getCurrentStepName,
+    getCurrentNodeIndex: getCurrentNodeIndex,
     isCurrentNodeNontion: isCurrentNodeNontion,
-    setSelection: setSelection,
-    getSelection: getSelection,
-    nextStep: nextStep,
-    prevStep: prevStep,
     nextNode: nextNode,
     prevNode: prevNode,
-    completeNontion: completeNontion,
-    getRandomTraversal: getRandomTraversal,
-    getStarterTraversals: getStarterTraversals,
-    loadSavedJourneys: loadSavedJourneys,
-    saveCurrentJourney: saveCurrentJourney,
-    deleteSavedJourney: deleteSavedJourney,
-    resumeJourney: resumeJourney,
-    exportJourneyJSON: exportJourneyJSON,
-    clearJourney: clearJourney,
+    goToNode: goToNode,
+    setNote: setNote,
+    getNote: getNote,
+    completeTraversal: completeTraversal,
     getProgress: getProgress,
-    SELECTION_STEPS: SELECTION_STEPS
+
+    // Starter traversals
+    getStarterTraversals: getStarterTraversals,
+    getRandomTraversal: getRandomTraversal,
+
+    // Persistence
+    loadSavedNetworks: loadSavedNetworks,
+    saveCurrentNetwork: saveCurrentNetwork,
+    deleteSavedNetwork: deleteSavedNetwork,
+    loadNetwork: loadNetwork,
+    exportNetworkJSON: exportNetworkJSON,
+
+    // Random config
+    generateRandomConfig: generateRandomConfig
   };
 })();
