@@ -559,7 +559,7 @@
       '<h4>Archetypes</h4>' +
       '<div class="review-archetypes">' +
         '<span class="review-tag">' + utils.escapeHtml(cfg.primary_archetype ? cfg.primary_archetype.name : '?') + '</span>' +
-        '<span class="review-vs">vs</span>' +
+        '<span class="review-vs">&amp;</span>' +
         '<span class="review-tag">' + utils.escapeHtml(cfg.secondary_archetype ? cfg.secondary_archetype.name : '?') + '</span>' +
       '</div>' +
     '</div>';
