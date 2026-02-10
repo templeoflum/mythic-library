@@ -562,8 +562,8 @@
 
   .patterns-map-sidebar {
     width: 100%;
-    height: 280px;
-    min-height: 280px;
+    height: 310px;
+    min-height: 310px;
     flex-shrink: 0;
     border-right: none;
     border-bottom: 1px solid var(--color-border);
@@ -572,8 +572,8 @@
 
   .patterns-map-container {
     flex: none;
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
   }
 
@@ -621,9 +621,14 @@
   }
 
   .patterns-map-sidebar {
-    height: 240px;
-    min-height: 240px;
+    height: 260px;
+    min-height: 260px;
     overflow: hidden;
+  }
+
+  .patterns-map-container {
+    width: 250px;
+    height: 250px;
   }
 
   .patterns-content {
