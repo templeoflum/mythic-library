@@ -1,5 +1,5 @@
 // Mythic System Explorer — Codex View
-// Card grid with sub-tabs (archetypes/entities/motifs), filtering, lazy loading, and detail views
+// Card grid with sub-tabs (archetypes/entities/motifs/validation), filtering, lazy loading, and detail views
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
@@ -37,6 +37,31 @@
   var debounceTimer = null;
   var boundDetailClick = null;
   var boundSubTabClick = null;
+
+  // Validation state
+  var expandedTiers = {};
+  var expandedTests = {};
+  var expandedAuditCases = {};
+
+  // --- Verdict Styling ---
+  var VERDICT_BORDER = {
+    PASS: '#10b981',
+    PARTIAL: '#f59e0b',
+    FAIL: '#ef4444',
+    MIXED: '#6366f1',
+    PENDING: '#94a3b8',
+    ALTERNATIVES_FOUND: '#f59e0b'
+  };
+
+  function verdictClass(verdict) {
+    if (!verdict) return 'verdict-pending';
+    var v = verdict.toUpperCase();
+    if (v === 'PASS') return 'verdict-pass';
+    if (v === 'PARTIAL' || v === 'ALTERNATIVES_FOUND') return 'verdict-partial';
+    if (v === 'FAIL') return 'verdict-fail';
+    if (v === 'MIXED') return 'verdict-mixed';
+    return 'verdict-pending';
+  }
 
   // --- Init ---
 
@@ -76,6 +101,8 @@
       showArchetypeDetail(decodeURIComponent(params.id));
     } else if (params.subview === 'entity' && params.id) {
       showEntityDetail(decodeURIComponent(params.id));
+    } else if (params.subview === 'validation') {
+      switchSubTab('validation');
     } else {
       // No sub-route: show grid
       if (detailItem) {
@@ -90,6 +117,8 @@
   // --- Filter Bar ---
 
   function buildFilterBar() {
+    var isValidation = (subTab === 'validation');
+
     var html = '<div style="display:flex;align-items:center;gap:var(--spacing-sm);flex-wrap:wrap;padding:var(--spacing-sm) var(--spacing-lg)">';
 
     // Sub-tab toggles
@@ -97,44 +126,49 @@
     html += '<button class="codex-sub-tab' + (subTab === 'archetypes' ? ' active' : '') + '" data-sub="archetypes">Archetypes</button>';
     html += '<button class="codex-sub-tab' + (subTab === 'entities' ? ' active' : '') + '" data-sub="entities">Entities</button>';
     html += '<button class="codex-sub-tab' + (subTab === 'motifs' ? ' active' : '') + '" data-sub="motifs">Motifs</button>';
+    html += '<button class="codex-sub-tab' + (subTab === 'validation' ? ' active' : '') + '" data-sub="validation">Validation</button>';
     html += '</div>';
 
-    // Search
-    html += '<input type="text" class="search-input" id="codex-search" placeholder="Search..." value="' +
-      escapeAttr(filters.search) + '" style="flex:1;min-width:160px">';
+    if (!isValidation) {
+      // Search
+      html += '<input type="text" class="search-input" id="codex-search" placeholder="Search..." value="' +
+        escapeAttr(filters.search) + '" style="flex:1;min-width:160px">';
 
-    // Dropdowns depend on sub-tab
-    if (subTab === 'archetypes') {
-      html += buildArchetypeFilters();
-    } else if (subTab === 'entities') {
-      html += buildEntityFilters();
-    } else if (subTab === 'motifs') {
-      html += buildMotifFilters();
+      // Dropdowns depend on sub-tab
+      if (subTab === 'archetypes') {
+        html += buildArchetypeFilters();
+      } else if (subTab === 'entities') {
+        html += buildEntityFilters();
+      } else if (subTab === 'motifs') {
+        html += buildMotifFilters();
+      }
+
+      // Surprise Me button
+      html += '<button class="btn btn-small btn-surprise" id="codex-surprise" title="Random discovery">';
+      html += '\u2728 Surprise Me';
+      html += '</button>';
+
+      // Count
+      html += '<span id="codex-count" class="result-count" style="margin-left:auto;white-space:nowrap"></span>';
     }
-
-    // Surprise Me button
-    html += '<button class="btn btn-small btn-surprise" id="codex-surprise" title="Random discovery">';
-    html += '\u2728 Surprise Me';
-    html += '</button>';
-
-    // Count
-    html += '<span id="codex-count" class="result-count" style="margin-left:auto;white-space:nowrap"></span>';
 
     html += '</div>';
     filterBarEl.innerHTML = html;
     countEl = filterBarEl.querySelector('#codex-count');
 
-    // Wire up surprise button
-    var surpriseBtn = filterBarEl.querySelector('#codex-surprise');
-    if (surpriseBtn) {
-      surpriseBtn.addEventListener('click', function() {
-        var nav = window.MiroGlyph.nav;
-        if (nav && nav.surpriseMe) {
-          if (subTab === 'archetypes') nav.surpriseMe('archetype');
-          else if (subTab === 'entities') nav.surpriseMe('entity');
-          else if (subTab === 'motifs') nav.surpriseMe('motif');
-        }
-      });
+    if (!isValidation) {
+      // Wire up surprise button
+      var surpriseBtn = filterBarEl.querySelector('#codex-surprise');
+      if (surpriseBtn) {
+        surpriseBtn.addEventListener('click', function() {
+          var nav = window.MiroGlyph.nav;
+          if (nav && nav.surpriseMe) {
+            if (subTab === 'archetypes') nav.surpriseMe('archetype');
+            else if (subTab === 'entities') nav.surpriseMe('entity');
+            else if (subTab === 'motifs') nav.surpriseMe('motif');
+          }
+        });
+      }
     }
   }
 
@@ -352,7 +386,12 @@
     detailItem = null;
     buildFilterBar();
     wireFilterEvents();
-    renderGrid();
+
+    if (subTab === 'validation') {
+      renderValidationView();
+    } else {
+      renderGrid();
+    }
   }
 
   // --- Grid Rendering ---
@@ -839,6 +878,375 @@
       nav.toPattern(target.dataset.name);
       return;
     }
+  }
+
+  // =========================================================================
+  // Validation Sub-view (migrated from Chronicle)
+  // =========================================================================
+
+  function renderValidationView() {
+    var data = dataLoader.get('validation');
+    if (!data) {
+      gridEl.innerHTML = '<p class="empty-state" style="padding:var(--spacing-xl)">Loading validation data...</p>';
+      dataLoader.load('validation', 'data/validation_summary.json').then(function(d) {
+        if (d) renderValidation(d);
+      });
+      return;
+    }
+    renderValidation(data);
+  }
+
+  function renderValidation(data) {
+    if (!gridEl) return;
+
+    var html = '<div class="validation-layout">';
+    var summary = data.summary || {};
+
+    // Summary header
+    html += '<div class="validation-summary">';
+    html += renderValidationStat(summary.archetypes || 0, 'Archetypes');
+    html += renderValidationStat(summary.primordials || 0, 'Primordials');
+    html += renderValidationStat(
+      (summary.entities_mapped || 0) + '/' + (summary.library_entities || 0),
+      'Entities Mapped'
+    );
+    html += renderValidationStat(
+      (summary.mapping_rate || 0).toFixed(1) + '%',
+      'Mapping Rate'
+    );
+    html += renderValidationStat(summary.library_segments || 0, 'Segments');
+
+    // Overall verdict badge
+    var vClass = verdictClass(data.overall_verdict);
+    html += '<div class="validation-verdict ' + vClass + '">';
+    html += escapeHtml(data.overall_label || data.overall_verdict || 'Unknown');
+    html += '</div>';
+    html += '</div>';
+
+    // Tier cards
+    var tiers = data.tiers || [];
+    if (tiers.length > 0) {
+      html += '<div class="tier-cards" id="codex-tier-cards">';
+      for (var t = 0; t < tiers.length; t++) {
+        html += renderTierCard(tiers[t]);
+      }
+      html += '</div>';
+
+      // Expanded tier tests (rendered below the card row)
+      html += '<div id="codex-tier-tests"></div>';
+    }
+
+    // Recommendations
+    var recs = data.recommendations || [];
+    if (recs.length > 0) {
+      html += '<div class="recommendations">';
+      html += '<div class="pattern-detail-section-title" style="margin-bottom:8px">Recommendations</div>';
+      for (var r = 0; r < recs.length; r++) {
+        html += '<div class="recommendation-item">';
+        html += '<strong>' + (r + 1) + '.</strong> ' + escapeHtml(recs[r]);
+        html += '</div>';
+      }
+      html += '</div>';
+    }
+
+    // Audit Cases
+    var cases = data.audit_cases || [];
+    if (cases.length > 0) {
+      html += '<div class="audit-cases">';
+      html += '<div class="pattern-detail-section-title" style="margin-bottom:8px">Audit Cases (' + cases.length + ')</div>';
+      for (var c = 0; c < cases.length; c++) {
+        html += renderAuditCase(cases[c], c);
+      }
+      html += '</div>';
+    }
+
+    html += '</div>';
+    gridEl.innerHTML = html;
+
+    // Wire validation click events
+    wireValidationEvents();
+
+    // Render any initially expanded tiers
+    refreshExpandedTierTests(data);
+  }
+
+  function wireValidationEvents() {
+    gridEl.addEventListener('click', function(e) {
+      // Tier card toggle
+      var tierCard = e.target.closest('.tier-card');
+      if (tierCard) {
+        var tierId = tierCard.getAttribute('data-tier-id');
+        if (tierId) {
+          toggleTier(tierId);
+        }
+        return;
+      }
+
+      // Test toggle
+      var testHeader = e.target.closest('.tier-test-header');
+      if (testHeader) {
+        var testKey = testHeader.getAttribute('data-test-key');
+        if (testKey) {
+          toggleTest(testKey);
+        }
+        return;
+      }
+
+      // Audit case toggle
+      var auditHeader = e.target.closest('.audit-case-header');
+      if (auditHeader) {
+        var auditIdx = auditHeader.getAttribute('data-audit-idx');
+        if (auditIdx !== null) {
+          toggleAuditCase(parseInt(auditIdx, 10));
+        }
+        return;
+      }
+    });
+  }
+
+  function renderValidationStat(value, label) {
+    return '<div class="validation-stat">' +
+      '<div class="validation-stat-value">' + value + '</div>' +
+      '<div class="validation-stat-label">' + escapeHtml(label) + '</div>' +
+    '</div>';
+  }
+
+  function renderTierCard(tier) {
+    var borderColor = VERDICT_BORDER[tier.verdict] || VERDICT_BORDER.PENDING;
+    var vClass = verdictClass(tier.verdict);
+    var tests = tier.tests || [];
+    var passCount = 0;
+    for (var i = 0; i < tests.length; i++) {
+      if (tests[i].pass) passCount++;
+    }
+
+    var isExpanded = expandedTiers[tier.id];
+
+    var html = '<div class="tier-card' + (isExpanded ? ' expanded' : '') + '" data-tier-id="' + escapeAttr(tier.id) + '" style="border-top-color:' + borderColor + '">';
+    html += '<div class="tier-card-header">';
+    html += '<span class="tier-card-name">' + escapeHtml(tier.label || tier.id) + '</span>';
+    html += '<span class="validation-verdict ' + vClass + '" style="font-size:0.65rem;padding:1px 6px">' + escapeHtml(tier.verdict || '') + '</span>';
+    html += '</div>';
+    if (tests.length > 0) {
+      html += '<div class="tier-card-score">' + passCount + '/' + tests.length + ' passed</div>';
+    } else if (tier.insights && tier.insights.length > 0) {
+      html += '<div class="tier-card-score">' + tier.insights.length + ' insights</div>';
+    } else {
+      html += '<div class="tier-card-score">' + escapeHtml(tier.description || '') + '</div>';
+    }
+    html += '</div>';
+
+    return html;
+  }
+
+  function toggleTier(tierId) {
+    expandedTiers[tierId] = !expandedTiers[tierId];
+
+    // Update card expanded class
+    var card = gridEl.querySelector('.tier-card[data-tier-id="' + tierId + '"]');
+    if (card) {
+      card.classList.toggle('expanded', expandedTiers[tierId]);
+    }
+
+    var data = dataLoader.get('validation');
+    if (data) {
+      refreshExpandedTierTests(data);
+    }
+  }
+
+  function refreshExpandedTierTests(data) {
+    var testsEl = document.getElementById('codex-tier-tests');
+    if (!testsEl) return;
+
+    var tiers = data.tiers || [];
+    var html = '';
+
+    for (var t = 0; t < tiers.length; t++) {
+      var tier = tiers[t];
+      if (!expandedTiers[tier.id]) continue;
+
+      html += '<div class="tier-tests">';
+      var tests = tier.tests || [];
+      var insights = tier.insights || [];
+
+      if (tests.length > 0) {
+        html += '<div class="pattern-detail-section-title">' + escapeHtml(tier.label || tier.id) + ' Tests</div>';
+        for (var i = 0; i < tests.length; i++) {
+          html += renderTierTest(tier.id, tests[i], i);
+        }
+      }
+
+      if (insights.length > 0) {
+        html += '<div class="pattern-detail-section-title" style="margin-top:8px">' + escapeHtml(tier.label || tier.id) + ' Insights</div>';
+        for (var j = 0; j < insights.length; j++) {
+          var insight = insights[j];
+          var isConfirmed = insight.indexOf('CONFIRMED') === 0;
+          var badgeStyle = isConfirmed
+            ? 'background:rgba(16,185,129,0.2);color:#34d399'
+            : 'background:rgba(59,130,246,0.2);color:#60a5fa';
+          var badgeText = isConfirmed ? 'CONFIRMED' : 'INSIGHT';
+          html += '<div class="tier-test" style="padding:6px 0">';
+          html += '<span class="badge" style="' + badgeStyle + ';font-size:0.65rem;margin-right:8px">' + badgeText + '</span>';
+          html += '<span style="font-size:0.8rem">' + escapeHtml(insight.replace(/^(CONFIRMED|INSIGHT): ?/, '')) + '</span>';
+          html += '</div>';
+        }
+      }
+
+      if (tests.length === 0 && insights.length === 0) {
+        html += '<div class="empty-state" style="font-size:0.8rem">No automated tests for this tier.</div>';
+      }
+
+      html += '</div>';
+    }
+
+    testsEl.innerHTML = html;
+  }
+
+  function renderTierTest(tierId, test, idx) {
+    var testKey = tierId + ':' + idx;
+    var isExpanded = expandedTests[testKey];
+    var passBadge = test.pass
+      ? '<span class="badge" style="background:rgba(16,185,129,0.2);color:#34d399;font-size:0.65rem">PASS</span>'
+      : '<span class="badge" style="background:rgba(239,68,68,0.2);color:#f87171;font-size:0.65rem">FAIL</span>';
+
+    var html = '<div class="tier-test">';
+    html += '<div class="tier-test-header" data-test-key="' + escapeAttr(testKey) + '" style="cursor:pointer">';
+    html += '<span class="tier-test-name">' + escapeHtml(test.name || '') + '</span>';
+    html += passBadge;
+    html += '</div>';
+
+    if (isExpanded) {
+      html += '<div class="tier-test-detail">';
+      if (test.question) {
+        html += '<div style="margin-bottom:4px"><strong>Question:</strong> ' + escapeHtml(test.question) + '</div>';
+      }
+      if (test.criterion) {
+        html += '<div style="margin-bottom:4px"><strong>Criterion:</strong> ' + escapeHtml(test.criterion) + '</div>';
+      }
+      if (test.result) {
+        html += '<div style="margin-bottom:4px"><strong>Result:</strong> ' + escapeHtml(test.result) + '</div>';
+      }
+
+      // Key metrics table
+      var metrics = test.key_metrics;
+      if (metrics && typeof metrics === 'object') {
+        var keys = Object.keys(metrics);
+        if (keys.length > 0) {
+          html += '<div class="tier-test-metrics">';
+          for (var k = 0; k < keys.length; k++) {
+            var val = metrics[keys[k]];
+            var displayVal = typeof val === 'number' ? val.toFixed(4) : String(val);
+            html += '<div class="tier-test-metric-row">';
+            html += '<span>' + escapeHtml(keys[k]) + '</span>';
+            html += '<span>' + escapeHtml(displayVal) + '</span>';
+            html += '</div>';
+          }
+          html += '</div>';
+        }
+      }
+      html += '</div>';
+    }
+
+    html += '</div>';
+    return html;
+  }
+
+  function toggleTest(testKey) {
+    expandedTests[testKey] = !expandedTests[testKey];
+
+    var data = dataLoader.get('validation');
+    if (data) {
+      refreshExpandedTierTests(data);
+    }
+  }
+
+  function renderAuditCase(ac, idx) {
+    var isExpanded = expandedAuditCases[idx];
+
+    var html = '<div class="audit-case' + (isExpanded ? ' expanded' : '') + '">';
+
+    // Header
+    html += '<div class="audit-case-header" data-audit-idx="' + idx + '">';
+    html += '<span class="audit-case-num">#' + (idx + 1) + '</span>';
+    if (ac.category) {
+      html += '<span class="badge" style="font-size:0.65rem">' + escapeHtml(ac.category) + '</span>';
+    }
+    html += '<span class="audit-case-claim">' + escapeHtml(ac.claim || '') + '</span>';
+    html += '<span class="audit-case-expand">' + (isExpanded ? '\u25BC' : '\u25B6') + '</span>';
+    html += '</div>';
+
+    // Body (visible only when expanded)
+    html += '<div class="audit-case-body"' + (isExpanded ? '' : ' style="display:none"') + '>';
+
+    // Source + Target pair
+    if (ac.source || ac.target) {
+      html += '<div class="audit-case-pair">';
+      if (ac.source) {
+        html += renderAuditArchetype(ac.source, 'Source');
+      }
+      if (ac.target) {
+        html += renderAuditArchetype(ac.target, 'Target');
+      }
+      html += '</div>';
+    }
+
+    // Metrics
+    html += '<div class="audit-case-metrics">';
+    if (ac.distance_8d != null) {
+      html += renderAuditMetric(ac.distance_8d.toFixed(4), 'Distance');
+    }
+    if (ac.fidelity != null) {
+      html += renderAuditMetric(ac.fidelity.toFixed(2), 'Fidelity');
+    }
+    if (ac.reviewer_judgment) {
+      html += renderAuditMetric(ac.reviewer_judgment, 'Judgment');
+    }
+    html += '</div>';
+
+    // Reviewer notes
+    if (ac.reviewer_notes) {
+      html += '<div class="audit-case-notes">' + escapeHtml(ac.reviewer_notes) + '</div>';
+    }
+
+    html += '</div>'; // body
+    html += '</div>'; // audit-case
+
+    return html;
+  }
+
+  function renderAuditArchetype(arch, label) {
+    var html = '<div class="audit-case-archetype">';
+    html += '<div style="font-size:0.65rem;color:#94a3b8;text-transform:uppercase;margin-bottom:2px">' + escapeHtml(label) + '</div>';
+    html += '<div class="audit-case-arch-name">' + escapeHtml(arch.name || arch.id || '') + '</div>';
+    if (arch.system) {
+      html += '<span class="badge" style="font-size:0.6rem">' + escapeHtml(arch.system) + '</span>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  function renderAuditMetric(value, label) {
+    return '<div class="audit-case-metric">' +
+      '<div class="audit-case-metric-value">' + escapeHtml(String(value)) + '</div>' +
+      '<div class="audit-case-metric-label">' + escapeHtml(label) + '</div>' +
+    '</div>';
+  }
+
+  function toggleAuditCase(idx) {
+    expandedAuditCases[idx] = !expandedAuditCases[idx];
+
+    var data = dataLoader.get('validation');
+    if (!data) return;
+
+    var casesEl = gridEl.querySelector('.audit-cases');
+    if (!casesEl) return;
+
+    var cases = data.audit_cases || [];
+    var html = '<div class="pattern-detail-section-title" style="margin-bottom:8px">Audit Cases (' + cases.length + ')</div>';
+    for (var c = 0; c < cases.length; c++) {
+      html += renderAuditCase(cases[c], c);
+    }
+    casesEl.innerHTML = html;
   }
 
   // --- Utilities ---

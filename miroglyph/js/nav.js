@@ -84,9 +84,15 @@
     pushRoute('chronicle/pattern/' + encodeURIComponent(patternName));
   }
 
-  // Navigate to the validation sub-view
+  // Navigate to a journey in the Chronicle
+  function toJourney(journeyId, displayName) {
+    addBreadcrumb('journey', journeyId, displayName || 'Journey');
+    pushRoute('chronicle/journey/' + encodeURIComponent(journeyId));
+  }
+
+  // Navigate to the validation sub-view (now in Codex)
   function toValidation() {
-    pushRoute('chronicle/validation');
+    pushRoute('codex/validation');
   }
 
   // Navigate to a breadcrumb item
@@ -95,6 +101,7 @@
     else if (item.type === 'archetype') toArchetype(item.id, item.name);
     else if (item.type === 'entity') toEntity(item.id);
     else if (item.type === 'pattern') toPattern(item.id, item.name);
+    else if (item.type === 'journey') toJourney(item.id, item.name);
   }
 
   // Go back to previous state
@@ -193,6 +200,7 @@
     toArchetype: toArchetype,
     toEntity: toEntity,
     toPattern: toPattern,
+    toJourney: toJourney,
     toValidation: toValidation,
     toBreadcrumb: toBreadcrumb,
     back: back,

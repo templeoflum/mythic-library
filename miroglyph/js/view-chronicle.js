@@ -1,5 +1,5 @@
 // Mythic System Explorer — Chronicle View
-// Dual sub-view: Patterns (mini-map + pattern grid) and Validation (tiers + audit)
+// Dual sub-view: Mythic Paths (mini-map + pattern grid) and My Journeys (aggregated traversals)
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
@@ -9,39 +9,23 @@
   var tabRouter = window.MiroGlyph.tabRouter;
   var miniMap = window.MiroGlyph.miniMap;
   var cardRenderer = window.MiroGlyph.cardRenderer;
+  var journeyAggregator = window.MiroGlyph.journeyAggregator;
 
   // --- State ---
-  var currentSubView = 'patterns'; // 'patterns' or 'validation'
+  var currentSubView = 'paths'; // 'paths' or 'journeys'
   var selectedPatternName = null;
   var arcFilter = null;              // null, 'D', 'R', or 'E'
   var container = null;
-  var expandedTiers = {};            // tier id -> boolean
-  var expandedTests = {};            // "tierId:testIdx" -> boolean
-  var expandedAuditCases = {};       // index -> boolean
+
+  // Journey state
+  var journeyRecords = [];
+  var selectedJourneyId = null;
+  var journeySourceFilter = null;   // null | 'explorer' | 'journey'
+  var journeySortOrder = 'newest';  // 'newest' | 'oldest' | 'name'
 
   // --- Arc Metadata ---
   var ARC_COLORS = { D: '#8b5cf6', R: '#3b82f6', E: '#10b981' };
   var ARC_NAMES = { D: 'Descent', R: 'Resonance', E: 'Emergence' };
-
-  // --- Verdict Styling ---
-  var VERDICT_BORDER = {
-    PASS: '#10b981',
-    PARTIAL: '#f59e0b',
-    FAIL: '#ef4444',
-    MIXED: '#6366f1',
-    PENDING: '#94a3b8',
-    ALTERNATIVES_FOUND: '#f59e0b'
-  };
-
-  function verdictClass(verdict) {
-    if (!verdict) return 'verdict-pending';
-    var v = verdict.toUpperCase();
-    if (v === 'PASS') return 'verdict-pass';
-    if (v === 'PARTIAL' || v === 'ALTERNATIVES_FOUND') return 'verdict-partial';
-    if (v === 'FAIL') return 'verdict-fail';
-    if (v === 'MIXED') return 'verdict-mixed';
-    return 'verdict-pending';
-  }
 
   // =========================================================================
   // Init
@@ -62,11 +46,11 @@
 
     // Sub-tab toggles
     html += '<div class="chronicle-sub-tabs">';
-    html += '<button class="chronicle-sub-tab active" data-subtab="patterns">Patterns</button>';
-    html += '<button class="chronicle-sub-tab" data-subtab="validation">Validation</button>';
+    html += '<button class="chronicle-sub-tab active" data-subtab="paths">Mythic Paths</button>';
+    html += '<button class="chronicle-sub-tab" data-subtab="journeys">My Journeys</button>';
     html += '</div>';
 
-    // Arc filter buttons (patterns sub-view only)
+    // Arc filter buttons (paths sub-view only)
     html += '<div class="patterns-arc-filters" id="chronicle-arc-filters">';
     html += '<button class="btn btn-small arc-filter-btn" data-arc="D" style="border-color:' + ARC_COLORS.D + ';color:' + ARC_COLORS.D + '">D</button>';
     html += '<button class="btn btn-small arc-filter-btn" data-arc="R" style="border-color:' + ARC_COLORS.R + ';color:' + ARC_COLORS.R + '">R</button>';
@@ -76,7 +60,7 @@
 
     html += '</div>'; // filter-bar
 
-    // Patterns sub-view
+    // Mythic Paths sub-view
     html += '<div class="patterns-layout" id="chronicle-patterns">';
     html += '<div class="patterns-map-sidebar">';
     html += '<div class="patterns-map-container" id="chronicle-minimap"></div>';
@@ -87,15 +71,23 @@
     html += '</div>';
     html += '</div>';
 
-    // Validation sub-view
-    html += '<div class="validation-layout" id="chronicle-validation" style="display:none">';
+    // My Journeys sub-view
+    html += '<div class="journeys-layout" id="chronicle-journeys" style="display:none">';
+    html += '<div class="journeys-sidebar">';
+    html += '<div class="journeys-map-container" id="chronicle-journeys-minimap"></div>';
+    html += '</div>';
+    html += '<div class="journeys-content">';
+    html += '<div id="chronicle-journey-detail"></div>';
+    html += '<div class="journeys-controls" id="chronicle-journeys-controls"></div>';
+    html += '<div class="journey-list" id="chronicle-journey-list"></div>';
+    html += '</div>';
     html += '</div>';
 
     html += '</div>'; // chronicle-layout
 
     container.innerHTML = html;
 
-    // Render mini-map
+    // Render mini-map into Mythic Paths (default visible)
     var mapContainer = document.getElementById('chronicle-minimap');
     if (mapContainer && miniMap) {
       miniMap.render(mapContainer);
@@ -103,7 +95,6 @@
 
     // Load and render data
     renderPatternsSubView();
-    renderValidationSubView();
   }
 
   // =========================================================================
@@ -154,6 +145,13 @@
         return;
       }
 
+      // Journey detail close button
+      var journeyCloseBtn = e.target.closest('.journey-detail-close');
+      if (journeyCloseBtn) {
+        closeJourneyDetail();
+        return;
+      }
+
       // Entity tag click
       var entityTag = e.target.closest('.pattern-entity-tag');
       if (entityTag) {
@@ -169,13 +167,11 @@
       if (motifTag) {
         var motifCode = motifTag.getAttribute('data-motif-code');
         if (motifCode) {
-          // Navigate to codex and switch to motifs tab with search for this code
           window.location.hash = 'codex';
           setTimeout(function() {
             var viewCodex = window.MiroGlyph.viewCodex;
             if (viewCodex && viewCodex.switchSubTab) {
               viewCodex.switchSubTab('motifs');
-              // Set the search filter to find this motif
               var searchInput = document.querySelector('#codex-search');
               if (searchInput) {
                 searchInput.value = motifCode;
@@ -187,34 +183,29 @@
         return;
       }
 
-      // Tier card toggle
-      var tierCard = e.target.closest('.tier-card');
-      if (tierCard) {
-        var tierId = tierCard.getAttribute('data-tier-id');
-        if (tierId) {
-          toggleTier(tierId);
-        }
+      // Source filter button
+      var sourceBtn = e.target.closest('.source-filter-btn');
+      if (sourceBtn) {
+        handleSourceFilter(sourceBtn.getAttribute('data-source'));
         return;
       }
 
-      // Test toggle
-      var testHeader = e.target.closest('.tier-test-header');
-      if (testHeader) {
-        var testKey = testHeader.getAttribute('data-test-key');
-        if (testKey) {
-          toggleTest(testKey);
+      // Journey card click
+      var journeyCard = e.target.closest('.journey-card');
+      if (journeyCard) {
+        var journeyId = journeyCard.getAttribute('data-journey-id');
+        if (journeyId) {
+          selectJourney(journeyId);
         }
         return;
       }
+    });
 
-      // Audit case toggle
-      var auditHeader = e.target.closest('.audit-case-header');
-      if (auditHeader) {
-        var auditIdx = auditHeader.getAttribute('data-audit-idx');
-        if (auditIdx !== null) {
-          toggleAuditCase(parseInt(auditIdx, 10));
-        }
-        return;
+    // Sort dropdown change
+    container.addEventListener('change', function(e) {
+      if (e.target.closest('.journeys-sort')) {
+        journeySortOrder = e.target.value;
+        loadAndRenderJourneys();
       }
     });
   }
@@ -238,17 +229,36 @@
 
     // Toggle visibility
     var patternsEl = document.getElementById('chronicle-patterns');
-    var validationEl = document.getElementById('chronicle-validation');
+    var journeysEl = document.getElementById('chronicle-journeys');
     var arcFilters = document.getElementById('chronicle-arc-filters');
 
-    if (name === 'patterns') {
+    if (name === 'paths') {
       if (patternsEl) patternsEl.style.display = '';
-      if (validationEl) validationEl.style.display = 'none';
+      if (journeysEl) journeysEl.style.display = 'none';
       if (arcFilters) arcFilters.style.display = '';
-    } else {
+
+      // Re-render mini-map into Mythic Paths sidebar
+      var mapContainer = document.getElementById('chronicle-minimap');
+      if (mapContainer && miniMap) {
+        miniMap.render(mapContainer);
+        // Restore arc filter highlight if active
+        if (arcFilter) {
+          miniMap.highlightArc(arcFilter);
+        }
+      }
+    } else if (name === 'journeys') {
       if (patternsEl) patternsEl.style.display = 'none';
-      if (validationEl) validationEl.style.display = '';
+      if (journeysEl) journeysEl.style.display = '';
       if (arcFilters) arcFilters.style.display = 'none';
+
+      // Re-render mini-map into My Journeys sidebar
+      var jMapContainer = document.getElementById('chronicle-journeys-minimap');
+      if (jMapContainer && miniMap) {
+        miniMap.render(jMapContainer);
+      }
+
+      // Load journey data fresh each time (picks up new saves)
+      loadAndRenderJourneys();
     }
   }
 
@@ -260,18 +270,21 @@
     if (!params) return;
 
     if (params.subview === 'pattern' && params.id) {
-      switchSubView('patterns');
+      switchSubView('paths');
       var patternName = decodeURIComponent(params.id);
       selectPattern(patternName);
-    } else if (params.subview === 'validation') {
-      switchSubView('validation');
+    } else if (params.subview === 'journeys') {
+      switchSubView('journeys');
+    } else if (params.subview === 'journey' && params.id) {
+      switchSubView('journeys');
+      selectJourney(decodeURIComponent(params.id));
     } else {
-      switchSubView('patterns');
+      switchSubView('paths');
     }
   }
 
   // =========================================================================
-  // Patterns Sub-view
+  // Mythic Paths Sub-view
   // =========================================================================
 
   function renderPatternsSubView() {
@@ -515,351 +528,391 @@
   }
 
   // =========================================================================
-  // Validation Sub-view
+  // My Journeys Sub-view
   // =========================================================================
 
-  function renderValidationSubView() {
-    var data = dataLoader.get('validation');
-    if (!data) {
-      dataLoader.load('validation', 'data/validation_summary.json').then(function(d) {
-        if (d) renderValidation(d);
-      });
+  function loadAndRenderJourneys() {
+    if (!journeyAggregator) return;
+
+    journeyRecords = journeyAggregator.loadAll(journeySortOrder);
+    renderJourneyControls();
+    renderJourneyList();
+
+    // Re-select if we had a selection
+    if (selectedJourneyId) {
+      var found = false;
+      for (var i = 0; i < journeyRecords.length; i++) {
+        if (journeyRecords[i].id === selectedJourneyId) {
+          found = true;
+          break;
+        }
+      }
+      if (found) {
+        renderJourneyDetail(selectedJourneyId);
+      } else {
+        selectedJourneyId = null;
+        clearJourneyDetail();
+      }
+    }
+  }
+
+  function renderJourneyControls() {
+    var controlsEl = document.getElementById('chronicle-journeys-controls');
+    if (!controlsEl) return;
+
+    var filtered = getFilteredJourneys();
+
+    var html = '';
+
+    // Source filter pills
+    html += '<div class="journeys-filter-bar">';
+    html += '<button class="source-filter-btn' + (journeySourceFilter === null ? ' active' : '') + '" data-source="all">All</button>';
+    html += '<button class="source-filter-btn' + (journeySourceFilter === 'explorer' ? ' active' : '') + '" data-source="explorer">Atlas</button>';
+    html += '<button class="source-filter-btn' + (journeySourceFilter === 'journey' ? ' active' : '') + '" data-source="journey">Journey</button>';
+
+    // Sort dropdown
+    html += '<select class="journeys-sort">';
+    html += '<option value="newest"' + (journeySortOrder === 'newest' ? ' selected' : '') + '>Newest</option>';
+    html += '<option value="oldest"' + (journeySortOrder === 'oldest' ? ' selected' : '') + '>Oldest</option>';
+    html += '<option value="name"' + (journeySortOrder === 'name' ? ' selected' : '') + '>Name A\u2013Z</option>';
+    html += '</select>';
+
+    // Count badge
+    html += '<span class="journeys-count">' + filtered.length + ' journey' + (filtered.length !== 1 ? 's' : '') + '</span>';
+
+    html += '</div>';
+
+    controlsEl.innerHTML = html;
+  }
+
+  function getFilteredJourneys() {
+    if (!journeySourceFilter) return journeyRecords;
+
+    var filtered = [];
+    for (var i = 0; i < journeyRecords.length; i++) {
+      if (journeyRecords[i].source === journeySourceFilter) {
+        filtered.push(journeyRecords[i]);
+      }
+    }
+    return filtered;
+  }
+
+  function handleSourceFilter(source) {
+    if (source === 'all') {
+      journeySourceFilter = null;
+    } else {
+      // Toggle off if clicking the same filter
+      if (journeySourceFilter === source) {
+        journeySourceFilter = null;
+      } else {
+        journeySourceFilter = source;
+      }
+    }
+    renderJourneyControls();
+    renderJourneyList();
+  }
+
+  function renderJourneyList() {
+    var listEl = document.getElementById('chronicle-journey-list');
+    if (!listEl) return;
+
+    var filtered = getFilteredJourneys();
+
+    if (filtered.length === 0) {
+      var emptyMsg = journeySourceFilter
+        ? 'No ' + (journeySourceFilter === 'explorer' ? 'Atlas' : 'Journey Mapper') + ' traversals found.'
+        : 'No journeys recorded yet. Create traversals in the Atlas or walk networks in the Journey Mapper to see them here.';
+      listEl.innerHTML = '<div class="journeys-empty">' + escapeHtml(emptyMsg) + '</div>';
       return;
     }
-    renderValidation(data);
-  }
-
-  function renderValidation(data) {
-    var el = document.getElementById('chronicle-validation');
-    if (!el) return;
 
     var html = '';
-    var summary = data.summary || {};
-
-    // Summary header
-    html += '<div class="validation-summary">';
-    html += renderValidationStat(summary.archetypes || 0, 'Archetypes');
-    html += renderValidationStat(summary.primordials || 0, 'Primordials');
-    html += renderValidationStat(
-      (summary.entities_mapped || 0) + '/' + (summary.library_entities || 0),
-      'Entities Mapped'
-    );
-    html += renderValidationStat(
-      (summary.mapping_rate || 0).toFixed(1) + '%',
-      'Mapping Rate'
-    );
-    html += renderValidationStat(summary.library_segments || 0, 'Segments');
-
-    // Overall verdict badge
-    var vClass = verdictClass(data.overall_verdict);
-    html += '<div class="validation-verdict ' + vClass + '">';
-    html += escapeHtml(data.overall_label || data.overall_verdict || 'Unknown');
-    html += '</div>';
-    html += '</div>';
-
-    // Tier cards
-    var tiers = data.tiers || [];
-    if (tiers.length > 0) {
-      html += '<div class="tier-cards" id="chronicle-tier-cards">';
-      for (var t = 0; t < tiers.length; t++) {
-        html += renderTierCard(tiers[t]);
-      }
-      html += '</div>';
-
-      // Expanded tier tests (rendered below the card row)
-      html += '<div id="chronicle-tier-tests"></div>';
+    for (var i = 0; i < filtered.length; i++) {
+      html += renderJourneyCard(filtered[i]);
     }
 
-    // Recommendations
-    var recs = data.recommendations || [];
-    if (recs.length > 0) {
-      html += '<div class="recommendations">';
-      html += '<div class="pattern-detail-section-title" style="margin-bottom:8px">Recommendations</div>';
-      for (var r = 0; r < recs.length; r++) {
-        html += '<div class="recommendation-item">';
-        html += '<strong>' + (r + 1) + '.</strong> ' + escapeHtml(recs[r]);
-        html += '</div>';
-      }
-      html += '</div>';
-    }
-
-    // Audit Cases
-    var cases = data.audit_cases || [];
-    if (cases.length > 0) {
-      html += '<div class="audit-cases">';
-      html += '<div class="pattern-detail-section-title" style="margin-bottom:8px">Audit Cases (' + cases.length + ')</div>';
-      for (var c = 0; c < cases.length; c++) {
-        html += renderAuditCase(cases[c], c);
-      }
-      html += '</div>';
-    }
-
-    el.innerHTML = html;
-
-    // Render any initially expanded tiers
-    refreshExpandedTierTests(data);
+    listEl.innerHTML = html;
   }
 
-  function renderValidationStat(value, label) {
-    return '<div class="validation-stat">' +
-      '<div class="validation-stat-value">' + value + '</div>' +
-      '<div class="validation-stat-label">' + escapeHtml(label) + '</div>' +
-    '</div>';
-  }
+  function renderJourneyCard(record) {
+    var r = record;
+    var isSelected = selectedJourneyId === r.id;
+    var sourceLabel = r.source === 'explorer' ? 'Atlas' : 'Journey';
+    var sourceCls = r.source === 'explorer' ? 'source-explorer' : 'source-journey';
 
-  // =========================================================================
-  // Tier Cards
-  // =========================================================================
+    var html = '<div class="journey-card' + (isSelected ? ' selected' : '') + '" data-journey-id="' + escapeAttr(r.id) + '" style="border-left-color:' + r.color + '">';
 
-  function renderTierCard(tier) {
-    var borderColor = VERDICT_BORDER[tier.verdict] || VERDICT_BORDER.PENDING;
-    var vClass = verdictClass(tier.verdict);
-    var tests = tier.tests || [];
-    var passCount = 0;
-    for (var i = 0; i < tests.length; i++) {
-      if (tests[i].pass) passCount++;
-    }
-
-    var isExpanded = expandedTiers[tier.id];
-
-    var html = '<div class="tier-card' + (isExpanded ? ' expanded' : '') + '" data-tier-id="' + escapeAttr(tier.id) + '" style="border-top-color:' + borderColor + '">';
-    html += '<div class="tier-card-header">';
-    html += '<span class="tier-card-name">' + escapeHtml(tier.label || tier.id) + '</span>';
-    html += '<span class="validation-verdict ' + vClass + '" style="font-size:0.65rem;padding:1px 6px">' + escapeHtml(tier.verdict || '') + '</span>';
-    html += '</div>';
-    // Only show score if there are actual tests, otherwise show insight count or description
-    if (tests.length > 0) {
-      html += '<div class="tier-card-score">' + passCount + '/' + tests.length + ' passed</div>';
-    } else if (tier.insights && tier.insights.length > 0) {
-      html += '<div class="tier-card-score">' + tier.insights.length + ' insights</div>';
-    } else {
-      html += '<div class="tier-card-score">' + escapeHtml(tier.description || '') + '</div>';
+    // Header row: source badge + color dot + name + date
+    html += '<div class="journey-card-header">';
+    html += '<span class="journey-source-badge ' + sourceCls + '">' + sourceLabel + '</span>';
+    html += '<span class="journey-color-dot" style="background:' + r.color + '"></span>';
+    html += '<span class="journey-card-name">' + escapeHtml(r.name) + '</span>';
+    if (r.created_date) {
+      html += '<span class="journey-card-date">' + formatDate(r.created_date) + '</span>';
     }
     html += '</div>';
 
-    return html;
-  }
-
-  function toggleTier(tierId) {
-    expandedTiers[tierId] = !expandedTiers[tierId];
-
-    // Update card expanded class
-    var card = container.querySelector('.tier-card[data-tier-id="' + tierId + '"]');
-    if (card) {
-      card.classList.toggle('expanded', expandedTiers[tierId]);
-    }
-
-    // Refresh the expanded tests area
-    var data = dataLoader.get('validation');
-    if (data) {
-      refreshExpandedTierTests(data);
-    }
-  }
-
-  function refreshExpandedTierTests(data) {
-    var testsEl = document.getElementById('chronicle-tier-tests');
-    if (!testsEl) return;
-
-    var tiers = data.tiers || [];
-    var html = '';
-
-    for (var t = 0; t < tiers.length; t++) {
-      var tier = tiers[t];
-      if (!expandedTiers[tier.id]) continue;
-
-      html += '<div class="tier-tests">';
-      var tests = tier.tests || [];
-      var insights = tier.insights || [];
-
-      if (tests.length > 0) {
-        html += '<div class="pattern-detail-section-title">' + escapeHtml(tier.label || tier.id) + ' Tests</div>';
-        for (var i = 0; i < tests.length; i++) {
-          html += renderTierTest(tier.id, tests[i], i);
+    // Sequence row: arc-colored node chips (max 6 + overflow)
+    var seq = r.sequence || [];
+    if (seq.length > 0) {
+      html += '<div class="journey-card-sequence">';
+      var limit = Math.min(6, seq.length);
+      for (var i = 0; i < limit; i++) {
+        var nodeId = seq[i];
+        var chipColor = getNodeChipColor(nodeId);
+        html += '<span class="node-chip-small" style="background:' + chipColor + '">' + escapeHtml(nodeId) + '</span>';
+        if (i < limit - 1 || seq.length > limit) {
+          html += '<span class="node-chip-arrow">\u2192</span>';
         }
       }
-
-      if (insights.length > 0) {
-        html += '<div class="pattern-detail-section-title" style="margin-top:8px">' + escapeHtml(tier.label || tier.id) + ' Insights</div>';
-        for (var j = 0; j < insights.length; j++) {
-          var insight = insights[j];
-          var isConfirmed = insight.indexOf('CONFIRMED') === 0;
-          var badgeStyle = isConfirmed
-            ? 'background:rgba(16,185,129,0.2);color:#34d399'
-            : 'background:rgba(59,130,246,0.2);color:#60a5fa';
-          var badgeText = isConfirmed ? 'CONFIRMED' : 'INSIGHT';
-          html += '<div class="tier-test" style="padding:6px 0">';
-          html += '<span class="badge" style="' + badgeStyle + ';font-size:0.65rem;margin-right:8px">' + badgeText + '</span>';
-          html += '<span style="font-size:0.8rem">' + escapeHtml(insight.replace(/^(CONFIRMED|INSIGHT): ?/, '')) + '</span>';
-          html += '</div>';
-        }
+      if (seq.length > 6) {
+        html += '<span class="node-chip-more">+' + (seq.length - 6) + ' more</span>';
       }
-
-      if (tests.length === 0 && insights.length === 0) {
-        html += '<div class="empty-state" style="font-size:0.8rem">No automated tests for this tier.</div>';
-      }
-
       html += '</div>';
     }
 
-    testsEl.innerHTML = html;
-  }
-
-  function renderTierTest(tierId, test, idx) {
-    var testKey = tierId + ':' + idx;
-    var isExpanded = expandedTests[testKey];
-    var passBadge = test.pass
-      ? '<span class="badge" style="background:rgba(16,185,129,0.2);color:#34d399;font-size:0.65rem">PASS</span>'
-      : '<span class="badge" style="background:rgba(239,68,68,0.2);color:#f87171;font-size:0.65rem">FAIL</span>';
-
-    var html = '<div class="tier-test">';
-    html += '<div class="tier-test-header" data-test-key="' + escapeAttr(testKey) + '" style="cursor:pointer">';
-    html += '<span class="tier-test-name">' + escapeHtml(test.name || '') + '</span>';
-    html += passBadge;
+    // Meta row: context info + badges
+    html += '<div class="journey-card-meta">';
+    if (r.network_name) {
+      html += '<span class="journey-context">' + escapeHtml(r.network_name) + '</span>';
+    }
+    if (r.archetype_summary) {
+      html += '<span class="journey-context">' + escapeHtml(r.archetype_summary) + '</span>';
+    }
+    if (r.group_name) {
+      html += '<span class="journey-context">' + escapeHtml(r.group_name) + '</span>';
+    }
+    if (r.is_circuit) {
+      html += '<span class="badge-circuit">Circuit</span>';
+    }
+    if (r.completed) {
+      html += '<span class="badge-completed">Completed</span>';
+    }
+    if (r.notes && Object.keys(r.notes).length > 0) {
+      html += '<span class="badge-notes">' + Object.keys(r.notes).length + ' notes</span>';
+    }
     html += '</div>';
-
-    if (isExpanded) {
-      html += '<div class="tier-test-detail">';
-      if (test.question) {
-        html += '<div style="margin-bottom:4px"><strong>Question:</strong> ' + escapeHtml(test.question) + '</div>';
-      }
-      if (test.criterion) {
-        html += '<div style="margin-bottom:4px"><strong>Criterion:</strong> ' + escapeHtml(test.criterion) + '</div>';
-      }
-      if (test.result) {
-        html += '<div style="margin-bottom:4px"><strong>Result:</strong> ' + escapeHtml(test.result) + '</div>';
-      }
-
-      // Key metrics table
-      var metrics = test.key_metrics;
-      if (metrics && typeof metrics === 'object') {
-        var keys = Object.keys(metrics);
-        if (keys.length > 0) {
-          html += '<div class="tier-test-metrics">';
-          for (var k = 0; k < keys.length; k++) {
-            var val = metrics[keys[k]];
-            var displayVal = typeof val === 'number' ? val.toFixed(4) : String(val);
-            html += '<div class="tier-test-metric-row">';
-            html += '<span>' + escapeHtml(keys[k]) + '</span>';
-            html += '<span>' + escapeHtml(displayVal) + '</span>';
-            html += '</div>';
-          }
-          html += '</div>';
-        }
-      }
-      html += '</div>';
-    }
 
     html += '</div>';
     return html;
   }
 
-  function toggleTest(testKey) {
-    expandedTests[testKey] = !expandedTests[testKey];
+  // =========================================================================
+  // Journey Selection & Detail
+  // =========================================================================
 
-    // Re-render expanded tier tests
-    var data = dataLoader.get('validation');
-    if (data) {
-      refreshExpandedTierTests(data);
+  function selectJourney(journeyId) {
+    selectedJourneyId = journeyId;
+
+    // Update card selection
+    var cards = container.querySelectorAll('.journey-card');
+    for (var i = 0; i < cards.length; i++) {
+      if (cards[i].getAttribute('data-journey-id') === journeyId) {
+        cards[i].classList.add('selected');
+      } else {
+        cards[i].classList.remove('selected');
+      }
     }
+
+    renderJourneyDetail(journeyId);
   }
 
-  // =========================================================================
-  // Audit Cases
-  // =========================================================================
+  function renderJourneyDetail(journeyId) {
+    var detailEl = document.getElementById('chronicle-journey-detail');
+    if (!detailEl) return;
 
-  function renderAuditCase(ac, idx) {
-    var isExpanded = expandedAuditCases[idx];
+    var record = null;
+    for (var i = 0; i < journeyRecords.length; i++) {
+      if (journeyRecords[i].id === journeyId) {
+        record = journeyRecords[i];
+        break;
+      }
+    }
+    if (!record) {
+      detailEl.innerHTML = '';
+      return;
+    }
 
-    var html = '<div class="audit-case' + (isExpanded ? ' expanded' : '') + '">';
+    var r = record;
+    var sourceLabel = r.source === 'explorer' ? 'Atlas' : 'Journey Mapper';
+    var sourceCls = r.source === 'explorer' ? 'source-explorer' : 'source-journey';
+
+    var html = '<div class="journey-detail" style="border-left-color:' + r.color + '">';
 
     // Header
-    html += '<div class="audit-case-header" data-audit-idx="' + idx + '">';
-    html += '<span class="audit-case-num">#' + (idx + 1) + '</span>';
-    if (ac.category) {
-      html += '<span class="badge" style="font-size:0.65rem">' + escapeHtml(ac.category) + '</span>';
+    html += '<div class="journey-detail-header">';
+    html += '<span class="journey-source-badge ' + sourceCls + '">' + sourceLabel + '</span>';
+    html += '<span class="journey-detail-name">' + escapeHtml(r.name) + '</span>';
+    if (r.completed) {
+      html += '<span class="badge-completed">Completed</span>';
     }
-    html += '<span class="audit-case-claim">' + escapeHtml(ac.claim || '') + '</span>';
-    html += '<span class="audit-case-expand">' + (isExpanded ? '\u25BC' : '\u25B6') + '</span>';
+    if (r.is_circuit) {
+      html += '<span class="badge-circuit">Circuit</span>';
+    }
+    html += '<button class="btn btn-small journey-detail-close" title="Close">&times;</button>';
     html += '</div>';
 
-    // Body (visible only when expanded)
-    html += '<div class="audit-case-body"' + (isExpanded ? '' : ' style="display:none"') + '>';
+    // Description (Explorer only)
+    if (r.description) {
+      html += '<div class="journey-detail-desc">' + escapeHtml(r.description) + '</div>';
+    }
 
-    // Source + Target pair
-    if (ac.source || ac.target) {
-      html += '<div class="audit-case-pair">';
-      if (ac.source) {
-        html += renderAuditArchetype(ac.source, 'Source');
+    // Stats row
+    var seq = r.sequence || [];
+    var arcBreakdown = getArcBreakdown(seq);
+
+    html += '<div class="journey-detail-stats">';
+    html += renderJourneyStat(seq.length, 'Nodes');
+    html += renderJourneyStat(arcBreakdown.D || 0, 'Descent');
+    html += renderJourneyStat(arcBreakdown.R || 0, 'Resonance');
+    html += renderJourneyStat(arcBreakdown.E || 0, 'Emergence');
+    if (arcBreakdown.other > 0) {
+      html += renderJourneyStat(arcBreakdown.other, 'Other');
+    }
+    html += '</div>';
+
+    // Full sequence visualization
+    if (seq.length > 0) {
+      html += '<div class="journey-detail-section">';
+      html += '<div class="journey-detail-section-title">Sequence</div>';
+      html += '<div class="journey-detail-sequence">';
+      for (var s = 0; s < seq.length; s++) {
+        var nodeId = seq[s];
+        var chipColor = getNodeChipColor(nodeId);
+        html += '<span class="node-chip-small" style="background:' + chipColor + '">' + escapeHtml(nodeId) + '</span>';
+        if (s < seq.length - 1) {
+          html += '<span class="node-chip-arrow">\u2192</span>';
+        }
       }
-      if (ac.target) {
-        html += renderAuditArchetype(ac.target, 'Target');
-      }
+      html += '</div>';
       html += '</div>';
     }
 
-    // Metrics
-    html += '<div class="audit-case-metrics">';
-    if (ac.distance_8d != null) {
-      html += renderAuditMetric(ac.distance_8d.toFixed(4), 'Distance');
+    // Context info
+    if (r.network_name || r.archetype_summary || r.group_name || r.created_date) {
+      html += '<div class="journey-detail-section">';
+      html += '<div class="journey-detail-section-title">Context</div>';
+      html += '<div class="journey-detail-context">';
+      if (r.network_name) {
+        html += '<div><strong>Network:</strong> ' + escapeHtml(r.network_name) + '</div>';
+      }
+      if (r.archetype_summary) {
+        html += '<div><strong>Archetypes:</strong> ' + escapeHtml(r.archetype_summary) + '</div>';
+      }
+      if (r.group_name) {
+        html += '<div><strong>Group:</strong> ' + escapeHtml(r.group_name) + '</div>';
+      }
+      if (r.created_date) {
+        html += '<div><strong>Created:</strong> ' + escapeHtml(formatDate(r.created_date)) + '</div>';
+      }
+      html += '</div>';
+      html += '</div>';
     }
-    if (ac.fidelity != null) {
-      html += renderAuditMetric(ac.fidelity.toFixed(2), 'Fidelity');
+
+    // Notes (JM only)
+    if (r.notes && typeof r.notes === 'object') {
+      var noteKeys = Object.keys(r.notes);
+      if (noteKeys.length > 0) {
+        html += '<div class="journey-detail-section">';
+        html += '<div class="journey-detail-section-title">Notes (' + noteKeys.length + ')</div>';
+        for (var n = 0; n < noteKeys.length; n++) {
+          var nk = noteKeys[n];
+          var noteColor = getNodeChipColor(nk);
+          html += '<div class="journey-note-card" style="border-left-color:' + noteColor + '">';
+          html += '<div class="journey-note-node">' + escapeHtml(nk) + '</div>';
+          html += '<div class="journey-note-text">' + escapeHtml(r.notes[nk]) + '</div>';
+          html += '</div>';
+        }
+        html += '</div>';
+      }
     }
-    if (ac.reviewer_judgment) {
-      html += renderAuditMetric(ac.reviewer_judgment, 'Judgment');
-    }
+
     html += '</div>';
 
-    // Reviewer notes
-    if (ac.reviewer_notes) {
-      html += '<div class="audit-case-notes">' + escapeHtml(ac.reviewer_notes) + '</div>';
+    detailEl.innerHTML = html;
+
+    // Draw path on mini-map
+    if (miniMap && seq.length >= 2) {
+      miniMap.clearPaths();
+      miniMap.drawPath(seq, r.color, 2);
+      miniMap.highlightNodes(seq);
     }
 
-    html += '</div>'; // body
-    html += '</div>'; // audit-case
-
-    return html;
-  }
-
-  function renderAuditArchetype(arch, label) {
-    var html = '<div class="audit-case-archetype">';
-    html += '<div style="font-size:0.65rem;color:#94a3b8;text-transform:uppercase;margin-bottom:2px">' + escapeHtml(label) + '</div>';
-    html += '<div class="audit-case-arch-name">' + escapeHtml(arch.name || arch.id || '') + '</div>';
-    if (arch.system) {
-      html += '<span class="badge" style="font-size:0.6rem">' + escapeHtml(arch.system) + '</span>';
+    // Scroll to top of content area
+    var contentEl = detailEl.closest('.journeys-content');
+    if (contentEl) {
+      contentEl.scrollTop = 0;
     }
-    html += '</div>';
-    return html;
   }
 
-  function renderAuditMetric(value, label) {
-    return '<div class="audit-case-metric">' +
-      '<div class="audit-case-metric-value">' + escapeHtml(String(value)) + '</div>' +
-      '<div class="audit-case-metric-label">' + escapeHtml(label) + '</div>' +
+  function renderJourneyStat(value, label) {
+    return '<div class="journey-detail-stat">' +
+      '<div class="journey-detail-stat-value">' + value + '</div>' +
+      '<div class="journey-detail-stat-label">' + escapeHtml(label) + '</div>' +
     '</div>';
   }
 
-  function toggleAuditCase(idx) {
-    expandedAuditCases[idx] = !expandedAuditCases[idx];
+  function closeJourneyDetail() {
+    selectedJourneyId = null;
 
-    // Re-render audit cases
-    var data = dataLoader.get('validation');
-    if (!data) return;
-
-    var casesEl = container.querySelector('.audit-cases');
-    if (!casesEl) return;
-
-    var cases = data.audit_cases || [];
-    var html = '<div class="pattern-detail-section-title" style="margin-bottom:8px">Audit Cases (' + cases.length + ')</div>';
-    for (var c = 0; c < cases.length; c++) {
-      html += renderAuditCase(cases[c], c);
+    var detailEl = document.getElementById('chronicle-journey-detail');
+    if (detailEl) {
+      detailEl.innerHTML = '';
     }
-    casesEl.innerHTML = html;
+
+    // Clear mini-map highlights
+    if (miniMap) {
+      miniMap.clearPaths();
+      miniMap.highlightNodes(null);
+    }
+
+    // Remove selection from cards
+    var cards = container.querySelectorAll('.journey-card');
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove('selected');
+    }
+  }
+
+  function clearJourneyDetail() {
+    var detailEl = document.getElementById('chronicle-journey-detail');
+    if (detailEl) {
+      detailEl.innerHTML = '';
+    }
   }
 
   // =========================================================================
-  // Utilities
+  // Helpers
   // =========================================================================
+
+  function getNodeChipColor(nodeId) {
+    if (!nodeId) return '#94a3b8';
+    var arc = nodeId.charAt(0);
+    return ARC_COLORS[arc] || '#fbbf24';
+  }
+
+  function getArcBreakdown(sequence) {
+    var counts = { D: 0, R: 0, E: 0, other: 0 };
+    for (var i = 0; i < sequence.length; i++) {
+      var arc = sequence[i].charAt(0);
+      if (counts[arc] !== undefined) {
+        counts[arc]++;
+      } else {
+        counts.other++;
+      }
+    }
+    return counts;
+  }
+
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    try {
+      var d = new Date(dateStr);
+      if (isNaN(d.getTime())) return dateStr;
+      return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+    } catch (e) {
+      return dateStr;
+    }
+  }
 
   function findPattern(data, name) {
     var patterns = data.patterns || [];
