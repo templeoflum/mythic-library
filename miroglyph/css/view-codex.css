@@ -280,6 +280,18 @@
   .detail-grid {
     grid-template-columns: 1fr;
   }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .chain-visual {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .affinity-grid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
 }
 
 .detail-section {
@@ -649,4 +661,52 @@
 .motif-pattern-tag.more:hover {
   background: transparent;
   color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints — Phones (≤ 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sheet {
+    padding: var(--spacing-md);
+  }
+
+  .detail-title {
+    font-size: 1.125rem;
+  }
+
+  .detail-desc {
+    font-size: 0.8125rem;
+  }
+
+  .chain-card {
+    min-width: 140px;
+  }
+
+  .chain-visual {
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+
+  .affinity-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+
+  .codex-grid {
+    padding: var(--spacing-md);
+  }
+
+  .back-btn {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .filter-search {
+    font-size: 16px;
+  }
 }

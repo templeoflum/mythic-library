@@ -1088,3 +1088,111 @@ textarea:focus-visible {
   color: white;
   transform: translateY(-1px);
 }
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* --- Tablets / Small Laptops (≤ 1024px) --- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 var(--spacing-md);
+  }
+
+  .logo {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+
+  .breadcrumb-trail {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+/* --- Tablets Portrait / Large Phones (≤ 768px) --- */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .global-search-wrap {
+    order: 3;
+    flex: 1 1 100%;
+    margin-top: var(--spacing-sm);
+  }
+
+  .modal {
+    padding: var(--spacing-md);
+  }
+
+  .modal-content {
+    max-width: none;
+  }
+
+  .color-presets {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* --- Phones (≤ 480px) --- */
+@media (max-width: 480px) {
+  .header {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .logo {
+    font-size: 1.125rem;
+  }
+
+  .version {
+    font-size: 0.75rem;
+  }
+
+  /* Bottom-sheet modals */
+  .modal {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal-content {
+    border-radius: 12px 12px 0 0;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+  }
+
+  .modal-content.modal-small {
+    max-width: none;
+  }
+
+  .color-presets {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  /* Prevent iOS zoom on input focus */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 16px;
+  }
+
+  .breadcrumb-trail {
+    font-size: 0.65rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    gap: 2px;
+  }
+
+  .breadcrumb-item {
+    padding: 2px 6px;
+    font-size: 0.65rem;
+  }
+}

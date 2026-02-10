@@ -533,3 +533,120 @@
   font-style: italic;
   margin-top: var(--spacing-sm);
 }
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* --- Tablets / Small Laptops (≤ 1024px) --- */
+@media (max-width: 1024px) {
+  .patterns-map-sidebar {
+    width: 240px;
+  }
+
+  .patterns-content {
+    padding: var(--spacing-md);
+  }
+
+  .validation-layout {
+    padding: var(--spacing-md);
+  }
+}
+
+/* --- Tablets Portrait / Large Phones (≤ 768px) --- */
+@media (max-width: 768px) {
+  .patterns-layout {
+    flex-direction: column;
+  }
+
+  .patterns-map-sidebar {
+    width: 100%;
+    max-height: 280px;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .pattern-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .audit-case-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .validation-summary {
+    flex-wrap: wrap;
+  }
+
+  .validation-verdict {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tier-cards {
+    flex-wrap: wrap;
+  }
+
+  .tier-card {
+    min-width: 140px;
+  }
+
+  .chronicle-filter-bar {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+/* --- Phones (≤ 480px) --- */
+@media (max-width: 480px) {
+  .pattern-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patterns-map-sidebar {
+    max-height: 200px;
+  }
+
+  .patterns-content {
+    padding: var(--spacing-sm);
+  }
+
+  .patterns-arc-filters {
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: var(--spacing-xs);
+  }
+
+  .arc-filter-btn {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .tier-card {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .pattern-detail {
+    padding: var(--spacing-md);
+  }
+
+  .pattern-detail-name {
+    font-size: 1rem;
+  }
+
+  .pattern-detail-stats {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
+
+  .validation-layout {
+    padding: var(--spacing-sm);
+  }
+
+  .validation-stat {
+    flex: 1 1 calc(50% - var(--spacing-sm));
+  }
+}

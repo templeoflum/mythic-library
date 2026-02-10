@@ -356,3 +356,80 @@
   color: var(--color-text-muted);
   margin-left: auto;
 }
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* --- Tablets Portrait / Large Phones (≤ 768px) --- */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .filter-search {
+    flex: 1 1 160px;
+  }
+
+  .search-dropdown {
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+    max-height: 50vh;
+  }
+
+  .codex-sub-tabs,
+  .chronicle-sub-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab-nav {
+    padding: 0 var(--spacing-md);
+    gap: 0;
+  }
+
+  .tab-btn {
+    padding: 0 var(--spacing-md);
+    font-size: 0.8125rem;
+  }
+}
+
+/* --- Phones (≤ 480px) --- */
+@media (max-width: 480px) {
+  .tab-btn {
+    font-size: 0.8125rem;
+    padding: 0 var(--spacing-sm);
+  }
+
+  .filter-search {
+    flex: 1 1 100%;
+    font-size: 16px;
+  }
+
+  .filter-select {
+    font-size: 0.7rem;
+  }
+
+  .filter-bar {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .filter-toggle {
+    font-size: 0.7rem;
+    padding: var(--spacing-xs) 6px;
+  }
+
+  .tab-nav {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .global-search-input {
+    font-size: 16px;
+  }
+
+  .search-dropdown {
+    left: var(--spacing-sm);
+    right: var(--spacing-sm);
+  }
+}

@@ -826,3 +826,132 @@
   font-size: 0.7rem;
   color: var(--color-text-muted);
 }
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* --- Tablets / Small Laptops (≤ 1024px) --- */
+@media (max-width: 1024px) {
+  #view-atlas.view-content {
+    grid-template-columns: 220px 1fr 240px;
+  }
+
+  .node-info-id {
+    font-size: 1.5rem;
+  }
+
+  .node-info-title {
+    font-size: 0.9375rem;
+  }
+
+  .panel-body {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* --- Tablets Portrait / Large Phones (≤ 768px) — Vertical Stack --- */
+@media (max-width: 768px) {
+  #view-atlas.view-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .atlas-node-panel {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    max-height: 200px;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .atlas-canvas-area {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 50vh;
+  }
+
+  .atlas-traversal-panel {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    max-height: 280px;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .atlas-legend {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .node-info-header {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .node-info-id {
+    font-size: 1.25rem;
+  }
+
+  .node-info-section {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .traversal-section {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* --- Phones (≤ 480px) --- */
+@media (max-width: 480px) {
+  .atlas-canvas-area {
+    min-height: 40vh;
+  }
+
+  .atlas-node-panel {
+    max-height: 160px;
+  }
+
+  .node-info-id {
+    font-size: 1.125rem;
+  }
+
+  .node-info-title {
+    font-size: 0.8125rem;
+  }
+
+  .node-info-role {
+    font-size: 0.75rem;
+  }
+
+  .atlas-legend .legend-item span {
+    display: none;
+  }
+
+  .atlas-legend {
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .traversal-actions {
+    flex-wrap: wrap;
+  }
+
+  .traversal-actions .btn-small {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+
+  .panel-body {
+    padding: var(--spacing-xs);
+  }
+
+  .path-sequence {
+    padding: var(--spacing-xs);
+    min-height: 32px;
+  }
+}
