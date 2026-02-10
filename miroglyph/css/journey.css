@@ -1003,6 +1003,23 @@
   background: rgba(99, 102, 241, 0.1);
 }
 
+.motif-item-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.motif-item-surprise {
+  border-style: dashed;
+  border-color: var(--color-border);
+  background: transparent;
+}
+
+.motif-item-surprise:hover {
+  border-color: var(--color-primary);
+  background: rgba(99, 102, 241, 0.05);
+}
+
 .motif-code {
   font-family: monospace;
   font-weight: 600;

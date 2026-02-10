@@ -24,7 +24,7 @@
       <div id="screen-start" class="journey-screen">
         <div class="start-content">
           <h2 class="start-title">Begin Your Journey</h2>
-          <p class="start-subtitle">Configure a mythic network, then traverse it</p>
+          <p class="start-subtitle">Configure a mythic network and explore its nodes</p>
 
           <div class="start-actions">
             <button id="btn-new-network" class="btn btn-primary btn-large">
@@ -95,115 +95,9 @@
           <!-- 3×6 grid populated dynamically -->
         </div>
 
-        <div class="network-actions">
-          <h3 class="section-title">Traversals</h3>
-          <div class="network-traversal-actions">
-            <button id="btn-choose-traversal" class="btn btn-primary">Choose Traversal</button>
-            <button id="btn-surprise-traversal" class="btn btn-secondary btn-surprise">Surprise Me</button>
-          </div>
-          <div id="network-traversals" class="network-traversals">
-            <!-- Saved traversals for this network -->
-          </div>
-        </div>
-
         <div class="network-bottom-actions">
           <button id="btn-save-network" class="btn btn-secondary">Save Network</button>
           <button id="btn-new-network-from-network" class="btn btn-secondary">New Network</button>
-        </div>
-      </div>
-
-      <!-- Traversal Screen (per node in path) -->
-      <div id="screen-traversal" class="journey-screen" hidden>
-        <!-- Progress Bar -->
-        <div class="journey-progress">
-          <div id="progress-nodes" class="progress-nodes">
-            <!-- Node chips rendered here -->
-          </div>
-        </div>
-
-        <!-- Node Content (read-only) -->
-        <div id="traversal-content" class="traversal-content">
-          <!-- Populated dynamically -->
-        </div>
-
-        <!-- Note -->
-        <div class="traversal-note">
-          <label for="traversal-note-input">Note (optional)</label>
-          <textarea id="traversal-note-input" rows="3" placeholder="What does this node mean in your journey?"></textarea>
-        </div>
-
-        <!-- Navigation -->
-        <div class="journey-nav">
-          <button id="btn-traversal-prev" class="btn btn-secondary">Previous</button>
-          <button id="btn-traversal-next" class="btn btn-primary">Next</button>
-        </div>
-      </div>
-
-      <!-- Nontion Pause Screen -->
-      <div id="screen-nontion" class="journey-screen" hidden>
-        <div class="journey-progress">
-          <div id="nontion-progress-nodes" class="progress-nodes">
-            <!-- Node chips rendered here -->
-          </div>
-        </div>
-
-        <div class="nontion-content">
-          <div class="nontion-symbol">&#8709;</div>
-          <h2 class="nontion-title">Nontion</h2>
-          <p class="nontion-subtitle">The Pause</p>
-          <p class="nontion-description">
-            Neither descent nor emergence nor reflection -
-            the space where integration happens through not-doing.
-          </p>
-
-          <div class="nontion-questions">
-            <p>What needs to rest?</p>
-            <p>What integrates in silence?</p>
-            <p>What resets?</p>
-          </div>
-
-          <div class="nontion-note">
-            <label for="nontion-note-input">Reflection (optional)</label>
-            <textarea id="nontion-note-input" rows="3" placeholder="What does this pause mean in your journey?"></textarea>
-          </div>
-
-          <button id="btn-continue-nontion" class="btn btn-primary btn-large">
-            Continue Journey
-          </button>
-        </div>
-      </div>
-
-      <!-- Complete Screen -->
-      <div id="screen-complete" class="journey-screen" hidden>
-        <div class="complete-content">
-          <h2 class="complete-title">Journey Complete</h2>
-          <div id="complete-traversal" class="complete-traversal">
-            <!-- Traversal path rendered here -->
-          </div>
-
-          <div id="complete-summary" class="complete-summary">
-            <!-- Summary of all nodes -->
-          </div>
-
-          <div class="complete-actions">
-            <button id="btn-save-complete" class="btn btn-primary">Save</button>
-            <button id="btn-export-complete" class="btn btn-secondary">Export JSON</button>
-            <button id="btn-new-traversal" class="btn btn-secondary">New Traversal</button>
-            <button id="btn-new-network-complete" class="btn btn-secondary">New Network</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Choose Traversal Modal -->
-      <div id="modal-traversal" class="modal" hidden>
-        <div class="modal-content">
-          <h2>Choose a Traversal</h2>
-          <div id="traversal-options" class="traversal-options">
-            <!-- Populated dynamically -->
-          </div>
-          <div class="form-actions">
-            <button id="btn-cancel-traversal" class="btn btn-secondary">Cancel</button>
-          </div>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 // Journey Mapper - UI Rendering (Network Configuration Model)
-// Handles config wizard, network grid, traversal viewer, and interactions
+// Handles config wizard, network grid, node detail, and interactions
 
 (function() {
   window.MiroGlyph = window.MiroGlyph || {};
@@ -61,38 +61,11 @@
   function showNetworkScreen() {
     showScreen('network');
     renderNetworkGrid();
-    renderNetworkTraversals();
     var network = state.getNetwork();
     if (network) {
       document.getElementById('network-title').textContent = network.name || 'Mythic Network';
     }
     window.location.hash = 'network';
-  }
-
-  function showTraversalScreen() {
-    if (state.isCurrentNodeNontion()) {
-      showNontionScreen();
-      return;
-    }
-    showScreen('traversal');
-    renderProgress('progress-nodes');
-    renderTraversalContent();
-    renderTraversalNote();
-    updateTraversalNav();
-    window.location.hash = 'traversal/' + state.getCurrentNodeIndex();
-  }
-
-  function showNontionScreen() {
-    showScreen('nontion');
-    renderProgress('nontion-progress-nodes');
-    document.getElementById('nontion-note-input').value = state.getNote('∅');
-    window.location.hash = 'traversal/' + state.getCurrentNodeIndex();
-  }
-
-  function showCompleteScreen() {
-    showScreen('complete');
-    renderCompleteSummary();
-    window.location.hash = 'complete';
   }
 
   // ========== Start Screen ==========
@@ -349,6 +322,43 @@
     return html;
   }
 
+  function getSelectedMotifCodes(excludePosition) {
+    var cfg = state.getConfigState();
+    var codes = {};
+    var slots = ['1P', '2P', '3P', '1S', '2S', '3S'];
+    for (var i = 0; i < slots.length; i++) {
+      if (slots[i] !== excludePosition && cfg.motifs[slots[i]]) {
+        codes[cfg.motifs[slots[i]].code] = true;
+      }
+    }
+    return codes;
+  }
+
+  function getRandomSample(allMotifs, excludeCodes, count) {
+    // Group available motifs by category
+    var byCategory = {};
+    for (var i = 0; i < allMotifs.length; i++) {
+      var m = allMotifs[i];
+      if (excludeCodes[m.code]) continue;
+      var cat = m.category;
+      if (!byCategory[cat]) byCategory[cat] = [];
+      byCategory[cat].push(m);
+    }
+    // Pick 1 random from each category
+    var sample = [];
+    var cats = Object.keys(byCategory);
+    for (var c = 0; c < cats.length; c++) {
+      var pool = byCategory[cats[c]];
+      sample.push(pool[Math.floor(Math.random() * pool.length)]);
+    }
+    // Shuffle using Fisher-Yates
+    for (var j = sample.length - 1; j > 0; j--) {
+      var k = Math.floor(Math.random() * (j + 1));
+      var temp = sample[j]; sample[j] = sample[k]; sample[k] = temp;
+    }
+    return sample.slice(0, count || 15);
+  }
+
   function bindMotifSlotEvents() {
     var allMotifs = getMotifArray();
 
@@ -356,11 +366,15 @@
       var position = input.getAttribute('data-position');
       var list = document.querySelector('.motif-slot-list[data-position="' + position + '"]');
 
-      // Initial display
-      renderMotifSlotList(list, allMotifs.slice(0, 15), position);
+      // Initial display: category-diverse random sample, excluding already-selected
+      var selectedCodes = getSelectedMotifCodes(position);
+      renderMotifSlotList(list, getRandomSample(allMotifs, selectedCodes, 15), position);
 
       input.addEventListener('input', utils.debounce(function() {
-        var filtered = filters.searchMotifs(allMotifs, input.value);
+        var selected = getSelectedMotifCodes(position);
+        var filtered = filters.searchMotifs(allMotifs, input.value).filter(function(m) {
+          return !selected[m.code];
+        });
         renderMotifSlotList(list, filtered.slice(0, 20), position);
       }, 200));
     });
@@ -375,16 +389,40 @@
   }
 
   function renderMotifSlotList(list, motifs, position) {
+    var selectedCodes = getSelectedMotifCodes(position);
+
     list.innerHTML = motifs.map(function(m) {
-      return '<div class="motif-item" data-code="' + m.code + '" data-position="' + position + '">' +
+      var disabled = selectedCodes[m.code] ? ' motif-item-disabled' : '';
+      return '<div class="motif-item' + disabled + '" data-code="' + m.code + '" data-position="' + position + '">' +
         '<span class="motif-code">' + m.code + '</span>' +
         '<span class="motif-name">' + utils.escapeHtml(m.label) + '</span>' +
       '</div>';
-    }).join('');
+    }).join('') +
+    '<div class="motif-item motif-item-surprise" data-position="' + position + '">' +
+      '<span class="motif-code">\u2728</span>' +
+      '<span class="motif-name">Surprise Me</span>' +
+    '</div>';
 
     list.onclick = function(e) {
       var item = e.target.closest('.motif-item');
       if (!item) return;
+
+      // Handle Surprise Me
+      if (item.classList.contains('motif-item-surprise')) {
+        var pos = item.getAttribute('data-position');
+        var excluded = getSelectedMotifCodes(pos);
+        var available = getMotifArray().filter(function(m) { return !excluded[m.code]; });
+        if (available.length > 0) {
+          var random = available[Math.floor(Math.random() * available.length)];
+          state.setConfigMotif(pos, random);
+          renderConfigStep();
+        }
+        return;
+      }
+
+      // Ignore disabled items
+      if (item.classList.contains('motif-item-disabled')) return;
+
       var code = item.getAttribute('data-code');
       var pos = item.getAttribute('data-position');
       var motif = getMotifArray().find(function(m) { return m.code === code; });
@@ -718,258 +756,6 @@
     document.getElementById('modal-node-detail').hidden = false;
   }
 
-  function renderNetworkTraversals() {
-    var network = state.getNetwork();
-    if (!network) return;
-    var container = document.getElementById('network-traversals');
-
-    if (network.traversals.length === 0) {
-      container.innerHTML = '<p class="network-no-traversals">No traversals yet. Choose or create one above.</p>';
-      return;
-    }
-
-    container.innerHTML = network.traversals.map(function(t, idx) {
-      var statusLabel = t.completed ? 'Completed' : 'In Progress';
-      return '<div class="network-traversal-item" data-idx="' + idx + '">' +
-        '<div class="network-traversal-name">' + utils.escapeHtml(t.name) + '</div>' +
-        '<div class="network-traversal-seq">' + t.sequence.join(' &rarr; ') + '</div>' +
-        '<div class="network-traversal-status">' + statusLabel + '</div>' +
-        '<button class="btn btn-small btn-resume" data-idx="' + idx + '">Walk</button>' +
-      '</div>';
-    }).join('');
-
-    container.querySelectorAll('.btn-resume').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        var idx = parseInt(btn.getAttribute('data-idx'), 10);
-        if (state.startTraversal(idx)) {
-          showTraversalScreen();
-        }
-      });
-    });
-  }
-
-  // ========== Traversal Screen ==========
-
-  function renderProgress(containerId) {
-    var traversal = state.getCurrentTraversal();
-    if (!traversal) return;
-
-    var container = document.getElementById(containerId);
-    var currentIdx = state.getCurrentNodeIndex();
-
-    var html = traversal.sequence.map(function(nodeId, index) {
-      var arcClass = nodeId === '∅' ? 'arc-nontion' : 'arc-' + nodeId.charAt(0);
-      var statusClass = '';
-      if (index < currentIdx) statusClass = 'completed';
-      else if (index === currentIdx) statusClass = 'current';
-
-      return '<span class="progress-node ' + arcClass + ' ' + statusClass + '">' + nodeId + '</span>';
-    });
-
-    container.innerHTML = html.join('<span class="progress-arrow">&rarr;</span>');
-  }
-
-  function renderTraversalContent() {
-    var nodeId = state.getCurrentNodeId();
-    var container = document.getElementById('traversal-content');
-    var config = state.getConfiguration();
-
-    if (!nodeId || !config) {
-      container.innerHTML = '<div class="loading-state">No node data</div>';
-      return;
-    }
-
-    var contents = state.getNodeContents(nodeId, config);
-    var template = getNodeTemplate(nodeId);
-    var positions = state.getNodePositions(nodeId);
-    var arcClass = 'arc-' + nodeId.charAt(0);
-
-    var html = '<div class="traversal-node-display ' + arcClass + '">';
-
-    // Node template info
-    if (template) {
-      var identity = template.identity;
-      html += '<div class="node-info-card ' + arcClass + '">' +
-        '<div class="node-info-header">' +
-          '<span class="node-info-id">' + nodeId + '</span>' +
-        '</div>' +
-        '<div class="node-info-title">' + utils.escapeHtml(identity.title) + '</div>' +
-        '<div class="node-info-role">' + utils.escapeHtml(identity.role) + '</div>' +
-        '<div class="node-info-tone">' +
-          (identity.tone || []).map(function(t) {
-            return '<span class="tone-tag">' + utils.escapeHtml(t) + '</span>';
-          }).join('') +
-        '</div>';
-
-      var question = template.thematic_lens.questions ? template.thematic_lens.questions[0] : '';
-      if (question) {
-        html += '<div class="node-info-question">&ldquo;' + utils.escapeHtml(question) + '&rdquo;</div>';
-      }
-      html += '</div>';
-    }
-
-    // Pre-populated content display
-    if (contents) {
-      html += '<div class="traversal-contents">' +
-        '<div class="traversal-content-row">' +
-          '<div class="traversal-content-label">Archetypes</div>' +
-          '<div class="traversal-content-value">' +
-            utils.escapeHtml(contents.primary_archetype ? contents.primary_archetype.name : '?') +
-            ' <span class="traversal-vs">vs</span> ' +
-            utils.escapeHtml(contents.secondary_archetype ? contents.secondary_archetype.name : '?') +
-          '</div>' +
-        '</div>' +
-        '<div class="traversal-content-row">' +
-          '<div class="traversal-content-label">Primary Motif <span class="traversal-pos-tag">' + (positions ? positions.primary : '') + '</span></div>' +
-          '<div class="traversal-content-value">' +
-            (contents.primary_motif ? contents.primary_motif.code + ' &mdash; ' + utils.escapeHtml(contents.primary_motif.label) : '?') +
-          '</div>' +
-        '</div>' +
-        '<div class="traversal-content-row">' +
-          '<div class="traversal-content-label">Secondary Motif <span class="traversal-pos-tag">' + (positions ? positions.secondary : '') + '</span></div>' +
-          '<div class="traversal-content-value">' +
-            (contents.secondary_motif ? contents.secondary_motif.code + ' &mdash; ' + utils.escapeHtml(contents.secondary_motif.label) : '?') +
-          '</div>' +
-        '</div>' +
-        '<div class="traversal-content-row">' +
-          '<div class="traversal-content-label">Entity</div>' +
-          '<div class="traversal-content-value">' +
-            utils.escapeHtml(contents.entity ? contents.entity.name : '?') +
-          '</div>' +
-        '</div>' +
-      '</div>';
-    }
-
-    html += '</div>';
-    container.innerHTML = html;
-  }
-
-  function renderTraversalNote() {
-    var nodeId = state.getCurrentNodeId();
-    var textarea = document.getElementById('traversal-note-input');
-    if (textarea && nodeId) {
-      textarea.value = state.getNote(nodeId);
-    }
-  }
-
-  function updateTraversalNav() {
-    var progress = state.getProgress();
-    var prevBtn = document.getElementById('btn-traversal-prev');
-    var nextBtn = document.getElementById('btn-traversal-next');
-
-    prevBtn.disabled = progress.currentIndex === 0;
-
-    if (progress.currentIndex >= progress.total - 1) {
-      nextBtn.textContent = 'Complete';
-    } else {
-      nextBtn.textContent = 'Next';
-    }
-  }
-
-  function navigateToCurrentNode() {
-    if (state.isCurrentNodeNontion()) {
-      showNontionScreen();
-    } else {
-      showTraversalScreen();
-    }
-  }
-
-  // ========== Complete Screen ==========
-
-  function renderCompleteSummary() {
-    var network = state.getNetwork();
-    var traversal = state.getCurrentTraversal();
-    if (!network || !traversal) return;
-
-    var config = network.configuration;
-
-    // Traversal visualization
-    var traversalContainer = document.getElementById('complete-traversal');
-    traversalContainer.innerHTML = traversal.sequence.map(function(nodeId) {
-      var arcClass = nodeId === '∅' ? 'arc-nontion' : 'arc-' + nodeId.charAt(0);
-      return '<span class="progress-node completed ' + arcClass + '">' + nodeId + '</span>';
-    }).join('<span class="progress-arrow">&rarr;</span>');
-
-    // Node summaries
-    var summaryContainer = document.getElementById('complete-summary');
-    summaryContainer.innerHTML = traversal.sequence.map(function(nodeId) {
-      var arcClass = nodeId === '∅' ? 'arc-nontion' : 'arc-' + nodeId.charAt(0);
-      var template = getNodeTemplate(nodeId);
-      var title = template ? (template.identity ? template.identity.title : 'Nontion') : '';
-      if (nodeId === '∅') title = 'Nontion';
-
-      var contents = state.getNodeContents(nodeId, config);
-      var note = traversal.notes[nodeId] || '';
-
-      var selectionsHtml = '';
-      if (contents) {
-        if (contents.primary_archetype) {
-          selectionsHtml += '<div class="summary-selection"><strong>Archetypes:</strong> ' +
-            utils.escapeHtml(contents.primary_archetype.name || '?') + ' vs ' +
-            utils.escapeHtml(contents.secondary_archetype ? contents.secondary_archetype.name : '?') + '</div>';
-        }
-        if (contents.primary_motif) {
-          selectionsHtml += '<div class="summary-selection"><strong>Primary Motif:</strong> ' +
-            contents.primary_motif.code + ' - ' + utils.escapeHtml(contents.primary_motif.label) + '</div>';
-        }
-        if (contents.secondary_motif) {
-          selectionsHtml += '<div class="summary-selection"><strong>Secondary Motif:</strong> ' +
-            contents.secondary_motif.code + ' - ' + utils.escapeHtml(contents.secondary_motif.label) + '</div>';
-        }
-        if (contents.entity) {
-          selectionsHtml += '<div class="summary-selection"><strong>Entity:</strong> ' +
-            utils.escapeHtml(contents.entity.name) + '</div>';
-        }
-      }
-
-      var noteHtml = note ?
-        '<div class="summary-note">' + utils.escapeHtml(note) + '</div>' : '';
-
-      return '<div class="complete-node-summary ' + arcClass + '">' +
-        '<div class="summary-header">' +
-          '<span class="summary-node-id">' + nodeId + '</span>' +
-          '<span class="summary-node-title">' + utils.escapeHtml(title) + '</span>' +
-        '</div>' +
-        '<div class="summary-selections">' + (selectionsHtml || '<em>Pause node</em>') + '</div>' +
-        noteHtml +
-      '</div>';
-    }).join('');
-  }
-
-  // ========== Choose Traversal Modal ==========
-
-  function renderChooseTraversalModal() {
-    var modal = document.getElementById('modal-traversal');
-    var options = document.getElementById('traversal-options');
-
-    var traversals = state.getStarterTraversals();
-    options.innerHTML = traversals.map(function(t) {
-      return '<div class="traversal-option" data-sequence="' + t.sequence.join(',') + '" data-name="' + utils.escapeAttr(t.name) + '">' +
-        '<div class="traversal-option-name">' + utils.escapeHtml(t.name) + '</div>' +
-        '<div class="traversal-option-sequence">' + t.sequence.join(' &rarr; ') + '</div>' +
-      '</div>';
-    }).join('');
-
-    options.querySelectorAll('.traversal-option').forEach(function(opt) {
-      opt.addEventListener('click', function() {
-        var seq = opt.getAttribute('data-sequence').split(',');
-        var name = opt.getAttribute('data-name');
-
-        var traversal = state.addTraversal(name, seq);
-        if (traversal) {
-          var network = state.getNetwork();
-          var idx = network.traversals.length - 1;
-          state.startTraversal(idx);
-          modal.hidden = true;
-          showTraversalScreen();
-        }
-      });
-    });
-
-    modal.hidden = false;
-  }
-
   // ========== Helpers ==========
 
   function getNodeTemplate(nodeId) {
@@ -985,18 +771,9 @@
     showStartScreen: showStartScreen,
     showConfigScreen: showConfigScreen,
     showNetworkScreen: showNetworkScreen,
-    showTraversalScreen: showTraversalScreen,
-    showNontionScreen: showNontionScreen,
-    showCompleteScreen: showCompleteScreen,
     renderConfigStep: renderConfigStep,
     renderSavedNetworks: renderSavedNetworks,
-    renderChooseTraversalModal: renderChooseTraversalModal,
-    renderCompleteSummary: renderCompleteSummary,
-    renderProgress: renderProgress,
     renderNetworkGrid: renderNetworkGrid,
-    renderNetworkTraversals: renderNetworkTraversals,
-    renderTraversalContent: renderTraversalContent,
-    navigateToCurrentNode: navigateToCurrentNode,
     showNodeDetailModal: showNodeDetailModal
   };
 })();

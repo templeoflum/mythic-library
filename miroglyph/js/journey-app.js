@@ -88,13 +88,10 @@
     });
 
     document.getElementById('btn-surprise').addEventListener('click', function() {
-      // Random config + random traversal
+      // Random config → straight to network screen
       state.generateRandomConfig(dataDeps);
       state.createNetwork('Random Network');
-      var traversal = state.getRandomTraversal();
-      state.addTraversal(traversal.name, traversal.sequence);
-      state.startTraversal(0);
-      ui.showTraversalScreen();
+      ui.showNetworkScreen();
     });
 
     // ===== Config Screen =====
@@ -119,19 +116,6 @@
     });
 
     // ===== Network Screen =====
-    document.getElementById('btn-choose-traversal').addEventListener('click', function() {
-      ui.renderChooseTraversalModal();
-    });
-
-    document.getElementById('btn-surprise-traversal').addEventListener('click', function() {
-      var traversal = state.getRandomTraversal();
-      state.addTraversal(traversal.name, traversal.sequence);
-      var network = state.getNetwork();
-      var idx = network.traversals.length - 1;
-      state.startTraversal(idx);
-      ui.showTraversalScreen();
-    });
-
     document.getElementById('btn-save-network').addEventListener('click', function() {
       var modal = document.getElementById('modal-save');
       var network = state.getNetwork();
@@ -145,70 +129,6 @@
       state.clearNetwork();
       state.resetConfigState();
       ui.showStartScreen();
-    });
-
-    // ===== Traversal Screen =====
-    document.getElementById('btn-traversal-prev').addEventListener('click', function() {
-      // Save note before navigating
-      saveCurrentNote();
-      var result = state.prevNode();
-      if (result.moved) {
-        ui.navigateToCurrentNode();
-      }
-    });
-
-    document.getElementById('btn-traversal-next').addEventListener('click', function() {
-      // Save note before navigating
-      saveCurrentNote();
-      var result = state.nextNode();
-      if (result.journeyComplete) {
-        state.completeTraversal();
-        ui.showCompleteScreen();
-      } else if (result.moved) {
-        ui.navigateToCurrentNode();
-      }
-    });
-
-    // ===== Nontion Screen =====
-    document.getElementById('btn-continue-nontion').addEventListener('click', function() {
-      var note = document.getElementById('nontion-note-input').value;
-      state.setNote('∅', note);
-      var result = state.nextNode();
-      if (result.journeyComplete) {
-        state.completeTraversal();
-        ui.showCompleteScreen();
-      } else if (result.moved) {
-        ui.navigateToCurrentNode();
-      }
-    });
-
-    // ===== Complete Screen =====
-    document.getElementById('btn-save-complete').addEventListener('click', function() {
-      var modal = document.getElementById('modal-save');
-      var network = state.getNetwork();
-      if (network) {
-        document.getElementById('network-name-input').value = network.name || '';
-      }
-      modal.hidden = false;
-    });
-
-    document.getElementById('btn-export-complete').addEventListener('click', function() {
-      state.exportNetworkJSON();
-    });
-
-    document.getElementById('btn-new-traversal').addEventListener('click', function() {
-      ui.showNetworkScreen();
-    });
-
-    document.getElementById('btn-new-network-complete').addEventListener('click', function() {
-      state.clearNetwork();
-      state.resetConfigState();
-      ui.showStartScreen();
-    });
-
-    // ===== Choose Traversal Modal =====
-    document.getElementById('btn-cancel-traversal').addEventListener('click', function() {
-      document.getElementById('modal-traversal').hidden = true;
     });
 
     // ===== Save Modal =====
@@ -242,17 +162,6 @@
   }
 
   /**
-   * Save current note from traversal textarea
-   */
-  function saveCurrentNote() {
-    var nodeId = state.getCurrentNodeId();
-    var textarea = document.getElementById('traversal-note-input');
-    if (textarea && nodeId) {
-      state.setNote(nodeId, textarea.value);
-    }
-  }
-
-  /**
    * Handle URL hash routing
    */
   function handleRoute() {
@@ -277,28 +186,6 @@
       var network = state.getNetwork();
       if (network) {
         ui.showNetworkScreen();
-      } else {
-        ui.showStartScreen();
-      }
-      return;
-    }
-
-    if (hash.startsWith('traversal/')) {
-      var index = parseInt(hash.split('/')[1], 10);
-      var traversal = state.getCurrentTraversal();
-      if (traversal && !isNaN(index) && index >= 0 && index < traversal.sequence.length) {
-        state.goToNode(index);
-        ui.navigateToCurrentNode();
-      } else {
-        ui.showStartScreen();
-      }
-      return;
-    }
-
-    if (hash === 'complete') {
-      var traversal = state.getCurrentTraversal();
-      if (traversal && traversal.completed) {
-        ui.showCompleteScreen();
       } else {
         ui.showStartScreen();
       }
