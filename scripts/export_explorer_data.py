@@ -8,14 +8,11 @@ Usage:
 
 Output (miroglyph/data/):
     archetypes_catalog.json   - All 539 archetypes with coordinates, primordials, relationships
-    entities_catalog.json     - All 173 library entities with ACP mappings + node assignments
+    entities_catalog.json     - All 173 library entities with ACP mappings
     patterns_catalog.json     - 18 named patterns with motifs, traditions, arc assignments
     validation_summary.json   - Frontend-friendly validation results
-    node_profiles.json        - Copy of node centroids
-    archetype_affinities.json - Copy of archetype-node affinity scores
 """
 import json
-import shutil
 import sys
 from pathlib import Path
 
@@ -469,21 +466,6 @@ def _extract_tests(raw: dict, test_specs: list) -> list:
     return tests
 
 
-def copy_existing_data():
-    """Copy existing output files to the frontend data directory."""
-    copies = [
-        (OUTPUTS / "miroglyph" / "node_profiles.json", "node_profiles.json"),
-        (OUTPUTS / "miroglyph" / "archetype_affinities.json", "archetype_affinities.json"),
-    ]
-    for src, dest_name in copies:
-        if src.exists():
-            shutil.copy2(src, OUTPUT_DIR / dest_name)
-            size_kb = src.stat().st_size / 1024
-            print(f"  Copied {dest_name} ({size_kb:.0f} KB)")
-        else:
-            print(f"  WARNING: {src} not found")
-
-
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -507,9 +489,6 @@ def main():
     export_entities_catalog(acp, library, mapper)
     export_patterns_catalog(library)
     export_validation_summary()
-
-    print("\n[Copy] Copying existing data files...")
-    copy_existing_data()
 
     print(f"\n[Done] All data exported to {OUTPUT_DIR}")
     print(f"  Files: {len(list(OUTPUT_DIR.glob('*.json')))}")

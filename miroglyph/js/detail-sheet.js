@@ -198,30 +198,6 @@
       }
     }
 
-    // From same node (if we have nearest nodes)
-    if (archetype.nearest_nodes && archetype.nearest_nodes.length > 0) {
-      var primaryNode = archetype.nearest_nodes[0].node_id;
-      var archsByNode = dataLoader.getIndex('archetypesByNode');
-      var sameNode = archsByNode[primaryNode] || [];
-
-      for (var j = 0; j < sameNode.length && related.length < 16; j++) {
-        var arch = sameNode[j];
-        var archId = arch.archetype_id || arch.id;
-        if (!seen[archId]) {
-          var archById = dataLoader.getIndex('archetypeById');
-          var archData = archById[archId];
-          if (archData) {
-            related.push({
-              id: archId,
-              name: archData.name,
-              reason: 'Same node (' + primaryNode + ')'
-            });
-            seen[archId] = true;
-          }
-        }
-      }
-    }
-
     if (related.length === 0) return '';
 
     var html = '<div class="related-section">';
@@ -244,7 +220,6 @@
     var e = entity;
     var cardRenderer = window.MiroGlyph.cardRenderer;
     var dataLoader = window.MiroGlyph.dataLoader;
-    var enrichment = window.MiroGlyph.enrichment;
     var nodesModule = window.MiroGlyph.nodes;
 
     var html = '<div class="detail-sheet">';
@@ -307,31 +282,6 @@
 
     // Connection Chain
     html += renderConnectionChain(e, dataLoader, nodesModule);
-
-    // 8D Coordinate Comparison
-    html += renderCoordinateComparison(e, enrichment);
-
-    // All Node Affinities grid
-    if (e.top_nodes && e.top_nodes.length > 0) {
-      var nearestNodeId = resolveNearestNodeId(e);
-
-      html += '<div class="detail-section" style="margin-bottom:var(--spacing-lg)">';
-      html += '<div class="detail-section-title">All Node Affinities</div>';
-      html += '<div class="affinity-grid">';
-
-      for (var i = 0; i < e.top_nodes.length; i++) {
-        var tn = e.top_nodes[i];
-        var isNearest = nearestNodeId && tn.node_id === nearestNodeId;
-        var cellClass = 'affinity-cell' + (isNearest ? ' nearest' : '');
-        html += '<div class="' + cellClass + '">';
-        html += '<div class="affinity-cell-id">' + escapeHtml(tn.node_id) + '</div>';
-        html += '<div class="affinity-cell-val">' + (tn.affinity || 0).toFixed(3) + '</div>';
-        html += '</div>';
-      }
-
-      html += '</div>';
-      html += '</div>';
-    }
 
     // Related Entities section (share same archetype or similar node)
     html += renderRelatedEntities(e, dataLoader);
@@ -514,65 +464,6 @@
     }
 
     html += '</div>'; // end chain-visual
-    return html;
-  }
-
-  // --- Coordinate Comparison ---
-
-  function renderCoordinateComparison(entity, enrichment) {
-    var e = entity;
-    if (!e.coordinates || e.coordinates.length !== 8) return '';
-
-    var nearestNodeId = resolveNearestNodeId(e);
-    var nodeCoords = null;
-
-    if (nearestNodeId && enrichment && enrichment.isLoaded()) {
-      var profile = enrichment.getNodeProfile(nearestNodeId);
-      if (profile && profile.mean_coordinates) {
-        nodeCoords = profile.mean_coordinates;
-      }
-    }
-
-    var html = '<div class="coord-compare" style="margin-bottom:var(--spacing-lg)">';
-    html += '<div class="detail-section-title">8D Coordinate Comparison</div>';
-
-    // Legend
-    if (nodeCoords) {
-      html += '<div class="coord-compare-legend">';
-      html += '<span>';
-      html += '<span class="coord-compare-swatch" style="background:var(--color-library)"></span>';
-      html += 'Entity';
-      html += '</span>';
-      html += '<span>';
-      html += '<span class="coord-compare-swatch" style="background:var(--color-miroglyph)"></span>';
-      html += 'Node Centroid';
-      html += '</span>';
-      html += '</div>';
-    }
-
-    // Axis rows
-    for (var i = 0; i < 8; i++) {
-      var entVal = e.coordinates[i];
-      var entPct = Math.round(entVal * 100);
-
-      html += '<div class="coord-compare-row">';
-      html += '<span class="coord-label" style="width:70px;text-align:right;flex-shrink:0;font-size:0.65rem">' +
-        AXIS_SHORT[i] + '</span>';
-
-      html += '<div class="coord-compare-track">';
-      html += '<div class="coord-compare-marker coord-compare-marker-entity" style="left:' + entPct + '%"></div>';
-      if (nodeCoords) {
-        var nodeVal = nodeCoords[i] || 0.5;
-        var nodePct = Math.round(nodeVal * 100);
-        html += '<div class="coord-compare-marker coord-compare-marker-node" style="left:' + nodePct + '%"></div>';
-      }
-      html += '</div>';
-
-      html += '<span class="coord-value" style="width:35px">' + entVal.toFixed(2) + '</span>';
-      html += '</div>';
-    }
-
-    html += '</div>';
     return html;
   }
 

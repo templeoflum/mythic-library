@@ -142,68 +142,7 @@
       return;
     }
 
-    var enrichment = window.MiroGlyph.enrichment;
-    var dataLoader = window.MiroGlyph.dataLoader;
-    var profile = enrichment && enrichment.isLoaded() ? enrichment.getNodeProfile(nodeId) : null;
-    var entitiesByNode = dataLoader ? dataLoader.getIndex('entitiesByNode') : {};
-    var nodeEntities = entitiesByNode[nodeId] || [];
-
     var html = '';
-
-    // 8D Coordinate bars
-    if (profile && profile.mean_coordinates) {
-      html += '<div class="drawer-section">';
-      html += '<div class="drawer-section-title">8D Spectral Profile</div>';
-      html += '<div class="coord-bars">';
-      var coords = profile.mean_coordinates;
-      for (var i = 0; i < AXES.length; i++) {
-        var val = coords[i] || 0.5;
-        var pct = Math.round(val * 100);
-        html += '<div class="coord-row">';
-        html += '<span class="coord-label">' + AXIS_SHORT[i] + '</span>';
-        html += '<div class="coord-track"><div class="coord-fill" style="width:' + pct + '%"></div>';
-        html += '<div class="coord-marker" style="left:' + pct + '%"></div></div>';
-        html += '<span class="coord-value">' + val.toFixed(2) + '</span>';
-        html += '</div>';
-      }
-      html += '</div></div>';
-    }
-
-    // Stats grid
-    var entityCount = nodeEntities.length;
-    var profileEntities = profile ? (profile.n_entities || 0) : 0;
-
-    html += '<div class="drawer-section">';
-    html += '<div class="drawer-section-title">Stats</div>';
-    html += '<div class="drawer-stats">';
-    html += '<div class="drawer-stat">';
-    html += '<div class="drawer-stat-value">' + entityCount + '</div>';
-    html += '<div class="drawer-stat-label">Entities</div>';
-    html += '</div>';
-    html += '<div class="drawer-stat">';
-    html += '<div class="drawer-stat-value">' + profileEntities + '</div>';
-    html += '<div class="drawer-stat-label">Profile N</div>';
-    html += '</div>';
-    html += '</div></div>';
-
-    // Dominant primordials
-    if (profile && profile.dominant_primordials && profile.dominant_primordials.length > 0) {
-      html += '<div class="drawer-section">';
-      html += '<div class="drawer-section-title">Dominant Primordials</div>';
-      var prims = profile.dominant_primordials;
-      for (var i = 0; i < prims.length; i++) {
-        var p = prims[i];
-        var name = (p.primordial_id || '').replace('primordial:', '');
-        var weight = p.mean_weight || 0;
-        var wPct = Math.round(weight * 100);
-        html += '<div class="coord-row">';
-        html += '<span class="coord-label">' + escapeHtml(name) + '</span>';
-        html += '<div class="coord-track"><div class="coord-fill primordial-fill" style="width:' + wPct + '%"></div></div>';
-        html += '<span class="coord-value">' + weight.toFixed(2) + '</span>';
-        html += '</div>';
-      }
-      html += '</div>';
-    }
 
     // Condition Siblings
     html += renderConditionSiblings(nodeId);
@@ -264,74 +203,8 @@
   // --- Archetypes Tab ---
 
   function renderArchetypesTab(body) {
-    var nodeId = currentNodeId;
-    var enrichment = window.MiroGlyph.enrichment;
-
-    if (!enrichment || !enrichment.isLoaded()) {
-      body.innerHTML = '<p class="empty-state">Enrichment data not loaded.</p>';
-      return;
-    }
-
-    var archetypes = enrichment.getNodeArchetypes(nodeId, 20);
-
-    if (archetypes.length === 0) {
-      body.innerHTML = '<p class="empty-state">No archetype affinities found for ' + escapeHtml(nodeId) + '.</p>';
-      return;
-    }
-
-    var html = '<div class="drawer-section">';
-    html += '<div class="drawer-section-title">Top Archetypes (' + archetypes.length + ')</div>';
-
-    for (var i = 0; i < archetypes.length; i++) {
-      var arch = archetypes[i];
-      var name = arch.name || arch.archetype_id || '';
-      var system = arch.system || '';
-      var affinity = arch.affinity || 0;
-      var desc = arch.description || '';
-      if (desc.length > 80) {
-        desc = desc.substring(0, 80) + '...';
-      }
-
-      html += '<div class="drawer-arch-card" data-archetype-id="' + escapeHtml(arch.archetype_id || arch.id || '') + '">';
-      html += '<div class="drawer-arch-card-header">';
-      html += '<span class="drawer-arch-card-name">' + escapeHtml(name) + '</span>';
-      if (system) {
-        html += '<span class="badge badge-system">' + escapeHtml(system) + '</span>';
-      }
-      html += '</div>';
-      html += '<div class="drawer-arch-card-affinity">' + affinity.toFixed(3) + '</div>';
-
-      if (desc) {
-        html += '<div class="drawer-arch-card-desc">' + escapeHtml(desc) + '</div>';
-      }
-
-      // Primordial tags
-      var prims = arch.primordials || [];
-      if (prims.length > 0) {
-        html += '<div class="drawer-arch-card-prims">';
-        for (var j = 0; j < Math.min(3, prims.length); j++) {
-          var primName = (prims[j].id || '').replace('primordial:', '');
-          html += '<span class="primordial-tag">' + escapeHtml(primName) + '</span>';
-        }
-        html += '</div>';
-      }
-
-      html += '</div>';
-    }
-
-    html += '</div>';
-    body.innerHTML = html;
-
-    // Click handlers
-    var cards = body.querySelectorAll('.drawer-arch-card');
-    for (var i = 0; i < cards.length; i++) {
-      cards[i].addEventListener('click', function() {
-        var archId = this.getAttribute('data-archetype-id');
-        if (archId) {
-          window.MiroGlyph.nav.toArchetype(archId);
-        }
-      });
-    }
+    body.innerHTML = '<p class="empty-state">Any archetype can be placed in any node. ' +
+      'Browse archetypes in the Codex.</p>';
   }
 
   // --- Entities Tab ---

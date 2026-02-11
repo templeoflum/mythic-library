@@ -5,7 +5,6 @@
   window.MiroGlyph = window.MiroGlyph || {};
 
   var canvas = window.MiroGlyph.canvas;
-  var enrichment = window.MiroGlyph.enrichment;
   var nodes = window.MiroGlyph.nodes;
   var paths = window.MiroGlyph.paths;
   var storage = window.MiroGlyph.storage;
@@ -24,7 +23,6 @@
     if (initialized) return;
 
     canvas.init();
-    enrichment.load();
     setupCanvasEvents();
     setupTraversalControls();
     setupSurpriseButton();
@@ -52,10 +50,15 @@
   }
 
   function activate() {
+    // canvas.init() uses dimension-checking to skip if unchanged,
+    // but we need to trigger it in case the container was resized while hidden
     canvas.init();
-    if (paths && paths.redraw) {
-      paths.redraw();
-    }
+    // Defer redraw to after canvas doInit completes
+    requestAnimationFrame(function() {
+      if (paths && paths.redraw) {
+        paths.redraw();
+      }
+    });
   }
 
   function deactivate() {
@@ -221,10 +224,13 @@
 
   function saveToStorage() {
     if (!paths) return;
-    storage.save({
+    var ok = storage.save({
       paths: paths.getTraversals(),
       groups: paths.getGroups()
     });
+    if (!ok) {
+      alert('Storage full — traversals could not be saved. Export your data to avoid losing work.');
+    }
   }
 
   // =========================================================================

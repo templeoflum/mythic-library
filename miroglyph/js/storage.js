@@ -69,7 +69,7 @@
     URL.revokeObjectURL(url);
   }
 
-  // Import from JSON file
+  // Import from JSON file with shape validation
   function importJSON(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -78,13 +78,22 @@
         try {
           const data = JSON.parse(e.target.result);
 
-          // Handle both old and new format
-          const paths = data.paths || [];
+          // Validate shape
+          const paths = data.paths;
+          if (paths !== undefined && !Array.isArray(paths)) {
+            reject(new Error('Invalid format: "paths" must be an array'));
+            return;
+          }
+          const groups = data.groups;
+          if (groups !== undefined && !Array.isArray(groups)) {
+            reject(new Error('Invalid format: "groups" must be an array'));
+            return;
+          }
 
           const normalized = {
             version: data.miroglyph_version || '4.0.0',
-            paths: paths,
-            groups: data.groups || []
+            paths: paths || [],
+            groups: groups || []
           };
 
           resolve(normalized);

@@ -12,7 +12,6 @@
     archetypeById: {},       // id -> archetype object
     entityByName: {},        // name -> entity object
     entitiesByNode: {},      // node_id -> entity[]
-    archetypesByNode: {},    // node_id -> archetype[] (from affinities)
     entitiesByArchetype: {}, // archetype_id -> entity[]
     patternsByArc: {},       // arc_code -> pattern[]
     patternByName: {}        // name -> pattern object
@@ -52,9 +51,7 @@
       load('archetypes', 'data/archetypes_catalog.json'),
       load('entities', 'data/entities_catalog.json'),
       load('patterns', 'data/patterns_catalog.json'),
-      load('validation', 'data/validation_summary.json'),
-      load('profiles', 'data/node_profiles.json'),
-      load('affinities', 'data/archetype_affinities.json')
+      load('validation', 'data/validation_summary.json')
     ]).then(function() {
       buildIndices();
       return indices;
@@ -65,7 +62,6 @@
     var arch = cache.archetypes;
     var ent = cache.entities;
     var pat = cache.patterns;
-    var aff = cache.affinities;
 
     // Archetype by ID
     if (arch && arch.archetypes) {
@@ -97,13 +93,6 @@
           if (!indices.entitiesByNode[nodeId]) indices.entitiesByNode[nodeId] = [];
           indices.entitiesByNode[nodeId].push(e);
         }
-      });
-    }
-
-    // Archetypes by node (from affinities node_rankings)
-    if (aff && aff.node_rankings) {
-      Object.keys(aff.node_rankings).forEach(function(nodeId) {
-        indices.archetypesByNode[nodeId] = aff.node_rankings[nodeId];
       });
     }
 

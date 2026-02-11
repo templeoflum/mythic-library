@@ -20,12 +20,15 @@ from integration.library_loader import LibraryLoader
 TRADITION_TO_PREFIX = {
     "african": "AF",
     "australian": "AU",
+    "buddhist": "BU",
     "celtic": "CE",
     "chinese": "CN",
     "egyptian": "EG",
     "finnish": "FI",
     "greek": "GR",
+    "hebrew": "HE",
     "roman": "RO",
+    "incan": "IC",
     "indian": "IN",
     "japanese": "JP",
     "mesoamerican": "MA",
@@ -38,6 +41,17 @@ TRADITION_TO_PREFIX = {
     "zoroastrian": "persian",
     "christian": "christian",
 }
+
+# Domains that should NOT be matched during fuzzy hero search.
+# These are divination, personality, and symbolic systems -- not mythological figures.
+_FUZZY_EXCLUDE_PREFIXES = frozenset([
+    "tarot:", "iching:", "rune:", "astrology:", "zodiac:", "rashi:", "chinese:",
+    "nakshatra:", "ogham:", "alchemy:", "element:", "totem:", "chakra:",
+    "kabbalah:", "enneagram:", "mbti:", "socionics:", "holland:", "spiral:",
+    "brand:", "digital:", "angel:", "commedia:", "pearson:", "myss:", "kwml:",
+    "bolen:", "jungian:", "vogler:", "propp:", "plots:", "calibration:",
+    "mayan:", "aztec:",
+])
 
 
 @dataclass
@@ -409,14 +423,13 @@ class EntityMapper:
         self.mappings.extend(matches)
         return matches
 
-    def _map_fuzzy_heroes(self, threshold: float = 0.55) -> List[EntityMapping]:
-        """Phase 3: Fuzzy-match unmapped heroes at a lower threshold.
+    def _map_fuzzy_heroes(self, threshold: float = 0.80) -> List[EntityMapping]:
+        """Phase 3: Fuzzy-match unmapped heroes against mythology archetypes.
 
-        Heroes are under-represented in ACP (which focuses on deities), so
-        we use a relaxed SequenceMatcher threshold (0.55 vs the default 0.7)
-        but only for entities whose entity_type is 'hero'. This recovers
-        names like Gilgamesh, Achilles, Sigurd etc. that may have slight
-        spelling variations between ACP and the library.
+        Only searches mythology-domain archetypes (arch:XX-*) to prevent
+        absurd cross-domain matches (e.g., hero -> zodiac sign, hero -> totem).
+        Threshold of 0.80 requires strong string similarity to avoid false
+        positives from short names (e.g., "Finn" != "Fujin").
         """
         entities = self.library.get_all_entities()
         unmapped_heroes = [
@@ -428,9 +441,12 @@ class EntityMapper:
         if not unmapped_heroes:
             return []
 
-        # Build lookup of ACP archetype names + aliases
+        # Build lookup of ACP archetype names + aliases, EXCLUDING non-mythology domains
         acp_targets = {}
         for arch_id, arch_data in self.acp.archetypes.items():
+            # Skip non-mythology domains (divination, personality, symbolic systems)
+            if any(arch_id.startswith(prefix) for prefix in _FUZZY_EXCLUDE_PREFIXES):
+                continue
             name = arch_data.get("name", "")
             if name:
                 acp_targets[(arch_id, name)] = name.lower()
@@ -450,6 +466,10 @@ class EntityMapper:
         for entity in unmapped_heroes:
             name_lower = entity.canonical_name.lower()
             tradition = entity_traditions.get(entity.canonical_name, "")
+
+            # Skip very short names (< 4 chars) — too prone to false positives
+            if len(name_lower) < 4:
+                continue
 
             best_score = 0.0
             best_arch_id = None

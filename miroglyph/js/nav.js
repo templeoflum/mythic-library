@@ -5,7 +5,7 @@
   window.MiroGlyph = window.MiroGlyph || {};
 
   var history = [];
-  var suppressHistory = false;
+  var suppressHistoryCount = 0;
 
   // Breadcrumb trail - last N items viewed with their display names
   var breadcrumbs = [];
@@ -16,7 +16,9 @@
   }
 
   function pushRoute(route) {
-    if (!suppressHistory) {
+    if (suppressHistoryCount > 0) {
+      suppressHistoryCount--;
+    } else {
       history.push(currentRoute());
     }
     window.location.hash = route;
@@ -107,9 +109,8 @@
   // Go back to previous state
   function back() {
     if (history.length > 0) {
-      suppressHistory = true;
+      suppressHistoryCount++;
       window.location.hash = history.pop();
-      suppressHistory = false;
     } else {
       // Default: go to view root
       var view = currentRoute().split('/')[0] || 'atlas';

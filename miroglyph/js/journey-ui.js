@@ -14,7 +14,6 @@
   var archetypesData = null;
   var entitiesData = null;
   var patternsData = null;
-  var affinitiesData = null;
 
   // Display limits
   var DISPLAY_LIMIT = 12;
@@ -31,7 +30,6 @@
     archetypesData = deps.archetypes;
     entitiesData = deps.entities;
     patternsData = deps.patterns;
-    affinitiesData = deps.affinities;
   }
 
   // ========== Screen Management ==========

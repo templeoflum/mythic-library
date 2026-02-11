@@ -8,11 +8,18 @@
   let positions = {};
   let centerX = 0;
   let centerY = 0;
+  let lastWidth = 0;
+  let lastHeight = 0;
+  let initRetries = 0;
+  const MAX_INIT_RETRIES = 30;
 
   // Layer groups for proper z-ordering
   let traversalsGroup = null;
   let previewGroup = null;
   let nodesGroup = null;
+
+  // Stored resize handler reference for proper cleanup
+  let debouncedResize = null;
 
   // Initialize the SVG canvas
   function init() {
@@ -31,11 +38,22 @@
     // Get dimensions
     const rect = svg.getBoundingClientRect();
 
-    // If dimensions are too small, the layout hasn't computed yet - retry
+    // If dimensions are too small, the layout hasn't computed yet - retry (with limit)
     if (rect.width < 100 || rect.height < 100) {
-      requestAnimationFrame(() => doInit());
+      initRetries++;
+      if (initRetries < MAX_INIT_RETRIES) {
+        requestAnimationFrame(() => doInit());
+      }
       return;
     }
+    initRetries = 0;
+
+    // Skip rebuild if dimensions haven't changed
+    if (Math.round(rect.width) === lastWidth && Math.round(rect.height) === lastHeight) {
+      return;
+    }
+    lastWidth = Math.round(rect.width);
+    lastHeight = Math.round(rect.height);
 
     centerX = rect.width / 2;
     centerY = rect.height / 2;
@@ -60,8 +78,12 @@
     // Draw all nodes
     drawNodes();
 
-    // Handle resize
-    window.addEventListener('resize', debounce(handleResize, 250));
+    // Handle resize — remove old listener before adding new one
+    if (debouncedResize) {
+      window.removeEventListener('resize', debouncedResize);
+    }
+    debouncedResize = debounce(handleResize, 250);
+    window.addEventListener('resize', debouncedResize);
   }
 
   // Create SVG group element
@@ -198,6 +220,7 @@
 
   // Mark node as in sequence
   function markNodeInSequence(nodeId, inSequence) {
+    if (!nodesGroup) return;
     const group = nodesGroup.querySelector(`[data-node-id="${nodeId}"]`);
     if (group) {
       if (inSequence) {
@@ -210,6 +233,7 @@
 
   // Clear all sequence marks
   function clearSequenceMarks() {
+    if (!nodesGroup) return;
     nodesGroup.querySelectorAll('.node-group.in-sequence').forEach(g => {
       g.classList.remove('in-sequence');
     });
@@ -224,13 +248,17 @@
     return null;
   }
 
-  // Handle resize
+  // Handle resize — reset dimensions so doInit rebuilds, then redraw traversals
   function handleResize() {
+    lastWidth = 0;
+    lastHeight = 0;
     init();
-    // Trigger redraw of traversals
-    if (window.MiroGlyph.paths) {
-      window.MiroGlyph.paths.redraw();
-    }
+    // Traversal redraw is deferred to after doInit completes via requestAnimationFrame
+    requestAnimationFrame(function() {
+      if (window.MiroGlyph.paths) {
+        window.MiroGlyph.paths.redraw();
+      }
+    });
   }
 
   // Debounce helper

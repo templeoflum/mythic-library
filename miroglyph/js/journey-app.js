@@ -36,8 +36,7 @@
         dataDeps = {
           archetypes: dataLoader.get('archetypes'),
           entities: dataLoader.get('entities'),
-          patterns: dataLoader.get('patterns'),
-          affinities: dataLoader.get('affinities')
+          patterns: dataLoader.get('patterns')
         };
 
         // Initialize UI with dependencies
@@ -49,8 +48,7 @@
           templates: templates,
           archetypes: dataDeps.archetypes,
           entities: dataDeps.entities,
-          patterns: dataDeps.patterns,
-          affinities: dataDeps.affinities
+          patterns: dataDeps.patterns
         });
 
         // Bind global events
