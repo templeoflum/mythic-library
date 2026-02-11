@@ -115,26 +115,31 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:AF-OBATALA",
           "description": "Delegated creation to"
         },
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:AF-ORUNMILA",
           "description": "Witness to creation, keeper of wisdom"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-BRAHMAN",
           "fidelity": 0.7,
           "notes": "Transcendent source beyond personal deity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-TAO",
           "fidelity": 0.65,
           "notes": "Ultimate source beyond naming"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -268,35 +273,35 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:AF-OLODUMARE",
           "description": "Delegated creation from Supreme Being"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-ODUDUWA",
           "description": "Sky/Earth creative pair"
         },
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:AF-SHANGO",
           "axis": "active-receptive",
           "description": "Cool vs hot energy"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-NUWA",
           "fidelity": 0.7,
           "notes": "Creator of humanity from clay/earth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.6,
           "notes": "Shaper of humanity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-PTAH",
           "fidelity": 0.55,
           "notes": "Creator craftsman, shaper"
@@ -448,38 +453,49 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-ORUNMILA",
           "description": "Chaos and order, unpredictability and divination"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.85,
           "notes": "Messenger, trickster, crossroads, boundaries"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-LOKI",
           "fidelity": 0.65,
           "notes": "Trickster, chaos-bringer, necessary disruptor"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-SARUTAHIKO",
           "fidelity": 0.55,
           "notes": "Crossroads guardian"
         },
         {
           "type": "SHADOW",
-          "target": "primordial:deceiver",
+          "target": "primordial:trickster",
           "activation": "When crossroads trickery becomes cosmic sabotage; when message-bearing becomes message-distortion",
-          "strength": 0.65
+          "strength": 0.65,
+          "note": "Originally: primordial:deceiver (aspect: deception)"
         },
         {
           "type": "CULTURAL_ECHO",
           "target": "arch:AF-ANANSI",
           "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-COYOTE",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {
@@ -661,29 +677,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-ESHU",
           "description": "Ogun clears physical paths, Eshu opens spiritual ones"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:AF-SHANGO",
           "description": "Rival warriors, both claim Oya"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HEPHAESTUS",
           "fidelity": 0.7,
           "notes": "Smith god, iron/metal, tools"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ARES",
           "fidelity": 0.6,
           "notes": "War god, fierce battle"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-THOR",
           "fidelity": 0.55,
           "notes": "Warrior, protector, direct action"
@@ -692,6 +708,21 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:VO-OGOU",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-ILMARINEN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-KU",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TU",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -849,44 +880,45 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-OYA",
           "description": "Thunder and wind, husband and wife"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:AF-OGUN",
           "description": "Rival warriors"
         },
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:AF-OBATALA",
           "axis": "active-receptive",
           "description": "Hot vs cool energy"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-THOR",
           "fidelity": 0.75,
           "notes": "Thunder god, warrior, hot-tempered"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.65,
           "notes": "Thunder/lightning, kingship, passion"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.7,
           "notes": "Thunder, warrior, king of gods"
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When thunder justice becomes tyrannical wrath; when kingly power cannot accept challenge",
-          "strength": 0.7
+          "strength": 0.7,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         },
         {
           "type": "EVOLUTION",
@@ -1064,32 +1096,37 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-SHANGO",
           "description": "Wind and thunder, co-warriors"
         },
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:AF-YEMOJA",
           "description": "Storm water vs calm water"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-KALI",
           "fidelity": 0.7,
           "notes": "Fierce goddess, death, transformation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-MORRIGAN",
           "fidelity": 0.75,
           "notes": "War goddess, death, transformation, crows"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HECATE",
           "fidelity": 0.55,
           "notes": "Liminal goddess, crossroads, death mysteries"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TLAZOLTEOTL",
+          "fidelity": 0.4
         }
       ],
       "shadowDynamics": {
@@ -1229,34 +1266,34 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-OLOKUN",
           "description": "Ocean surface and depths"
         },
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:AF-SHANGO",
           "description": "Mother of Shango in some paths"
         },
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:AF-OSHUN",
           "description": "Salt water and fresh water sisters"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-TETHYS",
           "fidelity": 0.6,
           "notes": "Primordial ocean mother"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-GANGA",
           "fidelity": 0.55,
           "notes": "Sacred water goddess, mother"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-MAZU",
           "fidelity": 0.6,
           "notes": "Sea goddess, protector of sailors"
@@ -1264,6 +1301,26 @@
         {
           "type": "CULTURAL_ECHO",
           "target": "arch:VO-LA-SIRENE",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SEDNA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-MOKOSH",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-NAMAKA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:mama-cocha",
           "fidelity": 0.7
         }
       ],
@@ -1416,29 +1473,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:AF-YEMOJA",
           "description": "Fresh water and salt water sisters"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-SHANGO",
           "description": "Lover, wife in some paths"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-APHRODITE",
           "fidelity": 0.75,
           "notes": "Love, beauty, water-born"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-LAKSHMI",
           "fidelity": 0.65,
           "notes": "Beauty, prosperity, grace"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-INANNA",
           "fidelity": 0.6,
           "notes": "Love goddess, fierce protector, multi-faceted"
@@ -1447,6 +1504,21 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:VO-ERZULIE-FREDA",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-LADA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-CHALCHIUHTLICUE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-XOCHIQUETZAL",
+          "fidelity": 0.65
         }
       ],
       "shadowDynamics": {
@@ -1606,29 +1678,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-ESHU",
           "description": "Order and chaos, divination needs the messenger"
         },
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:AF-OLODUMARE",
           "description": "Witness to creation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-APOLLO",
           "fidelity": 0.55,
           "notes": "Divination, prophecy, wisdom"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-THOTH",
           "fidelity": 0.7,
           "notes": "Divine wisdom, cosmic knowledge, sacred writing"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.5,
           "notes": "Sought wisdom at great cost, knows fate"
@@ -1774,24 +1846,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-YEMOJA",
           "description": "Ocean depths and surface"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-POSEIDON",
           "fidelity": 0.5,
           "notes": "Ocean ruler, mysterious depths"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-TIAMAT",
           "fidelity": 0.55,
           "notes": "Primordial ocean, chaos-depth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-RAN",
           "fidelity": 0.5,
           "notes": "Ocean depths, drowned souls"
@@ -1800,6 +1872,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:VO-AGWE",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-KANALOA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TANGAROA",
+          "fidelity": 0.6
         }
       ],
       "shadowDynamics": {
@@ -1941,19 +2023,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-APOLLO",
           "fidelity": 0.5,
           "notes": "Plague-bringer and healer"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SHIVA",
           "fidelity": 0.45,
           "notes": "Ascetic, outsider, destruction-healing"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-JIZO",
           "fidelity": 0.4,
           "notes": "Protector of suffering, outcasts"
@@ -2092,23 +2174,23 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:AF-OSHUN",
           "description": "Rivalry, betrayal, jealousy"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-SHANGO",
           "description": "Former wife, rejected love"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERA",
           "fidelity": 0.5,
           "notes": "Marriage goddess, jealousy, betrayed wife"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-IZANAMI",
           "fidelity": 0.4,
           "notes": "Rejected, transformed through loss"
@@ -2242,32 +2324,42 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:AF-OGUN",
           "description": "Iron forbidden, ancient enmity"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-OBATALA",
           "description": "She provided clay for human creation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-GAIA",
           "fidelity": 0.6,
           "notes": "Primordial earth mother"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-TIAMAT",
           "fidelity": 0.5,
           "notes": "Primordial mother, predates order"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-KALI",
           "fidelity": 0.55,
           "notes": "Ancient dark mother, life-death"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-BABA-YAGA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-COATLICUE",
+          "fidelity": 0.5
         }
       ],
       "shadowDynamics": {
@@ -2397,18 +2489,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:AF-OBATALA",
           "description": "Earth and sky, completed Obatala's work"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-GEB",
           "fidelity": 0.6,
           "notes": "Earth deity, foundation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-HUANGDI",
           "fidelity": 0.55,
           "notes": "Ancestor of nation, civilizing founder"
@@ -2540,19 +2632,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-SHENNONG",
           "fidelity": 0.7,
           "notes": "Divine herbalist, medicine discoverer"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ASCLEPIUS",
           "fidelity": 0.55,
           "notes": "Healing deity, plant medicine"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-BRIGID",
           "fidelity": 0.45,
           "notes": "Healing, herb-lore"
@@ -2687,18 +2779,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:AF-SHANGO",
           "description": "Father of Shango"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HEPHAESTUS",
           "fidelity": 0.5,
           "notes": "Volcanic fire, earth-forge"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-CHARON",
           "fidelity": 0.45,
           "notes": "Ferryman across threshold"
@@ -2830,19 +2922,21 @@
           ]
         },
         {
-          "primordial": "primordial:storyteller",
+          "primordial": "primordial:wise-elder",
           "weight": 0.9,
           "aspects": [
             "keeper-of-all-stories",
-            "narrative-weaver"
+            "narrative-weaver",
+            "storytelling"
           ]
         },
         {
-          "primordial": "primordial:culture-hero",
+          "primordial": "primordial:hero",
           "weight": 0.6,
           "aspects": [
             "bringer-of-stories",
-            "civilizer-through-cunning"
+            "civilizer-through-cunning",
+            "civilization-bringer"
           ]
         }
       ],
@@ -2875,6 +2969,16 @@
             "messenger",
             "cunning"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SPIDER-WOMAN",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-IKTOMI",
+          "fidelity": 0.75
         }
       ],
       "correspondences": {

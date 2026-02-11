@@ -144,7 +144,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesopotamian:anu",
+          "target": "arch:ME-ANU",
           "fidelity": 0.55,
           "notes": "Supreme sky god"
         },
@@ -346,12 +346,6 @@
           "type": "CONTAINS",
           "target": "persian:az",
           "notes": "Greed/lust demon"
-        },
-        {
-          "type": "CULTURAL_ECHO",
-          "target": "christian:satan",
-          "fidelity": 0.85,
-          "notes": "Primary influence on devil concept"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -710,7 +704,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesopotamian:inanna",
+          "target": "arch:ME-INANNA",
           "fidelity": 0.6,
           "notes": "Fertility goddess, possibly syncretized"
         },
@@ -2140,7 +2134,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:tlaloc",
+          "target": "arch:MA-TLALOC",
           "fidelity": 0.55,
           "notes": "Rain deity"
         }
@@ -2556,18 +2550,6 @@
           "target": "arch:IN-KALKI",
           "fidelity": 0.7,
           "notes": "End-times avatar"
-        },
-        {
-          "type": "CULTURAL_ECHO",
-          "target": "jewish:messiah",
-          "fidelity": 0.75,
-          "notes": "Savior figure, influenced tradition"
-        },
-        {
-          "type": "CULTURAL_ECHO",
-          "target": "christian:christ",
-          "fidelity": 0.7,
-          "notes": "Savior, resurrection, end times"
         },
         {
           "type": "COMPLEMENT",

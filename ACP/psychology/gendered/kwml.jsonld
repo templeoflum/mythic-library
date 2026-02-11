@@ -663,12 +663,12 @@
       "relationships": [
         {
           "type": "SHADOW",
-          "target": "kwml:manipulator",
+          "target": "shadow:magician_manipulator",
           "notes": "Active shadow"
         },
         {
           "type": "SHADOW",
-          "target": "kwml:innocent",
+          "target": "kwml:weakling",
           "notes": "Passive shadow"
         },
         {
@@ -767,12 +767,12 @@
       "relationships": [
         {
           "type": "SHADOW",
-          "target": "kwml:addicted-lover",
+          "target": "kwml:masochist",
           "notes": "Active shadow"
         },
         {
           "type": "SHADOW",
-          "target": "kwml:impotent-lover",
+          "target": "kwml:masochist",
           "notes": "Passive shadow"
         },
         {

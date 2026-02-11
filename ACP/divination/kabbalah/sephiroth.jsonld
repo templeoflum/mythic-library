@@ -155,7 +155,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_father",
+          "primordial": "primordial:great-father",
           "weight": 0.9,
           "aspects": [
             "father",
@@ -163,7 +163,7 @@
           ]
         },
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.75,
           "aspects": [
             "wisdom"
@@ -264,7 +264,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.9,
           "aspects": [
             "mother",
@@ -728,7 +728,7 @@
           ]
         },
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.6,
           "aspects": [
             "nature",

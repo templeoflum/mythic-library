@@ -26,5 +26,26 @@
     "Prima Materia",
     "The Monad"
   ],
-  "notes": "No archetype sits exactly here - this is the theoretical center from which all differentiation flows. Used as reference point for all spectral calculations."
+  "notes": "No archetype sits exactly here - this is the theoretical center from which all differentiation flows. Used as reference point for all spectral calculations.",
+  "relationships": [
+    {
+      "type": "CULTURAL_ECHO",
+      "target": "alchemy:philosophers-stone",
+      "fidelity": 0.9
+    },
+    {
+      "type": "CULTURAL_ECHO",
+      "target": "alchemy:rubedo",
+      "fidelity": 0.85
+    },
+    {
+      "type": "CULTURAL_ECHO",
+      "target": "arch:BU-VAIROCANA",
+      "fidelity": 0.9
+    },
+    {
+      "type": "CULTURAL_ECHO",
+      "target": "element:aether"
+    }
+  ]
 }

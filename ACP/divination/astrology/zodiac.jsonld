@@ -79,6 +79,11 @@
           "target": "rashi:mesha",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent with sidereal offset"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:red_hawk",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -195,6 +200,11 @@
           "target": "rashi:vrishabha",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:beaver",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -312,6 +322,11 @@
           "target": "rashi:mithuna",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:deer",
+          "fidelity": 0.6
         }
       ],
       "narrativeRoles": [
@@ -386,7 +401,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.85,
           "aspects": [
             "nurturing",
@@ -427,6 +442,11 @@
           "target": "rashi:karka",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:woodpecker",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -546,6 +566,11 @@
           "target": "rashi:simha",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:salmon",
+          "fidelity": 0.65
         }
       ],
       "narrativeRoles": [
@@ -663,6 +688,11 @@
           "target": "rashi:kanya",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:brown_bear",
+          "fidelity": 0.6
         }
       ],
       "narrativeRoles": [
@@ -781,6 +811,11 @@
           "target": "rashi:tula",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:raven",
+          "fidelity": 0.6
         }
       ],
       "narrativeRoles": [
@@ -903,6 +938,11 @@
           "target": "rashi:vrishchika",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:snake",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -986,7 +1026,7 @@
           ]
         },
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.6,
           "aspects": [
             "philosophy",
@@ -1026,6 +1066,11 @@
           "target": "rashi:dhanu",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:elk",
+          "fidelity": 0.65
         }
       ],
       "narrativeRoles": [
@@ -1108,7 +1153,7 @@
           ]
         },
         {
-          "primordial": "primordial:great_father",
+          "primordial": "primordial:great-father",
           "weight": 0.7,
           "aspects": [
             "discipline",
@@ -1147,6 +1192,11 @@
           "target": "rashi:makara",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:snow_goose",
+          "fidelity": 0.7
         }
       ],
       "narrativeRoles": [
@@ -1263,6 +1313,11 @@
           "target": "rashi:kumbha",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:otter",
+          "fidelity": 0.65
         }
       ],
       "narrativeRoles": [
@@ -1385,6 +1440,11 @@
           "target": "rashi:meena",
           "fidelity": 0.9,
           "note": "Reverse of: Western equivalent"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "totem:wolf",
+          "fidelity": 0.6
         }
       ],
       "narrativeRoles": [

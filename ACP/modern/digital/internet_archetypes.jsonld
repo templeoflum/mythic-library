@@ -478,7 +478,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.75,
           "aspects": [
             "knowledge",
@@ -1021,7 +1021,7 @@
           ]
         },
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.6,
           "aspects": [
             "humor",

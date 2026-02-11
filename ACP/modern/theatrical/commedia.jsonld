@@ -857,11 +857,6 @@
           "target": "commedia:arlecchino",
           "fidelity": 0.6,
           "note": "Fellow zanni"
-        },
-        {
-          "type": "EVOLUTION",
-          "target": "modern:punch",
-          "note": "Became Punch in England"
         }
       ],
       "narrativeRoles": [

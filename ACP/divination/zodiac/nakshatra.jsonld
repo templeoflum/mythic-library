@@ -664,7 +664,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:return",
+          "target": "journey:crossing_return",
           "fidelity": 0.65,
           "note": "Return home"
         }

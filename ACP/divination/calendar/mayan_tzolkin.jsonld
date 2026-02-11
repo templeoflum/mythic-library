@@ -269,7 +269,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:belly_of_whale",
+          "target": "journey:belly_of_whale",
           "fidelity": 0.65,
           "note": "Inner journey"
         },
@@ -800,7 +800,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "astro:venus",
+          "target": "astrology:venus",
           "fidelity": 0.7,
           "note": "Venus association"
         },
@@ -1223,7 +1223,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:road_of_trials",
+          "target": "journey:road_of_trials",
           "fidelity": 0.75,
           "note": "Journey path"
         },

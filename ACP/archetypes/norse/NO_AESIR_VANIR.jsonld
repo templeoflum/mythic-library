@@ -203,9 +203,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When manipulation serves only self-preservation",
-          "strength": 0.5
+          "strength": 0.5,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         },
         {
           "type": "EVOLUTION",
@@ -271,6 +272,46 @@
           "target": "totem:raven",
           "fidelity": 0.55,
           "note": "Reverse of: Raven wisdom"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TEZCATLIPOCA",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-LU-DONGBIN",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-VELES",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ORUNMILA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-FUXI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-RAVEN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-VAINAMOINEN",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -481,9 +522,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:berserker",
+          "target": "primordial:warrior",
           "activation": "When protective rage becomes indiscriminate violence; when strength substitutes for wisdom",
-          "strength": 0.65
+          "strength": 0.65,
+          "note": "Originally: primordial:berserker (aspect: battle-frenzy)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -517,6 +559,46 @@
         {
           "type": "CULTURAL_ECHO",
           "target": "rune:thurisaz",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-PERKUNAS",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-SHANGO",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-RAIJIN",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-THUNDERBIRD",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-PERUN",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OGUN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-UKKO",
           "fidelity": 0.7
         }
       ],
@@ -701,9 +783,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:seductress-destroyer",
+          "target": "primordial:destroyer",
           "activation": "When desire becomes manipulation; when magic serves selfishness",
-          "strength": 0.5
+          "strength": 0.5,
+          "note": "Originally: primordial:seductress-destroyer (aspect: seduction)"
         }
       ],
       "correspondences": {
@@ -965,6 +1048,26 @@
           "type": "CULTURAL_ECHO",
           "target": "persian:angra-mainyu",
           "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ESHU",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-SUN-WUKONG",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-COYOTE",
+          "fidelity": 0.65
         }
       ],
       "correspondences": {
@@ -1133,6 +1236,16 @@
           "target": "arch:GR-HERA",
           "fidelity": 0.5,
           "notes": "Queen of gods, marriage goddess"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SPIDER-WOMAN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-MOKOSH",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -1294,6 +1407,21 @@
           "type": "CULTURAL_ECHO",
           "target": "rune:ingwaz",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-JARILO",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-RONGO",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-KOKOPELLI",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -1461,6 +1589,26 @@
           "type": "CULTURAL_ECHO",
           "target": "rune:tiwaz",
           "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TU",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-HACHIMAN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-ERLANG-SHEN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-GUAN-YU",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -1761,6 +1909,11 @@
           "target": "arch:GR-HERMES",
           "fidelity": 0.3,
           "notes": "Threshold guardian aspect only"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-SARUTAHIKO",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -1899,6 +2052,21 @@
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.5,
           "notes": "Queen of underworld"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LOUHI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-XIWANGMU",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-MORANA",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -2031,6 +2199,11 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:CE-BALOR",
           "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-CHIYOU",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -2159,6 +2332,11 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:ME-TIAMAT",
           "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-UNDERWATER-PANTHER",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {

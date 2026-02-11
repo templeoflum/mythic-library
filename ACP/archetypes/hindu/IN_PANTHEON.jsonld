@@ -167,6 +167,11 @@
           "target": "nakshatra:rohini",
           "fidelity": 0.75,
           "note": "Reverse of: Ruled by Brahma"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-ITZAMNA",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -671,6 +676,26 @@
           "target": "nakshatra:ardra",
           "fidelity": 0.7,
           "note": "Reverse of: Rudra form of Shiva"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-ERLANG-SHEN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-NANAHUATZIN",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-BABALU-AYE",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TEZCATLIPOCA",
+          "fidelity": 0.5
         }
       ],
       "contextualVariants": [
@@ -928,6 +953,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:CE-DANU",
           "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-UZUME",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-NUWA",
+          "fidelity": 0.45
         }
       ],
       "correspondences": {
@@ -1133,6 +1168,11 @@
         {
           "type": "CONTAINED_BY",
           "target": "arch:IN-PARVATI"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-IX-CHEL",
+          "fidelity": 0.45
         }
       ],
       "correspondences": {
@@ -1361,6 +1401,41 @@
           "target": "goddess:crone-destroyer",
           "fidelity": 0.75,
           "note": "Reverse of: Dark mother"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OYA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TLAZOLTEOTL",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-NANA-BURUKU",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-COATLICUE",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-PELE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-MORANA",
+          "fidelity": 0.45
         }
       ],
       "correspondences": {
@@ -1578,6 +1653,21 @@
         {
           "type": "CONTAINED_BY",
           "target": "arch:IN-SHAKTI"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSHUN",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-XOCHIQUETZAL",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-INARI",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -1790,6 +1880,16 @@
           "type": "CULTURAL_ECHO",
           "target": "persian:anahita",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-BENZAITEN",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-WHITE-BUFFALO-WOMAN",
+          "fidelity": 0.45
         }
       ],
       "correspondences": {
@@ -1993,6 +2093,11 @@
         {
           "type": "CONTAINED_BY",
           "target": "arch:IN-SHAKTI"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-XIWANGMU",
+          "fidelity": 0.45
         }
       ],
       "correspondences": {
@@ -2195,6 +2300,11 @@
             "writing",
             "scribe"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-OKUNINUSHI",
+          "fidelity": 0.4
         }
       ],
       "correspondences": {
@@ -2416,6 +2526,11 @@
         {
           "type": "CONTAINED_BY",
           "target": "arch:IN-VISHNU"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-NEZHA",
+          "fidelity": 0.5
         }
       ],
       "contextualVariants": [
@@ -2673,6 +2788,16 @@
         {
           "type": "CONTAINED_BY",
           "target": "arch:IN-VISHNU"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-NINIGI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-HUANGDI",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -3025,11 +3150,6 @@
           "notes": "Vedic supremacy yields to Puranic Vishnu"
         },
         {
-          "type": "ANTAGONIST",
-          "target": "concept:VRITRA",
-          "narrativeRole": "Dragon-slaying"
-        },
-        {
           "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.75,
@@ -3060,9 +3180,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When divine kingship becomes arrogant excess; fear of displacement by mortals",
-          "strength": 0.75
+          "strength": 0.75,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -3098,6 +3219,61 @@
           "target": "nakshatra:jyeshtha",
           "fidelity": 0.75,
           "note": "Reverse of: Ruled by Indra"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-UKKO",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-PERKUNAS",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-SHANGO",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TLALOC",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-JADE-EMPEROR",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-RAIJIN",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-PERUN",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-HACHIMAN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-HUITZILOPOCHTLI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-THUNDERBIRD",
+          "fidelity": 0.65
         }
       ],
       "contextualVariants": [
@@ -3314,6 +3490,21 @@
           "target": "nakshatra:bharani",
           "fidelity": 0.75,
           "note": "Reverse of: Ruled by Yama"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-JIZO",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-EMMA",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-YANLUO",
+          "fidelity": 0.9
         }
       ],
       "correspondences": {
@@ -3437,19 +3628,21 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:messenger",
+          "primordial": "primordial:psychopomp",
           "weight": 0.9,
           "aspects": [
             "divine-intermediary",
-            "sacrifice-carrier"
+            "sacrifice-carrier",
+            "communication"
           ]
         },
         {
-          "primordial": "primordial:transformer",
+          "primordial": "primordial:magician",
           "weight": 0.85,
           "aspects": [
             "purifier",
-            "alchemist-of-matter"
+            "alchemist-of-matter",
+            "transformation"
           ]
         },
         {
@@ -3515,6 +3708,11 @@
           "target": "nakshatra:krittika",
           "fidelity": 0.8,
           "note": "Reverse of: Ruled by Agni"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-SVAROZHICH",
+          "fidelity": 0.7
         }
       ],
       "correspondences": {
@@ -3639,19 +3837,21 @@
           ]
         },
         {
-          "primordial": "primordial:mystic",
+          "primordial": "primordial:magician",
           "weight": 0.75,
           "aspects": [
             "ecstatic-vision",
-            "divine-intoxication"
+            "divine-intoxication",
+            "mysticism"
           ]
         },
         {
-          "primordial": "primordial:nurturer",
+          "primordial": "primordial:great-mother",
           "weight": 0.6,
           "aspects": [
             "moon-nourisher",
-            "plant-lord"
+            "plant-lord",
+            "nurturance"
           ]
         }
       ],
@@ -3829,12 +4029,13 @@
           ]
         },
         {
-          "primordial": "primordial:judge",
+          "primordial": "primordial:sovereign",
           "weight": 0.8,
           "aspects": [
             "moral-watcher",
             "sin-punisher",
-            "thousand-eyed"
+            "thousand-eyed",
+            "judgment"
           ]
         },
         {
@@ -3988,11 +4189,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:tyrant",
+          "primordial": "primordial:sovereign",
           "weight": 0.85,
           "aspects": [
             "demon-king",
-            "oppressor"
+            "oppressor",
+            "tyranny"
           ]
         },
         {

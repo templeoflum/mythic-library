@@ -70,6 +70,11 @@
           "target": "ogham:ioho",
           "axis": "creation-destruction",
           "note": "Reverse of: Death vs birth"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:birch",
+          "fidelity": 0.95
         }
       ],
       "narrativeRoles": [
@@ -475,6 +480,11 @@
           "target": "arch:NO-YGGDRASIL",
           "fidelity": 0.75,
           "note": "World Tree parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:ash",
+          "fidelity": 0.95
         }
       ],
       "narrativeRoles": [
@@ -571,6 +581,11 @@
           "target": "rune:thurisaz",
           "fidelity": 0.55,
           "note": "Thorn/protection parallel"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "celtic_tree:hawthorn",
+          "fidelity": 0.95
         }
       ],
       "narrativeRoles": [

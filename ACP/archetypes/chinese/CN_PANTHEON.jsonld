@@ -116,22 +116,32 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-YMIR",
           "fidelity": 0.85,
           "notes": "Primordial giant whose body becomes the world"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-PURUSHA",
           "fidelity": 0.8,
           "notes": "Cosmic being sacrificed to create world"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-TIAMAT",
           "fidelity": 0.6,
           "notes": "Primordial being whose body forms cosmos"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TANE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-RANGI",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -262,24 +272,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-FUXI",
           "description": "Divine sibling-spouse pair who created civilization"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.55,
           "notes": "Creator of humanity from earth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-ENKI",
           "fidelity": 0.5,
           "notes": "Creator of humanity, civilization-bringer"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SHAKTI",
           "fidelity": 0.45,
           "notes": "Primordial feminine creative power"
@@ -290,6 +300,16 @@
           "target": "World-repairer who mends the broken sky",
           "trigger": "Gonggong shatters the pillar of heaven; Nüwa smelts five-colored stones",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:mama-ocllo",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OBATALA",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {
@@ -424,27 +444,37 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-NUWA",
           "description": "Divine sibling-spouse pair (he holds square, she holds compass)"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.6,
           "notes": "Culture hero who taught humanity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-THOTH",
           "fidelity": 0.7,
           "notes": "Inventor of writing, cosmic patterns"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.55,
           "notes": "Discovered sacred symbols (runes/trigrams)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-ITZAMNA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-QUETZALCOATL",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -580,27 +610,32 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:CN-HUANGDI",
           "description": "Paired as Flame Emperor and Yellow Emperor"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ASCLEPIUS",
           "fidelity": 0.7,
           "notes": "Divine healer, medicine god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-DHANVANTARI",
           "fidelity": 0.65,
           "notes": "Divine physician"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-BRIGID",
           "fidelity": 0.5,
           "notes": "Healing, agriculture aspects"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSANYIN",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {
@@ -738,33 +773,43 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:CN-SHENNONG",
           "description": "Paired emperors - Yellow and Flame"
         },
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:CN-CHIYOU",
           "axis": "order-chaos",
           "description": "Order vs chaos in primordial battle"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-RAMA",
           "fidelity": 0.6,
           "notes": "Divine king, civilization ideal"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.5,
           "notes": "Supreme ruler who defeated chaos forces"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-MARDUK",
           "fidelity": 0.55,
           "notes": "King who defeated chaos, established order"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ODUDUWA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:manco-capac",
+          "fidelity": 0.6
         }
       ],
       "shadowDynamics": {
@@ -899,25 +944,25 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:CN-HUANGDI",
           "axis": "order-chaos",
           "description": "Chaos rebel vs civilizing emperor"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ARES",
           "fidelity": 0.7,
           "notes": "War god, battle fury"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FENRIR",
           "fidelity": 0.55,
           "notes": "Monstrous chaos force opposing cosmic order"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-TIAMAT",
           "fidelity": 0.5,
           "notes": "Primordial chaos defeated by order-king"
@@ -1048,24 +1093,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-XIWANGMU",
           "description": "Supreme yang and yin rulers of heaven"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.65,
           "notes": "Supreme sky ruler"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.6,
           "notes": "King of heaven, celestial court"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-ANU",
           "fidelity": 0.55,
           "notes": "Heavenly supreme deity"
@@ -1224,24 +1269,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-JADE-EMPEROR",
           "description": "Yin-yang pair of celestial rulership"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERA",
           "fidelity": 0.5,
           "notes": "Queen of heaven"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-PARVATI",
           "fidelity": 0.45,
           "notes": "Divine queen, mountain dwelling"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-HEL",
           "fidelity": 0.4,
           "notes": "Underworld/afterlife feminine ruler (early form)"
@@ -1400,33 +1445,43 @@
       ],
       "relationships": [
         {
-          "type": "rel:EVOLUTION",
+          "type": "EVOLUTION",
           "target": "arch:CN-DOU-ZHANSHENG-FO",
           "description": "Transforms from rebel Monkey King to enlightened Victorious Fighting Buddha",
           "context": "Journey to the West - 81 trials transform rebellion into discipline"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:CN-JADE-EMPEROR",
           "description": "Chaos vs cosmic order"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-LOKI",
           "fidelity": 0.7,
           "notes": "Trickster, shape-shifter, rebel against gods"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.55,
           "notes": "Trickster, thief, boundary-crosser"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-HANUMAN",
           "fidelity": 0.75,
           "notes": "Monkey hero, devoted protector, immense power"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "chinese:monkey",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.6
         }
       ],
       "shadowDynamics": {
@@ -1584,18 +1639,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:DEVOLUTION",
+          "type": "DEVOLUTION",
           "target": "arch:CN-SUN-WUKONG",
           "description": "Origin form before enlightenment through Journey to the West"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:BU-BODHISATTVA",
           "fidelity": 0.7,
           "notes": "Achieved enlightenment but remains to help others"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-GUANYIN",
           "description": "Fellow enlightened being; Guanyin guided his transformation"
         }
@@ -1690,19 +1745,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-AVALOKITESHVARA",
           "fidelity": 0.95,
           "notes": "Direct Buddhist transmission"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-JIZO",
           "fidelity": 0.6,
           "notes": "Compassionate bodhisattva, saves suffering beings"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-ISIS",
           "fidelity": 0.45,
           "notes": "Universal mother, hearer of prayers"
@@ -1711,6 +1766,11 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:BU-AVALOKITESHVARA",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-MAZU",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -1819,29 +1879,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:CN-SUN-WUKONG",
           "description": "Equal opponents, both shape-shifters"
         },
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:CN-JADE-EMPEROR",
           "description": "Nephew, serves heavenly court"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SHIVA",
           "fidelity": 0.5,
           "notes": "Third eye of truth/destruction"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ATHENA",
           "fidelity": 0.45,
           "notes": "Strategic warrior, divine birth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-TYR",
           "fidelity": 0.5,
           "notes": "Just warrior, duty-bound"
@@ -1981,24 +2041,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:EVOLUTION",
+          "type": "EVOLUTION",
           "target": "arch:CN-NEZHA",
           "description": "Death and lotus rebirth transformation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERACLES",
           "fidelity": 0.55,
           "notes": "Divine child, monster-slayer, complicated paternal relationship"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-KRISHNA",
           "fidelity": 0.5,
           "notes": "Divine child, demon-slayer, playful yet fierce"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-CU-CHULAINN",
           "fidelity": 0.55,
           "notes": "Young warrior, transformation fury, tragic elements"
@@ -2156,18 +2216,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:CN-EIGHT-IMMORTALS",
           "description": "Leader of the Eight Immortals"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-CHIRON",
           "fidelity": 0.5,
           "notes": "Wise teacher, achieved transcendence"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-VYASA",
           "fidelity": 0.45,
           "notes": "Immortal sage, spiritual teacher"
@@ -2307,24 +2367,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:CN-EIGHT-IMMORTALS",
           "description": "Most famous of the Eight Immortals"
         },
         {
-          "type": "rel:EVOLUTION",
+          "type": "EVOLUTION",
           "target": "arch:CN-LU-DONGBIN",
           "description": "Scholar transformed through trials",
           "context": "Ten trials"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.5,
           "notes": "Guide, messenger, magical power"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.45,
           "notes": "Wanderer, magic-seeker, poetry"
@@ -2467,22 +2527,27 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-POSEIDON",
           "fidelity": 0.4,
           "notes": "Sea domain (but protective vs temperamental)"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-GUANYIN",
           "fidelity": 0.55,
           "notes": "Compassionate protector, hearer of prayers"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-BENZAITEN",
           "fidelity": 0.45,
           "notes": "Water-associated protective goddess"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-YEMOJA",
+          "fidelity": 0.6
         }
       ],
       "shadowDynamics": {
@@ -2610,19 +2675,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ARES",
           "fidelity": 0.5,
           "notes": "War god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-HACHIMAN",
           "fidelity": 0.7,
           "notes": "Deified warrior, righteous war, protection"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-TYR",
           "fidelity": 0.6,
           "notes": "God of righteous warfare, honor"
@@ -2753,27 +2818,32 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-HOU-YI",
           "description": "Tragically separated husband and wife"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-SELENE",
           "fidelity": 0.6,
           "notes": "Moon goddess"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-TSUKUYOMI",
           "fidelity": 0.5,
           "notes": "Lunar isolation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.45,
           "notes": "Separated from love, dwelling in other realm"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-HINA",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {
@@ -2899,24 +2969,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:CN-CHANG-E",
           "description": "Tragically separated husband and wife"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERACLES",
           "fidelity": 0.6,
           "notes": "Great hero, labors, tragic end"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-APOLLO",
           "fidelity": 0.5,
           "notes": "Divine archer, sun connection"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-ARJUNA",
           "fidelity": 0.55,
           "notes": "Supreme archer, divine but human struggles"
@@ -3046,28 +3116,33 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-YAMA",
           "fidelity": 0.9,
           "notes": "Direct transmission"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-EMMA",
           "fidelity": 0.85,
           "notes": "Same figure in Japanese Buddhism"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HADES",
           "fidelity": 0.6,
           "notes": "Underworld ruler"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-OSIRIS",
           "fidelity": 0.55,
           "notes": "Judge of dead"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-MICTLANTECUHTLI",
+          "fidelity": 0.6
         }
       ],
       "shadowDynamics": {

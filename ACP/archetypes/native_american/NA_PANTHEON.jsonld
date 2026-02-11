@@ -109,34 +109,35 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-ESHU",
           "fidelity": 0.7,
           "notes": "Trickster, transformer, necessary chaos"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-LOKI",
           "fidelity": 0.65,
           "notes": "Trickster, both helpful and harmful"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.55,
           "notes": "Trickster, boundary-crosser, thief"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-MAUI",
           "fidelity": 0.6,
           "notes": "Trickster culture hero, fire-stealer"
         },
         {
           "type": "SHADOW",
-          "target": "primordial:deceiver",
+          "target": "primordial:trickster",
           "activation": "When sacred foolishness becomes selfish cunning; when boundary-testing destroys taboos without renewal",
-          "strength": 0.7
+          "strength": 0.7,
+          "note": "Originally: primordial:deceiver (aspect: deception)"
         },
         {
           "type": "EVOLUTION",
@@ -295,24 +296,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:NA-COYOTE",
           "description": "Regional trickster variants"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.6,
           "notes": "Stole fire/light for humanity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.5,
           "notes": "Raven association, wisdom through cunning"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-MAUI",
           "fidelity": 0.65,
           "notes": "Trickster who captured the sun"
@@ -456,18 +457,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:NA-COYOTE",
           "description": "Plains trickster variant"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-ANANSI",
           "fidelity": 0.75,
           "notes": "Spider trickster, story-keeper"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.5,
           "notes": "Language inventor, cunning"
@@ -600,25 +601,25 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:NA-UNDERWATER-PANTHER",
           "axis": "ascent-descent",
           "description": "Sky vs water eternal conflict"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-PERUN",
           "fidelity": 0.7,
           "notes": "Thunder deity fighting serpent"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.65,
           "notes": "Thunder, dragon-slayer, sky power"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-THOR",
           "fidelity": 0.6,
           "notes": "Thunder deity, serpent enemy"
@@ -742,32 +743,38 @@
           ]
         },
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.5,
           "aspects": [
             "water-keeper",
-            "treasure-guarder"
+            "treasure-guarder",
+            "protection"
           ]
         }
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:NA-THUNDERBIRD",
           "axis": "ascent-descent",
           "description": "Water vs sky eternal conflict"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-VELES",
           "fidelity": 0.6,
           "notes": "Chthonic power opposing thunder god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-JORMUNGANDR",
           "fidelity": 0.5,
           "notes": "Serpentine water monster, cosmic enemy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-BUNYIP",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -889,19 +896,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ATHENA",
           "fidelity": 0.45,
           "notes": "Divine wisdom-bringer, civilizing"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-BRIGID",
           "fidelity": 0.5,
           "notes": "Sacred feminine, ceremony, transformation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SARASWATI",
           "fidelity": 0.45,
           "notes": "Divine feminine bringing sacred knowledge"
@@ -1042,29 +1049,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:NA-HERO-TWINS-NAVAJO",
           "description": "Mother of the Hero Twins"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:NA-SUN-FATHER",
           "description": "Earth and sun, mother and father of twins"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-DEMETER",
           "fidelity": 0.6,
           "notes": "Earth mother, seasonal cycles"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-MOKOSH",
           "fidelity": 0.55,
           "notes": "Earth mother, women's protector"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-PAPA",
           "fidelity": 0.5,
           "notes": "Earth mother, foundation"
@@ -1202,19 +1209,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ATHENA",
           "fidelity": 0.55,
           "notes": "Weaving, wisdom, hero-helper"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FRIGG",
           "fidelity": 0.5,
           "notes": "Weaving, fate, wisdom"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-ANANSI",
           "fidelity": 0.45,
           "notes": "Spider, weaving, wisdom (different valence)"
@@ -1352,23 +1359,23 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:NA-CHANGING-WOMAN",
           "description": "Sons of the earth mother"
         },
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:NA-SUN-FATHER",
           "description": "Sons of the sun"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:MA-HERO-TWINS",
           "fidelity": 0.75,
           "notes": "Hero twins, underworld/monster journey"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-CASTOR-POLLUX",
           "fidelity": 0.55,
           "notes": "Divine twins, complementary"
@@ -1500,29 +1507,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:NA-CHANGING-WOMAN",
           "description": "Sun and earth, father and mother"
         },
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:NA-HERO-TWINS-NAVAJO",
           "description": "Father of the Hero Twins"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-RA",
           "fidelity": 0.6,
           "notes": "Sun god, father, cosmic order"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HELIOS",
           "fidelity": 0.55,
           "notes": "Sun deity, all-seeing"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-AMATERASU",
           "fidelity": 0.45,
           "notes": "Sun deity, divine parent (different gender)"
@@ -1652,19 +1659,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PAN",
           "fidelity": 0.65,
           "notes": "Music, fertility, nature, sexuality"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.5,
           "notes": "Trade, trickery, fertility"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FREYR",
           "fidelity": 0.5,
           "notes": "Fertility, joy, abundance"
@@ -1804,19 +1811,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-YEMOJA",
           "fidelity": 0.55,
           "notes": "Ocean mother, life-giver"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-TANGAROA",
           "fidelity": 0.5,
           "notes": "Ocean deity, sea creatures"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-IZANAMI",
           "fidelity": 0.45,
           "notes": "Betrayed, transformed, underworld/otherworld ruler"
@@ -1949,19 +1956,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-DEMETER",
           "fidelity": 0.65,
           "notes": "Grain goddess, agriculture, mother"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:MA-CHICOMECŌĀTL",
           "fidelity": 0.7,
           "notes": "Corn goddess, Mesoamerican"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-DUMUZI",
           "fidelity": 0.5,
           "notes": "Death enabling agricultural rebirth"
@@ -2094,19 +2101,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-MAUI",
           "fidelity": 0.6,
           "notes": "Culture hero, transformer, trickster elements"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:MA-QUETZALCOATL",
           "fidelity": 0.5,
           "notes": "Culture hero, departed with promise to return"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-CU-CHULAINN",
           "fidelity": 0.45,
           "notes": "Great hero, protective of people"

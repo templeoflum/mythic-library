@@ -65,7 +65,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "tarot:four_of_pentacles",
+          "target": "tarot:pentacles_04",
           "fidelity": 0.6
         }
       ],
@@ -129,7 +129,7 @@
           ]
         },
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.7,
           "aspects": [
             "tribe",
@@ -702,7 +702,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.85,
           "aspects": [
             "knowledge",
@@ -817,7 +817,7 @@
           ]
         },
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.65,
           "aspects": [
             "global",

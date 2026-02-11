@@ -267,7 +267,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.7
         },
         {
@@ -711,7 +711,7 @@
           "weight": 0.8
         },
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.6
         }
       ],

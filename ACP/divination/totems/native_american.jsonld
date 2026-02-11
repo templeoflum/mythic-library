@@ -57,7 +57,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:capricorn",
+          "target": "astrology:capricorn",
           "fidelity": 0.7,
           "note": "Same season"
         },
@@ -157,7 +157,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:aquarius",
+          "target": "astrology:aquarius",
           "fidelity": 0.65,
           "note": "Same season"
         }
@@ -255,7 +255,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:pisces",
+          "target": "astrology:pisces",
           "fidelity": 0.6,
           "note": "Same season"
         }
@@ -353,7 +353,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:aries",
+          "target": "astrology:aries",
           "fidelity": 0.75,
           "note": "Same season"
         }
@@ -450,7 +450,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:taurus",
+          "target": "astrology:taurus",
           "fidelity": 0.75,
           "note": "Same season"
         }
@@ -548,7 +548,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:gemini",
+          "target": "astrology:gemini",
           "fidelity": 0.6,
           "note": "Same season"
         },
@@ -653,7 +653,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:cancer",
+          "target": "astrology:cancer",
           "fidelity": 0.75,
           "note": "Same season"
         }
@@ -754,7 +754,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:leo",
+          "target": "astrology:leo",
           "fidelity": 0.65,
           "note": "Same season"
         }
@@ -853,7 +853,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:virgo",
+          "target": "astrology:virgo",
           "fidelity": 0.6,
           "note": "Same season"
         }
@@ -948,7 +948,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:libra",
+          "target": "astrology:libra",
           "fidelity": 0.6,
           "note": "Same season"
         },
@@ -1053,7 +1053,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:scorpio",
+          "target": "astrology:scorpio",
           "fidelity": 0.75,
           "note": "Same season"
         }
@@ -1153,7 +1153,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "zodiac:sagittarius",
+          "target": "astrology:sagittarius",
           "fidelity": 0.65,
           "note": "Same season"
         },

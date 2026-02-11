@@ -1100,7 +1100,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.85,
           "aspects": [
             "wisdom",
@@ -1196,7 +1196,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.8,
           "aspects": [
             "potential",

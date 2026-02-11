@@ -99,24 +99,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-AKKA",
           "description": "Sky father and earth mother"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-THOR",
           "fidelity": 0.7,
           "notes": "Thunder god, hammer, oak"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-PERUN",
           "fidelity": 0.75,
           "notes": "Thunder god, Baltic-Slavic connections"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.6,
           "notes": "Thunder, rain, Indo-European sky god"
@@ -242,18 +242,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-UKKO",
           "description": "Earth and sky, receiving rain"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-MOKOSH",
           "fidelity": 0.65,
           "notes": "Earth mother, women's protector"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-DEMETER",
           "fidelity": 0.6,
           "notes": "Earth, harvest, fertility"
@@ -395,29 +395,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:FI-LOUHI",
           "description": "Opponent in Sampo conflict"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-ILMARINEN",
           "description": "Wisdom and craft united"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.6,
           "notes": "Wisdom, magic, poetry, old age"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ORPHEUS",
           "fidelity": 0.65,
           "notes": "Magic through music, underworld journey"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:MA-QUETZALCOATL",
           "fidelity": 0.5,
           "notes": "Culture hero who departed promising return"
@@ -557,29 +557,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-VAINAMOINEN",
           "description": "Craft and wisdom united"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:FI-LOUHI",
           "description": "Forged Sampo for her, then stole it back"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HEPHAESTUS",
           "fidelity": 0.8,
           "notes": "Divine smith, magical artifacts"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-SVAROG",
           "fidelity": 0.7,
           "notes": "Sky-smith, celestial craftsman"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OGUN",
           "fidelity": 0.55,
           "notes": "Smith, iron/metal work, transformation"
@@ -723,24 +723,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:EVOLUTION",
+          "type": "EVOLUTION",
           "target": "arch:FI-LEMMINKAINEN",
           "description": "Death and resurrection transformation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ADONIS",
           "fidelity": 0.55,
           "notes": "Beautiful youth, death and rebirth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-OSIRIS",
           "fidelity": 0.5,
           "notes": "Dismembered and reassembled"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-JARILO",
           "fidelity": 0.55,
           "notes": "Youthful lover, death-rebirth"
@@ -872,23 +872,23 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:FI-VAINAMOINEN",
           "description": "Primary opponent"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:FI-ILMARINEN",
           "description": "Commissioned then lost Sampo to him"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-BABA-YAGA",
           "fidelity": 0.7,
           "notes": "Powerful witch, ambiguous power"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-HEL",
           "fidelity": 0.5,
           "notes": "Northern, cold, death associations"
@@ -1010,18 +1010,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-TUONETAR",
           "description": "Lord and lady of Tuonela"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HADES",
           "fidelity": 0.7,
           "notes": "Underworld ruler"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-VELES",
           "fidelity": 0.5,
           "notes": "Chthonic realm ruler"
@@ -1143,18 +1143,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-TUONI",
           "description": "Queen and king of the dead"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-ERESHKIGAL",
           "fidelity": 0.6,
           "notes": "Underworld queen"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.5,
           "notes": "Underworld queen"
@@ -1284,25 +1284,25 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:FI-VELNIAS",
           "axis": "ascent-descent",
           "description": "Thunder god vs chthonic serpent"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-PERUN",
           "fidelity": 0.9,
           "notes": "Nearly identical Baltic-Slavic thunder god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-THOR",
           "fidelity": 0.8,
           "notes": "Thunder god, hammer/axe, serpent enemy"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.75,
           "notes": "Thunder, serpent-slayer, Indo-European"
@@ -1436,19 +1436,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:FI-PERKUNAS",
           "axis": "ascent-descent",
           "description": "Chthonic vs celestial"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-VELES",
           "fidelity": 0.85,
           "notes": "Cattle, underworld, Perun/Perkūnas opponent"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.5,
           "notes": "Cattle, trickery, psychopomp"
@@ -1581,19 +1581,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-MOIRAI",
           "fidelity": 0.8,
           "notes": "Fate-weavers, birth, thread of life"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-NORNS",
           "fidelity": 0.8,
           "notes": "Fate-weavers, destiny"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-MOKOSH",
           "fidelity": 0.6,
           "notes": "Weaving, women, fate"
@@ -1725,24 +1725,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:FI-MENULIS",
           "description": "Divorced for infidelity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-AMATERASU",
           "fidelity": 0.65,
           "notes": "Female sun goddess"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-RA",
           "fidelity": 0.5,
           "notes": "Sun deity, chariot"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SURYA",
           "fidelity": 0.55,
           "notes": "Sun, chariot, life-giving"
@@ -1857,11 +1857,12 @@
           ]
         },
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.7,
           "aspects": [
             "forest-protector",
-            "wildlife-keeper"
+            "wildlife-keeper",
+            "protection"
           ]
         },
         {
@@ -1875,18 +1876,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-MIELIKKI",
           "description": "King and queen of the forest"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-LESHY",
           "fidelity": 0.8,
           "notes": "Forest lord, game keeper"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-CERNUNNOS",
           "fidelity": 0.6,
           "notes": "Forest god, animals, hunt"
@@ -2007,28 +2008,29 @@
           ]
         },
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.55,
           "aspects": [
             "forest-protector",
-            "game-releaser"
+            "game-releaser",
+            "protection"
           ]
         }
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:FI-TAPIO",
           "description": "Queen and king of the forest"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ARTEMIS",
           "fidelity": 0.55,
           "notes": "Forest, animals, hunting"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-BRIGID",
           "fidelity": 0.5,
           "notes": "Healing, nature aspects"

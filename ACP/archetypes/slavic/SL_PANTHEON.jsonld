@@ -115,33 +115,58 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:SL-VELES",
           "axis": "ascent-descent",
           "description": "Eternal cosmic enemies, sky vs underworld"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:SL-MOKOSH",
           "description": "Sky father and earth mother"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-THOR",
           "fidelity": 0.85,
           "notes": "Thunder god, dragon/serpent slayer"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.75,
           "notes": "Sky father, thunder, supreme god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.8,
           "notes": "Thunder god, serpent-slayer, cosmic order"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-THUNDERBIRD",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-UKKO",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-PERKUNAS",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-WANDJINA",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:illapa",
+          "fidelity": 0.65
         }
       ],
       "shadowDynamics": {
@@ -295,34 +320,50 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:SL-PERUN",
           "axis": "ascent-descent",
           "description": "Eternal cosmic opposition"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.6,
           "notes": "Magic, poetry, wisdom, trickery"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HERMES",
           "fidelity": 0.55,
           "notes": "Cattle, commerce, psychopomp, trickery"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-VRITRA",
           "fidelity": 0.5,
           "notes": "Serpent opposing thunder god"
         },
         {
           "type": "SHADOW",
-          "target": "primordial:deceiver",
+          "target": "primordial:trickster",
           "activation": "When underworld cunning becomes cattle-theft and oath-breaking; when chthonic wisdom becomes malice",
-          "strength": 0.7
+          "strength": 0.7,
+          "note": "Originally: primordial:deceiver (aspect: deception)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-TUONI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-UNDERWATER-PANTHER",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-VELNIAS",
+          "fidelity": 0.85
         }
       ],
       "shadowDynamics": {
@@ -456,27 +497,42 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:SL-PERUN",
           "description": "Earth mother to sky father"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-DEMETER",
           "fidelity": 0.65,
           "notes": "Earth goddess, fertility"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FRIGG",
           "fidelity": 0.6,
           "notes": "Fate-weaving, women's protector"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-YEMOJA",
           "fidelity": 0.5,
           "notes": "Mother goddess, moisture, fertility"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LAIMA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-CHANGING-WOMAN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-AKKA",
+          "fidelity": 0.65
         }
       ],
       "shadowDynamics": {
@@ -607,24 +663,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:SL-KHORS",
           "description": "Both solar deities, different aspects"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HELIOS",
           "fidelity": 0.7,
           "notes": "Sun god, chariot, daily journey"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-RA",
           "fidelity": 0.55,
           "notes": "Sun god, ancestral, life-giving"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SURYA",
           "fidelity": 0.6,
           "notes": "Solar deity, chariot, benevolent"
@@ -747,18 +803,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:MIRRORS",
+          "type": "MIRRORS",
           "target": "arch:SL-DAZHBOG",
           "description": "Different aspects of solar divinity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-APOLLO",
           "fidelity": 0.5,
           "notes": "Solar, healing aspects"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-SURYA",
           "fidelity": 0.55,
           "notes": "Sun disc, cosmic body"
@@ -878,19 +934,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-AEOLUS",
           "fidelity": 0.6,
           "notes": "Wind god, ancestor of winds"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-FUJIN",
           "fidelity": 0.55,
           "notes": "Wind deity"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-ENLIL",
           "fidelity": 0.5,
           "notes": "Wind, air, breath"
@@ -1019,26 +1075,31 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:SL-DAZHBOG",
           "description": "Father of the sun god"
         },
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:SL-SVAROZHICH",
           "description": "Father of fire"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HEPHAESTUS",
           "fidelity": 0.65,
           "notes": "Divine smith, fire, metalworking"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-ODIN",
           "fidelity": 0.5,
           "notes": "Sky father, creator aspects"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-ILMARINEN",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {
@@ -1169,18 +1230,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:SL-SVAROG",
           "description": "Son of the sky forger"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-AGNI",
           "fidelity": 0.7,
           "notes": "Fire god, sacred hearth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HESTIA",
           "fidelity": 0.5,
           "notes": "Sacred hearth fire"
@@ -1287,11 +1348,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.75,
           "aspects": [
             "seed-protector",
-            "harvest-guardian"
+            "harvest-guardian",
+            "protection"
           ]
         },
         {
@@ -1313,13 +1375,13 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-GARUDA",
           "fidelity": 0.45,
           "notes": "Winged divine creature, guardian"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-GRIFFIN",
           "fidelity": 0.5,
           "notes": "Composite guardian beast"
@@ -1443,27 +1505,32 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:SL-MORANA",
           "description": "Spring god marries death goddess, dying in winter"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-DUMUZI",
           "fidelity": 0.7,
           "notes": "Dying-rising fertility god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ADONIS",
           "fidelity": 0.7,
           "notes": "Youthful dying-rising god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FREYR",
           "fidelity": 0.6,
           "notes": "Fertility, sexuality, seasonal"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LEMMINKAINEN",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -1597,24 +1664,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:SL-JARILO",
           "description": "Death goddess who kills her spring husband"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.6,
           "notes": "Seasonal death-rebirth, underworld"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-HEL",
           "fidelity": 0.55,
           "notes": "Death goddess, underworld"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-KALI",
           "fidelity": 0.45,
           "notes": "Death aspect of goddess"
@@ -1752,19 +1819,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-APHRODITE",
           "fidelity": 0.7,
           "notes": "Love, beauty"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FREYA",
           "fidelity": 0.6,
           "notes": "Love, beauty, fertility"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OSHUN",
           "fidelity": 0.55,
           "notes": "Love, beauty, marriage"
@@ -1880,11 +1947,12 @@
           ]
         },
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.7,
           "aspects": [
             "house-protector",
-            "livestock-watcher"
+            "livestock-watcher",
+            "protection"
           ]
         },
         {
@@ -1898,16 +1966,21 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-KAMI",
           "fidelity": 0.5,
           "notes": "Household spirits"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-BROWNIES",
           "fidelity": 0.65,
           "notes": "Household helpers"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-MIMI-SPIRITS",
+          "fidelity": 0.45
         }
       ],
       "shadowDynamics": {
@@ -2042,22 +2115,27 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HECATE",
           "fidelity": 0.65,
           "notes": "Crossroads witch, death goddess, thresholds"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-NANA-BURUKU",
           "fidelity": 0.5,
           "notes": "Ancient primordial mother, life-death"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-MORRIGAN",
           "fidelity": 0.5,
           "notes": "Dark feminine, transformation, death"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LOUHI",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {
@@ -2160,11 +2238,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.8,
           "aspects": [
             "forest-protector",
-            "wildlife-lord"
+            "wildlife-lord",
+            "protection"
           ]
         },
         {
@@ -2186,16 +2265,31 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PAN",
           "fidelity": 0.65,
           "notes": "Forest lord, wildlife, panic"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-CERNUNNOS",
           "fidelity": 0.6,
           "notes": "Forest lord, animals, wild nature"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:apu",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-YOWIE",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-TAPIO",
+          "fidelity": 0.8
         }
       ],
       "shadowDynamics": {
@@ -2316,16 +2410,21 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-SIRENS",
           "fidelity": 0.6,
           "notes": "Luring men to water death"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-NYMPHS",
           "fidelity": 0.55,
           "notes": "Water spirits, nature maidens"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-BUNYIP",
+          "fidelity": 0.4
         }
       ],
       "shadowDynamics": {

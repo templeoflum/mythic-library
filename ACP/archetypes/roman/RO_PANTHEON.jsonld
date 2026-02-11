@@ -76,12 +76,13 @@
           ]
         },
         {
-          "primordial": "primordial:sky-father",
+          "primordial": "primordial:great-father",
           "weight": 0.85,
           "aspects": [
             "thunder and lightning",
             "augury through sky-signs",
-            "celestial order"
+            "celestial order",
+            "sky"
           ]
         }
       ],
@@ -399,7 +400,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:sage",
+          "primordial": "primordial:wise-elder",
           "weight": 0.9,
           "aspects": [
             "wisdom",
@@ -408,13 +409,14 @@
           ]
         },
         {
-          "primordial": "primordial:artisan",
+          "primordial": "primordial:creator",
           "weight": 0.8,
           "aspects": [
             "craft patronage",
             "artisans",
             "teachers",
-            "physicians"
+            "physicians",
+            "craftsmanship"
           ]
         }
       ],
@@ -499,12 +501,13 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:underworld-lord",
+          "primordial": "primordial:psychopomp",
           "weight": 0.9,
           "aspects": [
             "ruler of the dead",
             "guardian of underworld",
-            "keeper of earthly wealth"
+            "keeper of earthly wealth",
+            "underworld-rule"
           ]
         }
       ],
@@ -825,7 +828,7 @@
           ]
         },
         {
-          "primordial": "primordial:messenger",
+          "primordial": "primordial:psychopomp",
           "weight": 0.9,
           "aspects": [
             "commerce",

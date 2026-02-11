@@ -465,7 +465,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:departure",
+          "target": "journey:call_to_adventure",
           "fidelity": 0.75,
           "note": "Journey begins"
         },

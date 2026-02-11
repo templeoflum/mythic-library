@@ -171,6 +171,11 @@
             "wisdom",
             "magic"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-OKUNINUSHI",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -392,6 +397,36 @@
           "target": "celtic_tree:rowan",
           "fidelity": 0.65,
           "note": "Reverse of: Brigid association"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-BENZAITEN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-MIELIKKI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSANYIN",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-INARI",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-WHITE-BUFFALO-WOMAN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-SHENNONG",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -804,9 +839,20 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:devouring-mother",
+          "target": "primordial:great-mother",
           "activation": "When battle prophecy becomes war-lust; when sovereignty testing destroys the tested",
-          "strength": 0.75
+          "strength": 0.75,
+          "note": "Originally: primordial:devouring-mother (aspect: devouring)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OYA",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-BABA-YAGA",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -965,11 +1011,6 @@
       },
       "relationships": [
         {
-          "type": "PARENT",
-          "target": "system:TUATHA-DE-DANANN",
-          "notes": "Mother of the divine tribe"
-        },
-        {
           "type": "CULTURAL_ECHO",
           "target": "arch:IN-SHAKTI",
           "fidelity": 0.5,
@@ -1098,12 +1139,13 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wild-man",
+          "primordial": "primordial:monster",
           "weight": 0.85,
           "aspects": [
             "lord-of-beasts",
             "untamed",
-            "forest-king"
+            "forest-king",
+            "wild-nature"
           ]
         },
         {
@@ -1149,6 +1191,16 @@
             "wild",
             "nature-god"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-TAPIO",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-LESHY",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -1844,6 +1896,16 @@
             "doomed",
             "rage"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-NEZHA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-GLOOSCAP",
+          "fidelity": 0.45
         }
       ],
       "contextualVariants": [
@@ -2366,9 +2428,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When the evil eye opens — consumptive authority that devours even its own people",
-          "strength": 0.9
+          "strength": 0.9,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         }
       ],
       "correspondences": {

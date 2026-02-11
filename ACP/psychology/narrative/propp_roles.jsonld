@@ -59,7 +59,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:shadow",
+          "target": "journey:road_of_trials",
           "fidelity": 0.8,
           "note": "Campbell's shadow"
         },
@@ -163,7 +163,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:mentor",
+          "target": "journey:supernatural_aid",
           "fidelity": 0.75,
           "note": "Campbell's mentor"
         },
@@ -467,7 +467,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "heros_journey:call",
+          "target": "journey:call_to_adventure",
           "fidelity": 0.7,
           "note": "Call to adventure source"
         }

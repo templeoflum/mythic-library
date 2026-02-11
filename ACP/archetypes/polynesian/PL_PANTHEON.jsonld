@@ -119,32 +119,37 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:PL-PAPA",
           "description": "Primordial pair, eternal love despite separation"
         },
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:PL-TANE",
           "description": "Father of Tāne who separated them"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-OURANOS",
           "fidelity": 0.8,
           "notes": "Sky father, separated from earth"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-NUT",
           "fidelity": 0.5,
           "notes": "Sky parent (gender reversed)"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-PANGU",
           "fidelity": 0.55,
           "notes": "Primordial separation creating cosmos"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.55
         }
       ],
       "shadowDynamics": {
@@ -277,32 +282,37 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:PL-RANGI",
           "description": "Primordial pair, earth and sky"
         },
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:PL-TANE",
           "description": "Mother of the separating god"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-GAIA",
           "fidelity": 0.85,
           "notes": "Earth mother, primordial feminine"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-PRITHVI",
           "fidelity": 0.7,
           "notes": "Earth goddess, nurturer"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:EG-GEB",
           "fidelity": 0.5,
           "notes": "Earth parent (gender reversed in Egypt)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-CHANGING-WOMAN",
+          "fidelity": 0.5
         }
       ],
       "shadowDynamics": {
@@ -433,37 +443,42 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:PL-RANGI",
           "description": "Son who separated the parents"
         },
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:PL-PAPA",
           "description": "Son who clothed the earth-mother"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:PL-TU",
           "description": "Different responses to parents - separation vs destruction"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.6,
           "notes": "Creator of humanity, light-bringer"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-MARDUK",
           "fidelity": 0.55,
           "notes": "Separating primordial elements, ordering cosmos"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-PANGU",
           "fidelity": 0.6,
           "notes": "Separating sky and earth"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-KANE",
+          "fidelity": 0.85
         }
       ],
       "shadowDynamics": {
@@ -594,39 +609,45 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:PL-TANE",
           "description": "Different approaches to primordial parents"
         },
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:PL-RONGO",
           "axis": "creation-destruction",
           "description": "War vs peace/cultivation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ARES",
           "fidelity": 0.7,
           "notes": "War god, fierce, direct"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-TYR",
           "fidelity": 0.6,
           "notes": "War god, courage, standing firm"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OGUN",
           "fidelity": 0.55,
           "notes": "War, hunting, fierce protector"
         },
         {
           "type": "SHADOW",
-          "target": "primordial:berserker",
+          "target": "primordial:warrior",
           "activation": "When war-god's protective function becomes bloodlust; when mana-seeking becomes cannibalistic rage",
-          "strength": 0.8
+          "strength": 0.8,
+          "note": "Originally: primordial:berserker (aspect: battle-frenzy)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-KU",
+          "fidelity": 0.9
         }
       ],
       "shadowDynamics": {
@@ -755,27 +776,37 @@
       ],
       "relationships": [
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:PL-TU",
           "description": "Fled from war god's dominance"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-POSEIDON",
           "fidelity": 0.7,
           "notes": "Sea god, ocean depths"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OLOKUN",
           "fidelity": 0.6,
           "notes": "Ocean depths, primordial water"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-EA",
           "fidelity": 0.55,
           "notes": "Primordial water deity, wisdom"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SEDNA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-KANALOA",
+          "fidelity": 0.85
         }
       ],
       "shadowDynamics": {
@@ -923,28 +954,33 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:PL-TU",
           "axis": "creation-destruction",
           "description": "Peace vs war, cultivation vs hunting"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-DEMETER",
           "fidelity": 0.6,
           "notes": "Agriculture, fertility, harvest"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-DUMUZI",
           "fidelity": 0.55,
           "notes": "Seasonal fertility, dying-rising pattern"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-FREYR",
           "fidelity": 0.65,
           "notes": "Peace, fertility, harvest, seasonal"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-LONO",
+          "fidelity": 0.9
         }
       ],
       "shadowDynamics": {
@@ -1080,25 +1116,25 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PROMETHEUS",
           "fidelity": 0.75,
           "notes": "Fire-stealer, humanity's champion"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NO-LOKI",
           "fidelity": 0.6,
           "notes": "Trickster, shape-shifter, transgressor"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-ESHU",
           "fidelity": 0.55,
           "notes": "Trickster, transformer, boundary-crosser"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-SUN-WUKONG",
           "fidelity": 0.6,
           "notes": "Trickster hero, challenging cosmic order"
@@ -1109,6 +1145,26 @@
           "target": "Culture-hero who fishes up islands, snares the sun, steals fire",
           "trigger": "Successive trickster-hero feats; each quest expands from personal survival to collective benefit",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-GLOOSCAP",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-COYOTE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-RAVEN",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-HERO-TWINS",
+          "fidelity": 0.6
         }
       ],
       "shadowDynamics": {
@@ -1285,29 +1341,29 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:PL-HIIAKA",
           "description": "Sisterly love, tension, and reconciliation"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:PL-NAMAKA",
           "description": "Volcanic fire vs ocean water - eternal sisters' battle"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-KALI",
           "fidelity": 0.6,
           "notes": "Fierce goddess, creation-destruction unified"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-HEPHAESTUS",
           "fidelity": 0.5,
           "notes": "Volcanic fire, forge of creation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-KONOHANASAKUYA",
           "fidelity": 0.55,
           "notes": "Volcanic goddess, fire, transformation"
@@ -1452,18 +1508,18 @@
       ],
       "relationships": [
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:PL-PELE",
           "description": "Beloved yet tested sisterhood"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.45,
           "notes": "Journey, transformation, return"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-UZUME",
           "fidelity": 0.5,
           "notes": "Sacred dance, drawing out the hidden"
@@ -1600,27 +1656,32 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINS",
+          "type": "CONTAINS",
           "target": "arch:PL-MAUI",
           "description": "Mother/grandmother of Māui in many traditions"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-SELENE",
           "fidelity": 0.65,
           "notes": "Moon goddess"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CN-CHANG-E",
           "fidelity": 0.7,
           "notes": "Woman who fled to moon, lunar isolation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-TSUKUYOMI",
           "fidelity": 0.45,
           "notes": "Lunar deity, cycles"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-IX-CHEL",
+          "fidelity": 0.5
         }
       ],
       "shadowDynamics": {
@@ -1751,30 +1812,30 @@
       ],
       "relationships": [
         {
-          "type": "rel:EVOLUTION",
+          "type": "EVOLUTION",
           "target": "arch:PL-HINE-NUI-TE-PO",
           "description": "Transformed from Dawn Maiden to Death Goddess",
           "context": "Discovering incest, fleeing to underworld"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:PL-MAUI",
           "description": "Killed him to preserve death"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-ERESHKIGAL",
           "fidelity": 0.7,
           "notes": "Underworld queen, death goddess"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PERSEPHONE",
           "fidelity": 0.6,
           "notes": "Transformed maiden, underworld queen"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-IZANAMI",
           "fidelity": 0.65,
           "notes": "Death goddess, underworld, transformation through rejection"
@@ -1785,6 +1846,11 @@
           "target": "Hine-nui-te-pō (Great Woman of Night, guardian of the dead)",
           "trigger": "Discovery of incest with father Tāne; flight to the underworld in shame and rage",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-MICTECACIHUATL",
+          "fidelity": 0.5
         }
       ],
       "shadowDynamics": {
@@ -1912,28 +1978,28 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONTAINED_BY",
+          "type": "CONTAINED_BY",
           "target": "arch:PL-RANGI",
           "description": "Remained loyal to sky father"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:PL-TANE",
           "description": "War against the separator"
         },
         {
-          "type": "rel:TENSION",
+          "type": "TENSION",
           "target": "arch:PL-TU",
           "description": "Only Tū stood against his storms"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-SUSANOO",
           "fidelity": 0.6,
           "notes": "Storm god, family conflict, destructive rampage"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-TYPHON",
           "fidelity": 0.5,
           "notes": "Storm monster, war against gods"
@@ -2067,23 +2133,23 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:PL-KU",
           "description": "Hawaiian divine triad"
         },
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:PL-LONO",
           "description": "Hawaiian divine triad"
         },
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:PL-KANALOA",
           "axis": "light-shadow",
           "description": "Life vs death, fresh water vs salt"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-TANE",
           "fidelity": 0.85,
           "notes": "Hawaiian form of Tāne"
@@ -2214,23 +2280,23 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:PL-KANE",
           "description": "Hawaiian divine triad"
         },
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:PL-LONO",
           "description": "Hawaiian divine triad"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-TU",
           "fidelity": 0.9,
           "notes": "Hawaiian form of Tū"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OGUN",
           "fidelity": 0.55,
           "notes": "War, male activities, tools"
@@ -2359,23 +2425,23 @@
       ],
       "relationships": [
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:PL-KANE",
           "description": "Hawaiian divine triad"
         },
         {
-          "type": "rel:CONSTELLATION",
+          "type": "CONSTELLATION",
           "target": "arch:PL-KU",
           "description": "Hawaiian divine triad"
         },
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:PL-KU",
           "axis": "creation-destruction",
           "description": "Peace vs war seasons"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-RONGO",
           "fidelity": 0.9,
           "notes": "Hawaiian form of Rongo"
@@ -2507,24 +2573,24 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:PL-KANE",
           "axis": "light-shadow",
           "description": "Salt water/death vs fresh water/life"
         },
         {
-          "type": "rel:COMPLEMENT",
+          "type": "COMPLEMENT",
           "target": "arch:PL-KANE",
           "description": "Often travel and work together"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-TANGAROA",
           "fidelity": 0.85,
           "notes": "Hawaiian form of Tangaroa"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OLOKUN",
           "fidelity": 0.55,
           "notes": "Ocean depths, underworld connection"
@@ -2659,19 +2725,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:POLAR_OPPOSITE",
+          "type": "POLAR_OPPOSITE",
           "target": "arch:PL-PELE",
           "axis": "stasis-transformation",
           "description": "Eternal fire-water conflict"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-YEMOJA",
           "fidelity": 0.5,
           "notes": "Sea goddess, fierce yet maternal"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-AMPHITRITE",
           "fidelity": 0.45,
           "notes": "Sea queen"

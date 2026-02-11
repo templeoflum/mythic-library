@@ -339,7 +339,7 @@
           ]
         },
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.7,
           "aspects": [
             "divine-message"
@@ -735,7 +735,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.75,
           "aspects": [
             "joy",
@@ -1125,7 +1125,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.7,
           "aspects": [
             "harvest",
@@ -1722,7 +1722,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.85,
           "aspects": [
             "birth",
@@ -2005,7 +2005,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.65,
           "aspects": [
             "flow",
@@ -2097,7 +2097,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.7,
           "aspects": [
             "potential",
@@ -2197,7 +2197,7 @@
           ]
         },
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.6,
           "aspects": [
             "awakening",

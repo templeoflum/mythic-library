@@ -43,7 +43,7 @@
           ]
         },
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.6,
           "aspects": [
             "integrity",
@@ -146,7 +146,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.8,
           "aspects": [
             "nurturing",
@@ -490,7 +490,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.8,
           "aspects": [
             "knowledge",
@@ -706,7 +706,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.8,
           "aspects": [
             "enthusiasm",

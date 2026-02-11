@@ -101,13 +101,13 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesopotamian:enki",
+          "target": "arch:ME-ENKI",
           "fidelity": 0.65,
           "notes": "Creator who teaches civilization"
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:quetzalcoatl",
+          "target": "arch:MA-QUETZALCOATL",
           "fidelity": 0.75,
           "notes": "Civilizing creator who departs westward"
         },
@@ -863,13 +863,13 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "slavic:perun",
+          "target": "arch:SL-PERUN",
           "fidelity": 0.65,
           "notes": "Thunder god"
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:tlaloc",
+          "target": "arch:MA-TLALOC",
           "fidelity": 0.75,
           "notes": "Rain deity essential for agriculture"
         },
@@ -1025,7 +1025,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "african:yemoja",
+          "target": "arch:AF-YEMOJA",
           "fidelity": 0.7,
           "notes": "Ocean mother goddess"
         },
@@ -1181,7 +1181,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:mictlantecuhtli",
+          "target": "arch:MA-MICTLANTECUHTLI",
           "fidelity": 0.75,
           "notes": "Death lord"
         },
@@ -1372,7 +1372,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "chinese:yellow-emperor",
+          "target": "arch:CN-HUANGDI",
           "fidelity": 0.6,
           "notes": "Legendary civilization founder"
         }
@@ -1519,7 +1519,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "chinese:nuwa",
+          "target": "arch:CN-NUWA",
           "fidelity": 0.5,
           "notes": "Feminine civilizing deity"
         }
@@ -1649,13 +1649,13 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:quetzalcoatl",
+          "target": "arch:MA-QUETZALCOATL",
           "fidelity": 0.5,
           "notes": "Venus association"
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesopotamian:inanna",
+          "target": "arch:ME-INANNA",
           "fidelity": 0.55,
           "notes": "Venus goddess"
         },
@@ -1799,7 +1799,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:hero-twins",
+          "target": "arch:MA-HERO-TWINS",
           "fidelity": 0.55,
           "notes": "Divine twins"
         },
@@ -2237,13 +2237,13 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "japanese:kami",
+          "target": "arch:JP-AMATERASU",
           "fidelity": 0.7,
           "notes": "Nature spirits of specific places"
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "slavic:leshy",
+          "target": "arch:SL-LESHY",
           "fidelity": 0.55,
           "notes": "Local nature guardians"
         },
@@ -2534,7 +2534,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:tlaloc",
+          "target": "arch:MA-TLALOC",
           "fidelity": 0.6,
           "notes": "Mountain rain deity"
         },
@@ -2685,7 +2685,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesoamerican:tezcatlipoca",
+          "target": "arch:MA-TEZCATLIPOCA",
           "fidelity": 0.5,
           "notes": "Destructive, sacrifice-demanding deity"
         }

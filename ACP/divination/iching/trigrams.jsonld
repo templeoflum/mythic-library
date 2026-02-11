@@ -45,7 +45,7 @@
           ]
         },
         {
-          "primordial": "primordial:great_father",
+          "primordial": "primordial:great-father",
           "weight": 0.8,
           "aspects": [
             "heaven",
@@ -152,7 +152,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.9,
           "aspects": [
             "earth",
@@ -513,7 +513,7 @@
           ]
         },
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.6,
           "aspects": [
             "meditation",
@@ -836,7 +836,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 0.7,
           "aspects": [
             "joy",

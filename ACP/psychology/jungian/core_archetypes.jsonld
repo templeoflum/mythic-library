@@ -279,7 +279,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 0.7,
           "aspects": [
             "feminine",
@@ -386,7 +386,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_father",
+          "primordial": "primordial:great-father",
           "weight": 0.7,
           "aspects": [
             "masculine",
@@ -570,7 +570,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 1.0,
           "aspects": [
             "wisdom",
@@ -656,7 +656,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:great_mother",
+          "primordial": "primordial:great-mother",
           "weight": 1.0,
           "aspects": [
             "nurturing",
@@ -838,7 +838,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:divine_child",
+          "primordial": "primordial:divine-child",
           "weight": 1.0,
           "aspects": [
             "innocence",

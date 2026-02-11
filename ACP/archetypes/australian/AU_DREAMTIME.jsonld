@@ -104,19 +104,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-DAMBALLAH",
           "fidelity": 0.6,
           "notes": "Serpent, water, creation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:ME-TIAMAT",
           "fidelity": 0.5,
           "notes": "Primordial serpent/dragon, water, creation"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:IN-NAGA",
           "fidelity": 0.55,
           "notes": "Sacred serpent, water, fertility"
@@ -255,19 +255,19 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:PL-RANGI",
           "fidelity": 0.55,
           "notes": "Sky father"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.5,
           "notes": "Sky father, law"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:AF-OLODUMARE",
           "fidelity": 0.55,
           "notes": "Supreme creator, somewhat distant"
@@ -401,13 +401,13 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-PLEIADES",
           "fidelity": 0.7,
           "notes": "Pleiades myths, pursued maidens"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:GR-DAPHNE",
           "fidelity": 0.5,
           "notes": "Fleeing woman, transformation"
@@ -540,13 +540,13 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:MA-TLALOC",
           "fidelity": 0.5,
           "notes": "Rain deity, distinctive eyes"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-PERUN",
           "fidelity": 0.4,
           "notes": "Storm/rain control"
@@ -677,13 +677,13 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-DOMOVOI",
           "fidelity": 0.45,
           "notes": "Dwelling spirits, ambiguous"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:CE-SIDHE",
           "fidelity": 0.5,
           "notes": "Thin/otherworldly beings, dangerous-helpful"
@@ -797,11 +797,12 @@
           ]
         },
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.55,
           "aspects": [
             "boundary-enforcer",
-            "child-warner"
+            "child-warner",
+            "protection"
           ]
         },
         {
@@ -815,13 +816,13 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-LESHY",
           "fidelity": 0.55,
           "notes": "Wilderness spirit, danger"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NA-SASQUATCH",
           "fidelity": 0.6,
           "notes": "Wild hairy figure"
@@ -944,13 +945,13 @@
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:MA-TLALOC",
           "fidelity": 0.4,
           "notes": "Water control, drought/flood"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:JP-UZUME",
           "fidelity": 0.45,
           "notes": "Laughter solving cosmic problem"
@@ -1058,23 +1059,24 @@
           ]
         },
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.5,
           "aspects": [
             "waterhole-protector",
-            "boundary-enforcer"
+            "boundary-enforcer",
+            "protection"
           ]
         }
       ],
       "relationships": [
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:NA-UNDERWATER-PANTHER",
           "fidelity": 0.55,
           "notes": "Water monster, danger"
         },
         {
-          "type": "rel:CULTURAL_ECHO",
+          "type": "CULTURAL_ECHO",
           "target": "arch:SL-RUSALKA",
           "fidelity": 0.4,
           "notes": "Water danger, drowning"

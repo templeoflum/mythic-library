@@ -170,9 +170,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When authority becomes oppression",
-          "strength": 0.7
+          "strength": 0.7,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         },
         {
           "type": "CONTAINS",
@@ -283,6 +284,41 @@
           "target": "kwml:king",
           "fidelity": 0.75,
           "note": "Reverse of: King of gods"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-SHANGO",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TLALOC",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-JADE-EMPEROR",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-RAIJIN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-PERUN",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-BAIAME",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-HUANGDI",
+          "fidelity": 0.5
         }
       ],
       "developmentalArc": {
@@ -461,9 +497,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:jealous-destroyer",
+          "target": "primordial:destroyer",
           "activation": "When betrayal triggers vengeance",
-          "strength": 0.8
+          "strength": 0.8,
+          "note": "Originally: primordial:jealous-destroyer (aspect: jealousy)"
         },
         {
           "type": "ANTAGONIST",
@@ -508,6 +545,16 @@
           "target": "goddess:mother-queen",
           "fidelity": 0.8,
           "note": "Reverse of: Queen of gods"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OBBA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-XIWANGMU",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -686,6 +733,26 @@
           "target": "bolen:poseidon",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OLOKUN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-SUSANOO",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TANGAROA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-MAZU",
+          "fidelity": 0.4
         }
       ],
       "correspondences": {
@@ -924,6 +991,31 @@
           "target": "bolen:athena",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-WHITE-BUFFALO-WOMAN",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-HACHIMAN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SPIDER-WOMAN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-ERLANG-SHEN",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-BENZAITEN",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -1095,9 +1187,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:cruel-perfectionist",
+          "target": "primordial:sovereign",
           "activation": "When clarity becomes harsh judgment",
-          "strength": 0.6
+          "strength": 0.6,
+          "note": "Originally: primordial:cruel-perfectionist (aspect: perfectionism)"
         },
         {
           "type": "CONTAINS",
@@ -1162,6 +1255,31 @@
           "target": "bolen:apollo",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-HOU-YI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-BABALU-AYE",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-KHORS",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-AMATERASU",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ORUNMILA",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -1378,6 +1496,11 @@
           "target": "goddess:maiden-amazon",
           "fidelity": 0.85,
           "note": "Reverse of: Warrior maiden"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-MIELIKKI",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -1627,9 +1750,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:deceiver",
+          "target": "primordial:trickster",
           "activation": "When communication serves manipulation rather than connection",
-          "strength": 0.7
+          "strength": 0.7,
+          "note": "Originally: primordial:deceiver (aspect: deception)"
         },
         {
           "type": "EVOLUTION",
@@ -1785,6 +1909,56 @@
           "type": "CULTURAL_ECHO",
           "target": "angel:archangels",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-VELNIAS",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-COYOTE",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-JIZO",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-KOKOPELLI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-IKTOMI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-VELES",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ESHU",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-LU-DONGBIN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-SARUTAHIKO",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-SUN-WUKONG",
+          "fidelity": 0.55
         }
       ],
       "narrativeRoles": [
@@ -2071,6 +2245,11 @@
           "target": "bolen:dionysus",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-XIPE-TOTEC",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -2327,6 +2506,31 @@
           "target": "bolen:hades",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-EMMA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-YANLUO",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-MICTLANTECUHTLI",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-TUONI",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-OKUNINUSHI",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -2533,6 +2737,11 @@
           "target": "bolen:hestia",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-SVAROZHICH",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -2658,8 +2867,9 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:seductress-destroyer",
-          "activation": "When desire becomes manipulation"
+          "target": "primordial:destroyer",
+          "activation": "When desire becomes manipulation",
+          "note": "Originally: primordial:seductress-destroyer (aspect: seduction)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -2728,6 +2938,21 @@
           "target": "goddess:mother-lover",
           "fidelity": 0.75,
           "note": "Reverse of: Love goddess"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSHUN",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-XOCHIQUETZAL",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-LADA",
+          "fidelity": 0.7
         }
       ],
       "correspondences": {
@@ -3136,8 +3361,9 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:sadist",
-          "activation": "Always - Ares IS the shadow of warfare"
+          "target": "primordial:shadow",
+          "activation": "Always - Ares IS the shadow of warfare",
+          "note": "Originally: primordial:sadist (aspect: cruelty)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -3184,6 +3410,36 @@
           "target": "bolen:ares",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OGUN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TU",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-CHIYOU",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-HACHIMAN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-HUITZILOPOCHTLI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-GUAN-YU",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -3367,8 +3623,9 @@
         },
         {
           "type": "MIRRORS",
-          "target": "primordial:wounded-healer",
-          "domain": "wound as source of power"
+          "target": "primordial:healer",
+          "domain": "wound as source of power",
+          "note": "Originally: primordial:wounded-healer (aspect: wounded-healing)"
         },
         {
           "type": "ANTAGONIST",
@@ -3396,6 +3653,31 @@
           "target": "bolen:hephaestus",
           "fidelity": 0.9,
           "note": "Reverse of: Direct correspondence"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-AGANJU",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-SVAROG",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OGUN",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-PELE",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-ILMARINEN",
+          "fidelity": 0.8
         }
       ],
       "correspondences": {
@@ -3611,6 +3893,46 @@
           "type": "CULTURAL_ECHO",
           "target": "jungian:maiden",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-MICTECACIHUATL",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-CHANG-E",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-TUONETAR",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-HIIAKA",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-MORANA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-KONOHANASAKUYA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-HINE-NUI-TE-PO",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -3782,9 +4104,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:devouring-mother",
+          "target": "primordial:great-mother",
           "activation": "When nurturance becomes smothering; when grief becomes world-destruction",
-          "strength": 0.65
+          "strength": 0.65,
+          "note": "Originally: primordial:devouring-mother (aspect: devouring)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -3818,6 +4141,36 @@
           "target": "goddess:mother",
           "fidelity": 0.85,
           "note": "Reverse of: Earth mother"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-MOKOSH",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SELU",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-CHANGING-WOMAN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-RONGO",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-INARI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-AKKA",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -4003,9 +4356,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:martyr",
+          "target": "primordial:hero",
           "activation": "When rebellion becomes identity; when suffering becomes self-definition",
-          "strength": 0.6
+          "strength": 0.6,
+          "note": "Originally: primordial:martyr (aspect: self-sacrifice)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -4042,6 +4396,46 @@
           "type": "CULTURAL_ECHO",
           "target": "digital:whistleblower",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OBATALA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-MAUI",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-NANAHUATZIN",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-NUWA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TANE",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-RAVEN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-FUXI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-QUETZALCOATL",
+          "fidelity": 0.65
         }
       ],
       "correspondences": {
@@ -4202,9 +4596,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When preservation becomes consumption",
-          "strength": 0.85
+          "strength": 0.85,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         },
         {
           "type": "CONTAINS",
@@ -4395,9 +4790,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:berserker",
+          "target": "primordial:warrior",
           "activation": "When strength becomes uncontrolled rage (madness episode)",
-          "strength": 0.8
+          "strength": 0.8,
+          "note": "Originally: primordial:berserker (aspect: battle-frenzy)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -4428,6 +4824,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:RO-HERCULES",
           "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-HOU-YI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-NEZHA",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -4851,6 +5257,11 @@
           "target": "arch:GR-ODYSSEUS",
           "dynamic": "force vs cunning",
           "strength": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-CU-CHULAINN",
+          "fidelity": 0.7
         }
       ],
       "keywords": [
@@ -4917,6 +5328,21 @@
           "type": "TENSION",
           "target": "arch:GR-PERSEPHONE",
           "notes": "Shared between goddesses"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-JARILO",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-DUMUZI",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LEMMINKAINEN",
+          "fidelity": 0.55
         }
       ],
       "keywords": [
@@ -4968,6 +5394,18 @@
         "storm",
         "control",
         "odyssey"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-FUJIN",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-STRIBOG",
+          "fidelity": 0.6
+        }
       ]
     },
     {
@@ -5017,6 +5455,11 @@
           "target": "arch:GR-POSEIDON",
           "dynamic": "royal pair of the sea",
           "strength": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-NAMAKA",
+          "fidelity": 0.45
         }
       ],
       "keywords": [
@@ -5079,6 +5522,16 @@
           "type": "TAUGHT_BY",
           "target": "arch:GR-CHIRON",
           "notes": "Learned medicine from the wise centaur"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-SHENNONG",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSANYIN",
+          "fidelity": 0.55
         }
       ],
       "keywords": [
@@ -5136,6 +5589,11 @@
           "type": "HELPER",
           "target": "arch:GR-DEMETER",
           "notes": "Lifted Demeter's grief"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-UZUME",
+          "fidelity": 0.75
         }
       ],
       "keywords": [
@@ -5196,6 +5654,18 @@
         "sailors",
         "horses",
         "loyalty"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-HERO-TWINS-NAVAJO",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-HERO-TWINS",
+          "fidelity": 0.55
+        }
       ]
     },
     {
@@ -5238,6 +5708,16 @@
           "type": "SERVES",
           "target": "arch:GR-HADES",
           "notes": "Ferryman of his realm"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-ANUBIS",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-AGANJU",
+          "fidelity": 0.45
         }
       ],
       "keywords": [
@@ -5302,6 +5782,11 @@
           "type": "TEACHER_OF",
           "target": "arch:GR-ASCLEPIUS",
           "notes": "Taught him medicine"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-ZHONGLI-QUAN",
+          "fidelity": 0.5
         }
       ],
       "keywords": [
@@ -5360,6 +5845,13 @@
         "inexorable",
         "seasons",
         "mortality"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:zurvan",
+          "fidelity": 0.75
+        }
       ]
     },
     {
@@ -5409,6 +5901,11 @@
           "type": "LOVER_OF",
           "target": "arch:GR-ODYSSEUS",
           "notes": "Kept him for a year"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:crone-sorceress",
+          "fidelity": 0.75
         }
       ],
       "keywords": [
@@ -5467,6 +5964,13 @@
         "conscience",
         "genius",
         "socrates"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:fravashi",
+          "fidelity": 0.65
+        }
       ]
     },
     {
@@ -5496,11 +6000,12 @@
           ]
         },
         {
-          "primordial": "primordial:nature-spirit",
+          "primordial": "primordial:preserver",
           "weight": 0.7,
           "aspects": [
             "nymph",
-            "tree"
+            "tree",
+            "nature"
           ]
         }
       ],
@@ -5517,6 +6022,11 @@
           "type": "PURSUED_BY",
           "target": "arch:GR-APOLLO",
           "notes": "His unwanted pursuit caused her transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-SEVEN-SISTERS",
+          "fidelity": 0.5
         }
       ],
       "keywords": [
@@ -5567,6 +6077,11 @@
           "type": "CHILD_OF",
           "target": "arch:GR-THEMIS",
           "notes": "Daughter of divine law"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-MAAT",
+          "fidelity": 0.75
         }
       ],
       "keywords": [
@@ -5629,6 +6144,11 @@
           "type": "SIBLING_OF",
           "target": "arch:GR-SELENE",
           "notes": "Sister of the moon"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:chasca",
+          "fidelity": 0.7
         }
       ],
       "keywords": [
@@ -5658,10 +6178,11 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:fool",
+          "primordial": "primordial:trickster",
           "weight": 0.7,
           "aspects": [
-            "acting without thinking"
+            "acting without thinking",
+            "sacred-foolishness"
           ]
         },
         {
@@ -5755,6 +6276,11 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:RO-CUPID",
           "fidelity": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-AENGUS",
+          "fidelity": 0.7
         }
       ],
       "keywords": [
@@ -5824,6 +6350,46 @@
           "target": "arch:GR-OURANOS",
           "axis": "ascent-descent",
           "strength": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:spenta-armaiti",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "iching:kun",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-PAPA",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-COATLICUE",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-GEB",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-DANU",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-NANA-BURUKU",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:pachamama",
+          "fidelity": 0.75
         }
       ],
       "keywords": [
@@ -5854,11 +6420,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.85,
           "aspects": [
             "treasure-keeper",
-            "protector"
+            "protector",
+            "protection"
           ]
         },
         {
@@ -5883,6 +6450,13 @@
         "eagle",
         "lion",
         "treasure"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-SIMARGL",
+          "fidelity": 0.5
+        }
       ]
     },
     {
@@ -5947,6 +6521,41 @@
           "type": "MIRRORS",
           "target": "arch:GR-PERSEPHONE",
           "domain": "underworld connection"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "jungian:crone",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-MORRIGAN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "goddess:crone",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-IX-CHEL",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OYA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-ISIS",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-BABA-YAGA",
+          "fidelity": 0.65
         }
       ],
       "keywords": [
@@ -5984,10 +6593,11 @@
           ]
         },
         {
-          "primordial": "primordial:witness",
+          "primordial": "primordial:wise-elder",
           "weight": 0.8,
           "aspects": [
-            "all-seeing"
+            "all-seeing",
+            "witnessing"
           ]
         }
       ],
@@ -6015,6 +6625,31 @@
           "type": "SIBLING_OF",
           "target": "arch:GR-SELENE",
           "notes": "Brother of moon"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SUN-FATHER",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TONATIUH",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-SHAMASH",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-DAZHBOG",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-RA",
+          "fidelity": 0.8
         }
       ],
       "keywords": [
@@ -6077,6 +6712,18 @@
         "lachesis",
         "atropos",
         "inevitable"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:wheel_of_fortune",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LAIMA",
+          "fidelity": 0.8
+        }
       ]
     },
     {
@@ -6098,11 +6745,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:nature-spirit",
+          "primordial": "primordial:preserver",
           "weight": 0.95,
           "aspects": [
             "place-spirits",
-            "elementals"
+            "elementals",
+            "nature"
           ]
         },
         {
@@ -6130,6 +6778,13 @@
         "dryad",
         "nereid",
         "oread"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-RUSALKA",
+          "fidelity": 0.55
+        }
       ]
     },
     {
@@ -6187,6 +6842,11 @@
           "type": "LOVER_OF",
           "target": "arch:GR-EURYDICE",
           "notes": "Lost through looking back"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-VAINAMOINEN",
+          "fidelity": 0.65
         }
       ],
       "keywords": [
@@ -6225,10 +6885,11 @@
           ]
         },
         {
-          "primordial": "primordial:tyrant",
+          "primordial": "primordial:sovereign",
           "weight": 0.6,
           "aspects": [
-            "imprisoning father"
+            "imprisoning father",
+            "tyranny"
           ]
         }
       ],
@@ -6256,6 +6917,31 @@
           "target": "arch:GR-GAIA",
           "axis": "ascent-descent",
           "strength": 0.95
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-ANU",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-NUT",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-APSU",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-RANGI",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-IZANAGI",
+          "fidelity": 0.5
         }
       ],
       "keywords": [
@@ -6286,11 +6972,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wild-man",
+          "primordial": "primordial:monster",
           "weight": 0.9,
           "aspects": [
             "nature-force",
-            "untamed"
+            "untamed",
+            "wild-nature"
           ]
         },
         {
@@ -6316,6 +7003,21 @@
           "type": "CHILD_OF",
           "target": "arch:GR-HERMES",
           "notes": "Son of the messenger god"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-CERNUNNOS",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-KOKOPELLI",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-LESHY",
+          "fidelity": 0.65
         }
       ],
       "keywords": [
@@ -6354,10 +7056,11 @@
           ]
         },
         {
-          "primordial": "primordial:nature-spirit",
+          "primordial": "primordial:preserver",
           "weight": 0.6,
           "aspects": [
-            "stellar"
+            "stellar",
+            "nature"
           ]
         }
       ],
@@ -6377,6 +7080,13 @@
         "orion",
         "seasons",
         "constellation"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-SEVEN-SISTERS",
+          "fidelity": 0.7
+        }
       ]
     },
     {
@@ -6497,6 +7207,36 @@
           "type": "SIBLING_OF",
           "target": "arch:GR-EOS",
           "notes": "Sister of dawn"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:ME-SIN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-CHANG-E",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:mama-quilla",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-COYOLXAUHQUI",
+          "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-HINA",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-TSUKUYOMI",
+          "fidelity": 0.5
         }
       ],
       "keywords": [
@@ -6534,10 +7274,11 @@
           ]
         },
         {
-          "primordial": "primordial:temptress",
+          "primordial": "primordial:trickster",
           "weight": 0.8,
           "aspects": [
-            "fatal attraction"
+            "fatal attraction",
+            "temptation"
           ]
         }
       ],
@@ -6555,6 +7296,11 @@
           "type": "RESISTED_BY",
           "target": "arch:GR-ODYSSEUS",
           "notes": "Bound himself to hear them"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-RUSALKA",
+          "fidelity": 0.6
         }
       ],
       "keywords": [
@@ -6608,6 +7354,18 @@
         "mother",
         "springs",
         "oceanids"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-YEMOJA",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:mama-cocha",
+          "fidelity": 0.6
+        }
       ]
     },
     {
@@ -6662,6 +7420,11 @@
           "target": "arch:GR-EROS",
           "axis": "creation-destruction",
           "strength": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:death",
+          "fidelity": 0.8
         }
       ],
       "keywords": [
@@ -6732,6 +7495,21 @@
           "type": "ADVISOR_TO",
           "target": "arch:GR-ZEUS",
           "notes": "Counsels the king of gods"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-MAAT",
+          "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tarot:justice",
+          "fidelity": 0.85
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "astrology:libra",
+          "fidelity": 0.7
         }
       ],
       "keywords": [
@@ -6797,6 +7575,21 @@
           "target": "arch:GR-ZEUS",
           "strength": 0.95,
           "notes": "Greatest threat to Olympus"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TAWHIRIMATEA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CE-BALOR",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-SET",
+          "fidelity": 0.7
         }
       ],
       "keywords": [
@@ -6858,6 +7651,13 @@
         "anaxagoras",
         "neoplatonism",
         "order"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:vohu-manah",
+          "fidelity": 0.6
+        }
       ]
     },
     {
@@ -6887,10 +7687,11 @@
           ]
         },
         {
-          "primordial": "primordial:shade",
+          "primordial": "primordial:shadow",
           "weight": 0.7,
           "aspects": [
-            "underworld dweller"
+            "underworld dweller",
+            "ghost"
           ]
         }
       ],
@@ -6989,10 +7790,11 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:guardian",
+          "primordial": "primordial:warrior",
           "weight": 0.95,
           "aspects": [
-            "threshold-keeper"
+            "threshold-keeper",
+            "protection"
           ]
         },
         {
@@ -7138,11 +7940,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wild-man",
+          "primordial": "primordial:monster",
           "weight": 0.85,
           "aspects": [
             "half-beast",
-            "instinctual"
+            "instinctual",
+            "wild-nature"
           ]
         },
         {
@@ -7196,10 +7999,11 @@
           ]
         },
         {
-          "primordial": "primordial:giant",
+          "primordial": "primordial:monster",
           "weight": 0.7,
           "aspects": [
-            "primordial power"
+            "primordial power",
+            "primeval-giant"
           ]
         }
       ],

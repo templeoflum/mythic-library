@@ -161,6 +161,21 @@
             "kingship",
             "authority"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-JADE-EMPEROR",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-IZANAGI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:ahura-mazda",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -326,11 +341,6 @@
           "notes": "Complex courtship/rape narrative"
         },
         {
-          "type": "POSSESSES",
-          "target": "concept:TABLET_OF_DESTINIES",
-          "notes": "Controls fate"
-        },
-        {
           "type": "CULTURAL_ECHO",
           "target": "arch:GR-ZEUS",
           "fidelity": 0.65,
@@ -349,6 +359,21 @@
             "wind",
             "wisdom"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TLALOC",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-FUJIN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-STRIBOG",
+          "fidelity": 0.5
         }
       ],
       "contextualVariants": [
@@ -587,6 +612,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:IN-BRAHMA",
           "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:viracocha",
+          "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-NUWA",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -760,7 +795,7 @@
           ]
         },
         {
-          "primordial": "primordial:dying-rising-god",
+          "primordial": "primordial:hero",
           "weight": 0.6,
           "aspects": [
             "descent-return",
@@ -869,6 +904,26 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:IN-LAKSHMI",
           "fidelity": 0.4
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OSHUN",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TLAZOLTEOTL",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:chasca",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "persian:anahita",
+          "fidelity": 0.6
         }
       ],
       "contextualVariants": [
@@ -1139,6 +1194,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:IN-INDRA",
           "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-HUANGDI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TANE",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -1349,6 +1414,31 @@
         {
           "type": "COMPLEMENT",
           "target": "arch:ME-APSU"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OLOKUN",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-CHIYOU",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-PANGU",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AU-RAINBOW-SERPENT",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-NANA-BURUKU",
+          "fidelity": 0.5
         }
       ],
       "contextualVariants": [
@@ -1564,6 +1654,31 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:IN-YAMA",
           "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-EMMA",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-HINE-NUI-TE-PO",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-MICTECACIHUATL",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-IZANAMI",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-TUONETAR",
+          "fidelity": 0.6
         }
       ],
       "contextualVariants": [
@@ -1710,11 +1825,12 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:dying-rising-god",
+          "primordial": "primordial:hero",
           "weight": 0.95,
           "aspects": [
             "vegetation-death-rebirth",
-            "seasonal-cycle"
+            "seasonal-cycle",
+            "death-rebirth"
           ]
         },
         {
@@ -1786,6 +1902,31 @@
             "vegetation",
             "death-rebirth"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SELU",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-JARILO",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-NINIGI",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-RONGO",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-XIPE-TOTEC",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -2354,6 +2495,11 @@
           "sharedAspects": [
             "moon"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-TSUKUYOMI",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -2488,11 +2634,12 @@
           ]
         },
         {
-          "primordial": "primordial:seeker",
+          "primordial": "primordial:hero",
           "weight": 0.7,
           "aspects": [
             "immortality-quester",
-            "wisdom-seeker"
+            "wisdom-seeker",
+            "seeking"
           ]
         }
       ],
@@ -2707,12 +2854,13 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wild-man",
+          "primordial": "primordial:monster",
           "weight": 0.85,
           "aspects": [
             "nature-child",
             "uncivilized",
-            "pure"
+            "pure",
+            "wild-nature"
           ]
         },
         {
@@ -2773,12 +2921,13 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "primordial:wild-man",
+          "target": "primordial:monster",
           "fidelity": 0.9,
           "sharedAspects": [
             "nature-dwelling",
             "uncivilized"
-          ]
+          ],
+          "note": "Originally: primordial:wild-man (aspect: wild-nature)"
         }
       ],
       "contextualVariants": [
@@ -2922,15 +3071,16 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:primeval-waters",
+          "primordial": "primordial:great-mother",
           "weight": 0.95,
           "aspects": [
             "primordial-source",
-            "pre-creation-substance"
+            "pre-creation-substance",
+            "primeval-waters"
           ]
         },
         {
-          "primordial": "primordial:father",
+          "primordial": "primordial:great-father",
           "weight": 0.7,
           "aspects": [
             "progenitor-of-gods",

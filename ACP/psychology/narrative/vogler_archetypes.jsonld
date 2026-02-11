@@ -156,7 +156,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:wise_elder",
+          "primordial": "primordial:wise-elder",
           "weight": 0.9,
           "aspects": [
             "wisdom",

@@ -182,9 +182,10 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:tyrant",
+          "target": "primordial:sovereign",
           "activation": "When solar authority becomes scorching judgment; when aging sun-god fears usurpation",
-          "strength": 0.6
+          "strength": 0.6,
+          "note": "Originally: primordial:tyrant (aspect: tyranny)"
         },
         {
           "type": "CULTURAL_ECHO",
@@ -195,6 +196,31 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:ME-SHAMASH",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TONATIUH",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-DAZHBOG",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-SAULE",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-AMATERASU",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-SUN-FATHER",
+          "fidelity": 0.6
         }
       ],
       "contextualVariants": [
@@ -372,7 +398,7 @@
       },
       "instantiates": [
         {
-          "primordial": "primordial:dying-rising-god",
+          "primordial": "primordial:hero",
           "weight": 0.95,
           "aspects": [
             "death-rebirth",
@@ -512,6 +538,31 @@
           "type": "CULTURAL_ECHO",
           "target": "persian:rashnu",
           "fidelity": 0.65
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:FI-LEMMINKAINEN",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-MICTLANTECUHTLI",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-XIPE-TOTEC",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-EMMA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-YANLUO",
+          "fidelity": 0.55
         }
       ],
       "contextualVariants": [
@@ -784,13 +835,19 @@
         },
         {
           "type": "SHADOW",
-          "target": "primordial:sorceress",
+          "target": "primordial:magician",
           "activation": "When magical cunning becomes manipulation; when maternal devotion becomes possessive control",
-          "strength": 0.55
+          "strength": 0.55,
+          "note": "Originally: primordial:sorceress (aspect: sorcery)"
         },
         {
           "type": "COMPLEMENT",
           "target": "arch:EG-NEPHTHYS"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-GUANYIN",
+          "fidelity": 0.45
         }
       ],
       "contextualVariants": [
@@ -1077,6 +1134,11 @@
           "target": "Horus the Elder (Haroeris) — avenger and king",
           "trigger": "Maturation through contendings with Set; proving worthiness to rule",
           "direction": "forward"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-HUITZILOPOCHTLI",
+          "fidelity": 0.55
         }
       ],
       "contextualVariants": [
@@ -1380,6 +1442,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:ME-NERGAL",
           "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-COYOLXAUHQUI",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-TEZCATLIPOCA",
+          "fidelity": 0.55
         }
       ],
       "contextualVariants": [
@@ -1675,6 +1747,31 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:ME-SIN",
           "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-TSUKUYOMI",
+          "fidelity": 0.45
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ORUNMILA",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:CN-FUXI",
+          "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-QUETZALCOATL",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MA-ITZAMNA",
+          "fidelity": 0.7
         }
       ],
       "correspondences": {
@@ -1913,6 +2010,11 @@
           "target": "tzolkin:oc",
           "fidelity": 0.7,
           "note": "Reverse of: Underworld guide"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:JP-JIZO",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
@@ -2865,6 +2967,11 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:IN-BRAHMA",
           "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-OBATALA",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -3475,6 +3582,16 @@
             "primordial",
             "parent-of-gods"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-PAPA",
+          "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:AF-ODUDUWA",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
@@ -3682,6 +3799,11 @@
             "primordial",
             "cosmic"
           ]
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-RANGI",
+          "fidelity": 0.5
         }
       ],
       "correspondences": {
