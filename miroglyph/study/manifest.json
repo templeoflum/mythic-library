@@ -1,0 +1,67 @@
+{
+  "title": "Sampling & information \u00b7 study table",
+  "record_count": 10,
+  "records": [
+    {
+      "id": "object.sampling-theorem",
+      "filename": "object.sampling-theorem.f3.20261014-094623.md",
+      "sha256": "3eee8bf0097f4582e6f89136b3672e614c03838a433c68f4d8a16b74ddadfd90",
+      "bytes": 4713
+    },
+    {
+      "id": "source.shannon-1949",
+      "filename": "source.shannon-1949.f2.20261014-081404.md",
+      "sha256": "e6d3f9056436ae9608f3d603d52200bcd7e2b4f89a9d0f43a5359d45ee9a39b4",
+      "bytes": 1657
+    },
+    {
+      "id": "source.whittaker-1915",
+      "filename": "source.whittaker-1915.f0.20261014-081247.md",
+      "sha256": "00a1240d8f834515e6fe8fcbe62b8b66afb2959f7161147c0a6d8fc687126c78",
+      "bytes": 1811
+    },
+    {
+      "id": "object.fourier-series",
+      "filename": "object.fourier-series.f1.20261014-094623.md",
+      "sha256": "8c5bb8003883011d87cba5e811f53196f4bd4860dfc6571cc266a652b942cc76",
+      "bytes": 2767
+    },
+    {
+      "id": "object.fourier-transform",
+      "filename": "object.fourier-transform.f1.20261014-094623.md",
+      "sha256": "c9a7e9648bf3df9c7f7914a3d30f45a5468fc6446780f11acb6a99a5825a7056",
+      "bytes": 2669
+    },
+    {
+      "id": "object.aliasing-in-rendering",
+      "filename": "object.aliasing-in-rendering.f1.20261014-111309.md",
+      "sha256": "4d724371d9e86bf4797d632b2116926d00a3b0e0c9ad2505bc331fff1ecdc648",
+      "bytes": 4138
+    },
+    {
+      "id": "field.information-theory",
+      "filename": "field.information-theory.f0.20260614-123940.md",
+      "sha256": "6503efc276c1ae2a5add2cc8d31caa888084310e9c3689be60c2988443d12b37",
+      "bytes": 1045
+    },
+    {
+      "id": "source.shannon-1948",
+      "filename": "source.shannon-1948.f0.20260614-130345.md",
+      "sha256": "93f13ced235377d25d970393a8bcf9d83ccae5cfb679f8d14c37dd069abb2e87",
+      "bytes": 626
+    },
+    {
+      "id": "object.shannon-entropy",
+      "filename": "object.shannon-entropy.f1.20261014-111309.md",
+      "sha256": "006b924452eb78422fcc049c33effad64c8a220a35d12ae86cf815f922065b89",
+      "bytes": 4475
+    },
+    {
+      "id": "field.fourier-analysis",
+      "filename": "field.fourier-analysis.f0.20260614-122250.md",
+      "sha256": "248936a1bdc23f36b78b72053a28ed6223996e0f0c5b7f0bb6ef9d89d80b8600",
+      "bytes": 902
+    }
+  ],
+  "scope": "Exact selected records only. No external records, evidence PDFs, operational files, or complete corpus snapshot."
+}
