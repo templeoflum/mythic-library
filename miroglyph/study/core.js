@@ -45,5 +45,15 @@ function locationHash(current,dialog,pins){
  if(dialog){params.set('view',dialog.type);if(['read','provenance'].includes(dialog.type)&&dialog.record!==current)params.set('target',dialog.record);if(Number.isInteger(dialog.paragraph))params.set('paragraph',dialog.paragraph);if(dialog.type==='edge')params.set('edge',dialog.edge);if(dialog.type==='compare')pins.forEach(id=>params.append('pin',id));}
  return params.toString();
 }
-const api={related,plain,shortQuote,cleanState,cleanDialog,parseLocation,locationHash,DEFAULT_ID,MAX_ROUTE};if(typeof module==='object')module.exports=api;else root.STUDY_CORE=api;
+// Analytic alias representative; not a finite-window reconstruction algorithm.
+function samplingModel(rate){
+ const fs=Math.min(24,Math.max(2,Number.isFinite(Number(rate))?Math.round(Number(rate)):12)),frequency=3,phase=.35;
+ const signedFrequency=((frequency+fs/2)%fs+fs)%fs-fs/2;
+ const original=t=>Math.cos(2*Math.PI*frequency*t+phase);
+ const equivalent=t=>Math.cos(2*Math.PI*signedFrequency*t+phase);
+ const boundary=Math.abs(Math.abs(signedFrequency)-fs/2)<1e-10;
+ const samples=Array.from({length:2*fs+1},(_,n)=>({t:n/fs,value:original(n/fs)}));
+ return {rate:fs,frequency,phase,signedFrequency,apparentFrequency:Math.abs(signedFrequency),boundary,aliased:fs<2*frequency,samples,original,equivalent};
+}
+const api={samplingModel,related,plain,shortQuote,cleanState,cleanDialog,parseLocation,locationHash,DEFAULT_ID,MAX_ROUTE};if(typeof module==='object')module.exports=api;else root.STUDY_CORE=api;
 })(typeof window!=='undefined'?window:globalThis);
