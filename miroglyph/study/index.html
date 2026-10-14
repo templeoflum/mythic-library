@@ -2,33 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#153b39"><meta name="description" content="A small reading table for sampling, Fourier analysis and information theory.">
-<title>Sampling & information · The reading table</title>
+<meta name="theme-color" content="#f3f2e9"><meta name="description" content="Explore sampling, frequency and information through concepts you can see and change.">
+<title>Sampling & information · Concept lab</title>
 <link rel="stylesheet" href="style.css">
 <script defer src="data.js"></script><script defer src="core.js"></script><script defer src="app.js"></script>
 </head>
 <body>
 <div class="room" id="app">
-<header class="room-header"><div class="room-name"><span class="eyebrow">THE READING ROOM</span><h1>Sampling & information</h1></div><button class="shelf-toggle" data-action="shelf"><span aria-hidden="true">▥</span><span>10 records</span></button></header>
+<a class="skip-link" href="#record-title">Skip to the current concept</a>
+<header class="room-header"><div class="room-name"><span class="eyebrow">THE CONCEPT LAB</span><h1>Sampling & information</h1></div><button class="shelf-toggle" data-action="shelf">Explore concepts <span aria-hidden="true">↗</span></button></header>
+<nav class="concept-nav" id="concept-nav" aria-label="Choose a concept"></nav>
 <nav class="trail-bar" aria-label="Your reading route"><button id="back" data-action="back" disabled><span aria-hidden="true">←</span> Back</button><div id="trail" class="trail"></div><button class="quiet" data-action="route" aria-label="Open complete reading route">Route</button></nav>
 <main class="table" id="table">
-<div class="table-inset">
-<div class="table-label"><span class="eyebrow">ON THE TABLE</span><span id="position"></span></div>
-<div class="work-area">
 <article class="focus-sheet" id="focus-sheet" aria-labelledby="record-title">
-<div class="sheet-top"><span id="record-kind" class="eyebrow"></span><span id="record-state" class="state-label"></span></div>
-<h2 id="record-title" tabindex="-1"></h2><div class="rule"></div>
-<div class="sheet-scroll scroller"><p class="record-subtitle" id="record-subtitle"></p><p id="record-summary" class="record-summary"></p><div class="record-visual" id="record-visual" aria-hidden="true"></div><div class="evidence-fragment"><span class="eyebrow">FROM THE RECORD</span><p id="record-quote"></p></div></div>
-<div class="sheet-actions"><button class="primary" data-action="read">Read record</button><button id="pin-current" data-action="pin"><span aria-hidden="true">◇</span> Pin</button></div>
-<div class="sheet-foot"><span id="record-version"></span><span>Short labels · original inside</span></div>
+<div class="sheet-top"><span id="record-kind" class="eyebrow"></span><span id="position"></span></div>
+<div class="concept-heading"><h2 id="record-title" tabindex="-1"></h2><p class="record-subtitle" id="record-subtitle"></p></div>
+<section class="toy" id="sampling-toy" aria-labelledby="toy-title">
+<div class="toy-intro"><div><span class="eyebrow">CHANGE IT. NOTICE WHAT HAPPENS.</span><h3 id="toy-title">How few dots can keep a wave?</h3></div><span class="live-tag">Interactive study</span></div>
+<p id="toy-context" class="toy-context">The original wave makes 3 cycles each second. Change how often you measure it.</p>
+<div class="toy-controls"><div class="range-label"><label for="sample-rate">Samples per second</label><output id="sample-rate-output" for="sample-rate">12</output></div><input id="sample-rate" type="range" min="2" max="24" step="1" value="12" aria-describedby="sampling-hint"><div class="range-ends" aria-hidden="true"><span>2 · fewer dots</span><span>24 · more dots</span></div></div>
+<div class="toy-plot" id="toy-plot"></div>
+<div class="plot-legend" aria-label="Chart key"><span><i class="legend-line original"></i>Original wave</span><span><i class="legend-dot"></i>Measurements</span><span><i class="legend-line equivalent"></i>Sample-equivalent wave</span></div>
+<div class="toy-result" id="toy-result" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="toy-presets" aria-label="Try a sampling rate"><span>Try a turning point</span><button data-rate="12">12 · enough</button><button data-rate="6">6 · boundary</button><button data-rate="4">4 · aliasing</button></div>
+<p id="sampling-hint" class="toy-hint">Slide toward 4. Can a different wave pass through every dot? Use arrow keys for one step.</p>
+<details class="model-note"><summary>What this model assumes</summary><p>This is a new illustrative toy built for this study, not an imported corpus artifact. The original is cos(2π × 3t + 0.35). The other curve is an analytic, lowest-frequency representative with the same uniform samples, over a 2-second display window. It is not a reconstruction computed from only these visible dots.</p><p>Above 6 samples/s, a strictly baseband-limited model recovers this 3 Hz sinusoid. At exactly 6, phase information is ambiguous. At 2, the lower-frequency representative is also on a Nyquist boundary. This persistent sinusoid is not a finite-energy signal; the full record distinguishes its assumptions. Noise, filtering, finite-window effects and actual image rendering are not simulated.</p></details>
+</section>
+<div id="reading-preview" class="reading-preview"><div class="record-visual" id="record-visual" aria-hidden="true"></div><div><span class="eyebrow">READ & CONNECT</span><p id="preview-copy"></p><button class="primary" data-action="read">Read this idea</button><button data-go="object.sampling-theorem">Try the sampling toy ↗</button></div></div>
+<div class="sheet-foot"><span id="record-version"></span><span id="record-state" class="state-label"></span></div>
 </article>
-<aside class="connections" aria-label="Connected records"><div class="connections-header"><span class="eyebrow">FOLLOW A CONNECTION</span><button class="quiet" data-action="connections">All links</button></div><div class="relation-tabs" role="tablist" aria-label="Relationship type"><button id="tab-sources" role="tab" aria-controls="related-tray" aria-selected="true" data-relation="sources">Sources <span></span></button><button id="tab-foundations" role="tab" aria-controls="related-tray" aria-selected="false" data-relation="foundations">Grounding <span></span></button><button id="tab-next" role="tab" aria-controls="related-tray" aria-selected="false" data-relation="next">Leads to <span></span></button></div><div class="related-tray" id="related-tray" role="tabpanel" aria-labelledby="tab-sources"></div><div id="relation-note" class="relation-note"></div></aside>
-</div>
-</div>
+<details class="support-panel" id="evidence-panel"><summary><span>Behind the idea</span><span class="summary-meta">Record, sources & connections</span></summary><div class="support-content">
+<section class="record-support" aria-labelledby="record-note-title"><h3 id="record-note-title">The concept in words</h3><div class="sheet-scroll"><p id="record-summary" class="record-summary"></p><div class="evidence-fragment"><span class="eyebrow">FROM THE RECORD</span><p id="record-quote"></p></div></div><div class="sheet-actions"><button class="primary" data-action="read">Read full record</button><button id="pin-current" data-action="pin"><span aria-hidden="true">◇</span> Pin</button></div><p class="support-note">The toy is an illustration. Recorded connections below are corpus assertions, with their exact evidence preserved.</p></section>
+<aside class="connections" aria-label="Supporting connections"><div class="connections-header"><h3>Sources & connections</h3><button class="quiet" data-action="connections">All links</button></div><div class="relation-tabs" role="tablist" aria-label="Relationship type"><button id="tab-sources" role="tab" aria-controls="related-tray" aria-selected="true" data-relation="sources">Sources <span></span></button><button id="tab-foundations" role="tab" aria-controls="related-tray" aria-selected="false" data-relation="foundations">Grounding <span></span></button><button id="tab-next" role="tab" aria-controls="related-tray" aria-selected="false" data-relation="next">Leads to <span></span></button></div><div class="related-tray" id="related-tray" role="tabpanel" aria-labelledby="tab-sources"></div><div id="relation-note" class="relation-note"></div></aside>
+</div></details>
 </main>
-<footer class="pin-rail"><span class="eyebrow">SET ASIDE</span><div class="pin-slots" id="pin-slots"></div><button id="compare" data-action="compare" disabled>Compare</button></footer>
+<footer class="pin-rail"><span class="eyebrow">COMPARE IDEAS</span><div class="pin-slots" id="pin-slots"></div><button id="compare" data-action="compare" disabled>Compare</button></footer>
 </div>
 <div id="overlay" class="overlay" hidden><section class="dialog-sheet" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><div class="dialog-head"><div><span class="eyebrow" id="dialog-kicker"></span><h2 id="dialog-title" tabindex="-1"></h2></div><button data-action="close" class="close-button">Close <span aria-hidden="true">×</span></button></div><div class="rule"></div><div id="dialog-content" class="dialog-content scroller"></div></section></div>
 <div class="sr-only" role="status" aria-live="polite" id="announcement"></div>
-<noscript><p>This reading table needs JavaScript. The complete records are available in the records folder.</p></noscript>
+<noscript><p>This concept lab needs JavaScript. The complete records are available in the records folder.</p></noscript>
 </body></html>

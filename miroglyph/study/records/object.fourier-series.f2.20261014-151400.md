@@ -6,7 +6,7 @@ essence: a periodic function written as a sum of sines and cosines (its frequenc
 field: ["[[field.fourier-analysis]]", "[[field.real-analysis]]"]
 status: established
 state: settled
-attribution: J. Fourier, Théorie analytique de la chaleur (1822); precursor memoir 1807/1811. Coefficient formulas: Euler–Fourier.
+attribution: J. Fourier, Théorie analytique de la chaleur (1822); precursor memoirs 1807 and 1811. Coefficient formulas: Euler–Fourier.
 formalized: false
 source: ["[[source.fourier-1822]]", "[[source.zygmund-1935]]", "[[source.stein-shakarchi-2003]]"]
 depends-on: []
@@ -25,8 +25,10 @@ The "∼" is association; equality (and the mode of convergence) is a separate m
 
 **status** — definitional; convergence is the deep theory (Dirichlet 1829 for piecewise-monotone; Carleson 1966 for L²). The object recorded here is the definition.
 
-**lineage** — the trigonometric-series idea predates Fourier (D. Bernoulli, Euler, Clairaut, d'Alembert on the vibrating string and orbital perturbations). Fourier's contribution was the claim of *generality* — that arbitrary functions admit such an expansion — and the systematic coefficient formulas, advanced for the heat equation in *Théorie analytique de la chaleur* (1822), building on his 1807 prize memoir [[source.fourier-1822]]. The coefficient integrals are the **Euler–Fourier formulas** (Euler had the form earlier; Fourier gave the general method). **[confirmed]**
+**lineage** — the trigonometric-series idea predates Fourier (D. Bernoulli, Euler, Clairaut, d'Alembert on the vibrating string and orbital perturbations). Fourier's contribution was the claim of *generality* — that arbitrary functions admit such an expansion — and the systematic coefficient formulas, advanced for the heat equation in *Théorie analytique de la chaleur* (1822), building on his 1807 memoir and subsequent 1811 submission [[source.fourier-1822]]. The coefficient integrals are the **Euler–Fourier formulas** (Euler had the form earlier; Fourier gave the general method). **[confirmed]**
 
 **door** — Stein & Shakarchi, *Fourier Analysis: An Introduction*, ch. 2–3 [[source.stein-shakarchi-2003]]; the classical reference is Zygmund, *Trigonometric Series* [[source.zygmund-1935]].
 
 **sources** — [[source.fourier-1822]], [[source.zygmund-1935]], [[source.stein-shakarchi-2003]]; statement cross-checked against the Encyclopedia of Mathematics article "Fourier series."
+
+**chronology check** — Fourier's [1822 preliminary discourse](https://fr.wikisource.org/wiki/Page:Fourier_-_Th%C3%A9orie_analytique_de_la_chaleur,_1822.djvu/28), p. xviii, dates the first manuscript to late 1807 and the second submission to 28 September 1811. The Institut de France's [archive commentary](https://www.france-memoire.fr/theorie-du-mouvement-de-la-chaleur-dans-les-corps-solides/) identifies the latter as the competition manuscript and the award as 6 January 1812. The 1807 manuscript should therefore not be labeled the prize memoir. This check repairs that chronology; it does not re-audit priority among the earlier contributors or the modern convergence results.

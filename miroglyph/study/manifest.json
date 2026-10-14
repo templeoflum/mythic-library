@@ -22,15 +22,15 @@
     },
     {
       "id": "object.fourier-series",
-      "filename": "object.fourier-series.f1.20261014-094623.md",
-      "sha256": "8c5bb8003883011d87cba5e811f53196f4bd4860dfc6571cc266a652b942cc76",
-      "bytes": 2767
+      "filename": "object.fourier-series.f2.20261014-151400.md",
+      "sha256": "63de720361043bcf00d2f26663000d43d1516a35e96a7cb03a803e749d7e8d90",
+      "bytes": 3483
     },
     {
       "id": "object.fourier-transform",
-      "filename": "object.fourier-transform.f1.20261014-094623.md",
-      "sha256": "c9a7e9648bf3df9c7f7914a3d30f45a5468fc6446780f11acb6a99a5825a7056",
-      "bytes": 2669
+      "filename": "object.fourier-transform.f2.20261014-151400.md",
+      "sha256": "89250a1bcce60d3a594bfc42f882d59474d20ebd60895ca94ef527e8ba4ce976",
+      "bytes": 4322
     },
     {
       "id": "object.aliasing-in-rendering",
