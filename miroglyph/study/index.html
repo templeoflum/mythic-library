@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#153b39"><meta name="description" content="A small reading table for sampling, Fourier analysis and information theory.">
+<title>Sampling & information · The reading table</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script><script defer src="core.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<div class="room" id="app">
+<header class="room-header"><div class="room-name"><span class="eyebrow">THE READING ROOM</span><h1>Sampling & information</h1></div><button class="shelf-toggle" data-action="shelf"><span aria-hidden="true">▥</span><span>10 records</span></button></header>
+<nav class="trail-bar" aria-label="Your reading route"><button id="back" data-action="back" disabled><span aria-hidden="true">←</span> Back</button><div id="trail" class="trail"></div><button class="quiet" data-action="route" aria-label="Open complete reading route">Route</button></nav>
+<main class="table" id="table">
+<div class="table-inset">
+<div class="table-label"><span class="eyebrow">ON THE TABLE</span><span id="position"></span></div>
+<div class="work-area">
+<article class="focus-sheet" id="focus-sheet" aria-labelledby="record-title">
+<div class="sheet-top"><span id="record-kind" class="eyebrow"></span><span id="record-state" class="state-label"></span></div>
+<h2 id="record-title" tabindex="-1"></h2><div class="rule"></div>
+<div class="sheet-scroll scroller"><p class="record-subtitle" id="record-subtitle"></p><p id="record-summary" class="record-summary"></p><div class="record-visual" id="record-visual" aria-hidden="true"></div><div class="evidence-fragment"><span class="eyebrow">FROM THE RECORD</span><p id="record-quote"></p></div></div>
+<div class="sheet-actions"><button class="primary" data-action="read">Read record</button><button id="pin-current" data-action="pin"><span aria-hidden="true">◇</span> Pin</button></div>
+<div class="sheet-foot"><span id="record-version"></span><span>Short labels · original inside</span></div>
+</article>
+<aside class="connections" aria-label="Connected records"><div class="connections-header"><span class="eyebrow">FOLLOW A CONNECTION</span><button class="quiet" data-action="connections">All links</button></div><div class="relation-tabs" role="tablist" aria-label="Relationship type"><button id="tab-sources" role="tab" aria-controls="related-tray" aria-selected="true" data-relation="sources">Sources <span></span></button><button id="tab-foundations" role="tab" aria-controls="related-tray" aria-selected="false" data-relation="foundations">Grounding <span></span></button><button id="tab-next" role="tab" aria-controls="related-tray" aria-selected="false" data-relation="next">Leads to <span></span></button></div><div class="related-tray" id="related-tray" role="tabpanel" aria-labelledby="tab-sources"></div><div id="relation-note" class="relation-note"></div></aside>
+</div>
+</div>
+</main>
+<footer class="pin-rail"><span class="eyebrow">SET ASIDE</span><div class="pin-slots" id="pin-slots"></div><button id="compare" data-action="compare" disabled>Compare</button></footer>
+</div>
+<div id="overlay" class="overlay" hidden><section class="dialog-sheet" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><div class="dialog-head"><div><span class="eyebrow" id="dialog-kicker"></span><h2 id="dialog-title" tabindex="-1"></h2></div><button data-action="close" class="close-button">Close <span aria-hidden="true">×</span></button></div><div class="rule"></div><div id="dialog-content" class="dialog-content scroller"></div></section></div>
+<div class="sr-only" role="status" aria-live="polite" id="announcement"></div>
+<noscript><p>This reading table needs JavaScript. The complete records are available in the records folder.</p></noscript>
+</body></html>
