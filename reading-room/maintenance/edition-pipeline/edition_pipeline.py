@@ -63,6 +63,8 @@ def verify_import(imp):
     asset=next(a for a in imp['runtime_assets'] if a['target']==c['path'])
     require(asset['sha256']==c['sha256'] and asset['bytes']==c['bytes'],'Reading asset/catalog pins disagree')
     require(asset['bytes']>0,'Empty reading source forbidden')
+    if c.get('source_scan'):
+        a=c['source_scan'];src=Path(next(x['source'] for x in imp['runtime_assets'] if x['target']==a['path']));check_pin(src,a,'Preserved source scan')
     if c.get('preservation_archive'):
         a=c['preservation_archive'];require(a==s.get('preservationArchive'),'Archive catalog/spec mismatch');src=Path(next(x['source'] for x in imp['runtime_assets'] if x['target']==a['path']));check_pin(src,a,'Preserved archive')
         with zipfile.ZipFile(src) as z:
