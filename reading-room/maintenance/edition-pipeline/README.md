@@ -8,11 +8,12 @@ The pipeline itself uses only standard-library modules.
 
 ## Exact support-package contents
 
-Keep exactly these three files under `maintenance/edition-pipeline/` in the
-private source repository:
+Keep exactly these four files under `maintenance/edition-pipeline/` in the
+source repository:
 
 - `edition_pipeline.py`: baseline capture, isolated preparation, and validation
 - `test_negative_gates.py`: portable positive-control and negative-gate checks
+- `test_source_scan_pins.py`: focused source-scan hash and byte-count regressions
 - `README.md`: this operating guide and file allowlist
 
 No edition fixtures, import manifests, baselines, audit evidence, source books,
@@ -73,7 +74,12 @@ python3 maintenance/edition-pipeline/edition_pipeline.py validate \
 python3 maintenance/edition-pipeline/test_negative_gates.py \
   --candidate CANDIDATE --baseline BASELINE_JSON \
   --import-json VERIFIED_IMPORT_JSON --output NEGATIVE_RESULTS_JSON
+
+python3 maintenance/edition-pipeline/test_source_scan_pins.py
 ```
+
+The focused source-scan suite runs six regressions with synthetic fixtures and
+needs no edition assets or candidate arguments.
 
 `validate` and the negative suite accept repeated `--import-json` arguments for
 an already-prepared additive batch, in new-catalog order. `prepare` intentionally
@@ -185,7 +191,7 @@ test does not establish legal clearance or print-scan fidelity.
 
 ## Moving between environments
 
-Transfer this three-file support directory separately from retained source bytes,
+Transfer this four-file support directory separately from retained source bytes,
 audit reports, and edition-specific JSON inputs. Materialize every referenced
 source/report file and update only its location field in the import when moving
 environments, preserving all byte/hash pins and provenance. Re-run validation;
@@ -196,7 +202,7 @@ Keep reports out of hosted assets and out of this support package: they can
 contain local audit locations and diagnostic details. Source-specific audits may
 need additional dependencies, which their separate procedures must identify.
 Browser/mobile rendering remains separate verification and is never inferred
-from DOM simulations or a passing offline suite. Persisting these three files
+from DOM simulations or a passing offline suite. Persisting these four files
 neither publishes a new edition nor changes access to the reading room.
 
 
