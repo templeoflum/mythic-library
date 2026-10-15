@@ -1,0 +1,641 @@
+{
+  "schema_version": 1,
+  "title": "Esoterica shelf register",
+  "entries": [
+    {
+      "id": "esoterica:scalf-2017__oimp39-isac.pdf",
+      "register_id": "esoterica/scalf-2017__oimp39-isac.pdf",
+      "title": "Book of the Dead: Becoming God in Ancient Egypt",
+      "author": "Foy Scalf (editor)",
+      "edition": "OIMP 39, 2017",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "scalf-2017__oimp39-isac.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:ritner-1993__saoc54-isac.pdf",
+      "register_id": "esoterica/ritner-1993__saoc54-isac.pdf",
+      "title": "The Mechanics of Ancient Egyptian Magical Practice",
+      "author": "Robert K. Ritner",
+      "edition": "SAOC 54, fourth printing",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "ritner-1993__saoc54-isac.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:allen-1974__saoc37-isac.pdf",
+      "register_id": "esoterica/allen-1974__saoc37-isac.pdf",
+      "title": "The Book of the Dead or Going Forth by Day",
+      "author": "Thomas George Allen",
+      "edition": "SAOC 37, 1974",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "allen-1974__saoc37-isac.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cloud-of-unknowing__underhill-1922.txt",
+      "register_id": "esoterica/cloud-of-unknowing__underhill-1922.txt",
+      "title": "The Cloud of Unknowing",
+      "author": "Anonymous; Evelyn Underhill (editor)",
+      "edition": "Underhill edition, 1922",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "cloud-of-unknowing__underhill-1922.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:theologia-germanica__winkworth.txt",
+      "register_id": "esoterica/theologia-germanica__winkworth.txt",
+      "title": "Theologia Germanica",
+      "author": "Anonymous; Susanna Winkworth (translator)",
+      "edition": "Winkworth translation",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "theologia-germanica__winkworth.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:copenhaver-1992__mead-1906-corpus-hermeticum.pdf",
+      "register_id": "esoterica/copenhaver-1992__mead-1906-corpus-hermeticum.pdf",
+      "title": "Corpus Hermeticum",
+      "author": "G. R. S. Mead (translator)",
+      "edition": "Thrice-Greatest Hermes, volume II, 1906; substitute for the Copenhaver edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "copenhaver-1992__mead-1906-corpus-hermeticum.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:athanassakis-2013__taylor-1792-orphic-hymns.pdf",
+      "register_id": "esoterica/athanassakis-2013__taylor-1792-orphic-hymns.pdf",
+      "title": "The Hymns of Orpheus",
+      "author": "Thomas Taylor (translator)",
+      "edition": "Taylor translation, 1792; substitute for the Athanassakis edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "athanassakis-2013__taylor-1792-orphic-hymns.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:pico-oration-1486__latin.htm",
+      "register_id": "esoterica/pico-oration-1486__latin.htm",
+      "title": "Oratio de hominis dignitate",
+      "author": "Giovanni Pico della Mirandola",
+      "edition": "Latin text",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "pico-oration-1486__latin.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:aquinas-de-spiritualibus__english.htm",
+      "register_id": "esoterica/aquinas-de-spiritualibus__english.htm",
+      "title": "De spiritualibus creaturis",
+      "author": "Thomas Aquinas; Fitzpatrick and Wellmuth (translators)",
+      "edition": "Latin–English edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "aquinas-de-spiritualibus__english.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:thorndike-1923__vol1.pdf",
+      "register_id": "esoterica/thorndike-1923__vol1.pdf",
+      "title": "A History of Magic and Experimental Science, volume I",
+      "author": "Lynn Thorndike",
+      "edition": "1923",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "thorndike-1923__vol1.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:thorndike-1923__vol2.pdf",
+      "register_id": "esoterica/thorndike-1923__vol2.pdf",
+      "title": "A History of Magic and Experimental Science, volume II",
+      "author": "Lynn Thorndike",
+      "edition": "1923",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "thorndike-1923__vol2.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:psellus-on-daemons__collisson-1843.pdf",
+      "register_id": "esoterica/psellus-on-daemons__collisson-1843.pdf",
+      "title": "On the Operation of Daemons",
+      "author": "Michael Psellus; Marcus Collisson (translator)",
+      "edition": "Collisson translation, 1843",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "psellus-on-daemons__collisson-1843.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:reuchlin-1517__de-arte-cabalistica-latin.pdf",
+      "register_id": "esoterica/reuchlin-1517__de-arte-cabalistica-latin.pdf",
+      "title": "De arte cabalistica",
+      "author": "Johannes Reuchlin",
+      "edition": "Latin, Hagenau printing, 1517",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "reuchlin-1517__de-arte-cabalistica-latin.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:klein-2017__casaubon-1659-true-faithful-relation.pdf",
+      "register_id": "esoterica/klein-2017__casaubon-1659-true-faithful-relation.pdf",
+      "title": "A True & Faithful Relation",
+      "author": "John Dee; Meric Casaubon (editor)",
+      "edition": "Casaubon edition, 1659; substitute for the Klein edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "klein-2017__casaubon-1659-true-faithful-relation.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:mackay-2009__summers-1928-malleus.pdf",
+      "register_id": "esoterica/mackay-2009__summers-1928-malleus.pdf",
+      "title": "Malleus Maleficarum",
+      "author": "Montague Summers (translator)",
+      "edition": "Summers translation, 1928; substitute for the Mackay edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "mackay-2009__summers-1928-malleus.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:bdb-1906__lexicon.pdf",
+      "register_id": "esoterica/bdb-1906__lexicon.pdf",
+      "title": "Brown–Driver–Briggs Hebrew Lexicon",
+      "author": "Francis Brown, S. R. Driver and Charles A. Briggs",
+      "edition": "1906",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "bdb-1906__lexicon.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:jastrow-1903__dictionary-vol1.pdf",
+      "register_id": "esoterica/jastrow-1903__dictionary-vol1.pdf",
+      "title": "Dictionary of the Targumim, volume I",
+      "author": "Marcus Jastrow",
+      "edition": "1903",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "jastrow-1903__dictionary-vol1.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:jastrow-1903__dictionary-vol2.pdf",
+      "register_id": "esoterica/jastrow-1903__dictionary-vol2.pdf",
+      "title": "Dictionary of the Targumim, volume II",
+      "author": "Marcus Jastrow",
+      "edition": "1903",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "jastrow-1903__dictionary-vol2.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:sefer-bahir__hebrew.json",
+      "register_id": "esoterica/sefer-bahir__hebrew.json",
+      "title": "Sefer ha-Bahir, Hebrew",
+      "author": "Traditional text",
+      "edition": "Torat Emet text; register reports 200 sections",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "sefer-bahir__hebrew.json"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:sefer-bahir__english-cc0.json",
+      "register_id": "esoterica/sefer-bahir__english-cc0.json",
+      "title": "Sefer ha-Bahir, partial English translation",
+      "author": "Sefaria Community Translation",
+      "edition": "Register reports 82 of 200 sections",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "sefer-bahir__english-cc0.json"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:sefer-zohar__aramaic-hebrewbooks-lublin1623.pdf",
+      "register_id": "esoterica/sefer-zohar__aramaic-hebrewbooks-lublin1623.pdf",
+      "title": "Sefer ha-Zohar",
+      "author": "Traditional text",
+      "edition": "Aramaic, Lublin printing, 1623",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "sefer-zohar__aramaic-hebrewbooks-lublin1623.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cooper-1997__jowett-republic.txt",
+      "register_id": "esoterica/cooper-1997__jowett-republic.txt",
+      "title": "Republic",
+      "author": "Plato; Benjamin Jowett (translator)",
+      "edition": "Jowett translation; substitute for the Cooper edition",
+      "tradition": "Esoterica register",
+      "status": "readable",
+      "reader_id": "plato-republic",
+      "overlaps_main_catalog": true,
+      "overlap_reader_id": "plato-republic",
+      "source_note": "Recovered reviewed reading edition. Also counted in the main library shelf.",
+      "aliases": [
+        "cooper-1997__jowett-republic.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cooper-1997__jowett-symposium.txt",
+      "register_id": "esoterica/cooper-1997__jowett-symposium.txt",
+      "title": "Symposium",
+      "author": "Plato; Benjamin Jowett (translator)",
+      "edition": "Jowett translation; substitute for the Cooper edition",
+      "tradition": "Esoterica register",
+      "status": "readable",
+      "reader_id": "plato-symposium",
+      "overlaps_main_catalog": true,
+      "overlap_reader_id": "plato-symposium",
+      "source_note": "Recovered reviewed reading edition. Also counted in the main library shelf.",
+      "aliases": [
+        "cooper-1997__jowett-symposium.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cooper-1997__jowett-phaedo.txt",
+      "register_id": "esoterica/cooper-1997__jowett-phaedo.txt",
+      "title": "Phaedo",
+      "author": "Plato; Benjamin Jowett (translator)",
+      "edition": "Jowett translation; substitute for the Cooper edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "cooper-1997__jowett-phaedo.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cooper-1997__jowett-phaedrus.txt",
+      "register_id": "esoterica/cooper-1997__jowett-phaedrus.txt",
+      "title": "Phaedrus",
+      "author": "Plato; Benjamin Jowett (translator)",
+      "edition": "Jowett translation; substitute for the Cooper edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "cooper-1997__jowett-phaedrus.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cooper-1997__jowett-timaeus.txt",
+      "register_id": "esoterica/cooper-1997__jowett-timaeus.txt",
+      "title": "Timaeus",
+      "author": "Plato; Benjamin Jowett (translator)",
+      "edition": "Jowett translation; substitute for the Cooper edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "cooper-1997__jowett-timaeus.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:cooper-1997__jowett-apology.txt",
+      "register_id": "esoterica/cooper-1997__jowett-apology.txt",
+      "title": "Apology",
+      "author": "Plato; Benjamin Jowett (translator)",
+      "edition": "Jowett translation; substitute for the Cooper edition",
+      "tradition": "Esoterica register",
+      "status": "readable",
+      "reader_id": "plato-apology",
+      "overlaps_main_catalog": true,
+      "overlap_reader_id": "plato-apology",
+      "source_note": "Recovered reviewed reading edition. Also counted in the main library shelf.",
+      "aliases": [
+        "cooper-1997__jowett-apology.txt"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:barnes-1984__oxford-aristotle-partial-metaphysica.pdf",
+      "register_id": "esoterica/barnes-1984__oxford-aristotle-partial-metaphysica.pdf",
+      "title": "Metaphysica",
+      "author": "Aristotle; W. D. Ross (translator)",
+      "edition": "Oxford translation, 1908; partial Aristotle collection",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "barnes-1984__oxford-aristotle-partial-metaphysica.pdf"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:agrippa-1533__freake-1651-book1.htm",
+      "register_id": "esoterica/agrippa-1533__freake-1651-book1.htm",
+      "title": "Three Books of Occult Philosophy, book I",
+      "author": "Heinrich Cornelius Agrippa; James Freake (translator)",
+      "edition": "Freake translation, 1651",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "agrippa-1533__freake-1651-book1.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:agrippa-1533__freake-1651-book2.htm",
+      "register_id": "esoterica/agrippa-1533__freake-1651-book2.htm",
+      "title": "Three Books of Occult Philosophy, book II",
+      "author": "Heinrich Cornelius Agrippa; James Freake (translator)",
+      "edition": "Freake translation, 1651",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "agrippa-1533__freake-1651-book2.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:agrippa-1533__freake-1651-book3.htm",
+      "register_id": "esoterica/agrippa-1533__freake-1651-book3.htm",
+      "title": "Three Books of Occult Philosophy, book III",
+      "author": "Heinrich Cornelius Agrippa; James Freake (translator)",
+      "edition": "Freake translation, 1651",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "agrippa-1533__freake-1651-book3.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:dehn-2006__abramelin-mathers-1897.htm",
+      "register_id": "esoterica/dehn-2006__abramelin-mathers-1897.htm",
+      "title": "The Book of the Sacred Magic of Abramelin the Mage",
+      "author": "S. L. MacGregor Mathers (translator)",
+      "edition": "Mathers translation, 1897; substitute for the Dehn edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "dehn-2006__abramelin-mathers-1897.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:peterson-2001__goetia-mathers-1904.htm",
+      "register_id": "esoterica/peterson-2001__goetia-mathers-1904.htm",
+      "title": "The Lesser Key of Solomon: Goetia",
+      "author": "S. L. MacGregor Mathers and Aleister Crowley",
+      "edition": "1904 edition; substitute for the Peterson edition",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "peterson-2001__goetia-mathers-1904.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:peterson-2009__arbatel-turner-1655.htm",
+      "register_id": "esoterica/peterson-2009__arbatel-turner-1655.htm",
+      "title": "Arbatel De magia veterum",
+      "author": "Robert Turner (translator)",
+      "edition": "Latin and English, 1655",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "peterson-2009__arbatel-turner-1655.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:godwin-2016__fama-waite-1887.htm",
+      "register_id": "esoterica/godwin-2016__fama-waite-1887.htm",
+      "title": "Fama Fraternitatis",
+      "author": "A. E. Waite (editor)",
+      "edition": "The Real History of the Rosicrucians, chapter III, 1887",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "godwin-2016__fama-waite-1887.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:godwin-2016__confessio-waite-1887.htm",
+      "register_id": "esoterica/godwin-2016__confessio-waite-1887.htm",
+      "title": "Confessio Fraternitatis",
+      "author": "A. E. Waite (editor)",
+      "edition": "The Real History of the Rosicrucians, chapter IV, 1887",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "godwin-2016__confessio-waite-1887.htm"
+      ],
+      "source_url": null
+    },
+    {
+      "id": "esoterica:godwin-2016__chymical-wedding-foxcroft-1690.pdf",
+      "register_id": "esoterica/godwin-2016__chymical-wedding-foxcroft-1690.pdf",
+      "title": "The Hermetick Romance, or the Chymical Wedding",
+      "author": "Ezechiel Foxcroft (translator)",
+      "edition": "London printing, 1690",
+      "tradition": "Esoterica register",
+      "status": "missing",
+      "reader_id": null,
+      "overlaps_main_catalog": false,
+      "overlap_reader_id": null,
+      "source_note": "Recorded on the original shelf. This file was excluded from repository tracking and has not been recovered into this cloud collection.",
+      "aliases": [
+        "godwin-2016__chymical-wedding-foxcroft-1690.pdf"
+      ],
+      "source_url": null
+    }
+  ],
+  "summary": {
+    "registered_file_slots": 37,
+    "overlapping_readable_editions": 3,
+    "not_recovered_file_slots": 34
+  },
+  "scope_note": "This is a separate historical shelf register, counted by file slot, not by unique work. Three readable Plato editions also appear in the main shelf. Other registered files are not present in the cloud collection; register descriptions are not fresh completeness or rights verification."
+}

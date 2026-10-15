@@ -1,0 +1,351 @@
+{
+  "ebook_id": "70959",
+  "source_audit_sha256": "a37ccb4c351a54956b882428852bafdeb945e1914701b602bc2308a35b2b93b9",
+  "source_sha256": "4a0b9886c2ec455b45e3f8c306bca9d91c1983124093b9cbe9791e8301b6d8b8",
+  "narratives": [
+    {
+      "number": 1,
+      "heading": "I.—How an Inkum Woman Abandoned One of Her Twins in the Forest, and How it was Saved by the Hawk.",
+      "start": 20941,
+      "bodyStart": 21040,
+      "end": 28055,
+      "bodySha256": "22dbc84a7903786a7d8f5cf3a5e57249296504606b1182fb762c75413654dcb8",
+      "provenance": "This story was related by a native of Inkum called Abassi.--[E.D.,\r\n25.5.10.]"
+    },
+    {
+      "number": 2,
+      "heading": "II.—The Cunning Hare; or, Why the Tortoise has a Patched Shell.",
+      "start": 28055,
+      "bodyStart": 28119,
+      "end": 38882,
+      "bodySha256": "3af1e3a6e04186242cb39dbfceafd3926515bcbed2101ff0367e4abc9123647d",
+      "provenance": "Told by Abassi, an Inkum boy.--[E.D.]"
+    },
+    {
+      "number": 3,
+      "heading": "III.—The Story of Igiri and her husband Inkang, who brought up a mushroom baby boy, and what became of him.",
+      "start": 38882,
+      "bodyStart": 38991,
+      "end": 43645,
+      "bodySha256": "0b7683557711f400aac4e51efc3b16153f8ceef53bf233b6c57531c48bed7699",
+      "provenance": "Told by Abassi of Inkum.--(E.D., 27.5.10.)"
+    },
+    {
+      "number": 4,
+      "heading": "IV.—How Elili of Inkum died, and was Brought Back to Life Again.",
+      "start": 43645,
+      "bodyStart": 43710,
+      "end": 47137,
+      "bodySha256": "dcc6a0d41a5ee642e6244aedfa275920952567a41272ae66d87088e028d5864b",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 27.5.10.]"
+    },
+    {
+      "number": 5,
+      "heading": "V.—Concerning the Human Sacrifices which took Place on the Death of Chief Indoma.",
+      "start": 47137,
+      "bodyStart": 47220,
+      "end": 50485,
+      "bodySha256": "c104734c411b92dafef711650b300e235ce8a85ec773483b64b460dd780af0d8",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 27.5.10.]"
+    },
+    {
+      "number": 6,
+      "heading": "VI.—The Story of the Witch who tried to kill her Husband; or, Why Native Dogs refuse to obey their Masters.",
+      "start": 50485,
+      "bodyStart": 50594,
+      "end": 56013,
+      "bodySha256": "2751cc9075184bf6fb1e986219027773e48a03fc96678b718845971b9ab345bf",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 27.5.10.]"
+    },
+    {
+      "number": 7,
+      "heading": "VII.—How two friends fell out: the Spider and the Grasshopper.",
+      "start": 56013,
+      "bodyStart": 56076,
+      "end": 66896,
+      "bodySha256": "bf79e4ff56c1058b0c4bedfa28c52e9b426a000ed1e3e7f9bb63a5c0f9456383",
+      "provenance": "N.B.--This story was given to me at Akparabong by a native, but there\r\nwould appear to be some doubt as to whether it is a local story or not.\r\nA native from Cavally on the Kroo Coast affirms that he first told this\r\nstory which was afterwards related to me, and this boy certainly gave\r\nme afterwards the main features of the story, but with a different\r\nlocal colouring."
+    },
+    {
+      "number": 8,
+      "heading": "VIII.—How Ewa Abagi, an Inkum Woman, was Drowned in the Cross River, and how She was Rescued by the Young Men of Insofan.",
+      "start": 66896,
+      "bodyStart": 67019,
+      "end": 74959,
+      "bodySha256": "dc415e0276bf351714253e8d800f8fd332e694cae39f43f28e130eff4bf1f5bb",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 1.6.10.]"
+    },
+    {
+      "number": 9,
+      "heading": "IX.—The Story of the War between Inkum and Enfitop.",
+      "start": 74959,
+      "bodyStart": 75011,
+      "end": 88834,
+      "bodySha256": "e018f044208e94a8d9e4c3091bde27baeba61a53cdcc8840549d588383a0b009",
+      "provenance": "Told by Abassi of Inkum, 7th June, 1910."
+    },
+    {
+      "number": 10,
+      "heading": "X.—How an Inkum Boy was Drowned by His Companions and how they were Punished.",
+      "start": 88834,
+      "bodyStart": 88913,
+      "end": 100882,
+      "bodySha256": "0295c1db1ef905bbf56e4f2e225627f138073ff2c7e2c5cc78d9c1da15293374",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 9.6.10.]"
+    },
+    {
+      "number": 11,
+      "heading": "XI.—How a Father Tried to Kill One of his Sons but Failed.",
+      "start": 100882,
+      "bodyStart": 100941,
+      "end": 113408,
+      "bodySha256": "ea593414f839d38649d3ff0cfc3d248374532539b074c8d59b98b9be2200b1f0",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 10.6.10.]"
+    },
+    {
+      "number": 12,
+      "heading": "XII.—Concerning the Okuni Witches and Cannibalism.",
+      "start": 113408,
+      "bodyStart": 113459,
+      "end": 129208,
+      "bodySha256": "103cedf588602c700cc6c5989192e5237b139d8fbd6391ce67ca3b6a12f8cb4c",
+      "provenance": "Told by Ennenni, an Okuni woman.--[E.D., 16.6.10.]"
+    },
+    {
+      "number": 13,
+      "heading": "XIII.—Of Chief Amaza, his wife Achi and the Tortoise.",
+      "start": 129208,
+      "bodyStart": 129262,
+      "end": 136277,
+      "bodySha256": "0183492d5b8d6d3d0ec49647ad3c8ffa38fc853b95f33d927077fac9c00f7a84",
+      "provenance": "Told by Ennenni, an Okuni woman dancer.--[E.D., 17.6.10.]"
+    },
+    {
+      "number": 14,
+      "heading": "XIV.—The Fate of Agbor the Hunter, who killed his Wife and Children.",
+      "start": 136277,
+      "bodyStart": 136346,
+      "end": 142160,
+      "bodySha256": "0165f543c72f9d2e32a9996e584407dab00ace705ccf7d46e3051acdf8125eba",
+      "provenance": "Told by Ennenni of Okuni.--[E.D., 19.6.10.]"
+    },
+    {
+      "number": 15,
+      "heading": "XV.—What happened at Okuni when anyone was killed by Accident.",
+      "start": 142160,
+      "bodyStart": 142223,
+      "end": 143937,
+      "bodySha256": "6b4afc6ee98d63f65ec460d45f76c11cd01b68429a7f2d7bd4c780b2046c6690",
+      "provenance": "Told by Ennenni of Okuni.--[E.D., 19.6.10.]"
+    },
+    {
+      "number": 16,
+      "heading": "XVI.—How Oghabi poisoned his friend Okpa and family, or why a host should always eat first from the food which he gives to his guests.",
+      "start": 143937,
+      "bodyStart": 144073,
+      "end": 152846,
+      "bodySha256": "03e975c822566a24579d0f30e8c470ba393829e8888e17f8be6b897ce067a42e",
+      "provenance": "Told by Abassi of Inkum.--[20.6.10.]"
+    },
+    {
+      "number": 17,
+      "heading": "XVII.—How Chief Alankor and all His Family were Killed by a Big Frog, or Why the Cock Crows at Dawn.",
+      "start": 152846,
+      "bodyStart": 152948,
+      "end": 160938,
+      "bodySha256": "11d22d0368e1c970cf4308c8b06f9127f46aa7e3472fa50494cbe60346a98671",
+      "provenance": "Told by Ewonkom, an Ikom woman.--[E.D., 22.6.10.]"
+    },
+    {
+      "number": 18,
+      "heading": "XVIII.—How the River came into Existence; or, Why a Crab has no Head.",
+      "start": 160938,
+      "bodyStart": 161008,
+      "end": 165282,
+      "bodySha256": "80ca90230b812183a5ff84fff9c7caa302781a7dcb511506276f052c12e13ebd",
+      "provenance": "Told by Ewonkom, an Ikom woman.--[E.D., 22.6.10.]"
+    },
+    {
+      "number": 19,
+      "heading": "XIX.—Why the Mist rises from the Water.",
+      "start": 165282,
+      "bodyStart": 165322,
+      "end": 174859,
+      "bodySha256": "8de8649969c1aee877047eea5745a02d77b54243123e38e2e024a5bb1a2cc95c",
+      "provenance": "Told by Ewonkom, an Ikom woman.--[E.D., 23.6.10.]"
+    },
+    {
+      "number": 20,
+      "heading": "XX.—How Ibanang Okpong and her Mother were Swallowed by a Man-eating Drum, and how they Escaped from its Inside.",
+      "start": 174859,
+      "bodyStart": 174973,
+      "end": 184751,
+      "bodySha256": "1e55c72f7f447f0300d31daf0445b846bd68843cd8c1b0be8c7513d6974db008",
+      "provenance": "Told by Ewonkom, an Ikom woman.--[E.D., 23.6.10.]"
+    },
+    {
+      "number": 21,
+      "heading": "XXI.—Why the Head of the Male Goat Smells so Strong.",
+      "start": 184751,
+      "bodyStart": 184804,
+      "end": 192006,
+      "bodySha256": "3190e3c629dedf8210814b5908a94f77b2bf16215a52440b961e9b4049a1d74d",
+      "provenance": "Told by an Okuni woman.--[28.6.10.]"
+    },
+    {
+      "number": 22,
+      "heading": "XXII.—A Story of the Great Famine.",
+      "start": 192006,
+      "bodyStart": 192041,
+      "end": 201696,
+      "bodySha256": "7e6cd1d8a1c64c3aefede710c69790deccc2c181714227cb882cbc58b3ffaef5",
+      "provenance": "Told by Ennenni, an Okuni woman.--[28.6.10.]"
+    },
+    {
+      "number": 23,
+      "heading": "XXIII.—Why Edidor killed Her Husband and Her Lover.",
+      "start": 201696,
+      "bodyStart": 201748,
+      "end": 211170,
+      "bodySha256": "58607a5ec6648cc2b0b281707b8f9541f5989953a76f83d9310bcbc7ef0bd1d3",
+      "provenance": "Told by Ennanni, an Okuni woman.--[1.7.10.]"
+    },
+    {
+      "number": 24,
+      "heading": "XXIV.—How ’Nyambi punished Chief Oga for trying to commit adultery with his wife Obim.",
+      "start": 211170,
+      "bodyStart": 211258,
+      "end": 225065,
+      "bodySha256": "b6304e2c0b09ac3c707c1291fee8244ba14577dbbc07b685c705222e7447ed07",
+      "provenance": "Told by Ennenni, an Okuni woman.--[22.7.10.]"
+    },
+    {
+      "number": 25,
+      "heading": "XXV.—How Two Bendega Young Men Changed their Skins.",
+      "start": 225065,
+      "bodyStart": 225117,
+      "end": 233341,
+      "bodySha256": "fc47da7ee5e880a4c41e13ba0284b78872d547e21611556a0758029caeb3cc76",
+      "provenance": "Told by Abbassi of Inkum.--[22.7.10.]"
+    },
+    {
+      "number": 26,
+      "heading": "XXVI.—Concerning the Ju-Ju Against Elephantiasis, or How the Hares Lost their Long Tails.",
+      "start": 233341,
+      "bodyStart": 233432,
+      "end": 250882,
+      "bodySha256": "1a1f62948da47e2798b9fff6df75dafaa9f18b2d5f79aee4e28009f468df460b",
+      "provenance": "Told by Ennenni, an Okuni woman.--[26.7.10.]"
+    },
+    {
+      "number": 27,
+      "heading": "XXVII.—How a cruel Inkum Chief was Poisoned by his Slaves, and How his Son Hanged Himself on account of the Expenses of his Brother’s Funeral.",
+      "start": 250882,
+      "bodyStart": 251026,
+      "end": 267322,
+      "bodySha256": "20885610dc5471c06502c8f2a5f899a5c5dfc0572c6b4101346211b4b0b87bd3",
+      "provenance": "Told by Abassi of Inkum.--[1.8.7.]"
+    },
+    {
+      "number": 28,
+      "heading": "XXVIII.—How the Frog Beat the Bush Buck in a Race, and Won His Daughter as a Wife.",
+      "start": 267322,
+      "bodyStart": 267406,
+      "end": 273916,
+      "bodySha256": "f5daf8105dbf0ac9e44a0ca3c05132d44b4debbe74d5e592d80264c6a15dedd7",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 11.8.10.]"
+    },
+    {
+      "number": 29,
+      "heading": "XXIX.—Why a Python Never Swallows a Tortoise.",
+      "start": 273916,
+      "bodyStart": 273962,
+      "end": 278271,
+      "bodySha256": "629c4b2d10f49ee10151d45e807ef985c948961f58f191c9e122d4cb27a86217",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 11.8.10.]"
+    },
+    {
+      "number": 30,
+      "heading": "XXX.—The Game of Hide-and-seek as Played by the Hawk and the Bush Cow.",
+      "start": 278271,
+      "bodyStart": 278342,
+      "end": 285801,
+      "bodySha256": "9d2f0b347e05be5c1869a6875ada95dab7cc4ad8c65229be644b02e302e17ca2",
+      "provenance": "Told by Abassi of Inkum.--[E.D., 4.1.11.]"
+    },
+    {
+      "number": 31,
+      "heading": "XXXI.—Chief Kekong’s Daughter ’Ndere who Married a Python.",
+      "start": 285801,
+      "bodyStart": 285860,
+      "end": 303646,
+      "bodySha256": "45a5e91b82b228b944e68302895fa3e5c16b6070cbbcb909e4cb138a000a7925",
+      "provenance": "Told by Ennenni, an Okuni woman.--[E.D., 5.1.11.]"
+    },
+    {
+      "number": 32,
+      "heading": "XXXII.—How Agbor Adam broke the Hunting Law of Okuni, and How He was Punished.",
+      "start": 303646,
+      "bodyStart": 303726,
+      "end": 315779,
+      "bodySha256": "e7103138577bfa53ae0e085b81622915e7a6694399a2f654e9116277993b4273",
+      "provenance": "Told by Ennenni, an Okuni woman.--[E.D., 6.1.11.]"
+    },
+    {
+      "number": 33,
+      "heading": "XXXIII.—How Essama Stole Her Father’s Goat in the Fatting-house, and Her Brother was Punished for it.",
+      "start": 315779,
+      "bodyStart": 315882,
+      "end": 324160,
+      "bodySha256": "960d580072478aaa8fbcecb3b980a91d64f221b66a9740333b8b37c1bafad5cd",
+      "provenance": "Told by Ennenni, a dancing-woman of Okuni.--[E. DAYRELL, 14.1.11.]"
+    },
+    {
+      "number": 34,
+      "heading": "Quomodo evenit ut Penis primum cum Vagina coiit.",
+      "start": 324160,
+      "bodyStart": 324208,
+      "end": 327273,
+      "bodySha256": "49226619f9ee2416606532fba5db15ca6653cda0a55e60969354d4f003ed469f",
+      "provenance": "(Told by Ennenni, a singing and dancing girl of Okuni. May 18th, 1911.)"
+    }
+  ],
+  "archive_assets": [
+    {
+      "path": "pg70959-images.html",
+      "bytes": 377692,
+      "sha256": "f6e2ea4f513f97a265d44d4cf59fd83c44be2f3402c5239f2a8ca962850d3d01",
+      "referenced_in_html": false
+    },
+    {
+      "path": "images/cover.jpg",
+      "bytes": 247202,
+      "sha256": "6c2cd31b66f2bf69f9b72f471c22c11714e129e7369383d39df1be0e870afadb",
+      "referenced_in_html": true
+    },
+    {
+      "path": "images/fig1big.jpg",
+      "bytes": 253929,
+      "sha256": "0f4e1d40c0e3581d7c7d3c68e0d58ffac4349d1a853b5c15f6a05d0a613e7bd5",
+      "referenced_in_html": true
+    },
+    {
+      "path": "images/fig1.jpg",
+      "bytes": 174878,
+      "sha256": "eb1ebd0e84089284a97d69167813803b3798371d06f3802ef09240b646344a27",
+      "referenced_in_html": true
+    },
+    {
+      "path": "images/fig2big.jpg",
+      "bytes": 253129,
+      "sha256": "3c66b87e5ce1ae98f96129aa087ad14cf019d16a866fc8965317cd80dceaf260",
+      "referenced_in_html": true
+    },
+    {
+      "path": "images/fig2.jpg",
+      "bytes": 138324,
+      "sha256": "d61e3a3032cdbc5d8b544e6dadcaea596b24880411a6151dde05e848ee92efd7",
+      "referenced_in_html": true
+    }
+  ]
+}

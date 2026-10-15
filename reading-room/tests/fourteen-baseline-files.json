@@ -1,0 +1,175 @@
+{
+  "excluded_directories": [
+    ".cache",
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "node_modules"
+  ],
+  "files": {
+    ".gitignore": {
+      "bytes": 458,
+      "sha256": "b715932ba368930037dcc7c9f786913592d64a3415d9857022db20138aa6aa69"
+    },
+    ".openai/hosting.json": {
+      "bytes": 106,
+      "sha256": "ef3537adfa5584d0bc97d2a51399fd37dd1afd3829e4ce5373a2e4c71f9cff51"
+    },
+    "REVIEW.md": {
+      "bytes": 6408,
+      "sha256": "d7aaf5e300507e954271179bff1cc4b36fa14904d85ab1c8fd146e9b6f6478ca"
+    },
+    "dist/app.js": {
+      "bytes": 15623,
+      "sha256": "9b3b495a4724adcb19ce982e4f3ed65459be83b9962dbe18bed516051c469ffe"
+    },
+    "dist/books/anansi-original-notices.txt": {
+      "bytes": 677422,
+      "sha256": "d3fe3027f7bb11b0e00152ba1ad03b3ceddb84d23d7acfc9ba3db0ea0b8c5d6d"
+    },
+    "dist/books/anansi-tales.txt": {
+      "bytes": 639220,
+      "sha256": "7389ff847b3cd91b6ff25ace07ba6afe44f26d307347308108e5e1c80e199d64"
+    },
+    "dist/books/eskimo-folk-tales.txt": {
+      "bytes": 271159,
+      "sha256": "608a6b6ff1d1c7a328a23cc5393bd3f354ca8ca2d84f0e694be9482529b68586"
+    },
+    "dist/books/ikom-folk-stories-illustrated-original.zip": {
+      "bytes": 1190428,
+      "sha256": "d2adb89332c82812b07652cf6ea220b2c60fb14157cdf6fd24cedc3800ac6a62"
+    },
+    "dist/books/ikom-folk-stories.txt": {
+      "bytes": 351819,
+      "sha256": "4a0b9886c2ec455b45e3f8c306bca9d91c1983124093b9cbe9791e8301b6d8b8"
+    },
+    "dist/books/kaffir-xhosa-folk-lore-illustrated-original.zip": {
+      "bytes": 253718,
+      "sha256": "a0a3341d416d4f91f975ea5c37f189b4f85ff94e5411c2c36e70469055755910"
+    },
+    "dist/books/kaffir-xhosa-folk-lore.txt": {
+      "bytes": 268701,
+      "sha256": "eb6c24e1d8af490e63562d2019439247475f9a082f28fcc73d659268a8c3ba38"
+    },
+    "dist/books/laos-folk-lore-of-farther-india.txt": {
+      "bytes": 157554,
+      "sha256": "fd88771d3593200036b555c2fef764ea72ace572b0de7a101284257e0ab5b681"
+    },
+    "dist/books/legends-myths-hawaii-illustrated-original.zip": {
+      "bytes": 3333316,
+      "sha256": "eec33006251972ddf9933ea4c029c63e95ee011317d24746183002ecbf105a4d"
+    },
+    "dist/books/legends-myths-hawaii.txt": {
+      "bytes": 1087119,
+      "sha256": "d7cddf3f173be1d5a127a642527c8829e530dc35171dc37e95ee932e5dcae58c"
+    },
+    "dist/books/legends-of-maui.txt": {
+      "bytes": 254870,
+      "sha256": "532e44499cb2b4db7a97e4063de8368971924a583804b840c893274fbf806e28"
+    },
+    "dist/books/mississippi-valley-great-lakes-illustrated-original.zip": {
+      "bytes": 731758,
+      "sha256": "d960c960ae9269e01213abe19b27d3dc4a1f8a122455e8fa5c058c45b739f115"
+    },
+    "dist/books/mississippi-valley-great-lakes.txt": {
+      "bytes": 225657,
+      "sha256": "4e710e9360dae632ee0632ad7733c89c86672592ed4dd392ece750bd40d62e14"
+    },
+    "dist/books/plato-apology.txt": {
+      "bytes": 107485,
+      "sha256": "f4cc548bd8c8b59e14effdbaab9df97f29bd48f317a466fe8c3c63ad288b964c"
+    },
+    "dist/books/plato-republic.txt": {
+      "bytes": 1244165,
+      "sha256": "3d2e397122881d7737a48fb80e71cddf4c78cda54ceac7e0905fe945dfab48fd"
+    },
+    "dist/books/plato-symposium.txt": {
+      "bytes": 200974,
+      "sha256": "8b5c599ea734ff0f5e8d83f399dead8c796800897b107c8d53fa909f74a05d6f"
+    },
+    "dist/books/south-african-folk-tales-illustrated-original.zip": {
+      "bytes": 134898,
+      "sha256": "fe40313342686e7d061dd2c35e3d79ddc413f3651ef0ff8e4460f58b071a61f2"
+    },
+    "dist/books/south-african-folk-tales.txt": {
+      "bytes": 147052,
+      "sha256": "8764fb80d05fd2ae87355a1855ec4058d6351683fd4ea44006d60999fe057075"
+    },
+    "dist/books/volsunga-saga.txt": {
+      "bytes": 350775,
+      "sha256": "5835bf98c61099120ec4d064a0f8fb96367959dc5700938424721a18c5d13fa9"
+    },
+    "dist/books/zanzibar-tales-illustrated-original.zip": {
+      "bytes": 1497855,
+      "sha256": "825d6a82a7acf028d7687c869d79c209e7b6a4583f497803b12dea69e0c67380"
+    },
+    "dist/books/zanzibar-tales.txt": {
+      "bytes": 157272,
+      "sha256": "28fa03e9e5beef784ac7afeb912aa19d8654e5ac9967a52da9b96a93a8e949aa"
+    },
+    "dist/catalog.json": {
+      "bytes": 29381,
+      "sha256": "8d7a745ee319365450976a09d0782446d0842df4927e175945f01238d4cf2285"
+    },
+    "dist/index.html": {
+      "bytes": 3757,
+      "sha256": "016f5fd7f13a229faad347bb5bafabd0403fb71d313713c62e142ae221faaba6"
+    },
+    "dist/reader-core.js": {
+      "bytes": 4243,
+      "sha256": "a1076d50c7ff38da27b923abc2e2eb9a789a90ec9da0f690c18f331669375017"
+    },
+    "dist/sections.json": {
+      "bytes": 197430,
+      "sha256": "714e32451eb21c1d1a529f10849220c8afd2a6abb1e497a5021ad3dbb4385deb"
+    },
+    "dist/style.css": {
+      "bytes": 11454,
+      "sha256": "931ea27c40aac6cd8e10dfacb54f138cac5478f27def72c5677f87c04b5c6f4a"
+    },
+    "scripts/README.md": {
+      "bytes": 6194,
+      "sha256": "269f042e4aaa4bf815e0a142a1362c9888bf08ccd52765f8916e57eaf75d8abc"
+    },
+    "scripts/build_sections.py": {
+      "bytes": 18518,
+      "sha256": "97798fce70e403ea93d4f0fb5ccbfc9223ef4d6dfe0bb923bfd3d59e3268f39a"
+    },
+    "scripts/edition_specs.json": {
+      "bytes": 290093,
+      "sha256": "30e4a92fe58cbebc688ed39a448a986375c885ca0e292fb55b1adc12bd699052"
+    },
+    "tests/eleven-edition-baseline.json": {
+      "bytes": 405695,
+      "sha256": "f4a97801fb3067d66322a0c0c349f8228b3f0a41156a8725f7d256d211332efa"
+    },
+    "tests/ikom-edition-audit.json": {
+      "bytes": 13902,
+      "sha256": "f05396639ac39eaaae99372c2437c5c5b63c4aaa8c3c5075093dce7f36991d74"
+    },
+    "tests/source-test-results.json": {
+      "bytes": 2497,
+      "sha256": "75bc172b67bd85fd9520fd60d3c92a339679168c2ff3afbe3e7c1c6a91aba817"
+    },
+    "tests/test_candidate_preservation.cjs": {
+      "bytes": 4810,
+      "sha256": "a817922ea465b235b9bcae90d568b98ed497c0a0efb03458c9d00dda7812b942"
+    },
+    "tests/test_core.cjs": {
+      "bytes": 5810,
+      "sha256": "4a821c1846aad8e5aab4d810be0963c35fb4078fd225b6a6d6e6515edd54f7cb"
+    },
+    "tests/test_fourteen_preservation.cjs": {
+      "bytes": 6172,
+      "sha256": "4b0ff76864964c9b09248bd2b70269327fdb7329ed4235c5dd1dda2668913ad7"
+    },
+    "tests/test_interactions.cjs": {
+      "bytes": 13827,
+      "sha256": "297d5913ebfba9f55f38ca09b6a0d2a1138c26f9a2b2af392023d38898d5a618"
+    },
+    "tests/thirteen-edition-baseline.json": {
+      "bytes": 475305,
+      "sha256": "bba508ecad3b470b1f58ef4927b2103cd9c49ff5781d2649dbc146e225acf417"
+    }
+  }
+}

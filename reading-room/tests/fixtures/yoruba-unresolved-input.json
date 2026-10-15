@@ -1,0 +1,99 @@
+[
+  {
+    "story_ordinal": 4,
+    "roman": "IV",
+    "title": "Sons of Sticks",
+    "paragraph_index_1_based": 4,
+    "pdf_pages": [
+      15
+    ],
+    "marker": "[unclear: igi]",
+    "context": "ous for its strength and stupidity, and went by the nickname of “Sons of Sticks,” or “Ọmọ [unclear: igi]”!",
+    "page_log_details": [
+      [
+        {
+          "location": "Story IV, final paragraph, final quoted expression after Ọmọ; PDF page 15 (printed page 6), fourth body line.",
+          "reading": "[unclear: igi]",
+          "detail": "The first letter of igi is crossed by scan damage. Lowercase i is suggested by its visible x-height, but the exact letter/case is not certain. The final gi and underdots in Ọmọ are legible.",
+          "evidence": "evidence/stories-01-10/omo-igi.png"
+        }
+      ]
+    ]
+  },
+  {
+    "story_ordinal": 16,
+    "roman": "XVI",
+    "title": "The Three Magicians",
+    "paragraph_index_1_based": 1,
+    "pdf_pages": [
+      37
+    ],
+    "marker": "[unclear: punctuation]",
+    "context": " had engaged in a series of wars, during which he employed three magicians or medicine-men[unclear: punctuation] to make charms for him, so that he might destroy his enemies.",
+    "page_log_details": [
+      [
+        {
+          "location": "Story XVI, paragraph 1, PDF page 37, third printed line, immediately after medicine-men",
+          "reading": "[unclear: punctuation]",
+          "detail": "medicine-men is fully legible. An irregular damaged mark follows men before to make. It may be punctuation or a stray print/scan mark; no punctuation has been guessed. Inspected page-37.png and a fresh 300-dpi render from the unchanged original PDF."
+        }
+      ]
+    ]
+  },
+  {
+    "story_ordinal": 31,
+    "roman": "XXXI",
+    "title": "The Ghost-Catcher",
+    "paragraph_index_1_based": 4,
+    "pdf_pages": [
+      68
+    ],
+    "marker": "[unclear: punctuation]",
+    "context": " leaping about with torches in their hands, and shouting with one voice: “Ko si aye! Ko si[unclear: punctuation] aye!” (No room! No room!).",
+    "page_log_details": [
+      [
+        {
+          "pdf_page": 68,
+          "ordinal": 31,
+          "paragraph_index_1_based": 4,
+          "location": "Immediately after si in the second Ko si aye exclamation.",
+          "marker": "[unclear: punctuation]",
+          "alternatives": [
+            "comma",
+            "no punctuation (incidental ink)"
+          ],
+          "reason": "A rounded dark mark joins the lower-right edge of the second si. Its form does not securely distinguish a damaged printed comma from incidental ink, including in the native 300-dpi PDF image. Parent independently agreed to preserve the uncertainty.",
+          "evidence": "chunks/review-crops/crop68-native.png"
+        }
+      ]
+    ]
+  },
+  {
+    "story_ordinal": 38,
+    "roman": "XXXVIII",
+    "title": "Tortoise and Pigeon",
+    "paragraph_index_1_based": 4,
+    "pdf_pages": [
+      87
+    ],
+    "marker": "[unclear: punctuation]",
+    "context": "rtoise left his friend standing at the door while he went inside and greeted his relatives[unclear: punctuation] They had prepared a feast for him, and they all began to eat together.",
+    "page_log_details": [
+      [
+        {
+          "pdf_page": 87,
+          "ordinal": 38,
+          "paragraph_index_1_based": 4,
+          "location": "After relatives in inside and greeted his relatives, immediately before They had.",
+          "marker": "[unclear: punctuation]",
+          "alternatives": [
+            "full stop with incidental upper ink",
+            "damaged question-mark- or colon-like punctuation"
+          ],
+          "reason": "The lower period-like mark and separate upper curl do not establish the intended punctuation securely. Native scan inspection and independent parent/reviewer inspection did not resolve it; no punctuation is guessed.",
+          "evidence": "checks/p87-relatives-native.png"
+        }
+      ]
+    ]
+  }
+]

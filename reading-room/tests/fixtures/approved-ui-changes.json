@@ -1,0 +1,42 @@
+{
+  "allowed_files": [
+    "dist/app.js",
+    "dist/style.css"
+  ],
+  "files": {
+    "dist/app.js": {
+      "fixture": "fourteen-app.js",
+      "changes": [
+        {
+          "before": "function element(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}\n",
+          "after": "function element(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}\nfunction markUnclearReadings(el,text){\n  el.replaceChildren();let cursor=0;\n  for(const match of text.matchAll(/\\[unclear: [^\\]]+\\]/g)){el.append(document.createTextNode(text.slice(cursor,match.index)),element('mark',match[0],'unclear-reading'));cursor=match.index+match[0].length;}\n  el.append(document.createTextNode(text.slice(cursor)));\n}\n"
+        },
+        {
+          "before": "  $('edition-count').textContent=`${state.books.length} verified editions`;renderResume();\n",
+          "after": "  $('edition-count').textContent=state.books.some(book=>book.text_status==='derived-scan-collated')?`${state.books.length} reading editions`:`${state.books.length} verified editions`;renderResume();\n"
+        },
+        {
+          "before": "  const b=state.active;addDetail('Edition',b.edition);addDetail('Display label',b.display_title_note);addDetail('Historical title',b.bibliographic_title);addDetail(b.author_label||'Author',b.author);addDetail('Editor',b.editor);addDetail('Illustrator',b.illustrator);addDetail(b.credit_label||'Translation',b.translator);addDetail('Edition note',b.edition_note);if(b.qualification_notes?.length)addDetail('Source qualifications',b.qualification_notes.join(' '));addDetail('Rights',b.rights);addDetail('Source',b.source,b.source);addDetail('Original text & notices','Open the intact source text file',b.notices||b.path);\n  if(b.notices)addDetail('Reading text','Open the complete reading text',b.path);\n",
+          "after": "  const b=state.active;addDetail('Edition',b.edition);addDetail('Display label',b.display_title_note);addDetail('Historical title',b.bibliographic_title);addDetail(b.author_label||'Author',b.author);addDetail('Editor',b.editor);addDetail('Illustrator',b.illustrator);addDetail(b.credit_label||'Translation',b.translator);addDetail('Edition note',b.edition_note);if(b.qualification_notes?.length)addDetail('Source qualifications',b.qualification_notes.join(' '));addDetail('Rights',b.rights);addDetail('Source',b.source,b.source);if(b.text_status==='derived-scan-collated'){\n    addDetail('Transcription status',b.transcription_status);\n    addDetail('Derived reading text','Open the scan-collated transcription (four unresolved readings)',b.path);\n    if(b.source_scan){\n      addDetail('Original source scan','Open the unchanged 1929 source scan (PDF)',b.source_scan.path);\n      const dt=element('dt','Source scan download'),dd=element('dd'),link=element('a','Download the unchanged source scan (PDF)');link.href=b.source_scan.path;link.download=b.source_scan.path.split('/').pop();link.target='_blank';link.rel='noopener noreferrer';dd.append(link);$('edition-details').append(dt,dd);\n    }\n  }else{\n    addDetail('Original text & notices','Open the intact source text file',b.notices||b.path);\n    if(b.notices)addDetail('Reading text','Open the complete reading text',b.path);\n  }\n"
+        },
+        {
+          "before": "  $('reading-context').textContent=(state.section.kind==='primary'?state.active.title:'Supplementary material')+(page.blocks[0]?.continuation?' · continued':'')+(state.section.sourceAttribution?' · '+state.section.sourceAttribution.display:'');\n",
+          "after": "  $('reading-context').textContent=(state.section.kind==='primary'?state.active.title:'Supplementary material')+(page.blocks[0]?.continuation?' · continued':'')+(state.active.text_status==='derived-scan-collated'?' · Scan-collated transcription; 4 unresolved readings':'')+(state.section.sourceAttribution?' · '+state.section.sourceAttribution.display:'');\n"
+        },
+        {
+          "before": "  page.blocks.forEach(block=>{if(!block.text.trim())return;const tag=block.kind==='heading'?'h2':'p',el=element(tag,block.text,block.kind==='verse'?'verse':block.kind==='table'?'source-table':'');el.dataset.paragraph=String(block.paragraphStart);el.dataset.offset=String(block.start);el.dataset.end=String(block.end);$('book-text').append(el);});\n",
+          "after": "  page.blocks.forEach(block=>{if(!block.text.trim())return;const tag=block.kind==='heading'?'h2':'p',el=element(tag,block.text,block.kind==='verse'?'verse':block.kind==='table'?'source-table':'');el.dataset.paragraph=String(block.paragraphStart);el.dataset.offset=String(block.start);el.dataset.end=String(block.end);if(state.active.text_status==='derived-scan-collated'&&block.text.includes('[unclear:'))markUnclearReadings(el,block.text);$('book-text').append(el);});\n"
+        }
+      ]
+    },
+    "dist/style.css": {
+      "fixture": "fourteen-style.css",
+      "changes": [
+        {
+          "before": ".cover strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;max-height:2.7em}.shelf-group{min-width:0}\n",
+          "after": ".cover strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;max-height:2.7em}.shelf-group{min-width:0}\n\n/* Derived-transcription uncertainty stays literal, selectable source text. */\n.unclear-reading{background:#f5dfaa;color:#35210a;border-bottom:2px dotted #82571f;border-radius:.15em;padding:0 .08em}\n.night .unclear-reading{background:#5c431c;color:#ffe6a8;border-bottom-color:#e0b260}\n"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark"><title>The Mythic Library</title>
+  <link rel="stylesheet" href="style.css"><script src="reader-core.js" defer></script><script src="app.js" defer></script><script src="collection.js" defer></script>
+</head>
+<body>
+<a id="skip-library" class="skip" href="#shelves">Skip to books</a>
+<main id="library">
+  <header class="masthead"><span class="seal" aria-hidden="true">✦</span><p class="eyebrow">Your private reading room</p><h1>The Mythic Library</h1><p class="intro">A few good books.<br>Room to stay a while.</p></header>
+  <nav class="library-views" aria-label="Library view">
+    <button id="view-reading" type="button" aria-pressed="true" aria-controls="reading-shelf-panel">Read now</button>
+    <button id="view-collected" type="button" aria-pressed="false" aria-controls="collected-panel">All collected works</button>
+  </nav>
+  <section id="reading-shelf-panel" class="browse" aria-label="Your books">
+    <aside id="resume" hidden></aside>
+    <div class="shelf-heading"><h2>On the shelf</h2><span id="edition-count"></span></div>
+    <section id="shelves" aria-label="Book shelves" tabindex="-1"></section>
+    <p id="catalog-status" role="status"></p>
+  </section>
+  <section id="collected-panel" class="browse collected" aria-labelledby="collected-heading" hidden>
+    <div class="shelf-heading"><h2 id="collected-heading">All collected works</h2></div>
+    <p id="collection-scope" class="collection-intro">The main collection register: 132 original catalog entries and three Plato entries. It includes held texts and planned works with no reading text. Only reviewed reading editions have a Read button.</p>
+    <p id="collection-scope-note" class="collection-intro">The separate esoterica register is available in the Register selector. Its overlapping entries are not added to this count.</p>
+    <p id="collection-summary" class="collection-summary" role="status" aria-live="polite"></p>
+    <div class="collection-register"><label for="collection-register-filter">Register<select id="collection-register-filter"><option value="main">Main collection</option><option value="esoterica">Esoterica shelf register</option></select></label></div>
+    <div class="collection-controls">
+      <label class="collection-search-label" for="collection-search">Find a work<input id="collection-search" type="search" placeholder="Title, author or tradition" autocomplete="off"></label>
+      <label for="collection-status-filter">Source status<select id="collection-status-filter"><option value="all">All statuses</option><option value="readable">Readable now</option><option value="needs-source-review">Needs source review</option><option value="quarantined">Quarantined source</option><option value="missing">Source missing</option></select></label>
+      <label for="collection-tradition-filter">Tradition<select id="collection-tradition-filter"><option value="all">All traditions</option></select></label>
+    </div>
+    <p id="collection-load-status" class="collection-load-status" role="status" aria-live="polite"></p>
+    <button id="collection-retry" class="collection-action" type="button" hidden>Try loading again</button>
+    <div id="collection-results" class="collection-results" aria-label="Collected works"></div>
+  </section>
+  <footer>Private to you through ChatGPT sign-in.<br>Your place is saved in this browser. No analytics.</footer>
+</main>
+<section id="reader" hidden aria-label="Book reader">
+  <header class="reader-toolbar">
+    <button id="back" type="button" aria-label="Return to shelves">← <span>Shelves</span></button>
+    <span id="reader-short-title"></span>
+    <button id="show-contents" type="button">Contents</button>
+    <button id="show-settings" type="button" aria-label="Reading appearance">Text</button>
+  </header>
+  <div id="reading-scroll" tabindex="0" aria-label="Current passage">
+    <article class="reading-page">
+      <div class="page-heading"><p id="reading-context"></p><h1 id="reader-heading" tabindex="-1"></h1></div>
+      <p id="loading" role="status"></p><div id="book-text"></div>
+      <div id="section-end" hidden><span aria-hidden="true">❧</span><p id="end-label"></p></div>
+    </article>
+  </div>
+  <footer class="reader-bottom">
+    <button id="previous" type="button">← Previous</button>
+    <div class="page-indicator"><span id="page-progress" aria-live="polite"></span><span id="page-location"></span></div>
+    <button id="next" type="button">Next →</button>
+  </footer>
+</section>
+<dialog id="contents-dialog" aria-labelledby="contents-title">
+  <div class="dialog-header"><h2 id="contents-title">Contents</h2><button type="button" id="close-contents" aria-label="Close contents">Close</button></div>
+  <p id="contents-book"></p><button id="start-book" class="wide-button" type="button">Start at the beginning</button>
+  <div id="primary-contents"></div>
+  <details class="supplementary"><summary>Introduction &amp; other material</summary><div id="supplementary-contents"></div></details>
+  <details class="edition"><summary>About this edition &amp; source</summary><dl id="edition-details"></dl><p class="fine-print">Passages follow the source’s paragraphs and verse. Long paragraphs may continue across passages at sentence boundaries. The original text is unchanged.</p></details>
+</dialog>
+<dialog id="settings-dialog" aria-labelledby="settings-title">
+  <div class="dialog-header"><h2 id="settings-title">Appearance</h2><button type="button" id="close-settings" aria-label="Close reading appearance">Close</button></div>
+  <div class="setting-row"><span>Text size</span><div><button id="smaller" aria-label="Smaller text" type="button">Smaller</button><output id="font-size"></output><button id="larger" aria-label="Larger text" type="button">Larger</button></div></div>
+  <fieldset><legend>Page colour</legend><div class="theme-options"><button id="theme-paper" type="button">Paper</button><button id="theme-night" type="button">Night</button></div></fieldset>
+  <p id="storage-status" class="fine-print" role="status"></p>
+</dialog>
+</body></html>

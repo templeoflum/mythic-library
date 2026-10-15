@@ -1,0 +1,2607 @@
+{
+  "schema_version": 1,
+  "title": "All collected library entries",
+  "entries": [
+    {
+      "id": "plato-republic",
+      "original_work_id": "plato-republic",
+      "title": "Republic",
+      "original_catalog_title": null,
+      "tradition": "philosophy",
+      "status": "readable",
+      "reader_id": "plato-republic",
+      "author": "Plato",
+      "edition": "Benjamin Jowett translation · Project Gutenberg 1497",
+      "source_note": "Complete Gutenberg replacement text, including its original notices. This is Jowett, not Cooper 1997.",
+      "aliases": [
+        "plato-republic"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/1497",
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "plato-symposium",
+      "original_work_id": "plato-symposium",
+      "title": "Symposium",
+      "original_catalog_title": null,
+      "tradition": "philosophy",
+      "status": "readable",
+      "reader_id": "plato-symposium",
+      "author": "Plato",
+      "edition": "Benjamin Jowett translation · Project Gutenberg 1600",
+      "source_note": "Complete Gutenberg replacement text, including its original notices. This is Jowett, not Cooper 1997.",
+      "aliases": [
+        "plato-symposium"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/1600",
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "plato-apology",
+      "original_work_id": "plato-apology",
+      "title": "Apology",
+      "original_catalog_title": null,
+      "tradition": "philosophy",
+      "status": "readable",
+      "reader_id": "plato-apology",
+      "author": "Plato",
+      "edition": "Benjamin Jowett translation · Project Gutenberg 1656",
+      "source_note": "Complete Gutenberg replacement text, including its original notices. This is Jowett, not Cooper 1997.",
+      "aliases": [
+        "plato-apology"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/1656",
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "anansi-tales",
+      "original_work_id": "anansi-tales",
+      "title": "Jamaica Anansi stories",
+      "original_catalog_title": "Anansi Tales",
+      "tradition": "african",
+      "status": "readable",
+      "reader_id": "anansi-tales",
+      "author": "Martha Warren Beckwith",
+      "edition": "Jamaica Anansi Stories (1924) · Project Gutenberg 72735",
+      "source_note": "Verified complete collected edition. Replaces the rejected History of Sulu mapping. The original Gutenberg file, with license and notices, is available below.",
+      "aliases": [
+        "anansi-tales",
+        "Anansi Tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/72735",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "eskimo-folk-tales",
+      "original_work_id": "eskimo-folk-tales",
+      "title": "Eskimo Folk-Tales",
+      "original_catalog_title": "Eskimo Folk-Tales",
+      "tradition": "Greenland Inuit",
+      "status": "readable",
+      "reader_id": "eskimo-folk-tales",
+      "author": "Traditional Greenlandic narrators; collected by Knud Rasmussen",
+      "edition": "London, Copenhagen and Christiania: Gyldendal, 1921 · Project Gutenberg 28932",
+      "source_note": "",
+      "aliases": [
+        "eskimo-folk-tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/28932",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "legends-of-maui",
+      "original_work_id": "legends-of-maui",
+      "title": "Legends of Ma-ui—a demi god of Polynesia, and of his mother Hina",
+      "original_catalog_title": "Legends of Maui - A Demi-God of Polynesia",
+      "tradition": "Hawaiian and Polynesian",
+      "status": "readable",
+      "reader_id": "legends-of-maui",
+      "author": "W. D. Westervelt",
+      "edition": "Honolulu: The Hawaiian Gazette Co., Ltd., 1910 · Project Gutenberg 32601",
+      "source_note": "",
+      "aliases": [
+        "legends-of-maui",
+        "Legends of Maui - A Demi-God of Polynesia"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/32601",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "laos-folk-lore-of-farther-india",
+      "original_work_id": "laos-folk-lore-of-farther-india",
+      "title": "Laos Folk-Lore of Farther India",
+      "original_catalog_title": "Laos Folk-Lore of Farther India",
+      "tradition": "Lao / northern Siam",
+      "status": "readable",
+      "reader_id": "laos-folk-lore-of-farther-india",
+      "author": "Katherine Neville Fleeson",
+      "edition": "New York, Chicago and Toronto: Fleming H. Revell Company, copyright 1899 · Project Gutenberg 35564",
+      "source_note": "",
+      "aliases": [
+        "laos-folk-lore-of-farther-india"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/35564",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "volsunga-saga",
+      "original_work_id": "volsunga-saga",
+      "title": "The Story of the Volsungs (Volsunga Saga); with Excerpts from the Poetic Edda",
+      "original_catalog_title": "Völsunga saga",
+      "tradition": "Norse / Icelandic",
+      "status": "readable",
+      "reader_id": "volsunga-saga",
+      "author": "Anonymous",
+      "edition": "Project Gutenberg text based on The Story of the Volsungs, Walter Scott Press, London, 1888; introduction by H. Halliday Sparling · Project Gutenberg 1152",
+      "source_note": "",
+      "aliases": [
+        "volsunga-saga",
+        "Völsunga saga"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/1152",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "mississippi-valley-great-lakes",
+      "original_work_id": "myths-and-legends-of-the-mississippi-valley-and-th",
+      "title": "Myths and Legends of the Mississippi Valley and the Great Lakes",
+      "original_catalog_title": "Myths and Legends of the Mississippi Valley and the Great Lakes",
+      "tradition": "Multiple Native American traditions",
+      "status": "readable",
+      "reader_id": "mississippi-valley-great-lakes",
+      "author": "Katharine Berry Judson",
+      "edition": "Chicago: A. C. McClurg & Co., 1914; published August 1914 · Project Gutenberg 44935",
+      "source_note": "",
+      "aliases": [
+        "myths-and-legends-of-the-mississippi-valley-and-th"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/44935",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_work_renamed_id"
+    },
+    {
+      "id": "legends-myths-hawaii",
+      "original_work_id": "the-legends-and-myths-of-hawaii",
+      "title": "The Legends and Myths of Hawaii: The fables and folk-lore of a strange people",
+      "original_catalog_title": "The Legends and Myths of Hawaii",
+      "tradition": "Hawaiian",
+      "status": "readable",
+      "reader_id": "legends-myths-hawaii",
+      "author": "David Kalakaua",
+      "edition": "New York: Charles L. Webster & Company, 1888; original copyright notice 1887 · Project Gutenberg 56597",
+      "source_note": "",
+      "aliases": [
+        "the-legends-and-myths-of-hawaii",
+        "The Legends and Myths of Hawaii"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/56597",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_work_renamed_id"
+    },
+    {
+      "id": "south-african-folk-tales",
+      "original_work_id": "south-african-folk-tales",
+      "title": "South-African Folk-Tales",
+      "original_catalog_title": "South-African Folk-Tales",
+      "tradition": "Southern African traditions",
+      "status": "readable",
+      "reader_id": "south-african-folk-tales",
+      "author": "James A. Honey (Honeÿ on the title page)",
+      "edition": "New York: The Baker & Taylor Company, 1910; published November 1910 · Project Gutenberg 38339",
+      "source_note": "",
+      "aliases": [
+        "south-african-folk-tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/38339",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "zanzibar-tales",
+      "original_work_id": "zanzibar-tales",
+      "title": "Zanzibar Tales: Told by Natives of the East Coast of Africa",
+      "original_catalog_title": "Zanzibar Tales",
+      "tradition": "Swahili / East African collection",
+      "status": "readable",
+      "reader_id": "zanzibar-tales",
+      "author": "George W. Bateman",
+      "edition": "Chicago: A. C. McClurg & Co., 1901 · Project Gutenberg 37472",
+      "source_note": "",
+      "aliases": [
+        "zanzibar-tales",
+        "Zanzibar Tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/37472",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "kaffir-xhosa-folk-lore",
+      "original_work_id": "kaffir-xhosa-folk-lore",
+      "title": "Xhosa folk-lore (Theal, 1886)",
+      "original_catalog_title": "Kaffir (Xhosa) Folk-Lore",
+      "tradition": "Predominantly Xhosa; includes a Barolong/Sechuana version",
+      "status": "readable",
+      "reader_id": "kaffir-xhosa-folk-lore",
+      "author": "George McCall Theal",
+      "edition": "Second edition. London: Swan Sonnenschein, Le Bas & Lowrey, 1886 · Project Gutenberg 71335",
+      "source_note": "",
+      "aliases": [
+        "kaffir-xhosa-folk-lore",
+        "Kaffir (Xhosa) Folk-Lore"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/71335",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "ikom-folk-stories-from-southern-nigeria",
+      "original_work_id": "ikom-folk-stories-from-southern-nigeria",
+      "title": "Ikom folk stories from Southern Nigeria",
+      "original_catalog_title": "Ikom Folk Stories from Southern Nigeria",
+      "tradition": "african",
+      "status": "readable",
+      "reader_id": "ikom-folk-stories-from-southern-nigeria",
+      "author": "Elphinstone Dayrell",
+      "edition": "Royal Anthropological Institute, Occasional Papers no. 3 · 1913 · Project Gutenberg 70959",
+      "source_note": "Verified 1913 Ikom collection: 33 numbered stories and an unnumbered Latin tale. Distinct from Dayrell’s 1910 Folk Stories from Southern Nigeria.",
+      "aliases": [
+        "ikom-folk-stories-from-southern-nigeria",
+        "Ikom Folk Stories from Southern Nigeria"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/70959",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "yoruba-legends",
+      "original_work_id": "yoruba-legends",
+      "title": "Yoruba Legends",
+      "original_catalog_title": "Yoruba Legends",
+      "tradition": "african",
+      "status": "readable",
+      "reader_id": "yoruba-legends",
+      "author": "M. I. Ogumefu, B.A.",
+      "edition": "The Sheldon Press, London · 1929 · derived scan-collated transcription",
+      "source_note": "Forty printed narratives independently scan-collated, with four unresolved readings explicitly marked.",
+      "aliases": [
+        "yoruba-legends"
+      ],
+      "source_url": "https://archive.org/details/in.ernet.dli.2015.54438",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "jataka-tales-babbitt",
+      "original_work_id": "jātaka-tales",
+      "title": "Jataka Tales",
+      "original_catalog_title": "Jātaka Tales",
+      "tradition": "Indian Buddhist tales / English children’s retelling",
+      "status": "readable",
+      "reader_id": "jataka-tales-babbitt",
+      "author": "Ellen C. Babbitt",
+      "edition": "New York: The Century Co., September 1912 · Project Gutenberg 62514",
+      "source_note": "A specific Jataka selection by Ellen C. Babbitt is readable. This is not the complete Jataka corpus. ",
+      "aliases": [
+        "jātaka-tales",
+        "Jātaka Tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/62514",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "specific_selected_edition_of_broad_work"
+    },
+    {
+      "id": "lilac-fairy-book",
+      "original_work_id": "andrew-langs-fairy-books",
+      "title": "The Lilac Fairy Book",
+      "original_catalog_title": "Andrew Lang's Fairy Books",
+      "tradition": "International fairy tales / English translations and adaptations",
+      "status": "readable",
+      "reader_id": "lilac-fairy-book",
+      "author": "Andrew Lang",
+      "edition": "New York: Longmans, Green, and Co., 1910 · Project Gutenberg 28096",
+      "source_note": "One collected volume is readable. This does not represent the complete Andrew Lang Fairy Books series. ",
+      "aliases": [
+        "andrew-langs-fairy-books",
+        "Andrew Lang's Fairy Books"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/28096",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "one_volume_of_multivolume_series"
+    },
+    {
+      "id": "epic-of-gilgamesh",
+      "original_work_id": "epic-of-gilgamesh",
+      "title": "Epic of Gilgamesh",
+      "original_catalog_title": "Epic of Gilgamesh",
+      "tradition": "mesopotamian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "epic-of-gilgamesh"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "enūma-eliš",
+      "original_work_id": "enūma-eliš",
+      "title": "Enūma Eliš",
+      "original_catalog_title": "Enūma Eliš",
+      "tradition": "mesopotamian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "enūma-eliš"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "atra-hasis",
+      "original_work_id": "atra-hasis",
+      "title": "Atra-Hasis",
+      "original_catalog_title": "Atra-Hasis",
+      "tradition": "mesopotamian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "atra-hasis"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "baal-cycle",
+      "original_work_id": "baal-cycle",
+      "title": "Baal Cycle",
+      "original_catalog_title": "Baal Cycle",
+      "tradition": "levantine",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "baal-cycle"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "book-of-the-dead",
+      "original_work_id": "book-of-the-dead",
+      "title": "Book of the Dead",
+      "original_catalog_title": "Book of the Dead",
+      "tradition": "egyptian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "book-of-the-dead"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "genesis-kjv",
+      "original_work_id": "genesis-kjv",
+      "title": "Genesis (KJV)",
+      "original_catalog_title": "Genesis (KJV)",
+      "tradition": "hebrew",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Multiple authors",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "genesis-kjv"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-iliad",
+      "original_work_id": "the-iliad",
+      "title": "The Iliad",
+      "original_catalog_title": "The Iliad",
+      "tradition": "greek",
+      "status": "readable",
+      "reader_id": "the-iliad",
+      "author": "Homer",
+      "edition": "Title-page date 1899 · Pope translation · Buckley notes · Flaxman designs · Project Gutenberg 6130",
+      "source_note": "Reviewed reading edition. The title page identifies Homer, translated by Alexander Pope, with notes and introduction by Theodore Alois Buckley, Flaxman’s designs, and the date 1899. The historical filename mentioning Samuel Butler is wrong; the held text and both official formats are Pope’s verse. No publisher or print-scan fidelity is inferred.",
+      "aliases": [
+        "the-iliad",
+        "The Iliad"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/6130",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-odyssey",
+      "original_work_id": "the-odyssey",
+      "title": "The Odyssey",
+      "original_catalog_title": "The Odyssey",
+      "tradition": "greek",
+      "status": "readable",
+      "reader_id": "the-odyssey",
+      "author": "Homer",
+      "edition": "Alexander Pope verse translation · Project Gutenberg 3160, updated July 2, 2026",
+      "source_note": "Reviewed reading edition. The source title page and catalog credit Alexander Pope as translator. The introduction is signed Theodore Alois Buckley. Its discussion of other translations does not make them this edition’s translators. The exact print exemplar and publication date are not established by the supplied source.",
+      "aliases": [
+        "the-odyssey",
+        "The Odyssey"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/3160",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "theogony",
+      "original_work_id": "theogony",
+      "title": "Theogony",
+      "original_catalog_title": "Theogony",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Hesiod",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "theogony"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "aesops-fables",
+      "original_work_id": "aesops-fables",
+      "title": "Aesop's Fables",
+      "original_catalog_title": "Aesop's Fables",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Aesop",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "aesops-fables"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "rigveda",
+      "original_work_id": "rigveda",
+      "title": "Rigveda",
+      "original_catalog_title": "Rigveda",
+      "tradition": "indian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Multiple authors",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "rigveda"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "rāmāyaṇa",
+      "original_work_id": "rāmāyaṇa",
+      "title": "Rāmāyaṇa",
+      "original_catalog_title": "Rāmāyaṇa",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Vālmīki",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "rāmāyaṇa"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "mahābhārata",
+      "original_work_id": "mahābhārata",
+      "title": "Mahābhārata",
+      "original_catalog_title": "Mahābhārata",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Vyāsa",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "mahābhārata"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "pañchatantra",
+      "original_work_id": "pañchatantra",
+      "title": "The Panchatantra",
+      "original_catalog_title": "Pañchatantra",
+      "tradition": "indian",
+      "status": "readable",
+      "reader_id": "panchatantra-ryder-shreevatsa",
+      "author": "Traditional; attributed to Vishnusharman",
+      "edition": "Arthur W. Ryder, 1925 translation · R. Shreevatsa’s 2010 digital transcription",
+      "source_note": "Reviewed reading edition. Complete five-book English digital transcription of Ryder’s 1925 translation, based on Purnabhadra’s recension. All 869 preformatted verse and attribution blocks are retained. The source’s 2010 editorial and rights notices remain distinguishable from Ryder’s historical introduction. The historical wrong-source file remains quarantined.",
+      "aliases": [
+        "pañchatantra",
+        "Pañchatantra",
+        "The Panchatantra",
+        "panchatantra-ryder-shreevatsa"
+      ],
+      "source_url": "https://shreevatsa.net/ryder/old/dfnp/2009-restart/ryder.html",
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "specific_reviewed_edition"
+    },
+    {
+      "id": "poetic-edda",
+      "original_work_id": "poetic-edda",
+      "title": "Poetic Edda",
+      "original_catalog_title": "Poetic Edda",
+      "tradition": "norse",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "poetic-edda"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "prose-edda",
+      "original_work_id": "prose-edda",
+      "title": "Prose Edda",
+      "original_catalog_title": "Prose Edda",
+      "tradition": "norse",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Snorri Sturluson",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "prose-edda"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "beowulf",
+      "original_work_id": "beowulf",
+      "title": "Beowulf",
+      "original_catalog_title": "Beowulf",
+      "tradition": "norse",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "beowulf"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-mabinogion",
+      "original_work_id": "the-mabinogion",
+      "title": "The Mabinogion",
+      "original_catalog_title": "The Mabinogion",
+      "tradition": "celtic",
+      "status": "readable",
+      "reader_id": "the-mabinogion",
+      "author": "Anonymous Welsh storytellers",
+      "edition": "Guest translation · Project Gutenberg 5160 · digital text updated 4 October 2021 · print impression unspecified",
+      "source_note": "Reviewed reading edition. Complete twelve-tale Gutenberg 5160 digital edition of Lady Charlotte Guest’s English translation, including Taliesin, introduction and footnotes. Exact print impression unspecified; historical illustrations are absent from the supplied digital edition.",
+      "aliases": [
+        "the-mabinogion",
+        "The Mabinogion"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/5160",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "táin-bó-cúailnge",
+      "original_work_id": "táin-bó-cúailnge",
+      "title": "Táin Bó Cúailnge",
+      "original_catalog_title": "Táin Bó Cúailnge",
+      "tradition": "celtic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "táin-bó-cúailnge"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "one-thousand-and-one-nights",
+      "original_work_id": "one-thousand-and-one-nights",
+      "title": "One Thousand and One Nights",
+      "original_catalog_title": "One Thousand and One Nights",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Various",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "one-thousand-and-one-nights"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "shāhnāmeh",
+      "original_work_id": "shāhnāmeh",
+      "title": "Shāhnāmeh",
+      "original_catalog_title": "Shāhnāmeh",
+      "tradition": "persian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Ferdowsi",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "shāhnāmeh"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "book-of-dede-korkut",
+      "original_work_id": "book-of-dede-korkut",
+      "title": "Book of Dede Korkut",
+      "original_catalog_title": "Book of Dede Korkut",
+      "tradition": "turkic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "book-of-dede-korkut"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "epic-of-manas",
+      "original_work_id": "epic-of-manas",
+      "title": "Epic of Manas",
+      "original_catalog_title": "Epic of Manas",
+      "tradition": "turkic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "epic-of-manas"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "epic-of-king-gesar",
+      "original_work_id": "epic-of-king-gesar",
+      "title": "Epic of King Gesar",
+      "original_catalog_title": "Epic of King Gesar",
+      "tradition": "tibetan",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "epic-of-king-gesar"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "journey-to-the-west",
+      "original_work_id": "journey-to-the-west",
+      "title": "Journey to the West",
+      "original_catalog_title": "Journey to the West",
+      "tradition": "chinese",
+      "status": "quarantined",
+      "reader_id": null,
+      "author": "Wu Cheng'en",
+      "edition": null,
+      "source_note": "Historical source is quarantined. A correct reviewed reading edition is not yet linked.",
+      "aliases": [
+        "journey-to-the-west"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "fēngshén-yǎnyì",
+      "original_work_id": "fēngshén-yǎnyì",
+      "title": "Fēngshén Yǎnyì",
+      "original_catalog_title": "Fēngshén Yǎnyì",
+      "tradition": "chinese",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Xu Zhonglin (attrib.)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "fēngshén-yǎnyì"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "kojiki",
+      "original_work_id": "kojiki",
+      "title": "Kojiki",
+      "original_catalog_title": "Kojiki",
+      "tradition": "japanese",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Ōno Yasumaro",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "kojiki"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "popol-vuh",
+      "original_work_id": "popol-vuh",
+      "title": "Popol Vuh",
+      "original_catalog_title": "Popol Vuh",
+      "tradition": "mesoamerican",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "popol-vuh"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "epic-of-sundiata",
+      "original_work_id": "epic-of-sundiata",
+      "title": "Epic of Sundiata",
+      "original_catalog_title": "Epic of Sundiata",
+      "tradition": "african",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Oral tradition",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "epic-of-sundiata"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "le-morte-darthur",
+      "original_work_id": "le-morte-darthur",
+      "title": "Le Morte d'Arthur",
+      "original_catalog_title": "Le Morte d'Arthur",
+      "tradition": "european",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Sir Thomas Malory",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "le-morte-darthur"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "divine-comedy",
+      "original_work_id": "divine-comedy",
+      "title": "Divine Comedy",
+      "original_catalog_title": "Divine Comedy",
+      "tradition": "roman",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Dante Alighieri",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "divine-comedy"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "paradise-lost",
+      "original_work_id": "paradise-lost",
+      "title": "Paradise Lost",
+      "original_catalog_title": "Paradise Lost",
+      "tradition": "european",
+      "status": "readable",
+      "reader_id": "paradise-lost",
+      "author": "John Milton",
+      "edition": "Ten-book original-spelling digital edition · Project Gutenberg 20",
+      "source_note": "Reviewed reading edition. This is John Milton’s ten-book Project Gutenberg 20 digital edition, preserving its original-spelling text. Project Gutenberg explicitly distinguishes it from its substantially different twelve-book edition, number 26. The source does not identify a sufficiently specific print exemplar to claim scan-collated fidelity or an exact print imprint.",
+      "aliases": [
+        "paradise-lost",
+        "Paradise Lost"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/20",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "grimms-fairy-tales",
+      "original_work_id": "grimms-fairy-tales",
+      "title": "Household Tales by Brothers Grimm",
+      "original_catalog_title": "Grimms' Fairy Tales",
+      "tradition": "germanic",
+      "status": "readable",
+      "reader_id": "grimms-fairy-tales",
+      "author": "Jacob Grimm and Wilhelm Grimm",
+      "edition": "Margaret Hunt translation · Project Gutenberg 5314 · updated 1 March 2022 · print impression unspecified",
+      "source_note": "Reviewed reading edition. Complete Gutenberg 5314 digital edition of Margaret Hunt’s English translation: 200 numbered Household Tales plus tale 151* and 10 Children’s Legends, with source contents and verse preserved. Exact print impression/year unspecified; no scholarly print notes or historical illustrations are present.",
+      "aliases": [
+        "grimms-fairy-tales",
+        "Grimms' Fairy Tales",
+        "Household Tales by Brothers Grimm"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/5314",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "mother-goose-tales",
+      "original_work_id": "mother-goose-tales",
+      "title": "Mother Goose Tales",
+      "original_catalog_title": "Mother Goose Tales",
+      "tradition": "european",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Charles Perrault",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "mother-goose-tales"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "bulfinchs-mythology",
+      "original_work_id": "bulfinchs-mythology",
+      "title": "Bulfinch's Mythology",
+      "original_catalog_title": "Bulfinch's Mythology",
+      "tradition": "anthology",
+      "status": "readable",
+      "reader_id": "bulfinchs-mythology",
+      "author": "Thomas Bulfinch",
+      "edition": "Expanded combined edition · Project Gutenberg 4928 · digital text updated 28 December 2020 · print impression unspecified",
+      "source_note": "Reviewed reading edition. Complete expanded Gutenberg 4928 combined edition of The Age of Fable, The Age of Chivalry and Legends of Charlemagne, with publisher-acknowledged additions, 107 contents-listed reading units and full glossary. Exact print impression and later editors unspecified.",
+      "aliases": [
+        "bulfinchs-mythology",
+        "Bulfinch's Mythology"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/4928",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-golden-bough",
+      "original_work_id": "the-golden-bough",
+      "title": "The Golden Bough",
+      "original_catalog_title": "The Golden Bough",
+      "tradition": "celtic",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "James G. Frazer",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "the-golden-bough"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "joseph-jacobs-fairy-tales",
+      "original_work_id": "joseph-jacobs-fairy-tales",
+      "title": "Joseph Jacobs' Fairy Tales",
+      "original_catalog_title": "Joseph Jacobs' Fairy Tales",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Joseph Jacobs",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "joseph-jacobs-fairy-tales"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "russian-fairy-tales",
+      "original_work_id": "russian-fairy-tales",
+      "title": "Russian Fairy Tales",
+      "original_catalog_title": "Russian Fairy Tales",
+      "tradition": "european",
+      "status": "readable",
+      "reader_id": "russian-fairy-tales",
+      "author": "W. R. S. Ralston",
+      "edition": "New York: Hurst & Co., [aft. 1872] · Project Gutenberg 22373",
+      "source_note": "Reviewed reading edition. Complete Project Gutenberg edition of Russian Fairy Tales: A Choice Collection of Muscovite Folk-lore, with fifty-one separately headed tales, Ralston’s discussions and source notes, original index and digital-transcription notices. The undated Hurst title page is cataloged [aft. 1872].",
+      "aliases": [
+        "russian-fairy-tales",
+        "Russian Fairy Tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/22373",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "kalevala",
+      "original_work_id": "kalevala",
+      "title": "Kalevala",
+      "original_catalog_title": "Kalevala",
+      "tradition": "european",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Elias Lönnrot",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "kalevala"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "west-african-folk-tales",
+      "original_work_id": "west-african-folk-tales",
+      "title": "West African Folk-Tales",
+      "original_catalog_title": "West African Folk-Tales",
+      "tradition": "african",
+      "status": "missing",
+      "reader_id": null,
+      "author": "W.H. Barker & Cecilia Sinclair",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "west-african-folk-tales"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "myths-and-legends-of-the-bantu",
+      "original_work_id": "myths-and-legends-of-the-bantu",
+      "title": "Myths and Legends of the Bantu",
+      "original_catalog_title": "Myths and Legends of the Bantu",
+      "tradition": "african",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Alice Werner",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "myths-and-legends-of-the-bantu"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "tales-of-the-north-american-indians",
+      "original_work_id": "tales-of-the-north-american-indians",
+      "title": "Tales of the North American Indians",
+      "original_catalog_title": "Tales of the North American Indians",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Stith Thompson",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "tales-of-the-north-american-indians"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "myths-of-the-cherokee",
+      "original_work_id": "myths-of-the-cherokee",
+      "title": "Myths of the Cherokee",
+      "original_catalog_title": "Myths of the Cherokee",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "James Mooney",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "myths-of-the-cherokee"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-myths-of-mexico-and-peru",
+      "original_work_id": "the-myths-of-mexico-and-peru",
+      "title": "The Myths of Mexico and Peru",
+      "original_catalog_title": "The Myths of Mexico and Peru",
+      "tradition": "mesoamerican",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Lewis Spence",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "the-myths-of-mexico-and-peru"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "philippine-folk-tales",
+      "original_work_id": "philippine-folk-tales",
+      "title": "Philippine Folk Tales",
+      "original_catalog_title": "Philippine Folk Tales",
+      "tradition": "southeast-asian",
+      "status": "readable",
+      "reader_id": "philippine-folk-tales",
+      "author": "Mabel Cook Cole",
+      "edition": "Chicago: A. C. McClurg & Co., 1916 (published November 1916) · Project Gutenberg 12814",
+      "source_note": "Reviewed reading edition. The 1916 collection compiled and annotated by Mabel Cook Cole, with illustrations from photographs by Fay-Cooper Cole. All 61 tales, the preface, five group introductions, pronunciation guide and 165 notes are retained in the original Gutenberg TXT. The intact illustrated HTML ZIP preserves additional title/copyright matter, photographs, captions and richer pronunciation notation omitted or simplified in TXT. Historical labels and commentary remain source claims.",
+      "aliases": [
+        "philippine-folk-tales",
+        "Philippine Folk Tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/12814",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "malay-magic",
+      "original_work_id": "malay-magic",
+      "title": "Malay Magic",
+      "original_catalog_title": "Malay Magic",
+      "tradition": "southeast-asian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Walter W. Skeat",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "malay-magic"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "polynesian-mythology",
+      "original_work_id": "polynesian-mythology",
+      "title": "Polynesian Mythology",
+      "original_catalog_title": "Polynesian Mythology",
+      "tradition": "polynesian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Sir George Grey",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "polynesian-mythology"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-pilgrims-progress",
+      "original_work_id": "the-pilgrims-progress",
+      "title": "The Pilgrim's Progress",
+      "original_catalog_title": "The Pilgrim's Progress",
+      "tradition": "european",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "John Bunyan",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "the-pilgrims-progress"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "the-conference-of-the-birds",
+      "original_work_id": "the-conference-of-the-birds",
+      "title": "The Conference of the Birds",
+      "original_catalog_title": "The Conference of the Birds",
+      "tradition": "persian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Farīd ud-Dīn Attar",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "the-conference-of-the-birds"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "gnostic-gospels",
+      "original_work_id": "gnostic-gospels",
+      "title": "Gnostic Gospels",
+      "original_catalog_title": "Gnostic Gospels",
+      "tradition": "egyptian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Various",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "gnostic-gospels"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "inannas-descent",
+      "original_work_id": "inannas-descent",
+      "title": "Inanna's Descent to the Underworld",
+      "original_catalog_title": "Inanna's Descent to the Underworld",
+      "tradition": "mesopotamian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "inannas-descent"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "metamorphoses",
+      "original_work_id": "metamorphoses",
+      "title": "Metamorphoses",
+      "original_catalog_title": "Metamorphoses",
+      "tradition": "roman",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Ovid",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "metamorphoses"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "homeric-hymns",
+      "original_work_id": "homeric-hymns",
+      "title": "Homeric Hymns",
+      "original_catalog_title": "Homeric Hymns",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous (attributed to Homer)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "homeric-hymns"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "aeneid",
+      "original_work_id": "aeneid",
+      "title": "Aeneid",
+      "original_catalog_title": "Aeneid",
+      "tradition": "roman",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Virgil",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "aeneid"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "argonautica",
+      "original_work_id": "argonautica",
+      "title": "Argonautica",
+      "original_catalog_title": "Argonautica",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Apollonius of Rhodes",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "argonautica"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "descent-of-ishtar",
+      "original_work_id": "descent-of-ishtar",
+      "title": "Descent of Ishtar",
+      "original_catalog_title": "Descent of Ishtar",
+      "tradition": "mesopotamian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "descent-of-ishtar"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "orphic-hymns",
+      "original_work_id": "orphic-hymns",
+      "title": "Orphic Hymns",
+      "original_catalog_title": "Orphic Hymns",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous (Orphic tradition)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "orphic-hymns"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "apu-ollantay",
+      "original_work_id": "apu-ollantay",
+      "title": "Apu Ollantay",
+      "original_catalog_title": "Apu Ollantay",
+      "tradition": "south-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "apu-ollantay"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "guarani-creation-myths",
+      "original_work_id": "guarani-creation-myths",
+      "title": "Guarani Creation Myths",
+      "original_catalog_title": "Guarani Creation Myths",
+      "tradition": "south-american",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Oral tradition",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "guarani-creation-myths"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "pre-columbian-myths",
+      "original_work_id": "pre-columbian-myths",
+      "title": "Pre-Columbian America: Myths and Legends",
+      "original_catalog_title": "Pre-Columbian America: Myths and Legends",
+      "tradition": "anthology",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Donald A. Mackenzie",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "pre-columbian-myths"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "samguk-yusa",
+      "original_work_id": "samguk-yusa",
+      "title": "Samguk Yusa (Memorabilia of the Three Kingdoms)",
+      "original_catalog_title": "Samguk Yusa (Memorabilia of the Three Kingdoms)",
+      "tradition": "korean",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Il-yeon",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "samguk-yusa"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "byliny-russian-epics",
+      "original_work_id": "byliny-russian-epics",
+      "title": "Byliny (Russian Epic Songs)",
+      "original_catalog_title": "Byliny (Russian Epic Songs)",
+      "tradition": "slavic",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Oral tradition",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "byliny-russian-epics"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "myths-north-american-indians",
+      "original_work_id": "myths-north-american-indians",
+      "title": "The Myths of the North American Indians",
+      "original_catalog_title": "The Myths of the North American Indians",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Lewis Spence",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "myths-north-american-indians"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "introduction-to-mythology",
+      "original_work_id": "introduction-to-mythology",
+      "title": "An Introduction to Mythology",
+      "original_catalog_title": "An Introduction to Mythology",
+      "tradition": "anthology",
+      "status": "readable",
+      "reader_id": "introduction-to-mythology",
+      "author": "Lewis Spence",
+      "edition": "New York: Moffat Yard and Company, 1921 · Project Gutenberg 45048 · updated 24 October 2024",
+      "source_note": "Reviewed reading edition. New York: Moffat Yard and Company, 1921. Complete Gutenberg 45048 text with preface, 11 chapters, 112 notes and index. Historical theories and source-format punctuation/index variants are preserved; intact HTML archive included.",
+      "aliases": [
+        "introduction-to-mythology",
+        "An Introduction to Mythology"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/45048",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "australian-legendary-tales",
+      "original_work_id": "australian-legendary-tales",
+      "title": "Australian Legendary Tales",
+      "original_catalog_title": "Australian Legendary Tales",
+      "tradition": "australian-aboriginal",
+      "status": "readable",
+      "reader_id": "australian-legendary-tales",
+      "author": "K. Langloh Parker",
+      "edition": "Project Gutenberg 3833 · digital text updated 9 January 2021 · print impression unspecified",
+      "source_note": "Reviewed reading edition. Complete 31-tale Gutenberg 3833 digital edition, collected by K. Langloh Parker, with Andrew Lang’s introduction, original appendix and glossary. Historical illustrations are absent from the Gutenberg files; their complete text-and-cover ZIP is preserved. Exact print impression unspecified.",
+      "aliases": [
+        "australian-legendary-tales",
+        "Australian Legendary Tales"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/3833",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "more-australian-legendary-tales",
+      "original_work_id": "more-australian-legendary-tales",
+      "title": "More Australian Legendary Tales",
+      "original_catalog_title": "More Australian Legendary Tales",
+      "tradition": "australian-aboriginal",
+      "status": "missing",
+      "reader_id": null,
+      "author": "K. Langloh Parker",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "more-australian-legendary-tales"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "oceanic-mythology",
+      "original_work_id": "oceanic-mythology",
+      "title": "Oceanic Mythology (Mythology of All Races Vol. IX)",
+      "original_catalog_title": "Oceanic Mythology (Mythology of All Races Vol. IX)",
+      "tradition": "oceanic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Roland B. Dixon",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "oceanic-mythology"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "secret-history-mongols",
+      "original_work_id": "secret-history-mongols",
+      "title": "The Secret History of the Mongols",
+      "original_catalog_title": "The Secret History of the Mongols",
+      "tradition": "mongol",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "secret-history-mongols"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "siberian-mythology",
+      "original_work_id": "siberian-mythology",
+      "title": "Siberian Mythology (Mythology of All Races Vol. IV)",
+      "original_catalog_title": "Siberian Mythology (Mythology of All Races Vol. IV)",
+      "tradition": "siberian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Uno Holmberg",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "siberian-mythology"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "lithuanian-mythology",
+      "original_work_id": "lithuanian-mythology",
+      "title": "Lithuanian Folk-Lore",
+      "original_catalog_title": "Lithuanian Folk-Lore",
+      "tradition": "baltic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Various",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "lithuanian-mythology"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "shan-hai-jing",
+      "original_work_id": "shan-hai-jing",
+      "title": "Shan Hai Jing (Classic of Mountains and Seas)",
+      "original_catalog_title": "Shan Hai Jing (Classic of Mountains and Seas)",
+      "tradition": "chinese",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "shan-hai-jing"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "pyramid-texts",
+      "original_work_id": "pyramid-texts",
+      "title": "The Pyramid Texts",
+      "original_catalog_title": "The Pyramid Texts",
+      "tradition": "egyptian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "pyramid-texts"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "lebor-gabala",
+      "original_work_id": "lebor-gabala",
+      "title": "Lebor Gabála Érenn (Book of Invasions)",
+      "original_catalog_title": "Lebor Gabála Érenn (Book of Invasions)",
+      "tradition": "celtic",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "lebor-gabala"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "zend-avesta",
+      "original_work_id": "zend-avesta",
+      "title": "Zend Avesta (Sacred Books of the East)",
+      "original_catalog_title": "Zend Avesta (Sacred Books of the East)",
+      "tradition": "zoroastrian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous (Zoroaster attributed)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "zend-avesta"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "legends-of-egyptian-gods",
+      "original_work_id": "legends-of-egyptian-gods",
+      "title": "Legends of the Gods: The Egyptian Texts",
+      "original_catalog_title": "Legends of the Gods: The Egyptian Texts",
+      "tradition": "egyptian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "E.A. Wallis Budge (editor/translator)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "legends-of-egyptian-gods"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "nihongi",
+      "original_work_id": "nihongi",
+      "title": "Nihongi (Chronicles of Japan)",
+      "original_catalog_title": "Nihongi (Chronicles of Japan)",
+      "tradition": "japanese",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Prince Toneri et al.",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "nihongi"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "myths-of-ife",
+      "original_work_id": "myths-of-ife",
+      "title": "Myths of Ife",
+      "original_catalog_title": "Myths of Ife",
+      "tradition": "african",
+      "status": "missing",
+      "reader_id": null,
+      "author": "John Wyndham (collector)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "myths-of-ife"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "yoruba-speaking-peoples",
+      "original_work_id": "yoruba-speaking-peoples",
+      "title": "The Yoruba-Speaking Peoples of the Slave Coast of West Africa",
+      "original_catalog_title": "The Yoruba-Speaking Peoples of the Slave Coast of West Africa",
+      "tradition": "african",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "A.B. Ellis",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "yoruba-speaking-peoples"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "bacchae",
+      "original_work_id": "bacchae",
+      "title": "The Bacchae",
+      "original_catalog_title": "The Bacchae",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Euripides",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "bacchae"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "kogoshui",
+      "original_work_id": "kogoshui",
+      "title": "Kogoshui: Gleanings from Ancient Stories",
+      "original_catalog_title": "Kogoshui: Gleanings from Ancient Stories",
+      "tradition": "japanese",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Imibe no Hironari",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "kogoshui"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "burden-of-isis",
+      "original_work_id": "burden-of-isis",
+      "title": "The Burden of Isis",
+      "original_catalog_title": "The Burden of Isis",
+      "tradition": "egyptian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous (Ancient Egyptian)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "burden-of-isis"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "works-and-days",
+      "original_work_id": "works-and-days",
+      "title": "Works and Days",
+      "original_catalog_title": "Works and Days",
+      "tradition": "greek",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Hesiod",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "works-and-days"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "codex-chimalpopoca",
+      "original_work_id": "codex-chimalpopoca",
+      "title": "Codex Chimalpopoca (History and Mythology of the Aztecs)",
+      "original_catalog_title": "Codex Chimalpopoca (History and Mythology of the Aztecs)",
+      "tradition": "mesoamerican",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous (Nahua)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "codex-chimalpopoca"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "huarochiri-manuscript",
+      "original_work_id": "huarochiri-manuscript",
+      "title": "The Huarochiri Manuscript",
+      "original_catalog_title": "The Huarochiri Manuscript",
+      "tradition": "south-american",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous (Quechua)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "huarochiri-manuscript"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "maui-thousand-tricks",
+      "original_work_id": "maui-thousand-tricks",
+      "title": "Maui of a Thousand Tricks",
+      "original_catalog_title": "Maui of a Thousand Tricks",
+      "tradition": "polynesian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Katharine Luomala",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "maui-thousand-tricks"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "tlingit-myths-texts",
+      "original_work_id": "tlingit-myths-texts",
+      "title": "Tlingit Myths and Texts",
+      "original_catalog_title": "Tlingit Myths and Texts",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "John R. Swanton (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "tlingit-myths-texts"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "navaho-origin-myths",
+      "original_work_id": "navaho-origin-myths",
+      "title": "Origin Myths of the Navaho Indians",
+      "original_catalog_title": "Origin Myths of the Navaho Indians",
+      "tradition": "north-american",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Aileen O'Bryan (collector)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "navaho-origin-myths"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "traditions-of-hopi",
+      "original_work_id": "traditions-of-hopi",
+      "title": "The Traditions of the Hopi",
+      "original_catalog_title": "The Traditions of the Hopi",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "H.R. Voth (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "traditions-of-hopi"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "seneca-myths",
+      "original_work_id": "seneca-myths",
+      "title": "Seneca Indian Myths",
+      "original_catalog_title": "Seneca Indian Myths",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Jeremiah Curtin (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "seneca-myths"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "southeastern-myths-tales",
+      "original_work_id": "southeastern-myths-tales",
+      "title": "Myths and Tales of the Southeastern Indians",
+      "original_catalog_title": "Myths and Tales of the Southeastern Indians",
+      "tradition": "north-american",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "John R. Swanton (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "southeastern-myths-tales"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "polynesian-mythology-grey",
+      "original_work_id": "polynesian-mythology-grey",
+      "title": "Polynesian Mythology (Grey)",
+      "original_catalog_title": "Polynesian Mythology (Grey)",
+      "tradition": "polynesian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Sir George Grey (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "polynesian-mythology-grey"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "hawaiian-legends-gods-ghosts",
+      "original_work_id": "hawaiian-legends-gods-ghosts",
+      "title": "Legends of Gods and Ghosts (Hawaiian Mythology)",
+      "original_catalog_title": "Legends of Gods and Ghosts (Hawaiian Mythology)",
+      "tradition": "polynesian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "W.D. Westervelt (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "hawaiian-legends-gods-ghosts"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "jataka-cowell",
+      "original_work_id": "jataka-cowell",
+      "title": "The Jataka (Cowell Edition - Complete)",
+      "original_catalog_title": "The Jataka (Cowell Edition - Complete)",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous (Buddhist)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "jataka-cowell"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "dhammapada",
+      "original_work_id": "dhammapada",
+      "title": "The Dhammapada",
+      "original_catalog_title": "The Dhammapada",
+      "tradition": "indian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous (Buddhist)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "dhammapada"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "songs-russian-people",
+      "original_work_id": "songs-russian-people",
+      "title": "Songs of the Russian People",
+      "original_catalog_title": "Songs of the Russian People",
+      "tradition": "slavic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "W.R.S. Ralston (collector)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "songs-russian-people"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "sixty-slavonic-folktales",
+      "original_work_id": "sixty-slavonic-folktales",
+      "title": "Sixty Folk-Tales from Exclusively Slavonic Sources",
+      "original_catalog_title": "Sixty Folk-Tales from Exclusively Slavonic Sources",
+      "tradition": "slavic",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "A.H. Wratislaw (collector)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "sixty-slavonic-folktales"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "byliny-hero-tales",
+      "original_work_id": "byliny-hero-tales",
+      "title": "Byliny Book: Hero Tales of Russia",
+      "original_catalog_title": "Byliny Book: Hero Tales of Russia",
+      "tradition": "slavic",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Marion Chilton Harrison (reteller)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "byliny-hero-tales"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "folk-tales-russian",
+      "original_work_id": "folk-tales-russian",
+      "title": "Folk Tales from the Russian",
+      "original_catalog_title": "Folk Tales from the Russian",
+      "tradition": "slavic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Various (collectors)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "folk-tales-russian"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "myths-legends-bantu",
+      "original_work_id": "myths-legends-bantu",
+      "title": "Myths and Legends of the Bantu",
+      "original_catalog_title": "Myths and Legends of the Bantu",
+      "tradition": "african",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Alice Werner",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "myths-legends-bantu"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "treasury-african-folklore",
+      "original_work_id": "treasury-african-folklore",
+      "title": "A Treasury of African Folklore",
+      "original_catalog_title": "A Treasury of African Folklore",
+      "tradition": "african",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Harold Courlander (collector)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "treasury-african-folklore"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "cuchulain-of-muirthemne",
+      "original_work_id": "cuchulain-of-muirthemne",
+      "title": "Cuchulain of Muirthemne",
+      "original_catalog_title": "Cuchulain of Muirthemne",
+      "tradition": "celtic",
+      "status": "quarantined",
+      "reader_id": null,
+      "author": "Lady Augusta Gregory (reteller)",
+      "edition": null,
+      "source_note": "Historical source is quarantined. A correct reviewed reading edition is not yet linked.",
+      "aliases": [
+        "cuchulain-of-muirthemne"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "gods-fighting-men",
+      "original_work_id": "gods-fighting-men",
+      "title": "Gods and Fighting Men",
+      "original_catalog_title": "Gods and Fighting Men",
+      "tradition": "celtic",
+      "status": "readable",
+      "reader_id": "gods-fighting-men",
+      "author": "Lady Gregory",
+      "edition": "1905 date on reproduced title · Project Gutenberg 14465 · digital text updated 28 October 2024",
+      "source_note": "Reviewed reading edition. Complete Gutenberg 14465 digital edition with a reproduced 1905 title: two parts, sixteen books, 88 narrative units, Yeats’s preface and Gregory’s five note sections. Complete HTML archive preserves the Irish Gaelic dedication image and documented format-specific variants.",
+      "aliases": [
+        "gods-fighting-men",
+        "Gods and Fighting Men"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/14465",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "bibliotheca-apollodorus",
+      "original_work_id": "bibliotheca-apollodorus",
+      "title": "The Library (Bibliotheca)",
+      "original_catalog_title": "The Library (Bibliotheca)",
+      "tradition": "greek",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Pseudo-Apollodorus",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "bibliotheca-apollodorus"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "fasti-ovid",
+      "original_work_id": "fasti-ovid",
+      "title": "Fasti",
+      "original_catalog_title": "Fasti",
+      "tradition": "roman",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Ovid",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "fasti-ovid"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "tibetan-book-of-dead-evans",
+      "original_work_id": "tibetan-book-of-dead-evans",
+      "title": "The Tibetan Book of the Dead (Evans-Wentz)",
+      "original_catalog_title": "The Tibetan Book of the Dead (Evans-Wentz)",
+      "tradition": "tibetan",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Padmasambhava (attributed)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "tibetan-book-of-dead-evans"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "tao-te-ching",
+      "original_work_id": "tao-te-ching",
+      "title": "The Tao Teh King, or the Tao and its Characteristics",
+      "original_catalog_title": "Tao Te Ching",
+      "tradition": "chinese",
+      "status": "readable",
+      "reader_id": "tao-te-ching",
+      "author": "Laozi (Lao-Tse)",
+      "edition": "James Legge translation · Project Gutenberg 216 · updated 11 May 2015 · print impression unspecified",
+      "source_note": "Reviewed reading edition. Complete 81-chapter Gutenberg 216 digital edition of James Legge’s translation, with two source parts and source verse preserved. Exact print impression and year are unspecified.",
+      "aliases": [
+        "tao-te-ching",
+        "Tao Te Ching",
+        "The Tao Teh King, or the Tao and its Characteristics"
+      ],
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "i-ching",
+      "original_work_id": "i-ching",
+      "title": "I Ching (Book of Changes)",
+      "original_catalog_title": "I Ching (Book of Changes)",
+      "tradition": "chinese",
+      "status": "quarantined",
+      "reader_id": null,
+      "author": "Anonymous (attributed to Fu Xi, King Wen, Duke of Zhou)",
+      "edition": null,
+      "source_note": "Historical source is quarantined. A correct reviewed reading edition is not yet linked.",
+      "aliases": [
+        "i-ching"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "chuang-tzu",
+      "original_work_id": "chuang-tzu",
+      "title": "Chuang Tzu (Zhuangzi)",
+      "original_catalog_title": "Chuang Tzu (Zhuangzi)",
+      "tradition": "chinese",
+      "status": "quarantined",
+      "reader_id": null,
+      "author": "Zhuang Zhou",
+      "edition": null,
+      "source_note": "Historical source is quarantined. A correct reviewed reading edition is not yet linked.",
+      "aliases": [
+        "chuang-tzu"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": true,
+      "relationship": "same_id"
+    },
+    {
+      "id": "tale-of-genji",
+      "original_work_id": "tale-of-genji",
+      "title": "The Tale of Genji",
+      "original_catalog_title": "The Tale of Genji",
+      "tradition": "japanese",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Murasaki Shikibu",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "tale-of-genji"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "tale-of-heike",
+      "original_work_id": "tale-of-heike",
+      "title": "The Tale of the Heike (Heike Monogatari)",
+      "original_catalog_title": "The Tale of the Heike (Heike Monogatari)",
+      "tradition": "japanese",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Anonymous",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "tale-of-heike"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "melanesians-codrington",
+      "original_work_id": "melanesians-codrington",
+      "title": "The Melanesians: Studies in Their Anthropology and Folk-lore",
+      "original_catalog_title": "The Melanesians: Studies in Their Anthropology and Folk-lore",
+      "tradition": "oceanic",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "R.H. Codrington",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "melanesians-codrington"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "oceanic-mythology-dixon",
+      "original_work_id": "oceanic-mythology-dixon",
+      "title": "Oceanic Mythology",
+      "original_catalog_title": "Oceanic Mythology",
+      "tradition": "oceanic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Roland B. Dixon",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "oceanic-mythology-dixon"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "dede-korkut",
+      "original_work_id": "dede-korkut",
+      "title": "The Book of Dede Korkut",
+      "original_catalog_title": "The Book of Dede Korkut",
+      "tradition": "turkic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous (Oghuz Turkic)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "dede-korkut"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "pacific-island-legends",
+      "original_work_id": "pacific-island-legends",
+      "title": "Pacific Island Legends",
+      "original_catalog_title": "Pacific Island Legends",
+      "tradition": "oceanic",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Bo Flood (collector)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "pacific-island-legends"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "analects-confucius",
+      "original_work_id": "analects-confucius",
+      "title": "The Analects of Confucius",
+      "original_catalog_title": "The Analects of Confucius",
+      "tradition": "chinese",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Confucius (disciples compiled)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "analects-confucius"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "upanishads",
+      "original_work_id": "upanishads",
+      "title": "The Upanishads",
+      "original_catalog_title": "The Upanishads",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Various sages",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "upanishads"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "bhagavad-gita",
+      "original_work_id": "bhagavad-gita",
+      "title": "Bhagavad Gita",
+      "original_catalog_title": "Bhagavad Gita",
+      "tradition": "indian",
+      "status": "needs-source-review",
+      "reader_id": null,
+      "author": "Vyasa (attributed)",
+      "edition": null,
+      "source_note": "Collected text is stored and indexed. Edition, completeness and rights review is pending before a reading link is exposed.",
+      "aliases": [
+        "bhagavad-gita"
+      ],
+      "source_url": null,
+      "held_normalized_text": true,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    },
+    {
+      "id": "coffin-texts",
+      "original_work_id": "coffin-texts",
+      "title": "The Egyptian Coffin Texts",
+      "original_catalog_title": "The Egyptian Coffin Texts",
+      "tradition": "egyptian",
+      "status": "missing",
+      "reader_id": null,
+      "author": "Anonymous (Ancient Egyptian)",
+      "edition": null,
+      "source_note": "Catalog entry retained. No normalized reading text is present in the verified cloud collection.",
+      "aliases": [
+        "coffin-texts"
+      ],
+      "source_url": null,
+      "held_normalized_text": false,
+      "historical_source_quarantined": false,
+      "relationship": "same_id"
+    }
+  ],
+  "summary": {
+    "entries": 135,
+    "original_catalog_works": 132,
+    "readable_editions": 30,
+    "needs_source_review": 65,
+    "quarantined_without_replacement": 4,
+    "missing_normalized_text": 36,
+    "original_work_identities_represented_by_readable_editions": 27
+  },
+  "scope_note": "Catalog entries include held texts and planned works with no normalized text. Readable counts refer to specific reviewed editions. Source cards, aliases and series are not extra readable books."
+}
