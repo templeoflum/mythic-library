@@ -264,6 +264,25 @@ def test_patterns_from_tags_at_or_above_threshold(db):
     ]
 
 
+def test_rerun_without_reset_stops_before_writing(db, monkeypatch, capsys):
+    before_bytes = db.read_bytes()
+    before = dump(db)
+    monkeypatch.setattr(create_db.sys, "argv", ["create_db.py"])
+    with pytest.raises(SystemExit) as exc:
+        create_db.main()
+    assert "--reset" in str(exc.value.code)
+    assert "nothing was written" in str(exc.value.code)
+    assert db.read_bytes() == before_bytes
+    assert dump(db) == before
+
+
+def test_rerun_with_reset_rebuilds_same_rows(db, monkeypatch):
+    before = dump(db)
+    monkeypatch.setattr(create_db.sys, "argv", ["create_db.py", "--reset"])
+    create_db.main()
+    assert dump(db) == before
+
+
 # ---------------------------------------------------------------------------
 # export_explorer_data.py
 # ---------------------------------------------------------------------------
