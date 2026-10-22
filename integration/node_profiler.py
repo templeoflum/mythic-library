@@ -6,8 +6,10 @@ Two independent approaches combined:
   - Node profiles: intersection of arc entity set with condition bin entity set
 """
 import json
+import math
 import sys
 from collections import defaultdict
+from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -49,6 +51,12 @@ ARC_PATTERN_MAPPING = {
 }
 
 MIN_SEGMENTS_PER_TEXT = 6  # Texts must have >= 6 segments for condition binning
+
+
+def round_half_up(value: float, places: int) -> float:
+    """Round a float half up, using its shortest decimal form (0.7525 -> 0.753)."""
+    quantum = Decimal(1).scaleb(-places)
+    return float(Decimal(repr(float(value))).quantize(quantum, rounding=ROUND_HALF_UP))
 
 
 class NodeProfiler:
@@ -145,7 +153,7 @@ class NodeProfiler:
         }
 
         for bin_idx in range(1, n_bins + 1):
-            entities = list(set(bin_entities.get(bin_idx, [])))
+            entities = sorted(set(bin_entities.get(bin_idx, [])))
             coords = self._entities_to_coords(entities)
             profile = self._compute_profile(coords, entities)
             profile["label"] = condition_names.get(bin_idx, f"Bin {bin_idx}")
@@ -180,11 +188,11 @@ class NodeProfiler:
                     all_motif_codes.extend(codes)
                     patterns_used.append(pname)
 
-            all_motif_codes = list(set(all_motif_codes))
+            all_motif_codes = sorted(set(all_motif_codes))
 
             # Get entities from segments tagged with these motifs
             entities = self.unified.library.get_entities_for_motif_codes(all_motif_codes)
-            entities = list(set(entities))
+            entities = sorted(set(entities))
             coords = self._entities_to_coords(entities)
             profile = self._compute_profile(coords, entities)
             profile["label"] = arc_labels.get(arc_code, arc_code)
@@ -221,7 +229,7 @@ class NodeProfiler:
                 codes = self.unified.library.get_pattern_motif_codes(pname)
                 all_motif_codes.extend(codes)
             entities = self.unified.library.get_entities_for_motif_codes(
-                list(set(all_motif_codes))
+                sorted(set(all_motif_codes))
             )
             arc_entity_sets[arc_code] = set(entities)
 
@@ -254,7 +262,7 @@ class NodeProfiler:
             arc_ents = arc_entity_sets.get(arc_code, set())
             cond_ents = bin_entity_sets.get(cond, set())
             intersection = arc_ents & cond_ents
-            intersection_list = list(intersection)
+            intersection_list = sorted(intersection)
 
             coords = self._entities_to_coords(intersection_list)
 
@@ -280,7 +288,7 @@ class NodeProfiler:
                 blended_mean = w_arc * arc_mean + w_cond * cond_mean
 
                 # Use entities from both sets for sample names
-                combined_ents = list(arc_ents | cond_ents)[:10]
+                combined_ents = sorted(arc_ents | cond_ents)[:10]
                 profile = {
                     "mean_coordinates": blended_mean.tolist(),
                     "std_coordinates": [0.0] * len(AXES),
@@ -321,15 +329,17 @@ class NodeProfiler:
                 weight = inst.get("weight", 0.5)
                 primordial_weights[pid].append(weight)
 
-        # Average weights and sort
+        # Average weights and sort. fsum gives the same mean whatever order
+        # the weights arrived in, the mean rounds half up to 3 places, and
+        # equal scores are ordered by primordial id.
         results = []
         for pid, weights in primordial_weights.items():
             results.append({
                 "primordial_id": pid,
-                "mean_weight": round(float(np.mean(weights)), 3),
+                "mean_weight": round_half_up(math.fsum(weights) / len(weights), 3),
                 "count": len(weights),
             })
-        results.sort(key=lambda x: -x["mean_weight"] * x["count"])
+        results.sort(key=lambda x: (-x["mean_weight"] * x["count"], x["primordial_id"]))
         return results[:5]
 
     # ── Output ──

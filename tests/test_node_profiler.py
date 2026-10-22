@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT))
 
 from integration.miroglyph_loader import MiroGlyphLoader  # noqa: E402
 from integration.node_profiler import (  # noqa: E402
-    AXES, MIN_SEGMENTS_PER_TEXT, NodeProfiler)
+    AXES, MIN_SEGMENTS_PER_TEXT, NodeProfiler, round_half_up)
 
 SPEC = ROOT / "miroglyph" / "miroglyph_v4_technical_spec.json"
 
@@ -291,52 +291,113 @@ def test_save_writes_compute_all(profiler, tmp_path):
 
 
 # ---------------------------------------------------------------------------
-# Hash-seed independence of the numbers
+# Byte-stable output across hash seeds
 # ---------------------------------------------------------------------------
+#
+# A wider fixture than the one above: one 6-segment text whose segments
+# mention 15 entities each, so bins and arcs hold more than the 10 names
+# kept in sample_entities, and coordinates vary, so summation order would
+# show in the last bits of the means. Primordial "p:tie-a" and "p:tie-b"
+# get the same score, so their order depends on the tie-break alone.
+
+WIDE = {f"W{seg}_{i}": seg for seg in range(1, 7) for i in range(15)}
+
+
+class WideLibrary(StubLibrary):
+    def get_segments_per_text(self):
+        return {"wide": 6}
+
+    def get_text_segments_ordered(self, text_id):
+        return [{"segment_id": f"wide:{seg}", "ordinal": seg,
+                 "entity_names": [n for n, s in WIDE.items() if s == seg]}
+                for seg in range(1, 7)]
+
+    def get_entities_for_motif_codes(self, codes):
+        names = list(WIDE)
+        if "F81" in codes:
+            return names[::2]
+        if "K0" in codes:
+            return names[1::3]
+        return names[::5]
+
+
+class WideMapper:
+    def get_mapping(self, name):
+        return SimpleNamespace(acp_archetype_id=name) if name in WIDE else None
+
+
+class WideACP:
+    def get_instantiations(self, archetype_id):
+        i = int(archetype_id.split("_")[1])
+        return [{"primordial": "p:tie-b" if i % 2 else "p:tie-a", "weight": 0.5},
+                {"primordial": f"p:{i % 4}", "weight": 0.1 + (i % 7) / 10}]
+
+
+class WideUnified(StubUnified):
+    def __init__(self):
+        super().__init__()
+        self.library = WideLibrary()
+        self.mapper = WideMapper()
+        self.acp = WideACP()
+
+    def get_entity_coordinates(self, name):
+        if name not in WIDE:
+            return None
+        seg, i = WIDE[name], int(name.split("_")[1])
+        return np.array([((seg * 31 + i * 17 + a * 7) % 97) / 97 for a in range(8)])
+
 
 _RUNNER = """
 import json, sys
 sys.path.insert(0, sys.argv[1])
 import test_node_profiler as t
-print(json.dumps(t.NodeProfiler(t.StubUnified()).compute_all()))
+for unified in (t.StubUnified(), t.WideUnified()):
+    print(json.dumps(t.NodeProfiler(unified).compute_all()))
 """
 
 
-def _numbers(node):
-    """Every number in the output, keyed by path. Lists of names become sets."""
-    flat = {}
-
-    def walk(x, path):
-        if isinstance(x, dict):
-            for k, v in x.items():
-                walk(v, f"{path}/{k}")
-        elif isinstance(x, list) and x and all(isinstance(i, str) for i in x):
-            flat[path] = frozenset(x)
-        elif isinstance(x, list):
-            for i, v in enumerate(x):
-                walk(v, f"{path}[{i}]")
-        else:
-            flat[path] = x
-    walk(node, "")
-    return flat
+def _run_with_seed(seed):
+    env = dict(os.environ, PYTHONHASHSEED=seed)
+    done = subprocess.run(
+        [sys.executable, "-c", _RUNNER, str(Path(__file__).parent)],
+        capture_output=True, text=True, env=env, stdin=subprocess.DEVNULL,
+        check=True)
+    # Drop the progress lines; keep the two JSON documents.
+    return [line for line in done.stdout.splitlines() if line.startswith("{")]
 
 
-def test_numbers_do_not_depend_on_hash_seed():
-    """The profiler builds lists from sets, so names can come out in any order.
-    Centroids, counts and weights must not change between hash seeds."""
-    runs = []
-    for seed in ("0", "1", "2"):
-        env = dict(os.environ, PYTHONHASHSEED=seed)
-        done = subprocess.run(
-            [sys.executable, "-c", _RUNNER, str(Path(__file__).parent)],
-            capture_output=True, text=True, env=env, stdin=subprocess.DEVNULL,
-            check=True)
-        runs.append(_numbers(json.loads(done.stdout.splitlines()[-1])))  # after progress lines
-    first = runs[0]
-    for other in runs[1:]:
-        assert other.keys() == first.keys()
-        for key, value in first.items():
-            if isinstance(value, float):
-                assert other[key] == pytest.approx(value, abs=1e-12), key
-            else:
-                assert other[key] == value, key
+def test_output_is_byte_identical_across_hash_seeds():
+    first = _run_with_seed("0")
+    assert len(first) == 2
+    for seed in ("1", "2", "3"):
+        assert _run_with_seed(seed) == first, f"PYTHONHASHSEED={seed}"
+
+
+def test_lists_are_sorted():
+    out = NodeProfiler(WideUnified()).compute_all()
+    for p in list(out["condition_profiles"].values()) + list(out["arc_profiles"].values()):
+        assert p["sample_entities"] == sorted(p["sample_entities"])
+    for p in out["arc_profiles"].values():
+        assert p["motif_codes"] == sorted(p["motif_codes"])
+    for p in out["node_profiles"].values():
+        assert p["sample_entities"] == sorted(p["sample_entities"])
+
+
+def test_primordial_ties_break_by_id():
+    wide = NodeProfiler(WideUnified())
+    names = [f"W1_{i}" for i in range(4)]     # tie-a: i 0, 2; tie-b: i 1, 3
+    ranked = wide._compute_primordials(names)
+    ties = [r["primordial_id"] for r in ranked if r["primordial_id"].startswith("p:tie")]
+    assert ties == ["p:tie-a", "p:tie-b"]
+    assert wide._compute_primordials(list(reversed(names))) == ranked
+
+
+@pytest.mark.parametrize("value, expected", [
+    (0.7525, 0.753),        # the E3 case: Python's round() gives 0.752 here
+    (0.7535, 0.754),
+    (0.6524999, 0.652),
+    (0.8, 0.8),
+    (1 / 3, 0.333),
+])
+def test_round_half_up(value, expected):
+    assert round_half_up(value, 3) == expected
