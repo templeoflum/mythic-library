@@ -75,7 +75,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "jungian:divine_child",
+          "target": "jungian:child",
           "fidelity": 0.9,
           "note": "Jungian divine child"
         }

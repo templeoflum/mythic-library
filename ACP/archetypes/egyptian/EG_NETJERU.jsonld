@@ -2952,7 +2952,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "arch:ME-EA",
+          "target": "arch:ME-ENKI",
           "fidelity": 0.55,
           "sharedAspects": [
             "wisdom-creator",

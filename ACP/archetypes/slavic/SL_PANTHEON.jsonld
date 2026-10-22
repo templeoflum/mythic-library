@@ -1826,7 +1826,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "arch:NO-FREYA",
+          "target": "arch:NO-FREYJA",
           "fidelity": 0.6,
           "notes": "Love, beauty, fertility"
         },

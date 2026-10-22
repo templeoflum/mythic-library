@@ -777,7 +777,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "arch:ME-ISHTAR",
+          "target": "arch:ME-INANNA",
           "fidelity": 0.65,
           "notes": "Love and war goddess combined"
         },
@@ -787,6 +787,11 @@
           "activation": "When desire becomes manipulation; when magic serves selfishness",
           "strength": 0.5,
           "note": "Originally: primordial:seductress-destroyer (aspect: seduction)"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-LADA",
+          "fidelity": 0.6
         }
       ],
       "correspondences": {
