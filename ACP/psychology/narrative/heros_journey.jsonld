@@ -62,7 +62,11 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:refusal_of_call", "note": "Call prompts fear"},
             {"type": "CULTURAL_ECHO", "target": "vogler:herald", "fidelity": 0.9},
-            {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.7}
+            {"type": "CULTURAL_ECHO", "target": "tarot:wheel_of_fortune", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "angel:archangels", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "brand:explorer", "fidelity": 0.8},
+            {"type": "CULTURAL_ECHO", "target": "pearson:seeker", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "propp:dispatcher", "fidelity": 0.7}
           ]
         },
         {
@@ -114,7 +118,9 @@
             {"type": "EVOLUTION", "target": "journey:crossing_threshold", "note": "Aid enables crossing"},
             {"type": "CULTURAL_ECHO", "target": "vogler:mentor", "fidelity": 0.95},
             {"type": "CULTURAL_ECHO", "target": "tarot:hierophant", "fidelity": 0.7},
-            {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.85}
+            {"type": "CULTURAL_ECHO", "target": "jungian:wise_old_man", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "superhero:mentor_hero", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "propp:donor", "fidelity": 0.75}
           ]
         },
         {
@@ -139,7 +145,8 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:belly_of_whale", "note": "Entry leads to transformation"},
             {"type": "CULTURAL_ECHO", "target": "vogler:threshold_guardian", "fidelity": 0.85},
-            {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75}
+            {"type": "CULTURAL_ECHO", "target": "tarot:fool", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "plot:voyage-return", "fidelity": 0.75}
           ]
         },
         {
@@ -165,7 +172,9 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:road_of_trials", "note": "Rebirth begins initiation"},
             {"type": "CULTURAL_ECHO", "target": "tarot:death", "fidelity": 0.8},
-            {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.75}
+            {"type": "CULTURAL_ECHO", "target": "tarot:hanged_man", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "alchemy:nigredo", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "tzolkin:akbal", "fidelity": 0.65}
           ]
         }
       ]
@@ -196,7 +205,13 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:meeting_goddess", "note": "Trials lead to grace"},
             {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_wands", "fidelity": 0.7},
-            {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.75}
+            {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "tzolkin:eb", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "propp:villain", "fidelity": 0.8},
+            {"type": "CULTURAL_ECHO", "target": "vogler:ally", "fidelity": 0.65},
+            {"type": "CULTURAL_ECHO", "target": "plot:overcoming-monster", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "plot:quest", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "superhero:legacy_hero", "fidelity": 0.75}
           ]
         },
         {
@@ -250,7 +265,8 @@
             {"type": "EVOLUTION", "target": "journey:atonement_father", "note": "Overcoming leads to atonement"},
             {"type": "TENSION", "target": "journey:meeting_goddess", "note": "True love vs temptation"},
             {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.75},
-            {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_cups", "fidelity": 0.7}
+            {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_cups", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "myss:prostitute", "fidelity": 0.65}
           ]
         },
         {
@@ -304,7 +320,8 @@
             {"type": "EVOLUTION", "target": "journey:ultimate_boon", "note": "Enlightenment yields boon"},
             {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.85},
             {"type": "CULTURAL_ECHO", "target": "tarot:judgement", "fidelity": 0.8},
-            {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.7}
+            {"type": "CULTURAL_ECHO", "target": "tarot:star", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "superhero:cosmic_being", "fidelity": 0.8}
           ]
         },
         {
@@ -437,7 +454,10 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:master_two_worlds", "note": "Crossing enables mastery"},
             {"type": "MIRRORS", "target": "journey:crossing_threshold", "note": "Symmetrical threshold"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.75}
+            {"type": "CULTURAL_ECHO", "target": "tarot:temperance", "fidelity": 0.75},
+            {"type": "CULTURAL_ECHO", "target": "nakshatra:punarvasu", "fidelity": 0.65},
+            {"type": "CULTURAL_ECHO", "target": "plot:rebirth", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "plot:rags-to-riches", "fidelity": 0.6}
           ]
         },
         {
@@ -464,7 +484,8 @@
             {"type": "EVOLUTION", "target": "journey:freedom_to_live", "note": "Mastery yields freedom"},
             {"type": "TENSION", "target": "journey:ordinary_world", "note": "Transformed vs original state"},
             {"type": "CULTURAL_ECHO", "target": "jungian:self", "fidelity": 0.9},
-            {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85}
+            {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.85},
+            {"type": "CULTURAL_ECHO", "target": "spiral:turquoise", "fidelity": 0.8}
           ]
         },
         {
