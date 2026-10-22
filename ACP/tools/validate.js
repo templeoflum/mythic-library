@@ -293,6 +293,10 @@ class Validator {
     const allIds = new Set(this.allArchetypes.keys());
 
     for (const rel of this.allRelationships) {
+      // A few group relationships (CONSTELLATION, MEDIATOR) list several
+      // targets in an array; this check reads single string targets only.
+      if (typeof rel.target !== 'string') continue;
+
       // Skip cross-system references that use prefixes we don't track fully
       const targetPrefix = rel.target.split(':')[0];
       const knownPrefixes = ['tarot', 'iching', 'trigram', 'hexagram', 'zodiac', 'astrology',
