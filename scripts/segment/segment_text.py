@@ -101,6 +101,14 @@ DIVISION_PATTERNS = [
 SEGMENT_FILE = re.compile(r"^seg_\d+_.*\.txt$")
 
 
+def repo_relative(path: Path) -> str:
+    """Path relative to the repo root, with forward slashes; absolute if outside it."""
+    try:
+        return Path(path).resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
+    except ValueError:
+        return str(path)
+
+
 def slugify(text: str, max_len: int = 40) -> str:
     """Convert text to a URL-friendly slug."""
     slug = text.lower().strip()
@@ -294,7 +302,7 @@ def process_text(text_dir: Path, text_id: str, tradition: str) -> dict:
     segment_index = {
         "text_id": text_id,
         "tradition": tradition,
-        "source_file": str(best_file),
+        "source_file": repo_relative(best_file),
         "strategy": strategy,
         "segment_count": len(segments),
         "segments": [],

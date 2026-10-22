@@ -178,3 +178,16 @@ def test_rerun_clears_old_segment_files(seg, tmp_path):
     index = json.loads((seg_dir / "segments.json").read_text(encoding="utf-8"))
     assert [s["file"] for s in index["segments"]] == ["seg_001_canto-i.txt", "seg_002_canto-ii.txt"]
 
+
+def test_source_file_is_relative_to_repo_root(seg, tmp_path, monkeypatch):
+    monkeypatch.setattr(seg, "PROJECT_ROOT", tmp_path)
+    text_dir = make_text(tmp_path, "rel", " ".join(["word"] * 150))
+    seg.process_text(text_dir, "rel", "greek")
+    index = json.loads((text_dir / "segments" / "segments.json").read_text(encoding="utf-8"))
+    assert index["source_file"] == "greek/rel/normalized/rel_best.txt"
+
+
+def test_repo_relative_outside_root_stays_absolute(seg, tmp_path, monkeypatch):
+    monkeypatch.setattr(seg, "PROJECT_ROOT", tmp_path / "repo")
+    outside = tmp_path / "elsewhere" / "x.txt"
+    assert seg.repo_relative(outside) == str(outside)
