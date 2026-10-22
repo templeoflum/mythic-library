@@ -112,7 +112,7 @@
               ]
             },
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.5,
               "aspects": [
                 "new-beginning"
@@ -1028,7 +1028,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.8,
               "aspects": [
                 "enthusiasm",
@@ -1233,7 +1233,7 @@
               ]
             },
             {
-              "primordial": "primordial:great_mother",
+              "primordial": "primordial:great-mother",
               "weight": 0.5,
               "aspects": [
                 "warmth",
@@ -1333,7 +1333,7 @@
               ]
             },
             {
-              "primordial": "primordial:great_father",
+              "primordial": "primordial:great-father",
               "weight": 0.6,
               "aspects": [
                 "authority"
@@ -1658,7 +1658,7 @@
               ]
             },
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.4,
               "aspects": [
                 "celebration"
@@ -1751,7 +1751,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:wise_elder",
+              "primordial": "primordial:wise-elder",
               "weight": 0.4,
               "aspects": [
                 "contemplation"
@@ -1944,7 +1944,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.7,
               "aspects": [
                 "innocence",
@@ -2334,7 +2334,7 @@
               ]
             },
             {
-              "primordial": "primordial:great_mother",
+              "primordial": "primordial:great-mother",
               "weight": 0.5,
               "aspects": [
                 "family"
@@ -2429,7 +2429,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.8,
               "aspects": [
                 "dreamer",
@@ -2627,7 +2627,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:great_mother",
+              "primordial": "primordial:great-mother",
               "weight": 0.85,
               "aspects": [
                 "nurturing",
@@ -2733,7 +2733,7 @@
               ]
             },
             {
-              "primordial": "primordial:wise_elder",
+              "primordial": "primordial:wise-elder",
               "weight": 0.6,
               "aspects": [
                 "wisdom",
@@ -3789,7 +3789,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.7,
               "aspects": [
                 "curiosity"
@@ -3992,7 +3992,7 @@
               ]
             },
             {
-              "primordial": "primordial:wise_elder",
+              "primordial": "primordial:wise-elder",
               "weight": 0.5,
               "aspects": [
                 "perception"
@@ -4090,7 +4090,7 @@
               ]
             },
             {
-              "primordial": "primordial:great_father",
+              "primordial": "primordial:great-father",
               "weight": 0.5,
               "aspects": [
                 "law"
@@ -4212,7 +4212,7 @@
               ]
             },
             {
-              "primordial": "primordial:great_mother",
+              "primordial": "primordial:great-mother",
               "weight": 0.5,
               "aspects": [
                 "abundance"
@@ -4694,7 +4694,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:great_mother",
+              "primordial": "primordial:great-mother",
               "weight": 0.5,
               "aspects": [
                 "giving"
@@ -4796,7 +4796,7 @@
               ]
             },
             {
-              "primordial": "primordial:wise_elder",
+              "primordial": "primordial:wise-elder",
               "weight": 0.4,
               "aspects": [
                 "long-term-view"
@@ -5192,7 +5192,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:divine_child",
+              "primordial": "primordial:divine-child",
               "weight": 0.7,
               "aspects": [
                 "student",
@@ -5390,7 +5390,7 @@
           },
           "instantiates": [
             {
-              "primordial": "primordial:great_mother",
+              "primordial": "primordial:great-mother",
               "weight": 0.85,
               "aspects": [
                 "nurturing",
@@ -5495,7 +5495,7 @@
               ]
             },
             {
-              "primordial": "primordial:great_father",
+              "primordial": "primordial:great-father",
               "weight": 0.5,
               "aspects": [
                 "discipline",

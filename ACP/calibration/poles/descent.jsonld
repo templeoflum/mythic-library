@@ -18,7 +18,7 @@
   },
   "polarOpposite": "calibration:pole_ascent",
   "nearestPrimordials": [
-    {"@id": "primordial:great_mother", "distance": 0.2},
+    {"@id": "primordial:great-mother", "distance": 0.2},
     {"@id": "primordial:healer", "distance": 0.25}
   ],
   "culturalExamples": ["Gaia", "Demeter", "Pachamama", "Hades (underworld)"],

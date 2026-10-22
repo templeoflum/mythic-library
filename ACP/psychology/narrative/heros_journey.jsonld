@@ -36,7 +36,7 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:call_to_adventure", "note": "Disruption of stability"},
             {"type": "TENSION", "target": "journey:master_two_worlds", "note": "Beginning vs completion"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:four_of_pentacles", "fidelity": 0.65}
+            {"type": "CULTURAL_ECHO", "target": "tarot:pentacles_04", "fidelity": 0.65}
           ]
         },
         {
@@ -91,7 +91,7 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:supernatural_aid", "note": "Aid overcomes refusal"},
             {"type": "TENSION", "target": "journey:call_to_adventure", "note": "Resistance to destiny"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:four_of_cups", "fidelity": 0.75}
+            {"type": "CULTURAL_ECHO", "target": "tarot:cups_04", "fidelity": 0.75}
           ]
         },
         {
@@ -111,7 +111,7 @@
             "voluntary-fated": 0.58
           },
           "instantiates": [
-            {"primordial": "primordial:wise_elder", "weight": 0.85, "aspects": ["wisdom", "guidance"]},
+            {"primordial": "primordial:wise-elder", "weight": 0.85, "aspects": ["wisdom", "guidance"]},
             {"primordial": "primordial:magician", "weight": 0.65, "aspects": ["gift", "protection"]}
           ],
           "relationships": [
@@ -167,7 +167,7 @@
           },
           "instantiates": [
             {"primordial": "primordial:destroyer", "weight": 0.7, "aspects": ["death", "transformation"]},
-            {"primordial": "primordial:great_mother", "weight": 0.65, "aspects": ["containment", "rebirth"]}
+            {"primordial": "primordial:great-mother", "weight": 0.65, "aspects": ["containment", "rebirth"]}
           ],
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:road_of_trials", "note": "Rebirth begins initiation"},
@@ -204,7 +204,7 @@
           ],
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:meeting_goddess", "note": "Trials lead to grace"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_wands", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:wands_07", "fidelity": 0.7},
             {"type": "CULTURAL_ECHO", "target": "tarot:strength", "fidelity": 0.75},
             {"type": "CULTURAL_ECHO", "target": "tzolkin:eb", "fidelity": 0.75},
             {"type": "CULTURAL_ECHO", "target": "propp:villain", "fidelity": 0.8},
@@ -231,7 +231,7 @@
             "voluntary-fated": 0.52
           },
           "instantiates": [
-            {"primordial": "primordial:great_mother", "weight": 0.85, "aspects": ["love", "blessing"]},
+            {"primordial": "primordial:great-mother", "weight": 0.85, "aspects": ["love", "blessing"]},
             {"primordial": "primordial:lover", "weight": 0.75, "aspects": ["union", "grace"]}
           ],
           "relationships": [
@@ -265,7 +265,7 @@
             {"type": "EVOLUTION", "target": "journey:atonement_father", "note": "Overcoming leads to atonement"},
             {"type": "TENSION", "target": "journey:meeting_goddess", "note": "True love vs temptation"},
             {"type": "CULTURAL_ECHO", "target": "tarot:devil", "fidelity": 0.75},
-            {"type": "CULTURAL_ECHO", "target": "tarot:seven_of_cups", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:cups_07", "fidelity": 0.7},
             {"type": "CULTURAL_ECHO", "target": "myss:prostitute", "fidelity": 0.65}
           ]
         },
@@ -286,7 +286,7 @@
             "voluntary-fated": 0.58
           },
           "instantiates": [
-            {"primordial": "primordial:great_father", "weight": 0.85, "aspects": ["authority", "initiation"]},
+            {"primordial": "primordial:great-father", "weight": 0.85, "aspects": ["authority", "initiation"]},
             {"primordial": "primordial:sovereign", "weight": 0.7, "aspects": ["power", "reconciliation"]}
           ],
           "relationships": [
@@ -346,7 +346,7 @@
           ],
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:refusal_return", "note": "Boon creates new dilemma"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:ace_of_cups", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:cups_ace", "fidelity": 0.7},
             {"type": "CULTURAL_ECHO", "target": "tarot:world", "fidelity": 0.65}
           ]
         }
@@ -402,8 +402,8 @@
           ],
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:rescue_without", "note": "Flight may need assistance"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:eight_of_wands", "fidelity": 0.7},
-            {"type": "CULTURAL_ECHO", "target": "tarot:knight_of_swords", "fidelity": 0.65}
+            {"type": "CULTURAL_ECHO", "target": "tarot:wands_08", "fidelity": 0.7},
+            {"type": "CULTURAL_ECHO", "target": "tarot:swords_knight", "fidelity": 0.65}
           ]
         },
         {
@@ -429,7 +429,7 @@
           "relationships": [
             {"type": "EVOLUTION", "target": "journey:crossing_return", "note": "Rescue enables return"},
             {"type": "MIRRORS", "target": "journey:supernatural_aid", "note": "Aid at both thresholds"},
-            {"type": "CULTURAL_ECHO", "target": "tarot:six_of_swords", "fidelity": 0.7}
+            {"type": "CULTURAL_ECHO", "target": "tarot:swords_06", "fidelity": 0.7}
           ]
         },
         {
@@ -506,7 +506,7 @@
           },
           "instantiates": [
             {"primordial": "primordial:self", "weight": 0.85, "aspects": ["wholeness", "peace"]},
-            {"primordial": "primordial:divine_child", "weight": 0.7, "aspects": ["freedom", "presence"]}
+            {"primordial": "primordial:divine-child", "weight": 0.7, "aspects": ["freedom", "presence"]}
           ],
           "relationships": [
             {"type": "COMPLEMENT", "target": "journey:ordinary_world", "note": "Return completes departure"},

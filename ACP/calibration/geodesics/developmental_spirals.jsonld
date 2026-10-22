@@ -57,13 +57,13 @@
       "pattern": "individual-collective oscillation",
       "turns": [
         {"level": "Beige", "focus": "individual", "theme": "Survival", "instantiates": ["primordial:monster", "primordial:preserver"]},
-        {"level": "Purple", "focus": "collective", "theme": "Tribal safety", "instantiates": ["primordial:ancestor", "primordial:great_mother"]},
+        {"level": "Purple", "focus": "collective", "theme": "Tribal safety", "instantiates": ["primordial:ancestor", "primordial:great-mother"]},
         {"level": "Red", "focus": "individual", "theme": "Power/ego", "instantiates": ["primordial:warrior", "primordial:rebel"]},
         {"level": "Blue", "focus": "collective", "theme": "Order/meaning", "instantiates": ["primordial:sovereign", "primordial:preserver"]},
         {"level": "Orange", "focus": "individual", "theme": "Achievement", "instantiates": ["primordial:hero", "primordial:magician"]},
         {"level": "Green", "focus": "collective", "theme": "Community", "instantiates": ["primordial:healer", "primordial:lover"]},
-        {"level": "Yellow", "focus": "individual", "theme": "Integration", "instantiates": ["primordial:wise_elder", "primordial:magician"]},
-        {"level": "Turquoise", "focus": "collective", "theme": "Holistic", "instantiates": ["primordial:self", "primordial:great_mother"]}
+        {"level": "Yellow", "focus": "individual", "theme": "Integration", "instantiates": ["primordial:wise-elder", "primordial:magician"]},
+        {"level": "Turquoise", "focus": "collective", "theme": "Holistic", "instantiates": ["primordial:self", "primordial:great-mother"]}
       ],
       "notes": "Each level transcends AND includes previous levels. Not hierarchy of worth, but complexity."
     },
@@ -77,7 +77,7 @@
         {"name": "Rescue from Without", "challenge": "Need help returning", "archetype": "primordial:healer"},
         {"name": "Crossing Return Threshold", "challenge": "Integrate two worlds", "archetype": "primordial:psychopomp"},
         {"name": "Master of Two Worlds", "achievement": "Freedom to live", "archetype": "primordial:self"},
-        {"name": "Freedom to Live", "achievement": "Present-moment mastery", "archetype": "primordial:wise_elder"}
+        {"name": "Freedom to Live", "achievement": "Present-moment mastery", "archetype": "primordial:wise-elder"}
       ],
       "spiralNature": "Hero may cycle through journey multiple times, each at deeper level"
     }

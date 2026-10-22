@@ -74,14 +74,14 @@
       "@id": "geodesic:ascent_descent",
       "name": "The Vertical Axis",
       "axis": "ascent-descent",
-      "endpoints": ["primordial:wise_elder", "primordial:great_mother"],
+      "endpoints": ["primordial:wise-elder", "primordial:great-mother"],
       "description": "Movement between transcendence (sky/spirit) and immanence (earth/matter).",
       "waypoints": [
         {"position": 0.0, "state": "Pure transcendence, spirit realm"},
-        {"position": 0.25, "archetype": "primordial:wise_elder", "state": "Wisdom from above"},
+        {"position": 0.25, "archetype": "primordial:wise-elder", "state": "Wisdom from above"},
         {"position": 0.5, "archetype": "primordial:self", "state": "Heaven and earth united"},
         {"position": 0.75, "archetype": "primordial:healer", "state": "Working with matter"},
-        {"position": 1.0, "archetype": "primordial:great_mother", "state": "Pure immanence, embodiment"}
+        {"position": 1.0, "archetype": "primordial:great-mother", "state": "Pure immanence, embodiment"}
       ],
       "cyclical": true,
       "notes": "The axis mundi—shamanic ascent and descent"
@@ -93,9 +93,9 @@
       "@id": "geodesic:hero_journey",
       "name": "The Hero's Path",
       "description": "Multi-axis transformation of the hero archetype through trials.",
-      "startPoint": "primordial:divine_child",
+      "startPoint": "primordial:divine-child",
       "endPoint": "primordial:hero",
-      "ultimateDestination": "primordial:wise_elder",
+      "ultimateDestination": "primordial:wise-elder",
       "axesInvolved": ["light-shadow", "individual-collective", "stasis-transformation", "voluntary-fated"],
       "stages": [
         {"name": "Innocent", "coordinates": {"light-shadow": 0.2, "individual-collective": 0.3, "stasis-transformation": 0.2, "voluntary-fated": 0.7}},
@@ -114,7 +114,7 @@
       "description": "Feminine developmental trajectory.",
       "stages": [
         {"archetype": "primordial:maiden", "coordinates": {"creation-destruction": 0.2, "ascent-descent": 0.4, "stasis-transformation": 0.3}},
-        {"archetype": "primordial:great_mother", "shift": {"creation-destruction": 0.1, "ascent-descent": 0.3, "stasis-transformation": 0.2}},
+        {"archetype": "primordial:great-mother", "shift": {"creation-destruction": 0.1, "ascent-descent": 0.3, "stasis-transformation": 0.2}},
         {"archetype": "primordial:crone", "shift": {"creation-destruction": 0.3, "ascent-descent": -0.1, "stasis-transformation": 0.3}}
       ],
       "axesInvolved": ["creation-destruction", "ascent-descent", "stasis-transformation"],
@@ -166,8 +166,8 @@
       "reason": "Self represents integration; Monster is pre-integration. Regression possible under extreme trauma but not a natural geodesic."
     },
     {
-      "from": "primordial:wise_elder",
-      "to": "primordial:divine_child",
+      "from": "primordial:wise-elder",
+      "to": "primordial:divine-child",
       "reason": "Developmental regression. The Elder can ACCESS child energy but doesn't BECOME the child.",
       "exception": "Second childhood in dementia is pathological, not archetypal"
     }

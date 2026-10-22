@@ -36,7 +36,7 @@ JUDGMENTS = [
      "Kun (The Receptive / Earth) is the I Ching's embodiment of the "
      "primordial feminine-receptive principle — yielding, nourishing, "
      "sustaining. This maps directly onto Jung's Great Mother archetype. "
-     "Both share primordial:great_mother. The 0.85 fidelity is appropriate; "
+     "Both share primordial:great-mother. The 0.85 fidelity is appropriate; "
      "Kun is more abstract and cosmological than the personified Jungian "
      "form, preventing a perfect 1.0. Distance 0.28 is reasonable."),
 
@@ -57,7 +57,7 @@ JUDGMENTS = [
     ("AGREE",
      "The brand archetype 'Sage' is directly derived from Jung's Wise Old "
      "Man archetype. Both embody wisdom, knowledge-seeking, and counsel. "
-     "They share primordial:wise_elder (0.9 and 1.0 respectively). Distance "
+     "They share primordial:wise-elder (0.9 and 1.0 respectively). Distance "
      "0.13 and fidelity 0.9 are both well-calibrated."),
 
     # CASE 3: CULTURAL_ECHO (medium fidelity=0.70)
@@ -245,7 +245,7 @@ JUDGMENTS = [
     # Distance: 0.6623
     ("AGREE",
      "In Campbell/Vogler's Hero's Journey, the Mentor and Hero are THE "
-     "defining complementary pair. The Mentor (primordial:wise_elder 0.9) "
+     "defining complementary pair. The Mentor (primordial:wise-elder 0.9) "
      "guides; the Hero (primordial:hero 1.0) acts. The active-receptive axis "
      "diff (0.40) captures the Hero's activity vs Mentor's receptive wisdom. "
      "The individual-collective diff (0.37) captures the Hero's individual "

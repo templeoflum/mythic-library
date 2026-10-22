@@ -55,7 +55,7 @@
           "ascent-descent": -0.3
         }
       },
-      "archetypesActivated": ["primordial:wise_elder", "primordial:self"],
+      "archetypesActivated": ["primordial:wise-elder", "primordial:self"],
       "potentialOutcome": {
         "positive": {"notes": "Stable realization integrated into daily life"},
         "negative": {"notes": "Spiritual inflation, inability to function, 'enlightenment sickness'"}
@@ -91,7 +91,7 @@
         "liminal_phase": {"order-chaos": 0.3, "light-shadow": 0.2},
         "rebirth_phase": {"stasis-transformation": -0.3, "creation-destruction": -0.4}
       },
-      "archetypesActivated": ["primordial:destroyer", "primordial:divine_child", "primordial:creator"],
+      "archetypesActivated": ["primordial:destroyer", "primordial:divine-child", "primordial:creator"],
       "potentialOutcome": {
         "positive": {"notes": "New identity integrated with community recognition"},
         "negative": {"notes": "Incomplete initiation, liminal stuckness"}
@@ -111,7 +111,7 @@
         {"archetype": "primordial:warrior", "manifestation": "Berserker rage"},
         {"archetype": "primordial:lover", "manifestation": "Erotic obsession"},
         {"archetype": "primordial:trickster", "manifestation": "Manic episode"},
-        {"archetype": "primordial:great_mother", "manifestation": "Overwhelming fusion desire"}
+        {"archetype": "primordial:great-mother", "manifestation": "Overwhelming fusion desire"}
       ],
       "potentialOutcome": {
         "positive": {"notes": "Controlled ritual use, shamanic work, creative breakthrough"},
@@ -135,7 +135,7 @@
       "role": "Provides containment, witnesses suffering, facilitates repair"
     },
     {
-      "archetype": "primordial:wise_elder",
+      "archetype": "primordial:wise-elder",
       "role": "Provides meaning, perspective, has navigated similar territory"
     },
     {
@@ -143,7 +143,7 @@
       "role": "Guides through transitions, accompanies into underworld and back"
     },
     {
-      "archetype": "primordial:great_mother",
+      "archetype": "primordial:great-mother",
       "role": "Provides unconditional acceptance, holding, basic safety"
     }
   ]

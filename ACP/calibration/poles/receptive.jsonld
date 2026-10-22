@@ -18,7 +18,7 @@
   },
   "polarOpposite": "calibration:pole_active",
   "nearestPrimordials": [
-    {"@id": "primordial:great_mother", "distance": 0.25},
+    {"@id": "primordial:great-mother", "distance": 0.25},
     {"@id": "primordial:healer", "distance": 0.3}
   ],
   "culturalExamples": ["Gaia (receiving)", "Nut", "Frigg", "Quan Yin"],
