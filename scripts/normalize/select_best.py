@@ -42,6 +42,14 @@ FORMAT_PRIORITY = {
 }
 
 
+def repo_relative(path: Path) -> str:
+    """Path relative to the repo root, with forward slashes; absolute if outside it."""
+    try:
+        return Path(path).resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
+    except ValueError:
+        return str(path)
+
+
 def score_version(meta: dict) -> tuple:
     """Score a normalized version for selection. Higher is better."""
     fmt = meta.get("source_format", "other")
@@ -138,7 +146,7 @@ def run_selection():
                 "text_id": text_id,
                 "tradition": tradition,
                 "status": "selected",
-                "best_file": str(best_path),
+                "best_file": repo_relative(best_path),
                 "source_file": best.get("original_file", ""),
                 "source_format": best.get("source_format", ""),
                 "word_count": best.get("word_count", 0),
