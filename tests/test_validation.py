@@ -141,7 +141,9 @@ class TestEntityMapper:
     def test_unmapped_list(self, mapper):
         unmapped = mapper.get_unmapped_entities()
         assert len(unmapped) > 0
-        assert "Achilles" in unmapped  # Known unmapped hero
+        # Places are not character archetypes, so they stay unmapped.
+        # (Achilles was the old example; GR-ACHILLES now maps it exactly.)
+        assert "Asgard" in unmapped
 
 
 # ── Coordinate Validation Tests ──────────────────────────────
