@@ -104,6 +104,7 @@ def tree(tmp_path, monkeypatch):
     monkeypatch.setattr(sb, "TEXTS_DIR", texts)
     monkeypatch.setattr(sb, "SOURCES_DIR", sources)
     monkeypatch.setattr(sb, "OUTPUT_FILE", sources / "best_versions.json")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
     return tmp_path
 
 
@@ -148,7 +149,7 @@ def test_selection_picks_and_copies_best(tree):
         "text_id": "t-two",
         "tradition": "greek",
         "status": "selected",
-        "best_file": str(norm / "t-two_best.txt"),     # absolute path, as written today
+        "best_file": "texts/greek/t-two/normalized/t-two_best.txt",   # repo-relative
         "source_file": "b.txt",
         "source_format": "gutenberg",
         "word_count": 100,
@@ -180,3 +181,11 @@ def test_rerun_is_stable(tree):
     first = (tree / "sources" / "best_versions.json").read_bytes()
     sb.run_selection()
     assert (tree / "sources" / "best_versions.json").read_bytes() == first
+
+
+def test_repo_relative(tmp_path, monkeypatch):
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path / "repo")
+    inside = tmp_path / "repo" / "texts" / "a" / "b_best.txt"
+    outside = tmp_path / "elsewhere" / "c_best.txt"
+    assert sb.repo_relative(inside) == "texts/a/b_best.txt"
+    assert sb.repo_relative(outside) == str(outside)     # outside the repo: left absolute
