@@ -192,7 +192,7 @@ def audit_all(root):
                     })
 
     # Issue 5: Find missing reverse links
-    for src, tgt in echo_pairs:
+    for src, tgt in sorted(echo_pairs):
         if (tgt, src) not in echo_pairs:
             src_file = entry_ids_with_rels.get(src, "?")
             tgt_file = entry_ids_with_rels.get(tgt, "?")
