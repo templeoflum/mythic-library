@@ -33,7 +33,7 @@ Status key:
 | scripts/acquire.py | `next` | runs | <1 s | none | |
 | scripts/acquire.py | `fetch …` | skipped | | | network |
 | scripts/catalog.py | `report` | runs | <1 s | none | |
-| scripts/catalog.py | `status` | needs input | | | argparse usage: needs `text_id new_status` (exit 2) |
+| scripts/catalog.py | `status` | needs input | | | needs a text ID and a status. When they are missing it prints `usage: catalog.py status TEXT_ID NEW_STATUS` with an example (exit 2) |
 | scripts/add_critical_texts.py | | runs | <1 s | none | all entries already present |
 | scripts/add_gap_texts.py | | runs | <1 s | none | all entries already present |
 | scripts/add_missing_greek.py | | runs | <1 s | none | all entries already present |
@@ -46,7 +46,7 @@ Status key:
 | scripts/analyze_gaps.py | | runs | <1 s | none | |
 | scripts/audit_archetype_completeness.py | | runs | <1 s | ACP/tools/completeness_audit.json | |
 | scripts/audit_reviewer.py | `--status` | runs | <1 s | none | without `--status` it is an interactive review session; not run |
-| scripts/conduct_audit.py | | needs input | | | `FileNotFoundError` on `outputs/audits/human_audit_cases.json` in a fresh copy. That file is written by `validation/v2_run.py`, and after it the tool runs (exit 0). |
+| scripts/conduct_audit.py | | needs input | | | needs `outputs/audits/human_audit_cases.json`, which `validation/v2_run.py` writes. When the file is missing it prints a usage message naming that step (exit 1). After it, the tool runs (exit 0). |
 | scripts/diagnose_arc_overlap.py | | runs | 2 s | none | |
 | scripts/enrich_from_correspondences.py | `--dry-run` | runs | <1 s | none | |
 | scripts/enrich_minor_arcana.py | `--dry-run` | runs | <1 s | none | |
@@ -103,6 +103,16 @@ Other checks:
 - `pytest` passes: 69 tests.
 - `miroglyph/` has no build step. It is static HTML, CSS and JS that reads `miroglyph/data/`.
 - The other modules in `validation/` and `validation/v2_tests/` have no `__main__` block. They run through `validation/run.py` and `validation/v2_run.py`, which both ran.
+
+## Run order
+
+Most tools stand alone once `data/mythic_patterns.db` exists. These are the ordering needs that were found:
+
+1. `python scripts/database/create_db.py` builds the database that the query, integration and validation tools read.
+2. `python -m validation.v2_run --quick` (or `--full`) writes `outputs/audits/human_audit_cases.json`. `python scripts/conduct_audit.py` reads that file.
+3. `python scripts/export_explorer_data.py` includes the validation summary only when `outputs/metrics/v2_validation_results.json` exists, so run it after step 2.
+
+`catalog.py status` has no order dependency. It needs its two arguments, a text ID from `catalog.py list` and the new status.
 
 ## Summary
 

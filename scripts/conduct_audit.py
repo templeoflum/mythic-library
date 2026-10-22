@@ -15,6 +15,7 @@ Evaluation criteria per category:
 """
 
 import json
+import sys
 from pathlib import Path
 from datetime import datetime
 
@@ -491,6 +492,12 @@ JUDGMENTS = [
 
 def main():
     # Load cases
+    if not CASES_PATH.exists():
+        sys.exit(
+            "usage: python scripts/conduct_audit.py\n"
+            f"Needs {CASES_PATH.relative_to(ROOT)}, which is written by the v2 validation run.\n"
+            "Run that first:  python -m validation.v2_run --quick   (or --full)"
+        )
     with open(CASES_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
