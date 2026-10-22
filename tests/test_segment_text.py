@@ -157,3 +157,24 @@ def test_process_text_is_deterministic(seg, tmp_path):
     first = snapshot()
     seg.process_text(text_dir, "again", "greek")
     assert snapshot() == first
+
+
+def test_rerun_clears_old_segment_files(seg, tmp_path):
+    body = " ".join(["verse"] * 60)
+    text_dir = make_text(tmp_path, "shrinks", f"BOOK I\n{body}\nBOOK II\n{body}\nBOOK III\n{body}\n")
+    seg.process_text(text_dir, "shrinks", "greek")
+    seg_dir = text_dir / "segments"
+    (seg_dir / "notes.md").write_text("not a segment file", encoding="utf-8")
+    assert sorted(p.name for p in seg_dir.glob("seg_*.txt")) == [
+        "seg_001_i.txt", "seg_002_ii.txt", "seg_003_iii.txt"]
+
+    # second run: one fewer book, and the labels change
+    (text_dir / "normalized" / "shrinks_best.txt").write_text(
+        f"CANTO I\n{body}\nCANTO II\n{body}\n", encoding="utf-8")
+    seg.process_text(text_dir, "shrinks", "greek")
+    assert sorted(p.name for p in seg_dir.glob("seg_*.txt")) == [
+        "seg_001_canto-i.txt", "seg_002_canto-ii.txt"]
+    assert (seg_dir / "notes.md").exists()
+    index = json.loads((seg_dir / "segments.json").read_text(encoding="utf-8"))
+    assert [s["file"] for s in index["segments"]] == ["seg_001_canto-i.txt", "seg_002_canto-ii.txt"]
+

@@ -97,6 +97,10 @@ DIVISION_PATTERNS = [
 ]
 
 
+# Segment files this script writes: seg_001_<slug>.txt
+SEGMENT_FILE = re.compile(r"^seg_\d+_.*\.txt$")
+
+
 def slugify(text: str, max_len: int = 40) -> str:
     """Convert text to a URL-friendly slug."""
     slug = text.lower().strip()
@@ -280,6 +284,12 @@ def process_text(text_dir: Path, text_id: str, tradition: str) -> dict:
     # Write segments
     seg_dir = text_dir / "segments"
     seg_dir.mkdir(exist_ok=True)
+
+    # Clear this text's segment files from any earlier run, so a re-run
+    # that yields fewer or differently labelled segments leaves no strays
+    for old in seg_dir.iterdir():
+        if old.is_file() and SEGMENT_FILE.match(old.name):
+            old.unlink()
 
     segment_index = {
         "text_id": text_id,
