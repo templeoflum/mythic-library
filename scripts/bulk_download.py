@@ -26,6 +26,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse, quote_plus
@@ -227,9 +228,110 @@ TEXT_SIGNATURES = {
 }
 
 
-def validate_download(filepath: Path, text_id: str) -> dict:
+# Words too common in this corpus to tell one book from another
+TITLE_STOPWORDS = {
+    "a", "an", "the", "of", "and", "or", "in", "on", "to", "from", "for",
+    "with", "by", "its", "his", "her", "their", "being", "book", "tale",
+    "story", "legend", "myth", "folk", "lore", "folklore", "volume", "vol",
+    "part",
+}
+
+# Catalog author values that name nobody, so there is no author to compare
+PLACEHOLDER_AUTHOR = re.compile(r"anonymous|various|unknown|oral tradition|multiple|n/a",
+                                re.IGNORECASE)
+
+
+def _significant_words(text: str) -> set[str]:
+    """Lowercased, accent-folded words, minus plurals and common title words."""
+    folded = unicodedata.normalize("NFKD", text or "")
+    folded = "".join(c for c in folded if not unicodedata.combining(c)).lower()
+    words = set()
+    for word in re.findall(r"[a-z0-9]+", folded):
+        if word.endswith("s") and len(word) > 3:
+            word = word[:-1]
+        if len(word) > 1 and word not in TITLE_STOPWORDS:
+            words.add(word)
+    return words
+
+
+def read_gutenberg_header(content: str) -> dict | None:
+    """
+    Return the Title and Author lines of a Project Gutenberg text file.
+
+    Returns None if the file has no Gutenberg header. Either value may be
+    None if its line is missing.
+    """
+    head = content[:5000]
+    if "project gutenberg" not in head[:1500].lower():
+        return None
+    start = head.find("*** START OF")
+    if start != -1:
+        head = head[:start]
+    title = re.search(r"^Title:[ \t]*(.+)$", head, re.MULTILINE)
+    author = re.search(r"^Author:[ \t]*(.+)$", head, re.MULTILINE)
+    if not title and not author:
+        return None
+    return {
+        "title": title.group(1).strip() if title else None,
+        "author": author.group(1).strip() if author else None,
+    }
+
+
+def expected_identity(text_id: str, text_data: dict, catalog: dict,
+                      source: dict | None = None) -> dict:
+    """
+    What a download for this text should be: the titles and author names
+    from master_catalog.csv and curated_sources.json.
+    """
+    entry = catalog.get(text_id, {})
+    source = source or {}
+    titles = [t for t in (entry.get("title"), text_data.get("title"),
+                          source.get("notes")) if t]
+    authors = [a for a in (entry.get("author"), source.get("translator"))
+               if a and not PLACEHOLDER_AUTHOR.search(a)]
+    return {"titles": titles, "authors": authors}
+
+
+def check_header_identity(header: dict, expected: dict) -> dict:
+    """
+    Compare a Gutenberg Title/Author header with the expected identity.
+
+    The header matches if its title shares a significant word with any
+    expected title, or its author shares a name with any expected author.
+    Returns {"match": True/False/None, ...}; None means the title has no
+    words to compare (for example, a title in another script).
+    """
+    title_words = _significant_words(header.get("title") or "")
+    author_words = _significant_words(header.get("author") or "")
+
+    expected_title_words = set()
+    for title in expected.get("titles", []):
+        expected_title_words |= _significant_words(title)
+    expected_author_words = set()
+    for author in expected.get("authors", []):
+        expected_author_words |= _significant_words(author)
+
+    title_match = bool(title_words & expected_title_words)
+    author_match = bool(author_words & expected_author_words)
+
+    if not title_words and not author_match:
+        match = None
+    else:
+        match = title_match or author_match
+
+    return {
+        "match": match,
+        "title_match": title_match,
+        "author_match": author_match,
+    }
+
+
+def validate_download(filepath: Path, text_id: str, expected: dict | None = None) -> dict:
     """
     Validate a downloaded file for authenticity.
+
+    If expected is given (see expected_identity), a Project Gutenberg file's
+    Title/Author header must match it.
 
     Returns validation result with pass/fail and details.
     """
@@ -284,6 +386,25 @@ def validate_download(filepath: Path, text_id: str) -> dict:
                 return result
 
         result["checks"]["not_error_page"] = True
+
+        # Check that a Gutenberg file is the book the catalog asked for
+        if expected is not None:
+            header = read_gutenberg_header(content)
+            if header is not None:
+                result["header"] = header
+                identity = check_header_identity(header, expected)
+                if identity["match"] is None:
+                    result["warnings"].append(
+                        f"Could not compare header title '{header.get('title')}' with the catalog"
+                    )
+                else:
+                    result["checks"]["header_matches_catalog"] = identity["match"]
+                    if not identity["match"]:
+                        result["error"] = (
+                            f"Wrong book: header says '{header.get('title')}' by "
+                            f"'{header.get('author')}', catalog expects "
+                            f"{expected.get('titles')} by {expected.get('authors')}"
+                        )
 
         # Check text-specific signatures
         if text_id in TEXT_SIGNATURES:
@@ -885,7 +1006,8 @@ def download_text(text_id: str, text_data: dict, catalog: dict, log: dict,
             # Validate the download
             if validate and result.get("status") == "downloaded" and result.get("path"):
                 filepath = Path(result["path"])
-                validation = validate_download(filepath, text_id)
+                expected = expected_identity(text_id, text_data, catalog, source)
+                validation = validate_download(filepath, text_id, expected)
                 result["validation"] = validation
 
                 if validation.get("valid"):
