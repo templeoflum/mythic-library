@@ -114,7 +114,7 @@ def main():
 
     # Find missing reverse links
     missing = []
-    for src, tgt in echo_pairs:
+    for src, tgt in sorted(echo_pairs):
         if (tgt, src) not in echo_pairs:
             # Target must exist in the index to add a reverse link
             if tgt in entry_index:
@@ -129,7 +129,7 @@ def main():
 
     # Find targets that don't exist in index
     orphan_reverse = []
-    for src, tgt in echo_pairs:
+    for src, tgt in sorted(echo_pairs):
         if (tgt, src) not in echo_pairs and tgt not in entry_index:
             orphan_reverse.append({"source": src, "target": tgt})
 

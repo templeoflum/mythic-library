@@ -188,3 +188,62 @@ def test_audit_counts_nested_links(tmp_path):
         ("journey:call", "tarot:cups_ace"),
         ("journey:call", "tarot:nowhere"),
     ]
+
+
+# ---------------------------------------------------------------------------
+# Repeatable output: the same input gives byte-identical output whatever the
+# hash seed. Each run is a fresh interpreter with its own PYTHONHASHSEED.
+# ---------------------------------------------------------------------------
+
+RUNNER = r"""
+import importlib.util, io, json, sys, contextlib
+from pathlib import Path
+name, root, mode = sys.argv[1], Path(sys.argv[2]), sys.argv[3]
+spec = importlib.util.spec_from_file_location(name, Path(sys.argv[4]) / f"{name}.py")
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+if mode == "audit":
+    result = mod.audit_all(root)
+    result.pop("generated_at", None)
+    print(json.dumps(result, indent=1))
+else:
+    mod.find_project_root = lambda: root
+    sys.argv = [name, "--dry-run"]
+    mod.main()
+"""
+
+
+def echo_fixture():
+    """Twelve one-way echoes to entries that exist, and twelve to ones that don't."""
+    entries = [{"@id": f"x:{i:02d}", "relationships": []} for i in range(24)]
+    for i in range(12):
+        entries[i]["relationships"].append({"type": "CULTURAL_ECHO", "target": f"x:{i + 12:02d}", "fidelity": 0.5})
+        entries[i]["relationships"].append({"type": "CULTURAL_ECHO", "target": f"y:missing-{i:02d}"})
+    return {"x/x.jsonld": {"entries": entries}}
+
+
+def run_with_seed(name, root, mode, seed):
+    import os
+    import subprocess
+    env = dict(os.environ, PYTHONHASHSEED=str(seed))
+    proc = subprocess.run(
+        [sys.executable, "-c", RUNNER, name, str(root), mode, str(HYGIENE_DIR)],
+        env=env, capture_output=True, text=True, check=True, stdin=subprocess.DEVNULL,
+    )
+    return proc.stdout
+
+
+@pytest.mark.parametrize("name,mode", [("audit_hygiene", "audit"), ("fix_missing_reverse", "main")])
+def test_output_is_repeatable_across_hash_seeds(tmp_path, name, mode):
+    write_acp(tmp_path, echo_fixture())
+    outputs = {seed: run_with_seed(name, tmp_path, mode, seed) for seed in (0, 1, 2, 3)}
+    assert len(set(outputs.values())) == 1, f"{name} output depends on the hash seed"
+
+
+def test_audit_missing_reverse_items_unchanged_by_sorting(tmp_path):
+    write_acp(tmp_path, echo_fixture())
+    result = load_script("audit_hygiene").audit_all(tmp_path)
+    missing = result["issues"]["5_missing_reverse_links"]
+    assert len(missing) == 24
+    assert result["summary"]["5_missing_reverse_links"] == 24
+    assert missing == sorted(missing, key=lambda m: (m["source"], m["target"]))
