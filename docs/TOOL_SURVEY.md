@@ -92,7 +92,7 @@ Status key:
 | validation/run.py | `--quick` | runs | 84 s | none | |
 | validation/v2_run.py | `--quick` | runs | 30 s | none | writes `outputs/audits/`, `outputs/metrics/`, `outputs/reports/` |
 | validation/unified_report.py | | runs | <1 s | none | writes `outputs/reports/unified_validation_report.md` |
-| validation/v2_tests/miroglyph_structure_v2.py | | **crash** | | | run by path: `ModuleNotFoundError: No module named 'integration'`. It runs as `python -m validation.v2_tests.miroglyph_structure_v2`. Its siblings (`validation/run.py`, `v2_run.py`, `unified_report.py`) add the project root to `sys.path`; this file does not. |
+| validation/v2_tests/miroglyph_structure_v2.py | | runs | 1 s | none | crashed when run by path (`ModuleNotFoundError: No module named 'integration'`); fixed by adding the project root to `sys.path`, as its siblings do. Writes `outputs/validation/miroglyph_structure_v2.json` |
 | ACP/tools/validate.js | | verdict | <1 s | none | exits 1 on its own findings (see #11) |
 | ACP/calibration/validate.js | | runs | <1 s | none | |
 | ACP/tools/derive_coordinates.js | `--all` | runs | <1 s | 20 ACP files | rewrites coordinates in place; with no args it prints usage and exits 1 |
@@ -106,8 +106,7 @@ Other checks:
 
 ## Summary
 
-- 58 run
-- 1 crash: `validation/v2_tests/miroglyph_structure_v2.py`, when run by path
+- 59 run, one of them after a fix (`validation/v2_tests/miroglyph_structure_v2.py`, which crashed when run by path)
 - 2 need input: `catalog.py status` and `conduct_audit.py`
 - 1 exits on its verdict: `ACP/tools/validate.js`
 - 8 skipped
