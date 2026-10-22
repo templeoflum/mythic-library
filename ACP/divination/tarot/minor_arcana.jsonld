@@ -686,6 +686,11 @@
               "type": "CULTURAL_ECHO",
               "target": "rune:algiz",
               "fidelity": 0.7
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:road_of_trials",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To assess progress and persevere through fire challenges",
@@ -782,6 +787,11 @@
               "target": "element:fire",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:magic_flight",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To channel the momentum of fire toward completion",
@@ -1485,6 +1495,11 @@
               "target": "element:water",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:ultimate_boon",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To embody the pure potential of water energy at its inception",
@@ -1786,6 +1801,11 @@
               "target": "element:water",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:refusal_of_call",
+              "fidelity": 0.75
             }
           ],
           "coreFunction": "To establish stable foundation in the realm of water",
@@ -2075,6 +2095,11 @@
               "target": "element:water",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:woman_temptress",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To assess progress and persevere through water challenges",
@@ -3370,6 +3395,11 @@
               "target": "element:air",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:rescue_without",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To restore harmony and facilitate exchange in air matters",
@@ -3925,6 +3955,11 @@
               "target": "element:air",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:magic_flight",
+              "fidelity": 0.65
             }
           ],
           "coreFunction": "To pursue air goals with passionate intensity",
@@ -4532,6 +4567,11 @@
               "type": "CULTURAL_ECHO",
               "target": "spiral:beige",
               "fidelity": 0.6
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "journey:ordinary_world",
+              "fidelity": 0.65
             }
           ],
           "coreFunction": "To establish stable foundation in the realm of earth",
