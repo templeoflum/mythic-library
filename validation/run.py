@@ -549,6 +549,7 @@ def generate_report(results: dict) -> str:
     wc = om.get("weighted_calibration", {})
     wtr = om.get("weighted_tradition", {})
     ov = om.get("optimized_verdict", {})
+    best = ds.get("overall_best", {})
 
     if aw and "error" not in aw:
         lines.append("## 6. Optimized Model (Phase 10)")
@@ -572,7 +573,6 @@ def generate_report(results: dict) -> str:
             lines.append("")
 
         # Dimensionality search
-        best = ds.get("overall_best", {})
         if best:
             lines.append("### Dimensionality Search")
             lines.append("")
