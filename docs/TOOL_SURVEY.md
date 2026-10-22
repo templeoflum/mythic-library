@@ -114,6 +114,8 @@ Most tools stand alone once `data/mythic_patterns.db` exists. These are the orde
 
 `catalog.py status` has no order dependency. It needs its two arguments, a text ID from `catalog.py list` and the new status.
 
+`scripts/run_checks.sh` runs this order: tests, hygiene audit, `validate.js`, `v2_run`, `conduct_audit`. It writes its logs to `outputs/checks/<timestamp>/` or to a path given with `--out`. It never runs the tools that rewrite ACP files.
+
 ## Summary
 
 - 59 run, one of them after a fix (`validation/v2_tests/miroglyph_structure_v2.py`, which crashed when run by path)
