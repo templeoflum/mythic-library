@@ -7,6 +7,8 @@
 #   3. ACP validator          (ACP/tools/validate.js)
 #   4. v2 validation suite    (python -m validation.v2_run --quick, or --full)
 #   5. human audit            (scripts/conduct_audit.py, reads step 4's cases)
+#   6. published numbers      (scripts/check_published_numbers.py: README vs
+#                              current data; a report, never counted as a failure)
 #
 # Logs and a summary go to a results folder: by default
 # outputs/checks/<UTC timestamp>/ (outputs/ is gitignored), or the path given
@@ -36,7 +38,7 @@ while [ $# -gt 0 ]; do
   case "$1" in
     --out) OUT="${2:-}"; shift 2 ;;
     --full) V2_MODE="--full"; shift ;;
-    -h|--help) sed -n '2,27p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -h|--help) sed -n '2,29p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) echo "unknown argument: $1 (see --help)" >&2; exit 2 ;;
   esac
 done
@@ -95,6 +97,11 @@ else
   echo "5-conduct_audit skipped: needs step 4" | tee -a "$SUMMARY"
   FAILED=1
 fi
+
+# Report only: its exit status never changes FAILED.
+"$PYTHON" scripts/check_published_numbers.py < /dev/null > "$OUT/6-published_numbers.log" 2>&1
+printf '%-16s rc=%-3s %s\n' "6-published_numbers" "$?" "report only, see 6-published_numbers.log" | tee -a "$SUMMARY"
+grep -E "figures differ" "$OUT/6-published_numbers.log" | sed 's/^/  /' | tee -a "$SUMMARY"
 
 # Copy the files the steps wrote under outputs/ next to the logs.
 for f in outputs/hygiene_audit.json \
