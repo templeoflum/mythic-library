@@ -190,6 +190,16 @@
           "type": "CULTURAL_ECHO",
           "target": "incan:chasca",
           "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:chicchan",
+          "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "tzolkin:ik",
+          "fidelity": 0.7
         }
       ],
       "shadowDynamics": {

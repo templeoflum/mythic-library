@@ -482,7 +482,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "mesopotamian:nanna",
+          "target": "arch:ME-SIN",
           "fidelity": 0.6,
           "notes": "Lunar deity governing time"
         },

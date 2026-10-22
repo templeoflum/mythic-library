@@ -867,6 +867,11 @@
           "type": "CULTURAL_ECHO",
           "target": "superhero:legacy_hero",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "myss:child",
+          "fidelity": 0.9
         }
       ],
       "coreFunction": "To embody divine_child energy through innocence and potential",

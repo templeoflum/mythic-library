@@ -622,6 +622,16 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:CN-NUWA",
           "fidelity": 0.5
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:PL-TANGAROA",
+          "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:EG-PTAH",
+          "fidelity": 0.55
         }
       ],
       "correspondences": {
@@ -924,6 +934,11 @@
           "type": "CULTURAL_ECHO",
           "target": "persian:anahita",
           "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NO-FREYJA",
+          "fidelity": 0.65
         }
       ],
       "contextualVariants": [
@@ -2499,6 +2514,11 @@
         {
           "type": "CULTURAL_ECHO",
           "target": "arch:JP-TSUKUYOMI",
+          "fidelity": 0.6
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "incan:mama-quilla",
           "fidelity": 0.6
         }
       ],

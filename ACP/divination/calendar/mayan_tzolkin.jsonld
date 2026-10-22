@@ -165,7 +165,7 @@
       "relationships": [
         {
           "type": "CULTURAL_ECHO",
-          "target": "arch:MA-KUKULKAN",
+          "target": "arch:MA-QUETZALCOATL",
           "fidelity": 0.7,
           "note": "Wind deity"
         },
@@ -484,7 +484,7 @@
         },
         {
           "type": "CULTURAL_ECHO",
-          "target": "arch:MA-KUKULKAN",
+          "target": "arch:MA-QUETZALCOATL",
           "fidelity": 0.75,
           "note": "Feathered serpent"
         },
