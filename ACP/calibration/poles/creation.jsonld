@@ -19,7 +19,7 @@
   "polarOpposite": "calibration:pole_destruction",
   "nearestPrimordials": [
     {"@id": "primordial:creator", "distance": 0.15},
-    {"@id": "primordial:great_mother", "distance": 0.25}
+    {"@id": "primordial:great-mother", "distance": 0.25}
   ],
   "culturalExamples": ["Brahma", "Ptah", "Gaia (generative)", "Atum"],
   "psychologicalManifestation": "The drive to make, birth, generate, bring forth new forms",

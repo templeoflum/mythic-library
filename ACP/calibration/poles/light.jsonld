@@ -19,7 +19,7 @@
   "polarOpposite": "calibration:pole_shadow",
   "nearestPrimordials": [
     {"@id": "primordial:self", "distance": 0.2},
-    {"@id": "primordial:wise_elder", "distance": 0.25}
+    {"@id": "primordial:wise-elder", "distance": 0.25}
   ],
   "culturalExamples": ["Ra", "Apollo (illuminating)", "Baldur", "Amaterasu"],
   "psychologicalManifestation": "Conscious awareness, clarity, insight, revealed truth",

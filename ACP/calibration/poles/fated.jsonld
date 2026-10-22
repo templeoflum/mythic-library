@@ -19,7 +19,7 @@
   "polarOpposite": "calibration:pole_voluntary",
   "nearestPrimordials": [
     {"@id": "primordial:crone", "distance": 0.25},
-    {"@id": "primordial:wise_elder", "distance": 0.3}
+    {"@id": "primordial:wise-elder", "distance": 0.3}
   ],
   "culturalExamples": ["The Moirai/Fates", "Norns", "Ananke", "Wyrd"],
   "psychologicalManifestation": "Acceptance of fate, surrender to necessity, recognition of limits",

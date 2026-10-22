@@ -18,7 +18,7 @@
   },
   "polarOpposite": "calibration:pole_descent",
   "nearestPrimordials": [
-    {"@id": "primordial:great_father", "distance": 0.2},
+    {"@id": "primordial:great-father", "distance": 0.2},
     {"@id": "primordial:magician", "distance": 0.3}
   ],
   "culturalExamples": ["Zeus (sky)", "Odin (all-father)", "Dyaus Pita", "Uranus"],

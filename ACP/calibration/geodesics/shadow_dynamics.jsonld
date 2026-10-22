@@ -24,7 +24,7 @@
           "Trust in natural order",
           "Servant leadership"
         ],
-        "requiredArchetypes": ["primordial:healer", "primordial:wise_elder"]
+        "requiredArchetypes": ["primordial:healer", "primordial:wise-elder"]
       }
     },
     {
@@ -66,7 +66,7 @@
           "Use power for collective good",
           "Transparency in method"
         ],
-        "requiredArchetypes": ["primordial:lover", "primordial:wise_elder"]
+        "requiredArchetypes": ["primordial:lover", "primordial:wise-elder"]
       }
     },
     {
@@ -108,7 +108,7 @@
           "Serve cause greater than ego",
           "Balance courage with wisdom"
         ],
-        "requiredArchetypes": ["primordial:wise_elder", "primordial:trickster"]
+        "requiredArchetypes": ["primordial:wise-elder", "primordial:trickster"]
       }
     },
     {
@@ -134,7 +134,7 @@
     },
     {
       "@id": "shadow:great_mother_devouring",
-      "archetype": "primordial:great_mother",
+      "archetype": "primordial:great-mother",
       "shadowForm": "The Devouring Mother",
       "descentTriggers": ["Fear of child's independence", "Unmet needs projected", "Control through care"],
       "spectralShift": {
@@ -150,12 +150,12 @@
           "Trust child's journey",
           "Love without possessing"
         ],
-        "requiredArchetypes": ["primordial:wise_elder", "primordial:maiden"]
+        "requiredArchetypes": ["primordial:wise-elder", "primordial:maiden"]
       }
     },
     {
       "@id": "shadow:wise_elder_cynical",
-      "archetype": "primordial:wise_elder",
+      "archetype": "primordial:wise-elder",
       "shadowForm": "The Cynic/Dogmatist",
       "descentTriggers": ["Disappointment", "Betrayal by students", "Rigidity with age"],
       "spectralShift": {
@@ -171,7 +171,7 @@
           "Wisdom serves, not judges",
           "Accept not-knowing"
         ],
-        "requiredArchetypes": ["primordial:divine_child", "primordial:trickster"]
+        "requiredArchetypes": ["primordial:divine-child", "primordial:trickster"]
       }
     }
   ],

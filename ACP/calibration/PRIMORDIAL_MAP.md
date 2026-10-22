@@ -224,7 +224,7 @@ All 302 archetypes in v1.0 use this map:
 {
   "name": "The Fool",
   "instantiates": [
-    {"primordial": "primordial:divine_child", "weight": 0.85},
+    {"primordial": "primordial:divine-child", "weight": 0.85},
     {"primordial": "primordial:trickster", "weight": 0.70}
   ]
 }
