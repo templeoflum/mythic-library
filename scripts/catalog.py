@@ -311,9 +311,13 @@ def main():
     list_parser.add_argument("--status", help="Filter by status")
 
     # Status command
-    status_parser = subparsers.add_parser("status", help="Update text status")
-    status_parser.add_argument("text_id", help="Text ID")
-    status_parser.add_argument("new_status", help="New status")
+    status_parser = subparsers.add_parser(
+        "status", help="Update text status",
+        description="Set the status of one text in sources/master_catalog.csv.",
+        usage="%(prog)s TEXT_ID NEW_STATUS\n"
+              "       e.g. %(prog)s epic-of-gilgamesh pending")
+    status_parser.add_argument("text_id", help="Text ID, as shown by `catalog.py list`")
+    status_parser.add_argument("new_status", help="New status, e.g. pending")
 
     # Report command
     subparsers.add_parser("report", help="Generate summary report")
