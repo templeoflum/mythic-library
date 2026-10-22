@@ -21,9 +21,14 @@ Philosophy:
 - The same Zeus can be viewed through D (destroyer of Titans), R (witness/judge),
   or E (creator of cosmic order) - same coordinates, different lens.
 """
+import sys
+from pathlib import Path
+
 import numpy as np
 from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from scipy.stats import kruskal, mannwhitneyu, spearmanr, f_oneway, chi2_contingency
 
