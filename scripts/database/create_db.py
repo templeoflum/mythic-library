@@ -153,7 +153,17 @@ CREATE VIRTUAL TABLE IF NOT EXISTS segments_fts USING fts5(
 
 
 def create_database(reset: bool = False):
-    """Create the database schema."""
+    """Create the database schema.
+
+    The imports append rows, so building over an existing database would
+    double them. Without reset, an existing database stops the run before
+    anything is written.
+    """
+    if DB_PATH.exists() and not reset:
+        raise SystemExit(
+            f"{DB_PATH} already exists. Rebuilding over it would duplicate "
+            f"rows, so nothing was written.\n"
+            f"Run with --reset to drop it and rebuild from scratch.")
     if reset and DB_PATH.exists():
         os.remove(DB_PATH)
         print("Removed existing database.")
