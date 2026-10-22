@@ -1400,6 +1400,12 @@
           ],
           "description": "King of Wands represents divine kingship, justice, and the right ordering of society and cosmos."
         }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:fire"
+        }
       ]
     },
     {
@@ -1680,6 +1686,11 @@
               "target": "element:water",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "iching:hex_13",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To expand water energy through growth and collaboration",
@@ -2789,6 +2800,12 @@
             }
           ],
           "description": "King of Cups represents divine kingship, justice, and the right ordering of society and cosmos."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:water"
         }
       ]
     },
@@ -4140,6 +4157,12 @@
           ],
           "description": "King of Swords represents divine kingship, justice, and the right ordering of society and cosmos."
         }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:air"
+        }
       ]
     },
     {
@@ -4504,6 +4527,11 @@
               "target": "element:earth",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "spiral:beige",
+              "fidelity": 0.6
             }
           ],
           "coreFunction": "To establish stable foundation in the realm of earth",
@@ -4992,6 +5020,11 @@
               "target": "element:earth",
               "fidelity": 0.8,
               "note": "Elemental correspondence"
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "iching:hex_14",
+              "fidelity": 0.7
             }
           ],
           "coreFunction": "To approach the culmination of earth mastery",
@@ -5095,6 +5128,11 @@
               "type": "CULTURAL_ECHO",
               "target": "rune:othala",
               "fidelity": 0.85
+            },
+            {
+              "type": "CULTURAL_ECHO",
+              "target": "iching:hex_37",
+              "fidelity": 0.75
             }
           ],
           "coreFunction": "To embody the full manifestation and completion of earth energy",
@@ -5523,6 +5561,12 @@
             }
           ],
           "description": "King of Pentacles represents divine kingship, justice, and the right ordering of society and cosmos."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "element:earth"
         }
       ]
     }

@@ -85,6 +85,16 @@
           "type": "CULTURAL_ECHO",
           "target": "superhero:cosmic_being",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:master_two_worlds",
+          "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:apotheosis",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -326,6 +336,11 @@
           "type": "CULTURAL_ECHO",
           "target": "superhero:warrior_woman",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:meeting_goddess",
+          "fidelity": 0.85
         }
       ],
       "narrativeRoles": [
@@ -426,6 +441,11 @@
           "type": "CULTURAL_ECHO",
           "target": "vogler:shapeshifter",
           "fidelity": 0.7
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:atonement_father",
+          "fidelity": 0.75
         }
       ],
       "narrativeRoles": [
@@ -604,6 +624,11 @@
           "type": "CULTURAL_ECHO",
           "target": "angel:cherubim",
           "fidelity": 0.75
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:supernatural_aid",
+          "fidelity": 0.85
         }
       ],
       "domains": [
@@ -872,6 +897,11 @@
           "type": "CULTURAL_ECHO",
           "target": "myss:child",
           "fidelity": 0.9
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "journey:freedom_to_live",
+          "fidelity": 0.75
         }
       ],
       "coreFunction": "To embody divine_child energy through innocence and potential",
