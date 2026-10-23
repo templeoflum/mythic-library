@@ -1385,6 +1385,13 @@
           "target": "arch:GR-GRIFFIN",
           "fidelity": 0.5,
           "notes": "Composite guardian beast"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:TR-ANKA",
+          "fidelity": 0.4,
+          "notes": "Turkish form of the Simurgh",
+          "provenance": "SCHOL"
         }
       ],
       "shadowDynamics": {

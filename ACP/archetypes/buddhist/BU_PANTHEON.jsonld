@@ -3031,6 +3031,13 @@
           "target": "arch:IN-VISHNU",
           "notes": "Vishnu's mount (vahana)",
           "provenance": "TRAD"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:TR-ANKA",
+          "fidelity": 0.55,
+          "notes": "Turkish king of birds, enemy of serpents",
+          "provenance": "SCHOL"
         }
       ],
       "correspondences": {

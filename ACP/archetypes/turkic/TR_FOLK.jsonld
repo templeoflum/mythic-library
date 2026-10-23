@@ -1,0 +1,317 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "pantheon:TR-FOLK",
+  "@type": "Pantheon",
+  "name": "Turkish Folk-Tale Figures",
+  "tradition": "Turkish (Anatolian folk tales)",
+  "description": "Supernatural figures from the Anatolian folk tales collected by Ignácz Kúnos, drawing on Turkic, Persian and Arabic story traditions.",
+  "canonicalSources": [
+    "Kúnos/Bain, Turkish Fairy Tales and Folk Tales (1896), Gutenberg #64807"
+  ],
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1 (tools/derive_coordinates.js)"
+  },
+  "entries": [
+    {
+      "@id": "arch:TR-PERI",
+      "@type": "Archetype",
+      "name": "Peri",
+      "aliases": [
+        "Peris",
+        "Pari",
+        "Peri-maiden"
+      ],
+      "domain": [
+        "Beauty",
+        "Birth",
+        "Blessing",
+        "The Otherworld"
+      ],
+      "description": "The fairy race of the Anatolian tales, a byword for beauty. In The Three Orange-Peris a prince wins three oranges from the devils who guard them; when he cuts one open in the desert, a damsel \"lovely as a Peri\" pops out, begs for a drop of water, and vanishes because there is none. In The Rose-Beauty the walls of a poor hut open and three damsels of the Peri race step in to attend a birth, each speaking a gift over the new-born girl: pearls fall from her eyes when she weeps, roses bloom when she smiles, and a riband of green verdure follows her footsteps.",
+      "spectralCoordinates": {
+        "order-chaos": 0.44,
+        "creation-destruction": 0.22,
+        "light-shadow": 0.36,
+        "active-receptive": 0.45,
+        "individual-collective": 0.37,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.35
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.75,
+          "aspects": [
+            "otherworld-bride",
+            "beauty"
+          ]
+        },
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.5,
+          "aspects": [
+            "blessing-giver",
+            "enchantment"
+          ]
+        },
+        {
+          "primordial": "primordial:healer",
+          "weight": 0.35,
+          "aspects": [
+            "birth-attendant"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-NYMPHS",
+          "fidelity": 0.5,
+          "notes": "Beautiful otherworld females bound to springs and gardens",
+          "provenance": "SCHOL"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:GR-MOIRAI",
+          "fidelity": 0.45,
+          "notes": "Three who come to a birth and pronounce the child's lot",
+          "provenance": "SCHOL"
+        },
+        {
+          "type": "CONTAINED_BY",
+          "target": "arch:TR-ANKA",
+          "notes": "The Anka is called Padishah of the Peris"
+        }
+      ],
+      "correspondences": {
+        "element": "Water",
+        "direction": "The garden fountain",
+        "symbol": "Orange, pearl, rose",
+        "association": "Beauty and the gifts spoken at birth"
+      },
+      "domains": [
+        "beauty",
+        "birth",
+        "blessing",
+        "marriage",
+        "water"
+      ],
+      "keywords": [
+        "peri",
+        "fairy",
+        "beauty",
+        "blessing",
+        "birth",
+        "orange",
+        "enchantment"
+      ],
+      "narrativeRoles": [
+        "beloved",
+        "helper",
+        "otherworld-bride"
+      ],
+      "coreFunction": "To bring otherworld beauty and blessing into the human house",
+      "symbolicCore": "The maiden inside the fruit",
+      "primarySources": [
+        "Kúnos/Bain, Turkish Fairy Tales and Folk Tales (1896), Gutenberg #64807"
+      ],
+      "status": "derived"
+    },
+    {
+      "@id": "arch:TR-ANKA",
+      "@type": "Archetype",
+      "name": "Anka",
+      "aliases": [
+        "Emerald Anka",
+        "Zümrüd-ü Anka",
+        "Simurgh",
+        "Simorgh"
+      ],
+      "domain": [
+        "Birds",
+        "Worlds Below and Above",
+        "Gratitude",
+        "Serpents"
+      ],
+      "description": "The emerald Anka, \"mother of the birds and the Padishah of the Peris\". A serpent destroys her young year by year. In The Cinder-Youth, when the hero Cinder-son, fallen into the seventh world, cuts the serpent in two, she shelters him with her wings, then carries him up through the layers of the worlds, fed forty tons of ox-flesh and forty pitchers of water whenever she cries \"Gik!\" and \"Gak!\". Bain compares her to the Bird Mogol and the Bird Zhar of the Russian and Cossack tales.",
+      "spectralCoordinates": {
+        "order-chaos": 0.36,
+        "creation-destruction": 0.35,
+        "light-shadow": 0.4,
+        "active-receptive": 0.49,
+        "individual-collective": 0.6,
+        "ascent-descent": 0.64,
+        "stasis-transformation": 0.46,
+        "voluntary-fated": 0.57
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:great-mother",
+          "weight": 0.6,
+          "aspects": [
+            "mother-of-birds",
+            "shelterer"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.6,
+          "aspects": [
+            "carrier-between-worlds"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.4,
+          "aspects": [
+            "padishah-of-peris"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-GARUDA",
+          "fidelity": 0.55,
+          "notes": "King of birds and enemy of serpents",
+          "provenance": "SCHOL"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:NA-THUNDERBIRD",
+          "fidelity": 0.4,
+          "notes": "Great bird at war with the serpent powers",
+          "provenance": "ORIG"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:SL-SIMARGL",
+          "fidelity": 0.4,
+          "notes": "Simargl is usually traced to the Iranian Simurgh, the Anka's Persian name",
+          "provenance": "SCHOL"
+        },
+        {
+          "type": "CONTAINS",
+          "target": "arch:TR-PERI",
+          "notes": "Padishah of the Peris"
+        }
+      ],
+      "correspondences": {
+        "element": "Air",
+        "direction": "Between the seven worlds",
+        "symbol": "Emerald bird, sheltering wings",
+        "association": "Gratitude that lifts the hero out of the underworld"
+      },
+      "domains": [
+        "birds",
+        "ascent",
+        "gratitude",
+        "serpents",
+        "underworld"
+      ],
+      "keywords": [
+        "anka",
+        "simurgh",
+        "bird",
+        "mother",
+        "ascent",
+        "underworld",
+        "serpent"
+      ],
+      "narrativeRoles": [
+        "helper",
+        "carrier",
+        "protector"
+      ],
+      "coreFunction": "To repay the hero by carrying him up from the lower world",
+      "symbolicCore": "The great wing that is both tent and road",
+      "primarySources": [
+        "Kúnos/Bain, Turkish Fairy Tales and Folk Tales (1896), Gutenberg #64807"
+      ],
+      "status": "derived"
+    },
+    {
+      "@id": "arch:TR-EFRIT",
+      "@type": "Archetype",
+      "name": "Efrit",
+      "aliases": [
+        "Ifrit",
+        "Afreet",
+        "Black Efrit"
+      ],
+      "domain": [
+        "Servitude",
+        "Power",
+        "Wishes"
+      ],
+      "description": "The servant spirit of the Turkish tales. In The Cinder-Youth, striking a flint-stone kept in a casket summons \"a black efrit with a mouth as big as the world\", who asks \"What dost thou command, my Sultan?\" and fetches meat, water, news and people at once. He is enormous and fearsome, but he serves whoever holds the talisman.",
+      "spectralCoordinates": {
+        "order-chaos": 0.6,
+        "creation-destruction": 0.52,
+        "light-shadow": 0.58,
+        "active-receptive": 0.28,
+        "individual-collective": 0.33,
+        "ascent-descent": 0.58,
+        "stasis-transformation": 0.67,
+        "voluntary-fated": 0.36
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.6,
+          "aspects": [
+            "wish-fulfiller",
+            "bound-power"
+          ]
+        },
+        {
+          "primordial": "primordial:monster",
+          "weight": 0.45,
+          "aspects": [
+            "giant-spirit"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.3,
+          "aspects": [
+            "double-edged-servant"
+          ]
+        }
+      ],
+      "relationships": [],
+      "correspondences": {
+        "element": "Fire",
+        "direction": "Out of the talisman",
+        "symbol": "Flint-stone, casket",
+        "association": "Power that serves whoever holds the token"
+      },
+      "domains": [
+        "servitude",
+        "wishes",
+        "power",
+        "talisman"
+      ],
+      "keywords": [
+        "efrit",
+        "jinn",
+        "servant",
+        "talisman",
+        "wish",
+        "control"
+      ],
+      "narrativeRoles": [
+        "helper",
+        "servant"
+      ],
+      "coreFunction": "To put boundless power at the command of the token's holder",
+      "symbolicCore": "The world-sized mouth that says 'What dost thou command?'",
+      "primarySources": [
+        "Kúnos/Bain, Turkish Fairy Tales and Folk Tales (1896), Gutenberg #64807"
+      ],
+      "status": "derived"
+    }
+  ]
+}
