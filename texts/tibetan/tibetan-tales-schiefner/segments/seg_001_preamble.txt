@@ -1,0 +1,974 @@
+TIBETAN TALES
+                      Derived from Indian Sources.
+
+
+                   TRANSLATED FROM THE TIBETAN OF THE
+                                KAH-GYUR
+                                   BY
+                         F. ANTON VON SCHIEFNER
+
+                   DONE INTO ENGLISH FROM THE GERMAN,
+                         WITH AN INTRODUCTION,
+                                   BY
+                         W. R. S. RALSTON, M.A.
+
+
+                                LONDON:
+                 KEGAN PAUL, TRENCH, TRÜBNER & CO. LTD
+                    DRYDEN HOUSE, GERRARD STREET, W.
+
+                                 1906.
+
+
+CONTENTS.
+
+
+    CHAP.                                                  PAGE
+
+    I.          King Māndhātar                                1
+    II.         Kuśa Jātaka                                  21
+    III.        Ādarśamukha                                  29
+    IV.         The Clever Thief                             37
+    V.          Sudhana Avadāna                              44
+    VI.         Prince Jīvaka                                75
+    VII.        Viśākhā                                     110
+    VIII.       Mahaushadha and Viśākhā                     128
+    IX.         Mahākāśyapa and Bhadrā                      186
+    X.          Utpalavarṇā                                 206
+    XI.         Kṛiśā Gautamī                               216
+    XII.        Suśroṇī                                     227
+    XIII.       The Overreached Actor                       236
+    XIV.        The Dumb Cripple                            247
+    XV.         Ṛshyaśringa                                 253
+    XVI.        Viśvaṇtara                                  257
+    XVII.       The Fulfilled Prophecy                      273
+    XVIII.      The Two Brothers                            279
+    XIX.        The Punishment of Avarice                   286
+    XX.         The Magician’s Pupil                        288
+    XXI.        How a Woman repays Love                     291
+    XXII.       The Flight of the Beasts                    296
+    XXIII.      The Five Lovers                             299
+    XXIV.       The Virtuous Animals                        302
+    XXV.        The Ichneumon, the Mouse, and the Snake     308
+    XXVI.       The Grateful Animals                        309
+    XXVII.      The Ungrateful Lion                         311
+    XXVIII.     The Tricked Elephant                        313
+    XXIX.       The Wolf and the Sheep                      314
+    XXX.        The Oxen as Witnesses                       315
+    XXXI.       The Obstinate and Willing Oxen              321
+    XXXII.      The Ass as a Singer                         323
+    XXXIII.     The Jackal as Calumniator                   325
+    XXXIV.      The Two Otters and the Jackal               332
+    XXXV.       The Jackal saves the Lion                   335
+    XXXVI.      The Blue Jackal                             336
+    XXXVII.     The Jackal hanged by the Ox                 339
+    XXXVIII.    The Jackal in the Elephant’s Traces         341
+    XXXIX.      The Guilty Dogs                             342
+    XL.         The Hypocritical Cat                        344
+    XLI.        The Gazelle and the Hunter                  346
+    XLII.       The Monkeys saved from Death                348
+    XLIII.      Incredulity Punished                        350
+    XLIV.       The Wise and Foolish Monkey Chiefs          352
+    XLV.        The Monkeys and the Moon                    353
+    XLVI.       The Peacock as Bridegroom                   354
+    XLVII.      The Crow with the Golden Cap                355
+    XLVIII.     The Revengeful Crow                         356
+    XLIX.       The United Pheasants                        358
+    L.          Artist Anecdotes                            360
+
+
+INTRODUCTION.
+
+
+In an Appendix to his “Buddhism in Tibet,” Dr. Emil Schlagintweit has
+given “An alphabetical list of the books and memoirs connected with
+Buddhism.” Although not completely exhaustive, it occupies thirty-five
+pages, and contains references to more than a hundred separate works,
+and a much larger number of essays and other literary articles. Of
+those books and articles, the titles of about sixty allude to Tibet. To
+them may be referred readers who wish for detailed information about
+that country, its literature, and its religion.  All that it is
+proposed to do here is to say a few words about the Tibetan work from
+which have been extracted the tales contained in the present volume; to
+give a short account of the enthusiastic Hungarian scholar, Csoma
+Körösi, who had so much to do with making that work known to Europe;
+and to call attention to any features which the stories now before us
+may have in common with European folk-tales. To do more, without merely
+repeating what has been already said, would require a rare amount of
+special knowledge; and it may safely be asserted that remarks about
+Buddhism, made by writers who do not possess such knowledge, are seldom
+of signal value.
+
+The tales contained in the sacred books of Tibet, it may be as well to
+remark at the outset, appear to have little that is specially Tibetan
+about them except their language. Stories possessing characteristic
+features and suffused with local colour may possibly live in the
+memories of the natives of that region of lofty and bleak table-lands,
+with which so few Europeans have had an opportunity of becoming
+familiar. But the legends and fables which the late Professor Schiefner
+has translated from the Kah-gyur are merely Tibetan versions of
+Sanskrit writings. No mention is made in them of those peculiarities of
+Tibetan Buddhism which have most struck the fancy of foreign observers.
+They never allude to the rosary of 108 beads which every Tibetan
+carries, “that he may keep a reckoning of his good words, which supply
+to him the place of good deeds;” the praying wheels, “those curious
+machines which, filled with prayers, or charms, or passages from holy
+books, stand in the towns in every open place, are placed beside the
+footpaths and the roads, revolve in every stream, and even (by the help
+of sails like those of windmills) are turned by every breeze which
+blows o’er the thrice-sacred valleys of Tibet;” the “Trees of the Law,”
+the lofty flagstaffs from which flutter banners emblazoned with the
+sacred words, “Ah! the jewel is in the lotus,” the turning of which
+towards heaven by the wind counts as the utterance of a prayer capable
+of bringing down blessings upon the whole country-side; or of that
+Lamaism which “bears outwardly, at least, a strong resemblance to
+Romanism, in spite of the essential difference of its teachings and of
+its mode of thought.” [1] There is, therefore, no present need to dwell
+at length upon the land into which the legends and doctrines were
+transplanted which had previously flourished on Indian soil, or the
+people by whom they have been religiously preserved, but whose actions
+and thoughts they do not by any means fully represent. “At the present
+day,” says Mr. Rhys Davids, “the Buddhism of Nepāl and Tibet differs
+from the Buddhism of Ceylon as much as the Christianity of Rome or of
+Moscow differs from that of Scotland or Wales. But,” he proceeds to
+say, “the history of Buddhism from its commencement to its close is an
+epitome of the religious history of mankind. And we have not solved the
+problem of Buddhism when we have understood the faith of the early
+Buddhists. It is in this respect that the study of later Buddhism in
+Ceylon, Burma, and Siam, in Nepāl and in Tibet, in China, Mongolia, and
+Japan, is only second in importance to the study of early Buddhism.”
+[2]
+
+
+With regard to the introduction of Buddhism into Tibet, Emil
+Schlagintweit [3] remarks that “the early history is involved in
+darkness and myth.” Sanang Setsen, in his “History of the East
+Mongols,” [4] says that during the reign of King Hlatotori, who came to
+the throne in 367 A.D., four objects descended from heaven one day and
+lighted upon the golden terrace of his palace, “namely, the image of
+two hands in the position of prayer, a golden pyramid-temple an ell
+high, a small coffer with a gem marked with the six fundamental
+syllables (Om-ma-ni-pad-mè-hûm), and the manual called Szamadok.” [5]
+As the king did not understand the nature of the holy objects, he
+ordered them to be locked up in his treasury. While they lay there,
+“misfortune came upon the king. If children were born, they came into
+the world blind; fruits and grain came to nothing; cattle plague,
+famine, and pestilence prevailed; and of unavoidable misery was there
+much.” But after forty years had passed, there came five strangers to
+the king and said, “Great king, how couldst thou let these objects, so
+mystic and powerful, be cast into the treasury?” Having thus spoken,
+they suddenly disappeared. Therefore the king ordered the holy objects
+to be brought forth from the treasury, and to be attached to the points
+of standards, and treated with the utmost respect and reverence. After
+that all went well: the king became prosperous and long-lived, children
+were born beautiful, famine and pestilence came to an end, and in their
+place appeared happiness and welfare. With the date of this event
+Sanang Setsen connects the introduction of Buddhism into Tibet; but
+according to Tibetan historians, says Schlagintweit, “the earliest
+period of the propagation of Buddhism, which reached down till the end
+of the tenth century A.D., begins with King Srongtsan Gampo, who was
+born in the year 617 A.D., and died 698.” This king is said to have
+sent a mission to India in the year 632 A.D., the result of which was
+the invention of a Tibetan alphabet, based upon Devanāgari characters,
+and the translation into Tibetan of Indian sacred books. In his
+introduction of Buddhism into his kingdom he is said to have been “most
+energetically supported by his two wives, one of whom was a Nepalese,
+the other a Chinese princess. Both of them, who throughout their
+lifetime proved most faithful votaries to the faith of Buddha, are
+worshipped either under the general name of Dolma (in Sanskrit Tārā),
+or under the respective names of Dolkar and Doljang.” After making
+considerable progress during the reign of this monarch, the new
+religion lost ground under his immediate successors. “But under one of
+them, Thisrong de tsan, ... Buddhism began to revive, owing to the
+useful regulations proclaimed by this king. He it was who successfully
+crushed an attempt made by the chiefs during his minority to suppress
+the new creed, and it is principally due to him that the Buddhist faith
+became henceforth permanently established.”
+
+Towards the end of the ninth century, continues Schlagintweit, Buddhism
+was strongly opposed by a ruler who “commanded all temples and
+monasteries to be demolished, the images to be destroyed, and the
+sacred books to be burnt;” and his son and successor is also said to
+have died “without religion;” but his grandson was favourably inclined
+towards Buddhism, and rebuilt eight temples. “With this period we have
+to connect ‘the second propagation of Buddhism;’ it received,
+especially from the year 971 A.D., a powerful impetus from the joint
+endeavours of the returned Tibetan priests (who had fled the country
+under the preceding kings), and of the learned Indian priest Pandita
+Atisha and his pupil Brom-ston. Shortly before Atisha came to Tibet,
+1041 A.D., the Kāla Chakra doctrine, or Tantrika mysticism, was
+introduced into Tibet, and in the twelfth and thirteenth centuries many
+Indian refugees settled in the country, who greatly assisted the
+Tibetans in the translation of Sanskrit books.” It is probably from
+this period that the Kah-gyur dates.
+
+In the fourteenth century arose the reformer Tsonkhapa, who “imposed
+upon himself the difficult task of uniting and reconciling the
+dialectical and mystical schools which Tibetan Buddhism had brought
+forth, and also of eradicating the abuses gradually introduced by the
+priests.” Tradition asserts that he “had some intercourse with a
+stranger from the West, who was remarkable for a long nose. Huc
+believes this stranger to have been a European missionary, and connects
+the resemblance of the religious service in Tibet to the Roman Catholic
+ritual with the information which Tsonkhapa might have received from
+this Roman Catholic priest. We are not yet able to decide the question
+as to how far Buddhism may have borrowed from Christianity; but the
+rites of the Buddhists enumerated by the French missionary can for the
+most part either be traced back to institutions peculiar to Buddhism,
+or they have sprung up in periods posterior to Tsonkhapa.” [6]
+
+Mr. Rhys Davids has remarked that, “As in India, after the expulsion of
+Buddhism, the degrading worship of Śiva and his dusky bride had been
+incorporated into Brahmanism from the wild and savage devil-worship of
+the dark non-Aryan tribes, so as pure Buddhism died away in the North,
+the Tantra system, a mixture of magic and witchcraft and Śiva-worship,
+was incorporated into the corrupted Buddhism.” [7] Of this change for
+the worse, evidence about which there can be no mistake is supplied by
+the Tibetan sacred books. Dr. Malan, who has made himself acquainted
+with the contents of some of their volumes in the original, says, [8]
+“There are passages of great beauty and great good sense, the most
+abstruse metaphysics, and the most absurd and incredible stories; yet
+not worse than those told in the Talmud, which equal or even surpass
+them in absurdity.”
+
+
+On New Year’s day 1820, a traveller started from Bucharest on an
+adventurous journey towards the East. His name was Alexander Csoma
+Körösi (or de Körös), [9] and he was one of the sons of a Szekler
+military family of Eger-patak, in the Transylvanian circle of Hungary.
+In 1799, when he seems to have been about nine years old, [10] he was
+sent to the Protestant College at Nagy-Enyed, where he studied for many
+years with the idea of taking orders. In 1815 he was sent to Germany,
+and there he studied for three years, chiefly at the University of
+Göttingen, where he attended the lectures of the celebrated Orientalist
+Johann Gottfried Eichhorn. After his return from Germany, he spent the
+greater part of the year 1819 in studying various Slavonic dialects,
+first at Temesvar in Lower Hungary, then at Agram in Croatia. But he
+soon resolved to apply himself to less-known tongues.
+
+“Among other liberal pursuits,” he wrote in 1825, [11] “my favourite
+studies were philology, geography, and history. Although my
+ecclesiastical studies had prepared me for an honourable employment in
+my native country, yet my inclination for the studies above-mentioned
+induced me to seek a wider field for their future cultivation. As my
+parents were dead, and my only brother did not want my assistance, I
+resolved to leave my native country and to come towards the East, and,
+by some means or other procuring subsistence, to devote my whole life
+to researches which may be afterwards useful in general to the learned
+world of Europe, and in particular may illustrate some obscure facts in
+ancient history.” Having no hope, he says, of obtaining “an imperial
+passport” for his journey, he procured “a printed Hungarian passport at
+Nagy-Enyed, to come on some pretended business to Bucharest,” intending
+to study Turkish there and then to go on to Constantinople. But he
+could obtain neither instruction in Turkish nor the means of going
+direct to Constantinople. So he set forth from Bucharest on the 1st of
+January 1820, and travelled with some Bulgarian companions to
+Philippopolis. Tidings of plague forced him to turn aside to the coast
+of the Archipelago, whence he sailed in a Greek ship to Alexandria.
+Driven from that city by the plague, he made his way by sea to the
+coast of Syria, and thence on foot to Aleppo. From that city he
+proceeded to Bagdad, which he reached in July, travelling part of the
+way on foot, “with different caravans from various places, in an
+Asiatic dress,” and the rest “by water on a raft.” In September he left
+Bagdad, travelling in European costume on horseback with a caravan, and
+in the middle of next month he arrived at Teheran. In the capital of
+Persia he spent four months. In March 1821 he again started with a
+caravan, travelling as an Armenian, and, after a stay of six months in
+Khorasán, arrived in the middle of November at Bokhara. There he
+intended to pass the winter; but at the end of five days, “affrighted
+by frequent exaggerated reports of the approach of a numerous Russian
+army,” he travelled with a caravan to Kabul, where he arrived early in
+January 1822. At the end of a fortnight he again set out with a
+caravan. Making acquaintance on the way with Runjeet Sing’s French
+officers, Generals Allard and Ventura, he accompanied them to Lahore.
+By their aid he obtained permission to enter Kashmir, with the
+intention of proceeding to Yarkand; but finding that the road was “very
+difficult, expensive, and dangerous for a Christian,” he set out from
+Leh in Ladak, the farthest point he reached, to return to Lahore. On
+his way back, near the Kashmir frontier, he met Mr. Moorcroft and
+returned with him to Leh. There Mr. Moorcroft lent him the “Alphabetum
+Tibetanum,” the ponderous work published at Rome in 1762, compiled by
+Father Antonio Agostino Giorgi out of the materials sent from Tibet by
+the Capuchin Friars. Its perusal induced him to stay for some time at
+Leh in order to study Tibetan, profiting by “the conversation and
+instruction of an intelligent person, who was well acquainted with the
+Tibetan and Persian languages.” During the winter, which he spent at
+Kashmir, he became so interested in Tibetan that he determined to
+devote himself to its study, so as to be able to “penetrate into those
+numerous and highly interesting volumes which are to be found in every
+large monastery.” He communicated his ideas to Mr. Moorcroft, who fully
+approved of his plan, and provided him with money and official
+recommendations. Starting afresh from Kashmir in May 1823, he reached
+Leh in the beginning of June. From that city, he says, “travelling in a
+south-westerly direction, I arrived on the ninth day at Yangla, and
+from the 20th of June 1823 to the 22d of October 1824 I sojourned in
+Zanskár (the most south-western province of Ladákh), where I applied
+myself to the Tibetan literature, assisted by the Lámá.”
+
+With the approach of winter he left Zanskár, and towards the end of
+November 1824 arrived at Sabathú. In the letter which he wrote during
+his stay there, in January 1825, he says, “At my first entrance to the
+British Indian territory, I was fully persuaded I should be received as
+a friend by the Government.” Nor was he disappointed. As at Bagdad and
+Teheran, so in India was the Hungarian pilgrim welcomed and assisted by
+the British authorities. In 1826 he seems (says Dr. Archibald Campbell
+[12]) to have paid a second visit to Western Tibet, and to have
+continued “to study in the monasteries of that country, living in the
+poorest possible manner,” till 1831. In the autumn of that year Dr.
+Campbell met him at Simla, “dressed in a coarse blue cloth loose gown,
+extending to his heels, and a small cloth cap of the same material. He
+wore a grizzly beard, shunned the society of Europeans, and passed his
+whole time in study.” It is much to be regretted that he has left no
+record of his residence in the monasteries in which he passed so long a
+time, in one of which, “with the thermometer below zero for more than
+four months, he was precluded by the severity of the weather from
+stirring out of a room nine feet square. Yet in this situation he read
+from morning till evening without a fire, the ground forming his bed,
+and the walls of the building his protection against the rigours of the
+climate, and still he collected and arranged forty thousand words in
+the language of Tibet, and nearly completed his Dictionary and
+Grammar.” [13] Day after day, says M. Pavie, [14] he would sit in a
+wretched hut at the door of a monastery, reading aloud Buddhistic works
+with a Lama by his side. When a page was finished, the two readers
+would nudge each other’s elbows. The question was which of them was to
+turn over the leaf, thereby exposing his hand for the moment,
+unprotected by the long-furred sleeve, to the risk of being
+frost-bitten.
+
+In May 1832 he went to Calcutta, where he met with great kindness from
+many scholars, especially Professor H. H. Wilson and Mr. James Prinsep,
+and, after a time, he was appointed assistant-librarian to the Asiatic
+Society of Bengal. At Calcutta he spent many years, and there his two
+principal works, the “Essay Towards a Dictionary, Tibetan and English,”
+[15] and the “Grammar of the Tibetan Language,” were brought out at the
+expense of Government in 1834. “In the beginning of 1836,” says Dr.
+Campbell, “his anxiety to visit Lassa induced him to leave Calcutta for
+Titalya, in the hope of accomplishing his design through Bootan, Sikim,
+or Nipal.” Of his life in Titalya, where he seems to have spent more
+than a year, some account is given by Colonel G. W. A. Lloyd, who says,
+“He would not remain in my house, as he thought his eating and living
+with me would cause him to be deprived of the familiarity and society
+of the natives, with whom it was his wish to be colloquially intimate,
+and I therefore got him a common native hut, and made it as comfortable
+as I could for him, but still he seemed to me to be miserably off. I
+also got him a servant, to whom he paid three or four rupees a month,
+and his living did not cost him more than four more.”
+
+Towards the end of 1837 [16] he returned to Calcutta. I have been
+favoured by a very accomplished linguist, the Rev. S. C. Malan, D.D.,
+Rector of Broadwindsor, Dorset, who was at one time secretary to the
+Asiatic Society of Bengal, with an account of his acquaintance with
+Csoma Körösi during the Hungarian scholar’s second residence at
+Calcutta. Dr. Malan writes as follows:—
+
+“As regards Csoma de Körös, I never think of him without interest and
+gratitude. I had heard of him, and seen his Tibetan Grammar and
+Dictionary before leaving England. And one thing that used to make me
+think a five months’ voyage interminable was my longing to become
+acquainted with one who had prepared the way for the acquisition of a
+language of Asia, thought until then almost mythical. For neither
+Father Georgi’s nor Abel Rémusat’s treatises went very far to clear the
+mystery.
+
+“One of my early visits, then, was to the Asiatic Society’s house [in
+Calcutta], where Csoma lived as under-librarian. [17] I found him a man
+of middle stature, of somewhat strange expression and features, much
+weather-beaten from his travels, but kind, amiable, and willing to
+impart all he knew. He was, however, very shy, and extremely
+disinterested. Although I had to cross the river to come to him, I
+requested him at once to give me one lesson a week in Tibetan, and he
+agreed to do so most readily. But I could not make him consent to take
+any money. He told me to come as often as I liked, on the condition
+that his teaching was to be free, for the pleasure and love of it. Of
+course this prevented me from visiting him as frequently as I should
+otherwise have done, yet I went to him for a lesson as often as I dared
+to do so. Although I frequently asked him to come and stay in my house
+for change of air, I never could prevail upon him to come, owing to his
+shyness and retiring habits. But as I happened to be the only person
+who was troubling himself about Tibetan, he and I became very good
+friends during the whole of my (alas! too short) stay in India. And
+when we parted he gave me the whole of his Tibetan books, some thirty
+volumes. I value such relics highly, and still use the same volume,
+containing his Grammar and Dictionary, which I used to turn over with
+him.”
+
+Speaking of Csoma Körösi’s literary life at Calcutta, M. Pavie says, in
+the article which has already been cited, “These labours occupied his
+time for the space of nine years. He had turned his study into a sort
+of cell, from which he scarcely ever emerged, except to walk up and
+down the long neighbouring galleries. It was there that, during our
+stay in Bengal, we very frequently saw him, absorbed in a dreamy
+meditation, smiling at his own thoughts, as silent as the Brahmans who
+were copying Sanskrit texts. He had forgotten Europe to live amid the
+clouds of ancient Asia.”
+
+Early in 1842 Csoma Körösi left Calcutta, with the intention of
+revisiting Tibet, and of making his way, if possible, to Lhasa, where
+he was in hopes of discovering rich stores of Tibetan literature as yet
+unknown to the learned world. On the 24th of March he arrived at
+Darjíling, in Nepal, where the superintendent of the station, Dr.
+Archibald Campbell, did all he could to further his views. But on the
+6th of April he was attacked by fever, and on the 11th he died, a
+victim, as Professor Max Müller has said, “to his heroic devotion to
+the study of ancient languages and religions.” His wants, apart from
+literary requirements, appear to have been as few as those of any monk,
+whether Christian or Buddhistic. “His effects,” says Dr. Campbell,
+“consisted of four boxes of books and papers, the suit of blue clothes
+which he always wore, and in which he died, a few shirts, and one
+cooking-pot. His food was confined to tea, of which he was very fond,
+and plain boiled rice, of which he ate very little. On a mat on the
+floor, with a box of books on the four sides, he sat, ate, slept, and
+studied; never undressed at night, and rarely went out during the day.
+He never drank wine or spirits, or used tobacco or other stimulants.”
+
+A few days before he died he gave Dr. Campbell “a rapid summary of the
+manner in which he believed his native land was possessed by the
+original ‘Huns,’ and his reasons for tracing them to Central or Eastern
+Asia.” Dr. Campbell gathered from his conversation that “all his hopes
+of attaining the object of the long and laborious search were centred
+in the discovery of the country of the ‘Yoogars.’ This land he believed
+to be to the east and north of Lassa and the province of Kham, and on
+the northern confines of China; to reach it was the goal of his most
+ardent wishes, and there he fully expected to find the tribes he had
+hitherto sought in vain.” On the way he hoped to make great literary
+discoveries, and he would dilate in the most enthusiastic manner “on
+the delight he expected to derive from coming in contact with some of
+the learned men of the East (Lassa), as the Lamas of Ladakh and Kānsun,
+with whom alone he had previous communion, were confessedly inferior in
+learning to those of Eastern Tibet.” He was generally reticent about
+the benefits which scholars might derive from his contemplated journey,
+but “What would Hodgson, Turnour, and some of the philosophers of
+Europe not give to be in my place when I get to Lassa!” was a frequent
+exclamation of his during his conversations with Dr. Campbell before
+his illness.
+
+The Asiatic Society of Bengal at once placed a thousand rupees at the
+disposal of Dr. Campbell for the erection of a monument above the
+remains of the Hungarian pilgrim. And the Government of India has since
+given instructions that the grave of this genuine and disinterested
+scholar shall be for all time placed under the care of the British
+Resident at Darjíling. [18]
+
+To the Hungarian enthusiast may be fairly applied, with a slight
+change, the words which Professor Max Müller [19] has written with
+reference to Hiouen-thsang, the Chinese pilgrim, who spent so much time
+“quietly pursuing among strangers, within the bleak walls of the cell
+of a Buddhist college, the study of a foreign language,” that there was
+“something in his life and the work of his life that places him by
+right among the heroes of Greece, the martyrs of Rome, the knights of
+the Crusades, the explorers of the Arctic regions; something that makes
+it a duty to inscribe his name on the roll of the worthies of the human
+race.”
+
+Although the language and literature of Tibet occupied so much of Csoma
+Körösi’s time and thoughts, yet the main object of his life was to work
+out the mysterious problem as to the origin of the Hungarian nation.
+According to M. Jules Mohl, it was a remark of Blumenbach’s about the
+possibility of discovering in Asia the original home of the prehistoric
+ancestors of the Magyars, which first turned the attention to the
+subject of the young Hungarian, who was then studying medicine at
+Göttingen. According to Hunfalvy, [20] his fancy may have been fired by
+De Guignes’s opinion, published a little before 1815, that the Huns had
+wandered from the western borders of the Chinese empire, first to the
+neighbourhood of the Volga, and then on to Pannonia. But the fact of
+Csoma Körösi being a Szekler by birth, says Hunfalvy, is regarded as
+one of the reasons for his looking for the origin of his nation and
+language in the seat of the ancient Huns. For the Hungarian chronicles
+had for centuries nourished in the Szeklers the belief that they were
+the direct descendants of the Huns of Attila. In a letter which he
+wrote home during his stay in Teheran, dated the 21st of December 1820,
+he said:—“Both to satisfy my own desire, and to prove my gratitude and
+love to my nation, I have set off, and must search for the origin of my
+nation according to the lights which I have kindled in Germany,
+avoiding neither dangers that may perhaps occur, nor the distance I may
+have to travel. Heaven has favoured my course, and if some great
+misfortune does not happen to me, I shall within a short time be able
+to prove that my conviction was founded upon no false basis.” During
+his stay in Calcutta, between his expeditions, he experienced “the
+bitterest moments of his life,” being conscious that up to that time he
+had fruitlessly looked for the origin of the Hungarians. It was that
+feeling, says Hunfalvy, which drove him forth upon the pilgrimage which
+proved fatal to him. “According to his conviction, the country
+inhabited by the Dsugur or Dzungar race, dwelling to the north-east of
+Lhassa, on the western frontier of China, was the goal which he had
+been seeking all his life, the region in which he might hope at length
+to discover the Asiatic descendants of the ancestors of his Hungarian
+forefathers.” The foundation of his hopes, as expressed a few days
+before his death to Dr. Campbell, was as follows:—“In the dialects of
+Europe, the Sclavonic, Celtic, Saxon, and German, I believe, the people
+who gave their name to the country now called Hungary were styled
+Hunger or Ungur, Oongar or Yoongar; and in Arabic, Turkish, and Persian
+works there are notices of a nation in Central Asia resembling in many
+respects the people who came from the East into Hungary. In these
+languages they are styled Oogur, Woogur, Voogur, or Yoogur, according
+to the pronunciation of the Persian letters; and from the same works it
+might be inferred, he said, that the country of the Yoogurs was
+situated as above noted.” His views, however, on this subject are not
+accepted by his countrymen. His opinion “was based upon a false
+foundation,” says Hunfalvy, and consequently his labours in that
+particular field have remained without result. But as a scholar in
+general, as a specialist in everything which concerns Tibet, and as a
+single-minded, self-sacrificing student, he is held in high honour in
+his native land, as may be learnt from the oration which was delivered
+in his honour at Pest on the 8th of October 1843 by Baron Joseph
+Eötvos, who was at one time the Minister of Public Instruction for
+Hungary.
+
+On this subject I have been favoured with a letter (in English) from
+the Hungarian linguist and explorer Professor Arminius Vámbéry. In it,
+after stating that scarcely anything is known in Hungary about the
+early years of Csoma Körösi, he proceeds to say:—“We only know that it
+was the study of Oriental languages in Germany which gave him the idea
+of the possibility of finding a people in Asia speaking our language,
+and closely connected with us. This, of course, was a mistake, for
+Hungarian, a mixed tongue consisting of an Ugrian and a Turko-Tatar
+dialect, has undergone two genetic periods—one in the ancient seat
+between the Urals and the Volga, and another after the settlement on
+Pannonia, where also large Slavonic elements inserted themselves. It
+was thus a sheer impossibility to discover in Asia a language similar
+to ours, although a considerable amount of affinity can be proved,
+partly in the Ugrian branch (the Ostyak and the Vogul), partly in the
+Eastern Turkish, unadulterated by Persian and Arab influence.
+
+“This knowledge, however, is the result of recent investigations, and
+poor Körösi could have had hardly any notion of it. His unbounded love
+for science and for his nation drove him to the East without a penny in
+his pocket, and most curious is the account I heard from an old
+Hungarian, Count Teleky, regarding the outset of Körösi’s travels. The
+Count was standing before the gate of his house in a village in
+Transylvania, when he saw Körösi passing by, clad in a thin yellow
+nankin dress, with a stick in his hand and a small bundle.
+
+“‘Where are you going, M. Körösi?’ asked the Count.
+
+“‘I am going to Asia in search of our relatives,’ was the answer.
+
+“And thus he really went ... undergoing, as may easily be conceived,
+all the hardships and privations of a traveller destitute of means,
+living upon alms, and exposed, besides, to the bitter deception of not
+having found the looked-for relatives. And still he went on in his
+unflagging zeal, until, assisted by your noble countrymen, he was able
+to raise himself a memorial by his Tibetan studies.
+
+“I suppose that, when dying in Ladak ... he always had his eyes
+directed to the steppes north of Tibet, to the Tangus country, where,
+of course, he would have again been disillusioned.
+
+“Körösi was therefore a victim to unripe philological speculation, like
+many other Hungarian scholars unknown to the world. But his name will
+be always a glory to our nation, and I am really glad to hear that
+[some one] ... has devoted time to refresh the memory of that great
+man.—Yours very sincerely,
+
+    “A. Vámbéry.
+
+        “Budapest, February 20, 1882.”
+
+
+About the time when Csoma Körösi was starting from Bucharest on his
+adventurous pilgrimage, another equally genuine and disinterested
+scholar, Mr. Brian Houghton Hodgson, was commencing his long residence
+in Nepal. Living continuously in that country for three-and-twenty
+years, and occupying from 1831 to 1843 the important post of British
+Resident at Kathmandu, he was able to succeed in making the immense
+collections of Buddhistic works which he afterwards, with a generosity
+as great as his industry, made gratuitously accessible to European
+scholars. “The real beginning of an historical and critical study of
+the doctrines of Buddha,” says Professor Max Müller (“Chips,” i. 190),
+“dates from the year 1824. In that year Mr. Hodgson announced the fact
+that the original documents of the Buddhist canon had been preserved in
+Sanskrit in the monasteries of Nepal.” But there is no need to dwell
+here on the well-known fact that an immense amount of such Sanskrit
+literature was discovered by Mr. Hodgson in Nepal, and presented to the
+Royal Asiatic Society, the Asiatic Society of Bengal, and the Société
+Asiatique of Paris. We have at present to deal only with the stores of
+information which he extracted from Tibet. Mr. Hodgson not only
+established the fact, Professor Max Müller goes on to say, “that some
+of the Sanskrit documents which he recovered had existed in the
+monasteries of Nepal ever since the second century of our era,” but he
+also showed that “the whole of that collection had, five or six hundred
+years later, when Buddhism became definitely established in Tibet, been
+translated into the language of that country.” Of the sacred canon of
+the Tibetans, translated into their language from Sanskrit, Mr. Hodgson
+received a copy as a present from the Dalai Lama, and this he presented
+to the East India Company. As early as 1828 he printed in the “Asiatic
+Researches” (vol. xvi.) an article on Nepal and Tibet, in which he
+stated that “the body of Bhotiya [i.e., Tibetan] literature now is, and
+long has been, a mass of translations from Sanskrit; its language
+native; its letters (like its ideas) Indian.” [21] To that statement he
+in 1837 appended this note: “It is needless now to say how fully these
+views have been confirmed by the researches of De Körös. It is but
+justice to myself to add that the real nature of the Kahgyur and
+Stangyur was expressly stated and proved by me to the secretary of the
+Asiatic Society some time before M. De Körös’s ample revelations were
+made. Complete copies of both collections have been presented by me to
+the Honourable East India Company, and others procured for the Asiatic
+Society, Calcutta: upon the latter M. De Körös worked.” It was a
+fortunate combination which brought the special knowledge and the
+patient industry of Csoma Körösi into contact with the immense mass of
+materials obtained by Mr. Hodgson from Tibet.
+
+Of the sacred canon of the Tibetans the following description is given
+by Professor Max Müller, who refers to Köppen’s “Religion des Buddha”
+as his authority: [22]—“It consists of two collections, commonly called
+the Kanjur and Tanjur. The proper spelling of their names is
+Bkah-hgyur, pronounced Kah-gyur, [23] and Bstan-hgyur, pronounced
+Tan-gyur. The Kanjur consists, in its different editions, of 100, 102,
+or 108 volumes folio. It comprises 1083 distinct works. The Tanjur
+consists of 225 volumes folio, each weighing from four to five pounds
+in the edition of Peking. Editions of this colossal code were printed
+at Peking, Lhassa, and other places. The edition of the Kanjur
+published at Peking, by command of the Emperor Khian-Lung, sold for
+£600. A copy of the Kanjur was bartered for 7000 oxen by the Buriates,
+and the same tribe paid 1200 silver roubles for a complete copy of the
+Kanjur and Tanjur together. Such a jungle of religious literature—the
+most excellent hiding-place, we should think, for Lamas and
+Dalai-Lamas—was too much even for a man who could travel on foot from
+Hungary to Tibet. The Hungarian enthusiast, however, though he did not
+translate the whole, gave a most valuable analysis of this immense
+Bible in the seventeenth volume of the ‘Asiatic Researches,’ sufficient
+to establish the fact that the principal portion of it was a
+translation from the same Sanskrit originals which had been discovered
+in Nepal by Mr. Hodgson.”
+
+The Sanskrit works which Mr. Hodgson so generously presented to the
+Asiatic Society of Paris were soon turned to good account. From them M.
+Eugène Burnouf drew the materials for his celebrated “Introduction à
+l’Histoire du Buddhisme Indien.” But of the Tibetan sacred writings,
+which were also rendered available to European students, no great use
+has ever been made except by two scholars. Csoma Körösi, as has been
+already stated, published an “Analysis of the Tibetan Work entitled the
+Kah-gyur,” and an “Abstract of the Contents of the Bstan-hgyur;” and M.
+P. E. Foucaux brought out at Paris in 1847 his “Rgya Tch’er Rol Pa, ou
+Développement des Jeux, contenant l’Histoire du Bouddha Çakya-Mouni,
+traduit sur la Version Tibétaine du Bhahhgyour, et Revu sur l’Original
+Sanskrit (Lalitavistâra).” M. Foucaux’s excellent work is too well
+known to require more than a passing notice here. But as Csoma Körösi’s
+Analyses are probably less familiar, it may be well to extract from
+them a short account of the different sections of the colossal Tibetan
+collection.
+
+The first of its two parts, he remarks, is styled Ká-gyur, or vulgarly
+Kán-gyur, [24] i.e., “Translation of Commandments,” being versions of
+Sanskrit writings imported into Tibet, and translated there between the
+seventh and thirteenth centuries, but mostly in the ninth. The copy on
+which he worked at Calcutta, consisting of 100 volumes, “appears to
+have been printed with the very wooden types that are mentioned as
+having been prepared in 1731.” This first part comprises seven
+divisions, which are in fact distinct works. These he names as
+follows:—
+
+1. Dulvá (“Discipline,” Sanskrit Vinaya). This division occupies
+thirteen volumes, and deals with religious discipline and the education
+of persons who adopt the religious life. It is subdivided into seven
+parts as follows:—
+
+
+    1. “The Basis of Discipline or Education.” 4 vols.
+    2. “A Sútra on Emancipation.” 30 leaves.
+    3. “Explanation of Education.” 4 vols.
+    4. “A Sútra on Emancipation for the Priestesses or Nuns.” 36
+       leaves.
+    5. “Explanation of the Discipline or Education of the Priestesses
+       or Nuns, in one volume with the preceding tract.”
+    6. “Miscellaneous Minutiæ concerning Religious Discipline.” 2 vols.
+    7. The chief text-book (or the last work of the Dulvá class) on
+       education. 2 vols.
+
+
+2. “Shés-rab-kyi-p’ha-rol-tu-p’hyin-pa (by contraction Shér-p’hyin,
+pronounced Sher-ch’hin), Sans. Prajná páramitá, Eng. ‘Transcendental
+wisdom.’” This division occupies twenty-one volumes, which all “treat
+of speculative or theoretical philosophy, i.e., they contain the
+psychological, logical, and metaphysical terminology of the Buddhists,
+without entering into the discussion of any particular subject.”
+
+3. “Sangs-rgyas-p’hal-po-ch’hè, or by contraction P’hal-ch’hen, Sans.
+Buddhāvataṇsaka, ... Association of Buddhas, or of those grown wise.”
+This division contains six volumes, the subject of the whole being
+“moral doctrine and metaphysics. There are descriptions of several
+Tathágatas or Buddhas, their provinces, their great qualifications,
+their former performances for promoting the welfare of all animal
+beings, their praises, and several legends. Enumeration of several
+Bodhisatwas, the several degrees of their perfections, their practices
+or manners of life, their wishes, prayers, and efforts for making happy
+all animal beings.”
+
+4. “Dkon-mch’hog-brtségs-pa, or by contraction Dkon-brtségs (pronounced
+kon-tségs). In Sans. Ratna-kúṭa, the ‘Jewel-peak,’ or precious things
+heaped up, or enumeration of several qualities and perfections of
+Buddha and his instructions. The subject, as in the former division,
+still consists of morals and metaphysics, mixed with many legends and
+collections of the tenets of the Buddhistic doctrine.”
+
+5. “Mdo-sdé (Sans. Sútránta), or simply Mdo (Sans. Sútra), signifying a
+treatise or aphorism on any subject. In a general sense, when the whole
+Káh-gyur is divided into two parts, Mdo and Rgyud, all the other
+divisions except the Rgyud are comprehended in the Mdo class. But in a
+particular sense there are some treatises which have been arranged or
+put under this title. They amount to about 270, and are contained in
+thirty volumes. The subject of the works contained in these thirty
+volumes is various.... The greatest part of them consist of the moral
+and metaphysical doctrine of the Buddhistic system, the legendary
+accounts of several individuals, with allusions to the sixty or
+sixty-four arts, to medicine, astronomy, and astrology. There are many
+stories to exemplify the consequences of actions in former
+transmigrations, descriptions of orthodox and heterodox theories, moral
+and civil laws, the six kinds of animal beings, the places of their
+habitations, and the causes of their being born there; cosmogony and
+cosmography according to the Buddhistic notions, the provinces of
+several Buddhas, exemplary conduct of life of any Bodhisatwa or saint,
+etc.” It is the second volume of this section which M. Foucaux has
+translated.
+
+6. “Mya-n̄an-las-hdas-pa, or by contraction Myang-hdas (Sans. Nirváṇa),
+two vols. The title of these two volumes is in Sanskrit Mahá
+parinirváṇa sútra.... A sútra on the entire deliverance from pain.
+Subject, Shákya’s death under a pair of Sál trees near the city of
+Kusha or Kámarúpa, in Assam. Great lamentation of all sorts of animal
+beings on the approaching death of Shákya, their offerings or
+sacrifices presented to him, his lessons, especially with regard to the
+soul. His last moments, his funeral, how his relics were divided, and
+where deposited.”
+
+7. “Rgyud-sdé, or simply Rgyud, Sans. Tantra, or the Tantra class, in
+twenty-two volumes. These volumes in general contain mystical theology.
+There are descriptions of several gods and goddesses, instructions for
+preparing the mandalas or circles for the reception of these
+divinities, offerings or sacrifices presented to them for obtaining
+their favour, prayers, hymns, charms, &c., &c., addressed to them.
+There are also some works on astronomy, astrology, chronology,
+medicine, and natural philosophy.”
+
+Of the second great division of the Tibetan sacred books Csoma Körösi
+gives only a brief abstract, “without mentioning the Sanscrit titles of
+the works” from which its contents have been translated. It will be
+sufficient to quote the opening lines of his article.
+
+“The Bstan-Hgyur is a compilation in Tibetan of all sorts of literary
+works, written mostly by ancient Indian Pandits and some learned
+Tibetans, in the first centuries after the introduction of Buddhism
+into Tibet, commencing with the seventh century of our era. The whole
+makes 225 volumes. It is divided into two classes, the Rgyud and Mdo
+(Tantra and Sútra classes in Sanscrit). The Rgyud, mostly on tantrika
+rituals and ceremonies, makes 87 volumes. The Mdo, on science and
+literature, occupies 136 volumes. One separate volume contains hymns or
+praises on several deities and saints, and one volume is the index for
+the whole.” [25]
+
+
+In the year 1830, while Csoma Körösi was still pursuing his studies in
+the monasteries of Western Tibet, a Russian official, Baron Schilling
+de Canstadt, was beginning to look for Tibetan books in Eastern
+Siberia. His first visit, he says, [26] to the monastery of Tchikoï,
+twelve leagues from Kiachta, the town in which he was stationed, made
+him aware that it possessed a copy of the Kah-gyur, as well as other
+sacred books, which were ranged on either side of the altar, wrapped in
+red and yellow coverings. As the Russian ecclesiastical mission to
+Pekin was then on the point of starting from Kiachta, he offered to
+obtain by its means from China such books as the priests might require.
+They gladly accepted his offer, and made out lists of Tibetan books,
+which proved of great service to him, especially after they had been
+supplemented by the additions which were made by a Lama who visited him
+at Kiachta. He still further ingratiated himself with the priests by
+presenting them with a lo or tum-tum, which he procured from the
+nearest Chinese town, as well as by the respect he showed for their
+sacred books. For when he was allowed to handle a volume of their copy
+of the Kah-gyur, he took care to touch the margins only of the leaves,
+not the holy printed part.
+
+It happened that the chief of a tribe of Tsongols possessed a copy of a
+part of the Kah-gyur, and this he gave to the appreciative stranger,
+who rose still higher in the opinion of the natives when they found
+that he had ordered a silken wrapper to be made for each of the volumes
+presented to him. He himself was delighted, he says, at becoming “the
+proprietor of the first Tibetan work of any length which had up to that
+time passed into the hands of a European.” After all this he was well
+received wherever he went. A prediction had been made a year before
+that a foreign convert to Buddhism, destined to spread that religion in
+the West, was about to visit Mongolia, and this prophecy was
+interpreted in his favour. The Buriat Lamas even looked upon him as “a
+Khoubil-ghan, an incarnation of an important personage in the Buddhist
+Pantheon.” After a time he organised a band of copyists, sometimes
+twenty in number, who lived in tents in his courtyard, and frequently
+consumed as much as a hundred pounds of beef in a day, besides much
+brick tea, a caldron being kept always on the boil for their use. At
+the end of a year he possessed a collection of Mongol and Tibetan
+books, containing two thousand works and separate treatises.
+
+Happening to visit the temple of Subulin, he found that the Lamas were
+manufacturing an enormous prayer wheel. He offered to get the printing
+of the oft-repeated prayer done for them at St. Petersburg, whereby
+their machine would be rendered far more efficacious than if they
+trusted to native typography. They accepted his offer gladly, and to
+prove their gratitude, presented to him, in the name of the tribe, a
+complete copy of the Kah-gyur which they possessed, having obtained it
+from a Mongol Lama. Both parties to this transaction were equally
+pleased; for when the printed leaves came from St. Petersburg, it was
+found that each of them contained 2500 repetitions of the sacred
+formula, and the words were printed in red ink, which is 108 times more
+efficacious than black; and the paper itself was stamped with the same
+words instead of bearing the maker’s name. So the Buriates were
+charmed, and so was the European bibliophile, who had got possession of
+what he had scarcely hoped ever to obtain, a copy of the Kah-gyur in
+101 volumes, printed in the monastery of Nartang in Western Tibet. This
+copy, after the death of Baron Schilling de Canstadt, was purchased
+from his heirs by the Emperor Nicholas, and presented to the Academy of
+Sciences.
+
+M. Vasilief, the well-known author of the “History of Buddhism,” which
+has been translated from Russian into French and German, says [27] that
+when he was at Pekin he made inquiries about the Kah-gyur and Tan-gyur,
+and he was shown the building in which they used to be printed. But no
+edition, he was told, had been brought out for some time. Some of the
+wood blocks were lost, others had suffered injury. However, a copy of
+each work was procured by the Chinese Government and presented to the
+Russian mission. These copies are now in St. Petersburg. The Mongol
+Buriates of Russia, M. Vasilief states, are even more devoted to their
+religion, and look to Lhassa more longingly than their kinsmen in
+Mongolia itself. They read their sacred books, or hear them read, in
+Tibetan, and are edified, even though they do not comprehend. Any one
+who wishes to command a reading of the Kah-gyur or Tan-gyur addresses
+himself to one of the monasteries which possess those works, pays a
+certain price, and provides tea for the Lamas. A reading of the
+Kah-gyur, it seems, used to come to about fifteen pounds at one of the
+monasteries, exclusive of tea. At a given signal all the Lamas flock
+together, and take their places according to seniority. Before each are
+placed a number of leaves of the work, and off they set, all reading at
+once, so that the entire performance occupies only a few hours, after
+which each reader receives his share of the offering made by the
+orderer of the function.
+
+Of the Russian scholars who availed themselves of the presence of the
+two editions of the Kah-gyur at St. Petersburg, the most enthusiastic
+and industrious was the late Professor Anton von Schiefner. From the
+Dulvā, the first of the seven divisions of that work, he translated
+into German the legends and tales, an English version of which is
+contained in the present volume. His German versions all appeared in
+the “Mélanges Asiatiques tirés du Bulletin de l’Académie Impériale des
+Sciences de St. Pétersbourg” (tom. vi.–viii.), with the exceptions of
+Nos. 2 and 5, which were published in the “Mémoires” of that Society
+(series vii., tom. xix., No. 6). Professor Schiefner, if he had lived
+another year, would have doubtless supplied a number of additional
+notes, and would have written an Introduction to the work. His lamented
+death on November 16, 1880, has deprived the present volume of what
+would probably have been one of its most interesting parts. It was at
+Professor Schiefner’s express wish that the present translation was
+undertaken. It must be a subject of universal regret that he did not
+live to witness its appearance in print. The following tribute to his
+merits as a scholar was contributed, soon after his death, by Professor
+Albrecht Weber to “Trübner’s Record.”
+
+“Professor F. Anton von Schiefner was a distinguished scholar of most
+various attainments. His specialty, however, was Tibetan, and more
+particularly the investigation of Buddhist legends of Indian and
+Occidental origin, a collection of which in English will soon be
+published by Messrs. Trübner & Co. He had, moreover, devoted himself
+with rare perseverance and disinterestedness to the utilisation and
+publication of the labours of two scholars whose own restless activity
+would, without him, have been almost entirely lost to the scientific
+world—namely, those of the Finnic linguist, Alexander Castrèn, and of
+the Caucasian linguist, Baron von Uslar. One might—sit venia
+verbo—almost say that both men had found in Schiefner their Homer. He
+edited the labours of Castrèn almost wholly from the posthumous papers
+of that brave and modest man, who, from 1838 to 1849, explored, under
+the greatest privations, the inhospitable regions of Norway, Lapland,
+and Siberia, where the tribes of the Finnic race are seated. Castrèn’s
+Reiseerinnerungen and Reiseberichte, edited by Schiefner, present a
+vivid picture of the hardships Castrèn had to go through, and which
+finally caused his premature death, in 1852, at the age of thirty-nine.
+We have lying before us the twelve volumes of his Samoyedan and
+Tungusian Grammars and Vocabularies, as well as those of the languages
+of the Buryats, Koibals, Karagasses, Ostyaks, &c.; his ethnological
+lectures on the Altaic races, and those on Finnic mythology—all worked
+out by Schiefner’s deft hand, and edited by him from 1835 to 1861. In
+connection therewith Schiefner also made a German translation of the
+Finnic national epos Kalevala, and also one of the Hero-Sagas of the
+Minussin Tatars. Schiefner was more advantageously situated in working
+up the collections of the estimable Caucasian linguist, Major-General
+von Uslar (1816 to 1873), written in the Russian language, with whom,
+until the General’s death, he was always able to confer directly. While
+Schiefner’s own and entirely independent work on the Thush language
+(1856), by the accuracy with which a hitherto quite uncultivated and
+altogether strange department was opened to linguistic investigation,
+had obtained for the author general appreciation, the united efforts of
+both scholars have furnished surprising results as regards these highly
+peculiar languages of the Caucasian mountaineers—the Avares, Abchases,
+Tchetchenzes, Kasikumüks, Kurines—which by their extraordinary sounds,
+as well as by their most singular grammatical structure, produce so
+very strange an impression. The personal intercourse with soldiers of
+Caucasian origin, garrisoned at St. Petersburg, was herein of high
+importance to Schiefner. His amiable and open manner in personal
+intercourse, characteristic of the whole man, bore him excellent fruit
+in this case. Science, and especially the St. Petersburg Academy of
+Sciences, has by Schiefner’s death sustained a heavy, indeed a quite
+irreparable, loss.” [28]
+
+The edition of the Kah-gyur on which Professor Schiefner worked appears
+(says M. Vasilief, the author of the “History of Buddhism”) to have
+been that in 108 volumes, printed at Pekin during the eighteenth
+century, and presented to the Asiatic Museum of the St. Petersburg
+Academy of Sciences by the Asiatic Department of the Ministry of
+Foreign Affairs, which had received it, about the year 1850, from the
+Russian Mission in China.
+
+The notes to the present volume signed S. are by Professor Schiefner. A
+few others have been added, consisting for the most part of extracts
+from Professor Monier Williams’s Sanskrit Dictionary. The forms of
+Indian names adopted by Professor Schiefner have been retained in the
+English translation, with certain modifications—y being substituted for
+j, for instance, ch for tsh, and j for dsh. It ought to be stated that
+Professor Schiefner made several important corrections on the sheets
+which he prepared for the use of his English translator, and therefore
+the English version will sometimes be found to differ materially from
+the German text. [29]
+
+To European folk-tales the longer legends of the Kahgyur bear but
+little resemblance, though many of the fables about animals, and other
+short stories towards the end of the present volume, have their
+counterparts in the West. Here and there, however, even in the long
+narratives of the legendary class, certain features may be recognised
+as being common to both Europe and Asia. The moral of King Māndhātar’s
+story (No. 1), for instance, seems to be identical, different as is its
+machinery, with that of a story which is current in many Western lands.
+That monarch, after conquering the whole earth, ascends into the
+heavenly home of the thirty-three gods, and is allowed to share the
+throne of their chief, Śakra or Indra. But at last he wishes for too
+much. “He came to the conclusion that he must expel the king of the
+gods, Śakra, from his throne, and take into his own hands the
+government of both gods and men.” As soon as he had conceived this
+idea, “the great King Māndhātar came to the end of his good fortune,”
+and soon afterwards he died. The most familiar form of the European
+story, which inculcates a similar moral teaching, is the German tale of
+“The Fisherman and his Wife” (the 19th of Grimm’s Collection). In it, a
+grateful fish for a long time accedes to every desire expressed by the
+fisherman. He and his wife become first rich, then noble, and
+eventually royal. But the fisherman’s wife is not satisfied with being
+a queen. She wishes to be the Pope, and the fish fulfils her desire.
+Even then she is discontented, and at last she demands to be made God.
+When the fish is told this by her husband, it replies, “Go back, and
+you will find her in her hovel.” The fisherman’s good fortune has come
+to an end. He and his wife are poor folks once more. In a Hesse variant
+the husband’s final wish is, “Let me be God, and my wife the Mother of
+God.” [30]
+
+A curious parallel to one of the incidents in King Māndhātar’s story is
+afforded by a Polynesian myth. On the crown of King Utposhadha’s head,
+according to the Tibetan tale, “there grew a very soft tumour, somewhat
+resembling a cushion of cotton or wool, without doing him any harm.
+When it had become quite ripe and had broken, there came forth from it
+a boy, shapely and handsome.” Mr. Gill tells us in his interesting
+“Myths and Songs from the South Pacific” (p. 10), that Tangaroa and
+Rongo were the children of Vātea, the father of gods and men, and his
+wife Papa. “Tangaroa should have been born first, but gave precedence
+to his brother Rongo. A few days after the birth of Rongo, his mother
+Papa suffered from a very large boil on her arm. She resolved to get
+rid of it by pressing it. The core accordingly flew out; it was
+Tangaroa! Another account, equally veracious, says that Tangaroa came
+right up through Papa’s head. The precise spot is indicated by ‘the
+crown’ with which all their descendants have since been born.”
+Professor Schiefner mentions that a suggestion has been made to the
+effect that “the name of Utposhadha may be a transformation of the
+Greek Hephæstus, though the part which the latter plays in the Greek
+myth at the birth of Athene is of a different nature.” But this seems
+to be going unnecessarily far.

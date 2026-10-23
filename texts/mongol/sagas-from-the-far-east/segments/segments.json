@@ -1,0 +1,63 @@
+{
+  "text_id": "sagas-from-the-far-east",
+  "tradition": "mongol",
+  "source_file": "texts/mongol/sagas-from-the-far-east/normalized/sagas-from-the-far-east_best.txt",
+  "strategy": "structural",
+  "segment_count": 6,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "MDCCCLXXIII",
+      "segment_type": "section",
+      "file": "seg_001_mdccclxxiii.txt",
+      "word_count": 13159,
+      "start_line": 17,
+      "end_line": 1398
+    },
+    {
+      "id": "seg_002",
+      "label": "the sorry story of what had actually occurred. Turning over all his",
+      "segment_type": "tale",
+      "file": "seg_002_the-sorry-story-of-what-had-actually-occ.txt",
+      "word_count": 49320,
+      "start_line": 1399,
+      "end_line": 6522
+    },
+    {
+      "id": "seg_003",
+      "label": "The legend of the Wisdom of Vikramâditja being so mysteriously",
+      "segment_type": "tale",
+      "file": "seg_003_the-legend-of-the-wisdom-of-vikramâditja.txt",
+      "word_count": 21980,
+      "start_line": 6523,
+      "end_line": 8861
+    },
+    {
+      "id": "seg_004",
+      "label": "story of our Divine Redeemer's life on earth may be supposed to have",
+      "segment_type": "tale",
+      "file": "seg_004_story-of-our-divine-redeemers-life-on-ea.txt",
+      "word_count": 7616,
+      "start_line": 8862,
+      "end_line": 9620
+    },
+    {
+      "id": "seg_005",
+      "label": "The present story, too, reminds forcibly in all its leading details of",
+      "segment_type": "tale",
+      "file": "seg_005_the-present-story-too-reminds-forcibly-i.txt",
+      "word_count": 15098,
+      "start_line": 9621,
+      "end_line": 11253
+    },
+    {
+      "id": "seg_006",
+      "label": "The story of this Bhoga is contained in two somewhat legendary",
+      "segment_type": "tale",
+      "file": "seg_006_the-story-of-this-bhoga-is-contained-in-.txt",
+      "word_count": 6324,
+      "start_line": 11254,
+      "end_line": 12008
+    }
+  ]
+}

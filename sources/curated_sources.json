@@ -2862,6 +2862,62 @@
           "notes": "Definitive Faulkner translation"
         }
       ]
+    },
+    "tibetan-tales-schiefner": {
+      "title": "Tibetan Tales, Derived from Indian Sources",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/66870",
+          "translator": "F. Anton von Schiefner; English by W. R. S. Ralston",
+          "year": 1882,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Tales from the Kah-gyur; Gutenberg text from the 1906 reprint"
+        }
+      ]
+    },
+    "folk-tales-from-tibet": {
+      "title": "Folk Tales from Tibet",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/75000",
+          "translator": "W. F. T. O'Connor",
+          "year": 1906,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Collected and translated by O'Connor; London: Hurst and Blackett"
+        }
+      ]
+    },
+    "sagas-from-the-far-east": {
+      "title": "Sagas from the Far East; or, Kalmouk and Mongolian Traditionary Tales",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/40402",
+          "translator": "Rachel Harriette Busk",
+          "year": 1873,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Siddhi-Kür and Ardschi-Bordschi cycles, with notes"
+        }
+      ]
+    },
+    "turkish-fairy-tales-kunos": {
+      "title": "Turkish Fairy Tales and Folk Tales",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/64807",
+          "translator": "R. Nisbet Bain (from Ignácz Kúnos)",
+          "year": 1896,
+          "format": "txt",
+          "quality_tier": "standard",
+          "notes": "Collected by Kúnos, translated from the Hungarian"
+        }
+      ]
     }
   }
 }
