@@ -6723,6 +6723,13 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:FI-LAIMA",
           "fidelity": 0.8
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:TR-PERI",
+          "fidelity": 0.45,
+          "notes": "Three Peris pronounce gifts at a birth",
+          "provenance": "SCHOL"
         }
       ]
     },
@@ -6784,6 +6791,13 @@
           "type": "CULTURAL_ECHO",
           "target": "arch:SL-RUSALKA",
           "fidelity": 0.55
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:TR-PERI",
+          "fidelity": 0.5,
+          "notes": "Turkish otherworld maidens",
+          "provenance": "SCHOL"
         }
       ]
     },

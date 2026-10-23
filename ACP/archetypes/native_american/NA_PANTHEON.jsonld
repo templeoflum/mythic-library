@@ -623,6 +623,13 @@
           "target": "arch:NO-THOR",
           "fidelity": 0.6,
           "notes": "Thunder deity, serpent enemy"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:TR-ANKA",
+          "fidelity": 0.4,
+          "notes": "Great bird at war with serpents",
+          "provenance": "ORIG"
         }
       ],
       "shadowDynamics": {
