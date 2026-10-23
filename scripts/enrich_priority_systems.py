@@ -24,7 +24,8 @@ from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
 
 # Add project root to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 from integration.acp_loader import ACPLoader
 
 # Primordial to psychological mapping
@@ -351,7 +352,7 @@ def process_file(file_path: Path, dry_run: bool = True) -> List[EnrichmentResult
     return results
 
 
-# Priority files to process
+# Priority files to process, relative to PROJECT_ROOT
 PRIORITY_FILES = [
     'ACP/archetypes/greek/GR_OLYMPIANS.jsonld',
     'ACP/psychology/jungian/core_archetypes.jsonld',
@@ -391,7 +392,7 @@ def main():
 
     if args.all:
         # Process all archetype files
-        acp_path = Path('ACP')
+        acp_path = PROJECT_ROOT / 'ACP'
         domains_to_process = ['archetypes', 'divination', 'psychology', 'modern']
 
         for domain in domains_to_process:
@@ -420,7 +421,7 @@ def main():
     else:
         # Process only priority files
         for file_rel_path in PRIORITY_FILES:
-            file_path = Path(file_rel_path)
+            file_path = PROJECT_ROOT / file_rel_path
             if not file_path.exists():
                 print(f"Warning: {file_rel_path} not found")
                 continue
