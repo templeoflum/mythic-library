@@ -1978,6 +1978,13 @@
           "target": "arch:IN-KALI",
           "fidelity": 0.55,
           "notes": "Fierce feminine transformation"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-DAKINI",
+          "fidelity": 0.75,
+          "notes": "Foremost of the dakinis",
+          "provenance": "TRAD"
         }
       ],
       "domains": [
@@ -2384,6 +2391,13 @@
           "type": "COMPLEMENT",
           "target": "arch:BU-PADMASAMBHAVA",
           "notes": "Consort and teaching partner"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-DAKINI",
+          "fidelity": 0.6,
+          "notes": "Revered in Tibet as a human dakini",
+          "provenance": "TRAD"
         }
       ],
       "domains": [
@@ -2847,13 +2861,209 @@
         }
       ],
       "aliases": [
-        "The Mara"
+        "The Mara",
+        "Schimnu",
+        "Schumnu"
       ],
       "correspondences": {
         "tarot": "tarot:fool",
         "planet": "planet:mercury",
         "element": "element:air"
       }
+    },
+    {
+      "@id": "arch:BU-DAKINI",
+      "@type": "Archetype",
+      "name": "Dakini",
+      "aliases": [
+        "Dâkinî",
+        "Khandroma",
+        "Sky-Goer",
+        "Sky Dancer"
+      ],
+      "domain": [
+        "Wisdom",
+        "Contemplation",
+        "Initiation",
+        "Feminine Power"
+      ],
+      "description": "A female wisdom being of Indian and Tibetan Buddhism who carries realisation to the practitioner. In the Mongol sagas the Dâkinî Tegrijin Naran sits silent in a cave, sunk in contemplation, guarded by speaking stone he-goats; five hundred kings' sons who failed to make her speak languish at her feet, until Vikramâditja draws her into speech twice by telling tales and so wins her as his bride.",
+      "spectralCoordinates": {
+        "order-chaos": 0.49,
+        "creation-destruction": 0.38,
+        "light-shadow": 0.43,
+        "active-receptive": 0.39,
+        "individual-collective": 0.4,
+        "ascent-descent": 0.49,
+        "stasis-transformation": 0.63,
+        "voluntary-fated": 0.37
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.75,
+          "aspects": [
+            "wisdom-bearer",
+            "initiatrix"
+          ]
+        },
+        {
+          "primordial": "primordial:maiden",
+          "weight": 0.5,
+          "aspects": [
+            "sought-bride",
+            "silent-one"
+          ]
+        },
+        {
+          "primordial": "primordial:psychopomp",
+          "weight": 0.45,
+          "aspects": [
+            "guide-across",
+            "sky-goer"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-VAJRAYOGINI",
+          "fidelity": 0.75,
+          "notes": "Vajrayogini is the foremost dakini of the tantric tradition",
+          "provenance": "TRAD"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:BU-YESHE-TSOGYAL",
+          "fidelity": 0.6,
+          "notes": "Revered in Tibet as a human dakini",
+          "provenance": "TRAD"
+        }
+      ],
+      "correspondences": {
+        "element": "Space",
+        "direction": "Sky",
+        "symbol": "Cave, altar, silence",
+        "association": "Wisdom won through speech and patience"
+      },
+      "domains": [
+        "wisdom",
+        "contemplation",
+        "initiation",
+        "silence",
+        "marriage"
+      ],
+      "keywords": [
+        "dakini",
+        "wisdom",
+        "contemplation",
+        "mystery",
+        "silence",
+        "initiation",
+        "revelation"
+      ],
+      "narrativeRoles": [
+        "mentor",
+        "threshold-guardian",
+        "beloved"
+      ],
+      "coreFunction": "To hold wisdom in silence until the seeker earns its speech",
+      "symbolicCore": "The silent one whose word must be won",
+      "primarySources": [
+        "Busk, Sagas from the Far East (1873), Gutenberg #40402"
+      ],
+      "status": "derived"
+    },
+    {
+      "@id": "arch:BU-GARUDA",
+      "@type": "Archetype",
+      "name": "Garuda",
+      "aliases": [
+        "Garuḍa",
+        "Khyung",
+        "King of Birds"
+      ],
+      "domain": [
+        "Sky",
+        "Protection",
+        "Serpents",
+        "Speed"
+      ],
+      "description": "The king of birds of Indian and Tibetan tradition, mount of Vishnu and devourer of serpents. In the Tibetan Tales from the Kah-gyur the serpent-folk dread the Garuḍa that plagues them; in the Mongol sagas a craftsman carves a garuda-bird of wood, fitted with springs, and flies it over the city, and the people hail it as the king of birds, the bearer of Vishnu.",
+      "spectralCoordinates": {
+        "order-chaos": 0.34,
+        "creation-destruction": 0.48,
+        "light-shadow": 0.29,
+        "active-receptive": 0.17,
+        "individual-collective": 0.37,
+        "ascent-descent": 0.29,
+        "stasis-transformation": 0.47,
+        "voluntary-fated": 0.38
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:warrior",
+          "weight": 0.7,
+          "aspects": [
+            "serpent-slayer",
+            "protector"
+          ]
+        },
+        {
+          "primordial": "primordial:hero",
+          "weight": 0.5,
+          "aspects": [
+            "sky-rider",
+            "rescuer"
+          ]
+        },
+        {
+          "primordial": "primordial:sovereign",
+          "weight": 0.4,
+          "aspects": [
+            "king-of-birds"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "ALLY",
+          "target": "arch:IN-VISHNU",
+          "notes": "Vishnu's mount (vahana)",
+          "provenance": "TRAD"
+        }
+      ],
+      "correspondences": {
+        "element": "Air",
+        "direction": "Above",
+        "symbol": "Great bird, serpent in talons",
+        "association": "Sky power over the serpents below"
+      },
+      "domains": [
+        "sky",
+        "protection",
+        "serpents",
+        "flight"
+      ],
+      "keywords": [
+        "garuda",
+        "bird",
+        "sky",
+        "protector",
+        "serpent"
+      ],
+      "narrativeRoles": [
+        "protector",
+        "warrior",
+        "mount"
+      ],
+      "coreFunction": "To rule the sky and hold the serpent powers in check",
+      "symbolicCore": "The sky-king who seizes what crawls below",
+      "primarySources": [
+        "Schiefner/Ralston, Tibetan Tales Derived from Indian Sources (1882), Gutenberg #66870",
+        "Busk, Sagas from the Far East (1873), Gutenberg #40402"
+      ],
+      "status": "derived"
     }
   ],
   "systemRelationships": {

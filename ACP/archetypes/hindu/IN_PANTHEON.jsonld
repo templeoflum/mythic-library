@@ -3387,7 +3387,10 @@
         "Dharmaraja",
         "Kala",
         "Mrityu",
-        "The Yama"
+        "The Yama",
+        "Erlik Khan",
+        "Erlik-Khan",
+        "Jama"
       ],
       "epithets": [
         "Lord of Death",
@@ -4230,6 +4233,15 @@
         "sita",
         "ramayana",
         "ten-headed"
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MN-MANGGUS",
+          "fidelity": 0.45,
+          "notes": "Mongol name for the Rakshasa kind",
+          "provenance": "TRAD"
+        }
       ]
     }
   ],
