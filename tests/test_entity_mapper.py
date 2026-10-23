@@ -138,12 +138,28 @@ def test_tradition_prefix(arch_id, tradition, expected):
     assert _arch_matches_tradition(arch_id, tradition) is expected
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "TRADITION_TO_PREFIX maps persian/zoroastrian/christian to an ID scheme "
-    "(persian:ahura-mazda), but _arch_matches_tradition compares the part after "
-    "the colon (ahura), so these traditions never count as native today"))
 def test_scheme_prefix_traditions_match():
+    # TRADITION_TO_PREFIX maps persian/zoroastrian/christian to an ID scheme
+    # (persian:ahura-mazda) rather than an arch: prefix (arch:GR-ZEUS).
     assert _arch_matches_tradition("persian:ahura-mazda", "zoroastrian")
+    assert _arch_matches_tradition("persian:ahura-mazda", "persian")
+    assert _arch_matches_tradition("christian:michael", "christian")
+    assert not _arch_matches_tradition("persian:ahura-mazda", "christian")
+    assert not _arch_matches_tradition("christian:michael", "greek")
+
+
+def test_native_scheme_prefixed_candidate_beats_a_foreign_exact_name():
+    # Two scheme-prefixed candidates: the native one should win even though
+    # the foreign one is an exact name match.
+    m = EntityMapper(fake_acp(), FakeLibrary())
+    candidates = [
+        {"arch_id": "christian:michael", "method": "exact_name", "fidelity": 1.0},
+        {"arch_id": "persian:mithra", "method": "acp_alias", "fidelity": 0.8},
+    ]
+    best = m._pick_best_candidate(candidates, "zoroastrian")
+    assert best["arch_id"] == "persian:mithra"
+    best = m._pick_best_candidate(candidates, "christian")
+    assert best["arch_id"] == "christian:michael"
 
 
 def test_word_boundary_rules():
