@@ -28,7 +28,10 @@ import numpy as np
 from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+OUTPUT_PATH = PROJECT_ROOT / "outputs" / "validation" / "miroglyph_structure_v2.json"
 
 from scipy.stats import kruskal, mannwhitneyu, spearmanr, f_oneway, chi2_contingency
 
@@ -838,7 +841,7 @@ if __name__ == "__main__":
             print(f"    {line.strip()}.")
 
     # Save results
-    output_path = Path("outputs/validation/miroglyph_structure_v2.json")
+    output_path = OUTPUT_PATH
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2, default=str)
