@@ -280,6 +280,10 @@ def enrich_domains(acp_path: Path, dry_run: bool = True) -> Dict[str, int]:
     return stats
 
 
+# Anchored to the project root so the script works from any directory
+ACP_DIR = Path(__file__).resolve().parent.parent / "ACP"
+
+
 def main():
     import argparse
 
@@ -298,7 +302,7 @@ def main():
     if dry_run:
         print("\n[DRY RUN - No files will be modified. Use --apply to save changes.]\n")
 
-    acp_path = Path("ACP")
+    acp_path = ACP_DIR
     stats = enrich_domains(acp_path, dry_run=dry_run)
 
     print("\n" + "=" * 40)

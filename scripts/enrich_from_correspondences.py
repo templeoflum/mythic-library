@@ -495,6 +495,10 @@ def process_file(file_path: Path, corr_data: CorrespondenceData,
     return results
 
 
+# Anchored to the project root so the script works from any directory
+ACP_DIR = Path(__file__).resolve().parent.parent / "ACP"
+
+
 def main():
     import argparse
 
@@ -515,7 +519,7 @@ def main():
     if dry_run:
         print("\n[DRY RUN - No files will be modified. Use --apply to save changes.]\n")
 
-    acp_path = Path('ACP')
+    acp_path = ACP_DIR
 
     # Load correspondence data
     print("Loading correspondences.jsonld...")
