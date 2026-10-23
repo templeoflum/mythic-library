@@ -1,0 +1,171 @@
+{
+  "text_id": "folk-tales-from-tibet",
+  "tradition": "tibetan",
+  "source_file": "texts/tibetan/folk-tales-from-tibet/normalized/folk-tales-from-tibet_best.txt",
+  "strategy": "structural",
+  "segment_count": 18,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 987,
+      "start_line": 0,
+      "end_line": 130
+    },
+    {
+      "id": "seg_002",
+      "label": "The Story of the Home-bred Boy (continued)         166",
+      "segment_type": "tale",
+      "file": "seg_002_the-story-of-the-home-bred-boy-continued.txt",
+      "word_count": 8,
+      "start_line": 131,
+      "end_line": 131
+    },
+    {
+      "id": "seg_003",
+      "label": "The Story of the Home-bred Boy (continued)         172",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-the-home-bred-boy-continued.txt",
+      "word_count": 1197,
+      "start_line": 132,
+      "end_line": 292
+    },
+    {
+      "id": "seg_004",
+      "label": "THE STORY OF THE TIGER AND THE MAN",
+      "segment_type": "tale",
+      "file": "seg_004_the-story-of-the-tiger-and-the-man.txt",
+      "word_count": 1441,
+      "start_line": 293,
+      "end_line": 445
+    },
+    {
+      "id": "seg_005",
+      "label": "THE STORY OF GOOD FAITH",
+      "segment_type": "tale",
+      "file": "seg_005_the-story-of-good-faith.txt",
+      "word_count": 2114,
+      "start_line": 446,
+      "end_line": 663
+    },
+    {
+      "id": "seg_006",
+      "label": "THE STORY OF THE TWO NEIGHBOURS",
+      "segment_type": "tale",
+      "file": "seg_006_the-story-of-the-two-neighbours.txt",
+      "word_count": 1513,
+      "start_line": 664,
+      "end_line": 829
+    },
+    {
+      "id": "seg_007",
+      "label": "THE STORY OF THE CAT AND THE MICE",
+      "segment_type": "tale",
+      "file": "seg_007_the-story-of-the-cat-and-the-mice.txt",
+      "word_count": 1039,
+      "start_line": 830,
+      "end_line": 932
+    },
+    {
+      "id": "seg_008",
+      "label": "THE STORY OF THE FOOLISH YOUNG MUSSULMAN",
+      "segment_type": "tale",
+      "file": "seg_008_the-story-of-the-foolish-young-mussulman.txt",
+      "word_count": 7509,
+      "start_line": 933,
+      "end_line": 1722
+    },
+    {
+      "id": "seg_009",
+      "label": "THE STORY OF HOW THE HARE MADE A FOOL OF THE WOLF",
+      "segment_type": "tale",
+      "file": "seg_009_the-story-of-how-the-hare-made-a-fool-of.txt",
+      "word_count": 38,
+      "start_line": 1723,
+      "end_line": 1727
+    },
+    {
+      "id": "seg_010",
+      "label": "The first part of the story is exactly the same as Number X. They",
+      "segment_type": "tale",
+      "file": "seg_010_the-first-part-of-the-story-is-exactly-t.txt",
+      "word_count": 3495,
+      "start_line": 1728,
+      "end_line": 2111
+    },
+    {
+      "id": "seg_011",
+      "label": "the whole story. But the Mouse told him he was not to be alarmed, and",
+      "segment_type": "tale",
+      "file": "seg_011_the-whole-story-but-the-mouse-told-him-h.txt",
+      "word_count": 1426,
+      "start_line": 2112,
+      "end_line": 2264
+    },
+    {
+      "id": "seg_012",
+      "label": "THE STORY OF THE THREE THIEVES",
+      "segment_type": "tale",
+      "file": "seg_012_the-story-of-the-three-thieves.txt",
+      "word_count": 2917,
+      "start_line": 2265,
+      "end_line": 2566
+    },
+    {
+      "id": "seg_013",
+      "label": "THE STORY OF THE BOY WITH THE DEFORMED HEAD",
+      "segment_type": "tale",
+      "file": "seg_013_the-story-of-the-boy-with-the-deformed-h.txt",
+      "word_count": 6571,
+      "start_line": 2567,
+      "end_line": 3202
+    },
+    {
+      "id": "seg_014",
+      "label": "THE STORY OF THE STONE LION",
+      "segment_type": "tale",
+      "file": "seg_014_the-story-of-the-stone-lion.txt",
+      "word_count": 2165,
+      "start_line": 3203,
+      "end_line": 3420
+    },
+    {
+      "id": "seg_015",
+      "label": "THE STORY OF THE LAMA’S SERVANT",
+      "segment_type": "tale",
+      "file": "seg_015_the-story-of-the-lamas-servant.txt",
+      "word_count": 4249,
+      "start_line": 3421,
+      "end_line": 3850
+    },
+    {
+      "id": "seg_016",
+      "label": "THE STORY OF THE TORTOISE AND THE MONKEY",
+      "segment_type": "tale",
+      "file": "seg_016_the-story-of-the-tortoise-and-the-monkey.txt",
+      "word_count": 1407,
+      "start_line": 3851,
+      "end_line": 4005
+    },
+    {
+      "id": "seg_017",
+      "label": "THE STORY OF ROOM BACHA AND BAKI",
+      "segment_type": "tale",
+      "file": "seg_017_the-story-of-room-bacha-and-baki.txt",
+      "word_count": 2945,
+      "start_line": 4006,
+      "end_line": 4300
+    },
+    {
+      "id": "seg_018",
+      "label": "THE STORY OF THE HOME-BRED BOY",
+      "segment_type": "tale",
+      "file": "seg_018_the-story-of-the-home-bred-boy.txt",
+      "word_count": 5012,
+      "start_line": 4301,
+      "end_line": 4849
+    }
+  ]
+}

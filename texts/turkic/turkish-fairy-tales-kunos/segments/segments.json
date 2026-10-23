@@ -1,0 +1,36 @@
+{
+  "text_id": "turkish-fairy-tales-kunos",
+  "tradition": "turkic",
+  "source_file": "texts/turkic/turkish-fairy-tales-kunos/normalized/turkish-fairy-tales-kunos_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 652,
+      "start_line": 0,
+      "end_line": 112
+    },
+    {
+      "id": "seg_002",
+      "label": "THE STORY OF THE HALF-MAN-RIDING-ON-THE-WORSE-HALF-OF-A-LAME-HORSE   209",
+      "segment_type": "tale",
+      "file": "seg_002_the-story-of-the-half-man-riding-on-the-.txt",
+      "word_count": 48496,
+      "start_line": 113,
+      "end_line": 4639
+    },
+    {
+      "id": "seg_003",
+      "label": "THE STORY OF THE HALF-MAN-RIDING-ON-THE-WORSE-HALF-OF-A-LAME-HORSE",
+      "segment_type": "tale",
+      "file": "seg_003_the-story-of-the-half-man-riding-on-the-.txt",
+      "word_count": 15902,
+      "start_line": 4640,
+      "end_line": 6235
+    }
+  ]
+}
