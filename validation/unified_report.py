@@ -9,6 +9,8 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 OUTPUTS = PROJECT_ROOT / "outputs"
 
+from validation.saved_json import is_pass  # noqa: E402
+
 
 def generate_unified_report(results: dict) -> str:
     """Generate markdown report covering all tiers including Miroglyph."""
@@ -58,7 +60,7 @@ def generate_unified_report(results: dict) -> str:
     lines.append("## Tier A: ACP Internal Coherence")
     lines.append("")
     for t in verdict.get("tier_a", {}).get("tests", []):
-        status = "PASS" if t["pass"] else "FAIL"
+        status = "PASS" if is_pass(t["pass"]) else "FAIL"
         lines.append(f"- {t['name']}: **{status}**")
     lines.append("")
 
@@ -66,7 +68,7 @@ def generate_unified_report(results: dict) -> str:
     lines.append("## Tier B: Library-ACP External Validity")
     lines.append("")
     for t in verdict.get("tier_b", {}).get("tests", []):
-        status = "PASS" if t["pass"] else "FAIL"
+        status = "PASS" if is_pass(t["pass"]) else "FAIL"
         lines.append(f"- {t['name']}: **{status}**")
     lines.append("")
 
@@ -83,7 +85,7 @@ def generate_unified_report(results: dict) -> str:
         ("test9_polarity_pairs", "Test 9: Polarity Pairs"),
     ]:
         tv = miro_v.get(tkey, {})
-        status = "PASS" if tv.get("pass") else "FAIL"
+        status = "PASS" if is_pass(tv.get("pass")) else "FAIL"
         lines.append(f"### {tname}: **{status}**")
         lines.append("")
         lines.append(f"Criterion: {tv.get('criterion', '—')}")
