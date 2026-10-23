@@ -16,8 +16,11 @@ from dataclasses import dataclass, field, asdict
 from typing import Dict, List, Set
 
 # Add project root to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 from integration.acp_loader import ACPLoader
+
+ACP_DIR = PROJECT_ROOT / 'ACP'
 
 # Field definitions by tier (same as audit script)
 REQUIRED_FIELDS = {
@@ -278,7 +281,7 @@ def main():
     print("=" * 70)
 
     # Load ACP data
-    acp = ACPLoader('ACP')
+    acp = ACPLoader(str(ACP_DIR))
     print(f"\nLoaded {len(acp.archetypes)} archetypes")
 
     # Generate queue
@@ -334,7 +337,7 @@ def main():
         print(f"      Missing: {missing_str}")
 
     # Save to file
-    output_path = Path('ACP/tools/enrichment_queue.json')
+    output_path = ACP_DIR / 'tools' / 'enrichment_queue.json'
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -343,7 +346,7 @@ def main():
     print(f"\n[Saved queue to {output_path}]")
 
     # Also save a compact version for quick reference
-    compact_path = Path('ACP/tools/enrichment_priority.json')
+    compact_path = ACP_DIR / 'tools' / 'enrichment_priority.json'
     compact = {
         'generated_at': queue.generated_at,
         'priority_order': [
