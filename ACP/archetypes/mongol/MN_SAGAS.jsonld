@@ -1,0 +1,209 @@
+{
+  "@context": "../../schema/ACP_CONTEXT.jsonld",
+  "@id": "pantheon:MN-SAGAS",
+  "@type": "Pantheon",
+  "name": "Mongol and Kalmyk Saga Figures",
+  "tradition": "Mongol / Kalmyk (Buddhist-era tale cycles)",
+  "description": "Supernatural figures of the Kalmyk and Mongol tale cycles (the Siddhi-kür and the Ardschi-Bordschi tales), which carry Indian story material into Mongol Buddhist tradition.",
+  "canonicalSources": [
+    "Busk, Sagas from the Far East (1873), Gutenberg #40402"
+  ],
+  "validationStatus": {
+    "coordinatesAssigned": true,
+    "derivationMethod": "algorithmic-v1 (tools/derive_coordinates.js)"
+  },
+  "entries": [
+    {
+      "@id": "arch:MN-SIDDHI-KUR",
+      "@type": "Archetype",
+      "name": "Siddhi-kür",
+      "aliases": [
+        "Siddhî-kür",
+        "Ssidi-kür",
+        "The Magic Corpse"
+      ],
+      "domain": [
+        "Storytelling",
+        "Magic",
+        "The Dead",
+        "Riddles"
+      ],
+      "description": "\"A dead body endowed with supernatural or magic powers\" (Busk's note), the frame-figure of the Mongol Siddhi-kür cycle. Gold above the waist and emerald below, with a head of mother-of-pearl, he flees to his mango-tree in a grove of the dead. The master Nâgârjuna sends the Khan's son to bring him back bound in a sack, in silence; on the road the corpse tells him a tale, and whenever the carrier speaks a word, the Siddhi-kür escapes and the journey begins again.",
+      "spectralCoordinates": {
+        "order-chaos": 0.63,
+        "creation-destruction": 0.44,
+        "light-shadow": 0.45,
+        "active-receptive": 0.37,
+        "individual-collective": 0.45,
+        "ascent-descent": 0.48,
+        "stasis-transformation": 0.64,
+        "voluntary-fated": 0.3
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:magician",
+          "weight": 0.7,
+          "aspects": [
+            "siddhi-power",
+            "gold-maker"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.6,
+          "aspects": [
+            "escape-artist",
+            "story-snare"
+          ]
+        },
+        {
+          "primordial": "primordial:wise-elder",
+          "weight": 0.4,
+          "aspects": [
+            "teller-of-tales"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MN-MANGGUS",
+          "fidelity": 0.3,
+          "notes": "Both supernatural beings of the Siddhi-kür tales",
+          "provenance": "ORIG"
+        }
+      ],
+      "correspondences": {
+        "element": "Gold and emerald",
+        "direction": "The grove of the dead",
+        "symbol": "Sack of many colours, mango-tree, axe White Moon",
+        "association": "Stories that trap the listener"
+      },
+      "domains": [
+        "storytelling",
+        "magic",
+        "death",
+        "silence",
+        "quest"
+      ],
+      "keywords": [
+        "siddhi-kur",
+        "corpse",
+        "magic",
+        "story",
+        "riddle",
+        "trickster",
+        "escape",
+        "spontaneity"
+      ],
+      "narrativeRoles": [
+        "trickster",
+        "storyteller",
+        "quest-object"
+      ],
+      "coreFunction": "To test the carrier's silence with tales that demand an answer",
+      "symbolicCore": "The prize that talks its way free",
+      "primarySources": [
+        "Busk, Sagas from the Far East (1873), Gutenberg #40402"
+      ],
+      "status": "derived"
+    },
+    {
+      "@id": "arch:MN-MANGGUS",
+      "@type": "Archetype",
+      "name": "Manggus",
+      "aliases": [
+        "Mangus",
+        "Manggus-Râkshasa"
+      ],
+      "domain": [
+        "Ogres",
+        "Shape-shifting",
+        "Devouring"
+      ],
+      "description": "\"Mongolian name for Râkschasas\" (Busk's note): ogres who take false shapes to get close to their prey. In the Mongol sagas a male and a female Manggus come as a he-goat and a beautiful maiden; taken in by seven royal brothers, they devour one brother's life each year until only the Khan is left, and the Pig's-head soothsayer is sent for to save him.",
+      "spectralCoordinates": {
+        "order-chaos": 0.88,
+        "creation-destruction": 0.62,
+        "light-shadow": 0.82,
+        "active-receptive": 0.33,
+        "individual-collective": 0.33,
+        "ascent-descent": 0.67,
+        "stasis-transformation": 0.6,
+        "voluntary-fated": 0.54
+      },
+      "instantiates": [
+        {
+          "primordial": "primordial:monster",
+          "weight": 0.85,
+          "aspects": [
+            "devourer",
+            "ogre"
+          ]
+        },
+        {
+          "primordial": "primordial:trickster",
+          "weight": 0.45,
+          "aspects": [
+            "shape-shifter",
+            "deceiver"
+          ]
+        },
+        {
+          "primordial": "primordial:shadow",
+          "weight": 0.5,
+          "aspects": [
+            "hidden-predator"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:IN-RAVANA",
+          "fidelity": 0.45,
+          "notes": "Ravana is king of the Rakshasas, the kind the Manggus names",
+          "provenance": "TRAD"
+        },
+        {
+          "type": "CULTURAL_ECHO",
+          "target": "arch:MN-SIDDHI-KUR",
+          "fidelity": 0.3,
+          "notes": "Both supernatural beings of the Siddhi-kür tales",
+          "provenance": "ORIG"
+        }
+      ],
+      "correspondences": {
+        "element": "Night",
+        "direction": "Within the household",
+        "symbol": "He-goat, false maiden",
+        "association": "The guest who devours"
+      },
+      "domains": [
+        "ogres",
+        "shape-shifting",
+        "deception",
+        "illness"
+      ],
+      "keywords": [
+        "manggus",
+        "rakshasa",
+        "ogre",
+        "devour",
+        "illusion",
+        "deception",
+        "chaos"
+      ],
+      "narrativeRoles": [
+        "villain",
+        "shapeshifter"
+      ],
+      "coreFunction": "To consume life from inside the house it was welcomed into",
+      "symbolicCore": "The welcome guest who is a mouth",
+      "primarySources": [
+        "Busk, Sagas from the Far East (1873), Gutenberg #40402"
+      ],
+      "status": "derived"
+    }
+  ]
+}
