@@ -1,0 +1,153 @@
+{
+  "text_id": "legends-of-the-jews-vol4",
+  "tradition": "hebrew",
+  "source_file": "texts/hebrew/legends-of-the-jews-vol4/normalized/legends-of-the-jews-vol4_best.txt",
+  "strategy": "structural",
+  "segment_count": 16,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 436,
+      "start_line": 0,
+      "end_line": 160
+    },
+    {
+      "id": "seg_002",
+      "label": "I",
+      "segment_type": "section",
+      "file": "seg_002_i.txt",
+      "word_count": 4453,
+      "start_line": 161,
+      "end_line": 599
+    },
+    {
+      "id": "seg_003",
+      "label": "II",
+      "segment_type": "section",
+      "file": "seg_003_ii.txt",
+      "word_count": 2786,
+      "start_line": 600,
+      "end_line": 865
+    },
+    {
+      "id": "seg_004",
+      "label": "The story of Ruth came to pass a hundred (31) years after Othniel's",
+      "segment_type": "tale",
+      "file": "seg_004_the-story-of-ruth-came-to-pass-a-hundred.txt",
+      "word_count": 7102,
+      "start_line": 866,
+      "end_line": 1505
+    },
+    {
+      "id": "seg_005",
+      "label": "III",
+      "segment_type": "section",
+      "file": "seg_005_iii.txt",
+      "word_count": 5996,
+      "start_line": 1506,
+      "end_line": 2054
+    },
+    {
+      "id": "seg_006",
+      "label": "IV",
+      "segment_type": "section",
+      "file": "seg_006_iv.txt",
+      "word_count": 11954,
+      "start_line": 2055,
+      "end_line": 3159
+    },
+    {
+      "id": "seg_007",
+      "label": "V",
+      "segment_type": "section",
+      "file": "seg_007_v.txt",
+      "word_count": 15444,
+      "start_line": 3160,
+      "end_line": 4603
+    },
+    {
+      "id": "seg_008",
+      "label": "VI",
+      "segment_type": "section",
+      "file": "seg_008_vi.txt",
+      "word_count": 3682,
+      "start_line": 4604,
+      "end_line": 4957
+    },
+    {
+      "id": "seg_009",
+      "label": "VII",
+      "segment_type": "section",
+      "file": "seg_009_vii.txt",
+      "word_count": 3147,
+      "start_line": 4958,
+      "end_line": 5251
+    },
+    {
+      "id": "seg_010",
+      "label": "the tale of his troubles, he said: \"Take me and sell me as a slave; the",
+      "segment_type": "tale",
+      "file": "seg_010_the-tale-of-his-troubles-he-said-take-me.txt",
+      "word_count": 8922,
+      "start_line": 5252,
+      "end_line": 6061
+    },
+    {
+      "id": "seg_011",
+      "label": "VIII",
+      "segment_type": "section",
+      "file": "seg_011_viii.txt",
+      "word_count": 674,
+      "start_line": 6062,
+      "end_line": 6128
+    },
+    {
+      "id": "seg_012",
+      "label": "the tale of her sorrow. Obadiah told her to take the small remnant of",
+      "segment_type": "tale",
+      "file": "seg_012_the-tale-of-her-sorrow-obadiah-told-her-.txt",
+      "word_count": 3610,
+      "start_line": 6129,
+      "end_line": 6455
+    },
+    {
+      "id": "seg_013",
+      "label": "IX",
+      "segment_type": "section",
+      "file": "seg_013_ix.txt",
+      "word_count": 9073,
+      "start_line": 6456,
+      "end_line": 7286
+    },
+    {
+      "id": "seg_014",
+      "label": "X",
+      "segment_type": "section",
+      "file": "seg_014_x.txt",
+      "word_count": 14432,
+      "start_line": 7287,
+      "end_line": 8624
+    },
+    {
+      "id": "seg_015",
+      "label": "XI",
+      "segment_type": "section",
+      "file": "seg_015_xi.txt",
+      "word_count": 5485,
+      "start_line": 8625,
+      "end_line": 9142
+    },
+    {
+      "id": "seg_016",
+      "label": "XII",
+      "segment_type": "section",
+      "file": "seg_016_xii.txt",
+      "word_count": 24199,
+      "start_line": 9143,
+      "end_line": 11455
+    }
+  ]
+}

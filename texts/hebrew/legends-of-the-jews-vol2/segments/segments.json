@@ -1,0 +1,36 @@
+{
+  "text_id": "legends-of-the-jews-vol2",
+  "tradition": "hebrew",
+  "source_file": "texts/hebrew/legends-of-the-jews-vol2/normalized/legends-of-the-jews-vol2_best.txt",
+  "strategy": "structural",
+  "segment_count": 3,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 7784,
+      "start_line": 0,
+      "end_line": 797
+    },
+    {
+      "id": "seg_002",
+      "label": "the tale of them before God, that His wrath be turned away from me. O",
+      "segment_type": "tale",
+      "file": "seg_002_the-tale-of-them-before-god-that-his-wra.txt",
+      "word_count": 96014,
+      "start_line": 798,
+      "end_line": 9848
+    },
+    {
+      "id": "seg_003",
+      "label": "part in it, \"for,\" said God, \"the earth that afforded thee protection",
+      "segment_type": "part",
+      "file": "seg_003_part-in-it-for-said-god-the-earth-that-a.txt",
+      "word_count": 7178,
+      "start_line": 9849,
+      "end_line": 10524
+    }
+  ]
+}

@@ -2918,6 +2918,62 @@
           "notes": "Collected by Kúnos, translated from the Hungarian"
         }
       ]
+    },
+    "legends-of-the-jews-vol1": {
+      "title": "The Legends of the Jews, Volume 1: Bible Times and Characters from the Creation to Jacob",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/1493",
+          "translator": "Henrietta Szold",
+          "year": 1909,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Ginzberg's retelling of the aggadah, translated from the German manuscript"
+        }
+      ]
+    },
+    "legends-of-the-jews-vol2": {
+      "title": "The Legends of the Jews, Volume 2: Bible Times and Characters from Joseph to the Exodus",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/1494",
+          "translator": "Henrietta Szold",
+          "year": 1910,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Ginzberg's retelling of the aggadah, translated from the German manuscript"
+        }
+      ]
+    },
+    "legends-of-the-jews-vol3": {
+      "title": "The Legends of the Jews, Volume 3: Bible Times and Characters from the Exodus to the Death of Moses",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/2881",
+          "translator": "Paul Radin",
+          "year": 1911,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Ginzberg's retelling of the aggadah, translated from the German manuscript"
+        }
+      ]
+    },
+    "legends-of-the-jews-vol4": {
+      "title": "The Legends of the Jews, Volume 4: Bible Times and Characters from Joshua to Esther",
+      "sources": [
+        {
+          "source_name": "Project Gutenberg",
+          "source_url": "https://www.gutenberg.org/ebooks/2882",
+          "translator": "Paul Radin and Henrietta Szold",
+          "year": 1913,
+          "format": "txt",
+          "quality_tier": "scholarly",
+          "notes": "Ginzberg's retelling of the aggadah, translated from the German manuscript"
+        }
+      ]
     }
   }
 }
