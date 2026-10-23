@@ -6,6 +6,7 @@ distance apart, and every non-echo cross-tradition pair is at least 1.0
 apart, so the echo distances and the verdicts can be worked out by hand.
 Nothing here reads the ACP data.
 """
+import json
 import sys
 from pathlib import Path
 
@@ -15,6 +16,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from integration.acp_loader import ACPLoader, AXES  # noqa: E402
+from validation.saved_json import json_default  # noqa: E402
 from validation.v2_tests.echo_coherence import EchoCoherenceTest  # noqa: E402
 
 N = 6
@@ -78,12 +80,13 @@ def test_verdicts(result):
     assert bool(result["verdicts"]["overall_pass"]) is True
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "verdicts are numpy bools; validation/v2_run.py saves results with "
-    "json.dump(default=str), so they are written as the strings \"True\"/\"False\", "
-    "and a reader that tests truthiness sees \"False\" as a pass"))
-def test_verdicts_are_plain_bools(result):
-    assert type(result["verdicts"]["distance_test"]["pass"]) is bool
+def test_verdicts_save_as_plain_bools(result):
+    # Verdicts are numpy bools in memory; validation/v2_run.py saves them
+    # through json_default so the file holds real booleans, not "True"/"False".
+    saved = json.loads(json.dumps(result, default=json_default))
+    for verdict in ("distance_test", "fidelity_test"):
+        assert type(saved["verdicts"][verdict]["pass"]) is bool
+    assert type(saved["verdicts"]["overall_pass"]) is bool
 
 
 def test_review_tables(result):
