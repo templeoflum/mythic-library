@@ -1,0 +1,72 @@
+{
+  "text_id": "legends-of-the-jews-vol1",
+  "tradition": "hebrew",
+  "source_file": "texts/hebrew/legends-of-the-jews-vol1/normalized/legends-of-the-jews-vol1_best.txt",
+  "strategy": "blank_line",
+  "segment_count": 7,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "section_1",
+      "segment_type": "section",
+      "file": "seg_001_section-1.txt",
+      "word_count": 2875,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_002",
+      "label": "section_2",
+      "segment_type": "section",
+      "file": "seg_002_section-2.txt",
+      "word_count": 13326,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_003",
+      "label": "section_3",
+      "segment_type": "section",
+      "file": "seg_003_section-3.txt",
+      "word_count": 16501,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_004",
+      "label": "section_4",
+      "segment_type": "section",
+      "file": "seg_004_section-4.txt",
+      "word_count": 11054,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_005",
+      "label": "section_5",
+      "segment_type": "section",
+      "file": "seg_005_section-5.txt",
+      "word_count": 10910,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_006",
+      "label": "section_6",
+      "segment_type": "section",
+      "file": "seg_006_section-6.txt",
+      "word_count": 37633,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "id": "seg_007",
+      "label": "section_7",
+      "segment_type": "section",
+      "file": "seg_007_section-7.txt",
+      "word_count": 34728,
+      "start_line": null,
+      "end_line": null
+    }
+  ]
+}

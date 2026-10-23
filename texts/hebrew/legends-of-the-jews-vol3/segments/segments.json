@@ -1,0 +1,45 @@
+{
+  "text_id": "legends-of-the-jews-vol3",
+  "tradition": "hebrew",
+  "source_file": "texts/hebrew/legends-of-the-jews-vol3/normalized/legends-of-the-jews-vol3_best.txt",
+  "strategy": "structural",
+  "segment_count": 4,
+  "segments": [
+    {
+      "id": "seg_001",
+      "label": "preamble",
+      "segment_type": "preamble",
+      "file": "seg_001_preamble.txt",
+      "word_count": 17037,
+      "start_line": 0,
+      "end_line": 1671
+    },
+    {
+      "id": "seg_002",
+      "label": "part in the unbrotherly act of selling Joseph as a slave, hence none of",
+      "segment_type": "part",
+      "file": "seg_002_part-in-the-unbrotherly-act-of-selling-j.txt",
+      "word_count": 394,
+      "start_line": 1672,
+      "end_line": 1704
+    },
+    {
+      "id": "seg_003",
+      "label": "part in selling Joseph. The only one whom he will not be able to",
+      "segment_type": "part",
+      "file": "seg_003_part-in-selling-joseph-the-only-one-whom.txt",
+      "word_count": 85431,
+      "start_line": 1705,
+      "end_line": 9403
+    },
+    {
+      "id": "seg_004",
+      "label": "part in the song of praise to the well, for the well had given occasion",
+      "segment_type": "part",
+      "file": "seg_004_part-in-the-song-of-praise-to-the-well-f.txt",
+      "word_count": 43784,
+      "start_line": 9404,
+      "end_line": 13352
+    }
+  ]
+}
