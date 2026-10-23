@@ -12,7 +12,10 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 # Add project root to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+ACP_DIR = PROJECT_ROOT / 'ACP'
 
 # Suit to domain and element mapping
 SUIT_DATA = {
@@ -297,7 +300,7 @@ def main():
     if dry_run:
         print("\n[DRY RUN - No files will be modified. Use --apply to save changes.]\n")
 
-    file_path = Path('ACP/divination/tarot/minor_arcana.jsonld')
+    file_path = ACP_DIR / 'divination' / 'tarot' / 'minor_arcana.jsonld'
 
     with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
