@@ -184,6 +184,18 @@ def process_text(text_dir: Path, text_id: str, tradition: str,
     return text_result
 
 
+def write_provenance(name: str, target_text: str = None):
+    """Record what the outputs were built from (see integration/provenance.py)."""
+    try:
+        sys.path.insert(0, str(PROJECT_ROOT))
+        from integration import provenance
+        # DATA_DIR.parent rather than PROJECT_ROOT, so the record lands beside the outputs
+        path = provenance.write_record(DATA_DIR.parent, name, text_filter=target_text)
+        print(f"Provenance: {path}")
+    except Exception as e:  # the outputs are already written; a missing record is reported later
+        print(f"Provenance: not written ({e})")
+
+
 def run_tagging(target_text: str = None):
     """Run motif tagging on all or a specific text."""
     motifs = load_motif_index()
@@ -266,6 +278,8 @@ def run_tagging(target_text: str = None):
     dist_path = DATA_DIR / "motif_distribution.json"
     with open(dist_path, "w", encoding="utf-8") as f:
         json.dump(motif_distribution, f, indent=2, ensure_ascii=False)
+
+    write_provenance("motif tags", target_text)
 
     # Summary
     print(f"\n{'='*60}")

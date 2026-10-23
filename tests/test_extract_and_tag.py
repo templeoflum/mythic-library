@@ -164,6 +164,28 @@ def test_tagging_is_deterministic(tag, tree, capsys):
     assert first == second
 
 
+# ---------------------------------------------------------------- provenance
+
+def test_tagging_writes_provenance_beside_outputs(tag, tree, capsys):
+    real = ROOT / "data" / "motif_tags.provenance.json"
+    existed = real.exists()
+    tag.run_tagging()
+    record = json.loads((tree / "data" / "motif_tags.provenance.json").read_text(encoding="utf-8"))
+    assert record["generator"] == "scripts/motif/tag_motifs.py"
+    assert record["inputs"]["data/thompson_motif_index.json"]["motifs"] == 3
+    assert record["inputs"]["texts/*/*/segments/*.txt"]["files"] == 4
+    assert record["text_filter"] is None
+    assert real.exists() == existed  # nothing written into the repo's own data/
+
+
+def test_extraction_writes_provenance_beside_outputs(extract, tree, capsys):
+    extract.run_extraction(target_text="tiny-greek")
+    record = json.loads((tree / "data" / "entities.provenance.json").read_text(encoding="utf-8"))
+    assert record["generator"] == "scripts/extract/extract_entities.py"
+    assert record["text_filter"] == "tiny-greek"
+    assert set(record["outputs"]) == {"data/entities.json", "data/entity_catalog.json"}
+
+
 # ---------------------------------------------------------------- hash seed
 
 RUNNER = """

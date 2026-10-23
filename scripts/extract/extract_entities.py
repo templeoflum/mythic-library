@@ -427,6 +427,18 @@ def build_catalog(all_results: list) -> dict:
     return sorted_catalog
 
 
+def write_provenance(name: str, target_text: str = None):
+    """Record what the outputs were built from (see integration/provenance.py)."""
+    try:
+        sys.path.insert(0, str(PROJECT_ROOT))
+        from integration import provenance
+        # DATA_DIR.parent rather than PROJECT_ROOT, so the record lands beside the outputs
+        path = provenance.write_record(DATA_DIR.parent, name, text_filter=target_text)
+        print(f"Provenance: {path}")
+    except Exception as e:  # the outputs are already written; a missing record is reported later
+        print(f"Provenance: not written ({e})")
+
+
 def run_extraction(target_text: str = None):
     """Run entity extraction on all or a specific text."""
     patterns = build_regex_patterns()
@@ -482,6 +494,8 @@ def run_extraction(target_text: str = None):
 
     with open(catalog_path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
+
+    write_provenance("entities", target_text)
 
     # Summary
     print(f"\n{'='*60}")
