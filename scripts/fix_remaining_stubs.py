@@ -6,6 +6,8 @@ Fix remaining stubs by adding spectral coordinates.
 import json
 from pathlib import Path
 
+ACP_DIR = Path(__file__).resolve().parent.parent / "ACP"
+
 # Spectral coordinates for astrology houses
 HOUSE_COORDINATES = {
     "astrology:house_1": {  # Self, identity, appearance
@@ -160,7 +162,7 @@ def main():
         print("\n[DRY RUN]\n")
 
     # Fix astrology houses
-    houses_path = Path("ACP/divination/astrology/houses.jsonld")
+    houses_path = ACP_DIR / "divination" / "astrology" / "houses.jsonld"
     with open(houses_path, 'r', encoding='utf-8') as f:
         houses_data = json.load(f)
 
@@ -178,7 +180,7 @@ def main():
             json.dump(houses_data, f, indent=2, ensure_ascii=False)
 
     # Fix Greek aspects
-    greek_path = Path("ACP/archetypes/greek/GR_OLYMPIANS.jsonld")
+    greek_path = ACP_DIR / "archetypes" / "greek" / "GR_OLYMPIANS.jsonld"
     with open(greek_path, 'r', encoding='utf-8') as f:
         greek_data = json.load(f)
 
