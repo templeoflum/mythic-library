@@ -15,8 +15,11 @@ from pathlib import Path
 from collections import defaultdict, Counter
 
 # Add project root to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 from integration.acp_loader import ACPLoader
+
+ACP_DIR = PROJECT_ROOT / 'ACP'
 
 # Field definitions by tier
 REQUIRED_FIELDS = {
@@ -164,7 +167,7 @@ def main():
     print("=" * 70)
 
     # Load data
-    acp = ACPLoader('ACP')
+    acp = ACPLoader(str(ACP_DIR))
     archetypes = acp.archetypes
 
     print(f"\nTotal archetypes: {len(archetypes)}")
@@ -257,7 +260,7 @@ def main():
         }
     }
 
-    output_path = Path('ACP/tools/completeness_audit.json')
+    output_path = ACP_DIR / 'tools' / 'completeness_audit.json'
     with open(output_path, 'w') as f:
         json.dump(summary, f, indent=2)
     print(f"\n[Saved summary to {output_path}]")
