@@ -28,11 +28,14 @@ def entities():
     return [SimpleNamespace(canonical_name=f"{t}{i}", entity_type=t, ic=v) for t, i, v in out]
 
 
-def fake_acp():
+def fake_acp(spread=("individual-collective",)):
     archetypes = {}
     for e in entities():
         c = {axis: 0.5 for axis in AXES}
-        c["individual-collective"] = e.ic
+        for axis in spread:
+            # heroes low / deities high on individual-collective; the other way
+            # round elsewhere, which is the direction the hero-deity tests expect
+            c[axis] = e.ic if axis == "individual-collective" else round(1 - e.ic, 2)
         archetypes[f"arch:T-{e.canonical_name}"] = {"name": e.canonical_name, "spectralCoordinates": c}
     acp = ACPLoader.__new__(ACPLoader)  # skip loading files
     acp.archetypes = archetypes
@@ -62,8 +65,8 @@ class FakeMapper:
         return next((m for m in self.mappings if m.library_entity == name), None)
 
 
-def run(library=None):
-    test = ai.AxisInterpretabilityTest(fake_acp(), library or FakeLibrary(), FakeMapper())
+def run(library=None, spread=("individual-collective",)):
+    test = ai.AxisInterpretabilityTest(fake_acp(spread), library or FakeLibrary(), FakeMapper())
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", RuntimeWarning)  # t-tests on constant axes
         return test.run()
@@ -112,16 +115,20 @@ def test_scores_and_verdicts(result):
         "individual-collective": ["contrast:herovsdeity", "type:hero", "type:deity"]}
     assert result["top_3_axes_aligned"] == 1
     assert result["verdicts"]["interpretability_score"]["pass"] is True   # 21% >= 20%
-    assert result["verdicts"]["top_3_alignment"]["pass"] is True
-    assert result["verdicts"]["overall_pass"] is True
+    assert result["verdicts"]["top_3_alignment"]["pass"] is False         # 1 of the top 3
+    assert result["verdicts"]["overall_pass"] is False
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "the top_3_alignment criterion says each of the top 3 axes needs an "
-    "alignment, but the code passes when any one of them has one"))
-def test_top_3_alignment_matches_its_criterion(result):
-    assert result["top_3_axes_aligned"] < 3
-    assert not result["verdicts"]["top_3_alignment"]["pass"]
+@pytest.mark.parametrize("spread, aligned, passes", [
+    (("individual-collective", "order-chaos", "creation-destruction"), 3, True),
+    (("individual-collective", "order-chaos"), 2, False),
+])
+def test_top_3_alignment_needs_each_of_the_top_3(spread, aligned, passes):
+    # criterion: "Top 3 axes each have >=1 interpretable alignment"
+    out = run(spread=spread)
+    assert out["top_3_axes_aligned"] == aligned
+    assert bool(out["verdicts"]["top_3_alignment"]["pass"]) is passes
+    assert out["verdicts"]["top_3_alignment"]["result"] == f"{aligned}/3 top axes aligned"
 
 
 def test_exact_code_lookup_does_not_take_sub_codes():

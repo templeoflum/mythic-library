@@ -552,7 +552,7 @@ class AxisInterpretabilityTest:
         primary_score = primary_n_passed / primary_n_testable if primary_n_testable > 0 else 0
 
         score_pass = ct_score >= 0.25 or primary_score >= 0.20
-        top3_pass = top_3_have_alignment >= 1
+        top3_pass = top_3_have_alignment == len(top_3)  # each of the top 3, as the criterion says
 
         return {
             "mode": "combined",
