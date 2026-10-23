@@ -21,8 +21,11 @@ from dataclasses import dataclass, field
 import math
 
 # Add project root to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 from integration.acp_loader import ACPLoader
+
+ACP_DIR = PROJECT_ROOT / 'ACP'
 
 # Schema definitions
 REQUIRED_AXES = [
@@ -527,7 +530,7 @@ def main():
     print("=" * 70)
 
     # Load ACP data
-    acp = ACPLoader('ACP')
+    acp = ACPLoader(str(ACP_DIR))
     print(f"\nLoaded {len(acp.archetypes)} archetypes, {len(acp.primordials)} primordials")
 
     # Run validation
