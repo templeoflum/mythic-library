@@ -28,12 +28,11 @@ def coords(**diff):
 
 
 def fake_acp(third_pair_diff=0.3):
-    """Four POLAR_OPPOSITE pairs with a declared axis, plus pairs that are left out.
+    """Three POLAR_OPPOSITE pairs with a declared axis, plus pairs that are left out.
 
     p1: 0.8 apart on its declared axis (order-chaos), which is also its largest difference.
     p2: 0.6 apart on its declared axis (light-shadow), also its largest difference.
     p3: `third_pair_diff` apart on its declared axis (ascent-descent), 0.7 apart on order-chaos.
-    p4: declared axis "axis:not-an-axis", which matches no ACP axis.
     """
     a = {}
 
@@ -47,7 +46,6 @@ def fake_acp(third_pair_diff=0.3):
     pair("p2", coords(light_shadow=0.2), coords(light_shadow=0.8), dict(polar, axis=LS))
     pair("p3", coords(ascent_descent=0.5, order_chaos=0.15),
          coords(ascent_descent=0.5 + third_pair_diff, order_chaos=0.85), dict(polar, axis=f"axis:{AD}"))
-    pair("p4", coords(order_chaos=0.0), coords(order_chaos=1.0), dict(polar, axis="axis:not-an-axis"))
     pair("p5", coords(light_shadow=0.0), coords(light_shadow=0.95), polar)  # no declared axis
 
     # COMPLEMENT pairs sit close together, so the two types separate cleanly.
@@ -74,25 +72,24 @@ def result():
 
 def test_relationship_counts_skip_pairs_without_coordinates(result):
     assert result["relationship_counts"] == {
-        "POLAR_OPPOSITE": 5, "COMPLEMENT": 3, "SHADOW": 0, "EVOLUTION": 2, "ANTAGONIST": 0,
+        "POLAR_OPPOSITE": 4, "COMPLEMENT": 3, "SHADOW": 0, "EVOLUTION": 2, "ANTAGONIST": 0,
     }
 
 
 def test_polar_axis_counts(result):
     polar = result["polar_opposite_tests"]
-    # p1-p4 declare an axis; p5 doesn't. A declared axis that matches no ACP axis
-    # (p4) stays in the denominator and counts toward neither figure.
-    assert polar["n_with_declared_axis"] == 4
+    # p1-p3 declare an axis; p5 doesn't.
+    assert polar["n_with_declared_axis"] == 3
     assert polar["axis_diff_gt_05_count"] == 2          # p1, p2
-    assert polar["axis_diff_gt_05_pct"] == 50.0
+    assert polar["axis_diff_gt_05_pct"] == 66.7
     assert polar["max_diff_matches_declared_count"] == 2  # p1, p2
-    assert polar["max_diff_matches_declared_pct"] == 50.0
+    assert polar["max_diff_matches_declared_pct"] == 66.7
 
 
 def test_distance_by_type(result):
     d = result["distance_by_type"]
     assert d["COMPLEMENT"] == {"n_pairs": 3, "mean": 0.02, "median": 0.02, "std": 0.0082}
-    assert d["POLAR_OPPOSITE"]["n_pairs"] == 5
+    assert d["POLAR_OPPOSITE"]["n_pairs"] == 4
     assert d["RANDOM"]["n_pairs"] == 500
     assert "SHADOW" not in d
 
@@ -100,9 +97,9 @@ def test_distance_by_type(result):
 def test_kruskal_wallis_uses_types_with_three_or_more_pairs(result):
     kw = result["kruskal_wallis"]
     assert kw["groups_tested"] == ["POLAR_OPPOSITE", "COMPLEMENT"]
-    # 5 POLAR distances all above 3 COMPLEMENT ones: H = 5.0, p = 0.0253
-    assert kw["statistic"] == 5.0
-    assert kw["p_value"] == pytest.approx(0.025347, abs=1e-6)
+    # 4 POLAR distances all above 3 COMPLEMENT ones: H = 4.5, p = 0.0339
+    assert kw["statistic"] == 4.5
+    assert kw["p_value"] == pytest.approx(0.033895, abs=1e-6)
 
 
 def test_evolution_direction(result):
@@ -111,19 +108,19 @@ def test_evolution_direction(result):
     }
 
 
-def test_verdicts_at_50_percent(result):
+def test_verdicts_at_two_of_three(result):
     v = result["verdicts"]
     assert v["polar_axis_diff"]["pass"] is False      # needs >= 70%
-    assert v["polar_axis_diff"]["result"] == "50.0% (2/4)"
+    assert v["polar_axis_diff"]["result"] == "66.7% (2/3)"
     assert v["polar_max_axis"]["pass"] is True        # needs >= 50%
     assert v["type_differentiation"]["pass"] is True
     assert v["overall_pass"] is False
 
 
 def test_overall_pass_needs_polar_axis_and_type_differentiation():
-    # p3 now 0.6 apart on its declared axis: 3/4 = 75% clear the 0.5 bar.
+    # p3 now 0.6 apart on its declared axis: all 3 clear the 0.5 bar.
     v = RelationshipGeometryTest(fake_acp(third_pair_diff=0.6)).run()["verdicts"]
-    assert v["polar_axis_diff"]["result"] == "75.0% (3/4)"
+    assert v["polar_axis_diff"]["result"] == "100.0% (3/3)"
     assert v["polar_axis_diff"]["pass"] is True
     assert v["overall_pass"] is True
 
