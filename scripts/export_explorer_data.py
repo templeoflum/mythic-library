@@ -25,6 +25,7 @@ from integration.acp_loader import ACPLoader, AXES
 from integration.library_loader import LibraryLoader
 from integration.entity_mapper import EntityMapper
 from integration.node_profiler import ARC_PATTERN_MAPPING
+from validation.saved_json import is_pass
 
 OUTPUT_DIR = PROJECT_ROOT / "miroglyph" / "data"
 OUTPUTS = PROJECT_ROOT / "outputs"
@@ -354,7 +355,7 @@ def export_validation_summary():
         tier_c_tests.append({
             "name": tname,
             "question": question,
-            "pass": tv.get("pass", False),
+            "pass": is_pass(tv.get("pass", False)),
             "criterion": tv.get("criterion", ""),
             "result": tv.get("detail", ""),
         })
@@ -429,9 +430,7 @@ def _extract_tests(raw: dict, test_specs: list) -> list:
         verdicts = test_data.get("verdicts", {})
 
         # Determine pass/fail from verdict
-        overall_pass = verdicts.get("overall_pass", False)
-        if isinstance(overall_pass, str):
-            overall_pass = overall_pass.lower() == "true"
+        overall_pass = is_pass(verdicts.get("overall_pass", False))
 
         # Extract key metrics (top-level numeric values)
         key_metrics = {}

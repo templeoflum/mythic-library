@@ -20,6 +20,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from integration.acp_loader import ACPLoader
 from integration import provenance
+from validation.saved_json import json_default
 from integration.library_loader import LibraryLoader
 from integration.entity_mapper import EntityMapper
 from validation.v2_tests.echo_coherence import EchoCoherenceTest
@@ -690,7 +691,7 @@ def main():
     # Save JSON results
     json_path = OUTPUTS / "metrics" / "v2_validation_results.json"
     with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False, default=str)
+        json.dump(results, f, indent=2, ensure_ascii=False, default=json_default)
     print(f"\nResults saved to {json_path}")
 
     # Generate and save report
