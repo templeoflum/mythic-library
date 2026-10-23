@@ -394,6 +394,10 @@ class Phase3StubFixer:
         return saved
 
 
+# Anchored to the project root so the script works from any directory
+ACP_DIR = Path(__file__).resolve().parent.parent / "ACP"
+
+
 def main():
     import argparse
 
@@ -412,7 +416,7 @@ def main():
     if dry_run:
         print("\n[DRY RUN - No files will be modified. Use --apply to save changes.]\n")
 
-    fixer = Phase3StubFixer(Path("ACP"))
+    fixer = Phase3StubFixer(ACP_DIR)
     fixer.load_all()
 
     stubs_fixed = fixer.fix_stubs()
