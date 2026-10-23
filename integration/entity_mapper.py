@@ -71,6 +71,8 @@ def _arch_matches_tradition(arch_id: str, tradition: str) -> bool:
     if not prefix:
         return False
     # arch:GR-ZEUS -> prefix "GR", persian:ahura-mazda -> prefix "persian"
+    if ":" in arch_id and not arch_id.startswith("arch:"):
+        return arch_id.split(":", 1)[0].upper() == prefix.upper()
     id_body = arch_id.split(":", 1)[1] if ":" in arch_id else arch_id
     id_prefix = id_body.split("-", 1)[0] if "-" in id_body else id_body
     return id_prefix.upper() == prefix.upper()
