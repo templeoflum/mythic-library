@@ -19,6 +19,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from integration.acp_loader import ACPLoader
+from integration import provenance
 from integration.library_loader import LibraryLoader
 from integration.entity_mapper import EntityMapper
 from validation.v2_tests.echo_coherence import EchoCoherenceTest
@@ -80,6 +81,9 @@ def run_validation(full: bool = True) -> dict:
             "entities_mapped": n_mapped,
             "mapping_rate": round(n_mapped / n_total * 100, 1) if n_total > 0 else 0,
         },
+        # What this run was built from, so a later check can tell whether the
+        # results still match the current ACP and motif index.
+        "inputs": provenance.current_inputs(PROJECT_ROOT, provenance.V2_INPUTS),
     }
 
     # ── Test 1: CULTURAL_ECHO Distance Coherence ──────────────
